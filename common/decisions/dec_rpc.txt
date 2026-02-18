@@ -4190,6 +4190,520 @@ PDTO_Unity_up = {
 	}	
 }
 }
+The_CCP_Difficulty_Selection = {
+	The_CCP_Difficulty_Selection_1 = {
+		available = {
+			
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			PRC = {
+			remove_ideas = Red_Nobility
+	remove_ideas = Crony_capitalismy
+	remove_ideas = Techno_nationalism
+	remove_ideas = PRC_yingxue
+	remove_ideas = Chinese_education
+	remove_ideas = BPRC_china
+	remove_ideas = PRC_organ_trade
+		}
+		hidden_effect = {
+		if = {
+			limit = {
+				PRC = {
+					has_ideas = Red_Nobility2
+	has_ideas = Crony_capitalismy2
+	has_ideas = Techno_nationalism2
+	has_ideas = PRC_yingxue2
+	has_ideas = Chinese_education2
+	has_ideas = BPRC_china2
+	has_ideas = PRC_organ_trade2
+				}
+			}
+			remove_ideas = Red_Nobility2
+	remove_ideas = Crony_capitalismy2
+	remove_ideas = Techno_nationalism2
+	remove_ideas = PRC_yingxue2
+	remove_ideas = Chinese_education2
+	remove_ideas = BPRC_china2
+	remove_ideas = PRC_organ_trade2
+		}
+		}
+		}
+	}
+	The_CCP_Difficulty_Selection_2 = {
+		available = {
+	
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			effect_tooltip = {
+		add_ideas = Red_Nobility2
+	add_ideas = Crony_capitalismy2
+	add_ideas = Techno_nationalism2
+	add_ideas = PRC_yingxue2
+		}
+		hidden_effect = {
+	PRC = {
+			swap_ideas = {
+				remove_idea = Red_Nobility
+				add_idea = Red_Nobility2
+			}
+			swap_ideas = {
+				remove_idea = Crony_capitalismy
+				add_idea = Crony_capitalismy2
+			}
+			swap_ideas = {
+				remove_idea = Techno_nationalism
+				add_idea = Techno_nationalism2
+			}
+			swap_ideas = {
+				remove_idea = PRC_yingxue
+				add_idea = PRC_yingxue2
+			}
+	}
+		}
+		every_state = {
+				limit = {
+					is_owned_by = PRC
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_made_in_china_STATE2_dynamic scope = PRC
+				}
+			}
+		}
+	}
+	The_CCP_Difficulty_Selection_3 = {
+		available = {
+	
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			effect_tooltip = {
+		add_ideas = Red_Nobility2
+	add_ideas = Crony_capitalismy2
+	add_ideas = Techno_nationalism2
+	add_ideas = PRC_yingxue2
+	add_ideas = Chinese_education2
+	add_ideas = BPRC_china2
+	add_ideas = PRC_organ_trade2
+		}
+		hidden_effect = {
+	PRC = {
+			swap_ideas = {
+				remove_idea = Red_Nobility
+				add_idea = Red_Nobility2
+			}
+			swap_ideas = {
+				remove_idea = Crony_capitalismy
+				add_idea = Crony_capitalismy2
+			}
+			swap_ideas = {
+				remove_idea = Techno_nationalism
+				add_idea = Techno_nationalism2
+			}
+			swap_ideas = {
+				remove_idea = PRC_yingxue
+				add_idea = PRC_yingxue2
+			}
+			swap_ideas = {
+				remove_idea = Chinese_education
+				add_idea = Chinese_education2
+			}
+			swap_ideas = {
+				remove_idea = BPRC_china
+				add_idea = BPRC_china2
+			}
+			swap_ideas = {
+				remove_idea = PRC_organ_trade
+				add_idea = PRC_organ_trade2
+			}
+	}
+		}
+		every_state = {
+				limit = {
+					is_owned_by = PRC
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_made_in_china_STATE2_dynamic scope = PRC
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_CCP_STATE2_dynamic scope = PRC
+				}
+			}
+		}
+	}
+	The_CCP_Difficulty_Selection_4 = {
+		available = {
+	
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = PRC
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_made_in_china_STATE2_dynamic scope = PRC
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_CCP_STATE2_dynamic scope = PRC
+				}
+			}
+		}
+	}
+	The_CCP_Difficulty_Selection_5 = {
+		available = {
+	
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = PRC
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_made_in_china_STATE2_dynamic scope = PRC
+				}
+			}
+		}
+	}
+	The_CCP_Difficulty_Selection_6 = {
+		available = {
+	
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = PRC
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_CCP_STATE2_dynamic scope = PRC
+				}
+			}
+		}
+	}
+	The_CCP_Difficulty_Selection_7 = {
+		available = {
+	
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = Chinese_education
+				add_idea = Chinese_education2
+			}
+		}
+	}
+	The_CCP_Difficulty_Selection_8 = {
+		available = {
+	
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = Chinese_education
+				add_idea = Chinese_education2
+			}
+			PRC = {
+			remove_ideas = Red_Nobility
+	remove_ideas = Crony_capitalismy
+	remove_ideas = Techno_nationalism
+	remove_ideas = PRC_yingxue
+	remove_ideas = BPRC_china
+	remove_ideas = PRC_organ_trade
+		}
+		hidden_effect = {
+		if = {
+			limit = {
+				PRC = {
+					has_ideas = Red_Nobility2
+	has_ideas = Crony_capitalismy2
+	has_ideas = Techno_nationalism2
+	has_ideas = PRC_yingxue2
+	has_ideas = BPRC_china2
+	has_ideas = PRC_organ_trade2
+				}
+			}
+			remove_ideas = Red_Nobility2
+	remove_ideas = Crony_capitalismy2
+	remove_ideas = Techno_nationalism2
+	remove_ideas = PRC_yingxue2
+	remove_ideas = BPRC_china2
+	remove_ideas = PRC_organ_trade2
+		}
+		}
+		}
+	}
+	The_CCP_Difficulty_Selection_9 = {
+		available = {
+	
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = PRC_yingxue
+				add_idea = PRC_yingxue2
+			}
+		}
+	}
+	The_CCP_Difficulty_Selection_10 = {
+		available = {
+	
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = PRC_yingxue
+				add_idea = PRC_yingxue2
+			}
+			PRC = {
+			remove_ideas = Red_Nobility
+	remove_ideas = Crony_capitalismy
+	remove_ideas = Techno_nationalism
+	remove_ideas = Chinese_education
+	remove_ideas = BPRC_china
+	remove_ideas = PRC_organ_trade
+		}
+		hidden_effect = {
+		if = {
+			limit = {
+				PRC = {
+					has_ideas = Red_Nobility2
+	has_ideas = Crony_capitalismy2
+	has_ideas = Techno_nationalism2
+	has_ideas = Chinese_education2
+	has_ideas = BPRC_china2
+	has_ideas = PRC_organ_trade2
+				}
+			}
+			remove_ideas = Red_Nobility2
+	remove_ideas = Crony_capitalismy2
+	remove_ideas = Techno_nationalism2
+	remove_ideas = Chinese_education2
+	remove_ideas = BPRC_china2
+	remove_ideas = PRC_organ_trade2
+		}
+		}
+		}
+	}
+	The_CCP_Difficulty_Selection_11 = {
+		available = {
+	
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = PRC_yingxue
+				add_idea = PRC_yingxue2
+			}
+			swap_ideas = {
+				remove_idea = Chinese_education
+				add_idea = Chinese_education2
+			}
+		}
+	}
+	The_CCP_Difficulty_Selection_12 = {
+		available = {
+	
+		}
+		visible = {
+			original_tag = CHI
+			is_ai = no
+		
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 10
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = PRC_yingxue
+				add_idea = PRC_yingxue2
+			}
+			swap_ideas = {
+				remove_idea = Chinese_education
+				add_idea = Chinese_education2
+			}
+			PRC = {
+			remove_ideas = Red_Nobility
+	remove_ideas = Crony_capitalismy
+	remove_ideas = Techno_nationalism
+	remove_ideas = BPRC_china
+	remove_ideas = PRC_organ_trade
+		}
+		hidden_effect = {
+		if = {
+			limit = {
+				PRC = {
+					has_ideas = Red_Nobility2
+	has_ideas = Crony_capitalismy2
+	has_ideas = Techno_nationalism2
+	has_ideas = BPRC_china2
+	has_ideas = PRC_organ_trade2
+				}
+			}
+			remove_ideas = Red_Nobility2
+	remove_ideas = Crony_capitalismy2
+	remove_ideas = Techno_nationalism2
+	remove_ideas = BPRC_china2
+	remove_ideas = PRC_organ_trade2
+		}
+		}
+		}
+	}
+}
+
+
+
 
 
 
