@@ -9,7 +9,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+			cancel = {
+				has_global_flag = PRC_china_collapse
+			}
 			removal_cost = -1
 			
 			modifier = {
@@ -31,7 +33,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+cancel = {
+				has_global_flag = PRC_china_collapse
+			}
 			removal_cost = -1
 			
 			modifier = {
@@ -51,7 +55,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+cancel = {
+				has_global_flag = PRC_china_collapse
+			}
 			removal_cost = -1
 			
 			modifier = {
@@ -71,7 +77,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+cancel = {
+				has_global_flag = PRC_china_collapse
+			}
 			removal_cost = -1
 			
 			modifier = {
@@ -93,7 +101,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+cancel = {
+				has_global_flag = PRC_china_collapse
+			}
 			removal_cost = -1
 			
 			modifier = {
@@ -116,7 +126,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+cancel = {
+				has_global_flag = PRC_china_collapse
+			}
 			removal_cost = -1
 			
 			modifier = {      
@@ -140,13 +152,297 @@ ideas = {
     allowed_civil_war = {
         always = yes
     }
-    
+    cancel = {
+				has_global_flag = PRC_china_collapse
+			}
     removal_cost = -1
     modifier = {
         political_power_cost = -0.5
         stability_factor = -0.05
         monthly_population = -0.001
 		income_growth_factor = 0.05
+    }
+}
+	}
+	country = {
+		Red_Nobility2 = {
+			name = Red_Nobility
+			picture = Red_Nobility
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+cancel = {
+				has_global_flag = PRC_china_collapse
+			}
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 2
+				consumer_goods_factor = 0.10
+				planning_speed_factor = 0.1
+				income_growth_factor = 0.15
+				personal_value_factor = 0.15
+				business_value_factor = 0.15
+				master_ideology_drift = 0.05
+				monthly_population = -0.05
+				conscription_factor = 0.30
+			}
+		}
+		Crony_capitalismy2 = {
+			name = Crony_capitalismy
+			picture = Crony_capitalismy
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+cancel = {
+				has_global_flag = PRC_china_collapse
+			}
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+				industrial_capacity_dockyard = 0.50
+				monthly_population = -0.15
+				master_ideology_drift = 0.01
+				conscription_factor = 0.30
+			}
+		}
+		Techno_nationalism2 = {
+			name = Techno_nationalism
+			picture = Techno_nationalism
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+cancel = {
+				has_global_flag = PRC_china_collapse
+			}
+			removal_cost = -1
+			
+			modifier = {
+                research_speed_factor = 0.15           
+                consumer_goods_factor = -0.05 
+                political_power_gain = 0.50
+				industrial_capacity_factory = 0.25
+				production_speed_buildings_factor = 0.25
+				production_speed_rail_way_factor = 0.25
+				production_speed_supply_node_factor = 0.25
+                stability_factor = 0.05
+				master_ideology_drift = 0.01
+				monthly_population = -0.05
+				conscription_factor = 0.30
+			}
+		}
+		PRC_yingxue2 = {
+			name = PRC_yingxue
+			picture = PRC_yingxue
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+cancel = {
+				has_global_flag = PRC_china_collapse
+			}
+			removal_cost = -1
+			
+			modifier = {
+                political_power_gain = 1
+                stability_factor = 0.20
+                war_support_factor = 0.50
+				party_popularity_stability_factor = 0.10
+				master_ideology_drift = 0.01
+				monthly_population = -0.05
+				conscription_factor = 0.30
+			}
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = AST
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		Chinese_education2 = {
+			name = Chinese_education
+			picture = Chinese_education
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+cancel = {
+				has_global_flag = PRC_china_collapse
+			}
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.15   
+				training_time_factor = -0.10
+				mobilization_speed = 0.50
+				minimum_training_level = -0.10
+				drift_defence_factor = 0.25
+				max_dig_in_factor = 0.05
+				academic_development_monthly =0.1   
+                society_development_monthly = 0.1      
+				income_growth_factor = 0.05
+				monthly_population = -0.05
+				conscription_factor = 0.30
+			}
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = AST
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		BPRC_china2 = {
+			 name = BPRC_china
+			picture = BPRC_china
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+cancel = {
+				has_global_flag = PRC_china_collapse
+			}
+			removal_cost = -1
+			
+			modifier = {      
+				max_dig_in_factor = 0.05
+				acclimatization_cold_climate_gain_factor = 0.25
+				acclimatization_hot_climate_gain_factor = 0.25
+				mobilization_speed = 0.50
+				monthly_population = -0.05
+				training_time_factor = -0.10
+				minimum_training_level = -0.10
+			    academic_development_monthly = 0.1
+			    society_development_monthly = 0.1
+				income_growth_factor = 0.10
+				conscription_factor = 0.30
+			}
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = AST
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		PRC_organ_trade2 = {
+    picture = PRC_organ_trade
+    name = PRC_organ_trade
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    cancel = {
+				has_global_flag = PRC_china_collapse
+			}
+    removal_cost = -1
+    modifier = {
+        monthly_population = -0.15
+		income_growth_factor = 0.15
+		business_value_factor = 0.15
+		personal_expense_factor = 0.15
+		poverty_development_monthly = -0.1
     }
 }
 	}
