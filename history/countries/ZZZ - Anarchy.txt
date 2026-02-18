@@ -53,6 +53,7 @@ recruit_character = CHI_sunyoulian_char
 recruit_character = CHI_fanyun_char
 recruit_character = CHI_chenboguang_char
 recruit_character = CHI_zhanganle_char
+recruit_character = CHI_Jiang_Wanan_char
 set_party_name = { ideology = social_democrat long_name = CHI_Taiwan_Social_Democratic_Party_long name = CHI_Taiwan_Social_Democratic_Party }
 set_party_name = { ideology = social_liberal long_name = CHI_Taiwan_Democrati_Progressive_Party_long name = CHI_Taiwan_Democrati_Progressive_Party }
 set_party_name = { ideology = market_liberal long_name = CHI_Taiwan_People_Party_long name = CHI_Taiwan_People_Party }
@@ -77,7 +78,14 @@ promote_character = {
 	ideology = chinese_exceptionalism
 }
 
-	
+add_country_leader_role = {
+		character = CHI_tsai_ing_wen_char
+		promote_leader = yes
+		country_leader = {
+			ideology = CHI_Taiwanese_Progressivism 
+			expire = "1.1.1.1"
+		}
+	}
 add_country_leader_role = {
 		character = CHI_lin_de_wang_char
 		promote_leader = yes
@@ -114,7 +122,7 @@ add_country_leader_role = {
 		character = CHI_chenboguang_char
 		promote_leader = yes
 		country_leader = {
-			ideology = chinese_exceptionalism 
+			ideology = fascist_xi_jinping_thought 
 			expire = "1.1.1.1"
 		}
 	}
@@ -122,13 +130,22 @@ add_country_leader_role = {
 		character = CHI_zhanganle_char
 		promote_leader = yes
 		country_leader = {
-			ideology = neonazism 
+			ideology = national_socialist_xi_jinping_thought 
 			expire = "1.1.1.1"
 		}
 	}
 }
 PRC = {
-	add_ideas = Red_Nobility
+	set_party_name = { ideology = communist long_name = PRC_xijp_ccp_long name = PRC_xijp_ccp }
+	add_country_leader_role = {
+		character = PRC_xi_jinping
+		promote_leader = yes
+		country_leader = {
+			ideology = xi_jinping_thought 
+			expire = "1.1.1.1"
+		}
+	}
+add_ideas = Red_Nobility
 	add_ideas = Crony_capitalismy
 	add_ideas = Techno_nationalism
 	add_ideas = PRC_yingxue
@@ -136,4 +153,15 @@ PRC = {
 	add_ideas = BPRC_china
 	add_ideas = PRC_organ_trade
 }
+PHI = {
+	recruit_character = NDF_Nur_Misuari
+	recruit_character = PHN_Torribio_D_Adachi
+	recruit_character = AFP_Romeo_S_Brauner_the_Younger
+	recruit_character = MIL_Murad_Ebrahim
+	news_event = {
+		id = ROC.41
+		days = 1200
+	}
+}
+
 
