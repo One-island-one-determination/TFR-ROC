@@ -1433,8 +1433,3212 @@ ideas = {
 			minimum_training_level = -0.05
 			}
 		}
+PRC_TaiHai_IDEA_1 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = 0.05
+		war_support_factor = 0.15
+		consumer_goods_factor = 0.02
+		production_factory_efficiency_gain_factor = 0.15
+		production_factory_max_efficiency_factor = 0.15
+		industrial_capacity_factory = 0.15
+    }
+	targeted_modifier = {
+	tag = CHI
+	attack_bonus_against = 0.15
+	breakthrough_bonus_against = 0.15
+	}
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_2 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = 0.05
+		war_support_factor = 0.10
+		consumer_goods_factor = 0.04
+		production_factory_efficiency_gain_factor = 0.10
+		production_factory_max_efficiency_factor = 0.10
+		industrial_capacity_factory = 0.10
+    }
+	targeted_modifier = {
+	tag = CHI
+	attack_bonus_against = 0.10
+	breakthrough_bonus_against = 0.10
+	}
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_3 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = 0.00
+		war_support_factor = 0.05
+		consumer_goods_factor = 0.06
+		production_factory_efficiency_gain_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.05
+    }
+	targeted_modifier = {
+	tag = CHI
+	attack_bonus_against = 0.05
+	breakthrough_bonus_against = 0.05
+	}
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_4 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.03
+		war_support_factor = -0.03
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = 0.00
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_5 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.03
+		war_support_factor = -0.06
+		consumer_goods_factor = 0.10
+		production_factory_efficiency_gain_factor = -0.03
+		production_factory_max_efficiency_factor = -0.03
+		industrial_capacity_factory = -0.03
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_6 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.06
+		war_support_factor = -0.09
+		consumer_goods_factor = 0.12
+		production_factory_efficiency_gain_factor = -0.06
+		production_factory_max_efficiency_factor = -0.06
+		industrial_capacity_factory = -0.06
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_7 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.09
+		war_support_factor = -0.12
+		consumer_goods_factor = 0.14
+		production_factory_efficiency_gain_factor = -0.09
+		production_factory_max_efficiency_factor = -0.09
+		industrial_capacity_factory = -0.09
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_8 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.12
+		war_support_factor = -0.15
+		consumer_goods_factor = 0.16
+		production_factory_efficiency_gain_factor = -0.12
+		production_factory_max_efficiency_factor = -0.12
+		industrial_capacity_factory = -0.12
+		income_growth_factor = -0.03
+		business_value_factor = -0.03
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_9 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.15
+		war_support_factor = -0.18
+		consumer_goods_factor = 0.18
+		production_factory_efficiency_gain_factor = -0.15
+		production_factory_max_efficiency_factor = -0.15
+		industrial_capacity_factory = -0.15
+		income_growth_factor = -0.06
+		business_value_factor = -0.06
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_10 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.18
+		war_support_factor = -0.21
+		consumer_goods_factor = 0.20
+		production_factory_efficiency_gain_factor = -0.18
+		production_factory_max_efficiency_factor = -0.18
+		industrial_capacity_factory = -0.18
+		income_growth_factor = -0.09
+		business_value_factor = -0.09
+		society_development_monthly = -0.03
+		poverty_development_monthly = -0.03 
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_11 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.21
+		war_support_factor = -0.23
+		consumer_goods_factor = 0.22
+		production_factory_efficiency_gain_factor = -0.21
+		production_factory_max_efficiency_factor = -0.21
+		industrial_capacity_factory = -0.21
+		income_growth_factor = -0.12
+		business_value_factor = -0.12
+		society_development_monthly = -0.06
+		poverty_development_monthly = -0.06 
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_12 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.23
+		war_support_factor = -0.26
+		consumer_goods_factor = 0.24
+		production_factory_efficiency_gain_factor = -0.24
+		production_factory_max_efficiency_factor = -0.24
+		industrial_capacity_factory = -0.24
+		income_growth_factor = -0.15
+		business_value_factor = -0.15
+		society_development_monthly = -0.09
+		poverty_development_monthly = -0.09 
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_13 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.26
+		war_support_factor = -0.29
+		consumer_goods_factor = 0.26
+		production_factory_efficiency_gain_factor = -0.27
+		production_factory_max_efficiency_factor = -0.27
+		industrial_capacity_factory = -0.27
+		income_growth_factor = -0.18
+		business_value_factor = -0.18
+		society_development_monthly = -0.12
+		poverty_development_monthly = -0.12 
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_14 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.29
+		war_support_factor = -0.32
+		consumer_goods_factor = 0.28
+		production_factory_efficiency_gain_factor = -0.30
+		production_factory_max_efficiency_factor = -0.30
+		industrial_capacity_factory = -0.30
+		income_growth_factor = -0.21
+		business_value_factor = -0.21
+		society_development_monthly = -0.15
+		poverty_development_monthly = -0.15 
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_15 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.32
+		war_support_factor = -0.35
+		consumer_goods_factor = 0.30
+		production_factory_efficiency_gain_factor = -0.33
+		production_factory_max_efficiency_factor = -0.33
+		industrial_capacity_factory = -0.33
+		income_growth_factor = -0.24
+		business_value_factor = -0.24
+		society_development_monthly = -0.18
+		poverty_development_monthly = -0.18 
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_16 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.35
+		war_support_factor = -0.38
+		consumer_goods_factor = 0.32
+		production_factory_efficiency_gain_factor = -0.36
+		production_factory_max_efficiency_factor = -0.36
+		industrial_capacity_factory = -0.36
+		income_growth_factor = -0.27
+		business_value_factor = -0.27
+		society_development_monthly = -0.21
+		poverty_development_monthly = -0.21
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_17 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.38
+		war_support_factor = -0.41
+		consumer_goods_factor = 0.34
+		production_factory_efficiency_gain_factor = -0.39
+		production_factory_max_efficiency_factor = -0.39
+		industrial_capacity_factory = -0.39
+		income_growth_factor = -0.30
+		business_value_factor = -0.30
+		society_development_monthly = -0.24
+		poverty_development_monthly = -0.24
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_18 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		weekly_manpower = -250
+        stability_factor = -0.41
+		war_support_factor = -0.44
+		consumer_goods_factor = 0.36
+		production_factory_efficiency_gain_factor = -0.39
+		production_factory_max_efficiency_factor = -0.39
+		industrial_capacity_factory = -0.39
+		income_growth_factor = -0.30
+		business_value_factor = -0.30
+		society_development_monthly = -0.27
+		poverty_development_monthly = -0.27
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_19 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		weekly_manpower = -500
+        stability_factor = -0.41
+		war_support_factor = -0.44
+		consumer_goods_factor = 0.38
+		production_factory_efficiency_gain_factor = -0.39
+		production_factory_max_efficiency_factor = -0.39
+		industrial_capacity_factory = -0.39
+		income_growth_factor = -0.30
+		business_value_factor = -0.30
+		society_development_monthly = -0.30
+		poverty_development_monthly = -0.30
+		academic_development_monthly = -0.05
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_20 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		weekly_manpower = -750
+        stability_factor = -0.41
+		war_support_factor = -0.44
+		consumer_goods_factor = 0.40
+		production_factory_efficiency_gain_factor = -0.39
+		production_factory_max_efficiency_factor = -0.39
+		industrial_capacity_factory = -0.39
+		income_growth_factor = -0.30
+		business_value_factor = -0.30
+		society_development_monthly = -0.30
+		poverty_development_monthly = -0.30
+		academic_development_monthly = -0.10
+		ai_focus_aggressive_factor = 25
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_21 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		weekly_manpower = -900
+        stability_factor = -0.41
+		war_support_factor = -0.44
+		consumer_goods_factor = 0.42
+		production_factory_efficiency_gain_factor = -0.39
+		production_factory_max_efficiency_factor = -0.39
+		industrial_capacity_factory = -0.39
+		income_growth_factor = -0.30
+		business_value_factor = -0.30
+		society_development_monthly = -0.30
+		poverty_development_monthly = -0.30
+		academic_development_monthly = -0.15
+		ai_focus_aggressive_factor = 50
+    }
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_22 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		weekly_manpower = -1500
+        stability_factor = -0.41
+		war_support_factor = -0.44
+		consumer_goods_factor = 0.44
+		production_factory_efficiency_gain_factor = -0.39
+		production_factory_max_efficiency_factor = -0.39
+		industrial_capacity_factory = -0.39
+		income_growth_factor = -0.30
+		business_value_factor = -0.30
+		society_development_monthly = -0.30
+		poverty_development_monthly = -0.30
+		academic_development_monthly = -0.20
+		ai_focus_aggressive_factor = 75
+    }
+	targeted_modifier = {
+	tag = CHI
+	attack_bonus_against = 0.05
+	breakthrough_bonus_against = 0.05
+	}
+	targeted_modifier = {
+	tag = JAP
+	attack_bonus_against = 0.05
+	breakthrough_bonus_against = 0.05
+	}
+	targeted_modifier = {
+	tag = AST
+	attack_bonus_against = 0.05
+	breakthrough_bonus_against = 0.05
+	}
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_23 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		weekly_manpower = -3842
+		conscription_factor = 0.20
+        stability_factor = -0.41
+		war_support_factor = -0.44
+		consumer_goods_factor = 0.46
+		production_factory_efficiency_gain_factor = -0.39
+		production_factory_max_efficiency_factor = -0.39
+		industrial_capacity_factory = -0.39
+		income_growth_factor = -0.30
+		business_value_factor = -0.30
+		society_development_monthly = -0.30
+		poverty_development_monthly = -0.30
+		academic_development_monthly = -0.20
+		ai_focus_aggressive_factor = 100
+    }
+	targeted_modifier = {
+	tag = CHI
+	attack_bonus_against = 0.15
+	breakthrough_bonus_against = 0.15
+	}
+	targeted_modifier = {
+	tag = JAP
+	attack_bonus_against = 0.10
+	breakthrough_bonus_against = 0.10
+	}
+	targeted_modifier = {
+	tag = AST
+	attack_bonus_against = 0.10
+	breakthrough_bonus_against = 0.10
+	}
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_24 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		weekly_manpower = -4300
+		conscription_factor = 0.30
+        stability_factor = -0.50
+		war_support_factor = -0.60
+		consumer_goods_factor = 0.48
+		production_factory_efficiency_gain_factor = -0.39
+		production_factory_max_efficiency_factor = -0.39
+		industrial_capacity_factory = -0.39
+		income_growth_factor = -0.30
+		business_value_factor = -0.30
+		society_development_monthly = -0.30
+		poverty_development_monthly = -0.30
+		academic_development_monthly = -0.20
+		ai_focus_aggressive_factor = 100
+    }
+	targeted_modifier = {
+	tag = CHI
+	attack_bonus_against = 0.30
+	breakthrough_bonus_against = 0.30
+	}
+	targeted_modifier = {
+	tag = JAP
+	attack_bonus_against = 0.10
+	breakthrough_bonus_against = 0.10
+	}
+	targeted_modifier = {
+	tag = AST
+	attack_bonus_against = 0.10
+	breakthrough_bonus_against = 0.10
+	}
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+PRC_TaiHai_IDEA_25 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		weekly_manpower = -7043
+		conscription_factor = 0.50
+        stability_factor = -0.60
+		war_support_factor = -0.80
+		consumer_goods_factor = 0.50
+		production_factory_efficiency_gain_factor = -0.39
+		production_factory_max_efficiency_factor = -0.39
+		industrial_capacity_factory = -0.39
+		income_growth_factor = -0.30
+		business_value_factor = -0.30
+		society_development_monthly = -0.30
+		poverty_development_monthly = -0.30
+		academic_development_monthly = -0.20
+		ai_focus_aggressive_factor = 100
+    }
+	targeted_modifier = {
+	tag = CHI
+	attack_bonus_against = 0.30
+	breakthrough_bonus_against = 0.30
+	}
+	targeted_modifier = {
+	tag = JAP
+	attack_bonus_against = 0.10
+	breakthrough_bonus_against = 0.10
+	}
+	targeted_modifier = {
+	tag = AST
+	attack_bonus_against = 0.10
+	breakthrough_bonus_against = 0.10
+	}
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
+JAP_TaiHai_IDEA_1 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.02
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+																						state_production_speed_arms_factory_factor = -0.15
+		state_production_speed_industrial_complex_factor = -0.15
+		state_production_speed_dockyard_factor = -0.15
+    }
+on_remove = {
+	CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_2 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.02
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+																				state_production_speed_arms_factory_factor = -0.10
+		state_production_speed_industrial_complex_factor = -0.10
+		state_production_speed_dockyard_factor = -0.10
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_3 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.02
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+																		state_production_speed_arms_factory_factor = -0.05
+		state_production_speed_industrial_complex_factor = -0.05
+		state_production_speed_dockyard_factor = -0.05
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_4 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.04
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+																state_production_speed_arms_factory_factor = 0.00
+		state_production_speed_industrial_complex_factor = 0.00
+		state_production_speed_dockyard_factor = 0.00
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_5 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.04
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+																state_production_speed_arms_factory_factor = 0.05
+		state_production_speed_industrial_complex_factor = 0.05
+		state_production_speed_dockyard_factor = 0.05
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_6 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.04
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+																state_production_speed_arms_factory_factor = 0.05
+		state_production_speed_industrial_complex_factor = 0.05
+		state_production_speed_dockyard_factor = 0.05
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_7 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.04
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+																state_production_speed_arms_factory_factor = 0.05
+		state_production_speed_industrial_complex_factor = 0.05
+		state_production_speed_dockyard_factor = 0.05
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_8 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.06
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+																state_production_speed_arms_factory_factor = 0.05
+		state_production_speed_industrial_complex_factor = 0.05
+		state_production_speed_dockyard_factor = 0.05
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_9 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.06
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+														state_production_speed_arms_factory_factor = 0.05
+		state_production_speed_industrial_complex_factor = 0.05
+		state_production_speed_dockyard_factor = 0.05
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_10 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.06
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+														state_production_speed_arms_factory_factor = 0.10
+		state_production_speed_industrial_complex_factor = 0.10
+		state_production_speed_dockyard_factor = 0.10
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_11 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.06
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+														state_production_speed_arms_factory_factor = 0.10
+		state_production_speed_industrial_complex_factor = 0.10
+		state_production_speed_dockyard_factor = 0.10
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_12 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+														state_production_speed_arms_factory_factor = 0.10
+		state_production_speed_industrial_complex_factor = 0.10
+		state_production_speed_dockyard_factor = 0.10
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_13 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+														state_production_speed_arms_factory_factor = 0.10
+		state_production_speed_industrial_complex_factor = 0.10
+		state_production_speed_dockyard_factor = 0.10
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_14 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+														state_production_speed_arms_factory_factor = 0.10
+		state_production_speed_industrial_complex_factor = 0.10
+		state_production_speed_dockyard_factor = 0.10
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_15 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+														state_production_speed_arms_factory_factor = 0.10
+		state_production_speed_industrial_complex_factor = 0.10
+		state_production_speed_dockyard_factor = 0.10
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_16 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+														state_production_speed_arms_factory_factor = 0.10
+		state_production_speed_industrial_complex_factor = 0.10
+		state_production_speed_dockyard_factor = 0.10
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_17 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+												state_production_speed_arms_factory_factor = 0.10
+		state_production_speed_industrial_complex_factor = 0.10
+		state_production_speed_dockyard_factor = 0.10
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_18 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+										state_production_speed_arms_factory_factor = 0.10
+		state_production_speed_industrial_complex_factor = 0.10
+		state_production_speed_dockyard_factor = 0.10
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_19 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+								state_production_speed_arms_factory_factor = 0.15
+		state_production_speed_industrial_complex_factor = 0.15
+		state_production_speed_dockyard_factor = 0.15
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_20 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+								state_production_speed_arms_factory_factor = 0.20
+		state_production_speed_industrial_complex_factor = 0.20
+		state_production_speed_dockyard_factor = 0.20
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_21 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+						state_production_speed_arms_factory_factor = 0.25
+		state_production_speed_industrial_complex_factor = 0.25
+		state_production_speed_dockyard_factor = 0.25
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_22 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+				state_production_speed_arms_factory_factor = 0.30
+		state_production_speed_industrial_complex_factor = 0.30
+		state_production_speed_dockyard_factor = 0.30
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_23 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+				state_production_speed_arms_factory_factor = 0.35
+		state_production_speed_industrial_complex_factor = 0.35
+		state_production_speed_dockyard_factor = 0.35
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_24 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+		state_production_speed_arms_factory_factor = 0.40
+		state_production_speed_industrial_complex_factor = 0.40
+		state_production_speed_dockyard_factor = 0.40
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+JAP_TaiHai_IDEA_25 = {
+    picture = generic_world_wide_financial_crisis
+    name = JAP_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.02
+		weekly_casualties_war_support = -0.0025
+		weekly_convoys_war_support = -0.0025
+		consumer_goods_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.00
+		production_factory_max_efficiency_factor = 0.00
+		industrial_capacity_factory = -0.03
+		state_production_speed_arms_factory_factor = 0.45
+		state_production_speed_industrial_complex_factor = 0.45
+		state_production_speed_dockyard_factor = 0.45
+		hidden_effect = {
+		ai_focus_war_production_factor = 100
+		ai_focus_aviation_factor = 100
+		ai_focus_military_equipment_factor = 100
+		}
+    }
+on_remove = {
+		CHI = {
+add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 150 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 100 producer = JAP }
+	}
+            }
+}
+CHI_TaiHai_IDEA_1 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.05
+		consumer_goods_factor = 0.05
+		defensive_war_stability_factor = 0.02
+		weekly_casualties_war_support = -0.0010
+		
+		industry_repair_factor = -0.25
+		army_core_attack_factor = 0.01
+		army_core_defence_factor = 0.01
+		supply_combat_penalties_on_core_factor = -0.01
+		resistance_growth_on_our_occupied_states = 0.01
+		income_growth_factor = -0.02 
+		business_value_factor = -0.02
+		industrial_development_monthly = -0.02 
+		farming_development_monthly = -0.02 
+    }
+}
+CHI_TaiHai_IDEA_2 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.05
+		consumer_goods_factor = 0.05
+		defensive_war_stability_factor = 0.02
+		weekly_casualties_war_support = -0.0015
+		
+		industry_repair_factor = -0.25
+		army_core_attack_factor = 0.02
+		army_core_defence_factor = 0.02
+		supply_combat_penalties_on_core_factor = -0.02
+		resistance_growth_on_our_occupied_states = 0.02
+		income_growth_factor = -0.03
+		business_value_factor = -0.03
+		industrial_development_monthly = -0.03 
+		farming_development_monthly = -0.03
+    }
+}
+CHI_TaiHai_IDEA_3 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.05
+		consumer_goods_factor = 0.05
+		defensive_war_stability_factor = 0.02
+		weekly_casualties_war_support = -0.0020
+		
+		industry_repair_factor = -0.25
+		army_core_attack_factor = 0.03
+		army_core_defence_factor = 0.03
+		supply_combat_penalties_on_core_factor = -0.03
+		resistance_growth_on_our_occupied_states = 0.03
+				income_growth_factor = -0.05
+		business_value_factor = -0.05
+		industrial_development_monthly = -0.05 
+		farming_development_monthly = -0.05
+    }
+}
+CHI_TaiHai_IDEA_4 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.10
+		consumer_goods_factor = 0.05
+		defensive_war_stability_factor = 0.02
+		weekly_casualties_war_support = -0.0020
+		
+		industry_repair_factor = -0.25
+		army_core_attack_factor = 0.04
+		army_core_defence_factor = 0.04
+		supply_combat_penalties_on_core_factor = -0.04
+		resistance_growth_on_our_occupied_states = 0.04
+						income_growth_factor = -0.05
+		business_value_factor = -0.06
+		industrial_development_monthly = -0.06 
+		farming_development_monthly = -0.06
+    }
+}
+CHI_TaiHai_IDEA_5 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.10
+		consumer_goods_factor = 0.07
+		defensive_war_stability_factor = 0.02
+		weekly_casualties_war_support = -0.0025
+		
+		industry_repair_factor = -0.25
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
+		supply_combat_penalties_on_core_factor = -0.05
+		resistance_growth_on_our_occupied_states = 0.05
+		income_growth_factor = -0.08
+		business_value_factor = -0.08
+		industrial_development_monthly = -0.08 
+		farming_development_monthly = -0.08
+    }
+}
+CHI_TaiHai_IDEA_6 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.11
+		consumer_goods_factor = 0.08
+		defensive_war_stability_factor = 0.03
+		weekly_casualties_war_support = -0.0030
+		
+		industry_repair_factor = -0.25
+		army_core_attack_factor = 0.06
+		army_core_defence_factor = 0.06
+		supply_combat_penalties_on_core_factor = -0.06
+		resistance_growth_on_our_occupied_states = 0.06
+		income_growth_factor = -0.10
+		business_value_factor = -0.10
+		industrial_development_monthly = -0.10 
+		farming_development_monthly = -0.10
+    }
+}
+CHI_TaiHai_IDEA_7 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.12
+		consumer_goods_factor = 0.09
+		defensive_war_stability_factor = 0.04
+		weekly_casualties_war_support = -0.0035
+		
+		industry_repair_factor = -0.25
+		army_core_attack_factor = 0.07
+		army_core_defence_factor = 0.07
+		supply_combat_penalties_on_core_factor = -0.07
+		resistance_growth_on_our_occupied_states = 0.07
+		income_growth_factor = -0.12
+		business_value_factor = -0.12
+		industrial_development_monthly = -0.12 
+		farming_development_monthly = -0.12
+    }
+}
+CHI_TaiHai_IDEA_8 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.13
+		consumer_goods_factor = 0.10
+		defensive_war_stability_factor = 0.04
+		weekly_casualties_war_support = -0.0035
+		
+		industry_repair_factor = -0.25
+		army_core_attack_factor = 0.08
+		army_core_defence_factor = 0.08
+		supply_combat_penalties_on_core_factor = -0.08
+		resistance_growth_on_our_occupied_states = 0.08
+		income_growth_factor = -0.13
+		business_value_factor = -0.13
+		industrial_development_monthly = -0.13 
+		farming_development_monthly = -0.13
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_9 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.15
+		consumer_goods_factor = 0.11
+		defensive_war_stability_factor = 0.05
+		weekly_casualties_war_support = -0.0025
+		
+		industry_repair_factor = -0.15
+		army_core_attack_factor = 0.10
+		army_core_defence_factor = 0.10
+		supply_combat_penalties_on_core_factor = -0.10
+		resistance_growth_on_our_occupied_states = 0.10
+		income_growth_factor = -0.13
+		business_value_factor = -0.13
+		industrial_development_monthly = -0.13 
+		farming_development_monthly = -0.13
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_10 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.17
+		consumer_goods_factor = 0.13
+		defensive_war_stability_factor = 0.07
+		weekly_casualties_war_support = -0.0015
+		
+		industry_repair_factor = -0.05
+		army_core_attack_factor = 0.12
+		army_core_defence_factor = 0.12
+		supply_combat_penalties_on_core_factor = -0.12
+		resistance_growth_on_our_occupied_states = 0.12
+		income_growth_factor = -0.15
+		business_value_factor = -0.15
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.05
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_11 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.19
+		consumer_goods_factor = 0.13
+		defensive_war_stability_factor = 0.10
+		weekly_casualties_war_support = 0.0015
+		
+		industry_repair_factor = 0.05
+		army_core_attack_factor = 0.13
+		army_core_defence_factor = 0.13
+		supply_combat_penalties_on_core_factor = -0.13
+		resistance_growth_on_our_occupied_states = 0.13
+		income_growth_factor = -0.15
+		business_value_factor = -0.15
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_12 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		stability_factor = -0.21
+		consumer_goods_factor = 0.15
+		defensive_war_stability_factor = 0.14
+		weekly_casualties_war_support = 0.0030
+		
+		industry_repair_factor = 0.10
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.15
+		supply_combat_penalties_on_core_factor = -0.15
+		resistance_growth_on_our_occupied_states = 0.15
+		income_growth_factor = -0.17
+		business_value_factor = -0.17
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_13 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.01
+		cic_to_target_factor = 0.01
+		stability_factor = -0.23
+		consumer_goods_factor = 0.15
+		defensive_war_stability_factor = 0.17
+		weekly_casualties_war_support = 0.0050
+		industry_repair_factor = 0.16
+		army_core_attack_factor = 0.16
+		army_core_defence_factor = 0.16
+		supply_combat_penalties_on_core_factor = -0.16
+		resistance_growth_on_our_occupied_states = 0.16
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_14 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.02
+		cic_to_target_factor = 0.02
+		stability_factor = -0.23
+		consumer_goods_factor = 0.12
+		defensive_war_stability_factor = 0.21
+		weekly_casualties_war_support = 0.0075
+		industry_repair_factor = 0.17
+		army_core_attack_factor = 0.17
+		army_core_defence_factor = 0.17
+		supply_combat_penalties_on_core_factor = -0.17
+		resistance_growth_on_our_occupied_states = 0.17
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_15 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.03
+		cic_to_target_factor = 0.03
+		stability_factor = -0.26
+		consumer_goods_factor = 0.12
+		defensive_war_stability_factor = 0.22
+		weekly_casualties_war_support = 0.01
+		industry_repair_factor = 0.20
+		army_core_attack_factor = 0.18
+		army_core_defence_factor = 0.18
+		supply_combat_penalties_on_core_factor = -0.18
+		resistance_growth_on_our_occupied_states = 0.18
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_16 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.04
+		cic_to_target_factor = 0.04
+		stability_factor = -0.26
+		consumer_goods_factor = 0.12
+		defensive_war_stability_factor = 0.22
+		weekly_casualties_war_support = 0.015
+		industry_repair_factor = 0.25
+		army_core_attack_factor = 0.19
+		army_core_defence_factor = 0.19
+		supply_combat_penalties_on_core_factor = -0.19
+		resistance_growth_on_our_occupied_states = 0.19
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_17 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.05
+		cic_to_target_factor = 0.05
+		stability_factor = -0.26
+		consumer_goods_factor = 0.12
+		defensive_war_stability_factor = 0.23
+		weekly_casualties_war_support = 0.020
+		industry_repair_factor = 0.25
+		army_core_attack_factor = 0.20
+		army_core_defence_factor = 0.20
+		supply_combat_penalties_on_core_factor = -0.20
+		resistance_growth_on_our_occupied_states = 0.20
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_18 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.06
+		cic_to_target_factor = 0.06
+		stability_factor = -0.26
+		consumer_goods_factor = 0.12
+		defensive_war_stability_factor = 0.23
+		weekly_casualties_war_support = 0.025
+		industry_repair_factor = 0.35
+		army_core_attack_factor = 0.21
+		army_core_defence_factor = 0.21
+		supply_combat_penalties_on_core_factor = -0.21
+		resistance_growth_on_our_occupied_states = 0.21
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_19 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.07
+		cic_to_target_factor = 0.07
+		stability_factor = -0.30
+		consumer_goods_factor = 0.12
+		defensive_war_stability_factor = 0.23
+		weekly_casualties_war_support = 0.035
+		industry_repair_factor = 0.5
+		army_core_attack_factor = 0.22
+		army_core_defence_factor = 0.22
+		supply_combat_penalties_on_core_factor = -0.22
+		resistance_growth_on_our_occupied_states = 0.22
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.01
+		social_democrat_drift = 0.01
+		social_liberal_drift = 0.01
+		market_liberal_drift = 0.01
+		conservative_drift = 0.01
+		authoritarian_democrat_drift = 0.01
+		nationalist_drift = 0.01
+   		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		}
+}
+CHI_TaiHai_IDEA_20 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.07
+		cic_to_target_factor = 0.07
+		stability_factor = -0.30
+		consumer_goods_factor = 0.12
+		defensive_war_stability_factor = 0.23
+		weekly_casualties_war_support = 0.035
+		industry_repair_factor = 0.5
+		army_core_attack_factor = 0.22
+		army_core_defence_factor = 0.22
+		supply_combat_penalties_on_core_factor = -0.22
+		resistance_growth_on_our_occupied_states = 0.22
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		party_popularity_stability_factor = 0.01
+		communist_drift = 0.02
+		libertarian_socialist_drift = 0.02
+		social_democrat_drift = 0.02
+		social_liberal_drift = 0.02
+		market_liberal_drift = 0.02
+		conservative_drift = 0.02
+		authoritarian_democrat_drift = 0.02
+		nationalist_drift = 0.02
+   		fascist_drift = 0.02
+		national_socialist_drift = 0.02
+		}
+}
+CHI_TaiHai_IDEA_21 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.08
+		cic_to_target_factor = 0.08
+		stability_factor = -0.33
+		consumer_goods_factor = 0.15
+		defensive_war_stability_factor = 0.23
+		weekly_casualties_war_support = 0.035
+		industry_repair_factor = 0.60
+		army_core_attack_factor = 0.23
+		army_core_defence_factor = 0.23
+		supply_combat_penalties_on_core_factor = -0.23
+		resistance_growth_on_our_occupied_states = 0.23
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		party_popularity_stability_factor = 0.01
+		communist_drift = 0.02
+		libertarian_socialist_drift = 0.02
+		social_democrat_drift = 0.02
+		social_liberal_drift = 0.02
+		market_liberal_drift = 0.02
+		conservative_drift = 0.02
+		authoritarian_democrat_drift = 0.02
+		nationalist_drift = 0.02
+   		fascist_drift = 0.02
+		national_socialist_drift = 0.02
+		}
+}
+CHI_TaiHai_IDEA_22 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.09
+		cic_to_target_factor = 0.09
+		stability_factor = -0.33
+		consumer_goods_factor = 0.15
+		defensive_war_stability_factor = 0.26
+		weekly_casualties_war_support = 0.035
+		industry_repair_factor = 0.60
+		army_core_attack_factor = 0.24
+		army_core_defence_factor = 0.24
+		supply_combat_penalties_on_core_factor = -0.24
+		resistance_growth_on_our_occupied_states = 0.24
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		military_development_monthly = 0.10
+		totalitarian_socialist_drift = 0.01
+		party_popularity_stability_factor = 0.01
+		communist_drift = 0.02
+		libertarian_socialist_drift = 0.02
+		social_democrat_drift = 0.02
+		social_liberal_drift = 0.02
+		market_liberal_drift = 0.02
+		conservative_drift = 0.02
+		authoritarian_democrat_drift = 0.02
+		nationalist_drift = 0.02
+   		fascist_drift = 0.02
+		national_socialist_drift = 0.02
+		}
+}
+CHI_TaiHai_IDEA_23 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.10
+		cic_to_target_factor = 0.10
+		stability_factor = -0.30
+		consumer_goods_factor = 0.15
+		defensive_war_stability_factor = 0.26
+		weekly_casualties_war_support = 0.035
+		industry_repair_factor = 0.60
+		army_core_attack_factor = 0.24
+		army_core_defence_factor = 0.24
+		supply_combat_penalties_on_core_factor = -0.24
+		resistance_growth_on_our_occupied_states = 0.24
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		totalitarian_socialist_drift = 0.01
+		party_popularity_stability_factor = 0.01
+		communist_drift = 0.02
+		libertarian_socialist_drift = 0.02
+		social_democrat_drift = 0.02
+		social_liberal_drift = 0.02
+		market_liberal_drift = 0.02
+		conservative_drift = 0.02
+		authoritarian_democrat_drift = 0.02
+		nationalist_drift = 0.02
+   		fascist_drift = 0.02
+		national_socialist_drift = 0.02
+		}
+}
+CHI_TaiHai_IDEA_24 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.10
+		cic_to_target_factor = 0.10
+		stability_factor = -0.30
+		consumer_goods_factor = 0.15
+		defensive_war_stability_factor = 0.26
+		weekly_casualties_war_support = 0.035
+		industry_repair_factor = 0.60
+		army_core_attack_factor = 0.25
+		army_core_defence_factor = 0.25
+		supply_combat_penalties_on_core_factor = -0.25
+		resistance_growth_on_our_occupied_states = 0.25
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		totalitarian_socialist_drift = 0.01
+		party_popularity_stability_factor = 0.01
+		communist_drift = 0.02
+		libertarian_socialist_drift = 0.02
+		social_democrat_drift = 0.02
+		social_liberal_drift = 0.02
+		market_liberal_drift = 0.02
+		conservative_drift = 0.02
+		authoritarian_democrat_drift = 0.02
+		nationalist_drift = 0.02
+   		fascist_drift = 0.02
+		national_socialist_drift = 0.02
+		}
+}
+CHI_TaiHai_IDEA_25 = {
+    picture = generic_world_wide_financial_crisis
+    name = CHI_TaiHai_IDEA
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		mic_to_target_factor = 0.10
+		cic_to_target_factor = 0.10
+		stability_factor = -0.30
+		consumer_goods_factor = 0.15
+		defensive_war_stability_factor = 0.26
+		weekly_casualties_war_support = 0.035
+		industry_repair_factor = 0.60
+		army_core_attack_factor = 0.26
+		army_core_defence_factor = 0.26
+		supply_combat_penalties_on_core_factor = -0.26
+		resistance_growth_on_our_occupied_states = 0.26
+		income_growth_factor = -0.20
+		business_value_factor = -0.20
+		industrial_development_monthly = -0.15 
+		farming_development_monthly = -0.15
+		society_development_monthly = -0.05 
+		totalitarian_socialist_drift = 0.01
+		party_popularity_stability_factor = 0.01
+		communist_drift = 0.02
+		libertarian_socialist_drift = 0.02
+		social_democrat_drift = 0.02
+		social_liberal_drift = 0.02
+		market_liberal_drift = 0.02
+		conservative_drift = 0.02
+		authoritarian_democrat_drift = 0.02
+		nationalist_drift = 0.02
+   		fascist_drift = 0.02
+		national_socialist_drift = 0.02
+		}
+}
 	}
 }
+
 
 
 
