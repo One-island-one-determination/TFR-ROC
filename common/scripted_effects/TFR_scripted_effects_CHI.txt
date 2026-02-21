@@ -870,3 +870,720 @@ CHI_influence_SDP_add = {
 		value = 0.2
 	}
 }
+EADI_taiwan_war = {
+  			if = {
+				limit = {
+					NOT = { has_idea = PRC_TaiHai_IDEA_25  }
+				}
+				activate_mission = THEPRC_taiwan_war_countdown
+
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_25}
+				country_event = {id = PRC_TaiHai_IDEA.32}	
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_24}
+				country_event = {id = PRC_TaiHai_IDEA.31}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_24
+        	add_idea = PRC_TaiHai_IDEA_25
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_23}
+				country_event = {id = PRC_TaiHai_IDEA.29}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_23
+        	add_idea = PRC_TaiHai_IDEA_24
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_22}
+				country_event = {id = PRC_TaiHai_IDEA.28}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_22
+        	add_idea = PRC_TaiHai_IDEA_23
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_21}
+				country_event = {id = PRC_TaiHai_IDEA.27}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_21
+        	add_idea = PRC_TaiHai_IDEA_22
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_20}
+				country_event = {id = PRC_TaiHai_IDEA.26}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_20
+        	add_idea = PRC_TaiHai_IDEA_21
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_19}
+				country_event = {id = PRC_TaiHai_IDEA.25}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_19
+        	add_idea = PRC_TaiHai_IDEA_20
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_18}
+				country_event = {id = PRC_TaiHai_IDEA.23}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_18
+        	add_idea = PRC_TaiHai_IDEA_19
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_17}
+				country_event = {id = PRC_TaiHai_IDEA.21}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_17
+        	add_idea = PRC_TaiHai_IDEA_18
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_16}
+				country_event = {id =  PRC_TaiHai_IDEA.20}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_16
+        	add_idea = PRC_TaiHai_IDEA_17
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_15}
+				country_event = {id = PRC_TaiHai_IDEA.19}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_15
+        	add_idea = PRC_TaiHai_IDEA_16
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_14}
+				country_event = {id = PRC_TaiHai_IDEA.18}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_14
+        	add_idea = PRC_TaiHai_IDEA_15
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_13}
+				country_event = {id = PRC_TaiHai_IDEA.16}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_13
+        	add_idea = PRC_TaiHai_IDEA_14
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_12}
+				country_event = {id = PRC_TaiHai_IDEA.14}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_12
+        	add_idea = PRC_TaiHai_IDEA_13
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_11}
+				country_event = {id = ROC_PRC.12}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_11
+        	add_idea = PRC_TaiHai_IDEA_12
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_10}
+				news_event = {
+					id = ROC_PRC.11
+				}
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_10
+        	add_idea = PRC_TaiHai_IDEA_11
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_9}
+				country_event = {id = ROC_PRC.10}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_9
+        	add_idea = PRC_TaiHai_IDEA_10
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_8}
+				country_event = {id = ROC_PRC.9}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_8
+        	add_idea = PRC_TaiHai_IDEA_9
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_7}
+				country_event = {id = ROC_PRC.8}
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_7
+        	add_idea = PRC_TaiHai_IDEA_8
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_6}
+				country_event = {id = ROC_PRC.7}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_6
+        	add_idea = PRC_TaiHai_IDEA_7
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_5}
+				country_event = {id = ROC_PRC.6}
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_5
+        	add_idea = PRC_TaiHai_IDEA_6
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_4}
+				country_event = {id = ROC_PRC.5}
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_4
+        	add_idea = PRC_TaiHai_IDEA_5
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_3}
+				country_event = {id = ROC_PRC.4}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_3
+        	add_idea = PRC_TaiHai_IDEA_4
+    		}
+			}
+			if = {
+   				limit = {has_idea = PRC_TaiHai_IDEA_2}
+				country_event = {id = ROC_PRC.3}	
+   			swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_2
+        	add_idea = PRC_TaiHai_IDEA_3
+    		}
+			}
+			if = {
+				limit = {has_idea = PRC_TaiHai_IDEA_1}
+				swap_ideas = {
+        	remove_idea = PRC_TaiHai_IDEA_1
+        	add_idea = PRC_TaiHai_IDEA_2
+    		}
+				country_event = {id = ROC_PRC.2}	
+			}
+			if = {
+				limit = {
+					NOT = {has_idea = PRC_TaiHai_IDEA_1}
+				}
+				add_ideas = PRC_TaiHai_IDEA_1	
+				country_event = {
+					id = ROC_PRC.13
+				}
+			}
+}
+PDTO_taiwan_war = {
+  			if = {
+				limit = {
+					NOT = { has_idea = CHI_TaiHai_IDEA_25  }
+				}
+				activate_mission = THECHI_taiwan_war_countdown
+
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_25}
+				#country_event = {id = CHI_TaiHai_IDEA.29}	
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_24}
+				#country_event = {id = CHI_TaiHai_IDEA.29}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_24
+        	add_idea = CHI_TaiHai_IDEA_25
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_23}
+				#country_event = {id = CHI_TaiHai_IDEA.29}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_23
+        	add_idea = CHI_TaiHai_IDEA_24
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_22}
+				#country_event = {id = CHI_TaiHai_IDEA.29}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_22
+        	add_idea = CHI_TaiHai_IDEA_23
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_21}
+				#country_event = {id = CHI_TaiHai_IDEA.25}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_21
+        	add_idea = CHI_TaiHai_IDEA_22
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_20}
+				#country_event = {id = CHI_TaiHai_IDEA.24}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_20
+        	add_idea = CHI_TaiHai_IDEA_21
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_19}
+				#country_event = {id = CHI_TaiHai_IDEA.22}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_19
+        	add_idea = CHI_TaiHai_IDEA_20
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_18}
+				#country_event = {id = CHI_TaiHai_IDEA.21}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_18
+        	add_idea = CHI_TaiHai_IDEA_19
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_17}
+				#country_event = {id = CHI_TaiHai_IDEA.20}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_17
+        	add_idea = CHI_TaiHai_IDEA_18
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_16}
+				#country_event = {id =  CHI_TaiHai_IDEA.19}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_16
+        	add_idea = CHI_TaiHai_IDEA_17
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_15}
+				#country_event = {id = CHI_TaiHai_IDEA.17}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_15
+        	add_idea = CHI_TaiHai_IDEA_16
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_14}
+				#country_event = {id = CHI_TaiHai_IDEA.15}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_14
+        	add_idea = CHI_TaiHai_IDEA_15
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_13}
+				#country_event = {id = CHI_TaiHai_IDEA.14}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_13
+        	add_idea = CHI_TaiHai_IDEA_14
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_12}
+				#country_event = {id = CHI_TaiHai_IDEA.13}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_12
+        	add_idea = CHI_TaiHai_IDEA_13
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_11}
+				#country_event = {id = CHI_TaiHai_IDEA.12}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_11
+        	add_idea = CHI_TaiHai_IDEA_12
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_10}
+				#country_event = {id = CHI_TaiHai_IDEA.11}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_10
+        	add_idea = CHI_TaiHai_IDEA_11
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_9}
+				#country_event = {id = CHI_TaiHai_IDEA.10}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_9
+        	add_idea = CHI_TaiHai_IDEA_10
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_8}
+				#country_event = {id = CHI_TaiHai_IDEA.9}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_8
+        	add_idea = CHI_TaiHai_IDEA_9
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_7}
+				#country_event = {id = CHI_TaiHai_IDEA.7}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_7
+        	add_idea = CHI_TaiHai_IDEA_8
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_6}
+				#country_event = {id = CHI_TaiHai_IDEA.6}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_6
+        	add_idea = CHI_TaiHai_IDEA_7
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_5}
+				#country_event = {id = CHI_TaiHai_IDEA.5}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_5
+        	add_idea = CHI_TaiHai_IDEA_6
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_4}
+				#country_event = {id = CHI_TaiHai_IDEA.4}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_4
+        	add_idea = CHI_TaiHai_IDEA_5
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_3}
+				#country_event = {id = CHI_TaiHai_IDEA.3}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_3
+        	add_idea = CHI_TaiHai_IDEA_4
+    		}
+			}
+			if = {
+   				limit = {has_idea = CHI_TaiHai_IDEA_2}
+				#country_event = {id = CHI_TaiHai_IDEA.2}	
+   			swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_2
+        	add_idea = CHI_TaiHai_IDEA_3
+    		}
+			}
+			if = {
+				limit = {has_idea = CHI_TaiHai_IDEA_1}
+				swap_ideas = {
+        	remove_idea = CHI_TaiHai_IDEA_1
+        	add_idea = CHI_TaiHai_IDEA_2
+    		}
+				#country_event = {id = CHI_TaiHai_IDEA.1}	
+			}
+			if = {
+				limit = {
+					NOT = {has_idea = CHI_TaiHai_IDEA_1}
+				}
+				add_ideas = CHI_TaiHai_IDEA_1	
+				#country_event = {id = CHI_TaiHai_IDEA.1}	
+			}
+}
+PDTO2_taiwan_war = {
+  			if = {
+				limit = {
+					NOT = { has_idea = JAP_TaiHai_IDEA_25  }
+				}
+				activate_mission = THEJAP_taiwan_war_countdown
+
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_25}
+				#country_event = {id = JAP_TaiHai_IDEA.29}	
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_24}
+				#country_event = {id = JAP_TaiHai_IDEA.29}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_24
+        	add_idea = JAP_TaiHai_IDEA_25
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_23}
+				#country_event = {id = JAP_TaiHai_IDEA.29}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_23
+        	add_idea = JAP_TaiHai_IDEA_24
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_22}
+				#country_event = {id = JAP_TaiHai_IDEA.29}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_22
+        	add_idea = JAP_TaiHai_IDEA_23
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_21}
+				#country_event = {id = JAP_TaiHai_IDEA.25}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_21
+        	add_idea = JAP_TaiHai_IDEA_22
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_20}
+				#country_event = {id = JAP_TaiHai_IDEA.24}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_20
+        	add_idea = JAP_TaiHai_IDEA_21
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_19}
+				#country_event = {id = JAP_TaiHai_IDEA.22}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_19
+        	add_idea = JAP_TaiHai_IDEA_20
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_18}
+				#country_event = {id = JAP_TaiHai_IDEA.21}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_18
+        	add_idea = JAP_TaiHai_IDEA_19
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_17}
+				#country_event = {id = JAP_TaiHai_IDEA.20}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_17
+        	add_idea = JAP_TaiHai_IDEA_18
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_16}
+				#country_event = {id =  JAP_TaiHai_IDEA.19}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_16
+        	add_idea = JAP_TaiHai_IDEA_17
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_15}
+				#country_event = {id = JAP_TaiHai_IDEA.17}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_15
+        	add_idea = JAP_TaiHai_IDEA_16
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_14}
+				#country_event = {id = JAP_TaiHai_IDEA.15}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_14
+        	add_idea = JAP_TaiHai_IDEA_15
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_13}
+				#country_event = {id = JAP_TaiHai_IDEA.14}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_13
+        	add_idea = JAP_TaiHai_IDEA_14
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_12}
+				#country_event = {id = JAP_TaiHai_IDEA.13}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_12
+        	add_idea = JAP_TaiHai_IDEA_13
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_11}
+				#country_event = {id = JAP_TaiHai_IDEA.12}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_11
+        	add_idea = JAP_TaiHai_IDEA_12
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_10}
+				#country_event = {id = JAP_TaiHai_IDEA.11}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_10
+        	add_idea = JAP_TaiHai_IDEA_11
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_9}
+				#country_event = {id = JAP_TaiHai_IDEA.10}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_9
+        	add_idea = JAP_TaiHai_IDEA_10
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_8}
+				#country_event = {id = JAP_TaiHai_IDEA.9}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_8
+        	add_idea = JAP_TaiHai_IDEA_9
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_7}
+				#country_event = {id = JAP_TaiHai_IDEA.7}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_7
+        	add_idea = JAP_TaiHai_IDEA_8
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_6}
+				#country_event = {id = JAP_TaiHai_IDEA.6}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_6
+        	add_idea = JAP_TaiHai_IDEA_7
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_5}
+				#country_event = {id = JAP_TaiHai_IDEA.5}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_5
+        	add_idea = JAP_TaiHai_IDEA_6
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_4}
+				#country_event = {id = JAP_TaiHai_IDEA.4}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_4
+        	add_idea = JAP_TaiHai_IDEA_5
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_3}
+				#country_event = {id = JAP_TaiHai_IDEA.3}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_3
+        	add_idea = JAP_TaiHai_IDEA_4
+    		}
+			}
+			if = {
+   				limit = {has_idea = JAP_TaiHai_IDEA_2}
+				#country_event = {id = JAP_TaiHai_IDEA.2}	
+   			swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_2
+        	add_idea = JAP_TaiHai_IDEA_3
+    		}
+			}
+			if = {
+				limit = {has_idea = JAP_TaiHai_IDEA_1}
+				swap_ideas = {
+        	remove_idea = JAP_TaiHai_IDEA_1
+        	add_idea = JAP_TaiHai_IDEA_2
+    		}
+				#country_event = {id = JAP_TaiHai_IDEA.1}	
+			}
+			if = {
+				limit = {
+					NOT = {has_idea = JAP_TaiHai_IDEA_1}
+				}
+				add_ideas = JAP_TaiHai_IDEA_1	
+				#country_event = {id = JAP_TaiHai_IDEA.1}	
+			}
+}
+	PRC_end_taiwan_war2 = {
+		clr_global_flag = PRC_ongoing_taiwan_war
+		white_peace = AST
+		white_peace = JAP
+		annex_country = {
+		    target = HKN
+		    transfer_troops = no
+		}
+		326 = {
+			add_dynamic_modifier = {
+				modifier = PRC_hong_kong
+			}
+		}
+		country_event = {
+			id = china.254
+			days = 200
+		}
+		clr_global_flag = battle_of_okinawa
+		every_state = { #защита от дебила
+			limit = {
+				is_owned_by = JAP
+				NOT = {
+					OR = {
+						state = 526
+						state = 876
+					}
+				}
+			}
+			remove_dynamic_modifier = {
+				modifier = PRC_non_combat_area
+				scope = PRC #потом скоупы поменять
+			}
+		}
+		every_state = { #защита от дебила
+			limit = {
+				is_owned_by = AST
+			}
+			remove_dynamic_modifier = {
+				modifier = PRC_non_combat_area
+				scope = PRC
+			}
+		}
+		every_state = { #защита от дебила
+			limit = {
+				is_owned_by = PRC
+				is_coastal = yes
+				NOT = {
+					OR = {
+						state = 326
+						state = 648
+					}
+				}
+			}
+			remove_dynamic_modifier = {
+				modifier = PRC_non_combat_area
+			}
+		}
+		AST = {
+			country_event = Australia.18
+		}
+		JAP = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = low_society
+						has_idea = lower_society
+					}
+				}
+				add_ideas = medium_society
+				set_temp_variable = {
+					var = society_development_var_temp
+					value = 0.25
+				}
+				add_society_development = yes
+			}
+		}
+	}
