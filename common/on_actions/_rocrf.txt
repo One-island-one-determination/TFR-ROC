@@ -128,6 +128,60 @@ set_popularities = {
 					}
 					set_global_flag = skip_default_capitulation
 				}
+if = {
+					limit = {
+						NOT = {
+							has_global_flag = pan_asian_war_ongoing
+							has_global_flag = PRC_china_collapse
+						}
+						FROM = {
+							OR = {
+								original_tag = TIB
+							}
+						}
+						ROOT = {
+							original_tag = TAR
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+						PRC = {
+							country_event = { id = ROC.62}
+						}
+						set_global_flag = skip_default_capitulation
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = PRC_china_collapse
+						}
+						FROM = {
+							original_tag = TAR
+						}
+						ROOT = {
+							OR = {
+								original_tag = TIB
+							}
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+						PRC = {
+							country_event = { id = ROC.61}
+						}
+						set_global_flag = skip_default_capitulation
+					}
+				}
 		}
 	}
 }
+
