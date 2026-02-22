@@ -172,3 +172,20 @@ PDTO_support_AFP = {
 		value = 900
 	}
 }
+PRC_support_TAR = {
+	enable = {
+		has_war = no
+	}
+
+	ai_strategy = {
+		type = support
+		id = "TAR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "TAR"
+		value = 900
+	}
+}
+
