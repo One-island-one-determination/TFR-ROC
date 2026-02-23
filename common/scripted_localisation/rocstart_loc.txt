@@ -542,3 +542,594 @@ defined_text = {
 			localization_key = "CHI_TAIWAN_War_button" #调用的本地化
 		}
 	}
+defined_text = {
+	name = get_Taipei_status_PDTO
+	
+	text = { 
+		trigger = {
+			1148 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				1148 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				1148 = {
+					 OR = {
+        controller = {
+            is_ally_with = PRC
+        }
+		controller = {
+            is_ally_with = JAP
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+defined_text = {
+	name = get_Taichung_status_PDTO
+	
+	text = { 
+		trigger = {
+			1149 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				1149 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				1149 = {
+					is_ally_with = PRC
+				}
+				1149 = {
+					is_ally_with = JAP
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+defined_text = {
+	name = get_Kaohsiung_status_PDTO
+	
+	text = { 
+		trigger = {
+			1150 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				1150 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				1150 = {
+					 OR = {
+        controller = {
+            is_ally_with = PRC
+        }
+		controller = {
+            is_ally_with = JAP
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+defined_text = {
+	name = get_Hualien_status_PDTO
+	
+	text = { 
+		trigger = {
+			524 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				524 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				524 = {
+					 OR = {
+        controller = {
+            is_ally_with = PRC
+        }
+		controller = {
+            is_ally_with = JAP
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+defined_text = {
+	name = get_Kinmen_status_PDTO
+	
+	text = { 
+		trigger = {
+			648 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				648 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				648 = {
+					 OR = {
+        controller = {
+            is_ally_with = PRC
+        }
+		controller = {
+            is_ally_with = JAP
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+defined_text = {
+	name = get_Penghu_status_PDTO
+	
+	text = { 
+		trigger = {
+			1151 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				1151 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				1451 = {
+					 OR = {
+        controller = {
+            is_ally_with = PRC
+        }
+		controller = {
+            is_ally_with = JAP
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+defined_text = {
+	name = get_Okinawa_status_PDTO
+	
+	text = { 
+		trigger = {
+			526 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				526 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+			}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				526 = {
+					 OR = {
+        controller = {
+            is_ally_with = PRC
+        }
+		controller = {
+            is_ally_with = JAP
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+defined_text = {
+	name = get_SenkakuIslands_status_PDTO
+	
+	text = { 
+		trigger = {
+			876 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			876 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				876 = {
+					 OR = {
+        controller = {
+            is_ally_with = PRC
+        }
+		controller = {
+            is_ally_with = JAP
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+defined_text = {
+	name = get_Hongkong_status_PDTO
+	
+	text = { 
+		trigger = {
+			326 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			326 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				326 = {
+					 OR = {
+        controller = {
+            is_ally_with = PRC
+        }
+		controller = {
+            is_ally_with = JAP
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				326 = {
+					 OR = {
+        controller = {
+            tag = HKN
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "HKN_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				326 = {
+					 OR = {
+        controller = {
+            tag = SHZ
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "SHZ_control"
+	}
+}
+defined_text = {
+	name = get_ShenZhen_status_PDTO
+	
+	text = { 
+		trigger = {
+			1395 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			1395 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				1395 = {
+					 OR = {
+        controller = {
+            is_ally_with = PRC
+        }
+		controller = {
+            is_ally_with = JAP
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				1395 = {
+					 OR = {
+        controller = {
+            tag = HKN
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "HKN_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				1395 = {
+					 OR = {
+        controller = {
+            tag = SHZ
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "SHZ_control"
+	}
+}
+defined_text = {
+	name = get_XishaIslands_status_PDTO
+	
+	text = { 
+		trigger = {
+			879 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			879 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				879 = {
+					 OR = {
+        controller = {
+            is_ally_with = PRC
+        }
+		controller = {
+            is_ally_with = JAP
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+defined_text = {
+	name = get_CCPSpratlyIslands_status_PDTO
+	
+	text = { 
+		trigger = {
+			1382 = {
+		controller = {
+            is_ally_with = PRC
+        }
+				}
+		}
+		localization_key = "PLA_control"
+	}
+	text = { 
+		trigger = {
+			1382 = {
+		controller = {
+            is_ally_with = JAP
+        }
+				}
+		}
+		localization_key = "PDTO_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				NOT = {
+				1382 = {
+					 OR = {
+        controller = {
+            is_ally_with = PRC
+        }
+		controller = {
+            is_ally_with = JAP
+        }
+    }
+				}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+

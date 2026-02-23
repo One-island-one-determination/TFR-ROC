@@ -1,4 +1,650 @@
 add_namespace = ROC
+add_namespace = ROC_CHI
+add_namespace = ROC_PRC
+add_namespace = ROC_JAP
+country_event = {
+	id = ROC_PRC.1
+	title = ROC_PRC.1.t
+	desc = ROC_PRC.1.d
+	picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.1.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.2
+	title = ROC_PRC.2.t
+	desc = ROC_PRC.2.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.2.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.3
+	title = ROC_PRC.3.t
+	desc = ROC_PRC.3.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.3.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.4
+	title = ROC_PRC.4.t
+	desc = ROC_PRC.4.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.4.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.5
+	title = ROC_PRC.5.t
+	desc = ROC_PRC.5.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.5.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.6
+	title = ROC_PRC.6.t
+	desc = ROC_PRC.6.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.6.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.7
+	title = ROC_PRC.7.t
+	desc = ROC_PRC.7.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.7.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.8
+	title = ROC_PRC.8.t
+	desc = ROC_PRC.8.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.8.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.9
+	title = ROC_PRC.9.t
+	desc = ROC_PRC.9.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.9.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.10
+	title = ROC_PRC.10.t
+	desc = ROC_PRC.10.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.10.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.11
+	title = ROC_PRC.11.t
+	desc = ROC_PRC.11.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.11.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.12
+	title = ROC_PRC.12.t
+	desc = ROC_PRC.12.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.12.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.13
+	title = ROC_PRC.13.t
+	desc = ROC_PRC.13.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = ROC_PRC.1
+				days = 3
+			}
+		}
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.13.a
+	}
+}
+country_event = {
+	id = ROC_PRC.14
+	title = ROC_PRC.14.t
+	desc = ROC_PRC.14.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ROC_PRC.15
+				days = 7
+			}	
+		}
+	}
+	option = {
+		name = ROC_PRC.14.a
+	}
+}
+country_event = {
+	id = ROC_PRC.15
+	title = ROC_PRC.15.t
+	desc = ROC_PRC.15.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.15.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.16
+	title = ROC_PRC.16.t
+	desc = ROC_PRC.16.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ROC_PRC.17
+				days = 7
+			}	
+		}
+	}
+	option = {
+		name = ROC_PRC.16.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.17
+	title = ROC_PRC.17.t
+	desc = ROC_PRC.17.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.17.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.18
+	title = ROC_PRC.18.t
+	desc = ROC_PRC.18.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.18.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.19
+	title = ROC_PRC.19.t
+	desc = ROC_PRC.19.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.19.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.20
+	title = ROC_PRC.20.t
+	desc = ROC_PRC.20.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.20.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.21
+	title = ROC_PRC.21.t
+	desc = ROC_PRC.21.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.21.a
+		hidden_effect = {
+			news_event = {
+			id = ROC_PRC.22
+		}
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.22
+	title = ROC_PRC.22.t
+	desc = ROC_PRC.22.d
+	picture = GFX_PRC_li_keqiang_died
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.22.a
+		hidden_effect = {
+			PRC = {
+			add_stability = -0.035
+			}
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.23
+	title = ROC_PRC.23.t
+	desc = ROC_PRC.23.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.23.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.24
+	title = ROC_PRC.24.t
+	desc = ROC_PRC.24.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.24.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.25
+	title = ROC_PRC.25.t
+	desc = ROC_PRC.25.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ROC_PRC.26
+				days = 7
+			}	
+		}
+	}
+	option = {
+		name = ROC_PRC.25.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.26
+	title = ROC_PRC.26.t
+	desc = ROC_PRC.26.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.26.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.27
+	title = ROC_PRC.27.t
+	desc = ROC_PRC.27.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.27.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.28
+	title = ROC_PRC.28.t
+	desc = ROC_PRC.28.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.28.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.29
+	title = ROC_PRC.29.t
+	desc = ROC_PRC.29.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.29.a
+		hidden_effect = {
+			news_event = {
+			id = ROC_PRC.30
+		}
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.30
+	title = ROC_PRC.30.t
+	desc = ROC_PRC.30.d
+	picture = GFX_CHI_Beijing_clearing
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.30.a
+		add_stability = -0.10
+		add_war_support = -0.10
+		1222 = {
+			add_manpower = -3091
+					damage_building = {
+						type = infrastructure
+						damage = 0.50
+					}
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.31
+	title = ROC_PRC.31.t
+	desc = ROC_PRC.31.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.31.a
+		effect_tooltip = {
+			PRC = {
+				add_stability = -0.10
+		add_war_support = -0.10
+		1222 = {
+			add_manpower = -3091
+					damage_building = {
+						type = infrastructure
+						damage = 0.50
+					}
+		}
+			}
+		}
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.32
+	title = ROC_PRC.32.t
+	desc = ROC_PRC.32.d
+	#picture = GFX_CHI_red_blue_white
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_PRC.32.a
+		news_event = {
+			id = ROC_PRC.33
+		}
+	}
+}
+country_event = {
+	id = ROC_PRC.33
+	title = ROC_PRC.33.t
+	desc = ROC_PRC.33.d
+	picture = GFX_event_taiwanwarlose
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	immediate = {
+		hidden_effect = {
+			set_global_flag = PRC_taiwan_war_lost
+			add_war_support = -0.25
+			add_stability = -0.25
+			set_portraits = {
+			    character = PRC_li_zuocheng
+			    army = { large ="GFX_portrait_PRC_Li_Zuocheng_leader" }
+			    civilian = { large ="GFX_portrait_PRC_Li_Zuocheng_leader" }
+			}
+			648 = { transfer_state_to = CHI }
+			1451 = {
+				transfer_state_to = CHI
+			}
+			PRC_end_taiwan_war2 = yes
+			news_event = {
+				id = news.357
+				hours = 12
+			}
+			country_event = {
+				id = china.85
+				days = 10
+			}
+			country_event = {
+				id = china.202
+				days = 15
+			}
+			country_event = {
+				id = china.41
+				days = 20
+			}
+			country_event = {
+				id = ROC.59
+				days = 35
+			}
+			country_event = {
+				id = china.430
+				days = 100
+			}
+			CHI = {
+				country_event = { id = taiwan.32 days = 3 }		
+				if = {
+					limit = { has_country_flag = CHI_DPP_in_power_flag }
+					country_event = {
+						id = taiwan.11
+						days = 20
+					}
+				}
+				else_if = {
+					limit = { has_country_flag = CHI_KMT_in_power_flag }
+				}
+				remove_ideas = {
+					CHI_lower_mainland_influence_idea
+					CHI_low_mainland_influence_idea
+					CHI_medium_mainland_influence_idea
+					CHI_high_mainland_influence_idea
+					CHI_higher_mainland_influence_idea
+				}
+				if = {
+					limit = {
+						has_country_leader = {
+							character = CHI_han_kuo_yu_char 
+							ruling_only = yes 
+						}
+					}
+					set_country_leader_portrait = {
+						ideology = conservative
+						portrait = GFX_portrait_CHI_han_kuo_yu_taiwan_win
+					}
+				}
+				if = {
+					limit = {
+						has_country_leader = {
+							character = CHI_tsai_ing_wen_char 
+							ruling_only = yes 
+						}
+					}
+					set_country_leader_portrait = {
+						ideology = social_liberal
+						portrait = GFX_portrait_CHI_tsai_ing_taiwan_win
+					}
+				}
+			}
+			news_event = {
+				id = china.80
+				days = 70
+			}
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = PRC_shameful_display
+		}
+	}
+	option = {
+		name = ROC_PRC.33.a
+	}
+}
 country_event = {
 	id = ROC.1
 	title = ROC.1.t
@@ -2103,3 +2749,225 @@ country_event = {
 		custom_effect_tooltip = CHI_hualian_invade3_tt
 	}
 }
+country_event = {
+	id = ROC.55
+	title = ROC.55.t
+	desc = ROC.55.d
+	#picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.55.a
+		ai_chance = {
+			base = 10
+		}
+		set_politics = {
+			ruling_party = conservative 
+       			elections_allowed = yes
+        		last_election = "2022.5.9"
+       			election_frequency = 72
+		}
+		add_popularity = { ideology = conservative popularity = 0.15 }
+	}
+	option = {
+		name = ROC.55.b
+		ai_chance = {
+			base = 10
+		}
+		set_politics = {
+			ruling_party = social_liberal 
+       			elections_allowed = yes
+        		last_election = "2022.5.9"
+       			election_frequency = 72
+		}
+		add_popularity = { ideology = social_liberal popularity = 0.15 }
+	}
+	option = {
+		name = ROC.55.c
+		ai_chance = {
+			base = 10
+		}
+		set_politics = {
+			ruling_party = social_democrat 
+       			elections_allowed = yes
+        		last_election = "2022.5.9"
+       			election_frequency = 72
+		}
+		add_popularity = { ideology = social_democrat popularity = 0.15 }
+	}
+}
+country_event = {
+	id = ROC.59
+	title = ROC.59.t
+	desc = ROC.59.d
+	picture = GFX_PRC_tibet3
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = ROC.59.a
+		add_stability = -0.05
+		add_war_support = -0.1
+		set_temp_variable = {
+			var = poverty_development_var_temp
+			value = -0.15
+		}
+		add_poverty_development = yes
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = -0.35
+		}
+		add_society_development = yes
+		set_temp_variable = {
+			var = industrial_development_var_temp
+			value = -0.25
+		}
+		add_industrial_development = yes
+		hidden_effect = {
+			news_event = {
+				id = ROC.60
+				days = 3
+			}
+			TAR = {
+			set_cosmetic_tag = TAR_tib_military_district
+			transfer_state = 1156
+			transfer_state = 322
+			transfer_state = 1152
+			add_state_core = 1156
+			add_state_core = 1132
+			add_state_core = 1152
+			add_state_core = 1155
+			add_state_core = 1153
+			set_capital = {
+					state = 1156
+				}
+			load_oob = TAR_revolt
+		}
+		TIB = {
+			transfer_state = 1155
+			transfer_state = 1153
+			add_state_core = 1156
+			add_state_core = 1132
+			add_state_core = 1152
+			add_state_core = 1155
+			add_state_core = 1153
+			set_capital = {
+					state = 1153
+				}
+				load_oob = TIB_revolt
+		}
+		TAR = {
+			declare_war_on = {
+				target = TIB
+				type = annex_everything
+			}
+		}
+		}
+	}
+}
+country_event = {
+	id = ROC.60
+	title = ROC.60.t
+	desc = ROC.60.d
+	picture = GFX_PRC_tibet1
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			TAR = {
+			declare_war_on = {
+				target = TIB
+				type = annex_everything
+			}
+		}
+		}
+	}
+	option = {
+		name = ROC.60.a
+	}
+}
+country_event = {
+	id = ROC.61
+	title = ROC.61.t
+	desc = ROC.61.d
+	picture = GFX_Chinese_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ROC.61.a
+		add_stability = 0.05
+		annex_country = {
+			target = TAR
+			transfer_troops = yes
+		}
+	}
+}
+country_event = {
+	id = ROC.62
+	title = ROC.62.t
+	desc = ROC.62.d
+	picture = GFX_PRC_xinjiang3
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ROC.62.a
+		PRC = {
+			declare_war_on = {
+				target = TIB
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = {
+	id = ROC.63
+	title = china.68.t
+	desc = china.68.d
+	picture = GFX_PRC_xinjiang3
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			SHZ = {
+				transfer_state = 1395
+				add_state_core = 1395
+
+			}
+			HKN = {
+				transfer_state = 326
+				add_state_core = 326
+				set_cosmetic_tag = HKN_revolution
+				load_oob = HKN_revolt
+			}
+			326 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_hong_kong
+				}
+			}
+		}
+	}
+	trigger = {
+		has_war_with = CHI
+	}
+	option = {
+		name = china.68.a
+		hidden_effect = {
+			SHZ = {
+				declare_war_on = {
+					target = HKN
+					type = annex_everything
+				}
+			}
+			news_event = china.69
+		}
+	}
+}
+
+

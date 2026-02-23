@@ -21,6 +21,36 @@ country_event = {
 				election_frequency = 48
 				elections_allowed = yes
 			}
+			clr_country_flag = CHI_KMT_in_power_flag
+			set_country_flag = CHI_DPP_in_power_flag
+			news_event = {
+				id = taiwan.5
+				hours = 12
+			}
+			country_event = {
+				id = taiwan_temp_skeleton.5
+				days = 60
+			}
+			country_event = {
+				id = taiwan.20
+				days = 1462
+			}
+			PRC = {
+				country_event = {
+					id = taiwan.29
+					days = 3
+				}
+			}
+			country_event = {
+				id = taiwan.30
+				days = 120
+			}
+			PRC = {
+				country_event = {
+					id = taiwan.30
+					days = 120
+				}
+			}
 		}
 	}
 	option = {
@@ -82,6 +112,30 @@ country_event = {
 					modifier = CHI_gaoxiong2
 				}
 			}
+			news_event = {
+				id = taiwan.6
+				hours = 12
+			}
+			country_event = {
+				id = taiwan_temp_skeleton.1
+				days = 60
+			}
+			clr_country_flag = CHI_DPP_in_power_flag
+			set_country_flag = CHI_KMT_in_power_flag
+			country_event = {
+				id = taiwan.12
+				days = 1462
+			}
+			country_event = {
+				id = taiwan_detente.1
+				days = 30
+			}
+			PRC = {
+				country_event = {
+					id = taiwan_detente.0
+					days = 3
+				}
+			}
 		}
 	}
 }
@@ -132,12 +186,6 @@ country_event = {
 	picture = GFX_CHI_asian_orphan
 	fire_only_once = yes
 	immediate = {
-		hidden_effect = {
-			country_event = {
-				id = CHI.3
-				days = 20
-			}			#零号病患
-		}
 	}
 	option = {
 		name = CHI.4.a

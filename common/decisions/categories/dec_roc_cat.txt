@@ -114,4 +114,38 @@ PHI_civil_war_dec = {
 		}
 	}
 }
+The_CCP_Difficulty_Selection = {
+	visible_when_empty = yes
+	priority = 99
+	
+	visible = {
+		original_tag = CHI
+		is_ai = no
+		date < 2020.1.14
+		NOT = {
+			has_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+	}
+	
+	allowed = {
+		or = {
+		original_tag = CHI
+		}
+	}
+}
+EastAsia_taiwan_war_dec = {
+	visible_when_empty = yes
+	priority = 99
+	
+	visible = {
+		has_global_flag = PRC_ongoing_taiwan_war
+	}
+	
+	allowed = {
+		or = {
+		original_tag = PRC
+		original_tag = CHI
+		}
+	}
+}
 

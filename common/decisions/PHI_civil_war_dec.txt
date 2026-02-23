@@ -132,6 +132,10 @@ set_popularities = {
 		ideology=military_junta
 		expire="1.1.1.1"
 			}
+			country_event = {
+				id = ROC.55
+				days = 720
+			}
 					}
 					JAP = {
 						add_to_faction = PHI
@@ -142,13 +146,9 @@ set_popularities = {
 			}
 			if = {
 				limit = {
-					original_tag = AFP
+					original_tag = MIL
 				}
-				PHI = {
-						annex_country = {
-							target = PHN
-							transfer_troops = yes
-						}
+				MIL = {
 						annex_country = {
 							target = MIL
 							transfer_troops = yes
@@ -168,7 +168,6 @@ set_popularities = {
 							remove_core_of = NAP
 							remove_core_of = AFP
 							remove_core_of = MIL
-							remove_core_of = PHN
 						}
 		set_politics = {
 	ruling_party = nationalist
@@ -190,10 +189,16 @@ set_popularities = {
 			}
 					}
 					JAP = {
-						add_to_faction = PHI
+						add_to_faction = PHN
 					}
 					news_event = {
 						id = ROC.45
+					}
+					PHN = {
+						declare_war_on= { 
+					target = MIL
+					type = annex_everything 
+				}
 					}
 			}
 		}
