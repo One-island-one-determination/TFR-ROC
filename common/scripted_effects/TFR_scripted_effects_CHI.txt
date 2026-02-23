@@ -1591,3 +1591,78 @@ PDTO2_taiwan_war = {
 			}
 		}
 	}
+THE_ChineseCivilWarTroops = {
+	division_template = {
+	name = "infantry"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+					}
+					
+					support = {
+					}	
+				}
+	division_template = {
+	name = "tank"
+	is_locked = yes
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+					}
+					
+					support = {
+					}	
+				}
+	random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"infantry Brigade\" division_template = \"infantry\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					id = 1949
+					owner = ROOT
+					count = 4
+				}
+			}
+		random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"tank Brigade\" division_template = \"tank\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					id = 1949
+					owner = ROOT
+					count = 1
+				}
+			}
+
+}
+THE_ChineseCivilWarTroops2 = {
+	division_template = {
+	name = "Minbing"
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+					}
+					
+					support = {
+					}	
+				}
+	random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"militia Brigade\" division_template = \"militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					id = 1949
+					owner = ROOT
+					count = 7
+				}
+			}
+
+}
