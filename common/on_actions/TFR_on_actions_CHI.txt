@@ -17,6 +17,18 @@ on_actions = {
 						CHI_PRC_Infiltration_progress_temp = 5
 					}
 					PRC_Infiltration_change = yes
+				set_country_flag = DPP_win_flg
+				add_dynamic_modifier = {
+					modifier = CHI_taiwanese_independence_dynamic
+				}
+				add_to_variable = {
+					var = CHI_taiwanese_independence_political_power_gain_var
+					value = 0.3
+				}
+				add_to_variable = {
+					var = CHI_taiwanese_independence_war_support_factor_var
+					value = 0.05
+				}
 					set_country_flag = CHI_ROC_army_flg
 					add_dynamic_modifier = {
 						modifier = CHI_ROC_army_dynamic
