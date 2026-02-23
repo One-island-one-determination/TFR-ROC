@@ -931,6 +931,18 @@ defined_text = {
 	name = GetSubIdeologyLocSocLib
 	text = {
 		trigger = {
+			has_country_leader_ideology = CHI_Taiwanese_Progressivism
+		}
+		localization_key = CHI_Taiwanese_Progressivism
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = CHI_Taiwanese_Progressivism2
+		}
+		localization_key = CHI_Taiwanese_Progressivism2
+	}	
+	text = {
+		trigger = {
 			OR = {
 				has_country_leader = {
 					character = SOV_vladislav_davankov
@@ -1180,6 +1192,12 @@ defined_text = {
 	
 defined_text = {
 	name = GetSubIdeologyLocCon
+	text = {
+		trigger = {
+			has_country_leader_ideology = CHI_Taiwanese_constitutionalism
+		}
+		localization_key = CHI_Taiwanese_constitutionalism
+	}	
 	text = {
 		trigger = {
 			tag = FAF
