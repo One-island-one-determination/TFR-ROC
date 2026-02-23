@@ -1019,7 +1019,6 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			tag = CHI
 			has_country_leader_ideology = taiwanese_liberal_populism
 		}
 		localization_key = loc_taiwanese_liberal_populism
@@ -1090,6 +1089,12 @@ defined_text = {
 	
 defined_text = {
 	name = GetSubIdeologyLocMarLib
+	text = {
+		trigger = {
+			has_country_leader_ideology = taiwanese_liberal_populism2
+		}
+		localization_key = taiwanese_liberal_populism
+	}
 	text = {
 		trigger = {
 			OR = {
