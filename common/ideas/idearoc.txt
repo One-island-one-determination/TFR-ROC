@@ -1513,6 +1513,50 @@ ideas = {
 			minimum_training_level = -0.05
 			}
 		}
+PRC_TaiHai_IDEA = {
+    picture = generic_world_wide_financial_crisis
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = 0.05
+		war_support_factor = 0.20
+		consumer_goods_factor = 0.02
+		production_factory_efficiency_gain_factor = 0.20
+		production_factory_max_efficiency_factor = 0.20
+		industrial_capacity_factory = 0.20
+    }
+	targeted_modifier = {
+	tag = CHI
+	attack_bonus_against = 0.20
+	breakthrough_bonus_against = 0.20
+	}
+	on_add = {
+	PRC = {
+		add_equipment_to_stockpile = {type = PRC_infantry_equipment_3 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = support_equipment amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_2 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_mechanized_equipment_2 amount = 1000 producer = PRC }
+		add_equipment_to_stockpile = {type = amphibious_tank_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_motorized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_mechanized_equipment_2 amount = 500 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_modern_tank_equipment_3 amount = 250 producer = PRC }
+		add_equipment_to_stockpile = {type = PRC_light_tank_equipment_2 amount = 400 producer = PRC }
+	}
+            }
+}
 PRC_TaiHai_IDEA_1 = {
     picture = generic_world_wide_financial_crisis
     name = PRC_TaiHai_IDEA
@@ -4718,6 +4762,7 @@ CHI_TaiHai_IDEA_25 = {
 }
 	}
 }
+
 
 
 
