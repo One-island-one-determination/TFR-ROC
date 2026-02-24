@@ -4747,7 +4747,7 @@ EastAsia_taiwan_war_dec = {
 	THEJAP_taiwan_war_countdown = {
 		#icon = GFX_decision_generic_crossed_guns
 		allowed = {
-			tag = CHI
+			tag = JAP
 		}
 		activation = {
 			always = no
@@ -4765,8 +4765,1343 @@ EastAsia_taiwan_war_dec = {
         PDTO2_taiwan_war = yes
     }
 	}
-	
+	CHI_war_propaganda = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		allowed = {
+			OR = {
+			tag = PRC
+			tag = JAP
+			tag = CHI
+			}
+		}
+		fire_only_once = no
+		cost = 75
+		days_remove = 30
+		days_re_enable = 60
+		modifier = {
+			political_power_factor = 0.25
+			war_support_factor = 0.05
+			industrial_capacity_factory = 0.20
+		}
+		complete_effect = {
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	CCP_anti_western_proaganda = {
+		icon = GFX_PRC_anti_western
+		allowed = {
+			OR = {
+				TAG = PRC
+			}
+		}
+		fire_only_once = no
+		cost = 75
+		days_remove = 30
+		days_re_enable = 120
+		complete_effect = {
+			add_timed_idea = {
+				idea = PRC_anti_western_proaganda_idea2
+				days = 30
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	CHI_anti_western_proaganda = {
+		icon = GFX_PRC_anti_western
+		allowed = {
+			OR = {
+				TAG = CHI
+				TAG = JAP
+				TAG = AST
+			}
+		}
+		available = {
+			NOT = {
+				has_ideas = CHI_anti_western_proaganda_idea
+			}
+		}
+		fire_only_once = no
+		cost = 75
+		days_remove = 30
+		days_re_enable = 120
+		complete_effect = {
+			every_country = {
+				limit = {
+					is_ally_with = JAP
+				}
+				add_timed_idea = {
+				idea = CHI_anti_western_proaganda_idea
+				days = 30
+			}
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	PRC_adapt_to_modern_defense2 = {
+		icon = GFX_PRC_soliders
+		allowed = {
+			OR = {
+			tag = PRC
+			tag = JAP
+			tag = CHI
+			tag = AST
+			}
+		}
+		visible = {
+			OR = {
+			PRC = {
+			has_completed_focus = PRC_adapt_to_current_realities_of_battles
+			}
+			tag = JAP
+			tag = CHI
+			tag = AST
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = PRC_adapt_to_modern_defense_time_flag
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 20
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			set_country_flag = PRC_adapt_to_modern_defense_time_flag
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
+				}
+				swap_ideas = {
+					remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
+					add_idea = PRC_insufficient_understanding_of_modern_warfare_idea3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = PRC_insufficient_understanding_of_modern_warfare_idea4
+				}
+				swap_ideas = {
+					remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea4
+					add_idea = PRC_insufficient_understanding_of_modern_warfare_idea5
+				}
+			}
+			clr_country_flag = PRC_adapt_to_modern_defense_time_flag
+		}
+	}
+	PRC_adapt_to_modern_offensives2 = {
+		icon = GFX_PRC_soliders
+		allowed = {
+			OR = {
+			tag = PRC
+			tag = JAP
+			tag = CHI
+			tag = AST
+			}
+		}
+		visible = {
+			OR = {
+			PRC = {
+			has_completed_focus = PRC_adapt_to_current_realities_of_battles
+			}
+			tag = JAP
+			tag = CHI
+			tag = AST
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = PRC_adapt_to_modern_defense_time_flag
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 20
+		complete_effect = {
+			set_country_flag = PRC_adapt_to_modern_defense_time_flag
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
+				}
+				swap_ideas = {
+					remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
+					add_idea = PRC_insufficient_understanding_of_modern_warfare_idea4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = PRC_insufficient_understanding_of_modern_warfare_idea3
+				}
+				swap_ideas = {
+					remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea3
+					add_idea = PRC_insufficient_understanding_of_modern_warfare_idea5
+				}
+			}
+			clr_country_flag = PRC_adapt_to_modern_defense_time_flag
+		}
+	}
+	PRC_adapt_to_modern_airbattles2 = {
+		icon = GFX_decision_generic_air
+		allowed = {
+			OR = {
+			tag = PRC
+			tag = JAP
+			tag = CHI
+			tag = AST
+			}
+		}
+		visible = {
+			OR = {
+			PRC = {
+			has_completed_focus = PRC_adapt_to_current_realities_of_battles
+			}
+			tag = JAP
+			tag = CHI
+			tag = AST
+			}
+		}
+		available = {
+			has_idea = PRC_insufficient_understanding_of_modern_warfare_idea5
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 20
+		complete_effect = {
+		}
+		remove_effect = {
+			remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea5
+		}
+	}
+	#PRC_Nuke_PDTO = {
+		#ai_will_do = {
+			#base = 100
+		#}
+		#icon = GFX_PRC_new_left_decision
+		#available = {
+		#NOT = { has_country_flag = PRC_Nuke_PDTO_1 }
+		#}
+		#state_target = yes
+		#on_map_mode = map_only
+		#cost = 0
+		#fire_only_once = no
+		#days_remove = 7
+		#visible = {
+		#	tag = PRC
+		#	OR = {
+		#	has_war_with = FROM 
+		#}
+		#}
+		#complete_effect = {
+		#set_country_flag = PRC_Nuke_PDTO_1                                          
+		#}
+		#remove_effect = {
+		#clr_country_flag = PRC_Nuke_PDTO_1                       
+		#launch_nuke = {
+	   # state = FROM
+	   # use_nuke = yes	
+		#}	
+	#}
+	#}
+	PRC_destroy_taiwan_infr2 = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+		}
+		available = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			NOT = {
+				has_country_flag = PRC_Preparing_airstrike
+			}
+		}
+		#state_target = yes
+		#on_map_mode = map_only
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 1148
+			state = 1149
+			state = 1150
+			state = 524
+		}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		complete_effect = {
+			set_country_flag = PRC_Preparing_airstrike
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_strikesTaiwan_tt
+			clr_country_flag = PRC_Preparing_airstrike
+			if = {
+				limit = {
+					1148 = {
+    is_owned_by = CHI
 }
+				}
+				damage_units = {
+				state = 1148
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			if = {
+				limit = {
+					1149 = {
+    is_owned_by = CHI
+}
+				}
+				damage_units = {
+				state = 1149
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			if = {
+				limit = {
+					1150 = {
+    is_owned_by = CHI
+}
+				}
+				damage_units = {
+				state = 1150
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			if = {
+				limit = {
+					524 = {
+    is_owned_by = CHI
+}
+				}
+				damage_units = {
+				state = 524
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			CHI = {
+				every_controlled_state = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					add_manpower = -2000
+					add_stability = -0.025
+				add_war_support = 0.05
+				}
+			}
+		}
+	}
+	PRC_destroy_taiwan_civ_industry2 = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+		}
+		available = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			NOT = {
+				has_country_flag = PRC_Preparing_airstrike
+			}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 1148
+			state = 1149
+			state = 1150
+			state = 524
+		}
+		}
+		complete_effect = {
+			set_country_flag = PRC_Preparing_airstrike
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_strikesTaiwan_tt
+			clr_country_flag = PRC_Preparing_airstrike
+			if = {
+				limit = {
+					1148 = {
+    is_owned_by = CHI
+}
+				}
+				damage_units = {
+				state = 1148
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			if = {
+				limit = {
+					1149 = {
+    is_owned_by = CHI
+}
+				}
+				damage_units = {
+				state = 1149
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			if = {
+				limit = {
+					1150 = {
+    is_owned_by = CHI
+}
+				}
+				damage_units = {
+				state = 1150
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			if = {
+				limit = {
+					524 = {
+    is_owned_by = CHI
+}
+				}
+				damage_units = {
+				state = 524
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			CHI = {
+				every_controlled_state = {
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					add_manpower = -2000
+					add_stability = -0.025
+				add_war_support = 0.05
+				}
+			}
+		}
+	}
+	PRC_destroy_taiwan_war_industry2 = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+		}
+		available = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			NOT = {
+				has_country_flag = PRC_Preparing_airstrike
+			}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 1148
+			state = 1149
+			state = 1150
+			state = 524
+		}
+		}
+		complete_effect = {
+			
+			set_country_flag = PRC_Preparing_airstrike
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_strikesTaiwan_tt
+			clr_country_flag = PRC_Preparing_airstrike
+			if = {
+				limit = {
+					1148 = {
+    is_owned_by = CHI
+}
+				}
+				damage_units = {
+				state = 1148
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			if = {
+				limit = {
+					1149 = {
+    is_owned_by = CHI
+}
+				}
+				damage_units = {
+				state = 1149
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			if = {
+				limit = {
+					1150 = {
+    is_owned_by = CHI
+}
+				}
+				damage_units = {
+				state = 1150
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			if = {
+				limit = {
+					524 = {
+    is_owned_by = CHI
+}
+				}
+				damage_units = {
+				state = 524
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			}
+			CHI = {
+				every_controlled_state = {
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000			
+				add_stability = -0.025
+				add_war_support = 0.05
+				}
+			}
+		}
+	}
+	PRC_strike_senkaku2 = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+		}
+		available = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			NOT = {
+				has_country_flag = PRC_Preparing_airstrike
+			}
+			has_war_with = JAP
+			JAP = {
+				has_full_control_of_state = 876
+			}
+		}
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 876
+		}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		complete_effect = {
+		}
+		remove_effect = {
+			clr_country_flag = PRC_Preparing_airstrike
+			custom_effect_tooltip = PRC_strike_senkaku_tt
+			JAP = {
+				876 = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000
+				}
+			damage_units = {
+				state = 876
+				damage = 0.3
+				org_damage = 0.3
+				str_damage = 0.3
+				ratio = yes
+				army = yes
+				navy = no
+			}
+				add_stability = -0.025
+				add_war_support = 0.025
+			}
+		}
+	}
+	PRC_strike_okinawa2 = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+		}
+		available = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			NOT = {
+				has_country_flag = PRC_Preparing_airstrike
+			}
+			has_war_with = JAP
+			JAP = {
+				has_full_control_of_state = 526
+			}
+		}
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 526
+		}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		complete_effect = {
+		}
+		remove_effect = {
+			clr_country_flag = PRC_Preparing_airstrike
+			custom_effect_tooltip = PRC_strike_okinawa_tt
+			JAP = {
+				526 = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000
+				}
+			damage_units = {
+				state = 526
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+				add_stability = -0.025
+				add_war_support = 0.025
+			}
+		}
+	}
+	PRC_strike_Nagasaki2 = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+		}
+		available = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			NOT = {
+				has_country_flag = PRC_Preparing_airstrike
+			}
+			has_war_with = JAP
+		}
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 528
+			state = 1338
+		}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		complete_effect = {
+			set_country_flag = PRC_Preparing_airstrike
+		}
+		remove_effect = {
+			clr_country_flag = PRC_Preparing_airstrike
+			custom_effect_tooltip = PRC_strike_Nagasaki_tt
+			JAP = {
+				528 = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000
+				}
+				1338 = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000
+				}
+			damage_units = {
+				state = 528
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			damage_units = {
+				state = 1338
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+				add_stability = -0.025
+				add_war_support = 0.025
+			}
+		}
+	}
+	PRC_taiwan_bombing_raid2 = {
+		icon = GFX_decision_generic_deploy_nukes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+		}
+		available = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+		}
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {
+			CHI = {
+				add_ideas = PRC_bombing_raids
+				add_war_support = -0.05
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+	}
+	CHI_strike_Xiamen = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			OR = {
+				tag = CHI
+				tag = JAP
+				tag = AST
+			}
+		}
+		visible = {
+			PRC = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			}
+		}
+		available = {
+			OR = {
+			NOT = {
+				JAP = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				CHI = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				AST = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+			}
+			}
+		}
+		
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 1431
+		}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		complete_effect = {
+			set_country_flag = PRC_Preparing_airstrike
+		}
+		remove_effect = {
+			clr_country_flag = PRC_Preparing_airstrike
+			custom_effect_tooltip = CHI_strike_Xiamen_tt
+			PRC = {
+				1431 = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000
+				}
+			damage_units = {
+				state = 1431
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+				add_stability = -0.025
+				add_war_support = 0.025
+			}
+		}
+	}
+	CHI_strike_fuzhou = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			OR = {
+				tag = CHI
+				tag = JAP
+				tag = AST
+			}
+		}
+		visible = {
+			PRC = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			}
+		}
+		available = {
+			OR = {
+			NOT = {
+				JAP = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				CHI = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				AST = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+			}
+			}
+		}
+		
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 595
+		}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		complete_effect = {
+			set_country_flag = PRC_Preparing_airstrike
+		}
+		remove_effect = {
+			clr_country_flag = PRC_Preparing_airstrike
+			custom_effect_tooltip = CHI_strike_fuzhou_tt
+			PRC = {
+				595 = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000
+				}
+			damage_units = {
+				state = 595
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+				add_stability = -0.025
+				add_war_support = 0.025
+			}
+		}
+	}
+	CHI_strike_quanzhou = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			OR = {
+				tag = CHI
+				tag = JAP
+				tag = AST
+			}
+		}
+		visible = {
+			PRC = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			}
+		}
+		available = {
+			OR = {
+			NOT = {
+				JAP = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				CHI = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				AST = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+			}
+			}
+		}
+		
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 1218
+		}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		complete_effect = {
+			set_country_flag = PRC_Preparing_airstrike
+		}
+		remove_effect = {
+			clr_country_flag = PRC_Preparing_airstrike
+			custom_effect_tooltip = CHI_strike_quanzhou_tt
+			PRC = {
+				1218 = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000
+				}
+			damage_units = {
+				state = 1218
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+				add_stability = -0.025
+				add_war_support = 0.025
+			}
+		}
+	}
+	CHI_strike_shantou = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			OR = {
+				tag = CHI
+				tag = JAP
+				tag = AST
+			}
+		}
+		visible = {
+			PRC = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			}
+		}
+		available = {
+			OR = {
+			NOT = {
+				JAP = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				CHI = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				AST = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+			}
+			}
+		}
+		
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 1206
+		}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		complete_effect = {
+			set_country_flag = PRC_Preparing_airstrike
+		}
+		remove_effect = {
+			clr_country_flag = PRC_Preparing_airstrike
+			custom_effect_tooltip = CHI_strike_shantou_tt
+			PRC = {
+				1206 = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000
+				}
+			damage_units = {
+				state = 1206
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+				add_stability = -0.025
+				add_war_support = 0.025
+			}
+		}
+	}
+	CHI_strike_ningbo = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			OR = {
+				tag = CHI
+				tag = JAP
+				tag = AST
+			}
+		}
+		visible = {
+			PRC = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			}
+		}
+		available = {
+			OR = {
+			NOT = {
+				JAP = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				CHI = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				AST = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+			}
+			}
+		}
+		
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 596
+		}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		complete_effect = {
+			set_country_flag = PRC_Preparing_airstrike
+		}
+		remove_effect = {
+			clr_country_flag = PRC_Preparing_airstrike
+			custom_effect_tooltip = CHI_strike_ningbo_tt
+			PRC = {
+				596 = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000
+				}
+			damage_units = {
+				state = 596
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+				add_stability = -0.025
+				add_war_support = 0.025
+			}
+		}
+	}
+	CHI_strike_shanghai = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			OR = {
+				tag = CHI
+				tag = JAP
+				tag = AST
+			}
+		}
+		visible = {
+			PRC = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			}
+		}
+		available = {
+			OR = {
+			NOT = {
+				JAP = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				CHI = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				AST = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+			}
+			}
+		}
+		
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 1215
+		}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		complete_effect = {
+			set_country_flag = PRC_Preparing_airstrike
+		}
+		remove_effect = {
+			clr_country_flag = PRC_Preparing_airstrike
+			custom_effect_tooltip = CHI_strike_shanghai_tt
+			PRC = {
+				1215 = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000
+				}
+			damage_units = {
+				state = 1215
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+				add_stability = -0.025
+				add_war_support = 0.025
+			}
+		}
+	}
+	CHI_strike_wenzhou = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			OR = {
+				tag = CHI
+				tag = JAP
+				tag = AST
+			}
+		}
+		visible = {
+			PRC = {
+			has_completed_focus = PRC_indiscriminate_missile_strikes
+			}
+		}
+		available = {
+			OR = {
+			NOT = {
+				JAP = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				CHI = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+				AST = {
+					has_country_flag = PRC_Preparing_airstrike
+				}
+			}
+			}
+		}
+		
+		highlight_states = {	
+		highlight_state_targets = { 
+			state = 1219
+		}
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		complete_effect = {
+			set_country_flag = PRC_Preparing_airstrike
+		}
+		remove_effect = {
+			clr_country_flag = PRC_Preparing_airstrike
+			custom_effect_tooltip = CHI_strike_wenzhou_tt
+			PRC = {
+				1219 = {
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1.5
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.5
+					}
+					add_manpower = -2000
+				}
+			damage_units = {
+				state = 1219
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+				add_stability = -0.025
+				add_war_support = 0.025
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
 
 
 
