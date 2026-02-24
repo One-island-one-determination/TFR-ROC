@@ -1,0 +1,52 @@
+state = {
+
+	id = 524
+	name = "STATE_524"
+	manpower = 6584466
+	
+	state_category = megalopolis
+	
+	resources = {
+		oil = 20
+		aluminium = 10
+		rubber = 20
+		steel = 25
+		coal = 15
+	}
+	
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_claim_by = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
+			air_base = 4
+			11914 = { coastal_bunker = 1 naval_base = 2 }
+			1175 = { coastal_bunker = 1 }
+			4096 = { coastal_bunker = 1 naval_base = 2	}
+			9955 = { coastal_bunker = 1 }
+			nuclear_reactor = 1
+		}
+		victory_points = {
+			1175 5
+		}
+		victory_points = {
+			4096 8
+		}
+		victory_points = {
+			11914 5
+		}
+		victory_points = {
+			12027 3
+		}
+		victory_points = {
+			13962 6
+		}
+	}
+	provinces={
+		1175 4096 9955 11914 12027 13962 14723 14935
+	}
+}

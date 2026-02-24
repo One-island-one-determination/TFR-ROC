@@ -1,0 +1,45 @@
+state = {
+	id = 1149
+	name = "STATE_1149"
+	manpower = 4672722
+	state_category = large_suburb
+	resources = {
+		steel = 55
+		coal = 15
+	}
+
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_claim_by = PRC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			office_park = 1
+			dockyard = 1
+			7214 = { coastal_bunker = 1 }
+			11959 = { coastal_bunker = 1 }
+			13968 = {
+				naval_base = 3
+			}
+			power_plant = 3
+		}
+		victory_points = {
+			7214 6
+		}
+		victory_points = {
+			11959 4
+		}
+		victory_points = {
+			13968 17
+		}
+		victory_points = {
+			13967 8
+		}
+	}
+	
+	provinces = {
+		11959 13968 7214 13967
+	}
+}
