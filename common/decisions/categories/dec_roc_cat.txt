@@ -139,13 +139,22 @@ EastAsia_taiwan_war_dec = {
 	
 	visible = {
 		has_global_flag = PRC_ongoing_taiwan_war
+		or = {
+		original_tag = PRC
+		original_tag = CHI
+		original_tag = JAP
+		original_tag = AST
+		}
 	}
 	
 	allowed = {
 		or = {
 		original_tag = PRC
 		original_tag = CHI
+		original_tag = JAP
+		original_tag = AST
 		}
 	}
 }
+
 
