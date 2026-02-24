@@ -10,10 +10,11 @@ CHI_Legislative_Yuan_decisions = {
 			base = 100
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 50
 		days_remove = 10
+		days_re_enable = 30
 		complete_effect = {
 		}
 		remove_effect = {
@@ -34,7 +35,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 100
 		}
 		priority = 60
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 50
 		days_remove = 10
@@ -63,7 +64,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 60
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 100
 		days_remove = 30
@@ -130,7 +131,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 60
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 100
 		days_remove = 30
@@ -187,7 +188,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 60
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 175
 		days_remove = 90
@@ -289,7 +290,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 60
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 100
 		days_remove = 30
@@ -338,7 +339,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 100
 		}
 		priority = 40
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 50
 		days_remove = 10
@@ -367,7 +368,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 40
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 100
 		days_remove = 30
@@ -433,7 +434,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 40
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 100
 		days_remove = 30
@@ -493,7 +494,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 40
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 175
 		days_remove = 120
@@ -577,7 +578,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 40
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 100
 		days_remove = 50
@@ -627,7 +628,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 100
 		}
 		priority = 50
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 50
 		days_remove = 10
@@ -656,7 +657,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 50
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 100
 		days_remove = 45
@@ -711,7 +712,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 50
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 100
 		days_remove = 45
@@ -767,7 +768,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 50
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 175
 		days_remove = 80
@@ -851,7 +852,7 @@ CHI_Legislative_Yuan_decisions = {
 			base = 50
 		}
 		priority = 50
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 175
 		days_remove = 30
@@ -2362,7 +2363,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 85
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 120
 			ays_re_enable = 14
 			modifier = {
@@ -2443,7 +2444,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 85
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 90
 			days_re_enable = 14
 			modifier = {
@@ -2500,7 +2501,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 75
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 120
 			ays_re_enable = 14
 			modifier = {
@@ -2581,7 +2582,7 @@ CHI_Legislative_Yuan_decisions = {
 				factor = 50
 			}
 			cost = 85
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 120
 			ays_re_enable = 14
 			modifier = {
@@ -2662,7 +2663,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 75
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 120
 			ays_re_enable = 14
 			modifier = {
@@ -2744,7 +2745,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 85
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 120
 			ays_re_enable = 14
 			modifier = {
@@ -2827,7 +2828,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 85
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 90
 			days_re_enable = 14
 			modifier = {
@@ -2887,7 +2888,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 85
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 90
 			days_re_enable = 14
 			modifier = {
@@ -2945,7 +2946,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 75
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 90
 			ays_re_enable = 14
 			modifier = {
@@ -3071,7 +3072,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 85
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 120
 			ays_re_enable = 14
 			modifier = {
@@ -3158,7 +3159,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 75
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 120
 			ays_re_enable = 14
 			#days_re_enable = 35
@@ -3243,7 +3244,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 85
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 90
 			days_re_enable = 14
 			modifier = {
@@ -3341,7 +3342,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			priority = 50
 			cost = 85
-			fire_only_once = yes
+			fire_only_once = no
 			days_remove = 120
 			modifier = {
 				misc_expense = 2.5
@@ -4031,7 +4032,7 @@ PDTO_military_exercise = {
 			base = 20
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		custom_cost_trigger = { command_power > 20 }
 		custom_cost_text = CHI_decision_cost_20_command_power
@@ -4081,7 +4082,7 @@ PDTO_Trade_Agreement = {
 			base = 100
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 100
 		days_remove = 90
@@ -4123,7 +4124,7 @@ PDTO_Mineral_Detection = {
 			base = 100
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 100
 		days_remove = 90
@@ -4163,7 +4164,7 @@ PDTO_Unity_up = {
 			base = 100
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cancel_if_not_visible = no
 		cost = 100
 		days_remove = 120
@@ -4197,7 +4198,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
@@ -4249,7 +4250,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
@@ -4304,7 +4305,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
@@ -4377,7 +4378,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
@@ -4409,7 +4410,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
@@ -4438,7 +4439,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
@@ -4467,7 +4468,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
@@ -4492,7 +4493,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
@@ -4545,7 +4546,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
@@ -4570,7 +4571,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
@@ -4623,7 +4624,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
@@ -4652,7 +4653,7 @@ The_CCP_Difficulty_Selection = {
 			base = 0
 		}
 		priority = 10
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
 		complete_effect = {
 			set_country_flag = The_CCP_Difficulty_Selection_1_flag
