@@ -1503,6 +1503,18 @@ PDTO2_taiwan_war = {
 		}
 		AST = {
 			country_event = Australia.18
+			remove_Taihai_idea = yes
+		}
+		JAP = {
+		
+			remove_Taihai_idea = yes
+		}
+		CHI = {
+			remove_Taihai_idea = yes
+		}
+		PRC = {
+		
+			remove_Taihai_idea = yes
 		}
 		JAP = {
 			if = {
@@ -1520,6 +1532,25 @@ PDTO2_taiwan_war = {
 				add_society_development = yes
 			}
 		}
+		if = {
+			limit = {
+				1382 = { controller = {  is_ally_with = JAP }}
+			}
+			CHI = {
+				transfer_state = 1382
+				add_core_of = 1382
+			}
+		}
+		if = {
+			limit = {
+				879 = { controller = {  is_ally_with = JAP }}
+			}
+			CHI = {
+				transfer_state = 879
+				add_core_of = 879
+			}
+		}
+		
 	}
 THE_ChineseCivilWarTroops = {
 	division_template = {
@@ -1595,4 +1626,111 @@ THE_ChineseCivilWarTroops2 = {
 				}
 			}
 
+}
+common_prosperity_law_idk = {
+	if = {
+		limit = {
+			has_idea = common_prosperity_law
+		}
+		swap_ideas = {
+				remove_idea = common_prosperity_law
+				add_idea = common_prosperity_law_1
+			}
+	}
+	else_if = {
+		limit = {
+			has_idea = common_prosperity_law_1
+		}
+		swap_ideas = {
+				remove_idea = common_prosperity_law_1
+				add_idea = common_prosperity_law_2
+			}
+	}
+}
+remove_Taihai_idea = {
+	remove_ideas = JAP_TaiHai_IDEA_1
+	remove_ideas = JAP_TaiHai_IDEA_2
+	remove_ideas = JAP_TaiHai_IDEA_3
+	remove_ideas = JAP_TaiHai_IDEA_4
+	remove_ideas = JAP_TaiHai_IDEA_5
+	remove_ideas = JAP_TaiHai_IDEA_6
+	remove_ideas = JAP_TaiHai_IDEA_7
+	remove_ideas = JAP_TaiHai_IDEA_8
+	remove_ideas = JAP_TaiHai_IDEA_9
+	remove_ideas = JAP_TaiHai_IDEA_10
+	remove_ideas = JAP_TaiHai_IDEA_11
+	remove_ideas = JAP_TaiHai_IDEA_12
+	remove_ideas = JAP_TaiHai_IDEA_13
+	remove_ideas = JAP_TaiHai_IDEA_14
+	remove_ideas = JAP_TaiHai_IDEA_15
+	remove_ideas = JAP_TaiHai_IDEA_16
+	remove_ideas = JAP_TaiHai_IDEA_17
+	remove_ideas = JAP_TaiHai_IDEA_18
+	remove_ideas = JAP_TaiHai_IDEA_19
+	remove_ideas = JAP_TaiHai_IDEA_20
+	remove_ideas = JAP_TaiHai_IDEA_21
+	remove_ideas = JAP_TaiHai_IDEA_22
+	remove_ideas = JAP_TaiHai_IDEA_23
+	remove_ideas = JAP_TaiHai_IDEA_24
+	remove_ideas = JAP_TaiHai_IDEA_25
+	remove_ideas = CHI_TaiHai_IDEA_1
+	remove_ideas = CHI_TaiHai_IDEA_2
+	remove_ideas = CHI_TaiHai_IDEA_3
+	remove_ideas = CHI_TaiHai_IDEA_4
+	remove_ideas = CHI_TaiHai_IDEA_5
+	remove_ideas = CHI_TaiHai_IDEA_6
+	remove_ideas = CHI_TaiHai_IDEA_7
+	remove_ideas = CHI_TaiHai_IDEA_8
+	remove_ideas = CHI_TaiHai_IDEA_9
+	remove_ideas = CHI_TaiHai_IDEA_10
+	remove_ideas = CHI_TaiHai_IDEA_11
+	remove_ideas = CHI_TaiHai_IDEA_12
+	remove_ideas = CHI_TaiHai_IDEA_13
+	remove_ideas = CHI_TaiHai_IDEA_14
+	remove_ideas = CHI_TaiHai_IDEA_15
+	remove_ideas = CHI_TaiHai_IDEA_16
+	remove_ideas = CHI_TaiHai_IDEA_17
+	remove_ideas = CHI_TaiHai_IDEA_18
+	remove_ideas = CHI_TaiHai_IDEA_19
+	remove_ideas = CHI_TaiHai_IDEA_20
+	remove_ideas = CHI_TaiHai_IDEA_21
+	remove_ideas = CHI_TaiHai_IDEA_22
+	remove_ideas = CHI_TaiHai_IDEA_23
+	remove_ideas = CHI_TaiHai_IDEA_24
+	remove_ideas = CHI_TaiHai_IDEA_25
+	remove_ideas = PRC_TaiHai_IDEA_1
+	remove_ideas = PRC_TaiHai_IDEA_2
+	remove_ideas = PRC_TaiHai_IDEA_3
+	remove_ideas = PRC_TaiHai_IDEA_4
+	remove_ideas = PRC_TaiHai_IDEA_5
+	remove_ideas = PRC_TaiHai_IDEA_6
+	remove_ideas = PRC_TaiHai_IDEA_7
+	remove_ideas = PRC_TaiHai_IDEA_8
+	remove_ideas = PRC_TaiHai_IDEA_9
+	remove_ideas = PRC_TaiHai_IDEA_10
+	remove_ideas = PRC_TaiHai_IDEA_11
+	remove_ideas = PRC_TaiHai_IDEA_12
+	remove_ideas = PRC_TaiHai_IDEA_13
+	remove_ideas = PRC_TaiHai_IDEA_14
+	remove_ideas = PRC_TaiHai_IDEA_15
+	remove_ideas = PRC_TaiHai_IDEA_16
+	remove_ideas = PRC_TaiHai_IDEA_17
+	remove_ideas = PRC_TaiHai_IDEA_18
+	remove_ideas = PRC_TaiHai_IDEA_19
+	remove_ideas = PRC_TaiHai_IDEA_20
+	remove_ideas = PRC_TaiHai_IDEA_21
+	remove_ideas = PRC_TaiHai_IDEA_22
+	remove_ideas = PRC_TaiHai_IDEA_23
+	remove_ideas = PRC_TaiHai_IDEA_24
+	remove_ideas = PRC_TaiHai_IDEA_25
+	remove_ideas = PRC_TaiHai_IDEA_26
+	remove_ideas = PRC_bombing_raids
+	remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+	remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea2
+	remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea3
+	remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea4
+	remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea5
+	clr_country_flag = Taiwan_war
+	clr_country_flag = CHI_taihai_war
+	clr_country_flag = PRC_adapt_to_modern_defense_time_flag
 }
