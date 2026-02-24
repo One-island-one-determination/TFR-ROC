@@ -1,4 +1,4 @@
-#Note: This country is required to exist, otherwise it can cause many required functions to work improperly or cease to work at all.
+﻿#Note: This country is required to exist, otherwise it can cause many required functions to work improperly or cease to work at all.
 #похуй додеп
 capital = 1444
 set_country_flag = shithole_country
@@ -23,13 +23,13 @@ CHI = {
 	elections_allowed = yes
 }
 set_popularities = {
-	conservative = 35
+	conservative = 40
 	social_liberal = 45
 	market_liberal  = 7
-	totalitarian_socialist = 2
+	totalitarian_socialist = 1
 	communist = 3
 	libertarian_socialist = 2
-	social_democrat = 1
+	social_democrat = 2
 }
 set_country_flag = CHI_lfy_flag
 add_dynamic_modifier = {
@@ -156,6 +156,14 @@ add_country_leader_role = {
 	}
 }
 PRC = {
+	 set_autonomy = {
+        target = MCU
+        autonomy_state = autonomy_puppet
+    }
+	 set_autonomy = {
+        target = HKN
+        autonomy_state = autonomy_puppet
+    }
 	set_party_name = { ideology = communist long_name = PRC_xijp_ccp_long name = PRC_xijp_ccp }
 	add_country_leader_role = {
 		character = PRC_xi_jinping
@@ -172,6 +180,7 @@ add_ideas = Red_Nobility
 	add_ideas = Chinese_education
 	add_ideas = BPRC_china
 	add_ideas = PRC_organ_trade
+
 }
 PHI = {
 	recruit_character = NDF_Nur_Misuari
@@ -183,8 +192,227 @@ PHI = {
 		days = 1200
 	}
 }
+HKN = {
+	set_politics = {
+	ruling_party = communist
+	last_election = "2016.1.16"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authoritarian_democrat = 28
+	communist = 15
+	libertarian_socialist = 6
+	social_democrat = 14
+	market_liberal = 8
+	social_liberal = 18
+	conservative = 12
+	nationalist = 4
+}
+add_ideas = PRC_CHI_sar
+set_cosmetic_tag = HKN_PRC_puppet
+set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = HKN_PCC
+				name = HKN_PCC
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = HKN_PCC
+				name = HKN_PCC
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = HKN_PLAHKG
+				name = HKN_PLAHKG
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = HKN_HKR
+				name = HKN_HKR
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = HKN_HKR
+				name = HKN_HKR
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = HKN_HKR
+				name = HKN_HKR
+			}
+			set_party_name = {
+				ideology = market_liberal
+				long_name = HKN_HKR
+				name = HKN_HKR
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = HKN_HKR
+				name = HKN_HKR
+			}
+			promote_character = {
+	character = HKN_Carrie_Lam
+	ideology = market_socialism
+}
 
+add_country_leader_role = {
+		character = HKN_Carrie_Lam
+		promote_leader = yes
+		country_leader = {
+			ideology = market_socialism 
+			expire = "1.1.1.1"
+		}
+	}
+	promote_character = {
+	character = HKN_Carrie_Lam
+	ideology = SIG_pragmatic_conservatism
+}
 
-
-
-
+add_country_leader_role = {
+		character = HKN_Carrie_Lam
+		promote_leader = yes
+		country_leader = {
+			ideology = SIG_pragmatic_conservatism 
+			expire = "1.1.1.1"
+		}
+	}
+set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+create_country_leader = {
+	name = "未知"
+	picture = "NOT"
+	expire = "1999.1.1"
+	ideology = maoism
+				}  
+				create_country_leader = {
+	name = "未知"
+	picture = "NOT"
+	expire = "1999.1.1"
+	ideology = fascist_populism
+				}  
+				create_country_leader = {
+	name = "未知"
+	picture = "NOT"
+	expire = "1999.1.1"
+	ideology = babylonian_nazism
+				}  
+}
+MCU = {
+	set_politics = {
+	ruling_party = communist
+	last_election = "2016.1.16"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authoritarian_democrat = 28
+	communist = 15
+	libertarian_socialist = 6
+	social_democrat = 14
+	market_liberal = 8
+	social_liberal = 18
+	conservative = 12
+	nationalist = 4
+}
+	add_ideas = PRC_CHI_sar
+set_cosmetic_tag = MCU_PRC_puppet
+	promote_character = {
+	character = MCU_Ho_Iat_Seng
+	ideology = market_socialism
+}
+set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = HKN_PCC
+				name = HKN_PCC
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = HKN_PCC
+				name = HKN_PCC
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = HKN_PLAMCU
+				name = HKN_PLAMCU
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = HKN_HKR
+				name = HKN_HKR
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = HKN_HKR
+				name = HKN_HKR
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = HKN_HKR
+				name = HKN_HKR
+			}
+			set_party_name = {
+				ideology = market_liberal
+				long_name = HKN_HKR
+				name = HKN_HKR
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = HKN_HKR
+				name = HKN_HKR
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+add_country_leader_role = {
+		character = MCU_Ho_Iat_Seng
+		promote_leader = yes
+		country_leader = {
+			ideology = market_socialism 
+			expire = "1.1.1.1"
+		}
+	}
+	create_country_leader = {
+	name = "未知"
+	picture = "NOT"
+	expire = "1999.1.1"
+	ideology = maoism
+				}  
+				create_country_leader = {
+	name = "未知"
+	picture = "NOT"
+	expire = "1999.1.1"
+	ideology = fascist_populism
+				}  
+				create_country_leader = {
+	name = "未知"
+	picture = "NOT"
+	expire = "1999.1.1"
+	ideology = babylonian_nazism
+				}  
+}
