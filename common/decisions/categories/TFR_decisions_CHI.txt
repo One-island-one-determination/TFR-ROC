@@ -24,10 +24,8 @@ CHI_PRC_Infiltration_decisions = {
 		always = yes
 	}
 	visible = {
-		NOT = {
-			is_ally_with = PRC
-		}
-		date < 2025.1.1
+		is_debug = yes
+		date < 2023.1.1
 	}
 	scripted_gui = PRC_Infiltration_gui
 }
