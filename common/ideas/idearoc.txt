@@ -1,5 +1,67 @@
 ideas = {
 	country = {
+		PRC_anti_western_proaganda_idea2 = {
+	picture = PRC_anti_western_proaganda
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		weekly_manpower = -200
+		war_support_factor = 0.10
+		stability_factor = -0.10
+		fascist_drift = 0.01
+		national_socialist_drift = 0.01
+		society_development_monthly = -0.05
+    }
+	targeted_modifier = {
+	tag = CHI
+	attack_bonus_against = 0.15
+	breakthrough_bonus_against = 0.15
+	}
+	targeted_modifier = {
+	tag = JAP
+	attack_bonus_against = 0.15
+	breakthrough_bonus_against = 0.15
+	}
+	targeted_modifier = {
+	tag = AST
+	attack_bonus_against = 0.15
+	breakthrough_bonus_against = 0.15
+	}
+		}
+	CHI_anti_western_proaganda_idea = {
+	picture = JAP_Taiwan_Intervention
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+		war_support_factor = 0.05
+		defensive_war_stability_factor = 0.05
+		experience_gain_factor = 0.10
+		industrial_capacity_factory = 0.10
+    }
+	targeted_modifier = {
+	tag = PRC
+	attack_bonus_against = 0.10
+	defense_bonus_against = 0.15
+	}
+		}
 		CHI_farplanning_infrastructure1 = {
 			name = CHI_farplanning_infrastructure
 			picture = CHI_farplanning_infrastructure
@@ -1514,7 +1576,7 @@ ideas = {
 			}
 		}
 PRC_TaiHai_IDEA = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
 
     allowed = {
         always = no
@@ -1558,7 +1620,7 @@ PRC_TaiHai_IDEA = {
             }
 }
 PRC_TaiHai_IDEA_1 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -1603,7 +1665,7 @@ PRC_TaiHai_IDEA_1 = {
             }
 }
 PRC_TaiHai_IDEA_2 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -1648,7 +1710,7 @@ PRC_TaiHai_IDEA_2 = {
             }
 }
 PRC_TaiHai_IDEA_3 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -1693,7 +1755,7 @@ PRC_TaiHai_IDEA_3 = {
             }
 }
 PRC_TaiHai_IDEA_4 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -1733,7 +1795,7 @@ PRC_TaiHai_IDEA_4 = {
             }
 }
 PRC_TaiHai_IDEA_5 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -1773,7 +1835,7 @@ PRC_TaiHai_IDEA_5 = {
             }
 }
 PRC_TaiHai_IDEA_6 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -1813,7 +1875,7 @@ PRC_TaiHai_IDEA_6 = {
             }
 }
 PRC_TaiHai_IDEA_7 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -1853,7 +1915,7 @@ PRC_TaiHai_IDEA_7 = {
             }
 }
 PRC_TaiHai_IDEA_8 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -1895,7 +1957,7 @@ PRC_TaiHai_IDEA_8 = {
             }
 }
 PRC_TaiHai_IDEA_9 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -1937,7 +1999,7 @@ PRC_TaiHai_IDEA_9 = {
             }
 }
 PRC_TaiHai_IDEA_10 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -1981,7 +2043,7 @@ PRC_TaiHai_IDEA_10 = {
             }
 }
 PRC_TaiHai_IDEA_11 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2025,7 +2087,7 @@ PRC_TaiHai_IDEA_11 = {
             }
 }
 PRC_TaiHai_IDEA_12 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2069,7 +2131,7 @@ PRC_TaiHai_IDEA_12 = {
             }
 }
 PRC_TaiHai_IDEA_13 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2113,7 +2175,7 @@ PRC_TaiHai_IDEA_13 = {
             }
 }
 PRC_TaiHai_IDEA_14 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2157,7 +2219,7 @@ PRC_TaiHai_IDEA_14 = {
             }
 }
 PRC_TaiHai_IDEA_15 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2201,7 +2263,7 @@ PRC_TaiHai_IDEA_15 = {
             }
 }
 PRC_TaiHai_IDEA_16 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2245,7 +2307,7 @@ PRC_TaiHai_IDEA_16 = {
             }
 }
 PRC_TaiHai_IDEA_17 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2289,7 +2351,7 @@ PRC_TaiHai_IDEA_17 = {
             }
 }
 PRC_TaiHai_IDEA_18 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2334,7 +2396,7 @@ PRC_TaiHai_IDEA_18 = {
             }
 }
 PRC_TaiHai_IDEA_19 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2380,7 +2442,7 @@ PRC_TaiHai_IDEA_19 = {
             }
 }
 PRC_TaiHai_IDEA_20 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2427,7 +2489,7 @@ PRC_TaiHai_IDEA_20 = {
             }
 }
 PRC_TaiHai_IDEA_21 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2474,7 +2536,7 @@ PRC_TaiHai_IDEA_21 = {
             }
 }
 PRC_TaiHai_IDEA_22 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2536,7 +2598,7 @@ PRC_TaiHai_IDEA_22 = {
             }
 }
 PRC_TaiHai_IDEA_23 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2599,7 +2661,7 @@ PRC_TaiHai_IDEA_23 = {
             }
 }
 PRC_TaiHai_IDEA_24 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2662,7 +2724,7 @@ PRC_TaiHai_IDEA_24 = {
             }
 }
 PRC_TaiHai_IDEA_25 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = PRC_TaiHai_IDEA
 
     allowed = {
@@ -2725,7 +2787,7 @@ PRC_TaiHai_IDEA_25 = {
             }
 }
 JAP_TaiHai_IDEA_1 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -2761,7 +2823,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_2 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -2797,7 +2859,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_3 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -2838,7 +2900,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_4 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -2879,7 +2941,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_5 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -2920,7 +2982,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_6 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -2961,7 +3023,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_7 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3002,7 +3064,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_8 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3043,7 +3105,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_9 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3084,7 +3146,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_10 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3125,7 +3187,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_11 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3166,7 +3228,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_12 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3207,7 +3269,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_13 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3248,7 +3310,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_14 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3289,7 +3351,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_15 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3330,7 +3392,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_16 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3371,7 +3433,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_17 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3412,7 +3474,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_18 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3453,7 +3515,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_19 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3494,7 +3556,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_20 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3535,7 +3597,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_21 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3576,7 +3638,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_22 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3617,7 +3679,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_23 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3658,7 +3720,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_24 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3699,7 +3761,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 JAP_TaiHai_IDEA_25 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = JAP_TaiHai_IDEA
 
     allowed = {
@@ -3740,7 +3802,7 @@ add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer 
             }
 }
 CHI_TaiHai_IDEA_1 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -3771,7 +3833,7 @@ CHI_TaiHai_IDEA_1 = {
     }
 }
 CHI_TaiHai_IDEA_2 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -3802,7 +3864,7 @@ CHI_TaiHai_IDEA_2 = {
     }
 }
 CHI_TaiHai_IDEA_3 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -3833,7 +3895,7 @@ CHI_TaiHai_IDEA_3 = {
     }
 }
 CHI_TaiHai_IDEA_4 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -3864,7 +3926,7 @@ CHI_TaiHai_IDEA_4 = {
     }
 }
 CHI_TaiHai_IDEA_5 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -3895,7 +3957,7 @@ CHI_TaiHai_IDEA_5 = {
     }
 }
 CHI_TaiHai_IDEA_6 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -3926,7 +3988,7 @@ CHI_TaiHai_IDEA_6 = {
     }
 }
 CHI_TaiHai_IDEA_7 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -3957,7 +4019,7 @@ CHI_TaiHai_IDEA_7 = {
     }
 }
 CHI_TaiHai_IDEA_8 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -3999,7 +4061,7 @@ CHI_TaiHai_IDEA_8 = {
 		}
 }
 CHI_TaiHai_IDEA_9 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4041,7 +4103,7 @@ CHI_TaiHai_IDEA_9 = {
 		}
 }
 CHI_TaiHai_IDEA_10 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4085,7 +4147,7 @@ CHI_TaiHai_IDEA_10 = {
 		}
 }
 CHI_TaiHai_IDEA_11 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4129,7 +4191,7 @@ CHI_TaiHai_IDEA_11 = {
 		}
 }
 CHI_TaiHai_IDEA_12 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4173,7 +4235,7 @@ CHI_TaiHai_IDEA_12 = {
 		}
 }
 CHI_TaiHai_IDEA_13 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4218,7 +4280,7 @@ CHI_TaiHai_IDEA_13 = {
 		}
 }
 CHI_TaiHai_IDEA_14 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4263,7 +4325,7 @@ CHI_TaiHai_IDEA_14 = {
 		}
 }
 CHI_TaiHai_IDEA_15 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4308,7 +4370,7 @@ CHI_TaiHai_IDEA_15 = {
 		}
 }
 CHI_TaiHai_IDEA_16 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4353,7 +4415,7 @@ CHI_TaiHai_IDEA_16 = {
 		}
 }
 CHI_TaiHai_IDEA_17 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4398,7 +4460,7 @@ CHI_TaiHai_IDEA_17 = {
 		}
 }
 CHI_TaiHai_IDEA_18 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4443,7 +4505,7 @@ CHI_TaiHai_IDEA_18 = {
 		}
 }
 CHI_TaiHai_IDEA_19 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4488,7 +4550,7 @@ CHI_TaiHai_IDEA_19 = {
 		}
 }
 CHI_TaiHai_IDEA_20 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4534,7 +4596,7 @@ CHI_TaiHai_IDEA_20 = {
 		}
 }
 CHI_TaiHai_IDEA_21 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4580,7 +4642,7 @@ CHI_TaiHai_IDEA_21 = {
 		}
 }
 CHI_TaiHai_IDEA_22 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4626,7 +4688,7 @@ CHI_TaiHai_IDEA_22 = {
 		}
 }
 CHI_TaiHai_IDEA_23 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4671,7 +4733,7 @@ CHI_TaiHai_IDEA_23 = {
 		}
 }
 CHI_TaiHai_IDEA_24 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4716,7 +4778,7 @@ CHI_TaiHai_IDEA_24 = {
 		}
 }
 CHI_TaiHai_IDEA_25 = {
-    picture = generic_world_wide_financial_crisis
+    picture = JAP_Taiwan_Intervention
     name = CHI_TaiHai_IDEA
 
     allowed = {
@@ -4762,7 +4824,6 @@ CHI_TaiHai_IDEA_25 = {
 }
 	}
 }
-
 
 
 
