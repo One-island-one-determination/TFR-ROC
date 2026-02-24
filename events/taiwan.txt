@@ -2897,6 +2897,65 @@ country_event = {
 	}
 }
 country_event = {
+	id = ROC.57
+	title = ROC.57.t
+	desc = ROC.57.d
+	picture = GFX_china_civil_war_1
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.57.a
+		complete_national_focus = PRC_fast_finalization
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = ROC.58
+	title = ROC.58.t
+	desc = ROC.58.d
+	picture = GFX_china_civil_war_1
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_ideas = PDO_taiwan_intervention_idea
+			activate_mission = JAP_taiwan_war_mission
+			if = {
+				limit = {
+					tag = JAP
+				}
+				set_country_flag = JAP_ongoing_taiwan_war
+				mark_focus_tree_layout_dirty = yes
+				hidden_effect = {
+					complete_national_focus = JAP_defend_taiwan
+				}
+			}
+		}
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.58.a
+		if = {
+				limit = {
+					tag = JAP
+				}
+				mark_focus_tree_layout_dirty = yes
+				hidden_effect = {
+					complete_national_focus = JAP_defend_taiwan
+				}
+			}
+	}
+}
+country_event = {
 	id = ROC.59
 	title = ROC.59.t
 	desc = ROC.59.d
@@ -3124,6 +3183,7 @@ add_country_leader_role = {
 		name = china.391.a
 	}
 }
+
 
 
 
