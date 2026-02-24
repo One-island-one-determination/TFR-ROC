@@ -2330,7 +2330,7 @@ country_event = {
 			
 			#Other Countries effected by American Civil War
 			PRC = {
-				set_country_flag = PRC_UnitedStates_divided
+				set_global_flag = PRC_UnitedStates_divided
 				country_event = china.312
 				country_event = { id = taiwan.25 days = 5 }
 				country_event = {
@@ -6571,3 +6571,4 @@ news_event = {
 		set_global_flag = USA_biden_won_flag
 	}
 }
+
