@@ -3029,6 +3029,22 @@ country_event = {
 				THE_ChineseCivilWarTroops = yes
 			}
 			HKN = {
+				set_politics = {
+	ruling_party = social_liberal
+	last_election = "2016.1.16"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authoritarian_democrat = 5
+	communist = 5
+	libertarian_socialist = 10
+	social_democrat = 20
+	market_liberal = 20
+	social_liberal = 50
+	conservative = 10
+	nationalist = 0
+}
 				transfer_state = 326
 				add_state_core = 326
 				set_cosmetic_tag = HKN_revolution
@@ -3102,6 +3118,7 @@ add_country_leader_role = {
 		name = china.391.a
 	}
 }
+
 
 
 
