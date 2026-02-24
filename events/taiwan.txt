@@ -745,6 +745,12 @@ country_event = {
 			add_dynamic_modifier = {
 					modifier = CHI_LY_of_the_roc_dynamic
 				}
+add_to_variable = {var = CHI_LFY_conservative_drift value = 0.01}
+				add_to_variable = {var = CHI_LFY_political_power_gain value = 0.50}
+				add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = -0.05}
+				add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.04}
+				add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = 0.05}
+				add_to_variable = {var = CHI_LFY_social_liberal_drift value = 0.03}
 		}
 	}
 	trigger = {
@@ -3118,6 +3124,7 @@ add_country_leader_role = {
 		name = china.391.a
 	}
 }
+
 
 
 
