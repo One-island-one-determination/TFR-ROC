@@ -4129,10 +4129,7 @@ PDTO_military_exercise = {
 			}
 		}
 		visible = {
-			OR = {
-				is_in_faction_with = JAP
-				is_in_faction_with = CHI
-				}
+			always = yes
 		}
 		ai_will_do = {
 			base = 20
@@ -4179,10 +4176,7 @@ PDTO_Trade_Agreement = {
 			}
 		}
 		visible = {
-			OR = {
-				is_in_faction_with = JAP
-				is_in_faction_with = CHI
-				}
+			always = yes
 		}
 		ai_will_do = {
 			base = 10
@@ -4221,10 +4215,7 @@ PDTO_Mineral_Detection = {
 			}
 		}
 		visible = {
-			OR = {
-				is_in_faction_with = JAP
-				is_in_faction_with = CHI
-				}
+			always = yes
 		}
 		ai_will_do = {
 			base = 10
@@ -4261,10 +4252,7 @@ PDTO_Unity_up = {
 		available = {
 		}
 		visible = {
-			OR = {
-				is_in_faction_with = JAP
-				is_in_faction_with = CHI
-				}
+			always = yes
 		}
 		ai_will_do = {
 			base = 10
