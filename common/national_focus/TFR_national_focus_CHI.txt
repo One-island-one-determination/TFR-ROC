@@ -885,11 +885,6 @@ focus_tree = {
 			has_country_flag = covid_happen
 		}
 		completion_reward = {
-		add_political_power = 50
-			add_days_mission_timeout = {
-				mission = Epidemic_is_getting_worse
-				days = 50
-			}
 		}
 		bypass = {
 		}
@@ -2460,7 +2455,7 @@ focus_tree = {
 		}
 		relative_position_id = Semiconductor_mobilization
 		completion_reward = {
-
+			add_ideas = CHI_toughen_industries
 		}
 	}
 	focus = {
@@ -2481,6 +2476,24 @@ focus_tree = {
 
 		}
 	}
+	focus = {
+		#走出風暴
+		id = Out_the_storm
+		icon = GFX_focus_CHI_Semiconductor_mobilization
+		cost = 1
+		x = -1
+		y = 4
+		prerequisite = {
+			focus = chip_complex
+		}
+		prerequisite = {
+			focus = Japan_Science_Technology_Industry_Cooperation
+		}
+		relative_position_id = Pacific_War
+		completion_reward = {
+			add_ideas = CHI_made_in_TW
+		}
+	}
 	focus = {	
 		id = CHI_thenationisinperil
 		icon = GFX_focus_CHI_grant_emergency_powers
@@ -2495,7 +2508,7 @@ focus_tree = {
 			factor = 1
 		}
 		allow_branch = {
-			
+			has_global_flag = PRC_ongoing_taiwan_war
 		}
 		completion_reward = {
 			add_ideas = CHI_thenationisinperil_1
@@ -3297,6 +3310,7 @@ focus_tree = {
 			focus = CHI_Recall_conscripts
 		}
 		completion_reward = {
+			add_ideas = CHI_hold_the_line_idea
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = CHI_NSM_idea
@@ -3345,6 +3359,7 @@ focus_tree = {
 			focus = CHI_National_Spiritual_Mobilization
 		}
 		completion_reward = {
+			add_ideas = CHI_last_stand_1_idea
 			swap_ideas = {
 				remove_idea = CHI_AD_idea_1
 				add_idea = CHI_AD_idea_2
@@ -3381,4 +3396,3 @@ focus_tree = {
 		}
 	}
 }
-
