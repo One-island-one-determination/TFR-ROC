@@ -1,0 +1,1666 @@
+	scripted_gui = {
+		CHI_TAIHAI_WAR_SUPER = { 
+			context_type = player_context
+			window_name = "CHI_TAIHAI_WAR_SUPER" 
+
+			visible = {
+				has_country_flag = CHI_taihai_war_superevent
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = CHI_taihai_war_superevent
+				}
+			}
+		}
+		CHI_Chinese_Civil_War_event = { 
+			context_type = player_context
+			window_name = "CHI_Chinese_Civil_War_event" 
+
+			visible = {
+				has_country_flag = CHI_Chinese_Civil_War_flag 
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = CHI_Chinese_Civil_War_flag 
+				}
+			}
+
+		}
+
+		MEX_cartel_war_super_event = {
+			context_type = player_context
+			window_name = "MEX_cartel_war_super_event"
+
+			visible = {
+				has_country_flag = MEX_cartel_war_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = MEX_cartel_war_flag
+				}
+			}
+		}
+
+		GRO_mission_passed = {
+			context_type = player_context
+			window_name = "mission_passed"
+
+			visible = {
+				has_country_flag = mission_passed_on_flag
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = mission_passed_on_flag
+				}
+			}
+		}
+		GRO_brat_dva = {
+			context_type = player_context
+			window_name = "brat_dva_super_event"
+
+			visible = {
+				has_country_flag = brat_dva_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = brat_dva_super
+				}
+			}
+		}
+		GRO_kiryu = {
+			context_type = player_context
+			window_name = "kiryu_super_event"
+
+			visible = {
+				has_country_flag = kiryu_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = kiryu_super
+				}
+			}
+		}
+		GRO_san_andreas = {
+			context_type = player_context
+			window_name = "san_andreas_super_event"
+
+			visible = {
+				has_country_flag = san_andreas_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = san_andreas_super
+				}
+			}
+		}
+		HRL_arab_world_super_event = {
+			context_type = player_context
+			window_name = "HRL_arab_world_super_event"
+
+			visible = {
+				has_global_flag = HRL_arab_world_unified_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_global_flag = HRL_arab_world_unified_super
+				}
+			}
+		}
+		
+		HRL_arab_world_super_event = {
+			context_type = player_context
+			window_name = "HRL_arab_world_super_event"
+
+			visible = {
+				has_global_flag = HRL_arab_world_unified_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_global_flag = HRL_arab_world_unified_super
+				}
+			}
+		}
+	
+		eurasian_chinese_war_super_event = {
+			context_type = player_context
+			window_name = "eurasian_chinese_war_super_event"
+
+			visible = {
+				has_country_flag = eurasian_chinsese_war
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = eurasian_chinsese_war
+				}
+			}
+		}
+		
+		alikhanov_war_super_event = {
+			context_type = player_context
+			window_name = "alikhanov_war_super_event"
+
+			visible = {
+				has_country_flag = SOV_second_nato_war_alikhanov_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = SOV_second_nato_war_alikhanov_flag
+				}
+			}
+		}	
+		
+		alikhanov_victory_super_event = {
+			context_type = player_context
+			window_name = "alikhanov_victory_super_event"
+
+			visible = {
+				has_country_flag = TFR_se_second_nato_victory_alikhanov_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = TFR_se_second_nato_victory_alikhanov_flag
+				}
+			}
+		}
+		
+		eurasian_victory_super_event = {
+			context_type = player_context
+			window_name = "eurasian_victory_super_event"
+
+			visible = {
+				has_country_flag = eurasian_victory_se_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = eurasian_victory_se_flag
+				}
+			}
+		}	
+		
+		zhir_second_victory_super_event = {
+			context_type = player_context
+			window_name = "zhir_second_victory_super_event"
+
+			visible = {
+				has_country_flag = zhir_second_victory_se_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = zhir_second_victory_se_flag
+				}
+			}
+		}	
+		
+		dark_trump_super_event = {
+			context_type = player_context
+			window_name = "dark_trump_super_event"
+
+			visible = {
+				has_country_flag = dark_trump_usa_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = dark_trump_usa_flag
+				}
+			}
+		}	
+		
+		maga_king_super_event = {
+			context_type = player_context
+			window_name = "maga_king_super_event"
+
+			visible = {
+				has_country_flag = maga_king_usa_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = maga_king_usa_flag
+				}
+			}
+		}
+		
+		navalny_war_super_event = {
+			context_type = player_context
+			window_name = "navalny_war_super_event"
+
+			visible = {
+				has_country_flag = navalny_war_se_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = navalny_war_se_flag
+				}
+			}
+		}	
+		
+		wagner_war_super_event = {
+			context_type = player_context
+			window_name = "wagner_war_super_event"
+
+			visible = {
+				has_country_flag = wagner_war_se_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = wagner_war_se_flag
+				}
+			}
+		}	
+		
+		wagner_victory_super_event = {
+			context_type = player_context
+			window_name = "wagner_victory_super_event"
+
+			visible = {
+				has_country_flag = wagner_victory_se_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = wagner_victory_se_flag
+				}
+			}
+		}
+		
+		navalny_victory_super_event = {
+			context_type = player_context
+			window_name = "navalny_victory_super_event"
+
+			visible = {
+				has_country_flag = navalny_victory_se_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = navalny_victory_se_flag
+				}
+			}
+		}
+		
+		north_korea_civil_war_super_event = {
+			context_type = player_context
+			window_name = "north_korea_civil_war_super_event"
+
+			visible = {
+				has_country_flag = super_north_korean_civil_war_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = super_north_korean_civil_war_flag
+				}
+			}
+		}
+		
+		north_korea_civil_war_super_event = {
+			context_type = player_context
+			window_name = "north_korea_civil_war_super_event"
+
+			visible = {
+				has_country_flag = super_north_korean_civil_war_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = super_north_korean_civil_war_flag
+				}
+			}
+		}
+		
+		USA_civil_war_trump_victory_super_event = {
+			context_type = player_context
+			window_name = "USA_civil_war_trump_victory_super_event"
+
+			visible = {
+				has_country_flag = USA_civil_war_trump_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = USA_civil_war_trump_super
+				}
+			}
+		}
+		
+		USA_civil_war_joe_biden_victory_super_event = {
+			context_type = player_context
+			window_name = "USA_civil_war_joe_biden_victory_super_event"
+
+			visible = {
+				has_country_flag = USA_civil_war_joe_biden_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = USA_civil_war_joe_biden_super
+				}
+			}
+		}
+		
+		USA_bloomberg_sweep_super_event = {
+			context_type = player_context
+			window_name = "USA_bloomberg_sweep_super_event"
+
+			visible = {
+				has_country_flag = USA_bloomberg_sweep_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = USA_bloomberg_sweep_super
+				}
+			}
+		}
+		
+		USA_victory_caligula_super_event = {
+			context_type = player_context
+			window_name = "USA_victory_caligula_super_event"
+
+			visible = {
+				has_country_flag = USA_victory_caligula_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = USA_victory_caligula_super
+				}
+			}
+		}
+		
+		USA_victory_nss_super_event = {
+			context_type = player_context
+			window_name = "USA_victory_nss_super_event"
+
+			visible = {
+				has_country_flag = USA_victory_nss_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = USA_victory_nss_super
+				}
+			}
+		}
+		
+		USA_civil_war_super_event = {
+			context_type = player_context
+			window_name = "USA_civil_war_super_event"
+
+			visible = {
+				has_country_flag = USA_civil_war_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = USA_civil_war_super
+				}
+			}
+		}
+		
+		USA_hillary_presidency_super_event = {
+			context_type = player_context
+			window_name = "USA_hillary_presidency_super_event"
+
+			visible = {
+				has_country_flag = USA_hillary_president_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = USA_hillary_president_super
+				}
+			}
+		}
+		
+		USA_american_iranian_war_super_event = {
+			context_type = player_context
+			window_name = "USA_american_iranian_war_super_event"
+
+			visible = {
+				has_country_flag = USA_iranian_war
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = USA_iranian_war
+				}
+			}
+		}
+		
+		USA_trump_third_term_super_event = {
+			context_type = player_context
+			window_name = "USA_trump_third_term_super_event"
+
+			visible = {
+				has_country_flag = USA_trump_third_term_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = USA_trump_third_term_super
+				}
+			}
+		}
+		
+		PTF_rousseau_victory = {
+			context_type = player_context
+			window_name = "PTF_rousseau_victory"
+
+			visible = {
+				has_country_flag = PTF_patriot_front_victory
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PTF_patriot_front_victory
+				}
+			}
+		}
+		
+		SAU_civil_war_super_event = {
+			context_type = player_context
+			window_name = "SAU_civil_war_super_event"
+
+			visible = {
+				has_country_flag = SAU_civil_war_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = SAU_civil_war_flag
+				}
+			}
+		}
+		
+		PRC_invasion_of_taiwan_super_event = {
+			context_type = player_context
+			window_name = "PRC_invasion_of_taiwan_super_event"
+
+			visible = {
+				has_country_flag = PRC_invasion_of_taiwan_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PRC_invasion_of_taiwan_super
+				}
+			}
+		}
+		
+		NSM_victory_reformists_super_event = {
+			context_type = player_context
+			window_name = "NSM_victory_reformists_super_event"
+
+			visible = {
+				has_country_flag = NSM_victory_reformists_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = NSM_victory_reformists_super
+				}
+			}
+		}
+		
+		NSM_victory_hardliners_super_event = {
+			context_type = player_context
+			window_name = "NSM_victory_hardliners_super_event"
+
+			visible = {
+				has_country_flag = NSM_victory_hardliners_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = NSM_victory_hardliners_super
+				}
+			}
+		}
+		
+		ATW_victory_accelerationists_super_event = {
+			context_type = player_context
+			window_name = "ATW_victory_accelerationists_super_event"
+
+			visible = {
+				has_country_flag = ATW_victory_accelerationists_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = ATW_victory_accelerationists_super
+				}
+			}
+		}
+		
+		ATW_victory_christian_awd_super_event = {
+			context_type = player_context
+			window_name = "ATW_victory_christian_awd_super_event"
+
+			visible = {
+				has_country_flag = ATW_victory_christian_awd_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = ATW_victory_christian_awd_super
+				}
+			}
+		}
+		
+		APA_victory_moderates_super_event = {
+			context_type = player_context
+			window_name = "APA_victory_moderates_super_event"
+
+			visible = {
+				has_country_flag = APA_victory_moderates_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = APA_victory_moderates_super
+				}
+			}
+		}
+		
+		APA_victory_anarchists_super_event = {
+			context_type = player_context
+			window_name = "APA_victory_anarchists_super_event"
+
+			visible = {
+				has_country_flag = APA_victory_anarchists_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = APA_victory_anarchists_super
+				}
+			}
+		}
+		
+		APA_victory_neosocialists_super_event = {
+			context_type = player_context
+			window_name = "APA_victory_neosocialists_super_event"
+
+			visible = {
+				has_country_flag = APA_victory_neosocialists_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = APA_victory_neosocialists_super
+				}
+			}
+		}
+		
+		APA_victory_jacobins_super_event = {
+			context_type = player_context
+			window_name = "APA_victory_jacobins_super_event"
+
+			visible = {
+				has_country_flag = APA_victory_jacobins_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = APA_victory_jacobins_super
+				}
+			}
+		}
+		
+		GER_third_european_war_super_event = {
+			context_type = player_context
+			window_name = "GER_third_european_war_super_event"
+
+			visible = {
+				has_country_flag = GER_third_european_war_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_third_european_war_super
+				}
+			}
+		}
+		
+		GER_juche_germany_super_event = {
+			context_type = player_context
+			window_name = "GER_juche_germany_super_event"
+
+			visible = {
+				has_country_flag = GER_juche_germany_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_juche_germany_super
+				}
+			}
+		}
+		
+		ATW_the_final_solution_super_event = {
+			context_type = player_context
+			window_name = "ATW_the_final_solution_super_event"
+
+			visible = {
+				has_country_flag = ATW_the_final_solution_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = ATW_the_final_solution_super
+				}
+			}
+		}
+		
+		ATW_nine_angels_coup = {
+			context_type = player_context
+			window_name = "ATW_nine_angels_coup"
+
+			visible = {
+				has_country_flag = ATW_nine_angels_coup
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = ATW_nine_angels_coup
+				}
+			}
+		}
+		
+		CHA_sahara_expansion_super_event = {
+			context_type = player_context
+			window_name = "CHA_sahara_expansion"
+
+			visible = {
+				has_country_flag = CHA_sahara_expansion_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = CHA_sahara_expansion_super
+				}
+			}
+		}
+		
+		GMA_victory_super_event = {
+			context_type = player_context
+			window_name = "GMA_victory"
+
+			visible = {
+				has_country_flag = GMA_victory
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GMA_victory
+				}
+			}
+		}
+		
+		GER_day_x_super_event = {
+			context_type = player_context
+			window_name = "GER_day_x_super_event"
+
+			visible = {
+				has_country_flag = GER_day_x_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_day_x_super
+				}
+			}
+		}
+		
+		SOV_soviet_nato_victory_super_event = {
+			context_type = player_context
+			window_name = "SOV_soviet_nato_victory_super_event"
+
+			visible = {
+				has_country_flag = SOV_soviet_nato_victory_super_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = SOV_soviet_nato_victory_super_flag
+				}
+			}
+		}
+		
+		SOV_soviet_nato_victory_2_super_event = {
+			context_type = player_context
+			window_name = "SOV_soviet_nato_victory_2_super_event"
+
+			visible = {
+				has_country_flag = SOV_soviet_nato_victory_2_super_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = SOV_soviet_nato_victory_2_super_flag
+				}
+			}
+			
+		}		
+		
+		SOV_medvedev_nato_victory_2_super_event = {
+			context_type = player_context
+			window_name = "SOV_medvedev_nato_victory_2_super_event"
+
+			visible = {
+				has_country_flag = SOV_medvedev_nato_victory_2_super_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = SOV_medvedev_nato_victory_2_super_flag
+				}
+			}
+		}
+		
+		GER_nato_victory_super_event = {
+			context_type = player_context
+			window_name = "GER_nato_victory_super_event"
+
+			visible = {
+				has_country_flag = GER_nato_victory_super_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_nato_victory_super_flag
+				}
+			}
+		}
+		
+		SOV_ur_victory_super_event = {
+			context_type = player_context
+			window_name = "SOV_ur_victory_super_event"
+
+			visible = {
+				has_country_flag = SOV_ur_victory_super_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = SOV_ur_victory_super_flag
+				}
+			}
+		}
+		
+		LOS_confederacy_populists_super_event = {
+			context_type = player_context
+			window_name = "LOS_confederacy_populists_super_event"
+
+			visible = {
+				has_country_flag = LOS_confederacy_populists_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = LOS_confederacy_populists_flag
+				}
+			}
+		}
+		
+		LOS_confederacy_old_guard_super_event = {
+			context_type = player_context
+			window_name = "LOS_confederacy_old_guard_super_event"
+
+			visible = {
+				has_country_flag = LOS_confederacy_old_guard_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = LOS_confederacy_old_guard_flag
+				}
+			}
+		}
+		
+		SOV_ldpr_victory_super_event = {
+			context_type = player_context
+			window_name = "SOV_ldpr_victory_super_event"
+
+			visible = {
+				has_country_flag = SOV_ldpr_victory_super_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = SOV_ldpr_victory_super_flag
+				}
+			}
+		}
+		
+		BEL_EU_victory_super_event = {
+			context_type = player_context
+			window_name = "BEL_EU_victory_super_event"
+
+			visible = {
+				has_country_flag = BEL_EU_victory_super_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = BEL_EU_victory_super_flag
+				}
+			}
+		}
+		
+		SOV_30_days_war_super_event = {
+			context_type = player_context
+			window_name = "SOV_30_days_war_super_event"
+
+			visible = {
+				has_country_flag = SOV_30_days_war_super_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = SOV_30_days_war_super_flag
+				}
+			}
+		}
+		
+		JAP_japanese_civil_war_super_event = {
+			context_type = player_context
+			window_name = "JAP_japanese_civil_war_super_event"
+
+			visible = {
+				has_country_flag = JAP_japanese_civil_war_super_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = JAP_japanese_civil_war_super_flag
+				}
+			}
+		}
+		SER_formation_yugoslavia_super_event = {
+			context_type = player_context
+			window_name = "SER_formation_yugoslavia_super_event"
+
+			visible = {
+				has_country_flag = SER_formation_yugoslavia_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = SER_formation_yugoslavia_flag
+				}
+			}
+		}
+		
+		GER_second_nato_war_fascist_super_event = {
+			context_type = player_context
+			window_name = "GER_second_nato_war_fascist_super_event"
+
+			visible = {
+				has_country_flag = GER_second_nato_war_fascist_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_second_nato_war_fascist_flag
+				}
+			}
+		}
+		
+		GER_second_nato_war_nafo_super_event = {
+			context_type = player_context
+			window_name = "GER_second_nato_war_nafo_super_event"
+
+			visible = {
+				has_country_flag = GER_second_nato_war_nafo_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_second_nato_war_nafo_flag
+				}
+			}
+		}
+		
+		GER_schwab_victory_super_event = {
+			context_type = player_context
+			window_name = "GER_schwab_victory_super_event"
+
+			visible = {
+				has_country_flag = GER_schwab_victory_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_schwab_victory_super
+				}
+			}
+		}
+		
+		GER_gunther_war_super_event = {
+			context_type = player_context
+			window_name = "GER_gunther_war_super_event"
+
+			visible = {
+				has_country_flag = GER_gunther_war_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_gunther_war_super
+				}
+			}
+		}
+		
+		GER_gunther_victory_super_event = {
+			context_type = player_context
+			window_name = "GER_gunther_victory_super_event"
+
+			visible = {
+				has_country_flag = GER_gunther_victory_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_gunther_victory_super
+				}
+			}
+		}
+		
+		GER_second_nato_war_communist_super_event = {
+			context_type = player_context
+			window_name = "GER_second_nato_war_communist_super_event"
+
+			visible = {
+				has_country_flag = GER_second_nato_war_communist_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_second_nato_war_communist_flag
+				}
+			}
+		}
+		
+		GER_second_nato_war_fascist_victory_super_event = {
+			context_type = player_context
+			window_name = "GER_second_nato_war_fascist_victory_super_event"
+
+			visible = {
+				has_country_flag = GER_second_nato_war_fascist_victory_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_second_nato_war_fascist_victory_flag
+				}
+			}
+		}
+		
+		GER_second_nato_war_nafo_victory_super_event = {
+			context_type = player_context
+			window_name = "GER_second_nato_war_nafo_victory_super_event"
+
+			visible = {
+				has_country_flag = GER_second_nato_war_nafo_victory_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_second_nato_war_nafo_victory_flag
+				}
+			}
+		}
+		
+		GER_second_nato_war_communist_victory_super_event = {
+			context_type = player_context
+			window_name = "GER_second_nato_war_communist_victory_super_event"
+
+			visible = {
+				has_country_flag = GER_second_nato_war_communist_victory_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = GER_second_nato_war_communist_victory_flag
+				}
+			}
+		}
+		
+		PRC_great_asian_war_super_event = {
+			context_type = player_context
+			window_name = "PRC_great_asian_war_super_event"
+
+			visible = {
+				has_country_flag = PRC_great_asian_war_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PRC_great_asian_war_super_event_flag
+				}
+			}
+		}
+		
+		PRC_eadi_victory_super_event = {
+			context_type = player_context
+			window_name = "PRC_eadi_victory_super_event"
+
+			visible = {
+				has_country_flag = PRC_eadi_victory_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PRC_eadi_victory_super_event_flag
+				}
+			}
+		}
+
+		PRC_xi_imper_super_event = {
+			context_type = player_context
+			window_name = "PRC_xi_imper_super_event"
+
+			visible = {
+				has_country_flag = PRC_xi_imper_won_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PRC_xi_imper_won_super_event_flag
+				}
+			}
+		}
+		
+		JAP_pdto_victory_super_event = {
+			context_type = player_context
+			window_name = "JAP_pdto_victory_super_event"
+
+			visible = {
+				has_country_flag = JAP_pdto_victory_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = JAP_pdto_victory_super_event_flag
+				}
+			}
+		}
+
+		PRC_nick_land_victory_super_event = {
+			context_type = player_context
+			window_name = "PRC_nick_land_victory_super_event"
+
+			visible = {
+				has_country_flag = PRC_nick_land_victory_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PRC_nick_land_victory_super_event_flag
+				}
+			}
+		}
+
+		PRC_centrist_victory_super_event = {
+			context_type = player_context
+			window_name = "PRC_centrist_victory_super_event"
+
+			visible = {
+				has_country_flag = PRC_centrist_victory_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PRC_centrist_victory_super_event_flag
+				}
+			}
+		}
+
+		PRC_new_left_victory_super_event = {
+			context_type = player_context
+			window_name = "PRC_new_left_victory_super_event"
+
+			visible = {
+				has_country_flag = PRC_new_left_victory_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PRC_new_left_victory_super_event_flag
+				}
+			}
+		}
+
+		PRC_reformist_victory_super_event = {
+			context_type = player_context
+			window_name = "PRC_reformist_victory_super_event"
+
+			visible = {
+				has_country_flag = PRC_reformist_victory_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PRC_reformist_victory_super_event_flag
+				}
+			}
+		}
+
+		PRC_revanchist_victory_super_event = {
+			context_type = player_context
+			window_name = "PRC_revanchist_victory_super_event"
+
+			visible = {
+				has_country_flag = PRC_revanchist_victory_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PRC_revanchist_victory_super_event_flag
+				}
+			}
+		}
+
+		PRC_chinese_empire_super_event = {
+			context_type = player_context
+			window_name = "PRC_chinese_empire_super_event"
+
+			visible = {
+				has_country_flag = PRC_chinese_empire_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PRC_chinese_empire_super_event_flag
+				}
+			}
+		}
+
+		PRC_loji_victory_super_event = {
+			context_type = player_context
+			window_name = "PRC_loji_victory_super_event"
+
+			visible = {
+				has_country_flag = PRC_loji_victory_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = PRC_loji_victory_super_event_flag
+				}
+			}
+		}
+		
+		european_war_super_event = {
+			context_type = player_context
+			window_name = "european_war_super_event"
+
+			visible = {
+				has_country_flag = european_war_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = european_war_super_event_flag
+				}
+			}
+		}
+		
+		USB_third_american_civil_war_super_event = {
+			context_type = player_context
+			window_name = "USB_third_american_civil_war_super_event"
+
+			visible = {
+				has_country_flag = USB_third_american_civil_war_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = USB_third_american_civil_war_super_event_flag
+				}
+			}
+		}
+		FAF_third_european_war_super_event = {
+			context_type = player_context
+			window_name = "FAF_third_european_war_super_event"
+
+			visible = {
+				has_country_flag = FAF_third_european_war_super_event_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = FAF_third_european_war_super_event_flag
+				}
+			}
+		}
+		FAF_third_european_war_super_event_monarchist = {
+			context_type = player_context
+			window_name = "FAF_third_european_war_super_event_monarchist"
+
+			visible = {
+				has_country_flag = FAF_third_european_war_super_event_monarchist_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = FAF_third_european_war_super_event_monarchist_flag
+				}
+			}
+		}
+		FAF_third_european_war_super_event_benedetti = {
+			context_type = player_context
+			window_name = "FAF_third_european_war_super_event_benedetti"
+
+			visible = {
+				has_country_flag = FAF_third_european_war_super_event_benedetti_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = FAF_third_european_war_super_event_benedetti_flag
+				}
+			}
+		}
+		FAF_third_european_war_super_event_bardella = {
+			context_type = player_context
+			window_name = "FAF_third_european_war_super_event_bardella"
+
+			visible = {
+				has_country_flag = FAF_third_european_war_super_event_bardella_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = FAF_third_european_war_super_event_bardella_flag
+				}
+			}
+		}
+		FAF_third_european_war_super_event_napoleon = {
+			context_type = player_context
+			window_name = "FAF_third_european_war_super_event_napoleon"
+
+			visible = {
+				has_country_flag = FAF_third_european_war_super_event_napoleon_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = FAF_third_european_war_super_event_napoleon_flag
+				}
+			}
+		}
+		FAF_third_european_war_super_event_republic = {
+			context_type = player_context
+			window_name = "FAF_third_european_war_super_event_republic"
+
+			visible = {
+				has_country_flag = FAF_third_european_war_super_event_republic_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = FAF_third_european_war_super_event_republic_flag
+				}
+			}
+		}
+		FAF_third_european_war_super_event_junta = {
+			context_type = player_context
+			window_name = "FAF_third_european_war_super_event_junta"
+
+			visible = {
+				has_country_flag = FAF_third_european_war_super_event_junta_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = FAF_third_european_war_super_event_junta_flag
+				}
+			}
+		}
+		
+		#IGNORE
+		
+		death_certificate_letter_closed = {
+			context_type = player_context
+			window_name = "death_certificate_letter_closed"
+
+			visible = {
+				has_country_flag = death_certificate_closed
+			}
+			effects = {
+				closed_folder_click = {
+					clr_country_flag = death_certificate_closed
+					set_country_flag = death_certificate_open
+				}
+			}
+		}
+		death_certificate_letter_open = {
+			context_type = player_context
+			window_name = "death_certificate_letter_open"
+
+			visible = {
+				has_country_flag = death_certificate_open
+			}
+		}
+		death_certificate_nikolai = {
+			context_type = player_context
+			window_name = "death_certificate_nikolai"
+
+			visible = {
+				AND = {
+					has_country_flag = death_certificate_open
+					has_country_flag = death_nikolai
+				}
+			}
+			effects = {
+				button_click = {
+					clr_country_flag = death_certificate_open
+					clr_country_flag = death_nikolai
+				}
+			}
+		}
+		death_certificate_valintin = {
+			context_type = player_context
+			window_name = "death_certificate_valintin"
+
+			visible = {
+				AND = {
+					has_country_flag = death_certificate_open
+					has_country_flag = death_valintin
+				}
+			}
+			effects = {
+				button_click = {
+					clr_country_flag = death_certificate_open
+					clr_country_flag = death_valintin
+				}
+			}
+		}
+	}

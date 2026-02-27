@@ -1,0 +1,4981 @@
+guiTypes = { #Y+ is Down, Y- is Up, X+ is Right, X- is Left
+	containerWindowType = { 
+		name = "CHI_TAIHAI_WAR_SUPER" 
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = { 
+			name ="GFX_CHI_TAIHAI_WAR_superevent"
+			spriteType = "GFX_CHI_TAIHAI_WAR_superevent"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = { 
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = { 
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = { 
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = { 
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = { 
+		name = "CHI_Chinese_Civil_War_event" 
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = { 
+			name ="GFX_whn_superevent"
+			spriteType = "GFX_whn_superevent"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = { 
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = { 
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = { 
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = { 
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = {
+		name = "alikhanov_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_alikhanov_war"
+			spriteType = "GFX_super_alikhanov_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+	
+	containerWindowType = {
+		name = "alikhanov_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_alikhanov_victory"
+			spriteType = "GFX_super_alikhanov_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "eurasian_chinese_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_north_korean_civil_war"
+			spriteType = "GFX_super_eurasian_chinese_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+
+	containerWindowType = {
+		name = "navalny_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_navalny_war"
+			spriteType = "GFX_super_SOV_navalny_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+
+	containerWindowType = {
+		name = "san_andreas_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_san_andreas"
+			spriteType = "GFX_super_san_andreas"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = san_andreas_text
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = san_andreas_quote
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = san_andreas_button
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+	containerWindowType = {
+		name = "brat_dva_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_brat_dva"
+			spriteType = "GFX_super_brat_dva"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = brat_dva_text
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = brat_dva_quote
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = brat_dva_button
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+	containerWindowType = {
+		name = "kiryu_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_kiryu"
+			spriteType = "GFX_super_kiryu"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = kiryu_text
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = kiryu_quote
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = kiryu_button
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+	containerWindowType = {
+		name = "mission_passed"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = no
+		fade_time = 4500
+		fade_type = linear
+		
+		background = {
+			name ="mission_passed"
+			spriteType = "GFX_mission_passed"
+			position = { x = 150 y = 150 }
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 340 y = 280 }
+			buttonText = ""
+			buttonFont = "VCR02_16"
+			spriteType ="GFX_respect"
+			clicksound = click_ok
+
+		}
+	}	
+	
+	containerWindowType = {
+		name = "wagner_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_wagner_war"
+			spriteType = "GFX_super_SOV_wagner_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_14"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+	
+	containerWindowType = {
+		name = "wagner_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_wagner_victory"
+			spriteType = "GFX_super_SOV_wagner_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_14"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "navalny_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_navalny_victory"
+			spriteType = "GFX_super_SOV_navalny_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+	
+	containerWindowType = {
+		name = "eurasian_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="eurasian_victory_picture"
+			spriteType = "GFX_super_SOV_eurasian_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+	
+	containerWindowType = {
+		name = "zhir_second_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="SOV_zhir_nato_victory_picture"
+			spriteType = "GFX_super_SOV_zhir_nato_victory_2"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+	
+	containerWindowType = {
+		name = "dark_trump_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="USC_dark_trump_picture"
+			spriteType = "GFX_super_USC_dark_trump"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+	
+	containerWindowType = {
+		name = "maga_king_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="USC_maga_king_picture"
+			spriteType = "GFX_super_USC_maga_king"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "north_korea_civil_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_north_korean_civil_war"
+			spriteType = "GFX_super_north_korean_civil_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_civil_war_trump_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_trump_victory"
+			spriteType = "GFX_super_trump_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_civil_war_joe_biden_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_joe_biden_victory"
+			spriteType = "GFX_super_joe_biden_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_bloomberg_sweep_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_bloomberg_sweep"
+			spriteType = "GFX_super_bloomberg_sweep"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_victory_caligula_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_USA_victory_caligula"
+			spriteType = "GFX_super_USA_victory_caligula"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_victory_nss_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_USA_victory_nss"
+			spriteType = "GFX_super_USA_victory_nss"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "HRL_arab_world_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name = "super_arab_world"
+			spriteType = "GFX_super_arab_world"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_american_iranian_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_american_iranian_war"
+			spriteType = "GFX_super_american_iranian_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_civil_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_USA_civil_war"
+			spriteType = "GFX_super_USA_civil_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_hillary_presidency_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_hillary_clinton_victory"
+			spriteType = "GFX_super_hillary_clinton_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_trump_third_term_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_trump_third_term"
+			spriteType = "GFX_super_trump_third_term"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "PRC_invasion_of_taiwan_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_invasion_of_taiwan"
+			spriteType = "GFX_super_invasion_of_taiwan"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "MEX_cartel_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_cartel_war"
+			spriteType = "GFX_super_cartel_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_trump_cums_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_trump_cums"
+			spriteType = "GFX_super_trump_cums"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+
+	containerWindowType = {
+		name = "PTF_rousseau_victory"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_patriot_victory"
+			spriteType = "GFX_super_patriot_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "NSM_victory_reformists_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_NSM_victory_reformists"
+			spriteType = "GFX_super_NSM_victory_reformists"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "NSM_victory_hardliners_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_NSM_victory_hardliners"
+			spriteType = "GFX_super_NSM_victory_hardliners"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "ATW_nine_angels_coup"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_nine_angels_coup"
+			spriteType = "GFX_super_nine_angels"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "ATW_victory_accelerationists_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_ATW_victory_accelerationists"
+			spriteType = "GFX_super_ATW_victory_accelerationists"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "ATW_victory_christian_awd_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_ATW_victory_christian"
+			spriteType = "GFX_super_ATW_victory_christian"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "APA_victory_moderates_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_APA_victory_moderates"
+			spriteType = "GFX_super_APA_victory_moderates"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "APA_victory_anarchists_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_APA_victory_anarchists"
+			spriteType = "GFX_super_APA_victory_anarchists"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "APA_victory_neosocialists_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_APA_victory_neosocialists"
+			spriteType = "GFX_super_APA_victory_neosocialists"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "APA_victory_jacobins_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_APA_victory_jacobins"
+			spriteType = "GFX_super_APA_victory_jacobins"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_third_european_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_GER_third_european_war"
+			spriteType = "GFX_super_GER_third_european_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = {
+		name = "GER_juche_germany_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_GER_juche_germany_super"
+			spriteType = "GFX_super_juche_germany"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = {
+		name = "FAF_third_european_war_super_event_monarchist"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="ThirdEuropeanWar_Monarchists"
+			spriteType = "GFX_ThirdEuropeanWar_Monarchists"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = {
+		name = "FAF_third_european_war_super_event_benedetti"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="ThirdEuropeanWar_LeDuc"
+			spriteType = "GFX_ThirdEuropeanWar_LeDuc"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = {
+		name = "FAF_third_european_war_super_event_bardella"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="ThirdEuropeanWar_LatinEmpire"
+			spriteType = "GFX_ThirdEuropeanWar_LatinEmpire"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = {
+		name = "FAF_third_european_war_super_event_napoleon"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="ThirdEuropeanWar_Napoleon"
+			spriteType = "GFX_ThirdEuropeanWar_Napoleon"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = {
+		name = "FAF_third_european_war_super_event_republic"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="ThirdEuropeanWar_Republic"
+			spriteType = "GFX_ThirdEuropeanWar_Republic"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = {
+		name = "FAF_third_european_war_super_event_junta"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="ThirdEuropeanWar_Junta"
+			spriteType = "GFX_ThirdEuropeanWar_Junta"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "ATW_the_final_solution_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_ATW_the_final_solution"
+			spriteType = "GFX_super_ATW_the_final_solution"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "SAU_civil_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_SAU_civil_war"
+			spriteType = "GFX_super_SAU_civil_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "CHA_sahara_expansion"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_CHA_sahara_expansion"
+			spriteType = "GFX_super_CHA_sahara_expansion"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GMA_victory"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_GMA_victory"
+			spriteType = "GFX_super_GMA_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_day_x_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_GER_day_x"
+			spriteType = "GFX_super_GER_day_x"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "SOV_soviet_nato_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_SOV_soviet_nato_victory"
+			spriteType = "GFX_super_SOV_soviet_nato_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "SOV_soviet_nato_victory_2_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_SOV_soviet_nato_victory_2"
+			spriteType = "GFX_super_SOV_soviet_nato_victory_2"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}	
+	
+	containerWindowType = {
+		name = "SOV_medvedev_nato_victory_2_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_SOV_medvedev_nato_victory_2"
+			spriteType = "GFX_super_SOV_medvedev_nato_victory_2"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_14"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_nato_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_NATO_victory"
+			spriteType = "GFX_super_NATO_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "SOV_ur_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_UR_nato_victory"
+			spriteType = "GFX_super_UR_nato_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "SOV_ldpr_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_LDPR_nato_victory"
+			spriteType = "GFX_super_LDPR_nato_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 520
+			maxHeight = 120
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "BEL_EU_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_EU_nato_victory"
+			spriteType = "GFX_super_EU_nato_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "SOV_30_days_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_30_days_war"
+			spriteType = "GFX_super_30_days_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "LOS_confederacy_populists_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_LOS_confederacy_populists"
+			spriteType = "GFX_super_LOS_confederacy_populists"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "LOS_confederacy_old_guard_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_LOS_confederacy_old_guard"
+			spriteType = "GFX_super_LOS_confederacy_old_guard"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "JAP_japanese_civil_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_super_JAP_japanese_civil_war"
+			spriteType = "GFX_super_JAP_japanese_civil_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "SER_formation_yugoslavia_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="GFX_SER_formation_yugoslavia"
+			spriteType = "GFX_super_SER_formation_yugoslavia"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_second_nato_war_fascist_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_second_european_war_fascist"
+			spriteType = "GFX_super_second_european_war_fascist"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_second_nato_war_nafo_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_second_european_war_nafo"
+			spriteType = "GFX_super_second_european_war_nafo"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_schwab_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="schwab_victory"
+			spriteType = "GFX_GER_schwab_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_gunther_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="gunther_war"
+			spriteType = "GFX_GER_gunther_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_gunther_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="gunther_victory"
+			spriteType = "GFX_GER_gunther_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_second_nato_war_communist_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_second_european_war_communist"
+			spriteType = "GFX_super_second_european_war_communist"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_second_nato_war_fascist_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_second_european_war_fascist_victory"
+			spriteType = "GFX_super_second_european_war_fascist_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_second_nato_war_nafo_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_second_european_war_nafo_victory"
+			spriteType = "GFX_super_second_european_war_nafo_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_second_nato_war_communist_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_second_european_war_communist_victory"
+			spriteType = "GFX_super_second_european_war_communist_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "PRC_great_asian_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_great_asian_war"
+			spriteType = "GFX_super_great_asian_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "PRC_eadi_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_eadi_victory"
+			spriteType = "GFX_super_eadi_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+
+	containerWindowType = {
+		name = "PRC_xi_imper_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_xi_imper_won"
+			spriteType = "GFX_super_xi_imper_won"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "JAP_pdto_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_pdto_victory"
+			spriteType = "GFX_super_pdto_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+
+	containerWindowType = {
+		name = "PRC_nick_land_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_nick_land_victory"
+			spriteType = "GFX_super_nick_land_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+
+	containerWindowType = {
+		name = "PRC_centrist_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_centrist_victory"
+			spriteType = "GFX_super_centrist_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+
+	containerWindowType = {
+		name = "PRC_new_left_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_new_left_victory"
+			spriteType = "GFX_super_new_left_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+
+	containerWindowType = {
+		name = "PRC_reformist_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_reformist_victory"
+			spriteType = "GFX_super_reformist_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+
+	containerWindowType = {
+		name = "PRC_revanchist_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_revanchist_victory"
+			spriteType = "GFX_super_revanchist_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+
+	containerWindowType = {
+		name = "PRC_chinese_empire_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_chinese_empire"
+			spriteType = "GFX_super_chinese_empire"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+
+	containerWindowType = {
+		name = "PRC_loji_victory_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_loji_victory"
+			spriteType = "GFX_super_loji_victory"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "european_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_european_war"
+			spriteType = "GFX_super_european_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "USB_third_american_civil_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_third_american_civil_war"
+			spriteType = "GFX_super_third_american_civil_war"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = {
+		name = "FAF_third_european_war_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="third_european_war"
+			spriteType = "GFX_ThirdEuropeanWar_Lafayette"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+}
+
+guiTypes = {
+	containerWindowType = {
+		name = "death_certificate_letter_closed"
+		size = { width = 1000 height = 755 }
+		position = { x = -1500 y = -250 }
+		show_position = { x = -650 y = -250 }
+		show_animation_type = decelerated
+		animation_time = 400
+		Orientation = UPPER_RIGHT
+		origo = upper_right
+		clipping = no
+
+		buttonType = { # Background Closed
+			name ="closed_folder"
+			spriteType = "GFX_se_closed"
+			position = { x= 0 y = 0 }
+			Orientation = center
+		}
+	}
+	containerWindowType = {
+		name = "death_certificate_letter_open"
+		size = { width = 1000 height = 755 }
+		position = { x = -700 y = -250 }
+		#hide_position = { x= -1500 y = -220 }
+		#hide_animation_type = accelerated
+		animation_time = 400
+		Orientation = UPPER_RIGHT
+		origo = upper_right
+		clipping = no
+
+		iconType = { # Background Open
+			name ="open_folder"
+			spriteType = "GFX_se_background"
+			position = { x= 0 y = 0 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "death_certificate_nikolai"
+		size = { width = 1000 height = 755 }
+		position = { x = -700 y = -250 }
+		#hide_position = { x= -1500 y = -220 }
+		#hide_animation_type = accelerated
+		animation_time = 400
+		Orientation = UPPER_RIGHT
+		origo = UPPER_RIGHT
+		clipping = no
+		#show_sound = guanabara_super
+
+		iconType = {
+			name ="letter"
+			spriteType = "GFX_se_guanabara"
+			position = { x= 0 y = 0 }
+			Orientation = center
+			alwaystransparent = no
+		}
+
+		instantTextBoxType = {
+			name = "description"
+			position = { x=990 y=120 }
+			font = "VCR02_18"
+			text = "se_guanabara_desc"
+			maxWidth = 415
+			maxHeight = 200
+			fixedsize = yes
+			format = right
+			Orientation = lower_upper_right
+		}
+
+		buttonType = {
+			name = "button"
+			text = "se_guanabara_a"
+			shortcut = "ESCAPE"
+			position = { x=600 y=620 }
+			spriteType = "GFX_se_button_underline"
+			buttonFont = "VCR02_18"
+			Orientation = center
+		}
+	}
+	containerWindowType = {
+		name = "death_certificate_valintin"
+		size = { width = 1000 height = 755 }
+		position = { x = -700 y = -250 }
+		#hide_position = { x= -1500 y = -220 }
+		#hide_animation_type = accelerated
+		animation_time = 400
+		Orientation = UPPER_RIGHT
+		origo = UPPER_RIGHT
+		clipping = no
+		#show_sound = maw_super
+
+		iconType = {
+			name ="letter"
+			spriteType = "GFX_se_maw"
+			position = { x= 0 y = 0 }
+			Orientation = center
+			alwaystransparent = no
+		}
+
+		instantTextBoxType = {
+			name = "description"
+			position = { x=1020 y=120 }
+			font = "VCR02_18"
+			text = "se_maw_desc"
+			maxWidth = 395
+			maxHeight = 200
+			fixedsize = yes
+			format = right
+			Orientation = lower_upper_right
+		}
+
+		buttonType = {
+			name = "button"
+			text = "se_maw_a"
+			shortcut = "ESCAPE"
+			position = { x=600 y=620 }
+			spriteType = "GFX_se_button_underline"
+			buttonFont = "VCR02_18"
+			Orientation = center
+		}
+	}
+}

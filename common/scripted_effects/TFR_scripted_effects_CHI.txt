@@ -583,88 +583,6 @@ PRC_the_separatist_problem_ideas = {
 	}
 }
 
-PDTO_unity_increase = {
-	every_country = {
-		limit = {
-			OR = {
-				has_idea = PDTO_unity_1
-				has_idea = PDTO_unity_2
-				has_idea = PDTO_unity_3
-				has_idea = PDTO_unity_4
-				has_idea = PDTO_unity_5
-			}
-		}
-		if = {
-			limit = {
-				has_idea = PDTO_unity_1
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_1
-				add_idea = PDTO_unity_2
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PDTO_unity_2
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_2
-				add_idea = PDTO_unity_3
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PDTO_unity_3
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_3
-				add_idea = PDTO_unity_4
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PDTO_unity_4
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_4
-				add_idea = PDTO_unity_5
-			}
-		}
-	}
-}
-
-PDTO_unity_decrease = {
-	every_country = {
-		if = {
-			limit = {
-				has_idea = PDTO_unity_4
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_4
-				add_idea = PDTO_unity_3
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PDTO_unity_3
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_3
-				add_idea = PDTO_unity_2
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PDTO_unity_2
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_2
-				add_idea = PDTO_unity_1
-			}
-		}
-	}
-}
-
 CHI_influence_KMT_add = {
 	custom_effect_tooltip = CHI_influence_KMT_tt
 	add_to_variable = {
@@ -1754,4 +1672,136 @@ remove_Taihai_idea = {
 	clr_country_flag = Taiwan_war
 	clr_country_flag = CHI_taihai_war
 	clr_country_flag = PRC_adapt_to_modern_defense_time_flag
+}
+PDTO_unity = {
+	every_country = {
+			limit = {
+				NOT = {
+					has_ideas = PDTO_unity_1 
+				}
+			}
+	}
+}
+PDTO_unity_increase2 = {
+	custom_effect_tooltip = PDTO_unity_tt1
+	hidden_effect = {
+	every_country = {
+		limit = {
+			OR = {
+				has_country_flag = pdto_member
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PDTO_unity
+				has_idea = PDTO_unity_1
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_1
+				add_idea = PDTO_unity_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PDTO_unity
+				has_idea = PDTO_unity_2
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_2
+				add_idea = PDTO_unity_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PDTO_unity
+				has_idea = PDTO_unity_3
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_3
+				add_idea = PDTO_unity_4
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PDTO_unity
+				has_idea = PDTO_unity_4
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_4
+				add_idea = PDTO_unity_5
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+				has_country_flag = PDTO_unity
+				has_ideas = PDTO_unity_1
+				}
+			}
+			set_country_flag = PDTO_unity
+			add_ideas = PDTO_unity_1
+		}
+	}
+	}
+}
+
+PDTO_unity_decrease2 = {
+	custom_effect_tooltip = PDTO_unity_tt2
+	hidden_effect = {
+	every_country = {
+		limit = {
+			OR = {
+				has_country_flag = pdto_member
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PDTO_unity
+				has_idea = PDTO_unity_5
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_5
+				add_idea = PDTO_unity_4
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PDTO_unity
+				has_idea = PDTO_unity_4
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_4
+				add_idea = PDTO_unity_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PDTO_unity
+				has_idea = PDTO_unity_3
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_3
+				add_idea = PDTO_unity_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PDTO_unity
+				has_idea = PDTO_unity_2
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_2
+				add_idea = PDTO_unity_1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PDTO_unity
+				has_ideas = PDTO_unity_1
+			}
+			clr_country_flag = PDTO_unity
+			remove_ideas = PDTO_unity_1
+		}
+	}
+	}
 }
