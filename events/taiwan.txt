@@ -1994,12 +1994,7 @@ country_event = {
 	option = {
 		name = ROC.31.a
 		add_war_support = 0.05
-		every_country = {
-			limit = {
-				is_ally_with = JAP
-			}
-			add_ideas = PDTO_unity_1
-		}
+		PDTO_unity_increase2 = yes
 	}
 }
 country_event = {
@@ -3183,6 +3178,7 @@ add_country_leader_role = {
 		name = china.391.a
 	}
 }
+
 
 
 
