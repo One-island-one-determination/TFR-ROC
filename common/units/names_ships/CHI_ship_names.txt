@@ -1,0 +1,110 @@
+##### REPUBLIC OF CHINA NAME LISTS #####
+
+### CHI LEADER NAMES ###
+CHI_LEADERS_HISTORICAL = {
+	name = NAME_THEME_LEADERS
+
+	for_countries = { CHI }
+
+	type = ship 
+
+	unique = {
+		"中山" "中正" "經國" "登輝" 
+	}
+}
+
+
+### ORG HELICOPTER OPERATOR NAMES ###
+CHI_LPD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_HELICOPTER_CARRIERS
+
+	for_countries = { CHI }
+
+	type = ship
+
+	unique = {
+		"東海" "中正" "旭海" "鎮海"
+	}
+}
+
+
+### ORG CRUISER NAMES###
+CHI_CITIES = {
+	name = NAME_THEME_CHIWAN_CITIES
+
+	for_countries = { CHI }
+
+	type = ship 
+
+	unique = {
+		"高雄" "新北" "台中" "台南" "台北" "桃園" "嘉義" "新竹" "基隆" "彰化" "花蓮" "金門" "苗栗" "南投" "屏東" "台東" "宜蘭" "雲林" "馬祖" "澎湖"
+	}
+}
+
+
+### ORG DESTROYER NAMES###
+CHI_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { CHI }
+
+	type = ship
+
+	unique = {
+		"丹陽" "德陽" "當陽" "開陽" "昆陽" "慶陽" "建康" "建陽" "資陽" "正陽" "海綏" "惠陽" "華陽" "衡陽" "襄陽" "雲陽" "洛陽" "汾陽" "漢陽" "南陽" "咸陽" "靈甫" "貴陽" "鄱陽" "岳陽" "綏陽" "邵陽" "富陽" "太康" "太平" "太和" "太倉" "太湖" "太昭" "太原" "信陽" "遼陽"
+	}
+}
+
+### FRIGATE NAMES###
+CHI_FRIGATE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_FRIGATE
+
+	for_countries = { CHI }
+
+	type = ship
+
+	unique = {
+		"臨安" "長白" "固安" "成安" "泰安" "同安" "威海" "瑞安" "遼海" "吉安" "新安" "黃安" "潮安" "惠安" "正安" "德安" "高安" "率真" "元培" "太原" "天山" "玉山" "華山" "文山" "廬山" "福山" "壽山" "泰山" "恆山" "岡山" "鍾山" "龍山" "濟陽" "鳳陽" "汾陽" "蘭陽" "海陽" "淮陽" "寧陽" "宜陽" "康定" "西寧" "昆明" "迪化" "武昌" "承德" "成功" "鄭和" "繼光" "岳飛" "子儀" "班超" "張騫" "田單" "銘傳" "逢甲"
+	}
+}
+
+### ATTACK SUBMARINES ###
+CHI_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { CHI }
+
+	type = ship
+	#ship_types = { ship_hull_submarine submarine }
+
+	unique = {
+		"海豚" "海獅" "海豹" "海牛" "海象" "海龜" "海蛇" "海鬣" "海馬" "海龍" "海鱺" "海鯰" "海鱧" "海鰻" "海魴" "海鱘" "海鯽" "海鰆" "海鯖" "海鯤" "海神" "海皇" "海王" "海帝" "海妖" "海怪" "海魔" "海鬼" "海魂" "海魅" "海獸" "海坊" "海巨"
+	}
+
+}
+
+### ROC PROVINCE NAMES ###
+ROC_PROVINCE = {
+	name = NAME_THEME_PROVINCES
+
+	for_countries = { CHI }
+
+	type = ship 
+
+	unique = {
+		"河北" "山西" "遼寧" "吉林" "黑龍江" "熱河" "察哈爾" "綏遠" "遼北" "江蘇" "安徽" "浙江" "江西" "福建" "山東" "河南" "湖北" "湖南" "廣東" "廣西" "四川" "貴州" "雲南" "陝西" "甘肅" "青海" "寧夏" "新疆" "西康" "川康" "海南" "臺灣"
+	}
+}
+
+### ROC MUNICIPALITIES NAMES ###
+ROC_SPECIAL_MUNICIPALITY = {
+	name = NAME_THEME_SPECIAL_MUNICIPALITY
+
+	for_countries = { CHI }
+
+	type = ship 
+
+	unique = {
+		"南京" "北平" "上海" "天津" "重慶"
+	}
+}
