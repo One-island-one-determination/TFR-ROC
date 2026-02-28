@@ -50,6 +50,11 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 	}
+	immediate = {
+		hidden_effect = {
+		PRC = {	load_oob = "The_PRC_Marine_Corps_tainan"}
+		}
+	}
 	option = {
 		name = ROC_CHI.3.a
 		hidden_effect = {
@@ -71,6 +76,28 @@ country_event = {
 	}
 	option = {
 		name = ROC_CHI.4.a
+		set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+		set_party_name = {
+				ideology = fascist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			create_country_leader = {
+	name = "未知"
+	picture = "NOT"
+	expire = "1999.1.1"
+	ideology = fascist_populism
+				}  
+				create_country_leader = {
+	name = "未知"
+	picture = "NOT"
+	expire = "1999.1.1"
+	ideology = babylonian_nazism
+				}  
 		hidden_effect = {
 		}
 	}
@@ -86,6 +113,154 @@ country_event = {
 	}
 	option = {
 		name = ROC_CHI.5.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.6
+	title = ROC_CHI.6.t
+	desc = ROC_CHI.6.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_CHI.6.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.7
+	title = ROC_CHI.7.t
+	desc = ROC_CHI.7.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_CHI.7.a
+		set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = CHI_TheLeftParty
+				name = CHI_TheLeftParty
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = CHI_TheLeftParty
+				name = CHI_TheLeftParty
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = CHI_TheLeftParty
+				name = CHI_TheLeftParty
+			}
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.8
+	title = ROC_CHI.8.t
+	desc = ROC_CHI.8.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_CHI.8.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.9
+	title = ROC_CHI.9.t
+	desc = ROC_CHI.9.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		PRC = {	load_oob = "The_PRC_Marine_Corps_tainan"}
+		}
+	}
+	option = {
+		name = ROC_CHI.9.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.10
+	title = ROC_CHI.10.t
+	desc = ROC_CHI.10.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_CHI.10.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.11
+	title = ROC_CHI.11.t
+	desc = ROC_CHI.11.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_CHI.11.a
+		set_party_name = {
+				ideology = fascist
+				long_name = CHI_TaiwanNationalFront
+				name = CHI_TaiwanNationalFront
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = CHI_TaiwanNationalFront
+				name = CHI_TaiwanNationalFront
+			}
+promote_character = {
+	character = CHI_chen_yi_qi_char
+	ideology = CHI_Shina_Destructionism
+}
+promote_character = {
+	character = CHI_chen_yi_qi_char
+	ideology = babylonian_nazism
+}
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.12
+	title = ROC_CHI.12.t
+	desc = ROC_CHI.12.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		PRC = {	load_oob = "The_PRC_Marine_Corps_taidong"}
+		}
+	}
+	option = {
+		name = ROC_CHI.12.a
 		hidden_effect = {
 		}
 	}
@@ -3182,6 +3357,7 @@ add_country_leader_role = {
 		name = china.391.a
 	}
 }
+
 
 
 
