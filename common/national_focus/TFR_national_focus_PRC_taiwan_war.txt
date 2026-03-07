@@ -800,9 +800,33 @@ activate_mission = THEJAP_taiwan_war_countdown
 			factor = 10
 		}
 		completion_reward = {
+swap_ideas = {
+				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
+				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
+			}
 			unlock_decision_tooltip = PRC_adapt_to_modern_defense2
 			unlock_decision_tooltip = PRC_adapt_to_modern_offensives2
 			unlock_decision_tooltip = PRC_adapt_to_modern_airbattles2
+hidden_effect = {
+				CHI = {
+					swap_ideas = {
+				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
+				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
+			}
+				}
+				JAP = {
+					swap_ideas = {
+				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
+				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
+			}
+				}
+				AST = {
+					swap_ideas = {
+				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
+				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
+			}
+				}
+			}
 		}
 	}
 	focus = {
@@ -1606,6 +1630,7 @@ activate_mission = THEJAP_taiwan_war_countdown
 		}
 	}
 }
+
 
 
 
