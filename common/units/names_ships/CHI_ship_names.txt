@@ -1,110 +1,304 @@
 ##### REPUBLIC OF CHINA NAME LISTS #####
 
-### CHI LEADER NAMES ###
-CHI_LEADERS_HISTORICAL = {
-	name = NAME_THEME_LEADERS
-
-	for_countries = { CHI }
-
-	type = ship 
-
-	unique = {
-		"中山" "中正" "經國" "登輝" 
-	}
-}
-
-
-### ORG HELICOPTER OPERATOR NAMES ###
-CHI_LPD_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_HELICOPTER_CARRIERS
+### ROC LEADER NAMES ###
+CHI_LEADERS = {
+	name = "中華民國領袖"
 
 	for_countries = { CHI }
 
 	type = ship
 
 	unique = {
-		"東海" "中正" "旭海" "鎮海"
+		"中山" "中正" "經國" "登輝"
 	}
 }
 
 
-### ORG CRUISER NAMES###
-CHI_CITIES = {
-	name = NAME_THEME_CHIWAN_CITIES
-
-	for_countries = { CHI }
-
-	type = ship 
-
-	unique = {
-		"高雄" "新北" "台中" "台南" "台北" "桃園" "嘉義" "新竹" "基隆" "彰化" "花蓮" "金門" "苗栗" "南投" "屏東" "台東" "宜蘭" "雲林" "馬祖" "澎湖"
-	}
-}
-
-
-### ORG DESTROYER NAMES###
+### DESTROYERS ###
 CHI_DD_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_DESTROYERS
+	name = "中華民國海軍驅逐艦"
+
+	for_countries = { CHI }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+
+	fallback_name = "飛彈驅逐艦 %d號"
+
+	unique = {
+		"基隆" "蘇澳" "左營" "馬公"
+		"丹陽" "德陽" "當陽" "開陽" "昆陽" "慶陽"
+		"建康" "建陽" "資陽" "正陽"
+		"惠陽" "華陽" "衡陽" "襄陽"
+		"雲陽" "洛陽" "汾陽" "漢陽"
+		"南陽" "咸陽" "貴陽"
+	}
+}
+
+
+### FRIGATES ###
+CHI_FRIGATES = {
+	name = "中華民國海軍巡防艦"
+
+	for_countries = { CHI }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+
+	fallback_name = "巡防艦 %d號"
+
+	unique = {
+		"成功" "鄭和" "繼光" "岳飛" "子儀"
+		"班超" "張騫" "田單"
+		"康定" "西寧" "昆明"
+		"迪化" "武昌" "承德"
+		"濟陽" "鳳陽" "蘭陽"
+	}
+}
+
+
+### MISSILE PATROL BOATS ###
+CHI_PATROL = {
+	name = "中華民國海軍飛彈巡邏艦"
+
+	for_countries = { CHI }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+
+	fallback_name = "飛彈巡邏艦 %d號"
+
+	unique = {
+		"沱江" "塔江" "富江" "旭江" "武江"
+		"錦江" "鳳陽" "龍江" "濟陽"
+		"建江" "萬江" "新江"
+	}
+}
+
+
+### SUBMARINES ###
+CHI_SUBMARINES = {
+	name = "中華民國海軍潛艦"
+
+	for_countries = { CHI }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+
+	fallback_name = "潛艦 %d號"
+
+	unique = {
+		"海獅" "海豹" "海龍" "海虎"
+		"海豚" "海牛" "海象"
+	}
+}
+
+
+### MOUNTAIN NAMES ###
+CHI_MOUNTAINS = {
+	name = "台灣山脈"
 
 	for_countries = { CHI }
 
 	type = ship
 
 	unique = {
-		"丹陽" "德陽" "當陽" "開陽" "昆陽" "慶陽" "建康" "建陽" "資陽" "正陽" "海綏" "惠陽" "華陽" "衡陽" "襄陽" "雲陽" "洛陽" "汾陽" "漢陽" "南陽" "咸陽" "靈甫" "貴陽" "鄱陽" "岳陽" "綏陽" "邵陽" "富陽" "太康" "太平" "太和" "太倉" "太湖" "太昭" "太原" "信陽" "遼陽"
+		"玉山" "雪山" "阿里山"
+		"中央山脈" "合歡山"
+		"大霸尖山" "秀姑巒山"
+		"南湖大山" "奇萊山"
 	}
 }
 
-### FRIGATE NAMES###
-CHI_FRIGATE_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_FRIGATE
+
+### RIVER NAMES ###
+CHI_RIVERS = {
+	name = "台灣河川"
 
 	for_countries = { CHI }
 
 	type = ship
 
 	unique = {
-		"臨安" "長白" "固安" "成安" "泰安" "同安" "威海" "瑞安" "遼海" "吉安" "新安" "黃安" "潮安" "惠安" "正安" "德安" "高安" "率真" "元培" "太原" "天山" "玉山" "華山" "文山" "廬山" "福山" "壽山" "泰山" "恆山" "岡山" "鍾山" "龍山" "濟陽" "鳳陽" "汾陽" "蘭陽" "海陽" "淮陽" "寧陽" "宜陽" "康定" "西寧" "昆明" "迪化" "武昌" "承德" "成功" "鄭和" "繼光" "岳飛" "子儀" "班超" "張騫" "田單" "銘傳" "逢甲"
+		"淡水河" "大甲溪" "濁水溪"
+		"高屏溪" "曾文溪"
+		"秀姑巒溪" "卑南溪"
 	}
 }
 
-### ATTACK SUBMARINES ###
-CHI_SS_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+### ISLAND NAMES ###
+CHI_ISLANDS = {
+	name = "台灣島嶼"
 
 	for_countries = { CHI }
 
 	type = ship
-	#ship_types = { ship_hull_submarine submarine }
 
 	unique = {
-		"海豚" "海獅" "海豹" "海牛" "海象" "海龜" "海蛇" "海鬣" "海馬" "海龍" "海鱺" "海鯰" "海鱧" "海鰻" "海魴" "海鱘" "海鯽" "海鰆" "海鯖" "海鯤" "海神" "海皇" "海王" "海帝" "海妖" "海怪" "海魔" "海鬼" "海魂" "海魅" "海獸" "海坊" "海巨"
-	}
-
-}
-
-### ROC PROVINCE NAMES ###
-ROC_PROVINCE = {
-	name = NAME_THEME_PROVINCES
-
-	for_countries = { CHI }
-
-	type = ship 
-
-	unique = {
-		"河北" "山西" "遼寧" "吉林" "黑龍江" "熱河" "察哈爾" "綏遠" "遼北" "江蘇" "安徽" "浙江" "江西" "福建" "山東" "河南" "湖北" "湖南" "廣東" "廣西" "四川" "貴州" "雲南" "陝西" "甘肅" "青海" "寧夏" "新疆" "西康" "川康" "海南" "臺灣"
+		"台灣" "澎湖" "金門" "馬祖"
+		"綠島" "蘭嶼" "龜山島"
+		"東沙" "太平島"
 	}
 }
 
-### ROC MUNICIPALITIES NAMES ###
-ROC_SPECIAL_MUNICIPALITY = {
-	name = NAME_THEME_SPECIAL_MUNICIPALITY
+
+### ROC PROVINCES ###
+CHI_PROVINCES = {
+	name = "中華民國省份"
 
 	for_countries = { CHI }
 
-	type = ship 
+	type = ship
 
 	unique = {
-		"南京" "北平" "上海" "天津" "重慶"
+		"河北" "山西" "察哈爾" "綏遠"
+		"遼寧" "安東" "遼北"
+		"吉林" "松江"
+		"黑龍江" "嫩江" "合江"
+		"江蘇" "浙江" "安徽" "江西" "福建" "山東"
+		"河南" "湖北" "湖南"
+		"廣東" "廣西"
+		"四川" "貴州" "雲南" "西康"
+		"陝西" "甘肅" "青海" "寧夏" "新疆"
+		"熱河" "西藏"
+		"台灣"
+	}
+}
+
+
+CHI_MUNICIPALITIES = {
+	name = "中華民國院轄市"
+
+	for_countries = { CHI }
+
+	type = ship
+
+	unique = {
+		"南京"
+		"上海"
+		"北平"
+		"天津"
+		"青島"
+		"漢口"
+		"廣州"
+		"重慶"
+		"西安"
+		"瀋陽"
+		"哈爾濱"
+		"大連"
+	}
+}
+CHI_CITIES_ALL = {
+	name = "中華民國城市"
+
+	for_countries = { CHI }
+
+	type = ship
+
+	unique = {
+	"台北" "新北" "桃園" "台中" "台南" "高雄"
+	"基隆" "新竹" "嘉義" "花蓮" "台東"
+	"澎湖" "金門" "馬祖"
+	"北京" "天津" "石家莊" "唐山" "保定"
+	"秦皇島" "邯鄲" "邢臺"
+	"太原" "大同" "長治" "臨汾"
+	"張家口" "包頭" "呼和浩特"
+	"瀋陽" "大連" "鞍山" "撫順"
+	"本溪" "丹東"
+	"長春" "吉林" "四平"
+	"哈爾濱" "齊齊哈爾"
+	"牡丹江" "佳木斯"
+	"上海" "南京" "蘇州" "無錫" "常州"
+	"徐州" "揚州" "南通"
+	"杭州" "寧波" "溫州"
+	"紹興" "嘉興"
+	"合肥" "蕪湖"
+	"福州" "廈門"
+	"泉州" "漳州"
+	"濟南" "青島"
+	"煙台" "威海"
+	"武漢" "漢口" "襄陽"
+	"宜昌" "黃石"
+	"長沙" "株洲"
+	"湘潭" "岳陽"
+	"鄭州" "洛陽"
+	"開封" "安陽"
+	"廣州" "深圳"
+	"珠海" "佛山"
+	"東莞" "中山"
+	"汕頭" "湛江"
+	"南寧" "桂林"
+	"柳州" "北海"
+	"海口" "三亞"
+	"成都" "重慶"
+	"綿陽" "自貢"
+	"昆明" "曲靖"
+	"大理" "麗江"
+	"貴陽" "遵義"
+	"西安" "寶雞"
+	"咸陽" "延安"
+	"蘭州" "天水"
+	"西寧"
+	"銀川"
+	"烏魯木齊"
+	"喀什"
+	"拉薩" "日喀則"
+	"庫倫" "烏蘭巴托"
+	"香港" "九龍" "澳門"
+	"南昌" "贛州" "九江"
+	"宜春" "景德鎮"
+	"阜陽" "蚌埠"
+	"滁州" "馬鞍山"
+	"台州" "麗水"
+	"金華" "湖州"
+	"德州" "聊城"
+	"濰坊" "淄博"
+	"開平" "江門"
+	"肇慶" "陽江"
+	"玉林" "梧州"
+	"百色" "欽州"
+	"攀枝花" "宜賓"
+	"瀘州" "達州"
+	"昭通" "保山"
+	"臨滄" "普洱"
+	"安順" "六盤水"
+	"漢中" "榆林"
+	"渭南" "安康"
+	"嘉峪關" "酒泉"
+	"張掖" "敦煌"
+	}
+}
+CHI_LEADERS = {
+	name = "中國人物"
+
+	for_countries = { CHI }
+
+	type = ship
+
+	unique = {
+		"蔣中正" "蔣經國" "李宗仁" "白崇禧""何應欽" "陳誠" "孫立人" "胡宗南"
+		"杜聿明" "傅作義" "閻錫山"
+		"張治中" "顧祝同" "薛岳"
+		"湯恩伯" "張靈甫" "黃維"
+		"宋子文" "孔祥熙" "宋美齡"
+		"陳果夫" "陳立夫"
+		"毛澤東" "周恩來" "朱德"
+		"劉少奇" "鄧小平" "陳雲"
+		"林彪" "彭德懷" "賀龍"
+		"葉劍英" "羅榮桓" "徐向前"
+		"聶榮臻" "粟裕" "譚震林"
+		"陳毅" "張聞天" "高崗"
+		"盛世才" "陶峙岳"
+		"包爾漢" "阿合買提江"
+		"賽福鼎" "伊斯哈克伯克"
+		"丹增嘉措"
+		"噶倫索康"
+		"達扎活佛"
+		"攝政達札"
+		"喬巴山"
+		"博格達汗"
+		"澤登巴爾"
+		"丹巴"
 	}
 }
