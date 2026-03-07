@@ -1,163 +1,418 @@
-CHI_INF_1 = {
-	name = "陸軍步兵旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "infantry" }
-	fallback_name = "第%d 步兵旅"
-	ordered =
-	{
-       
+focus = {
+	current = "CHI_election"
+	progress = 0
+}
+
+division_template = {
+	name = "中華民國陸軍司令部"
+	is_locked = yes 
+	regiments = {
+		bus = { x = 0 y = 0 }
+	}
+
+	support = {
+		
 	}
 }
-CHI_INF_2 = {
-	name = "陸軍機械化步兵旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "mechanized" }
-	fallback_name = "第%d 機步兵旅"
-	ordered =
-	{
+
+division_template = {
+	name = "中華民國陸軍裝甲旅"
+	division_names_group = CHI_INF_3
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		modern_sp_artillery_brigade = { x = 1 y = 1 }
+	}
+
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "中華民國陸軍機械化步兵旅"
+	division_names_group = CHI_INF_2
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 1 y = 2 }
+	}
+
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "中華民國陸軍步兵旅"
+division_names_group = CHI_INF_1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "中華民國陸軍守備旅"
+division_names_group = CHI_INF_12
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "中華民國陸軍空降特戰旅"
+division_names_group = CHI_INF_7
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "中華民國海軍陸戰隊陸戰旅"
+division_names_group = CHI_INF_8
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "中華民國陸軍特種作戰營"
+division_names_group = CHI_INF_9
+	regiments = {
+		special_forces = { x = 0 y = 0 }
+		special_forces = { x = 0 y = 1 }
+		special_forces = { x = 0 y = 2 }
+		special_forces = { x = 0 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+
+}
+air_wings = {
+
+	### 台東基地（東部戰備基地） ###
+	524 = {
+
+		small_plane_airframe_2 = {
+			owner = "CHI"
+			amount = 120
+			version_name = "F-16V戰鬥機"
+		}
+
+		small_plane_airframe_1 = {
+			owner = "CHI"
+			amount = 120
+			version_name = "F-CK-1經國號戰鬥機"
+		}
+
+		medium_plane_airframe_1 = {
+			owner = "CHI"
+			amount = 6
+			version_name = "E-2K空中預警機"
+		}
 
 	}
+
+	### 台中清泉崗 ###
+	1149 = {
+
+		small_plane_airframe_1 = {
+			owner = "CHI"
+			amount = 60
+			version_name = "F-16A/B戰隼戰鬥機"
+		}
+
+	}
+
+	### 台南基地 ###
+	1150 = {
+
+		small_plane_airframe_1 = {
+			owner = "CHI"
+			amount = 60
+			version_name = "F-CK-1經國號戰鬥機"
+		}
+
+	}
+
+	### 台北基地 ###
+	1148 = {
+
+		small_plane_airframe_1 = {
+			owner = "CHI"
+			amount = 55
+			version_name = "幻象2000-5戰鬥機"
+		}
+
+	}
+
+	### 金門前線機場 ###
+	648 = {
+
+		small_plane_airframe_1 = {
+			owner = "CHI"
+			amount = 20
+			version_name = "F-16A/B戰隼戰鬥機"
+		}
+
+	}
+
 }
-CHI_INF_3 = {
-	name = "陸軍裝甲步兵旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "mechanized" }
-	fallback_name = "第%d 裝甲步兵旅"
-	ordered =
-	{
-   
+units = {
+
+	division = {
+		name = "中華民國陸軍第269機械化步兵旅"
+		location = 11959
+		division_template = "中華民國陸軍機械化步兵旅"
+		start_experience_factor = 0.4
 	}
+
+	division = {
+		name = "中華民國陸軍第333機械化步兵旅"
+		location = 11914
+		division_template = "中華民國陸軍機械化步兵旅"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "中華民國陸軍第234機械化步兵旅"
+		location = 11959
+		division_template = "中華民國陸軍機械化步兵旅"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "中華民國陸軍第586裝甲旅"
+		location = 7214
+		division_template = "中華民國陸軍裝甲旅"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "中華民國陸軍第542裝甲旅"
+		location = 7186
+		division_template = "中華民國陸軍裝甲旅"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "中華民國陸軍第584裝甲旅"
+		location = 9955
+		division_template = "中華民國陸軍裝甲旅"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "中華民國海軍陸戰隊第66旅"
+		location = 7214
+		division_template = "中華民國海軍陸戰隊陸戰旅"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "中華民國陸軍空降特戰旅"
+		location = 7214
+		division_template = "中華民國陸軍空降特戰旅"
+		start_experience_factor = 0.6
+	}
+
+	division = {
+		name = "中華民國陸軍特種作戰營"
+		location = 7186
+		division_template = "中華民國陸軍特種作戰營"
+		start_experience_factor = 0.7
+	}
+	division = {
+	name = "中華民國陸軍第206步兵旅"
+	location = 7214
+	division_template = "中華民國陸軍步兵旅"
+	start_experience_factor = 0.35
 }
-CHI_INF_4 = {
-	name = "陸軍摩托化步兵旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "motorized" }
-	fallback_name = "第%d 摩步旅"
-	ordered =
-	{
-      
-	}
+
+division = {
+	name = "中華民國陸軍第302步兵旅"
+	location = 9955
+	division_template = "中華民國陸軍步兵旅"
+	start_experience_factor = 0.35
 }
-CHI_INF_5 = {
-	name = "陸軍裝甲旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { 
-		"armored"
-		"medium_armor"
-	 }
-	fallback_name = "第%d 裝甲旅"
-	ordered =
-	{
-      
-	}
+
+division = {
+	name = "中華民國陸軍第203步兵旅"
+	location = 1175
+	division_template = "中華民國陸軍步兵旅"
+	start_experience_factor = 0.35
 }
-CHI_INF_6 = {
-	name = "陸軍輕裝甲旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "light_armor" }
-	fallback_name = "第%d 輕裝甲旅"
-	ordered =
-	{
-      
-	}
+
+division = {
+	name = "中華民國陸軍第249機械化步兵旅"
+	location = 11914
+	division_template = "中華民國陸軍機械化步兵旅"
+	start_experience_factor = 0.4
 }
-CHI_INF_7 = {
-	name = "陸軍空降特戰旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "paratrooper" 
-	"special_forces"
-	}
-	fallback_name = "第%d 空降特戰旅"
-	ordered =
-	{
-      
-	}
+
+division = {
+	name = "中華民國海軍陸戰隊第99旅"
+	location = 7186
+	division_template = "中華民國海軍陸戰隊陸戰旅"
+	start_experience_factor = 0.5
 }
-CHI_INF_8 = {
-	name = "海軍陸戰隊陸戰旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "paratrooper" 
-	"special_forces"
-	}
-	fallback_name = "第%d 陸戰旅"
-	ordered =
-	{
-      
-	}
+division = {
+	name = "中華民國陸軍金門防衛指揮部守備旅"
+	location = 1196
+	division_template = "中華民國陸軍守備旅"
+	start_experience_factor = 0.35
 }
-CHI_INF_9 = {
-	name = "陸軍山地作戰部隊"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "mountaineers"
-	"special_forces"
-	 }
-	fallback_name = "第%d 山地特戰"
-	ordered =
-	{
-      
-	}
+
+division = {
+	name = "中華民國陸軍馬祖防衛指揮部守備旅"
+	location = 1197
+	division_template = "中華民國陸軍守備旅"
+	start_experience_factor = 0.35
 }
-CHI_INF_10 = {
-	name = "陸軍特種作戰部隊"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "special_forces" }
-	fallback_name = "第%d 特戰旅"
-	ordered =
-	{
-      
-	}
+
+division = {
+	name = "中華民國陸軍澎湖防衛指揮部守備旅"
+	location = 7214
+	division_template = "中華民國陸軍守備旅"
+	start_experience_factor = 0.35
 }
-CHI_INF_11 = {
-	name = "陸軍守備部隊"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "garrison" }
-	fallback_name = "第%d 守備旅"
-	ordered =
-	{
-      
-	}
+
+division = {
+	name = "中華民國陸軍花東防衛指揮部守備旅"
+	location = 11959
+	division_template = "中華民國陸軍守備旅"
+	start_experience_factor = 0.35
 }
-CHI_INF_12 = {
-	name = "陸軍地區守備部隊"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "garrison" }
-	fallback_name = "第%d 守備部隊"
-	ordered =
-	{
-      
-	}
 }
-CHI_INF_13 = {
-	name = "陸軍後備動員部隊"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "militia" }
-	fallback_name = "第%d 後備動員旅"
-	ordered =
-	{
-      
+instant_effect = {
+	add_equipment_production = {
+	equipment = {
+		type = infantry_equipment_3
+		creator = "CHI"
 	}
+	requested_factories = 2
+	progress = 0.25
+	efficiency = 50
 }
-CHI_INF_14 = {
-	name = "海軍陸戰隊兩棲作戰旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "militia" }
-	fallback_name = "第%d陸戰隊兩棲作戰旅"
-	ordered =
-	{
-      
+
+add_equipment_production = {
+	equipment = {
+		type = support_equipment_1
+		creator = "CHI"
+	}
+	requested_factories = 1
+	progress = 0.3
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+		type = artillery_equipment_2
+		creator = "CHI"
+	}
+	requested_factories = 1
+	progress = 0.3
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = light_tank_chassis_2
+		creator = "CHI"
+		version_name = "CM34雲豹裝甲車"
+	}
+	requested_factories = 1
+	progress = 0.35
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = small_plane_airframe_2
+		creator = "CHI"
+		version_name = "F-16V戰鬥機"
+	}
+	requested_factories = 1
+	progress = 0.3
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+		type = small_plane_airframe_1
+		creator = "CHI"
+		version_name = "F-CK-1經國號戰鬥機"
+	}
+	requested_factories = 1
+	progress = 0.35
+	efficiency = 50
+}
+add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "CHI"
+			version_name = "成功級巡防艦"
+		}
+		name = "成功級巡防艦現代化"
+		requested_factories = 4
+		progress = 0.4
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "CHI"
+			version_name = "康定級巡防艦"
+		}
+		name = "康定級巡防艦改裝"
+		requested_factories = 2
+		progress = 0.3
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "CHI"
+			version_name = "劍龍級潛艦"
+		}
+		name = "劍龍級潛艦改裝"
+		requested_factories = 2
+		progress = 0.2
+		amount = 1
 	}
 }
