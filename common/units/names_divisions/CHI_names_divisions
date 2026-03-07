@@ -1,0 +1,163 @@
+CHI_INF_1 = {
+	name = "陸軍步兵旅"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "第%d 步兵旅"
+	ordered =
+	{
+       
+	}
+}
+CHI_INF_2 = {
+	name = "陸軍機械化步兵旅"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "mechanized" }
+	fallback_name = "第%d 機步兵旅"
+	ordered =
+	{
+
+	}
+}
+CHI_INF_3 = {
+	name = "陸軍裝甲步兵旅"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "mechanized" }
+	fallback_name = "第%d 裝甲步兵旅"
+	ordered =
+	{
+   
+	}
+}
+CHI_INF_4 = {
+	name = "陸軍摩托化步兵旅"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "motorized" }
+	fallback_name = "第%d 摩步旅"
+	ordered =
+	{
+      
+	}
+}
+CHI_INF_5 = {
+	name = "陸軍裝甲旅"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { 
+		"armored"
+		"medium_armor"
+	 }
+	fallback_name = "第%d 裝甲旅"
+	ordered =
+	{
+      
+	}
+}
+CHI_INF_6 = {
+	name = "陸軍輕裝甲旅"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "light_armor" }
+	fallback_name = "第%d 輕裝甲旅"
+	ordered =
+	{
+      
+	}
+}
+CHI_INF_7 = {
+	name = "陸軍空降特戰旅"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "paratrooper" 
+	"special_forces"
+	}
+	fallback_name = "第%d 空降特戰旅"
+	ordered =
+	{
+      
+	}
+}
+CHI_INF_8 = {
+	name = "海軍陸戰隊陸戰旅"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "paratrooper" 
+	"special_forces"
+	}
+	fallback_name = "第%d 陸戰旅"
+	ordered =
+	{
+      
+	}
+}
+CHI_INF_9 = {
+	name = "陸軍山地作戰部隊"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "mountaineers"
+	"special_forces"
+	 }
+	fallback_name = "第%d 山地特戰"
+	ordered =
+	{
+      
+	}
+}
+CHI_INF_10 = {
+	name = "陸軍特種作戰部隊"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "special_forces" }
+	fallback_name = "第%d 特戰旅"
+	ordered =
+	{
+      
+	}
+}
+CHI_INF_11 = {
+	name = "陸軍守備部隊"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "garrison" }
+	fallback_name = "第%d 守備旅"
+	ordered =
+	{
+      
+	}
+}
+CHI_INF_12 = {
+	name = "陸軍地區守備部隊"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "garrison" }
+	fallback_name = "第%d 守備部隊"
+	ordered =
+	{
+      
+	}
+}
+CHI_INF_13 = {
+	name = "陸軍後備動員部隊"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "militia" }
+	fallback_name = "第%d 後備動員旅"
+	ordered =
+	{
+      
+	}
+}
+CHI_INF_14 = {
+	name = "海軍陸戰隊兩棲作戰旅"
+	for_countries = { CHI }
+	can_use = { always = yes }
+	division_types = { "militia" }
+	fallback_name = "第%d陸戰隊兩棲作戰旅"
+	ordered =
+	{
+      
+	}
+}
