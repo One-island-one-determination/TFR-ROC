@@ -1,4 +1,4 @@
-﻿focus = {
+focus = {
 	current = "CHI_election"
 	progress = 0
 }
@@ -66,7 +66,7 @@ division_names_group = CHI_INF_1
 }
 division_template = {
 	name = "中華民國陸軍守備旅"
-
+division_names_group = CHI_INF_12
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -293,14 +293,14 @@ division = {
 }
 division = {
 	name = "中華民國陸軍金門防衛指揮部守備旅"
-	location = 1196
+	location = 14170
 	division_template = "中華民國陸軍守備旅"
 	start_experience_factor = 0.35
 }
 
 division = {
 	name = "中華民國陸軍馬祖防衛指揮部守備旅"
-	location = 1197
+	location = 7214
 	division_template = "中華民國陸軍守備旅"
 	start_experience_factor = 0.35
 }
