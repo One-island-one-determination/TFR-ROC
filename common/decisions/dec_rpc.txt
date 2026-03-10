@@ -3560,8 +3560,7 @@ CHI_Legislative_Yuan_decisions = {
 					}
 				}}
 			}
-		}
-		CHI_with_Japanese_to_retake_Penghu2 = {
+			CHI_with_Japanese_to_retake_Penghu2 = {
 			icon = GFX_CHI_test_of_will_rise_up_taiwan
 			allowed = {
 				original_tag = CHI
@@ -3794,7 +3793,8 @@ CHI_Legislative_Yuan_decisions = {
 				}
 			}
 		}
-	}
+		}
+
 CHI_armry_test = {
 	CHI_imps = {
 		#icon = GFX_CHI_Legislative_Yuan_decisions
@@ -4360,7 +4360,7 @@ CHI_taihai_war = {
 		}
 }
 PDTO_solidarity = {
-PDTO_military_exercise = {
+	PDTO_military_exercise = {
 		icon = GFX_PDTO_dec
 		available = {
 			NOT = {
@@ -4403,8 +4403,8 @@ PDTO_military_exercise = {
 			experience_gain_air = 0.1
 			experience_gain_army = 0.1
 		}
-}
-PDTO_Trade_Agreement = {
+	}
+	PDTO_Trade_Agreement = {
 		icon = GFX_PDTO_dec
 		available = {
 			NOT = {
@@ -4442,8 +4442,8 @@ PDTO_Trade_Agreement = {
 		}
 		remove_effect = {
 	}	
-}
-PDTO_Mineral_Detection = {
+	}
+	PDTO_Mineral_Detection = {
 		icon = GFX_PDTO_dec
 		available = {
 			NOT = {
@@ -4485,8 +4485,8 @@ PDTO_Mineral_Detection = {
 			local_resources_factor = 0.10
 			production_lack_of_resource_penalty_factor = -0.25
 		}
-}
-PDTO_Unity_up = {
+	}
+	PDTO_Unity_up = {
 		icon = GFX_PDTO_dec
 		available = {
 		}
@@ -4507,7 +4507,7 @@ PDTO_Unity_up = {
 		remove_effect = {
 			PDTO_unity_increase2 = yes
 	}	
-}
+	}
 }
 The_CCP_Difficulty_Selection = {
 	The_CCP_Difficulty_Selection_1 = {
