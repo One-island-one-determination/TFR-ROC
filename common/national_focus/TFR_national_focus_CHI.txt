@@ -960,12 +960,15 @@ focus_tree = {
 		y = 2
 		cost = 3
 		available = {
+			OR = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_vaccine_progress_tt
 				check_variable = {
 					var = CHI_vaccine_progress
 					value > 99
 				}
+			}
+			is_ai = yes
 			}
 		}
 		completion_reward = {
