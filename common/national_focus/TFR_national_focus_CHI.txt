@@ -2545,76 +2545,55 @@ focus_tree = {
 				if = {
 					limit = {
 						NOT = {
-							has_template = "Minbing"
+							has_template = "中華民國陸軍步兵旅"
 						}
 					}
 					division_template = {
-						name = "Minbing"
+						name = "中華民國陸軍步兵旅"
+						division_names_group = CHI_INF_1
 						is_locked = no
 						regiments = {
-							militia = {
-								x = 0
-								y = 0
-							}
-							militia = {
-								x = 0
-								y = 1
-							}
-							militia = {
-								x = 0
-								y = 2
-							}
-							militia = {
-								x = 1
-								y = 0
-							}
-							militia = {
-								x = 1
-								y = 1
-							}
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							artillery_brigade = { x = 1 y = 1 }
 						}
 						support = {
-							recon = {
-								x = 0
-								y = 0
-							}
-							engineer = {
-								x = 0
-								y = 1
-							}
+							engineer = { x = 0 y = 0 }
 						}
 					}
 				}
 				1149 = {
 					create_unit = {
-						division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						id = 1949
 						owner = CHI
-						count = 1
+						count = 3
 					}
 				}
 				524 = {
 					create_unit = {
-						division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						id = 1949
 						owner = CHI
-						count = 1
+						count = 3
 					}
 				}
 				1148 = {
 					create_unit = {
-						division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						id = 1949
 						owner = CHI
-						count = 1
+						count = 3
 					}
 				}
 				1150 = {
 					create_unit = {
-						division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						id = 1949
 						owner = CHI
-						count = 1
+						count = 3
 					}
 				}
 			}
@@ -2747,6 +2726,60 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = CHI_MPFTMO_idea
+			if = {
+					limit = {
+						NOT = {
+							has_template = "中華民國陸軍步兵旅"
+						}
+					}
+					division_template = {
+						name = "中華民國陸軍步兵旅"
+						division_names_group = CHI_INF_1
+						is_locked = no
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							artillery_brigade = { x = 1 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+				}
+				1149 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
+				}
+				524 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
+				}
+				1148 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
+				}
+				1150 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
+				}
 		}
 	}
 	focus = {
@@ -3145,12 +3178,67 @@ PRC = {
 			focus = CHI_Defend_Taiwan
 		}
 		completion_reward = {
+			
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = CHI_NSM_idea
 					add_idea = CHI_NSM_idea_2
 				}
 			}
+			if = {
+					limit = {
+						NOT = {
+							has_template = "中華民國陸軍步兵旅"
+						}
+					}
+					division_template = {
+						name = "中華民國陸軍步兵旅"
+						division_names_group = CHI_INF_1
+						is_locked = no
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							artillery_brigade = { x = 1 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+				}
+				1149 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 1
+					}
+				}
+				524 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 1
+					}
+				}
+				1148 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 1
+					}
+				}
+				1150 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 1
+					}
+				}
 			hidden_effect = {
 				add_to_variable = {
 					var = CHI_NSM_training_time_factor
@@ -3200,38 +3288,60 @@ PRC = {
 					add_manpower = -8000
 				}
 			}
-			1149 = {
-				create_unit = {
-					division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-					id = 1949
-					owner = CHI
-					count = 2
+			if = {
+					limit = {
+						NOT = {
+							has_template = "中華民國陸軍步兵旅"
+						}
+					}
+					division_template = {
+						name = "中華民國陸軍步兵旅"
+						division_names_group = CHI_INF_1
+						is_locked = no
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							artillery_brigade = { x = 1 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
 				}
-			}
-			524 = {
-				create_unit = {
-					division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-					id = 1949
-					owner = CHI
-					count = 2
+				1149 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
 				}
-			}
-			1148 = {
-				create_unit = {
-					division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-					id = 1949
-					owner = CHI
-					count = 2
+				524 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
 				}
-			}
-      1150 = {
-        create_unit = {
-					division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-					id = 1949
-					owner = CHI
-					count = 2
+				1148 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
 				}
-			}
+				1150 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
+				}
 		}
 	}
 	focus = {
@@ -3339,6 +3449,60 @@ PRC = {
 					add_idea = CHI_NSM_idea_3
 				}
 			}
+			if = {
+					limit = {
+						NOT = {
+							has_template = "中華民國陸軍步兵旅"
+						}
+					}
+					division_template = {
+						name = "中華民國陸軍步兵旅"
+						division_names_group = CHI_INF_1
+						is_locked = no
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							artillery_brigade = { x = 1 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+				}
+				1149 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
+				}
+				524 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
+				}
+				1148 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
+				}
+				1150 = {
+					create_unit = {
+						division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
+				}
 			hidden_effect = {
 				add_to_variable = {
 					var = CHI_NSM_army_strength_factor
