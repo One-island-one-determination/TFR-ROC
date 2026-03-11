@@ -3259,12 +3259,77 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
+			PRC = {
+			 end_puppet = HKN
+			  set_autonomy = {
+        target = SHZ
+        autonomy_state = autonomy_puppet
+    }
+			}
 			SHZ = {
+				set_cosmetic_tag = PRC_military_administration
 				transfer_state = 1395
 				add_state_core = 1395
-				THE_ChineseCivilWarTroops = yes
+				division_template = {
+	name = "轻步兵"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+					}
+					
+					support = {
+					}	
+				}
+	division_template = {
+	name = "坦克"
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+					}
+					
+					support = {
+					}	
+				}
+	capital_scope = {
+				create_unit = {
+					division = "name = \"infantry Brigade\" division_template = \"轻步兵\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					id = 1949
+					owner = SHZ
+					count = 4
+				}
+			}
+		capital_scope = {
+				create_unit = {
+					division = "name = \"tank Brigade\" division_template = \"坦克\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = SHZ
+					count = 2
+				}
+			}
+			set_politics = {
+	ruling_party = nationalist
+	last_election = "2016.1.16"
+	election_frequency = 48
+	elections_allowed = yes
+}
+				create_country_leader = {
+	name = "杨芝春"
+	picture = "gfx/Leaders/HKN_SHZ_MCU/Yang_Zhichun.png"
+	expire = "1999.1.1"
+	ideology = military_junta
+				}  
+				add_popularity = { ideology = nationalist popularity = 0.80 }
+				add_popularity = { ideology = communist popularity = 0.20 }
 			}
 			HKN = {
+				remove_ideas = PRC_chi_sar
 			leave_faction = yes
 				white_peace = JAP
 				white_peace = AST
@@ -3275,6 +3340,9 @@ country_event = {
 	election_frequency = 48
 	elections_allowed = no
 }
+add_popularity = { ideology = social_democrat popularity = 0.20 }
+add_popularity = { ideology = social_liberal popularity = 0.40 }
+add_popularity = { ideology = conservative popularity = 0.20 }
 set_popularities = {
 	authoritarian_democrat = 5
 	communist = 5
@@ -3288,7 +3356,27 @@ set_popularities = {
 				transfer_state = 326
 				add_state_core = 326
 				set_cosmetic_tag = HKN_revolution
-				THE_ChineseCivilWarTroops2 = yes
+				division_template = {
+	name = "民兵"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+					}
+					
+					support = {
+					}	
+				}
+	capital_scope = {
+				create_unit = {
+					division = "name = \"militia Brigade\" division_template = \"民兵\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = HKN
+					count = 7
+				}
+			}
 			}
 			326 = {
 				remove_dynamic_modifier = {
@@ -3303,7 +3391,13 @@ set_popularities = {
 	option = {
 		name = china.68.a
 		hidden_effect = {
+			PRC = {
+				end_puppet = SHZ
+			}
 			SHZ = {
+				white_peace = CHI
+				white_peace = AST
+				white_peace = JAP
 				declare_war_on = {
 					target = HKN
 					type = annex_everything
@@ -3358,6 +3452,7 @@ add_country_leader_role = {
 		name = china.391.a
 	}
 }
+
 
 
 
