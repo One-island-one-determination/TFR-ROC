@@ -1531,6 +1531,7 @@ focus_tree = {
 			}
 			unlock_decision_tooltip = Investigate_senior_military_officials
 			hidden_effect = {
+				remove_ideas = CHI_american_protection_idea
 				add_to_variable = {
 					var = ROC_battalion_upkeep_factor
 					value = 0.05
