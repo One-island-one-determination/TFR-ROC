@@ -162,11 +162,11 @@ add_country_leader_role = {
 PRC = {
 	 set_autonomy = {
         target = MCU
-        autonomy_state = autonomy_puppet
+        autonomy_state = autonomy_Special_Administrative_Region_PRC
     }
 	 set_autonomy = {
         target = HKN
-        autonomy_state = autonomy_puppet
+        autonomy_state = autonomy_Special_Administrative_Region_PRC
     }
 	set_party_name = { ideology = communist long_name = PRC_xijp_ccp_long name = PRC_xijp_ccp }
 	add_country_leader_role = {
@@ -252,7 +252,6 @@ set_popularities = {
 	conservative = 12
 	nationalist = 4
 }
-add_ideas = PRC_CHI_sar
 set_cosmetic_tag = HKN_PRC_puppet
 set_party_name = {
 				ideology = authoritarian_democrat
@@ -371,7 +370,6 @@ set_popularities = {
 	conservative = 12
 	nationalist = 4
 }
-	add_ideas = PRC_CHI_sar
 set_cosmetic_tag = MCU_PRC_puppet
 	promote_character = {
 	character = MCU_Ho_Iat_Seng
@@ -465,7 +463,5 @@ SHZ = {
 	ideology = military_junta
 }
 }
-
-
 
 
