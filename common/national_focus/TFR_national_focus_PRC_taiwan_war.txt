@@ -869,7 +869,7 @@ set_country_flag = Learning_New_Warfare
 	}
 	focus = {
 		id = PRC_crackdown_on_separatists
-		icon = GFX_focus_PRC_crackdown_on_separatists
+		#icon = GFX_focus_PRC_crackdown_on_separatists
 		prerequisite = {
 			focus = PRC_taiwanese_affairs_dont_concern_mainland 
 		}
@@ -881,10 +881,7 @@ set_country_flag = Learning_New_Warfare
 		ai_will_do = {
 			factor = 10
 		}
-		select_effect = {
-		}
 		completion_reward = {
-			PRC_the_separatist_problem_ideas = yes
 			set_temp_variable = {
 				var = PRC_influence_nat_var_temp
 				value = 0.05
@@ -940,24 +937,25 @@ set_country_flag = Learning_New_Warfare
 			unlock_decision_tooltip = PRC_taiwan_bombing_raid2
 			hidden_effect = {
 			CHI = {
+				set_country_flag = Learning_New_Warfare
 					swap_ideas = {
 				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
 				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
-				set_country_flag = Learning_New_Warfare
 			}
 				}
 				JAP = {
+					set_country_flag = Learning_New_Warfare
 					swap_ideas = {
 				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
 				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
-				set_country_flag = Learning_New_Warfare
 			}
 				}
 				AST = {
+					set_country_flag = Learning_New_Warfare
 					swap_ideas = {
 				remove_idea = PRC_insufficient_understanding_of_modern_warfare_idea
 				add_idea = PRC_insufficient_understanding_of_modern_warfare_idea2
-				set_country_flag = Learning_New_Warfare
+
 			}
 				}
 				if = {
@@ -983,7 +981,7 @@ set_country_flag = Learning_New_Warfare
 	}
 	focus = {
 		id = PRC_taiwanese_affairs_dont_concern_mainland
-		icon = GFX_focus_PRC_taiwanese_affairs_dont_concern
+		#icon = GFX_focus_PRC_taiwanese_affairs_dont_concern
 		prerequisite = {
 			focus = PRC_indiscriminate_missile_strikes
 		}
@@ -995,11 +993,9 @@ set_country_flag = Learning_New_Warfare
 		ai_will_do = {
 			factor = 10
 		}
-		select_effect = {
-		}
+	
 		completion_reward = {
 			add_stability = 0.05
-			common_prosperity_law_idk = yes
 			hidden_effect = {
 					
 			}
@@ -1065,7 +1061,7 @@ set_country_flag = Learning_New_Warfare
 	}
 	focus = {
 		id = PRC_unite_people
-		icon = GFX_focus_PRC_unite_the_people
+		#icon = GFX_focus_PRC_unite_the_people
 		prerequisite = {
 			focus = PRC_economic_conversion_to_military_needs
 		}
@@ -1077,10 +1073,8 @@ set_country_flag = Learning_New_Warfare
 		ai_will_do = {
 			factor = 10
 		}
-		select_effect = {
-		}
+
 		completion_reward = {
-			PRC_the_separatist_problem_ideas = yes
 			set_temp_variable = {
 				var = PRC_influence_cen_var_temp
 				value = 0.05
@@ -1166,7 +1160,7 @@ set_country_flag = Learning_New_Warfare
 	}
 	focus = {
 		id = PRC_economic_conversion_to_military_needs
-		icon = GFX_focus_PRC_economic_conversion
+		#icon = GFX_focus_PRC_economic_conversion
 		prerequisite = {
 			focus = PRC_minimize_civilian_casualties
 		}
