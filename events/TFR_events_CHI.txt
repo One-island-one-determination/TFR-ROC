@@ -2,6 +2,9 @@
 # Republic of china Events
 ###########################
 add_namespace = CHI
+add_namespace = taiwan
+add_namespace = taiwan_temp_skeleton
+add_namespace = taiwan_detente
 # 中華民國2020年大選
 country_event = {
 	id = CHI.1
@@ -237,5 +240,2227 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = CHI.8.a
+	}
+}
+country_event = {
+	id = taiwan_temp_skeleton.1
+	title = taiwan_temp_skeleton.1.t
+	desc = taiwan_temp_skeleton.1.d
+	picture = GFX_PRC_minus_soc_credit
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_temp_skeleton.1.a
+		ai_chance = {
+			base = 1
+		}
+		add_ideas = CHI_reintroduce_nuclear
+		country_event = {
+			id = taiwan_temp_skeleton.2
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_temp_skeleton.2
+	title = taiwan_temp_skeleton.2.t
+	desc = taiwan_temp_skeleton.2.d
+	picture = GFX_PRC_minus_soc_credit
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_temp_skeleton.2.a
+		ai_chance = {
+			base = 1
+		}
+		add_ideas = CHI_DPP_protest
+		country_event = {
+			id = taiwan_temp_skeleton.3
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_temp_skeleton.3
+	title = taiwan_temp_skeleton.3.t
+	desc = taiwan_temp_skeleton.3.d
+	picture = GFX_PRC_minus_soc_credit
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_temp_skeleton.3.a
+		ai_chance = {
+			base = 1
+		}
+		add_timed_idea = {
+			idea = CHI_abolish_CIPAS
+			days = 120
+		}
+		country_event = {
+			id = taiwan_temp_skeleton.4
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_temp_skeleton.4
+	title = taiwan_temp_skeleton.4.t
+	desc = taiwan_temp_skeleton.4.d
+	picture = GFX_PRC_minus_soc_credit
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_temp_skeleton.4.a
+		ai_chance = {
+			base = 1
+		}
+		add_timed_idea = {
+			idea = CHI_toughen_industries
+			days = 120
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_temp_skeleton.5
+	title = taiwan_temp_skeleton.5.t
+	desc = taiwan_temp_skeleton.5.d
+	picture = GFX_CHI_KMT_win_elections
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_temp_skeleton.5.a
+		ai_chance = {
+			base = 1
+		}
+		add_ideas = CHI_made_in_TW		#CHI_green_energy
+		country_event = {
+			id = taiwan_temp_skeleton.6
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_temp_skeleton.6
+	title = taiwan_temp_skeleton.6.t
+	desc = taiwan_temp_skeleton.6.d
+	picture = GFX_PRC_minus_soc_credit
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_temp_skeleton.6.a
+		ai_chance = {
+			base = 1
+		}
+		add_ideas = CHI_KMT_protests
+		country_event = {
+			id = taiwan_temp_skeleton.7
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_temp_skeleton.7
+	title = taiwan_temp_skeleton.7.t
+	desc = taiwan_temp_skeleton.7.d
+	picture = GFX_PRC_minus_soc_credit
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_temp_skeleton.7.a
+		ai_chance = {
+			base = 1
+		}
+		add_timed_idea = {
+			idea = CHI_green_energy
+			days = 120
+		}
+		country_event = {
+			id = taiwan_temp_skeleton.8
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_temp_skeleton.8
+	title = taiwan_temp_skeleton.8.t
+	desc = taiwan_temp_skeleton.8.d
+	picture = GFX_PRC_minus_soc_credit
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_temp_skeleton.8.a
+		ai_chance = {
+			base = 1
+		}
+		add_timed_idea = {
+			idea = CHI_farplanning_infrastructure
+			days = 120
+		}
+	}
+}
+
+#The Defiant Island
+country_event = {
+	id = taiwan.1
+	title = taiwan.1.t
+	desc = taiwan.1.d
+	picture = GFX_PRC_taiwan_beautiful
+	is_triggered_only = yes
+	trigger = {
+		tag = CHI
+	}
+	option = {
+		name = taiwan.1.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+#PRC Preparing Invasion
+country_event = {
+	id = taiwan.2
+	title = taiwan.2.t
+	desc = taiwan.2.d
+	picture = GFX_china_south_sea
+	is_triggered_only = yes
+	trigger = {
+		tag = CHI
+	}
+	immediate = {
+		hidden_effect = {
+			remove_ideas = CHI_american_protection_idea
+			country_event = {
+				id = taiwan.3
+				days = 14
+			}
+		}
+	}
+	option = {
+		name = taiwan.2.a
+		ai_chance = {
+			base = 1
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					PRC = {
+						is_ai = no
+					}
+				}
+				#remove_ideas = CHI_Taiwan_Bravery
+				#add_ideas = CHI_Taiwan_Bravery_2
+				1148 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = 7186
+					}
+				}
+				1148 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = 13961
+					}
+				}
+				1149 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = 13968
+					}
+				}
+				1150 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = 12068
+					}
+				}
+				1150 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = 13965
+					}
+				}
+				load_oob = CHI_taipei_reserves
+			}
+		}
+		if = {
+			limit = {
+				has_government = social_liberal
+			}
+			add_ideas = CHI_mobilize_balckbear
+		}
+		effect_tooltip = {
+			remove_ideas = CHI_american_protection_idea
+		}
+	}
+}
+
+#PDO Intervention
+country_event = {
+	id = taiwan.3
+	title = taiwan.3.t
+	desc = taiwan.3.d
+	picture = GFX_JAP_pdto_form
+	is_triggered_only = yes
+	trigger = {
+		tag = CHI
+	}
+	option = {
+		name = taiwan.3.a
+		ai_chance = {
+			base = 1
+		}
+		effect_tooltip = {
+			add_war_support = 0.1
+		}
+	}
+}
+
+#Elections
+country_event = {
+	id = taiwan.4
+	title = taiwan.4.t
+	desc = taiwan.4.d
+	picture = GFX_Taiwan_Election
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.4.a
+		ai_chance = {
+			base = 60
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = CHI_election
+					option = CHI_election_blue
+				}
+			}
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.01
+		}
+		hidden_effect = {
+			news_event = {
+				id = taiwan.5
+				hours = 12
+			}
+			country_event = {
+				id = taiwan_temp_skeleton.5
+				days = 60
+			}
+			country_event = {
+				id = taiwan.20
+				days = 1462
+			}
+			clr_country_flag = CHI_KMT_in_power_flag
+			set_country_flag = CHI_DPP_in_power_flag
+			PRC = {
+				country_event = {
+					id = taiwan.29
+					days = 3
+				}
+			}
+			country_event = {
+				id = taiwan.30
+				days = 120
+			}
+			PRC = {
+				country_event = {
+					id = taiwan.30
+					days = 120
+				}
+			}
+		}
+	}
+	option = {
+		name = taiwan.4.b
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = CHI_election
+					option = CHI_election_green
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+			last_election = "2020.1.11"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.15
+		}
+		hidden_effect = {
+			news_event = {
+				id = taiwan.6
+				hours = 12
+			}
+			country_event = {
+				id = taiwan_temp_skeleton.1
+				days = 60
+			}
+			clr_country_flag = CHI_DPP_in_power_flag
+			set_country_flag = CHI_KMT_in_power_flag
+			country_event = {
+				id = taiwan.12
+				days = 1462
+			}
+			country_event = {
+				id = taiwan_detente.1
+				days = 30
+			}
+			PRC = {
+				country_event = {
+					id = taiwan_detente.0
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+#DPP Wins
+news_event = {
+	id = taiwan.5
+	title = taiwan.5.t
+	desc = taiwan.5.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.5.a
+	}
+}
+
+#KMT
+news_event = {
+	id = taiwan.6
+	title = taiwan.6.t
+	desc = taiwan.6.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.6.a
+	}
+}
+
+#Reserve Divisions
+country_event = {
+	id = taiwan.7
+	title = taiwan.7.t
+	desc = taiwan.7.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.7.a
+		#load_oob = CHI_invasion_reserves
+	}
+}
+
+#Reserve Divisions
+country_event = {
+	id = taiwan.8
+	title = taiwan.8.t
+	desc = taiwan.8.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.8.a
+		#load_oob = CHI_invasion_reserves2
+	}
+}
+
+#Army in control
+country_event = {
+	id = taiwan.9
+	title = taiwan.9.t
+	desc = taiwan.9.d
+	picture = GFX_Neo_Kuomintang
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.9.a
+		set_politics = {
+			ruling_party = fascist
+			elections_allowed = no
+			last_election = "2020.1.11"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.45
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.05
+		}
+		set_party_name = {
+			ideology = fascist
+			long_name = CHI_nationalist_party_militarists_long
+			name = CHI_nationalist_party_militarists
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = CHI_authoritarian_democrat_party_militarists_long
+			name = CHI_authoritarian_democrat_party_militarists
+		}
+		set_party_name = {
+			ideology = conservative
+			long_name = CHI_conservative_party_militarists_long
+			name = CHI_conservative_party_militarists
+		}
+		news_event = {
+			id = taiwan.10
+			hours = 5
+		}
+		add_war_support = 0.25
+		add_ideas = CHI_neokumintang
+		remove_ideas = CHI_taiwanese_independence_movement_idea
+		promote_character = CHI_chen_chen_hsiang_char
+		clr_country_flag = CHI_DPP_in_power_flag
+		set_country_flag = CHI_KMT_in_power_flag
+	}
+}
+
+#Army in control NEWS
+news_event = {
+	id = taiwan.10
+	title = taiwan.10.t
+	desc = taiwan.10.d
+	picture = GFX_militarists_taiwan
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.10.a
+	}
+}
+
+#DPP kill kmt?
+country_event = {
+	id = taiwan.11
+	title = taiwan.11.t
+	desc = taiwan.11.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.11.a
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = DPP_kill_KMT
+	}
+	option = {
+		name = taiwan.11.b
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_TPP
+					}
+				}
+			}
+		}
+		add_stability = 0.15
+	}
+}
+
+#KMT 2020 2024 Elections
+country_event = {
+	id = taiwan.12
+	title = taiwan.12.t
+	desc = taiwan.12.d
+	picture = GFX_Taiwan_Election
+	immediate = {
+		hidden_effect = {
+			remove_ideas = CHI_Taiwan_Bravery
+		}
+	}
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		#elect Zhao
+		name = taiwan.12.a
+		trigger = {
+			NOT = {
+				has_government = fascist
+				has_government = communist
+			}
+		}
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = CHI_election_24_KMT
+						option = CHI_election_24_KMT_Han
+					}
+					has_game_rule = {
+						rule = CHI_election_24_KMT
+						option = CHI_election_24_KMT_COUP
+					}
+				}
+			}
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea
+			add_idea = CHI_prc_embargo_low_idea
+		}
+		clr_country_flag = CHI_DPP_in_power_flag
+		set_country_flag = CHI_KMT_in_power_flag
+		retire_character = CHI_tsai_ing_wen_char
+		retire_character = CHI_han_kuo_yu_char
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+			last_election = "2024.1.11"
+			election_frequency = 48
+		}
+		promote_character = CHI_zhao_shao_kang_char
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.15
+		}
+		set_party_name = {
+			ideology = social_liberal
+			long_name = CHI_conservative_party_long
+			name = CHI_conservative_party
+		}
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = taiwan.17
+					days = 1
+				}
+			}
+		}
+	}
+	option = {
+		#elect Han
+		name = taiwan.12.b
+		trigger = {
+			NOT = {
+				OR = {
+					has_government = fascist
+					has_government = communist
+				}
+			}
+		}
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = CHI_election_24_KMT
+						option = CHI_election_24_KMT_Zhao
+					}
+					has_game_rule = {
+						rule = CHI_election_24_KMT
+						option = CHI_election_24_KMT_COUP
+					}
+				}
+			}
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea
+			add_idea = CHI_prc_embargo_low_idea
+		}
+		clr_country_flag = CHI_DPP_in_power_flag
+		set_country_flag = CHI_KMT_in_power_flag
+		retire_character = CHI_tsai_ing_wen_char
+		promote_character = CHI_han_kuo_yu_char
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = taiwan.15
+					days = 1
+				}
+			}
+		}
+	}
+	option = {
+		#elect TPP
+		name = taiwan.12.c
+		trigger = {
+			has_government = authoritarian_democrat
+		}
+		ai_chance = {
+			base = 35
+			#modifier = {
+			#    factor = 0
+			#    OR = {
+			#        has_game_rule = {
+			#	        rule = CHI_election_24
+			#	        option = CHI_election_green_24
+			#		 }
+			#    	has_game_rule = {
+			#	      rule = CHI_election_24
+			#	      option = CHI_election_TPP_24
+			#    	}
+			# 	 }
+			#}
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+			last_election = "2024.1.13"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.1
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea
+			add_idea = CHI_prc_embargo_low_idea
+		}
+		clr_country_flag = CHI_KMT_in_power_flag
+		clr_country_flag = CHI_DPP_in_power_flag
+		set_country_flag = CHI_TPP_in_power_flag
+		retire_character = CHI_tsai_ing_wen_char
+		promote_character = CHI_ko_wen_je_char
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = taiwan.16
+					days = 1
+				}
+			}
+		}
+	}
+	option = {
+		#military coup
+		name = taiwan.12.f
+		trigger = {
+			NOT = {
+				OR = {
+					has_government = fascist
+					has_government = communist
+				}
+			}
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = CHI_election_24_KMT
+						option = CHI_election_24_KMT_Zhao
+					}
+					has_game_rule = {
+						rule = CHI_election_24_KMT
+						option = CHI_election_24_KMT_COUP
+					}
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = yes
+			last_election = "2024.1.13"
+			election_frequency = 48
+		}
+		clr_country_flag = CHI_KMT_in_power_flag
+		clr_country_flag = CHI_DPP_in_power_flag
+		set_country_flag = CHI_ROCA_in_power_flag
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.35
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea
+			add_idea = CHI_prc_embargo_low_idea
+		}
+		retire_character = CHI_tsai_ing_wen_char
+		retire_character = CHI_han_kuo_yu_char
+		promote_character = CHI_chen_pao_yu_char
+		hidden_effect = {
+			news_event = {
+				id = taiwan.14
+				days = 1
+			}
+			country_event = {
+				id = taiwan.9
+				days = 14
+			}
+		}
+	}
+	option = {
+		#what are elections?
+		name = taiwan.12.e
+		trigger = {
+			OR = {
+				has_government = fascist
+				has_government = communist
+			}
+		}
+	}
+}
+
+#DPP Wins
+country_event = {
+	id = taiwan.13
+	title = taiwan.13.t
+	desc = taiwan.13.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.13.a
+	}
+}
+
+#Coup
+news_event = {
+	id = taiwan.14
+	title = taiwan.14.t
+	desc = taiwan.14.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.14.a
+	}
+}
+
+#KMT
+news_event = {
+	id = taiwan.15
+	title = taiwan.15.t
+	desc = taiwan.15.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.15.a
+	}
+}
+
+#TPP
+news_event = {
+	id = taiwan.16
+	title = taiwan.16.t
+	desc = taiwan.16.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.16.a
+	}
+}
+
+#Zhao
+news_event = {
+	id = taiwan.17
+	title = taiwan.17.t
+	desc = taiwan.17.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.17.a
+	}
+}
+
+country_event = {
+	#independence
+	id = taiwan.18
+	title = taiwan.18.t
+	desc = taiwan.18.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.18.a
+		trigger = {
+			has_country_flag = CHI_DPP_in_power_flag
+		}
+		add_stability = -0.15
+		set_cosmetic_tag = CHI_taiwan_republic
+		every_state = {
+			limit = {
+				is_core_of = PRC
+				is_claimed_by = CHI
+			}
+			remove_core_of = CHI
+		}
+		remove_ideas = CHI_taiwanese_independence_movement_2_idea
+		remove_ideas = CHI_taiwanese_independence_movement_idea
+		set_party_name = {
+			ideology = nationalist
+			long_name = CHI_nationalist_ROTAF_party_long
+			name = CHI_nationalist_ROTAF_party
+		}
+	}
+	option = {
+		name = taiwan.18.b
+		add_stability = 0.05
+	}
+}
+
+news_event = {
+	id = taiwan.19
+	title = taiwan.19.t
+	desc = taiwan.19.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.19.a
+		trigger = {
+			tag = PRC
+		}
+	}
+	option = {
+		name = taiwan.19.b
+		trigger = {
+			tag = CHI
+		}
+	}
+	option = {
+		name = taiwan.19.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = CHI
+					tag = PRC
+				}
+			}
+		}
+	}
+}
+
+#DPP 2020 2024 elections
+country_event = {
+	id = taiwan.20
+	title = taiwan.12.t
+	desc = taiwan.12.d
+	picture = GFX_Taiwan_Election
+	immediate = {
+		hidden_effect = {
+			remove_ideas = CHI_Taiwan_Bravery
+		}
+	}
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		#elect Zheng
+		name = taiwan.20.a
+		trigger = {
+			NOT = {
+				OR = {
+					has_government = fascist
+					has_government = communist
+				}
+			}
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Chen
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Lai
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_TPP
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_COUP
+					}
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+			last_election = "2024.1.13"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.01
+		}
+		swap_ideas = {
+			remove_idea = CHI_taiwanese_independence_movement_idea
+			add_idea = CHI_taiwanese_independence_movement_2_idea
+		}
+		retire_character = CHI_tsai_ing_wen_char
+		retire_character = CHI_han_kuo_yu_char
+		retire_character = CHI_lai_ching_te_char
+		promote_character = CHI_zheng_wen_can_char
+		clr_country_flag = CHI_KMT_in_power_flag
+		set_country_flag = CHI_DPP_in_power_flag
+		hidden_effect = {
+			country_event = {
+				id = taiwan.13
+				days = 1
+			}
+		}
+	}
+	option = {
+		#elect Chen
+		name = taiwan.20.a
+		trigger = {
+			NOT = {
+				OR = {
+					has_government = fascist
+					has_government = communist
+				}
+			}
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Zheng
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Lai
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_TPP
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_COUP
+					}
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+			last_election = "2024.1.13"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.2
+		}
+		set_party_name = {
+			ideology = social_democrat
+			long_name = CHI_social_liberal_party_long
+			name = CHI_social_liberal_party
+		}
+		swap_ideas = {
+			remove_idea = CHI_taiwanese_independence_movement_idea
+			add_idea = CHI_taiwanese_independence_movement_2_idea
+		}
+		retire_character = CHI_tsai_ing_wen_char
+		retire_character = CHI_han_kuo_yu_char
+		retire_character = CHI_lai_ching_te_char
+		promote_character = CHI_chen_qi_mai_char
+		clr_country_flag = CHI_KMT_in_power_flag
+		set_country_flag = CHI_DPP_in_power_flag
+		hidden_effect = {
+			country_event = {
+				id = taiwan.24
+				days = 1
+			}
+		}
+	}
+	option = {
+		#elect Lai
+		name = taiwan.20.a
+		trigger = {
+			NOT = {
+				OR = {
+					has_government = fascist
+					has_government = communist
+				}
+			}
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Chen
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Zheng
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_TPP
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_COUP
+					}
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+			last_election = "2024.1.13"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.2
+		}
+		set_party_name = {
+			ideology = market_liberal
+			long_name = CHI_social_liberal_party_long
+			name = CHI_social_liberal_party
+		}
+		swap_ideas = {
+			remove_idea = CHI_taiwanese_independence_movement_idea
+			add_idea = CHI_taiwanese_independence_movement_2_idea
+		}
+		retire_character = CHI_tsai_ing_wen_char
+		retire_character = CHI_han_kuo_yu_char
+		promote_character = CHI_lai_ching_te_char
+		clr_country_flag = CHI_KMT_in_power_flag
+		set_country_flag = CHI_DPP_in_power_flag
+		hidden_effect = {
+			country_event = {
+				id = taiwan.24
+				days = 1
+			}
+		}
+	}
+	option = {
+		#elect TPP
+		name = taiwan.12.c
+		trigger = {
+			has_country_flag = DPP_kill_kmt
+			NOT = {
+				OR = {
+					has_government = fascist
+					has_government = communist
+				}
+			}
+		}
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Chen
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Zheng
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Lai
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_COUP
+					}
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+			last_election = "2024.1.13"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.1
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea
+			add_idea = CHI_prc_embargo_low_idea
+		}
+		clr_country_flag = CHI_KMT_in_power_flag
+		clr_country_flag = CHI_DPP_in_power_flag
+		set_country_flag = CHI_TPP_in_power_flag
+		retire_character = CHI_tsai_ing_wen_char
+		promote_character = CHI_ko_wen_je_char
+		hidden_effect = {
+			news_event = {
+				id = taiwan.16
+				days = 1
+			}
+		}
+	}
+	option = {
+		#military coup
+		name = taiwan.12.f
+		trigger = {
+			NOT = {
+				OR = {
+					has_government = fascist
+					has_government = communist
+				}
+			}
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Chen
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Zheng
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_Lai
+					}
+					has_game_rule = {
+						rule = CHI_election_24_DPP
+						option = CHI_election_24_DPP_TPP
+					}
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = yes
+			last_election = "2024.1.13"
+			election_frequency = 48
+		}
+		clr_country_flag = CHI_KMT_in_power_flag
+		clr_country_flag = CHI_DPP_in_power_flag
+		set_country_flag = CHI_ROCA_in_power_flag
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.35
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea
+			add_idea = CHI_prc_embargo_low_idea
+		}
+		retire_character = CHI_tsai_ing_wen_char
+		retire_character = CHI_han_kuo_yu_char
+		promote_character = CHI_chen_pao_yu_char
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = taiwan.14
+					days = 1
+				}
+			}
+			country_event = {
+				id = taiwan.9
+				days = 14
+			}
+		}
+	}
+	option = {
+		#what are elections?
+		name = taiwan.12.e
+		trigger = {
+			OR = {
+				has_government = fascist
+				has_government = communist
+			}
+		}
+	}
+}
+
+country_event = {
+	id = taiwan.21
+	title = taiwan.21.t
+	desc = taiwan.21.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.21.a
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+			last_election = "2020.1.11"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.4
+		}
+		hidden_effect = {
+			country_event = {
+				id = taiwan.22
+				days = 2
+			}
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = CHI_conservative_party_long
+			name = CHI_conservative_party
+		}
+	}
+	option = {
+		name = taiwan.11.b
+		add_stability = 0.15
+	}
+}
+
+country_event = {
+	id = taiwan.22
+	title = taiwan.22.t
+	desc = taiwan.22.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.22.a
+	}
+}
+
+country_event = {
+	id = taiwan.23
+	title = taiwan.23.t
+	desc = taiwan.23.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.23.a
+	}
+}
+
+country_event = {
+	id = taiwan.24
+	title = taiwan.24.t
+	desc = taiwan.24.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.24.a
+	}
+}
+
+country_event = {
+	id = taiwan.25
+	title = taiwan.25.t
+	desc = taiwan.25.d
+	picture = GFX_CHI_american_fleet_secured
+	is_triggered_only = yes
+	option = {
+		name = taiwan.25.a
+		hidden_effect = {
+			CHI = {
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_2
+					amount = 50
+					producer = USA
+				}
+			}
+			USN = {
+				transfer_units_fraction = {
+					target = JAP
+					size = 0
+					stockpile_ratio = 0
+					army_ratio = 0
+					navy_ratio = 0.25
+					air_ratio = 0.5
+				}
+				transfer_units_fraction = {
+					target = CHI
+					size = 0
+					stockpile_ratio = 0
+					army_ratio = 0
+					navy_ratio = 0.1
+					air_ratio = 0.05
+				}
+				transfer_units_fraction = {
+					target = AST
+					size = 0
+					stockpile_ratio = 0
+					army_ratio = 0
+					navy_ratio = 0.2
+					air_ratio = 0.05
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				news_event = taiwan.26
+			}
+		}
+	}
+}
+
+#Seventh Fleet Remains
+news_event = {
+	id = taiwan.26
+	title = taiwan.26.t
+	desc = taiwan.26.d
+	picture = GFX_united_states_navy
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.26.a
+	}
+}
+
+#DPP Reaction
+news_event = {
+	id = taiwan.27
+	title = taiwan.27.t
+	desc = taiwan.27.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.27.a
+	}
+}
+
+#KMT Reaction
+news_event = {
+	id = taiwan.28
+	title = taiwan.28.t
+	desc = taiwan.28.d
+	picture = GFX_Taiwan_Flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.28.a
+	}
+}
+
+#PRC protest
+country_event = {
+	id = taiwan.29
+	title = taiwan.29.t
+	desc = taiwan.29.d
+	picture = GFX_CHI_criticize_DPP
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.29.a
+		hidden_effect = {
+			#USA = {
+			#	country_event = { id = taiwan.291 days = 5 }
+			#}
+			PRC = {
+				country_event = {
+					id = taiwan.291
+					days = 5
+				}
+			}
+			CHI = {
+				swap_ideas = {
+					remove_idea = CHI_chinese_blockade
+					add_idea = CHI_chinese_blockade_2
+				}
+				country_event = {
+					id = taiwan.291
+					days = 5
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#TAIWAN WINS IN THE TAIWAN WAR, MAINLAND CHINA LOSES, TAIWAN IS HAPPY
+	id = taiwan.32
+	title = taiwan.32.t
+	desc = taiwan.32.d
+	picture = GFX_CHI_event_taiwan_32
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan.32.a
+		clr_country_flag = CHI_protecting_the_island_flag
+		custom_effect_tooltip = CHI_taiwan_war_victory_demobilization_tooltip
+		delete_unit = {
+			id = 1949
+			disband = yes
+		}
+		custom_effect_tooltip = tooltip_white_line
+		add_ideas = CHI_lower_mainland_influence_idea
+		custom_effect_tooltip = tooltip_white_line
+		add_ideas = CHI_republic_of_china_armed_forces_idea
+		custom_effect_tooltip = tooltip_white_line
+		hidden_effect = {
+			remove_ideas = CHI_repairs_under_fire_idea
+		}
+		set_temp_variable = {
+			coalition_partner_var_temp = token:conservative
+		}
+		remove_from_coalition = yes
+		set_temp_variable = {
+			coalition_partner_var_temp = token:social_liberal
+		}
+		remove_from_coalition = yes
+		set_temp_variable = {
+			coalition_partner_var_temp = token:market_liberal
+		}
+		remove_from_coalition = yes
+	}
+}
+
+country_event = {
+	#Second Wave of Missile Strikes
+	id = taiwan.33
+	title = taiwan.33.t
+	desc = taiwan.33.d
+	picture = GFX_PRC_rocket_strikes2
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					CHI = {
+						is_ai = yes
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 400
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 40
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						CHI = {
+							is_ai = yes
+						}
+						JAP = {
+							is_ai = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_template = "Minbing"
+						}
+					}
+					division_template = {
+						name = "Minbing"
+						is_locked = no
+						regiments = {
+							militia = {
+								x = 0
+								y = 0
+							}
+							militia = {
+								x = 0
+								y = 1
+							}
+							militia = {
+								x = 0
+								y = 2
+							}
+							militia = {
+								x = 1
+								y = 0
+							}
+							militia = {
+								x = 1
+								y = 1
+							}
+						}
+						support = {
+							recon = {
+								x = 0
+								y = 0
+							}
+							engineer = {
+								x = 0
+								y = 1
+							}
+						}
+					}
+				}
+				524 = {
+					create_unit = {
+						division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						prioritize_location = 11914
+						id = 1949
+						owner = CHI
+						count = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						CHI = {
+							is_ai = yes
+						}
+						PRC = {
+							is_ai = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_template = "Minbing"
+						}
+					}
+					division_template = {
+						name = "Minbing"
+						is_locked = no
+						regiments = {
+							militia = {
+								x = 0
+								y = 0
+							}
+							militia = {
+								x = 0
+								y = 1
+							}
+							militia = {
+								x = 0
+								y = 2
+							}
+							militia = {
+								x = 1
+								y = 0
+							}
+							militia = {
+								x = 1
+								y = 1
+							}
+						}
+						support = {
+							recon = {
+								x = 0
+								y = 0
+							}
+							engineer = {
+								x = 0
+								y = 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 3
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = taiwan.33.a
+		set_country_flag = CHI_protecting_the_island_flag
+		focus_unlock = yes
+		complete_national_focus = CHI_island_in_one_fate
+		add_ideas = CHI_repairs_under_fire_idea
+		activate_mission = CHI_taiwan_war_mission
+		custom_effect_tooltip = PRC_second_wave_missile_strikes_tt
+		damage_units = {
+			state = 1148
+			damage = 0.15
+			org_damage = 0.15
+			str_damage = 0.15
+			ratio = yes
+			army = yes
+			navy = no
+		}
+		damage_units = {
+			state = 1149
+			damage = 0.15
+			org_damage = 0.15
+			str_damage = 0.15
+			ratio = yes
+			army = yes
+			navy = no
+		}
+		damage_units = {
+			state = 1150
+			damage = 0.15
+			org_damage = 0.15
+			str_damage = 0.15
+			ratio = yes
+			army = yes
+			navy = no
+		}
+		damage_units = {
+			state = 524
+			damage = 0.15
+			org_damage = 0.15
+			str_damage = 0.15
+			ratio = yes
+			army = yes
+			navy = no
+		}
+		CHI = {
+			if = {
+				limit = {
+					has_country_leader = {
+						character = CHI_han_kuo_yu_char
+						ruling_only = yes
+					}
+				}
+				set_country_leader_portrait = {
+					ideology = conservative
+					portrait = GFX_portrait_CHI_han_kuo_yu_military
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_leader = {
+						character = CHI_tsai_ing_wen_char
+						ruling_only = yes
+					}
+				}
+				set_country_leader_portrait = {
+					ideology = social_liberal
+					portrait = GFX_portrait_CHI_tsai_ing_wen_military
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#TAIWAN HAS MORE THAN 15% SURRENDER PROGRESS IN TAIWAN WAR
+	id = taiwan.34
+	title = taiwan.34.t
+	desc = taiwan.34.d
+	picture = GFX_CHI_event_taiwan_32
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan.34.a
+		if = {
+			limit = {
+				has_idea = CHI_last_stand_idea
+			}
+			swap_ideas = {
+				remove_idea = CHI_last_stand_idea
+				add_idea = CHI_last_stand_1_idea
+			}
+		}
+		else = {
+			add_ideas = CHI_last_stand_idea
+		}
+		custom_effect_tooltip = tooltip_white_line
+		if = {
+			limit = {
+				NOT = {
+					has_template = "Minbing"
+				}
+			}
+			division_template = {
+				name = "Minbing"
+				is_locked = no
+				regiments = {
+					militia = {
+						x = 0
+						y = 0
+					}
+					militia = {
+						x = 0
+						y = 1
+					}
+					militia = {
+						x = 0
+						y = 2
+					}
+					militia = {
+						x = 1
+						y = 0
+					}
+					militia = {
+						x = 1
+						y = 1
+					}
+				}
+				support = {
+					recon = {
+						x = 0
+						y = 0
+					}
+					engineer = {
+						x = 0
+						y = 1
+					}
+				}
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+				id = 1949
+				owner = CHI
+				count = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = taiwan.35
+	title = taiwan.35.t
+	desc = taiwan.35.d
+	picture = GFX_CHI_event_taiwan_32
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.35.a
+	}
+}
+
+#USA react
+country_event = {
+	id = taiwan.291
+	title = taiwan.291.t
+	desc = taiwan.291.d
+	picture = GFX_event_taiwanwarlose
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+	}
+	option = {
+		name = taiwan.291.a
+		hidden_effect = {
+			country_event = {
+				id = taiwan.292
+				days = 15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = taiwan.292
+	title = taiwan.292.t
+	desc = taiwan.292.d
+	picture = GFX_event_taiwanwarlose
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+	}
+	option = {
+		name = taiwan.292.a
+		USA = {
+			add_named_threat = {
+			    threat = 2
+			    name = CHI_trump_aid_to_taiwan
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = taiwan.293
+				days = 25
+			}
+		}
+	}
+}
+
+country_event = {
+	id = taiwan.293
+	title = taiwan.293.t
+	desc = taiwan.293.d
+	picture = GFX_CHI_pelosi_visit
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+	}
+	option = {
+		name = taiwan.293.a
+		USA = {
+			add_named_threat = {
+			    threat = 5
+			    name = CHI_pelosis_visit_to_taiwan
+			}
+		}
+	}
+}
+
+#PRC drill
+country_event = {
+	id = taiwan.30
+	title = taiwan.30.t
+	desc = taiwan.30.d
+	picture = GFX_CHI_PRC_taiwan_strait_drill
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+	}
+	option = {
+		name = taiwan.30.a
+		trigger = {
+			original_tag = CHI
+		}
+		effect_tooltip = {
+			PRC = {
+				add_named_threat = {
+				    threat = 4
+				    name = CHI_pla_exercises_taiwan
+				}
+				army_experience = 15
+				navy_experience = 5
+				add_war_support = 0.01
+			}
+		}
+	}
+	option = {
+		name = taiwan.30.b
+		trigger = {
+			original_tag = PRC
+		}
+		add_named_threat = {
+		    threat = 4
+		    name = CHI_pla_exercises_taiwan
+		}
+		army_experience = 15
+		navy_experience = 5
+		add_war_support = 0.01
+	}
+}
+
+country_event = {
+	id = taiwan.1949
+	title = taiwan.1949.t
+	desc = taiwan.1949.d
+	picture = GFX_Taiwan_Election
+	is_triggered_only = yes
+	trigger = {
+		has_war_with = PRC
+		surrender_progress < 0.6
+	}
+	option = {
+		name = taiwan.1949.a
+		set_politics = {
+			ruling_party = fascist
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_detente.0
+	title = taiwan_detente.0.t
+	desc = taiwan_detente.0.d
+	picture = GFX_Taiwan_Election
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_detente.0.a
+	}
+}
+
+country_event = {
+	id = taiwan_detente.1
+	title = taiwan_detente.1.t
+	desc = taiwan_detente.1.d
+	picture = GFX_CHI_KMT_win_elections
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_detente.1.a
+		remove_ideas = CHI_chinese_blockade
+		PRC = {
+			country_event = {
+				id = taiwan_detente.2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_detente.2
+	title = taiwan_detente.2.t
+	desc = taiwan_detente.2.d
+	picture = GFX_CHI_KMT_seek_detente
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_detente.2.a
+		#set_country_flag = PRC_taiwan_detente_category_unlocked_flag #undercooked stuff
+		#unlock_decision_category_tooltip = PRC_taiwan_detente_cat
+		#CHI = { country_event = { id = taiwan_detente.3 days = 30 } }
+	}
+}
+
+country_event = {
+	id = taiwan_detente.3
+	title = taiwan_detente.3.t
+	desc = taiwan_detente.3.d
+	picture = GFX_CHI_KMT_seek_detente
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan_detente.3.a
+		CHI = {
+			remove_ideas = CHI_prc_embargo_idea
+		}
+		PRC = {
+			break_embargo = CHI
+		}
+		CHI = {
+			break_embargo = PRC
+		}
+		country_event = {
+			id = taiwan_detente.4
+			days = 20
+		}
+		PRC = {
+			country_event = {
+				id = taiwan_detente.4
+				days = 20
+			}
+		}
+		hidden_effect = {
+			PRC = {
+				country_event = {
+					id = taiwan.293
+					days = 25
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_detente.4
+	title = taiwan_detente.4.t
+	desc = taiwan_detente.4.d
+	picture = GFX_CHI_detente
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = taiwan_detente.4.a
+		country_event = {
+			id = taiwan_detente.5
+			days = 20
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_detente.5
+	title = taiwan_detente.5.t
+	desc = taiwan_detente.5.d
+	picture = GFX_CHI_detente
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = taiwan_detente.5.a
+		country_event = {
+			id = taiwan_detente.6
+			days = 20
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_detente.6
+	title = taiwan_detente.6.t
+	desc = taiwan_detente.6.d
+	picture = GFX_CHI_singapore_conference
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = taiwan_detente.6.a
+	}
+}
+
+country_event = {
+	id = taiwan_detente.7
+	title = taiwan_detente.7.t
+	desc = taiwan_detente.7.d
+	picture = GFX_CHI_singapore_conference
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = taiwan_detente.7.a
+		country_event = {
+			id = taiwan_detente.8
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_detente.8
+	title = taiwan_detente.8.t
+	desc = taiwan_detente.8.d
+	picture = GFX_CHI_singapore_conference
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = taiwan_detente.8.a
+		country_event = {
+			id = taiwan_detente.9
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_detente.9
+	title = taiwan_detente.9.t
+	desc = taiwan_detente.9.d
+	picture = GFX_CHI_singapore_conference
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = taiwan_detente.9.a
+		clr_country_flag = PRC_taiwan_detente_category_unlocked_flag
+		if = {
+			limit = {
+				original_tag = PRC
+			}
+			country_event = {
+				id = taiwan_detente.10
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = taiwan_detente.10
+	title = taiwan_detente.10.t
+	desc = taiwan_detente.10.d
+	picture = GFX_CHI_PRC_final_choice
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = taiwan_detente.10.a
+	}
+}
+
+### GREAT ASIAN WAR ###	
+country_event = {
+	#GREAT ASIAN WAR BEGINS
+	id = taiwan.500
+	title = taiwan.500.t
+	desc = taiwan.500.d
+	picture = GFX_CHI_event_taiwan_32
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = taiwan.500.a
+		add_ideas = CHI_last_stand_idea
+		set_country_flag = CHI_our_final_fight_flag
+		#focus_unlock = yes
+		#complete_national_focus = CHI_our_final_fight
 	}
 }
