@@ -5066,10 +5066,12 @@ EastAsia_taiwan_war_dec = {
 			always = no
 		}
 		available = { 
+			OR = {
 			CHI = {
 				is_ally_with = PRC
 			}
 			has_war = no
+			}
 			}
 		is_good = no
 		selectable_mission = no
@@ -5087,10 +5089,12 @@ EastAsia_taiwan_war_dec = {
 			always = no
 		}
 		available = { 
+			OR = {
 			CHI = {
 				is_ally_with = PRC
 			}
 			has_war = no
+			}
 			}
 		is_good = no
 		selectable_mission = no
