@@ -134,11 +134,12 @@ The_CCP_Difficulty_Selection = {
 	}
 }
 EastAsia_taiwan_war_dec = {
-	visible_when_empty = yes
+	visible_when_empty = no
 	priority = 99
 	
 	visible = {
 		has_global_flag = PRC_ongoing_taiwan_war
+		#has_war = yes
 	}
 	
 	allowed = {
@@ -150,6 +151,7 @@ EastAsia_taiwan_war_dec = {
 		}
 	}
 }
+
 
 
 
