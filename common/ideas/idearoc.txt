@@ -1,5 +1,45 @@
 ideas = {
 	country = {
+CHI_InvestingAI = {
+			picture = CHI_InvestingAI
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = { 
+				always = yes
+				 }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.25
+				consumer_goods_factor = 0.15
+				research_speed_factor = 0.05
+				expense_growth_factor = 0.15
+			}
+		}
+		CHI_scientists_from_america_idea = {
+			picture = SAT_Rule_by_Science_and_Reason
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = { 
+				always = yes
+				 }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				production_factory_efficiency_gain_factor = 0.075
+				line_change_production_efficiency_factor = 0.075
+				research_speed_factor = 0.05
+			}
+		}
 		CHI_aging_population_idea = {
 				name = JAP_aging_population_idea
 				picture = JAP_declining_population
