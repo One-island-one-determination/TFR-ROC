@@ -1441,7 +1441,7 @@ shared_focus = {
 	x = 40
 	y = 0
 	allow_branch = {
-		has_country_flag = PRC_for_policy_tree_available
+		#has_country_flag = PRC_for_policy_tree_available
 	}
 	offset = {
 		x = 5
@@ -1450,27 +1450,9 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 5
+		x = 15
 		trigger = {
 			has_country_flag = PRC_nationalist_win
-		}
-	}
-	offset = {
-		x = -11
-		trigger = {
-			has_completed_focus = PRC_suppress_dissent
-		}
-	}
-	offset = {
-		x = -8
-		trigger = {
-			has_completed_focus = PRC_protectors_of_the_chinese_nation
-		}
-	}
-	offset = {
-		x = -12
-		trigger = {
-			has_completed_focus = PRC_stability_and_security
 		}
 	}
 	offset = {
@@ -1787,6 +1769,7 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
+		focus = PRC_push_for_thaw
 		focus = PRC_support_the_korean_way
 	}
 	ai_will_do = {
@@ -1859,6 +1842,7 @@ shared_focus = {
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
 		focus = PRC_push_for_thaw
+		focus = PRC_support_the_korean_way
 	}
 	ai_will_do = {
 		factor = 150
@@ -2498,9 +2482,7 @@ shared_focus = {
 	prerequisite = {
 		focus = PRC_counter_indian_aggression
 	}
-	mutually_exclusive = {
-		focus = PRC_expand_border_training
-	}
+	
 	ai_will_do = {
 		factor = 50
 	}
@@ -2643,9 +2625,7 @@ shared_focus = {
 	prerequisite = {
 		focus = PRC_counter_indian_aggression
 	}
-	mutually_exclusive = {
-		focus = PRC_build_up_fortifications
-	}
+	
 	ai_will_do = {
 		factor = 50
 	}
@@ -2686,6 +2666,7 @@ shared_focus = {
 		focus = PRC_expand_border_training
 		focus = PRC_build_up_fortifications
 	}
+	
 	ai_will_do = {
 		factor = 50
 	}
@@ -3091,12 +3072,63 @@ shared_focus = {
 	}
 	available = {
 	}
+	select_effect = {
+		hidden_effect = {
+			MND = {
+					country_event = {
+						id = bur.4
+						days = 30
+					}
+				}
+		}
+	}
 	completion_reward = {
 		if = {
 			limit = {
 				has_country_flag = PRC_myanmar_negotiations_flag
 			}
-			unlock_decision_tooltip = PRC_support_junta
+			add_to_faction = MND
+			MND = {
+				set_country_flag = eadi_member
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = KNU
+						tag = CNF
+						tag = PDF
+						tag = SSA
+						tag = MOA
+						tag = BRM
+					}
+				}
+				MND = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+				PRC = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = BRM
+					}
+					remove_dynamic_modifier = {
+						modifier = BRM_peoples_war
+					}
+				}
+			}
+			news_event = {
+				id = china.233
+				hours = 7
+			}
 		}
 		else = {
 			unlock_decision_tooltip = PRC_invite_myanmar_eadi
@@ -3154,7 +3186,7 @@ shared_focus = {
 	x = -12
 	y = 0
 	allow_branch = {
-		has_country_flag = PRC_military_tree_available
+		#has_country_flag = PRC_military_tree_available
 	}
 	offset = {
 		x = -26
@@ -3162,25 +3194,7 @@ shared_focus = {
 			has_country_flag = PRC_nationalist_win
 		}
 	}
-	offset = {
-		x = 16
-		trigger = {
-			has_completed_focus = PRC_suppress_dissent
-		}
-	}
-	offset = {
-		x = 13
-		trigger = {
-			has_completed_focus = PRC_protectors_of_the_chinese_nation
-		}
-	}
-	offset = {
-		x = 18
-		trigger = {
-			has_completed_focus = PRC_stability_and_security
-		}
-	}
-	cost = 2.9
+	cost = 2
 	available_if_capitulated = yes
 	ai_will_do = {
 		factor = 50
@@ -3260,7 +3274,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_prepare_for_the_next_war
 	x = -1
 	y = 1
-	cost = 2.9
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_chinas_spot_in_the_sun
 	ai_will_do = {
@@ -3312,7 +3326,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_lessons_from_the_taiwan_war
 	x = 1
 	y = 1
-	cost = 2.9
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_chinas_spot_in_the_sun
 	ai_will_do = {
@@ -3382,7 +3396,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_next_generation_airforce
 	x = -9
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_prepare_for_the_next_war
 	ai_will_do = {
@@ -3438,7 +3452,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_dominate_the_skies
 	x = 1
 	y = 1
-	cost = 4.3
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_next_generation_airforce
 	ai_will_do = {
@@ -3517,7 +3531,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_flying_fortresses
 	x = -4
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_next_generation_airforce
 	ai_will_do = {
@@ -3599,7 +3613,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_strikes_on_any_place_of_the_earth
 	x = 0
 	y = 2
-	cost = 4.3
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_flying_fortresses
 	ai_will_do = {
@@ -3648,7 +3662,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_trust_in_the_pilot
 	x = -1
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_next_generation_airforce
 	ai_will_do = {
@@ -3696,7 +3710,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_the_exterminating_swarm
 	x = 0
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_trust_in_the_pilot
 	ai_will_do = {
@@ -3708,9 +3722,7 @@ shared_focus = {
 	prerequisite = {
 		focus = PRC_dominate_the_skies
 	}
-	mutually_exclusive = {
-		focus = PRC_non_stop_heavy_air_support
-	}
+	
 	available = {
 		has_army_experience > 50
 		has_air_experience > 50
@@ -3744,7 +3756,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_non_stop_heavy_air_support
 	x = 1
 	y = 1
-	cost = 4.3
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_dominate_the_skies
 	ai_will_do = {
@@ -3753,9 +3765,7 @@ shared_focus = {
 	prerequisite = {
 		focus = PRC_dominate_the_skies
 	}
-	mutually_exclusive = {
-		focus = PRC_the_exterminating_swarm
-	}
+	
 	available = {
 	}
 	completion_reward = {
@@ -3806,7 +3816,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_deus_ex_machina
 	x = -1
 	y = 3
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_dominate_the_skies
 	ai_will_do = {
@@ -3864,7 +3874,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_streamline_aircraft_production
 	x = 0
 	y = 2
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_dominate_the_skies
 	ai_will_do = {
@@ -3927,7 +3937,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_modernize_the_missile_corps
 	x = -4
 	y = 1
-	cost = 4.3
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_dominate_the_skies
 	ai_will_do = {
@@ -3992,7 +4002,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_a_blue_water_navy
 	x = 1
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_prepare_for_the_next_war
 	ai_will_do = {
@@ -4166,7 +4176,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_increase_naval_production
 	x = -2
 	y = 1
-	cost = 7.2
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_a_blue_water_navy
 	ai_will_do = {
@@ -4276,7 +4286,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_elite_marine_corps
 	x = 2
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_a_blue_water_navy
 	ai_will_do = {
@@ -4341,7 +4351,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_dominate_south_china_sea
 	x = 1
 	y = 2
-	cost = 2.9
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_rain_fire_from_above
 	ai_will_do = {
@@ -4489,7 +4499,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_expand_the_fleet_of_nuclear_submarines
 	x = 0
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_a_blue_water_navy
 	ai_will_do = {
@@ -4615,7 +4625,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_carrier_primacy
 	x = 0
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_increase_naval_production
 	ai_will_do = {
@@ -4624,9 +4634,7 @@ shared_focus = {
 	prerequisite = {
 		focus = PRC_increase_naval_production
 	}
-	mutually_exclusive = {
-		focus = PRC_creation_of_full_scale_missile_cruisers
-	}
+	
 	available = {
 		has_country_flag = PRC_commission_the_aircraft_carrier_fujian_flag
 	}
@@ -4735,7 +4743,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_creation_of_full_scale_missile_cruisers
 	x = 3
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_increase_naval_production
 	ai_will_do = {
@@ -4744,9 +4752,7 @@ shared_focus = {
 	prerequisite = {
 		focus = PRC_increase_naval_production
 	}
-	mutually_exclusive = {
-		focus = PRC_carrier_primacy
-	}
+	
 	available = {
 		has_navy_experience > 50
 	}
@@ -4857,7 +4863,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_supremacy_above_and_below_waters
 	x = -3
 	y = 1
-	cost = 4.3
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_increase_naval_production
 	ai_will_do = {
@@ -4927,7 +4933,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_redefine_naval_warfare
 	x = 1
 	y = 1
-	cost = 4.3
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_carrier_primacy
 	ai_will_do = {
@@ -4962,7 +4968,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_resurrect_the_battleship
 	x = 2
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_redefine_naval_warfare
 	ai_will_do = {
@@ -5035,7 +5041,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_air_navy_coordination
 	x = 1
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_supremacy_above_and_below_waters
 	ai_will_do = {
@@ -5118,7 +5124,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_sharpen_the_southern_blade
 	x = 1
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_modern_special_forces
 	ai_will_do = {
@@ -5234,7 +5240,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_expand_the_thunder_gods
 	x = -2
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_modern_special_forces
 	ai_will_do = {
@@ -5280,7 +5286,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_dawn_of_the_chinese_tactical_thought
 	x = 0
 	y = 3
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_improve_officer_training
 	ai_will_do = {
@@ -5345,7 +5351,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_next_generation_army
 	x = 9
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_lessons_from_the_taiwan_war
 	ai_will_do = {
@@ -5381,7 +5387,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_fresh_personnel_in_the_strategic_command
 	x = 3
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_next_generation_army
 	ai_will_do = {
@@ -5443,7 +5449,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_improve_officer_training
 	x = 6
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_next_generation_army
 	ai_will_do = {
@@ -5495,7 +5501,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_mobile_warfare
 	x =-1
 	y = 1
-	cost = 4.3
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_tank_primacy_nat
 	ai_will_do = {
@@ -5544,7 +5550,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_modern_special_forces
 	x = 4
 	y = 2
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_next_generation_army
 	ai_will_do = {
@@ -5599,7 +5605,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_national_fanaticism
 	x = 1
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_improve_officer_training
 	ai_will_do = {
@@ -5636,7 +5642,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_infantry_primacy
 	x = 1
 	y = 1
-	cost = 4.3
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_tidal_wave_of_bodies
 	ai_will_do = {
@@ -5703,7 +5709,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_millions_march_in_unison
 	x = 0
 	y = 3
-	cost = 4.3
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_tidal_wave_of_bodies
 	ai_will_do = {
@@ -5751,7 +5757,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_tank_primacy_nat
 	x = -4
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_next_generation_army
 	ai_will_do = {
@@ -5760,9 +5766,7 @@ shared_focus = {
 	prerequisite = {
 		focus = PRC_next_generation_army
 	}
-	mutually_exclusive = {
-		focus = PRC_tidal_wave_of_bodies
-	}
+	
 	available = {
 	}
 	completion_reward = {
@@ -5827,7 +5831,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_the_cleansing_fire
 	x = 0
 	y = 2
-	cost = 4.3
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_tank_primacy_nat
 	ai_will_do = {
@@ -5883,7 +5887,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_tidal_wave_of_bodies
 	x = 0
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_next_generation_army
 	ai_will_do = {
@@ -5892,9 +5896,7 @@ shared_focus = {
 	prerequisite = {
 		focus = PRC_next_generation_army
 	}
-	mutually_exclusive = {
-		focus = PRC_tank_primacy_nat
-	}
+	
 	available = {
 	}
 	completion_reward = {
@@ -5939,7 +5941,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_achieving_network_centric_warfare
 	x = -2
 	y = 2
-	cost = 4.3
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_next_generation_army
 	ai_will_do = {
@@ -5986,7 +5988,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_a_continuous_offensive
 	x = 1
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_achieving_network_centric_warfare
 	ai_will_do = {
@@ -8125,21 +8127,9 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 6
+		x = 30
 		trigger = {
 			has_country_flag = PRC_nationalist_win
-		}
-	}
-	offset = {
-		x = -11
-		trigger = {
-			has_completed_focus = PRC_suppress_dissent
-		}
-	}
-	offset = {
-		x = -12
-		trigger = {
-			has_completed_focus = PRC_stability_and_security
 		}
 	}
 	cost = 5
