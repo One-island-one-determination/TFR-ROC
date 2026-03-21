@@ -1,0 +1,105 @@
+technology_sharing_group = {
+
+	id = nato_research
+	name = nato_research_name
+	desc = nato_research_desc
+	picture = GFX_NATO_Research
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = GER
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = csto_research
+	name = csto_research_name
+	desc = csto_research_desc
+	picture = GFX_CSTO_Research
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+		OR = {
+			tag = SOV
+			is_in_faction_with = SOV
+		}
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = germany_communist_research
+	name = germany_communist_research_name
+	desc = germany_communist_research_desc
+	picture = GFX_CSTO_faction
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+		OR = {
+			tag = SOV
+			is_in_faction_with = SOV
+		}
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = eadi_research
+	name = eadi_research_name
+	desc = eadi_research_desc
+	picture = GFX_EADI_faction
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+		OR = {
+			tag = PRC
+			is_in_faction_with = PRC
+		}
+    }
+
+}
+technology_sharing_group = {
+
+	id = eadi_research2
+	name = eadi_research2_name
+	desc = eadi_research2_desc
+	picture = GFX_CITS_faction
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+		OR = {
+			tag = PRC
+			is_in_faction_with = PRC
+		}
+    }
+
+}
+technology_sharing_group = {
+
+	id = pdto_research
+	name = pdto_research_name
+	desc = pdto_research_desc
+	picture = GFX_PDTO_Research
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+		OR = {
+			tag = PRC
+			is_in_faction_with = PRC
+		}
+		JAP = {
+			has_completed_focus = JAP_scientific_collaboration
+		}
+    }
+
+}
