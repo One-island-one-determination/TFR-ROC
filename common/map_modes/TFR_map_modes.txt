@@ -1,0 +1,226 @@
+scripted_map_modes = {
+	
+	TFR_international_organizations_mapmode = {
+		top = { type = none }
+		bottom = {
+			type = country
+			color = {
+				FROM = {
+					set_temp_variable = { alpha = 0.95 }
+					if = {
+						limit = {
+							has_dynamic_modifier = {
+								modifier = EU_member_dynamic
+							}
+						}
+						set_temp_variable = { red = 0 }
+						set_temp_variable = { green = 0 }
+						set_temp_variable = { blue = 0.8 }
+					}
+					else_if = {
+						limit = {
+							has_idea = arab_league_member
+						}
+						set_temp_variable = { red = 0.45 }
+						set_temp_variable = { green = 0.65 }
+						set_temp_variable = { blue = 0.2 }
+					}
+					else_if = {
+						limit = {
+							has_idea = ASEAN_member
+						}
+						set_temp_variable = { red = 0.125 }
+						set_temp_variable = { green = 0.35 }
+						set_temp_variable = { blue = 0.65 }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_dynamic_modifier = {
+									modifier = SOV_ADS_dynamic
+								}
+								has_idea = SOV_ADS_member
+							}
+						}
+						set_temp_variable = { red = 0.8 }
+						set_temp_variable = { green = 0 }
+						set_temp_variable = { blue = 0 }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_dynamic_modifier = {
+									modifier = SOV_TMC_dynamic
+								}
+								has_idea = SOV_tmca_member
+							}
+						}
+						set_temp_variable = { red = 0.35 }
+						set_temp_variable = { green = 0.65 }
+						set_temp_variable = { blue = 0.75 }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_dynamic_modifier = {
+									modifier = SOV_brics_dynamic
+								}
+								has_idea = SOV_brics_member
+							}
+						}
+						set_temp_variable = { red = 0 }
+						set_temp_variable = { green = 0.8 }
+						set_temp_variable = { blue = 0 }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_dynamic_modifier = {
+									modifier = JAP_PEC_dynamic
+								}
+								has_idea = JAP_PEC_member
+								has_idea = JAP_PEC_member_2
+							}
+						}
+						set_temp_variable = { red = 0.19 }
+						set_temp_variable = { green = 0.78 }
+						set_temp_variable = { blue = 0.62}
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_country_flag = PRC_CITS_members
+								has_idea = PRC_CITS_idea
+							}
+						}
+						set_temp_variable = { red = 0.73 }
+						set_temp_variable = { green = 0.44 }
+						set_temp_variable = { blue = 0.20}
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_idea = SOV_EEC_Member
+								has_idea = SOV_EEC_leader
+							}
+						}
+						set_temp_variable = { red = 0.425 }
+						set_temp_variable = { green = 0.55 }
+						set_temp_variable = { blue = 0.65 }
+					}
+					else = {
+						set_temp_variable = { red = 0.47 }
+						set_temp_variable = { green = 0.47 }
+						set_temp_variable = { blue = 0.47 }
+					}	
+				}
+			}
+			targets = {
+				target_array = global.countries
+			}
+		}
+		far_text = country
+		near_text = none
+		update_daily = yes
+	}
+		
+	TFR_poverty_mapmode = {
+		top = {
+			type = country
+
+			color = {
+				FROM = {
+					set_temp_variable = { alpha = 0.8 }
+					if = {
+							limit = {
+								has_idea = higher_poverty
+							}
+							set_temp_variable = { red = 0.1 }
+							set_temp_variable = { green = 0.6 }
+							set_temp_variable = { blue = 0.8 }
+					}
+					else_if = {
+						limit = {
+							has_idea = high_poverty
+						}
+						set_temp_variable = { red = 0.0 }
+						set_temp_variable = { green = 1 }
+						set_temp_variable = { blue = 0.4 }
+					}
+					else_if = {
+						limit = {
+							has_idea = medium_poverty 
+						}
+						set_temp_variable = { red = 0.4 }
+						set_temp_variable = { green = 0.8 }
+						set_temp_variable = { blue = 0.0 }
+					}
+					else_if = {
+						limit = {
+							has_idea = low_poverty
+						}
+						set_temp_variable = { red = 0.6 }
+						set_temp_variable = { green = 0.6 }
+						set_temp_variable = { blue = 0.0 }
+					}
+					else_if = {
+						limit = {
+							has_idea = lower_poverty
+						}
+						set_temp_variable = { red = 0.8 }
+						set_temp_variable = { green = 0.4 }
+						set_temp_variable = { blue = 0.0 }
+					}
+					else = {
+						set_temp_variable = { red = 1.2 }
+						set_temp_variable = { green = 0.0 }
+						set_temp_variable = { blue = 0.0 }
+					}
+				}
+			}
+
+			thickness = yes
+
+			targets = {
+				target_array = global.countries
+			}
+		
+		}
+	}
+		
+	TFR_disease_mapmode = {
+		top = {
+			type = state
+
+			color = {
+				FROM = {
+					if = {
+						limit = {
+							is_in_array = { global.plague_affected_states = THIS.id }
+						}
+						set_temp_variable = { plague_state_modifier_alpha = plague_state_immunity_modifier }
+						multiply_temp_variable = { plague_state_modifier_alpha = -1 }
+						set_temp_variable = { alpha = plague_state_modifier_alpha }
+						set_temp_variable = { red = 1.0 }
+						set_temp_variable = { green = 0.0 }
+						set_temp_variable = { blue = 0.0 }
+					}
+					else = {
+						set_temp_variable = { alpha = 0.0 }
+						set_temp_variable = { red = 0.0 }
+						set_temp_variable = { green = 0.0 }
+						set_temp_variable = { blue = 0.0 }
+					}
+				}
+			}
+
+			thickness = no
+
+			targets = {
+				target_array = global.states
+			}
+		}
+		
+		update_daily = yes
+	}
+}
