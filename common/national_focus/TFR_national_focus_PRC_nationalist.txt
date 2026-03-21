@@ -3803,6 +3803,7 @@ focus_tree = {
 			#add_to_array = {
 			#	JAP.JAP_PEC_members = PRC
 			#}
+			country_event = ROC.69
 			set_cosmetic_tag = PRC_empire2
 			set_country_flag = PRC_CITS_members
 			set_faction_name  = PRC_empire_faction
@@ -3813,14 +3814,6 @@ focus_tree = {
 				set_country_flag = PRC_CITS_members
 				add_ideas = PRC_CITS_idea
 				clr_country_flag = eadi_member
-			}
-			every_country = {
-				limit = {
-					is_ally_with = PRC
-				}
-				PRC = {
-					puppet = PREV 
-				}
 			}
 			news_event = {
 				id = china.105
@@ -3872,12 +3865,6 @@ focus_tree = {
 			custom_effect_tooltip = appoint_theorist_minister_tooltip
 			show_ideas_tooltip = PRC_han_weiguo_def
 			hidden_effect = {
-				every_country = {
-				limit = {
-					is_puppet_of = PRC
-				}
-				set_cosmetic_tag = PRC_empire_puppets
-			}
 				add_ideas = PRC_pan_yue_hog
 				add_ideas = PRC_kong_quan_for
 				add_ideas = PRC_xu_niansha_eco
