@@ -2492,3 +2492,32 @@ CHI_influence_combatreadiness7_add = {
 				}
 	}
 }
+CHI_de_prc_embargo_idea = {
+	if = {
+		limit = {
+			has_idea = CHI_prc_embargo_idea3
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea3
+			add_idea = CHI_prc_embargo_idea2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_prc_embargo_idea2
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea2
+			add_idea = CHI_prc_embargo_idea1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_prc_embargo_idea1
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea1
+			add_idea = CHI_prc_embargo_idea
+		}
+	}
+}
