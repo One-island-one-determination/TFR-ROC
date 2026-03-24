@@ -1,0 +1,988 @@
+leader_traits = {
+	CHI_minister_KMT = {
+		random = no #国民党党籍
+	}
+	CHI_minister_TPP = {
+		random = no #民众党党籍
+	}
+	CHI_minister_DPP = {
+		random = no #民进党党籍
+	}
+	Black_Fireball = { #黑火球
+		random = no
+		political_power_gain = 0.1 #政治点增长
+		stability_factor = 0.05 #稳定度
+		production_speed_buildings_factor = 0.05 #建设速度
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	veteran_politician = { #老練的政治家
+	random = no
+	political_power_gain = 0.03 #政治點數增長 +3%
+	stability_factor = 0.02 #穩定度 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+witness_of_darkness = { #見證黑暗之人
+	random = no
+	stability_factor = 0.007 #基礎穩定度 +0.7%
+	ai_will_do = {
+		factor = 1
+	}
+}
+behind_the_scenes_financier = { #居於幕後的金融專家
+	random = no
+	stability_factor = 0.03 #基礎穩定度 +3%
+	political_power_gain = 0.02 #政治點數增長 +2%
+	income_growth_factor = 0.03 #月收入 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mediocre_administrator = { #中庸的管理者
+	random = no
+	stability_factor = 0.03 #基礎穩定度 +3%
+	political_power_gain = 0.03 #政治點數增長 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+remember_my_class_next_semester = { #下學期記得修我開的課
+	random = no
+	academic_development_monthly = 0.01 #每月學術增長 +1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+public_health_scholar = { #公共衛生學者
+	random = no
+	monthly_population = 0.02 #月度人口 +2%
+	stability_factor = 0.03 #基礎穩定度 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+moderate_politician = { #謙和的政治家
+	random = no
+	political_power_gain = 0.05 #政治點數增長 +5%
+	stability_factor = 0.07 #基礎穩定度 +7%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+trusted_paladin = { #備受信任的聖騎士
+	random = no
+	stability_factor = 0.05 #基礎穩定度 +5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+domestic_foreign_research_fellow = { #國內外權威科研機構之院士
+	random = no
+	research_speed_factor = 0.03 #科研速度 +3%
+	academic_development_monthly = 0.02 #每月學術增長 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+industrial_planning_master = { #產業規劃大師
+	random = no
+	building_slots_factor = 0.06 #辦公園區建造速度 +6%
+	business_value_factor = 0.02 #商業產值係數 +2%
+	income_growth_factor = 0.03 #月收入 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+experienced_engineer = { #經驗豐富的工程專家
+	random = no
+	production_speed_buildings_factor = 0.08 #建造速度 +8%
+	industrial_development_monthly = 0.002 #每月工業發展 +0.2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+technical_bureaucrat = { #技術官僚
+	random = no
+	political_power_gain = 0.10 #政治點數增長 +10%
+	research_speed_factor = 0.075 #科研速度 +7.5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+politically_incompetent = { #缺乏政治手腕
+	random = no
+	stability_factor = -0.04 #基礎穩定度 -4%
+	political_power_cost = 0.02 #政治點數花費 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+principled_politician = { #堅守底線的政治學者
+	random = no
+	stability_factor = 0.12 #基礎穩定度 +12%
+	political_power_gain = 0.04 #政治點數增長 +4%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cold_hearted_whistleblower = { #為人訴病的鐵石心腸
+	random = no
+	political_power_gain = -0.02 #政治點數增長 -2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+tycoon = { #喬王
+	random = no
+	stability_factor = 0.08 #穩定度 +8%
+	political_power_gain = 0.07 #政治點數增長 +7%
+	 #政治顧問僱用花費 -5%
+	foreign_minister_cost_factor = -0.05
+	economic_minister_cost_factor = -0.05
+	interior_minister_cost_factor = -0.05
+	intelligence_minister_cost_factor = -0.05
+	drift_defence_factor = 0.10 #意識型態變化抵抗 +10%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+aftermath_of_secret_deals = { #秘密交易的後果
+	random = no
+	political_power_gain = -0.02 #政治點數增長 -2%
+	political_power_cost = 0.02 #政治點數花費 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+backlash_of_strong_politician = { #強勢政治家的反噬
+	random = no
+	political_power_gain = -0.01 #政治點數增長 -1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+strategic_bridge_partner = { #戰略夥伴橋樑
+	random = no
+	social_democrat_acceptance = 12 #社會民主主義外交接納度 +12
+	social_liberal_acceptance = 12 #社會自由主義外交接納度 +12
+	market_liberal_acceptance = 12 #市場自由主義外交接納度 +12
+	conservative_acceptance = 12 #保守主義外交接納度 +12
+	ai_will_do = {
+		factor = 1
+	}
+}
+inept_operator = { #有失靈活的手腕
+	random = no
+	communist_acceptance = -9 #威權社會主義
+	totalitarian_socialist_acceptance = -9 #極權社會主義
+	fascist_acceptance = -9 #法西斯
+	nationalist_acceptance = -9 #專制主義
+	national_socialist_acceptance = -9 #民族社會主義
+	ai_will_do = {
+		factor = 1
+	}
+}
+pragmatic_diplomat = { #務實的外交家
+	random = no
+	opinion_gain_monthly_factor = 0.12 #改善關係效果 +12%
+	improve_relations_maintain_cost_factor = 0.05 #改善關係花費 +5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+well_planned_political_scholar = { #規劃完整的政治學者
+	random = no
+	stability_factor = 0.05 #基礎穩定度 +5%
+	opinion_gain_monthly_factor = 0.10 #改善關係效果 +10%
+	political_power_gain = 0.04 #政治點數增長 +4%
+	improve_relations_maintain_cost_factor = 0.04 #改善關係花費 +4%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+moderate_leader = { #平庸的領袖
+	random = no
+	social_democrat_acceptance = 5
+	social_liberal_acceptance = 5
+	market_liberal_acceptance = 5
+	conservative_acceptance = 5
+	stability_factor = 0.02 #基礎穩定度 +2%
+	improve_relations_maintain_cost_factor = 0.01 #改善關係花費 +1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+interrupted_reformer = { #屢遭中斷的改革
+	random = no
+	political_power_gain = -0.02 #政治點數增長 -2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+pragmatic_political_scholar = { #腳踏實地的政治學者
+	random = no
+	stability_factor = 0.03 #基礎穩定度 +3%
+	opinion_gain_monthly_factor = 0.07 #改善關係效果 +7%
+	political_power_gain = 0.03 #政治點數增長 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+broad_appeal_moderate = { #廣泛的親和派
+	random = no
+	political_power_gain = 0.03 #政治點數增長 +3%
+	opinion_gain_monthly_factor = 0.04 #改善關係效果 +4%
+	improve_relations_maintain_cost_factor = 0.01 #改善關係花費 +1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+politically_inept = { #政治手腕不足
+	random = no
+	political_power_cost = 0.01 #政治點數花費 +1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+pro_china_moderate = { #兩岸親和派
+	random = no
+	targeted_modifier = {
+		tag = PRC
+		opinion_gain_monthly_factor = 0.06 #對中改善關係效果 +6%
+		improve_relations_maintain_cost_factor = -0.04 #對中改善關係花費 -4%
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+flexible_diplomat = { #手腕靈活的外交家
+	random = no
+	opinion_gain_monthly_factor = 0.02 #改善關係效果 +2%
+	improve_relations_maintain_cost_factor = -0.02 #改善關係花費 -2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+regional_security_analyst = { #區域安全情勢評估專家
+	random = no
+	opinion_gain_monthly_factor = 0.06 #改善關係效果 +6%
+	improve_relations_maintain_cost_factor = -0.02 #改善關係花費 -2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+fair_supervisor = {
+	random = no
+	stability_factor = 0.03 #基礎穩定度 
+	political_power_gain = 0.03 #政治點數增長 3%
+	income_growth_factor = 0.01 #月收入 +1%
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+criticized_politician = { #飽受批評的政治家
+	random = no
+	stability_factor = -0.02 #基礎穩定度 -2%
+	political_power_gain = -0.03 #政治點數增長 -3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+high_efficiency_producer = { #高效生產專家
+	random = no
+	production_factory_efficiency_gain_factor = 0.05 #生產效率增長 +5%
+	production_factory_max_efficiency_factor = 0.07 #生產效率上限 +7%
+	industrial_capacity_factory = 0.09 #工廠產出 +9%
+	factory_energy_consumption = -0.07 #工廠燃油消耗 -7%
+	repair_speed_arms_factory_factor = -0.04 #軍用工廠維護費係數 -4%
+	repair_speed_industrial_complex_factor = -0.09 #民用工廠維護費係數 -9%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+precise_rnd_investment = { #精準的研發投資
+	random = no
+	industrial_development_monthly = 0.007 #月度工業發展 +0.7%
+	research_bonus = {
+		electronics = 0.10
+	} #電子學研究速度 +10%
+	consumer_goods_factor = 0.01 #生活消費品 +1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+power_balancer = { #周旋於列強間的手腕
+	random = no
+	improve_relations_maintain_cost_factor = -0.05 #改善關係花費 -5%
+	trade_opinion_factor = 0.10 #基礎貿易影響力 +10
+	ai_will_do = {
+		factor = 1
+	}
+}
+industrial_organizer = { #工業組織者
+	random = no
+	industrial_capacity_factory = 0.05 #工廠產出 +5%
+	industry_repair_factor = -0.03 #工廠維護費係數 -3%
+	production_lack_of_resource_penalty_factor = -0.15 #資源不足生產懲罰 -15%
+	state_production_speed_power_plant_factor = 0.09 #發電站建造速度 +9%
+	ai_will_do = {
+		factor = 1
+	}
+}
+trade_expert = { #貿易專家
+	random = no
+	min_export = -0.08 #出口資源 -8%
+	trade_opinion_factor = 0.08 #基礎貿易影響力 +8
+	stability_factor = 0.05 #基礎穩定度 +5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+resilient_industrial_planner = { #韌性產業佈局者
+	random = no
+	line_change_production_efficiency_factor = 0.05 #生產效率保持 +5%
+	production_factory_start_efficiency_factor = 0.025 #基礎生產效率 +2.5%
+	industry_air_damage_factor = -0.04 #工廠受轟炸易損性 -4%
+	fuel_capacity_factor = 0.10 #燃油容量 +10%
+	ai_will_do = {
+		factor = 1
+	}
+}
+steady_leader = { #穩健的領袖
+	random = no
+	production_factory_efficiency_gain_factor = 0.05 #生產效率增長 +5%
+	income_growth_factor = 0.05 #月收入 +5%
+	stability_factor = 0.05 #基礎穩定度 +5%
+	industry_free_repair_factor = -0.10 #所有建築維護費係數 -10%
+	business_value_factor = 0.025 #商業產值係數 +2.5%
+	inflation_monthly = -0.005 #月度通貨膨脹率 -0.5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+high_efficiency_producer = { #高效生產專家
+	random = no
+	production_factory_efficiency_gain_factor = 0.05 #生產效率增長 +5%
+	production_factory_max_efficiency_factor = 0.07 #生產效率上限 +7%
+	industrial_capacity_factory = 0.09 #工廠產出 +9%
+	factory_energy_consumption = -0.07 #工廠能源消耗 -7%
+	repair_speed_arms_factory_factor = -0.04 #軍用工廠維護費係數 -4%
+	repair_speed_industrial_complex_factor = -0.09 #民用工廠維護費係數 -9%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+efficiency_focused_entrepreneur = { #重視效率的企業家
+	random = no
+	production_factory_efficiency_gain_factor = 0.02 #生產效率增長 +2%
+	production_factory_max_efficiency_factor = 0.05 #生產效率上限 +5%
+	industrial_capacity_factory = 0.07 #工廠產出 +7%
+	factory_energy_consumption = -0.05 #工廠能源消耗 -5%
+	repair_speed_industrial_complex_factor = -0.04 #民用工廠維護費係數 -4%
+	state_production_speed_office_park_factor = -0.07 #辦公園區
+	political_power_gain = -0.02 #政治點數增長 -2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+industrial_organizer = { #工業組織者
+	random = no
+	industrial_capacity_factory = 0.05 #工廠產出 +5%
+	industry_repair_factor = -0.03 #工廠維護費係數 -3%
+	production_lack_of_resource_penalty_factor = -0.15 #資源不足懲罰 -15%
+	local_factory_energy_consumption = -0.07 #本地工廠能源消耗 -7%
+	state_production_speed_power_plant_factor = 0.09 #發電站建造速度 +9%
+	ai_will_do = {
+		factor = 1
+	}
+}
+precise_investment_vision = { #精準的投資眼光
+	random = no
+	industrial_development_monthly = 0.002 #月度工業發展 +0.2%
+	research_bonus = {
+		electronics = 0.04
+	} #電子學研究速度 +4%
+	ai_will_do = {
+		factor = 1
+	}
+}
+shrewd_economist = { #頗具手腕的經濟學者
+	random = no
+	min_export = -0.08 #出口資源 -8%
+	stability_factor = 0.01 #基礎穩定度 +1%
+	income_growth_factor = 0.03 #月收入 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+national_development_planner = { #國家建設規劃者
+	random = no
+	repair_speed_infrastructure_factor = -0.05 #基礎設施維護費 -5%
+	business_value_factor = 0.04 #商業產值係數 +4%
+	monthly_population = 0.02 #每月人口增長 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+meticulous_bureaucrat = { #縝密的行政官
+	random = no
+	political_power_gain = 0.01 #政治點數增長 +1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+contradictory_strategist = { #矛盾戰略家
+	random = no
+	trade_opinion_factor = 0.09 #基礎貿易影響力 +9
+	stability_factor = 0.03 #基礎穩定度 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+industry_upgrade_promoter = { #傳產升級推手
+	random = no
+	industrial_development_monthly = 0.002 #月度工業發展 +0.2%
+	income_growth_factor = 0.01 #月收入 +1%
+	research_speed_factor = 0.03 #研究速度 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+southern_solar_industry_promoter = { #南部太陽能產業推手
+	random = no
+	state_production_speed_energy_farm_factor = 0.15 #能源農場建造速度 +15%
+	production_cost_energy_farm_factor = -0.06 #能源農場建造花費 -6%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+southern_tourism_promoter = { #南部旅遊產業推手
+	random = no
+	personal_value_factor = 0.0025 #個人產值係數 +0.25%
+	business_development_monthly = 0.0015 #月度商業發展 +0.15%
+	ai_will_do = {
+		factor = 1
+	}
+}
+financial_expert = { #金融專家
+	random = no
+	stability_factor = 0.02 #基礎穩定度 +2%
+	political_power_gain = 0.01 #政治點數增長 +1%
+	income_growth_factor = 0.02 #月收入 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+stable_financial_scholar = { #穩健的金融學者
+	random = no
+	production_factory_efficiency_gain_factor = 0.02 #生產效率增長 +2%
+	income_growth_factor = 0.02 #月收入 +2%
+	stability_factor = 0.01 #基礎穩定度 +1%
+	business_value_factor = 0.015 #商業產值係數 +1.5%
+	inflation_monthly = -0.0015 #月度通貨膨脹率 -0.15%
+	ai_will_do = {
+		factor = 1
+	}
+}
+trending_financial_expert = { #雷厲風行的金融專家
+	random = no
+	stability_factor = 0.04 #基礎穩定度 +4%
+	political_power_gain = 0.02 #政治點數增長 +2%
+	income_growth_factor = 0.05 #月收入 +5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cold_fiscal_reformer = { #冷酷的財政改革者
+	random = no
+	society_development_monthly = 0.0025 #月度社會發展 +0.25%
+	personal_value_factor = 0.006 #個人產值係數 +0.6%
+	stability_factor = -0.002 #基礎穩定度 -0.2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+polarizing_fiscal_official = { #評價兩極的財政官員
+	random = no
+	stability_factor = -0.005 #基礎穩定度 -0.5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+crisis_to_stability_financial_expert = { #轉危為安的金融專家
+	random = no
+	stability_factor = 0.06 #基礎穩定度 +6%
+	political_power_gain = 0.01 #政治點數增長 +1%
+	income_growth_factor = 0.03 #月收入 +3%
+	business_value_factor = 0.02 #商業產值係數 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+big_picture_financial_scholar = { #以大局為重的金融學者
+	random = no
+	production_factory_efficiency_gain_factor = -0.005 #生產效率增長 -0.5%
+	stability_factor = -0.01 #基礎穩定度 -1%
+	personal_value_factor = -0.01 #個人產值係數 -1%
+	society_development_monthly = -0.007 #月度社會發展 -0.7%
+	ai_will_do = {
+		factor = 1
+	}
+}
+stubborn_fiscal_reformer = { #堅持己見的財政改革派
+	random = no
+	political_power_gain = -0.01 #政治點數增長 -1%
+	income_growth_factor = 0.02 #月收入 +2%
+	business_value_factor = 0.01 #商業產值係數 +1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+charity_public_good_ethics = { #慈愛、公益、聖哲
+	random = no
+	society_development_monthly = 0.01 #月度社會發展 +1%
+	poverty_development_monthly = -0.0025 #月度貧困發展 -0.25%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+controversial_sharp_critic = { #爭議、歧視、鋒芒畢露
+	random = no
+	stability_factor = -0.03 #基礎穩定度 -3%
+	society_development_monthly = -0.006 #月度社會發展 -0.6%
+	ai_will_do = {
+		factor = 1
+	}
+}
+infrastructure_reform_and_disaster_management_expert = { #水利、災害防救與國土規劃改革者
+	random = no
+	stability_factor = 0.02 #穩定度 +2%
+	society_development_monthly = 0.004 #月度社會發展 +0.4
+	global_building_slots_factor = 0.10 #地區最大工廠數 +10%
+	state_production_speed_infrastructure_factor = 0.07 #基礎建設建造速度 +7%
+	repair_speed_infrastructure_factor = 0.06 #設施修復速度 +6%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+silent_bureaucrat = { #直言不諱的謀官
+	random = no
+	political_power_gain = -0.01 #政治點數增長 -1%
+	stability_factor = -0.02 #基礎穩定度 -2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+progressive_social_reformer = { #進步派社會改革者
+	random = no
+	stability_factor = 0.03 #基礎穩定度 +3%
+	society_development_monthly = 0.003 #月度社會發展 +0.3
+	poverty_development_monthly = -0.002 #月度貧困率發展 -0.2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+profit_oriented_supervisor = { #牟利的監督者
+	random = no
+	political_power_gain = 0.02 #政治點數增長 +2%
+	income_growth_factor = 0.03 #月收入 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+gentle_philanthropist = { #溫和的慈善家
+	random = no
+	political_power_gain = 0.03 #每日政治點數 +3%
+	stability_factor = 0.01 #基礎穩定度 +1%
+	academic_development_monthly = 0.0005 #每月學術增長 +0.05%
+	poverty_development_monthly = -0.002 #月度貧困率發展 -0.2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+military_media_spokesperson = { #軍方發言人中的媒體專家
+	random = no
+	political_power = 15 #政治點 +15（一次性或修正值）
+	stability_factor = 0.02 #基礎穩定度 +2%
+	war_support_factor = 0.03 #戰爭支持度 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+crisis_management_expert = { #危機事件處理專家
+	random = no
+	stability_factor = 0.02 #穩定度 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+ruthless_executor = { #無情的執行者
+	random = no
+	stability_factor = -0.02 #基礎穩定度 -2%
+	political_power_gain = 0.08 #政治點數增長 +8%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+controversial_media_figure = { #極具爭議的媒體人物
+	random = no
+	political_power_gain = -0.02 #政治點數增長 -2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+exceptional_aide = { #能力超群的幕僚長
+	random = no
+	stability_factor = 0.04 #基礎穩定度 +4%
+	political_power_gain = 0.03 #政治點數增長 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+eccentric_strategist = { #奇蹟的軍師
+	random = no
+	political_power_gain = 0.02 #政治點數增長 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+public_debate_expert = { #輿論專家
+	random = no
+	political_power_gain = 0.03 #政治點數增長 +3%
+	stability_factor = 0.01 #基礎穩定度 +1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+international_exchange_advocate = { #國際交流的積極參與者
+	random = no
+	improve_relations_maintain_cost_factor = -0.02 #改善關係花費 -2%
+	political_power_gain = -0.005 #政治點數增長 -0.5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+average_bureaucrat = { #平庸的行政官員
+	random = no
+	political_power_gain = 0.02 #政治點數增長 +2%
+	stability_factor = 0.01 #基礎穩定度 +1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+detached_geopolitical_scholar = { #與民意脫節的地政學者
+	random = no
+	production_speed_buildings_factor = 0.05 #建造速度 +5%
+	society_development_monthly = 0.0005 #月度社會發展 +0.05
+	personal_value_factor = 0.03 #個人產值係數 +3%
+	poverty_development_monthly = 0.0014 #月度貧困率發展 +0.14%
+	stability_factor = -0.01 #基礎穩定度 -1%
+	political_power_gain = -0.02 #政治點數增長 -2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+long_term_planner = { #長期規劃專家
+	random = no
+	political_power_gain = 0.005 #政治點數增長 +0.5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+responsible_domestic_expert = { #負責的內政專家
+	random = no
+	stability_factor = 0.03 #基礎穩定度 +3%
+	political_power_gain = 0.04 #政治點數增長 +4%
+	society_development_monthly = 0.004 #月度社會發展 +0.4
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+taiwan_japan_mixed_background = { #台日混血
+	random = no
+	targeted_modifier = {
+		tag = JAP
+		opinion_gain_monthly_factor = 0.02 #對日改善關係效果 +2%
+		improve_relations_maintain_cost_factor = -0.08 #對日外交花費 -8%
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+anti_communist_scholar = { #積極反共的政治學者
+	random = no
+	political_power_gain = 0.02 #政治點數增長 +1%
+	stability_factor = 0.03 #基礎穩定度 +3%
+	enemy_intel_network_gain_factor_over_occupied_tag = -0.0012 #每日滲透百分率 -0.12%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+three_principles_unifier = { #三民主義統一中國
+	random = no
+	stability_factor = 0.01 #基礎穩定度 +1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+sports_industry_policy_chief = { #競競業業的政策幕僚長
+	random = no
+	stability_factor = 0.01 #基礎穩定度 +1%
+	political_power_gain = 0.05 #政治點數增長 +5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+experienced_institutional_scholar = { #熟悉政府組織型態的政治學者
+	random = no
+	academic_development_monthly = 0.01 #每月學術增長 +1%
+	political_power_gain = 0.03 #政治點數增長 +3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+counter_infiltration_organizer = { #反滲透組織者
+	random = no
+	enemy_intel_network_gain_factor_over_occupied_tag = -0.002 #每日滲透降低 -0.2%
+	stability_factor = 0.02 #基礎穩定度 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+war_preparedness_organizer = { #戰爭衝擊準備組織者
+	random = no
+	war_support_factor = 0.05 #戰爭支持度 +5%
+	stability_factor = 0.02 #基礎穩定度 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+professional_legal_scholar = { #專業的法律學者
+	random = no
+	political_power_gain = 0.02 #政治點數增長 +2%
+	stability_factor = 0.02 #基礎穩定度 +2%
+	ai_will_do = {
+		factor = 1
+	}
+}
+discipline_and_sweat = { #汗水與紀律
+	random = no
+
+	army_org_factor = 0.07 #組織度上限 +7%
+
+	equipment_bonus = {
+		infantry_weapons = {
+			instant = yes
+			reliability = 0.03 #裝備可靠性 +3%
+		}
+		mio_cat_all_artillery_equipment = {
+			instant = yes
+			reliability = 0.03 #裝備可靠性 +3%
+		}
+		support_tech = {
+			instant = yes
+			reliability = 0.03 #裝備可靠性 +3%
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+partial_conservative_opposition = { #保守集團的部分反對
+	random = no
+	political_power_gain = -0.01 #政治點數增長 -1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+reformist_official = { #改革派官員
+	random = no
+	army_attack_factor = 0.01 #全軍攻擊 +1%
+	army_defence_factor = 0.01 #全軍防禦 +1%
+	army_morale_factor = 0.03 #組織度恢復 +3%
+	experience_gain_factor = 0.02 #指揮官經驗 +2%
+	max_planning = 0.05 #計劃值上限 +5%
+	supply_consumption_factor = -0.015 #補給消耗 -1.5%
+	income_growth_factor = -0.01 #月收入 -1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+pragmatic_financial_supervisor = { #實事求是的金融監督者
+	random = no
+	income_growth_factor = 0.02 #月收入 +2%
+	political_power_gain = 0.005 #政治點數增長 +0.5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+strict_legal_scholar = { #嚴謹的法律學者
+	random = no
+	stability_factor = 0.005 #基礎穩定度 +0.5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cross_domain_politician = { #跨界的政治家
+	random = no
+	political_power_gain = -0.01 #政治點數增長 -1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+conservative_group_opposition = { #保守集團的反對
+	random = no
+	political_power_gain = -0.03 #政治點數增長 -3%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+armor_expert = { #裝甲專家
+	random = no
+	army_armor_attack_factor = 0.05 #裝甲攻擊 +5%
+	army_armor_defence_factor = 0.05 #裝甲防禦 +5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+pragmatic_reformer = { #務實的改革派
+	random = no
+	army_attack_factor = 0.02
+	army_defence_factor = 0.02
+	army_morale_factor = 0.015
+	experience_gain_factor = 0.01
+	max_planning = 0.03
+	supply_consumption_factor = -0.03
+	income_growth_factor = -0.02
+	ai_will_do = {
+		factor = 1
+	}
+}
+traditional_general = { #傳統的老將軍
+	random = no
+	army_morale_factor = 0.08 #組織度恢復 +8%
+	land_night_attack = 0.10 #夜戰 10%
+	army_defence_factor = 0.07 #陸軍防禦 +7%
+	stability_factor = 0.03 #基礎穩定度 +3%
+	repair_speed_arms_factory_factor = -0.03 #軍工修復速度 -3%（對應維護成本增加）
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+clear_political_stance = { #鮮明的政治主張
+	random = no
+	stability_factor = -0.01 #基礎穩定度 -1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+us_trained_helicopter_expert = { #赴美受訓的直升機專家
+	random = no
+	ground_attack_factor = 0.10 #對地支援效率 +10%
+	equipment_bonus = {
+		attack_helicopter_equipment = {
+			instant = yes
+			air_attack_factor = 0.10 #直升機攻擊 +10%
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+advanced_air_training_officer = { #先進的演訓軍官
+	random = no
+	experience_gain_air_factor = 0.04 #空軍每日經驗 +0.04
+	air_agility_factor = 0.05 #空軍機動 +5%
+	air_night_penalty = -0.15 #夜戰懲罰 -15%
+	military_development_monthly = 0.0025 #月度軍事專業 +0.25%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+joint_operations_air_planner = { #新時代的聯合作戰體系規劃師
+	random = no
+	air_superiority_efficiency = 0.05 #空優 +5%
+	naval_strike_targetting = 0.02 #對海探測/命中 +2%
+	naval_strike_attack = 0.015 #對海攻擊 +1.5%
+	air_attack_factor = 0.03 #對空攻擊 +3%
+	ground_attack_factor = 0.01 #對地攻擊 +1%
+	spotting_chance_against = 0.01 #對潛探測 +1%
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+rapid_air_force_transformation = { #空軍快速應變體系
+	random = no
+	air_maximum_speed_factor = 0.10 #空軍速度 +10%
+	air_accidents_factor = 0.04 #可靠性下降（事故率+4%）
+	air_fuel_consumption_factor = 0.05 #燃油消耗 +5%
+	political_power_gain = -0.005 #政治點數增長 -0.5%
+	ai_will_do = {
+		factor = 1
+	}
+}
+}
