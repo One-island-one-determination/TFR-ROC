@@ -12,7 +12,7 @@
 					tag = CHI
 				}
 				allowed_to_remove = {
-					head_minister_trigger = yes
+					date > 2020.6.1
 				}
 				
 				traits = { 
@@ -33,7 +33,7 @@
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = {
@@ -54,7 +54,7 @@
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = {
@@ -75,7 +75,7 @@ CHI_wang_jinpyng_hog = { #王金平
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = {
@@ -95,7 +95,7 @@ CHI_mao_chihkuo_hog = { #毛治國
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = {
@@ -115,7 +115,7 @@ CHI_eric_chu_hog = { #朱立倫
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = {
@@ -136,7 +136,7 @@ CHI_chen_chienjen_hog = { #陳建仁
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = {
@@ -161,7 +161,7 @@ CHI_chen_chienjen_hog = { #陳建仁
 					tag = CHI
 				}
 				allowed_to_remove = {
-					head_minister_trigger = yes
+					date > 2020.6.1
 				}
 				
 				traits = { 
@@ -183,7 +183,7 @@ CHI_chen_chienjen_hog = { #陳建仁
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -205,7 +205,7 @@ CHI_Chiang_Yi_huah_for = { #江啟臣
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -228,7 +228,7 @@ CHI_Chiang_Yi_huah_for = { #江啟臣
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -259,7 +259,7 @@ CHI_Chiang_Yi_huah_for = { #江啟臣
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -270,6 +270,9 @@ CHI_Chiang_Yi_huah_for = { #江啟臣
 	}
 	on_add = {
 		CHI_increase_prc_embargo_idea = yes
+	}
+	on_remove = {
+		CHI_de_prc_embargo_idea = yes
 	}
 }
 CHI_Zhang_Zhongmou_eco = { #張忠謀
@@ -283,7 +286,7 @@ CHI_Zhang_Zhongmou_eco = { #張忠謀
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -303,7 +306,7 @@ CHI_Shen_Jongchin_eco = { #沈榮津
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -321,7 +324,7 @@ CHI_Peng_Huainan_eco = { #彭淮南
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -339,7 +342,7 @@ CHI_Kung_Ming_hsin_eco = { #龔明鑫
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -360,7 +363,7 @@ CHI_Kuo_Chih_hui_eco = { #郭智輝
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -379,7 +382,7 @@ CHI_Du_Zijin_eco = { #杜紫軍
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -399,7 +402,7 @@ CHI_Eric_Tseng_eco = { #曾銘宗
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -419,7 +422,7 @@ CHI_Chang_Sheng_ho_eco = { #張盛和
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -440,7 +443,7 @@ CHI_Sean_Chen_eco = { #陳冲
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -460,7 +463,7 @@ CHI_Wang_Jian_xuan_eco = { #王建煊
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -484,7 +487,7 @@ CHI_Wang_Jian_xuan_eco = { #王建煊
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -504,7 +507,7 @@ CHI_Miao_Poya_sec = { #苗博雅
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -524,7 +527,7 @@ CHI_Chen_Shih_chung_sec = { #陳時中
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -543,7 +546,7 @@ CHI_Li_Hongyuan_sec = { #李鴻源
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -563,7 +566,7 @@ CHI_Luo_Shaohuo_sec = { #羅紹和
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -583,7 +586,7 @@ CHI_Li_Hongjun_sec = { #李鴻鈞
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -601,7 +604,7 @@ CHI_King_Pu_tsung_sec = { #金浦聰
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -622,7 +625,7 @@ CHI_Lin_You_chang_sec = { #林右昌
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -642,7 +645,7 @@ CHI_Hua_Ching_chun_sec = { #花敬群
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -662,7 +665,7 @@ CHI_Ming_Ju_zheng_sec = { #明居正
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -681,7 +684,7 @@ CHI_Kao_Ching_yuan_sec = { #高清願
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -702,7 +705,7 @@ CHI_Liao_Liao_yi_sec = { #廖了以
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -731,7 +734,7 @@ CHI_Liao_Liao_yi_sec = { #廖了以
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -754,7 +757,7 @@ CHI_Liao_Liao_yi_sec = { #廖了以
 					tag = CHI
 				}
 				allowed_to_remove = {
-					head_minister_trigger = yes
+					date > 2020.6.1
 				}
 				
 				traits = { 
@@ -773,7 +776,7 @@ CHI_Liao_Liao_yi_sec = { #廖了以
 					tag = CHI
 				}
 				allowed_to_remove = {
-					head_minister_trigger = yes
+					date > 2020.6.1
 				}
 				
 				traits = { 
@@ -795,7 +798,7 @@ CHI_Liao_Liao_yi_sec = { #廖了以
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -817,7 +820,7 @@ CHI_Ku_Li_hsiung = { #顧立雄
 		tag = CHI
 	}
 	allowed_to_remove = {
-		head_minister_trigger = yes
+		date > 2020.6.1
 	}
 	
 	traits = { 
@@ -840,7 +843,7 @@ CHI_Ku_Li_hsiung = { #顧立雄
 					tag = CHI
 				}
 				allowed_to_remove = {
-					head_minister_trigger = yes
+					date > 2020.6.1
 				}
 				
 				traits = { 
@@ -860,7 +863,7 @@ CHI_Ku_Li_hsiung = { #顧立雄
 					tag = CHI
 				}
 				allowed_to_remove = {
-					head_minister_trigger = yes
+					date > 2020.6.1
 				}
 				
 				traits = {
@@ -880,7 +883,7 @@ CHI_Ku_Li_hsiung = { #顧立雄
 					tag = CHI
 				}
 				allowed_to_remove = {
-					head_minister_trigger = yes
+					date > 2020.6.1
 				}
 				
 				traits = { 
