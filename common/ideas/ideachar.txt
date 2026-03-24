@@ -1,7 +1,7 @@
 	ideas = {
-		#hon
+		#hon #政府首腦
 		head_minister = { 
-			CHI_Su_Tseng_chang_hog = {
+			CHI_Su_Tseng_chang_hog = { #蘇貞昌
 				picture = CHI_Su_Tseng_chang_hog
 				name = CHI_Su_Tseng_chang_hog
 				
@@ -16,29 +16,141 @@
 				}
 				
 				traits = { 
+					CHI_minister_DPP #民進黨黨籍
+					Black_Fireball #黑火球
+					veteran_politician #老練政治家
+					witness_of_darkness #見證黑暗之人
 				}
 			}
-			CHI_Zhang_Shanzheng_hog = {
-				picture = CHI_Zhang_Shanzheng_hog
-				name = CHI_Zhang_Shanzheng_hog
-				
-				allowed = {
-				}
-				
-				visible = {
-					tag = CHI
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				
-				traits = { 
-				}
-			}
+			CHI_Johnny_Chiang_hog = { #江宜樺
+	picture = CHI_Johnny_Chiang_hog
+	name = CHI_Johnny_Chiang_hog
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = {
+		CHI_minister_KMT
+		principled_politician #堅守底線的政治學者
+		cold_hearted_whistleblower #為人訴病的鐵石心腸
+		remember_my_class_next_semester #下學期記得修我開的課
+	}
+}
+			CHI_zhang_shanzheng1_hog = { #張善政
+	picture = CHI_zhang_shanzheng1_hog
+	name = CHI_zhang_shanzheng1_hog
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = {
+		CHI_minister_KMT
+		technical_bureaucrat #技術官僚
+		politically_incompetent #缺乏政治手腕
+		remember_my_class_next_semester #下學期記得修我開的課
+	}
+}
+CHI_wang_jinpyng_hog = { #王金平
+	picture = CHI_wang_jinpyng_hog
+	name = CHI_wang_jinpyng_hog
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = {
+		CHI_minister_KMT
+		tycoon #喬王
+		aftermath_of_secret_deals #秘密交易的後果
+	}
+}
+CHI_mao_chihkuo_hog = { #毛治國
+	picture = CHI_mao_chihkuo_hog
+	name = CHI_mao_chihkuo_hog
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = {
+		CHI_minister_KMT
+		industrial_planning_master #產業規劃大師
+		experienced_engineer #經驗豐富的工程專家
+	}
+}
+CHI_eric_chu_hog = { #朱立倫
+	picture = CHI_eric_chu_hog
+	name = CHI_eric_chu_hog
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = {
+		CHI_minister_KMT
+		behind_the_scenes_financier #居於幕後的金融專家
+		mediocre_administrator #中庸的管理者
+		remember_my_class_next_semester #下學期記得修我開的課
+	}
+}
+CHI_chen_chienjen_hog = { #陳建仁
+	picture = CHI_chen_chienjen_hog
+	name = CHI_chen_chienjen_hog
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = {
+		public_health_scholar #公共衛生學者
+		moderate_politician #謙和的政治家
+		trusted_paladin #備受信任的聖騎士
+		domestic_foreign_research_fellow #國內外權威科研機構之院士
+		remember_my_class_next_semester #下學期記得修我開的課
+	}
+}
 		}
-		#for
+		#for #外交部長
 		foreign_minister = {
-			CHI_Wu_Zhaoxie_for = {
+			CHI_Wu_Zhaoxie_for = { #吳釗燮
 				picture = CHI_Wu_Zhaoxie_for
 				name = CHI_Wu_Zhaoxie_for
 				
@@ -53,171 +165,585 @@
 				}
 				
 				traits = { 
+					CHI_minister_DPP #民進黨黨籍
+					pragmatic_diplomat #務實的外交家
+					strategic_bridge_partner #戰略夥伴橋樑
+					inept_operator #有失靈活的手腕
+					
 				}
 			}
-			CHI_Xia_Liyan_for = {
-				picture = CHI_Xia_Liyan_for
-				name = CHI_Xia_Liyan_for
-				
-				allowed = {
-				}
-				
-				visible = {
-					tag = CHI
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				
-				traits = { 
-				}
-			}
-			CHI_Lin_Yongle_for = {
-				picture = CHI_Lin_Yongle_for
-				name = CHI_Lin_Yongle_for
-				
-				allowed = {
-				}
-				
-				visible = {
-					tag = CHI
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				
-				traits = { 
-				}
-			}
+			CHI_Lin_Chia_lung_for = { #林佳龍
+	picture = CHI_Lin_Chia_lung_for
+	name = CHI_Lin_Chia_lung_for
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_DPP
+		well_planned_political_scholar #規劃完整的政治學者
+		moderate_leader #平庸的領袖
+		interrupted_reformer #屢遭中斷的改革
+		
+	}
+}
+CHI_Chiang_Yi_huah_for = { #江啟臣
+	picture = CHI_Chiang_Yi_huah_for
+	name = CHI_Chiang_Yi_huah_for
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_KMT
+		pragmatic_political_scholar #腳踏實地的政治學者
+		broad_appeal_moderate #廣泛的親和派
+		politically_inept #政治手腕不足
+		remember_my_class_next_semester #下學期記得修我開的課
+		
+	}
+}
+			CHI_Xia_Liyan_for = { #夏立言
+	picture = CHI_Xia_Liyan_for
+	name = CHI_Xia_Liyan_for
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_KMT
+		criticized_politician #飽受批評的政治家
+		regional_security_analyst #區域安全情勢評估專家
+		
+	}
+	on_add = {
+		targeted_modifier = {
+		tag = PRC
+		improve_relation_factor = 0.06 #對中改善關係效果 +6%
+		improve_relation_cost_factor = -0.04 #對中改善關係花費 -4%
+	}
+	}
+}
 		}
-		#eco
+		#eco #經濟部長
 		economic_minister = {
-			CHI_Wang_Meihua_eco = {
-				picture = CHI_Wang_Meihua_eco
-				name = CHI_Wang_Meihua_eco
-				
-				allowed = {
-				}
-				
-				visible = {
-					tag = CHI
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				
-				traits = { 
-				}
-			}
-			CHI_Yin_Qiming_eco = {
-				picture = CHI_Yin_Qiming_eco
-				name = CHI_Yin_Qiming_eco
-				
-				allowed = {
-				}
-				
-				visible = {
-					tag = CHI
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				
-				traits = { 
-				}
-			}
-			CHI_Shen_Jongchin_eco = {
-				picture = CHI_Shen_Jongchin_eco
-				name = CHI_Shen_Jongchin_eco
-				
-				allowed = {
-				}
-				
-				visible = {
-					tag = CHI
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				
-				traits = { 
-				}
-			}
+			CHI_Wang_Meihua_eco = { #王美花
+	picture = CHI_Wang_Meihua_eco
+	name = CHI_Wang_Meihua_eco
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_DPP
+		trade_expert #貿易專家
+		resilient_industrial_planner #韌性產業佈局者
+		
+	}
+	on_add = {
+		CHI_increase_prc_embargo_idea = yes
+	}
+}
+CHI_Zhang_Zhongmou_eco = { #張忠謀
+	picture = CHI_Zhang_Zhongmou_eco
+	name = CHI_Zhang_Zhongmou_eco
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		high_efficiency_producer #高效生產專家
+		precise_rnd_investment #精準的研發投資
+		power_balancer #周旋於列強間的手腕
+	}
+}
+CHI_Shen_Jongchin_eco = { #沈榮津
+	picture = CHI_Shen_Jongchin_eco
+	name = CHI_Shen_Rongjin_eco
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		industrial_organizer #工業組織者
+	}
+}
+CHI_Peng_Huainan_eco = { #彭淮南
+	picture = CHI_Peng_Huainan_eco
+	name = CHI_Peng_Huainan_eco
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		steady_leader #穩健的領袖
+	}
+}
+CHI_Kung_Ming_hsin_eco = { #龔明鑫
+	picture = CHI_Kung_Ming_hsin_eco
+	name = CHI_Kung_Ming_hsin_eco
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		shrewd_economist #頗具手腕的經濟學者
+		national_development_planner #國家建設規劃者
+		meticulous_bureaucrat #縝密的行政官
+		contradictory_strategist #矛盾戰略家
+	}
+}
+CHI_Kuo_Chih_hui_eco = { #郭智輝
+	picture = CHI_Kuo_Chih_hui_eco
+	name = CHI_Kuo_Chih_hui_eco
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		efficiency_focused_entrepreneur #重視效率的企業家
+		precise_investment_vision #精準的投資眼光
+	}
+}
+CHI_Du_Zijin_eco = { #杜紫軍
+	picture = CHI_Du_Zijin_eco
+	name = CHI_Du_Zijin_eco
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		industry_upgrade_promoter #傳產升級推手
+		southern_solar_industry_promoter #南部太陽能產業推手
+		southern_tourism_promoter #南部旅遊產業推手
+	}
+}
+CHI_Eric_Tseng_eco = { #曾銘宗
+	picture = CHI_Eric_Tseng_eco
+	name = CHI_Eric_Tseng_eco
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_KMT
+		financial_expert #金融專家
+		stable_financial_scholar #穩健的金融學者
+	}
+}
+CHI_Chang_Sheng_ho_eco = { #張盛和
+	picture = CHI_Chang_Sheng_ho_eco
+	name = CHI_Chang_Sheng_ho_eco
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_KMT
+		trending_financial_expert #雷厲風行的金融專家
+		cold_fiscal_reformer #冷酷的財政改革者
+		polarizing_fiscal_official #評價兩極的財政官員
+	}
+}
+CHI_Sean_Chen_eco = { #陳冲
+	picture = CHI_Sean_Chen_eco
+	name = CHI_Sean_Chen_eco
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_KMT
+		crisis_to_stability_financial_expert #轉危為安的金融專家
+		big_picture_financial_scholar #以大局為重的金融學者
+	}
+}
+CHI_Wang_Jian_xuan_eco = { #王建煊
+	picture = CHI_Wang_Jian_xuan_eco
+	name = CHI_Wang_Jian_xuan_eco
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_KMT
+		stubborn_fiscal_reformer #堅持己見的財政改革派
+		charity_public_good_ethics #慈愛、公益、聖哲
+		controversial_sharp_critic #爭議、歧視、鋒芒畢露
+	}
+}
 		}
-		#sec
+		#sec #内政部長
 		interior_minister = {
-			CHI_Liu_Shifang_sec = {
-				picture = CHI_Liu_Shifang_sec
-				name = CHI_Liu_Shifang_sec
-				
-				allowed = {
-				}
-				
-				visible = {
-					tag = CHI
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				
-				traits = { 
-				}
-			}
-			CHI_Zeng_Mingzong_sec = {
-				picture = CHI_Zeng_Mingzong_sec
-				name = CHI_Zeng_Mingzong_sec
-				
-				allowed = {
-				}
-				
-				visible = {
-					tag = CHI
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				
-				traits = { 
-				}
-			}
-			CHI_Chen_Xuesheng_sec = {
-				picture = CHI_Chen_Xuesheng_sec
-				name = CHI_Chen_Xuesheng_sec
-				
-				allowed = {
-				}
-				
-				visible = {
-					tag = CHI
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				
-				traits = { 
-				}
-			}
-			CHI_Hsu_Kuoyung_sec = {
-				picture = CHI_Hsu_Kuoyung_sec
-				name = CHI_Hsu_Kuoyung_sec
-				
-				allowed = {
-				}
-				
-				visible = {
-					tag = CHI
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				
-				traits = { 
-				}
-			}
+			CHI_Hsu_Kuoyung_sec = { #徐國勇
+	picture = CHI_Hsu_Kuoyung_sec
+	name = CHI_Hsu_Kuoyung_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_DPP
+		ruthless_executor #無情的執行者
+		controversial_media_figure #極具爭議的媒體人物
+	}
+}
+CHI_Miao_Poya_sec = { #苗博雅
+	picture = CHI_Miao_Poya_sec
+	name = CHI_Miao_Poya_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		progressive_social_reformer #進步派社會改革者
+		profit_oriented_supervisor #牟利的監督者
+		backlash_of_strong_politician #強勢政治家的反噬
+	}
+}
+CHI_Chen_Shih_chung_sec = { #陳時中
+	picture = CHI_Chen_Shih_chung_sec
+	name = CHI_Chen_Shih_chung_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_DPP
+		public_health_scholar #公共衛生學者
+	}
+}
+CHI_Li_Hongyuan_sec = { #李鴻源
+	picture = CHI_Li_Hongyuan_sec
+	name = CHI_Li_Hongyuan_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		infrastructure_reform_and_disaster_management_expert #水利、災害防救與國土規劃改革者
+		silent_bureaucrat #直言不諱的謀官
+		remember_my_class_next_semester #下學期記得修我開的課
+	}
+}
+CHI_Luo_Shaohuo_sec = { #羅紹和
+	picture = CHI_Luo_Shaohuo_sec
+	name = CHI_Luo_Shaohuo_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		gentle_philanthropist #溫和的慈善家
+		military_media_spokesperson #軍方發言人中的媒體專家
+		crisis_management_expert #危機事件處理專家
+	}
+}
+CHI_Li_Hongjun_sec = { #李鴻鈞
+	picture = CHI_Li_Hongjun_sec
+	name = CHI_Li_Hongjun_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		fair_supervisor #公正的監督者
+	}
+}
+CHI_King_Pu_tsung_sec = { #金浦聰
+	picture = CHI_King_Pu_tsung_sec
+	name = CHI_King_Pu_tsung_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_KMT
+		exceptional_aide #能力超群的幕僚長
+		eccentric_strategist #奇蹟的軍師
+		public_debate_expert #輿論專家
+	}
+}
+CHI_Lin_You_chang_sec = { #林右昌
+	picture = CHI_Lin_You_chang_sec
+	name = CHI_Lin_You_chang_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_DPP
+		international_exchange_advocate #國際交流的積極參與者
+		average_bureaucrat #平庸的行政官員
+	}
+}
+CHI_Hua_Ching_chun_sec = { #花敬群
+	picture = CHI_Hua_Ching_chun_sec
+	name = CHI_Hua_Ching_chun_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		detached_geopolitical_scholar #與民意脫節的地政學者
+		long_term_planner #長期規劃專家
+		remember_my_class_next_semester #下學期記得修我開的課
+	}
+}
+CHI_Ming_Ju_zheng_sec = { #明居正
+	picture = CHI_Ming_Ju_zheng_sec
+	name = CHI_Ming_Ju_zheng_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		anti_communist_scholar #積極反共的政治學者
+		remember_my_class_next_semester #下學期記得修我開的課
+	}
+}
+CHI_Kao_Ching_yuan_sec = { #高清願
+	picture = CHI_Kao_Ching_yuan_sec
+	name = CHI_Kao_Ching_yuan_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_KMT
+		sports_industry_policy_chief #競競業業的政策幕僚長
+		experienced_institutional_scholar #熟悉政府組織型態的政治學者
+		remember_my_class_next_semester #下學期記得修我開的課
+	}
+}
+CHI_Liao_Liao_yi_sec = { #廖了以
+	picture = CHI_Liao_Liao_yi_sec
+	name = CHI_Liao_Liao_yi_sec
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_KMT
+		responsible_domestic_expert #負責的內政專家
+	}
+	on_add = {
+		targeted_modifier = {
+		tag = JAP
+		opinion_gain_monthly_factor = 0.02 #對日改善關係效果 +2%
+		improve_relations_maintain_cost_factor = -0.08 #對日外交花費 -8%
+	}
+	} 
+}
 		}
-		#int
+		#int #情報部長
 		intelligence_minister = {
-			CHI_Tsa_Mingyen_int = {
+			CHI_Shen_Po_yang_int = { #沈伯洋
+	picture = CHI_Shen_Po_yang_int
+	name = CHI_Shen_Po_yang_int
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_DPP
+		remember_my_class_next_semester #下學期記得修我開的課
+		backlash_of_strong_politician #強勢政治家的反噬
+	JUNO_national_socialist_vanguard
+	political_chameleon
+
+	}
+}
+			CHI_Tsa_Mingyen_int = { #
 				picture = CHI_Tsa_Mingyen_int
 				name = CHI_Tsa_Mingyen_int
 				
@@ -232,6 +758,8 @@
 				}
 				
 				traits = { 
+					int_decryptor
+					int_encryptor
 				}
 			}
 			CHI_Cai_Desheng_int = {
@@ -249,28 +777,58 @@
 				}
 				
 				traits = { 
+					int_decryptor
+					int_encryptor
 				}
 			}
 		}
-		#vt
+		#vt #軍事國防部長
 		theorist_minister = {
-			CHI_Qiu_Guozheng = {
-				picture = CHI_Qiu_Guozheng
-				name = CHI_Qiu_Guozheng
-				
-				allowed = {
-				}
-				
-				visible = {
-					tag = CHI
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				
-				traits = { 
-				}
-			}
+			CHI_Qiu_Guozheng = { #邱國正
+	picture = CHI_Qiu_Guozheng
+	name = CHI_Qiu_Guozheng
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		armor_expert #裝甲專家
+		pragmatic_reformer #務實的改革派
+		discipline_and_sweat #汗水與紀律
+		partial_conservative_opposition #保守集團的部分反對
+		
+	}
+}
+CHI_Ku_Li_hsiung = { #顧立雄
+	picture = CHI_Ku_Li_hsiung
+	name = CHI_Ku_Li_hsiung
+	
+	allowed = {
+	}
+	
+	visible = {
+		tag = CHI
+	}
+	allowed_to_remove = {
+		head_minister_trigger = yes
+	}
+	
+	traits = { 
+		CHI_minister_DPP
+		reformist_official #改革派官員
+		pragmatic_financial_supervisor #實事求是的金融監督者
+		strict_legal_scholar #嚴謹的法律學者
+		cross_domain_politician #跨界的政治家
+		conservative_group_opposition #保守集團的反對
+	}
+}
 			CHI_Feng_Shihkuan = {
 				picture = CHI_Feng_Shihkuan
 				name = CHI_Feng_Shihkuan
@@ -286,6 +844,9 @@
 				}
 				
 				traits = { 
+					advanced_air_training_officer #先進的演訓軍官
+		discipline_and_sweat #汗水與紀律
+		responsible_domestic_expert #負責的內政專家（偏政治平衡）
 				}
 			}
 			CHI_Wu_Sihuai = {
@@ -302,7 +863,10 @@
 					head_minister_trigger = yes
 				}
 				
-				traits = { 
+				traits = {
+					ditional_general #傳統的老將軍
+		controversial_sharp_critic #爭議、歧視、鋒芒畢露
+		partial_conservative_opposition #保守集團的部分反對
 				}
 			}
 			CHI_Yen_Tehfa = {
@@ -320,6 +884,9 @@
 				}
 				
 				traits = { 
+					traditional_general #傳統的老將軍
+		discipline_and_sweat #汗水與紀律
+		war_preparedness_organizer #戰爭衝擊準備組織者
 				}
 			}
 		}
