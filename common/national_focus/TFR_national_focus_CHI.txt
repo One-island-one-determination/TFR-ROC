@@ -672,10 +672,6 @@ focus_tree = {
 						var = CHI_taiwanese_independence_conscription_factor_var
 						value = 0.15
 					}
-					add_to_variable = {
-						var = CHI_taiwanese_independence_social_liberal_drift_var
-						value = 0.05
-					}
 				}
 				if = {
 					limit = {
@@ -696,10 +692,6 @@ focus_tree = {
 					add_to_variable = {
 						var = CHI_Republic_of_China_conscription_factor_var
 						value = 0.1
-					}
-					add_to_variable = {
-						var = CHI_Republic_of_China_conservative_drift_var
-						value = 0.05
 					}
 				}
 			}
