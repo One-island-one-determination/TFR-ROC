@@ -242,7 +242,6 @@ country_event = {
 	}
 	option = {
 		name = ROC_CHI.1.a
-		
 		hidden_effect = {
 		}
 	}
@@ -306,6 +305,11 @@ country_event = {
 	}
 	option = {
 		name = ROC_CHI.4.a
+		set_party_name = {
+				ideology = communist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
 		set_party_name = {
 				ideology = national_socialist
 				long_name = PRC_status_banned
@@ -379,11 +383,11 @@ country_event = {
 				long_name = CHI_TheLeftParty
 				name = CHI_TheLeftParty
 			}
-			set_party_name = {
-				ideology = communist
-				long_name = CHI_TheLeftParty
-				name = CHI_TheLeftParty
-			}
+			#set_party_name = {
+			#	ideology = communist
+			#	long_name = CHI_TheLeftParty
+			#	name = CHI_TheLeftParty
+			#}
 			set_party_name = {
 				ideology = libertarian_socialist
 				long_name = CHI_TheLeftParty
@@ -493,6 +497,263 @@ country_event = {
 	}
 	option = {
 		name = ROC_CHI.12.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.13
+	title = ROC_CHI.13.t
+	desc = ROC_CHI.13.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.13.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.14
+	title = ROC_CHI.14.t
+	desc = ROC_CHI.14.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.14.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.15
+	title = ROC_CHI.15.t
+	desc = ROC_CHI.15.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			PRC = {	load_oob = "The_PRC_Marine_Corps_taibei"}
+			PRC = {	load_oob = "The_PRC_Marine_Corps_taizhong"}
+		}
+	}
+	option = {
+		name = ROC_CHI.15.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.16
+	title = ROC_CHI.16.t
+	desc = ROC_CHI.16.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.16.a
+		create_corps_commander = {
+	name = "韓國瑜"
+	desc = "CHI_han_kuo_yu_char_desc"
+	portrait_path = "GFX_HKY_corps_commander"
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	traits = { }
+}
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.17
+	title = ROC_CHI.17.t
+	desc = ROC_CHI.17.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_ideas = CHI_mobilize_balckbear_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_mobilize_balckbear_1
+					add_idea = CHI_mobilize_balckbear
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+					has_ideas = CHI_mobilize_balckbear_1
+					}
+				}
+				add_ideas = CHI_mobilize_balckbear
+			}
+		}
+	}
+	option = {
+		name = ROC_CHI.17.a
+		effect_tooltip = {
+			add_ideas = CHI_mobilize_balckbear
+		}
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.18
+	title = ROC_CHI.18.t
+	desc = ROC_CHI.18.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.18.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.19
+	title = ROC_CHI.19.t
+	desc = ROC_CHI.19.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.19.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.20
+	title = ROC_CHI.20.t
+	desc = ROC_CHI.20.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			PRC = {	load_oob = "The_PRC_Marine_Corps_taibei"}
+			PRC = {	load_oob = "The_PRC_Marine_Corps_taizhong"}
+			PRC = {	load_oob = "The_PRC_Marine_Corps_tainan"}
+			1148 = {
+					add_manpower = -34821
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+		}
+	}
+	option = {
+		name = ROC_CHI.20.a
+		effect_tooltip = {
+			1148 = {
+					add_manpower = -10213
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+		}
+		add_country_leader_role = {
+		character = CHI_lai_ching_te_char
+		promote_leader = yes
+		country_leader = {
+			#desc = CHI_tsai_ing_wen_char_desc
+				traits={ CHI_hos_madam_president }
+			ideology = CHI_Taiwanese_Progressivism2
+			expire = "1.1.1.1"
+		}
+	}
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.21
+	title = ROC_CHI.21.t
+	desc = ROC_CHI.21.d
+	#picture = GFX_ROCA_Military_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.21.a
 		hidden_effect = {
 		}
 	}
