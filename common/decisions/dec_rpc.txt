@@ -104,9 +104,6 @@ CHI_Legislative_Yuan_decisions = {
 			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
 			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = -0.005}
 			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = 0.005}
-			add_to_variable = {var = CHI_LFY_social_liberal_drift value = 0.01}
-			add_to_variable = {var = CHI_LFY_market_liberal_drift value = 0.01}
-			add_to_variable = {var = CHI_LFY_social_democrat_drift value = 0.01}
 			set_temp_variable = { var = CHI_influence_KMT_temp value = -0.05}
 			CHI_influence_KMT_add = yes	
 			set_temp_variable = { var = CHI_influence_DPP_temp value = 0.05}
@@ -466,9 +463,6 @@ CHI_Legislative_Yuan_decisions = {
 			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
 			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.005}
 			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = -0.005}
-			add_to_variable = {var = CHI_LFY_conservative_drift value = 0.02}
-			add_to_variable = {var = CHI_LFY_authoritarian_democrat_drift value = 0.02}
-			add_to_variable = {var = CHI_LFY_market_liberal_drift value = 0.01}
 			set_temp_variable = { var = CHI_influence_KMT_temp value = 0.05}
 			CHI_influence_KMT_add = yes	
 			set_temp_variable = { var = CHI_influence_DPP_temp value = -0.05}
@@ -786,9 +780,6 @@ CHI_Legislative_Yuan_decisions = {
 			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
 			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.005}
 			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = -0.005}
-			add_to_variable = {var = CHI_LFY_conservative_drift value = 0.02}
-			add_to_variable = {var = CHI_LFY_authoritarian_democrat_drift value = 0.02}
-			add_to_variable = {var = CHI_LFY_market_liberal_drift value = 0.01}
 			set_temp_variable = { var = CHI_influence_KMT_temp value = 0.05}
 			set_temp_variable = { var = CHI_influence_KMT_temp value = 0.05}
 			CHI_influence_KMT_add = yes	
@@ -841,9 +832,6 @@ CHI_Legislative_Yuan_decisions = {
 			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
 			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = -0.005}
 			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = 0.005}
-			add_to_variable = {var = CHI_LFY_social_liberal_drift value = 0.01}
-			add_to_variable = {var = CHI_LFY_market_liberal_drift value = 0.01}
-			add_to_variable = {var = CHI_LFY_social_democrat_drift value = 0.01}
 			set_temp_variable = { var = CHI_influence_DPP_temp value = 0.05}
 			CHI_influence_DPP_add = yes	
 			set_temp_variable = { var = CHI_influence_TPP_temp value = 0.02}
@@ -2670,7 +2658,7 @@ CHI_Legislative_Yuan_decisions = {
 				}
 				1149 = {
 					create_unit = {
-						division = "name = \"第%d 守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -2754,7 +2742,7 @@ CHI_Legislative_Yuan_decisions = {
 				}
 				1148 = {
 					create_unit = {
-						division = "name = \"第%d 守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -2839,7 +2827,7 @@ CHI_Legislative_Yuan_decisions = {
 				}
 				1148 = {
 					create_unit = {
-						division = "name = \"第%d 守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -3062,7 +3050,7 @@ CHI_Legislative_Yuan_decisions = {
 				}
 				1150 = {
 					create_unit = {
-						division = "name = \"第%d 守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -3191,7 +3179,7 @@ CHI_Legislative_Yuan_decisions = {
 				}
 				1150 = {
 					create_unit = {
-						division = "name = \"第%d 守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -3281,7 +3269,7 @@ CHI_Legislative_Yuan_decisions = {
 				}
 				524 = {
 					create_unit = {
-						division = "name = \"第%d 守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -3475,7 +3463,7 @@ CHI_Legislative_Yuan_decisions = {
 				}
 				524 = {
 					create_unit = {
-						division = "name = \"第%d 守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -3554,7 +3542,7 @@ CHI_Legislative_Yuan_decisions = {
 				}
 				1149 = {
 					create_unit = {
-						division = "name = \"第%d 守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -3629,7 +3617,7 @@ CHI_Legislative_Yuan_decisions = {
 				}
 				1149 = {
 					create_unit = {
-						division = "name = \"第%d 守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -3707,7 +3695,7 @@ CHI_Legislative_Yuan_decisions = {
 				}
 				1149 = {
 					create_unit = {
-						division = "name = \"第%d 守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -3786,7 +3774,7 @@ CHI_Legislative_Yuan_decisions = {
 				}
 				1149 = {
 					create_unit = {
-						division = "name = \"第%d 守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"防空守備部隊\" division_template = \"中華民國陸軍地區守備部隊\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -4515,6 +4503,20 @@ PDTO_solidarity = {
 		}
 		remove_effect = {
 			PDTO_unity_increase2 = yes
+			hidden_effect = {
+				every_country = {
+		limit = {
+			OR = {
+				has_country_flag = pdto_member
+			}
+		}
+		unlock_decision_category_tooltip = PDTO_solidarity
+				unlock_decision_tooltip = PDTO_military_exercise
+				unlock_decision_tooltip = PDTO_Trade_Agreement
+				unlock_decision_tooltip = PDTO_Mineral_Detection
+				unlock_decision_tooltip = PDTO_Unity_up
+				}
+			}
 	}	
 	}
 }
@@ -6435,6 +6437,9 @@ EastAsia_taiwan_war_dec = {
 			}
 		}
 	}
+}
+CHI_Taiwan_will = {
+	
 }
 
 

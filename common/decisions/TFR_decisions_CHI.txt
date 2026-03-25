@@ -694,9 +694,7 @@ CHI_PRC_Infiltration_decisions = {
 			always = yes
 		}
 		available = {
-			NOT = {
-				has_country_flag = CHI_PRC_Infiltration_start_flg
-			}
+			has_global_flag = PRC_taiwan_war_lost
 		}
 		priority = 200
 		is_good = no
