@@ -83,3 +83,79 @@ support_Taiwan = {
 		value = 900
 	}
 }
+support_Taiwan_social_democrat = {
+	enable = {
+		has_war = no
+		has_global_flag = PRC_ongoing_taiwan_war
+		has_global_flag = support_Taiwan_social_democrat
+		has_government = social_democrat
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = support
+		id = "CHI"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = 900
+	}
+}
+support_Taiwan_social_liberal = {
+	enable = {
+		has_war = no
+		has_global_flag = PRC_ongoing_taiwan_war
+		has_global_flag = support_Taiwan_social_liberal
+		has_government = social_liberal
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = support
+		id = "CHI"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = 900
+	}
+}
+support_Taiwan_market_liberal = {
+	enable = {
+		has_war = no
+		has_global_flag = PRC_ongoing_taiwan_war
+		has_global_flag = support_Taiwan_market_liberal
+		has_government = market_liberal
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = support
+		id = "CHI"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = 900
+	}
+}
+support_Taiwan_conservative = {
+	enable = {
+		has_war = no
+		has_global_flag = PRC_ongoing_taiwan_war
+		has_global_flag = support_Taiwan_conservative
+		has_government = conservative
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = support
+		id = "CHI"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = 900
+	}
+}
