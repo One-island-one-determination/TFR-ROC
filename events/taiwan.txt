@@ -1280,7 +1280,7 @@ country_event = {
 	title = ROC_PRC.22.t
 	desc = ROC_PRC.22.d
 	picture = GFX_PRC_li_keqiang_died
-	fire_only_once = yes
+	is_triggered_only = yes
 	major = yes
 	trigger = {
 	}
@@ -3866,7 +3866,7 @@ news_event = {
 	title = ROC.60.t
 	desc = ROC.60.d
 	picture = GFX_PRC_tibet1
-	fire_only_once = yes
+	is_triggered_only = yes
 	major = yes
 	immediate = {
 		hidden_effect = {
