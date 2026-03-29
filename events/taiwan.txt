@@ -1087,13 +1087,13 @@ country_event = {
 		}
 	}
 }
-country_event = {
+news_event = {
 	id = ROC_PRC.11
 	title = ROC_PRC.11.t
 	desc = ROC_PRC.11.d
 	#picture = GFX_CHI_red_blue_white
-	fire_only_once = yes
 	is_triggered_only = yes
+	major = yes
 	trigger = {
 	}
 	option = {
