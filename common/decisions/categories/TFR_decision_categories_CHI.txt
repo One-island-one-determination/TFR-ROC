@@ -1,4 +1,5 @@
 CHI_NHCC_decisions = {
+	#疫情
 	icon = NHCC
 	#picture = GFX_CHI_test_of_will_banner_animated
 	priority = 100
@@ -16,20 +17,213 @@ CHI_NHCC_decisions = {
 
 CHI_PRC_Infiltration_decisions = {
 	#唉我草習近平怎麼那麼壞
+	#滲透度
 	icon = GFX_PRC_Infiltration
 	#picture = GFX_CHI_test_of_will_banner_animated
 	priority = 15
 	#visible_when_empty = yes
 	allowed = {
 		original_tag = CHI
-		NOT = {
-			has_global_flag = PRC_taiwan_war_lost
+		OR = {
+			has_global_flag = PRC_ongoing_taiwan_war
+			NOT = {
+				has_global_flag = PRC_taiwan_war_lost
+			}
 		}
 	}
 	visible = {
-		NOT = {
-			has_global_flag = PRC_taiwan_war_lost
+		OR = {
+			has_global_flag = PRC_ongoing_taiwan_war
+			NOT = {
+				has_global_flag = PRC_taiwan_war_lost
+			}
 		}
 	}
 	scripted_gui = PRC_Infiltration_gui
 }
+CHI_Legislative_Yuan_decisions = {
+	#立法院
+	icon = GFX_CHI_Legislative_Yuan_decisions
+	priority = 1
+	visible_when_empty = yes
+	allowed = {
+		original_tag = CHI
+	}
+	visible = {
+		always = yes
+	}
+	scripted_gui = CHI_Legislative_Yuan_new_gui
+}
+
+CHI_test_of_will2 = {
+	意志的試煉
+	icon = GFX_CHI_test_of_will_category_anim
+	picture = GFX_CHI_test_of_will_banner_animated
+	priority = 4
+	visible_when_empty = yes
+	allowed = {
+		original_tag = CHI
+		OR = {
+			NOT = {
+				is_ally_with = PRC
+				has_global_flag = PRC_taiwan_war_lost
+			}
+		}
+	}
+	visible = {
+		OR = {
+			NOT = {
+				is_ally_with = PRC
+				has_global_flag = PRC_taiwan_war_lost
+			}
+		}
+	}
+	scripted_gui = test_of_will_taiwan_gui
+}
+
+CHI_armry_test = {
+	#中華民國國軍
+	#picture = GFX_CHI_armry_test
+	#icon = GFX_CHI_test_of_will_category_anim
+	priority = 30
+	visible_when_empty = yes
+	allowed = {
+		original_tag = CHI
+	}
+	visible = {
+		original_tag = CHI
+		has_completed_focus = Rectify_weakening_military_preparedness
+	}
+	scripted_gui = CHI_armry_gui
+}
+
+#CHI_taihai_war = {
+#	#picture = GFX_CHI_armry_test
+#	#icon = GFX_CHI_test_of_will_category_anim
+#	priority = 30
+#	visible_when_empty = yes
+#	allowed = {
+#		original_tag = CHI
+#		original_tag = PRC
+#	}
+#	visible = {
+#		OR = {
+#			CHI = {
+#				has_completed_focus = CHI_Reinforcements_for_Kinmen
+#			}
+#			PRC = {
+#				has_completed_focus = PRC_the_final_opportunity
+#			}
+#		}
+#		NOT = {
+#			OR = {
+#				has_country_flag = CHI_PRC_KinmenBattle
+#				has_country_flag = CHI_PRC_KinmenBattle2
+#			}
+#		}
+#	}
+#	scripted_gui = CHI_waidao_gui
+#}
+
+PDTO_solidarity = {
+	#太約
+	icon = GFX_PDTO_dec
+	priority = 30
+	visible_when_empty = yes
+	allowed = {
+		has_country_flag = pdto_member
+	}
+	visible = {
+		always = yes
+	}
+}
+#CHI_buy_ships_zz = {
+#    icon = japan
+#	picture = GFX_JAP_taiwan_war
+#	visible_when_empty = yes
+#	priority = 4
+#	
+#	visible = {
+#	    USN = {
+#			exists = yes
+#		}
+#	}
+#	
+#	allowed = {
+#	    original_tag = CHI
+#	}
+#}
+PHI_civil_war_dec = {
+	#菲律賓内戰
+	visible_when_empty = yes
+	priority = 4
+	
+	visible = {
+		has_global_flag = PHI_civil_war_flag
+	}
+	
+	allowed = {
+		or = {
+	    original_tag = NDF
+		original_tag = AFP
+		original_tag = MIL
+		}
+	}
+}
+The_CCP_Difficulty_Selection = {
+	#中國困難選擇
+	visible_when_empty = yes
+	priority = 100
+	
+	visible = {
+		original_tag = CHI
+		is_ai = no
+		date < 2020.1.14
+		NOT = {
+			has_country_flag = The_CCP_Difficulty_Selection_1_flag
+		}
+	}
+	
+	allowed = {
+		or = {
+		original_tag = CHI
+		}
+	}
+}
+EastAsia_taiwan_war_dec = {
+	#臺海戰爭
+	visible_when_empty = no
+	priority = 99
+	
+	visible = {
+		has_global_flag = PRC_ongoing_taiwan_war
+		#has_war = yes
+	}
+	
+	allowed = {
+		or = {
+		original_tag = PRC
+		original_tag = CHI
+		original_tag = JAP
+		original_tag = AST
+		}
+	}
+}
+CHI_Taiwan_will = {
+	#大中華局勢
+	visible_when_empty = yes
+	priority = 99
+	
+	visible = {
+		always = no
+	}
+	
+	allowed = {
+		or = {
+		always = no
+		}
+	}
+}
+
+
+
