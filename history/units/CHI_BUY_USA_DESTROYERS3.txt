@@ -1,13 +1,28 @@
 units = {
 	fleet = {
-		name = "Submarine Squadron 1" #Pearl Harbor, Hawaii
+		name = "美國海軍潛艇第1中隊" 
 		naval_base = 4180
 		task_force = {
-			name = "Submarine Squadron 1" #Pearl Harbor, Hawaii
+			name = "美國海軍潛艇第1中隊" 
 			location = 4180
-			ship = { name = "USS Los Angeles (SSN-688)" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Los Angeles-class" } } }
-			ship = { name = "USS La Jolla (SSN-701)" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Los Angeles-class" } } }
-			ship = { name = "USS Buffalo (SSN-715)" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Los Angeles-class" } } }
+
+			ship = { name = "洛杉磯號（SSN-688）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "拉荷亞號（SSN-701）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "水牛城號（SSN-715）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+
+			ship = { name = "費城號（SSN-690）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "達拉斯號（SSN-700）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "巴爾的摩號（SSN-704）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "波士頓號（SSN-703）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "亞特蘭大號（SSN-712）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "普羅維登斯號（SSN-719）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "匹茲堡號（SSN-720）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "芝加哥號（SSN-721）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "基韋斯特號（SSN-722）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "俄克拉荷馬城號（SSN-723）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "路易斯維爾號（SSN-724）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+			ship = { name = "海倫娜號（SSN-725）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "洛杉磯級" } } }
+
 		}
 	}
 }

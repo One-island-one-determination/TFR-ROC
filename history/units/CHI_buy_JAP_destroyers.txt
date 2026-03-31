@@ -1,14 +1,25 @@
 units = {
 	fleet = {
-		name = "Destroyer Squadron 15" 
+		name = "日本海上自衛隊潛艇部隊" 
 		naval_base = 7072
 		task_force = {
-			name = "Destroyer Squadron 15" 
+			name = "日本海上自衛隊潛艇部隊" 
 			location = 7072
-			ship = { name = "USS Curtis Wilbur (DDG-54)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = JAP version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS John S. McCain (DDG-56)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = JAP version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS O'Brien (DD-975)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = JAP version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS Cushing (DD-985)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = JAP version_name = "Arleigh Burke-class" } } }
+
+			ship = { name = "蒼龍號（SS-501）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "蒼龍級" } } }
+			ship = { name = "白龍號（SS-503）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "蒼龍級" } } }
+			ship = { name = "青龍號（SS-509）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "蒼龍級" } } }
+			ship = { name = "凰龍號（SS-510）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "蒼龍級" } } }
+
+			ship = { name = "大鯨號（SS-513）" definition = submarine equipment = { ship_hull_submarine_3 = { amount = 1 owner = JAP version_name = "大鯨級" } } }
+			ship = { name = "迅鯨號（SS-514）" definition = submarine equipment = { ship_hull_submarine_3 = { amount = 1 owner = JAP version_name = "大鯨級" } } }
+
+			ship = { name = "親潮號（SS-590）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "親潮級" } } }
+			ship = { name = "舞鶴號（SS-593）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "親潮級" } } }
+
+			ship = { name = "夕潮號（SS-597）" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = JAP version_name = "夕潮級" } } }
+			ship = { name = "瀨戶潮號（SS-600）" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = JAP version_name = "夕潮級" } } }
+
 		}
 	}
 }

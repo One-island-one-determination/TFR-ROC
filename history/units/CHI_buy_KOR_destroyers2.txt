@@ -1,14 +1,17 @@
 units = {
 	fleet = {
-		name = "Destroyer Squadron 15" 
+		name = "韓國海軍驅逐艦第15中隊" 
 		naval_base = 4056
 		task_force = {
-			name = "Destroyer Squadron 15" 
+			name = "韓國海軍驅逐艦第15中隊" 
 			location = 4056
-			ship = { name = "USS Curtis Wilbur (DDG-54)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = KOR version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS John S. McCain (DDG-56)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = KOR version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS O'Brien (DD-975)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = KOR version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS Cushing (DD-985)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = KOR version_name = "Arleigh Burke-class" } } }
+
+			ship = { name = "世宗大王號（DDG-991）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "世宗大王級" } } }
+			ship = { name = "栗谷李珥號（DDG-992）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "世宗大王級" } } }
+			ship = { name = "西厓柳成龍號（DDG-993）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "世宗大王級" } } }
+			ship = { name = "王建號（DDH-978）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "忠武公李舜臣級" } } }
+			ship = { name = "姜邯贊號（DDH-979）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "忠武公李舜臣級" } } }
+
 		}
 	}
 }

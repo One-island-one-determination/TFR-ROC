@@ -1,16 +1,15 @@
 units = {
 	fleet = {
-		name = "Destroyer Squadron 31" #Pearl Harbor, Hawaii
+		name = "美國海軍巡洋艦第31中隊" 
 		naval_base = 4180
 		task_force = {
-			name = "Destroyer Squadron 31" #Pearl Harbor, Hawaii
+			name = "美國海軍巡洋艦第31中隊" 
 			location = 4180
-			ship = { name = "USS Russell (DDG-59)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS Paul Hamilton (DDG-60)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS Hopper (DDG-70)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS O Kane (DDG-77)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS Crommelin (FFG-37)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Oliver Hazard Perry-class" } } }
-			ship = { name = "USS Reuben James (FFG-57)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Oliver Hazard Perry-class" } } }
+
+			ship = { name = "提康德羅加號（CG-47）" definition = heavy_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "提康德羅加級" } } }
+			ship = { name = "安提坦號（CG-54）" definition = heavy_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "提康德羅加級" } } }
+			ship = { name = "錢斯勒斯維爾號（CG-62）" definition = heavy_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "提康德羅加級" } } }
+
 		}
 	}
 }

@@ -1,14 +1,20 @@
 units = {
 	fleet = {
-		name = "Destroyer Squadron 15" 
+		name = "美國海軍驅逐艦第15中隊" 
 		naval_base = 4180
 		task_force = {
-			name = "Destroyer Squadron 15" 
+			name = "美國海軍驅逐艦第15中隊" 
 			location = 4180
-			ship = { name = "USS Curtis Wilbur (DDG-54)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS John S. McCain (DDG-56)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS O'Brien (DD-975)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
-			ship = { name = "USS Cushing (DD-985)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
+
+			ship = { name = "柯蒂斯·威爾伯號（DDG-54）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "阿利·伯克級" } } }
+			ship = { name = "約翰·S·麥凱恩號（DDG-56）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "阿利·伯克級" } } }
+			ship = { name = "歐布萊恩號（DD-975）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "阿利·伯克級" } } }
+			ship = { name = "庫欣號（DD-985）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "阿利·伯克級" } } }
+
+			ship = { name = "拉森號（DDG-82）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "阿利·伯克級" } } }
+			ship = { name = "馬斯廷號（DDG-89）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "阿利·伯克級" } } }
+			ship = { name = "麥坎貝爾號（DDG-85）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "阿利·伯克級" } } }
+
 		}
 	}
 }

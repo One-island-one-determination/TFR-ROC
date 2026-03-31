@@ -1,13 +1,17 @@
 units = {
 	fleet = {
-		name = "Harushio-class" #Pearl Harbor, Hawaii
+		name = "日本海上自衛隊驅逐艦部隊" 
 		naval_base = 7072
 		task_force = {
-			name = "Harushio-class" #Pearl Harbor, Hawaii
+			name = "日本海上自衛隊驅逐艦部隊" 
 			location = 7072
-			ship = { name = "Harushio-class" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Harushio-class" } } }
-			ship = { name = "Harushio-class" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Harushio-class" } } }
-			ship = { name = "Harushio-class" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Harushio-class" } } }
+
+			ship = { name = "金剛號（DDG-173）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "金剛級" } } }
+			ship = { name = "霧島號（DDG-174）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "金剛級" } } }
+			ship = { name = "愛宕號（DDG-177）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "愛宕級" } } }
+			ship = { name = "高雄號（DDG-178）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "愛宕級" } } }
+			ship = { name = "摩耶號（DDG-179）" definition = destroyer equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "摩耶級" } } }
+
 		}
 	}
 }

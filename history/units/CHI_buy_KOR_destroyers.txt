@@ -1,13 +1,24 @@
 units = {
 	fleet = {
-		name = "Harushio-class" #Pearl Harbor, Hawaii
+		name = "韓國海軍潛艇第15中隊" 
 		naval_base = 4056
 		task_force = {
-			name = "Harushio-class" #Pearl Harbor, Hawaii
+			name = "韓國海軍潛艇第15中隊" 
 			location = 4056
-			ship = { name = "Harushio-class" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Harushio-class" } } }
-			ship = { name = "Harushio-class" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Harushio-class" } } }
-			ship = { name = "Harushio-class" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Harushio-class" } } }
+
+			ship = { name = "島山安昌浩號（SS-083）" definition = submarine equipment = { ship_hull_submarine_3 = { amount = 1 owner = KOR version_name = "島山安昌浩級" } } }
+			ship = { name = "安武號（SS-085）" definition = submarine equipment = { ship_hull_submarine_3 = { amount = 1 owner = KOR version_name = "島山安昌浩級" } } }
+
+			ship = { name = "孫元一號（SS-072）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "孫元一級" } } }
+			ship = { name = "鄭地號（SS-073）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "孫元一級" } } }
+			ship = { name = "安重根號（SS-075）" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "孫元一級" } } }
+
+			ship = { name = "張保皋號（SS-061）" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "張保皋級" } } }
+			ship = { name = "李億祺號（SS-066）" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "張保皋級" } } }
+			ship = { name = "李舜臣號（SS-068）" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "張保皋級" } } }
+
+			ship = { name = "洪範圖號（SS-084）" definition = submarine equipment = { ship_hull_submarine_3 = { amount = 1 owner = KOR version_name = "島山安昌浩級" } } }
+			ship = { name = "柳寬順號（SS-086）" definition = submarine equipment = { ship_hull_submarine_3 = { amount = 1 owner = KOR version_name = "島山安昌浩級" } } }
 		}
 	}
 }
