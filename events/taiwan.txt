@@ -1629,7 +1629,20 @@ add_to_variable = {var = CHI_LFY_conservative_drift value = 0.01}
 	}
 	option = {
 		name = ROC.1.a
+effect_tooltip = {
+			set_power_balance = {
+				id = CHI_Identity_dispute
+				left_side = CHI_Identity_dispute_ROC_side
+			 	right_side = CHI_Identity_dispute_TW_side
+		 	}
+		}
 		hidden_effect = {
+			set_power_balance = {
+				id = CHI_Identity_dispute
+				left_side = CHI_Identity_dispute_ROC_side
+			 	right_side = CHI_Identity_dispute_TW_side
+				set_value = 0.40
+		 	}
 		}
 	}
 }
