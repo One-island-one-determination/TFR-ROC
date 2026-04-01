@@ -311,7 +311,7 @@ country_event = {
 	id = ROC_CHI.1
 	title = ROC_CHI.1.t
 	desc = ROC_CHI.1.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = PLAlands4
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -326,7 +326,7 @@ country_event = {
 	id = ROC_CHI.2
 	title = ROC_CHI.2.t
 	desc = ROC_CHI.2.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_taihai_Hospital
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -350,7 +350,7 @@ country_event = {
 	id = ROC_CHI.3
 	title = ROC_CHI.3.t
 	desc = ROC_CHI.3.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_3
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -374,7 +374,7 @@ country_event = {
 	id = ROC_CHI.4
 	title = ROC_CHI.4.t
 	desc = ROC_CHI.4.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_4_2
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -419,7 +419,7 @@ country_event = {
 	id = ROC_CHI.5
 	title = ROC_CHI.5.t
 	desc = ROC_CHI.5.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_5
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -434,16 +434,46 @@ country_event = {
 }
 country_event = {
 	id = ROC_CHI.6
-	title = ROC_CHI.6.t
-	desc = ROC_CHI.6.d
-	#picture = GFX_ROCA_Military_inspection
+	title = ROC.89.t
+	desc = ROC.89.d
+	picture = ROC_CHI_Event_6
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
 	}
 	option = {
-		name = ROC_CHI.6.a
+		name = ROC.89.a
 		add_ideas = CHI_united_as_one_idea
+		add_popularity = { ideology = totalitarian_socialist popularity = -0.10 }
+		add_popularity = { ideology = communist popularity = -0.10 }
+		add_popularity = { ideology = libertarian_socialist popularity = -0.10 }
+		add_popularity = { ideology = fascist popularity = -0.10 }
+		add_popularity = { ideology = national_socialist popularity = -0.10 }
+		set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
 		hidden_effect = {
 		}
 	}
@@ -452,7 +482,7 @@ country_event = {
 	id = ROC_CHI.7
 	title = ROC_CHI.7.t
 	desc = ROC_CHI.7.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = GFX_ROCA_Military_inspection
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -492,7 +522,7 @@ country_event = {
 		set_party_name = {
 				ideology = totalitarian_socialist
 				long_name = CHI_TheLeftParty
-				name = CHI_TheLeftParty
+				name = PRC_status_banned
 			}
 			#set_party_name = {
 			#	ideology = communist
@@ -502,7 +532,7 @@ country_event = {
 			set_party_name = {
 				ideology = libertarian_socialist
 				long_name = CHI_TheLeftParty
-				name = CHI_TheLeftParty
+				name = PRC_status_banned
 			}
 			add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
 			add_popularity = { ideology = totalitarian_socialist popularity = 0.05 }
@@ -514,7 +544,7 @@ country_event = {
 	id = ROC_CHI.8
 	title = ROC_CHI.8.t
 	desc = ROC_CHI.8.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_8
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -559,7 +589,7 @@ country_event = {
 	id = ROC_CHI.9
 	title = ROC_CHI.9.t
 	desc = ROC_CHI.9.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_9
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -579,7 +609,7 @@ country_event = {
 	id = ROC_CHI.10
 	title = ROC_CHI.10.t
 	desc = ROC_CHI.10.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_10
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -594,7 +624,7 @@ country_event = {
 	id = ROC_CHI.11
 	title = ROC_CHI.11.t
 	desc = ROC_CHI.11.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_11
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -606,12 +636,7 @@ country_event = {
 		set_party_name = {
 				ideology = fascist
 				long_name = CHI_TaiwanNationalFront
-				name = CHI_TaiwanNationalFront
-			}
-			set_party_name = {
-				ideology = national_socialist
-				long_name = CHI_TaiwanNationalFront
-				name = CHI_TaiwanNationalFront
+				name = PRC_status_banned
 			}
 promote_character = {
 	character = CHI_chen_yi_qi_char
@@ -630,7 +655,7 @@ country_event = {
 	id = ROC_CHI.12
 	title = ROC_CHI.12.t
 	desc = ROC_CHI.12.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_12
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -650,7 +675,7 @@ country_event = {
 	id = ROC_CHI.13
 	title = ROC_CHI.13.t
 	desc = ROC_CHI.13.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_13
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -669,7 +694,7 @@ country_event = {
 	id = ROC_CHI.14
 	title = ROC_CHI.14.t
 	desc = ROC_CHI.14.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_14
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -688,7 +713,7 @@ country_event = {
 	id = ROC_CHI.15
 	title = ROC_CHI.15.t
 	desc = ROC_CHI.15.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = PLAlands5
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -709,7 +734,7 @@ country_event = {
 	id = ROC_CHI.16
 	title = ROC_CHI.16.t
 	desc = ROC_CHI.16.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_16
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -741,7 +766,7 @@ country_event = {
 	id = ROC_CHI.17
 	title = ROC_CHI.17.t
 	desc = ROC_CHI.17.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_17
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -811,7 +836,7 @@ country_event = {
 	id = ROC_CHI.18
 	title = ROC_CHI.18.t
 	desc = ROC_CHI.18.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_18
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -830,7 +855,7 @@ country_event = {
 	id = ROC_CHI.19
 	title = ROC_CHI.19.t
 	desc = ROC_CHI.19.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_19
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -849,7 +874,7 @@ country_event = {
 	id = ROC_CHI.20
 	title = ROC_CHI.20.t
 	desc = ROC_CHI.20.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_20
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -921,7 +946,7 @@ country_event = {
 	id = ROC_CHI.21
 	title = ROC_CHI.21.t
 	desc = ROC_CHI.21.d
-	#picture = GFX_ROCA_Military_inspection
+	picture = ROC_CHI_Event_21
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -1091,7 +1116,7 @@ news_event = {
 	id = ROC_PRC.11
 	title = ROC_PRC.11.t
 	desc = ROC_PRC.11.d
-	#picture = GFX_CHI_red_blue_white
+	picture = ROC_PRC_Event_11
 	is_triggered_only = yes
 	major = yes
 	trigger = {
@@ -1470,12 +1495,12 @@ country_event = {
 		}
 	}
 }
-country_event = {
+news_event = {
 	id = ROC_PRC.33
 	title = ROC_PRC.33.t
 	desc = ROC_PRC.33.d
-	picture = GFX_event_taiwanwarlose
-	fire_only_once = yes
+	picture = ROC_PRC_Event_33
+	major = yes
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -2160,7 +2185,7 @@ country_event = {
 	id = ROC.10
 	title = ROC.10.t
 	desc = ROC.10.d
-	#picture = GFX_red_line_go_down
+	picture = SouthChinaSea_CN
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -2182,7 +2207,7 @@ country_event = {
 	id = ROC.11
 	title = ROC.11.t
 	desc = ROC.11.d
-	#picture = GFX_red_line_go_down
+	picture = SouthChinaSea_dis
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -2193,7 +2218,7 @@ country_event = {
 	id = ROC.12
 	title = ROC.12.t
 	desc = ROC.12.d
-	#picture = GFX_red_line_go_down
+	picture = SouthChinaSea_yes
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -2220,7 +2245,7 @@ country_event = {
 	id = ROC.13
 	title = ROC.13.t
 	desc = ROC.13.d
-	#picture = GFX_red_line_go_down
+	#picture = Kinmen_exists
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -2294,7 +2319,7 @@ country_event = {
 	id = ROC.17
 	title = ROC.17.t
 	desc = ROC.17.d
-	#picture = GFX_china_civil_war_1
+	picture = Kinmen_exists
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -2314,7 +2339,7 @@ news_event = {
 	id = ROC.18
 	title = ROC.18.t
 	desc = ROC.18.d
-	#picture = GFX_china_civil_war_1
+	picture = Kinmen_lost
 	is_triggered_only = yes
 	major = yes
 	trigger = {
@@ -2364,7 +2389,7 @@ country_event = {
 	id = ROC.19
 	title = ROC.19.t
 	desc = ROC.19.d
-	#picture = GFX_china_civil_war_1
+	picture = GFX_SOV_secret_documents
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -2381,7 +2406,7 @@ country_event = {
 	id = ROC.20
 	title = ROC.20.t
 	desc = ROC.20.d
-	#picture = GFX_china_civil_war_1
+	picture = BattleofPenghu_1
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -2424,9 +2449,9 @@ country_event = {
 	id = ROC.21
 	title = ROC.21.t
 	desc = ROC.21.d
-	#picture = GFX_china_civil_war_1
+	picture = PLAlands2
 	is_triggered_only = yes
-	fire_only_once = yes
+	major = yes
 	trigger = {
 	}
 	immediate = {
@@ -2679,7 +2704,7 @@ country_event = {
 	id = ROC.23
 	title = ROC.23.t
 	desc = ROC.23.d
-	#picture = GFX_china_civil_war_1
+	picture = GFX_SOV_secret_documents
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -2706,7 +2731,7 @@ country_event = {
 	id = ROC.24
 	title = ROC.24.t
 	desc = ROC.24.d
-	#picture = GFX_china_civil_war_1
+	picture = PLAKillHK
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -2890,7 +2915,7 @@ country_event = {
 	id = ROC.34
 	title = ROC.34.t
 	desc = ROC.34.d
-	#picture = GFX_Taiwan_Invasion
+	picture = transportaircraft
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -2913,7 +2938,7 @@ country_event = {
 	id = ROC.35
 	title = ROC.35.t
 	desc = ROC.35.d
-	#picture = GFX_Taiwan_Invasion
+	picture = transportaircraft
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -2941,10 +2966,30 @@ country_event = {
 	}
 }
 country_event = {
+	id = ROC.36
+	title = ROC.36.t
+	desc = ROC.36.d
+	picture = ROC_10_10_National_Day
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	immediate = {
+		country_event = {
+			id = ROC.36
+			days = 284
+			hours = 6
+		}
+	}
+	option = {
+		name = ROC.36.a
+	}
+}
+country_event = {
 	id = ROC.37
 	title = ROC.37.t
 	desc = ROC.37.d
-	#picture = GFX_Taiwan_Invasion
+	picture = ROC_228_Memoria_Day
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -2996,7 +3041,7 @@ country_event = {
 	id = ROC.40
 	title = ROC.40.t
 	desc = ROC.40.d
-	#picture = GFX_Taiwan_Invasion
+	picture = HanKuoyu_and_TsaiIngwen
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -3021,7 +3066,7 @@ news_event = {
 	id = ROC.41
 	title = ROC.41.t
 	desc = ROC.41.d
-	#picture = GFX_Taiwan_Invasion
+	picture = PHI_civil_war1
 	is_triggered_only = yes
 	major = yes
 	trigger = {
@@ -3054,16 +3099,32 @@ news_event = {
 				add_state_core = 1273
 				transfer_state = 623
 				add_state_core = 623
+				transfer_state = 1279
+				add_state_core = 1279
+				transfer_state = 1281
+				add_state_core = 1281
+				transfer_state = 627
+				add_state_core = 627
+				transfer_state = 1280
+				add_state_core = 1280
+				transfer_state = 1278
+				add_state_core = 1278
+				transfer_state = 1277
+				add_state_core = 1277
+				transfer_state = 1279
+				add_state_core = 1279
+				transfer_state = 1281
+				add_state_core = 1281
 				set_capital = {
 					state = 623
 				}
 				create_country_leader = {
-		name = NDF_Nur_Misuari
-		picture = "gfx/Leaders/PHI_civil_war/NDF_Nur_Misuari.png"
+		name = NPA_luis_jalandoni_char
+		picture = "gfx/Leaders/PHI/Luis_Jalandoni.png"
 		ideology=left_nationalism
 		expire="1.1.1.1"
 			}
-			set_cosmetic_tag = PHI_civil_war_NDF
+			set_cosmetic_tag = NPA
 			set_party_name = { ideology = communist long_name = PHI_NDF_long name = PHI_NDF }
 			set_party_name = { ideology = totalitarian_socialist long_name = PHI_NAP_long name = PHI_NAP }
 				division_template = {
@@ -3169,73 +3230,6 @@ set_party_name = { ideology = nationalist long_name = PHI_AFP_long name = PHI_AF
 			PRC = {
 				transfer_state = 1384
 			}
-			MIL = {
-				transfer_state = 1279
-				add_state_core = 1279
-				transfer_state = 1281
-				add_state_core = 1281
-				transfer_state = 627
-				add_state_core = 627
-				transfer_state = 1280
-				add_state_core = 1280
-				transfer_state = 1278
-				add_state_core = 1278
-				transfer_state = 1277
-				add_state_core = 1277
-				transfer_state = 1279
-				add_state_core = 1279
-				transfer_state = 1281
-				add_state_core = 1281
-				set_capital = {
-					state = 1278
-				}
-				set_cosmetic_tag = PHI_civil_war_MILF
-				create_country_leader = {
-		name = MIL_Murad_Ebrahim
-		picture = "gfx/Leaders/PHI_civil_war/MIL_Murad_Ebrahim.png"
-		ideology=salafi
-		expire="1.1.1.1"
-			}
-set_party_name = { ideology = nationalist long_name = PHI_MIL_long name = PHI_MIL }
-				division_template = {
-					name = "Minbing"
-					is_locked = no
-					regiments = {
-						militia = { x = 0 y = 0 }
-						militia = { x = 0 y = 1 }
-						militia = { x = 0 y = 2 }
-						militia = { x = 1 y = 0 }
-						militia = { x = 1 y = 1 }
-					}
-					
-					support = {
-					}	
-				}
-				random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-					id = 1949
-					owner = MIL
-					count = 4
-				}
-			}
-			random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-					id = 1949
-					owner = MIL
-					count = 4
-				}
-			}
-			random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-					id = 1949
-					owner = MIL
-					count = 4
-				}
-			}
-			}
 		}
 	}
 	option = {
@@ -3250,7 +3244,7 @@ news_event = {
 	id = ROC.42
 	title = ROC.42.t
 	desc = ROC.42.d
-	#picture = GFX_Taiwan_Invasion
+	picture = PHI_civil_war2
 	is_triggered_only = yes
 	major = yes
 	trigger = {
@@ -3262,31 +3256,14 @@ news_event = {
 				target = NDF
 				type = annex_everything
 			}
-			declare_war_on = {
-				target = MIL
-				type = annex_everything
-			}
 			}
 			NDF = {
 				declare_war_on = {
 				target = AFP
 				type = annex_everything
 			}
-			declare_war_on = {
-				target = MIL
-				type = annex_everything
 			}
-			}
-			MIL = {
-				declare_war_on = {
-				target = AFP
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = NDF
-				type = annex_everything
-			}
-			}
+			
 		}
 	}
 	option = {
@@ -3297,7 +3274,7 @@ news_event = {
 	id = ROC.43
 	title = ROC.43.t
 	desc = ROC.43.d
-	#picture = GFX_Taiwan_Invasion
+	picture = PHI_civil_war3
 	is_triggered_only = yes
 	major = yes
 	trigger = {
@@ -3310,7 +3287,7 @@ news_event = {
 	id = ROC.44
 	title = ROC.44.t
 	desc = ROC.44.d
-	#picture = GFX_Taiwan_Invasion
+	picture = PHI_civil_war4
 	is_triggered_only = yes
 	major = yes
 	trigger = {
@@ -4458,17 +4435,255 @@ country_event = {
 	title = ROC.76.t
 	desc = china.148.d
 	picture = GFX_PRC_protest
+	
 	is_triggered_only = yes
 	major = yes
 	option = {
 		name = ROC.76.a
 	}
 }
-
-
-
-
-
+country_event = {
+	id = ROC.77
+	title = ROC.77.t
+	desc = ROC.77.d
+	picture = ROC_Event_77
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.77.a
+		add_manpower = -8
+		custom_effect_tooltip = ROC_77_tt
+	}
+}
+country_event = {
+	id = ROC.78
+	title = ROC.78.t
+	desc = ROC.78.d
+	picture = ROC_Event_78
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.78.a
+		add_popularity = { ideology = social_liberal popularity = 0.03 }
+	}
+}
+country_event = {
+	id = ROC.79
+	title = ROC.79.t
+	desc = ROC.79.d
+	picture = ROC_Event_79
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.79.a
+		add_manpower = -49
+	}
+}
+country_event = {
+	id = ROC.80
+	title = ROC.80.t
+	desc = ROC.80.d
+	picture = ROC_Event_80_1
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.80.a
+		524 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+				}
+			}
+	}
+}
+country_event = {
+	id = ROC.81
+	title = ROC.81.t
+	desc = ROC.81.d
+	picture = ROC_Event_81
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.81.a
+		524 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+				}
+			}
+			1148 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+				}
+			}
+	}
+}
+country_event = {
+	id = ROC.82
+	title = ROC.82.t
+	desc = ROC.82.d
+	picture = ROC_Event_82
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.82.a
+		country_event = {
+			id = ROC.83
+			hours = 2
+		}
+	}
+}
+country_event = {
+	id = ROC.83
+	title = ROC.83.t
+	desc = ROC.83.d
+	picture = ROC_Event_83
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.83.a
+		country_event = {
+			id = ROC.84
+			hours = 2
+		}
+	}
+}
+country_event = {
+	id = ROC.84
+	title = ROC.84.t
+	desc = ROC.84.d
+	picture = ROC_Event_84
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.84.a
+		country_event = {
+			id = ROC.85
+			days = 6
+		}
+	}
+}
+country_event = {
+	id = ROC.85
+	title = ROC.85.t
+	desc = ROC.85.d
+	picture = ROC_Event_85
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.85.a
+		country_event = {
+			id = ROC.86
+			hours = 2
+		}
+	}
+}
+country_event = {
+	id = ROC.86
+	title = ROC.86.t
+	desc = ROC.86.d
+	picture = ROC_Event_85
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.86.a
+		country_event = {
+			id = ROC.87
+			hours = 2
+		}
+	}
+}
+country_event = {
+	id = ROC.87
+	title = ROC.87.t
+	desc = ROC.87.d
+	picture = ROC_Event_85
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.87.a
+		add_manpower = -1
+	}
+}
+country_event = {
+	id = ROC.88
+	title = ROC.88.t
+	desc = ROC.88.d
+	picture = ROC_Event_88
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.88.a
+	}
+}
+country_event = {
+	id = ROC.89
+	title = ROC.89.t
+	desc = ROC.89.d
+	#picture = GFX_PRC_protest
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.89.a
+		
+	}
+}
+country_event = {
+	id = ROC.90
+	title = ROC.90.t
+	desc = ROC.90.d
+	picture = ROC_Event_90
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC.90.a
+		add_manpower = 200000
+		if = {
+					limit = {
+						NOT = {
+							has_template = "中華民國陸軍步兵旅"
+						}
+					}
+					division_template = {
+						name = "中華民國陸軍步兵旅"
+						division_names_group = CHI_INF_1
+						is_locked = no
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							artillery_brigade = { x = 1 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+				}
+				1148 = {
+					create_unit = {
+						division = "name = \"紧急预备役\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						id = 1949
+						owner = CHI
+						count = 10
+					}
+				}
+	}
+}
 
 
 
