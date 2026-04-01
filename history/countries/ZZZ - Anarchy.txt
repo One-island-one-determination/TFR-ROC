@@ -23,13 +23,14 @@ CHI = {
 	elections_allowed = yes
 }
 set_popularities = {
-	conservative = 40
+	conservative = 35
 	social_liberal = 45
 	market_liberal  = 7
 	totalitarian_socialist = 1
-	communist = 3
-	libertarian_socialist = 2
-	social_democrat = 2
+	communist = 1
+	libertarian_socialist = 3
+	social_democrat = 5
+	authoritarian_democrat = 3
 }
 set_country_flag = CHI_lfy_flag
 set_country_flag = CHI_stage_1
@@ -54,6 +55,16 @@ add_dynamic_modifier = {
 add_dynamic_modifier = {
     	modifier = CHI_influence_SDP_dynamic
 	}
+	add_dynamic_modifier = {
+    	modifier = CHI_influence_NP_dynamic
+	}
+	add_dynamic_modifier = {
+    	modifier = CHI_influence_PFP_dynamic
+	}
+	add_dynamic_modifier = {
+    	modifier = CHI_influence_LP_dynamic
+	}
+	
 	add_ideas = CHI_aging_population_idea
 recruit_character = CHI_sunyoulian_char
 recruit_character = CHI_fanyun_char
