@@ -624,3 +624,21 @@ PDTO_stand_up_to_taiwan_idea_1 = {
 	army_org_factor = 0.15
 	army_speed_factor = 0.15
 }
+CHI_influence_PFP_dynamic = {
+	enable = { 
+		has_country_flag = CHI_lfy_flag
+	}
+	political_power_factor  = CHI_influence_PFP_dynamic_var
+}
+CHI_influence_NP_dynamic = {
+	enable = { 
+		has_country_flag = CHI_lfy_flag
+	}
+	political_power_factor  = CHI_influence_NP_dynamic_var
+}
+CHI_influence_LP_dynamic = {
+	enable = { 
+		has_country_flag = CHI_lfy_flag
+	}
+	political_power_factor  = CHI_influence_LP_dynamic_var
+}
