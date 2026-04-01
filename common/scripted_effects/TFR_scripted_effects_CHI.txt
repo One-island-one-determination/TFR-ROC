@@ -2521,3 +2521,63 @@ CHI_de_prc_embargo_idea = {
 		}
 	}
 }
+CHI_influence_NP_add = {
+	custom_effect_tooltip = CHI_influence_NP_tt
+	add_to_variable = {
+		var = CHI_influence_NP
+		value = CHI_influence_NP_temp
+	}
+	clamp_variable = {
+		var = CHI_influence_NP
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = CHI_influence_NP_dynamic_var
+		value = CHI_influence_NP
+	}
+	multiply_variable = {
+		var = CHI_influence_NP_dynamic_var
+		value = 0.2
+	}
+}
+CHI_influence_LP_add = {
+	custom_effect_tooltip = CHI_influence_LP_tt
+	add_to_variable = {
+		var = CHI_influence_LP
+		value = CHI_influence_LP_temp
+	}
+	clamp_variable = {
+		var = CHI_influence_LP
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = CHI_influence_LP_dynamic_var
+		value = CHI_influence_LP
+	}
+	multiply_variable = {
+		var = CHI_influence_LP_dynamic_var
+		value = 0.2
+	}
+}
+CHI_influence_PFP_add = {
+	custom_effect_tooltip = CHI_influence_PFP_tt
+	add_to_variable = {
+		var = CHI_influence_PFP
+		value = CHI_influence_PFP_temp
+	}
+	clamp_variable = {
+		var = CHI_influence_PFP
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = CHI_influence_PFP_dynamic_var
+		value = CHI_influence_PFP
+	}
+	multiply_variable = {
+		var = CHI_influence_PFP_dynamic_var
+		value = 0.2
+	}
+}
