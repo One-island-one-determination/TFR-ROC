@@ -1357,7 +1357,45 @@ country_event = {
 	}
 	option = {
 		name = ROC_CHI.34.a
-		
+		CHI = {
+			if = {
+				limit = {
+					has_country_leader = {
+						character = CHI_han_kuo_yu_char
+						ruling_only = yes
+					}
+				}
+				set_country_leader_portrait = {
+					ideology = authoritarian_democrat
+					portrait = GFX_portrait_CHI_han_kuo_yu_taiwan_win
+				}
+				set_country_leader_portrait = {
+					ideology = conservative
+					portrait = GFX_portrait_CHI_han_kuo_yu_taiwan_win
+				}
+				hidden_effect = {
+				add_popularity = { ideology = conservative popularity = 0.20 }
+				set_politics = {
+				ruling_party = conservative
+				last_election = "2020.1.11"
+				election_frequency = 48
+				elections_allowed = yes
+				}
+			}
+			}
+			else_if = {
+				limit = {
+					has_country_leader = {
+						character = CHI_tsai_ing_wen_char
+						ruling_only = yes
+					}
+				}
+				set_country_leader_portrait = {
+					ideology = social_liberal
+					portrait = GFX_portrait_CHI_tsai_ing_taiwan_win
+				}
+			}
+		}
 		hidden_effect = {
 		}
 	}
@@ -3094,9 +3132,18 @@ country_event = {
 					}
 				}
 				set_country_leader_portrait = {
-					ideology = conservative
+					ideology = authoritarian_democrat
 					portrait = GFX_portrait_CHI_han_kuo_yu_military
 				}
+				hidden_effect = {
+				add_popularity = { ideology = authoritarian_democrat popularity = 0.40 }
+				set_politics = {
+				ruling_party = authoritarian_democrat
+				last_election = "2020.1.11"
+				election_frequency = 48
+				elections_allowed = yes
+				}
+			}
 			}
 			else_if = {
 				limit = {
