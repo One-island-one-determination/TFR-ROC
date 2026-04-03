@@ -441,6 +441,14 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ROC_CHI.7
+				days = 7
+			}
+		}
+	}
 	option = {
 		name = ROC.89.a
 		add_ideas = CHI_united_as_one_idea
@@ -596,8 +604,12 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
-		PRC = {	load_oob = "The_PRC_Marine_Corps_tainan"}
+		PRC = {	load_oob = "The_PRC_Marine_Corps_taizhong"}
 		}
+		country_event = {
+				id = ROC_CHI.10
+				days = 4
+			}
 	}
 	option = {
 		name = ROC_CHI.9.a
@@ -640,12 +652,23 @@ country_event = {
 			}
 promote_character = {
 	character = CHI_chen_yi_qi_char
-	ideology = CHI_Shina_Destructionism
+	ideology = ultranationalism
 }
-promote_character = {
-	character = CHI_chen_yi_qi_char
-	ideology = babylonian_nazism
-}
+add_country_leader_role = {
+		character = CHI_chen_yi_qi_char
+		promote_leader = yes
+		country_leader = {
+			desc = CHI_chen_yi_qi_char_desc
+			ideology = ultranationalism
+			expire = "1.1.1.1"
+		}
+	}
+create_country_leader = {
+		name = "劉一德"
+		picture = "gfx/Leaders/PHI_civil_war/PHN_Torribio_D_Adachi.png"
+		ideology=national_spartanism
+		expire="1.1.1.1"
+			}
 
 		hidden_effect = {
 		}
@@ -664,6 +687,10 @@ country_event = {
 		hidden_effect = {
 		PRC = {	load_oob = "The_PRC_Marine_Corps_taidong"}
 		}
+		country_event = {
+				id = ROC_CHI.13
+				days = 5
+			}
 	}
 	option = {
 		name = ROC_CHI.12.a
@@ -721,7 +748,10 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			PRC = {	load_oob = "The_PRC_Marine_Corps_taibei"}
-			PRC = {	load_oob = "The_PRC_Marine_Corps_taizhong"}
+			country_event = {
+				id = ROC_CHI.15
+				days = 3
+			}
 		}
 	}
 	option = {
@@ -847,6 +877,10 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
+			country_event = {
+				id = ROC_CHI.19
+				days = 7
+			}
 		}
 	}
 	option = {
@@ -888,7 +922,72 @@ country_event = {
 			PRC = {	load_oob = "The_PRC_Marine_Corps_taibei"}
 			PRC = {	load_oob = "The_PRC_Marine_Corps_taizhong"}
 			PRC = {	load_oob = "The_PRC_Marine_Corps_tainan"}
+			damage_units = {
+				state = 1148
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			damage_units = {
+				state = 1149
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
+			damage_units = {
+				state = 1150
+				damage = 0.15
+				org_damage = 0.15
+				str_damage = 0.15
+				ratio = yes
+				army = yes
+				navy = no
+			}
 			1148 = {
+					add_manpower = -34821
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+			1149 = {
+					add_manpower = -34821
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+			1150 = {
 					add_manpower = -34821
 					damage_building = {
 						type = infrastructure
@@ -911,37 +1010,7 @@ country_event = {
 	}
 	option = {
 		name = ROC_CHI.20.a
-		effect_tooltip = {
-			1148 = {
-					add_manpower = -10213
-					damage_building = {
-						type = infrastructure
-						damage = 2
-					}
-					damage_building = {
-						type = arms_factory
-						damage = 2
-					}
-					damage_building = {
-						type = industrial_complex
-						damage = 2
-					}
-					damage_building = {
-						type = dockyard
-						damage = 2
-					}
-				}
-		}
-		add_country_leader_role = {
-		character = CHI_lai_ching_te_char
-		promote_leader = yes
-		country_leader = {
-			#desc = CHI_tsai_ing_wen_char_desc
-				traits={ CHI_hos_madam_president }
-			ideology = CHI_Taiwanese_Progressivism2
-			expire = "1.1.1.1"
-		}
-	}
+
 		hidden_effect = {
 		}
 	}
@@ -962,6 +1031,333 @@ country_event = {
 	option = {
 		name = ROC_CHI.21.a
 		add_ideas = CHI_phantom_legions_idea
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.22
+	title = ROC_CHI.22.t
+	desc = ROC_CHI.22.d
+	picture = ROC_CHI_Event_22
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id ROC_CHI.23
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = ROC_CHI.22.a
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
+		set_temp_variable = {
+			coalition_partner_var_temp = token:social_democrat
+		}
+		add_to_coalition = yes
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.23
+	title = ROC_CHI.23.t
+	desc = ROC_CHI.23.d
+	picture = ROC_CHI_Event_23
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id ROC_CHI.24
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = ROC_CHI.23.a
+		add_popularity = { ideology = market_liberal popularity = 0.10 }
+		set_temp_variable = {
+			coalition_partner_var_temp = token:market_liberal
+		}
+		add_to_coalition = yes
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.24
+	title = ROC_CHI.24.t
+	desc = ROC_CHI.24.d
+	picture = ROC_CHI_Event_24
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id ROC_CHI.25
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = ROC_CHI.24.a
+		add_popularity = { ideology = fascist popularity = 0.05 }
+		set_temp_variable = {
+			coalition_partner_var_temp = token:fascist
+		}
+		add_to_coalition = yes
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.25
+	title = ROC_CHI.25.t
+	desc = ROC_CHI.25.d
+	picture = ROC_CHI_Event_25
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = ROC_CHI.25.a
+		add_popularity = { ideology = conservative popularity = 0.05 }
+		set_temp_variable = {
+			coalition_partner_var_temp = token:conservative
+		}
+		add_to_coalition = yes
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = ROC_CHI.26
+	title = ROC_CHI.26.t
+	desc = ROC_CHI.26.d
+	picture = ROC_CHI_Event_26
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.26.a
+		add_popularity = { ideology = national_socialist popularity = 0.05 }
+		set_temp_variable = {
+			coalition_partner_var_temp = token:national_socialist
+		}
+		add_to_coalition = yes
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.27
+	title = ROC_CHI.27.t
+	desc = ROC_CHI.27.d
+	picture = ROC_CHI_Event_27
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.27.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.28
+	title = ROC_CHI.28.t
+	desc = ROC_CHI.28.d
+	picture = ROC_CHI_Event_28
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.28.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.29
+	title = ROC_CHI.29.t
+	desc = ROC_CHI.29.d
+	picture = ROC_CHI_Event_29
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.29.a
+		country_event = {
+				id = ROC_CHI.30
+				days = 5
+			}
+		hidden_effect = {
+			
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.30
+	title = ROC_CHI.30.t
+	desc = ROC_CHI.30.d
+	picture = ROC_CHI_Event_29
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.30.a
+		add_popularity = { ideology = nationalist popularity = 0.05 }
+			set_party_name = { ideology = nationalist long_name = CHI_KMT_nati name = CHI_KMT_nati }
+		set_temp_variable = {
+			coalition_partner_var_temp = token:nationalist
+		}
+		add_to_coalition = yes
+		hidden_effect = {
+	
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.31
+	title = ROC_CHI.31.t
+	desc = ROC_CHI.31.d
+	picture = ROC_CHI_Event_31
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.31.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.32
+	title = ROC_CHI.32.t
+	desc = ROC_CHI.32.d
+	picture = ROC_CHI_Event_32
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.32.a
+		add_manpower = -100000
+		if = {
+					limit = {
+						NOT = {
+							has_template = "中華民國陸軍步兵旅"
+						}
+					}
+					division_template = {
+						name = "中華民國陸軍步兵旅"
+						division_names_group = CHI_INF_1
+						is_locked = no
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							artillery_brigade = { x = 1 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"紧急预备役\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 0.7"
+						id = 1949
+						owner = CHI
+						count = 20
+					}
+				}
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC_CHI.33
+	title = ROC_CHI.33.t
+	desc = ROC_CHI.33.d
+	picture = ROC_CHI_Event_33
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.33.a
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = ROC_CHI.34
+	title = ROC_CHI.34.t
+	desc = ROC_CHI.34.d
+	picture = ROC_CHI_Event_34
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = ROC_CHI.34.a
+		
 		hidden_effect = {
 		}
 	}
@@ -3063,8 +3459,24 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id ROC_CHI.22
+				days = 3
+			}
+		}
+	}
 	option = {
 		name = ROC.40.a
+		set_temp_variable = {
+			coalition_partner_var_temp = token:authoritarian_democrat
+		}
+		add_to_coalition = yes
+		set_temp_variable = {
+			coalition_partner_var_temp = token:social_liberal
+		}
+		add_to_coalition = yes
 		if = {
 			limit = {
 				has_ideas = CHI_KMT_protests
