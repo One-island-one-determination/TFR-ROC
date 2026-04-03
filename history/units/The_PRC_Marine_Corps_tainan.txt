@@ -10,9 +10,9 @@ division_template = {
 		amphibious_mechanized = { x = 1 y = 1 }
 		amphibious_mechanized = { x = 1 y = 2 }
 		
-		amphibious_armor = { x = 2 y = 0 }
-		amphibious_armor = { x = 2 y = 1 }
-		amphibious_armor = { x = 2 y = 2 }
+		amphibious_mechanized = { x = 2 y = 0 }
+		amphibious_mechanized = { x = 2 y = 1 }
+		amphibious_mechanized = { x = 2 y = 2 }
 
 		amphibious_armor = { x = 3 y = 0 }
 		amphibious_armor = { x = 3 y = 1 }
@@ -22,14 +22,13 @@ division_template = {
 		modern_sp_artillery_brigade = { x = 4 y = 1 }
 	}
 	
-	support = {
-		light_tank_recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		spaa_company = { x = 0 y = 2}
-		military_police = { x = 0 y = 3}
-		spa_company = { x = 0 y = 4}
-	}
-	
+	#support = {
+	#	light_tank_recon = { x = 0 y = 0 }
+	#	engineer = { x = 0 y = 1 }
+	#	spaa_company = { x = 0 y = 2}
+	#	military_police = { x = 0 y = 3}
+	#	spa_company = { x = 0 y = 4}
+	#}
 }
 
 
@@ -40,6 +39,7 @@ units = {
 		location = 13965
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 	
 	division = {
@@ -47,6 +47,7 @@ units = {
 		location = 13966
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 
 	division = {
@@ -54,6 +55,7 @@ units = {
 		location = 12068
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 	
 	division = {
@@ -61,12 +63,14 @@ units = {
 		location = 1091
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "中国海军陆战队"
 		location = 13965
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 	
 	division = {
@@ -74,6 +78,7 @@ units = {
 		location = 13966
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 
 	division = {
@@ -81,6 +86,7 @@ units = {
 		location = 12068
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 	
 	division = {
@@ -88,12 +94,14 @@ units = {
 		location = 1091
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "中国海军陆战队"
 		location = 13965
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 	
 	division = {
@@ -101,6 +109,7 @@ units = {
 		location = 13966
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 
 	division = {
@@ -108,6 +117,7 @@ units = {
 		location = 12068
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 	
 	division = {
@@ -115,12 +125,14 @@ units = {
 		location = 1091
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "中国海军陆战队"
 		location = 13965
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 	
 	division = {
@@ -128,6 +140,7 @@ units = {
 		location = 13966
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 
 	division = {
@@ -135,6 +148,7 @@ units = {
 		location = 12068
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 	
 	division = {
@@ -142,6 +156,7 @@ units = {
 		location = 1091
 		division_template = "中国海军陆战队"
 		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
 	}
 
 
