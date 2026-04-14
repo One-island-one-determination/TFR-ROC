@@ -6,7 +6,6 @@ bookmarks = {
 		picture = "GFX_select_date_2020"
 		default_country = "CHI"
 		default = yes
-		
 		"CHI" = {
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = communist
@@ -22,9 +21,8 @@ bookmarks = {
 			}
 		}
 		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			randomize_weather = 22345			# <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
 	}
 }
-

@@ -1,14 +1,14 @@
-	bookmarks = { #Leave this bookmark here, the way the interface file is setup will move this bookmark off the screen so that one start date is selectable.
-		bookmark = {
-			name = "FIRE_NAME_blank"
-			desc = "FIRE_NAME_DESC"
-			date = 2020.1.1.1
-			picture = "GFX_select_date_2020"
-			default = no
-			
-			effect = {
-				randomize_weather = 22345 # <- Obligatory in every bookmark !
-				#123 = { rain_light = yes }
-			}
+bookmarks = {
+	#Leave this bookmark here, the way the interface file is setup will move this bookmark off the screen so that one start date is selectable.
+	bookmark = {
+		name = "FIRE_NAME_blank"
+		desc = "FIRE_NAME_DESC"
+		date = 2020.1.1.1
+		picture = "GFX_select_date_2020"
+		default = no
+		effect = {
+			randomize_weather = 22345			# <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
 		}
 	}
+}

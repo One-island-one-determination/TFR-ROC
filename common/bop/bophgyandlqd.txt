@@ -115,6 +115,7 @@ CHI_HanKuoyu_andLaiChingte_power_balance = {
 		}
 	}
 }
+
 CHI_Identity_dispute = {
 	initial_value = 0
 	left_side = CHI_Identity_dispute_ROC_side
@@ -126,11 +127,11 @@ CHI_Identity_dispute = {
 		min = -0.15
 		max = 0.15
 		modifier = {
-			political_power_gain = -0.50
+			political_power_gain = -0.5
 			stability_weekly = -0.003
 			party_popularity_stability_factor = -0.05
 			conservative_drift = 0.01
-			social_liberal_drift = 0.01 
+			social_liberal_drift = 0.01
 			social_democrat_drift = 0.01
 			market_liberal_drift = 0.01
 			libertarian_socialist_drift = 0.01
@@ -155,14 +156,14 @@ CHI_Identity_dispute = {
 			modifier = {
 				political_power_gain = 1.5
 				offensive_war_stability_factor = 0.15
-				stability_factor = -0.10
+				stability_factor = -0.1
 				war_support_weekly = 0.05
 				war_support_factor = 0.15
-				conscription_factor = 0.20
+				conscription_factor = 0.2
 				army_claim_attack_factor = 0.25
 				army_claim_defence_factor = 0.25
-				army_core_attack_factor = 0.10
-				army_core_defence_factor = 0.10
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 			on_activate = {
 				custom_effect_tooltip = CHI_Identity_dispute_ROC_side_tt
@@ -178,114 +179,138 @@ CHI_Identity_dispute = {
 				}
 				hidden_effect = {
 					if = {
-					limit = {
-						CHI_han_kuo_yu_char = {
-						is_country_leader = yes
-					}
-					}
-					hidden_effect = {
-						set_party_name = { ideology = nationalist long_name = CHI_armry_party1 name = CHI_armry_party1 }
-					set_party_name = { ideology = conscription long_name = CHI_conservative_party2 name = CHI_conservative_party2 }
-				set_party_name = { ideology = authoritarian_democrat long_name = CHI_authoritarian_democrat_party2 name = CHI_authoritarian_democrat_party2 }
-				set_party_name = { ideology = market_liberal long_name = CHI_market_liberal_party2 name = CHI_market_liberal_party2 }
-				set_party_name = { ideology = social_liberal long_name = CHI_social_liberal_party2 name = CHI_social_liberal_party2 }
-				set_party_name = { ideology = social_democrat long_name = CHI_social_democrat_party2 name = CHI_social_democrat_party2 }
-		add_popularity = { ideology = authoritarian_democrat popularity = 0.15 }
-					set_politics = {
-			ruling_party = authoritarian_democrat 
-       			elections_allowed = yes
-       			election_frequency = 72
-		}
-					set_country_leader_portrait = {
-						ideology = authoritarian_democrat
-						portrait = GFX_portrait_CHI_han_kuo_yu_gaw_win
-					}
-					set_temp_variable = {
-			coalition_partner_var_temp = token:social_democrat
-		}
-		add_to_coalition = yes
-		set_temp_variable = {
-			coalition_partner_var_temp = token:social_liberal
-		}
-		add_to_coalition = yes
-		set_temp_variable = {
-			coalition_partner_var_temp = token:market_liberal
-		}
-		add_to_coalition = yes
-		set_temp_variable = {
-			coalition_partner_var_temp = token:authoritarian_democrat
-		}
-		add_to_coalition = yes
-		set_temp_variable = {
-			coalition_partner_var_temp = token:conservative
-		}
-		add_to_coalition = yes
-		country_event = {
-						id = ROC.91
-						dyas = 3
-					}
-					country_event = {
-						id = ROC.92
-						dyas = 7
-					}
+						limit = {
+							CHI_han_kuo_yu_char = {
+								is_country_leader = yes
+							}
+						}
+						hidden_effect = {
+							set_party_name = {
+								ideology = nationalist
+								long_name = CHI_armry_party1
+								name = CHI_armry_party1
+							}
+							set_party_name = {
+								ideology = conscription
+								long_name = CHI_conservative_party2
+								name = CHI_conservative_party2
+							}
+							set_party_name = {
+								ideology = authoritarian_democrat
+								long_name = CHI_authoritarian_democrat_party2
+								name = CHI_authoritarian_democrat_party2
+							}
+							set_party_name = {
+								ideology = market_liberal
+								long_name = CHI_market_liberal_party2
+								name = CHI_market_liberal_party2
+							}
+							set_party_name = {
+								ideology = social_liberal
+								long_name = CHI_social_liberal_party2
+								name = CHI_social_liberal_party2
+							}
+							set_party_name = {
+								ideology = social_democrat
+								long_name = CHI_social_democrat_party2
+								name = CHI_social_democrat_party2
+							}
+							add_popularity = {
+								ideology = authoritarian_democrat
+								popularity = 0.15
+							}
+							set_politics = {
+								ruling_party = authoritarian_democrat
+								elections_allowed = yes
+								election_frequency = 72
+							}
+							set_country_leader_portrait = {
+								ideology = authoritarian_democrat
+								portrait = GFX_portrait_CHI_han_kuo_yu_gaw_win
+							}
+							set_temp_variable = {
+								coalition_partner_var_temp = token:social_democrat
+							}
+							add_to_coalition = yes
+							set_temp_variable = {
+								coalition_partner_var_temp = token:social_liberal
+							}
+							add_to_coalition = yes
+							set_temp_variable = {
+								coalition_partner_var_temp = token:market_liberal
+							}
+							add_to_coalition = yes
+							set_temp_variable = {
+								coalition_partner_var_temp = token:authoritarian_democrat
+							}
+							add_to_coalition = yes
+							set_temp_variable = {
+								coalition_partner_var_temp = token:conservative
+							}
+							add_to_coalition = yes
+							country_event = {
+								id = ROC.91
+								dyas = 3
+							}
+							country_event = {
+								id = ROC.92
+								dyas = 7
+							}
+						}
 					}
 				}
+				set_temp_variable = {
+					var = CHI_influence_KMT_temp
+					value = 0.2
 				}
-				
+				CHI_influence_KMT_add = yes
 				set_temp_variable = {
-						var = CHI_influence_KMT_temp
-						value = 0.20
-					}
-					CHI_influence_KMT_add = yes
+					var = CHI_influence_NPSU_temp
+					value = 0.2
+				}
+				CHI_influence_NPSU_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPSU_temp
-						value = 0.20
-					}
-					CHI_influence_NPSU_add = yes
-					set_temp_variable = {
-						var = CHI_influence_PFP_temp
-						value = 0.20
-					}
-					CHI_influence_PFP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_NP_temp
-						value = 0.20
-					}
-					CHI_influence_NP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_LP_temp
-						value = 0.20
-					}
-					CHI_influence_LP_add = yes
+					var = CHI_influence_PFP_temp
+					value = 0.2
+				}
+				CHI_influence_PFP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_NP_temp
+					value = 0.2
+				}
+				CHI_influence_NP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_LP_temp
+					value = 0.2
+				}
+				CHI_influence_LP_add = yes
 			}
 			on_deactivate = {
-				
-				
 				set_temp_variable = {
-						var = CHI_influence_KMT_temp
-						value = -0.10
-					}
-					CHI_influence_KMT_add = yes
+					var = CHI_influence_KMT_temp
+					value = -0.1
+				}
+				CHI_influence_KMT_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPSU_temp
-						value = -0.10
-					}
-					CHI_influence_NPSU_add = yes
-					set_temp_variable = {
-						var = CHI_influence_PFP_temp
-						value = -0.10
-					}
-					CHI_influence_PFP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_NP_temp
-						value = -0.10
-					}
-					CHI_influence_NP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_LP_temp
-						value = -0.10
-					}
-					CHI_influence_LP_add = yes
+					var = CHI_influence_NPSU_temp
+					value = -0.1
+				}
+				CHI_influence_NPSU_add = yes
+				set_temp_variable = {
+					var = CHI_influence_PFP_temp
+					value = -0.1
+				}
+				CHI_influence_PFP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_NP_temp
+					value = -0.1
+				}
+				CHI_influence_NP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_LP_temp
+					value = -0.1
+				}
+				CHI_influence_LP_add = yes
 			}
 		}
 		range = {
@@ -294,71 +319,69 @@ CHI_Identity_dispute = {
 			max = -0.65
 			modifier = {
 				political_power_gain = 1.5
-				offensive_war_stability_factor = 0.10
+				offensive_war_stability_factor = 0.1
 				stability_factor = -0.05
 				war_support_weekly = 0.03
 				war_support_factor = 0.15
 				conscription_factor = 0.15
-				army_claim_attack_factor = 0.20
-				army_claim_defence_factor = 0.20
-				army_core_attack_factor = 0.10
-				army_core_defence_factor = 0.10
+				army_claim_attack_factor = 0.2
+				army_claim_defence_factor = 0.2
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 			on_activate = {
-				
 				set_temp_variable = {
-						var = CHI_influence_KMT_temp
-						value = 0.15
-					}
-					CHI_influence_KMT_add = yes
+					var = CHI_influence_KMT_temp
+					value = 0.15
+				}
+				CHI_influence_KMT_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPSU_temp
-						value = 0.15
-					}
-					CHI_influence_NPSU_add = yes
-					set_temp_variable = {
-						var = CHI_influence_PFP_temp
-						value = 0.15
-					}
-					CHI_influence_PFP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_NP_temp
-						value = 0.15
-					}
-					CHI_influence_NP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_LP_temp
-						value = 0.15
-					}
-					CHI_influence_LP_add = yes
+					var = CHI_influence_NPSU_temp
+					value = 0.15
+				}
+				CHI_influence_NPSU_add = yes
+				set_temp_variable = {
+					var = CHI_influence_PFP_temp
+					value = 0.15
+				}
+				CHI_influence_PFP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_NP_temp
+					value = 0.15
+				}
+				CHI_influence_NP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_LP_temp
+					value = 0.15
+				}
+				CHI_influence_LP_add = yes
 			}
 			on_deactivate = {
-				
 				set_temp_variable = {
-						var = CHI_influence_KMT_temp
-						value = -0.10
-					}
-					CHI_influence_KMT_add = yes
+					var = CHI_influence_KMT_temp
+					value = -0.1
+				}
+				CHI_influence_KMT_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPSU_temp
-						value = -0.10
-					}
-					CHI_influence_NPSU_add = yes
-					set_temp_variable = {
-						var = CHI_influence_PFP_temp
-						value = -0.10
-					}
-					CHI_influence_PFP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_NP_temp
-						value = -0.10
-					}
-					CHI_influence_NP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_LP_temp
-						value = -0.10
-					}
-					CHI_influence_LP_add = yes
+					var = CHI_influence_NPSU_temp
+					value = -0.1
+				}
+				CHI_influence_NPSU_add = yes
+				set_temp_variable = {
+					var = CHI_influence_PFP_temp
+					value = -0.1
+				}
+				CHI_influence_PFP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_NP_temp
+					value = -0.1
+				}
+				CHI_influence_NP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_LP_temp
+					value = -0.1
+				}
+				CHI_influence_LP_add = yes
 			}
 		}
 		range = {
@@ -368,70 +391,68 @@ CHI_Identity_dispute = {
 			modifier = {
 				political_power_gain = 0.5
 				offensive_war_stability_factor = 0.05
-				stability_factor = 0.00
+				stability_factor = 0
 				war_support_weekly = 0.02
-				war_support_factor = 0.10
-				conscription_factor = 0.10
+				war_support_factor = 0.1
+				conscription_factor = 0.1
 				army_claim_attack_factor = 0.15
 				army_claim_defence_factor = 0.15
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
 			}
 			on_activate = {
-				
 				set_temp_variable = {
-						var = CHI_influence_KMT_temp
-						value = 0.10
-					}
-					CHI_influence_KMT_add = yes
+					var = CHI_influence_KMT_temp
+					value = 0.1
+				}
+				CHI_influence_KMT_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPSU_temp
-						value = 0.10
-					}
-					CHI_influence_NPSU_add = yes
-					set_temp_variable = {
-						var = CHI_influence_PFP_temp
-						value = 0.10
-					}
-					CHI_influence_PFP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_NP_temp
-						value = 0.10
-					}
-					CHI_influence_NP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_LP_temp
-						value = 0.10
-					}
-					CHI_influence_LP_add = yes
+					var = CHI_influence_NPSU_temp
+					value = 0.1
+				}
+				CHI_influence_NPSU_add = yes
+				set_temp_variable = {
+					var = CHI_influence_PFP_temp
+					value = 0.1
+				}
+				CHI_influence_PFP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_NP_temp
+					value = 0.1
+				}
+				CHI_influence_NP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_LP_temp
+					value = 0.1
+				}
+				CHI_influence_LP_add = yes
 			}
 			on_deactivate = {
-				
 				set_temp_variable = {
-						var = CHI_influence_KMT_temp
-						value = -0.05
-					}
-					CHI_influence_KMT_add = yes
+					var = CHI_influence_KMT_temp
+					value = -0.05
+				}
+				CHI_influence_KMT_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPSU_temp
-						value = -0.05
-					}
-					CHI_influence_NPSU_add = yes
-					set_temp_variable = {
-						var = CHI_influence_PFP_temp
-						value = -0.05
-					}
-					CHI_influence_PFP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_NP_temp
-						value = -0.05
-					}
-					CHI_influence_NP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_LP_temp
-						value = -0.05
-					}
-					CHI_influence_LP_add = yes
+					var = CHI_influence_NPSU_temp
+					value = -0.05
+				}
+				CHI_influence_NPSU_add = yes
+				set_temp_variable = {
+					var = CHI_influence_PFP_temp
+					value = -0.05
+				}
+				CHI_influence_PFP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_NP_temp
+					value = -0.05
+				}
+				CHI_influence_NP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_LP_temp
+					value = -0.05
+				}
+				CHI_influence_LP_add = yes
 			}
 		}
 		range = {
@@ -445,38 +466,37 @@ CHI_Identity_dispute = {
 				war_support_weekly = 0.01
 				war_support_factor = 0.05
 				conscription_factor = 0.05
-				army_claim_attack_factor = 0.10
-				army_claim_defence_factor = 0.10
+				army_claim_attack_factor = 0.1
+				army_claim_defence_factor = 0.1
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
 			}
 			on_activate = {
-				
 				set_temp_variable = {
-						var = CHI_influence_KMT_temp
-						value = 0.05
-					}
-					CHI_influence_KMT_add = yes
+					var = CHI_influence_KMT_temp
+					value = 0.05
+				}
+				CHI_influence_KMT_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPSU_temp
-						value = 0.05
-					}
-					CHI_influence_NPSU_add = yes
-					set_temp_variable = {
-						var = CHI_influence_PFP_temp
-						value = 0.05
-					}
-					CHI_influence_PFP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_NP_temp
-						value = 0.05
-					}
-					CHI_influence_NP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_LP_temp
-						value = 0.05
-					}
-					CHI_influence_LP_add = yes
+					var = CHI_influence_NPSU_temp
+					value = 0.05
+				}
+				CHI_influence_NPSU_add = yes
+				set_temp_variable = {
+					var = CHI_influence_PFP_temp
+					value = 0.05
+				}
+				CHI_influence_PFP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_NP_temp
+					value = 0.05
+				}
+				CHI_influence_NP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_LP_temp
+					value = 0.05
+				}
+				CHI_influence_LP_add = yes
 			}
 			on_deactivate = {
 			}
@@ -501,35 +521,33 @@ CHI_Identity_dispute = {
 				master_ideology_drift = 0.01
 			}
 			on_activate = {
-				
 				set_temp_variable = {
-						var = CHI_influence_DPP_temp
-						value = 0.05
-					}
-					CHI_influence_DPP_add = yes
+					var = CHI_influence_DPP_temp
+					value = 0.05
+				}
+				CHI_influence_DPP_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPP_temp
-						value = 0.05
-					}
-					CHI_influence_NPP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TSP_temp
-						value = 0.05
-					}
-					CHI_influence_TSP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_SDP_temp
-						value = 0.05
-					}
-					CHI_influence_SDP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TPP_temp
-						value = 0.05
-					}
-					CHI_influence_TPP_add = yes
+					var = CHI_influence_NPP_temp
+					value = 0.05
+				}
+				CHI_influence_NPP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TSP_temp
+					value = 0.05
+				}
+				CHI_influence_TSP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_SDP_temp
+					value = 0.05
+				}
+				CHI_influence_SDP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TPP_temp
+					value = 0.05
+				}
+				CHI_influence_TPP_add = yes
 			}
 			on_deactivate = {
-				
 			}
 		}
 		range = {
@@ -538,70 +556,68 @@ CHI_Identity_dispute = {
 			max = 0.65
 			modifier = {
 				political_power_gain = 1
-				defensive_war_stability_factor = 0.20
+				defensive_war_stability_factor = 0.2
 				stability_factor = 0.05
 				war_support_factor = 0.05
-				conscription_factor = 0.10
-				army_core_attack_factor = 0.10
-				army_core_defence_factor = 0.10
-				supply_combat_penalties_on_core_factor = -0.10
+				conscription_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				supply_combat_penalties_on_core_factor = -0.1
 				master_ideology_drift = 0.02
 			}
 			on_activate = {
-				
 				set_temp_variable = {
-						var = CHI_influence_DPP_temp
-						value = 0.10
-					}
-					CHI_influence_DPP_add = yes
+					var = CHI_influence_DPP_temp
+					value = 0.1
+				}
+				CHI_influence_DPP_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPP_temp
-						value = 0.10
-					}
-					CHI_influence_NPP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TSP_temp
-						value = 0.10
-					}
-					CHI_influence_TSP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_SDP_temp
-						value = 0.10
-					}
-					CHI_influence_SDP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TPP_temp
-						value = 0.10
-					}
-					CHI_influence_TPP_add = yes
+					var = CHI_influence_NPP_temp
+					value = 0.1
+				}
+				CHI_influence_NPP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TSP_temp
+					value = 0.1
+				}
+				CHI_influence_TSP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_SDP_temp
+					value = 0.1
+				}
+				CHI_influence_SDP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TPP_temp
+					value = 0.1
+				}
+				CHI_influence_TPP_add = yes
 			}
 			on_deactivate = {
-			
 				set_temp_variable = {
-						var = CHI_influence_DPP_temp
-						value = -0.05
-					}
-					CHI_influence_DPP_add = yes
+					var = CHI_influence_DPP_temp
+					value = -0.05
+				}
+				CHI_influence_DPP_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPP_temp
-						value = -0.05
-					}
-					CHI_influence_NPP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TSP_temp
-						value = -0.05
-					}
-					CHI_influence_TSP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_SDP_temp
-						value = -0.05
-					}
-					CHI_influence_SDP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TPP_temp
-						value = -0.05
-					}
-					CHI_influence_TPP_add = yes
+					var = CHI_influence_NPP_temp
+					value = -0.05
+				}
+				CHI_influence_NPP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TSP_temp
+					value = -0.05
+				}
+				CHI_influence_TSP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_SDP_temp
+					value = -0.05
+				}
+				CHI_influence_SDP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TPP_temp
+					value = -0.05
+				}
+				CHI_influence_TPP_add = yes
 			}
 		}
 		range = {
@@ -611,8 +627,8 @@ CHI_Identity_dispute = {
 			modifier = {
 				political_power_gain = 1
 				defensive_war_stability_factor = 0.25
-				stability_factor = 0.10
-				war_support_factor = 0.10
+				stability_factor = 0.1
+				war_support_factor = 0.1
 				conscription_factor = 0.15
 				army_core_attack_factor = 0.15
 				army_core_defence_factor = 0.15
@@ -620,60 +636,58 @@ CHI_Identity_dispute = {
 				master_ideology_drift = 0.03
 			}
 			on_activate = {
-				
 				set_temp_variable = {
-						var = CHI_influence_DPP_temp
-						value = 0.15
-					}
-					CHI_influence_DPP_add = yes
+					var = CHI_influence_DPP_temp
+					value = 0.15
+				}
+				CHI_influence_DPP_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPP_temp
-						value = 0.15
-					}
-					CHI_influence_NPP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TSP_temp
-						value = 0.15
-					}
-					CHI_influence_TSP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_SDP_temp
-						value = 0.15
-					}
-					CHI_influence_SDP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TPP_temp
-						value = 0.15
-					}
-					CHI_influence_TPP_add = yes
+					var = CHI_influence_NPP_temp
+					value = 0.15
+				}
+				CHI_influence_NPP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TSP_temp
+					value = 0.15
+				}
+				CHI_influence_TSP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_SDP_temp
+					value = 0.15
+				}
+				CHI_influence_SDP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TPP_temp
+					value = 0.15
+				}
+				CHI_influence_TPP_add = yes
 			}
 			on_deactivate = {
-				
 				set_temp_variable = {
-						var = CHI_influence_DPP_temp
-						value = -0.10
-					}
-					CHI_influence_DPP_add = yes
+					var = CHI_influence_DPP_temp
+					value = -0.1
+				}
+				CHI_influence_DPP_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPP_temp
-						value = -0.10
-					}
-					CHI_influence_NPP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TSP_temp
-						value = -0.10
-					}
-					CHI_influence_TSP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_SDP_temp
-						value = -0.10
-					}
-					CHI_influence_SDP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TPP_temp
-						value = -0.10
-					}
-					CHI_influence_TPP_add = yes
+					var = CHI_influence_NPP_temp
+					value = -0.1
+				}
+				CHI_influence_NPP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TSP_temp
+					value = -0.1
+				}
+				CHI_influence_TSP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_SDP_temp
+					value = -0.1
+				}
+				CHI_influence_SDP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TPP_temp
+					value = -0.1
+				}
+				CHI_influence_TPP_add = yes
 			}
 		}
 		range = {
@@ -682,46 +696,44 @@ CHI_Identity_dispute = {
 			max = 1
 			modifier = {
 				political_power_gain = 1.5
-				defensive_war_stability_factor = 0.30
-				stability_factor = 0.10
+				defensive_war_stability_factor = 0.3
+				stability_factor = 0.1
 				war_support_factor = 0.15
-				conscription_factor = 0.20
-				army_core_attack_factor = 0.20
-				army_core_defence_factor = 0.20
-				supply_combat_penalties_on_core_factor = -0.20
+				conscription_factor = 0.2
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				supply_combat_penalties_on_core_factor = -0.2
 				master_ideology_drift = 0.04
 			}
 			on_activate = {
 				custom_effect_tooltip = CHI_Identity_dispute_TW_side_tt
 				custom_effect_tooltip = weiwancheng
-				
 				set_temp_variable = {
-						var = CHI_influence_DPP_temp
-						value = 0.20
-					}
-					CHI_influence_DPP_add = yes
+					var = CHI_influence_DPP_temp
+					value = 0.2
+				}
+				CHI_influence_DPP_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPP_temp
-						value = 0.20
-					}
-					CHI_influence_NPP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TSP_temp
-						value = 0.20
-					}
-					CHI_influence_TSP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_SDP_temp
-						value = 0.20
-					}
-					CHI_influence_SDP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TPP_temp
-						value = 0.20
-					}
-					CHI_influence_TPP_add = yes
+					var = CHI_influence_NPP_temp
+					value = 0.2
+				}
+				CHI_influence_NPP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TSP_temp
+					value = 0.2
+				}
+				CHI_influence_TSP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_SDP_temp
+					value = 0.2
+				}
+				CHI_influence_SDP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TPP_temp
+					value = 0.2
+				}
+				CHI_influence_TPP_add = yes
 			}
-			
 			on_deactivate = {
 				#if = {
 				#	limit = {
@@ -733,32 +745,31 @@ CHI_Identity_dispute = {
 				#	}
 				#	add_popularity = { ideology = conservative popularity = -0.20 }
 				#}
-			
 				set_temp_variable = {
-						var = CHI_influence_DPP_temp
-						value = -0.10
-					}
-					CHI_influence_DPP_add = yes
+					var = CHI_influence_DPP_temp
+					value = -0.1
+				}
+				CHI_influence_DPP_add = yes
 				set_temp_variable = {
-						var = CHI_influence_NPP_temp
-						value = -0.10
-					}
-					CHI_influence_NPP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TSP_temp
-						value = -0.10
-					}
-					CHI_influence_TSP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_SDP_temp
-						value = -0.10
-					}
-					CHI_influence_SDP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TPP_temp
-						value = -0.10
-					}
-					CHI_influence_TPP_add = yes
+					var = CHI_influence_NPP_temp
+					value = -0.1
+				}
+				CHI_influence_NPP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TSP_temp
+					value = -0.1
+				}
+				CHI_influence_TSP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_SDP_temp
+					value = -0.1
+				}
+				CHI_influence_SDP_add = yes
+				set_temp_variable = {
+					var = CHI_influence_TPP_temp
+					value = -0.1
+				}
+				CHI_influence_TPP_add = yes
 			}
 		}
 	}

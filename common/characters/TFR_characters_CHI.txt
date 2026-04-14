@@ -1,553 +1,694 @@
-	characters={
-		CHI_tsai_ing_wen_char = { #蔡英文
-			portraits={
-				civilian={
-					large = "gfx/leaders/CHI/CHI_tsai_ing_wen.png"
-				}
-			}
-			country_leader={
-				desc = CHI_tsai_ing_wen_char_desc
-				traits={ CHI_hos_madam_president }
-				ideology = neoliberalism
-				expire = "1.1.1.1"
+characters = {
+	CHI_tsai_ing_wen_char = {
+		#蔡英文
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_tsai_ing_wen.png"
 			}
 		}
-		
-		CHI_han_kuo_yu_char = { #韩国瑜
-			portraits={
-				civilian={
-					large = "gfx/leaders/CHI/CHI_han_kuo_yu.png"
-				}
+		country_leader = {
+			desc = CHI_tsai_ing_wen_char_desc
+			traits = {
+				CHI_hos_madam_president
 			}
-			country_leader={
-				desc = CHI_han_kuo_yu_char_desc
-				traits={ hos_president_of_the_commoners }
-				ideology = constitutionalist
-				expire = "1.1.1.1"
-			}
-			country_leader={
-				desc = CHI_han_kuo_yu_char_desc
-				traits={ hos_president_of_the_commoners }
-				ideology = reformed_tridemism
-				expire = "1.1.1.1"
+			ideology = neoliberalism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_han_kuo_yu_char = {
+		#韩国瑜
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_han_kuo_yu.png"
 			}
 		}
-		
-		CHI_lin_de_wang_char = { #林德旺
-			country_leader={
-				desc = CHI_lin_de_wang_char_desc
-				ideology = marxism_leninism
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_han_kuo_yu_char_desc
+			traits = {
+				hos_president_of_the_commoners
+			}
+			ideology = constitutionalist
+			expire = "1.1.1.1"
+		}
+		country_leader = {
+			desc = CHI_han_kuo_yu_char_desc
+			traits = {
+				hos_president_of_the_commoners
+			}
+			ideology = reformed_tridemism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_lin_de_wang_char = {
+		#林德旺
+		country_leader = {
+			desc = CHI_lin_de_wang_char_desc
+			ideology = marxism_leninism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_wu_rong_yuan_char = {
+		#吴荣元
+		country_leader = {
+			desc = CHI_wu_rong_yuan_char_desc
+			ideology = reformist_socialism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_chen_yi_qi_char = {
+		#陈奕齐
+		country_leader = {
+			desc = CHI_chen_yi_qi_char_desc
+			ideology = progressivism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_nobody_char = {
+		#nobody
+		country_leader = {
+			ideology = maoism
+			expire = "1.1.1.1"
+		}
+		country_leader = {
+			ideology = falun_dafa
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_chen_chen_hsiang_char = {
+		#陈振湘
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_chen_chen_hsiang.png"
 			}
 		}
-
-		CHI_wu_rong_yuan_char = { #吴荣元
-			country_leader={
-				desc = CHI_wu_rong_yuan_char_desc
-				ideology = reformist_socialism
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_chen_chen_hsiang_desc
+			ideology = national_spartanism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_lai_ching_te_char = {
+		#赖清德
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_lai_ching_te.png"
 			}
 		}
-
-		CHI_chen_yi_qi_char = { #陈奕齐
-			country_leader={
-				desc = CHI_chen_yi_qi_char_desc
-				ideology = progressivism
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_lai_ching_te_desc
+			ideology = classical_liberalism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_chen_qi_mai_char = {
+		#陈其迈
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_chen_qi_mai.png"
 			}
 		}
-
-		CHI_nobody_char = { #nobody
-			country_leader={
-				ideology = maoism
-				expire = "1.1.1.1"
-			}
-			country_leader={
-				ideology = falun_dafa
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_chen_qi_mai_desc
+			ideology = progressivism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_zheng_wen_can_char = {
+		#郑文灿
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_zheng_wen_can.png"
 			}
 		}
-
-		CHI_chen_chen_hsiang_char = { #陈振湘
-			portraits={
-				civilian={
-					large = "gfx/leaders/CHI/CHI_chen_chen_hsiang.png"
-				}
-			}
-			country_leader={
-				desc = CHI_chen_chen_hsiang_desc
-				ideology = national_spartanism
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_zheng_wen_can_desc
+			ideology = centrist
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_hou_yu_ih_char = {
+		#侯友宜
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_hou_yu_ih.png"
 			}
 		}
-		
-		CHI_lai_ching_te_char = { #赖清德
-			portraits={
-				civilian={
-					large = "gfx/leaders/CHI/CHI_lai_ching_te.png"
-				}
-			}
-			country_leader={
-				desc = CHI_lai_ching_te_desc
-				ideology = classical_liberalism
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_hou_yu_ih_desc
+			ideology = constitutionalist
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_ko_wen_je_char = {
+		#柯文哲
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_ko_wen_je.png"
 			}
 		}
-
-		CHI_chen_qi_mai_char = { #陈其迈
-			portraits={
-				civilian={
-					large = "gfx/leaders/CHI/CHI_chen_qi_mai.png"
-				}
-			}
-			country_leader={
-				desc = CHI_chen_qi_mai_desc
-				ideology = progressivism
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_ko_wen_je_desc
+			ideology = civic_nationalism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_zhao_shao_kang_char = {
+		#赵少康
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_zhao_shao_kang.png"
 			}
 		}
-		
-		CHI_zheng_wen_can_char = { #郑文灿
-			portraits={
-				civilian={
-					large = "gfx/leaders/CHI/CHI_zheng_wen_can.png"
-				}
-			}
-			country_leader={
-				desc = CHI_zheng_wen_can_desc
-				ideology = centrist
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_zhao_shao_kang_desc
+			ideology = taiwanese_liberal_populism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_hung_chi_chang_char = {
+		#洪奇昌
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_hung_chi_chang.png"
 			}
 		}
-		
-		CHI_hou_yu_ih_char = { #侯友宜
-			portraits={
-				civilian={
-					large = "gfx/leaders/CHI/CHI_hou_yu_ih.png"
-				}
-			}
-			country_leader={
-				desc = CHI_hou_yu_ih_desc
-				ideology = constitutionalist
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_hung_chi_chang_desc
+			ideology = market_socialism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_cai_yanming = {
+		#蔡衍明
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_caiyanming.png"
 			}
 		}
-		
-		CHI_ko_wen_je_char = { #柯文哲
-			portraits={
-				civilian={
-					large = "gfx/leaders/CHI/CHI_ko_wen_je.png"
-				}
-			}
-			country_leader={
-				desc = CHI_ko_wen_je_desc
-				ideology = civic_nationalism
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_cai_yanming_desc
+			ideology = market_socialism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_chen_chuan_kuan_char = {
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/Chen_Chuan_Kuan.dds"
 			}
 		}
-
-		CHI_zhao_shao_kang_char = { #赵少康
-			portraits={
-				civilian={
-					large = "gfx/leaders/CHI/CHI_zhao_shao_kang.png"
-				}
-			}
-			country_leader={
-				desc = CHI_zhao_shao_kang_desc
-				ideology = taiwanese_liberal_populism
-				expire = "1.1.1.1"
-			}
+		corps_commander = {
+			skill = 1
 		}
-		
-		CHI_hung_chi_chang_char = { #洪奇昌
-			portraits={
-				civilian={
-					large = "gfx/leaders/CHI/CHI_hung_chi_chang.png"
-				}
-			}
-			country_leader={
-				desc = CHI_hung_chi_chang_desc
-				ideology = market_socialism
-				expire = "1.1.1.1"
-			}
-		}
-		CHI_cai_yanming = { #蔡衍明
-			portraits={
-				civilian={
-					large = "gfx/leaders/CHI/CHI_caiyanming.png"
-				}
-			}
-			country_leader={
-				desc = CHI_cai_yanming_desc
-				ideology = market_socialism
-				expire = "1.1.1.1"
-			}
-		}
-
-		CHI_chen_chuan_kuan_char = {
-			portraits={
-				army = {
-					large = "gfx/Leaders/CHI/generals/Chen_Chuan_Kuan.dds" 
-				}
-			}
-
-			corps_commander={
-				skill=1
-			}
-		}
+	}
 	#Bane but Taiwanese
-		CHI_Taipei_Demon = {
-			portraits={
-				civilian = {
-					large = "gfx/Leaders/CHI/TaipeiDemon.png" 
-				}
+	CHI_Taipei_Demon = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/CHI/TaipeiDemon.png"
 			}
-			
-			country_leader={
-				ideology = national_spartanism
-				traits = {
+		}
+		country_leader = {
+			ideology = national_spartanism
+			traits = {
 				CHI_Taiwan_Junta_Fanatic
 			}
-				expire = "1.1.1.1"
-			}
-			
+			expire = "1.1.1.1"
 		}
-		CHI_Chen_xinxing_char = { #陈信行
-			portraits={
-				civilian = {
-					large = "gfx/Leaders/CHI/CHI_Chen_xinxing_char.png" 
-				}
-			}
-			country_leader={
-				desc = CHI_Chen_xinxing_desc
-				ideology = maoism
-				expire = "1.1.1.1"
+	}
+	CHI_Chen_xinxing_char = {
+		#陈信行
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/CHI/CHI_Chen_xinxing_char.png"
 			}
 		}
-		CHI_Xu_yongming_char = { #徐永明 时代力量2020
-			portraits={
-				civilian = {
-					large = "gfx/Leaders/CHI/CHI_Xu_yongming_char.png" 
-				}
-			}
-			country_leader={
-				desc = CHI_Xu_yongming_desc
-				ideology = social_democracy
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_Chen_xinxing_desc
+			ideology = maoism
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_Xu_yongming_char = {
+		#徐永明 时代力量2020
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/CHI/CHI_Xu_yongming_char.png"
 			}
 		}
-		CHI_Qiu_xianzhi_char = { #邱顯智 时代力量2020
-			portraits={
-				civilian = {
-					large = "gfx/Leaders/CHI/CHI_Qiu_xianzhi_char.png" 
-				}
-			}
-			country_leader={
-				desc = CHI_Qiu_xianzhi_desc
-				ideology = social_democracy
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_Xu_yongming_desc
+			ideology = social_democracy
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_Qiu_xianzhi_char = {
+		#邱顯智 时代力量2020
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/CHI/CHI_Qiu_xianzhi_char.png"
 			}
 		}
-		CHI_Gao_yuting_char = { #高鈺婷 时代力量2020
-			portraits={
-				civilian = {
-					large = "gfx/Leaders/CHI/CHI_Gao_yuting_char.png" 
-				}
-			}
-			country_leader={
-				desc = CHI_Gao_yuting_desc
-				ideology = social_democracy
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_Qiu_xianzhi_desc
+			ideology = social_democracy
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_Gao_yuting_char = {
+		#高鈺婷 时代力量2020
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/CHI/CHI_Gao_yuting_char.png"
 			}
 		}
-		CHI_Chen_Jiaohua_char = { #陳椒華 时代力量2020
-			portraits={
-				civilian = {
-					large = "gfx/Leaders/CHI/CHI_Chen_Jiaohua_char.png" 
-				}
-			}
-			country_leader={
-				desc = CHI_Chen_Jiaohua_desc
-				ideology = social_democracy
-				expire = "1.1.1.1"
+		country_leader = {
+			desc = CHI_Gao_yuting_desc
+			ideology = social_democracy
+			expire = "1.1.1.1"
+		}
+	}
+	CHI_Chen_Jiaohua_char = {
+		#陳椒華 时代力量2020
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/CHI/CHI_Chen_Jiaohua_char.png"
 			}
 		}
-###########################################################元帥
-CHI_huo_shou_yeh_char = { #霍守業
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_huoh_shoou_yeh.png" small="gfx/Leaders/CHI/minister/CHI_huo_shou_yeh_char.png"} }
-    field_marshal={ skill=4 attack_skill=3 defense_skill=5 planning_skill=4 logistics_skill=2 legacy_id=-1 traits={ panzer_leader } }
-	advisor={
+		country_leader = {
+			desc = CHI_Chen_Jiaohua_desc
+			ideology = social_democracy
+			expire = "1.1.1.1"
+		}
+	}
+	###########################################################元帥
+	CHI_huo_shou_yeh_char = {
+		#霍守業
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_huoh_shoou_yeh.png"
+				small = "gfx/Leaders/CHI/minister/CHI_huo_shou_yeh_char.png"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = -1
+			traits = {
+				panzer_leader
+			}
+		}
+		advisor = {
 			slot = army_chief
 			idea_token = CHI_huo_shou_yeh_char_army_chief
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_armored_2
-    army_regrouping_1
-}
+				army_armored_2
+				army_regrouping_1
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_hsu_yen_pu_char = { #徐衍璞
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_hsu_yen_pu.png" small="gfx/Leaders/CHI/minister/CHI_hsu_yen_pu_char.png"} }
-    field_marshal={ skill=4 attack_skill=3 defense_skill=3 planning_skill=6 logistics_skill=5 legacy_id=-1 traits={ skilled_staffer infantry_expert } }
-	advisor={
+	}
+	CHI_hsu_yen_pu_char = {
+		#徐衍璞
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_hsu_yen_pu.png"
+				small = "gfx/Leaders/CHI/minister/CHI_hsu_yen_pu_char.png"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 5
+			legacy_id = -1
+			traits = {
+				skilled_staffer
+				infantry_expert
+			}
+		}
+		advisor = {
 			slot = army_chief
 			idea_token = CHI_hsu_yen_pu_char_army_chief
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_chief_organizational_2
-    army_chief_planning_2
-}
+				army_chief_organizational_2
+				army_chief_planning_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_chen_zhen_xiang_char = { #陳鎮湘
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chen_zhen_xiang.png" small="gfx/Leaders/CHI/minister/CHI_chen_zhen_xiang_char.png"} }
-    field_marshal={ skill=3 attack_skill=3 defense_skill=4 planning_skill=4 logistics_skill=2 legacy_id=-1 traits={ old_guard } }
-	advisor={
+	}
+	CHI_chen_zhen_xiang_char = {
+		#陳鎮湘
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_chen_zhen_xiang.png"
+				small = "gfx/Leaders/CHI/minister/CHI_chen_zhen_xiang_char.png"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = -1
+			traits = {
+				old_guard
+			}
+		}
+		advisor = {
 			slot = army_chief
 			idea_token = CHI_chen_zhen_xiang_char_army_chief
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_chief_defensive_3
-}
+				army_chief_defensive_3
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_yen_teh_fa_char = { #嚴德發
-    portraits={ army={ large="gfx/Leaders/CHI/generals/yen_teh_fa.png" small="gfx/Leaders/CHI/minister/CHI_yen_teh_fa_char.png"} }
-    field_marshal={ skill=4 attack_skill=4 defense_skill=5 planning_skill=2 logistics_skill=1 legacy_id=-1 traits={ panzer_leader skilled_staffer } }
-	advisor={
+	}
+	CHI_yen_teh_fa_char = {
+		#嚴德發
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/yen_teh_fa.png"
+				small = "gfx/Leaders/CHI/minister/CHI_yen_teh_fa_char.png"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			traits = {
+				panzer_leader
+				skilled_staffer
+			}
+		}
+		advisor = {
 			slot = army_chief
 			idea_token = CHI_yen_teh_fa_char_army_chief
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_chief_organizational_2
-    army_chief_reform_2
-}
+				army_chief_organizational_2
+				army_chief_reform_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_hu_chen_pu_char = { #胡鎮埔
-    portraits={ army={ large="gfx/Leaders/CHI/generals/hu_chen_pu.png" small="gfx/Leaders/CHI/minister/CHI_hu_chen_pu_char.png"} }
-    field_marshal={ skill=4 attack_skill=4 defense_skill=4 planning_skill=2 logistics_skill=3 legacy_id=-1 traits={ combined_arms_expert } }
-	advisor={
+	}
+	CHI_hu_chen_pu_char = {
+		#胡鎮埔
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/hu_chen_pu.png"
+				small = "gfx/Leaders/CHI/minister/CHI_hu_chen_pu_char.png"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+			traits = {
+				combined_arms_expert
+			}
+		}
+		advisor = {
 			slot = army_chief
 			idea_token = CHI_hu_chen_pu_char_army_chief
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_chief_organizational_2
-    army_chief_drill_2
-}
+				army_chief_organizational_2
+				army_chief_drill_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_hsieh_chien_tung_char = { #謝建東
-    portraits={ 
-		army={ large="gfx/Leaders/CHI/generals/CHI_hsieh_chien_tung.png" small="gfx/Leaders/CHI/minister/CHI_hsieh_chien_tung_char.png"} }
-    field_marshal={ skill=3 attack_skill=2 defense_skill=2 planning_skill=4 logistics_skill=5 legacy_id=-1 traits={ organizer } }
-	advisor={
+	}
+	CHI_hsieh_chien_tung_char = {
+		#謝建東
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_hsieh_chien_tung.png"
+				small = "gfx/Leaders/CHI/minister/CHI_hsieh_chien_tung_char.png"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+			legacy_id = -1
+			traits = {
+				organizer
+			}
+		}
+		advisor = {
 			slot = army_chief
 			idea_token = CHI_hsieh_chien_tung_char_army_chief
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_chief_logistics_2
-    army_chief_organizational_1
-}
+				army_chief_logistics_2
+				army_chief_organizational_1
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_chiu_kuo_cheng_char = { #邱國正
-    portraits={ 
-		civilian = {
-					large = "gfx/Leaders/CHI/generals/Chiu_Kuo_Cheng.png" 
-				}
-				army={ large="gfx/Leaders/CHI/generals/Chiu_Kuo_cheng.png" small="gfx/Leaders/CHI/minister/CHI_Qiu_Guozheng.png"} }
-				country_leader={
-				ideology = military_junta
-				expire = "1.1.1.1"
+	}
+	CHI_chiu_kuo_cheng_char = {
+		#邱國正
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/CHI/generals/Chiu_Kuo_Cheng.png"
 			}
-    field_marshal={ skill=3 attack_skill=2 defense_skill=3 planning_skill=3 logistics_skill=2 legacy_id=-1 }
-	advisor={
+			army = {
+				large = "gfx/Leaders/CHI/generals/Chiu_Kuo_cheng.png"
+				small = "gfx/Leaders/CHI/minister/CHI_Qiu_Guozheng.png"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			expire = "1.1.1.1"
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = army_chief
 			idea_token = CHI_chiu_kuo_cheng_char_army_chief
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_chief_morale_3
-    army_chief_reform_2
-}
+				army_chief_morale_3
+				army_chief_reform_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_lee_shying_jow_char = { #李翔宙
-    portraits={ army={ large="gfx/Leaders/CHI/generals/lee_shying_jow.png" small="gfx/Leaders/CHI/minister/CHI_lee_shying_jow_char.png"} }
-    field_marshal={ skill=2 attack_skill=2 defense_skill=2 planning_skill=2 logistics_skill=2 legacy_id=-1 }
-	advisor={
+	}
+	CHI_lee_shying_jow_char = {
+		#李翔宙
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/lee_shying_jow.png"
+				small = "gfx/Leaders/CHI/minister/CHI_lee_shying_jow_char.png"
+			}
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = army_chief
 			idea_token = CHI_lee_shying_jow_char_army_chief
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_chief_organizational_2
-    army_chief_morale_1
-}
+				army_chief_organizational_2
+				army_chief_morale_1
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_zhao_shi_zhang_char = { #趙世璋
-    portraits={ army={ large="gfx/Leaders/CHI/generals/zhao_shi_zhang.png" 
-	small="gfx/Leaders/CHI/minister/CHI_zhao_shi_zhang_char.png"} }
-    field_marshal={ skill=2 attack_skill=2 defense_skill=2 planning_skill=2 logistics_skill=2 legacy_id=-1 }
-	advisor={
+	}
+	CHI_zhao_shi_zhang_char = {
+		#趙世璋
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/zhao_shi_zhang.png"
+				small = "gfx/Leaders/CHI/minister/CHI_zhao_shi_zhang_char.png"
+			}
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = army_chief
 			idea_token = CHI_zhao_shi_zhang_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_regrouping_2
-}
+				army_regrouping_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_chen_ti_duan_char = { #陳體端
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chen_ti_duan.png" 
-	small="gfx/Leaders/CHI/minister/CHI_chen_ti_duan_char.png"} }
-    field_marshal={ skill=2 attack_skill=2 defense_skill=2 planning_skill=2 logistics_skill=2 legacy_id=-1 }
-	advisor={
+	}
+	CHI_chen_ti_duan_char = {
+		#陳體端
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_chen_ti_duan.png"
+				small = "gfx/Leaders/CHI/minister/CHI_chen_ti_duan_char.png"
+			}
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = army_chief
 			idea_token = CHI_chen_ti_duan_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_logistics_2
-}
+				army_logistics_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-CHI_wang_hsin_lung_char = { #王信龍
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_wang_shin_lung.png" 
-	small="gfx/Leaders/CHI/minister/CHI_wang_shin_lung_char.png"} }
-    corps_commander={ skill=4 attack_skill=4 defense_skill=5 planning_skill=3 logistics_skill=2 legacy_id=-1 traits={ infantry_expert organizer } }
-	advisor={
+	}
+	CHI_wang_hsin_lung_char = {
+		#王信龍
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_wang_shin_lung.png"
+				small = "gfx/Leaders/CHI/minister/CHI_wang_shin_lung_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+			traits = {
+				infantry_expert
+				organizer
+			}
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_wang_hsin_lung_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
@@ -561,344 +702,490 @@ CHI_wang_hsin_lung_char = { #王信龍
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_chen_pao_yu_char = { #陳寶餘
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chen_pao_yu.png" 
-	small="gfx/Leaders/CHI/minister/CHI_chen_pao_yu_char.png"} }
-    corps_commander={ skill=1 attack_skill=1 defense_skill=2 planning_skill=1 logistics_skill=2 legacy_id=-1 }
-advisor={
+	}
+	CHI_chen_pao_yu_char = {
+		#陳寶餘
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_chen_pao_yu.png"
+				small = "gfx/Leaders/CHI/minister/CHI_chen_pao_yu_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_chen_pao_yu_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    InfantryandArtilleryExpert
-}
+				InfantryandArtilleryExpert
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_chang_guan_chung_char = { #張冠群
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chang_guan_chung.png" 
-	small="gfx/Leaders/CHI/minister/CHI_chang_guan_chung_char.png"} }
-    corps_commander={ skill=1 attack_skill=1 defense_skill=1 planning_skill=3 logistics_skill=2 legacy_id=-1 }
-	advisor={
+	}
+	CHI_chang_guan_chung_char = {
+		#張冠群
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_chang_guan_chung.png"
+				small = "gfx/Leaders/CHI/minister/CHI_chang_guan_chung_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_chang_guan_chung_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_logistics_2
-}
+				army_logistics_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_chu_kai_sheng_char = { #朱凱生
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chu_kai_sheng.png" 
-	small="gfx/Leaders/CHI/minister/CHI_chu_kai_sheng_char.png"} }
-    corps_commander={ skill=4 attack_skill=5 defense_skill=3 planning_skill=1 logistics_skill=2 legacy_id=-1 traits={ infantry_expert } }
-	advisor={
+	}
+	CHI_chu_kai_sheng_char = {
+		#朱凱生
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_chu_kai_sheng.png"
+				small = "gfx/Leaders/CHI/minister/CHI_chu_kai_sheng_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			traits = {
+				infantry_expert
+			}
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_chu_kai_sheng_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_infantry_2
-}
+				army_infantry_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_yu_bei_chan_char = { #于北辰
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_yu_bei_chan.png" 
-	small="gfx/Leaders/CHI/minister/CHI_yu_bei_chan_char.png"} }
-    corps_commander={ skill=3 attack_skill=5 defense_skill=4 planning_skill=1 logistics_skill=2 legacy_id=-1 traits={ panzer_leader } }
-	advisor={
+	}
+	CHI_yu_bei_chan_char = {
+		#于北辰
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_yu_bei_chan.png"
+				small = "gfx/Leaders/CHI/minister/CHI_yu_bei_chan_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			traits = {
+				panzer_leader
+			}
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_yu_bei_chan_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_armored_2
-}
+				army_armored_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_hsueh_shih_min_char = { #薛石民
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_hsueh_shih_min.png" small="gfx/Leaders/CHI/minister/CHI_hsueh_shih_min_char.png"} }
-    corps_commander={ skill=1 attack_skill=1 defense_skill=1 planning_skill=1 logistics_skill=1 legacy_id=-1 }
-	advisor={
+	}
+	CHI_hsueh_shih_min_char = {
+		#薛石民
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_hsueh_shih_min.png"
+				small = "gfx/Leaders/CHI/minister/CHI_hsueh_shih_min_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_hsueh_shih_min_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_artillery_2
-}
+				army_artillery_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_yang_tien_hsiao_char = { #楊天嘯
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_yang_tien_hsiao.png" small="gfx/Leaders/CHI/minister/CHI_yang_tien_hsiao_char.png"} }
-    corps_commander={ skill=1 attack_skill=1 defense_skill=1 planning_skill=1 logistics_skill=1 legacy_id=-1 }
-	advisor={
+	}
+	CHI_yang_tien_hsiao_char = {
+		#楊天嘯
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_yang_tien_hsiao.png"
+				small = "gfx/Leaders/CHI/minister/CHI_yang_tien_hsiao_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_yang_tien_hsiao_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_entrenchment_2
-}
+				army_entrenchment_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_yu_lien_fa_char = { #余連發
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_yu_lien_fa.png" small="gfx/Leaders/CHI/minister/CHI_yu_lien_fa_char.png"} }
-    corps_commander={ skill=3 attack_skill=3 defense_skill=3 planning_skill=2 logistics_skill=2 legacy_id=-1 }
-	advisor={
+	}
+	CHI_yu_lien_fa_char = {
+		#余連發
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_yu_lien_fa.png"
+				small = "gfx/Leaders/CHI/minister/CHI_yu_lien_fa_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_yu_lien_fa_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_regrouping_2
-}
+				army_regrouping_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_kao_hua_chu_char = { #高華柱
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_Kao_Hua_chu.png" small="gfx/Leaders/CHI/minister/CHI_kao_hua_chu_char.png"} }
-    corps_commander={ skill=3 attack_skill=3 defense_skill=3 planning_skill=2 logistics_skill=2 legacy_id=-1 }
-	advisor={
+	}
+	CHI_kao_hua_chu_char = {
+		#高華柱
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_Kao_Hua_chu.png"
+				small = "gfx/Leaders/CHI/minister/CHI_kao_hua_chu_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_kao_hua_chu_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_logistics_2
-    army_regrouping_1
-}
+				army_logistics_2
+				army_regrouping_1
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_wu_ta_peng_char = { #吳達澎
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_wu_ta_peng_char.png" small="gfx/Leaders/CHI/minister/CHI_wu_ta_peng_char.png"} }
-    corps_commander={ skill=2 attack_skill=2 defense_skill=2 planning_skill=2 logistics_skill=2 legacy_id=-1 }
-	advisor={
+	}
+	CHI_wu_ta_peng_char = {
+		#吳達澎
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_wu_ta_peng_char.png"
+				small = "gfx/Leaders/CHI/minister/CHI_wu_ta_peng_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_wu_ta_peng_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_entrenchment_2
-}
+				army_entrenchment_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_cheng_te_mei_char = { #鄭德美
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_cheng_te_mei_char.png" small="gfx/Leaders/CHI/minister/CHI_cheng_te_mei_char.png"} }
-    corps_commander={ skill=1 attack_skill=1 defense_skill=1 planning_skill=1 logistics_skill=1 legacy_id=-1 }
-	advisor={
+	}
+	CHI_cheng_te_mei_char = {
+		#鄭德美
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_cheng_te_mei_char.png"
+				small = "gfx/Leaders/CHI/minister/CHI_cheng_te_mei_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_cheng_te_mei_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_artillery_2
-}
+				army_artillery_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_chai_hui_chen_char = { #柴惠珍
-    portraits={ army={ large="gfx/Leaders/CHI/generals/Chai_Hui_Chen.png" small="gfx/Leaders/CHI/minister/CHI_chai_hui_chen_char.png"} }
-    corps_commander={ skill=2 attack_skill=2 defense_skill=2 planning_skill=2 logistics_skill=2 legacy_id=-1 }
-	advisor={
+	}
+	CHI_chai_hui_chen_char = {
+		#柴惠珍
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/Chai_Hui_Chen.png"
+				small = "gfx/Leaders/CHI/minister/CHI_chai_hui_chen_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_chai_hui_chen_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_logistics_2
-}
+				army_logistics_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_chung_shu_ming_char = { #鍾樹明
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_chung_shu_ming_char.png" small="gfx/Leaders/CHI/minister/CHI_chung_shu_ming_char.png"} }
-    corps_commander={ skill=2 attack_skill=2 defense_skill=2 planning_skill=2 logistics_skill=2 legacy_id=-1 }
-	advisor={
+	}
+	CHI_chung_shu_ming_char = {
+		#鍾樹明
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_chung_shu_ming_char.png"
+				small = "gfx/Leaders/CHI/minister/CHI_chung_shu_ming_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_chung_shu_ming_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_entrenchment_2
-}
+				army_entrenchment_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_lu_kun_hsiu_char = { #呂坤修
-    portraits={ army={ large="gfx/Leaders/CHI/generals/CHI_lu_kun_hsiu_char.png" small="gfx/Leaders/CHI/minister/CHI_lu_kun_hsiu_char.png"} }
-    corps_commander={ skill=2 attack_skill=2 defense_skill=2 planning_skill=2 logistics_skill=2 legacy_id=-1 }
-	advisor={
+	}
+	CHI_lu_kun_hsiu_char = {
+		#呂坤修
+		portraits = {
+			army = {
+				large = "gfx/Leaders/CHI/generals/CHI_lu_kun_hsiu_char.png"
+				small = "gfx/Leaders/CHI/minister/CHI_lu_kun_hsiu_char.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_lu_kun_hsiu_char_high_command
-			
 			allowed = {
 				original_tag = CHI
 			}
 			available = {
 			}
 			traits = {
-    army_regrouping_2
-}
+				army_regrouping_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-CHI_kao_kuang_chi_char = { #高廣圻
-    portraits={ navy={ large="gfx/Leaders/CHI/admirals/Kao_Kuang_Chi.png" small="gfx/Leaders/CHI/minister/CHI_kao_kuang_chi_char.png"} }
-    navy_leader={ skill=5 attack_skill=2 defense_skill=4 maneuvering_skill=4 coordination_skill=3 traits={ spotter } }
-	advisor={
+	}
+	CHI_kao_kuang_chi_char = {
+		#高廣圻
+		portraits = {
+			navy = {
+				large = "gfx/Leaders/CHI/admirals/Kao_Kuang_Chi.png"
+				small = "gfx/Leaders/CHI/minister/CHI_kao_kuang_chi_char.png"
+			}
+		}
+		navy_leader = {
+			skill = 5
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 4
+			coordination_skill = 3
+			traits = {
+				spotter
+			}
+		}
+		advisor = {
 			slot = navy_chief
 			idea_token = CHI_kao_kuang_chi_char_navy_chief
 			ledger = navy
@@ -908,24 +1195,37 @@ CHI_kao_kuang_chi_char = { #高廣圻
 			available = {
 			}
 			traits = {
-				  navy_chief_maneuver_2
-        navy_chief_decisive_battle_1
+				navy_chief_maneuver_2
+				navy_chief_decisive_battle_1
 			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-
-}
-
-CHI_lee_hsi_min_char = { #李喜明
-    portraits={ navy={ large="gfx/Leaders/CHI/admirals/CHI_MAN_hsi_min.png" small="gfx/Leaders/CHI/minister/CHI_lee_hsi_min_char.png"} }
-    navy_leader={ skill=4 attack_skill=4 defense_skill=3 maneuvering_skill=2 coordination_skill=4 traits={ sea_wolf coastal_defense } }
-	advisor={
+	}
+	CHI_lee_hsi_min_char = {
+		#李喜明
+		portraits = {
+			navy = {
+				large = "gfx/Leaders/CHI/admirals/CHI_MAN_hsi_min.png"
+				small = "gfx/Leaders/CHI/minister/CHI_lee_hsi_min_char.png"
+			}
+		}
+		navy_leader = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 4
+			traits = {
+				sea_wolf
+				coastal_defense
+			}
+		}
+		advisor = {
 			slot = navy_chief
 			idea_token = CHI_lee_hsi_min_char_navy_chief
 			ledger = navy
@@ -935,24 +1235,37 @@ CHI_lee_hsi_min_char = { #李喜明
 			available = {
 			}
 			traits = {
-    navy_chief_maneuver_2
-    navy_chief_reform_2
-}
+				navy_chief_maneuver_2
+				navy_chief_reform_2
+			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-
-}
-
-CHI_lin_chen_yi_char = { #林鎮夷
-    portraits={ navy={ large="gfx/Leaders/CHI/admirals/Lin_Chen_Yi.png" small="gfx/Leaders/CHI/minister/CHI_lin_chen_yi_char.png"} }
-    navy_leader={ skill=5 attack_skill=4 defense_skill=4 maneuvering_skill=2 coordination_skill=1 traits={ destroyer_leader blockade_runner } }
-	advisor={
+	}
+	CHI_lin_chen_yi_char = {
+		#林鎮夷
+		portraits = {
+			navy = {
+				large = "gfx/Leaders/CHI/admirals/Lin_Chen_Yi.png"
+				small = "gfx/Leaders/CHI/minister/CHI_lin_chen_yi_char.png"
+			}
+		}
+		navy_leader = {
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 2
+			coordination_skill = 1
+			traits = {
+				destroyer_leader
+				blockade_runner
+			}
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_lin_chen_yi_char_high_command
 			ledger = navy
@@ -962,23 +1275,33 @@ CHI_lin_chen_yi_char = { #林鎮夷
 			available = {
 			}
 			traits = {
-				  navy_fleet_logistics_2
-        navy_screen_2
+				navy_fleet_logistics_2
+				navy_screen_2
 			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_tang_hua_char = { #唐華
-    portraits={ navy={ large="gfx/Leaders/CHI/admirals/tang_hua.png" small="gfx/Leaders/CHI/minister/CHI_tang_hua_char.png"} }
-    navy_leader={ skill=1 attack_skill=1 defense_skill=1 maneuvering_skill=1 coordination_skill=1 }
-	advisor={
+	}
+	CHI_tang_hua_char = {
+		#唐華
+		portraits = {
+			navy = {
+				large = "gfx/Leaders/CHI/admirals/tang_hua.png"
+				small = "gfx/Leaders/CHI/minister/CHI_tang_hua_char.png"
+			}
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_tang_hua_char_high_command
 			ledger = navy
@@ -988,22 +1311,32 @@ CHI_tang_hua_char = { #唐華
 			available = {
 			}
 			traits = {
-			 navy_fleet_logistics_2
+				navy_fleet_logistics_2
 			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
-}
-
-CHI_liu_chih_pin_char = { #劉志斌
-    portraits={ navy={ large="gfx/Leaders/CHI/admirals/liu_chih_pin.png" small="gfx/Leaders/CHI/minister/CHI_liu_chih_pin_char.png"} }
-    navy_leader={ skill=1 attack_skill=1 defense_skill=1 maneuvering_skill=1 coordination_skill=1 }
-	advisor={
+	}
+	CHI_liu_chih_pin_char = {
+		#劉志斌
+		portraits = {
+			navy = {
+				large = "gfx/Leaders/CHI/admirals/liu_chih_pin.png"
+				small = "gfx/Leaders/CHI/minister/CHI_liu_chih_pin_char.png"
+			}
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+		advisor = {
 			slot = high_command
 			idea_token = CHI_liu_chih_pin_char_high_command
 			ledger = navy
@@ -1014,197 +1347,210 @@ CHI_liu_chih_pin_char = { #劉志斌
 			}
 			traits = {
 				navy_anti_submarine_1
-        navy_fleet_logistics_1
+				navy_fleet_logistics_1
 			}
 			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
 			on_add = {
-			
 			}
 		}
+	}
+	CHI_lin_de_wang_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/roc/CHI_lindewang_char.png"
+			}
+		}
+		country_leader = {
+			ideology = maoism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	CHI_sunyoulian_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/roc/CHI_sunyoulian_char.png"
+			}
+		}
+		country_leader = {
+			ideology = post_leftism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	CHI_fanyun_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/roc/CHI_fanyun_char.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	CHI_chenboguang_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/roc/CHI_chenboguang_char.png"
+			}
+		}
+		country_leader = {
+			ideology = chinese_exceptionalism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	CHI_zhanganle_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/roc/CHI_zhanganle_char.png"
+			}
+		}
+		country_leader = {
+			ideology = national_derzhavism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	NDF_Nur_Misuari = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/PHI_civil_war/NDF_Nur_Misuari.png"
+			}
+		}
+		country_leader = {
+			ideology = national_derzhavism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	PHN_Torribio_D_Adachi = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/PHI_civil_war/PHN_Torribio_D_Adachi.png"
+			}
+		}
+		country_leader = {
+			ideology = national_derzhavism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	AFP_Romeo_S_Brauner_the_Younger = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/PHI_civil_war/AFP_Romeo_S_Brauner_the_Younger.png"
+			}
+		}
+		country_leader = {
+			ideology = national_derzhavism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	MIL_Murad_Ebrahim = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/PHI_civil_war/MIL_Murad_Ebrahim.png"
+			}
+		}
+		country_leader = {
+			ideology = national_derzhavism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	CHI_Jiang_Wanan_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/CHI/CHI_Jiang_Wanan.png"
+			}
+		}
+		country_leader = {
+			ideology = Chiang_Kaishek_thought
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	MCU_Ho_Iat_Seng = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/HKN_SHZ_MCU/Ho_Iat_Seng.png"
+			}
+		}
+		country_leader = {
+			ideology = post_leftism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	HKN_Carrie_Lam = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/HKN_SHZ_MCU/Carrie_Lam.png"
+			}
+		}
+		country_leader = {
+			ideology = post_leftism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	HKN_John_Lee = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/HKN_SHZ_MCU/John_Lee.png"
+			}
+		}
+		country_leader = {
+			ideology = post_leftism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	SHZ_Yang_Zhichun = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/HKN_SHZ_MCU/Yang_Zhichun.png"
+			}
+		}
+		country_leader = {
+			ideology = post_leftism
+			traits = {
+			}
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
 }
-CHI_lin_de_wang_char ={
-		portraits={
-			civilian={
-				large="gfx/roc/CHI_lindewang_char.png"
-			}
-		}
-		country_leader={
-			ideology=maoism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	CHI_sunyoulian_char ={
-		portraits={
-			civilian={
-				large="gfx/roc/CHI_sunyoulian_char.png"
-			}
-		}
-		country_leader={
-			ideology=post_leftism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	CHI_fanyun_char ={
-		portraits={
-			civilian={
-				large="gfx/roc/CHI_fanyun_char.png"
-			}
-		}
-		country_leader={
-			ideology=social_democracy
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	CHI_chenboguang_char ={
-		portraits={
-			civilian={
-				large="gfx/roc/CHI_chenboguang_char.png"
-			}
-		}
-		country_leader={
-			ideology=chinese_exceptionalism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	CHI_zhanganle_char ={
-		portraits={
-			civilian={
-				large="gfx/roc/CHI_zhanganle_char.png"
-			}
-		}
-		country_leader={
-			ideology=national_derzhavism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	NDF_Nur_Misuari ={
-		portraits={
-			civilian={
-				large="gfx/Leaders/PHI_civil_war/NDF_Nur_Misuari.png"
-			}
-		}
-		country_leader={
-			ideology=national_derzhavism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	PHN_Torribio_D_Adachi ={
-		portraits={
-			civilian={
-				large="gfx/Leaders/PHI_civil_war/PHN_Torribio_D_Adachi.png"
-			}
-		}
-		country_leader={
-			ideology=national_derzhavism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	AFP_Romeo_S_Brauner_the_Younger ={
-		portraits={
-			civilian={
-				large="gfx/Leaders/PHI_civil_war/AFP_Romeo_S_Brauner_the_Younger.png"
-			}
-		}
-		country_leader={
-			ideology=national_derzhavism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	MIL_Murad_Ebrahim ={
-		portraits={
-			civilian={
-				large="gfx/Leaders/PHI_civil_war/MIL_Murad_Ebrahim.png"
-			}
-		}
-		country_leader={
-			ideology=national_derzhavism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	CHI_Jiang_Wanan_char ={
-		portraits={
-			civilian={
-				large="gfx/Leaders/CHI/CHI_Jiang_Wanan.png"
-			}
-		}
-		country_leader={
-			ideology=Chiang_Kaishek_thought
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-MCU_Ho_Iat_Seng ={
-		portraits={
-			civilian={
-				large="gfx/Leaders/HKN_SHZ_MCU/Ho_Iat_Seng.png"
-			}
-		}
-		country_leader={
-			ideology=post_leftism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	HKN_Carrie_Lam ={
-		portraits={
-			civilian={
-				large="gfx/Leaders/HKN_SHZ_MCU/Carrie_Lam.png"
-			}
-		}
-		country_leader={
-			ideology=post_leftism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	HKN_John_Lee ={
-		portraits={
-			civilian={
-				large="gfx/Leaders/HKN_SHZ_MCU/John_Lee.png"
-			}
-		}
-		country_leader={
-			ideology=post_leftism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	SHZ_Yang_Zhichun ={
-		portraits={
-			civilian={
-				large="gfx/Leaders/HKN_SHZ_MCU/Yang_Zhichun.png"
-			}
-		}
-		country_leader={
-			ideology=post_leftism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-	}

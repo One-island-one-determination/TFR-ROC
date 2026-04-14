@@ -1,66 +1,66 @@
 on_actions = {
-on_capitulation = {
+	on_capitulation = {
 		effect = {
 			if = {
-					limit = {
-						FROM = {
-							OR = {
-							    original_tag = SHZ
-							}
-						}
-						ROOT = {
-							OR = {
-							    original_tag = HKN
-							}
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = SHZ
 						}
 					}
-					SHZ = {
-						white_peace = ROOT
-						annex_country = {
-							target = ROOT
-							transfer_troops = no
+					ROOT = {
+						OR = {
+							original_tag = HKN
 						}
 					}
-					PRC = {
-							annex_country = {
-							target = HKN
-							transfer_troops = yes
-						}
-						annex_country = {
-							target = SHZ
-							transfer_troops = yes
-						}
-						}
-					set_global_flag = skip_default_capitulation
 				}
-				if = {
-					limit = {
-						FROM = {
-							OR = {
-							    original_tag = HKN
-							}
-						}
-						ROOT = {
-							OR = {
-							    original_tag = SHZ
-							}
+				SHZ = {
+					white_peace = ROOT
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+				PRC = {
+					annex_country = {
+						target = HKN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SHZ
+						transfer_troops = yes
+					}
+				}
+				set_global_flag = skip_default_capitulation
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = HKN
 						}
 					}
-					HKN = {
-						white_peace = ROOT
-						annex_country = {
-							target = ROOT
-							transfer_troops = no
+					ROOT = {
+						OR = {
+							original_tag = SHZ
 						}
 					}
-					PRC = {
-							declare_war_on = {
-					target = HKN
-					type = annex_everything
 				}
-						}
-					set_global_flag = skip_default_capitulation
+				HKN = {
+					white_peace = ROOT
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
 				}
+				PRC = {
+					declare_war_on = {
+						target = HKN
+						type = annex_everything
+					}
+				}
+				set_global_flag = skip_default_capitulation
+			}
 			if = {
 				limit = {
 					has_global_flag = PRC_ongoing_taiwan_war
@@ -90,47 +90,47 @@ on_capitulation = {
 				set_global_flag = skip_default_capitulation
 			}
 			if = {
-					limit = {
-						FROM = {
-							OR = {
-							    original_tag = NDF
-								original_tag = MIL
-								original_tag = AFP
-							}
-						}
-						ROOT = {
-							OR = {
-							    original_tag = NDF
-								original_tag = MIL
-								original_tag = AFP
-							}
-						}
-					}
+				limit = {
 					FROM = {
-						white_peace = ROOT
-						annex_country = {
-							target = ROOT
-							transfer_troops = no
+						OR = {
+							original_tag = NDF
+							original_tag = MIL
+							original_tag = AFP
 						}
 					}
-					set_global_flag = skip_default_capitulation
+					ROOT = {
+						OR = {
+							original_tag = NDF
+							original_tag = MIL
+							original_tag = AFP
+						}
+					}
 				}
+				FROM = {
+					white_peace = ROOT
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+				set_global_flag = skip_default_capitulation
+			}
 			if = {
-					limit = {
-						FROM = {
-							OR = {
-							    original_tag = PHN
-							}
-						}
-						ROOT = {
-							OR = {
-								original_tag = MIL
-							}
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = PHN
 						}
 					}
-					FROM = {
-						white_peace = ROOT
-						PHI = {
+					ROOT = {
+						OR = {
+							original_tag = MIL
+						}
+					}
+				}
+				FROM = {
+					white_peace = ROOT
+					PHI = {
 						annex_country = {
 							target = PHN
 							transfer_troops = yes
@@ -157,27 +157,27 @@ on_capitulation = {
 							remove_core_of = PHN
 						}
 						set_politics = {
-	ruling_party = nationalist
-	last_election = "2016.1.16"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	authoritarian_democrat = 40
-	nationalist = 60
-}
-			set_cosmetic_tag = PHI_civil_war_AFP_WON
-			set_country_flag = pdto_member
-			create_country_leader = {
-		name = PHN_Torribio_D_Adachi
-		picture = "gfx/Leaders/PHI_civil_war/PHN_Torribio_D_Adachi.png"
-		ideology=military_junta
-		expire="1.1.1.1"
-			}
-			country_event = {
-				id = ROC.55
-				days = 720
-			}
+							ruling_party = nationalist
+							last_election = "2016.1.16"
+							election_frequency = 48
+							elections_allowed = yes
+						}
+						set_popularities = {
+							authoritarian_democrat = 40
+							nationalist = 60
+						}
+						set_cosmetic_tag = PHI_civil_war_AFP_WON
+						set_country_flag = pdto_member
+						create_country_leader = {
+							name = PHN_Torribio_D_Adachi
+							picture = "gfx/Leaders/PHI_civil_war/PHN_Torribio_D_Adachi.png"
+							ideology = military_junta
+							expire = "1.1.1.1"
+						}
+						country_event = {
+							id = ROC.55
+							days = 720
+						}
 					}
 					JAP = {
 						add_to_faction = PHI
@@ -185,88 +185,94 @@ set_popularities = {
 					news_event = {
 						id = ROC.44
 					}
+				}
+				set_global_flag = skip_default_capitulation
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = pan_asian_war_ongoing
+						has_global_flag = PRC_china_collapse
+					}
+					FROM = {
+						OR = {
+							original_tag = TIB
+						}
+					}
+					ROOT = {
+						original_tag = TAR
+					}
+				}
+				FROM = {
+					white_peace = ROOT
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+					PRC = {
+						country_event = {
+							id = ROC.62
+						}
 					}
 					set_global_flag = skip_default_capitulation
 				}
-				if = {
-					limit = {
-						NOT = {
-							has_global_flag = pan_asian_war_ongoing
-							has_global_flag = PRC_china_collapse
-						}
-						FROM = {
-							OR = {
-								original_tag = TIB
-							}
-						}
-						ROOT = {
-							original_tag = TAR
-						}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = PRC_china_collapse
 					}
 					FROM = {
-						white_peace = ROOT
-						annex_country = {
-							target = ROOT
-							transfer_troops = no
+						original_tag = TAR
+					}
+					ROOT = {
+						OR = {
+							original_tag = TIB
 						}
-						PRC = {
-							country_event = { id = ROC.62}
-						}
-						set_global_flag = skip_default_capitulation
 					}
 				}
-				if = {
-					limit = {
-						NOT = {
-							has_global_flag = PRC_china_collapse
-						}
-						FROM = {
-							original_tag = TAR
-						}
-						ROOT = {
-							OR = {
-								original_tag = TIB
-							}
+				FROM = {
+					white_peace = ROOT
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+					PRC = {
+						country_event = {
+							id = ROC.61
 						}
 					}
-					FROM = {
-						white_peace = ROOT
-						annex_country = {
-							target = ROOT
-							transfer_troops = no
-						}
-						PRC = {
-							country_event = { id = ROC.61}
-						}
-						set_global_flag = skip_default_capitulation
-					}
+					set_global_flag = skip_default_capitulation
 				}
+			}
 		}
 	}
-		on_state_control_changed = {
+	on_state_control_changed = {
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					#has_global_flag = PRC_ongoing_taiwan_war
 					#台北-台海
-					FROM.FROM = { 
+					FROM.FROM = {
 						OR = {
 							state = 1148
-						} 
+						}
 					}
 					FROM = {
 						OR = {
-						is_ally_with = PRC
-						is_ally_with = CHI
+							is_ally_with = PRC
+							is_ally_with = CHI
 						}
 					}
 					ROOT = {
 						OR = {
-						is_ally_with = PRC
-						is_ally_with = CHI
+							is_ally_with = PRC
+							is_ally_with = CHI
 						}
 					}
-					not = { has_global_flag = battle_of_taipei }
+					not = {
+						has_global_flag = battle_of_taipei
+					}
 				}
 				set_global_flag = battle_of_taipei
 				news_event = {
@@ -295,61 +301,63 @@ set_popularities = {
 				}
 				PRC = {
 					country_event = {
-						id = ROC.46 
-						}
+						id = ROC.46
+					}
 				}
 				JAP = {
 					country_event = {
 						id = ROC.50
-						}
+					}
 				}
 				CHI = {
 					country_event = {
 						id = ROC.50
-						}
-						add_to_variable = {
-					var = ROC_mobilization_speed
-					value = 0.15
-				}
-				add_to_variable = {
-					var = ROC_conscription_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_experience_loss_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_army_core_attack_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_army_core_defence_factor
-					value = 0.05
-				}
+					}
+					add_to_variable = {
+						var = ROC_mobilization_speed
+						value = 0.15
+					}
+					add_to_variable = {
+						var = ROC_conscription_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_experience_loss_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_army_core_attack_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_army_core_defence_factor
+						value = 0.05
+					}
 				}
 			}
-			if = { 
+			if = {
 				limit = {
-					FROM.FROM = { 
+					FROM.FROM = {
 						#台中 - 台海
 						OR = {
 							state = 1149
-						} 
+						}
 					}
 					FROM = {
 						OR = {
-						is_ally_with = PRC
-						is_ally_with = CHI
+							is_ally_with = PRC
+							is_ally_with = CHI
 						}
 					}
 					ROOT = {
 						OR = {
-						is_ally_with = PRC
-						is_ally_with = CHI
+							is_ally_with = PRC
+							is_ally_with = CHI
 						}
 					}
-					not = { has_global_flag = battle_of_taizhong }
+					not = {
+						has_global_flag = battle_of_taizhong
+					}
 				}
 				set_global_flag = battle_of_taizhong
 				1149 = {
@@ -375,60 +383,62 @@ set_popularities = {
 				PRC = {
 					country_event = {
 						id = ROC.47
-						}
+					}
 				}
 				JAP = {
 					country_event = {
 						id = ROC.51
-						}
+					}
 				}
 				CHI = {
 					country_event = {
 						id = ROC.51
-						}
-						add_to_variable = {
-					var = ROC_mobilization_speed
-					value = 0.15
-				}
-				add_to_variable = {
-					var = ROC_conscription_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_experience_loss_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_army_core_attack_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_army_core_defence_factor
-					value = 0.05
-				}
+					}
+					add_to_variable = {
+						var = ROC_mobilization_speed
+						value = 0.15
+					}
+					add_to_variable = {
+						var = ROC_conscription_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_experience_loss_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_army_core_attack_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_army_core_defence_factor
+						value = 0.05
+					}
 				}
 			}
-			if = { 
+			if = {
 				limit = {
-					FROM.FROM = { 
+					FROM.FROM = {
 						#高雄-台海
 						OR = {
 							state = 1150
-						} 
+						}
 					}
 					FROM = {
 						OR = {
-						is_ally_with = PRC
-						is_ally_with = CHI
+							is_ally_with = PRC
+							is_ally_with = CHI
 						}
 					}
 					ROOT = {
 						OR = {
-						is_ally_with = PRC
-						is_ally_with = CHI
+							is_ally_with = PRC
+							is_ally_with = CHI
 						}
 					}
-					not = { has_global_flag = battle_of_gaoxiong }
+					not = {
+						has_global_flag = battle_of_gaoxiong
+					}
 				}
 				set_global_flag = battle_of_gaoxiong
 				1150 = {
@@ -454,60 +464,62 @@ set_popularities = {
 				PRC = {
 					country_event = {
 						id = ROC.48
-						}
+					}
 				}
 				JAP = {
 					country_event = {
 						id = ROC.52
-						}
+					}
 				}
 				CHI = {
 					country_event = {
 						id = ROC.52
-						}
-						add_to_variable = {
-					var = ROC_mobilization_speed
-					value = 0.15
-				}
-				add_to_variable = {
-					var = ROC_conscription_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_experience_loss_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_army_core_attack_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_army_core_defence_factor
-					value = 0.05
-				}
+					}
+					add_to_variable = {
+						var = ROC_mobilization_speed
+						value = 0.15
+					}
+					add_to_variable = {
+						var = ROC_conscription_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_experience_loss_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_army_core_attack_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_army_core_defence_factor
+						value = 0.05
+					}
 				}
 			}
-			if = { 
+			if = {
 				limit = {
 					#花莲-台海
-					FROM.FROM = { 
+					FROM.FROM = {
 						OR = {
 							state = 524
-						} 
+						}
 					}
 					FROM = {
 						OR = {
-						is_ally_with = PRC
-						is_ally_with = CHI
+							is_ally_with = PRC
+							is_ally_with = CHI
 						}
 					}
 					ROOT = {
 						OR = {
-						is_ally_with = PRC
-						is_ally_with = CHI
+							is_ally_with = PRC
+							is_ally_with = CHI
 						}
 					}
-					not = { has_global_flag = battle_of_hualian }
+					not = {
+						has_global_flag = battle_of_hualian
+					}
 				}
 				set_global_flag = battle_of_hualian
 				524 = {
@@ -533,41 +545,39 @@ set_popularities = {
 				PRC = {
 					country_event = {
 						id = ROC.49
-						}
+					}
 				}
 				JAP = {
 					country_event = {
 						id = ROC.53
-						}
+					}
 				}
 				CHI = {
 					country_event = {
 						id = ROC.53
-						}
-						add_to_variable = {
-					var = ROC_mobilization_speed
-					value = 0.15
-				}
-				add_to_variable = {
-					var = ROC_conscription_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_experience_loss_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_army_core_attack_factor
-					value = 0.05
-				}
-				add_to_variable = {
-					var = ROC_army_core_defence_factor
-					value = 0.05
-				}
+					}
+					add_to_variable = {
+						var = ROC_mobilization_speed
+						value = 0.15
+					}
+					add_to_variable = {
+						var = ROC_conscription_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_experience_loss_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_army_core_attack_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = ROC_army_core_defence_factor
+						value = 0.05
+					}
 				}
 			}
 		}
 	}
 }
-
-

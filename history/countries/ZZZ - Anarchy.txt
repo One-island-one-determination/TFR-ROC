@@ -13,129 +13,175 @@ set_politics = {
 set_popularities = {
 	libertarian_socialist = 100
 }
-	
 
 CHI = {
 	set_politics = {
-	ruling_party = social_liberal
-	last_election = "2016.1.16"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	conservative = 35
-	social_liberal = 45
-	market_liberal  = 7
-	totalitarian_socialist = 1
-	communist = 1
-	libertarian_socialist = 3
-	social_democrat = 5
-	authoritarian_democrat = 3
-}
-set_country_flag = CHI_lfy_flag
-set_country_flag = CHI_stage_1
-add_dynamic_modifier = {
-    	modifier = CHI_influence_KMT_dynamic
+		ruling_party = social_liberal
+		last_election = "2016.1.16"
+		election_frequency = 48
+		elections_allowed = yes
 	}
-add_dynamic_modifier = {
-    	modifier = CHI_influence_DPP_dynamic
+	set_popularities = {
+		conservative = 35
+		social_liberal = 45
+		market_liberal = 7
+		totalitarian_socialist = 1
+		communist = 1
+		libertarian_socialist = 3
+		social_democrat = 5
+		authoritarian_democrat = 3
 	}
-add_dynamic_modifier = {
-    	modifier = CHI_influence_TPP_dynamic
-	}
-add_dynamic_modifier = {
-    	modifier = CHI_influence_NPSU_dynamic
-	}
-add_dynamic_modifier = {
-    	modifier = CHI_influence_NPP_dynamic
-	}
-add_dynamic_modifier = {
-    	modifier = CHI_influence_TSP_dynamic
-	}
-add_dynamic_modifier = {
-    	modifier = CHI_influence_SDP_dynamic
+	set_country_flag = CHI_lfy_flag
+	set_country_flag = CHI_stage_1
+	add_dynamic_modifier = {
+		modifier = CHI_influence_KMT_dynamic
 	}
 	add_dynamic_modifier = {
-    	modifier = CHI_influence_NP_dynamic
+		modifier = CHI_influence_DPP_dynamic
 	}
 	add_dynamic_modifier = {
-    	modifier = CHI_influence_PFP_dynamic
+		modifier = CHI_influence_TPP_dynamic
 	}
 	add_dynamic_modifier = {
-    	modifier = CHI_influence_LP_dynamic
+		modifier = CHI_influence_NPSU_dynamic
 	}
-	
+	add_dynamic_modifier = {
+		modifier = CHI_influence_NPP_dynamic
+	}
+	add_dynamic_modifier = {
+		modifier = CHI_influence_TSP_dynamic
+	}
+	add_dynamic_modifier = {
+		modifier = CHI_influence_SDP_dynamic
+	}
+	add_dynamic_modifier = {
+		modifier = CHI_influence_NP_dynamic
+	}
+	add_dynamic_modifier = {
+		modifier = CHI_influence_PFP_dynamic
+	}
+	add_dynamic_modifier = {
+		modifier = CHI_influence_LP_dynamic
+	}
 	add_ideas = CHI_aging_population_idea
-recruit_character = CHI_sunyoulian_char
-recruit_character = CHI_fanyun_char
-recruit_character = CHI_chenboguang_char
-recruit_character = CHI_zhanganle_char
-recruit_character = CHI_Jiang_Wanan_char
-recruit_character = CHI_Chen_xinxing_char
-recruit_character = CHI_Xu_yongming_char
-recruit_character = CHI_Qiu_xianzhi_char
-recruit_character = CHI_Gao_yuting_char
-recruit_character = CHI_Chen_Jiaohua_char
-set_party_name = { ideology = social_democrat long_name = CHI_NewPowerParty_long name = CHI_NewPowerParty_long }
-set_party_name = { ideology = social_liberal long_name = CHI_Taiwan_Democrati_Progressive_Party_long name = CHI_Taiwan_Democrati_Progressive_Party }
-set_party_name = { ideology = market_liberal long_name = CHI_Taiwan_People_Party_long name = CHI_Taiwan_People_Party }
-set_party_name = { ideology = conservative long_name = CHI_Kuomintang_long name = CHI_Kuomintang }
-set_party_name = { ideology = authoritarian_democrat long_name = CHI_Kuomintang2_long name = CHI_Kuomintang2 }
-set_party_name = { ideology = nationalist long_name = CHI_National_Army_long name = CHI_National_Army }
-set_party_name = { ideology = fascist long_name = PRC_status_banned name = PRC_status_banned }
-set_party_name = { ideology = national_socialist long_name = PRC_status_banned name = PRC_status_banned }
-set_party_name = { ideology = libertarian_socialist long_name = CHI_Taiwan_Labor_Party_long name = CHI_Taiwan_Labor_Party }
-set_party_name = { ideology = communist long_name = CHI_TaiwanCommunistParty_long name = CHI_TaiwanCommunistParty }
-set_party_name = { ideology = totalitarian_socialist long_name = CHI_TaiwanMao_long name = CHI_TaiwanMao }
-promote_character = {
-	character = CHI_sunyoulian_char
-	ideology = post_leftism
-}
-promote_character = {
-	character = CHI_Xu_yongming_char
-	ideology = social_democracy
-}
-promote_character = {
-	character = CHI_chenboguang_char
-	ideology = chinese_exceptionalism
-}
-promote_character = {
-	character = CHI_Chen_xinxing_char
-	ideology = maoism
-}
-add_country_leader_role = {
+	recruit_character = CHI_sunyoulian_char
+	recruit_character = CHI_fanyun_char
+	recruit_character = CHI_chenboguang_char
+	recruit_character = CHI_zhanganle_char
+	recruit_character = CHI_Jiang_Wanan_char
+	recruit_character = CHI_Chen_xinxing_char
+	recruit_character = CHI_Xu_yongming_char
+	recruit_character = CHI_Qiu_xianzhi_char
+	recruit_character = CHI_Gao_yuting_char
+	recruit_character = CHI_Chen_Jiaohua_char
+	set_party_name = {
+		ideology = social_democrat
+		long_name = CHI_NewPowerParty_long
+		name = CHI_NewPowerParty_long
+	}
+	set_party_name = {
+		ideology = social_liberal
+		long_name = CHI_Taiwan_Democrati_Progressive_Party_long
+		name = CHI_Taiwan_Democrati_Progressive_Party
+	}
+	set_party_name = {
+		ideology = market_liberal
+		long_name = CHI_Taiwan_People_Party_long
+		name = CHI_Taiwan_People_Party
+	}
+	set_party_name = {
+		ideology = conservative
+		long_name = CHI_Kuomintang_long
+		name = CHI_Kuomintang
+	}
+	set_party_name = {
+		ideology = authoritarian_democrat
+		long_name = CHI_Kuomintang2_long
+		name = CHI_Kuomintang2
+	}
+	set_party_name = {
+		ideology = nationalist
+		long_name = CHI_National_Army_long
+		name = CHI_National_Army
+	}
+	set_party_name = {
+		ideology = fascist
+		long_name = PRC_status_banned
+		name = PRC_status_banned
+	}
+	set_party_name = {
+		ideology = national_socialist
+		long_name = PRC_status_banned
+		name = PRC_status_banned
+	}
+	set_party_name = {
+		ideology = libertarian_socialist
+		long_name = CHI_Taiwan_Labor_Party_long
+		name = CHI_Taiwan_Labor_Party
+	}
+	set_party_name = {
+		ideology = communist
+		long_name = CHI_TaiwanCommunistParty_long
+		name = CHI_TaiwanCommunistParty
+	}
+	set_party_name = {
+		ideology = totalitarian_socialist
+		long_name = CHI_TaiwanMao_long
+		name = CHI_TaiwanMao
+	}
+	promote_character = {
+		character = CHI_sunyoulian_char
+		ideology = post_leftism
+	}
+	promote_character = {
+		character = CHI_Xu_yongming_char
+		ideology = social_democracy
+	}
+	promote_character = {
+		character = CHI_chenboguang_char
+		ideology = chinese_exceptionalism
+	}
+	promote_character = {
+		character = CHI_Chen_xinxing_char
+		ideology = maoism
+	}
+	add_country_leader_role = {
 		character = CHI_tsai_ing_wen_char
 		promote_leader = yes
 		country_leader = {
 			desc = CHI_tsai_ing_wen_char_desc
-				traits={ CHI_hos_madam_president }
-			ideology = CHI_Taiwanese_Progressivism 
+			traits = {
+				CHI_hos_madam_president
+			}
+			ideology = CHI_Taiwanese_Progressivism
 			expire = "1.1.1.1"
 		}
 	}
-add_country_leader_role = {
+	add_country_leader_role = {
 		character = CHI_han_kuo_yu_char
 		promote_leader = yes
 		country_leader = {
-				desc = CHI_han_kuo_yu_char_desc
-				traits={ hos_president_of_the_commoners }
-			ideology = CHI_Taiwanese_constitutionalism 
+			desc = CHI_han_kuo_yu_char_desc
+			traits = {
+				hos_president_of_the_commoners
+			}
+			ideology = CHI_Taiwanese_constitutionalism
 			expire = "1.1.1.1"
 		}
 	}
-add_country_leader_role = {
+	add_country_leader_role = {
 		character = CHI_ko_wen_je_char
 		promote_leader = yes
 		country_leader = {
-			ideology = taiwanese_liberal_populism2 
+			ideology = taiwanese_liberal_populism2
 			expire = "1.1.1.1"
 		}
 	}
-add_country_leader_role = {
+	add_country_leader_role = {
 		character = CHI_lin_de_wang_char
 		promote_leader = yes
 		country_leader = {
-			ideology = left_nationalism 
+			ideology = left_nationalism
 			expire = "1.1.1.1"
 		}
 	}
@@ -143,31 +189,31 @@ add_country_leader_role = {
 		character = CHI_Chen_xinxing_char
 		promote_leader = yes
 		country_leader = {
-			ideology = maoism 
+			ideology = maoism
 			expire = "1.1.1.1"
 		}
 	}
-add_country_leader_role = {
+	add_country_leader_role = {
 		character = CHI_wu_rong_yuan_char
 		promote_leader = yes
 		country_leader = {
-			ideology = labour_syndicalism 
+			ideology = labour_syndicalism
 			expire = "1.1.1.1"
 		}
 	}
-add_country_leader_role = {
+	add_country_leader_role = {
 		character = CHI_sunyoulian_char
 		promote_leader = yes
 		country_leader = {
-			ideology = post_leftism 
+			ideology = post_leftism
 			expire = "1.1.1.1"
 		}
 	}
-add_country_leader_role = {
+	add_country_leader_role = {
 		character = CHI_chenboguang_char
 		promote_leader = yes
 		country_leader = {
-			ideology = fascist_xi_jinping_thought 
+			ideology = fascist_xi_jinping_thought
 			expire = "1.1.1.1"
 		}
 	}
@@ -175,42 +221,50 @@ add_country_leader_role = {
 		character = CHI_zhanganle_char
 		promote_leader = yes
 		country_leader = {
-			ideology = national_socialist_xi_jinping_thought 
+			ideology = national_socialist_xi_jinping_thought
 			expire = "1.1.1.1"
 		}
 	}
 }
+
 PRK = {
 	change_government_type_fascist_dictatorship = yes
-		change_economy_type_command_economy = yes
+	change_economy_type_command_economy = yes
 }
+
 PRC = {
-	 set_autonomy = {
-        target = MCU
-        autonomy_state = autonomy_Special_Administrative_Region_PRC
-    }
-	 set_autonomy = {
-        target = HKN
-        autonomy_state = autonomy_Special_Administrative_Region_PRC
-    }
-	set_party_name = { ideology = communist long_name = PRC_xijp_ccp_long name = PRC_xijp_ccp }
+	set_autonomy = {
+		target = MCU
+		autonomy_state = autonomy_Special_Administrative_Region_PRC
+	}
+	set_autonomy = {
+		target = HKN
+		autonomy_state = autonomy_Special_Administrative_Region_PRC
+	}
+	set_party_name = {
+		ideology = communist
+		long_name = PRC_xijp_ccp_long
+		name = PRC_xijp_ccp
+	}
 	change_government_type_presidential_dictatorship = yes
 	add_country_leader_role = {
 		character = PRC_xi_jinping
 		promote_leader = yes
-		country_leader={
-			ideology=xi_jinping_thought
+		country_leader = {
+			ideology = xi_jinping_thought
 			desc = PRC_XI_JINPING_DESC
-			traits={ hos_red_dragon_rider }
-			expire="1.1.1.1"
-			id=-1
+			traits = {
+				hos_red_dragon_rider
+			}
+			expire = "1.1.1.1"
+			id = -1
 		}
 	}
 	country_event = {
-					id = ROC.64
-					days = 912
-				}
-#add_ideas = Red_Nobility
+		id = ROC.64
+		days = 912
+	}
+	#add_ideas = Red_Nobility
 	#add_ideas = Crony_capitalismy
 	#add_ideas = Techno_nationalism
 	#add_ideas = PRC_yingxue
@@ -218,42 +272,43 @@ PRC = {
 	#add_ideas = BPRC_china
 	#add_ideas = PRC_organ_trade
 	add_dynamic_modifier = {
-    	modifier = PRC_illegal_organ_trade
+		modifier = PRC_illegal_organ_trade
 	}
 	add_dynamic_modifier = {
-    	modifier = PRC_private_prison
+		modifier = PRC_private_prison
 	}
 	add_dynamic_modifier = {
-    	modifier = PRC_Chinesestyleeducation
+		modifier = PRC_Chinesestyleeducation
 	}
 	add_dynamic_modifier = {
-    	modifier = PRC_correctionalschool
+		modifier = PRC_correctionalschool
 	}
 	add_dynamic_modifier = {
-    	modifier = PRC_iSlashingline
+		modifier = PRC_iSlashingline
 	}
 	add_dynamic_modifier = {
-    	modifier = PRC_RedAristocracy
+		modifier = PRC_RedAristocracy
 	}
 	add_dynamic_modifier = {
-    	modifier = PRC_Nationalistsentiment
+		modifier = PRC_Nationalistsentiment
 	}
 	add_dynamic_modifier = {
-    	modifier = PRC_Bureaucraticcapitalism
+		modifier = PRC_Bureaucraticcapitalism
 	}
 	add_dynamic_modifier = {
-    	modifier = PRC_EducationSystem
+		modifier = PRC_EducationSystem
 	}
 	add_dynamic_modifier = {
-    	modifier = PRC_Antiintellectualeducation
+		modifier = PRC_Antiintellectualeducation
 	}
 	add_dynamic_modifier = {
-    	modifier = PRC_Chineseslavery
+		modifier = PRC_Chineseslavery
 	}
 	add_dynamic_modifier = {
-    	modifier = PRC_Domestictechnology
+		modifier = PRC_Domestictechnology
 	}
 }
+
 PHI = {
 	recruit_character = NDF_Nur_Misuari
 	recruit_character = PHN_Torribio_D_Adachi
@@ -264,233 +319,232 @@ PHI = {
 		days = 1200
 	}
 }
+
 HKN = {
 	set_politics = {
-	ruling_party = communist
-	last_election = "2016.1.16"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	authoritarian_democrat = 28
-	communist = 15
-	libertarian_socialist = 6
-	social_democrat = 14
-	market_liberal = 8
-	social_liberal = 18
-	conservative = 12
-	nationalist = 4
-}
-set_cosmetic_tag = HKN_PRC_puppet
-set_party_name = {
-				ideology = authoritarian_democrat
-				long_name = HKN_PCC
-				name = HKN_PCC
-			}
-			set_party_name = {
-				ideology = communist
-				long_name = HKN_PCC
-				name = HKN_PCC
-			}
-			set_party_name = {
-				ideology = nationalist
-				long_name = HKN_PLAHKG
-				name = HKN_PLAHKG
-			}
-			set_party_name = {
-				ideology = libertarian_socialist
-				long_name = HKN_HKR
-				name = HKN_HKR
-			}
-			set_party_name = {
-				ideology = conservative
-				long_name = HKN_HKR
-				name = HKN_HKR
-			}
-			set_party_name = {
-				ideology = social_liberal
-				long_name = HKN_HKR
-				name = HKN_HKR
-			}
-			set_party_name = {
-				ideology = market_liberal
-				long_name = HKN_HKR
-				name = HKN_HKR
-			}
-			set_party_name = {
-				ideology = social_democrat
-				long_name = HKN_HKR
-				name = HKN_HKR
-			}
-			promote_character = {
-	character = HKN_Carrie_Lam
-	ideology = market_socialism
-}
-
-add_country_leader_role = {
+		ruling_party = communist
+		last_election = "2016.1.16"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		authoritarian_democrat = 28
+		communist = 15
+		libertarian_socialist = 6
+		social_democrat = 14
+		market_liberal = 8
+		social_liberal = 18
+		conservative = 12
+		nationalist = 4
+	}
+	set_cosmetic_tag = HKN_PRC_puppet
+	set_party_name = {
+		ideology = authoritarian_democrat
+		long_name = HKN_PCC
+		name = HKN_PCC
+	}
+	set_party_name = {
+		ideology = communist
+		long_name = HKN_PCC
+		name = HKN_PCC
+	}
+	set_party_name = {
+		ideology = nationalist
+		long_name = HKN_PLAHKG
+		name = HKN_PLAHKG
+	}
+	set_party_name = {
+		ideology = libertarian_socialist
+		long_name = HKN_HKR
+		name = HKN_HKR
+	}
+	set_party_name = {
+		ideology = conservative
+		long_name = HKN_HKR
+		name = HKN_HKR
+	}
+	set_party_name = {
+		ideology = social_liberal
+		long_name = HKN_HKR
+		name = HKN_HKR
+	}
+	set_party_name = {
+		ideology = market_liberal
+		long_name = HKN_HKR
+		name = HKN_HKR
+	}
+	set_party_name = {
+		ideology = social_democrat
+		long_name = HKN_HKR
+		name = HKN_HKR
+	}
+	promote_character = {
+		character = HKN_Carrie_Lam
+		ideology = market_socialism
+	}
+	add_country_leader_role = {
 		character = HKN_Carrie_Lam
 		promote_leader = yes
 		country_leader = {
-			ideology = market_socialism 
+			ideology = market_socialism
 			expire = "1.1.1.1"
 		}
 	}
 	promote_character = {
-	character = HKN_Carrie_Lam
-	ideology = SIG_pragmatic_conservatism
-}
-
-add_country_leader_role = {
+		character = HKN_Carrie_Lam
+		ideology = SIG_pragmatic_conservatism
+	}
+	add_country_leader_role = {
 		character = HKN_Carrie_Lam
 		promote_leader = yes
 		country_leader = {
-			ideology = SIG_pragmatic_conservatism 
+			ideology = SIG_pragmatic_conservatism
 			expire = "1.1.1.1"
 		}
 	}
-set_party_name = {
-				ideology = totalitarian_socialist
-				long_name = PRC_status_banned
-				name = PRC_status_banned
-			}
-			set_party_name = {
-				ideology = fascist
-				long_name = PRC_status_banned
-				name = PRC_status_banned
-			}
-			set_party_name = {
-				ideology = national_socialist
-				long_name = PRC_status_banned
-				name = PRC_status_banned
-			}
-create_country_leader = {
-	name = "未知"
-	picture = "NOT"
-	expire = "1999.1.1"
-	ideology = maoism
-				}  
-				create_country_leader = {
-	name = "未知"
-	picture = "NOT"
-	expire = "1999.1.1"
-	ideology = fascist_populism
-				}  
-				create_country_leader = {
-	name = "未知"
-	picture = "NOT"
-	expire = "1999.1.1"
-	ideology = babylonian_nazism
-				}  
+	set_party_name = {
+		ideology = totalitarian_socialist
+		long_name = PRC_status_banned
+		name = PRC_status_banned
+	}
+	set_party_name = {
+		ideology = fascist
+		long_name = PRC_status_banned
+		name = PRC_status_banned
+	}
+	set_party_name = {
+		ideology = national_socialist
+		long_name = PRC_status_banned
+		name = PRC_status_banned
+	}
+	create_country_leader = {
+		name = "未知"
+		picture = "NOT"
+		expire = "1999.1.1"
+		ideology = maoism
+	}
+	create_country_leader = {
+		name = "未知"
+		picture = "NOT"
+		expire = "1999.1.1"
+		ideology = fascist_populism
+	}
+	create_country_leader = {
+		name = "未知"
+		picture = "NOT"
+		expire = "1999.1.1"
+		ideology = babylonian_nazism
+	}
 }
+
 MCU = {
 	set_politics = {
-	ruling_party = communist
-	last_election = "2016.1.16"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	authoritarian_democrat = 28
-	communist = 15
-	libertarian_socialist = 6
-	social_democrat = 14
-	market_liberal = 8
-	social_liberal = 18
-	conservative = 12
-	nationalist = 4
-}
-set_cosmetic_tag = MCU_PRC_puppet
+		ruling_party = communist
+		last_election = "2016.1.16"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		authoritarian_democrat = 28
+		communist = 15
+		libertarian_socialist = 6
+		social_democrat = 14
+		market_liberal = 8
+		social_liberal = 18
+		conservative = 12
+		nationalist = 4
+	}
+	set_cosmetic_tag = MCU_PRC_puppet
 	promote_character = {
-	character = MCU_Ho_Iat_Seng
-	ideology = market_socialism
-}
-set_party_name = {
-				ideology = authoritarian_democrat
-				long_name = HKN_PCC
-				name = HKN_PCC
-			}
-			set_party_name = {
-				ideology = communist
-				long_name = HKN_PCC
-				name = HKN_PCC
-			}
-			set_party_name = {
-				ideology = nationalist
-				long_name = HKN_PLAMCU
-				name = HKN_PLAMCU
-			}
-			set_party_name = {
-				ideology = libertarian_socialist
-				long_name = HKN_HKR
-				name = HKN_HKR
-			}
-			set_party_name = {
-				ideology = conservative
-				long_name = HKN_HKR
-				name = HKN_HKR
-			}
-			set_party_name = {
-				ideology = social_liberal
-				long_name = HKN_HKR
-				name = HKN_HKR
-			}
-			set_party_name = {
-				ideology = market_liberal
-				long_name = HKN_HKR
-				name = HKN_HKR
-			}
-			set_party_name = {
-				ideology = social_democrat
-				long_name = HKN_HKR
-				name = HKN_HKR
-			}
-			set_party_name = {
-				ideology = totalitarian_socialist
-				long_name = PRC_status_banned
-				name = PRC_status_banned
-			}
-			set_party_name = {
-				ideology = fascist
-				long_name = PRC_status_banned
-				name = PRC_status_banned
-			}
-			set_party_name = {
-				ideology = national_socialist
-				long_name = PRC_status_banned
-				name = PRC_status_banned
-			}
-add_country_leader_role = {
+		character = MCU_Ho_Iat_Seng
+		ideology = market_socialism
+	}
+	set_party_name = {
+		ideology = authoritarian_democrat
+		long_name = HKN_PCC
+		name = HKN_PCC
+	}
+	set_party_name = {
+		ideology = communist
+		long_name = HKN_PCC
+		name = HKN_PCC
+	}
+	set_party_name = {
+		ideology = nationalist
+		long_name = HKN_PLAMCU
+		name = HKN_PLAMCU
+	}
+	set_party_name = {
+		ideology = libertarian_socialist
+		long_name = HKN_HKR
+		name = HKN_HKR
+	}
+	set_party_name = {
+		ideology = conservative
+		long_name = HKN_HKR
+		name = HKN_HKR
+	}
+	set_party_name = {
+		ideology = social_liberal
+		long_name = HKN_HKR
+		name = HKN_HKR
+	}
+	set_party_name = {
+		ideology = market_liberal
+		long_name = HKN_HKR
+		name = HKN_HKR
+	}
+	set_party_name = {
+		ideology = social_democrat
+		long_name = HKN_HKR
+		name = HKN_HKR
+	}
+	set_party_name = {
+		ideology = totalitarian_socialist
+		long_name = PRC_status_banned
+		name = PRC_status_banned
+	}
+	set_party_name = {
+		ideology = fascist
+		long_name = PRC_status_banned
+		name = PRC_status_banned
+	}
+	set_party_name = {
+		ideology = national_socialist
+		long_name = PRC_status_banned
+		name = PRC_status_banned
+	}
+	add_country_leader_role = {
 		character = MCU_Ho_Iat_Seng
 		promote_leader = yes
 		country_leader = {
-			ideology = market_socialism 
+			ideology = market_socialism
 			expire = "1.1.1.1"
 		}
 	}
 	create_country_leader = {
-	name = "未知"
-	picture = "NOT"
-	expire = "1999.1.1"
-	ideology = maoism
-				}  
-				create_country_leader = {
-	name = "未知"
-	picture = "NOT"
-	expire = "1999.1.1"
-	ideology = fascist_populism
-				}  
-				create_country_leader = {
-	name = "未知"
-	picture = "NOT"
-	expire = "1999.1.1"
-	ideology = babylonian_nazism
-				}  
+		name = "未知"
+		picture = "NOT"
+		expire = "1999.1.1"
+		ideology = maoism
+	}
+	create_country_leader = {
+		name = "未知"
+		picture = "NOT"
+		expire = "1999.1.1"
+		ideology = fascist_populism
+	}
+	create_country_leader = {
+		name = "未知"
+		picture = "NOT"
+		expire = "1999.1.1"
+		ideology = babylonian_nazism
+	}
 }
+
 SHZ = {
 	promote_character = {
-	character = SHZ_Yang_Zhichun
-	ideology = military_junta
+		character = SHZ_Yang_Zhichun
+		ideology = military_junta
+	}
 }
-}
-
-
