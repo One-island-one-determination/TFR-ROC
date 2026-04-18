@@ -84,7 +84,6 @@ CHI_Legislative_Yuan_decisions = {
 		modifier = {
 			power_balance_weekly = 0.01
 			conservative_drift = -0.08
-			communist_drift = -0.08
 			authoritarian_democrat_drift = -0.08
 			stability_weekly = -0.005
 		}
@@ -396,32 +395,16 @@ CHI_Legislative_Yuan_decisions = {
 		priority = 40
 		fire_only_once = no
 		cancel_if_not_visible = no
-		cost = 100
+		cost = 30
 		days_remove = 30
 		days_re_enable = 30
 		modifier = {
-			political_power_gain = -0.25
-			stability_weekly_factor = 0.0025
-			war_support_weekly_factor = -0.0025
-			authoritarian_democrat_drift = 0.02
-			conservative_drift = 0.02
+			power_balance_weekly = -0.01
+			social_liberal_drift = -0.10
+			stability_weekly = -0.005
 		}
 		complete_effect = {
 			set_country_flag = KMT_agenda
-		}
-		remove_effect = {
-			clr_country_flag = KMT_agenda
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = CHI_LY_of_the_roc_0
-					add_idea = CHI_LY_of_the_roc_5
-				}
-			}
-			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.05}
-			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
-			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.005}
-			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = -0.005}
-
 		}
 	}
 	CHI_Adhere_1992_Consensus = {
@@ -457,22 +440,14 @@ CHI_Legislative_Yuan_decisions = {
 		priority = 40
 		fire_only_once = no
 		cancel_if_not_visible = no
-		cost = 100
+		cost = 60
 		days_remove = 30
 		days_re_enable = 30
 		modifier = {
-			political_power_gain = -0.25
-			stability_weekly_factor = 0.0025
-			war_support_weekly_factor = -0.0025
-			social_liberal_drift = -0.01
-			market_liberal_drift = -0.01
-			social_democrat_drift = -0.01
-			totalitarian_socialist_drift = 0.01
-			fascist_drift = 0.01
-			national_socialist_drift = 0.01
-			communist_drift = 0.01
-			conservative_drift = 0.02
-			authoritarian_democrat_drift = 0.02
+			power_balance_weekly = -0.02
+			conservative_drift = 0.05
+			authoritarian_democrat_drift = 0.05
+			stability_weekly = 0.01
 		}
 		complete_effect = {
 			set_country_flag = KMT_agenda
@@ -485,11 +460,7 @@ CHI_Legislative_Yuan_decisions = {
 					add_idea = CHI_LY_of_the_roc_6
 				}
 			}
-			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.25}
-			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.003}
-			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.001}
-			add_to_variable = {var = CHI_LFY_CHI_LFY_society_development_monthly value = 0.01}
-
+			add_to_variable = {var = CHI_LFY_stability_factor value = 0.025}
 		}
 	}
 	CHI_Continued_nuclear_energy = {
@@ -526,12 +497,13 @@ CHI_Legislative_Yuan_decisions = {
 		priority = 40
 		fire_only_once = no
 		cancel_if_not_visible = no
-		cost = 175
+		cost = 100
 		days_remove = 120
 		days_re_enable = 120
 		modifier = {
 			expense_growth_factor = 0.15
 			industrial_development_monthly = 0.01
+			production_speed_nuclear_reactor_factor = 0.25
 		}
 		complete_effect = {
 			set_country_flag = KMT_agenda
@@ -544,31 +516,10 @@ CHI_Legislative_Yuan_decisions = {
 					add_idea = CHI_LY_of_the_roc_7
 				}
 			}
-			add_to_variable = {var = CHI_LFY_industrial_capacity_factory value = 0.1}
-			add_to_variable = {var = CHI_LFY_production_speed_nuclear_reactor_factor value = 0.1}
-			add_to_variable = {var = CHI_LFY_production_speed_power_plant_factor value = 0.1}
+			add_to_variable = {var = CHI_LFY_production_speed_nuclear_reactor_factor value = 0.08}
 			random_list = {
 				25 = {
 					1148 = {
-						add_building_construction = {
-							type = nuclear_reactor
-							level = 1
-							instant_build = yes
-						}
-
-					}
-				}
-				25 = {
-					1150 = {
-						add_building_construction = {
-							type = nuclear_reactor
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				25 = {
-					1149 = {
 						add_building_construction = {
 							type = nuclear_reactor
 							level = 1
@@ -622,21 +573,18 @@ CHI_Legislative_Yuan_decisions = {
 		priority = 40
 		fire_only_once = no
 		cancel_if_not_visible = no
-		cost = 100
-		days_remove = 50
+		cost = 75
+		days_remove = 60
 		days_re_enable = 30
 		modifier = {
-			political_power_gain = -0.25
-			stability_weekly_factor = 0.0025
-			social_liberal_drift = -0.01
-			market_liberal_drift = -0.01
-			social_democrat_drift = -0.01
-			totalitarian_socialist_drift = -0.01
-			fascist_drift = -0.01
-			national_socialist_drift = -0.01
-			communist_drift = -0.01
-			conservative_drift = 0.02
-			authoritarian_democrat_drift = 0.02
+			stability_weekly_factor = 0.025
+			political_power_gain = 0.10
+			totalitarian_socialist_drift = -0.08
+			fascist_drift = -0.08
+			national_socialist_drift = -0.08
+			communist_drift = -0.08
+			conservative_drift = 0.10
+			authoritarian_democrat_drift = 0.10
 		}
 		complete_effect = {
 			set_country_flag = KMT_agenda
@@ -649,9 +597,7 @@ CHI_Legislative_Yuan_decisions = {
 					add_idea = CHI_LY_of_the_roc_8
 				}
 			}
-			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.005}
-			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.25}
-			add_to_variable = {var = CHI_LFY_consumer_goods_factor value = 0.01}
+			add_to_variable = {var = CHI_LFY_stability_factor value = 0.05}
 
 		}
 	}
