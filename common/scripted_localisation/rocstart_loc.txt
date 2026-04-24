@@ -288,71 +288,71 @@ defined_text = {
 		localization_key = "NCM_country_other"
 	}
 }
-	defined_text = {
-		name = GET_BACKGROUND
-		text = { 
-			trigger = {
-				tag = CHI
-			}
-			localization_key = "GFX_CHI_BG"
-		}	
-		text = { 
-			trigger = {
-				tag = SOV
-			}
-			localization_key = "GFX_Moscow_BG"
-		}	
-		text = { 
-			trigger = {
-				tag = FRA
-			}
-			localization_key = "GFX_France_BG"
-		}	
-		text = { 
-			trigger = {
-				tag = USA
-			}
-			localization_key = "GFX_USA_BG"
+defined_text = {
+	name = GET_BACKGROUND
+	text = {
+		trigger = {
+			tag = CHI
 		}
-		text = { 
-			trigger = {
-				tag = GER
-			}
-			localization_key = "GFX_GER_BG"
-		}
-		text = { 
-			trigger = {
-				tag = JAP
-			}
-			localization_key = "GFX_Japan_BG"
-		}
-		text = { 
-			trigger = {
-				tag = PRC
-			}
-			localization_key = "GFX_China_BG"
-		}
-		text = {
-			trigger = {
-				tag = USB
-				has_completed_focus = USB_rebirth
-			}
-			localization_key = "GFX_Caligula_BG"
-		}
-		text = { 
-			trigger = {
-				tag = NCM
-			}
-			localization_key = "GFX_NCM_BG"
-		}
-		text = {
-			trigger = {
-				NOT = { tag = SOV tag = USA tag = FRA tag = JAP tag = PRC tag = GER tag = NCM tag = CHI}
-				NOT = { tag = USB has_completed_focus = USB_rebirth }
-			}
-			localization_key = "GFX_World_Map_BG"
-		}
+		localization_key = "GFX_CHI_BG"
 	}
+	text = {
+		trigger = {
+			tag = SOV
+		}
+		localization_key = "GFX_Moscow_BG"
+	}
+	text = {
+		trigger = {
+			tag = FRA
+		}
+		localization_key = "GFX_France_BG"
+	}
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = "GFX_USA_BG"
+	}
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = "GFX_GER_BG"
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = "GFX_Japan_BG"
+	}
+	text = {
+		trigger = {
+			tag = PRC
+		}
+		localization_key = "GFX_China_BG"
+	}
+	text = {
+		trigger = {
+			tag = USB
+			has_completed_focus = USB_rebirth
+		}
+		localization_key = "GFX_Caligula_BG"
+	}
+	text = {
+		trigger = {
+			tag = NCM
+		}
+		localization_key = "GFX_NCM_BG"
+	}
+	text = {
+		trigger = {
+			NOT = { tag = SOV tag = USA tag = FRA tag = JAP tag = PRC tag = GER tag = NCM tag = CHI}
+			NOT = { tag = USB has_completed_focus = USB_rebirth }
+		}
+		localization_key = "GFX_World_Map_BG"
+	}
+}
 defined_text = {
 	name = CHI_lfy_dangtuan
 	text = {
@@ -966,57 +966,57 @@ defined_text = {
 }
 defined_text = {
 	name = CHI_combatreadiness
-	
-	text = { 
+
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness
-						value > 0.99
+					var = CHI_influence_combatreadiness
+					value > 0.99
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text5"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness
-						value > 0.74
+					var = CHI_influence_combatreadiness
+					value > 0.74
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text4"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness
-						value > 0.49
+					var = CHI_influence_combatreadiness
+					value > 0.49
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text3"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness
-						value > 0.24
+					var = CHI_influence_combatreadiness
+					value > 0.24
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text2"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness
-						value > 0
+					var = CHI_influence_combatreadiness
+					value > 0
 				}
 			}
 		}
@@ -1025,57 +1025,57 @@ defined_text = {
 }
 defined_text = {
 	name = CHI_combatreadiness2
-	
-	text = { 
+
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness2
-						value > 0.99
+					var = CHI_influence_combatreadiness2
+					value > 0.99
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text5"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness2
-						value > 0.74
+					var = CHI_influence_combatreadiness2
+					value > 0.74
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text4"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness2
-						value > 0.49
+					var = CHI_influence_combatreadiness2
+					value > 0.49
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text3"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness2
-						value > 0.24
+					var = CHI_influence_combatreadiness2
+					value > 0.24
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text2"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness2
-						value > 0
+					var = CHI_influence_combatreadiness2
+					value > 0
 				}
 			}
 		}
@@ -1084,57 +1084,57 @@ defined_text = {
 }
 defined_text = {
 	name = CHI_combatreadiness3
-	
-	text = { 
+
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness3
-						value > 0.99
+					var = CHI_influence_combatreadiness3
+					value > 0.99
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text5"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness3
-						value > 0.74
+					var = CHI_influence_combatreadiness3
+					value > 0.74
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text4"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness3
-						value > 0.49
+					var = CHI_influence_combatreadiness3
+					value > 0.49
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text3"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness3
-						value > 0.24
+					var = CHI_influence_combatreadiness3
+					value > 0.24
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text2"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness3
-						value > 0
+					var = CHI_influence_combatreadiness3
+					value > 0
 				}
 			}
 		}
@@ -1143,57 +1143,57 @@ defined_text = {
 }
 defined_text = {
 	name = CHI_combatreadiness4
-	
-	text = { 
+
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness4
-						value > 0.99
+					var = CHI_influence_combatreadiness4
+					value > 0.99
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text5"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness4
-						value > 0.74
+					var = CHI_influence_combatreadiness4
+					value > 0.74
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text4"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness4
-						value > 0.49
+					var = CHI_influence_combatreadiness4
+					value > 0.49
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text3"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness4
-						value > 0.24
+					var = CHI_influence_combatreadiness4
+					value > 0.24
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text2"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness4
-						value > 0
+					var = CHI_influence_combatreadiness4
+					value > 0
 				}
 			}
 		}
@@ -1202,7 +1202,7 @@ defined_text = {
 }
 defined_text = {
 	name = CHI_stage
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				has_country_flag = CHI_stage_1
@@ -1210,7 +1210,7 @@ defined_text = {
 		}
 		localization_key = "CHI_stage_1"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				has_country_flag = CHI_stage_2
@@ -1218,7 +1218,7 @@ defined_text = {
 		}
 		localization_key = "CHI_stage_2"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				has_country_flag = CHI_stage_3
@@ -1226,7 +1226,7 @@ defined_text = {
 		}
 		localization_key = "CHI_stage_3"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				has_country_flag = CHI_stage_4
@@ -1237,57 +1237,57 @@ defined_text = {
 }
 defined_text = {
 	name = CHI_combatreadiness5
-	
-	text = { 
+
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness5
-						value > 0.99
+					var = CHI_influence_combatreadiness5
+					value > 0.99
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text5"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness5
-						value > 0.74
+					var = CHI_influence_combatreadiness5
+					value > 0.74
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text4"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness5
-						value > 0.49
+					var = CHI_influence_combatreadiness5
+					value > 0.49
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text3"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness5
-						value > 0.24
+					var = CHI_influence_combatreadiness5
+					value > 0.24
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text2"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness5
-						value > 0
+					var = CHI_influence_combatreadiness5
+					value > 0
 				}
 			}
 		}
@@ -1296,57 +1296,57 @@ defined_text = {
 }
 defined_text = {
 	name = CHI_combatreadiness6
-	
-	text = { 
+
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness6
-						value > 0.99
+					var = CHI_influence_combatreadiness6
+					value > 0.99
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text5"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness6
-						value > 0.74
+					var = CHI_influence_combatreadiness6
+					value > 0.74
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text4"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness6
-						value > 0.49
+					var = CHI_influence_combatreadiness6
+					value > 0.49
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text3"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness6
-						value > 0.24
+					var = CHI_influence_combatreadiness6
+					value > 0.24
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text2"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness6
-						value > 0
+					var = CHI_influence_combatreadiness6
+					value > 0
 				}
 			}
 		}
@@ -1355,57 +1355,57 @@ defined_text = {
 }
 defined_text = {
 	name = CHI_combatreadiness7
-	
-	text = { 
+
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness7
-						value > 0.99
+					var = CHI_influence_combatreadiness7
+					value > 0.99
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text5"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness7
-						value > 0.74
+					var = CHI_influence_combatreadiness7
+					value > 0.74
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text4"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness7
-						value > 0.49
+					var = CHI_influence_combatreadiness7
+					value > 0.49
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text3"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness7
-						value > 0.24
+					var = CHI_influence_combatreadiness7
+					value > 0.24
 				}
 			}
 		}
 		localization_key = "CHI_Infiltration_text2"
 	}
-	text = { 
+	text = {
 		trigger = {
 			CHI = {
 				check_variable = {
-						var = CHI_influence_combatreadiness7
-						value > 0
+					var = CHI_influence_combatreadiness7
+					value > 0
 				}
 			}
 		}

@@ -260,8 +260,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				conscription_factor = 0.2
-				training_time_factor = -0.2
+				conscription_factor = 0.20
+				training_time_factor = -0.05
 			}
 		}
 		CHI_ROC_army_res7 = {
@@ -302,9 +302,6 @@ ideas = {
 				max_planning = 0.15
 				planning_speed = 0.1
 				army_org_factor = 0.05
-				army_intel_to_others = -5
-				airforce_intel_to_others = -5
-				civilian_intel_to_others = -5
 			}
 		}
 		CHI_ROC_army_res9 = {

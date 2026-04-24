@@ -722,7 +722,7 @@ CHI_Legislative_Yuan_decisions = {
 		priority = 50
 		fire_only_once = no
 		cancel_if_not_visible = no
-		cost = 175
+		cost = 100
 		days_remove = 80
 		days_re_enable = 80
 		modifier = {
@@ -805,33 +805,19 @@ CHI_Legislative_Yuan_decisions = {
 		priority = 50
 		fire_only_once = no
 		cancel_if_not_visible = no
-		cost = 175
-		days_remove = 30
-		days_re_enable = 60
+		cost = 75
+		days_remove = 100
+		days_re_enable = 30
 		modifier = {
 			personal_value_factor = 0.05
-			business_value_factor = 0.05
-			income_growth_factor = 0.05
-			poverty_development_monthly = 0.001
-			society_development_monthly = 0.001
+			poverty_development_monthly = 0.02
+			society_development_monthly = 0.01
 		}
 		complete_effect = {
 			set_country_flag = TPP_agenda
 		}
 		remove_effect = {
 			clr_country_flag = TPP_agenda
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = CHI_LY_of_the_roc_0
-					add_idea = CHI_LY_of_the_roc_10
-				}
-			}
-			add_to_variable = {var = CHI_LFY_personal_value_factor value = 0.002}
-			add_to_variable = {var = CHI_LFY_business_value_factor value = 0.002}
-			add_to_variable = {var = CHI_LFY_income_growth_factor value = 0.002}
-			add_to_variable = {var = CHI_LFY_poverty_development_monthly value = 0.001}
-			add_to_variable = {var = CHI_LFY_society_development_monthly value = 0.001}
-
 		}
 	}
 }
