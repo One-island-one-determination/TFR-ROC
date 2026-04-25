@@ -824,14 +824,12 @@ country_event = {
 				load_oob = "The_PRC_Marine_Corps_taizhong"
 			}
 		}
-		country_event = {
-			id = ROC_CHI.10
-			days = 4
-		}
 	}
 	option = {
 		name = ROC_CHI.9.a
-		hidden_effect = {
+		country_event = {
+			id = ROC_CHI.10
+			days = 4
 		}
 	}
 }
@@ -4317,22 +4315,6 @@ news_event = {
 	is_triggered_only = yes
 	major = yes
 	trigger = {
-	}
-	immediate = {
-		hidden_effect = {
-			AFP = {
-				declare_war_on = {
-					target = NDF
-					type = annex_everything
-				}
-			}
-			NDF = {
-				declare_war_on = {
-					target = AFP
-					type = annex_everything
-				}
-			}
-		}
 	}
 	option = {
 		name = ROC.42.a
