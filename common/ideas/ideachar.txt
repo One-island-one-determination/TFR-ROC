@@ -18,10 +18,10 @@ ideas = {
 				Black_Fireball				#電火球
 			}
 		}
-		CHI_Johnny_Chiang_hog = {
-			#江宜樺
-			picture = CHI_Johnny_Chiang_hog
-			name = CHI_Johnny_Chiang_hog
+		CHI_eric_chu_hog = {
+			#朱立倫
+			picture = CHI_eric_chu_hog
+			name = CHI_eric_chu_hog
 			allowed = {
 			}
 			visible = {
@@ -32,8 +32,7 @@ ideas = {
 			}
 			traits = {
 				CHI_minister_KMT
-				principled_politician				#堅守底線的政治學者
-				cold_hearted_whistleblower				#為人訴病的鐵石心腸
+				behind_the_scenes_financier				#居於幕後的金融專家
 			}
 		}
 		CHI_zhang_shanzheng1_hog = {
@@ -51,7 +50,23 @@ ideas = {
 			traits = {
 				CHI_minister_KMT
 				technical_bureaucrat				#技術官僚
-				politically_incompetent				#缺乏政治手腕
+			}
+		}
+		CHI_Johnny_Chiang_hog = {
+			#江宜樺
+			picture = CHI_Johnny_Chiang_hog
+			name = CHI_Johnny_Chiang_hog
+			allowed = {
+			}
+			visible = {
+				tag = CHI
+			}
+			allowed_to_remove = {
+				date > 2020.6.1
+			}
+			traits = {
+				CHI_minister_KMT
+				principled_politician				#堅守底線的政治學者
 			}
 		}
 		CHI_wang_jinpyng_hog = {
@@ -69,43 +84,6 @@ ideas = {
 			traits = {
 				CHI_minister_KMT
 				tycoon				#喬王
-				aftermath_of_secret_deals				#秘密交易的後果
-			}
-		}
-		CHI_mao_chihkuo_hog = {
-			#毛治國
-			picture = CHI_mao_chihkuo_hog
-			name = CHI_mao_chihkuo_hog
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				industrial_planning_master				#產業規劃大師
-				experienced_engineer				#經驗豐富的工程專家
-			}
-		}
-		CHI_eric_chu_hog = {
-			#朱立倫
-			picture = CHI_eric_chu_hog
-			name = CHI_eric_chu_hog
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				behind_the_scenes_financier				#居於幕後的金融專家
-				mediocre_administrator				#中庸的管理者
 			}
 		}
 		CHI_chen_chienjen_hog = {
@@ -121,10 +99,7 @@ ideas = {
 				date > 2020.6.1
 			}
 			traits = {
-				public_health_scholar				#公共衛生學者
-				moderate_politician				#謙和的政治家
 				trusted_paladin				#備受信任的聖騎士
-				domestic_foreign_research_fellow				#國內外權威科研機構之院士
 			}
 		}
 	}
@@ -145,8 +120,6 @@ ideas = {
 			traits = {
 				CHI_minister_DPP				#民進黨黨籍
 				pragmatic_diplomat				#務實的外交家
-				strategic_bridge_partner				#戰略夥伴橋樑
-				inept_operator				#有失靈活的手腕
 			}
 		}
 		CHI_Lin_Chia_lung_for = {
@@ -164,8 +137,6 @@ ideas = {
 			traits = {
 				CHI_minister_DPP
 				well_planned_political_scholar				#規劃完整的政治學者
-				moderate_leader				#平庸的領袖
-				interrupted_reformer				#屢遭中斷的改革
 			}
 		}
 		CHI_Chiang_Yi_huah_for = {
@@ -183,8 +154,6 @@ ideas = {
 			traits = {
 				CHI_minister_KMT
 				pragmatic_political_scholar				#腳踏實地的政治學者
-				broad_appeal_moderate				#廣泛的親和派
-				politically_inept				#政治手腕不足
 			}
 		}
 		CHI_Xia_Liyan_for = {
@@ -201,8 +170,7 @@ ideas = {
 			}
 			traits = {
 				CHI_minister_KMT
-				criticized_politician				#飽受批評的政治家
-				regional_security_analyst				#區域安全情勢評估專家
+				pragmatic_diplomat				#務實的外交家
 			}
 			on_add = {
 				targeted_modifier = {
@@ -229,7 +197,6 @@ ideas = {
 			}
 			traits = {
 				CHI_minister_DPP
-				trade_expert				#貿易專家
 				resilient_industrial_planner				#韌性產業佈局者
 			}
 			on_add = {
@@ -237,24 +204,6 @@ ideas = {
 			}
 			on_remove = {
 				CHI_de_prc_embargo_idea = yes
-			}
-		}
-		CHI_Zhang_Zhongmou_eco = {
-			#張忠謀
-			picture = CHI_Zhang_Zhongmou_eco
-			name = CHI_Zhang_Zhongmou_eco
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				high_efficiency_producer				#高效生產專家
-				precise_rnd_investment				#精準的研發投資
-				power_balancer				#周旋於列強間的手腕
 			}
 		}
 		CHI_Shen_Jongchin_eco = {
@@ -302,10 +251,7 @@ ideas = {
 				date > 2020.6.1
 			}
 			traits = {
-				shrewd_economist				#頗具手腕的經濟學者
 				national_development_planner				#國家建設規劃者
-				meticulous_bureaucrat				#縝密的行政官
-				contradictory_strategist				#矛盾戰略家
 			}
 		}
 		CHI_Kuo_Chih_hui_eco = {
@@ -322,7 +268,6 @@ ideas = {
 			}
 			traits = {
 				efficiency_focused_entrepreneur				#重視效率的企業家
-				precise_investment_vision				#精準的投資眼光
 			}
 		}
 		CHI_Du_Zijin_eco = {
@@ -339,8 +284,23 @@ ideas = {
 			}
 			traits = {
 				industry_upgrade_promoter				#傳產升級推手
-				southern_solar_industry_promoter				#南部太陽能產業推手
-				southern_tourism_promoter				#南部旅遊產業推手
+			}
+		}
+		CHI_mao_chihkuo_hog = {
+			#毛治國
+			picture = CHI_mao_chihkuo_hog
+			name = CHI_mao_chihkuo_hog
+			allowed = {
+			}
+			visible = {
+				tag = CHI
+			}
+			allowed_to_remove = {
+				date > 2020.6.1
+			}
+			traits = {
+				CHI_minister_KMT
+				experienced_engineer				#經驗豐富的工程專家
 			}
 		}
 		CHI_Eric_Tseng_eco = {
@@ -358,7 +318,6 @@ ideas = {
 			traits = {
 				CHI_minister_KMT
 				financial_expert				#金融專家
-				stable_financial_scholar				#穩健的金融學者
 			}
 		}
 		CHI_Chang_Sheng_ho_eco = {
@@ -375,9 +334,7 @@ ideas = {
 			}
 			traits = {
 				CHI_minister_KMT
-				trending_financial_expert				#雷厲風行的金融專家
 				cold_fiscal_reformer				#冷酷的財政改革者
-				polarizing_fiscal_official				#評價兩極的財政官員
 			}
 		}
 		CHI_Sean_Chen_eco = {
@@ -395,26 +352,6 @@ ideas = {
 			traits = {
 				CHI_minister_KMT
 				crisis_to_stability_financial_expert				#轉危為安的金融專家
-				big_picture_financial_scholar				#以大局為重的金融學者
-			}
-		}
-		CHI_Wang_Jian_xuan_eco = {
-			#王建煊
-			picture = CHI_Wang_Jian_xuan_eco
-			name = CHI_Wang_Jian_xuan_eco
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				stubborn_fiscal_reformer				#堅持己見的財政改革派
-				charity_public_good_ethics				#慈愛、公益、聖哲
-				controversial_sharp_critic				#爭議、歧視、鋒芒畢露
 			}
 		}
 	}
@@ -435,13 +372,12 @@ ideas = {
 			traits = {
 				CHI_minister_DPP
 				ruthless_executor				#無情的執行者
-				controversial_media_figure				#極具爭議的媒體人物
 			}
 		}
-		CHI_Miao_Poya_sec = {
-			#苗博雅
-			picture = CHI_Miao_Poya_sec
-			name = CHI_Miao_Poya_sec
+		CHI_Lin_You_chang_sec = {
+			#林右昌
+			picture = CHI_Lin_You_chang_sec
+			name = CHI_Lin_You_chang_sec
 			allowed = {
 			}
 			visible = {
@@ -451,9 +387,8 @@ ideas = {
 				date > 2020.6.1
 			}
 			traits = {
-				progressive_social_reformer				#進步派社會改革者
-				profit_oriented_supervisor				#牟利的監督者
-				backlash_of_strong_politician				#強勢政治家的反噬
+				CHI_minister_DPP
+				international_exchange_advocate				#國際交流的積極參與者
 			}
 		}
 		CHI_Chen_Shih_chung_sec = {
@@ -473,6 +408,22 @@ ideas = {
 				public_health_scholar				#公共衛生學者
 			}
 		}
+		CHI_Miao_Poya_sec = {
+			#苗博雅
+			picture = CHI_Miao_Poya_sec
+			name = CHI_Miao_Poya_sec
+			allowed = {
+			}
+			visible = {
+				tag = CHI
+			}
+			allowed_to_remove = {
+				date > 2020.6.1
+			}
+			traits = {
+				progressive_social_reformer				#進步派社會改革者
+			}
+		}
 		CHI_Li_Hongyuan_sec = {
 			#李鴻源
 			picture = CHI_Li_Hongyuan_sec
@@ -486,8 +437,7 @@ ideas = {
 				date > 2020.6.1
 			}
 			traits = {
-				infrastructure_reform_and_disaster_management_expert				#水利、災害防救與國土規劃改革者
-				silent_bureaucrat				#直言不諱的謀官
+				infrastructure_reform_and_disaster_management_expert	#水利、災害防救與國土規劃改革者
 			}
 		}
 		CHI_Luo_Shaohuo_sec = {
@@ -504,8 +454,6 @@ ideas = {
 			}
 			traits = {
 				gentle_philanthropist				#溫和的慈善家
-				military_media_spokesperson				#軍方發言人中的媒體專家
-				crisis_management_expert				#危機事件處理專家
 			}
 		}
 		CHI_Li_Hongjun_sec = {
@@ -524,43 +472,6 @@ ideas = {
 				fair_supervisor				#公正的監督者
 			}
 		}
-		CHI_King_Pu_tsung_sec = {
-			#金浦聰
-			picture = CHI_King_Pu_tsung_sec
-			name = CHI_King_Pu_tsung_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				exceptional_aide				#能力超群的幕僚長
-				eccentric_strategist				#奇蹟的軍師
-				public_debate_expert				#輿論專家
-			}
-		}
-		CHI_Lin_You_chang_sec = {
-			#林右昌
-			picture = CHI_Lin_You_chang_sec
-			name = CHI_Lin_You_chang_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_DPP
-				international_exchange_advocate				#國際交流的積極參與者
-				average_bureaucrat				#平庸的行政官員
-			}
-		}
 		CHI_Hua_Ching_chun_sec = {
 			#花敬群
 			picture = CHI_Hua_Ching_chun_sec
@@ -575,7 +486,6 @@ ideas = {
 			}
 			traits = {
 				detached_geopolitical_scholar				#與民意脫節的地政學者
-				long_term_planner				#長期規劃專家
 			}
 		}
 		CHI_Ming_Ju_zheng_sec = {
@@ -609,7 +519,23 @@ ideas = {
 			traits = {
 				CHI_minister_KMT
 				sports_industry_policy_chief				#競競業業的政策幕僚長
-				experienced_institutional_scholar				#熟悉政府組織型態的政治學者
+			}
+		}
+		CHI_King_Pu_tsung_sec = {
+			#金浦聰
+			picture = CHI_King_Pu_tsung_sec
+			name = CHI_King_Pu_tsung_sec
+			allowed = {
+			}
+			visible = {
+				tag = CHI
+			}
+			allowed_to_remove = {
+				date > 2020.6.1
+			}
+			traits = {
+				CHI_minister_KMT
+				exceptional_aide				#能力超群的幕僚長
 			}
 		}
 		CHI_Liao_Liao_yi_sec = {
@@ -653,9 +579,21 @@ ideas = {
 			}
 			traits = {
 				CHI_minister_DPP
-				backlash_of_strong_politician				#強勢政治家的反噬
-				JUNO_national_socialist_vanguard
-				political_chameleon
+				CHI_PRC_Infiltration_expert		# 中共滲透研究專家
+			}
+			on_add = {
+				set_temp_variable = {
+					var = CHI_PRC_Infiltration_timeout_mission_var_temp
+					value = 5
+				}
+				CHI_add_Infiltration_growth_time = yes
+			}
+			on_remove = {
+				set_temp_variable = {
+					var = CHI_PRC_Infiltration_timeout_mission_var_temp
+					value = -5
+				}
+				CHI_add_Infiltration_growth_time = yes
 			}
 		}
 		CHI_Tsa_Mingyen_int = {
@@ -709,8 +647,6 @@ ideas = {
 			traits = {
 				armor_expert				#裝甲專家
 				pragmatic_reformer				#務實的改革派
-				discipline_and_sweat				#汗水與紀律
-				partial_conservative_opposition				#保守集團的部分反對
 			}
 		}
 		CHI_Ku_Li_hsiung = {
@@ -728,10 +664,6 @@ ideas = {
 			traits = {
 				CHI_minister_DPP
 				reformist_official				#改革派官員
-				pragmatic_financial_supervisor				#實事求是的金融監督者
-				strict_legal_scholar				#嚴謹的法律學者
-				cross_domain_politician				#跨界的政治家
-				conservative_group_opposition				#保守集團的反對
 			}
 		}
 		CHI_Feng_Shihkuan = {
@@ -747,7 +679,6 @@ ideas = {
 			}
 			traits = {
 				advanced_air_training_officer				#先進的演訓軍官
-				discipline_and_sweat				#汗水與紀律
 				responsible_domestic_expert				#負責的內政專家（偏政治平衡）
 			}
 		}
@@ -764,8 +695,6 @@ ideas = {
 			}
 			traits = {
 				traditional_general				#傳統的老將軍
-				controversial_sharp_critic				#爭議、歧視、鋒芒畢露
-				partial_conservative_opposition				#保守集團的部分反對
 			}
 		}
 		CHI_Yen_Tehfa = {
@@ -781,7 +710,6 @@ ideas = {
 			}
 			traits = {
 				traditional_general				#傳統的老將軍
-				discipline_and_sweat				#汗水與紀律
 				war_preparedness_organizer				#戰爭衝擊準備組織者
 			}
 		}
