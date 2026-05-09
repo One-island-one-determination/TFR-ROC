@@ -2494,7 +2494,10 @@ focus_tree = {
 			add_ideas = CHI_made_in_TW
 		}
 	}
+
+	# 台海
 	focus = {
+		# 國家危難之時
 		id = CHI_thenationisinperil
 		icon = GFX_focus_CHI_grant_emergency_powers
 		x = 0
@@ -2598,7 +2601,7 @@ focus_tree = {
 	focus = {
 		# 國民精神總動員
 		id = CHI_National_Spiritual_Mobilization
-		icon = GFX_focus_CHI_unite_the_island
+		icon = GFX_focus_CHI_National_Spiritual_Mobilization
 		x = -3
 		y = 1
 		cost = 3
@@ -2653,6 +2656,7 @@ focus_tree = {
 		}
 	}
 	focus = {
+		# 保衛台灣
 		id = CHI_Defend_Taiwan
 		icon = GFX_focus_CHI_Defend_Taiwan
 		x = 3
@@ -2834,6 +2838,7 @@ focus_tree = {
 		}
 	}
 	focus = {
+		# 抓捕通敵者
 		id = CHI_Arresting_traitors
 		icon = GFX_focus_CHI_Arresting_traitors
 		x = 1
@@ -2899,6 +2904,7 @@ focus_tree = {
 		}
 	}
 	focus = {
+		# 煽動中國境內民運人士
 		id = CHI_Inciting_democracyactivists_withinChina
 		icon = GFX_focus_CHI_Inciting_democracyactivists_withinChina
 		x = -1
@@ -2925,6 +2931,7 @@ focus_tree = {
 		}
 	}
 	focus = {
+		# 蛙人滲透福建
 		id = CHI_Frogmen_infiltrate_Fujian
 		icon = GFX_focus_CHI_Frogmen_infiltrate_Fujian
 		x = 1
@@ -2951,6 +2958,7 @@ focus_tree = {
 		}
 	}
 	focus = {
+		# 宣佈戒嚴
 		id = CHI_Martial_law_declared
 		icon = GFX_focus_CHI_Martial_law_declared
 		x = -1
@@ -3001,6 +3009,7 @@ focus_tree = {
 		}
 	}
 	focus = {
+		# 保家衛國
 		id = CHI_Protect_the_homeland
 		icon = GFX_focus_CHI_Protect_the_homeland
 		x = 0
@@ -3028,8 +3037,9 @@ focus_tree = {
 		}
 	}
 	focus = {
+		# 請求盟友物資援助
 		id = CHI_Requesting_material_assistance_from_allies
-		icon = GFX_focus_CHI_appeal_to_the_free_world
+		icon = GFX_focus_CHI_Requesting_material_assistance_from_allies
 		x = 0
 		y = 2
 		cost = 2
@@ -3051,6 +3061,7 @@ focus_tree = {
 		}
 	}
 	focus = {
+		#取出裝備
 		id = CHI_Remove_old_equipment
 		icon = GFX_focus_CHI_Remove_old_equipment
 		x = -1
@@ -3116,6 +3127,7 @@ focus_tree = {
 		}
 	}
 	focus = {
+		# 戰略交通管制中心
 		id = CHI_Strategic_Traffic_Control_Center
 		icon = GFX_focus_CHI_Strategic_Traffic_Control_Center
 		x = 1
@@ -3303,7 +3315,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		# 臨時組建番號
+		# 組建全民防衛動員署
 		id = CHI_Temporary_formation_number
 		icon = GFX_focus_CHI_Temporary_formation_number
 		x = -3
@@ -3488,7 +3500,7 @@ focus_tree = {
 	focus = {
 		# 自由地區一步也不能退！
 		id = CHI_Not_step_back
-		icon = GFX_focus_CHI_hold_the_defence_line
+		icon = GFX_focus_CHI_Not_step_back
 		x = -1
 		y = 2
 		cost = 3.2
@@ -3609,7 +3621,7 @@ focus_tree = {
 	focus = {
 		# 死戰不退
 		id = CHI_Fight_to_the_death
-		icon = GFX_focus_CHI_guerilla_strategy
+		icon = GFX_focus_CHI_Fight_to_the_death
 		x = 0
 		y = 4
 		cost = 3.2
@@ -3636,6 +3648,7 @@ focus_tree = {
 		}
 	}
 	focus = {
+		# 同島一命
 		id = CHI_Onelifeonthesameisland
 		icon = GFX_focus_CHI_Onelifeonthesameisland
 		x = 0
