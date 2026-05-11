@@ -9,7 +9,7 @@ leader_traits = {
 		random = no		#民进党党籍
 	}
 	Black_Fireball = {
-		#黑火球
+		#電火球
 		random = no
 		political_power_gain = 0.1		#政治点增长
 		stability_factor = 0.05		#稳定度
@@ -40,17 +40,8 @@ leader_traits = {
 	public_health_scholar = {
 		#公共衛生學者
 		random = no
-		monthly_population = 0.15		#月度人口 +2%
-		stability_factor = 0.05		#基礎穩定度 +3%
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	moderate_politician = {
-		#謙和的政治家
-		random = no
-		political_power_gain = 0.05		#政治點數增長 +5%
-		stability_factor = 0.07		#基礎穩定度 +7%
+		monthly_population = 0.35		#月度人口 +35%
+		stability_factor = 0.08		#基礎穩定度 +8%
 		ai_will_do = {
 			factor = 1
 		}
@@ -59,9 +50,8 @@ leader_traits = {
 		#備受信任的聖騎士
 		random = no
 		stability_factor = 0.15		#基礎穩定度 +5%
-		political_power_gain = 0.10
-		monthly_population = 0.10
-
+		political_power_gain = 0.1
+		monthly_population = 0.1
 		ai_will_do = {
 			factor = 1
 		}
@@ -87,7 +77,7 @@ leader_traits = {
 	principled_politician = {
 		#堅守底線的政治學者
 		random = no
-		stability_factor = 0.10		#基礎穩定度 +10%
+		stability_factor = 0.1		#基礎穩定度 +10%
 		political_power_gain = 0.075		#政治點數增長 +5%
 		ai_will_do = {
 			factor = 1
@@ -186,19 +176,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	high_efficiency_producer = {
-		#高效生產專家
-		random = no
-		production_factory_efficiency_gain_factor = 0.05		#生產效率增長 +5%
-		production_factory_max_efficiency_factor = 0.07		#生產效率上限 +7%
-		industrial_capacity_factory = 0.09		#工廠產出 +9%
-		factory_energy_consumption = -0.07		#工廠燃油消耗 -7%
-		repair_speed_arms_factory_factor = -0.04		#軍用工廠維護費係數 -4%
-		repair_speed_industrial_complex_factor = -0.09		#民用工廠維護費係數 -9%
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	precise_rnd_investment = {
 		#精準的研發投資
 		random = no
@@ -221,21 +198,10 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	industrial_organizer = {
-		#工業組織者
-		random = no
-		industrial_capacity_factory = 0.05		#工廠產出 +5%
-		industry_repair_factor = -0.03		#工廠維護費係數 -3%
-		production_lack_of_resource_penalty_factor = -0.15		#資源不足生產懲罰 -15%
-		state_production_speed_power_plant_factor = 0.09		#發電站建造速度 +9%
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	resilient_industrial_planner = {
 		#韌性產業佈局者
 		random = no
-		line_change_production_efficiency_factor = 0.10		#生產效率保持 +5%
+		line_change_production_efficiency_factor = 0.1		#生產效率保持 +5%
 		production_factory_start_efficiency_factor = 0.075		#基礎生產效率 +2.5%
 		industry_air_damage_factor = -0.05		#工廠受轟炸易損性 -5%
 		fuel_capacity_factor = 0.1		#燃油容量 +10%
@@ -251,20 +217,7 @@ leader_traits = {
 		stability_factor = 0.05		#基礎穩定度 +5%
 		industry_free_repair_factor = 0.1		#所有建築維護費係數 -10%
 		business_value_factor = 0.025		#商業產值係數 +2.5%
-		consumer_goods_factor = -0.05   #生活消費品系數 -5%
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	high_efficiency_producer = {
-		#高效生產專家
-		random = no
-		production_factory_efficiency_gain_factor = 0.05		#生產效率增長 +5%
-		production_factory_max_efficiency_factor = 0.07		#生產效率上限 +7%
-		industrial_capacity_factory = 0.09		#工廠產出 +9%
-		factory_energy_consumption = -0.07		#工廠能源消耗 -7%
-		repair_speed_arms_factory_factor = -0.04		#軍用工廠維護費係數 -4%
-		repair_speed_industrial_complex_factor = -0.09		#民用工廠維護費係數 -9%
+		consumer_goods_factor = -0.05		#生活消費品系數 -5%
 		ai_will_do = {
 			factor = 1
 		}
@@ -272,23 +225,20 @@ leader_traits = {
 	efficiency_focused_entrepreneur = {
 		#重視效率的企業家
 		random = no
-		production_factory_efficiency_gain_factor = 0.05		#生產效率增長 +5%
-		production_factory_max_efficiency_factor = 0.05		#生產效率上限 +5%
-		industrial_capacity_factory = 0.10		#工廠產出 +10%
-		state_production_speed_office_park_factor = 0.1		#辦公園區
 		political_power_gain = -0.05		#政治點數增長 -2%
+		production_factory_efficiency_gain_factor = 0.15		#生產效率增長 +15%
+		industrial_capacity_factory = 0.15		#工廠產出 +10%
+		state_production_speed_office_park_factor = 0.1		#辦公園區
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	industrial_organizer = {
-		#工業組織者
+	power_organizer = {
+		#能源組織者
 		random = no
-		industrial_capacity_factory = 0.05		#工廠產出 +5%
-		industry_repair_factor = -0.03		#工廠維護費係數 -3%
 		production_lack_of_resource_penalty_factor = -0.15		#資源不足懲罰 -15%
-		local_factory_energy_consumption = -0.07		#本地工廠能源消耗 -7%
-		state_production_speed_power_plant_factor = 0.09		#發電站建造速度 +9%
+		factory_energy_consumption = -0.15		#本地工廠能源消耗 -15%
+		state_production_speed_power_plant_factor = 0.1		#發電站建造速度 +10%
 		ai_will_do = {
 			factor = 1
 		}
@@ -297,7 +247,7 @@ leader_traits = {
 		#國家建設規劃者
 		random = no
 		business_value_factor = 0.05		#商業產值係數 +4%
-		production_speed_buildings_factor = 0.10
+		production_speed_buildings_factor = 0.1
 		repair_speed_infrastructure_factor = 0.05		#基礎設施維護費 -5%
 		research_speed_factor = 0.025
 		max_fuel_factor = 0.1
@@ -381,12 +331,13 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	ruthless_executor = {
-		#無情的執行者
+	media_administrator = {
+		#媒體出身的政務官
 		random = no
 		stability_factor = -0.02		#基礎穩定度 -2%
-		political_power_gain = 0.10		#政治點數增長 +8%
-		resistance_growth_factor = -0.15
+		political_power_gain = 0.06		#政治點數增長 +6%
+		drift_defence_factor = 0.1		#意識形態變化抵抗 +10%
+		social_liberal_drift = 0.1
 		ai_will_do = {
 			factor = 1
 		}
@@ -395,7 +346,7 @@ leader_traits = {
 		#能力超群的幕僚長
 		random = no
 		stability_factor = 0.05		#基礎穩定度 +4%
-		political_power_gain = 0.20		#政治點數增長 +3%
+		political_power_gain = 0.2		#政治點數增長 +3%
 		ai_will_do = {
 			factor = 1
 		}
@@ -413,7 +364,7 @@ leader_traits = {
 	detached_geopolitical_scholar = {
 		#與民意脫節的地政學者
 		random = no
-		production_speed_buildings_factor = 0.10		#建造速度 +5%
+		production_speed_buildings_factor = 0.1		#建造速度 +5%
 		society_development_monthly = 0.005		#月度社會發展 +0.05
 		personal_value_factor = 0.06		#個人產值係數 +3%
 		political_power_gain = 0.05		#政治點數增長 +0.5%
@@ -616,7 +567,7 @@ leader_traits = {
 	CHI_PRC_Infiltration_expert = {
 		#中共滲透研究專家
 		custom_modifier_tooltip = Infiltration_on_add_tt
-		political_power_gain = -0.10
+		political_power_gain = -0.1
 		stability_factor = -0.05
 		war_support_factor = 0.05
 	}
