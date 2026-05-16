@@ -1162,6 +1162,22 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = taiwan.36
+	title = taiwan.36.t
+	desc = taiwan.36.d
+	picture = GFX_CHI_event_taiwan_32
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = taiwan.36.a
+		load_focus_tree = CHI_taiwan_transition
+	}
+}
+
+
 #USA react
 country_event = {
 	id = taiwan.291
