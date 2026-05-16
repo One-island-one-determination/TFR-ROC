@@ -722,7 +722,7 @@ CHI_PRC_Infiltration_decisions = {
 		}
 		visible = {
 			OR = {
-				has_completed_focus = Taiwan_safe_people_reach
+				has_completed_focus = Taiwan_safe_people_rich
 				has_completed_focus = Taiwan_will_win
 			}
 		}
@@ -795,9 +795,9 @@ CHI_PRC_Infiltration_decisions = {
 		available = {
 			if = {
 				limit = {
-					has_completed_focus = Taiwan_safe_people_reach
-				}
-				has_completed_focus = ased_in_Taiwa
+					has_completed_focus = Taiwan_safe_people_rich
+			    }
+				has_completed_focus = Based_in_Taiwan
 			}
 			else = {
 				has_completed_focus = Continue_transform_justice
@@ -807,7 +807,7 @@ CHI_PRC_Infiltration_decisions = {
 			#显示
 			## 是否完成國策
 			OR = {
-				has_completed_focus = Taiwan_safe_people_reach
+				has_completed_focus = Taiwan_safe_people_rich
 				has_completed_focus = Taiwan_will_win
 			}
 		}
@@ -838,7 +838,7 @@ CHI_PRC_Infiltration_decisions = {
 		available = {
 			if = {
 				limit = {
-					has_completed_focus = Taiwan_safe_people_reach
+					has_completed_focus = Taiwan_safe_people_rich
 				}
 				has_completed_focus = Expand_intelligence_system
 			}
@@ -850,7 +850,7 @@ CHI_PRC_Infiltration_decisions = {
 			#显示
 			## 是否完成國策
 			OR = {
-				has_completed_focus = Taiwan_safe_people_reach
+				has_completed_focus = Taiwan_safe_people_rich
 				has_completed_focus = Taiwan_will_win
 			}
 		}
@@ -880,7 +880,7 @@ CHI_PRC_Infiltration_decisions = {
 		available = {
 			if = {
 				limit = {
-					has_completed_focus = Taiwan_safe_people_reach					
+					has_completed_focus = Taiwan_safe_people_rich					
 				}
 				has_completed_focus = Expand_intelligence_system
 			}
@@ -892,7 +892,7 @@ CHI_PRC_Infiltration_decisions = {
 			#显示
 			## 是否完成國策
 			OR = {
-				has_completed_focus = Taiwan_safe_people_reach
+				has_completed_focus = Taiwan_safe_people_rich
 				has_completed_focus = Taiwan_will_win
 			}
 		}
