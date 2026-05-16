@@ -274,8 +274,8 @@ focus_tree = {
 	#KMT
 	focus = {
 		# 台灣安全，人民有錢
-		id = Taiwan_safe_people_reach
-		icon = GFX_focus_CHI_Taiwan_safe_people_reach
+		id = Taiwan_safe_people_rich
+		icon = GFX_focus_CHI_Taiwan_safe_people_rich
 		x = -3
 		y = 1
 		cost = 5
@@ -355,9 +355,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		relative_position_id = Taiwan_safe_people_reach
+		relative_position_id = Taiwan_safe_people_rich
 		prerequisite = {
-			focus = Taiwan_safe_people_reach
+			focus = Taiwan_safe_people_rich
 		}
 	}
 	focus = {
@@ -381,9 +381,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		relative_position_id = Taiwan_safe_people_reach
+		relative_position_id = Taiwan_safe_people_rich
 		prerequisite = {
-			focus = Taiwan_safe_people_reach
+			focus = Taiwan_safe_people_rich
 		}
 	}
 	focus = {
@@ -430,9 +430,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		relative_position_id = Taiwan_safe_people_reach
+		relative_position_id = Taiwan_safe_people_rich
 		prerequisite = {
-			focus = Taiwan_safe_people_reach
+			focus = Taiwan_safe_people_rich
 		}
 	}
 	focus = {
@@ -478,9 +478,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		relative_position_id = Taiwan_safe_people_reach
+		relative_position_id = Taiwan_safe_people_rich
 		prerequisite = {
-			focus = Taiwan_safe_people_reach
+			focus = Taiwan_safe_people_rich
 		}
 		available = {
 			has_completed_focus = Taiwan_makes_fortune
@@ -532,9 +532,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		relative_position_id = Taiwan_safe_people_reach
+		relative_position_id = Taiwan_safe_people_rich
 		prerequisite = {
-			focus = Taiwan_safe_people_reach
+			focus = Taiwan_safe_people_rich
 		}
 	}
 	#中間
@@ -691,7 +691,7 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = Taiwan_safe_people_reach
+						has_completed_focus = Taiwan_safe_people_rich
 					}
 					add_power_balance_value = {
 						id = CHI_Identity_dispute
