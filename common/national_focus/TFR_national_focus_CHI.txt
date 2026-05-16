@@ -570,13 +570,13 @@ focus_tree = {
 		y = 1
 		cost = 1
 		available = {
-			has_country_flag = CHI_has_oil_crash
+			has_country_flag = CHI_has_oil_crash1
 		}
 		completion_reward = {
 			add_political_power = -15
 			custom_effect_tooltip = oil_focus_unlock
-			CHI_oli_crash_idea = yes
-			set_country_flag = CHI_has_oli_crash2
+			CHI_oil_crash_idea = yes
+			set_country_flag = CHI_has_oil_crash2
 		}
 		relative_position_id = CHI_election
 		prerequisite = {
@@ -600,7 +600,7 @@ focus_tree = {
 				limit = {
 					OR = {
 						has_country_flag = covid_happen2
-						has_country_flag = CHI_has_oli_crash2
+						has_country_flag = CHI_has_oil_crash2
 					}
 				}
 				has_completed_focus = island_of_energy_security
@@ -637,7 +637,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_country_flag = covid_happen3
-			has_country_flag = CHI_has_oli_crash3
+			has_country_flag =_crash3
 		}
 		completion_reward = {
 			add_political_power = 150
@@ -1015,10 +1015,10 @@ focus_tree = {
 		y = 0
 		cost = 1
 		allow_branch = {
-			has_country_flag = CHI_has_oil_crash
+			has_country_flag = CHI_has_oil_crash1
 		}
 		available = {
-			has_country_flag = CHI_has_oil_crash
+			has_country_flag = CHI_has_oil_crash1
 		}
 		completion_reward = {
 			add_political_power = -100
@@ -1041,7 +1041,7 @@ focus_tree = {
 			has_completed_focus = Coping_with_the_oil_crisis
 		}
 		completion_reward = {
-			CHI_oli_crash_idea = yes
+			CHI_oil_crash_idea = yes
 			add_political_power = 50
 		}
 		relative_position_id = third_oil_crisis
@@ -1063,7 +1063,7 @@ focus_tree = {
 		cost = 3
 		completion_reward = {
 			add_political_power = 25
-			CHI_oli_crash_idea = yes
+			CHI_oil_crash_idea = yes
 			add_resource = {
 				type = oil
 				amount = 25
@@ -1089,7 +1089,7 @@ focus_tree = {
 		cost = 3
 		completion_reward = {
 			add_political_power = -25
-			CHI_oli_crash_idea = yes
+			CHI_oil_crash_idea = yes
 			if = {
 				limit = {
 					CHI_tsai_ing_wen_char = {
@@ -1135,7 +1135,7 @@ focus_tree = {
 		y = 2
 		cost = 3
 		completion_reward = {
-			CHI_oli_crash_idea = yes
+			CHI_oil_crash_idea = yes
 		}
 		relative_position_id = Unleashing_strategic_oil_reserves
 		prerequisite = {
@@ -1162,7 +1162,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = -0.05
-			CHI_oli_crash_idea = yes
+			CHI_oil_crash_idea = yes
 		}
 		relative_position_id = third_oil_crisis
 		prerequisite = {
@@ -1185,7 +1185,7 @@ focus_tree = {
 			has_completed_focus = Coping_with_the_oil_crisis
 		}
 		completion_reward = {
-			CHI_oli_crash_idea = yes
+			CHI_oil_crash_idea = yes
 		}
 		relative_position_id = third_oil_crisis
 		prerequisite = {
@@ -1217,7 +1217,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			CHI_oli_crash_idea = yes
+			CHI_oil_crash_idea = yes
 			effect_tooltip = {
 				add_ideas = CHI_nukee_ke1
 			}
@@ -1247,7 +1247,7 @@ focus_tree = {
 			focus = Life_extension_of_nuclear_power_unit_three
 		}
 		completion_reward = {
-			CHI_oli_crash_idea = yes
+			CHI_oil_crash_idea = yes
 			add_ideas = CHI_green_energy
 			1148 = {
 				add_building_construction = {
@@ -1280,7 +1280,7 @@ focus_tree = {
 		y = 1
 		cost = 2
 		completion_reward = {
-			CHI_oli_crash_idea = yes
+			CHI_oil_crash_idea = yes
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = CHI_nukee_ke2
@@ -1328,7 +1328,7 @@ focus_tree = {
 		y = 1
 		cost = 2
 		completion_reward = {
-			CHI_oli_crash_idea = yes
+			CHI_oil_crash_idea = yes
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = "CHI_nukee_ke2"
@@ -1386,7 +1386,7 @@ focus_tree = {
 		y = 1
 		cost = 2
 		completion_reward = {
-			CHI_oli_crash_idea = yes
+			CHI_oil_crash_idea = yes
 			1148 = {
 				add_building_construction = {
 					type = energy_farm
@@ -1414,8 +1414,8 @@ focus_tree = {
 		y = 4
 		cost = 3
 		completion_reward = {
-			custom_effect_tooltip = CHI_has_oli_crash.tt
-			set_country_flag = CHI_has_oli_crash3
+			custom_effect_tooltip = CHI_has_oil_crash.tt
+			set_country_flag = CHI_has_oil_crash3
 			add_resource = {
 				type = coal
 				amount = 5
