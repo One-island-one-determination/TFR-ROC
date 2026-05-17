@@ -2470,22 +2470,6 @@ country_event = {
 }
 
 country_event = {
-	id = ROC.3
-	title = ROC.3.t
-	desc = ROC.3.d
-	picture = GFX_red_line_go_down
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = ROC.3.a
-		set_country_flag = CHI_has_oil_crash1
-		focus_unlock = yes
-		add_ideas = CHI_oil_crash1
-		complete_national_focus = third_oil_crisis
-	}
-}
-
-country_event = {
 	id = ROC.4
 	title = ROC.4.t
 	desc = ROC.4.d

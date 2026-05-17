@@ -139,8 +139,6 @@ country_event = {
 		}
 	}
 }
-
-
 #零號病患
 country_event = {
 	id = CHI.2
@@ -209,7 +207,6 @@ country_event = {
 		name = CHI.6.a
 	}
 }
-
 #深夜的總統府
 country_event = {
 	id = CHI.7
@@ -232,6 +229,40 @@ country_event = {
 		name = CHI.8.a
 	}
 }
+
+#偃旗息鼓
+country_event = {
+	id = CHI.9
+	title = CHI.9.t
+	desc = CHI.9.d
+	picture = GFX_CHI_call_it_a_day
+	fire_only_once = yes
+	option = {
+		name = CHI.9.a
+		custom_effect_tooltip = load_CHI_reconstruction_focus_tree
+		hidden_effect = {
+			load_focus_tree = CHI_reconstruction_focus			
+		}
+	}
+}
+
+#石油危機
+country_event = {
+	id = CHI.10
+	title = CHI.10.t
+	desc = CHI.10.d
+	picture = GFX_red_line_go_down
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.10.a
+		set_country_flag = CHI_has_oil_crash1
+		focus_unlock = yes
+		add_ideas = CHI_oil_crash1
+		complete_national_focus = third_oil_crisis
+	}
+}
+
 country_event = {
 	id = taiwan_temp_skeleton.1
 	title = taiwan_temp_skeleton.1.t
@@ -1161,22 +1192,6 @@ country_event = {
 		name = taiwan.35.a
 	}
 }
-
-country_event = {
-	id = taiwan.36
-	title = taiwan.36.t
-	desc = taiwan.36.d
-	picture = GFX_CHI_event_taiwan_32
-	is_triggered_only = yes
-	fire_only_once = yes
-	trigger = {
-	}
-	option = {
-		name = taiwan.36.a
-		load_focus_tree = CHI_taiwan_transition
-	}
-}
-
 
 #USA react
 country_event = {

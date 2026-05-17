@@ -1,0 +1,215 @@
+focus_tree = {
+	id = CHI_reconstruction_focus
+	country = {
+		factor = 0
+	}
+	focus = {
+		id = CHI_Emergency_reconstruction_begins
+		icon = GFX_focus_CHI_Emergency_reconstruction_begins
+		cost = 2
+		x = 0
+		y = 0
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Post_war_personnel_issues
+		icon = GFX_focus_CHI_Post_war_personnel_issues
+		cost = 2
+		relative_position_id = CHI_Emergency_reconstruction_begins
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CHI_Emergency_reconstruction_begins
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Guarantee_basic_food_and_clothing
+		icon = GFX_focus_CHI_Guarantee_basic_food_and_clothing
+		cost = 2
+		relative_position_id = CHI_Emergency_reconstruction_begins
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = CHI_Emergency_reconstruction_begins
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Emergency_repair_infrastructure
+		icon = GFX_focus_CHI_Emergency_repair_infrastructure
+		cost = 2
+		relative_position_id = CHI_Emergency_reconstruction_begins
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = CHI_Emergency_reconstruction_begins
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Temporarily_reserve_military_personnel
+		icon = GFX_focus_CHI_Temporarily_reserve_military_personnel
+		cost = 1
+		relative_position_id = CHI_Post_war_personnel_issues
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CHI_Post_war_personnel_issues
+		}
+
+		mutually_exclusive = {
+			focus = CHI_Demobilized_reservists
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Demobilized_reservists
+		icon = GFX_focus_CHI_CHI_Post_war_personnel_issues
+		cost = 1
+		relative_position_id = CHI_Post_war_personnel_issues
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CHI_Post_war_personnel_issues
+		}
+		
+		mutually_exclusive = {
+			focus = CHI_Temporarily_reserve_military_personnel
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Request_international_assistance
+		icon = GFX_focus_CHI_Request_international_assistance
+		cost = 1
+		relative_position_id = CHI_Guarantee_basic_food_and_clothing
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CHI_Guarantee_basic_food_and_clothing
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Priority_to_residential_electricity
+		icon = GFX_focus_CHI_Priority_to_residential_electricity
+		cost = 1
+		relative_position_id = CHI_Guarantee_basic_food_and_clothing
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CHI_Guarantee_basic_food_and_clothing
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Repair_Taoyuan_Airport
+		icon = GFX_focus_CHI_Repair_Taoyuan_Airport
+		cost = 1
+		relative_position_id = CHI_Emergency_repair_infrastructure
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CHI_Emergency_repair_infrastructure
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Reopening_Kaohsiung_Port
+		icon = GFX_focus_CHI_Reopening_Kaohsiung_Port
+		cost = 1
+		relative_position_id = CHI_Emergency_repair_infrastructure
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CHI_Emergency_repair_infrastructure
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Reopening_Kaohsiung_Port
+		icon = GFX_focus_CHI_Reopening_Kaohsiung_Port
+		cost = 1
+		relative_position_id = CHI_Emergency_repair_infrastructure
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CHI_Emergency_repair_infrastructure
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Ending_wartime_economic
+		icon = GFX_focus_CHI_Ending_wartime_economic
+		cost = 1
+		relative_position_id = CHI_Guarantee_basic_food_and_clothing
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = CHI_Request_international_assistance
+		}
+		prerequisite = {
+			focus = CHI_Priority_to_residential_electricity
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_MilitaryCivilian_cooperation_reconstruction
+		icon = GFX_focus_CHI_MilitaryCivilian_cooperation_reconstruction
+		cost = 1
+		relative_position_id = CHI_Temporarily_reserve_military_personnel
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CHI_Temporarily_reserve_military_personnel
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Mobilizing_civil_society_groups
+		icon = GFX_focus_CHI_Mobilizing_civil_society_groups
+		cost = 1
+		relative_position_id = CHI_Demobilized_reservists
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CHI_Demobilized_reservists
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Connecting_lifelines
+		icon = GFX_focus_CHI_Connecting_lifelines
+		cost = 1
+		relative_position_id = CHI_Emergency_repair_infrastructure
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = CHI_Repair_Taoyuan_Airport
+		}
+		prerequisite = {
+			focus = CHI_Reopening_Kaohsiung_Port
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_Surviving_disaster
+		icon = GFX_focus_CHI_Surviving_disaster
+		cost = 1
+		relative_position_id = CHI_Post_war_personnel_issues
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = CHI_MilitaryCivilian_cooperation_reconstruction
+			focus = CHI_Mobilizing_civil_society_groups
+		}
+		prerequisite = {
+			focus = CHI_Connecting_lifelines
+		}
+		prerequisite = {
+			focus = CHI_Ending_wartime_economic
+		}
+		completion_reward = { }
+	}
+}
