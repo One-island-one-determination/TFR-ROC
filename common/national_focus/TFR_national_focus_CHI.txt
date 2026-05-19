@@ -291,12 +291,16 @@ focus_tree = {
 			}
 			effect_tooltip = {
 				add_ideas = Republic_of_China_idea
+				remove_ideas = CHII_taiwanese_independence_movement_idea1
 			}
 			set_country_flag = KMT_win_flg
 			hidden_effect = {
 				country_event = {
 					id = ROC_CHI.35
 					days = 14
+				}
+				remove_dynamic_modifier = {
+					modifier = CHI_taiwanese_independence_movement_idea
 				}
 				add_dynamic_modifier = {
 					modifier = Republic_of_China_dynamic
@@ -1437,6 +1441,7 @@ focus_tree = {
 				state = 524
 			}
 			hidden_effect = {
+				clr_country_flag = CHI_has_oil_crash1
 				if = {
 					limit = {
 						has_ideas = CHI_oil_crash11
@@ -2454,8 +2459,11 @@ focus_tree = {
 			focus = National_Artificial_Intelligence_Strategy
 		}
 		relative_position_id = Semiconductor_mobilization
-		completion_reward = {
-			add_ideas = CHI_toughen_industries
+		completion_reward = {			
+			add_timed_idea = {
+				idea = CHI_toughen_industries
+				days = 365
+			}
 		}
 	}
 	focus = {
