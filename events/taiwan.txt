@@ -2470,23 +2470,6 @@ country_event = {
 }
 
 country_event = {
-	id = ROC.4
-	title = ROC.4.t
-	desc = ROC.4.d
-	#picture = GFX_red_line_go_down
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = ROC.4.a
-		set_power_balance = {
-			id = CHI_HanKuoyu_andLaiChingte_power_balance
-			left_side = CHI_taihai_HanKuoyu_side
-			right_side = CHI_taihai_LaiChingte_side
-		}
-	}
-}
-
-country_event = {
 	id = ROC.5
 	title = ROC.5.t
 	desc = ROC.5.d

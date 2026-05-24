@@ -1,3 +1,4 @@
+# 地標
 CHI_gaoxiong = {
 	icon = GFX_modifiers_CHI_gaoxiong
 	enable = {
@@ -51,6 +52,8 @@ CHI_taizhong = {
 	mobilization_speed = 0.05
 }
 
+## 正面Buff
+# 中共滲透
 CHI_PRC_Infiltration = {
 	enable = {
 		tag = CHI
@@ -58,7 +61,7 @@ CHI_PRC_Infiltration = {
 	army_core_attack_factor = CHI_PRC_Infiltration_buff
 	army_core_defence_factor = CHI_PRC_Infiltration_buff
 }
-
+# 台灣獨立運動
 CHI_taiwanese_independence_dynamic = {
 	icon = GFX_idea_TAI_taiwanese_independence_movements
 
@@ -77,7 +80,7 @@ CHI_taiwanese_independence_dynamic = {
 	conscription_factor = CHI_taiwanese_independence_conscription_factor_var
 	social_liberal_drift = CHI_taiwanese_independence_social_liberal_drift_var
 }
-
+# 憲政新政
 Republic_of_China_dynamic = {
 	icon = GFX_idea_ROC
 
@@ -95,6 +98,7 @@ Republic_of_China_dynamic = {
 	stability_weekly = CHI_Republic_of_China_stability_weekly_var
 	conscription_factor = CHI_Republic_of_China_conscription_factor_var
 }
+# 國軍
 CHI_ROC_army_dynamic = {
 	icon = GFX_idea_CHI_ROC_army
 
@@ -136,20 +140,7 @@ CHI_ROC_army_dynamic = {
 	mobilization_speed = ROC_mobilization_speed
 	experience_loss_factor = ROC_experience_loss_factor
 }
-financial_crisis_dynamic = {
-	icon = GFX_idea_TAI_taiwanese_independence_movements
-
-	enable = {
-		has_country_flag = American_Civil_War_happen_flg
-	}
-
-	income_growth_factor = financial_crisis_income_growth_factor
-	inflation_monthly = financial_crisis_inflation_monthly
-	business_value_factor = financial_crisis_business_value_factor
-	personal_value_factor = financial_crisis_personal_value_factor
-	poverty_development_monthly = financial_crisis_poverty_development_monthly
-}
-
+# 立法院
 CHI_LY_of_the_roc_dynamic = {
 	icon = GFX_idea_CHI_LY_of_the_roc_dynamic
 	enable = {
@@ -185,7 +176,7 @@ CHI_LY_of_the_roc_dynamic = {
 	# = CHI_LFY_
 	# = CHI_LFY_
 }
-
+#重啟核能
 CHI_reintroduce_nuclear_dynamic = {
 	icon = GFX_idea_CHI_reintroduce_nuclear
 	enable = {
@@ -195,6 +186,22 @@ CHI_reintroduce_nuclear_dynamic = {
 	production_factory_max_efficiency_factor = CHI_reintroduce_nuclear_production_factory_max_efficiency
 }
 
+## 負面Buff
+financial_crisis_dynamic = {
+	icon = GFX_idea_TAI_taiwanese_independence_movements
+
+	enable = {
+		has_country_flag = American_Civil_War_happen_flg
+	}
+
+	income_growth_factor = financial_crisis_income_growth_factor
+	inflation_monthly = financial_crisis_inflation_monthly
+	business_value_factor = financial_crisis_business_value_factor
+	personal_value_factor = financial_crisis_personal_value_factor
+	poverty_development_monthly = financial_crisis_poverty_development_monthly
+}
+
+# 政黨勢力影響
 CHI_influence_KMT_dynamic = {
 	enable = {
 		has_country_flag = CHI_lfy_flag
@@ -237,6 +244,28 @@ CHI_influence_SDP_dynamic = {
 	}
 	industrial_capacity_factory  = CHI_influence_SDP_dynamic_var
 }
+CHI_influence_PFP_dynamic = {
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	political_power_factor  = CHI_influence_PFP_dynamic_var
+}
+CHI_influence_NP_dynamic = {
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	political_power_factor  = CHI_influence_NP_dynamic_var
+}
+CHI_influence_LP_dynamic = {
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	political_power_factor  = CHI_influence_LP_dynamic_var
+}
+
+## 戰時Buff
+
+# 國民精神總動員
 CHI_NSM_dynamic = {
 	#icon = GFX_idea_CHI_LY_of_the_roc_dynamic
 	enable = {
@@ -258,6 +287,7 @@ CHI_NSM_dynamic = {
 	# = CHI_NSM_
 	# = CHI_NSM_
 }
+# 保衛台灣
 CHI_Defend_Taiwan_dynamic = {
 	#icon = GFX_idea_CHI_LY_of_the_roc_dynamic
 	enable = {
@@ -274,6 +304,8 @@ CHI_Defend_Taiwan_dynamic = {
 	local_intel_to_enemies = CHI_Defend_Taiwan_local_intel_to_enemies
 	# = CHI_Defend_Taiwan_
 }
+
+## 中共內部問題
 PRC_made_in_china_STATE2_dynamic = {
 	icon = GFX_idea_PRC_made_in_china2
 	enable = {
@@ -460,147 +492,4 @@ PRC_Domestictechnology = {
 	research_speed_factor = -0.05
 	production_speed_buildings_factor = 0.15
 	industrial_capacity_factory = 0.15
-}
-CHI_influence_combatreadiness_dynamic = {
-	enable = {
-		tag = CHI
-	}
-	industrial_capacity_factory = CHI_influence_combatreadiness_dynamic_var
-	production_speed_arms_factory_factor = CHI_influence_combatreadiness_dynamic_var
-	production_speed_bunker_factor = CHI_influence_combatreadiness_dynamic_var
-	production_speed_coastal_bunker_factor = CHI_influence_combatreadiness_dynamic_var
-	production_speed_anti_air_building_factor = CHI_influence_combatreadiness_dynamic_var
-	army_core_attack_factor = CHI_influence_combatreadiness_dynamic_var
-	army_core_defence_factor = CHI_influence_combatreadiness_dynamic_var
-	conscription_factor = CHI_influence_combatreadiness_dynamic_var
-}
-CHI_influence_combatreadiness2_dynamic = {
-	enable = {
-		tag = CHI
-	}
-	political_power_factor = CHI_influence_combatreadiness2_dynamic_var
-	opinion_gain_monthly_same_ideology = CHI_influence_combatreadiness2_dynamic_var
-	opinion_gain_monthly_same_ideology_factor = CHI_influence_combatreadiness2_dynamic_var
-	faction_trade_opinion_factor = CHI_influence_combatreadiness2_dynamic_var
-	trade_opinion_factor = CHI_influence_combatreadiness2_dynamic_var
-	opinion_gain_monthly = CHI_influence_combatreadiness2_dynamic_var
-	opinion_gain_monthly_factor = CHI_influence_combatreadiness2_dynamic_var
-}
-CHI_influence_combatreadiness3_dynamic = {
-	enable = {
-		tag = CHI
-	}
-	political_power_factor = CHI_influence_combatreadiness3_dynamic_var
-	stability_factor = CHI_influence_combatreadiness3_dynamic_var
-	defensive_war_stability_factor = CHI_influence_combatreadiness3_dynamic_var
-	war_support_factor = CHI_influence_combatreadiness3_dynamic_var
-	defensive_war_stability_factor = CHI_influence_combatreadiness3_dynamic_var
-	conscription_factor = CHI_influence_combatreadiness3_dynamic_var
-	coordination_bonus = CHI_influence_combatreadiness3_dynamic_var
-	resistance_growth_on_our_occupied_states = CHI_influence_combatreadiness3_dynamic_var
-	army_core_attack_factor = CHI_influence_combatreadiness3_dynamic_var
-	army_core_defence_factor = CHI_influence_combatreadiness3_dynamic_var
-}
-CHI_influence_combatreadiness4_dynamic = {
-	enable = {
-		tag = CHI
-	}
-	airforce_intel_factor = CHI_influence_combatreadiness4_dynamic_var
-	army_intel_factor = CHI_influence_combatreadiness4_dynamic_var
-	civilian_intel_factor = CHI_influence_combatreadiness4_dynamic_var
-	intel_from_combat_factor = CHI_influence_combatreadiness4_dynamic_var
-	enemy_operative_capture_chance_factor = CHI_influence_combatreadiness4_dynamic_var
-	air_bombing_targetting = CHI_influence_combatreadiness4_dynamic_var
-	air_detection = CHI_influence_combatreadiness4_dynamic_var
-	pocket_penalty = CHI_influence_combatreadiness4_dynamic_var
-	coordination_bonus = CHI_influence_combatreadiness4_dynamic_var
-	army_morale_factor = CHI_influence_combatreadiness4_dynamic_var
-}
-CHI_influence_combatreadiness5_dynamic = {
-	enable = {
-		tag = CHI
-	}
-	production_speed_buildings_factor = CHI_influence_combatreadiness5_dynamic_var
-	industry_repair_factor = CHI_influence_combatreadiness5_dynamic_var
-	repair_speed_infrastructure_factor = CHI_influence_combatreadiness5_dynamic_var
-	repair_speed_arms_factory_factor = CHI_influence_combatreadiness5_dynamic_var
-	repair_speed_industrial_complex_factor = CHI_influence_combatreadiness5_dynamic_var
-	industrial_capacity_factory = CHI_influence_combatreadiness5_dynamic_var
-	global_building_slots_factor = CHI_influence_combatreadiness5_dynamic_var
-	production_factory_efficiency_gain_factor = CHI_influence_combatreadiness5_dynamic_var
-	production_factory_max_efficiency_factor = CHI_influence_combatreadiness5_dynamic_var
-	production_factory_start_efficiency_factor = CHI_influence_combatreadiness5_dynamic_var
-}
-CHI_influence_combatreadiness6_dynamic = {
-	enable = {
-		tag = CHI
-	}
-	political_power_factor = CHI_influence_combatreadiness6_dynamic_var
-	party_popularity_stability_factor = CHI_influence_combatreadiness6_dynamic_var
-	stability_factor = CHI_influence_combatreadiness6_dynamic_var
-	war_support_factor = CHI_influence_combatreadiness6_dynamic_var
-	conservative_drift = CHI_influence_combatreadiness6_dynamic_var
-	libertarian_socialist_drift = CHI_influence_combatreadiness6_dynamic_var
-	social_democrat_drift = CHI_influence_combatreadiness6_dynamic_var
-	social_liberal_drift = CHI_influence_combatreadiness6_dynamic_var
-	authoritarian_democrat_drift = CHI_influence_combatreadiness6_dynamic_var
-	market_liberal_drift = CHI_influence_combatreadiness6_dynamic_var
-	initiative_factor = CHI_influence_combatreadiness6_dynamic_var
-	fascist_drift = CHI_influence_combatreadiness6_dynamic_var
-	communist_drift = CHI_influence_combatreadiness6_dynamic_var
-	totalitarian_socialist_drift = CHI_influence_combatreadiness6_dynamic_var
-	national_socialist_drift = CHI_influence_combatreadiness6_dynamic_var
-}
-CHI_influence_combatreadiness7_dynamic = {
-	enable = {
-		tag = CHI
-	}
-	experience_gain_air_factor = CHI_influence_combatreadiness7_dynamic_var
-	experience_gain_army_factor = CHI_influence_combatreadiness7_dynamic_var
-	experience_gain_navy_factor = CHI_influence_combatreadiness7_dynamic_var
-	terrain_trait_xp_gain_factor = CHI_influence_combatreadiness7_dynamic_var
-	army_morale_factor = CHI_influence_combatreadiness7_dynamic_var
-	army_org_factor = CHI_influence_combatreadiness7_dynamic_var
-	coordination_bonus = CHI_influence_combatreadiness7_dynamic_var
-	max_planning = CHI_influence_combatreadiness7_dynamic_var
-	max_planning_factor = CHI_influence_combatreadiness7_dynamic_var
-	planning_speed = CHI_influence_combatreadiness7_dynamic_var
-	army_core_attack_factor = CHI_influence_combatreadiness7_dynamic_var
-	army_core_defence_factor = CHI_influence_combatreadiness7_dynamic_var
-}
-PDTO_stand_up_to_taiwan_idea_1 = {
-	icon = GFX_modifiers_SOV_devastated_by_war
-	enable = {
-		always = yes
-	}
-	local_non_core_manpower = -0.50
-	resistance_growth = 0.50
-	local_factories = 0.05
-	local_supplies = 0.50
-	local_supplies_for_controller = 0.50
-	army_intel_factor = 0.50
-	army_attack_factor = 0.15
-	army_defence_factor = 0.15
-	army_core_attack_factor = 0.30
-	army_core_defence_factor = 0.30
-	army_org_factor = 0.15
-	army_speed_factor = 0.15
-}
-CHI_influence_PFP_dynamic = {
-	enable = {
-		has_country_flag = CHI_lfy_flag
-	}
-	political_power_factor  = CHI_influence_PFP_dynamic_var
-}
-CHI_influence_NP_dynamic = {
-	enable = {
-		has_country_flag = CHI_lfy_flag
-	}
-	political_power_factor  = CHI_influence_NP_dynamic_var
-}
-CHI_influence_LP_dynamic = {
-	enable = {
-		has_country_flag = CHI_lfy_flag
-	}
-	political_power_factor  = CHI_influence_LP_dynamic_var
 }
