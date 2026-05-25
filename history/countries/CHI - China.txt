@@ -2,44 +2,44 @@
 capital = 1148
 oob = "CHI_2020"
 if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_naval_oob = "CHI_2000_naval_mtg"
-	else = {
-		set_naval_oob = "CHI_2000_naval_legacy"
-	}
+  limit = {
+    has_dlc = "Man the Guns"
+  }
+  set_naval_oob = "CHI_2000_naval_mtg"
+  else = {
+    set_naval_oob = "CHI_2000_naval_legacy"
+  }
 }
 
 send_embargo = PRC
 send_embargo = PRK
 set_variable = {
-	Russian_Influence = 0
+  Russian_Influence = 0
 }
 
 set_variable = {
-	var = CHI_PRC_Infiltration_timeout_mission_var
-	value = 30
+  var = CHI_PRC_Infiltration_timeout_mission_var
+  value = 30
 }
 
 set_variable = {
-	Chinese_Influence = 0.2
+  Chinese_Influence = 0.2
 }
 
 set_variable = {
-	American_Influence = 0
+  American_Influence = 0
 }
 
 set_variable = {
-	European_Influence = 0.15
+  European_Influence = 0.15
 }
 
 set_variable = {
-	PDO_Influence = 0.6
+  PDO_Influence = 0.6
 }
 
 set_variable = {
-	Sovereign_Influence = 0.05
+  Sovereign_Influence = 0.05
 }
 
 recruit_character = CHI_tsai_ing_wen_char
@@ -103,633 +103,645 @@ set_country_flag = CHI_PRC_Infiltration_start_flg
 set_country_flag = country_language_chinese
 set_country_flag = CHI_DPP_in_power_flag
 set_technology = {
-	infantry_weapons1 = 1
-	infantry_weapons2 = 1
-	infantry_weapons3 = 1
-	motorised_infantry = 1
-	infantry_rifle_upgrade = 1
-	infantry_rifle_upgrade2 = 1
-	infantry_rifle_upgrade3 = 1
-	upgraded_infantry_weapons1 = 1
-	support_weapons = 1
-	support_weapons2 = 1
-	support_weapons3 = 1
-	night_vision = 1
-	night_vision2 = 1
-	night_vision3 = 1
-	body_armor = 1
-	body_armor2 = 1
-	body_armor3 = 1
-	camouflage = 1
-	camouflage2 = 1
-	camouflage3 = 1
-	tech_mountaineers = 1
-	tech_rangers = 1
-	paratroopers = 1
-	marines = 1
-	basic_train = 1
-	## Support Companies ##
-	tech_support = 1
-	tech_engineers = 1
-	tech_recon = 1
-	tech_military_police = 1
-	tech_maintenance_company = 1
-	tech_field_hospital = 1
-	tech_logistics_company = 1
-	tech_signal_company = 1
-	## Armor ##
-	mechanised_infantry1 = 1
-	mechanised_infantry2 = 1
-	light_mechanized_infantry1 = 1
-	light_mechanized_infantry2 = 1
-	self_propelled_aa1 = 1
-	amphibious_mechanized_infantry1 = 1
-	main_battle_tank1 = 1
-	main_battle_tank2 = 1
-	light_tank1 = 1
-	light_tank2 = 1
-	Basic_medium_tank_chassis = 1
-	Basic_light_tank_chassis = 1
-	light_tank_chassis_0 = 1
-	auto_loader_tech = 1
-	blow_out_compartment_tech = 1
-	apds_tech = 1
-	heat_tech = 1
-	engine_tech_1 = 1
-	engine_tech_2 = 1
-	armor_tech_1 = 1
-	armor_tech_2 = 1
-	light_tank_equipment_0 = 1
-	gwtank_chassis = 1
-	## Artillery ##
-	gw_artillery = 1
-	interwar_antitank = 1
-	interwar_antiair = 1
-	rocket_artillery = 1
-	interwar_artillery = 1
-	sp_artillery1 = 1
-	self_propelled_aa1 = 1
-	artillery1 = 1
-	antitank1 = 1
-	antitank2 = 1
-	antiair1 = 1
-	antiair2 = 1
-	antiair3 = 1
-	## Air ##
-	attack_helicopter_1 = 1
-	utility_helicopter_1 = 1
-	## Engineering ##
-	electronic_mechanical_engineering = 1
-	radio = 1
-	power_plants = 1
-	power_plants1 = 1
-	nuclear_reactors = 1
-	energy_farms = 1
-	## Industry ##
-	basic_machine_tools = 1
-	fuel_silos = 1
-	fuel_refining = 1
-	synth_oil_experiments = 1
-	## Doctrines ##
-	mobile_warfare = 1
-	fleet_in_being = 1
-	formation_flying = 1
+  infantry_weapons1 = 1
+  infantry_weapons2 = 1
+  infantry_weapons3 = 1
+  motorised_infantry = 1
+  infantry_rifle_upgrade = 1
+  infantry_rifle_upgrade2 = 1
+  infantry_rifle_upgrade3 = 1
+  upgraded_infantry_weapons1 = 1
+  support_weapons = 1
+  support_weapons2 = 1
+  support_weapons3 = 1
+  night_vision = 1
+  night_vision2 = 1
+  night_vision3 = 1
+  body_armor = 1
+  body_armor2 = 1
+  body_armor3 = 1
+  camouflage = 1
+  camouflage2 = 1
+  camouflage3 = 1
+  tech_mountaineers = 1
+  tech_rangers = 1
+  paratroopers = 1
+  marines = 1
+  basic_train = 1
+  ## Support Companies ##
+  tech_support = 1
+  tech_engineers = 1
+  tech_recon = 1
+  tech_military_police = 1
+  tech_maintenance_company = 1
+  tech_field_hospital = 1
+  tech_logistics_company = 1
+  tech_signal_company = 1
+  ## Armor ##
+  mechanised_infantry1 = 1
+  mechanised_infantry2 = 1
+  light_mechanized_infantry1 = 1
+  light_mechanized_infantry2 = 1
+  self_propelled_aa1 = 1
+  amphibious_mechanized_infantry1 = 1
+  main_battle_tank1 = 1
+  main_battle_tank2 = 1
+  light_tank1 = 1
+  light_tank2 = 1
+  Basic_medium_tank_chassis = 1
+  Basic_light_tank_chassis = 1
+  light_tank_chassis_0 = 1
+  auto_loader_tech = 1
+  blow_out_compartment_tech = 1
+  apds_tech = 1
+  heat_tech = 1
+  engine_tech_1 = 1
+  engine_tech_2 = 1
+  armor_tech_1 = 1
+  armor_tech_2 = 1
+  light_tank_equipment_0 = 1
+  gwtank_chassis = 1
+  ## Artillery ##
+  gw_artillery = 1
+  interwar_antitank = 1
+  interwar_antiair = 1
+  rocket_artillery = 1
+  interwar_artillery = 1
+  sp_artillery1 = 1
+  self_propelled_aa1 = 1
+  artillery1 = 1
+  antitank1 = 1
+  antitank2 = 1
+  antiair1 = 1
+  antiair2 = 1
+  antiair3 = 1
+  ## Air ##
+  attack_helicopter_1 = 1
+  utility_helicopter_1 = 1
+  ## Engineering ##
+  electronic_mechanical_engineering = 1
+  radio = 1
+  power_plants = 1
+  power_plants1 = 1
+  nuclear_reactors = 1
+  energy_farms = 1
+  ## Industry ##
+  basic_machine_tools = 1
+  fuel_silos = 1
+  fuel_refining = 1
+  synth_oil_experiments = 1
+  ## Doctrines ##
+  mobile_warfare = 1
+  fleet_in_being = 1
+  formation_flying = 1
 }
 
 if = {
-	limit = {
-		not = {
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_technology = {
-		early_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		improved_heavy_cruiser = 1
-		early_carrier = 1
-		basic_carrier = 1
-		early_submarine = 1
-		basic_submarine = 1
-		transport = 1
-	}
+  limit = {
+    not = {
+      has_dlc = "Man the Guns"
+    }
+  }
+  set_technology = {
+    early_destroyer = 1
+    early_light_cruiser = 1
+    basic_light_cruiser = 1
+    early_heavy_cruiser = 1
+    basic_heavy_cruiser = 1
+    improved_heavy_cruiser = 1
+    early_carrier = 1
+    basic_carrier = 1
+    early_submarine = 1
+    basic_submarine = 1
+    transport = 1
+  }
 }
 
 if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		improved_ship_hull_cruiser = 1
-		early_ship_hull_carrier = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		smoke_generator = 1
-		sonar = 1
-		basic_depth_charges = 1
-		improved_airplane_launcher = 1
-		basic_cruiser_armor_scheme = 1
-		basic_heavy_armor_scheme = 1
-		basic_torpedo = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_medium_battery = 1
-		basic_heavy_battery = 1
-		#basic_secondary_battery = 1
-		mtg_transport = 1
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-	}
+  limit = {
+    has_dlc = "Man the Guns"
+  }
+  set_technology = {
+    early_ship_hull_light = 1
+    early_ship_hull_cruiser = 1
+    basic_ship_hull_cruiser = 1
+    improved_ship_hull_cruiser = 1
+    early_ship_hull_carrier = 1
+    early_ship_hull_submarine = 1
+    basic_ship_hull_submarine = 1
+    early_ship_hull_light = 1
+    basic_ship_hull_light = 1
+    smoke_generator = 1
+    sonar = 1
+    basic_depth_charges = 1
+    improved_airplane_launcher = 1
+    basic_cruiser_armor_scheme = 1
+    basic_heavy_armor_scheme = 1
+    basic_torpedo = 1
+    basic_battery = 1
+    basic_light_battery = 1
+    basic_medium_battery = 1
+    basic_heavy_battery = 1
+    #basic_secondary_battery = 1
+    mtg_transport = 1
+    basic_naval_mines = 1
+    submarine_mine_laying = 1
+  }
 }
 
 if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
-		main_battle_tank1 = 1
-		main_battle_tank2 = 1
-		main_battle_tank3 = 1
-		main_battle_tank4 = 1
-		light_tank1 = 1
-		amphibious_tank1 = 1
-		amphibious_mechanized_infantry1 = 1
-	}
+  limit = {
+    NOT = {
+      has_dlc = "No Step Back"
+    }
+  }
+  set_technology = {
+    main_battle_tank1 = 1
+    main_battle_tank2 = 1
+    main_battle_tank3 = 1
+    main_battle_tank4 = 1
+    light_tank1 = 1
+    amphibious_tank1 = 1
+    amphibious_mechanized_infantry1 = 1
+  }
 }
 
 if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		basic_medium_tank_chassis = 1
-		#improved_medium_tank_chassis = 1
-		engine_tech_1 = 1
-		amphibious_tank_chassis = 1
-		amphibious_mechanized_infantry1 = 1
-		apds_tech = 1
-		turret_mounted_mg_tech = 1
-		heat_tech = 1
-		turret_mounted_atgm_tech = 1
-		apfsds_tech = 1
-		armor_tech_1 = 1
-		armor_tech_2 = 1
-		auto_loader_tech = 1
-		legacy_armor_designs = 1
-		auto_cannon_tech = 1
-	}
+  limit = {
+    has_dlc = "No Step Back"
+  }
+  set_technology = {
+    gwtank_chassis = 1
+    basic_light_tank_chassis = 1
+    basic_medium_tank_chassis = 1
+    #improved_medium_tank_chassis = 1
+    engine_tech_1 = 1
+    amphibious_tank_chassis = 1
+    amphibious_mechanized_infantry1 = 1
+    apds_tech = 1
+    turret_mounted_mg_tech = 1
+    heat_tech = 1
+    turret_mounted_atgm_tech = 1
+    apfsds_tech = 1
+    armor_tech_1 = 1
+    armor_tech_2 = 1
+    auto_loader_tech = 1
+    legacy_armor_designs = 1
+    auto_cannon_tech = 1
+  }
 }
 
 if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	set_technology = {
-		aa_lmg = 1
-		aa_cannon_1 = 1
-		aa_hmg = 1
-		engines_1 = 1
-		engines_2 = 1
-		early_bombs = 1
-		guided_bombs = 1
-		aircraft_construction = 1
-		survivability_studies = 1
-		iw_small_airframe = 1
-		basic_small_airframe = 1
-		improved_small_airframe = 1
-		iw_medium_airframe = 1
-		iw_large_airframe = 1
-	}
-	else = {
-		set_technology = {
-			CAS1 = 1
-			CAS2 = 1
-			cv_CAS1 = 1
-			fighter1 = 1
-			fighter2 = 1
-			fighter3 = 1
-			cv_fighter1 = 1
-			cv_fighter2 = 1
-			naval_bomber1 = 1
-			naval_bomber2 = 1
-			naval_bomber3 = 1
-			cv_naval_bomber1 = 1
-			strategic_bomber1 = 1
-			strategic_bomber2 = 1
-			tactical_bomber1 = 1
-			transport_plane2 = 1
-		}
-	}
+  limit = {
+    has_dlc = "By Blood Alone"
+  }
+  set_technology = {
+    aa_lmg = 1
+    aa_cannon_1 = 1
+    aa_hmg = 1
+    engines_1 = 1
+    engines_2 = 1
+    early_bombs = 1
+    guided_bombs = 1
+    aircraft_construction = 1
+    survivability_studies = 1
+    iw_small_airframe = 1
+    basic_small_airframe = 1
+    improved_small_airframe = 1
+    iw_medium_airframe = 1
+    iw_large_airframe = 1
+  }
+  else = {
+    set_technology = {
+      CAS1 = 1
+      CAS2 = 1
+      cv_CAS1 = 1
+      fighter1 = 1
+      fighter2 = 1
+      fighter3 = 1
+      cv_fighter1 = 1
+      cv_fighter2 = 1
+      naval_bomber1 = 1
+      naval_bomber2 = 1
+      naval_bomber3 = 1
+      cv_naval_bomber1 = 1
+      strategic_bomber1 = 1
+      strategic_bomber2 = 1
+      tactical_bomber1 = 1
+      transport_plane2 = 1
+    }
+  }
 }
 
 add_opinion_modifier = {
-	target = JAP
-	modifier = past_japanese_war_crimes
+  target = JAP
+  modifier = past_japanese_war_crimes
 }
 
 add_ideas = {
-	#National Spirits
-	CHI_gdp_fix
-	CHI_tsmc_idea	#CHI_lower_mainland_influence_idea
-	CHI_low_international_recognition_idea
-	CHI_american_protection_idea
-	CHI_prc_embargo_idea
-	#Laws
-	low_conscription
-	higher_poverty
-	#內閣
-	CHI_Su_Tseng_chang_hog
-	CHI_Hsu_Kuoyung_sec
-	CHI_Yen_Tehfa
-	CHI_Shen_Jongchin_eco
-	CHI_Wu_Zhaoxie_for
-	CHI_Tsa_Mingyen_int
+  #National Spirits
+  CHI_gdp_fix
+  CHI_tsmc_idea	#CHI_lower_mainland_influence_idea
+  CHI_low_international_recognition_idea
+  CHI_american_protection_idea
+  CHI_prc_embargo_idea
+  #Laws
+  low_conscription
+  higher_poverty
+  #內閣
+  CHI_Su_Tseng_chang_hog
+  CHI_Hsu_Kuoyung_sec
+  CHI_Yen_Tehfa
+  CHI_Shen_Jongchin_eco
+  CHI_Wu_Zhaoxie_for
+  CHI_Tsa_Mingyen_int
 }
 
 #Events
 country_event = {
-	id = taiwan.1
-	days = 1
+  id = CHI.4
+  days = 1
+}
+country_event = {
+  id = ROC.1
+  days = 3
+}
+country_event = {
+  id = ROC.77
+  days = 2
+}
+news_event = {
+  id = ROC.41
+  days = 1200
 }
 
 set_politics = {
-	ruling_party = social_liberal
-	last_election = "2016.1.16"
-	election_frequency = 48
-	elections_allowed = yes
+  ruling_party = social_liberal
+  last_election = "2016.1.16"
+  election_frequency = 48
+  elections_allowed = yes
 }
 
 set_popularities = {
-	conservative = 43.5
-	social_democrat = 1.3
-	social_liberal = 47.5
-	market_liberal = 7.7
+  conservative = 43.5
+  social_democrat = 1.3
+  social_liberal = 47.5
+  market_liberal = 7.7
 }
 
 ### VARIANTS ###
 # 2000 Start #
 create_equipment_variant = {
-	name = "成功級巡防艦"
-	type = ship_hull_cruiser_2
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_medium_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_engine_slot = cruiser_ship_engine_2
-		fixed_ship_armor_slot = ship_armor_cruiser_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		mid_1_custom_slot = ship_airplane_launcher_1
-		mid_2_custom_slot = ship_anti_air_1
-	}
+  name = "成功級巡防艦"
+  type = ship_hull_cruiser_2
+  parent_version = 0
+  modules = {
+    fixed_ship_battery_slot = ship_light_medium_battery_2
+    fixed_ship_anti_air_slot = ship_anti_air_2
+    fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+    fixed_ship_radar_slot = ship_radar_1
+    fixed_ship_engine_slot = cruiser_ship_engine_2
+    fixed_ship_armor_slot = ship_armor_cruiser_1
+    fixed_ship_secondaries_slot = ship_secondaries_1
+    mid_1_custom_slot = ship_airplane_launcher_1
+    mid_2_custom_slot = ship_anti_air_1
+  }
 }
 
 create_equipment_variant = {
-	name = "康定級巡防艦"
-	type = ship_hull_cruiser_2
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_medium_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_engine_slot = cruiser_ship_engine_2
-		mid_1_custom_slot = ship_secondaries_1
-		rear_1_custom_slot = ship_airplane_launcher_1
-	}
+  name = "康定級巡防艦"
+  type = ship_hull_cruiser_2
+  parent_version = 0
+  modules = {
+    fixed_ship_battery_slot = ship_light_medium_battery_2
+    fixed_ship_anti_air_slot = ship_anti_air_2
+    fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+    fixed_ship_radar_slot = ship_radar_1
+    fixed_ship_engine_slot = cruiser_ship_engine_2
+    mid_1_custom_slot = ship_secondaries_1
+    rear_1_custom_slot = ship_airplane_launcher_1
+  }
 }
 
 create_equipment_variant = {
-	name = "濟陽級巡防艦"
-	type = ship_hull_cruiser_1
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_medium_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_engine_slot = cruiser_ship_engine_1
-		mid_1_custom_slot = ship_secondaries_1
-	}
-	obsolete = yes
+  name = "濟陽級巡防艦"
+  type = ship_hull_cruiser_1
+  parent_version = 0
+  modules = {
+    fixed_ship_battery_slot = ship_light_medium_battery_1
+    fixed_ship_anti_air_slot = ship_anti_air_1
+    fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+    fixed_ship_engine_slot = cruiser_ship_engine_1
+    mid_1_custom_slot = ship_secondaries_1
+  }
+  obsolete = yes
 }
 
 ## 驅逐艦 ##
 create_equipment_variant = {
-	name = "基隆級飛彈驅逐艦"
-	type = ship_hull_cruiser_3
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_medium_battery_3
-		fixed_ship_anti_air_slot = ship_anti_air_3
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = cruiser_ship_engine_3
-		mid_1_custom_slot = ship_secondaries_2
-		rear_1_custom_slot = ship_airplane_launcher_1
-	}
+  name = "基隆級飛彈驅逐艦"
+  type = ship_hull_cruiser_3
+  parent_version = 0
+  modules = {
+    fixed_ship_battery_slot = ship_medium_battery_3
+    fixed_ship_anti_air_slot = ship_anti_air_3
+    fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+    fixed_ship_radar_slot = ship_radar_2
+    fixed_ship_engine_slot = cruiser_ship_engine_3
+    mid_1_custom_slot = ship_secondaries_2
+    rear_1_custom_slot = ship_airplane_launcher_1
+  }
 }
 
 ## 潛艦 ##
 create_equipment_variant = {
-	name = "劍龍級潛艦"
-	type = ship_hull_submarine_2
-	parent_version = 0
-	modules = {
-		fixed_ship_radar_slot = ship_sonar_1
-		fixed_ship_torpedo_slot = ship_torpedo_sub_2
-		fixed_ship_engine_slot = sub_ship_engine_2
-		rear_1_custom_slot = ship_torpedo_sub_1
-	}
+  name = "劍龍級潛艦"
+  type = ship_hull_submarine_2
+  parent_version = 0
+  modules = {
+    fixed_ship_radar_slot = ship_sonar_1
+    fixed_ship_torpedo_slot = ship_torpedo_sub_2
+    fixed_ship_engine_slot = sub_ship_engine_2
+    rear_1_custom_slot = ship_torpedo_sub_1
+  }
 }
 
 create_equipment_variant = {
-	name = "海獅級潛艦"
-	type = ship_hull_submarine_1
-	parent_version = 0
-	modules = {
-		fixed_ship_torpedo_slot = ship_torpedo_sub_1
-		fixed_ship_engine_slot = sub_ship_engine_1
-	}
-	obsolete = yes
+  name = "海獅級潛艦"
+  type = ship_hull_submarine_1
+  parent_version = 0
+  modules = {
+    fixed_ship_torpedo_slot = ship_torpedo_sub_1
+    fixed_ship_engine_slot = sub_ship_engine_1
+  }
+  obsolete = yes
 }
 
 
 
-	## 巡邏艦 ##
-	create_equipment_variant = { #Corvette 2
-		name = "錦江級巡邏艦"
-		type = ship_hull_light_1
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			fixed_ship_engine_slot = light_ship_engine_2
-			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	create_equipment_variant = { #Corvette 2
-		name = "沱江級飛彈巡邏艦"
-		type = ship_hull_light_2
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_2
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = ship_radar_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			fixed_ship_engine_slot = light_ship_engine_2
-			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_light_battery_2
-			rear_2_custom_slot = ship_light_battery_2
-		}
-	}
+## 巡邏艦 ##
+create_equipment_variant = { #Corvette 2
+  name = "錦江級巡邏艦"
+  type = ship_hull_light_1
+  parent_version = 0
+  modules = {
+    fixed_ship_battery_slot = ship_light_battery_2
+    fixed_ship_anti_air_slot = ship_anti_air_1
+    fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+    fixed_ship_radar_slot = empty
+    fixed_ship_torpedo_slot = ship_torpedo_1
+    fixed_ship_engine_slot = light_ship_engine_2
+    mid_1_custom_slot = ship_torpedo_1
+    rear_1_custom_slot = ship_depth_charge_1
+  }
+}
+create_equipment_variant = { #Corvette 2
+  name = "沱江級飛彈巡邏艦"
+  type = ship_hull_light_2
+  parent_version = 0
+  modules = {
+    fixed_ship_battery_slot = ship_light_battery_2
+    fixed_ship_anti_air_slot = ship_anti_air_2
+    fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+    fixed_ship_radar_slot = ship_radar_1
+    fixed_ship_torpedo_slot = ship_torpedo_1
+    fixed_ship_engine_slot = light_ship_engine_2
+    mid_1_custom_slot = ship_torpedo_1
+    rear_1_custom_slot = ship_light_battery_2
+    rear_2_custom_slot = ship_light_battery_2
+  }
+}
 
 
 create_equipment_variant = {
-	name = "M60A3主戰坦克"
-	type = modern_tank_chassis_1
-	parent_version = 0
-	modules = {
-		main_armament_slot = tank_high_velocity_cannon
-		turret_type_slot = tank_modern_tank_turret
-		suspension_type_slot = tank_torsion_bar_suspension
-		armor_type_slot = tank_cast_armor
-		engine_type_slot = tank_diesel_engine
-		special_type_slot_1 = tank_radio_1
-		special_type_slot_2 = stabilizer
-		special_type_slot_3 = smoke_launchers
-		special_type_slot_4 = wet_ammo_storage
-	}
+  name = "M60A3主戰坦克"
+  type = modern_tank_chassis_1
+  parent_version = 0
+  modules = {
+    main_armament_slot = tank_high_velocity_cannon
+    turret_type_slot = tank_modern_tank_turret
+    suspension_type_slot = tank_torsion_bar_suspension
+    armor_type_slot = tank_cast_armor
+    engine_type_slot = tank_diesel_engine
+    special_type_slot_1 = tank_radio_1
+    special_type_slot_2 = stabilizer
+    special_type_slot_3 = smoke_launchers
+    special_type_slot_4 = wet_ammo_storage
+  }
 }
 
 create_equipment_variant = {
-	name = "CM11勇虎式戰車"
-	type = modern_tank_chassis_1
-	parent_version = 0
-	modules = {
-		main_armament_slot = tank_high_velocity_cannon
-		turret_type_slot = tank_modern_tank_turret
-		suspension_type_slot = tank_torsion_bar_suspension
-		armor_type_slot = tank_welded_armor
-		engine_type_slot = tank_diesel_engine
-		special_type_slot_1 = tank_radio_1
-		special_type_slot_2 = smoke_launchers
-		special_type_slot_3 = stabilizer
-		special_type_slot_4 = extra_ammo_storage
-	}
+  name = "CM11勇虎式戰車"
+  type = modern_tank_chassis_1
+  parent_version = 0
+  modules = {
+    main_armament_slot = tank_high_velocity_cannon
+    turret_type_slot = tank_modern_tank_turret
+    suspension_type_slot = tank_torsion_bar_suspension
+    armor_type_slot = tank_welded_armor
+    engine_type_slot = tank_diesel_engine
+    special_type_slot_1 = tank_radio_1
+    special_type_slot_2 = smoke_launchers
+    special_type_slot_3 = stabilizer
+    special_type_slot_4 = extra_ammo_storage
+  }
 }
 
 create_equipment_variant = {
-	name = "CM34雲豹裝甲車"
-	type = light_tank_chassis_2
-	parent_version = 0
-	modules = {
-		main_armament_slot = tank_auto_cannon_2
-		turret_type_slot = tank_light_three_man_tank_turret
-		suspension_type_slot = tank_wheeled_suspension
-		armor_type_slot = tank_welded_armor
-		engine_type_slot = tank_diesel_engine
-		special_type_slot_1 = tank_radio_1
-		special_type_slot_2 = smoke_launchers
-	}
+  name = "CM34雲豹裝甲車"
+  type = light_tank_chassis_2
+  parent_version = 0
+  modules = {
+    main_armament_slot = tank_auto_cannon_2
+    turret_type_slot = tank_light_three_man_tank_turret
+    suspension_type_slot = tank_wheeled_suspension
+    armor_type_slot = tank_welded_armor
+    engine_type_slot = tank_diesel_engine
+    special_type_slot_1 = tank_radio_1
+    special_type_slot_2 = smoke_launchers
+  }
 }
 
 create_equipment_variant = {
-	name = "F-16A/B戰隼戰鬥機"
-	type = small_plane_airframe_1
-	modules = {
-		fixed_main_weapon_slot = heavy_mg_4x
-		fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-		fixed_auxiliary_weapon_slot_2 = light_mg_4x
-		engine_type_slot = engine_2_1x
-		special_type_slot_1 = hmg_defense_turret
-	}
+  name = "F-16A/B戰隼戰鬥機"
+  type = small_plane_airframe_1
+  modules = {
+    fixed_main_weapon_slot = heavy_mg_4x
+    fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+    fixed_auxiliary_weapon_slot_2 = light_mg_4x
+    engine_type_slot = engine_2_1x
+    special_type_slot_1 = hmg_defense_turret
+  }
 }
 
 create_equipment_variant = {
-	name = "F-CK-1經國號戰鬥機"
-	type = small_plane_airframe_1
-	modules = {
-		fixed_main_weapon_slot = heavy_mg_4x
-		fixed_auxiliary_weapon_slot_1 = bomb_locks
-		fixed_auxiliary_weapon_slot_2 = light_mg_4x
-		engine_type_slot = engine_2_1x
-		special_type_slot_1 = radio_navigation_1
-	}
+  name = "F-CK-1經國號戰鬥機"
+  type = small_plane_airframe_1
+  modules = {
+    fixed_main_weapon_slot = heavy_mg_4x
+    fixed_auxiliary_weapon_slot_1 = bomb_locks
+    fixed_auxiliary_weapon_slot_2 = light_mg_4x
+    engine_type_slot = engine_2_1x
+    special_type_slot_1 = radio_navigation_1
+  }
 }
 
 create_equipment_variant = {
-	name = "幻象2000-5戰鬥機"
-	type = small_plane_airframe_1
-	modules = {
-		fixed_main_weapon_slot = heavy_mg_4x
-		fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-		engine_type_slot = engine_2_1x
-		special_type_slot_1 = radio_navigation_1
-	}
+  name = "幻象2000-5戰鬥機"
+  type = small_plane_airframe_1
+  modules = {
+    fixed_main_weapon_slot = heavy_mg_4x
+    fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+    engine_type_slot = engine_2_1x
+    special_type_slot_1 = radio_navigation_1
+  }
 }
 
 create_equipment_variant = {
-	name = "F-16V戰鬥機"
-	type = small_plane_airframe_2
-	modules = {
-		fixed_main_weapon_slot = heavy_mg_4x
-		fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-		fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
-		engine_type_slot = engine_2_2x
-		special_type_slot_1 = ai_targeting_computer_small
-		special_type_slot_2 = radio_navigation_1
-	}
+  name = "F-16V戰鬥機"
+  type = small_plane_airframe_2
+  modules = {
+    fixed_main_weapon_slot = heavy_mg_4x
+    fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+    fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+    engine_type_slot = engine_2_2x
+    special_type_slot_1 = ai_targeting_computer_small
+    special_type_slot_2 = radio_navigation_1
+  }
 }
 
 create_equipment_variant = {
-	name = "E-2K空中預警機"
-	type = medium_plane_airframe_1
-	modules = {
-		fixed_main_weapon_slot = empty
-		engine_type_slot = engine_2_1x
-		special_type_slot_1 = radio_navigation_1
-	}
+  name = "E-2K空中預警機"
+  type = medium_plane_airframe_1
+  modules = {
+    fixed_main_weapon_slot = empty
+    engine_type_slot = engine_2_1x
+    special_type_slot_1 = radio_navigation_1
+  }
 }
 
 create_equipment_variant = {
-	name = "C-130H運輸機"
-	type = transport_plane_equipment_1
+  name = "C-130H運輸機"
+  type = transport_plane_equipment_1
 }
 
 if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	## Frigates ##
-	create_equipment_variant = {
-		#Frigate 1
-		name = "Knox Class"
-		type = ship_hull_cruiser_1
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			mid_1_custom_slot = ship_airplane_launcher_1
-			mid_2_custom_slot = ship_anti_air_1
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		#Frigate 2
-		name = "Kang Ding class"
-		type = ship_hull_cruiser_2
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = ship_armor_cruiser_2
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			front_1_custom_slot = ship_light_medium_battery_2
-			mid_1_custom_slot = ship_airplane_launcher_1
-			mid_2_custom_slot = ship_anti_air_1
-			rear_1_custom_slot = empty
-		}
-	}
-	## Destroyers ##
-	create_equipment_variant = {
-		#Destroyer 1
-		name = "Gearing class"
-		type = ship_hull_cruiser_1
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = ship_radar_1
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_airplane_launcher_1
-			mid_2_custom_slot = ship_anti_air_1
-			rear_1_custom_slot = ship_medium_battery_1
-		}
-	}
-	
-	## Submarines ##
-	create_equipment_variant = {
-		#Diesel Sub 1A
-		name = "Tench class"
-		type = ship_hull_submarine_1
-		parent_version = 0
-		modules = {
-			fixed_ship_radar_slot = ship_radar_1
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		#Nuclear Sub 2A
-		name = "Chien Lung class"
-		type = ship_hull_submarine_2
-		parent_version = 0
-		modules = {
-			fixed_ship_radar_slot = ship_radar_1
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = ship_torpedo_sub_2
-		}
-	}
+  limit = {
+    has_dlc = "Man the Guns"
+  }
+  ## Frigates ##
+  create_equipment_variant = {
+    #Frigate 1
+    name = "Knox Class"
+    type = ship_hull_cruiser_1
+    parent_version = 0
+    modules = {
+      fixed_ship_battery_slot = ship_medium_battery_1
+      fixed_ship_anti_air_slot = ship_anti_air_1
+      fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+      fixed_ship_radar_slot = empty
+      fixed_ship_engine_slot = cruiser_ship_engine_1
+      fixed_ship_armor_slot = ship_armor_cruiser_1
+      fixed_ship_secondaries_slot = ship_secondaries_1
+      mid_1_custom_slot = ship_airplane_launcher_1
+      mid_2_custom_slot = ship_anti_air_1
+      rear_1_custom_slot = empty
+    }
+    obsolete = yes
+  }
+  create_equipment_variant = {
+    #Frigate 2
+    name = "Kang Ding class"
+    type = ship_hull_cruiser_2
+    parent_version = 0
+    modules = {
+      fixed_ship_battery_slot = ship_light_medium_battery_2
+      fixed_ship_anti_air_slot = ship_anti_air_1
+      fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+      fixed_ship_radar_slot = empty
+      fixed_ship_engine_slot = cruiser_ship_engine_2
+      fixed_ship_armor_slot = ship_armor_cruiser_2
+      fixed_ship_secondaries_slot = ship_secondaries_1
+      front_1_custom_slot = ship_light_medium_battery_2
+      mid_1_custom_slot = ship_airplane_launcher_1
+      mid_2_custom_slot = ship_anti_air_1
+      rear_1_custom_slot = empty
+    }
+  }
+  ## Destroyers ##
+  create_equipment_variant = {
+    #Destroyer 1
+    name = "Gearing class"
+    type = ship_hull_cruiser_1
+    parent_version = 0
+    modules = {
+      fixed_ship_battery_slot = ship_medium_battery_1
+      fixed_ship_anti_air_slot = ship_anti_air_1
+      fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+      fixed_ship_radar_slot = ship_radar_1
+      fixed_ship_engine_slot = cruiser_ship_engine_1
+      fixed_ship_armor_slot = ship_armor_cruiser_1
+      mid_1_custom_slot = ship_airplane_launcher_1
+      mid_2_custom_slot = ship_anti_air_1
+      rear_1_custom_slot = ship_medium_battery_1
+    }
+  }
+
+  ## Submarines ##
+  create_equipment_variant = {
+    #Diesel Sub 1A
+    name = "Tench class"
+    type = ship_hull_submarine_1
+    parent_version = 0
+    modules = {
+      fixed_ship_radar_slot = ship_radar_1
+      fixed_ship_torpedo_slot = ship_torpedo_sub_1
+      fixed_ship_engine_slot = sub_ship_engine_1
+      rear_1_custom_slot = empty
+    }
+    obsolete = yes
+  }
+  create_equipment_variant = {
+    #Nuclear Sub 2A
+    name = "Chien Lung class"
+    type = ship_hull_submarine_2
+    parent_version = 0
+    modules = {
+      fixed_ship_radar_slot = ship_radar_1
+      fixed_ship_torpedo_slot = ship_torpedo_sub_2
+      fixed_ship_engine_slot = sub_ship_engine_2
+      rear_1_custom_slot = ship_torpedo_sub_2
+    }
+  }
 }
 
 if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	create_equipment_variant = {
-		name = "F-CK-1 Ching-kuo"
-		type = small_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = heavy_mg_4x
-			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-			fixed_auxiliary_weapon_slot_2 = light_mg_4x
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = hmg_defense_turret
-		}
-		icon = "GFX_PRC_j7"
-	}
-	create_equipment_variant = {
-		name = "F-16V Viper"
-		type = small_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = heavy_mg_4x
-			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-			fixed_auxiliary_weapon_slot_2 = light_mg_4x
-			fixed_auxiliary_weapon_slot_3 = light_mg_4x
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = hmg_defense_turret
-		}
-		icon = "GFX_PRC_fighter4_medium"
-	}
+  limit = {
+    has_dlc = "By Blood Alone"
+  }
+  create_equipment_variant = {
+    name = "F-CK-1 Ching-kuo"
+    type = small_plane_airframe_1
+    modules = {
+      fixed_main_weapon_slot = heavy_mg_4x
+      fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+      fixed_auxiliary_weapon_slot_2 = light_mg_4x
+      engine_type_slot = engine_1_2x
+      special_type_slot_1 = hmg_defense_turret
+    }
+    icon = "GFX_PRC_j7"
+  }
+  create_equipment_variant = {
+    name = "F-16V Viper"
+    type = small_plane_airframe_1
+    modules = {
+      fixed_main_weapon_slot = heavy_mg_4x
+      fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+      fixed_auxiliary_weapon_slot_2 = light_mg_4x
+      fixed_auxiliary_weapon_slot_3 = light_mg_4x
+      engine_type_slot = engine_1_2x
+      special_type_slot_1 = hmg_defense_turret
+    }
+    icon = "GFX_PRC_fighter4_medium"
+  }
 }

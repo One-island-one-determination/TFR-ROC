@@ -9,10 +9,6 @@ on_actions = {
           add_dynamic_modifier = {
             modifier = CHI_PRC_Infiltration
           }
-          country_event = {
-            id = roc.1
-            days = 2
-          }
           set_variable = {
             CHI_PRC_Infiltration_progress_temp = 5
           }
@@ -92,13 +88,6 @@ on_actions = {
           set_variable = {
             var = CHI_PRC_Infiltration_timeout_mission_var
             value = 30
-          }
-          country_event = {
-            id = CHI.4
-          }
-          country_event = {
-            id = ROC.77
-            days = 1
           }
           country_event = {
             id = ROC.37
