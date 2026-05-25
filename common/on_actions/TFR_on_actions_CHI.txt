@@ -1,187 +1,187 @@
 on_actions = {
-	on_startup = {
-		effect = {
-			every_country = {
-				if = {
-					limit = {
-						tag = CHI
-					}
-					add_dynamic_modifier = {
-						modifier = CHI_PRC_Infiltration
-					}
-					country_event = {
-						id = roc.1
-						days = 2
-					}
-					set_variable = {
-						CHI_PRC_Infiltration_progress_temp = 5
-					}
-					PRC_Infiltration_change = yes
-					set_country_flag = DPP_win_flg
-					add_dynamic_modifier = {
-						modifier = CHI_taiwanese_independence_dynamic
-					}
-					add_to_variable = {
-						var = CHI_taiwanese_independence_political_power_gain_var
-						value = -0.3
-					}
-					set_country_flag = CHI_ROC_army_flg
-					add_dynamic_modifier = {
-						modifier = CHI_ROC_army_dynamic
-					}
-					set_variable = {
-						var = ROC_army_attack_factor
-						value = -0.075
-					}
-					set_variable = {
-						var = ROC_army_defence_factor
-						value = -0.025
-					}
-					set_variable = {
-						var = ROC_conscription_factor
-						value = -0.3
-					}
-					add_to_variable = {
-						var = ROC_experience_gain_army_factor
-						value = -0.1
-					}
-					add_to_variable = {
-						var = ROC_army_morale_factor
-						value = -0.05
-					}
-					set_variable = {
-						var = ROC_experience_gain_factor
-						value = -0.1
-					}
-					set_variable = {
-						var = ROC_max_planning
-						value = -0.05
-					}
-					set_variable = {
-						var = ROC_unit_upkeep_cost_factor
-						value = -0.01
-					}
-					set_variable = {
-						var = ROC_army_org_factor
-						value = -0.05
-					}
-					set_variable = {
-						var = ROC_supply_consumption_factor
-						value = -0.075
-					}
-					set_variable = {
-						var = ROC_monthly_army_professionalism
-						value = -0.0075
-					}
-					set_variable = {
-						var = ROC_military_development_monthly
-						value = -0.015
-					}
-					set_variable = {
-						var = ROC_battalion_upkeep_factor
-						value = -0.075
-					}
-					set_variable = {
-						var = ROC_aircraft_upkeep_factor
-						value = -0.075
-					}
-					set_variable = {
-						var = ROC_ship_upkeep_factor
-						value = -0.075
-					}
-					set_variable = {
-						var = CHI_PRC_Infiltration_timeout_mission_var
-						value = 30
-					}
-					country_event = {
-						id = CHI.4
-					}
-					country_event = {
-						id = ROC.77
-						days = 1
-					}
-					country_event = {
-						id = ROC.37
-						days = 59
-						hours = 6
-					}
-					country_event = {
-						id = ROC.36
-						days = 284
-						hours = 6
-					}
-					country_event = {
-						id = ROC.78
-						days = 425
-					}
-					country_event = {
-						id = ROC.79
-						days = 458
-					}
-					country_event = {
-						id = ROC.80
-						days = 1555
-					}
-					country_event = {
-						id = ROC.81
-						days = 2014
-					}
-					country_event = {
-						id = ROC.82
-						days = 95
-					}
-					#亚细亚的孤儿
-					#					country_event = {
-					#						id = ROC.75
-					#					}
-					set_temp_variable = {
-						var = CHI_influence_KMT_temp
-						value = 0.3
-					}
-					CHI_influence_KMT_add = yes
-					set_temp_variable = {
-						var = CHI_influence_DPP_temp
-						value = 0.55
-					}
-					CHI_influence_DPP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TPP_temp
-						value = 0.08
-					}
-					CHI_influence_TPP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_NPSU_temp
-						value = 0.08
-					}
-					CHI_influence_NPSU_add = yes
-					set_temp_variable = {
-						var = CHI_influence_NPP_temp
-						value = 0.05
-					}
-					CHI_influence_NPP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_TSP_temp
-						value = 0.05
-					}
-					CHI_influence_TSP_add = yes
-					set_temp_variable = {
-						var = CHI_influence_SDP_temp
-						value = 0.05
-					}
-					CHI_influence_SDP_add = yes
-				}
-			}
-		}
-	}
-	on_weekly_CHI = {
-		effect = {
-			if = {
-				limit = {
-					has_active_mission = CHI_taiwan_war_mission
-					surrender_progress > 0.25
-				}
-				country_event = taiwan.34
-			}
-		}
-	}
+  on_startup = {
+    effect = {
+      every_country = {
+        if = {
+          limit = {
+            tag = CHI
+          }
+          add_dynamic_modifier = {
+            modifier = CHI_PRC_Infiltration
+          }
+          country_event = {
+            id = roc.1
+            days = 2
+          }
+          set_variable = {
+            CHI_PRC_Infiltration_progress_temp = 5
+          }
+          PRC_Infiltration_change = yes
+          set_country_flag = DPP_win_flg
+          add_dynamic_modifier = {
+            modifier = CHI_taiwanese_independence_dynamic
+          }
+          add_to_variable = {
+            var = CHI_taiwanese_independence_political_power_gain_var
+            value = -0.3
+          }
+          set_country_flag = CHI_ROC_army_flg
+          add_dynamic_modifier = {
+            modifier = CHI_ROC_army_dynamic
+          }
+          set_variable = {
+            var = ROC_army_attack_factor
+            value = -0.075
+          }
+          set_variable = {
+            var = ROC_army_defence_factor
+            value = -0.025
+          }
+          set_variable = {
+            var = ROC_conscription_factor
+            value = -0.3
+          }
+          add_to_variable = {
+            var = ROC_experience_gain_army_factor
+            value = -0.1
+          }
+          add_to_variable = {
+            var = ROC_army_morale_factor
+            value = -0.05
+          }
+          set_variable = {
+            var = ROC_experience_gain_factor
+            value = -0.1
+          }
+          set_variable = {
+            var = ROC_max_planning
+            value = -0.05
+          }
+          set_variable = {
+            var = ROC_unit_upkeep_cost_factor
+            value = -0.01
+          }
+          set_variable = {
+            var = ROC_army_org_factor
+            value = -0.05
+          }
+          set_variable = {
+            var = ROC_supply_consumption_factor
+            value = -0.075
+          }
+          set_variable = {
+            var = ROC_monthly_army_professionalism
+            value = -0.0075
+          }
+          set_variable = {
+            var = ROC_military_development_monthly
+            value = -0.015
+          }
+          set_variable = {
+            var = ROC_battalion_upkeep_factor
+            value = -0.075
+          }
+          set_variable = {
+            var = ROC_aircraft_upkeep_factor
+            value = -0.075
+          }
+          set_variable = {
+            var = ROC_ship_upkeep_factor
+            value = -0.075
+          }
+          set_variable = {
+            var = CHI_PRC_Infiltration_timeout_mission_var
+            value = 30
+          }
+          country_event = {
+            id = CHI.4
+          }
+          country_event = {
+            id = ROC.77
+            days = 1
+          }
+          country_event = {
+            id = ROC.37
+            days = 59
+            hours = 6
+          }
+          country_event = {
+            id = ROC.36
+            days = 284
+            hours = 6
+          }
+          country_event = {
+            id = ROC.78
+            days = 425
+          }
+          country_event = {
+            id = ROC.79
+            days = 458
+          }
+          country_event = {
+            id = ROC.80
+            days = 1555
+          }
+          country_event = {
+            id = ROC.81
+            days = 2014
+          }
+          country_event = {
+            id = ROC.82
+            days = 95
+          }
+          #亚细亚的孤儿
+          #					country_event = {
+          #						id = ROC.75
+          #					}
+          set_temp_variable = {
+            var = CHI_influence_KMT_temp
+            value = 0.3
+          }
+          CHI_influence_KMT_add = yes
+          set_temp_variable = {
+            var = CHI_influence_DPP_temp
+            value = 0.55
+          }
+          CHI_influence_DPP_add = yes
+          set_temp_variable = {
+            var = CHI_influence_TPP_temp
+            value = 0.08
+          }
+          CHI_influence_TPP_add = yes
+          set_temp_variable = {
+            var = CHI_influence_NPSU_temp
+            value = 0.08
+          }
+          CHI_influence_NPSU_add = yes
+          set_temp_variable = {
+            var = CHI_influence_NPP_temp
+            value = 0.05
+          }
+          CHI_influence_NPP_add = yes
+          set_temp_variable = {
+            var = CHI_influence_TSP_temp
+            value = 0.05
+          }
+          CHI_influence_TSP_add = yes
+          set_temp_variable = {
+            var = CHI_influence_SDP_temp
+            value = 0.05
+          }
+          CHI_influence_SDP_add = yes
+        }
+      }
+    }
+  }
+  on_weekly_CHI = {
+    effect = {
+      if = {
+        limit = {
+          has_active_mission = CHI_taiwan_war_mission
+          surrender_progress > 0.25
+        }
+        country_event = taiwan.34
+      }
+    }
+  }
 }

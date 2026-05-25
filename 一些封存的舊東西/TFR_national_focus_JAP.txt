@@ -718,9 +718,7 @@ focus_tree = {
 		relative_position_id = JAP_revise_article_9
 		cost = 2
 		x = -2
-		y = 1
-		available = {
-		}
+		y = 1 
 		completion_reward = {
 			army_experience = 50
 			set_temp_variable = {
@@ -1032,9 +1030,7 @@ focus_tree = {
 		relative_position_id = JAP_revise_article_9
 		cost = 2
 		x = 3
-		y = 1
-		available = {
-		}
+		y = 1 
 		completion_reward = {
 			navy_experience = 50
 			add_tech_bonus = {
@@ -4450,9 +4446,7 @@ shared_focus = {
 		CHI = {
 			add_stability = 0.1
 			remove_ideas = CHI_destroyed_country_2
-		}
-		hidden_effect = {
-		}
+		} 
 	}
 }
 

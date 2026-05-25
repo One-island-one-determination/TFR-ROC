@@ -949,9 +949,7 @@ country_event = {
 		name = usa.79.a
 		trigger = {
 			USA_sided_with_trump_trigger = yes
-		}
-		effect_tooltip = {
-		}
+		} 
 	}
 	option = {
 		name = usa.79.b
@@ -2737,9 +2735,7 @@ country_event = {
 		tag = USA
 	}
 	option = {
-		name = usa.114.a
-		hidden_effect = {
-		}
+		name = usa.114.a 
 	}
 }
 
@@ -4116,9 +4112,7 @@ country_event = {
 		tag = USA
 	}
 	option = {
-		name = usa.155.a
-		hidden_effect = {
-		}
+		name = usa.155.a 
 	}
 }
 
@@ -4293,9 +4287,7 @@ country_event = {
 		tag = USA
 	}
 	option = {
-		name = usa.163.a
-		hidden_effect = {
-		}
+		name = usa.163.a 
 	}
 }
 
@@ -4768,9 +4760,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = usa.175.a
-		effect_tooltip = {
-		}
+		name = usa.175.a 
 	}
 }
 
@@ -6400,8 +6390,7 @@ country_event = {
 	picture = GFX_USC_trump_crowd
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = usa.227.a
 		trigger = {
@@ -6467,8 +6456,7 @@ country_event = {
 	picture = GFX_USA_trump_jan6
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = {
-	}
+	 
 	immediate = {
 		hidden_effect = {
 			log = "[GetDateText]: [Root.GetName]: event usa.228 immediate"

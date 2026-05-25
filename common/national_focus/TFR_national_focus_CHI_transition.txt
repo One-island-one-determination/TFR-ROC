@@ -9,8 +9,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_victory_of_the_wounded
 		cost = 2
 		x = 1
-		y = 0
-		completion_reward = { }
+		y = 0 
 	}
 
 	focus = {
@@ -19,8 +18,7 @@ focus_tree = {
 		cost = 2
 		relative_position_id = CHI_victory_of_the_wounded
 		x = 5
-		y = 0
-		completion_reward = { }
+		y = 0 
 	}
 
 	focus = {
@@ -35,8 +33,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_Survivor_celebration
-		}
-		completion_reward = { }
+		} 
 	}
 
 	focus = {
@@ -51,8 +48,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = CHI_Preserving_diverse_voices
-		}
-		completion_reward = { }
+		} 
 	}
 
 	focus = {
@@ -67,8 +63,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = CHI_Eliminate_communist_traitors
-		}
-		completion_reward = { }
+		} 
 	}
 
 	focus = {
@@ -85,8 +80,7 @@ focus_tree = {
 
 		mutually_exclusive = {
 			focus = CHI_Restart_Temporary_Provisions
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Restart_Temporary_Provisions
@@ -101,8 +95,7 @@ focus_tree = {
 
 		mutually_exclusive = {
 			focus = CHI_Lifting_martial_law
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Plum_blossoms_bloom_in_the_bitter_winter

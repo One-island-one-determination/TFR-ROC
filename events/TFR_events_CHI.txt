@@ -183,9 +183,7 @@ country_event = {
 	title = CHI.4.t
 	desc = CHI.4.d
 	picture = GFX_CHI_asian_orphan
-	fire_only_once = yes
-	immediate = {
-	}
+	fire_only_once = yes 
 	option = {
 		name = CHI.4.a
 		hidden_effect = {
@@ -553,8 +551,7 @@ news_event = {
 	picture = GFX_Taiwan_Flag
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.5.a
 	}
@@ -568,8 +565,7 @@ news_event = {
 	picture = GFX_Taiwan_Flag
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.6.a
 	}
@@ -583,8 +579,7 @@ country_event = {
 	picture = GFX_Taiwan_Flag
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.7.a
 		#load_oob = CHI_invasion_reserves
@@ -599,8 +594,7 @@ country_event = {
 	picture = GFX_Taiwan_Flag
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.8.a
 		#load_oob = CHI_invasion_reserves2
@@ -615,8 +609,7 @@ country_event = {
 	picture = GFX_Neo_Kuomintang
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.9.a
 		set_politics = {
@@ -673,8 +666,7 @@ news_event = {
 	picture = GFX_militarists_taiwan
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.10.a
 	}
@@ -742,8 +734,7 @@ news_event = {
 	desc = taiwan.26.d
 	picture = GFX_united_states_navy
 	is_triggered_only = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.26.a
 	}
@@ -757,8 +748,7 @@ news_event = {
 	picture = GFX_Taiwan_Flag
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.27.a
 	}
@@ -772,8 +762,7 @@ news_event = {
 	picture = GFX_Taiwan_Flag
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.28.a
 	}
@@ -787,8 +776,7 @@ country_event = {
 	picture = GFX_CHI_criticize_DPP
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.29.a
 		hidden_effect = {
@@ -881,8 +869,7 @@ country_event = {
 	picture = GFX_PRC_rocket_strikes2
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	}
+	 
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -1186,8 +1173,7 @@ country_event = {
 	picture = GFX_CHI_event_taiwan_32
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.35.a
 	}
@@ -1201,8 +1187,7 @@ country_event = {
 	picture = GFX_event_taiwanwarlose
 	is_triggered_only = yes
 	fire_only_once = no
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.291.a
 		hidden_effect = {
@@ -1221,8 +1206,7 @@ country_event = {
 	picture = GFX_event_taiwanwarlose
 	is_triggered_only = yes
 	fire_only_once = no
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.292.a
 		USA = {
@@ -1247,8 +1231,7 @@ country_event = {
 	picture = GFX_CHI_pelosi_visit
 	is_triggered_only = yes
 	fire_only_once = no
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.293.a
 		USA = {
@@ -1268,8 +1251,7 @@ country_event = {
 	picture = GFX_CHI_PRC_taiwan_strait_drill
 	is_triggered_only = yes
 	fire_only_once = no
-	trigger = {
-	}
+	 
 	option = {
 		name = taiwan.30.a
 		trigger = {

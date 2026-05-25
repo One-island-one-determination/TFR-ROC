@@ -2,16 +2,16 @@ PHI_civil_war_dec = {
 	Unification_of_the_Philippines = {
 		visible = {
 			or = {
-			original_tag = NDF
-			original_tag = MIL
-			original_tag = AFP
+				original_tag = NDF
+				original_tag = MIL
+				original_tag = AFP
 			}
 		}
 		allowed = {
 			or = {
-			original_tag = NDF
-			original_tag = MIL
-			original_tag = AFP
+				original_tag = NDF
+				original_tag = MIL
+				original_tag = AFP
 			}
 		}
 		available = {
@@ -23,13 +23,13 @@ PHI_civil_war_dec = {
 			base = 10
 		}
 		complete_effect = {
-			clr_global_flag = PHI_civil_war_dec
+			clr_global_flag = PHI_civil_war_flag
 			hidden_effect = {
-			if = {
-				limit = {
-					original_tag = NDF
-				}
-				PHI = {
+				if = {
+					limit = {
+						original_tag = NDF
+					}
+					PHI = {
 						annex_country = {
 							target = PHN
 							transfer_troops = yes
@@ -56,26 +56,26 @@ PHI_civil_war_dec = {
 							remove_core_of = PHN
 						}
 						set_politics = {
-						ruling_party = communist
-						last_election = "2016.1.16"
-						election_frequency = 48
-						elections_allowed = NO
-					}
+							ruling_party = communist
+							last_election = "2016.1.16"
+							election_frequency = 48
+							elections_allowed = NO
+						}
 						set_popularities = {
-				authoritarian_democrat = 25
-					communist = 40
-				totalitarian_socialist  = 35
-					}
+							authoritarian_democrat = 25
+							communist = 40
+							totalitarian_socialist  = 35
+						}
 						create_country_leader = {
-		name = NDF_Nur_Misuari
-		picture = "gfx/Leaders/PHI_civil_war/NDF_Nur_Misuari.png"
-		ideology=left_nationalism
-		expire="1.1.1.1"
-			}
-			set_cosmetic_tag = PHI_civil_war_NDF_WON
-			set_country_flag = eadi_member
-			set_party_name = { ideology = communist long_name = PHI_NDF_long name = PHI_NDF }
-			set_party_name = { ideology = totalitarian_socialist long_name = PHI_NAP_long name = PHI_NAP }
+							name = NDF_Nur_Misuari
+							picture = "gfx/Leaders/PHI_civil_war/NDF_Nur_Misuari.png"
+							ideology=left_nationalism
+							expire="1.1.1.1"
+						}
+						set_cosmetic_tag = PHI_civil_war_NDF_WON
+						set_country_flag = eadi_member
+						set_party_name = { ideology = communist long_name = PHI_NDF_long name = PHI_NDF }
+						set_party_name = { ideology = totalitarian_socialist long_name = PHI_NAP_long name = PHI_NAP }
 					}
 					PRC = {
 						add_to_faction = PHI
@@ -83,12 +83,12 @@ PHI_civil_war_dec = {
 					news_event = {
 						id = ROC.43
 					}
-			}
-			if = {
-				limit = {
-					original_tag = AFP
 				}
-				PHI = {
+				if = {
+					limit = {
+						original_tag = AFP
+					}
+					PHI = {
 						annex_country = {
 							target = PHN
 							transfer_troops = yes
@@ -115,27 +115,27 @@ PHI_civil_war_dec = {
 							remove_core_of = PHN
 						}
 						set_politics = {
-	ruling_party = nationalist
-	last_election = "2016.1.16"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	authoritarian_democrat = 40
-	nationalist = 60
-}
-			set_cosmetic_tag = PHI_civil_war_AFP_WON
-			set_country_flag = pdto_member
-			create_country_leader = {
-		name = AFP_Romeo_S_Brauner_the_Younger
-		picture = "gfx/Leaders/PHI_civil_war/AFP_Romeo_S_Brauner_the_Younger.png"
-		ideology=military_junta
-		expire="1.1.1.1"
-			}
-			country_event = {
-				id = ROC.55
-				days = 720
-			}
+							ruling_party = nationalist
+							last_election = "2016.1.16"
+							election_frequency = 48
+							elections_allowed = yes
+						}
+						set_popularities = {
+							authoritarian_democrat = 40
+							nationalist = 60
+						}
+						set_cosmetic_tag = PHI_civil_war_AFP_WON
+						set_country_flag = pdto_member
+						create_country_leader = {
+							name = AFP_Romeo_S_Brauner_the_Younger
+							picture = "gfx/Leaders/PHI_civil_war/AFP_Romeo_S_Brauner_the_Younger.png"
+							ideology=military_junta
+							expire="1.1.1.1"
+						}
+						country_event = {
+							id = ROC.55
+							days = 720
+						}
 					}
 					JAP = {
 						add_to_faction = PHI
@@ -143,12 +143,12 @@ set_popularities = {
 					news_event = {
 						id = ROC.44
 					}
-			}
-			if = {
-				limit = {
-					original_tag = MIL
 				}
-				MIL = {
+				if = {
+					limit = {
+						original_tag = MIL
+					}
+					MIL = {
 						annex_country = {
 							target = MIL
 							transfer_troops = yes
@@ -169,24 +169,24 @@ set_popularities = {
 							remove_core_of = AFP
 							remove_core_of = MIL
 						}
-		set_politics = {
-	ruling_party = nationalist
-	last_election = "2016.1.16"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	authoritarian_democrat = 40
-	nationalist = 60
-}
-			set_cosmetic_tag = PHI_civil_war_MILF_WON
-			set_country_flag = pdto_member
-			create_country_leader = {
-		name = MIL_Murad_Ebrahim
-		picture = "gfx/Leaders/PHI_civil_war/MIL_Murad_Ebrahim.png"
-		ideology=salafi
-		expire="1.1.1.1"
-			}
+						set_politics = {
+							ruling_party = nationalist
+							last_election = "2016.1.16"
+							election_frequency = 48
+							elections_allowed = yes
+						}
+						set_popularities = {
+							authoritarian_democrat = 40
+							nationalist = 60
+						}
+						set_cosmetic_tag = PHI_civil_war_MILF_WON
+						set_country_flag = pdto_member
+						create_country_leader = {
+							name = MIL_Murad_Ebrahim
+							picture = "gfx/Leaders/PHI_civil_war/MIL_Murad_Ebrahim.png"
+							ideology=salafi
+							expire="1.1.1.1"
+						}
 					}
 					JAP = {
 						add_to_faction = PHN
@@ -195,13 +195,13 @@ set_popularities = {
 						id = ROC.45
 					}
 					PHN = {
-						declare_war_on= { 
-					target = MIL
-					type = annex_everything 
-				}
+						declare_war_on= {
+							target = MIL
+							type = annex_everything
+						}
 					}
+				}
 			}
-		}
 		}
 	}
 }

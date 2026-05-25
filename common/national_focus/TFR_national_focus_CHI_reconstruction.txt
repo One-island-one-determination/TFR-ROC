@@ -8,8 +8,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_Emergency_reconstruction_begins
 		cost = 2
 		x = 0
-		y = 0
-		completion_reward = { }
+		y = 0 
 	}
 	focus = {
 		id = CHI_Post_war_personnel_issues
@@ -20,8 +19,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = CHI_Emergency_reconstruction_begins
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Guarantee_basic_food_and_clothing
@@ -32,8 +30,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = CHI_Emergency_reconstruction_begins
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Emergency_repair_infrastructure
@@ -44,8 +41,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = CHI_Emergency_reconstruction_begins
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Temporarily_reserve_military_personnel
@@ -60,8 +56,7 @@ focus_tree = {
 
 		mutually_exclusive = {
 			focus = CHI_Demobilized_reservists
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Demobilized_reservists
@@ -76,8 +71,7 @@ focus_tree = {
 
 		mutually_exclusive = {
 			focus = CHI_Temporarily_reserve_military_personnel
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Request_international_assistance
@@ -88,8 +82,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = CHI_Guarantee_basic_food_and_clothing
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Priority_to_residential_electricity
@@ -100,8 +93,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = CHI_Guarantee_basic_food_and_clothing
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Repair_Taoyuan_Airport
@@ -112,8 +104,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = CHI_Emergency_repair_infrastructure
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Reopening_Kaohsiung_Port
@@ -124,8 +115,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = CHI_Emergency_repair_infrastructure
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Reopening_Kaohsiung_Port
@@ -136,8 +126,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = CHI_Emergency_repair_infrastructure
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Ending_wartime_economic
@@ -151,8 +140,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_Priority_to_residential_electricity
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_MilitaryCivilian_cooperation_reconstruction
@@ -163,8 +151,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = CHI_Temporarily_reserve_military_personnel
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Mobilizing_civil_society_groups
@@ -175,8 +162,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = CHI_Demobilized_reservists
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Connecting_lifelines
@@ -190,8 +176,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_Reopening_Kaohsiung_Port
-		}
-		completion_reward = { }
+		} 
 	}
 	focus = {
 		id = CHI_Surviving_disaster
@@ -209,7 +194,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_Ending_wartime_economic
-		}
-		completion_reward = { }
+		} 
 	}
 }
