@@ -1,273 +1,103 @@
 guitypes = {
-	containerWindowType = {
-		name = "CHI_Legislative_Yuan_new_gui"
-		position = { x = -85 y = -450 }
-		size = { width = 600 height = 0 }
-		icontype = {
-			name = "frame"
-			quadtexturesprite = "GFX_frame"
-			position = { x = 410 y = -130 }
-			centerposition = yes
-		}
-		buttonType = {
-			name = "Open_kmt_dec"
-			position = { x = 399 y = -87 }
-			quadTextureSprite = "GFX_KMT_button_icon"
-			frame = 1
-			pdx_tooltip = "GFX_kmt_icon"
-		}
-		buttonType = {
-			name = "Open_tpp_dec"
-			position = { x = 400 y = -167 }
-			quadTextureSprite = "GFX_TPP_button_icon"
-			frame = 1
-			pdx_tooltip = "GFX_tpp_icon"
-		}
-		buttonType = {
-			name = "Open_dpp_dec"
-			position = { x = 399 y = -249 }
-			quadTextureSprite = "GFX_DPP_button_icon"
-			frame = 1
-			pdx_tooltip = "GFX_dpp_icon"
-		}
-	}
+	#立法院UI
+  containerWindowType = {
+    name = "CHI_Legislative_Yuan_gui"
+    position = { x = -85 y = -450 }
+    size = { width = 600 height = 0 }
+    icontype = {
+      name = "frame"
+      quadtexturesprite = "GFX_frame"
+      position = { x = 410 y = -130 }
+      centerposition = yes
+    }
+    buttonType = {
+      name = "Open_kmt_dec"
+      position = { x = 399 y = -87 }
+      quadTextureSprite = "GFX_KMT_button_icon"
+      frame = 1
+      pdx_tooltip = "GFX_kmt_icon"
+    }
+    buttonType = {
+      name = "Open_tpp_dec"
+      position = { x = 400 y = -167 }
+      quadTextureSprite = "GFX_TPP_button_icon"
+      frame = 1
+      pdx_tooltip = "GFX_tpp_icon"
+    }
+    buttonType = {
+      name = "Open_dpp_dec"
+      position = { x = 399 y = -249 }
+      quadTextureSprite = "GFX_DPP_button_icon"
+      frame = 1
+      pdx_tooltip = "GFX_dpp_icon"
+    }
+  }
 
-	containerWindowType = {
-		name = "CHI_lifayuan_gui"
-		position = { x = 1 y = -650 }
-		size = { width = 85 height = 85 }
-		moveable = yes
-		orientation = lower_right
+  #意志之试炼
+  containerWindowType = {
+    name = "test_of_will_taiwan_gui"
+    position = { x= 0 y= 0 }
+    size = { width=100 height= 370 }
+    Orientation = center
+    Origo = center
+    clipping = no
+    moveable = no
 
-		buttonType = {
-			name = "open_lifahui_gui"
-			position = { x = -100 y = 185 }
-			quadTextureSprite = "GFX_open_lifahui_gui111"
-			frame = 1
-		}
-	}
-	containerWindowType = {
-		name = "CHI_Legislative_Yuan_gui"
-		position = { x = -85 y = -450 }
-		size = { width = 600 height = 0 }
-		icontype = {
-			name = "lyj_me"
-			quadtexturesprite = "GFX_lfj_me"
-			position = { x = 400 y = -120 }
-			centerposition = yes
-		}
-		buttonType = {
-			name = "Open_kmt_dec"
-			position = { x = 340 y = -155 }
-			quadTextureSprite = "GFX_kmt_icon"
-			frame = 1
-			pdx_tooltip = "GFX_kmt_icon"
-		}
-		buttonType = {
-			name = "Open_dpp_dec"
-			position = { x = 410 y = -155 }
-			quadTextureSprite = "GFX_dpp_icon"
-			frame = 1
-			pdx_tooltip = "GFX_dpp_icon"
-		}
-		buttonType = {
-			name = "Open_tpp_dec"
-			position = { x = 375 y = -95 }
-			quadTextureSprite = "GFX_tpp_icon"
-			frame = 1
-			pdx_tooltip = "GFX_tpp_icon"
-		}
-	}
+    buttonType = {
+      position = { x = 20 y = 300 }
+      name = "test_of_will_taidong"
+      quadTextureSprite ="GFX_test_of_will_taidong"
+    }
+    buttonType = {
+      position = { x = 320 y = 200 }
+      name = "test_of_will_tainan"
+      quadTextureSprite ="GFX_test_of_will_tainan"
+    }
+    buttonType = {
+      position = { x = 170 y = 200 }
+      name = "test_of_will_taizhong"
+      quadTextureSprite ="GFX_test_of_will_taizhong"
+    }
+    buttonType = {
+      position = { x = 20 y = 200 }
+      name = "test_of_will_taipei"
+      quadTextureSprite ="GFX_test_of_will_taipei"
+    }
+    buttonType = {
+      position = { x = 0 y = 0 }
+      name = "test_of_will_taipei"
+      quadTextureSprite ="GFX_test_of_will_taipei"
+    }
+    buttonType = {
+      position = { x = 170 y = 300 }
+      name = "test_of_will_penghu"
+      quadTextureSprite ="GFX_test_of_will_penghu"
+    }
+    buttonType = {
+      position = { x = 320 y = 300 }
+      name = "test_of_will_jinmen"
+      quadTextureSprite ="GFX_test_of_will_jinmen"
+    }
+    iconType = {
+      position = { x = 0 y = 30 }
+      name = "test_of_will_text"
+      quadTextureSprite ="GFX_test_of_will_text"
+    }
+  }
 
-
-	containerWindowType = {
-		name = "CHI_taihai_war_gui"
-		position = { x = 1 y = -650 }
-		size = { width = 85 height = 85 }
-		moveable = yes
-		orientation = lower_right
-
-		buttonType = {
-			name = "open_taihai_gui"
-			position = { x = -160 y = 90 }
-			quadTextureSprite = "GFX_taihai_war_open"
-			frame = 1
-		}
-	}
-	containerWindowType = {
-		name = "The_taihai_map_container"
-		position = { x= 0 y= 0 }	
-		size = { width=1200 height= 815 }
-		Orientation = center
-		Origo = center
-		clipping = no	
-		moveable = no
-
-		iconType = {            
-			position = { x = -150 y = -200 }
-			name = "taihai_map"           
-			quadTextureSprite ="GFX_taihai_war_map"
-		}
-		buttonType = {            
-			position = { x = 1250 y = -150 }
-			name = "taihai_war_out"           
-			quadTextureSprite ="GFX_taihai_war_out"
-			shortcut = "ESCAPE"
-		}
-	}
-
-	containerWindowType = {
-		name = "test_of_will_taiwan_gui"
-		position = { x= 0 y= 0 }	
-		size = { width=100 height= 370 }
-		Orientation = center
-		Origo = center
-		clipping = no	
-		moveable = no
-
-		buttonType = {            
-			position = { x = 20 y = 300 }
-			name = "test_of_will_taidong"           
-			quadTextureSprite ="GFX_test_of_will_taidong"
-		}
-		buttonType = {            
-			position = { x = 320 y = 200 }
-			name = "test_of_will_tainan"           
-			quadTextureSprite ="GFX_test_of_will_tainan"
-		}
-		buttonType = {            
-			position = { x = 170 y = 200 }
-			name = "test_of_will_taizhong"           
-			quadTextureSprite ="GFX_test_of_will_taizhong"
-		}
-		buttonType = {            
-			position = { x = 20 y = 200 }
-			name = "test_of_will_taipei"           
-			quadTextureSprite ="GFX_test_of_will_taipei"
-		}
-		buttonType = {            
-			position = { x = 0 y = 0 }
-			name = "test_of_will_taipei"           
-			quadTextureSprite ="GFX_test_of_will_taipei"
-		}
-		buttonType = {            
-			position = { x = 170 y = 300 }
-			name = "test_of_will_penghu"           
-			quadTextureSprite ="GFX_test_of_will_penghu"
-		}
-		buttonType = {            
-			position = { x = 320 y = 300 }
-			name = "test_of_will_jinmen"           
-			quadTextureSprite ="GFX_test_of_will_jinmen"
-		}
-		iconType = {            
-			position = { x = 0 y = 30 }
-			name = "test_of_will_text"           
-			quadTextureSprite ="GFX_test_of_will_text"
-		}
-	}
-
-	containerWindowType = {
-		name = "CHI_jinmen_gui"
-		position = { x = 1 y = -650 }
-		size = { width = 85 height = 400 }
-		moveable = yes
-		orientation = lower_right
-		containerwindowtype = {
-			name = "progbar_container"
-			position = { x = 20 y = 20 }
-		icontype = {
-				name = "jinmen_i"
-				quadtexturesprite = "GFX_CHI_jinmenboyi_lieyu"
-				position = { x = 50 y = 7 }
-			}
-		instantTextBoxType = {
-			name = "pla"
-			position = { x = 20 y = 250 }
-			text = CHI_prc_jinmen
-			font = "VCR02_24"
-			maxwidth = 500
-			#maxheight = 36
-			format = center
-			format = left
-		}
-		instantTextBoxType = {
-			name = "guojun"
-			position = { x = 20 y = 350 }
-			text = CHI_chi_jinmen
-			font = "VCR02_24"
-			maxwidth = 500
-			#maxheight = 36
-			format = center
-			format = left
-		}
-	}
-	}
-
-
-	
-	containerWindowType = {
-		name = "CHI_armry_gui"
-		position = { x = 1 y = -650 }
-		size = { width = 85 height = 0 }
-		moveable = yes
-		orientation = lower_right
-		icontype = {
-				name = "PICt"
-				quadtexturesprite = "GFX_CHI_armry_test"
-				position = { x = -75 y = -285 }
-			}
-	}
-	containerWindowType = {
-		name = "CHI_waidao_gui"
-		position = { x = 1 y = -650 }
-		size = { width = 85 height = 460 }
-		moveable = yes
-		orientation = lower_right
-		icontype = {
-				name = "waidao"
-				quadtexturesprite = "GFX_CHI_waidao_map"
-				position = { x = -20 y = -20 }
-			}
-		containerwindowtype = {
-			name = "progbar_container"
-			position = { x = 5 y = 280 }
-			icontype = {
-				name = "support_progbar_renyuan"
-				spritetype = "GFX_CHI_renyuan_progress"
-				alwaystransparent = yes
-			}
-			instantTextBoxType = {
-			name = "Title"
-			position = { x = -0 y = -40 }
-			text = CHI_waidao_renyuan_shuliang
-			font = "VCR02_24"
-			maxwidth = 500
-			#maxheight = 36
-			format = center
-			format = left
-			}
-			containerwindowtype = {
-			name = "progbar_container"
-			position = { x = -0 y = 120 }
-			icontype = {
-				name = "support_progbar_zhuangbei"
-				spritetype = "GFX_CHI_renyuan_progress"
-				alwaystransparent = yes
-			}
-			instantTextBoxType = {
-			name = "Title"
-			position = { x = -0 y = -40 }
-			text = CHI_waidao_zhuangbei_shuliang
-			font = "VCR02_24"
-			maxwidth = 500
-			#maxheight = 36
-			format = center
-			format = left
-			}
-			}
-		}
-	}
+	#國軍UI
+  containerWindowType = {
+    name = "CHI_armry_gui"
+    position = { x = 1 y = -650 }
+    size = { width = 85 height = 0 }
+    moveable = yes
+    orientation = lower_right
+    icontype = {
+      name = "PICt"
+      quadtexturesprite = "GFX_CHI_armry_test"
+      position = { x = -75 y = -285 }
+    }
+  }
 }
 
 

@@ -153,7 +153,7 @@ CHI = {
       traits = {
         CHI_hos_madam_president
       }
-      ideology = CHI_Taiwanese_Progressivism
+      ideology = Taiwanese_Progressivism
       expire = "1.1.1.1"
     }
   }
@@ -165,7 +165,7 @@ CHI = {
       traits = {
         hos_president_of_the_commoners
       }
-      ideology = CHI_Taiwanese_constitutionalism
+      ideology = Taiwanese_constitutionalism
       expire = "1.1.1.1"
     }
   }
@@ -263,42 +263,6 @@ PRC = {
   country_event = {
     id = ROC.64
     days = 912
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_illegal_organ_trade
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_private_prison
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_Chinesestyleeducation
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_correctionalschool
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_iSlashingline
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_RedAristocracy
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_Nationalistsentiment
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_Bureaucraticcapitalism
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_EducationSystem
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_Antiintellectualeducation
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_Chineseslavery
-  }
-  add_dynamic_modifier = {
-    modifier = PRC_Domestictechnology
   }
 }
 

@@ -16,7 +16,6 @@ CHI_NHCC_decisions = {
 }
 
 CHI_PRC_Infiltration_decisions = {
-  #唉我草習近平怎麼那麼壞
   #滲透度
   icon = GFX_PRC_Infiltration
   #picture = GFX_CHI_test_of_will_banner_animated
@@ -52,7 +51,7 @@ CHI_Legislative_Yuan_decisions = {
   visible = {
     always = yes
   }
-  scripted_gui = CHI_Legislative_Yuan_new_gui
+  scripted_gui = CHI_Legislative_Yuan_gui
 }
 
 CHI_test_of_will2 = {
@@ -96,34 +95,6 @@ CHI_armry_test = {
   scripted_gui = CHI_armry_gui
 }
 
-#CHI_taihai_war = {
-#	#picture = GFX_CHI_armry_test
-#	#icon = GFX_CHI_test_of_will_category_anim
-#	priority = 30
-#	visible_when_empty = yes
-#	allowed = {
-#		original_tag = CHI
-#		original_tag = PRC
-#	}
-#	visible = {
-#		OR = {
-#			CHI = {
-#				has_completed_focus = CHI_Reinforcements_for_Kinmen
-#			}
-#			PRC = {
-#				has_completed_focus = PRC_the_final_opportunity
-#			}
-#		}
-#		NOT = {
-#			OR = {
-#				has_country_flag = CHI_PRC_KinmenBattle
-#				has_country_flag = CHI_PRC_KinmenBattle2
-#			}
-#		}
-#	}
-#	scripted_gui = CHI_waidao_gui
-#}
-
 PDTO_solidarity = {
   #太約
   icon = GFX_PDTO_dec
@@ -136,22 +107,7 @@ PDTO_solidarity = {
     always = yes
   }
 }
-#CHI_buy_ships_zz = {
-#    icon = japan
-#	picture = GFX_JAP_taiwan_war
-#	visible_when_empty = yes
-#	priority = 4
-#
-#	visible = {
-#	    USN = {
-#			exists = yes
-#		}
-#	}
-#
-#	allowed = {
-#	    original_tag = CHI
-#	}
-#}
+
 PHI_civil_war_dec = {
   #菲律賓内戰
   visible_when_empty = yes
