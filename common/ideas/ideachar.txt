@@ -1,717 +1,637 @@
 ideas = {
-	#hon #政府首腦
-	head_minister = {
-		CHI_Su_Tseng_chang_hog = {
-			#蘇貞昌
-			picture = CHI_Su_Tseng_chang_hog
-			name = CHI_Su_Tseng_chang_hog
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_DPP				#民進黨黨籍
-				Black_Fireball				#電火球
-			}
-		}
-		CHI_eric_chu_hog = {
-			#朱立倫
-			picture = CHI_eric_chu_hog
-			name = CHI_eric_chu_hog
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				behind_the_scenes_financier				#居於幕後的金融專家
-			}
-		}
-		CHI_zhang_shanzheng1_hog = {
-			#張善政
-			picture = CHI_zhang_shanzheng1_hog
-			name = CHI_zhang_shanzheng1_hog
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				technical_bureaucrat				#技術官僚
-			}
-		}
-		CHI_Johnny_Chiang_hog = {
-			#江宜樺
-			picture = CHI_Johnny_Chiang_hog
-			name = CHI_Johnny_Chiang_hog
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				principled_politician				#堅守底線的政治學者
-			}
-		}
-		CHI_wang_jinpyng_hog = {
-			#王金平
-			picture = CHI_wang_jinpyng_hog
-			name = CHI_wang_jinpyng_hog
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				tycoon				#喬王
-			}
-		}
-		CHI_chen_chienjen_hog = {
-			#陳建仁
-			picture = CHI_chen_chienjen_hog
-			name = CHI_chen_chienjen_hog
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				trusted_paladin				#備受信任的聖騎士
-			}
-		}
-	}
-	#for #外交部長
-	foreign_minister = {
-		CHI_Wu_Zhaoxie_for = {
-			#吳釗燮
-			picture = CHI_Wu_Zhaoxie_for
-			name = CHI_Wu_Zhaoxie_for
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_DPP				#民進黨黨籍
-				pragmatic_diplomat				#務實的外交家
-			}
-		}
-		CHI_Lin_Chia_lung_for = {
-			#林佳龍
-			picture = CHI_Lin_Chia_lung_for
-			name = CHI_Lin_Chia_lung_for
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_DPP
-				well_planned_political_scholar				#規劃完整的政治學者
-			}
-		}
-		CHI_Chiang_Yi_huah_for = {
-			#江啟臣
-			picture = CHI_Chiang_Yi_huah_for
-			name = CHI_Chiang_Yi_huah_for
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				pragmatic_political_scholar				#腳踏實地的政治學者
-			}
-		}
-		CHI_Xia_Liyan_for = {
-			#夏立言
-			picture = CHI_Xia_Liyan_for
-			name = CHI_Xia_Liyan_for
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				pragmatic_diplomat				#務實的外交家
-			}
-			on_add = {
-				targeted_modifier = {
-					tag = PRC
-					improve_relation_factor = 0.06					#對中改善關係效果 +6%
-					improve_relation_cost_factor = -0.04					#對中改善關係花費 -4%
-				}
-			}
-		}
-	}
-	#eco #經濟部長
-	economic_minister = {
-		CHI_Wang_Meihua_eco = {
-			#王美花
-			picture = CHI_Wang_Meihua_eco
-			name = CHI_Wang_Meihua_eco
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_DPP
-				resilient_industrial_planner				#韌性產業佈局者
-			}
-			on_add = {
-				CHI_increase_prc_embargo_idea = yes
-			}
-			on_remove = {
-				CHI_de_prc_embargo_idea = yes
-			}
-		}
-		CHI_Shen_Jongchin_eco = {
-			#沈榮津
-			picture = CHI_Shen_Jongchin_eco
-			name = CHI_Shen_Jongchin_eco
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				power_organizer				#工業組織者
-			}
-		}
-		CHI_Peng_Huainan_eco = {
-			#彭淮南
-			picture = CHI_Peng_Huainan_eco
-			name = CHI_Peng_Huainan_eco
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				steady_leader				#穩健的領袖
-			}
-		}
-		CHI_Kung_Ming_hsin_eco = {
-			#龔明鑫
-			picture = CHI_Kung_Ming_hsin_eco
-			name = CHI_Kung_Ming_hsin_eco
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				national_development_planner				#國家建設規劃者
-			}
-		}
-		CHI_Kuo_Chih_hui_eco = {
-			#郭智輝
-			picture = CHI_Kuo_Chih_hui_eco
-			name = CHI_Kuo_Chih_hui_eco
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				efficiency_focused_entrepreneur				#重視效率的企業家
-			}
-		}
-		CHI_Du_Zijin_eco = {
-			#杜紫軍
-			picture = CHI_Du_Zijin_eco
-			name = CHI_Du_Zijin_eco
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				industry_upgrade_promoter				#傳產升級推手
-			}
-		}
-		CHI_mao_chihkuo_hog = {
-			#毛治國
-			picture = CHI_mao_chihkuo_hog
-			name = CHI_mao_chihkuo_hog
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				experienced_engineer				#經驗豐富的工程專家
-			}
-		}
-		CHI_Eric_Tseng_eco = {
-			#曾銘宗
-			picture = CHI_Eric_Tseng_eco
-			name = CHI_Eric_Tseng_eco
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				financial_expert				#金融專家
-			}
-		}
-		CHI_Chang_Sheng_ho_eco = {
-			#張盛和
-			picture = CHI_Chang_Sheng_ho_eco
-			name = CHI_Chang_Sheng_ho_eco
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				cold_fiscal_reformer				#冷酷的財政改革者
-			}
-		}
-		CHI_Sean_Chen_eco = {
-			#陳冲
-			picture = CHI_Sean_Chen_eco
-			name = CHI_Sean_Chen_eco
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				crisis_to_stability_financial_expert				#轉危為安的金融專家
-			}
-		}
-	}
-	#sec #内政部長
-	interior_minister = {
-		CHI_Hsu_Kuoyung_sec = {
-			#徐國勇
-			picture = CHI_Hsu_Kuoyung_sec
-			name = CHI_Hsu_Kuoyung_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_DPP
-				media_administrator				#媒體出身的政務官
-			}
-		}
-		CHI_Lin_You_chang_sec = {
-			#林右昌
-			picture = CHI_Lin_You_chang_sec
-			name = CHI_Lin_You_chang_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_DPP
-				international_exchange_advocate				#國際交流的積極參與者
-			}
-		}
-		CHI_Chen_Shih_chung_sec = {
-			#陳時中
-			picture = CHI_Chen_Shih_chung_sec
-			name = CHI_Chen_Shih_chung_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_DPP
-				public_health_scholar				#公共衛生學者
-			}
-		}
-		CHI_Miao_Poya_sec = {
-			#苗博雅
-			picture = CHI_Miao_Poya_sec
-			name = CHI_Miao_Poya_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				progressive_social_reformer				#進步派社會改革者
-			}
-		}
-		CHI_Li_Hongyuan_sec = {
-			#李鴻源
-			picture = CHI_Li_Hongyuan_sec
-			name = CHI_Li_Hongyuan_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				infrastructure_reform_and_disaster_management_expert	#水利、災害防救與國土規劃改革者
-			}
-		}
-		CHI_Luo_Shaohuo_sec = {
-			#羅紹和
-			picture = CHI_Luo_Shaohuo_sec
-			name = CHI_Luo_Shaohuo_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				gentle_philanthropist				#溫和的慈善家
-			}
-		}
-		CHI_Li_Hongjun_sec = {
-			#李鴻鈞
-			picture = CHI_Li_Hongjun_sec
-			name = CHI_Li_Hongjun_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				fair_supervisor				#公正的監督者
-			}
-		}
-		CHI_Hua_Ching_chun_sec = {
-			#花敬群
-			picture = CHI_Hua_Ching_chun_sec
-			name = CHI_Hua_Ching_chun_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				detached_geopolitical_scholar				#與民意脫節的地政學者
-			}
-		}
-		CHI_Ming_Ju_zheng_sec = {
-			#明居正
-			picture = CHI_Ming_Ju_zheng_sec
-			name = CHI_Ming_Ju_zheng_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				anti_communist_scholar				#積極反共的政治學者
-			}
-		}
-		CHI_Kao_Ching_yuan_sec = {
-			#高清願
-			picture = CHI_Kao_Ching_yuan_sec
-			name = CHI_Kao_Ching_yuan_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				sports_industry_policy_chief				#競競業業的政策幕僚長
-			}
-		}
-		CHI_King_Pu_tsung_sec = {
-			#金浦聰
-			picture = CHI_King_Pu_tsung_sec
-			name = CHI_King_Pu_tsung_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				exceptional_aide				#能力超群的幕僚長
-			}
-		}
-		CHI_Liao_Liao_yi_sec = {
-			#廖了以
-			picture = CHI_Liao_Liao_yi_sec
-			name = CHI_Liao_Liao_yi_sec
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_KMT
-				responsible_domestic_expert				#負責的內政專家
-			}
-			on_add = {
-				targeted_modifier = {
-					tag = JAP
-					opinion_gain_monthly_factor = 0.02					#對日改善關係效果 +2%
-					improve_relations_maintain_cost_factor = -0.08					#對日外交花費 -8%
-				}
-			}
-		}
-	}
-	#int #情報部長
-	intelligence_minister = {
-		CHI_Shen_Po_yang_int = {
-			#沈伯洋
-			picture = CHI_Shen_Po_yang_int
-			name = CHI_Shen_Po_yang_int
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_DPP
-				CHI_PRC_Infiltration_expert		# 中共滲透研究專家
-			}
-			on_add = {
-				set_temp_variable = {
-					var = CHI_PRC_Infiltration_timeout_mission_var_temp
-					value = 5
-				}
-				CHI_add_Infiltration_growth_time = yes
-			}
-			on_remove = {
-				set_temp_variable = {
-					var = CHI_PRC_Infiltration_timeout_mission_var_temp
-					value = -5
-				}
-				CHI_add_Infiltration_growth_time = yes
-			}
-		}
-		CHI_Tsa_Mingyen_int = {
-			#
-			picture = CHI_Tsa_Mingyen_int
-			name = CHI_Tsa_Mingyen_int
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				int_decryptor
-				int_encryptor
-			}
-		}
-		CHI_Cai_Desheng_int = {
-			picture = CHI_Cai_Desheng_int
-			name = CHI_Cai_Desheng_int
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				int_decryptor
-				int_encryptor
-			}
-		}
-	}
-	#vt #軍事國防部長
-	theorist_minister = {
-		CHI_Qiu_Guozheng = {
-			#邱國正
-			picture = CHI_Qiu_Guozheng
-			name = CHI_Qiu_Guozheng
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				armor_expert				#裝甲專家
-				pragmatic_reformer				#務實的改革派
-			}
-		}
-		CHI_Ku_Li_hsiung = {
-			#顧立雄
-			picture = CHI_Ku_Li_hsiung
-			name = CHI_Ku_Li_hsiung
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				CHI_minister_DPP
-				reformist_official				#改革派官員
-			}
-		}
-		CHI_Feng_Shihkuan = {
-			picture = CHI_Feng_Shihkuan
-			name = CHI_Feng_Shihkuan
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				advanced_air_training_officer				#先進的演訓軍官
-				responsible_domestic_expert				#負責的內政專家（偏政治平衡）
-			}
-		}
-		CHI_Wu_Sihuai = {
-			picture = CHI_Wu_Sihuai
-			name = CHI_Wu_Sihuai
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				traditional_general				#傳統的老將軍
-			}
-		}
-		CHI_Yen_Tehfa = {
-			picture = CHI_Yen_Tehfa
-			name = CHI_Yen_Tehfa
-			allowed = {
-			}
-			visible = {
-				tag = CHI
-			}
-			allowed_to_remove = {
-				date > 2020.6.1
-			}
-			traits = {
-				traditional_general				#傳統的老將軍
-				war_preparedness_organizer				#戰爭衝擊準備組織者
-			}
-		}
-	}
+  #hon #政府首腦
+  head_minister = {
+    CHI_Su_Tseng_chang_hog = {
+      #蘇貞昌
+      picture = CHI_Su_Tseng_chang_hog
+      name = CHI_Su_Tseng_chang_hog
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_DPP				#民進黨黨籍
+        Black_Fireball				#電火球
+      }
+    }
+    CHI_eric_chu_hog = {
+      #朱立倫
+      picture = CHI_eric_chu_hog
+      name = CHI_eric_chu_hog
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        behind_the_scenes_financier				#居於幕後的金融專家
+      }
+    }
+    CHI_zhang_shanzheng1_hog = {
+      #張善政
+      picture = CHI_zhang_shanzheng1_hog
+      name = CHI_zhang_shanzheng1_hog
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        technical_bureaucrat				#技術官僚
+      }
+    }
+    CHI_Johnny_Chiang_hog = {
+      #江宜樺
+      picture = CHI_Johnny_Chiang_hog
+      name = CHI_Johnny_Chiang_hog
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        principled_politician				#堅守底線的政治學者
+      }
+    }
+    CHI_wang_jinpyng_hog = {
+      #王金平
+      picture = CHI_wang_jinpyng_hog
+      name = CHI_wang_jinpyng_hog
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        tycoon				#喬王
+      }
+    }
+    CHI_chen_chienjen_hog = {
+      #陳建仁
+      picture = CHI_chen_chienjen_hog
+      name = CHI_chen_chienjen_hog
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        trusted_paladin				#備受信任的聖騎士
+      }
+    }
+  }
+  #for #外交部長
+  foreign_minister = {
+    CHI_Wu_Zhaoxie_for = {
+      #吳釗燮
+      picture = CHI_Wu_Zhaoxie_for
+      name = CHI_Wu_Zhaoxie_for
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_DPP				#民進黨黨籍
+        pragmatic_diplomat				#務實的外交家
+      }
+    }
+    CHI_Lin_Chia_lung_for = {
+      #林佳龍
+      picture = CHI_Lin_Chia_lung_for
+      name = CHI_Lin_Chia_lung_for
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_DPP
+        well_planned_political_scholar				#規劃完整的政治學者
+      }
+    }
+    CHI_Chiang_Yi_huah_for = {
+      #江啟臣
+      picture = CHI_Chiang_Yi_huah_for
+      name = CHI_Chiang_Yi_huah_for
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        pragmatic_political_scholar				#腳踏實地的政治學者
+      }
+    }
+    CHI_Xia_Liyan_for = {
+      #夏立言
+      picture = CHI_Xia_Liyan_for
+      name = CHI_Xia_Liyan_for
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        pragmatic_diplomat				#務實的外交家
+      }
+      on_add = {
+        targeted_modifier = {
+          tag = PRC
+          improve_relation_factor = 0.06					#對中改善關係效果 +6%
+          improve_relation_cost_factor = -0.04					#對中改善關係花費 -4%
+        }
+      }
+    }
+  }
+  #eco #經濟部長
+  economic_minister = {
+    CHI_Wang_Meihua_eco = {
+      #王美花
+      picture = CHI_Wang_Meihua_eco
+      name = CHI_Wang_Meihua_eco
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_DPP
+        resilient_industrial_planner				#韌性產業佈局者
+      }
+      on_add = {
+        CHI_increase_prc_embargo_idea = yes
+      }
+      on_remove = {
+        CHI_de_prc_embargo_idea = yes
+      }
+    }
+    CHI_Shen_Jongchin_eco = {
+      #沈榮津
+      picture = CHI_Shen_Jongchin_eco
+      name = CHI_Shen_Jongchin_eco
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        power_organizer				#工業組織者
+      }
+    }
+    CHI_Peng_Huainan_eco = {
+      #彭淮南
+      picture = CHI_Peng_Huainan_eco
+      name = CHI_Peng_Huainan_eco
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        steady_leader				#穩健的領袖
+      }
+    }
+    CHI_Kung_Ming_hsin_eco = {
+      #龔明鑫
+      picture = CHI_Kung_Ming_hsin_eco
+      name = CHI_Kung_Ming_hsin_eco
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        national_development_planner				#國家建設規劃者
+      }
+    }
+    CHI_Kuo_Chih_hui_eco = {
+      #郭智輝
+      picture = CHI_Kuo_Chih_hui_eco
+      name = CHI_Kuo_Chih_hui_eco
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        efficiency_focused_entrepreneur				#重視效率的企業家
+      }
+    }
+    CHI_Du_Zijin_eco = {
+      #杜紫軍
+      picture = CHI_Du_Zijin_eco
+      name = CHI_Du_Zijin_eco
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        industry_upgrade_promoter				#傳產升級推手
+      }
+    }
+    CHI_mao_chihkuo_hog = {
+      #毛治國
+      picture = CHI_mao_chihkuo_hog
+      name = CHI_mao_chihkuo_hog
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        experienced_engineer				#經驗豐富的工程專家
+      }
+    }
+    CHI_Eric_Tseng_eco = {
+      #曾銘宗
+      picture = CHI_Eric_Tseng_eco
+      name = CHI_Eric_Tseng_eco
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        financial_expert				#金融專家
+      }
+    }
+    CHI_Chang_Sheng_ho_eco = {
+      #張盛和
+      picture = CHI_Chang_Sheng_ho_eco
+      name = CHI_Chang_Sheng_ho_eco
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        cold_fiscal_reformer				#冷酷的財政改革者
+      }
+    }
+    CHI_Sean_Chen_eco = {
+      #陳冲
+      picture = CHI_Sean_Chen_eco
+      name = CHI_Sean_Chen_eco
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        crisis_to_stability_financial_expert				#轉危為安的金融專家
+      }
+    }
+  }
+  #sec #内政部長
+  interior_minister = {
+    CHI_Hsu_Kuoyung_sec = {
+      #徐國勇
+      picture = CHI_Hsu_Kuoyung_sec
+      name = CHI_Hsu_Kuoyung_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_DPP
+        media_administrator				#媒體出身的政務官
+      }
+    }
+    CHI_Lin_You_chang_sec = {
+      #林右昌
+      picture = CHI_Lin_You_chang_sec
+      name = CHI_Lin_You_chang_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_DPP
+        international_exchange_advocate				#國際交流的積極參與者
+      }
+    }
+    CHI_Chen_Shih_chung_sec = {
+      #陳時中
+      picture = CHI_Chen_Shih_chung_sec
+      name = CHI_Chen_Shih_chung_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_DPP
+        public_health_scholar				#公共衛生學者
+      }
+    }
+    CHI_Miao_Poya_sec = {
+      #苗博雅
+      picture = CHI_Miao_Poya_sec
+      name = CHI_Miao_Poya_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        progressive_social_reformer				#進步派社會改革者
+      }
+    }
+    CHI_Li_Hongyuan_sec = {
+      #李鴻源
+      picture = CHI_Li_Hongyuan_sec
+      name = CHI_Li_Hongyuan_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        infrastructure_reform_and_disaster_management_expert	#水利、災害防救與國土規劃改革者
+      }
+    }
+    CHI_Luo_Shaohuo_sec = {
+      #羅紹和
+      picture = CHI_Luo_Shaohuo_sec
+      name = CHI_Luo_Shaohuo_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        gentle_philanthropist				#溫和的慈善家
+      }
+    }
+    CHI_Li_Hongjun_sec = {
+      #李鴻鈞
+      picture = CHI_Li_Hongjun_sec
+      name = CHI_Li_Hongjun_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        fair_supervisor				#公正的監督者
+      }
+    }
+    CHI_Hua_Ching_chun_sec = {
+      #花敬群
+      picture = CHI_Hua_Ching_chun_sec
+      name = CHI_Hua_Ching_chun_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        detached_geopolitical_scholar				#與民意脫節的地政學者
+      }
+    }
+    CHI_Ming_Ju_zheng_sec = {
+      #明居正
+      picture = CHI_Ming_Ju_zheng_sec
+      name = CHI_Ming_Ju_zheng_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        anti_communist_scholar				#積極反共的政治學者
+      }
+    }
+    CHI_Kao_Ching_yuan_sec = {
+      #高清願
+      picture = CHI_Kao_Ching_yuan_sec
+      name = CHI_Kao_Ching_yuan_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        sports_industry_policy_chief				#競競業業的政策幕僚長
+      }
+    }
+    CHI_King_Pu_tsung_sec = {
+      #金浦聰
+      picture = CHI_King_Pu_tsung_sec
+      name = CHI_King_Pu_tsung_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        exceptional_aide				#能力超群的幕僚長
+      }
+    }
+    CHI_Liao_Liao_yi_sec = {
+      #廖了以
+      picture = CHI_Liao_Liao_yi_sec
+      name = CHI_Liao_Liao_yi_sec
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_KMT
+        responsible_domestic_expert				#負責的內政專家
+      }
+      on_add = {
+        targeted_modifier = {
+          tag = JAP
+          opinion_gain_monthly_factor = 0.02					#對日改善關係效果 +2%
+          improve_relations_maintain_cost_factor = -0.08					#對日外交花費 -8%
+        }
+      }
+    }
+  }
+  #int #情報部長
+  intelligence_minister = {
+    CHI_Shen_Po_yang_int = {
+      #沈伯洋
+      picture = CHI_Shen_Po_yang_int
+      name = CHI_Shen_Po_yang_int
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_DPP
+        CHI_PRC_Infiltration_expert		# 中共滲透研究專家
+      }
+      on_add = {
+        set_temp_variable = {
+          var = CHI_PRC_Infiltration_timeout_mission_var_temp
+          value = 5
+        }
+        CHI_add_Infiltration_growth_time = yes
+      }
+      on_remove = {
+        set_temp_variable = {
+          var = CHI_PRC_Infiltration_timeout_mission_var_temp
+          value = -5
+        }
+        CHI_add_Infiltration_growth_time = yes
+      }
+    }
+    CHI_Tsa_Mingyen_int = {
+      #
+      picture = CHI_Tsa_Mingyen_int
+      name = CHI_Tsa_Mingyen_int
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        int_decryptor
+        int_encryptor
+      }
+    }
+    CHI_Cai_Desheng_int = {
+      picture = CHI_Cai_Desheng_int
+      name = CHI_Cai_Desheng_int
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        int_decryptor
+        int_encryptor
+      }
+    }
+  }
+  #vt #軍事國防部長
+  theorist_minister = {
+    CHI_Qiu_Guozheng = {
+      #邱國正
+      picture = CHI_Qiu_Guozheng
+      name = CHI_Qiu_Guozheng
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        armor_expert				#裝甲專家
+        pragmatic_reformer				#務實的改革派
+      }
+    }
+    CHI_Ku_Li_hsiung = {
+      #顧立雄
+      picture = CHI_Ku_Li_hsiung
+      name = CHI_Ku_Li_hsiung
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        CHI_minister_DPP
+        reformist_official				#改革派官員
+      }
+    }
+    CHI_Feng_Shihkuan = {
+      picture = CHI_Feng_Shihkuan
+      name = CHI_Feng_Shihkuan
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        advanced_air_training_officer				#先進的演訓軍官
+        responsible_domestic_expert				#負責的內政專家（偏政治平衡）
+      }
+    }
+    CHI_Wu_Sihuai = {
+      picture = CHI_Wu_Sihuai
+      name = CHI_Wu_Sihuai
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        traditional_general				#傳統的老將軍
+      }
+    }
+    CHI_Yen_Tehfa = {
+      picture = CHI_Yen_Tehfa
+      name = CHI_Yen_Tehfa
+      visible = {
+        tag = CHI
+      }
+      allowed_to_remove = {
+        date > 2020.6.1
+      }
+      traits = {
+        traditional_general				#傳統的老將軍
+        war_preparedness_organizer				#戰爭衝擊準備組織者
+      }
+    }
+  }
 }

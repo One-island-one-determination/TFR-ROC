@@ -1,215 +1,184 @@
 CHI_INF_1 = {
-	name = "陸軍步兵旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "infantry" }
-	fallback_name = "中華民國陸軍步兵第%d旅"
-	ordered =
-	{
-        1 = { "中華民國陸軍步兵第206旅" }
-		2 = { "中華民國陸軍步兵第302旅" }
-		3 = { "中華民國陸軍步兵第104旅" }
-		4 = { "中華民國陸軍步兵第257旅" }
-		5 = { "中華民國陸軍步兵第203旅" }
-		6 = { "中華民國陸軍步兵第153旅" }
-		7 = { "中華民國陸軍步兵第109旅" }
-		8 = { "中華民國陸軍步兵第117旅" }
-		9 = { "中華民國陸軍步兵第101旅" }
-		10 = { "中華民國陸軍步兵第137旅" }
-		11 = { "中華民國陸軍步兵第249旅" }
-		12 = { "中華民國陸軍步兵第108旅" }
-		13 = { "中華民國陸軍步兵第127旅" }
-		14 = { "中華民國陸軍步兵第128旅" }
-		15 = { "中華民國陸軍步兵第129旅" }
-		16 = { "中華民國陸軍步兵第146旅" }
-		17 = { "中華民國陸軍步兵第152旅" }
-		18 = { "中華民國陸軍步兵第158旅" }
-		19 = { "中華民國陸軍步兵第168旅" }
-		20 = { "中華民國陸軍步兵第176旅" }
-		21 = { "中華民國陸軍步兵第178旅" }
-		22 = { "中華民國陸軍步兵第193旅" }
-		23 = { "中華民國陸軍步兵第194旅" }
-		24 = { "中華民國陸軍步兵第195旅" }
-		25 = { "中華民國陸軍步兵第292旅" }
-		26 = { "中華民國陸軍步兵第309旅" }
-		27 = { "中華民國陸軍步兵第319旅" }
-	}
+  name = "陸軍步兵旅"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "中華民國陸軍步兵第%d旅"
+  ordered =
+  {
+    1 = { "中華民國陸軍步兵第206旅" }
+    2 = { "中華民國陸軍步兵第302旅" }
+    3 = { "中華民國陸軍步兵第104旅" }
+    4 = { "中華民國陸軍步兵第257旅" }
+    5 = { "中華民國陸軍步兵第203旅" }
+    6 = { "中華民國陸軍步兵第153旅" }
+    7 = { "中華民國陸軍步兵第109旅" }
+    8 = { "中華民國陸軍步兵第117旅" }
+    9 = { "中華民國陸軍步兵第101旅" }
+    10 = { "中華民國陸軍步兵第137旅" }
+    11 = { "中華民國陸軍步兵第249旅" }
+    12 = { "中華民國陸軍步兵第108旅" }
+    13 = { "中華民國陸軍步兵第127旅" }
+    14 = { "中華民國陸軍步兵第128旅" }
+    15 = { "中華民國陸軍步兵第129旅" }
+    16 = { "中華民國陸軍步兵第146旅" }
+    17 = { "中華民國陸軍步兵第152旅" }
+    18 = { "中華民國陸軍步兵第158旅" }
+    19 = { "中華民國陸軍步兵第168旅" }
+    20 = { "中華民國陸軍步兵第176旅" }
+    21 = { "中華民國陸軍步兵第178旅" }
+    22 = { "中華民國陸軍步兵第193旅" }
+    23 = { "中華民國陸軍步兵第194旅" }
+    24 = { "中華民國陸軍步兵第195旅" }
+    25 = { "中華民國陸軍步兵第292旅" }
+    26 = { "中華民國陸軍步兵第309旅" }
+    27 = { "中華民國陸軍步兵第319旅" }
+  }
 }
 CHI_INF_2 = {
-	name = "陸軍機械化步兵旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "mechanized" }
-	fallback_name = "中華民國陸軍機械化步兵第%d旅"
-	ordered =
-	{
-        1 = { "中華民國陸軍機械化步兵第269旅" }
-		2 = { "中華民國陸軍機械化步兵第234旅" }
-		3 = { "中華民國陸軍機械化步兵第333旅" }
+  name = "陸軍機械化步兵旅"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "mechanized" }
+  fallback_name = "中華民國陸軍機械化步兵第%d旅"
+  ordered =
+  {
+    1 = { "中華民國陸軍機械化步兵第269旅" }
+    2 = { "中華民國陸軍機械化步兵第234旅" }
+    3 = { "中華民國陸軍機械化步兵第333旅" }
 
-	}
+  }
 }
 CHI_INF_3 = {
-	name = "陸軍裝甲步兵旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "mechanized" }
-	fallback_name = "中華民國陸軍裝甲步兵第%d旅"
-	ordered =
-	{
-        1 = { "中華民國陸軍裝甲步兵第351旅" }
-		2 = { "中華民國陸軍裝甲步兵第373旅" }
-		3 = { "中華民國陸軍裝甲步兵第395旅" }
-   
-	}
+  name = "陸軍裝甲步兵旅"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "mechanized" }
+  fallback_name = "中華民國陸軍裝甲步兵第%d旅"
+  ordered =
+  {
+    1 = { "中華民國陸軍裝甲步兵第351旅" }
+    2 = { "中華民國陸軍裝甲步兵第373旅" }
+    3 = { "中華民國陸軍裝甲步兵第395旅" }
+
+  }
 }
 CHI_INF_4 = {
-	name = "陸軍摩托化步兵旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "motorized" }
-	fallback_name = "中華民國陸軍摩托化步兵第%d旅"
-	ordered =
-	{
-        1 = { "中華民國陸軍摩托化步兵第200旅" }
-		2 = { "中華民國陸軍摩托化步兵第298旅" }
-		3 = { "中華民國陸軍摩托化步兵第269旅" }
-      
-	}
+  name = "陸軍摩托化步兵旅"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "motorized" }
+  fallback_name = "中華民國陸軍摩托化步兵第%d旅"
+  ordered =
+  {
+    1 = { "中華民國陸軍摩托化步兵第200旅" }
+    2 = { "中華民國陸軍摩托化步兵第298旅" }
+    3 = { "中華民國陸軍摩托化步兵第269旅" }
+
+  }
 }
 CHI_INF_5 = {
-	name = "陸軍裝甲旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { 
-		"armored"
-		"medium_armor"
-	 }
-	fallback_name = "中華民國陸軍第%d裝甲旅"
-	ordered =
-	{
-        1 = { "中華民國陸軍裝甲第542旅" }
-		2 = { "中華民國陸軍裝甲第564旅" }
-		3 = { "中華民國陸軍裝甲第584旅" }
-		4 = { "中華民國陸軍裝甲第586旅" }
-		5 = { "中華民國陸軍裝甲第503旅" }
-      
-	}
+  name = "陸軍裝甲旅"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = {
+    "armored"
+    "medium_armor"
+  }
+  fallback_name = "中華民國陸軍第%d裝甲旅"
+  ordered =
+  {
+    1 = { "中華民國陸軍裝甲第542旅" }
+    2 = { "中華民國陸軍裝甲第564旅" }
+    3 = { "中華民國陸軍裝甲第584旅" }
+    4 = { "中華民國陸軍裝甲第586旅" }
+    5 = { "中華民國陸軍裝甲第503旅" }
+
+  }
 }
 CHI_INF_6 = {
-	name = "陸軍輕裝甲旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "light_armor" }
-	fallback_name = "中華民國陸軍第%d輕裝甲旅"
-	ordered =
-	{
-      
-	}
+  name = "陸軍輕裝甲旅"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "light_armor" }
+  fallback_name = "中華民國陸軍第%d輕裝甲旅"
 }
 CHI_INF_7 = {
-	name = "陸軍航空特戰旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "paratrooper" 
-	"special_forces"
-	}
-	fallback_name = "中華民國陸軍空降特戰第%d旅"
-	ordered =
-	{
-        1 = { "中華民國陸軍航空第601旅" }
-		2 = { "中華民國陸軍航空第601旅" }
-		3 = { "中華民國陸軍特種作戰第862旅" }
-		4 = { "中華民國陸軍特種作戰第871旅" }
-      
-	}
+  name = "陸軍航空特戰旅"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "paratrooper" "special_forces" }
+  fallback_name = "中華民國陸軍空降特戰第%d旅"
+  ordered =
+  {
+    1 = { "中華民國陸軍航空第601旅" }
+    2 = { "中華民國陸軍航空第601旅" }
+    3 = { "中華民國陸軍特種作戰第862旅" }
+    4 = { "中華民國陸軍特種作戰第871旅" }
+  }
 }
 CHI_INF_8 = {
-	name = "海軍陸戰隊陸戰旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "marine" 
-	"special_forces"
-	}
-	fallback_name = "中華民國海軍陸戰第%d旅"
-	ordered =
-	{
-        1 = { "中華民國陸軍海軍陸戰第66旅" }
-		2 = { "中華民國陸軍海軍陸戰第99旅" }
-		3 = { "中華民國陸軍海軍陸戰第77旅" }
-      
-	}
+  name = "海軍陸戰隊陸戰旅"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "paratrooper" "special_forces" }
+  fallback_name = "中華民國海軍陸戰第%d旅"
+  ordered =
+  {
+    1 = { "中華民國陸軍海軍陸戰第66旅" }
+    2 = { "中華民國陸軍海軍陸戰第99旅" }
+    3 = { "中華民國陸軍海軍陸戰第77旅" }
+
+  }
 }
 CHI_INF_9 = {
-	name = "陸軍山地作戰部隊"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "mountaineers"
-	"special_forces"
-	 }
-	fallback_name = "中華民國陸軍第%d 山地特戰"
-	ordered =
-	{
-      
-	}
+  name = "陸軍山地作戰部隊"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "paratrooper" "special_forces" }
+  fallback_name = "中華民國陸軍第%d 山地特戰"
 }
 CHI_INF_10 = {
-	name = "陸軍特種作戰營
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "special_forces" }
-	fallback_name = "中華民國陸軍特種作戰第%d營"
-	ordered =
-	{
-        1 = { "中華民國陸軍特種作戰第1營" }
-		2 = { "中華民國陸軍特種作戰第2營" }
-		3 = { "中華民國陸軍特種作戰第3營" }
-		4 = { "中華民國陸軍特種作戰第4營" }
-		5 = { "中華民國陸軍特種作戰第5營" }
-      
-	}
+  name = "陸軍特種作戰營"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "special_forces" }
+  fallback_name = "中華民國陸軍特種作戰第%d營"
+  ordered =
+  {
+    1 = { "中華民國陸軍特種作戰第1營" }
+    2 = { "中華民國陸軍特種作戰第2營" }
+    3 = { "中華民國陸軍特種作戰第3營" }
+    4 = { "中華民國陸軍特種作戰第4營" }
+    5 = { "中華民國陸軍特種作戰第5營" }
+
+  }
 }
 CHI_INF_11 = {
-	name = "守備大隊"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "garrison" }
-	fallback_name = "中華民國陸軍第%d守備大隊"
-	ordered =
-	{
-      
-	}
+  name = "守備大隊"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "garrison" }
+  fallback_name = "中華民國陸軍第%d守備大隊"
 }
 CHI_INF_12 = {
-	name = "陸軍地區指揮部"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "garrison" }
-	fallback_name = "中華民國陸軍第%d地區指揮部"
-	ordered =
-	{
-      
-	}
+  name = "陸軍地區指揮部"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "garrison" }
+  fallback_name = "中華民國陸軍第%d地區指揮部"
 }
 CHI_INF_13 = {
-	name = "陸軍後備動員部隊"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "militia" }
-	fallback_name = "中華民國陸軍後備第%d旅"
-	ordered =
-	{
-      
-	}
+  name = "陸軍後備動員部隊"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "militia" }
+  fallback_name = "中華民國陸軍後備第%d旅"
 }
 CHI_INF_14 = {
-	name = "海軍陸戰隊兩棲作戰旅"
-	for_countries = { CHI }
-	can_use = { always = yes }
-	division_types = { "militia" }
-	fallback_name = "中華民國陸戰隊第%d兩棲作戰旅"
-	ordered =
-	{
-      
-	}
+  name = "海軍陸戰隊兩棲作戰旅"
+  for_countries = { CHI }
+  can_use = { always = yes }
+  division_types = { "militia" }
+  fallback_name = "中華民國海軍陸戰隊第%d兩棲作戰旅"
 }
