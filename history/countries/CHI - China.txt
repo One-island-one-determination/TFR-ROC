@@ -339,7 +339,7 @@ add_opinion_modifier = {
 }
 
 add_ideas = {
-  #National Spirits
+  #National Spirits 
   CHI_gdp_fix
   CHI_tsmc_idea	#CHI_lower_mainland_influence_idea
   CHI_low_international_recognition_idea
@@ -369,6 +369,11 @@ country_event = {
 country_event = {
   id = ROC.77
   days = 2
+}
+# 台灣人口首次負成長
+country_event = {
+  id = CHI.11
+  days = 1
 }
 news_event = {
   id = ROC.41

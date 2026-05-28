@@ -1,1171 +1,1162 @@
 CHI_NHCC_decisions = {
-	#Debug 決議
-	END_THE_Epidemic = {
-		icon = generic_coronavirus
-		allowed = {
-			tag = CHI
-		}
-		activation = {
-			is_debug = yes
-		}
-		available = {
-			is_debug = yes
-			OR = {
-				has_idea = CHI_covid_idea_1
-				has_idea = CHI_covid_idea_2
-				has_idea = CHI_covid_idea_3
-				has_idea = CHI_covid_idea_4
-				has_idea = CHI_covid_idea_5
-				has_country_flag = covid_happen
-			}
-		}
-		visible = {
-			is_debug = yes
-			OR = {
-				has_idea = CHI_covid_idea_1
-				has_idea = CHI_covid_idea_2
-				has_idea = CHI_covid_idea_3
-				has_idea = CHI_covid_idea_4
-				has_idea = CHI_covid_idea_5
-				has_country_flag = covid_happen
-			}
-		}
-		priority = 100
-		complete_effect = {
-			remove_ideas = CHI_covid_idea_1
-			remove_ideas = CHI_covid_idea_2
-			remove_ideas = CHI_covid_idea_3
-			remove_ideas = CHI_covid_idea_4
-			remove_ideas = CHI_covid_idea_5
-			set_country_flag = cancel_covid_mission
-			clr_country_flag = covid_happen
-			clr_country_flag = Handling_epidemic
-			clr_country_flag = Vaccine_research_end
-			custom_effect_tooltip = CHI_no_covid_tt
-			set_variable = {
-				var = CHI_vaccine_value
-				value = 0
-			}
-			CHI_vaccine_value = yes
-			set_variable = {
-				var = CHI_vaccine_progress
-				value = 0
-			}
-			CHI_vaccine_progress = yes
-		}
-	}
-	ADD_vaccinate_people = {
-		icon = generic_coronavirus
-		allowed = {
-			tag = CHI
-		}
-		activation = {
-			is_debug = yes
-		}
-		available = {
-			is_debug = yes
-			OR = {
-				has_idea = CHI_covid_idea_1
-				has_idea = CHI_covid_idea_2
-				has_idea = CHI_covid_idea_3
-				has_idea = CHI_covid_idea_4
-				has_idea = CHI_covid_idea_5
-				has_country_flag = covid_happen
-			}
-		}
-		visible = {
-			is_debug = yes
-			OR = {
-				has_idea = CHI_covid_idea_1
-				has_idea = CHI_covid_idea_2
-				has_idea = CHI_covid_idea_3
-				has_idea = CHI_covid_idea_4
-				has_idea = CHI_covid_idea_5
-				has_country_flag = covid_happen
-			}
-		}
-		priority = 100
-		complete_effect = {
-			set_temp_variable = {
-				var = CHI_vaccine_progress_temp
-				value = 100
-			}
-			CHI_vaccine_progress = yes
-		}
-	}
-	END_Vaccine_research = {
-		icon = generic_coronavirus
-		allowed = {
-			tag = CHI
-		}
-		activation = {
-			is_debug = yes
-		}
-		available = {
-			is_debug = yes
-		}
-		visible = {
-			is_debug = yes
-			OR = {
-				has_idea = CHI_covid_idea_1
-				has_idea = CHI_covid_idea_2
-				has_idea = CHI_covid_idea_3
-				has_idea = CHI_covid_idea_4
-				has_idea = CHI_covid_idea_5
-				has_country_flag = covid_happen
-			}
-		}
-		priority = 100
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = Vaccine_research
-				days = -1000
-			}
-		}
-	}
-	#疫情倒計時
-	Epidemic_is_getting_worse = {
-		icon = generic_coronavirus
-		allowed = {
-			tag = CHI
-		}
-		activation = {
-			always = no
-		}
-		cancel_trigger = {
-			has_country_flag = cancel_covid_mission
-		}
-		available = {
-			always = no
-		}
-		priority = 200
-		is_good = no
-		selectable_mission = no
-		cost = 15
-		days_mission_timeout = 90
-		timeout_effect = {
-			CHI_increase_coronavirus = yes
-			activate_mission = Epidemic_is_getting_worse
-		}
-	}
-	Epidemic_situation_improving_gradually = {
-		icon = Epidemic_situation_improving_gradually
-		allowed = {
-			always = no
-		}
-		cancel_trigger = {
-			has_country_flag = cancel_covid_mission
-		}
-		available = {
-			always = no
-		}
-		priority = 190
-		is_good = yes
-		selectable_mission = no
-		days_mission_timeout = 60
-		timeout_effect = {
-			if = {
-				limit = {
-					NOT = {
-						has_idea = CHI_covid_idea_1
-						has_idea = CHI_covid_idea_2
-						has_idea = CHI_covid_idea_3
-						has_idea = CHI_covid_idea_4
-						has_idea = CHI_covid_idea_5
-					}
-				}
-				set_country_flag = cancel_covid_mission
-				clr_country_flag = covid_happen
-				clr_country_flag = Handling_epidemic
-				clr_country_flag = Vaccine_research_end
-				custom_effect_tooltip = CHI_no_covid_tt
-				focus_unlock = yes
-			}
-			else = {
-				CHI_decrease_coroldpirus = yes
-				activate_mission = Epidemic_situation_improving_gradually
-				add_days_mission_timeout = {
-					mission = Epidemic_is_getting_worse
-					days = 100
-				}
-			}
-		}
-	}
-	#疫苗研發與製造
-	Vaccine_research = {
-		icon = generic_research
-		allowed = {
-			always = no
-		}
-		cancel_trigger = {
-			has_country_flag = cancel_covid_mission
-		}
-		available = {
-			always = no
-		}
-		priority = 190
-		is_good = yes
-		selectable_mission = no
-		days_mission_timeout = 150
-		timeout_effect = {
-			activate_mission = Make_vaccine
-			set_country_flag = Vaccine_research_end
-		}
-	}
-	Invest_in_vaccine_research = {
-		icon = generic_research
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			has_completed_focus = Develop_own_vaccine
-			NOT = {
-				has_country_flag = Vaccine_research_end
-			}
-		}
-		visible = {
-			has_completed_focus = Develop_own_vaccine
-			NOT = {
-				OR = {
-					has_country_flag = cancel_covid_mission
-					has_country_flag = Vaccine_research_end
-				}
-			}
-		}
-		priority = 100
-		fire_only_once = no
-		cost = 25
-		days_remove = 20
-		days_re_enable = 20
-		modifier = {
-			research_speed_factor = -0.05
-		}
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = Vaccine_research
-				days = -20
-			}
-		}
-	}
-	funding_in_vaccine_research = {
-		icon = GFX_decision_generic_attract_foreign_investors
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			has_completed_focus = Develop_own_vaccine
-			NOT = {
-				has_country_flag = Vaccine_research_end
-			}
-		}
-		visible = {
-			has_completed_focus = Develop_own_vaccine
-			NOT = {
-				OR = {
-					has_country_flag = cancel_covid_mission
-					has_country_flag = Vaccine_research_end
-				}
-			}
-		}
-		priority = 100
-		custom_cost_trigger = {
-			check_variable = {
-				var = income_var
-				value = 25
-			}
-		}
-		custom_cost_text = dx_more_than_25B
-		fire_only_once = no
-		days_remove = 30
-		days_re_enable = 70
-		modifier = {
-			research_speed_factor = -0.1
-		}
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = Vaccine_research
-				days = -50
-			}
-			set_temp_variable = {
-				var = income_var_temp
-				value = -25
-			}
-			add_income = yes
-		}
-	}
-	Make_vaccine = {
-		icon = generic_research
-		allowed = {
-			always = no
-		}
-		cancel_trigger = {
-			OR = {
-				has_country_flag = cancel_covid_mission
-				has_completed_focus = Get_out_of_the_epidemic
-			}
-		}
-		available = {
-			always = no
-		}
-		priority = 190
-		is_good = yes
-		selectable_mission = no
-		days_mission_timeout = 30
-		timeout_effect = {
-			CHI_decrease_coroldpirus = yes
-			set_temp_variable = {
-				var = CHI_vaccine_progress_temp
-				value = 20
-			}
-			CHI_vaccine_progress = yes
-			set_temp_variable = {
-				var = CHI_vaccine_value_temp
-				value = 2000
-			}
-			activate_mission = Make_vaccine
-			CHI_vaccine_value = yes
-		}
-	}
-	# 延後疫情爆發
-	CHI_Announce_guidance = {
-		icon = generic_decision
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			has_country_flag = Handling_epidemic
-		}
-		visible = {
-			has_country_flag = covid_happen
-			NOT = {
-				has_country_flag = cancel_covid_mission
-			}
-		}
-		priority = 100
-		fire_only_once = yes
-		cost = 10
-		days_remove = 7
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = Epidemic_is_getting_worse
-				days = 10
-			}
-		}
-	}
-	CHI_distribute_masks = {
-		icon = generic_mask
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			has_country_flag = Handling_epidemic
-		}
-		visible = {
-			has_country_flag = covid_happen
-		}
-		priority = 90
-		fire_only_once = no
-		cost = 20
-		days_remove = 10
-		days_re_enable = 20
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = Epidemic_is_getting_worse
-				days = 20
-			}
-		}
-	}
-	CHI_Quarantine_foreign_tourists = {
-		icon = Announce_guidance
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			has_country_flag = Handling_epidemic
-		}
-		visible = {
-			has_country_flag = covid_happen
-		}
-		fire_only_once = yes
-		cost = 25
-		days_remove = 14
-		priority = 50
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = Epidemic_is_getting_worse
-				days = 20
-			}
-		}
-	}
-	CHI_small_blockade = {
-		icon = CHI_small_blockade
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			has_completed_focus = Isolate_patient
-			has_country_flag = Handling_epidemic
-		}
-		visible = {
-			has_completed_focus = Isolate_patient
-			NOT = {
-				has_country_flag = cancel_covid_mission
-			}
-		}
-		fire_only_once = no
-		cost = 25
-		days_remove = 20
-		days_re_enable = 30
-		priority = 50
-		remove_effect = {
-			add_days_mission_timeout = {
-				mission = Epidemic_is_getting_worse
-				days = 25
-			}
-			add_stability = -0.03
-		}
-	}
-	CHI_Blockade_of_Hospital = {
-		icon = CHI_small_blockade
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			has_completed_focus = Isolate_patient
-			has_country_flag = Handling_epidemic
-		}
-		visible = {
-			has_completed_focus = Isolate_patient
-			NOT = {
-				has_country_flag = cancel_covid_mission
-			}
-		}
-		fire_only_once = yes
-		cost = 5
-		days_remove = 20
-		priority = 50
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = Epidemic_is_getting_worse
-				days = 25
-			}
-			add_stability = -0.1
-		}
-	}
-	#購買疫苗
-	Buying_vaccine_on_JAP = {
-		icon = Buying_vaccine
-		available = {
-			has_country_flag = Handling_epidemic
-			has_completed_focus = Buy_vaccines
-			OR = {
-				JAP = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-				}
-				is_ai = yes
-			}
-		}
-		visible = {
-			has_completed_focus = Buy_vaccines
-			NOT = {
-				has_country_flag = cancel_covid_mission
-			}
-			hidden_trigger = {
-				NOT = {
-					has_completed_focus = Get_out_of_the_epidemic
-				}
-			}
-		}
-		cost = 25
-		fire_only_once = no
-		days_remove = 10
-		days_re_enable = 20
-		complete_effect = {
-			set_temp_variable = {
-				var = CHI_vaccine_value_temp
-				value = 2000
-			}
-			CHI_vaccine_value = yes
-			set_temp_variable = {
-				var = debt_var_temp
-				value = 0.5
-			}
-			add_debt_with_inflation = yes
-			JAP = {
-				set_temp_variable = {
-					var = income_var_temp
-					value = 0.5
-				}
-				add_income_with_inflation = yes
-			}
-		}
-	}
-	Buying_vaccine_on_USA = {
-		icon = Buying_vaccine
-		available = {
-			has_completed_focus = Buy_vaccines
-			has_country_flag = Handling_epidemic
-			OR = {
-				USA = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-				}
-				is_ai = yes
-			}
-		}
-		visible = {
-			has_completed_focus = Buy_vaccines
-			NOT = {
-				has_country_flag = cancel_covid_mission
-			}
-			hidden_trigger = {
-				NOT = {
-					has_completed_focus = Get_out_of_the_epidemic
-				}
-			}
-		}
-		cost = 50
-		fire_only_once = no
-		days_remove = 10
-		days_re_enable = 20
-		complete_effect = {
-			set_temp_variable = {
-				var = CHI_vaccine_value_temp
-				value = 4000
-			}
-			CHI_vaccine_value = yes
-			set_temp_variable = {
-				var = debt_var_temp
-				value = 0.5
-			}
-			add_debt_with_inflation = yes
-			USA = {
-				set_temp_variable = {
-					var = income_var_temp
-					value = 0.5
-				}
-				add_income_with_inflation = yes
-			}
-		}
-	}
-	Buying_vaccine_on_PRC = {
-		icon = Buying_vaccine
-		available = {
-			has_completed_focus = Buy_vaccines
-			has_completed_focus = CHI_KMT_Win
-			has_country_flag = Handling_epidemic
-			OR = {
-				PRC = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-				}
-				is_ai = yes
-			}
-		}
-		visible = {
-			has_completed_focus = Buy_vaccines
-			NOT = {
-				has_country_flag = cancel_covid_mission
-			}
-			hidden_trigger = {
-				NOT = {
-					has_completed_focus = Get_out_of_the_epidemic
-				}
-			}
-		}
-		cost = 25
-		fire_only_once = no
-		days_remove = 10
-		days_re_enable = 20
-		complete_effect = {
-			set_temp_variable = {
-				var = CHI_vaccine_value_temp
-				value = 2000
-			}
-			CHI_vaccine_value = yes
-			set_temp_variable = {
-				var = debt_var_temp
-				value = 0.25
-			}
-			add_debt_with_inflation = yes
-			PRC = {
-				set_temp_variable = {
-					var = income_var_temp
-					value = 0.25
-				}
-				add_income_with_inflation = yes
-			}
-		}
-	}
-	CHI_vaccinate = {
-		available = {
-			has_country_flag = Handling_epidemic
-			custom_trigger_tooltip = {
-				tooltip = CHI_vaccine_requirement_tt
-				check_variable = {
-					var = CHI_vaccine_value
-					value > 10000
-				}
-			}
-			check_variable = {
-				var = CHI_vaccine_value
-				value > 10000
-			}
-		}
-		visible = {
-			has_completed_focus = NHCC_Expand
-			NOT = {
-				has_country_flag = cancel_covid_mission
-			}
-			hidden_trigger = {
-				NOT = {
-					has_completed_focus = Get_out_of_the_epidemic
-				}
-			}
-		}
-		cost = 15
-		fire_only_once = no
-		days_remove = 10
-		days_re_enable = 1
-		complete_effect = {
-			set_temp_variable = {
-				var = CHI_vaccine_progress_temp
-				value = 20
-			}
-			CHI_vaccine_progress = yes
-			set_temp_variable = {
-				var = CHI_vaccine_value_temp
-				value = -10000
-			}
-			CHI_vaccine_value = yes
-			add_days_mission_timeout = {
-				mission = Epidemic_is_getting_worse
-				days = 20
-			}
-		}
-	}
-	# 加速回到正常狀態
-	Speed_up_return_to_normal_state = {
-		icon = generic_mask
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			has_completed_focus = Get_out_of_the_epidemic
-		}
-		visible = {
-			has_completed_focus = Get_out_of_the_epidemic
-			NOT = {
-				has_country_flag = cancel_covid_mission
-			}
-		}
-		priority = 90
-		fire_only_once = no
-		cost = 30
-		days_remove = 10
-		days_re_enable = 10
-		modifier = {
-			political_power_gain = -0.1
-		}
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = Epidemic_situation_improving_gradually
-				days = -20
-			}
-		}
-	}
+  #Debug 決議
+  END_THE_Epidemic = {
+    icon = generic_coronavirus
+    allowed = {
+      tag = CHI
+    }
+    activation = {
+      is_debug = yes
+    }
+    available = {
+      is_debug = yes
+      OR = {
+        has_idea = CHI_covid_idea_1
+        has_idea = CHI_covid_idea_2
+        has_idea = CHI_covid_idea_3
+        has_idea = CHI_covid_idea_4
+        has_idea = CHI_covid_idea_5
+        has_country_flag = covid_happen
+      }
+    }
+    visible = {
+      is_debug = yes
+      OR = {
+        has_idea = CHI_covid_idea_1
+        has_idea = CHI_covid_idea_2
+        has_idea = CHI_covid_idea_3
+        has_idea = CHI_covid_idea_4
+        has_idea = CHI_covid_idea_5
+        has_country_flag = covid_happen
+      }
+    }
+    priority = 100
+    complete_effect = {
+      remove_ideas = CHI_covid_idea_1
+      remove_ideas = CHI_covid_idea_2
+      remove_ideas = CHI_covid_idea_3
+      remove_ideas = CHI_covid_idea_4
+      remove_ideas = CHI_covid_idea_5
+      set_country_flag = cancel_covid_mission
+      clr_country_flag = covid_happen
+      clr_country_flag = Handling_epidemic
+      clr_country_flag = Vaccine_research_end
+      custom_effect_tooltip = CHI_no_covid_tt
+      set_variable = {
+        var = CHI_vaccine_value
+        value = 0
+      }
+      CHI_vaccine_value = yes
+      set_variable = {
+        var = CHI_vaccine_progress
+        value = 0
+      }
+      CHI_vaccine_progress = yes
+    }
+  }
+  ADD_vaccinate_people = {
+    icon = generic_coronavirus
+    allowed = {
+      tag = CHI
+    }
+    activation = {
+      is_debug = yes
+    }
+    available = {
+      is_debug = yes
+      OR = {
+        has_idea = CHI_covid_idea_1
+        has_idea = CHI_covid_idea_2
+        has_idea = CHI_covid_idea_3
+        has_idea = CHI_covid_idea_4
+        has_idea = CHI_covid_idea_5
+        has_country_flag = covid_happen
+      }
+    }
+    visible = {
+      is_debug = yes
+      OR = {
+        has_idea = CHI_covid_idea_1
+        has_idea = CHI_covid_idea_2
+        has_idea = CHI_covid_idea_3
+        has_idea = CHI_covid_idea_4
+        has_idea = CHI_covid_idea_5
+        has_country_flag = covid_happen
+      }
+    }
+    priority = 100
+    complete_effect = {
+      set_temp_variable = {
+        var = CHI_vaccine_progress_temp
+        value = 100
+      }
+      CHI_vaccine_progress = yes
+    }
+  }
+  END_Vaccine_research = {
+    icon = generic_coronavirus
+    allowed = {
+      tag = CHI
+    }
+    activation = {
+      is_debug = yes
+    }
+    available = {
+      is_debug = yes
+    }
+    visible = {
+      is_debug = yes
+      OR = {
+        has_idea = CHI_covid_idea_1
+        has_idea = CHI_covid_idea_2
+        has_idea = CHI_covid_idea_3
+        has_idea = CHI_covid_idea_4
+        has_idea = CHI_covid_idea_5
+        has_country_flag = covid_happen
+      }
+    }
+    priority = 100
+    complete_effect = {
+      add_days_mission_timeout = {
+        mission = Vaccine_research
+        days = -1000
+      }
+    }
+  }
+  #疫情倒計時
+  Epidemic_is_getting_worse = {
+    icon = generic_coronavirus
+    allowed = {
+      tag = CHI
+    }
+    activation = {
+      always = no
+    }
+    cancel_trigger = {
+      has_country_flag = cancel_covid_mission
+    }
+    available = {
+      always = no
+    }
+    priority = 200
+    is_good = no
+    selectable_mission = no
+    cost = 15
+    days_mission_timeout = 90
+    timeout_effect = {
+      CHI_increase_coronavirus = yes
+      activate_mission = Epidemic_is_getting_worse
+    }
+  }
+  Epidemic_situation_improving_gradually = {
+    icon = Epidemic_situation_improving_gradually
+    allowed = {
+      always = no
+    }
+    cancel_trigger = {
+      has_country_flag = cancel_covid_mission
+    }
+    available = {
+      always = no
+    }
+    priority = 190
+    is_good = yes
+    selectable_mission = no
+    days_mission_timeout = 60
+    timeout_effect = {
+      if = {
+        limit = {
+          NOT = {
+            has_idea = CHI_covid_idea_1
+            has_idea = CHI_covid_idea_2
+            has_idea = CHI_covid_idea_3
+            has_idea = CHI_covid_idea_4
+            has_idea = CHI_covid_idea_5
+          }
+        }
+        set_country_flag = cancel_covid_mission
+        clr_country_flag = covid_happen
+        clr_country_flag = Handling_epidemic
+        clr_country_flag = Vaccine_research_end
+        custom_effect_tooltip = CHI_no_covid_tt
+        focus_unlock = yes
+      }
+      else = {
+        CHI_decrease_coroldpirus = yes
+        activate_mission = Epidemic_situation_improving_gradually
+        add_days_mission_timeout = {
+          mission = Epidemic_is_getting_worse
+          days = 100
+        }
+      }
+    }
+  }
+  #疫苗研發與製造
+  Vaccine_research = {
+    icon = generic_research
+    allowed = {
+      always = no
+    }
+    cancel_trigger = {
+      has_country_flag = cancel_covid_mission
+    }
+    available = {
+      always = no
+    }
+    priority = 190
+    is_good = yes
+    selectable_mission = no
+    days_mission_timeout = 150
+    timeout_effect = {
+      activate_mission = Make_vaccine
+      set_country_flag = Vaccine_research_end
+    }
+  }
+  Invest_in_vaccine_research = {
+    icon = generic_research
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_completed_focus = Develop_own_vaccine
+      NOT = {
+        has_country_flag = Vaccine_research_end
+      }
+    }
+    visible = {
+      has_completed_focus = Develop_own_vaccine
+      NOT = {
+        OR = {
+          has_country_flag = cancel_covid_mission
+          has_country_flag = Vaccine_research_end
+        }
+      }
+    }
+    priority = 100
+    fire_only_once = no
+    cost = 25
+    days_remove = 20
+    days_re_enable = 20
+    modifier = {
+      research_speed_factor = -0.05
+    }
+    complete_effect = {
+      add_days_mission_timeout = {
+        mission = Vaccine_research
+        days = -20
+      }
+    }
+  }
+  funding_in_vaccine_research = {
+    icon = GFX_decision_generic_attract_foreign_investors
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_completed_focus = Develop_own_vaccine
+      NOT = {
+        has_country_flag = Vaccine_research_end
+      }
+    }
+    visible = {
+      has_completed_focus = Develop_own_vaccine
+      NOT = {
+        OR = {
+          has_country_flag = cancel_covid_mission
+          has_country_flag = Vaccine_research_end
+        }
+      }
+    }
+    priority = 100
+    custom_cost_trigger = {
+      check_variable = {
+        var = income_var
+        value = 25
+      }
+    }
+    custom_cost_text = dx_more_than_25B
+    fire_only_once = no
+    days_remove = 30
+    days_re_enable = 70
+    modifier = {
+      research_speed_factor = -0.1
+    }
+    complete_effect = {
+      add_days_mission_timeout = {
+        mission = Vaccine_research
+        days = -50
+      }
+      set_temp_variable = {
+        var = income_var_temp
+        value = -25
+      }
+      add_income = yes
+    }
+  }
+  Make_vaccine = {
+    icon = generic_research
+    allowed = {
+      always = no
+    }
+    cancel_trigger = {
+      OR = {
+        has_country_flag = cancel_covid_mission
+        has_completed_focus = Get_out_of_the_epidemic
+      }
+    }
+    available = {
+      always = no
+    }
+    priority = 190
+    is_good = yes
+    selectable_mission = no
+    days_mission_timeout = 30
+    timeout_effect = {
+      CHI_decrease_coroldpirus = yes
+      set_temp_variable = {
+        var = CHI_vaccine_progress_temp
+        value = 20
+      }
+      CHI_vaccine_progress = yes
+      set_temp_variable = {
+        var = CHI_vaccine_value_temp
+        value = 2000
+      }
+      activate_mission = Make_vaccine
+      CHI_vaccine_value = yes
+    }
+  }
+  # 延後疫情爆發
+  CHI_Announce_guidance = {
+    icon = generic_decision
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_country_flag = Handling_epidemic
+    }
+    visible = {
+      has_country_flag = covid_happen
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+    }
+    priority = 100
+    fire_only_once = yes
+    cost = 10
+    days_remove = 7
+    complete_effect = {
+      add_days_mission_timeout = {
+        mission = Epidemic_is_getting_worse
+        days = 10
+      }
+    }
+  }
+  CHI_distribute_masks = {
+    icon = generic_mask
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_country_flag = Handling_epidemic
+    }
+    visible = {
+      has_country_flag = covid_happen
+    }
+    priority = 90
+    fire_only_once = no
+    cost = 20
+    days_remove = 10
+    days_re_enable = 20
+    complete_effect = {
+      add_days_mission_timeout = {
+        mission = Epidemic_is_getting_worse
+        days = 20
+      }
+    }
+  }
+  CHI_Quarantine_foreign_tourists = {
+    icon = Announce_guidance
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_country_flag = Handling_epidemic
+    }
+    visible = {
+      has_country_flag = covid_happen
+    }
+    fire_only_once = yes
+    cost = 25
+    days_remove = 14
+    
+    complete_effect = {
+      add_days_mission_timeout = {
+        mission = Epidemic_is_getting_worse
+        days = 20
+      }
+    }
+  }
+  CHI_small_blockade = {
+    icon = CHI_small_blockade
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_completed_focus = Isolate_patient
+      has_country_flag = Handling_epidemic
+    }
+    visible = {
+      has_completed_focus = Isolate_patient
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+    }
+    fire_only_once = no
+    cost = 25
+    days_remove = 20
+    days_re_enable = 30
+    
+    remove_effect = {
+      add_days_mission_timeout = {
+        mission = Epidemic_is_getting_worse
+        days = 25
+      }
+      add_stability = -0.03
+    }
+  }
+  CHI_Blockade_of_Hospital = {
+    icon = CHI_small_blockade
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_completed_focus = Isolate_patient
+      has_country_flag = Handling_epidemic
+    }
+    visible = {
+      has_completed_focus = Isolate_patient
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+    }
+    fire_only_once = yes
+    cost = 5
+    days_remove = 20
+    
+    complete_effect = {
+      add_days_mission_timeout = {
+        mission = Epidemic_is_getting_worse
+        days = 25
+      }
+      add_stability = -0.1
+    }
+  }
+  #購買疫苗
+  Buying_vaccine_on_JAP = {
+    icon = Buying_vaccine
+    available = {
+      has_country_flag = Handling_epidemic
+      has_completed_focus = Buy_vaccines
+      OR = {
+        JAP = {
+          has_opinion = {
+            target = ROOT
+            value > 49
+          }
+        }
+        is_ai = yes
+      }
+    }
+    visible = {
+      has_completed_focus = Buy_vaccines
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+      hidden_trigger = {
+        NOT = {
+          has_completed_focus = Get_out_of_the_epidemic
+        }
+      }
+    }
+    cost = 25
+    fire_only_once = no
+    days_remove = 10
+    days_re_enable = 20
+    complete_effect = {
+      set_temp_variable = {
+        var = CHI_vaccine_value_temp
+        value = 2000
+      }
+      CHI_vaccine_value = yes
+      set_temp_variable = {
+        var = debt_var_temp
+        value = 0.5
+      }
+      add_debt_with_inflation = yes
+      JAP = {
+        set_temp_variable = {
+          var = income_var_temp
+          value = 0.5
+        }
+        add_income_with_inflation = yes
+      }
+    }
+  }
+  Buying_vaccine_on_USA = {
+    icon = Buying_vaccine
+    available = {
+      has_completed_focus = Buy_vaccines
+      has_country_flag = Handling_epidemic
+      OR = {
+        USA = {
+          has_opinion = {
+            target = ROOT
+            value > 49
+          }
+        }
+        is_ai = yes
+      }
+    }
+    visible = {
+      has_completed_focus = Buy_vaccines
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+      hidden_trigger = {
+        NOT = {
+          has_completed_focus = Get_out_of_the_epidemic
+        }
+      }
+    }
+    cost = 50
+    fire_only_once = no
+    days_remove = 10
+    days_re_enable = 20
+    complete_effect = {
+      set_temp_variable = {
+        var = CHI_vaccine_value_temp
+        value = 4000
+      }
+      CHI_vaccine_value = yes
+      set_temp_variable = {
+        var = debt_var_temp
+        value = 0.5
+      }
+      add_debt_with_inflation = yes
+      USA = {
+        set_temp_variable = {
+          var = income_var_temp
+          value = 0.5
+        }
+        add_income_with_inflation = yes
+      }
+    }
+  }
+  Buying_vaccine_on_PRC = {
+    icon = Buying_vaccine
+    available = {
+      has_completed_focus = Buy_vaccines
+      has_completed_focus = CHI_KMT_Win
+      has_country_flag = Handling_epidemic
+      OR = {
+        PRC = {
+          has_opinion = {
+            target = ROOT
+            value > 49
+          }
+        }
+        is_ai = yes
+      }
+    }
+    visible = {
+      has_completed_focus = Buy_vaccines
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+      hidden_trigger = {
+        NOT = {
+          has_completed_focus = Get_out_of_the_epidemic
+        }
+      }
+    }
+    cost = 25
+    fire_only_once = no
+    days_remove = 10
+    days_re_enable = 20
+    complete_effect = {
+      set_temp_variable = {
+        var = CHI_vaccine_value_temp
+        value = 2000
+      }
+      CHI_vaccine_value = yes
+      set_temp_variable = {
+        var = debt_var_temp
+        value = 0.25
+      }
+      add_debt_with_inflation = yes
+      PRC = {
+        set_temp_variable = {
+          var = income_var_temp
+          value = 0.25
+        }
+        add_income_with_inflation = yes
+      }
+    }
+  }
+  CHI_vaccinate = {
+    available = {
+      has_country_flag = Handling_epidemic
+      custom_trigger_tooltip = {
+        tooltip = CHI_vaccine_requirement_tt
+        check_variable = {
+          var = CHI_vaccine_value
+          value > 10000
+        }
+      }
+      check_variable = {
+        var = CHI_vaccine_value
+        value > 10000
+      }
+    }
+    visible = {
+      has_completed_focus = NHCC_Expand
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+      hidden_trigger = {
+        NOT = {
+          has_completed_focus = Get_out_of_the_epidemic
+        }
+      }
+    }
+    cost = 15
+    fire_only_once = no
+    days_remove = 10
+    days_re_enable = 1
+    complete_effect = {
+      set_temp_variable = {
+        var = CHI_vaccine_progress_temp
+        value = 20
+      }
+      CHI_vaccine_progress = yes
+      set_temp_variable = {
+        var = CHI_vaccine_value_temp
+        value = -10000
+      }
+      CHI_vaccine_value = yes
+      add_days_mission_timeout = {
+        mission = Epidemic_is_getting_worse
+        days = 20
+      }
+    }
+  }
+  # 加速回到正常狀態
+  Speed_up_return_to_normal_state = {
+    icon = generic_mask
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_completed_focus = Get_out_of_the_epidemic
+    }
+    visible = {
+      has_completed_focus = Get_out_of_the_epidemic
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+    }
+    priority = 90
+    fire_only_once = no
+    cost = 30
+    days_remove = 10
+    days_re_enable = 10
+    modifier = {
+      political_power_gain = -0.1
+    }
+    complete_effect = {
+      add_days_mission_timeout = {
+        mission = Epidemic_situation_improving_gradually
+        days = -20
+      }
+    }
+  }
 }
 
 # 中共的滲透
 CHI_PRC_Infiltration_decisions = {
-	# 中共滲透日益嚴重
-	PRC_infiltration_becoming_serious_mission = {
-		icon = GFX_PRC_Infiltration_mission
-		allowed = {
-			tag = CHI
-		}
-		activation = {
-			always = yes
-		}
-		available = {
-			has_global_flag = PRC_taiwan_war_lost
-		}
-		priority = 200
-		is_good = no
-		selectable_mission = no
-		days_mission_timeout = CHI_PRC_Infiltration_timeout_mission_var
-		timeout_effect = {
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = 5
-			}
-			PRC_Infiltration_change = yes			
-			activate_mission = PRC_infiltration_becoming_serious_mission
-		}
-		cancel_trigger = {
-		}
-	}
-	# 在軍隊中搜索通敵者
-	Investigate_senior_military_officials = {
-		icon = CHI_small_blockade
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			has_completed_focus = Rectify_weakening_military_preparedness
-		}
-		visible = {
-			OR = {
-				has_completed_focus = Taiwan_safe_people_rich
-				has_completed_focus = Taiwan_will_win
-			}
-		}
-		priority = 90		#重要程度
-		fire_only_once = no		#是否只觸發一次
-		custom_cost_text = NSM_revanchist_reconquest_campaign_decision_cost
-		custom_cost_trigger = {
-			NOT = {
-				command_power < 20
-			}
-		}
-		days_remove = 10		#持續幾天
-		days_re_enable = 10		# 幾天後重新显示
-		modifier = {
-			#未移除的時候的效果
-			political_power_gain = -0.05
-		}
-		complete_effect = {
-			hidden_effect = {
-				add_command_power = -20				
-			}
-		}
-		remove_effect = {
-			#移除後的效果
-			random_list = {
-				1 = {
-					add_manpower = -1
-					set_temp_variable = {
-						var = CHI_PRC_Infiltration_progress_temp
-						value = -5
-					}
-					PRC_Infiltration_change = yes
-				}
-				1 = {
-					add_manpower = -5
-					set_temp_variable = {
-						var = CHI_PRC_Infiltration_progress_temp
-						value = -10
-					}
-					PRC_Infiltration_change = yes
-				}
-				1 = {
-					add_manpower = -10
-					set_temp_variable = {
-						var = CHI_PRC_Infiltration_progress_temp
-						value = -15
-					}
-					PRC_Infiltration_change = yes
-				}
-				1 = {
-					add_manpower = -15
-					set_temp_variable = {
-						var = CHI_PRC_Infiltration_progress_temp
-						value = -20
-					}
-					PRC_Infiltration_change = yes
-				}
-				1 = {
-					add_political_power = 15
-				}
-			}
-		}
-	}
-	# 在國際上宣傳台灣
-	Promote_Taiwan_internationally = {
-		icon = Announce_guidance
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			if = {
-				limit = {
-					has_completed_focus = Taiwan_safe_people_rich
-			    }
-				has_completed_focus = Based_in_Taiwan
-			}
-			else = {
-				has_completed_focus = Continue_transform_justice
-			}
-		}
-		visible = {
-			#显示
-			## 是否完成國策
-			OR = {
-				has_completed_focus = Taiwan_safe_people_rich
-				has_completed_focus = Taiwan_will_win
-			}
-		}
-		priority = 90		#重要程度
-		fire_only_once = no		#是否只觸發一次
-		cost = 25		#花費政治點數
-		days_remove = 10		#持續幾天
-		days_re_enable = 10		# 幾天後重新显示
-		modifier = {
-			#未移除的時候的效果
-			political_power_gain = -0.05
-		}
-		remove_effect = {
-			#移除後的效果
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = -5
-			}
-			PRC_Infiltration_change = yes
-		}
-	}
-	# 應對中國資訊戰
-	Countering_China_Information_War = {
-		icon = GFX_Countering_China_Information_War_mission
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			if = {
-				limit = {
-					has_completed_focus = Taiwan_safe_people_rich
-				}
-				has_completed_focus = Expand_intelligence_system
-			}
-			else = {
-				has_completed_focus = Support_Black_Bear_Academy
-			}
-		}
-		visible = {
-			#显示
-			## 是否完成國策
-			OR = {
-				has_completed_focus = Taiwan_safe_people_rich
-				has_completed_focus = Taiwan_will_win
-			}
-		}
-		priority = 90		#重要程度
-		fire_only_once = no		#是否只觸發一次
-		cost = 50		#花費政治點數
-		days_remove = 30		#持續幾天
-		days_re_enable = 20		# 幾天後重新显示
-		modifier = {
-			#未移除的時候的效果
-			political_power_gain = -0.05
-		}
-		remove_effect = {
-			#移除後的效果
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = -10
-			}
-			PRC_Infiltration_change = yes
-		}
-	}
-	# 清查非法政治組織
-	Investigate_illegal_political_organizations = { 
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			if = {
-				limit = {
-					has_completed_focus = Taiwan_safe_people_rich					
-				}
-				has_completed_focus = Expand_intelligence_system
-			}
-			else = {
-				has_completed_focus = Support_Black_Bear_Academy
-			}
-		}
-		visible = {
-			#显示
-			## 是否完成國策
-			OR = {
-				has_completed_focus = Taiwan_safe_people_rich
-				has_completed_focus = Taiwan_will_win
-			}
-		}
-		priority = 90		#重要程度
-		fire_only_once = yes		#是否只觸發一次
-		cost = 30		#花費政治點數
-		days_remove = 15		#持續幾天
-		days_re_enable = 50		# 幾天後重新显示
-		modifier = {
-			#未移除的時候的效果
-			political_power_gain = -0.05
-		}
-		remove_effect = {
-			#移除後的效果
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_timeout_mission_var_temp
-				value = 1
-			}
-			CHI_add_Infiltration_growth_time = yes
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = -5
-			}
-			PRC_Infiltration_change = yes
-			custom_effect_tooltip =Investigate_illegal_political_organization_tooltip
+  # 中共滲透日益嚴重
+  PRC_infiltration_becoming_serious_mission = {
+    icon = GFX_PRC_Infiltration_mission
+    allowed = {
+      tag = CHI
+    }
+    activation = {
+      always = yes
+    }
+    available = {
+      has_global_flag = PRC_taiwan_war_lost
+    }
+    priority = 200
+    is_good = no
+    selectable_mission = no
+    days_mission_timeout = CHI_PRC_Infiltration_timeout_mission_var
+    timeout_effect = {
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_progress_temp
+        value = 5
+      }
+      PRC_Infiltration_change = yes
+      activate_mission = PRC_infiltration_becoming_serious_mission
+    }
+    cancel_trigger = {
+    }
+  }
+  # 在軍隊中搜索通敵者
+  Investigate_senior_military_officials = {
+    icon = CHI_small_blockade
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_completed_focus = Rectify_weakening_military_preparedness
+    }
+    visible = {
+      OR = {
+        has_completed_focus = Taiwan_safe_people_rich
+        has_completed_focus = Taiwan_will_win
+      }
+    }
+    priority = 90		#重要程度
+    fire_only_once = no		#是否只觸發一次
+    custom_cost_text = NSM_revanchist_reconquest_campaign_decision_cost
+    custom_cost_trigger = {
+      NOT = {
+        command_power < 20
+      }
+    }
+    days_remove = 10		#持續幾天
+    days_re_enable = 10		# 幾天後重新显示
+    modifier = {
+      #未移除的時候的效果
+      political_power_gain = -0.05
+    }
+    complete_effect = {
+      hidden_effect = {
+        add_command_power = -20
+      }
+    }
+    remove_effect = {
+      #移除後的效果
+      random_list = {
+        1 = {
+          add_manpower = -1
+          set_temp_variable = {
+            var = CHI_PRC_Infiltration_progress_temp
+            value = -5
+          }
+          PRC_Infiltration_change = yes
+        }
+        1 = {
+          add_manpower = -5
+          set_temp_variable = {
+            var = CHI_PRC_Infiltration_progress_temp
+            value = -10
+          }
+          PRC_Infiltration_change = yes
+        }
+        1 = {
+          add_manpower = -10
+          set_temp_variable = {
+            var = CHI_PRC_Infiltration_progress_temp
+            value = -15
+          }
+          PRC_Infiltration_change = yes
+        }
+        1 = {
+          add_manpower = -15
+          set_temp_variable = {
+            var = CHI_PRC_Infiltration_progress_temp
+            value = -20
+          }
+          PRC_Infiltration_change = yes
+        }
+        1 = {
+          add_political_power = 15
+        }
+      }
+    }
+  }
+  # 在國際上宣傳台灣
+  Promote_Taiwan_internationally = {
+    icon = Announce_guidance
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      if = {
+        limit = {
+          has_completed_focus = Taiwan_safe_people_rich
+        }
+        has_completed_focus = Based_in_Taiwan
+      }
+      else = {
+        has_completed_focus = Continue_transform_justice
+      }
+    }
+    visible = {
+      #显示
+      ## 是否完成國策
+      OR = {
+        has_completed_focus = Taiwan_safe_people_rich
+        has_completed_focus = Taiwan_will_win
+      }
+    }
+    priority = 90		#重要程度
+    fire_only_once = no		#是否只觸發一次
+    cost = 25		#花費政治點數
+    days_remove = 10		#持續幾天
+    days_re_enable = 10		# 幾天後重新显示
+    modifier = {
+      #未移除的時候的效果
+      political_power_gain = -0.05
+    }
+    remove_effect = {
+      #移除後的效果
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_progress_temp
+        value = -5
+      }
+      PRC_Infiltration_change = yes
+    }
+  }
+  # 應對中國資訊戰
+  Countering_China_Information_War = {
+    icon = GFX_Countering_China_Information_War_mission
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      if = {
+        limit = {
+          has_completed_focus = Taiwan_safe_people_rich
+        }
+        has_completed_focus = Expand_intelligence_system
+      }
+      else = {
+        has_completed_focus = Support_Black_Bear_Academy
+      }
+    }
+    visible = {
+      #显示
+      ## 是否完成國策
+      OR = {
+        has_completed_focus = Taiwan_safe_people_rich
+        has_completed_focus = Taiwan_will_win
+      }
+    }
+    priority = 90		#重要程度
+    fire_only_once = no		#是否只觸發一次
+    cost = 50		#花費政治點數
+    days_remove = 30		#持續幾天
+    days_re_enable = 20		# 幾天後重新显示
+    modifier = {
+      #未移除的時候的效果
+      political_power_gain = -0.05
+    }
+    remove_effect = {
+      #移除後的效果
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_progress_temp
+        value = -10
+      }
+      PRC_Infiltration_change = yes
+    }
+  }
+  # 清查非法政治組織
+  Investigate_illegal_political_organizations = {
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      if = {
+        limit = {
+          has_completed_focus = Taiwan_safe_people_rich
+        }
+        has_completed_focus = Expand_intelligence_system
+      }
+      else = {
+        has_completed_focus = Support_Black_Bear_Academy
+      }
+    }
+    visible = {
+      #显示
+      ## 是否完成國策
+      OR = {
+        has_completed_focus = Taiwan_safe_people_rich
+        has_completed_focus = Taiwan_will_win
+      }
+    }
+    priority = 90		#重要程度
+    fire_only_once = yes		#是否只觸發一次
+    cost = 30		#花費政治點數
+    days_remove = 15		#持續幾天
+    days_re_enable = 50		# 幾天後重新显示
+    modifier = {
+      #未移除的時候的效果
+      political_power_gain = -0.05
+    }
+    remove_effect = {
+      #移除後的效果
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_timeout_mission_var_temp
+        value = 1
+      }
+      CHI_add_Infiltration_growth_time = yes
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_progress_temp
+        value = -5
+      }
+      PRC_Infiltration_change = yes
+      custom_effect_tooltip =Investigate_illegal_political_organization_tooltip
 
-			set_country_flag = Investigate_illegal_political_organizations_flg
-		}
-	}
-	Investigate_illegal_political_organization_2 = {
-		name = Investigate_illegal_political_organizations 
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			hidden_trigger = {
-				has_country_flag = Investigate_illegal_political_organizations_flg
-			}
-		}
-		visible = {
-			hidden_trigger = {
-				has_country_flag = Investigate_illegal_political_organizations_flg
-			}
-		}
-		priority = 90		#重要程度
-		fire_only_once = yes		#是否只觸發一次
-		cost = 30		#花費政治點數
-		days_remove = 15		#持續幾天
-		days_re_enable = 50		# 幾天後重新显示
-		modifier = {
-			#未移除的時候的效果
-			political_power_gain = -0.05
-		}
-		remove_effect = {
-			#移除後的效果
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_timeout_mission_var_temp
-				value = 1
-			}
-			CHI_add_Infiltration_growth_time = yes
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = -5
-			}
-			PRC_Infiltration_change = yes
-			custom_effect_tooltip =Investigate_illegal_political_organization_2_tooltip
+      set_country_flag = Investigate_illegal_political_organizations_flg
+    }
+  }
+  Investigate_illegal_political_organization_2 = {
+    name = Investigate_illegal_political_organizations
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      hidden_trigger = {
+        has_country_flag = Investigate_illegal_political_organizations_flg
+      }
+    }
+    visible = {
+      hidden_trigger = {
+        has_country_flag = Investigate_illegal_political_organizations_flg
+      }
+    }
+    priority = 90		#重要程度
+    fire_only_once = yes		#是否只觸發一次
+    cost = 30		#花費政治點數
+    days_remove = 15		#持續幾天
+    days_re_enable = 50		# 幾天後重新显示
+    modifier = {
+      #未移除的時候的效果
+      political_power_gain = -0.05
+    }
+    remove_effect = {
+      #移除後的效果
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_timeout_mission_var_temp
+        value = 1
+      }
+      CHI_add_Infiltration_growth_time = yes
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_progress_temp
+        value = -5
+      }
+      PRC_Infiltration_change = yes
+      custom_effect_tooltip =Investigate_illegal_political_organization_2_tooltip
 
-			set_country_flag = Investigate_illegal_political_organizations_flg_2
-		}
-	}
-	Investigate_illegal_political_organization_3 = {
-		name = Investigate_illegal_political_organizations 
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			hidden_trigger = {
-				has_country_flag = Investigate_illegal_political_organizations_flg_2
-			}
-		}
-		visible = {
-			hidden_trigger = {
-				has_country_flag = Investigate_illegal_political_organizations_flg_2
-			}
-		}
-		priority = 90		#重要程度
-		fire_only_once = yes		#是否只觸發一次
-		cost = 30		#花費政治點數
-		days_remove = 15		#持續幾天
-		days_re_enable = 50		# 幾天後重新显示
-		modifier = {
-			#未移除的時候的效果
-			political_power_gain = -0.05
-		}
-		remove_effect = {
-			#移除後的效果
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_timeout_mission_var_temp
-				value = 1
-			}
-			CHI_add_Infiltration_growth_time = yes
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = -5
-			}
-			PRC_Infiltration_change = yes
-			custom_effect_tooltip =Investigate_illegal_political_organization_3_tooltip
+      set_country_flag = Investigate_illegal_political_organizations_flg_2
+    }
+  }
+  Investigate_illegal_political_organization_3 = {
+    name = Investigate_illegal_political_organizations
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      hidden_trigger = {
+        has_country_flag = Investigate_illegal_political_organizations_flg_2
+      }
+    }
+    visible = {
+      hidden_trigger = {
+        has_country_flag = Investigate_illegal_political_organizations_flg_2
+      }
+    }
+    priority = 90		#重要程度
+    fire_only_once = yes		#是否只觸發一次
+    cost = 30		#花費政治點數
+    days_remove = 15		#持續幾天
+    days_re_enable = 50		# 幾天後重新显示
+    modifier = {
+      #未移除的時候的效果
+      political_power_gain = -0.05
+    }
+    remove_effect = {
+      #移除後的效果
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_timeout_mission_var_temp
+        value = 1
+      }
+      CHI_add_Infiltration_growth_time = yes
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_progress_temp
+        value = -5
+      }
+      PRC_Infiltration_change = yes
+      custom_effect_tooltip =Investigate_illegal_political_organization_3_tooltip
 
-			set_country_flag = Investigate_illegal_political_organizations_flg_3
-		}
-	}
-	Investigate_illegal_political_organization_4 = {
-		name = Investigate_illegal_political_organizations 
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			hidden_trigger = {
-				has_country_flag = Investigate_illegal_political_organizations_flg_3			
-			}
-		}
-		visible = {
-			hidden_trigger = {
-				has_country_flag = Investigate_illegal_political_organizations_flg_3			
-			}
-		}
-		priority = 90		#重要程度
-		fire_only_once = yes		#是否只觸發一次
-		cost = 30		#花費政治點數
-		days_remove = 15		#持續幾天
-		days_re_enable = 50		# 幾天後重新显示
-		modifier = {
-			#未移除的時候的效果
-			political_power_gain = -0.05
-		}
-		remove_effect = {
-			#移除後的效果
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_timeout_mission_var_temp
-				value = 1
-			}
-			CHI_add_Infiltration_growth_time = yes
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = -5
-			}
-			PRC_Infiltration_change = yes
-			custom_effect_tooltip =Investigate_illegal_political_organization_4_tooltip
+      set_country_flag = Investigate_illegal_political_organizations_flg_3
+    }
+  }
+  Investigate_illegal_political_organization_4 = {
+    name = Investigate_illegal_political_organizations
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      hidden_trigger = {
+        has_country_flag = Investigate_illegal_political_organizations_flg_3
+      }
+    }
+    visible = {
+      hidden_trigger = {
+        has_country_flag = Investigate_illegal_political_organizations_flg_3
+      }
+    }
+    priority = 90		#重要程度
+    fire_only_once = yes		#是否只觸發一次
+    cost = 30		#花費政治點數
+    days_remove = 15		#持續幾天
+    days_re_enable = 50		# 幾天後重新显示
+    modifier = {
+      #未移除的時候的效果
+      political_power_gain = -0.05
+    }
+    remove_effect = {
+      #移除後的效果
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_timeout_mission_var_temp
+        value = 1
+      }
+      CHI_add_Infiltration_growth_time = yes
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_progress_temp
+        value = -5
+      }
+      PRC_Infiltration_change = yes
+      custom_effect_tooltip =Investigate_illegal_political_organization_4_tooltip
 
-			set_country_flag = Investigate_illegal_political_organizations_flg_4
-		}
-	}
-	Investigate_illegal_political_organization_5 = {
-		name = Investigate_illegal_political_organizations 
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			hidden_trigger = {
-				has_country_flag = Investigate_illegal_political_organizations_flg_4				
-			}
-		}
-		visible = {
-			hidden_trigger = {
-				has_country_flag = Investigate_illegal_political_organizations_flg_4				
-			}
-		}
-		priority = 90		#重要程度
-		fire_only_once = yes		#是否只觸發一次
-		cost = 30		#花費政治點數
-		days_remove = 15		#持續幾天
-		days_re_enable = 50		# 幾天後重新显示
-		modifier = {
-			#未移除的時候的效果
-			political_power_gain = -0.05
-		}
-		remove_effect = {
-			#移除後的效果
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_timeout_mission_var_temp
-				value = 1
-			}
-			CHI_add_Infiltration_growth_time = yes
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = -5
-			}
-			PRC_Infiltration_change = yes
-			custom_effect_tooltip = Investigate_illegal_political_organization_5_tooltip
+      set_country_flag = Investigate_illegal_political_organizations_flg_4
+    }
+  }
+  Investigate_illegal_political_organization_5 = {
+    name = Investigate_illegal_political_organizations
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      hidden_trigger = {
+        has_country_flag = Investigate_illegal_political_organizations_flg_4
+      }
+    }
+    visible = {
+      hidden_trigger = {
+        has_country_flag = Investigate_illegal_political_organizations_flg_4
+      }
+    }
+    priority = 90		#重要程度
+    fire_only_once = yes		#是否只觸發一次
+    cost = 30		#花費政治點數
+    days_remove = 15		#持續幾天
+    days_re_enable = 50		# 幾天後重新显示
+    modifier = {
+      #未移除的時候的效果
+      political_power_gain = -0.05
+    }
+    remove_effect = {
+      #移除後的效果
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_timeout_mission_var_temp
+        value = 1
+      }
+      CHI_add_Infiltration_growth_time = yes
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_progress_temp
+        value = -5
+      }
+      PRC_Infiltration_change = yes
+      custom_effect_tooltip = Investigate_illegal_political_organization_5_tooltip
 
-			clr_country_flag = Investigate_illegal_political_organizations_flg
-			clr_country_flag = Investigate_illegal_political_organizations_flg_2
-			clr_country_flag = Investigate_illegal_political_organizations_flg_3
-			clr_country_flag = Investigate_illegal_political_organizations_flg_4
-		}
-	}
+      clr_country_flag = Investigate_illegal_political_organizations_flg
+      clr_country_flag = Investigate_illegal_political_organizations_flg_2
+      clr_country_flag = Investigate_illegal_political_organizations_flg_3
+      clr_country_flag = Investigate_illegal_political_organizations_flg_4
+    }
+  }
 
-	#debug	
-	debug_add_25_Infiltration = {
-		icon = generic_mask
-		allowed = {
-			#存在
-			tag = CHI
-		}
-		available = {
-			#启用
-			is_debug = yes
-		}
-		visible = {
-			#显示
-			is_debug = yes
-		}
-		priority = 90		#重要程度
-		fire_only_once = no		#是否只觸發一次
-		complete_effect = {
-			#移除後的效果
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = 25
-			}
-			PRC_Infiltration_change = yes
-		}
-	}
-	debug_reduce_25_Infiltration = {
-		icon = generic_mask
-		allowed = {
-			#存在
-			tag = CHI
-		}
-		available = {
-			#启用
-			is_debug = yes
-		}
-		visible = {
-			#显示
-			tag = CHI
-			is_debug = yes
-		}
-		priority = 90		#重要程度
-		fire_only_once = no		#是否只觸發一次
-		complete_effect = {
-			#移除後的效果
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = -25
-			}
-			PRC_Infiltration_change = yes
-		}
-	}
+  #debug
+  debug_add_25_Infiltration = {
+    icon = generic_mask
+    allowed = {
+      #存在
+      tag = CHI
+    }
+    available = {
+      #启用
+      is_debug = yes
+    }
+    visible = {
+      #显示
+      is_debug = yes
+    }
+    priority = 90		#重要程度
+    fire_only_once = no		#是否只觸發一次
+    complete_effect = {
+      #移除後的效果
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_progress_temp
+        value = 25
+      }
+      PRC_Infiltration_change = yes
+    }
+  }
+  debug_reduce_25_Infiltration = {
+    icon = generic_mask
+    allowed = {
+      #存在
+      tag = CHI
+    }
+    available = {
+      #启用
+      is_debug = yes
+    }
+    visible = {
+      #显示
+      tag = CHI
+      is_debug = yes
+    }
+    priority = 90		#重要程度
+    fire_only_once = no		#是否只觸發一次
+    complete_effect = {
+      #移除後的效果
+      set_temp_variable = {
+        var = CHI_PRC_Infiltration_progress_temp
+        value = -25
+      }
+      PRC_Infiltration_change = yes
+    }
+  }
 }
 
 # 立法院的決策
 CHI_Legislative_Yuan_decisions = {
-  Common_Agenda = {
-    icon = GFX_CHI_Legislative_Yuan_decisions
-    available = {
-      always = no
+  CHI_DPP_decisions_divider = {
+    icon = GFX_CHI_decision_braker_DPP_Agenda
+    
+    allowed = {
+      original_tag = CHI
     }
-    ai_will_do = {
-      base = 10
-    }
-    priority = 10
-    fire_only_once = no
-    cancel_if_not_visible = no
-    cost = 50
-    days_remove = 10
-    days_re_enable = 30
-  }
-  CHI_DPP_agenda = {
-    icon = GFX_CHI_Legislative_Yuan_decisions_DPP
     available = {
-      always = no
+      hidden_trigger = {
+        always = no
+      }
     }
     visible = {
       OR = {
@@ -1173,14 +1164,6 @@ CHI_Legislative_Yuan_decisions = {
         is_ai = yes
       }
     }
-    ai_will_do = {
-      base = 10
-    }
-    priority = 60
-    fire_only_once = no
-    cancel_if_not_visible = no
-    cost = 50
-    days_remove = 10
   }
   CHI_Criticizing_the_KMT = {
     icon = GFX_CHI_Criticizing_the_KMT
@@ -1213,7 +1196,7 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    priority = 60
+    
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 30
@@ -1260,7 +1243,7 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    priority = 60
+    
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 50
@@ -1321,7 +1304,7 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    priority = 60
+    
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 75
@@ -1437,7 +1420,7 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    priority = 60
+    
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 100
@@ -1461,10 +1444,17 @@ CHI_Legislative_Yuan_decisions = {
       PRC_Infiltration_change = yes
     }
   }
-  CHI_KMT_agenda = {
-    icon = GFX_CHI_Legislative_Yuan_decisions_KMT
+ 
+	CHI_KMT_decisions_divider = {
+    icon = GFX_CHI_decision_braker_KMT_Agenda
+    
+    allowed = {
+      original_tag = CHI
+    }
     available = {
-      always = no
+      hidden_trigger = {
+        always = no
+      }
     }
     visible = {
       OR = {
@@ -1472,25 +1462,6 @@ CHI_Legislative_Yuan_decisions = {
         is_ai = yes
       }
     }
-    ai_will_do = {
-      modifier = {
-        factor = 50
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
-        }
-      }
-      modifier = {
-        factor = 0
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
-        }
-      }
-    }
-    priority = 40
-    fire_only_once = no
-    cancel_if_not_visible = no
-    cost = 50
-    days_remove = 10
   }
   CHI_Criticizing_the_DPP = {
     icon = GFX_CHI_Criticizing_the_DPP
@@ -1523,7 +1494,6 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    priority = 40
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 30
@@ -1568,7 +1538,6 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    priority = 40
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 60
@@ -1625,7 +1594,6 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    priority = 40
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 100
@@ -1701,7 +1669,6 @@ CHI_Legislative_Yuan_decisions = {
         }
       }
     }
-    priority = 40
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 75
@@ -1732,10 +1699,17 @@ CHI_Legislative_Yuan_decisions = {
 
     }
   }
-  CHI_TPP_agenda = {
-    icon = GFX_CHI_Legislative_Yuan_decisions_TPP
+  
+	CHI_TPP_decisions_divider = {
+    icon = GFX_CHI_decision_braker_TPP_Agenda
+    
+    allowed = {
+      original_tag = CHI
+    }
     available = {
-      always = no
+      hidden_trigger = {
+        always = no
+      }
     }
     visible = {
       OR = {
@@ -1743,14 +1717,6 @@ CHI_Legislative_Yuan_decisions = {
         is_ai = yes
       }
     }
-    ai_will_do = {
-      base = 10
-    }
-    priority = 50
-    fire_only_once = no
-    cancel_if_not_visible = no
-    cost = 50
-    days_remove = 10
   }
   CHI_Making_deals_with_KMT = {
     icon = GFX_CHI_Making_deals_with_KMT
@@ -1771,7 +1737,7 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
     }
-    priority = 50
+    
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 45
@@ -1809,7 +1775,7 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
     }
-    priority = 50
+    
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 45
@@ -1847,7 +1813,7 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
     }
-    priority = 50
+    
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 100
@@ -1927,7 +1893,7 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
     }
-    priority = 50
+    
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 75
@@ -1944,5 +1910,33 @@ CHI_Legislative_Yuan_decisions = {
     remove_effect = {
       clr_country_flag = TPP_agenda
     }
+  }
+  CHI_Common_decisions_divider = {
+    icon = GFX_CHI_decision_braker_Public_Agenda
+    allowed = {
+      original_tag = CHI
+    }
+    available = {
+      hidden_trigger = {
+        always = no
+      }
+    }
+    visible = {
+      always = yes
+    }
+  }
+  Common_Agenda = {
+    icon = GFX_CHI_Legislative_Yuan_decisions
+    available = {
+      always = no
+    }
+    ai_will_do = {
+      base = 10
+    }
+    fire_only_once = no
+    cancel_if_not_visible = no
+    cost = 50
+    days_remove = 10
+    days_re_enable = 30
   }
 }
