@@ -79,10 +79,8 @@ CHI_test_of_will2 = {
   scripted_gui = test_of_will_taiwan_gui
 }
 
-CHI_armry_test = {
+CHI_armry = {
   #中華民國國軍
-  #picture = GFX_CHI_armry_test
-  #icon = GFX_CHI_test_of_will_category_anim
   priority = 2
   visible_when_empty = yes
   allowed = {
@@ -92,7 +90,6 @@ CHI_armry_test = {
     original_tag = CHI
     has_completed_focus = Rectify_weakening_military_preparedness
   }
-  scripted_gui = CHI_armry_gui
 }
 
 PDTO_solidarity = {
