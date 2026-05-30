@@ -21,6 +21,170 @@ guiTypes = { #NVX# Tag for changes
 		}
 		
 	}
+	containerWindowType = {
+		name = "owned_dlc_item"
+		size = { width = 50 height = 50 }
+		
+		buttonType =
+		{
+			position = { x = -9999 y = -9999 }
+			name ="dlc_button"
+			spriteType = "GFX_frontend_banner_dlc018"
+		}
+		
+		iconType = {
+			name = "glowup"
+			position = { x = -9999 y = -9999 }
+			spriteType = "GFX_spirit_glow"
+			scale = 0.8
+			#hide = yes
+		}
+		
+		buttonType = {
+			name = "owned_tick"
+			spriteType = "GFX_BPT_area_defense_setting_tick"
+			position = { x = -9999 y = -9999 }
+			Orientation = center_left
+			scale = 0.56
+			alwaysTransparent = yes
+			#hide = yes
+		}
+		
+		buttonType = {
+			name = "enabled_tick"
+			spriteType = "GFX_general_check"
+			position = { x = -9999 y = -9999 }
+			Orientation = center_left
+			alwaysTransparent = yes
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "change_background"
+		size = { width = 100 height = 40 }
+		position = { x = -20 y = -20 }
+		Orientation = lower_right
+		Origo = lower_right
+
+		buttonType = {
+			name ="change_background_button"
+			position = { x = -206 y = -24 }
+			
+			quadTextureSprite = "GFX_button_238x38"
+			buttonText = "CHANGE_BACKGROUND"
+			buttonFont = "hoi_24header"
+			Orientation = center
+		}
+
+		containerWindowType = {
+			name = "background_selection"
+			size = { width = 238 height = 700 }
+			position = { x = -156 y = -700 }
+			margin = { top = 18 bottom = 13 left = 8}
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			
+			checkboxType = {
+					name = "select_all_checkbox"
+					position = { x = 13 y = 0 }
+					quadTextureSprite ="GFX_generic_checkbox"
+					buttonText = ""
+					buttonFont = "Main_14_black"
+					clicksound = click_checkbox
+				}
+			instantTextBoxType={
+					position = {x = 53 y = 6 }
+					name = "select_all_label"
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 150
+					maxHeight = 18
+					text = "SELECT_ALL"	
+					orientation = "UPPER_LEFT"
+					format = left
+					
+			}
+						
+		containerWindowType = {
+			name = "background_selection_list"
+			size = { width = 230 height = 576 }
+			position = { x = 0 y = 90 }
+			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 63
+			smooth_scrolling = yes
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_transparent"
+			}
+			
+				gridBoxType = {
+					position = { x = 9 y = 0 }
+					name = "available_backgrounds"
+					size = { width = 200 height = 0 }
+					slotsize = { width = 200 height = 150 }
+					max_slots_horizontal = 1		
+				}
+
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "available_background"
+		size = { width = 190 height = 140 }
+		position = { x = 0 y = 0 }
+
+		buttonType = {
+			name = "change_background_button"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_tiled_window_1b_border"
+		}
+		
+		containerWindowType = {
+		name = "highlight"
+		size = { width = 192 height = 144 }
+			background = {
+				name = "glowup"
+				quadTextureSprite = "GFX_tiled_frame_selected"
+				alwaysTransparent = yes
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "unowned_dlc_item"
+		size = { width = 50 height = 50 }
+		
+		buttonType =
+		{
+			position = { x = -9999 y = -9999 }
+			name ="dlc_button"
+			spriteType = "GFX_frontend_banner_dlc018"
+		}
+		
+		buttonType = {
+			name = "owned_tick"
+			spriteType = "GFX_BPT_area_defense_setting_tick"
+			position = { x = -9999 y = -9999 }
+			Orientation = center_left
+			scale = 0.56
+			alwaysTransparent = yes
+			#enabled = no
+		}
+		
+		buttonType = {
+			name = "enabled_tick"
+			spriteType = "GFX_general_check"
+			position = { x = -9999 y = -9999 }
+			Orientation = center_left
+			alwaysTransparent = yes
+		}
+		
+	}
 
 	#containerWindowType = {
 	#	name  ="frontend_alpha_stamp"
@@ -199,7 +363,7 @@ guiTypes = { #NVX# Tag for changes
 			iconType = {
 				name ="frontend_game_logo"
 				spriteType = "GFX_frontend_game_logo"
-				position = { x= 105 y = -390 }
+				position = { x= 90 y = -390 }
 				scale = 0.75
 			}
 			
@@ -331,29 +495,10 @@ guiTypes = { #NVX# Tag for changes
 		}
 		iconType = {
 			name ="frontend_update_image"
-			spriteType = "GFX_frontend_update_image"
-			position =  { x= 160 y = -78 }
+			spriteType = "GFX_CHI_image"
+			position =  { x= 135 y = -78 }
 			pdx_tooltip = "TFR_UPDATE_TOOLTIP"
-		}	
-		ButtonType = {
-			name = "mini_update"
-			position =  { x= 468 y = -10000 }
-			font = "VCR02_14"		
-			text = "MINI_UPDATE_TEXT"
 		}
-		iconType = {
-			name ="mini_update_window"
-			spriteType = "GFX_mini_update_window"
-			position =  { x= 465 y = -10000 }
-			scale = 0.85
-		}
-		iconType = {
-			name ="frontend_update_image_mini"
-			spriteType = "GFX_frontend_update_image_mini"
-			position =  { x= 484 y = -10000 }
-			pdx_tooltip = "TFR_UPDATE_MINI_TOOLTIP"
-			scale = 0.7
-		}	
 	}
 	
 	containerWindowType = {
