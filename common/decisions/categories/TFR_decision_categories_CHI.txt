@@ -1,174 +1,207 @@
 CHI_debug = {
-  icon = GFX_CHI_test_of_will_category_anim
-  picture = GFX_CHI_test_of_will_banner_animated
-  priority = 100
-  visible_when_empty = yes
-  allowed = {
-    is_debug = yes
-  }
-  visible = {
-    is_debug = yes
-  }
+	icon = GFX_CHI_test_of_will_category_anim
+	picture = GFX_CHI_test_of_will_banner_animated
+	priority = 100
+	visible_when_empty = yes
+	allowed = {
+		is_debug = yes
+	}
+	visible = {
+		is_debug = yes
+	}
 }
 
 CHI_NHCC_decisions = {
-  #疫情
-  icon = NHCC
-  #picture = GFX_CHI_test_of_will_banner_animated
-  priority = 100
-  #visible_when_empty = yes
-  allowed = {
-    always = yes
-  }
-  visible = {
-    NOT = {
-      has_country_flag = covid_happen2
-    }
-  }
-  scripted_gui = CHI_vaccine_gui
+	#疫情
+	icon = NHCC
+	#picture = GFX_CHI_test_of_will_banner_animated
+	priority = 100
+	#visible_when_empty = yes
+	allowed = {
+		always = yes
+	}
+	visible = {
+		NOT = {
+			has_country_flag = covid_happen2
+		}
+	}
+	scripted_gui = CHI_vaccine_gui
 }
 
 CHI_PRC_Infiltration_decisions = {
-  #滲透度
-  icon = GFX_PRC_Infiltration
-  #picture = GFX_CHI_test_of_will_banner_animated
-  priority = 1
-  #visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-    OR = {
-      has_global_flag = PRC_ongoing_taiwan_war
-      NOT = {
-        has_global_flag = PRC_taiwan_war_lost
-      }
-    }
-  }
-  visible = {
-    OR = {
-      has_global_flag = PRC_ongoing_taiwan_war
-      NOT = {
-        has_global_flag = PRC_taiwan_war_lost
-      }
-    }
-  }
-  scripted_gui = PRC_Infiltration_gui
+	#滲透度
+	icon = GFX_PRC_Infiltration
+	#picture = GFX_CHI_test_of_will_banner_animated
+	priority = 1
+	#visible_when_empty = yes
+	allowed = {
+		original_tag = CHI
+		OR = {
+			has_global_flag = PRC_ongoing_taiwan_war
+			NOT = {
+				has_global_flag = PRC_taiwan_war_lost
+			}
+		}
+	}
+	visible = {
+		OR = {
+			has_global_flag = PRC_ongoing_taiwan_war
+			NOT = {
+				has_global_flag = PRC_taiwan_war_lost
+			}
+		}
+	}
+	scripted_gui = PRC_Infiltration_gui
 }
 
 CHI_Legislative_Yuan_decisions = {
-  #立法院
-  icon = GFX_CHI_Legislative_Yuan_decisions
-  priority = 5
-  visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    always = yes
-  }
-  scripted_gui = CHI_Legislative_Yuan_gui
+	#立法院
+	icon = GFX_CHI_Legislative_Yuan_decisions
+	priority = 5
+	visible_when_empty = yes
+	allowed = {
+		original_tag = CHI
+	}
+	visible = {
+		always = yes
+	}
+	scripted_gui = CHI_Legislative_Yuan_gui
 }
 
 CHI_test_of_will2 = {
-  icon = GFX_CHI_test_of_will_category_anim
-  picture = GFX_CHI_test_of_will_banner_animated
-  priority = 4
-  visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-    OR = {
-      NOT = {
-        is_ally_with = PRC
-        has_global_flag = PRC_taiwan_war_lost
-      }
-    }
-  }
-  visible = {
-    OR = {
-      NOT = {
-        is_ally_with = PRC
-        has_global_flag = PRC_taiwan_war_lost
-      }
-    }
-  }
-  scripted_gui = test_of_will_taiwan_gui
+	icon = GFX_CHI_test_of_will_category_anim
+	picture = GFX_CHI_test_of_will_banner_animated
+	priority = 4
+	visible_when_empty = yes
+	allowed = {
+		original_tag = CHI
+		OR = {
+			NOT = {
+				is_ally_with = PRC
+				has_global_flag = PRC_taiwan_war_lost
+			}
+		}
+	}
+	visible = {
+		OR = {
+			NOT = {
+				is_ally_with = PRC
+				has_global_flag = PRC_taiwan_war_lost
+			}
+		}
+	}
+	scripted_gui = test_of_will_taiwan_gui
 }
 
 CHI_army_decisions = {
-  icon = GFX_CHI_army_decisions_Icon
-  #中華民國國軍
-  priority = 2
-  visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    has_completed_focus = Rectify_weakening_military_preparedness
-  }
+	icon = GFX_CHI_army_decisions_Icon
+	#中華民國國軍
+	priority = 2
+	visible_when_empty = yes
+	allowed = {
+		original_tag = CHI
+	}
+	visible = {
+		has_completed_focus = Rectify_weakening_military_preparedness
+	}
 }
 
 PDTO_solidarity = {
-  #太約
-  icon = GFX_PDTO_dec
-  priority = 3
-  visible_when_empty = yes
-  allowed = {
-    has_country_flag = pdto_member
-  }
-  visible = {
-    always = yes
-  }
+	#太約
+	icon = GFX_PDTO_dec
+	priority = 3
+	visible_when_empty = yes
+	allowed = {
+		has_country_flag = pdto_member
+	}
+	visible = {
+		always = yes
+	}
 }
 
 PHI_civil_war_dec = {
-  #菲律賓内戰
-  visible_when_empty = yes
-  priority = 4
-
-  visible = {
-    has_global_flag = PHI_civil_war_flag
-  }
-
-  allowed = {
-    or = {
-      original_tag = NDF
-      original_tag = AFP
-      original_tag = MIL
-    }
-  }
+	#菲律賓内戰
+	visible_when_empty = yes
+	priority = 4
+	visible = {
+		has_global_flag = PHI_civil_war_flag
+	}
+	allowed = {
+		or = {
+			original_tag = NDF
+			original_tag = AFP
+			original_tag = MIL
+		}
+	}
 }
 
 CHI_taiwan_war_category = {
-  #臺海戰爭
-  visible_when_empty = no
-  priority = 99
-
-  visible = {
-    has_global_flag = PRC_ongoing_taiwan_war
-    NOT = {
-      OR = {
-        has_global_flag = JAP_japan_lost
-        has_global_flag = JAP_japan_victory
-      }
-    }
-  }
-
-  allowed = {
-    original_tag = CHI
-  }
+	#臺海戰爭
+	visible_when_empty = no
+	priority = 99
+	visible = {
+		has_global_flag = PRC_ongoing_taiwan_war
+		NOT = {
+			OR = {
+				has_global_flag = JAP_japan_lost
+				has_global_flag = JAP_japan_victory
+			}
+		}
+	}
+	allowed = {
+		original_tag = CHI
+	}
 }
 
 CHI_Taiwan_will = {
-  #大中華局勢
-  visible_when_empty = yes
-  priority = 99
+	#大中華局勢
+	visible_when_empty = yes
+	priority = 99
+	visible = {
+		always = no
+	}
+	allowed = {
+		or = {
+			always = no
+		}
+	}
+}
 
-  visible = {
-    always = no
-  }
+CHI_test_of_will = {
+	icon = GFX_CHI_test_of_will_category_anim
+	#picture = GFX_CHI_test_of_will_banner_animated
+	priority = 4
+	#visible_when_empty = yes
+	allowed = {
+		original_tag = CHI
+	}
+	visible = {
+		NOT = {
+			is_ally_with = PRC
+		}
+		date < 2025.1.1
+	}
+	scripted_gui = CHI_test_of_will
+}
 
-  allowed = {
-    or = {
-      always = no
-    }
-  }
+CHI_Military_purchasing_cat = {
+	icon = GFX_CHI_Military_purchasing_cat_Icon
+	priority = 1000
+	visible_when_empty = yes
+	allowed = {
+		original_tag = CHI
+	}
+	visible = {
+		OR = {
+			is_debug = yes
+			AND = {
+				NOT = {
+					is_ally_with = PRC
+				}
+				date < 2025.1.1
+				has_completed_focus = Defense_Strategy_White_Paper
+			}
+		}
+	}
+	scripted_gui = CHI_Military_purchasing_info
 }

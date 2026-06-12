@@ -159,8 +159,7 @@ spriteTypes = {
 		texturefile = "gfx/texticons/CHI/CHI_LP.png"
 		legacy_lazy_load = no
 	}
-	###分界
-	#政黨圖片補充？
+	#決議圖片補充
 	spriteType = {
 		name = "GFX_CHI_congress"
 		texturefile = "gfx/texticons/banners/CHI/CHI_congress.png"
@@ -171,12 +170,18 @@ spriteTypes = {
 		textureFile = "gfx/texticons/banners/CHI/CHI_army_banner.png"
 		legacy_lazy_load = no
 	}
-	########3
+	spriteType = {
+		name = "GFX_CHI_Military_purchasing_cat"
+		texturefile = "gfx/texticons/banners/CHI/CHI_Military_purchasing_cat.png"
+		legacy_lazy_load = no
+	}
+
+	#Bop
 	spriteType = {
 		name = "GFX_bop_CHI_ROC"
 		texturefile = "gfx/interface/bop/bop_CHI_ROC.png"
 		alwaystransparent = yes
-	}
+	}	
 	spriteType = {
 		name = "GFX_bop_CHI_TW"
 		texturefile = "gfx/interface/bop/bop_CHI_TW.png"

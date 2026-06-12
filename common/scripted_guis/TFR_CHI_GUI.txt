@@ -3,7 +3,6 @@ scripted_gui = {
 	CHI_vaccine_gui = {
 		window_name = "CHI_vaccine_gui"
 		context_type = decision_category
-
 		triggers = {
 			my_progbar_visible = {
 				has_completed_focus = MY_unlock_focus
@@ -12,18 +11,22 @@ scripted_gui = {
 				has_completed_focus = MY_unlock_focus
 			}
 		}
-
 		properties = {
-			top_folder_button = { frame = folder_frame }
-			flag_frame = { frame = folder_frame }
-			support_progbar_vaccine = { frame = CHI:CHI_vaccine_progress }
+			top_folder_button = {
+				frame = folder_frame
+			}
+			flag_frame = {
+				frame = folder_frame
+			}
+			support_progbar_vaccine = {
+				frame = CHI:CHI_vaccine_progress
+			}
 		}
 	}
 	#台灣內部滲透
 	PRC_Infiltration_gui = {
 		window_name = "PRC_Infiltration_gui"
 		context_type = decision_category
-
 		triggers = {
 			my_progbar_visible = {
 				has_completed_focus = MY_unlock_focus
@@ -32,166 +35,176 @@ scripted_gui = {
 				has_completed_focus = MY_unlock_focus
 			}
 		}
-
 		properties = {
-			top_folder_button = { frame = folder_frame }
-			flag_frame = { frame = folder_frame }
-			support_progbar_vaccine = { frame = CHI:CHI_PRC_Infiltration_progress }
+			top_folder_button = {
+				frame = folder_frame
+			}
+			flag_frame = {
+				frame = folder_frame
+			}
+			support_progbar_vaccine = {
+				frame = CHI:CHI_PRC_Infiltration_progress
+			}
 		}
 	}
 	#立法院
-  CHI_Legislative_Yuan_gui = {
-    context_type = decision_category
-    window_name = "CHI_Legislative_Yuan_gui"
-    visible = {
-      tag = CHI
-    }
-    effects = {
-      Open_kmt_dec_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_dec_visible = 1
-            }
-          }
-          clear_variable = CHI_dec_visible
-        }
-        else = {
-          set_variable = {
-            CHI_dec_visible = 1
-          }
-        }
-      }
-      Open_dpp_dec_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_dec_visible = 2
-            }
-          }
-          clear_variable = CHI_dec_visible
-        }
-        else = {
-          set_variable = {
-            CHI_dec_visible = 2
-          }
-        }
-      }
-      Open_tpp_dec_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_dec_visible = 3
-            }
-          }
-          clear_variable = CHI_dec_visible
-        }
-        else = {
-          set_variable = {
-            CHI_dec_visible = 3
-          }
-        }
-      }
-    }
-  }
-  #意志之试炼
-  test_of_will_taiwan_gui = {
-    context_type = decision_category
-    window_name = "test_of_will_taiwan_gui"
-    visible = {
-      tag = CHI
-    }
-    effects = {
-      test_of_will_taidong_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 1
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 1
-          }
-        }
-      }
-      test_of_will_taizhong_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 2
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 2
-          }
-        }
-      }
-      test_of_will_tainan_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 3
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 3
-          }
-        }
-      }
-      test_of_will_taipei_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 4
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 4
-          }
-        }
-      }
-      test_of_will_penghu_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 5
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 5
-          }
-        }
-      }
-      test_of_will_jinmen_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 6
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 6
-          }
-        }
-      }
-    }
-  }
+	CHI_Legislative_Yuan_gui = {
+		context_type = decision_category
+		window_name = "CHI_Legislative_Yuan_gui"
+		visible = {
+			tag = CHI
+		}
+		effects = {
+			Open_kmt_dec_click = {
+				if = {
+					limit = {
+						check_variable = {
+							CHI_dec_visible = 1
+						}
+					}
+					clear_variable = CHI_dec_visible
+				}
+				else = {
+					set_variable = {
+						CHI_dec_visible = 1
+					}
+				}
+			}
+			Open_dpp_dec_click = {
+				if = {
+					limit = {
+						check_variable = {
+							CHI_dec_visible = 2
+						}
+					}
+					clear_variable = CHI_dec_visible
+				}
+				else = {
+					set_variable = {
+						CHI_dec_visible = 2
+					}
+				}
+			}
+			Open_tpp_dec_click = {
+				if = {
+					limit = {
+						check_variable = {
+							CHI_dec_visible = 3
+						}
+					}
+					clear_variable = CHI_dec_visible
+				}
+				else = {
+					set_variable = {
+						CHI_dec_visible = 3
+					}
+				}
+			}
+		}
+	}
+	#軍購
+	CHI_Military_purchasing_info = {
+		window_name = "CHI_Military_purchasing_interface"
+		context_type = decision_category
+	}
+	#意志之试炼
+	test_of_will_taiwan_gui = {
+		context_type = decision_category
+		window_name = "test_of_will_taiwan_gui"
+		visible = {
+			tag = CHI
+		}
+		effects = {
+			test_of_will_taidong_click = {
+				if = {
+					limit = {
+						check_variable = {
+							CHI_will_visible = 1
+						}
+					}
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = {
+						CHI_will_visible = 1
+					}
+				}
+			}
+			test_of_will_taizhong_click = {
+				if = {
+					limit = {
+						check_variable = {
+							CHI_will_visible = 2
+						}
+					}
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = {
+						CHI_will_visible = 2
+					}
+				}
+			}
+			test_of_will_tainan_click = {
+				if = {
+					limit = {
+						check_variable = {
+							CHI_will_visible = 3
+						}
+					}
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = {
+						CHI_will_visible = 3
+					}
+				}
+			}
+			test_of_will_taipei_click = {
+				if = {
+					limit = {
+						check_variable = {
+							CHI_will_visible = 4
+						}
+					}
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = {
+						CHI_will_visible = 4
+					}
+				}
+			}
+			test_of_will_penghu_click = {
+				if = {
+					limit = {
+						check_variable = {
+							CHI_will_visible = 5
+						}
+					}
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = {
+						CHI_will_visible = 5
+					}
+				}
+			}
+			test_of_will_jinmen_click = {
+				if = {
+					limit = {
+						check_variable = {
+							CHI_will_visible = 6
+						}
+					}
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = {
+						CHI_will_visible = 6
+					}
+				}
+			}
+		}
+	}
 }

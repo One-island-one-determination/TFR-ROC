@@ -135,4 +135,16 @@ guitypes = {
 			pdx_tooltip = CHI_Infiltration_dece_tt
 		}
 	}
+	
+	containerwindowtype = {
+		name = "CHI_Military_purchasing_interface"
+		size = { width = 100%% height = 530 }
+		
+		icontype = {
+			name = "GFX_base"
+			quadtexturesprite = "GFX_Mp_base"
+			position = { x = 0 y = 0 }
+			centerposition = yes
+		}
+	}
 }
