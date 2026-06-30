@@ -7,7 +7,7 @@ focus_tree = {
       tag = CHI
     }
   }
-  #Election
+  #Election{
   focus = {
     # 大選將至
     id = CHI_election
@@ -225,7 +225,7 @@ focus_tree = {
       }
       swap_ideas = {
         add_idea = "CHI_prc_embargo_idea1"
-        remove_idea = "CHI_prc_embargo_idea"
+        remove_idea = "CHI_prc_embargo_idea0"
       }
       add_popularity = {
         ideology = social_liberal
@@ -323,7 +323,7 @@ focus_tree = {
       add_political_power = 25
       swap_ideas = {
         add_idea = "CHI_prc_embargo_idea1"
-        remove_idea = "CHI_prc_embargo_idea"
+        remove_idea = "CHI_prc_embargo_idea0"
       }
       swap_ideas = {
         add_idea = "CHI_low_international_recognition_KMT1_idea"
@@ -696,7 +696,8 @@ focus_tree = {
       factor = 1
     }
   }
-  #防疫
+  #}
+  #防疫{
   focus = {
     # 應對疫情
     id = NHCC_Expand
@@ -955,7 +956,8 @@ focus_tree = {
       focus = Buy_vaccines
     }
   }
-  #石油危機國策
+  #}
+  #石油危機國策{
   focus = {
     # 第四次石油危機
     id = third_oil_crisis
@@ -1366,6 +1368,12 @@ focus_tree = {
         focus_unlock = yes
         if = {
           limit = {
+            has_ideas = CHI_oil_crash10
+          }
+          remove_ideas = CHI_oil_crash10
+        }
+        if = {
+          limit = {
             has_ideas = CHI_oil_crash11
           }
           remove_ideas = CHI_oil_crash11
@@ -1394,11 +1402,16 @@ focus_tree = {
     prerequisite = {
       focus = The_power_plant_on_full_fire
     }
+    prerequisite = {
+      focus = Photovoltaic_panels_everywhere
+      focus = CHI_Restart_core_four
+    }
     ai_will_do = {
       factor = 1
     }
   }
-  #軍事線
+  #}
+  #軍事線{
   focus = {
     # 整治武備廢弛
     id = Rectify_weakening_military_preparedness
@@ -2069,7 +2082,8 @@ focus_tree = {
       factor = 1
     }
   }
-  #金融危機
+  #}
+  #金融危機{
   focus = {
     #太平洋之殤
     id = Pacific_War
@@ -2459,8 +2473,8 @@ focus_tree = {
       add_ideas = CHI_made_in_TW
     }
   }
-
-  # 台海
+  #}
+  #台海{
   focus = {
     # 國家危難之時
     id = CHI_thenationisinperil
@@ -3659,3 +3673,4 @@ focus_tree = {
     }
   }
 }
+  #}

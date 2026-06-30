@@ -340,11 +340,11 @@ add_opinion_modifier = {
 
 add_ideas = {
   #National Spirits
-  CHI_gdp_fix
+  # CHI_gdp_fix
   CHI_tsmc_idea	#CHI_lower_mainland_influence_idea
   CHI_low_international_recognition_idea
   CHI_american_protection_idea
-  CHI_prc_embargo_idea
+  CHI_prc_embargo_idea0
   #Laws
   medium_police
   low_conscription
@@ -357,29 +357,6 @@ add_ideas = {
   CHI_Wu_Zhaoxie_for
   CHI_Tsa_Mingyen_int
 
-}
-
-#Events
-country_event = {
-  id = CHI.4
-  days = 1
-}
-country_event = {
-  id = ROC.1
-  days = 3
-}
-country_event = {
-  id = ROC.77
-  days = 2
-}
-# 台灣人口首次負成長
-country_event = {
-  id = CHI.11
-  days = 366
-}
-news_event = {
-  id = ROC.41
-  days = 1200
 }
 
 set_politics = {
@@ -752,3 +729,59 @@ if = {
     icon = "GFX_PRC_fighter4_medium"
   }
 }
+####定時事件{
+country_event = {
+  id = ROC.37
+  days = 59
+}
+country_event = {
+  id = ROC.36
+  days = 284
+}
+country_event = {
+  id = ROC.78
+  days = 425
+}
+country_event = {
+  id = ROC.79
+  days = 458
+}
+country_event = {
+  id = ROC.80
+  days = 1555
+}
+country_event = {
+  id = ROC.81
+  days = 2014
+}
+country_event = {
+  id = ROC.82
+  days = 95
+}
+
+country_event = {
+  id = CHI.4
+  days = 1
+}
+country_event = {
+  id = ROC.1
+  days = 3
+}
+country_event = {
+  id = ROC.77
+  days = 2
+}
+# 台灣人口首次負成長
+country_event = {
+  id = CHI.11
+  days = 366
+}
+news_event = {
+  id = ROC.41
+  days = 1200
+}
+#}
+#亚细亚的孤儿
+#					country_event = {
+#						id = ROC.75
+#					}

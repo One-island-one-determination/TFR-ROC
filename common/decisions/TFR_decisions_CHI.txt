@@ -55,6 +55,177 @@ CHI_debug = {
       }
     }
   }
+  merge_south_america_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+          limit = {
+              is_major = no 
+              has_war = no 
+              capital_scope = {
+                  is_on_continent = south_america
+              }
+              NOT = { tag = URG }
+          }
+          # 在吞併之前，掃描目標國家的每一個州，強制給予核心
+          every_owned_state = {
+              add_core_of = URG
+          }
+          # 執行吞併並蒸發軍隊
+          URG = {
+              annex_country = { 
+                  target = PREV 
+                  transfer_troops = no 
+              }
+          }
+      }
+    }
+  }
+  merge_europe_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+          limit = {
+              has_war = no 
+              NOT = {tag = UKR}
+              NOT = {tag = NOV}
+              NOT = {tag = DPR}
+              NOT = {tag = FRA}
+              NOT = {tag = GER}
+              NOT = {tag = SOV}
+              capital_scope = {
+                  is_on_continent = europe
+              }
+              NOT = {tag = LUX}
+          }
+          every_owned_state = {
+              add_core_of = LUX
+          }
+          # 執行吞併並蒸發軍隊
+          LUX = {
+              annex_country = { 
+                  target = PREV 
+                  transfer_troops = no 
+              }
+          }
+      }
+    }
+  }
+  merge_africa_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+          limit = {
+              is_major = no 
+              has_war = no 
+              capital_scope = {
+                  is_on_continent = africa
+              }
+              NOT = { tag = EQG }
+          }
+          every_owned_state = {
+              add_core_of = EQG
+          }
+          # 執行吞併並蒸發軍隊
+          EQG = {
+              annex_country = { 
+                  target = PREV 
+                  transfer_troops = no 
+              }
+          }
+      }
+    }
+  }
+  merge_asia_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+          limit = {
+              is_major = no 
+              has_war = no 
+              capital_scope = {
+                  is_on_continent = asia
+              }
+              NOT = { tag = NEP }
+              NOT = { tag = MON }
+              NOT = { tag = KOR }
+              NOT = { tag = PRK }
+              NOT = { tag = HKN }
+              NOT = { tag = MCU }
+          }
+          every_owned_state = {
+              add_core_of = NEP
+          }
+          # 執行吞併並蒸發軍隊
+          NEP = {
+              annex_country = { 
+                  target = PREV 
+                  transfer_troops = no 
+              }
+          }
+      }
+    }
+  }
+  merge_middle_east_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+          limit = {
+              is_major = no 
+              has_war = no 
+              capital_scope = {
+                  is_on_continent = middle_east
+              }
+              NOT = { tag = NEP }
+          }
+          every_owned_state = {
+              add_core_of = NEP
+          }
+          # 執行吞併並蒸發軍隊
+          NEP = {
+              annex_country = { 
+                  target = PREV 
+                  transfer_troops = no 
+              }
+          }
+      }
+    }
+  }
 }
 
 # 疫苗

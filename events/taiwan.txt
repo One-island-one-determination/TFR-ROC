@@ -1457,7 +1457,7 @@ country_event = {
   }
 }
 
-country_event = {
+country_event = {##倒計數結束觸發事件##
   id = ROC_CHI.33
   title = ROC_CHI.33.t
   desc = ROC_CHI.33.d
@@ -1470,60 +1470,60 @@ country_event = {
   }
 }
 
-country_event = {
-  id = ROC_CHI.34
-  title = ROC_CHI.34.t
-  desc = ROC_CHI.34.d
-  picture = ROC_CHI_Event_34
-  fire_only_once = yes
-  is_triggered_only = yes
+# country_event = {
+#   id = ROC_CHI.34
+#   title = ROC_CHI.34.t
+#   desc = ROC_CHI.34.d
+#   picture = ROC_CHI_Event_34
+#   fire_only_once = yes
+#   is_triggered_only = yes
 
-  option = {
-    name = ROC_CHI.34.a
-    CHI = {
-      if = {
-        limit = {
-          has_country_leader = {
-            character = CHI_han_kuo_yu_char
-            ruling_only = yes
-          }
-        }
-        set_country_leader_portrait = {
-          ideology = authoritarian_democrat
-          portrait = GFX_portrait_CHI_han_kuo_yu_taiwan_win
-        }
-        set_country_leader_portrait = {
-          ideology = conservative
-          portrait = GFX_portrait_CHI_han_kuo_yu_taiwan_win
-        }
-        hidden_effect = {
-          add_popularity = {
-            ideology = conservative
-            popularity = 0.2
-          }
-          set_politics = {
-            ruling_party = conservative
-            last_election = "2020.1.11"
-            election_frequency = 48
-            elections_allowed = yes
-          }
-        }
-      }
-      else_if = {
-        limit = {
-          has_country_leader = {
-            character = CHI_tsai_ing_wen_char
-            ruling_only = yes
-          }
-        }
-        set_country_leader_portrait = {
-          ideology = social_liberal
-          portrait = GFX_portrait_CHI_tsai_ing_taiwan_win
-        }
-      }
-    }
-  }
-}
+#   option = {
+#     name = ROC_CHI.34.a
+#     CHI = {
+#       if = {
+#         limit = {
+#           has_country_leader = {
+#             character = CHI_han_kuo_yu_char
+#             ruling_only = yes
+#           }
+#         }
+#         set_country_leader_portrait = {
+#           ideology = authoritarian_democrat
+#           portrait = GFX_portrait_CHI_han_kuo_yu_taiwan_win
+#         }
+#         set_country_leader_portrait = {
+#           ideology = conservative
+#           portrait = GFX_portrait_CHI_han_kuo_yu_taiwan_win
+#         }
+#         hidden_effect = {
+#           add_popularity = {
+#             ideology = conservative
+#             popularity = 0.2
+#           }
+#           set_politics = {
+#             ruling_party = conservative
+#             last_election = "2020.1.11"
+#             election_frequency = 48
+#             elections_allowed = yes
+#           }
+#         }
+#       }
+#       else_if = {
+#         limit = {
+#           has_country_leader = {
+#             character = CHI_tsai_ing_wen_char
+#             ruling_only = yes
+#           }
+#         }
+#         set_country_leader_portrait = {
+#           ideology = social_liberal
+#           portrait = GFX_portrait_CHI_tsai_ing_taiwan_win
+#         }
+#       }
+#     }
+#   }
+# }
 
 news_event = {
   id = ROC_PRC.1
@@ -3389,24 +3389,25 @@ country_event = {
     }
   }
 }
-
+#國慶事件
 country_event = {
   id = ROC.36
   title = ROC.36.t
   desc = ROC.36.d
   picture = ROC_10_10_National_Day
   is_triggered_only = yes
-  fire_only_once = yes
 
   immediate = {
-    country_event = {
-      id = ROC.36
-      days = 284
-      hours = 6
+    hidden_effect ={#Hidden_effect就看不到「觸發事件"中華民國國慶"」
+      country_event = {
+        id = ROC.36
+        days = 365
+      }
     }
   }
   option = {
     name = ROC.36.a
+    add_political_power = 10
   }
 }
 
@@ -3416,17 +3417,18 @@ country_event = {
   desc = ROC.37.d
   picture = ROC_228_Memoria_Day
   is_triggered_only = yes
-  fire_only_once = yes
 
-  immediate = {
-    country_event = {
-      id = ROC.37
-      days = 59
-      hours = 6
+  immediate = { 
+    hidden_effect ={
+      country_event = {#228同上國慶
+        id = ROC.37
+        days = 365 #Yearly
+      }
     }
   }
   option = {
     name = ROC.37.a
+    add_political_power = 5
   }
 }
 

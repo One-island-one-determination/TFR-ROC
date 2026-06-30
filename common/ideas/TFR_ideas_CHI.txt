@@ -748,25 +748,26 @@ ideas = {
         political_power_gain = -0.1
       }
     }
-    CHI_prc_embargo_low_idea = {
+    # CHI_prc_embargo_low_idea = {
+    #   picture = TAI_chinese_embargo
+    #   allowed = {
+    #     always = no
+    #   }
+    #   cancel = {
+    #     is_puppet_of = PRC
+    #   }
+    #   allowed_civil_war = {
+    #     always = yes
+    #   }
+    #   removal_cost = -1
+    #   modifier = {
+    #     stability_factor = -0.05
+    #     consumer_goods_factor = 0.05
+    #   }
+    # }
+    CHI_prc_embargo_idea0 = {
       picture = TAI_chinese_embargo
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        stability_factor = -0.05
-        consumer_goods_factor = 0.05
-      }
-    }
-    CHI_prc_embargo_idea = {
-      picture = TAI_chinese_embargo
+      name = CHI_prc_embargo_idea
       allowed = {
         always = no
       }
@@ -1694,7 +1695,7 @@ ideas = {
         defense_bonus_against = 0.05
       }
     }
-    # 同島一命
+    #同島一命
     CHI_Onelifeonthesameisland_idea = {
       name = CHI_Onelifeonthesameisland
       picture = CHI_Onelifeonthesameisland

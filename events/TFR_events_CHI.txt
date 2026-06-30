@@ -814,10 +814,6 @@ country_event = {
         }
       }
       CHI = {
-        swap_ideas = {
-          remove_idea = CHI_chinese_blockade
-          add_idea = CHI_chinese_blockade_2
-        }
         country_event = {
           id = taiwan.291
           days = 5
@@ -841,6 +837,7 @@ country_event = {
     custom_effect_tooltip = CHI_taiwan_war_victory_demobilization_tooltip
     custom_effect_tooltip = tooltip_white_line
     add_ideas = CHI_lower_mainland_influence_idea
+    remove_Taihai_idea = yes
     custom_effect_tooltip = tooltip_white_line
     custom_effect_tooltip = tooltip_white_line
     delete_unit = {
