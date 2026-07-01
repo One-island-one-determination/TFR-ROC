@@ -226,6 +226,13 @@ CHI_debug = {
       }
     }
   }
+  focus_tree_CHI_taiwan_transition = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = CHI_taiwan_transition}}
+  }
 }
 
 # 疫苗

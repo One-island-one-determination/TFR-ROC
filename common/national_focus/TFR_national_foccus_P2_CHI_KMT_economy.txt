@@ -1,0 +1,322 @@
+focus_tree = {
+	id = P2_KMT_eco
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = CHI
+		}
+	}
+	default = no
+	focus = {
+		id = CHI_Economy_Industry
+		x = 0
+		y = 0
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = CHI_Rebulid_7th_CT
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Economy_Industry
+		}
+	}
+	focus = {
+		id = CHI_Way_Of_Can_To_Asia
+		x = 0
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Rebulid_7th_CT
+		}
+	}
+	focus = {
+		id = CHI_Expand_FPG
+		x = 0
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Way_Of_Can_To_Asia
+		}
+	}
+	focus = {
+		id = CHI_From_Material_To_Product
+		x = 0
+		y = 4
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Civil_Military_Supply_Chain
+		}
+		prerequisite = {
+			focus = CHI_Expand_FPG
+		}
+		prerequisite = {
+			focus = CHI_Software_Tech_Park
+		}
+	}
+	focus = {
+		id = CHI_Local_Heavy_Ind
+		x = 2
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Rebulid_7th_CT
+		}
+	}
+	focus = {
+		id = CHI_Civil_Military_Supply_Chain
+		x = 2
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Way_Of_Can_To_Asia
+		}
+	}
+	focus = {
+		id = CHI_Software_Tech_Park
+		x = -2
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Rebulid_7th_CT
+		}
+	}
+	focus = {
+		id = CHI_ROC_First
+		x = -4
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_Pacific_Trade_Zone
+			focus = CHI_Investment_From_EU_JP
+		}
+		prerequisite = {
+			focus = CHI_TARIFF
+			focus = CHI_Free_Trade
+		}
+	}
+	focus = {
+		id = CHI_Pacific_Trade_Zone
+		x = -6
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_ROC_First
+			focus = CHI_Investment_From_EU_JP
+		}
+		prerequisite = {
+			focus = CHI_TARIFF
+			focus = CHI_Free_Trade
+		}
+	}
+	focus = {
+		id = CHI_Investment_From_EU_JP
+		x = -8
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_Pacific_Trade_Zone
+			focus = CHI_ROC_First
+		}
+		prerequisite = {
+			focus = CHI_Free_Trade
+			focus = CHI_TARIFF
+		}
+	}
+	focus = {
+		id = CHI_Free_Trade
+		x = -7
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_TARIFF
+		}
+		prerequisite = {
+			focus = CHI_Fiscal_Policy_Adjustment
+		}
+	}
+	focus = {
+		id = CHI_TARIFF
+		x = -5
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_Free_Trade
+		}
+		prerequisite = {
+			focus = CHI_Fiscal_Policy_Adjustment
+		}
+	}
+	focus = {
+		id = CHI_Fiscal_Policy_Adjustment
+		x = -6
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Economy_Industry
+		}
+	}
+	focus = {
+		id = CHI_Defence_Economic_Policy
+		x = 4
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Economy_Industry
+		}
+	}
+	focus = {
+		id = CHI_Complete_Military_Idustry
+		x = 4
+		y = 5
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Defence_Economic_Policy
+		}
+		prerequisite = {
+			focus = CHI_Civil_Military_Supply_Chain
+		}
+	}
+	focus = {
+		id = CHI_NOMORE_Oil_Crisis
+		x = 7
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Economy_Industry
+		}
+	}
+	focus = {
+		id = CHI_Maintain_Nuclear_Policy
+		x = 6
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_NOMORE_Oil_Crisis
+		}
+	}
+	focus = {
+		id = CHI_Break_Solar_Monopoly
+		x = 8
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_NOMORE_Oil_Crisis
+		}
+	}
+	focus = {
+		id = CHI_Self_Sufficiency
+		x = 8
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			has_completed_focus = CHI_ROC_First
+		}
+		prerequisite = {
+			focus = CHI_Break_Solar_Monopoly
+		}
+	}
+	focus = {
+		id = CHI_From_Downstream_To_Upstream
+		x = 8
+		y = 4
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Self_Sufficiency
+		}
+	}
+	focus = {
+		id = CHI_outward_expansion
+		x = 10
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Break_Solar_Monopoly
+		}
+	}
+	focus = {
+		id = CHI_support_foreign_research
+		x = 12
+		y = 4
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_outward_expansion
+		}
+	}
+	focus = {
+		id = CHI_international_division_of_labor
+		x = 10
+		y = 5
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_outward_expansion
+		}
+		prerequisite = {
+			focus = CHI_support_foreign_research
+		}
+	}
+	focus = {
+		id = CHI_i_am_become_death
+		x = 6
+		y = 6
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Complete_Military_Idustry
+		}
+		prerequisite = {
+			focus = CHI_Maintain_Nuclear_Policy
+		}
+	}
+}
