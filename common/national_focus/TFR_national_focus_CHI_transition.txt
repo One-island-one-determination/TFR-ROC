@@ -3,107 +3,112 @@ focus_tree = {
 	country = {
 		factor = 0
 	}
-
 	focus = {
 		id = CHI_Victory_of_the_wounded
-		icon = GFX_focus_CHI_victory_of_the_wounded
-		cost = 2
 		x = 1
-		y = 0 
+		y = 0
+		cost = 2
+		icon = GFX_focus_CHI_victory_of_the_wounded
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 	}
-
 	focus = {
 		id = CHI_Survivor_celebration
-		icon = GFX_focus_CHI_survivor_celebration
-		cost = 2
-		relative_position_id = CHI_victory_of_the_wounded
 		x = 5
-		y = 0 
+		y = 0
+		cost = 2
+		icon = GFX_focus_CHI_survivor_celebration
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 	}
-
 	focus = {
 		id = CHI_Self_sutureing_trauma
-		icon = GFX_focus_CHI_Self_sutureing_trauma
-		cost = 2
-		relative_position_id = CHI_victory_of_the_wounded
 		x = 3
 		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Self_sutureing_trauma
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Victory_of_the_wounded
 		}
 		prerequisite = {
 			focus = CHI_Survivor_celebration
-		} 
+		}
 	}
-
 	focus = {
 		id = CHI_Eliminate_communist_traitors
-		icon = GFX_focus_CHI_Eliminate_communist_traitors
-		cost = 2
-		relative_position_id = CHI_Self_sutureing_trauma
 		x = -2
 		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Eliminate_communist_traitors
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_Preserving_diverse_voices
+		}
 		prerequisite = {
 			focus = CHI_Self_sutureing_trauma
 		}
-		mutually_exclusive = {
-			focus = CHI_Preserving_diverse_voices
-		} 
+		relative_position_id = CHI_Self_sutureing_trauma
 	}
-
 	focus = {
 		id = CHI_Preserving_diverse_voices
-		icon = GFX_focus_CHI_Preserving_diverse_voices
-		cost = 2
-		relative_position_id = CHI_Self_sutureing_trauma
 		x = 2
 		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Preserving_diverse_voices
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_Eliminate_communist_traitors
+		}
 		prerequisite = {
 			focus = CHI_Self_sutureing_trauma
 		}
-		mutually_exclusive = {
-			focus = CHI_Eliminate_communist_traitors
-		} 
+		relative_position_id = CHI_Self_sutureing_trauma
 	}
-
 	focus = {
 		id = CHI_Lifting_martial_law
-		icon = GFX_focus_CHI_Lifting_martial_law
-		cost = 2
-		relative_position_id = CHI_Self_sutureing_trauma
 		x = 0
 		y = 2
+		cost = 2
+		icon = GFX_focus_CHI_Lifting_martial_law
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_Restart_Temporary_Provisions
+		}
 		prerequisite = {
 			focus = CHI_Eliminate_communist_traitors
 			focus = CHI_Preserving_diverse_voices
 		}
-
-		mutually_exclusive = {
-			focus = CHI_Restart_Temporary_Provisions
-		} 
+		relative_position_id = CHI_Self_sutureing_trauma
 	}
 	focus = {
 		id = CHI_Restart_Temporary_Provisions
-		icon = GFX_focus_CHI_Restart_Temporary_Provisions
-		cost = 2
-		relative_position_id = CHI_Eliminate_communist_traitors
 		x = -2
 		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Restart_Temporary_Provisions
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_Lifting_martial_law
+		}
 		prerequisite = {
 			focus = CHI_Eliminate_communist_traitors
 		}
-
-		mutually_exclusive = {
-			focus = CHI_Lifting_martial_law
-		} 
+		relative_position_id = CHI_Eliminate_communist_traitors
 	}
 	focus = {
 		id = CHI_Plum_blossoms_bloom_in_the_bitter_winter
-		icon = GFX_focus_CHI_Plum_blossoms_bloom_in_the_bitter_winter
-		cost = 2
-		relative_position_id = CHI_Preserving_diverse_voices
 		x = 0
 		y = 2
+		cost = 2
+		icon = GFX_focus_CHI_Plum_blossoms_bloom_in_the_bitter_winter
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Preserving_diverse_voices
 			focus = CHI_Eliminate_communist_traitors
@@ -117,5 +122,6 @@ focus_tree = {
 				days = 1
 			}
 		}
+		relative_position_id = CHI_Preserving_diverse_voices
 	}
 }
