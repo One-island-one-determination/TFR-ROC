@@ -226,12 +226,67 @@ CHI_debug = {
       }
     }
   }
-  focus_tree_CHI_taiwan_transition = {
+  load_P1 = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = CHI_tree_focus}}
+  }
+  load_transition = {
     icon = generic_decision
     allowed = { always = yes }
     visible = { always = yes }
     available = { always = yes }
     complete_effect = {CHI={load_focus_tree = CHI_taiwan_transition}}
+  }
+  load_re = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = CHI_reconstruction_focus}}
+    set_country_flag = CHI_reconstruction_focus_unlock
+  }
+  load_P2HKY = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = P2_CHI_Han}}
+    set_country_flag = P2_CHI_Han_unlock
+  }
+  load_P2KMTE = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = P2_KMT_eco}}
+    set_country_flag = P2_KMT_eco_unlock
+  }
+  load_P2KMTM = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = P2_CHI_KMT_Military}}
+    set_country_flag = P2_CHI_KMT_Military_unlock
+  }
+  load_P3HKY = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = P3_CHI_Han}}
+    set_country_flag = P3_CHI_Han_unlock
+  }
+  load_P4HKY = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = P4_CHI_Han}}
+    set_country_flag = P4_CHI_Han_unlock
   }
 }
 
