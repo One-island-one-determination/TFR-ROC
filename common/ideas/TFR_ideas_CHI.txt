@@ -748,25 +748,26 @@ ideas = {
         political_power_gain = -0.1
       }
     }
-    CHI_prc_embargo_low_idea = {
+    # CHI_prc_embargo_low_idea = {
+    #   picture = TAI_chinese_embargo
+    #   allowed = {
+    #     always = no
+    #   }
+    #   cancel = {
+    #     is_puppet_of = PRC
+    #   }
+    #   allowed_civil_war = {
+    #     always = yes
+    #   }
+    #   removal_cost = -1
+    #   modifier = {
+    #     stability_factor = -0.05
+    #     consumer_goods_factor = 0.05
+    #   }
+    # }
+    CHI_prc_embargo_idea0 = {
       picture = TAI_chinese_embargo
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        stability_factor = -0.05
-        consumer_goods_factor = 0.05
-      }
-    }
-    CHI_prc_embargo_idea = {
-      picture = TAI_chinese_embargo
+      name = CHI_prc_embargo_idea
       allowed = {
         always = no
       }
@@ -1694,7 +1695,7 @@ ideas = {
         defense_bonus_against = 0.05
       }
     }
-    # 同島一命
+    #同島一命
     CHI_Onelifeonthesameisland_idea = {
       name = CHI_Onelifeonthesameisland
       picture = CHI_Onelifeonthesameisland
@@ -2103,35 +2104,6 @@ ideas = {
         society_development_monthly = -0.005
       }
     }
-    CHI_TaiHai_idea_base = {
-      picture = JAP_Taiwan_Intervention
-      name = CHI_TaiHai_IDEA
-
-      allowed = {
-        always = no
-      }
-
-      allowed_civil_war = {
-        always = yes
-      }
-
-      removal_cost = -1
-
-      modifier = {
-        consumer_goods_factor = 0.05
-        stability_factor = -0.05
-        industry_repair_factor = -0.25
-        army_core_attack_factor = 0.02
-        army_core_defence_factor = 0.02
-        supply_combat_penalties_on_core_factor = -0.02
-        resistance_growth_on_our_occupied_states = 0.02
-        income_growth_factor = -0.01
-        business_value_factor = -0.01
-        industrial_development_monthly = -0.01
-        farming_development_monthly = -0.01
-        poverty_development_monthly = -0.005
-        society_development_monthly = -0.005
-      }
     }
   }
 }

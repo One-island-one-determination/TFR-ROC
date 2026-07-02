@@ -1457,7 +1457,7 @@ country_event = {
   }
 }
 
-country_event = {
+country_event = {##倒計數結束觸發事件##
   id = ROC_CHI.33
   title = ROC_CHI.33.t
   desc = ROC_CHI.33.d
@@ -1470,60 +1470,60 @@ country_event = {
   }
 }
 
-country_event = {
-  id = ROC_CHI.34
-  title = ROC_CHI.34.t
-  desc = ROC_CHI.34.d
-  picture = ROC_CHI_Event_34
-  fire_only_once = yes
-  is_triggered_only = yes
+# country_event = {
+#   id = ROC_CHI.34
+#   title = ROC_CHI.34.t
+#   desc = ROC_CHI.34.d
+#   picture = ROC_CHI_Event_34
+#   fire_only_once = yes
+#   is_triggered_only = yes
 
-  option = {
-    name = ROC_CHI.34.a
-    CHI = {
-      if = {
-        limit = {
-          has_country_leader = {
-            character = CHI_han_kuo_yu_char
-            ruling_only = yes
-          }
-        }
-        set_country_leader_portrait = {
-          ideology = authoritarian_democrat
-          portrait = GFX_portrait_CHI_han_kuo_yu_taiwan_win
-        }
-        set_country_leader_portrait = {
-          ideology = conservative
-          portrait = GFX_portrait_CHI_han_kuo_yu_taiwan_win
-        }
-        hidden_effect = {
-          add_popularity = {
-            ideology = conservative
-            popularity = 0.2
-          }
-          set_politics = {
-            ruling_party = conservative
-            last_election = "2020.1.11"
-            election_frequency = 48
-            elections_allowed = yes
-          }
-        }
-      }
-      else_if = {
-        limit = {
-          has_country_leader = {
-            character = CHI_tsai_ing_wen_char
-            ruling_only = yes
-          }
-        }
-        set_country_leader_portrait = {
-          ideology = social_liberal
-          portrait = GFX_portrait_CHI_tsai_ing_taiwan_win
-        }
-      }
-    }
-  }
-}
+#   option = {
+#     name = ROC_CHI.34.a
+#     CHI = {
+#       if = {
+#         limit = {
+#           has_country_leader = {
+#             character = CHI_han_kuo_yu_char
+#             ruling_only = yes
+#           }
+#         }
+#         set_country_leader_portrait = {
+#           ideology = authoritarian_democrat
+#           portrait = GFX_portrait_CHI_han_kuo_yu_taiwan_win
+#         }
+#         set_country_leader_portrait = {
+#           ideology = conservative
+#           portrait = GFX_portrait_CHI_han_kuo_yu_taiwan_win
+#         }
+#         hidden_effect = {
+#           add_popularity = {
+#             ideology = conservative
+#             popularity = 0.2
+#           }
+#           set_politics = {
+#             ruling_party = conservative
+#             last_election = "2020.1.11"
+#             election_frequency = 48
+#             elections_allowed = yes
+#           }
+#         }
+#       }
+#       else_if = {
+#         limit = {
+#           has_country_leader = {
+#             character = CHI_tsai_ing_wen_char
+#             ruling_only = yes
+#           }
+#         }
+#         set_country_leader_portrait = {
+#           ideology = social_liberal
+#           portrait = GFX_portrait_CHI_tsai_ing_taiwan_win
+#         }
+#       }
+#     }
+#   }
+# }
 
 news_event = {
   id = ROC_PRC.1
@@ -3193,7 +3193,7 @@ news_event = {
   option = {
     name = ROC.32.a
     hidden_effect = {
-      activate_mission = CHI_ally_Military_aid
+      activate_mission = CHI_JAPANDAST_Military_aid
       if = {
         limit = {
           is_ai = no
@@ -3389,24 +3389,25 @@ country_event = {
     }
   }
 }
-
+#國慶事件
 country_event = {
   id = ROC.36
   title = ROC.36.t
   desc = ROC.36.d
   picture = ROC_10_10_National_Day
   is_triggered_only = yes
-  fire_only_once = yes
 
   immediate = {
-    country_event = {
-      id = ROC.36
-      days = 284
-      hours = 6
+    hidden_effect ={#Hidden_effect就看不到「觸發事件"中華民國國慶"」
+      country_event = {
+        id = ROC.36
+        days = 365
+      }
     }
   }
   option = {
     name = ROC.36.a
+    add_political_power = 10
   }
 }
 
@@ -3416,17 +3417,18 @@ country_event = {
   desc = ROC.37.d
   picture = ROC_228_Memoria_Day
   is_triggered_only = yes
-  fire_only_once = yes
 
-  immediate = {
-    country_event = {
-      id = ROC.37
-      days = 59
-      hours = 6
+  immediate = { 
+    hidden_effect ={
+      country_event = {#228同上國慶
+        id = ROC.37
+        days = 365 #Yearly
+      }
     }
   }
   option = {
     name = ROC.37.a
+    add_political_power = 5
   }
 }
 
@@ -5041,6 +5043,7 @@ country_event = {
   fire_only_once = yes
   option = {
     name = ROC.84.a
+    add_war_support = 0.01
     country_event = {
       id = ROC.85
       days = 6
@@ -5175,5 +5178,157 @@ country_event = {
         count = 10
       }
     }
+  }
+}
+
+country_event = {
+  id = ROC.91
+  title = ROC.91.t
+  desc = ROC.91.d
+  #picture = GFX_PRC_protest
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = ROC.91.a
+    add_popularity = {
+      ideology = social_democrat
+      popularity = -0.1
+    }
+    add_popularity = {
+      ideology = libertarian_socialist
+      popularity = -0.15
+    }
+    add_popularity = {
+      ideology = communist
+      popularity = -0.2
+    }
+    add_popularity = {
+      ideology = totalitarian_socialist
+      popularity = -0.2
+    }
+    set_party_name = {
+      ideology = communist
+      long_name = CHI_fascist_party
+      name = CHI_fascist_party
+    }
+    set_party_name = {
+      ideology = totalitarian_socialist
+      long_name = CHI_fascist_party
+      name = CHI_fascist_party
+    }
+    set_party_name = {
+      ideology = libertarian_socialist
+      long_name = CHI_fascist_party
+      name = CHI_fascist_party
+    }
+  }
+  option = {
+    name = ROC.91.b
+    add_popularity = {
+      ideology = social_democrat
+      popularity = 0.1
+    }
+    add_popularity = {
+      ideology = libertarian_socialist
+      popularity = 0.15
+    }
+    add_popularity = {
+      ideology = communist
+      popularity = 0.1
+    }
+    add_popularity = {
+      ideology = totalitarian_socialist
+      popularity = 0.05
+    }
+    set_party_name = {
+      ideology = communist
+      long_name = CHI_communist2
+      name = CHI_communist2
+    }
+    set_party_name = {
+      ideology = totalitarian_socialist
+      long_name = CHI_totalitarian_socialist2
+      name = CHI_totalitarian_socialist2
+    }
+    set_party_name = {
+      ideology = libertarian_socialist
+      long_name = CHI_libertarian_socialist2
+      name = CHI_libertarian_socialist2
+    }
+    set_temp_variable = {
+      coalition_partner_var_temp = token:communist
+    }
+    add_to_coalition = yes
+    set_temp_variable = {
+      coalition_partner_var_temp = token:totalitarian_socialist
+    }
+    add_to_coalition = yes
+    set_temp_variable = {
+      coalition_partner_var_temp = token:libertarian_socialist
+    }
+    add_to_coalition = yes
+  }
+}
+
+country_event = {
+  id = ROC.92
+  title = ROC.92.t
+  desc = ROC.92.d
+  #picture = GFX_PRC_protest
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = ROC.92.a
+    add_popularity = {
+      ideology = nationalist
+      popularity = -0.1
+    }
+    add_popularity = {
+      ideology = fascist
+      popularity = -0.2
+    }
+    add_popularity = {
+      ideology = national_socialist
+      popularity = -0.2
+    }
+    set_party_name = {
+      ideology = fascist
+      long_name = CHI_fascist_party
+      name = CHI_fascist_party
+    }
+    set_party_name = {
+      ideology = national_socialist
+      long_name = CHI_fascist_party
+      name = CHI_fascist_party
+    }
+  }
+  option = {
+    name = ROC.92.b
+    add_popularity = {
+      ideology = fascist
+      popularity = 0.05
+    }
+    add_popularity = {
+      ideology = national_socialist
+      popularity = 0.05
+    }
+    set_party_name = {
+      ideology = fascist
+      long_name = CHI_army_party2
+      name = CHI_army_party2
+    }
+    set_party_name = {
+      ideology = national_socialist
+      long_name = CHI_army_party3
+      name = CHI_army_party3
+    }
+    set_temp_variable = {
+      coalition_partner_var_temp = token:fascist
+    }
+    add_to_coalition = yes
+    set_temp_variable = {
+      coalition_partner_var_temp = token:national_socialist
+    }
+    add_to_coalition = yes
   }
 }

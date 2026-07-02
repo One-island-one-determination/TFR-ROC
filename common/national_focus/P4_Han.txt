@@ -1,0 +1,132 @@
+focus_tree = {
+	id = P4_CHI_Han
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = CHI
+		}
+	}
+	default = no
+	focus = {
+		id = CHI_compete_for_central_plains
+		x = 0
+		y = 0
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = CHI_regional_political_tutelage
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_compete_for_central_plains
+		}
+	}
+	focus = {
+		id = CHI_trust_localities
+		x = -1
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_central_supervision_policy
+		}
+		prerequisite = {
+			focus = CHI_regional_political_tutelage
+		}
+	}
+	focus = {
+		id = CHI_central_supervision_policy
+		x = 1
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_trust_localities
+		}
+		prerequisite = {
+			focus = CHI_regional_political_tutelage
+		}
+	}
+	focus = {
+		id = CHI_republic_achieved
+		x = 0
+		y = 4
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = CHI_rapid_political_tutelage
+		x = -1
+		y = 5
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_republic_achieved
+		}
+	}
+	focus = {
+		id = CHI_establish_regional_seats
+		x = -1
+		y = 6
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_rapid_political_tutelage
+		}
+	}
+	focus = {
+		id = CHI_finally_free
+		x = -1
+		y = 7
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_establish_regional_seats
+		}
+	}
+	focus = {
+		id = CHI_mongolian_negotiations
+		x = 1
+		y = 5
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_republic_achieved
+		}
+	}
+	focus = {
+		id = CHI_tuva_problem
+		x = 1
+		y = 6
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_mongolian_negotiations
+		}
+	}
+	focus = {
+		id = CHI_begonia_leaf
+		x = 1
+		y = 7
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_tuva_problem
+		}
+	}
+}

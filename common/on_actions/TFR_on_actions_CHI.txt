@@ -89,40 +89,6 @@ on_actions = {
             var = CHI_PRC_Infiltration_timeout_mission_var
             value = 30
           }
-          country_event = {
-            id = ROC.37
-            days = 59
-            hours = 6
-          }
-          country_event = {
-            id = ROC.36
-            days = 284
-            hours = 6
-          }
-          country_event = {
-            id = ROC.78
-            days = 425
-          }
-          country_event = {
-            id = ROC.79
-            days = 458
-          }
-          country_event = {
-            id = ROC.80
-            days = 1555
-          }
-          country_event = {
-            id = ROC.81
-            days = 2014
-          }
-          country_event = {
-            id = ROC.82
-            days = 95
-          }
-          #亚细亚的孤儿
-          #					country_event = {
-          #						id = ROC.75
-          #					}
           set_temp_variable = {
             var = CHI_influence_KMT_temp
             value = 0.3
