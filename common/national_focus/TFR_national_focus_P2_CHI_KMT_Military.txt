@@ -75,7 +75,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_reform_combined_logistics_command
-		x = 0
+		x = 1
 		y = 1
 		cost = 2
 		icon = GFX_focus_CHI_reform_combined_logistics_command
@@ -102,7 +102,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_new_whampoa_spirits
-		x = -1
+		x = -2
 		y = 2
 		cost = 2
 		icon = GFX_focus_CHI_new_whampoa_spirits
@@ -139,14 +139,19 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = CHI_unity_of_knowledge_and
+			focus = CHI_painful_lesson_of_drones
+		}
+		prerequisite = {
 			focus = CHI_military_railway_underground
+		}
+		prerequisite = {
+			focus = CHI_unity_of_knowledge_and
 		}
 		relative_position_id = CHI_painful_lesson_of_drones
 	}
 	focus = {
 		id = CHI_dominate_three_oceans
-		x = 5
+		x = 6
 		y = 1
 		cost = 2
 		icon = GFX_focus_CHI_dominate_three_oceans
@@ -193,6 +198,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_NCSIST_Project
+		}
+		prerequisite = {
 			focus = CHI_renovate_Tsoying_naval_base
 		}
 		relative_position_id = CHI_renovate_Tsoying_naval_base
@@ -212,7 +219,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_spirit_reaches_to_rainbow
-		x = -3
+		x = -4
 		y = 1
 		cost = 2
 		icon = GFX_focus_CHI_spirit_reaches_to_rainbow
@@ -280,7 +287,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_need_of_equipment
-		x = -2
+		x = -3
 		y = 1
 		cost = 2
 		icon = GFX_focus_CHI_need_of_equipment
@@ -294,7 +301,7 @@ focus_tree = {
 	focus = {
 		id = CHI_american_fighters_reverse_enginnering
 		x = 0
-		y = 1
+		y = 2
 		cost = 2
 		icon = GFX_focus_CHI_american_fighters_reverse_enginnering
 		continue_if_invalid = no
@@ -306,7 +313,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_funds_college
-		x = -1
+		x = -2
 		y = 1
 		cost = 2
 		icon = GFX_focus_CHI_funds_college
@@ -343,6 +350,8 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_Air_force_special_allowance
+		}
+		prerequisite = {
 			focus = CHI_american_fighters_reverse_enginnering
 		}
 		relative_position_id = CHI_Air_force_special_allowance
@@ -350,7 +359,7 @@ focus_tree = {
 	focus = {
 		id = CHI_sino_japanese_fighter_cooperation_program
 		x = 0
-		y = 2
+		y = 1
 		cost = 2
 		icon = GFX_focus_CHI_sino_japanese_fighter_cooperation_program
 		continue_if_invalid = no
@@ -359,8 +368,10 @@ focus_tree = {
 			focus = CHI_relauch_ADF_project
 		}
 		prerequisite = {
-			focus = CHI_Air_force_special_allowance
 			focus = CHI_american_fighters_reverse_enginnering
+		}
+		prerequisite = {
+			focus = CHI_Air_force_special_allowance
 		}
 		relative_position_id = CHI_american_fighters_reverse_enginnering
 	}

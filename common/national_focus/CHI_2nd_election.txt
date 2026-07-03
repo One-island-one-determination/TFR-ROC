@@ -1,0 +1,259 @@
+focus_tree = {
+	id = CHI_2nd_election
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = CHI
+		}
+	}
+	default = no
+	focus = {
+		id = CHI_chart_the_course
+		x = 0
+		y = 0
+		cost = 0
+		icon = GFX_focus_CHI_chart_the_course
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_choice_of_the_taiwanese
+		}
+	}
+	focus = {
+		id = CHI_future_of_the_roc
+		x = -3
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_future_of_the_roc
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_choice_of_the_taiwanese
+		}
+		prerequisite = {
+			focus = CHI_chart_the_course
+		}
+	}
+	focus = {
+		id = CHI_will_of_the_people_han
+		x = -5
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_will_of_the_people_han
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_new_power_of_the_era_chiang
+			focus = CHI_steady_progress_chao
+		}
+		prerequisite = {
+			focus = CHI_future_of_the_roc
+		}
+	}
+	focus = {
+		id = CHI_steady_progress_chao
+		x = -3
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_steady_progress_chao
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_will_of_the_people_han
+			focus = CHI_new_power_of_the_era_chiang
+		}
+		prerequisite = {
+			focus = CHI_future_of_the_roc
+		}
+	}
+	focus = {
+		id = CHI_new_power_of_the_era_chiang
+		x = -1
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_new_power_of_the_era_chiang
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_will_of_the_people_han
+			focus = CHI_steady_progress_chao
+		}
+		prerequisite = {
+			focus = CHI_future_of_the_roc
+		}
+	}
+	focus = {
+		id = CHI_not_by_chance_inevitable
+		x = -5
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_not_by_chance_inevitable
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_will_of_the_people_han
+		}
+	}
+	focus = {
+		id = CHI_set_off_together_once_more
+		x = -3
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_set_off_together_once_more
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_steady_progress_chao
+		}
+	}
+	focus = {
+		id = CHI_never_forget_original_intention
+		x = -1
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_never_forget_original_intention
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_power_of_the_era_chiang
+		}
+	}
+	focus = {
+		id = CHI_kmt_election_eve
+		x = -3
+		y = 4
+		cost = 0
+		icon = GFX_focus_CHI_kmt_election_eve
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_set_off_together_once_more
+			focus = CHI_never_forget_original_intention
+			focus = CHI_not_by_chance_inevitable
+		}
+	}
+	focus = {
+		id = CHI_choice_of_the_taiwanese
+		x = 3
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_choice_of_the_taiwanese
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_future_of_the_roc
+		}
+	}
+	focus = {
+		id = CHI_trust_taiwan_lai
+		x = 1
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_trust_taiwan_lai
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_dpp_candidate_b_elected
+			focus = CHI_end_of_suffering_chen
+		}
+		prerequisite = {
+			focus = CHI_choice_of_the_taiwanese
+		}
+	}
+	focus = {
+		id = CHI_dpp_candidate_b_elected
+		x = 3
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_dpp_candidate_b_elected
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_trust_taiwan_lai
+			focus = CHI_end_of_suffering_chen
+		}
+		prerequisite = {
+			focus = CHI_choice_of_the_taiwanese
+		}
+	}
+	focus = {
+		id = CHI_end_of_suffering_chen
+		x = 5
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_end_of_suffering_chen
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_dpp_candidate_b_elected
+			focus = CHI_trust_taiwan_lai
+		}
+		prerequisite = {
+			focus = CHI_choice_of_the_taiwanese
+		}
+	}
+	focus = {
+		id = CHI_courage_and_confidence
+		x = 1
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_courage_and_confidence
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_trust_taiwan_lai
+		}
+	}
+	focus = {
+		id = CHI_dpp_placeholder_1
+		x = 3
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_dpp_placeholder_1
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_dpp_candidate_b_elected
+		}
+	}
+	focus = {
+		id = CHI_victory_for_everyone
+		x = 5
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_victory_for_everyone
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_end_of_suffering_chen
+		}
+	}
+	focus = {
+		id = CHI_hold_general_election_as_scheduled
+		x = 0
+		y = 5
+		cost = 0
+		icon = GFX_focus_CHI_hold_general_election_as_scheduled
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_dpp_placeholder_2
+			focus = CHI_kmt_election_eve
+		}
+	}
+	focus = {
+		id = CHI_dpp_placeholder_2
+		x = 3
+		y = 4
+		cost = 0
+		icon = GFX_focus_CHI_dpp_placeholder_2
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_courage_and_confidence
+			focus = CHI_dpp_placeholder_1
+			focus = CHI_victory_for_everyone
+		}
+	}
+}
