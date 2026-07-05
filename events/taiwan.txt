@@ -177,7 +177,7 @@ country_event = {
 
 country_event = {
   id = ROC_CHI.6
-  title = .ROC.89t
+  title = ROC.89t
   desc = ROC.89.d
   picture = ROC_CHI_Event_6
   fire_only_once = yes
@@ -2241,6 +2241,10 @@ country_event = {
       ideology = social_liberal
       popularity = 0.03
     }
+    add_power_balance_value = {
+      id = CHI_Identity_dispute
+      value = 0.1
+    }
   }
 }
 
@@ -2402,17 +2406,8 @@ country_event = {
   fire_only_once = yes
   option = {
     name = ROC.88.a
+    add_manpower = -127
+    add_war_support = 5%
   }
 }
 
-country_event = {
-  id = ROC.89
-  title = ROC.89.t
-  desc = ROC.89.d
-  #picture = GFX_PRC_protest
-  is_triggered_only = yes
-  fire_only_once = yes
-  option = {
-    name = ROC.89.a
-  }
-}
