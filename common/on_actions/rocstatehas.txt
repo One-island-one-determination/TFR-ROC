@@ -79,14 +79,6 @@ on_actions = {
 						target = HKN
 					}
 				}
-				PRC = {
-					country_event = {
-						id = ROC.23
-					}
-				}
-				news_event = {
-					id = ROC.24
-				}
 				set_global_flag = skip_default_capitulation
 			}
 			if = {
@@ -209,11 +201,7 @@ on_actions = {
 						target = ROOT
 						transfer_troops = no
 					}
-					PRC = {
-						country_event = {
-							id = ROC.62
-						}
-					}
+
 					set_global_flag = skip_default_capitulation
 				}
 			}
@@ -237,11 +225,7 @@ on_actions = {
 						target = ROOT
 						transfer_troops = no
 					}
-					PRC = {
-						country_event = {
-							id = ROC.61
-						}
-					}
+
 					set_global_flag = skip_default_capitulation
 				}
 			}
@@ -251,7 +235,6 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					#has_global_flag = PRC_ongoing_taiwan_war
 					#台北-台海
 					FROM.FROM = {
 						OR = {
@@ -297,11 +280,6 @@ on_actions = {
 					damage_building = {
 						type = dockyard
 						damage = 2
-					}
-				}
-				PRC = {
-					country_event = {
-						id = ROC.46
 					}
 				}
 				JAP = {
@@ -380,11 +358,6 @@ on_actions = {
 						damage = 2
 					}
 				}
-				PRC = {
-					country_event = {
-						id = ROC.47
-					}
-				}
 				JAP = {
 					country_event = {
 						id = ROC.51
@@ -461,11 +434,6 @@ on_actions = {
 						damage = 2
 					}
 				}
-				PRC = {
-					country_event = {
-						id = ROC.48
-					}
-				}
 				JAP = {
 					country_event = {
 						id = ROC.52
@@ -540,11 +508,6 @@ on_actions = {
 					damage_building = {
 						type = dockyard
 						damage = 2
-					}
-				}
-				PRC = {
-					country_event = {
-						id = ROC.49
 					}
 				}
 				JAP = {

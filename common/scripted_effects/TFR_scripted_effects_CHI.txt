@@ -148,60 +148,6 @@ CHI_increase_prc_embargo_idea = {
   }
 }
 
-# CHI_financial_crisis_increase_coronavirus = {
-#   if = {
-#     limit = {
-#       has_idea = financial_crisis_1
-#     }
-#     swap_ideas = {
-#       remove_idea = financial_crisis_1
-#       add_idea = financial_crisis_2
-#     }
-#   }
-#   else_if = {
-#     limit = {
-#       has_idea = financial_crisis_2
-#     }
-#     swap_ideas = {
-#       remove_idea = financial_crisis_2
-#       add_idea = financial_crisis_3
-#     }
-#   }
-#   else_if = {
-#     limit = {
-#       has_idea = financial_crisis_3
-#     }
-#     swap_ideas = {
-#       remove_idea = financial_crisis_3
-#       add_idea = financial_crisis_4
-#     }
-#   }
-#   else_if = {
-#     limit = {
-#       has_idea = financial_crisis_4
-#     }
-#     swap_ideas = {
-#       remove_idea = financial_crisis_4
-#       add_idea = financial_crisis_5
-#     }
-#   }
-#   else_if = {
-#     limit = {
-#       has_idea = financial_crisis_5
-#     }
-#     swap_ideas = {
-#       remove_idea = financial_crisis_5
-#       add_idea = financial_crisis_6
-#     }
-#   }
-#   else_if = {
-#     limit = {
-#       has_idea = financial_crisis_6
-#     }
-#     remove_ideas = financial_crisis_6
-#   }
-# }
-
 CHI_vaccine_progress = {
   add_to_variable = {
     var = CHI_vaccine_progress
@@ -221,18 +167,6 @@ CHI_add_Infiltration_growth_time = {
     value = CHI_PRC_Infiltration_timeout_mission_var_temp
   }
 }
-
-# CHI_PRC_jinmen_calc = {
-#   add_to_variable = {
-#     var = CHI_PRC_jinmen_calc
-#     value = CHI_PRC_jinmen_calc_temp
-#   }
-#   clamp_variable = {
-#     var = CHI_PRC_jinmen_calc
-#     min = 0
-#     max = 100
-#   }
-# }
 
 CHI_vaccine_value = {
   custom_effect_tooltip = CHI_vaccine_value_change_tooltip
@@ -440,125 +374,6 @@ CHI_oil_crash_idea = {
   }
 }
 
-# PRC_the_separatist_problem_ideas = {
-#   if = {
-#     limit = {
-#       has_idea = PRC_the_separatist_problem
-#     }
-#     swap_ideas = {
-#       remove_idea = PRC_the_separatist_problem
-#       add_idea = PRC_the_separatist_problem_2
-#     }
-#   }
-#   else_if = {
-#     limit = {
-#       has_idea = PRC_the_separatist_problem_2
-#     }
-#     swap_ideas = {
-#       remove_idea = PRC_the_separatist_problem_2
-#       add_idea = PRC_the_separatist_problem_3
-#     }
-#   }
-#   else_if = {
-#     limit = {
-#       has_idea = PRC_the_separatist_problem_3
-#     }
-#     swap_ideas = {
-#       remove_idea = PRC_the_separatist_problem_3
-#       add_idea = PRC_the_separatist_problem_4
-#     }
-#   }
-#   else_if = {
-#     limit = {
-#       has_idea = PRC_the_separatist_problem_4
-#     }
-#     remove_idea = PRC_the_separatist_problem_4
-#   }
-#   else = {
-#     add_ideas = PRC_the_separatist_problem
-#   }
-#   PRC_the_separatist_problem_ideas = {
-#     if = {
-#       limit = {
-#         has_idea = PRC_the_separatist_problem
-#       }
-#       swap_ideas = {
-#         remove_idea = PRC_the_separatist_problem
-#         add_idea = PRC_the_separatist_problem_2
-#       }
-#     }
-#     else_if = {
-#       limit = {
-#         has_idea = PRC_the_separatist_problem_2
-#       }
-#       swap_ideas = {
-#         remove_idea = PRC_the_separatist_problem_2
-#         add_idea = PRC_the_separatist_problem_3
-#       }
-#     }
-#     else_if = {
-#       limit = {
-#         has_idea = PRC_the_separatist_problem_3
-#       }
-#       swap_ideas = {
-#         remove_idea = PRC_the_separatist_problem_3
-#         add_idea = PRC_the_separatist_problem_4
-#       }
-#     }
-#     else_if = {
-#       limit = {
-#         has_idea = PRC_the_separatist_problem_4
-#       }
-#       remove_idea = PRC_the_separatist_problem_4
-#     }
-#     else = {
-#       add_ideas = PRC_the_separatist_problem
-#     }
-#   }
-#   CHI_waidao_renyuan_progress = {
-#     custom_effect_tooltip = CHI_waidao_renyuan_progress_tooltip
-#     add_to_variable = {
-#       var = CHI_waidao_renyuan_progress
-#       value = CHI_waidao_renyuan_progress_temp
-#     }
-#     clamp_variable = {
-#       var = CHI_waidao_renyuan_progress
-#       min = 0
-#       max = 100
-#     }
-#     divide_variable = {
-#       var = CHI_waidao_renyuan_progress_temp
-#       value = -1000			# 正數
-#     }
-#     # 複製到臨時變數
-#     set_variable = {
-#       var = number
-#       value = CHI_waidao_renyuan_progresss_temp
-#     }
-#   }
-#   CHI_waidao_zhuangbei_progress = {
-#     custom_effect_tooltip = CHI_waidao_zhuangbeiprogress_tooltip
-#     add_to_variable = {
-#       var = CHI_waidao_zhuangbei_progress
-#       value = CHI_waidao_zhuangbei_progress_temp
-#     }
-#     clamp_variable = {
-#       var = CHI_waidao_zhuangbei_progress
-#       min = 0
-#       max = 100
-#     }
-#     divide_variable = {
-#       var = CHI_waidao_zhuangbei_progress_temp
-#       value = -1000			# 正數
-#     }
-#     # 複製到臨時變數
-#     set_variable = {
-#       var = number
-#       value = CHI_waidao_zhuangbei_progress_temp
-#     }
-#   }
-# }
-
 PDTO_unity = {
   every_country = {
     limit = {
@@ -630,67 +445,6 @@ PDTO_unity_increase2 = {
   }
 
 }
-
-# PDTO_unity_decrease2 = {
-#   custom_effect_tooltip = PDTO_unity_tt2
-#   hidden_effect = {
-#     every_country = {
-#       limit = {
-#         OR = {
-#           has_country_flag = pdto_member
-#         }
-#       }
-#       if = {
-#         limit = {
-#           has_country_flag = PDTO_unity
-#           has_idea = PDTO_unity_5
-#         }
-#         swap_ideas = {
-#           remove_idea = PDTO_unity_5
-#           add_idea = PDTO_unity_4
-#         }
-#       }
-#       else_if = {
-#         limit = {
-#           has_country_flag = PDTO_unity
-#           has_idea = PDTO_unity_4
-#         }
-#         swap_ideas = {
-#           remove_idea = PDTO_unity_4
-#           add_idea = PDTO_unity_3
-#         }
-#       }
-#       else_if = {
-#         limit = {
-#           has_country_flag = PDTO_unity
-#           has_idea = PDTO_unity_3
-#         }
-#         swap_ideas = {
-#           remove_idea = PDTO_unity_3
-#           add_idea = PDTO_unity_2
-#         }
-#       }
-#       else_if = {
-#         limit = {
-#           has_country_flag = PDTO_unity
-#           has_idea = PDTO_unity_2
-#         }
-#         swap_ideas = {
-#           remove_idea = PDTO_unity_2
-#           add_idea = PDTO_unity_1
-#         }
-#       }
-#       else_if = {
-#         limit = {
-#           has_country_flag = PDTO_unity
-#           has_ideas = PDTO_unity_1
-#         }
-#         clr_country_flag = PDTO_unity
-#         remove_ideas = PDTO_unity_1
-#       }
-#     }
-#   }
-# }
 
 CHI_influence_KMT_add = {
   custom_effect_tooltip = CHI_influence_KMT_tt
@@ -839,242 +593,6 @@ CHI_influence_SDP_add = {
   }
 }
 
-# EADI_taiwan_war = {
-#   if = {
-#     limit = {
-#       NOT = { has_idea = PRC_TaiHai_IDEA_25  }
-#     }
-#     activate_mission = THEPRC_taiwan_war_countdown
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_25}
-#     country_event = {id = ROC_PRC.32}
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_24}
-#     country_event = {id = ROC_PRC.31}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_24
-#       add_idea = PRC_TaiHai_IDEA_25
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_23}
-#     country_event = {id = ROC_PRC.29}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_23
-#       add_idea = PRC_TaiHai_IDEA_24
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_22}
-#     country_event = {id = ROC_PRC.28}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_22
-#       add_idea = PRC_TaiHai_IDEA_23
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_21}
-#     country_event = {id = ROC_PRC.27}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_21
-#       add_idea = PRC_TaiHai_IDEA_22
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_20}
-#     country_event = {id = ROC_PRC.26}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_20
-#       add_idea = PRC_TaiHai_IDEA_21
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_19}
-#     country_event = {id = ROC_PRC.25}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_19
-#       add_idea = PRC_TaiHai_IDEA_20
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_18}
-#     country_event = {id = ROC_PRC.23}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_18
-#       add_idea = PRC_TaiHai_IDEA_19
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_17}
-#     country_event = {id = ROC_PRC.21}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_17
-#       add_idea = PRC_TaiHai_IDEA_18
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_16}
-#     country_event = {id =  ROC_PRC.20}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_16
-#       add_idea = PRC_TaiHai_IDEA_17
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_15}
-#     country_event = {id = ROC_PRC.19}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_15
-#       add_idea = PRC_TaiHai_IDEA_16
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_14}
-#     country_event = {id = ROC_PRC.18}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_14
-#       add_idea = PRC_TaiHai_IDEA_15
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_13}
-#     country_event = {id = ROC_PRC.16}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_13
-#       add_idea = PRC_TaiHai_IDEA_14
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_12}
-#     country_event = {id = ROC_PRC.14}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_12
-#       add_idea = PRC_TaiHai_IDEA_13
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_11}
-#     country_event = {id = ROC_PRC.12}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_11
-#       add_idea = PRC_TaiHai_IDEA_12
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_10}
-#     news_event = {
-#       id = ROC_PRC.11
-#     }
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_10
-#       add_idea = PRC_TaiHai_IDEA_11
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_9}
-#     country_event = {id = ROC_PRC.10}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_9
-#       add_idea = PRC_TaiHai_IDEA_10
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_8}
-#     country_event = {id = ROC_PRC.9}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_8
-#       add_idea = PRC_TaiHai_IDEA_9
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_7}
-#     country_event = {id = ROC_PRC.8}
-#     hidden_effect = {
-#       CHI = {
-#         country_event = {
-#           id = ROC.26
-#           days = 7
-#         }
-#       }
-#     }
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_7
-#       add_idea = PRC_TaiHai_IDEA_8
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_6}
-#     country_event = {id = ROC_PRC.7}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_6
-#       add_idea = PRC_TaiHai_IDEA_7
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_5}
-#     country_event = {id = ROC_PRC.6}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_5
-#       add_idea = PRC_TaiHai_IDEA_6
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_4}
-#     country_event = {id = ROC_PRC.5}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_4
-#       add_idea = PRC_TaiHai_IDEA_5
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_3}
-#     country_event = {id = ROC_PRC.4}
-#     hidden_effect = {
-#       CHI = {
-#         country_event = {
-#           id = ROC.28
-#           days = 7
-#         }
-#       }
-#     }
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_3
-#       add_idea = PRC_TaiHai_IDEA_4
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_2}
-#     country_event = {id = ROC_PRC.3}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_2
-#       add_idea = PRC_TaiHai_IDEA_3
-#     }
-#   }
-#   if = {
-#     limit = {has_idea = PRC_TaiHai_IDEA_1}
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA_1
-#       add_idea = PRC_TaiHai_IDEA_2
-#     }
-#     country_event = {id = ROC_PRC.2}
-#   }
-#   if = {
-#     limit = {
-#       NOT = {has_country_flag = Taiwan_war}
-#     }
-#     set_country_flag = Taiwan_war
-#     swap_ideas = {
-#       remove_idea = PRC_TaiHai_IDEA
-#       add_idea = PRC_TaiHai_IDEA_1
-#     }
-#     country_event = {
-#       id = ROC_PRC.13
-#     }
-#   }
-# }
-
 PDTO_taiwan_war = {
   if = {
     limit = {
@@ -1143,24 +661,6 @@ PDTO_taiwan_war = {
         var = TH_RGOS
         value = 0.01
       }
-#      if = {
-#        limit = {
-#          check_variable = { TWW_VAR = 26}
-#        }
-#        country_event = {id = taiwan.32}
-#      }
-#      if = {
-#        limit = {
-#          check_variable = { TWW_VAR = 25}
-#        }
-#        country_event = {id = ROC_CHI.34}
-#      }
-#      if = {
-#        limit = {
-#          check_variable = { TWW_VAR = 24}
-#        }
-#        country_event = {id = ROC_CHI.33}
-#      }
       if = {
         limit = {
           check_variable = { TWW_VAR = 23}
@@ -1922,73 +1422,7 @@ PRC_end_taiwan_war2 = {
 
   }
 }
-# THE_ChineseCivilWarTroops = {
-#   division_template = {
-#     name = "infantry"
-#     is_locked = yes
-#     regiments = {
-#       infantry = { x = 0 y = 0 }
-#       infantry = { x = 0 y = 1 }
-#       infantry = { x = 0 y = 2 }
-#       infantry = { x = 1 y = 0 }
-#       infantry = { x = 1 y = 1 }
-#       infantry = { x = 1 y = 2 }
-#     }
-#   }
-#   division_template = {
-#     name = "tank"
-#     is_locked = yes
-#     regiments = {
-#       mechanized = { x = 0 y = 0 }
-#       mechanized = { x = 0 y = 1 }
-#       mechanized = { x = 0 y = 2 }
-#       mechanized = { x = 0 y = 3 }
-#       modern_armor = { x = 2 y = 0 }
-#       modern_armor = { x = 2 y = 1 }
-#     }
-#   }
-#   random_owned_controlled_state = {
-#     create_unit = {
-#       division = "name = \"infantry Brigade\" division_template = \"infantry\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-#       id = 1949
-#       owner = ROOT
-#       count = 4
-#     }
-#   }
-#   random_owned_controlled_state = {
-#     create_unit = {
-#       division = "name = \"tank Brigade\" division_template = \"tank\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-#       id = 1949
-#       owner = ROOT
-#       count = 1
-#     }
-#   }
 
-# }
-# THE_ChineseCivilWarTroops2 = {
-#   division_template = {
-#     name = "Minbing"
-#     is_locked = yes
-#     regiments = {
-#       militia = { x = 0 y = 0 }
-#       militia = { x = 0 y = 1 }
-#       militia = { x = 0 y = 2 }
-#       militia = { x = 1 y = 0 }
-#       militia = { x = 1 y = 1 }
-#       militia = { x = 1 y = 2 }
-#     }
-#   }
-#   random_owned_controlled_state = {
-#     create_unit = {
-#       division = "name = \"militia Brigade\" division_template = \"militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-#       id = 1949
-#       owner = ROOT
-#       count = 7
-#     }
-#   }
-
-# }
-# common_prosperity_law_idk = {
 #   if = {
 #     limit = {
 #       has_idea = common_prosperity_law
@@ -2008,6 +1442,7 @@ PRC_end_taiwan_war2 = {
 #     }
 #   }
 # }
+
 remove_Taihai_idea = {#移除精神台海戰爭與禁運
   PRC = {
     # {
@@ -2384,6 +1819,7 @@ remove_Taihai_idea = {#移除精神台海戰爭與禁運
     clr_country_flag = PRC_adapt_to_modern_defense_time_flag
   }
 }
+
 de_prc_embargo_idea = {
   if = {
     limit = {
@@ -2413,6 +1849,7 @@ de_prc_embargo_idea = {
     }
   }
 }
+
 CHI_influence_NP_add = {
   custom_effect_tooltip = CHI_influence_NP_tt
   add_to_variable = {
@@ -2433,6 +1870,7 @@ CHI_influence_NP_add = {
     value = 0.2
   }
 }
+
 CHI_influence_LP_add = {
   custom_effect_tooltip = CHI_influence_LP_tt
   add_to_variable = {
@@ -2453,6 +1891,7 @@ CHI_influence_LP_add = {
     value = 0.2
   }
 }
+
 CHI_influence_PFP_add = {
   custom_effect_tooltip = CHI_influence_PFP_tt
   add_to_variable = {
@@ -2473,3 +1912,4 @@ CHI_influence_PFP_add = {
     value = 0.2
   }
 }
+

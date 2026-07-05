@@ -177,23 +177,6 @@ country_event = {
   }
 }
 
-#亞細亞的孤兒1
-country_event = {
-  id = CHI.4
-  title = CHI.4.t
-  desc = CHI.4.d
-  picture = GFX_CHI_asian_orphan
-  fire_only_once = yes
-  option = {
-    name = CHI.4.a
-    hidden_effect = {
-      country_event = {
-        id = CHI.5
-      }
-    }
-  }
-}
-
 #一瓶礦泉水，一碗滷肉飯
 country_event = {
   id = CHI.6
@@ -805,9 +788,6 @@ country_event = {
   option = {
     name = taiwan.29.a
     hidden_effect = {
-      #USA = {
-      #	country_event = { id = taiwan.291 days = 5 }
-      #}
       PRC = {
         country_event = {
           id = taiwan.291
@@ -1364,9 +1344,6 @@ country_event = {
   fire_only_once = yes
   option = {
     name = taiwan_detente.2.a
-    #set_country_flag = PRC_taiwan_detente_category_unlocked_flag #undercooked stuff
-    #unlock_decision_category_tooltip = PRC_taiwan_detente_cat
-    #CHI = { country_event = { id = taiwan_detente.3 days = 30 } }
   }
 }
 
