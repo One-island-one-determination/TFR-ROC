@@ -7,25 +7,36 @@ focus_tree = {
 		id = CHI_Victory_of_the_wounded
 		x = 1
 		y = 0
-		cost = 2
+		cost = 0.2
 		icon = GFX_focus_CHI_victory_of_the_wounded
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		completion_reward = {
+			add_war_support = 0.15
+			army_experience = 25
+			navy_experience = 25
+			air_experience = 25
+			add_political_power = 100
+		}
 	}
 	focus = {
 		id = CHI_Survivor_celebration
 		x = 5
 		y = 0
-		cost = 2
+		cost = 1
 		icon = GFX_focus_CHI_survivor_celebration
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		completion_reward = {
+			add_stability = 0.20
+			add_political_power = 75
+		}
 	}
 	focus = {
 		id = CHI_Self_sutureing_trauma
 		x = 3
 		y = 1
-		cost = 2
+		cost = 1
 		icon = GFX_focus_CHI_Self_sutureing_trauma
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -35,12 +46,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Survivor_celebration
 		}
+		complete_effect = {
+
+		}
 	}
 	focus = {
 		id = CHI_Eliminate_communist_traitors
 		x = -2
 		y = 1
-		cost = 2
+		cost = 1
 		icon = GFX_focus_CHI_Eliminate_communist_traitors
 		continue_if_invalid = no
 		cancel_if_invalid = yes
