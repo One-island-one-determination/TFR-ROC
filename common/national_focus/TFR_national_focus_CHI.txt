@@ -199,6 +199,12 @@ focus_tree = {
         popularity = -0.05
       }
       hidden_effect = {
+        CHI = {
+          country_event = {
+            id = CHI.9
+            days = 1
+          }
+        }
         add_to_variable = {
           var = CHI_taiwanese_independence_political_power_gain_var
           value = 0.1
@@ -312,6 +318,12 @@ focus_tree = {
         remove_ideas = CHII_taiwanese_independence_movement_idea1
       }
       hidden_effect = {
+        CHI = {
+          country_event = {
+            id = CHI.5
+            days = 1
+          }
+        }
         remove_dynamic_modifier = {
           modifier = CHI_taiwanese_independence_dynamic
         }

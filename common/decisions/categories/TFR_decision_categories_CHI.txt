@@ -205,3 +205,12 @@ CHI_Military_purchasing_cat = {
   }
   scripted_gui = CHI_Military_purchasing_info
 }
+
+CHI_KMT_politics_category = {
+    icon = generic_politics
+
+    scripted_gui = CHI_kmt_factions_pie_chart_gui 
+    visible = {
+        original_tag = CHI
+    }
+}

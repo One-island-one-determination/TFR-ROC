@@ -1,56 +1,5 @@
 add_namespace = ROC
 add_namespace = ROC_CHI
-country_event = {
-  id = ROC_CHI.39
-  title = ROC_CHI.39.t
-  desc = ROC_CHI.39.d
-  picture = ROC_CHI_Event_39
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = ROC_CHI.39.a
-  }
-}
-
-country_event = {
-  id = ROC_CHI.40
-  title = ROC_CHI.40.t
-  desc = ROC_CHI.40.d
-  picture = ROC_CHI_Event_40
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = ROC_CHI.40.a
-  }
-}
-
-country_event = {
-  id = ROC_CHI.41
-  title = ROC_CHI.41.t
-  desc = ROC_CHI.41.d
-  picture = ROC_CHI_Event_41
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = ROC_CHI.41.a
-  }
-}
-
-country_event = {
-  id = ROC_CHI.38
-  title = ROC_CHI.38.t
-  desc = ROC_CHI.38.d
-  picture = ROC_CHI_Event_38
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = ROC_CHI.38.a
-  }
-}
 
 country_event = {
   id = ROC_CHI.2
@@ -93,6 +42,8 @@ country_event = {
   }
   option = {
     name = ROC_CHI.3.a
+    add_manpower = -137
+    add_war_support = -0.03
     hidden_effect = {
       country_event = {
         id = ROC_CHI.4
@@ -177,7 +128,7 @@ country_event = {
 
 country_event = {
   id = ROC_CHI.6
-  title = ROC.89t
+  title = ROC.89.t
   desc = ROC.89.d
   picture = ROC_CHI_Event_6
   fire_only_once = yes
@@ -1129,6 +1080,58 @@ country_event = {##倒計數結束觸發事件##
 }
 
 country_event = {
+  id = ROC_CHI.38
+  title = ROC_CHI.38.t
+  desc = ROC_CHI.38.d
+  picture = ROC_CHI_Event_38
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = ROC_CHI.38.a
+  }
+}
+
+country_event = {
+  id = ROC_CHI.39
+  title = ROC_CHI.39.t
+  desc = ROC_CHI.39.d
+  picture = ROC_CHI_Event_39
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = ROC_CHI.39.a
+  }
+}
+
+country_event = {
+  id = ROC_CHI.40
+  title = ROC_CHI.40.t
+  desc = ROC_CHI.40.d
+  picture = ROC_CHI_Event_40
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = ROC_CHI.40.a
+  }
+}
+
+country_event = {
+  id = ROC_CHI.41
+  title = ROC_CHI.41.t
+  desc = ROC_CHI.41.d
+  picture = ROC_CHI_Event_41
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = ROC_CHI.41.a
+  }
+}
+
+country_event = {
   id = ROC.1
   title = ROC.1.t
   desc = ROC.1.d
@@ -1319,6 +1322,34 @@ country_event = {
 }
 
 country_event = {
+  id = ROC.13
+  title = ROC.13.t
+  desc = ROC.13.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = ROC.13.a
+    CHI = {
+      country_event = {
+        id = ROC.14
+      }
+    }
+  }
+}
+
+country_event = {
+  id = ROC.14
+  title = ROC.14.t
+  desc = ROC.14.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = ROC.14.a
+    add_war_support = 0.01
+  }
+}
+
+country_event = {
   id = ROC.17
   title = ROC.17.t
   desc = ROC.17.d
@@ -1384,6 +1415,57 @@ news_event = {
   option = {
     name = ROC.18.a
     set_country_flag = CHI_PRC_KinmenBattle
+  }
+}
+
+country_event = {
+  id = ROC.19
+  title = ROC.19.t
+  desc = ROC.19.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = ROC.19.a
+
+  }
+}
+
+country_event = {
+  id = ROC.20
+  title = ROC.20.t
+  desc = ROC.20.d
+  picture = ROC_Event_20
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = ROC.20.a
+    add_stability = 0.03
+  }
+}
+
+country_event = {
+  id = ROC.21
+  title = ROC.21.t
+  desc = ROC.21.d
+  picture = ROC_Event_21
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = ROC.21.a
+
+  }
+}
+
+country_event = {
+  id = ROC.22
+  title = ROC.22.t
+  desc = ROC.22.d
+  picture = ROC_Event_22
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = ROC.22.a
+    add_political_power = 200
   }
 }
 
@@ -2168,49 +2250,6 @@ country_event = {
       ideology = social_democrat
       popularity = 0.15
     }
-  }
-}
-
-country_event = {
-  id = ROC.64
-  title = china.391.t
-  desc = china.391.d
-  picture = GFX_PRC_xinjiang3
-  fire_only_once = yes
-  is_triggered_only = yes
-  immediate = {
-    hidden_effect = {
-      HKN = {
-        promote_character = {
-          character = HKN_John_Lee
-          ideology = market_socialism
-        }
-        add_country_leader_role = {
-          character = HKN_John_Lee
-          promote_leader = yes
-          country_leader = {
-            ideology = market_socialism
-            expire = "1.1.1.1"
-          }
-        }
-        promote_character = {
-          character = HKN_John_Lee
-          ideology = SIG_pragmatic_conservatism
-        }
-        add_country_leader_role = {
-          character = HKN_John_Lee
-          promote_leader = yes
-          country_leader = {
-            ideology = SIG_pragmatic_conservatism
-            expire = "1.1.1.1"
-          }
-        }
-      }
-    }
-  }
-
-  option = {
-    name = china.391.a
   }
 }
 

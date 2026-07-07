@@ -5101,3 +5101,102 @@ CHI_test_of_will = {
     }
   }
 }
+
+# 國民黨派系互動決議
+CHI_KMT_politics_category = {
+    
+  # 1. 扶植本土系
+  CHI_boost_kmt_local = {
+    icon = generic_propaganda
+    available = {
+      check_variable = { CHI_kmt_local value < 100 }
+    }
+    visible = { always = yes }
+    cost = 15
+    days_remove = 14
+    complete_effect = {
+      # 本土系 +6%
+      add_to_variable = { var = CHI_kmt_local value = 6 }
+      # 其他三派系各 -2% (維持總和 100)
+      add_to_variable = { var = CHI_kmt_psg value = -2 }
+      add_to_variable = { var = CHI_kmt_combat value = -2 }
+      add_to_variable = { var = CHI_kmt_grassroots value = -2 }
+      
+      # 【防呆機制】防止變數變成負數或超過100
+      clamp_variable = { var = CHI_kmt_local min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_combat min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_grassroots min = 0 max = 100 }
+      CHI_calculate_kmt_pie_chart = yes
+    }
+  }
+
+  # 2. 扶植政學會
+  CHI_boost_kmt_psg = {
+    icon = generic_propaganda
+    available = {
+        check_variable = { CHI_kmt_psg value < 100 }
+    }
+    visible = { always = yes }
+    cost = 15
+    days_remove = 14
+    complete_effect = {
+      add_to_variable = { var = CHI_kmt_psg value = 6 }
+      add_to_variable = { var = CHI_kmt_local value = -2 }
+      add_to_variable = { var = CHI_kmt_combat value = -2 }
+      add_to_variable = { var = CHI_kmt_grassroots value = -2 }
+      
+      clamp_variable = { var = CHI_kmt_local min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_combat min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_grassroots min = 0 max = 100 }
+      CHI_calculate_kmt_pie_chart = yes
+    }
+  }
+
+  # 3. 扶植戰鬥藍
+  CHI_boost_kmt_combat = {
+    icon = generic_propaganda
+    available = {
+      check_variable = { CHI_kmt_combat value < 100 }
+    }
+    visible = { always = yes }
+    cost = 15
+    days_remove = 14
+    complete_effect = {
+      add_to_variable = { var = CHI_kmt_combat value = 6 }
+      add_to_variable = { var = CHI_kmt_local value = -2 }
+      add_to_variable = { var = CHI_kmt_psg value = -2 }
+      add_to_variable = { var = CHI_kmt_grassroots value = -2 }
+      
+      clamp_variable = { var = CHI_kmt_local min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_combat min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_grassroots min = 0 max = 100 }
+      CHI_calculate_kmt_pie_chart = yes
+    }
+  }
+
+  # 4. 扶植草協聯盟
+  CHI_boost_kmt_grassroots = {
+    icon = generic_propaganda
+    available = {
+      check_variable = { CHI_kmt_grassroots value < 100 }
+    }
+    visible = { always = yes }
+    cost = 15
+    days_remove = 14
+    complete_effect = {
+      add_to_variable = { var = CHI_kmt_grassroots value = 6 }
+      add_to_variable = { var = CHI_kmt_local value = -2 }
+      add_to_variable = { var = CHI_kmt_psg value = -2 }
+      add_to_variable = { var = CHI_kmt_combat value = -2 }
+      
+      clamp_variable = { var = CHI_kmt_local min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_combat min = 0 max = 100 }
+      clamp_variable = { var = CHI_kmt_grassroots min = 0 max = 100 }
+      CHI_calculate_kmt_pie_chart = yes
+    }
+  }
+}

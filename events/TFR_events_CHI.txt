@@ -183,6 +183,26 @@ country_event = {
   }
 }
 
+country_event = {
+  id = CHI.4
+  title = CHI.4.t
+  desc = CHI.4.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = CHI.4.a
+  }
+}
+country_event = {
+  id = CHI.5
+  title = CHI.5.t
+  desc = CHI.5.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = CHI.5.a
+  }
+}
 #一瓶礦泉水，一碗滷肉飯
 country_event = {
   id = CHI.6
@@ -218,19 +238,15 @@ country_event = {
   }
 }
 
-#偃旗息鼓
 country_event = {
   id = CHI.9
   title = CHI.9.t
   desc = CHI.9.d
-  picture = GFX_CHI_call_it_a_day
+  picture = GFX_CHI_Event_9
   fire_only_once = yes
   option = {
     name = CHI.9.a
-    custom_effect_tooltip = load_CHI_reconstruction_focus_tree
-    hidden_effect = {
-      load_focus_tree = CHI_reconstruction_focus
-    }
+    add_manpower = -1
   }
 }
 
@@ -831,6 +847,13 @@ country_event = {
       id = 1949
       disband = yes
     }
+    custom_effect_tooltip = CHI_win_taiwn_war_tt
+		hidden_effect = {
+			load_focus_tree = CHI_taiwan_transition			
+		}
+		trigger = {
+			original_tag = CHI
+		}
     hidden_effect = {
       remove_ideas = CHI_repairs_under_fire_idea
       remove_ideas = CHI_repairs_under_fire_idea2

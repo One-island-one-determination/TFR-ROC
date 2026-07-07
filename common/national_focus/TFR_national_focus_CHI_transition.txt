@@ -28,7 +28,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		completion_reward = {
-			add_stability = 0.20
+			add_stability = 0.2
 			add_political_power = 75
 		}
 	}
@@ -40,14 +40,13 @@ focus_tree = {
 		icon = GFX_focus_CHI_Self_sutureing_trauma
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		complete_effect = {
+		}
 		prerequisite = {
 			focus = CHI_Victory_of_the_wounded
 		}
 		prerequisite = {
 			focus = CHI_Survivor_celebration
-		}
-		complete_effect = {
-
 		}
 	}
 	focus = {
@@ -94,14 +93,14 @@ focus_tree = {
 			focus = CHI_Restart_Temporary_Provisions
 		}
 		prerequisite = {
-			focus = CHI_Eliminate_communist_traitors
 			focus = CHI_Preserving_diverse_voices
+			focus = CHI_Eliminate_communist_traitors
 		}
 		relative_position_id = CHI_Self_sutureing_trauma
 	}
 	focus = {
 		id = CHI_Restart_Temporary_Provisions
-		x = -2
+		x = 0
 		y = 1
 		cost = 2
 		icon = GFX_focus_CHI_Restart_Temporary_Provisions
@@ -125,16 +124,11 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Preserving_diverse_voices
-			focus = CHI_Eliminate_communist_traitors
 		}
 		prerequisite = {
 			focus = CHI_Lifting_martial_law
 		}
 		completion_reward = {
-			country_event = {
-				id = CHI.9
-				days = 1
-			}
 		}
 		relative_position_id = CHI_Preserving_diverse_voices
 	}
