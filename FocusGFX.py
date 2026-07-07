@@ -4,25 +4,7 @@ import os
 # 1. 在這裡輸入你的名單 (換行分隔)
 # ==========================================
 text_input = """
-CHI_chart_the_course
-CHI_future_of_the_roc
-CHI_will_of_the_people_han
- CHI_not_by_chance_inevitable
- CHI_steady_progress_chao
- CHI_set_off_together_once_more
- CHI_new_power_of_the_era_chiang
- CHI_never_forget_original_intention
- CHI_kmt_election_eve
- CHI_choice_of_the_taiwanese
- CHI_trust_taiwan_lai
- CHI_courage_and_confidence
- CHI_dpp_candidate_b_elected
- CHI_dpp_placeholder_1
- CHI_end_of_suffering_chen
- CHI_victory_for_everyone
- CHI_dpp_placeholder_2
- CHI_hold_general_election_as_scheduled
-
+CHI_Intervene_American_Civil_War
 """
 
 # 清理字串：用換行符號分割，並自動去除頭尾空白與空行
@@ -87,5 +69,5 @@ with open("goals_CHI_base.txt", "w", encoding="utf-8") as f:
 with open("goals_CHI_shine.txt", "w", encoding="utf-8") as f:
     f.write(shine_output)
 
-print(f"✅ 轉換完成！已成功處理 {len(focus_list)} 個國策圖示。")
-print("📁 產出檔案：goals_CHI_base.txt, goals_CHI_shine.txt")
+print(f" 轉換完成！已成功處理 {len(focus_list)} 個國策圖示。")
+print(" 產出檔案：goals_CHI_base.txt, goals_CHI_shine.txt")
