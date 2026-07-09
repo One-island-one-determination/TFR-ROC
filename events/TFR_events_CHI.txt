@@ -1025,6 +1025,12 @@ country_event = {
   picture = GFX_CHI_event_taiwan_32
   is_triggered_only = yes
   fire_only_once = yes
+  hidden_effect = {
+    country_event = {
+      id = CHI.114514##俄人給我們挖的坑，導致後續變日本傀儡
+      days = 14
+    }
+  }
   option = {
     name = taiwan.32.a
     clr_country_flag = CHI_protecting_the_island_flag
@@ -1078,6 +1084,50 @@ country_event = {
       remove_dynamic_modifier = {
         modifier = CHI_Defend_Taiwan_dynamic
       }
+    }
+  }
+}
+
+country_event = {
+  id = CHI.114514
+  title = CHI.114514.t
+  desc = CHI.114514.d
+  is_triggered_only = yes
+  fire_only_once = yes 
+  option = {
+    name = CHI.114514.a
+    JAP = {
+      complete_national_focus = JAP_recovery_assistance
+      complete_national_focus = JAP_new_cooperation_agreement
+      add_political_power = -75
+    }
+    hidden_effect = {
+      country_event = {
+        id = CHI.114515
+        days = 1
+      }
+    }
+  }
+}
+
+country_event = {
+  id = CHI.114515
+  title = CHI.114515.t
+  desc = CHI.114515.d
+  is_triggered_only = yes
+  fire_only_once = yes 
+  option = {
+    name = CHI.114515.a
+    CHI = {
+    # 解除傀儡狀態，恢復自由身
+      set_autonomy = { target = free }
+      # 扣除多給的數值
+      add_political_power = -50
+      add_stability = -0.3
+      add_war_support = -0.075
+      # 恢復原本的國家精神 (因為 1 被原代碼刪了，我們加回來)
+      add_idea = CHI_destroyed_country_1
+      # 工廠送你了
     }
   }
 }
