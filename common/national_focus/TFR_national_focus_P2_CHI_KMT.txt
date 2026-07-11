@@ -13,8 +13,8 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		allow_branch = {
-      		has_country_flag = 2nd_HKY_win_flg
-    	}
+			has_country_flag = 2nd_HKY_win_flg
+		}
 	}
 	focus = {
 		id = CHI_Post_war_review_status_quo
@@ -40,12 +40,14 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Post_war_review_status_quo
 		}
-		relative_position_id = CHI_Post_war_review_status_quo
 		completion_reward = {
 			set_country_flag = P2_KMT_econ
 			custom_effect_tooltip = CHI_KMT_econ_tt
-      		hidden_effect = {focus_unlock = yes}		
+			hidden_effect = {
+				focus_unlock = yes
+			}
 		}
+		relative_position_id = CHI_Post_war_review_status_quo
 	}
 	focus = {
 		id = CHI_Special_budget
@@ -608,7 +610,6 @@ focus_tree = {
 		relative_position_id = CHI_End_of_Chaos
 	}
 	#}
-
 	##KMT經濟{
 	focus = {
 		id = CHI_Economy_Industry
@@ -618,7 +619,9 @@ focus_tree = {
 		icon = GFX_focus_CHI_Economy_Industry
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		allow_branch = { has_country_flag = P2_KMT_econ }
+		allow_branch = {
+			has_country_flag = P2_KMT_econ
+		}
 	}
 	focus = {
 		id = CHI_Rebulid_7th_CT
@@ -724,7 +727,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_TARIFF
-			focus = CHI_Free_Trade
 		}
 	}
 	focus = {
@@ -758,7 +760,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_Free_Trade
-			focus = CHI_TARIFF
 		}
 	}
 	focus = {
@@ -948,7 +949,6 @@ focus_tree = {
 		}
 	}
 	#}
-
 	##KMT軍事{
 	focus = {
 		id = CHI_dont_forget_homeland
@@ -1028,7 +1028,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_centralized_military_command
-			focus = CHI_modern_whampoa
 		}
 		relative_position_id = CHI_centralized_military_command
 	}
@@ -1055,7 +1054,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		relative_pos
 		prerequisite = {
-			focus = CHI_centralized_military_command
 			focus = CHI_modern_whampoa
 		}
 		relative_position_id = CHI_dont_forget_homeland
@@ -1088,8 +1086,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_military_railway_underground
-		}
-		prerequisite = {
 			focus = CHI_unity_of_knowledge_and
 		}
 		relative_position_id = CHI_painful_lesson_of_drones

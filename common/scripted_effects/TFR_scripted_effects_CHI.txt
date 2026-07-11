@@ -373,77 +373,6 @@ CHI_oil_crash_idea = {
   }
 }
 
-PDTO_unity = {
-  every_country = {
-    limit = {
-      NOT = {
-        has_ideas = PDTO_unity_1
-      }
-    }
-  }
-}
-
-PDTO_unity_increase2 = {
-  custom_effect_tooltip = PDTO_unity_tt1
-  every_country = {
-    limit = {
-      OR = {
-        has_country_flag = pdto_member
-      }
-    }
-    if = {
-      limit = {
-        has_country_flag = PDTO_unity
-        has_idea = PDTO_unity_1
-      }
-      swap_ideas = {
-        remove_idea = PDTO_unity_1
-        add_idea = PDTO_unity_2
-      }
-    }
-    else_if = {
-      limit = {
-        has_country_flag = PDTO_unity
-        has_idea = PDTO_unity_2
-      }
-      swap_ideas = {
-        remove_idea = PDTO_unity_2
-        add_idea = PDTO_unity_3
-      }
-    }
-    else_if = {
-      limit = {
-        has_country_flag = PDTO_unity
-        has_idea = PDTO_unity_3
-      }
-      swap_ideas = {
-        remove_idea = PDTO_unity_3
-        add_idea = PDTO_unity_4
-      }
-    }
-    else_if = {
-      limit = {
-        has_country_flag = PDTO_unity
-        has_idea = PDTO_unity_4
-      }
-      swap_ideas = {
-        remove_idea = PDTO_unity_4
-        add_idea = PDTO_unity_5
-      }
-    }
-    else_if = {
-      limit = {
-        NOT = {
-          has_country_flag = PDTO_unity
-          has_ideas = PDTO_unity_1
-        }
-      }
-      set_country_flag = PDTO_unity
-      add_ideas = PDTO_unity_1
-    }
-  }
-
-}
 
 CHI_influence_KMT_add = {
   custom_effect_tooltip = CHI_influence_KMT_tt
@@ -951,10 +880,22 @@ remove_Taihai_idea = {#移除精神台海戰爭與禁運
       modifier = CHI_TaiHai_dynamic
     }
     #移除禁運
-    remove_ideas = CHI_prc_embargo_idea0
-    remove_ideas = CHI_prc_embargo_idea1
-    remove_ideas = CHI_prc_embargo_idea2
-    remove_ideas = CHI_prc_embargo_idea3
+    if = {
+      limit = { has_idea = CHI_prc_embargo_idea0 }
+      remove_ideas = CHI_prc_embargo_idea0
+    }
+    else_if = {
+      limit = { has_idea = CHI_prc_embargo_idea1 }
+      remove_ideas = CHI_prc_embargo_idea1
+    }
+    else_if = {
+      limit = { has_idea = CHI_prc_embargo_idea2 }
+      remove_ideas = CHI_prc_embargo_idea2
+    }
+    else = {
+      limit = { has_idea = CHI_prc_embargo_idea3 }
+      remove_ideas = CHI_prc_embargo_idea4
+    }    
 
     clr_country_flag = Taiwan_war
     clr_country_flag = CHI_taihai_war

@@ -41,8 +41,6 @@ focus_tree = {
 		icon = GFX_focus_CHI_Self_sutureing_trauma
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		complete_effect = {
-		}
 		prerequisite = {
 			focus = CHI_Victory_of_the_wounded
 		}
@@ -97,6 +95,9 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Self_sutureing_trauma
 		}
+		completion_reward = {
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = CHI_Lifting_martial_law
@@ -112,6 +113,17 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Preserving_diverse_voices
 			focus = CHI_Eliminate_communist_traitors
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = CHI_Wartime_normal_system_idea
+				}
+			remove_ideas = CHI_Wartime_normal_system_idea
+			}
+			else = {
+			remove_ideas = CHI_Martial_law_declared_idea
+			}
 		}
 	}
 	focus = {
@@ -160,27 +172,46 @@ focus_tree = {
 		id = CHI_Emergency_reconstruction_begins
 		x = 13
 		y = 0
-		cost = 0
+		cost = 0.8
 		icon = GFX_focus_CHI_Emergency_reconstruction_begins
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		available = {
 			is_completed_by_event = yes
-		}		
+		}
 		allow_branch = {
 			has_country_flag = CHI_reconstruction_flg
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = CHI_reonstruction_dynamic
+				days = 270
+			}
+			add_to_variable = {
+				CHI_RE_political_power_factor = 0.1
+			}
 		}
 	}
 	focus = {
 		id = CHI_Post_war_personnel_issues
 		x = 0
 		y = 1
-		cost = 2
+		cost = 0.8
 		icon = GFX_focus_CHI_Post_war_personnel_issues
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Emergency_reconstruction_begins
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_war_support_factor = -0.1
+				tooltip = war_support_factor_tooltip
+			}
 		}
 		relative_position_id = CHI_Emergency_reconstruction_begins
 	}
@@ -188,12 +219,22 @@ focus_tree = {
 		id = CHI_Guarantee_basic_food_and_clothing
 		x = -4
 		y = 1
-		cost = 2
+		cost = 0.8
 		icon = GFX_focus_CHI_Guarantee_basic_food_and_clothing
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Emergency_reconstruction_begins
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_stability_factor = 0.05
+				tooltip = stability_factor_tooltip
+			}
 		}
 		relative_position_id = CHI_Emergency_reconstruction_begins
 	}
@@ -201,20 +242,30 @@ focus_tree = {
 		id = CHI_Emergency_repair_infrastructure
 		x = 4
 		y = 1
-		cost = 2
+		cost = 0.8
 		icon = GFX_focus_CHI_Emergency_repair_infrastructure
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Emergency_reconstruction_begins
 		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_industry_free_repair_factor = 0.05
+				tooltip = industry_free_repair_factor_tt
+			}
+		}
 		relative_position_id = CHI_Emergency_reconstruction_begins
 	}
 	focus = {
 		id = CHI_Temporarily_reserve_military_personnel
-		x = -1
+		x = 1
 		y = 1
-		cost = 1
+		cost = 0.8
 		icon = GFX_focus_CHI_Temporarily_reserve_military_personnel
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -229,13 +280,27 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Post_war_personnel_issues
 		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_stability_factor = -0.05
+				tooltip = stability_factor_tooltip
+			}
+			add_to_variable = {
+				CHI_RE_business_value_factor = -0.05
+				tooltip = business_value_factor_tooltip
+			}
+		}
 		relative_position_id = CHI_Post_war_personnel_issues
 	}
 	focus = {
 		id = CHI_Demobilized_reservists
-		x = 1
+		x = 3
 		y = 1
-		cost = 1
+		cost = 0.8
 		icon = GFX_focus_CHI_Demobilized_reservists
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -244,47 +309,75 @@ focus_tree = {
 				is_country_leader = yes
 			}
 		}
+		focus = {
+			id = CHI_Request_international_assistance
+			x = -1
+			y = 1
+			cost = 0.8
+			icon = GFX_focus_CHI_Request_international_assistance
+			continue_if_invalid = no
+			cancel_if_invalid = yes
+			prerequisite = {
+				focus = CHI_Guarantee_basic_food_and_clothing
+			}
+			completion_reward = {
+				hidden_effect = {
+					CHI = {
+						country_event = {
+							id = CHI.105
+							days = 7
+						}
+					}
+				}
+				custom_effect_tooltip = {
+					IDEA = CHI_reonstruction_dynamic
+					localization_key = modify_idea_tt
+				}
+				add_to_variable = {
+					CHI_RE_consumer_goods_factor = -0.1
+					tooltip = consumer_goods_factor_tooltip
+				}
+			}
+		}
 		mutually_exclusive = {
 			focus = CHI_Temporarily_reserve_military_personnel
 		}
 		prerequisite = {
 			focus = CHI_Post_war_personnel_issues
 		}
-		relative_position_id = CHI_Post_war_personnel_issues
-	}
-	focus = {
-		id = CHI_Request_international_assistance
-		x = -1
-		y = 1
-		cost = 1
-		icon = GFX_focus_CHI_Request_international_assistance
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = CHI_Guarantee_basic_food_and_clothing
-		}
 		completion_reward = {
-			hidden_effect = {
-				CHI = {
-					country_event = {
-						id = CHI.105
-						days = 7
-					}
-				}
+			add_manpower = -200000
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_stability_factor = 0.05
+				tooltip = stability_factor_tooltip
 			}
 		}
 		relative_position_id = CHI_Guarantee_basic_food_and_clothing
 	}
 	focus = {
 		id = CHI_Priority_to_residential_electricity
-		x = 1
+		x = 0
 		y = 1
-		cost = 1
+		cost = 0.8
 		icon = GFX_focus_CHI_Priority_to_residential_electricity
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Guarantee_basic_food_and_clothing
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_production_speed_buildings_factor = 0.1
+				tooltip = production_speed_buildings_factor_tooltip
+			}
 		}
 		relative_position_id = CHI_Guarantee_basic_food_and_clothing
 	}
@@ -292,7 +385,7 @@ focus_tree = {
 		id = CHI_Repair_Taoyuan_Airport
 		x = -1
 		y = 1
-		cost = 1
+		cost = 0.8
 		icon = GFX_focus_CHI_Repair_Taoyuan_Airport
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -305,7 +398,7 @@ focus_tree = {
 		id = CHI_Reopening_Kaohsiung_Port
 		x = 1
 		y = 1
-		cost = 1
+		cost = 0.8
 		icon = GFX_focus_CHI_Reopening_Kaohsiung_Port
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -318,15 +411,26 @@ focus_tree = {
 		id = CHI_Ending_wartime_economic
 		x = 0
 		y = 2
-		cost = 1
+		cost = 0.8
 		icon = GFX_focus_CHI_Ending_wartime_economic
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = CHI_Request_international_assistance
-		}
-		prerequisite = {
 			focus = CHI_Priority_to_residential_electricity
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tooltip
+			}
+			add_to_variable = {
+				CHI_RE_business_value_factor = 0.05
+				tooltip = business_value_factor_tooltip
+			}
 		}
 		relative_position_id = CHI_Guarantee_basic_food_and_clothing
 	}
@@ -334,7 +438,7 @@ focus_tree = {
 		id = CHI_MilitaryCivilian_cooperation_reconstruction
 		x = 0
 		y = 1
-		cost = 1
+		cost = 0.8
 		icon = GFX_focus_CHI_MilitaryCivilian_cooperation_reconstruction
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -346,13 +450,27 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Temporarily_reserve_military_personnel
 		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_industrial_capacity_factory = 0.1
+				tooltip = industrial_capacity_factory_tooltip
+			}
+			add_to_variable = {
+				CHI_RE_industry_free_repair_factor = 0.05
+				tooltip = industry_free_repair_factor_tt
+			}
+		}
 		relative_position_id = CHI_Temporarily_reserve_military_personnel
 	}
 	focus = {
 		id = CHI_Mobilizing_civil_society_groups
 		x = 0
 		y = 1
-		cost = 1
+		cost = 0.8
 		icon = GFX_focus_CHI_Mobilizing_civil_society_groups
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -364,13 +482,23 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Demobilized_reservists
 		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_industry_free_repair_factor = 0.15
+				tooltip = industry_free_repair_factor_tt
+			}
+		}
 		relative_position_id = CHI_Demobilized_reservists
 	}
 	focus = {
 		id = CHI_Connecting_lifelines
 		x = 0
 		y = 2
-		cost = 1
+		cost = 0.8
 		icon = GFX_focus_CHI_Connecting_lifelines
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -387,6 +515,22 @@ focus_tree = {
 						id = CHI.106
 					}
 				}
+			}
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tooltip
+			}
+			add_to_variable = {
+				CHI_RE_business_value_factor = 0.05
+				tooltip = business_value_factor_tooltip
+			}
+			add_to_variable = {
+				CHI_RE_state_production_speed_energy_farm_factor = 0.2
+				tooltip = state_production_speed_energy_farm_factor_tooltip
 			}
 		}
 		relative_position_id = CHI_Emergency_repair_infrastructure
