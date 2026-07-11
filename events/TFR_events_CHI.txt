@@ -481,159 +481,6 @@ country_event = {
   }
 }
 
-
-country_event = {
-  id = taiwan_temp_skeleton.1
-  title = taiwan_temp_skeleton.1.t
-  desc = taiwan_temp_skeleton.1.d
-  picture = GFX_PRC_minus_soc_credit
-  is_triggered_only = yes
-  fire_only_once = yes
-  option = {
-    name = taiwan_temp_skeleton.1.a
-    ai_chance = {
-      base = 1
-    }
-    country_event = {
-      id = taiwan_temp_skeleton.2
-      days = 7
-    }
-  }
-}
-
-country_event = {
-  id = taiwan_temp_skeleton.2
-  title = taiwan_temp_skeleton.2.t
-  desc = taiwan_temp_skeleton.2.d
-  picture = GFX_PRC_minus_soc_credit
-  is_triggered_only = yes
-  fire_only_once = yes
-  option = {
-    name = taiwan_temp_skeleton.2.a
-    ai_chance = {
-      base = 1
-    }
-    country_event = {
-      id = taiwan_temp_skeleton.3
-      days = 7
-    }
-  }
-}
-
-country_event = {
-  id = taiwan_temp_skeleton.3
-  title = taiwan_temp_skeleton.3.t
-  desc = taiwan_temp_skeleton.3.d
-  picture = GFX_PRC_minus_soc_credit
-  is_triggered_only = yes
-  fire_only_once = yes
-  option = {
-    name = taiwan_temp_skeleton.3.a
-    ai_chance = {
-      base = 1
-    }
-    add_timed_idea = {
-      idea = CHI_abolish_CIPAS
-      days = 120
-    }
-    country_event = {
-      id = taiwan_temp_skeleton.4
-      days = 7
-    }
-  }
-}
-
-country_event = {
-  id = taiwan_temp_skeleton.4
-  title = taiwan_temp_skeleton.4.t
-  desc = taiwan_temp_skeleton.4.d
-  picture = GFX_PRC_minus_soc_credit
-  is_triggered_only = yes
-  fire_only_once = yes
-  option = {
-    name = taiwan_temp_skeleton.4.a
-    ai_chance = {
-      base = 1
-    }
-    add_timed_idea = {
-      idea = CHI_toughen_industries
-      days = 120
-    }
-  }
-}
-
-country_event = {
-  id = taiwan_temp_skeleton.5
-  title = taiwan_temp_skeleton.5.t
-  desc = taiwan_temp_skeleton.5.d
-  picture = GFX_CHI_KMT_win_elections
-  is_triggered_only = yes
-  fire_only_once = yes
-  option = {
-    name = taiwan_temp_skeleton.5.a
-    ai_chance = {
-      base = 1
-    }
-    country_event = {
-      id = taiwan_temp_skeleton.6
-      days = 7
-    }
-  }
-}
-
-country_event = {
-  id = taiwan_temp_skeleton.6
-  title = taiwan_temp_skeleton.6.t
-  desc = taiwan_temp_skeleton.6.d
-  picture = GFX_PRC_minus_soc_credit
-  is_triggered_only = yes
-  fire_only_once = yes
-  option = {
-    name = taiwan_temp_skeleton.6.a
-    ai_chance = {
-      base = 1
-    }
-    country_event = {
-      id = taiwan_temp_skeleton.7
-      days = 7
-    }
-  }
-}
-
-country_event = {
-  id = taiwan_temp_skeleton.7
-  title = taiwan_temp_skeleton.7.t
-  desc = taiwan_temp_skeleton.7.d
-  picture = GFX_PRC_minus_soc_credit
-  is_triggered_only = yes
-  fire_only_once = yes
-  option = {
-    name = taiwan_temp_skeleton.7.a
-    ai_chance = {
-      base = 1
-    }
-    country_event = {
-      id = taiwan_temp_skeleton.8
-      days = 7
-    }
-  }
-}
-
-country_event = {
-  id = taiwan_temp_skeleton.8
-  title = taiwan_temp_skeleton.8.t
-  desc = taiwan_temp_skeleton.8.d
-  picture = GFX_PRC_minus_soc_credit
-  is_triggered_only = yes
-  fire_only_once = yes
-  option = {
-    name = taiwan_temp_skeleton.8.a
-    ai_chance = {
-      base = 1
-    }
-  }
-}
-
 #The Defiant Island
 country_event = {
   id = taiwan.1
@@ -822,63 +669,6 @@ country_event = {
   }
 }
 
-#Army in control
-country_event = {
-  id = taiwan.9
-  title = taiwan.9.t
-  desc = taiwan.9.d
-  picture = GFX_Neo_Kuomintang
-  is_triggered_only = yes
-  fire_only_once = yes
-
-  option = {
-    name = taiwan.9.a
-    set_politics = {
-      ruling_party = fascist
-      elections_allowed = no
-      last_election = "2020.1.11"
-      election_frequency = 48
-    }
-    add_popularity = {
-      ideology = fascist
-      popularity = 0.45
-    }
-    add_popularity = {
-      ideology = authoritarian_democrat
-      popularity = 0.15
-    }
-    add_popularity = {
-      ideology = conservative
-      popularity = 0.05
-    }
-    set_party_name = {
-      ideology = fascist
-      long_name = CHI_nationalist_party_militarists_long
-      name = CHI_nationalist_party_militarists
-    }
-    set_party_name = {
-      ideology = authoritarian_democrat
-      long_name = CHI_authoritarian_democrat_party_militarists_long
-      name = CHI_authoritarian_democrat_party_militarists
-    }
-    set_party_name = {
-      ideology = conservative
-      long_name = CHI_conservative_party_militarists_long
-      name = CHI_conservative_party_militarists
-    }
-    news_event = {
-      id = taiwan.10
-      hours = 5
-    }
-    add_war_support = 0.25
-    add_ideas = CHI_neokumintang
-    remove_ideas = CHI_taiwanese_independence_movement_idea
-    promote_character = CHI_chen_chen_hsiang_char
-    clr_country_flag = CHI_DPP_in_power_flag
-    set_country_flag = CHI_KMT_in_power_flag
-  }
-}
-
 #Army in control NEWS
 news_event = {
   id = taiwan.10
@@ -1025,10 +815,12 @@ country_event = {
   picture = GFX_CHI_event_taiwan_32
   is_triggered_only = yes
   fire_only_once = yes
-  hidden_effect = {
-    country_event = {
-      id = CHI.114514##俄人給我們挖的坑，導致後續變日本傀儡
-      days = 14
+  immediate = {
+    hidden_effect = {
+      country_event = {
+        id = CHI.114514##俄人給我們挖的坑，導致後續變日本傀儡
+        days = 5
+      }
     }
   }
   option = {
@@ -1045,9 +837,6 @@ country_event = {
       disband = yes
     }
     custom_effect_tooltip = CHI_win_taiwn_war_tt
-		hidden_effect = {
-			load_focus_tree = CHI_taiwan_transition			
-		}
 		trigger = {
 			original_tag = CHI
 		}
@@ -1066,7 +855,6 @@ country_event = {
       remove_ideas = CHI_last_stand_idea
       remove_ideas = CHI_chinese_blockade
       remove_ideas = CHI_thenationisinperil_1
-      remove_ideas = CHI_abolish_CIPAS
       remove_ideas = CHI_STCC_idea
       remove_ideas = CHI_Coordinating_Allied_Bombing_Operations_idea
       remove_ideas = CHI_thenationisinperil_2
@@ -1084,6 +872,8 @@ country_event = {
       remove_dynamic_modifier = {
         modifier = CHI_Defend_Taiwan_dynamic
       }
+      CHI={load_focus_tree = CHI_transition}
+      focus_unlock = yes
     }
   }
 }
@@ -1094,8 +884,8 @@ country_event = {
   desc = CHI.114514.d
   is_triggered_only = yes
   fire_only_once = yes 
-  option = {
-    name = CHI.114514.a
+  hidden = yes
+  immediate = {
     JAP = {
       complete_national_focus = JAP_recovery_assistance
       complete_national_focus = JAP_new_cooperation_agreement
@@ -1104,7 +894,7 @@ country_event = {
     hidden_effect = {
       country_event = {
         id = CHI.114515
-        days = 1
+        hours = 2
       }
     }
   }
@@ -1116,11 +906,9 @@ country_event = {
   desc = CHI.114515.d
   is_triggered_only = yes
   fire_only_once = yes 
-  option = {
-    name = CHI.114515.a
+  hidden = yes
+  immediaten = {
     CHI = {
-    # 解除傀儡狀態，恢復自由身
-      set_autonomy = { target = free }
       # 扣除多給的數值
       add_political_power = -50
       add_stability = -0.3
@@ -1128,6 +916,9 @@ country_event = {
       # 恢復原本的國家精神 (因為 1 被原代碼刪了，我們加回來)
       add_idea = CHI_destroyed_country_1
       # 工廠送你了
+    }
+    JAP = {
+      end_puppet = CHI
     }
   }
 }

@@ -206,11 +206,11 @@ country_event = {
     if = {
       limit = {
         NOT = {
-          has_template = "中華民國陸軍步兵旅"
+          has_template = "中華民國陸軍後備旅"
         }
       }
       division_template = {
-        name = "中華民國陸軍步兵旅"
+        name = "中華民國陸軍後備旅"
         division_names_group = CHI_INF_1
         is_locked = no
         regiments = {
@@ -245,7 +245,7 @@ country_event = {
     }
     random_owned_controlled_state = {
       create_unit = {
-        division = "name = \"左翼民兵\"	division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+        division = "name = \"左翼民兵\"	division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
         id = 1949
         owner = CHI
         count = 2
@@ -294,11 +294,11 @@ country_event = {
     if = {
       limit = {
         NOT = {
-          has_template = "中華民國陸軍步兵旅"
+          has_template = "中華民國陸軍後備旅"
         }
       }
       division_template = {
-        name = "中華民國陸軍步兵旅"
+        name = "中華民國陸軍後備旅"
         division_names_group = CHI_INF_1
         is_locked = no
         regiments = {
@@ -333,7 +333,7 @@ country_event = {
     }
     random_owned_controlled_state = {
       create_unit = {
-        division = "name = \"反共志願军\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+        division = "name = \"反共志願军\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
         id = 1949
         owner = CHI
         count = 2
@@ -442,11 +442,12 @@ country_event = {
       PRC = {
         load_oob = "The_PRC_Marine_Corps_taidong"
       }
+      country_event = {
+        id = ROC_CHI.13
+        days = 5
     }
-    country_event = {
-      id = ROC_CHI.13
-      days = 5
     }
+
   }
   option = {
     name = ROC_CHI.12.a
@@ -576,11 +577,11 @@ country_event = {
     if = {
       limit = {
         NOT = {
-          has_template = "中華民國陸軍步兵旅"
+          has_template = "中華民國陸軍後備旅"
         }
       }
       division_template = {
-        name = "中華民國陸軍步兵旅"
+        name = "中華民國陸軍後備旅"
         division_names_group = CHI_INF_1
         is_locked = no
         regiments = {
@@ -615,7 +616,7 @@ country_event = {
     }
     random_owned_controlled_state = {
       create_unit = {
-        division = "name = \"黑熊學院民兵\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+        division = "name = \"黑熊學院民兵\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
         id = 1949
         owner = CHI
         count = 2
@@ -1018,11 +1019,11 @@ country_event = {
     if = {
       limit = {
         NOT = {
-          has_template = "中華民國陸軍步兵旅"
+          has_template = "中華民國陸軍後備旅"
         }
       }
       division_template = {
-        name = "中華民國陸軍步兵旅"
+        name = "中華民國陸軍後備旅"
         division_names_group = CHI_INF_1
         is_locked = no
         regiments = {
@@ -1057,25 +1058,12 @@ country_event = {
     }
     random_owned_controlled_state = {
       create_unit = {
-        division = "name = \"紧急预备役\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 0.7"
+        division = "name = \"緊急預備役\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 0.7"
         id = 1949
         owner = CHI
         count = 20
       }
     }
-  }
-}
-
-country_event = {##倒計數結束觸發事件##
-  id = ROC_CHI.33
-  title = ROC_CHI.33.t
-  desc = ROC_CHI.33.d
-  picture = ROC_CHI_Event_33
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = ROC_CHI.33.a
   }
 }
 
@@ -2016,12 +2004,6 @@ country_event = {
     army_experience = 10
     add_war_support = -0.05
     add_stability = -0.05
-    effect_tooltip = {
-      swap_ideas = {
-        remove_idea = CHI_ROC_army
-        add_idea = CHI_ROC_army_taihai
-      }
-    }
     custom_effect_tooltip = CHI_taibei_invade2_tt
     effect_tooltip = {
       1148 = {
@@ -2060,12 +2042,6 @@ country_event = {
     army_experience = 10
     add_war_support = -0.05
     add_stability = -0.05
-    effect_tooltip = {
-      swap_ideas = {
-        remove_idea = CHI_ROC_army
-        add_idea = CHI_ROC_army_taihai
-      }
-    }
     custom_effect_tooltip = CHI_taizhong_invade2_tt
     effect_tooltip = {
       1149 = {
@@ -2104,12 +2080,6 @@ country_event = {
     army_experience = 10
     add_war_support = -0.05
     add_stability = -0.05
-    effect_tooltip = {
-      swap_ideas = {
-        remove_idea = CHI_ROC_army
-        add_idea = CHI_ROC_army_taihai
-      }
-    }
     custom_effect_tooltip = CHI_gaoxiong_invade2_tt
     effect_tooltip = {
       1150 = {
@@ -2148,12 +2118,6 @@ country_event = {
     army_experience = 10
     add_war_support = -0.05
     add_stability = -0.05
-    effect_tooltip = {
-      swap_ideas = {
-        remove_idea = CHI_ROC_army
-        add_idea = CHI_ROC_army_taihai
-      }
-    }
     custom_effect_tooltip = CHI_hualian_invade2_tt
     effect_tooltip = {
       524 = {

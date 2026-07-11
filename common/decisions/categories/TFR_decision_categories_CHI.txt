@@ -106,19 +106,6 @@ CHI_army_decisions = {
   }
 }
 
-PDTO_solidarity = {
-  #太約
-  icon = GFX_PDTO_dec
-  priority = 3
-  visible_when_empty = yes
-  allowed = {
-    has_country_flag = pdto_member
-  }
-  visible = {
-    always = yes
-  }
-}
-
 PHI_civil_war_dec = {
   #菲律賓内戰
   visible_when_empty = yes

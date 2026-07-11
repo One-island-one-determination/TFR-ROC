@@ -3197,10 +3197,6 @@ CHI_taiwan_war_category = {
     selectable_mission = no
     days_mission_timeout = 365
     timeout_effect = {
-      country_event = {
-        id = ROC_CHI.33
-        days = 1
-      }
     }
     complete_effect = {
       custom_effect_tooltip = CHI_taiwan_war_LOSE_tt
