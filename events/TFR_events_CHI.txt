@@ -592,7 +592,7 @@ country_event = {
   id = taiwan.3
   title = taiwan.3.t
   desc = taiwan.3.d
-  picture = GFX_JAP_pdto_form
+  picture = GFX_event_taiwan_3
   is_triggered_only = yes
   trigger = {
     tag = CHI
@@ -862,10 +862,15 @@ country_event = {
       remove_ideas = CHI_AD_idea_1
       remove_ideas = CHI_AD_idea_2
       remove_ideas = CHI_MPFTMO_idea
-      remove_ideas = CHI_Wartime_normal_system_idea
       remove_ideas = CHI_Taiwan_the_Bravest_ideas_2
       remove_ideas = CHI_Taiwan_the_Bravest_ideas_1
       remove_ideas = CHI_Onelifeonthesameisland_idea
+      remove_ideas = CHI_PRC_infiltration_low
+      remove_ideas = CHI_PRC_infiltration_middle
+      remove_ideas = CHI_PRC_infiltration_high
+      remove_dynamic_modifier = {
+        modifier = CHI_PRC_Infiltration
+      }
       remove_dynamic_modifier = {
         modifier = CHI_NSM_dynamic
       }

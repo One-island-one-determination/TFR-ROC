@@ -124,7 +124,7 @@ ideas = {
         production_speed_energy_farm_factor = 0.15
       }
       on_remove = {
-        add_idaes = CHI_farplanning_infrastructure1
+        add_ideas = CHI_farplanning_infrastructure1
       }
     }
     CHI_taiwanese_independence_movement_idea = {
@@ -636,44 +636,6 @@ ideas = {
         army_speed_factor = -0.25
         army_attack_factor = -0.15
         army_defence_factor = -0.15
-      }
-    }
-    CHI_destroyed_country_1 = {
-      name = CHI_destroyed_country
-      picture = CHI_silent_dawn_idea
-      allowed = {
-        always = no
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        society_development_monthly = -0.02
-        industrial_development_monthly = -0.02
-        stability_factor = -0.075
-        consumer_goods_factor = 0.15
-        poverty_development_monthly = -0.01
-        personal_value_factor = -0.05
-        income_growth_factor = -0.15
-      }
-    }
-    CHI_destroyed_country_2 = {
-      name = CHI_destroyed_country
-      picture = CHI_silent_dawn_idea
-      allowed = {
-        always = no
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        society_development_monthly = -0.01
-        industrial_development_monthly = -0.01
-        stability_factor = -0.03
-        consumer_goods_factor = 0.075
-        income_growth_factor = -0.05
       }
     }
     #ideas for KMT before war
@@ -1626,14 +1588,104 @@ ideas = {
       }
     }
     ######二階段######
+    ##陳腐問題
+    CHI_corruption_problem_0 = {
+      name = CHI_corruption_problem_name_0
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = -0.4
+      stability_factor = -0.3      
+      }
+    }
+    CHI_corruption_problem_1 = {
+      name = CHI_corruption_problem_name_0
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = -0.3
+      stability_factor = -0.225      
+      }
+    }
+    CHI_corruption_problem_2 = {
+      name = CHI_corruption_problem_name_0
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = -0.2
+      stability_factor = -0.15      
+      }
+    }
+    CHI_corruption_problem_3 = {
+      name = CHI_corruption_problem_name_0
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = -0.1
+      stability_factor = -0.075      
+      }
+    }
+    CHI_corruption_problem_4 = {
+      name = CHI_corruption_problem_name_4
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = 0
+      stability_factor = 0      
+      }
+    }
+    CHI_corruption_problem_5 = {
+      name = CHI_corruption_problem_name_4
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = 0.1
+      stability_factor = 0.075      
+      }
+    }
+    CHI_corruption_problem_6 = {
+      name = CHI_corruption_problem_name_6
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = 0.1
+      stability_factor = 0.075
+      war_support_factor = 0.15
+      income_growth_factor = 0.05
+      business_value_factor = 0.1
+      dtg_threshold_factor = 0.15      
+      }
+    }
+
     ##外交休兵
     CHI_diplomatic_truce = {
       name = CHI_diplomatic_truce
-      #picture = CHI_diplomatic_truce #TODO 以後再補上圖片 
+      picture = CHI_diplomatic_truce
+      removal_cost = -1 
       modifier = {
         political_power_gain = 0.5
       }
     }
+    #向民進黨讓步
+    CHI_concession_to_DPP = {
+      name = CHI_concession_to_DPP
+      picture = CHI_concession_to_DPP
+      removal_cost = -1
+      modifier = {
+        social_liberal_drift = 0.75
+      }
+    }
+    #推行生育政策
+    CHI_childcare_policy = {
+      name = CHI_childcare_policy
+      picture = CHI_childcare_policy
+      removal_cost = -1
+      modifier = {
+        political_power_factor = -0.15
+      }
+    }
+
+
   }
 }
 

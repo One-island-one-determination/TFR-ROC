@@ -1066,6 +1066,48 @@ country_event = {
     }
   }
 }
+country_event = {
+  id = ROC_CHI.33
+  title = ROC_CHI.33.t
+  desc = ROC_CHI.33.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  trigger = {
+    tag = CHI
+    CHI = {  # 指定國家
+      has_completed_focus = Taiwan_safe_people_rich  # 把這裡換成你要監聽的那個國策 ID
+    }
+  }
+  option = {
+    name = ROC_CHI.33.a
+  }
+}
+
+country_event = {
+  id = ROC_CHI.34
+  title = ROC_CHI.34.t
+  desc = ROC_CHI.34.d
+  picture = ROC_CHI_Event_34  
+  fire_only_once = yes
+  is_triggered_only = yes
+  trigger = {
+    tag = CHI
+    PRC = {  # 指定國家
+      has_completed_focus = PRC_sieze_kinmen  # 把這裡換成你要監聽的那個國策 ID
+    }
+  }
+  immediate = {
+    hidden_effect = {
+      country_event = {
+        id = ROC.88
+        days = 3
+      }
+    }
+  }
+  option = {
+    name = ROC_CHI.34.a
+  }
+}
 
 country_event = {
   id = ROC_CHI.38

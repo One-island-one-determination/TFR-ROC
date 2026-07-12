@@ -1001,3 +1001,60 @@ CHI_influence_PFP_add = {
   }
 }
 
+##########P2
+CHI_corruption_problem_effect = {
+  if = {
+    limit = {
+      has_idea = CHI_corruption_problem_0
+    }
+    swap_ideas = {
+      remove_idea = CHI_corruption_problem_0
+      add_idea = CHI_corruption_problem_1
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_corruption_problem_1
+    }
+    swap_ideas = {
+      remove_idea = CHI_corruption_problem_1
+      add_idea = CHI_corruption_problem_2
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_corruption_problem_2
+    }
+    swap_ideas = {
+      remove_idea = CHI_corruption_problem_2
+      add_idea = CHI_corruption_problem_3
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_corruption_problem_3
+    }
+    swap_ideas = {
+      remove_idea = CHI_corruption_problem_3
+      add_idea = CHI_corruption_problem_4
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_corruption_problem_4
+    }
+    swap_ideas = {
+      remove_idea = CHI_corruption_problem_4
+      add_idea = CHI_corruption_problem_5
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_corruption_problem_5
+    }
+    swap_ideas = {
+      remove_idea = CHI_corruption_problem_5
+      add_idea = CHI_corruption_problem_6
+    }
+  }  
+}

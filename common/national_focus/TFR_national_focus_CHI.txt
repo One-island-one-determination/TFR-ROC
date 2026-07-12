@@ -3057,6 +3057,20 @@ focus_tree = {
           days = -14
         }
       }
+      hidden_effect = {
+        JAP = {
+          add_days_mission_timeout = {
+            mission = JAP_taiwan_war_mission
+            days = -14
+          }
+        }
+        CHI = {
+          add_days_mission_timeout = {
+            mission = CHI_taiwan_war_mission
+            days = -14
+          }
+        }      
+      }
     }
     relative_position_id = CHI_Coordinating_Allied_Bombing_Operations
   }
@@ -3083,6 +3097,20 @@ focus_tree = {
           mission = PRC_taiwan_war_countdown
           days = -14
         }
+      }
+      hidden_effect = {
+        JAP = {
+          add_days_mission_timeout = {
+            mission = JAP_taiwan_war_mission
+            days = -14
+          }
+        }
+        CHI = {
+          add_days_mission_timeout = {
+            mission = CHI_taiwan_war_mission
+            days = -14
+          }
+        }      
       }
     }
     relative_position_id = CHI_Coordinating_Allied_Bombing_Operations

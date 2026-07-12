@@ -51,10 +51,45 @@ CHI_taizhong = {
   local_manpower = 0.03
   mobilization_speed = 0.05
 }
+CHi_Taiwan_Province = {
+  icon = GFX_modifiers_CHi_Taiwan_Province
+  enable = {
+    CHI = {
+      controls_state = 1148
+      controls_state = 1149
+      controls_state = 1150
+      controls_state = 1451
+      controls_state = 524
+    }
+  }
+  local_building_slots_factor = 0.05
+}
+CHi_Fujian_Province = {
+  icon = GFX_modifiers_CHi_Fujian_Province
+  enable = {
+    CHI = {
+      controls_state = 648
+    }
+  }
+  army_core_defence_factor = 0.1
+  state_production_speed_coastal_bunker_factor = 0.15
+}
+CHi_Hainan_Province = {
+  icon = GFX_modifiers_CHi_Hainan_Province
+  enable = {
+    CHI = {
+      controls_state = 1382
+      controls_state = 879
+    }
+  }
+  local_resources_factor = 0.05
+  state_production_speed_coastal_bunker_factor = 0.15
+}
 
 ## 正面Buff
 # 中共滲透
 CHI_PRC_Infiltration = {
+  icon = CHI_PRC_Infiltration  
   enable = {
     tag = CHI
   }
@@ -346,11 +381,4 @@ CHI_reonstruction_dynamic = {
 }
 
 ###韓國瑜
-##陳腐問題
-CHI_corruption_problem = {
-  enable = {
-    tag = CHI
-  }
-  political_power_gain = CHI_CP_political_power_gain
-  stability_factor = CHI_CP_stability_factor
-}
+

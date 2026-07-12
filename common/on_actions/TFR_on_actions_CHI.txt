@@ -123,7 +123,7 @@ on_actions = {
       }
     }
   }
-  on_weekly_CHI = {
+  on_weekly = {
     effect = {
       if = {
         limit = {
@@ -132,6 +132,8 @@ on_actions = {
         }
         country_event = taiwan.34
       }
+      country_event = {id = ROC_CHI.33}
+      country_event = {id = ROC_CHI.34}
     }
   }
 }

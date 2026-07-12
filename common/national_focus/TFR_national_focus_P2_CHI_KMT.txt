@@ -74,6 +74,9 @@ focus_tree = {
 			focus = CHI_Post_war_review_status_quo
 		}
 		relative_position_id = CHI_Post_war_review_status_quo
+		completion_reward = {
+			add_ideas = CHI_corruption_problem_0				
+		}
 	}
 	focus = {
 		id = CHI_Restore_provincial_government_functons
@@ -87,6 +90,14 @@ focus_tree = {
 			focus = CHI_Eleplant_in_room
 		}
 		relative_position_id = CHI_Eleplant_in_room
+		completion_reward = {
+			1148 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
+			1149 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
+			1150 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
+			1451 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
+			524 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
+			648 = { add_dynamic_modifier = { modifier = CHi_Fujian_Province } }
+		}
 	}
 	focus = {
 		id = CHI_reestablish_hainan_province
@@ -100,6 +111,10 @@ focus_tree = {
 			focus = CHI_Restore_provincial_government_functons
 		}
 		relative_position_id = CHI_Restore_provincial_government_functons
+		completion_reward = {
+			1382 = { add_dynamic_modifier = { modifier = CHi_Hainan_Province } }
+			879 = { add_dynamic_modifier = { modifier = CHi_Hainan_Province } }
+		}
 	}
 	focus = {
 		id = CHI_Establish_local_officials
@@ -113,6 +128,22 @@ focus_tree = {
 			focus = CHI_reestablish_hainan_province
 		}
 		relative_position_id = CHI_reestablish_hainan_province
+		completion_reward = {
+			CHI_corruption_problem_effect = yes
+			if = {
+				limit = { has_idea = CHI_diplomatic_truce}
+				modify_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180					
+				}
+			}
+			else = { 
+				add_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180
+				}
+			}			
+		}
 	}
 	focus = {
 		id = CHI_negotiate_with_DPP
@@ -125,7 +156,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Eleplant_in_room
 		}
+		available = {
+			has_completed_focus = CHI_one_day_tea_party
+		}
 		relative_position_id = CHI_Eleplant_in_room
+		completion_reward = {
+
+		}
 	}
 	focus = {
 		id = CHI_political_concession
@@ -139,6 +176,12 @@ focus_tree = {
 			focus = CHI_negotiate_with_DPP
 		}
 		relative_position_id = CHI_negotiate_with_DPP
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHI_concession_to_DPP
+				days = 20
+			}
+		}
 	}
 	focus = {
 		id = CHI_enemys_enemy
@@ -151,7 +194,28 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_political_concession
 		}
+		available = {
+			NOT = { has_idea = CHI_concession_to_DPP }
+		}
 		relative_position_id = CHI_political_concession
+		completion_reward = {
+			set_temp_variable = {coalition_partner_var_temp = token:social_liberal}
+			add_to_coalition = yes
+			CHI_corruption_problem_effect = yes
+			if = {
+				limit = { has_idea = CHI_diplomatic_truce}
+				modify_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180					
+				}
+			}
+			else = { 
+				add_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180
+				}
+			}									
+		}
 	}
 	focus = {
 		id = CHI_corruption
@@ -164,7 +228,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Eleplant_in_room
 		}
+		available = { has_completed_focus = CHI_reestablish_special_investigation_division }
+		available = { conservative > 0.40 }
 		relative_position_id = CHI_Eleplant_in_room
+		completion_reward = {
+
+		}
 	}
 	focus = {
 		id = CHI_Political_donations_act
@@ -178,6 +247,14 @@ focus_tree = {
 			focus = CHI_corruption
 		}
 		relative_position_id = CHI_corruption
+		completion_reward = {
+			CHI_corruption_problem_effect = yes
+			add_popularity = {
+				ideology = conservative
+				popularity = -0.05
+			}
+			add_political_power = -100
+		}
 	}
 	focus = {
 		id = CHI_expand_control_yuan_power
@@ -191,6 +268,29 @@ focus_tree = {
 			focus = CHI_Political_donations_act
 		}
 		relative_position_id = CHI_Political_donations_act
+		completion_reward = {
+			1148 = {
+				add_building_construction = {
+					type = office_park
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			if = {
+				limit = { has_idea = CHI_diplomatic_truce}
+				modify_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180					
+				}
+			}
+			else = { 
+				add_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180
+				}
+			}		
+		}
 	}
 	focus = {
 		id = CHI_restore_government_information_office
@@ -204,6 +304,9 @@ focus_tree = {
 			focus = CHI_Eleplant_in_room
 		}
 		relative_position_id = CHI_Eleplant_in_room
+		completion_reward = {
+
+		}
 	}
 	focus = {
 		id = CHI_reform_PTS
@@ -217,6 +320,9 @@ focus_tree = {
 			focus = CHI_restore_government_information_office
 		}
 		relative_position_id = CHI_restore_government_information_office
+		completion_reward = {
+			CHI_corruption_problem_effect = yes
+		}
 	}
 	focus = {
 		id = CHI_state_media_transformation
@@ -230,6 +336,25 @@ focus_tree = {
 			focus = CHI_reform_PTS
 		}
 		relative_position_id = CHI_reform_PTS
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+			if = {
+				limit = { has_idea = CHI_diplomatic_truce}
+				modify_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180					
+				}
+			}
+			else = { 
+				add_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHI_low_fertility_rate
@@ -243,6 +368,9 @@ focus_tree = {
 			focus = CHI_Eleplant_in_room
 		}
 		relative_position_id = CHI_Eleplant_in_room
+		completion_reward = {
+
+		}
 	}
 	focus = {
 		id = CHI_Taipei_childcare
@@ -256,6 +384,17 @@ focus_tree = {
 			focus = CHI_low_fertility_rate
 		}
 		relative_position_id = CHI_low_fertility_rate
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHI_childcare_policy
+				days = 50
+			}
+		set_temp_variable = {
+			var = income_var_temp
+			value = -25
+		}
+		add_income = yes
+		}
 	}
 	focus = {
 		id = CHI_babysitter_selection
@@ -269,6 +408,22 @@ focus_tree = {
 			focus = CHI_Taipei_childcare
 		}
 		relative_position_id = CHI_Taipei_childcare
+		completion_reward = {
+			CHI_corruption_problem_effect = yes
+			if = {
+				limit = { has_idea = CHI_diplomatic_truce}
+				modify_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180					
+				}
+			}
+			else = { 
+				add_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHI_End_of_Chaos
@@ -297,6 +452,9 @@ focus_tree = {
 			focus = CHI_babysitter_selection
 		}
 		relative_position_id = CHI_Establish_local_officials
+		completion_reward = {
+			CHI_corruption_problem_effect = yes
+		}
 	}
 	focus = {
 		id = CHI_efficient_government
