@@ -1594,6 +1594,7 @@ ideas = {
       }
     }
     CHI_Economy = {
+      # 中華民國經濟
       name = CHI_Economy
       #picture = CHI_Economy #TODO 以後再補上圖片
       
@@ -1606,6 +1607,40 @@ ideas = {
         business_value_factor = 0.05
         poverty_development_monthly = -0.02
         modifier_unit_modular_light_armor_design_cost_factor = 0.15
+      }
+
+      research_bonus = {
+        armor = -0.05         
+        electronics = 0.15    
+      }
+
+      equipment_bonus = {
+        armor = {
+            build_cost_ic = +0.3
+        }
+        air_equipment = {
+            build_cost_ic = +0.5
+        }
+        armored_car = {
+            build_cost_ic = +0.15
+        }
+      }
+    }
+    CHI_Wartime_Economy = {
+      # 中華民國經濟(台海發生後修正)
+      name = CHI_Economy
+      #picture = CHI_Wartime_Economy #TODO 以後再補上圖片
+      
+      modifier = {
+        consumer_goods_factor = 0.15
+        production_speed_buildings_factor = -0.2
+        industrial_capacity_dockyard = -0.15
+        production_speed_energy_farm_factor = -0.75
+        personal_value_factor = -0.05
+        business_value_factor = -0.05
+        poverty_development_monthly = -0.02
+        modifier_unit_modular_light_armor_design_cost_factor = 0.15
+        industrial_capacity_factory = -0.15
       }
 
       research_bonus = {
