@@ -219,6 +219,8 @@ PRC_Infiltration_change = {
       remove_ideas = CHI_PRC_infiltration_low
       remove_ideas = CHI_PRC_infiltration_middle
       remove_ideas = CHI_PRC_infiltration_high
+      remove_ideas = CHI_People_surrender
+      remove_ideas = CHI_Information_transparency
     }
   }
   else_if = {
@@ -230,6 +232,8 @@ PRC_Infiltration_change = {
       add_ideas = CHI_PRC_infiltration_low
       remove_ideas = CHI_PRC_infiltration_middle
       remove_ideas = CHI_PRC_infiltration_high
+      remove_ideas = CHI_People_surrender
+      remove_ideas = CHI_Information_transparency
     }
   }
   else_if = {
@@ -241,6 +245,8 @@ PRC_Infiltration_change = {
       remove_ideas = CHI_PRC_infiltration_low
       add_ideas = CHI_PRC_infiltration_middle
       remove_ideas = CHI_PRC_infiltration_high
+      remove_ideas = CHI_People_surrender
+      remove_ideas = CHI_Information_transparency
     }
   }
   else_if = {
@@ -249,6 +255,8 @@ PRC_Infiltration_change = {
       remove_ideas = CHI_PRC_infiltration_low
       remove_ideas = CHI_PRC_infiltration_middle
       add_ideas = CHI_PRC_infiltration_high
+      add_ideas = CHI_People_surrender
+      add_ideas = CHI_Information_transparency
     }
   }
 }
