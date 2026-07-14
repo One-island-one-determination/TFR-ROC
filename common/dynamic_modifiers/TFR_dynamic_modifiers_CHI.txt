@@ -217,6 +217,23 @@ CHI_reintroduce_nuclear_dynamic = {
   production_speed_nuclear_reactor_factor = CHI_reintroduce_nuclear_production_speed_nuclear_reactor
   production_factory_max_efficiency_factor = CHI_reintroduce_nuclear_production_factory_max_efficiency
 }
+# 中華民國經濟
+CHI_Economy = {
+  icon = GFX_idea_CHI_reintroduce_nuclear #TODO 以後再補上圖片，目前借用"重啟核能"的icon
+  enable = {
+    tag = CHI
+  }
+  custom_modifier_tooltip = CHI_Economy_fake
+
+  consumer_goods_factor               = CHI_Economy_consumer_goods_factor  
+  production_speed_buildings_factor   = CHI_Economy_production_speed_buildings_factor  
+  industrial_capacity_dockyard        = CHI_Economy_industrial_capacity_dockyard  
+  production_speed_energy_farm_factor = CHI_Economy_production_speed_energy_farm_factor  
+  personal_value_factor               = CHI_Economy_personal_value_factor  
+  business_value_factor               = CHI_Economy_business_value_factor  
+  poverty_development_monthly         = CHI_Economy_poverty_development_monthly  
+  modifier_unit_modular_light_armor_design_cost_factor = CHI_Economy_modifier_unit_modular_light_armor_design_cost_factor  
+}
 
 ## 負面Buff
 # 人口老齡化

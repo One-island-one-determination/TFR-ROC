@@ -1555,73 +1555,6 @@ ideas = {
         industry_air_damage_factor = -0.25
       }
     }
-    CHI_Economy = {
-      # 中華民國經濟
-      name = CHI_Economy
-      #picture = CHI_Economy #TODO 以後再補上圖片
-      
-      modifier = {
-        consumer_goods_factor = 0.05
-        production_speed_buildings_factor = -0.15
-        industrial_capacity_dockyard = -0.15
-        production_speed_energy_farm_factor = -0.15
-        personal_value_factor = -0.05
-        business_value_factor = 0.05
-        poverty_development_monthly = -0.02
-        modifier_unit_modular_light_armor_design_cost_factor = 0.15
-      }
-
-      research_bonus = {
-        armor = -0.05         
-        electronics = 0.15    
-      }
-
-      equipment_bonus = {
-        armor = {
-            build_cost_ic = +0.3
-        }
-        air_equipment = {
-            build_cost_ic = +0.5
-        }
-        armored_car = {
-            build_cost_ic = +0.15
-        }
-      }
-    }
-    CHI_Wartime_Economy = {
-      # 中華民國經濟(台海發生後修正)
-      name = CHI_Economy
-      #picture = CHI_Wartime_Economy #TODO 以後再補上圖片
-      
-      modifier = {
-        consumer_goods_factor = 0.15
-        production_speed_buildings_factor = -0.2
-        industrial_capacity_dockyard = -0.15
-        production_speed_energy_farm_factor = -0.75
-        personal_value_factor = -0.05
-        business_value_factor = -0.05
-        poverty_development_monthly = -0.02
-        modifier_unit_modular_light_armor_design_cost_factor = 0.15
-        industrial_capacity_factory = -0.15
-      }
-
-      research_bonus = {
-        armor = -0.05         
-        electronics = 0.15    
-      }
-
-      equipment_bonus = {
-        armor = {
-            build_cost_ic = +0.3
-        }
-        air_equipment = {
-            build_cost_ic = +0.5
-        }
-        armored_car = {
-            build_cost_ic = +0.15
-        }
-      }
-    }
     ######二階段######
     ##陳腐問題
     CHI_corruption_problem_0 = {
@@ -1721,6 +1654,28 @@ ideas = {
     }
 
 
+  }
+  hidden_ideas = {
+    CHI_Economy_hidden = {
+      # 中華民國經濟(動態民族精神用 - 研究與造價加成)
+      name = CHI_Economy_hidden
+      research_bonus = {
+        armor = -0.05         
+        electronics = 0.15    
+      }
+
+      equipment_bonus = {
+        armor = {
+            build_cost_ic = +0.3
+        }
+        air_equipment = {
+            build_cost_ic = +0.5
+        }
+        armored_car = {
+            build_cost_ic = +0.15
+        }
+      }
+    }
   }
 }
 
