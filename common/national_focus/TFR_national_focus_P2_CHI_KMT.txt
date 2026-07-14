@@ -228,8 +228,10 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Eleplant_in_room
 		}
-		available = { has_completed_focus = CHI_reestablish_special_investigation_division }
-		available = { conservative > 0.40 }
+		available = {
+			has_completed_focus = CHI_reestablish_special_investigation_division
+			conservative > 0.40
+		}
 		relative_position_id = CHI_Eleplant_in_room
 		completion_reward = {
 
@@ -468,6 +470,15 @@ focus_tree = {
 			focus = CHI_Han_Post_war
 		}
 		relative_position_id = CHI_Han_Post_war
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = CHI_success_everywhere
+			}
+			add_to_variable = {
+				CHI_SE_political_power_gain = 0.01 
+				tooltip = political_power_gain_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_Establish_Taiwan_mining_Corporation
@@ -546,6 +557,10 @@ focus_tree = {
 			focus = CHI_Three_Labor_arrows
 		}
 		relative_position_id = CHI_Three_Labor_arrows
+		completion_reward = {
+			stability_factor = 0.02
+			increase_welfare = yes
+		}
 	}
 	focus = {
 		id = CHI_public_service_variable_pay
@@ -559,6 +574,24 @@ focus_tree = {
 			focus = CHI_Three_Labor_arrows
 		}
 		relative_position_id = CHI_Three_Labor_arrows
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_success_everywhere
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_SE_political_power_gain = 0.01
+				tooltip = political_power_gain_tooltip
+			}
+			add_to_variable = {
+				CHI_SE_army_core_attack_factor = 0.025
+				tooltip = army_core_attack_factor_tooltip
+			}
+			add_to_variable = {
+				CHI_SE_army_core_defence_factor = 0.025
+				tooltip = army_core_defence_factor_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_New_generation_education
@@ -572,6 +605,37 @@ focus_tree = {
 			focus = CHI_efficient_government
 		}
 		relative_position_id = CHI_efficient_government
+		completion_reward = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -10
+			}
+			add_income = yes
+			add_timed_idea = {
+				idea = CHI_operating_new_curriculum_guidelines
+				days = 200
+			}
+			custom_effect_tooltip = {
+				IDEA = CHI_success_everywhere
+				localization_key = modify_idea_time_tt
+			}
+			effect_tooltip = {
+				add_to_variable = {
+					CHI_SE_academic_development_var = 30
+					tooltip = academic_development_var_tooltip
+				}
+				add_to_variable = {
+					CHI_SE_academic_development_monthly = 0.025
+					tooltip = academic_development_monthly_tooltip
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = CHI.1001
+					days = 5
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHI_community_drug_prevention_experiment
@@ -585,6 +649,14 @@ focus_tree = {
 			focus = CHI_New_generation_education
 		}
 		relative_position_id = CHI_New_generation_education
+		completion_reward = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -2
+			}
+			add_income = yes
+			add_stability = 0.15
+		}
 	}
 	focus = {
 		id = CHI_dilingual_education
@@ -598,6 +670,9 @@ focus_tree = {
 			focus = CHI_New_generation_education
 		}
 		relative_position_id = CHI_New_generation_education
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
 	focus = {
 		id = CHI_new_ten_propositions
@@ -611,6 +686,27 @@ focus_tree = {
 			focus = CHI_Han_Post_war
 		}
 		relative_position_id = CHI_Han_Post_war
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = CHI_dawn
+			}
+			add_to_variable = {
+				CHI_D_political_power_gain = 0.05 
+				tooltip = political_power_gain_tooltip
+			}
+			add_to_variable = {
+				CHI_D_personal_value_factor = 0.5 
+				tooltip = personal_value_factor_tooltip
+			}
+			add_to_variable = {
+				CHI_D_society_development_monthly = 0.025 
+				tooltip = society_development_monthly_tooltip
+			}
+			add_to_variable = {
+				CHI_D_poverty_development_monthly = 0.05 
+				tooltip = poverty_development_monthly_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_one_day_tea_party
@@ -624,6 +720,23 @@ focus_tree = {
 			focus = CHI_new_ten_propositions
 		}
 		relative_position_id = CHI_new_ten_propositions
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_dawn
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_D_political_power_gain = 0.5 
+				tooltip = political_power_gain_tooltip
+			}
+			add_to_variable = {
+				CHI_D_party_popularity_stability_factor = 0.1
+				tooltip = party_popularity_stability_factor_tooltip
+			}
+			remove_ideas = CHI_DPP_protest
+			set_temp_variable = {coalition_partner_var_temp = token:market_liberal}
+			add_to_coalition = yes
+		}
 	}
 	focus = {
 		id = CHI_tranquil_lake_in_the_storm
@@ -637,6 +750,20 @@ focus_tree = {
 			focus = CHI_new_ten_propositions
 		}
 		relative_position_id = CHI_new_ten_propositions
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_dawn
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_D_political_power_gain = 0.05 
+				tooltip = political_power_gain_tooltip
+			}
+			add_to_variable = {
+				CHI_D_society_development_monthly = 0.025 
+				tooltip = society_development_monthly_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_sledgehammer_brings_justice
@@ -666,6 +793,16 @@ focus_tree = {
 			focus = CHI_sledgehammer_brings_justice
 		}
 		relative_position_id = CHI_tranquil_lake_in_the_storm
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_dawn
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_D_stability_factor = 0.05 
+				tooltip = stability_factor_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_finish_them
@@ -679,6 +816,10 @@ focus_tree = {
 			focus = CHI_sledgehammer_brings_justice
 		}
 		relative_position_id = CHI_sledgehammer_brings_justice
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = CHI_lone_tower_of_dragon
@@ -692,6 +833,23 @@ focus_tree = {
 			focus = CHI_new_ten_propositions
 		}
 		relative_position_id = CHI_new_ten_propositions
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = CHI_love_to_chunghua
+			}
+			add_to_variable = {
+				CHI_LCH_war_support_factor = 0.05 
+				tooltip = war_support_factor_tooltip
+			}
+			add_to_variable = {
+				CHI_LCH_army_org_factor = 0.05 
+				tooltip = army_org_factor_tooltip
+			}
+			add_to_variable = {
+				CHI_LCH_society_development_monthly = -0.025 
+				tooltip = society_development_monthly_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_cyber_security_managment_act_amendement
@@ -705,6 +863,20 @@ focus_tree = {
 			focus = CHI_lone_tower_of_dragon
 		}
 		relative_position_id = CHI_lone_tower_of_dragon
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_love_to_chunghua
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_LCH_war_support_factor = 0.05 
+				tooltip = war_support_factor_tooltip
+			}
+			add_to_variable = {
+				CHI_LCH_encryption_factor = 5 
+				tooltip = encryption_factor_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_broken_homeland_united_chinese
@@ -718,6 +890,16 @@ focus_tree = {
 			focus = CHI_lone_tower_of_dragon
 		}
 		relative_position_id = CHI_lone_tower_of_dragon
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_love_to_chunghua
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_LCH_society_development_monthly = 0.05 
+				tooltip = society_development_monthly_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_hunt_down_spies
@@ -734,6 +916,9 @@ focus_tree = {
 			focus = CHI_sledgehammer_brings_justice
 		}
 		relative_position_id = CHI_cyber_security_managment_act_amendement
+		completion_reward = {
+			add_manpower = -153
+		}
 	}
 	focus = {
 		id = CHI_the_flag_is_fluttering
@@ -765,7 +950,22 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_End_of_Chaos
 		}
+		available = {
+			has_completed_focus = CHI_broken_homeland_united_chinese
+			has_completed_focus  = CHI_public_service_variable_pay
+			has_completed_focus = CHI_New_generation_education
+		}
 		relative_position_id = CHI_End_of_Chaos
+		completion_reward = {
+			custom_effect_tooltip = CHI_blue_sky_white_sun_never_falls_tooltip
+			hidden_effect = {
+				remove_ideas = CHI_corruption_problem_6 
+				remove_dynamic_modifier = {modifier = CHI_love_to_chunghua}
+				remove_dynamic_modifier = {modifier = CHI_success_everywhere}		
+				remove_dynamic_modifier = {modifier = CHI_dawn}
+				add_ideas = CHI_no_one_can_abuse_her				
+			}
+		}
 	}
 	#}
 	##KMT經濟{
@@ -773,7 +973,7 @@ focus_tree = {
 		id = CHI_Economy_Industry
 		x = 0
 		y = 0
-		cost = 0
+		cost = 2
 		icon = GFX_focus_CHI_Economy_Industry
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -785,7 +985,7 @@ focus_tree = {
 		id = CHI_Rebulid_7th_CT
 		x = 0
 		y = 1
-		cost = 0
+		cost = 2
 		icon = GFX_focus_CHI_Rebulid_7th_CT
 		continue_if_invalid = no
 		cancel_if_invalid = yes
