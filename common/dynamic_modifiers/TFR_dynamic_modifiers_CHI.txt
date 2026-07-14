@@ -216,6 +216,23 @@ CHI_reintroduce_nuclear_dynamic = {
   production_speed_nuclear_reactor_factor = CHI_reintroduce_nuclear_production_speed_nuclear_reactor
   production_factory_max_efficiency_factor = CHI_reintroduce_nuclear_production_factory_max_efficiency
 }
+# 中華民國經濟
+CHI_Economy = {
+  icon = GFX_idea_CHI_reintroduce_nuclear #TODO 以後再補上圖片，目前借用"重啟核能"的icon
+  enable = {
+    tag = CHI
+  }
+  custom_modifier_tooltip = CHI_Economy_fake
+
+  consumer_goods_factor               = CHI_Economy_consumer_goods_factor  
+  production_speed_buildings_factor   = CHI_Economy_production_speed_buildings_factor  
+  industrial_capacity_dockyard        = CHI_Economy_industrial_capacity_dockyard  
+  production_speed_energy_farm_factor = CHI_Economy_production_speed_energy_farm_factor  
+  personal_value_factor               = CHI_Economy_personal_value_factor  
+  business_value_factor               = CHI_Economy_business_value_factor  
+  poverty_development_monthly         = CHI_Economy_poverty_development_monthly  
+  modifier_unit_modular_light_armor_design_cost_factor = CHI_Economy_modifier_unit_modular_light_armor_design_cost_factor  
+}
 
 ## 負面Buff
 # 人口老齡化
@@ -380,4 +397,40 @@ CHI_reonstruction_dynamic = {
 }
 
 ###韓國瑜
-
+#無往不利
+CHI_success_everywhere = {
+  icon = GFX_CHI_success_everywhere  
+  enable = {
+    tag = CHI
+  }
+  political_power_gain = CHI_SE_political_power_gain
+  stability_factor = CHI_SE_stability_factor
+  army_core_attack_factor = CHI_SE_army_core_attack_factor
+  army_core_defence_factor = CHI_SE_army_core_defence_factor
+  academic_development_var = CHI_SE_academic_development_var
+  academic_development_monthly = CHI_SE_academic_development_monthly
+}
+#破曉
+CHI_dawn = {
+  icon = GFX_CHI_dawn  
+  enable = {
+    tag = CHI
+  }
+  political_power_gain = CHI_D_political_power_gain
+  stability_factor = CHI_D_stability_factor
+  personal_value_factor = CHI_D_personal_value_factor
+  society_development_monthly = CHI_D_society_development_monthly
+  poverty_development_monthly = CHI_D_poverty_development_monthly
+  party_popularity_stability_factor = CHI_D_party_popularity_stability_factor
+}
+#中華之愛
+CHI_love_to_chunghua = {
+  icon = GFX_CHI_love_to_chunghua  
+  enable = {
+    tag = CHI
+  }
+  war_support_factor = CHI_LCH_war_support_factor
+  army_org_factor = CHI_LCH_army_org_factor
+  society_development_monthly = CHI_LCH_society_development_monthly
+  encryption_factor = CHI_LCH_encryption_factor
+}

@@ -534,6 +534,9 @@
  DPP_agenda: "§G綠營正在活動§!"
  CHI_JAPANDAST_Military_aid: "盟國軍事援助"
 
+ CHI_Economy_fake:0 "§Y裝甲科技：§!\n　　£production_cost  生產花費：§R+30.00%§!\n§Y飛行器：§!\n　　£production_cost  生產花費：§R+50.00%§!\n§Y裝甲車：§!\n　　£production_cost  生產花費：§R+15.00%§!\n£armor_texticon 裝甲研究速度：§R-5%§!\n£research_speed_electronics_texticon 電子研究速度：§G+15%§!"
+ CHI_Economy: "中華民國經濟"
+ CHI_Economy_hidden: "中華民國經濟"
  CHI_Military_purchasing_cat: "對外軍購"
  Buy_light_weapons_from_KOR: "向§P[KOR.getname]§!購買輕武器£GFX_KOR_MP_Icon "
  Buy_heavy_weapons_from_KOR: "向§P[KOR.getname]§!購買重武器£GFX_KOR_MP_Icon "
@@ -730,6 +733,7 @@
  Infiltration_on_add_tt: "添加§Y5§!日總時長至任務§Y中共滲透日益嚴重§!"
  modify_idea_tt: "§Y$IDEA$§!追加效果:"
  add_idea_tt: "添加國家精神§Y$IDEA$§!"
+ modify_idea_time_tt: "結束時獲得效果\n§Y$IDEA$§!追加效果:"
  CHI_reonstruction_dynamic: "戰後重建"
  industry_free_repair_factor_tt: "$MODIFIER_INDUSTRY_FREE_REPAIR_FACTOR$：$RIGHT|+=%1$"
 
@@ -1198,6 +1202,9 @@
  unit_upkeep_attrition_factor_tooltip: "$MODIFIER_UNIT_UPKEEP_ATTRITION_FACTOR$：$RIGHT|-=%1$"
  state_production_speed_energy_farm_factor_tooltip: "$state_production_speed_energy_farm_factor$：$RIGHT|+=%1$"
  business_value_factor_tooltip: "$business_value_factor$：$RIGHT|+=%1$"
+ academic_development_var_tooltip: "£development 教育水平：[?academic_development_var|+1%]"
+ academic_development_monthly_tooltip: "£development 月度教育水平增长：[?modifier@academic_development_monthly|=+1%]"
+
 
 
 #決議

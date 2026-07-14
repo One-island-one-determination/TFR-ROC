@@ -119,6 +119,41 @@ on_actions = {
             value = 0.05
           }
           CHI_influence_SDP_add = yes
+          set_variable = { 
+            var = CHI_Economy_consumer_goods_factor 
+            value = 0.05 
+          }
+          set_variable = { 
+            var = CHI_Economy_production_speed_buildings_factor 
+            value = -0.15 
+          }
+          set_variable = { 
+            var = CHI_Economy_industrial_capacity_dockyard 
+            value = -0.15 
+          }
+          set_variable = { 
+            var = CHI_Economy_production_speed_energy_farm_factor 
+            value = -0.15 
+          }
+          set_variable = { 
+            var = CHI_Economy_personal_value_factor 
+            value = -0.05 
+          }
+          set_variable = { 
+            var = CHI_Economy_business_value_factor 
+            value = 0.05 
+          }
+          set_variable = { 
+            var = CHI_Economy_poverty_development_monthly 
+            value = -0.02 
+          }
+          set_variable = { 
+            var = CHI_Economy_modifier_unit_modular_light_armor_design_cost_factor 
+            value = 0.15 
+          }
+          add_dynamic_modifier = {
+            modifier = CHI_Economy
+          }
         }
       }
     }
