@@ -51,10 +51,45 @@ CHI_taizhong = {
   local_manpower = 0.03
   mobilization_speed = 0.05
 }
+CHi_Taiwan_Province = {
+  icon = GFX_modifiers_CHi_Taiwan_Province
+  enable = {
+    CHI = {
+      controls_state = 1148
+      controls_state = 1149
+      controls_state = 1150
+      controls_state = 1451
+      controls_state = 524
+    }
+  }
+  local_building_slots_factor = 0.05
+}
+CHi_Fujian_Province = {
+  icon = GFX_modifiers_CHi_Fujian_Province
+  enable = {
+    CHI = {
+      controls_state = 648
+    }
+  }
+  army_core_defence_factor = 0.1
+  state_production_speed_coastal_bunker_factor = 0.15
+}
+CHi_Hainan_Province = {
+  icon = GFX_modifiers_CHi_Hainan_Province
+  enable = {
+    CHI = {
+      controls_state = 1382
+      controls_state = 879
+    }
+  }
+  local_resources_factor = 0.05
+  state_production_speed_coastal_bunker_factor = 0.15
+}
 
 ## 正面Buff
 # 中共滲透
 CHI_PRC_Infiltration = {
+  icon = CHI_PRC_Infiltration  
   enable = {
     tag = CHI
   }
@@ -118,7 +153,6 @@ CHI_ROC_army_dynamic = {
   unit_upkeep_cost_factor = ROC_unit_upkeep_cost_factor    # 海陸空單位整體維護費修正（變數控制）
   army_org_factor = ROC_army_org_factor                    # 陸軍最大組織度修正（變數控制）
   supply_consumption_factor = ROC_supply_consumption_factor# # 補給消耗修正（變數控制）
-  monthly_army_professionalism = ROC_monthly_army_professionalism  # 每月軍事專業化進程變化（TFR 變數）
   military_development_monthly = ROC_military_development_monthly  # 每月軍事發展進度變化（TFR 變數）
   battalion_upkeep_factor = ROC_battalion_upkeep_factor    # 陸軍營級單位維護費修正（變數控制）
   aircraft_upkeep_factor = ROC_aircraft_upkeep_factor      # 飛機維護費修正（變數控制）
@@ -327,3 +361,24 @@ CHI_TaiHai_dynamic = {
   poverty_development_monthly = TH_one_to_ten
   society_development_monthly = TH_one_to_ten
 }
+
+##戰後重建
+CHI_reonstruction_dynamic = {
+  icon = GFX_CHI_reonstruction_dynamic  
+  enable = {
+      tag = CHI
+    }
+  political_power_factor = CHI_RE_political_power_factor
+  stability_factor = CHI_RE_stability_factor
+  consumer_goods_factor = CHI_RE_consumer_goods_factor
+  war_support_factor = CHI_RE_war_support_factor
+  production_speed_buildings_factor = CHI_RE_production_speed_buildings_factor
+  industrial_capacity_factory = CHI_RE_industrial_capacity_factory
+  industry_free_repair_factor = CHI_RE_industry_free_repair_factor
+  state_production_speed_energy_farm_factor = CHI_RE_state_production_speed_energy_farm_factor#能源農場建造速度
+  business_value_factor = CHI_RE_business_value_factor#商業產值係數
+
+}
+
+###韓國瑜
+

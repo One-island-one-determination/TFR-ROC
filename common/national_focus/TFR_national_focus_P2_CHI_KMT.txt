@@ -1,0 +1,1478 @@
+focus_tree = {
+	id = P2_CHI_KMT
+	country = {
+		factor = 0
+	}
+	#HKY{
+	focus = {
+		id = CHI_Han_Post_war
+		x = 29
+		y = 0
+		cost = 2
+		icon = GFX_focus_CHI_Han_Post_war
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		allow_branch = {
+			has_country_flag = 2nd_HKY_win_flg
+		}
+	}
+	focus = {
+		id = CHI_Post_war_review_status_quo
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Post_war_review_status_quo
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Han_Post_war
+		}
+		relative_position_id = CHI_Han_Post_war
+	}
+	focus = {
+		id = CHI_Pork_Rice
+		x = -1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Pork_Rice
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Post_war_review_status_quo
+		}
+		completion_reward = {
+			set_country_flag = P2_KMT_econ
+			custom_effect_tooltip = CHI_KMT_econ_tt
+			hidden_effect = {
+				focus_unlock = yes
+			}
+		}
+		relative_position_id = CHI_Post_war_review_status_quo
+	}
+	focus = {
+		id = CHI_Special_budget
+		x = 1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Special_budget
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Post_war_review_status_quo
+		}
+		relative_position_id = CHI_Post_war_review_status_quo
+	}
+	focus = {
+		id = CHI_Eleplant_in_room
+		x = 0
+		y = 2
+		cost = 2
+		icon = GFX_focus_CHI_Eleplant_in_room
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Post_war_review_status_quo
+		}
+		relative_position_id = CHI_Post_war_review_status_quo
+		completion_reward = {
+			add_ideas = CHI_corruption_problem_0				
+		}
+	}
+	focus = {
+		id = CHI_Restore_provincial_government_functons
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Restore_provincial_government_functons
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Eleplant_in_room
+		}
+		relative_position_id = CHI_Eleplant_in_room
+		completion_reward = {
+			1148 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
+			1149 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
+			1150 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
+			1451 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
+			524 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
+			648 = { add_dynamic_modifier = { modifier = CHi_Fujian_Province } }
+		}
+	}
+	focus = {
+		id = CHI_reestablish_hainan_province
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_reestablish_hainan_province
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Restore_provincial_government_functons
+		}
+		relative_position_id = CHI_Restore_provincial_government_functons
+		completion_reward = {
+			1382 = { add_dynamic_modifier = { modifier = CHi_Hainan_Province } }
+			879 = { add_dynamic_modifier = { modifier = CHi_Hainan_Province } }
+		}
+	}
+	focus = {
+		id = CHI_Establish_local_officials
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Establish_local_officials
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_reestablish_hainan_province
+		}
+		relative_position_id = CHI_reestablish_hainan_province
+		completion_reward = {
+			CHI_corruption_problem_effect = yes
+			if = {
+				limit = { has_idea = CHI_diplomatic_truce}
+				modify_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180					
+				}
+			}
+			else = { 
+				add_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180
+				}
+			}			
+		}
+	}
+	focus = {
+		id = CHI_negotiate_with_DPP
+		x = -2
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_negotiate_with_DPP
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Eleplant_in_room
+		}
+		available = {
+			has_completed_focus = CHI_one_day_tea_party
+		}
+		relative_position_id = CHI_Eleplant_in_room
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = CHI_political_concession
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_political_concession
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_negotiate_with_DPP
+		}
+		relative_position_id = CHI_negotiate_with_DPP
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHI_concession_to_DPP
+				days = 20
+			}
+		}
+	}
+	focus = {
+		id = CHI_enemys_enemy
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_enemys_enemy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_political_concession
+		}
+		available = {
+			NOT = { has_idea = CHI_concession_to_DPP }
+		}
+		relative_position_id = CHI_political_concession
+		completion_reward = {
+			set_temp_variable = {coalition_partner_var_temp = token:social_liberal}
+			add_to_coalition = yes
+			CHI_corruption_problem_effect = yes
+			if = {
+				limit = { has_idea = CHI_diplomatic_truce}
+				modify_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180					
+				}
+			}
+			else = { 
+				add_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180
+				}
+			}									
+		}
+	}
+	focus = {
+		id = CHI_corruption
+		x = -4
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_corruption
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Eleplant_in_room
+		}
+		available = { has_completed_focus = CHI_reestablish_special_investigation_division }
+		available = { conservative > 0.40 }
+		relative_position_id = CHI_Eleplant_in_room
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = CHI_Political_donations_act
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Political_donations_act
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_corruption
+		}
+		relative_position_id = CHI_corruption
+		completion_reward = {
+			CHI_corruption_problem_effect = yes
+			add_popularity = {
+				ideology = conservative
+				popularity = -0.05
+			}
+			add_political_power = -100
+		}
+	}
+	focus = {
+		id = CHI_expand_control_yuan_power
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_expand_control_yuan_power
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Political_donations_act
+		}
+		relative_position_id = CHI_Political_donations_act
+		completion_reward = {
+			1148 = {
+				add_building_construction = {
+					type = office_park
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			if = {
+				limit = { has_idea = CHI_diplomatic_truce}
+				modify_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180					
+				}
+			}
+			else = { 
+				add_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180
+				}
+			}		
+		}
+	}
+	focus = {
+		id = CHI_restore_government_information_office
+		x = 2
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_restore_government_information_office
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Eleplant_in_room
+		}
+		relative_position_id = CHI_Eleplant_in_room
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = CHI_reform_PTS
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_reform_PTS
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_restore_government_information_office
+		}
+		relative_position_id = CHI_restore_government_information_office
+		completion_reward = {
+			CHI_corruption_problem_effect = yes
+		}
+	}
+	focus = {
+		id = CHI_state_media_transformation
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_state_media_transformation
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_reform_PTS
+		}
+		relative_position_id = CHI_reform_PTS
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+			if = {
+				limit = { has_idea = CHI_diplomatic_truce}
+				modify_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180					
+				}
+			}
+			else = { 
+				add_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHI_low_fertility_rate
+		x = 4
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_low_fertility_rate
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Eleplant_in_room
+		}
+		relative_position_id = CHI_Eleplant_in_room
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = CHI_Taipei_childcare
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Taipei_childcare
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_low_fertility_rate
+		}
+		relative_position_id = CHI_low_fertility_rate
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHI_childcare_policy
+				days = 50
+			}
+		set_temp_variable = {
+			var = income_var_temp
+			value = -25
+		}
+		add_income = yes
+		}
+	}
+	focus = {
+		id = CHI_babysitter_selection
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_babysitter_selection
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Taipei_childcare
+		}
+		relative_position_id = CHI_Taipei_childcare
+		completion_reward = {
+			CHI_corruption_problem_effect = yes
+			if = {
+				limit = { has_idea = CHI_diplomatic_truce}
+				modify_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180					
+				}
+			}
+			else = { 
+				add_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHI_End_of_Chaos
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_End_of_Chaos
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Establish_local_officials
+		}
+		prerequisite = {
+			focus = CHI_state_media_transformation
+		}
+		prerequisite = {
+			focus = CHI_enemys_enemy
+		}
+		prerequisite = {
+			focus = CHI_expand_control_yuan_power
+		}
+		prerequisite = {
+			focus = CHI_the_flag_is_fluttering
+		}
+		prerequisite = {
+			focus = CHI_babysitter_selection
+		}
+		relative_position_id = CHI_Establish_local_officials
+		completion_reward = {
+			CHI_corruption_problem_effect = yes
+		}
+	}
+	focus = {
+		id = CHI_efficient_government
+		x = 11
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_efficient_government
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Han_Post_war
+		}
+		relative_position_id = CHI_Han_Post_war
+	}
+	focus = {
+		id = CHI_Establish_Taiwan_mining_Corporation
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Establish_Taiwan_mining_Corporation
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_efficient_government
+		}
+		relative_position_id = CHI_efficient_government
+	}
+	focus = {
+		id = CHI_strategic_reserves
+		x = -1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_strategic_reserves
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Establish_Taiwan_mining_Corporation
+		}
+		relative_position_id = CHI_Establish_Taiwan_mining_Corporation
+	}
+	focus = {
+		id = CHI_mineral_exporation
+		x = 1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_mineral_exporation
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Establish_Taiwan_mining_Corporation
+		}
+		relative_position_id = CHI_Establish_Taiwan_mining_Corporation
+	}
+	focus = {
+		id = CHI_emergency_resources_extraction_mechanism
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_emergency_resources_extraction_mechanism
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_mineral_exporation
+		}
+		relative_position_id = CHI_mineral_exporation
+	}
+	focus = {
+		id = CHI_Three_Labor_arrows
+		x = -4
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Three_Labor_arrows
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_efficient_government
+		}
+		relative_position_id = CHI_efficient_government
+	}
+	focus = {
+		id = CHI_abolish_one_fixed_one_flexed
+		x = 1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_abolish_one_fixed_one_flexed
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Three_Labor_arrows
+		}
+		relative_position_id = CHI_Three_Labor_arrows
+	}
+	focus = {
+		id = CHI_public_service_variable_pay
+		x = -1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_public_service_variable_pay
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Three_Labor_arrows
+		}
+		relative_position_id = CHI_Three_Labor_arrows
+	}
+	focus = {
+		id = CHI_New_generation_education
+		x = 3
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_New_generation_education
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_efficient_government
+		}
+		relative_position_id = CHI_efficient_government
+	}
+	focus = {
+		id = CHI_community_drug_prevention_experiment
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_community_drug_prevention_experiment
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_New_generation_education
+		}
+		relative_position_id = CHI_New_generation_education
+	}
+	focus = {
+		id = CHI_dilingual_education
+		x = 2
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_dilingual_education
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_New_generation_education
+		}
+		relative_position_id = CHI_New_generation_education
+	}
+	focus = {
+		id = CHI_new_ten_propositions
+		x = -7
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_new_ten_propositions
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Han_Post_war
+		}
+		relative_position_id = CHI_Han_Post_war
+	}
+	focus = {
+		id = CHI_one_day_tea_party
+		x = 1
+		y = 3
+		cost = 2
+		icon = GFX_focus_CHI_one_day_tea_party
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_ten_propositions
+		}
+		relative_position_id = CHI_new_ten_propositions
+	}
+	focus = {
+		id = CHI_tranquil_lake_in_the_storm
+		x = -1
+		y = 2
+		cost = 2
+		icon = GFX_focus_CHI_tranquil_lake_in_the_storm
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_ten_propositions
+		}
+		relative_position_id = CHI_new_ten_propositions
+	}
+	focus = {
+		id = CHI_sledgehammer_brings_justice
+		x = -3
+		y = 2
+		cost = 2
+		icon = GFX_focus_CHI_sledgehammer_brings_justice
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_ten_propositions
+		}
+		relative_position_id = CHI_new_ten_propositions
+	}
+	focus = {
+		id = CHI_reestablish_special_investigation_division
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_reestablish_special_investigation_division
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_tranquil_lake_in_the_storm
+		}
+		prerequisite = {
+			focus = CHI_sledgehammer_brings_justice
+		}
+		relative_position_id = CHI_tranquil_lake_in_the_storm
+	}
+	focus = {
+		id = CHI_finish_them
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_finish_them
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_sledgehammer_brings_justice
+		}
+		relative_position_id = CHI_sledgehammer_brings_justice
+	}
+	focus = {
+		id = CHI_lone_tower_of_dragon
+		x = -5
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_lone_tower_of_dragon
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_ten_propositions
+		}
+		relative_position_id = CHI_new_ten_propositions
+	}
+	focus = {
+		id = CHI_cyber_security_managment_act_amendement
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_cyber_security_managment_act_amendement
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_lone_tower_of_dragon
+		}
+		relative_position_id = CHI_lone_tower_of_dragon
+	}
+	focus = {
+		id = CHI_broken_homeland_united_chinese
+		x = -2
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_broken_homeland_united_chinese
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_lone_tower_of_dragon
+		}
+		relative_position_id = CHI_lone_tower_of_dragon
+	}
+	focus = {
+		id = CHI_hunt_down_spies
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_hunt_down_spies
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_cyber_security_managment_act_amendement
+		}
+		prerequisite = {
+			focus = CHI_sledgehammer_brings_justice
+		}
+		relative_position_id = CHI_cyber_security_managment_act_amendement
+	}
+	focus = {
+		id = CHI_the_flag_is_fluttering
+		x = 2
+		y = 2
+		cost = 2
+		icon = GFX_focus_CHI_the_flag_is_fluttering
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_hunt_down_spies
+		}
+		prerequisite = {
+			focus = CHI_reestablish_special_investigation_division
+		}
+		prerequisite = {
+			focus = CHI_one_day_tea_party
+		}
+		relative_position_id = CHI_finish_them
+	}
+	focus = {
+		id = CHI_blue_sky_white_sun_never_falls
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_blue_sky_white_sun_never_falls
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_End_of_Chaos
+		}
+		relative_position_id = CHI_End_of_Chaos
+	}
+	#}
+	##KMT經濟{
+	focus = {
+		id = CHI_Economy_Industry
+		x = 0
+		y = 0
+		cost = 0
+		icon = GFX_focus_CHI_Economy_Industry
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		allow_branch = {
+			has_country_flag = P2_KMT_econ
+		}
+	}
+	focus = {
+		id = CHI_Rebulid_7th_CT
+		x = 0
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_Rebulid_7th_CT
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Economy_Industry
+		}
+	}
+	focus = {
+		id = CHI_Way_Of_Can_To_Asia
+		x = 0
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_Way_Of_Can_To_Asia
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Rebulid_7th_CT
+		}
+	}
+	focus = {
+		id = CHI_Expand_FPG
+		x = 0
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_Expand_FPG
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Way_Of_Can_To_Asia
+		}
+	}
+	focus = {
+		id = CHI_From_Material_To_Product
+		x = 0
+		y = 4
+		cost = 0
+		icon = GFX_focus_CHI_From_Material_To_Product
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Civil_Military_Supply_Chain
+		}
+		prerequisite = {
+			focus = CHI_Expand_FPG
+		}
+		prerequisite = {
+			focus = CHI_Software_Tech_Park
+		}
+	}
+	focus = {
+		id = CHI_Local_Heavy_Ind
+		x = 2
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_Local_Heavy_Ind
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Rebulid_7th_CT
+		}
+	}
+	focus = {
+		id = CHI_Civil_Military_Supply_Chain
+		x = 2
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_Civil_Military_Supply_Chain
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Way_Of_Can_To_Asia
+		}
+	}
+	focus = {
+		id = CHI_Software_Tech_Park
+		x = -2
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_Software_Tech_Park
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Rebulid_7th_CT
+		}
+	}
+	focus = {
+		id = CHI_ROC_First
+		x = -4
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_ROC_First
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_Pacific_Trade_Zone
+			focus = CHI_Investment_From_EU_JP
+		}
+		prerequisite = {
+			focus = CHI_TARIFF
+		}
+	}
+	focus = {
+		id = CHI_Pacific_Trade_Zone
+		x = -6
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_Pacific_Trade_Zone
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_ROC_First
+			focus = CHI_Investment_From_EU_JP
+		}
+		prerequisite = {
+			focus = CHI_TARIFF
+			focus = CHI_Free_Trade
+		}
+	}
+	focus = {
+		id = CHI_Investment_From_EU_JP
+		x = -8
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_Investment_From_EU_JP
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_Pacific_Trade_Zone
+			focus = CHI_ROC_First
+		}
+		prerequisite = {
+			focus = CHI_Free_Trade
+		}
+	}
+	focus = {
+		id = CHI_Free_Trade
+		x = -7
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_Free_Trade
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_TARIFF
+		}
+		prerequisite = {
+			focus = CHI_Fiscal_Policy_Adjustment
+		}
+	}
+	focus = {
+		id = CHI_TARIFF
+		x = -5
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_TARIFF
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_Free_Trade
+		}
+		prerequisite = {
+			focus = CHI_Fiscal_Policy_Adjustment
+		}
+	}
+	focus = {
+		id = CHI_Fiscal_Policy_Adjustment
+		x = -6
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_Fiscal_Policy_Adjustment
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Economy_Industry
+		}
+	}
+	focus = {
+		id = CHI_Defence_Economic_Policy
+		x = 4
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_Defence_Economic_Policy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Economy_Industry
+		}
+	}
+	focus = {
+		id = CHI_Complete_Military_Idustry
+		x = 4
+		y = 5
+		cost = 0
+		icon = GFX_focus_CHI_Complete_Military_Idustry
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Defence_Economic_Policy
+		}
+		prerequisite = {
+			focus = CHI_Civil_Military_Supply_Chain
+		}
+	}
+	focus = {
+		id = CHI_NOMORE_Oil_Crisis
+		x = 7
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_NOMORE_Oil_Crisis
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Economy_Industry
+		}
+	}
+	focus = {
+		id = CHI_Maintain_Nuclear_Policy
+		x = 6
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_Maintain_Nuclear_Policy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_NOMORE_Oil_Crisis
+		}
+	}
+	focus = {
+		id = CHI_Break_Solar_Monopoly
+		x = 8
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_Break_Solar_Monopoly
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_NOMORE_Oil_Crisis
+		}
+	}
+	focus = {
+		id = CHI_Self_Sufficiency
+		x = 8
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_Self_Sufficiency
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			has_completed_focus = CHI_ROC_First
+		}
+		prerequisite = {
+			focus = CHI_Break_Solar_Monopoly
+		}
+	}
+	focus = {
+		id = CHI_From_Downstream_To_Upstream
+		x = 8
+		y = 4
+		cost = 0
+		icon = GFX_focus_CHI_From_Downstream_To_Upstream
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Self_Sufficiency
+		}
+	}
+	focus = {
+		id = CHI_outward_expansion
+		x = 10
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_outward_expansion
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Break_Solar_Monopoly
+		}
+	}
+	focus = {
+		id = CHI_support_foreign_research
+		x = 12
+		y = 4
+		cost = 0
+		icon = GFX_focus_CHI_support_foreign_research
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_outward_expansion
+		}
+	}
+	focus = {
+		id = CHI_international_division_of_labor
+		x = 10
+		y = 5
+		cost = 0
+		icon = GFX_focus_CHI_international_division_of_labor
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_outward_expansion
+		}
+		prerequisite = {
+			focus = CHI_support_foreign_research
+		}
+	}
+	focus = {
+		id = CHI_i_am_become_death
+		x = 6
+		y = 6
+		cost = 0
+		icon = GFX_focus_CHI_i_am_become_death
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Complete_Military_Idustry
+		}
+		prerequisite = {
+			focus = CHI_Maintain_Nuclear_Policy
+		}
+	}
+	#}
+	##KMT軍事{
+	focus = {
+		id = CHI_dont_forget_homeland
+		x = 57
+		y = 0
+		cost = 2
+		icon = GFX_focus_CHI_dont_forget_homeland
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = CHI_centralized_military_command
+		x = 1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_centralized_military_command
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_modern_whampoa
+		}
+		prerequisite = {
+			focus = CHI_dont_forget_homeland
+		}
+		relative_position_id = CHI_dont_forget_homeland
+	}
+	focus = {
+		id = CHI_modern_whampoa
+		x = -1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_modern_whampoa
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_centralized_military_command
+		}
+		prerequisite = {
+			focus = CHI_dont_forget_homeland
+		}
+		relative_position_id = CHI_dont_forget_homeland
+	}
+	focus = {
+		id = CHI_shining_spear_and_iron_horses
+		x = 0
+		y = 2
+		cost = 2
+		icon = GFX_focus_CHI_shining_spear_and_iron_horses
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_centralized_military_command
+			focus = CHI_modern_whampoa
+		}
+		relative_position_id = CHI_dont_forget_homeland
+	}
+	focus = {
+		id = CHI_painful_lesson_of_drones
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_painful_lesson_of_drones
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_shining_spear_and_iron_horses
+		}
+		relative_position_id = CHI_shining_spear_and_iron_horses
+	}
+	focus = {
+		id = CHI_reform_combined_logistics_command
+		x = 1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_reform_combined_logistics_command
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_centralized_military_command
+		}
+		relative_position_id = CHI_centralized_military_command
+	}
+	focus = {
+		id = CHI_military_railway_underground
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_military_railway_underground
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_reform_combined_logistics_command
+		}
+		relative_position_id = CHI_reform_combined_logistics_command
+	}
+	focus = {
+		id = CHI_new_whampoa_spirits
+		x = -2
+		y = 2
+		cost = 2
+		icon = GFX_focus_CHI_new_whampoa_spirits
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_pos
+		prerequisite = {
+			focus = CHI_modern_whampoa
+		}
+		relative_position_id = CHI_dont_forget_homeland
+	}
+	focus = {
+		id = CHI_unity_of_knowledge_and
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_unity_of_knowledge_and
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		action
+		action
+		prerequisite = {
+			focus = CHI_new_whampoa_spirits
+		}
+		relative_position_id = CHI_new_whampoa_spirits
+	}
+	focus = {
+		id = CHI_Camaraderie_Diligence_Sincerity
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Camaraderie_Diligence_Sincerity
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_painful_lesson_of_drones
+		}
+		prerequisite = {
+			focus = CHI_military_railway_underground
+			focus = CHI_unity_of_knowledge_and
+		}
+		relative_position_id = CHI_painful_lesson_of_drones
+	}
+	focus = {
+		id = CHI_dominate_three_oceans
+		x = 6
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_dominate_three_oceans
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_dont_forget_homeland
+		}
+		relative_position_id = CHI_dont_forget_homeland
+	}
+	focus = {
+		id = CHI_renovate_Tsoying_naval_base
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_renovate_Tsoying_naval_base
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_dominate_three_oceans
+		}
+		relative_position_id = CHI_dominate_three_oceans
+	}
+	focus = {
+		id = CHI_NCSIST_Project
+		x = 2
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_NCSIST_Project
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_dominate_three_oceans
+		}
+		relative_position_id = CHI_dominate_three_oceans
+	}
+	focus = {
+		id = CHI_relaunch_project_zhenhai
+		x = 1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_relaunch_project_zhenhai
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_NCSIST_Project
+		}
+		prerequisite = {
+			focus = CHI_renovate_Tsoying_naval_base
+		}
+		relative_position_id = CHI_renovate_Tsoying_naval_base
+	}
+	focus = {
+		id = CHI_making_great_achievements_on_beachhead
+		x = -2
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_making_great_achievements_on_beachhead
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_dominate_three_oceans
+		}
+		relative_position_id = CHI_dominate_three_oceans
+	}
+	focus = {
+		id = CHI_spirit_reaches_to_rainbow
+		x = -4
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_spirit_reaches_to_rainbow
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_dont_forget_homeland
+		}
+		relative_position_id = CHI_dont_forget_homeland
+	}
+	focus = {
+		id = CHI_need_of_talent
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_need_of_talent
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_spirit_reaches_to_rainbow
+		}
+		relative_position_id = CHI_spirit_reaches_to_rainbow
+	}
+	focus = {
+		id = CHI_carry_forward_the_inspiration_of_our_airman
+		x = 1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_carry_forward_the_inspiration_of_our_airman
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_forming_air_force_political_warfare_command
+		}
+		prerequisite = {
+			focus = CHI_need_of_talent
+		}
+		relative_position_id = CHI_forming_air_force_political_warfare_command
+	}
+	focus = {
+		id = CHI_strengthen_anti_corruption_measures
+		x = -1
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_strengthen_anti_corruption_measures
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_need_of_talent
+		}
+		relative_position_id = CHI_need_of_talent
+	}
+	focus = {
+		id = CHI_forming_air_force_political_warfare_command
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_forming_air_force_political_warfare_command
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_strengthen_anti_corruption_measures
+		}
+		relative_position_id = CHI_strengthen_anti_corruption_measures
+	}
+	focus = {
+		id = CHI_need_of_equipment
+		x = -3
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_need_of_equipment
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_spirit_reaches_to_rainbow
+		}
+		relative_position_id = CHI_spirit_reaches_to_rainbow
+	}
+	focus = {
+		id = CHI_american_fighters_reverse_enginnering
+		x = 0
+		y = 2
+		cost = 2
+		icon = GFX_focus_CHI_american_fighters_reverse_enginnering
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_need_of_equipment
+		}
+		relative_position_id = CHI_need_of_equipment
+	}
+	focus = {
+		id = CHI_funds_college
+		x = -2
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_funds_college
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_need_of_equipment
+		}
+		relative_position_id = CHI_need_of_equipment
+	}
+	focus = {
+		id = CHI_Air_force_special_allowance
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_Air_force_special_allowance
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_funds_college
+		}
+		relative_position_id = CHI_funds_college
+	}
+	focus = {
+		id = CHI_relauch_ADF_project
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_relauch_ADF_project
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_sino_japanese_fighter_cooperation_program
+		}
+		prerequisite = {
+			focus = CHI_Air_force_special_allowance
+		}
+		prerequisite = {
+			focus = CHI_american_fighters_reverse_enginnering
+		}
+		relative_position_id = CHI_Air_force_special_allowance
+	}
+	focus = {
+		id = CHI_sino_japanese_fighter_cooperation_program
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_sino_japanese_fighter_cooperation_program
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_relauch_ADF_project
+		}
+		prerequisite = {
+			focus = CHI_american_fighters_reverse_enginnering
+		}
+		prerequisite = {
+			focus = CHI_Air_force_special_allowance
+		}
+		relative_position_id = CHI_american_fighters_reverse_enginnering
+	}
+	#}
+}

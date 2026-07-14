@@ -41,7 +41,13 @@ set_variable = {
 set_variable = {
   Sovereign_Influence = 0.05
 }
+##KMT派系
+set_variable = { var = CHI_kmt_local value = 40 }
+set_variable = { var = CHI_kmt_psg value = 30 }
+set_variable = { var = CHI_kmt_combat value = 20 }
+set_variable = { var = CHI_kmt_grassroots value = 10 }
 
+#角色
 recruit_character = CHI_tsai_ing_wen_char
 recruit_character = CHI_han_kuo_yu_char
 recruit_character = CHI_chen_chen_hsiang_char
@@ -98,7 +104,7 @@ recruit_character = CHI_tang_hua_char
 recruit_character = CHI_liu_chih_pin_char
 set_research_slots = 5
 set_convoys = 700
-set_stability = 0.8
+set_stability = 0.3
 set_country_flag = CHI_PRC_Infiltration_start_flg
 set_country_flag = country_language_chinese
 set_country_flag = CHI_DPP_in_power_flag
@@ -730,6 +736,26 @@ if = {
   }
 }
 ####定時事件{
+country_event = {
+  id = ROC.13
+  days = 148
+}
+country_event = {
+  id = ROC.19
+  days = 1883
+}
+country_event = {
+  id = ROC.20
+  days = 873
+}
+country_event = {
+  id = ROC.21
+  days = 60
+}
+country_event = {
+  id = ROC.22
+  days = 58
+}
 country_event = {
   id = ROC.37
   days = 58

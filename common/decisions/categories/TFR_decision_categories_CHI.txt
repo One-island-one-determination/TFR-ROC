@@ -106,19 +106,6 @@ CHI_army_decisions = {
   }
 }
 
-PDTO_solidarity = {
-  #太約
-  icon = GFX_PDTO_dec
-  priority = 3
-  visible_when_empty = yes
-  allowed = {
-    has_country_flag = pdto_member
-  }
-  visible = {
-    always = yes
-  }
-}
-
 PHI_civil_war_dec = {
   #菲律賓内戰
   visible_when_empty = yes
@@ -204,4 +191,13 @@ CHI_Military_purchasing_cat = {
     }
   }
   scripted_gui = CHI_Military_purchasing_info
+}
+
+CHI_KMT_politics_category = {
+    icon = generic_politics
+    scripted_gui = CHI_kmt_factions_pie_chart_gui 
+    visible = {
+        original_tag = CHI
+        is_debug = yes
+    }
 }

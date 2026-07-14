@@ -48,9 +48,29 @@ division_template = {
 		engineer = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
 	name = "中華民國陸軍步兵旅"
-division_names_group = CHI_INF_1
+	division_names_group = CHI_INF_1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "中華民國陸軍後備旅"
+	division_names_group = CHI_INF_3
+	is_locked = yes
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -333,170 +353,170 @@ units = {
 	location = 13967
 	division_template = "中華民國陸軍步兵旅"
 	start_experience_factor = 0.35
-}
+	}
 
-division = {
-	name = "中華民國陸軍步兵第302旅"
-	location = 13968
-	division_template = "中華民國陸軍步兵旅"
-	start_experience_factor = 0.35
-}
+	division = {
+		name = "中華民國陸軍步兵第302旅"
+		location = 13968
+		division_template = "中華民國陸軍步兵旅"
+		start_experience_factor = 0.35
+	}
 
-division = {
-	name = "中華民國陸軍步兵第104旅"
-	location = 13968
-	division_template = "中華民國陸軍步兵旅"
-	start_experience_factor = 0.35
-}
+	division = {
+		name = "中華民國陸軍步兵第104旅"
+		location = 13968
+		division_template = "中華民國陸軍步兵旅"
+		start_experience_factor = 0.35
+	}
 
-division = {
-	name = "中華民國陸軍步兵第257旅"
-	location = 13966
-	division_template = "中華民國陸軍步兵旅"
-	start_experience_factor = 0.35
-}
+	division = {
+		name = "中華民國陸軍步兵第257旅"
+		location = 13966
+		division_template = "中華民國陸軍步兵旅"
+		start_experience_factor = 0.35
+	}
 
-division = {
-	name = "中華民國陸軍步兵第203旅"
-	location = 13965
-	division_template = "中華民國陸軍步兵旅"
-	start_experience_factor = 0.35
-}
+	division = {
+		name = "中華民國陸軍步兵第203旅"
+		location = 13965
+		division_template = "中華民國陸軍步兵旅"
+		start_experience_factor = 0.35
+	}
 
-division = {
-	name = "中華民國陸軍步兵第153旅"
-	location = 13962
-	division_template = "中華民國陸軍步兵旅"
-	start_experience_factor = 0.35
-}
+	division = {
+		name = "中華民國陸軍步兵第153旅"
+		location = 13962
+		division_template = "中華民國陸軍步兵旅"
+		start_experience_factor = 0.35
+	}
 
-division = {
-	name = "中華民國海軍陸戰隊第99旅"
-	location = 12068
-	division_template = "中華民國海軍陸戰隊陸戰旅"
-	start_experience_factor = 0.5
-}
+	division = {
+		name = "中華民國海軍陸戰隊第99旅"
+		location = 12068
+		division_template = "中華民國海軍陸戰隊陸戰旅"
+		start_experience_factor = 0.5
+	}
 
-division = {
-	name = "中華民國陸軍金門守備大隊"
-	location = 14170
-	division_template = "中華民國陸軍守備大隊"
-	start_experience_factor = 0.35
-}
+	division = {
+		name = "中華民國陸軍金門守備大隊"
+		location = 14170
+		division_template = "中華民國陸軍守備大隊"
+		start_experience_factor = 0.35
+	}
 
-division = {
-	name = "中華民國陸軍烈嶼守備大隊"
-	location = 14170
-	division_template = "中華民國陸軍守備大隊"
-	start_experience_factor = 0.35
-}
+	division = {
+		name = "中華民國陸軍烈嶼守備大隊"
+		location = 14170
+		division_template = "中華民國陸軍守備大隊"
+		start_experience_factor = 0.35
+	}
 
-division = {
-	name = "中華民國陸軍澎湖防衛指揮部"
-	location = 14976
-	division_template = "中華民國陸軍守備大隊"
-	start_experience_factor = 0.35
-}
+	division = {
+		name = "中華民國陸軍澎湖防衛指揮部"
+		location = 14976
+		division_template = "中華民國陸軍守備大隊"
+		start_experience_factor = 0.35
+	}
 
-division = {
-	name = "中華民國陸軍花東防衛指揮部"
-	location = 4096
-	division_template = "中華民國陸軍守備大隊"
-	start_experience_factor = 0.35
-}
+	division = {
+		name = "中華民國陸軍花東防衛指揮部"
+		location = 4096
+		division_template = "中華民國陸軍守備大隊"
+		start_experience_factor = 0.35
+	}
 
-division = {
-	name = "中華民國陸軍蘭陽地區指揮部"
-	location = 13962
-	division_template = "中華民國陸軍地區指揮部"
-	start_experience_factor = 0.4
-}
+	division = {
+		name = "中華民國陸軍蘭陽地區指揮部"
+		location = 13962
+		division_template = "中華民國陸軍地區指揮部"
+		start_experience_factor = 0.4
+	}
 
-division = {
-	name = "中華民國陸軍臺東地區指揮部"
-	location = 1175
-	division_template = "中華民國陸軍地區指揮部"
-	start_experience_factor = 0.4
-}
+	division = {
+		name = "中華民國陸軍臺東地區指揮部"
+		location = 1175
+		division_template = "中華民國陸軍地區指揮部"
+		start_experience_factor = 0.4
+	}
 
-division = {
-	name = "中華民國陸軍關渡地區指揮部"
-	location = 7186
-	division_template = "中華民國陸軍地區指揮部"
-	start_experience_factor = 0.4
-}
+	division = {
+		name = "中華民國陸軍關渡地區指揮部"
+		location = 7186
+		division_template = "中華民國陸軍地區指揮部"
+		start_experience_factor = 0.4
+	}
 }
 instant_effect = {
 	add_equipment_production = {
-	equipment = {
-		type = infantry_equipment_3
-		creator = "CHI"
-	}
-	requested_factories = 2
-	progress = 0.25
-	efficiency = 50
-}
-
-add_equipment_production = {
-	equipment = {
-		type = support_equipment_1
-		creator = "CHI"
-	}
-	requested_factories = 1
-	progress = 0.3
-	efficiency = 50
-}
-
-add_equipment_production = {
-	equipment = {
-		type = artillery_equipment_2
-		creator = "CHI"
-	}
-	requested_factories = 1
-	progress = 0.3
-	efficiency = 50
-}
-add_equipment_production = {
-	equipment = {
-		type = light_tank_chassis_2
-		creator = "CHI"
-		version_name = "CM34雲豹裝甲車"
-	}
-	requested_factories = 1
-	progress = 0.35
-	efficiency = 50
-}
-add_equipment_production = {
-	equipment = {
-		type = small_plane_airframe_2
-		creator = "CHI"
-		version_name = "F-16V戰鬥機"
-	}
-	requested_factories = 1
-	progress = 0.3
-	efficiency = 50
-}
-
-add_equipment_production = {
-	equipment = {
-		type = small_plane_airframe_1
-		creator = "CHI"
-		version_name = "F-CK-1經國號戰鬥機"
-	}
-	requested_factories = 1
-	progress = 0.35
-	efficiency = 50
-}
-add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_2
+			type = infantry_equipment_3
 			creator = "CHI"
-			version_name = "成功級巡防艦"
 		}
-		name = "成功級巡防艦現代化"
-		requested_factories = 4
-		progress = 0.4
-		amount = 1
+		requested_factories = 2
+		progress = 0.25
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CHI"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_2
+			creator = "CHI"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_2
+			creator = "CHI"
+			version_name = "CM34雲豹裝甲車"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_2
+			creator = "CHI"
+			version_name = "F-16V戰鬥機"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_1
+			creator = "CHI"
+			version_name = "F-CK-1經國號戰鬥機"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 50
+	}
+	add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				creator = "CHI"
+				version_name = "成功級巡防艦"
+			}
+			name = "成功級巡防艦現代化"
+			requested_factories = 4
+			progress = 0.4
+			amount = 1
 	}
 
 	add_equipment_production = {

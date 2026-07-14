@@ -124,258 +124,7 @@ ideas = {
         production_speed_energy_farm_factor = 0.15
       }
       on_remove = {
-        add_idaes = CHI_farplanning_infrastructure1
-      }
-    }
-    CHI_ROC_army = {
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-      }
-    }
-    CHI_ROC_army_res1 = {
-      # 整治武備廢弛
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        experience_gain_army_factor = 0.1
-        battalion_upkeep_factor = 0.05
-        aircraft_upkeep_factor = 0.05
-        ship_upkeep_factor = 0.05
-      }
-    }
-    CHI_ROC_army_res2 = {
-      # 收緊免疫條件
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        conscription_factor = 0.1
-      }
-    }
-    CHI_ROC_army_res3 = {
-      # 聘請美軍教官
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        army_attack_factor = 0.025
-        army_defence_factor = 0.025
-        experience_gain_factor = 0.1
-        command_power_gain_mult = 0.05
-        air_doctrine_cost_factor = -0.1
-      }
-    }
-    CHI_ROC_army_res4 = {
-      # 積極延攬本土人才
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        army_attack_factor = 0.05
-        army_defence_factor = 0.075
-        supply_combat_penalties_on_core_factor = -0.05
-      }
-    }
-    CHI_ROC_army_res5 = {
-      # 引進科學化訓練標準
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        experience_gain_factor = 0.05
-        army_morale_factor = 0.05
-        military_development_monthly = 0.01
-        monthly_army_professionalism = 0.05
-      }
-    }
-    CHI_ROC_army_res6 = {
-      # 延長義務兵役時間
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        conscription_factor = 0.20
-        training_time_factor = -0.05
-      }
-    }
-    CHI_ROC_army_res7 = {
-      # 廢除刺槍術
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        coordination_bonus = 0.05
-        army_morale_factor = 0.05
-        military_development_monthly = 0.01
-      }
-    }
-    CHI_ROC_army_res8 = {
-      # 提升戰備等級
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        max_planning = 0.15
-        planning_speed = 0.1
-        army_org_factor = 0.05
-      }
-    }
-    CHI_ROC_army_res9 = {
-      # 引進美制穿甲彈
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        army_armor_attack_factor = 0.05
-        mechanized_defence_factor = 0.05
-      }
-    }
-    CHI_ROC_army_res10 = {
-      # 全面換裝
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        army_attack_factor = 0.05
-        unit_upkeep_cost_factor = 0.05
-      }
-    }
-    CHI_ROC_army_res11 = {
-      # 提升戰備等級
-      picture = CHI_ROC_army
-      name = CHI_ROC_army
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        army_armor_attack_factor = 0.1
-        mechanized_defence_factor = 0.1
-      }
-    }
-    CHI_taiwanese_independence_movement_idea = {
-      picture = TAI_taiwanese_independence_movements
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        political_power_gain = -0.3
-        war_support_factor = 0.1
+        add_ideas = CHI_farplanning_infrastructure1
       }
     }
     CHI_taiwanese_independence_movement_idea = {
@@ -551,7 +300,6 @@ ideas = {
       modifier = {
         political_power_gain = -0.05
         surrender_limit = -0.05
-        stability_weekly = 0.003
         war_support_factor = -0.1
       }
     }
@@ -864,48 +612,6 @@ ideas = {
         production_factory_max_efficiency_factor = -0.15
       }
     }
-    CHI_neokumintang = {
-      picture = CHI_neo_kmt
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        stability_weekly = 0.003
-        war_support_weekly = 0.001
-        military_development_monthly = 0.02
-        society_development_monthly = -0.01
-      }
-    }
-    CHI_project_national_glory = {
-      picture = CHI_neo_kmt
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        ai_desired_divisions_factor = 0.1
-        conscription_factor = 0.25
-        breakthrough_factor = 0.05
-      }
-      targeted_modifier = {
-        tag = PRC
-        attack_bonus_against = 0.15
-        defense_bonus_against = 0.15
-      }
-    }
     CHI_silent_dawn = {
       picture = CHI_silent_dawn_idea
       allowed = {
@@ -930,44 +636,6 @@ ideas = {
         army_speed_factor = -0.25
         army_attack_factor = -0.15
         army_defence_factor = -0.15
-      }
-    }
-    CHI_destroyed_country_1 = {
-      name = CHI_destroyed_country
-      picture = CHI_silent_dawn_idea
-      allowed = {
-        always = no
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        society_development_monthly = -0.02
-        industrial_development_monthly = -0.02
-        stability_factor = -0.075
-        consumer_goods_factor = 0.15
-        poverty_development_monthly = -0.01
-        personal_value_factor = -0.05
-        income_growth_factor = -0.15
-      }
-    }
-    CHI_destroyed_country_2 = {
-      name = CHI_destroyed_country
-      picture = CHI_silent_dawn_idea
-      allowed = {
-        always = no
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        society_development_monthly = -0.01
-        industrial_development_monthly = -0.01
-        stability_factor = -0.03
-        consumer_goods_factor = 0.075
-        income_growth_factor = -0.05
       }
     }
     #ideas for KMT before war
@@ -1004,25 +672,6 @@ ideas = {
         stability_factor = -0.05
         war_support_factor = -0.05
         political_power_gain = -0.02
-      }
-    }
-    CHI_abolish_CIPAS = {
-      picture = CHI_abolish_CIPAS
-      allowed = {
-        always = no
-      }
-      cancel = {
-        is_puppet_of = PRC
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        tax_personal_rate_factor = 0.03
-        misc_income = 0.15
-        society_development_monthly = -0.02
-        industrial_development_monthly = 0.02
       }
     }
     CHI_toughen_industries = {
@@ -1907,6 +1556,7 @@ ideas = {
       }
     }
     CHI_Economy = {
+      # 中華民國經濟
       name = CHI_Economy
       #picture = CHI_Economy #TODO 以後再補上圖片
       
@@ -1938,6 +1588,139 @@ ideas = {
         }
       }
     }
+    CHI_Wartime_Economy = {
+      # 中華民國經濟(台海發生後修正)
+      name = CHI_Economy
+      #picture = CHI_Wartime_Economy #TODO 以後再補上圖片
+      
+      modifier = {
+        consumer_goods_factor = 0.15
+        production_speed_buildings_factor = -0.2
+        industrial_capacity_dockyard = -0.15
+        production_speed_energy_farm_factor = -0.75
+        personal_value_factor = -0.05
+        business_value_factor = -0.05
+        poverty_development_monthly = -0.02
+        modifier_unit_modular_light_armor_design_cost_factor = 0.15
+        industrial_capacity_factory = -0.15
+      }
+
+      research_bonus = {
+        armor = -0.05         
+        electronics = 0.15    
+      }
+
+      equipment_bonus = {
+        armor = {
+            build_cost_ic = +0.3
+        }
+        air_equipment = {
+            build_cost_ic = +0.5
+        }
+        armored_car = {
+            build_cost_ic = +0.15
+        }
+      }
+    }
+    ######二階段######
+    ##陳腐問題
+    CHI_corruption_problem_0 = {
+      name = CHI_corruption_problem_name_0
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = -0.4
+      stability_factor = -0.3      
+      }
+    }
+    CHI_corruption_problem_1 = {
+      name = CHI_corruption_problem_name_0
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = -0.3
+      stability_factor = -0.225      
+      }
+    }
+    CHI_corruption_problem_2 = {
+      name = CHI_corruption_problem_name_0
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = -0.2
+      stability_factor = -0.15      
+      }
+    }
+    CHI_corruption_problem_3 = {
+      name = CHI_corruption_problem_name_0
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = -0.1
+      stability_factor = -0.075      
+      }
+    }
+    CHI_corruption_problem_4 = {
+      name = CHI_corruption_problem_name_4
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = 0
+      stability_factor = 0      
+      }
+    }
+    CHI_corruption_problem_5 = {
+      name = CHI_corruption_problem_name_4
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = 0.1
+      stability_factor = 0.075      
+      }
+    }
+    CHI_corruption_problem_6 = {
+      name = CHI_corruption_problem_name_6
+      picture = GFX_CHI_corruption_problem
+      removal_cost = -1  
+      modifier = {
+      political_power_gain = 0.1
+      stability_factor = 0.075
+      war_support_factor = 0.15
+      income_growth_factor = 0.05
+      business_value_factor = 0.1
+      dtg_threshold_factor = 0.15      
+      }
+    }
+
+    ##外交休兵
+    CHI_diplomatic_truce = {
+      name = CHI_diplomatic_truce
+      picture = CHI_diplomatic_truce
+      removal_cost = -1 
+      modifier = {
+        political_power_gain = 0.5
+      }
+    }
+    #向民進黨讓步
+    CHI_concession_to_DPP = {
+      name = CHI_concession_to_DPP
+      picture = CHI_concession_to_DPP
+      removal_cost = -1
+      modifier = {
+        social_liberal_drift = 0.75
+      }
+    }
+    #推行生育政策
+    CHI_childcare_policy = {
+      name = CHI_childcare_policy
+      picture = CHI_childcare_policy
+      removal_cost = -1
+      modifier = {
+        political_power_factor = -0.15
+      }
+    }
+
+
   }
 }
 

@@ -1,11 +1,12 @@
 focus_tree = {
-	id = CHI_taiwan_transition
+	id = CHI_transition
 	country = {
 		factor = 0
 	}
+	##過渡{
 	focus = {
 		id = CHI_Victory_of_the_wounded
-		x = 1
+		x = 2
 		y = 0
 		cost = 0.2
 		icon = GFX_focus_CHI_victory_of_the_wounded
@@ -28,13 +29,13 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		completion_reward = {
-			add_stability = 0.20
+			add_stability = 0.2
 			add_political_power = 75
 		}
 	}
 	focus = {
 		id = CHI_Self_sutureing_trauma
-		x = 3
+		x = 4
 		y = 1
 		cost = 1
 		icon = GFX_focus_CHI_Self_sutureing_trauma
@@ -46,14 +47,20 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Survivor_celebration
 		}
-		complete_effect = {
-
+		completion_reward = {
+			hidden_effect = {
+				CHI = {
+					country_event = {
+						id = CHI.101
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = CHI_Eliminate_communist_traitors
-		x = -2
-		y = 1
+		x = 2
+		y = 2
 		cost = 1
 		icon = GFX_focus_CHI_Eliminate_communist_traitors
 		continue_if_invalid = no
@@ -64,12 +71,20 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Self_sutureing_trauma
 		}
-		relative_position_id = CHI_Self_sutureing_trauma
+		completion_reward = {
+			hidden_effect = {
+				CHI = {
+					country_event = {
+						id = CHI.102
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHI_Preserving_diverse_voices
-		x = 2
-		y = 1
+		x = 5
+		y = 2
 		cost = 2
 		icon = GFX_focus_CHI_Preserving_diverse_voices
 		continue_if_invalid = no
@@ -80,12 +95,14 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Self_sutureing_trauma
 		}
-		relative_position_id = CHI_Self_sutureing_trauma
+		completion_reward = {
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = CHI_Lifting_martial_law
-		x = 0
-		y = 2
+		x = 4
+		y = 3
 		cost = 2
 		icon = GFX_focus_CHI_Lifting_martial_law
 		continue_if_invalid = no
@@ -94,15 +111,25 @@ focus_tree = {
 			focus = CHI_Restart_Temporary_Provisions
 		}
 		prerequisite = {
-			focus = CHI_Eliminate_communist_traitors
 			focus = CHI_Preserving_diverse_voices
+			focus = CHI_Eliminate_communist_traitors
 		}
-		relative_position_id = CHI_Self_sutureing_trauma
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = CHI_Wartime_normal_system_idea
+				}
+			remove_ideas = CHI_Wartime_normal_system_idea
+			}
+			else = {
+			remove_ideas = CHI_Martial_law_declared_idea
+			}
+		}
 	}
 	focus = {
 		id = CHI_Restart_Temporary_Provisions
-		x = -2
-		y = 1
+		x = 2
+		y = 3
 		cost = 2
 		icon = GFX_focus_CHI_Restart_Temporary_Provisions
 		continue_if_invalid = no
@@ -113,29 +140,433 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Eliminate_communist_traitors
 		}
-		relative_position_id = CHI_Eliminate_communist_traitors
 	}
 	focus = {
 		id = CHI_Plum_blossoms_bloom_in_the_bitter_winter
-		x = 0
-		y = 2
+		x = 5
+		y = 4
 		cost = 2
 		icon = GFX_focus_CHI_Plum_blossoms_bloom_in_the_bitter_winter
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Preserving_diverse_voices
-			focus = CHI_Eliminate_communist_traitors
 		}
 		prerequisite = {
 			focus = CHI_Lifting_martial_law
 		}
 		completion_reward = {
-			country_event = {
-				id = CHI.9
-				days = 1
+			custom_effect_tooltip = event_chi_103_tt
+			hidden_effect = {
+				CHI = {
+					country_event = {
+						id = CHI.103
+					}
+				}
 			}
 		}
-		relative_position_id = CHI_Preserving_diverse_voices
 	}
+	##}
+	##重建{
+	focus = {
+		id = CHI_Emergency_reconstruction_begins
+		x = 13
+		y = 0
+		cost = 0.8
+		icon = GFX_focus_CHI_Emergency_reconstruction_begins
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			is_completed_by_event = yes
+		}
+		allow_branch = {
+			has_country_flag = CHI_reconstruction_flg
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = CHI_reonstruction_dynamic
+				days = 270
+			}
+			add_to_variable = {
+				CHI_RE_political_power_factor = 0.1
+			}
+		}
+	}
+	focus = {
+		id = CHI_Post_war_personnel_issues
+		x = 0
+		y = 1
+		cost = 0.8
+		icon = GFX_focus_CHI_Post_war_personnel_issues
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Emergency_reconstruction_begins
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_war_support_factor = -0.1
+				tooltip = war_support_factor_tooltip
+			}
+		}
+		relative_position_id = CHI_Emergency_reconstruction_begins
+	}
+	focus = {
+		id = CHI_Guarantee_basic_food_and_clothing
+		x = -4
+		y = 1
+		cost = 0.8
+		icon = GFX_focus_CHI_Guarantee_basic_food_and_clothing
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Emergency_reconstruction_begins
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_stability_factor = 0.05
+				tooltip = stability_factor_tooltip
+			}
+		}
+		relative_position_id = CHI_Emergency_reconstruction_begins
+	}
+	focus = {
+		id = CHI_Emergency_repair_infrastructure
+		x = 4
+		y = 1
+		cost = 0.8
+		icon = GFX_focus_CHI_Emergency_repair_infrastructure
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Emergency_reconstruction_begins
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_industry_free_repair_factor = 0.05
+				tooltip = industry_free_repair_factor_tt
+			}
+		}
+		relative_position_id = CHI_Emergency_reconstruction_begins
+	}
+	focus = {
+		id = CHI_Temporarily_reserve_military_personnel
+		x = 1
+		y = 1
+		cost = 0.8
+		icon = GFX_focus_CHI_Temporarily_reserve_military_personnel
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			CHI_han_kuo_yu_char = {
+				is_country_leader = yes
+			}
+		}
+		mutually_exclusive = {
+			focus = CHI_Demobilized_reservists
+		}
+		prerequisite = {
+			focus = CHI_Post_war_personnel_issues
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_stability_factor = -0.05
+				tooltip = stability_factor_tooltip
+			}
+			add_to_variable = {
+				CHI_RE_business_value_factor = -0.05
+				tooltip = business_value_factor_tooltip
+			}
+		}
+		relative_position_id = CHI_Post_war_personnel_issues
+	}
+	focus = {
+		id = CHI_Demobilized_reservists
+		x = 3
+		y = 1
+		cost = 0.8
+		icon = GFX_focus_CHI_Demobilized_reservists
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			CHI_tsai_ing_wen_char = {
+				is_country_leader = yes
+			}
+		}
+		focus = {
+			id = CHI_Request_international_assistance
+			x = -1
+			y = 1
+			cost = 0.8
+			icon = GFX_focus_CHI_Request_international_assistance
+			continue_if_invalid = no
+			cancel_if_invalid = yes
+			prerequisite = {
+				focus = CHI_Guarantee_basic_food_and_clothing
+			}
+			completion_reward = {
+				hidden_effect = {
+					CHI = {
+						country_event = {
+							id = CHI.105
+							days = 7
+						}
+					}
+				}
+				custom_effect_tooltip = {
+					IDEA = CHI_reonstruction_dynamic
+					localization_key = modify_idea_tt
+				}
+				add_to_variable = {
+					CHI_RE_consumer_goods_factor = -0.1
+					tooltip = consumer_goods_factor_tooltip
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = CHI_Temporarily_reserve_military_personnel
+		}
+		prerequisite = {
+			focus = CHI_Post_war_personnel_issues
+		}
+		completion_reward = {
+			add_manpower = -200000
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_stability_factor = 0.05
+				tooltip = stability_factor_tooltip
+			}
+		}
+		relative_position_id = CHI_Guarantee_basic_food_and_clothing
+	}
+	focus = {
+		id = CHI_Priority_to_residential_electricity
+		x = 0
+		y = 1
+		cost = 0.8
+		icon = GFX_focus_CHI_Priority_to_residential_electricity
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Guarantee_basic_food_and_clothing
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_production_speed_buildings_factor = 0.1
+				tooltip = production_speed_buildings_factor_tooltip
+			}
+		}
+		relative_position_id = CHI_Guarantee_basic_food_and_clothing
+	}
+	focus = {
+		id = CHI_Repair_Taoyuan_Airport
+		x = -1
+		y = 1
+		cost = 0.8
+		icon = GFX_focus_CHI_Repair_Taoyuan_Airport
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Emergency_repair_infrastructure
+		}
+		relative_position_id = CHI_Emergency_repair_infrastructure
+	}
+	focus = {
+		id = CHI_Reopening_Kaohsiung_Port
+		x = 1
+		y = 1
+		cost = 0.8
+		icon = GFX_focus_CHI_Reopening_Kaohsiung_Port
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Emergency_repair_infrastructure
+		}
+		relative_position_id = CHI_Emergency_repair_infrastructure
+	}
+	focus = {
+		id = CHI_Ending_wartime_economic
+		x = 0
+		y = 2
+		cost = 0.8
+		icon = GFX_focus_CHI_Ending_wartime_economic
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Priority_to_residential_electricity
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tooltip
+			}
+			add_to_variable = {
+				CHI_RE_business_value_factor = 0.05
+				tooltip = business_value_factor_tooltip
+			}
+		}
+		relative_position_id = CHI_Guarantee_basic_food_and_clothing
+	}
+	focus = {
+		id = CHI_MilitaryCivilian_cooperation_reconstruction
+		x = 0
+		y = 1
+		cost = 0.8
+		icon = GFX_focus_CHI_MilitaryCivilian_cooperation_reconstruction
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			CHI_han_kuo_yu_char = {
+				is_country_leader = yes
+			}
+		}
+		prerequisite = {
+			focus = CHI_Temporarily_reserve_military_personnel
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_industrial_capacity_factory = 0.1
+				tooltip = industrial_capacity_factory_tooltip
+			}
+			add_to_variable = {
+				CHI_RE_industry_free_repair_factor = 0.05
+				tooltip = industry_free_repair_factor_tt
+			}
+		}
+		relative_position_id = CHI_Temporarily_reserve_military_personnel
+	}
+	focus = {
+		id = CHI_Mobilizing_civil_society_groups
+		x = 0
+		y = 1
+		cost = 0.8
+		icon = GFX_focus_CHI_Mobilizing_civil_society_groups
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			CHI_tsai_ing_wen_char = {
+				is_country_leader = yes
+			}
+		}
+		prerequisite = {
+			focus = CHI_Demobilized_reservists
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_industry_free_repair_factor = 0.15
+				tooltip = industry_free_repair_factor_tt
+			}
+		}
+		relative_position_id = CHI_Demobilized_reservists
+	}
+	focus = {
+		id = CHI_Connecting_lifelines
+		x = 0
+		y = 2
+		cost = 0.8
+		icon = GFX_focus_CHI_Connecting_lifelines
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Repair_Taoyuan_Airport
+		}
+		prerequisite = {
+			focus = CHI_Reopening_Kaohsiung_Port
+		}
+		completion_reward = {
+			hidden_effect = {
+				CHI = {
+					country_event = {
+						id = CHI.106
+					}
+				}
+			}
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tooltip
+			}
+			add_to_variable = {
+				CHI_RE_business_value_factor = 0.05
+				tooltip = business_value_factor_tooltip
+			}
+			add_to_variable = {
+				CHI_RE_state_production_speed_energy_farm_factor = 0.2
+				tooltip = state_production_speed_energy_farm_factor_tooltip
+			}
+		}
+		relative_position_id = CHI_Emergency_repair_infrastructure
+	}
+	focus = {
+		id = CHI_Surviving_disaster
+		x = 0
+		y = 3
+		cost = 0.5
+		icon = GFX_focus_CHI_Surviving_disaster
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			date > 2023.12.25
+		}
+		prerequisite = {
+			focus = CHI_MilitaryCivilian_cooperation_reconstruction
+			focus = CHI_Mobilizing_civil_society_groups
+		}
+		prerequisite = {
+			focus = CHI_Connecting_lifelines
+		}
+		prerequisite = {
+			focus = CHI_Ending_wartime_economic
+		}
+		completion_reward = {
+			custom_effect_tooltip = event_chi_104_tt
+			hidden_effect = {
+				CHI = {
+					country_event = {
+						id = CHI.104
+					}
+				}
+			}
+		}
+		relative_position_id = CHI_Post_war_personnel_issues
+	}
+	#}
 }

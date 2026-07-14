@@ -1,328 +1,350 @@
 focus_tree = {
-  id = P3_CHI_Han
-  country = {
-    factor = 0
-  }
-  default = no
-  focus = {
-    id = CHI_march_into_the_waves
-    x = 0
-    y = 0
-    cost = 0
-    icon = GFX_focus_CHI_march_into_the_waves
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-  }
-  focus = {
-    id = CHI_duty_of_the_helmsman
-    x = 0
-    y = -2
-    cost = 0
-    icon = GFX_focus_CHI_duty_of_the_helmsman
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-  }
-  focus = {
-    id = CHI_focus_on_polwar_core
-    x = 0
-    y = 1
-    cost = 0
-    icon = GFX_focus_CHI_focus_on_polwar_core
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_march_into_the_waves
-    }
-  }
-  focus = {
-    id = CHI_external_political_warfare_bureau
-    x = 0
-    y = 2
-    cost = 0
-    icon = GFX_focus_CHI_external_political_warfare_bureau
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_focus_on_polwar_core
-    }
-  }
-  focus = {
-    id = CHI_central_political_warfare_committee
-    x = 0
-    y = 3
-    cost = 0
-    icon = GFX_focus_CHI_central_political_warfare_committee
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_external_political_warfare_bureau
-    }
-  }
-  focus = {
-    id = CHI_mainland_peoples_liaison
-    x = -2
-    y = 3
-    cost = 0
-    icon = GFX_focus_CHI_mainland_peoples_liaison
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_external_political_warfare_bureau
-    }
-  }
-  focus = {
-    id = CHI_welcome_home_children
-    x = 2
-    y = 1
-    cost = 0
-    icon = GFX_focus_CHI_welcome_home_children
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_march_into_the_waves
-    }
-  }
-  focus = {
-    id = CHI_expand_the_defense_line
-    x = 0
-    y = 4
-    cost = 0
-    icon = GFX_focus_CHI_expand_the_defense_line
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_central_political_warfare_committee
-    }
-    prerequisite = {
-      focus = CHI_welcome_home_children
-    }
-  }
-  focus = {
-    id = CHI_the_giant_returns
-    x = -2
-    y = 4
-    cost = 0
-    icon = GFX_focus_CHI_the_giant_returns
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_central_political_warfare_committee
-    }
-  }
-  focus = {
-    id = CHI_pacific_military_exercise
-    x = 0
-    y = 5
-    cost = 0
-    icon = GFX_focus_CHI_pacific_military_exercise
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_expand_the_defense_line
-    }
-  }
-  focus = {
-    id = CHI_underground_assenmly_point
-    x = -2
-    y = 5
-    cost = 0
-    icon = GFX_focus_CHI_underground_assenmly_point
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_the_giant_returns
-    }
-  }
-  focus = {
-    id = CHI_thus_spoke_thucydides
-    x = -2
-    y = 6
-    cost = 0
-    icon = GFX_focus_CHI_thus_spoke_thucydides
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_underground_assenmly_point
-    }
-  }
-  focus = {
-    id = CHI_eastern_terrain_mapping
-    x = -3
-    y = 7
-    cost = 0
-    icon = GFX_focus_CHI_eastern_terrain_mapping
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_thus_spoke_thucydides
-    }
-  }
-  focus = {
-    id = CHI_coverage_priority_tactics
-    x = -3
-    y = 8
-    cost = 0
-    icon = GFX_focus_CHI_coverage_priority_tactics
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_eastern_terrain_mapping
-    }
-  }
-  focus = {
-    id = CHI_surpass_overlord
-    x = -3
-    y = 9
-    cost = 0
-    icon = GFX_focus_CHI_surpass_overlord
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_coverage_priority_tactics
-    }
-  }
-  focus = {
-    id = CHI_northern_joint_command
-    x = -1
-    y = 7
-    cost = 0
-    icon = GFX_focus_CHI_northern_joint_command
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_thus_spoke_thucydides
-    }
-  }
-  focus = {
-    id = CHI_the_hunter
-    x = -1
-    y = 8
-    cost = 0
-    icon = GFX_focus_CHI_the_hunter
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_northern_joint_command
-    }
-  }
-  focus = {
-    id = CHI_operation_peak_leaper
-    x = -1
-    y = 9
-    cost = 0
-    icon = GFX_focus_CHI_operation_peak_leaper
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_the_hunter
-    }
-  }
-  focus = {
-    id = CHI_asia_pacific_armament
-    x = 4
-    y = 7
-    cost = 0
-    icon = GFX_focus_CHI_asia_pacific_armament
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_thus_spoke_thucydides
-    }
-  }
-  focus = {
-    id = CHI_rekindle_confidence
-    x = 4
-    y = 8
-    cost = 0
-    icon = GFX_focus_CHI_rekindle_confidence
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_asia_pacific_armament
-    }
-  }
-  focus = {
-    id = CHI_changbai_foothills
-    x = 1
-    y = 9
-    cost = 0
-    icon = GFX_focus_CHI_changbai_foothills
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_rekindle_confidence
-    }
-  }
-  focus = {
-    id = CHI_under_yinshan
-    x = 1
-    y = 10
-    cost = 0
-    icon = GFX_focus_CHI_under_yinshan
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_changbai_foothills
-    }
-  }
-  focus = {
-    id = CHI_waves_of_nujiang
-    x = 3
-    y = 9
-    cost = 0
-    icon = GFX_focus_CHI_waves_of_nujiang
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_rekindle_confidence
-    }
-  }
-  focus = {
-    id = CHI_among_the_mountains
-    x = 5
-    y = 9
-    cost = 0
-    icon = GFX_focus_CHI_among_the_mountains
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_rekindle_confidence
-    }
-  }
-  focus = {
-    id = CHI_land_of_abundance
-    x = 5
-    y = 10
-    cost = 0
-    icon = GFX_focus_CHI_land_of_abundance
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_among_the_mountains
-    }
-  }
-  focus = {
-    id = CHI_jiangnan_mist_and_rain
-    x = 7
-    y = 9
-    cost = 0
-    icon = GFX_focus_CHI_jiangnan_mist_and_rain
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_rekindle_confidence
-    }
-  }
-  focus = {
-    id = CHI_gather_at_yangtze
-    x = 7
-    y = 10
-    cost = 0
-    icon = GFX_focus_CHI_gather_at_yangtze
-    continue_if_invalid = no
-    cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_jiangnan_mist_and_rain
-    }
-  }
+	id = P3_CHI_Han
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = CHI_march_into_the_waves
+		x = 0
+		y = 0
+		cost = 0
+		icon = GFX_focus_CHI_march_into_the_waves
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = CHI_duty_of_the_helmsman
+		x = 0
+		y = -2
+		cost = 0
+		icon = GFX_focus_CHI_duty_of_the_helmsman
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = CHI_focus_on_polwar_core
+		x = 0
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_focus_on_polwar_core
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_march_into_the_waves
+		}
+	}
+	focus = {
+		id = CHI_external_political_warfare_bureau
+		x = 0
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_external_political_warfare_bureau
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_focus_on_polwar_core
+		}
+	}
+	focus = {
+		id = CHI_central_political_warfare_committee
+		x = 0
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_central_political_warfare_committee
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_external_political_warfare_bureau
+		}
+	}
+	focus = {
+		id = CHI_mainland_peoples_liaison
+		x = -2
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_mainland_peoples_liaison
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_external_political_warfare_bureau
+		}
+	}
+	focus = {
+		id = CHI_welcome_home_children
+		x = 2
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_welcome_home_children
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_march_into_the_waves
+		}
+	}
+	focus = {
+		id = CHI_expand_the_defense_line
+		x = 0
+		y = 4
+		cost = 0
+		icon = GFX_focus_CHI_expand_the_defense_line
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_central_political_warfare_committee
+		}
+		prerequisite = {
+			focus = CHI_welcome_home_children
+		}
+	}
+	focus = {
+		id = CHI_the_giant_returns
+		x = -2
+		y = 4
+		cost = 0
+		icon = GFX_focus_CHI_the_giant_returns
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_central_political_warfare_committee
+		}
+	}
+	focus = {
+		id = CHI_pacific_military_exercise
+		x = 0
+		y = 5
+		cost = 0
+		icon = GFX_focus_CHI_pacific_military_exercise
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_expand_the_defense_line
+		}
+	}
+	focus = {
+		id = CHI_underground_assenmly_point
+		x = -2
+		y = 5
+		cost = 0
+		icon = GFX_focus_CHI_underground_assenmly_point
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_the_giant_returns
+		}
+	}
+	focus = {
+		id = CHI_thus_spoke_thucydides
+		x = -2
+		y = 6
+		cost = 0
+		icon = GFX_focus_CHI_thus_spoke_thucydides
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_underground_assenmly_point
+		}
+	}
+	focus = {
+		id = CHI_eastern_terrain_mapping
+		x = -3
+		y = 7
+		cost = 0
+		icon = GFX_focus_CHI_eastern_terrain_mapping
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_asia_pacific_armament
+		}
+		prerequisite = {
+			focus = CHI_thus_spoke_thucydides
+		}
+	}
+	focus = {
+		id = CHI_coverage_priority_tactics
+		x = -3
+		y = 8
+		cost = 0
+		icon = GFX_focus_CHI_coverage_priority_tactics
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_eastern_terrain_mapping
+		}
+	}
+	focus = {
+		id = CHI_surpass_overlord
+		x = -3
+		y = 9
+		cost = 0
+		icon = GFX_focus_CHI_surpass_overlord
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_coverage_priority_tactics
+		}
+	}
+	focus = {
+		id = CHI_northern_joint_command
+		x = -1
+		y = 7
+		cost = 0
+		icon = GFX_focus_CHI_northern_joint_command
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_asia_pacific_armament
+		}
+		prerequisite = {
+			focus = CHI_thus_spoke_thucydides
+		}
+	}
+	focus = {
+		id = CHI_the_hunter
+		x = -1
+		y = 8
+		cost = 0
+		icon = GFX_focus_CHI_the_hunter
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_northern_joint_command
+		}
+	}
+	focus = {
+		id = CHI_operation_peak_leaper
+		x = -1
+		y = 9
+		cost = 0
+		icon = GFX_focus_CHI_operation_peak_leaper
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_the_hunter
+		}
+	}
+	focus = {
+		id = CHI_asia_pacific_armament
+		x = 4
+		y = 7
+		cost = 0
+		icon = GFX_focus_CHI_asia_pacific_armament
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_northern_joint_command
+			focus = CHI_eastern_terrain_mapping
+		}
+		prerequisite = {
+			focus = CHI_thus_spoke_thucydides
+		}
+	}
+	focus = {
+		id = CHI_rekindle_confidence
+		x = 4
+		y = 8
+		cost = 0
+		icon = GFX_focus_CHI_rekindle_confidence
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_asia_pacific_armament
+		}
+	}
+	focus = {
+		id = CHI_changbai_foothills
+		x = 1
+		y = 9
+		cost = 0
+		icon = GFX_focus_CHI_changbai_foothills
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_rekindle_confidence
+		}
+	}
+	focus = {
+		id = CHI_under_yinshan
+		x = 1
+		y = 10
+		cost = 0
+		icon = GFX_focus_CHI_under_yinshan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_changbai_foothills
+		}
+	}
+	focus = {
+		id = CHI_waves_of_nujiang
+		x = 3
+		y = 9
+		cost = 0
+		icon = GFX_focus_CHI_waves_of_nujiang
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_rekindle_confidence
+		}
+	}
+	focus = {
+		id = CHI_among_the_mountains
+		x = 5
+		y = 9
+		cost = 0
+		icon = GFX_focus_CHI_among_the_mountains
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_rekindle_confidence
+		}
+	}
+	focus = {
+		id = CHI_land_of_abundance
+		x = 3
+		y = 10
+		cost = 0
+		icon = GFX_focus_CHI_land_of_abundance
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_waves_of_nujiang
+		}
+	}
+	focus = {
+		id = CHI_jiangnan_mist_and_rain
+		x = 7
+		y = 9
+		cost = 0
+		icon = GFX_focus_CHI_jiangnan_mist_and_rain
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_rekindle_confidence
+		}
+	}
+	focus = {
+		id = CHI_gather_at_yangtze
+		x = 7
+		y = 10
+		cost = 0
+		icon = GFX_focus_CHI_gather_at_yangtze
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_jiangnan_mist_and_rain
+		}
+	}
+	focus = {
+		id = CHI_land_of_milk_and_jujube
+		x = 5
+		y = 10
+		cost = 0
+		icon = GFX_focus_CHI_land_of_milk_and_jujube
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_among_the_mountains
+		}
+	}
 }
