@@ -481,6 +481,26 @@ country_event = {
   }
 }
 
+country_event = {
+  id = CHI.1001
+  title = CHI.1001.t
+  desc = CHI.1001.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.1001.a
+    add_to_variable = {
+      CHI_SE_academic_development_var = 30
+      tooltip = academic_development_var_tooltip
+    }
+    add_to_variable = {
+      CHI_SE_academic_development_monthly = 0.025
+      tooltip = academic_development_monthly_tooltip
+    }
+  }
+}
+
+
 #The Defiant Island
 country_event = {
   id = taiwan.1
