@@ -184,6 +184,7 @@ CHI_ROC_army_dynamic = {
   naval_invasion_penalty = CHI_naval_invasion_penalty
   air_training_xp_gain_factor = CHI_air_training_xp_gain_factor
   experience_gain_air = CHI_experience_gain_air
+  air_mission_efficiency = ROC_air_mission_efficiency
 }
 # 立法院
 CHI_LY_of_the_roc_dynamic = {
@@ -244,6 +245,11 @@ CHI_Economy = {
   industrial_capacity_factory         = CHI_Economy_industrial_capacity_factory
   line_change_production_efficiency_factor = CHI_Economy_line_change_production_efficiency_factor
   production_lack_of_resource_penalty_factor = CHI_Economy_production_lack_of_resource_penalty_factor
+  production_speed_synthetic_refinery_factor = CHI_Economy_production_speed_synthetic_refinery_factor
+  conversion_cost_civ_to_mil_factor = CHI_Economy_conversion_cost_civ_to_mil_factor
+  production_speed_office_park_factor = CHI_Economy_production_speed_office_park_factor
+  production_speed_nuclear_reactor_factor = CHI_Economy_production_speed_nuclear_reactor_factor
+  resource_trade_cost_bonus_per_factory = CHI_Economy_resource_trade_cost_bonus_per_factory
 }
 
 ## 負面Buff
