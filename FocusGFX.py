@@ -4,7 +4,7 @@ import os
 # 1. 在這裡輸入你的名單 (換行分隔)
 # ==========================================
 text_input = """
-CHI_Intervene_American_Civil_War
+CHI_solidarity
 """
 
 # 清理字串：用換行符號分割，並自動去除頭尾空白與空行
