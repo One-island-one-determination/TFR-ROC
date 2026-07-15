@@ -169,11 +169,21 @@ CHI_ROC_army_dynamic = {
   army_intel_to_others = ROC_army_intel_to_others
   airforce_intel_to_others = ROC_airforce_intel_to_others
   civilian_intel_to_others = ROC_civilian_intel_to_others
-  army_armor_attack_factor = ROC_army_armor_attack_factosr
+  army_armor_attack_factor = ROC_army_armor_attack_factor
   coordination_bonus = ROC_coordination_bonus
   mechanized_defence_factor = ROC_mechanized_defence_factor
   mobilization_speed = ROC_mobilization_speed
   experience_loss_factor = ROC_experience_loss_factor
+  army_strength_factor = ROC_army_strength_factor
+  breakthrough_factor = ROC_breakthrough_factor
+  no_supply_grace = ROC_no_supply_grace
+  supply_node_range = ROC_supply_node_range
+  navy_org_factor = ROC_navy_org_factor
+  special_forces_attack_factor = CHI_special_forces_attack_factor
+  special_forces_defence_factor = CHI_special_forces_defence_factor
+  naval_invasion_penalty = CHI_naval_invasion_penalty
+  air_training_xp_gain_factor = CHI_air_training_xp_gain_factor
+  experience_gain_air = CHI_experience_gain_air
 }
 # 立法院
 CHI_LY_of_the_roc_dynamic = {
@@ -232,6 +242,8 @@ CHI_Economy = {
   business_value_factor               = CHI_Economy_business_value_factor  
   poverty_development_monthly         = CHI_Economy_poverty_development_monthly  
   industrial_capacity_factory         = CHI_Economy_industrial_capacity_factory
+  line_change_production_efficiency_factor = CHI_Economy_line_change_production_efficiency_factor
+  production_lack_of_resource_penalty_factor = CHI_Economy_production_lack_of_resource_penalty_factor
 }
 
 ## 負面Buff
