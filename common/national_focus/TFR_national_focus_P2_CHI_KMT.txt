@@ -753,7 +753,7 @@ focus_tree = {
 				tooltip = party_popularity_stability_factor_tooltip
 			}
 			remove_ideas = CHI_DPP_protest
-			set_temp_variable = {coalition_partner_var_temp = token:market_liberal}
+			set_temp_variable = {coalition_partner_var_temp = token:authoritarian_democrat}
 			add_to_coalition = yes
 		}
 	}
@@ -1011,6 +1011,20 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Economy_Industry
 		}
+		completion_reward = {
+			1150 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = {
+  						all_provinces = yes
+  						limit_to_coastal = yes
+  						limit_to_naval_base = yes 
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHI_Way_Of_Can_To_Asia
@@ -1023,6 +1037,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Rebulid_7th_CT
 		}
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			custom_effect_tooltip = CHI_Economy_additional_effects
+			add_to_variable = {
+				var = CHI_Economy_consumer_goods_factor
+				value = -0.05
+				tooltip = consumer_goods_factor_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_Expand_FPG
@@ -1034,6 +1057,26 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Way_Of_Can_To_Asia
+		}
+		completion_reward = {
+			1150 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = CHI_Economy_additional_effects
+			add_to_variable = {
+				var = CHI_Economy_business_value_factor
+				value = 0.05
+				tooltip = business_value_factor_tooltip
+			}
+			add_to_variable = {
+				var = CHI_Economy_production_speed_synthetic_refinery_factor
+				value = 0.1
+				tooltip = production_speed_synthetic_refinery_factor_tooltip
+			}
 		}
 	}
 	focus = {
@@ -1053,6 +1096,14 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Software_Tech_Park
 		}
+		completion_reward = {
+			custom_effect_tooltip = CHI_Economy_additional_effects
+			add_to_variable = {
+				var = CHI_Economy_production_lack_of_resource_penalty_factor
+				value = -0.1
+				tooltip = production_lack_of_resource_penalty_factor_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_Local_Heavy_Ind
@@ -1064,6 +1115,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Rebulid_7th_CT
+		}
+		completion_reward = {
+			1148 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 	focus = {
@@ -1077,6 +1138,14 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Way_Of_Can_To_Asia
 		}
+		completion_reward = {
+			custom_effect_tooltip = CHI_Economy_additional_effects
+			add_to_variable = {
+				var = CHI_Economy_conversion_cost_civ_to_mil_factor
+				value = -0.15
+				tooltip = conversion_cost_civ_to_mil_factor_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_Software_Tech_Park
@@ -1088,6 +1157,22 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Rebulid_7th_CT
+		}
+		completion_reward = {
+			1150 = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			custom_effect_tooltip = CHI_Economy_additional_effects
+			add_to_variable = {
+				var = CHI_Economy_production_speed_office_park_factor
+				value = 0.1
+				tooltip = production_speed_office_park_factor_tooltip
+			}
 		}
 	}
 	focus = {
@@ -1153,6 +1238,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Fiscal_Policy_Adjustment
 		}
+		completion_reward = {
+			add_ideas = higher_trade
+			custom_effect_tooltip = CHI_Economy_additional_effects
+			add_to_variable = {
+				var = CHI_Economy_production_speed_buildings_factor
+				value = 0.05
+				tooltip = production_speed_buildings_factor_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_TARIFF
@@ -1168,6 +1262,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Fiscal_Policy_Adjustment
 		}
+		completion_reward = {
+			add_ideas = medium_trade
+			custom_effect_tooltip = CHI_Economy_additional_effects
+			add_to_variable = {
+				var = CHI_Economy_industrial_capacity_factory
+				value = 0.05
+				tooltip = industrial_capacity_factory_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_Fiscal_Policy_Adjustment
@@ -1180,6 +1283,14 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Economy_Industry
 		}
+		completion_reward = {
+			custom_effect_tooltip = CHI_Economy_additional_effects
+			add_to_variable = {
+				var = CHI_Economy_consumer_goods_factor
+				value = -0.05
+				tooltip = consumer_goods_factor_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_Defence_Economic_Policy
@@ -1191,6 +1302,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Economy_Industry
+		}
+		completion_reward = {
+			every_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	focus = {
@@ -1231,6 +1352,19 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_NOMORE_Oil_Crisis
 		}
+		completion_reward = {
+			custom_effect_tooltip = CHI_Economy_additional_effects
+			add_to_variable = {
+				var = CHI_Economy_business_value_factor
+				value = 0.05
+				tooltip = business_value_factor_tooltip
+			}
+			add_to_variable = {
+				var = CHI_Economy_production_speed_nuclear_reactor_factor
+				value = 0.05
+				tooltip = production_speed_nuclear_reactor_factor_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_Break_Solar_Monopoly
@@ -1270,6 +1404,14 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Self_Sufficiency
 		}
+		completion_reward = {
+			custom_effect_tooltip = CHI_Economy_additional_effects
+			add_to_variable = {
+				var = CHI_Economy_production_lack_of_resource_penalty_factor
+				value = -0.05
+				tooltip = production_lack_of_resource_penalty_factor_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_outward_expansion
@@ -1294,6 +1436,42 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_outward_expansion
 		}
+		completion_reward = {
+        # 【表象】給玩家看的漂亮文字
+        custom_effect_tooltip = CHI_allied_electronic_bonus_tt
+        
+        # 【底層】真實執行的代碼
+        hidden_effect = {
+            # 1. 先給台灣（自己）一張卡
+            add_tech_bonus = {
+                name = tech_bonus_electronics # 這個名字只是後台識別用
+                bonus = 1                   # 1.0 代表 +100% 研究速度
+                uses = 2                      # 1 張卡
+                category = electronics    # 限定：電子與計算機科技
+            }
+            
+            # 2. 判定：如果台灣有加入陣營，才發給盟友
+            if = {
+                limit = {
+                    is_in_faction = yes
+                }
+                # 3. 掃描全世界所有「其他國家」
+                every_other_country = {
+                    # 篩選條件：必須跟台灣（ROOT）在同一個陣營
+                    limit = {
+                        is_in_faction_with = ROOT
+                    }
+                    # 滿足條件的國家，全部發一張卡
+                    add_tech_bonus = {
+                        name = tech_bonus_electronics
+                        bonus = 1
+                        uses = 2
+                        category = electronics
+                    }
+                }
+            }
+        }
+    }
 	}
 	focus = {
 		id = CHI_international_division_of_labor
@@ -1309,6 +1487,14 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_support_foreign_research
 		}
+		completion_reward = {
+			custom_effect_tooltip = CHI_Economy_additional_effects
+			add_to_variable = {
+				var = CHI_Economy_resource_trade_cost_bonus_per_factory
+				value = 1
+				tooltip = resource_trade_cost_bonus_per_factory_tooltip
+			}
+		}
 	}
 	focus = {
 		id = CHI_i_am_become_death
@@ -1323,6 +1509,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_Maintain_Nuclear_Policy
+		}
+		completion_reward = {
+
 		}
 	}
 	#}
@@ -1694,11 +1883,11 @@ focus_tree = {
 			}
 			add_to_variable = {
 				CHI_special_forces_attack_factor = 0.1
-				tooltip = special_forces_attack_tooltip
+				tooltip = special_forces_attack_factor_tooltip
 			}
 			add_to_variable = {
 				CHI_special_forces_defence_factor = 0.1
-				tooltip = special_forces_defence_tooltip
+				tooltip = special_forces_defence_factor_tooltip
 			}
 			if = {
 				limit = {
@@ -1850,7 +2039,17 @@ focus_tree = {
 		}
 		relative_position_id = CHI_need_of_equipment
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = CHI_american_fighters_reverse_enginnering
+				ahead_reduction = 1
+				technology = air_equipment
+			}
+			add_tech_bonus = {
+                name = CHI_american_fighters_reverse_enginnering
+                bonus = 0.35                   
+                uses = 3                     
+                category = air_equipment   
+            }
 		}
 	}
 	focus = {
@@ -1893,7 +2092,8 @@ focus_tree = {
 				tooltip = aircraft_upkeep_factor_tooltip
 			}
 			add_to_variable = {
-				
+				ROC_air_mission_efficiency = 0.05
+				tooltip = air_mission_efficiency_tooltip
 			}
 		}
 	}
