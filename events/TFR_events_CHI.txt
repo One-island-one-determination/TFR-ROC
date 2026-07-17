@@ -836,7 +836,7 @@ country_event = {
     hidden_effect = {
       country_event = {
         id = CHI.114514##俄人給我們挖的坑，導致後續變日本傀儡
-        days = 5
+        days = 15
       }
     }
   }
@@ -942,7 +942,7 @@ country_event = {
     hidden_effect = {
       country_event = {
         id = CHI.114515
-        hours = 2
+        days = 1
       }
     }
   }
@@ -962,7 +962,6 @@ country_event = {
       add_stability = -0.3
       add_war_support = -0.075
       # 恢復原本的國家精神 (因為 1 被原代碼刪了，我們加回來)
-      add_idea = CHI_destroyed_country_1
       # 工廠送你了
     }
     JAP = {
