@@ -107,19 +107,21 @@ CHI_debug = {
           NOT = {tag = FRA}
           NOT = {tag = GER}
           NOT = {tag = SOV}
+          NOT = {tag = ENG}
+          NOT = {tag = ITA}
           capital_scope = {
             is_on_continent = europe
           }
-          NOT = {tag = LUX}
+          NOT = {tag = POL}
         }
         every_owned_state = {
-          add_core_of = LUX
+          add_core_of = POL
         }
         # 執行吞併並蒸發軍隊
-        LUX = {
+        POL = {
           annex_country = {
             target = PREV
-            transfer_troops = no
+            transfer_troops = yes
           }
         }
       }

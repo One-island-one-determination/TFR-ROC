@@ -1,0 +1,340 @@
+add_namespace = CHI.BF
+add_namespace = CHI.H2
+
+###############
+# KMT General #
+###############
+
+country_event = {
+  id = CHI.BF.11
+  title = CHI.BF.11.t
+  desc = CHI.BF.11.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.BF.11.a
+  }
+}
+
+country_event = {
+  id = CHI.BF.21
+  title = CHI.BF.21.t
+  desc = CHI.BF.21.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.BF.21.a
+  }
+}
+
+#######
+# HKY #
+#######
+
+country_event = {
+  id = CHI.H2.11
+  title = CHI.H2.11.t
+  desc = CHI.H2.11.d
+  picture = CHI_Event_H2_11
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.H2.11.a
+  }
+}
+
+country_event = {
+  id = CHI.H2.41
+  title = CHI.H2.41.t
+  desc = CHI.H2.41.d
+  picture = CHI_Event_H2_41
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.H2.41.a
+  }
+}
+
+country_event = {
+  id = CHI.H2.61
+  title = CHI.H2.61.t
+  desc = CHI.H2.61.d
+  picture = CHI_Event_H2_61
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.H2.61.a
+  }
+}
+
+country_event = {
+    id = CHI.H2.81
+    title = CHI.H2.81.t
+    desc = CHI.H2.81.d
+    picture = CHI_Event_H2_81
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.81.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.82
+    title = CHI.H2.82.t
+    desc = CHI.H2.82.d
+    picture = CHI_Event_H2_82
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.82.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.101
+    title = CHI.H2.101.t
+    desc = CHI.H2.101.d
+    picture = CHI_Event_H2_101
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.101.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.121
+    title = CHI.H2.121.t
+    desc = CHI.H2.121.d
+    picture = CHI_Event_H2_121
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.121.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.141
+    title = CHI.H2.141.t
+    desc = CHI.H2.141.d
+    picture = CHI_Event_H2_141
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.141.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.151
+    title = CHI.H2.151.t
+    desc = CHI.H2.151.d
+    picture = CHI_Event_H2_151
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.151.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.181
+    title = CHI.H2.181.t
+    desc = CHI.H2.181.d
+    picture = CHI_Event_H2_181
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.181.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.221
+    title = CHI.H2.221.t
+    desc = CHI.H2.221.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    immediate = {
+      hidden_effect = {
+				country_event = {
+					id = CHI.H2.222
+          days = 7
+				}
+			}
+    }
+    option = {
+        name = CHI.H2.221.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.222
+    title = CHI.H2.222.t
+    desc = CHI.H2.222.d
+    picture = CHI_Event_H2_222
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.222.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.251
+    title = CHI.H2.251.t
+    desc = CHI.H2.251.d
+    picture = CHI_Event_H2_251
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.251.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.261
+    title = CHI.H2.261.t
+    desc = CHI.H2.261.d
+    picture = CHI_Event_H2_261
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.261.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.301
+    title = CHI.H2.301.t
+    desc = CHI.H2.301.d
+    picture = CHI_Event_H2_301
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.301.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.391
+    title = CHI.H2.391.t
+    desc = CHI.H2.391.d
+    picture = CHI_Event_H2_391
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.391.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.431
+    title = CHI.H2.431.t
+    desc = CHI.H2.431.d
+    picture = CHI_Event_H2_431
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.431.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.411
+    title = CHI.H2.411.t
+    desc = CHI.H2.411.d
+    picture = CHI_Event_H2_411
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.411.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.161
+    title = CHI.H2.161.t
+    desc = CHI.H2.161.d
+    picture = CHI_Event_H2_161
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.161.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.231
+    title = CHI.H2.231.t
+    desc = CHI.H2.231.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.231.a
+        add_threat = 1
+        add_political_power = 50
+    }
+}
+
+country_event = {
+    id = CHI.H2.371
+    title = CHI.H2.371.t
+    desc = CHI.H2.371.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.371.a
+        custom_effect_tooltip = CHI_Economy_additional_effects
+			  add_to_variable = {
+          var = CHI_Economy_local_resources_factor
+          value = 0.05
+          tooltip = local_resources_factor_tooltip
+			}
+    }
+}
+
+country_event = {
+    id = CHI.H2.331
+    title = CHI.H2.331.t
+    desc = CHI.H2.331.d
+    picture = CHI_Event_H2_331
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.331.a
+    }
+}
+
+country_event = {
+    id = CHI.H2.321
+    title = CHI.H2.321.t
+    desc = CHI.H2.321.d
+    picture = CHI_Event_H2_321
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.H2.321.a
+    }
+}

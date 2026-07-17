@@ -15,6 +15,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = 2nd_HKY_win_flg
 		}
+		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.11
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHI_Post_war_review_status_quo
@@ -46,6 +53,11 @@ focus_tree = {
 			hidden_effect = {
 				focus_unlock = yes
 			}
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.121
+				}
+			}
 		}
 		relative_position_id = CHI_Post_war_review_status_quo
 	}
@@ -73,10 +85,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Post_war_review_status_quo
 		}
-		relative_position_id = CHI_Post_war_review_status_quo
 		completion_reward = {
-			add_ideas = CHI_corruption_problem_0				
+			add_ideas = CHI_corruption_problem_0
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.141
+				}
+			}
 		}
+		relative_position_id = CHI_Post_war_review_status_quo
 	}
 	focus = {
 		id = CHI_Restore_provincial_government_functons
@@ -89,15 +106,39 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Eleplant_in_room
 		}
-		relative_position_id = CHI_Eleplant_in_room
 		completion_reward = {
-			1148 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
-			1149 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
-			1150 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
-			1451 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
-			524 = { add_dynamic_modifier = { modifier = CHi_Taiwan_Province } }
-			648 = { add_dynamic_modifier = { modifier = CHi_Fujian_Province } }
+			1148 = {
+				add_dynamic_modifier = {
+					modifier = CHi_Taiwan_Province
+				}
+			}
+			1149 = {
+				add_dynamic_modifier = {
+					modifier = CHi_Taiwan_Province
+				}
+			}
+			1150 = {
+				add_dynamic_modifier = {
+					modifier = CHi_Taiwan_Province
+				}
+			}
+			1451 = {
+				add_dynamic_modifier = {
+					modifier = CHi_Taiwan_Province
+				}
+			}
+			524 = {
+				add_dynamic_modifier = {
+					modifier = CHi_Taiwan_Province
+				}
+			}
+			648 = {
+				add_dynamic_modifier = {
+					modifier = CHi_Fujian_Province
+				}
+			}
 		}
+		relative_position_id = CHI_Eleplant_in_room
 	}
 	focus = {
 		id = CHI_reestablish_hainan_province
@@ -110,11 +151,24 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Restore_provincial_government_functons
 		}
-		relative_position_id = CHI_Restore_provincial_government_functons
 		completion_reward = {
-			1382 = { add_dynamic_modifier = { modifier = CHi_Hainan_Province } }
-			879 = { add_dynamic_modifier = { modifier = CHi_Hainan_Province } }
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.221
+				}
+			}
+			1382 = {
+				add_dynamic_modifier = {
+					modifier = CHi_Hainan_Province
+				}
+			}
+			879 = {
+				add_dynamic_modifier = {
+					modifier = CHi_Hainan_Province
+				}
+			}
 		}
+		relative_position_id = CHI_Restore_provincial_government_functons
 	}
 	focus = {
 		id = CHI_Establish_local_officials
@@ -127,23 +181,30 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_reestablish_hainan_province
 		}
-		relative_position_id = CHI_reestablish_hainan_province
 		completion_reward = {
-			CHI_corruption_problem_effect = yes
-			if = {
-				limit = { has_idea = CHI_diplomatic_truce}
-				modify_timed_idea = {
-					idea = CHI_diplomatic_truce
-					days = 180					
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.231
 				}
 			}
-			else = { 
+			CHI_corruption_problem_effect = yes
+			if = {
+				limit = {
+					has_idea = CHI_diplomatic_truce
+				}
+				modify_timed_idea = {
+					idea = CHI_diplomatic_truce
+					days = 180
+				}
+			}
+			else = {
 				add_timed_idea = {
 					idea = CHI_diplomatic_truce
 					days = 180
 				}
-			}			
+			}
 		}
+		relative_position_id = CHI_reestablish_hainan_province
 	}
 	focus = {
 		id = CHI_negotiate_with_DPP
@@ -153,16 +214,20 @@ focus_tree = {
 		icon = GFX_focus_CHI_negotiate_with_DPP
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		prerequisite = {
-			focus = CHI_Eleplant_in_room
-		}
 		available = {
 			has_completed_focus = CHI_one_day_tea_party
 		}
-		relative_position_id = CHI_Eleplant_in_room
-		completion_reward = {
-
+		prerequisite = {
+			focus = CHI_Eleplant_in_room
 		}
+		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.181
+				}
+			}
+		}
+		relative_position_id = CHI_Eleplant_in_room
 	}
 	focus = {
 		id = CHI_political_concession
@@ -175,13 +240,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_negotiate_with_DPP
 		}
-		relative_position_id = CHI_negotiate_with_DPP
 		completion_reward = {
 			add_timed_idea = {
 				idea = CHI_concession_to_DPP
 				days = 20
 			}
 		}
+		relative_position_id = CHI_negotiate_with_DPP
 	}
 	focus = {
 		id = CHI_enemys_enemy
@@ -191,31 +256,37 @@ focus_tree = {
 		icon = GFX_focus_CHI_enemys_enemy
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		available = {
+			NOT = {
+				has_idea = CHI_concession_to_DPP
+			}
+		}
 		prerequisite = {
 			focus = CHI_political_concession
 		}
-		available = {
-			NOT = { has_idea = CHI_concession_to_DPP }
-		}
-		relative_position_id = CHI_political_concession
 		completion_reward = {
-			set_temp_variable = {coalition_partner_var_temp = token:social_liberal}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
 			add_to_coalition = yes
 			CHI_corruption_problem_effect = yes
 			if = {
-				limit = { has_idea = CHI_diplomatic_truce}
+				limit = {
+					has_idea = CHI_diplomatic_truce
+				}
 				modify_timed_idea = {
 					idea = CHI_diplomatic_truce
-					days = 180					
+					days = 180
 				}
 			}
-			else = { 
+			else = {
 				add_timed_idea = {
 					idea = CHI_diplomatic_truce
 					days = 180
 				}
-			}									
+			}
 		}
+		relative_position_id = CHI_political_concession
 	}
 	focus = {
 		id = CHI_corruption
@@ -225,17 +296,21 @@ focus_tree = {
 		icon = GFX_focus_CHI_corruption
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		available = {
+			has_completed_focus = CHI_reestablish_special_investigation_division
+			conservative > 0.4
+		}
 		prerequisite = {
 			focus = CHI_Eleplant_in_room
 		}
-		available = {
-			has_completed_focus = CHI_reestablish_special_investigation_division
-			conservative > 0.40
+		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.151
+				}
+			}
 		}
 		relative_position_id = CHI_Eleplant_in_room
-		completion_reward = {
-
-		}
 	}
 	focus = {
 		id = CHI_Political_donations_act
@@ -248,7 +323,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_corruption
 		}
-		relative_position_id = CHI_corruption
 		completion_reward = {
 			CHI_corruption_problem_effect = yes
 			add_popularity = {
@@ -256,7 +330,13 @@ focus_tree = {
 				popularity = -0.05
 			}
 			add_political_power = -100
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.161
+				}
+			}
 		}
+		relative_position_id = CHI_corruption
 	}
 	focus = {
 		id = CHI_expand_control_yuan_power
@@ -269,7 +349,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Political_donations_act
 		}
-		relative_position_id = CHI_Political_donations_act
 		completion_reward = {
 			1148 = {
 				add_building_construction = {
@@ -280,19 +359,22 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 			}
 			if = {
-				limit = { has_idea = CHI_diplomatic_truce}
+				limit = {
+					has_idea = CHI_diplomatic_truce
+				}
 				modify_timed_idea = {
 					idea = CHI_diplomatic_truce
-					days = 180					
+					days = 180
 				}
 			}
-			else = { 
+			else = {
 				add_timed_idea = {
 					idea = CHI_diplomatic_truce
 					days = 180
 				}
-			}		
+			}
 		}
+		relative_position_id = CHI_Political_donations_act
 	}
 	focus = {
 		id = CHI_restore_government_information_office
@@ -306,9 +388,6 @@ focus_tree = {
 			focus = CHI_Eleplant_in_room
 		}
 		relative_position_id = CHI_Eleplant_in_room
-		completion_reward = {
-
-		}
 	}
 	focus = {
 		id = CHI_reform_PTS
@@ -321,10 +400,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_restore_government_information_office
 		}
-		relative_position_id = CHI_restore_government_information_office
 		completion_reward = {
 			CHI_corruption_problem_effect = yes
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.251
+				}
+			}
 		}
+		relative_position_id = CHI_restore_government_information_office
 	}
 	focus = {
 		id = CHI_state_media_transformation
@@ -337,26 +421,33 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_reform_PTS
 		}
-		relative_position_id = CHI_reform_PTS
 		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.261
+				}
+			}
 			add_popularity = {
 				ideology = conservative
 				popularity = 0.05
 			}
 			if = {
-				limit = { has_idea = CHI_diplomatic_truce}
+				limit = {
+					has_idea = CHI_diplomatic_truce
+				}
 				modify_timed_idea = {
 					idea = CHI_diplomatic_truce
-					days = 180					
+					days = 180
 				}
 			}
-			else = { 
+			else = {
 				add_timed_idea = {
 					idea = CHI_diplomatic_truce
 					days = 180
 				}
 			}
 		}
+		relative_position_id = CHI_reform_PTS
 	}
 	focus = {
 		id = CHI_low_fertility_rate
@@ -370,9 +461,6 @@ focus_tree = {
 			focus = CHI_Eleplant_in_room
 		}
 		relative_position_id = CHI_Eleplant_in_room
-		completion_reward = {
-
-		}
 	}
 	focus = {
 		id = CHI_Taipei_childcare
@@ -385,18 +473,18 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_low_fertility_rate
 		}
-		relative_position_id = CHI_low_fertility_rate
 		completion_reward = {
 			add_timed_idea = {
 				idea = CHI_childcare_policy
 				days = 50
 			}
-		set_temp_variable = {
-			var = income_var_temp
-			value = -25
+			set_temp_variable = {
+				var = income_var_temp
+				value = -25
+			}
+			add_income = yes
 		}
-		add_income = yes
-		}
+		relative_position_id = CHI_low_fertility_rate
 	}
 	focus = {
 		id = CHI_babysitter_selection
@@ -409,23 +497,25 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Taipei_childcare
 		}
-		relative_position_id = CHI_Taipei_childcare
 		completion_reward = {
 			CHI_corruption_problem_effect = yes
 			if = {
-				limit = { has_idea = CHI_diplomatic_truce}
+				limit = {
+					has_idea = CHI_diplomatic_truce
+				}
 				modify_timed_idea = {
 					idea = CHI_diplomatic_truce
-					days = 180					
+					days = 180
 				}
 			}
-			else = { 
+			else = {
 				add_timed_idea = {
 					idea = CHI_diplomatic_truce
 					days = 180
 				}
 			}
 		}
+		relative_position_id = CHI_Taipei_childcare
 	}
 	focus = {
 		id = CHI_End_of_Chaos
@@ -453,10 +543,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_babysitter_selection
 		}
-		relative_position_id = CHI_Establish_local_officials
 		completion_reward = {
 			CHI_corruption_problem_effect = yes
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.301
+				}
+			}
 		}
+		relative_position_id = CHI_Establish_local_officials
 	}
 	focus = {
 		id = CHI_efficient_government
@@ -469,16 +564,16 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Han_Post_war
 		}
-		relative_position_id = CHI_Han_Post_war
 		completion_reward = {
 			add_dynamic_modifier = {
 				modifier = CHI_success_everywhere
 			}
 			add_to_variable = {
-				CHI_SE_political_power_gain = 0.01 
+				CHI_SE_political_power_gain = 0.01
 				tooltip = political_power_gain_tooltip
 			}
 		}
+		relative_position_id = CHI_Han_Post_war
 	}
 	focus = {
 		id = CHI_Establish_Taiwan_mining_Corporation
@@ -504,7 +599,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Establish_Taiwan_mining_Corporation
 		}
-		relative_position_id = CHI_Establish_Taiwan_mining_Corporation
 		completion_reward = {
 			custom_effect_tooltip = CHI_Economy_additional_effects
 			add_to_variable = {
@@ -513,6 +607,7 @@ focus_tree = {
 				tooltip = production_lack_of_resource_penalty_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_Establish_Taiwan_mining_Corporation
 	}
 	focus = {
 		id = CHI_mineral_exporation
@@ -524,6 +619,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Establish_Taiwan_mining_Corporation
+		}
+		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.371
+				}
+			}
 		}
 		relative_position_id = CHI_Establish_Taiwan_mining_Corporation
 	}
@@ -564,7 +666,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Three_Labor_arrows
 		}
-		relative_position_id = CHI_Three_Labor_arrows
 		completion_reward = {
 			stability_factor = 0.02
 			increase_welfare = yes
@@ -580,6 +681,7 @@ focus_tree = {
 				tooltip = line_change_production_efficiency_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_Three_Labor_arrows
 	}
 	focus = {
 		id = CHI_public_service_variable_pay
@@ -592,7 +694,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Three_Labor_arrows
 		}
-		relative_position_id = CHI_Three_Labor_arrows
 		completion_reward = {
 			custom_effect_tooltip = {
 				IDEA = CHI_success_everywhere
@@ -610,7 +711,13 @@ focus_tree = {
 				CHI_SE_army_core_defence_factor = 0.025
 				tooltip = army_core_defence_factor_tooltip
 			}
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.331
+				}
+			}
 		}
+		relative_position_id = CHI_Three_Labor_arrows
 	}
 	focus = {
 		id = CHI_New_generation_education
@@ -623,7 +730,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_efficient_government
 		}
-		relative_position_id = CHI_efficient_government
 		completion_reward = {
 			set_temp_variable = {
 				var = income_var_temp
@@ -651,10 +757,16 @@ focus_tree = {
 			hidden_effect = {
 				country_event = {
 					id = CHI.1001
-					days = 5
+					days = 200
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.391
 				}
 			}
 		}
+		relative_position_id = CHI_efficient_government
 	}
 	focus = {
 		id = CHI_community_drug_prevention_experiment
@@ -667,7 +779,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_New_generation_education
 		}
-		relative_position_id = CHI_New_generation_education
 		completion_reward = {
 			set_temp_variable = {
 				var = income_var_temp
@@ -676,6 +787,7 @@ focus_tree = {
 			add_income = yes
 			add_stability = 0.15
 		}
+		relative_position_id = CHI_New_generation_education
 	}
 	focus = {
 		id = CHI_dilingual_education
@@ -688,10 +800,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_New_generation_education
 		}
-		relative_position_id = CHI_New_generation_education
 		completion_reward = {
 			add_political_power = 150
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.411
+				}
+			}
 		}
+		relative_position_id = CHI_New_generation_education
 	}
 	focus = {
 		id = CHI_new_ten_propositions
@@ -704,28 +821,28 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Han_Post_war
 		}
-		relative_position_id = CHI_Han_Post_war
 		completion_reward = {
 			add_dynamic_modifier = {
 				modifier = CHI_dawn
 			}
 			add_to_variable = {
-				CHI_D_political_power_gain = 0.05 
+				CHI_D_political_power_gain = 0.05
 				tooltip = political_power_gain_tooltip
 			}
 			add_to_variable = {
-				CHI_D_personal_value_factor = 0.5 
+				CHI_D_personal_value_factor = 0.5
 				tooltip = personal_value_factor_tooltip
 			}
 			add_to_variable = {
-				CHI_D_society_development_monthly = 0.025 
+				CHI_D_society_development_monthly = 0.025
 				tooltip = society_development_monthly_tooltip
 			}
 			add_to_variable = {
-				CHI_D_poverty_development_monthly = 0.05 
+				CHI_D_poverty_development_monthly = 0.05
 				tooltip = poverty_development_monthly_tooltip
 			}
 		}
+		relative_position_id = CHI_Han_Post_war
 	}
 	focus = {
 		id = CHI_one_day_tea_party
@@ -738,14 +855,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_new_ten_propositions
 		}
-		relative_position_id = CHI_new_ten_propositions
 		completion_reward = {
 			custom_effect_tooltip = {
 				IDEA = CHI_dawn
 				localization_key = modify_idea_tt
 			}
 			add_to_variable = {
-				CHI_D_political_power_gain = 0.5 
+				CHI_D_political_power_gain = 0.5
 				tooltip = political_power_gain_tooltip
 			}
 			add_to_variable = {
@@ -753,9 +869,17 @@ focus_tree = {
 				tooltip = party_popularity_stability_factor_tooltip
 			}
 			remove_ideas = CHI_DPP_protest
-			set_temp_variable = {coalition_partner_var_temp = token:authoritarian_democrat}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:authoritarian_democrat
+			}
 			add_to_coalition = yes
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.61
+				}
+			}
 		}
+		relative_position_id = CHI_new_ten_propositions
 	}
 	focus = {
 		id = CHI_tranquil_lake_in_the_storm
@@ -768,21 +892,21 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_new_ten_propositions
 		}
-		relative_position_id = CHI_new_ten_propositions
 		completion_reward = {
 			custom_effect_tooltip = {
 				IDEA = CHI_dawn
 				localization_key = modify_idea_tt
 			}
 			add_to_variable = {
-				CHI_D_political_power_gain = 0.05 
+				CHI_D_political_power_gain = 0.05
 				tooltip = political_power_gain_tooltip
 			}
 			add_to_variable = {
-				CHI_D_society_development_monthly = 0.025 
+				CHI_D_society_development_monthly = 0.025
 				tooltip = society_development_monthly_tooltip
 			}
 		}
+		relative_position_id = CHI_new_ten_propositions
 	}
 	focus = {
 		id = CHI_sledgehammer_brings_justice
@@ -794,6 +918,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_new_ten_propositions
+		}
+		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.41
+				}
+			}
 		}
 		relative_position_id = CHI_new_ten_propositions
 	}
@@ -811,17 +942,22 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_sledgehammer_brings_justice
 		}
-		relative_position_id = CHI_tranquil_lake_in_the_storm
 		completion_reward = {
 			custom_effect_tooltip = {
 				IDEA = CHI_dawn
 				localization_key = modify_idea_tt
 			}
 			add_to_variable = {
-				CHI_D_stability_factor = 0.05 
+				CHI_D_stability_factor = 0.05
 				tooltip = stability_factor_tooltip
 			}
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.101
+				}
+			}
 		}
+		relative_position_id = CHI_tranquil_lake_in_the_storm
 	}
 	focus = {
 		id = CHI_finish_them
@@ -834,11 +970,11 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_sledgehammer_brings_justice
 		}
-		relative_position_id = CHI_sledgehammer_brings_justice
 		completion_reward = {
 			add_political_power = 150
 			add_stability = 0.05
 		}
+		relative_position_id = CHI_sledgehammer_brings_justice
 	}
 	focus = {
 		id = CHI_lone_tower_of_dragon
@@ -851,24 +987,24 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_new_ten_propositions
 		}
-		relative_position_id = CHI_new_ten_propositions
 		completion_reward = {
 			add_dynamic_modifier = {
 				modifier = CHI_love_to_chunghua
 			}
 			add_to_variable = {
-				CHI_LCH_war_support_factor = 0.05 
+				CHI_LCH_war_support_factor = 0.05
 				tooltip = war_support_factor_tooltip
 			}
 			add_to_variable = {
-				CHI_LCH_army_org_factor = 0.05 
+				CHI_LCH_army_org_factor = 0.05
 				tooltip = army_org_factor_tooltip
 			}
 			add_to_variable = {
-				CHI_LCH_society_development_monthly = -0.025 
+				CHI_LCH_society_development_monthly = -0.025
 				tooltip = society_development_monthly_tooltip
 			}
 		}
+		relative_position_id = CHI_new_ten_propositions
 	}
 	focus = {
 		id = CHI_cyber_security_managment_act_amendement
@@ -881,21 +1017,21 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_lone_tower_of_dragon
 		}
-		relative_position_id = CHI_lone_tower_of_dragon
 		completion_reward = {
 			custom_effect_tooltip = {
 				IDEA = CHI_love_to_chunghua
 				localization_key = modify_idea_tt
 			}
 			add_to_variable = {
-				CHI_LCH_war_support_factor = 0.05 
+				CHI_LCH_war_support_factor = 0.05
 				tooltip = war_support_factor_tooltip
 			}
 			add_to_variable = {
-				CHI_LCH_encryption_factor = 5 
+				CHI_LCH_encryption_factor = 5
 				tooltip = encryption_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_lone_tower_of_dragon
 	}
 	focus = {
 		id = CHI_broken_homeland_united_chinese
@@ -908,17 +1044,26 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_lone_tower_of_dragon
 		}
-		relative_position_id = CHI_lone_tower_of_dragon
 		completion_reward = {
 			custom_effect_tooltip = {
 				IDEA = CHI_love_to_chunghua
 				localization_key = modify_idea_tt
 			}
 			add_to_variable = {
-				CHI_LCH_society_development_monthly = 0.05 
+				CHI_LCH_society_development_monthly = 0.05
 				tooltip = society_development_monthly_tooltip
 			}
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.81
+				}
+				country_event = {
+					id = CHI.H2.82
+					days = 3
+				}
+			}
 		}
+		relative_position_id = CHI_lone_tower_of_dragon
 	}
 	focus = {
 		id = CHI_hunt_down_spies
@@ -934,10 +1079,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_sledgehammer_brings_justice
 		}
-		relative_position_id = CHI_cyber_security_managment_act_amendement
 		completion_reward = {
 			add_manpower = -153
+			hidden_effect = {
+				country_event = {
+					id = CHI.H2.431
+				}
+			}
 		}
+		relative_position_id = CHI_cyber_security_managment_act_amendement
 	}
 	focus = {
 		id = CHI_the_flag_is_fluttering
@@ -966,31 +1116,37 @@ focus_tree = {
 		icon = GFX_focus_CHI_blue_sky_white_sun_never_falls
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		available = {
+			has_completed_focus = CHI_broken_homeland_united_chinese
+			has_completed_focus = CHI_public_service_variable_pay
+			has_completed_focus = CHI_New_generation_education
+		}
 		prerequisite = {
 			focus = CHI_End_of_Chaos
 		}
-		available = {
-			has_completed_focus = CHI_broken_homeland_united_chinese
-			has_completed_focus  = CHI_public_service_variable_pay
-			has_completed_focus = CHI_New_generation_education
-		}
-		relative_position_id = CHI_End_of_Chaos
 		completion_reward = {
 			custom_effect_tooltip = CHI_blue_sky_white_sun_never_falls_tooltip
 			hidden_effect = {
-				remove_ideas = CHI_corruption_problem_6 
-				remove_dynamic_modifier = {modifier = CHI_love_to_chunghua}
-				remove_dynamic_modifier = {modifier = CHI_success_everywhere}		
-				remove_dynamic_modifier = {modifier = CHI_dawn}
-				add_ideas = CHI_no_one_can_abuse_her				
+				remove_ideas = CHI_corruption_problem_6
+				remove_dynamic_modifier = {
+					modifier = CHI_love_to_chunghua
+				}
+				remove_dynamic_modifier = {
+					modifier = CHI_success_everywhere
+				}
+				remove_dynamic_modifier = {
+					modifier = CHI_dawn
+				}
+				add_ideas = CHI_no_one_can_abuse_her
 			}
 		}
+		relative_position_id = CHI_End_of_Chaos
 	}
 	#}
 	##KMT經濟{
 	focus = {
 		id = CHI_Economy_Industry
-		x = 0
+		x = 1
 		y = 0
 		cost = 2
 		icon = GFX_focus_CHI_Economy_Industry
@@ -1018,19 +1174,20 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 					province = {
-  						all_provinces = yes
-  						limit_to_coastal = yes
-  						limit_to_naval_base = yes 
+						all_provinces = yes
+						limit_to_coastal = yes
+						limit_to_naval_base = yes
 					}
 				}
 			}
 		}
+		relative_position_id = CHI_Economy_Industry
 	}
 	focus = {
 		id = CHI_Way_Of_Can_To_Asia
 		x = 0
-		y = 2
-		cost = 0
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_Way_Of_Can_To_Asia
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1038,7 +1195,10 @@ focus_tree = {
 			focus = CHI_Rebulid_7th_CT
 		}
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
 			custom_effect_tooltip = CHI_Economy_additional_effects
 			add_to_variable = {
 				var = CHI_Economy_consumer_goods_factor
@@ -1046,12 +1206,13 @@ focus_tree = {
 				tooltip = consumer_goods_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_Rebulid_7th_CT
 	}
 	focus = {
 		id = CHI_Expand_FPG
 		x = 0
-		y = 3
-		cost = 0
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_Expand_FPG
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1078,12 +1239,13 @@ focus_tree = {
 				tooltip = production_speed_synthetic_refinery_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_Way_Of_Can_To_Asia
 	}
 	focus = {
 		id = CHI_From_Material_To_Product
 		x = 0
-		y = 4
-		cost = 0
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_From_Material_To_Product
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1104,12 +1266,13 @@ focus_tree = {
 				tooltip = production_lack_of_resource_penalty_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_Expand_FPG
 	}
 	focus = {
 		id = CHI_Local_Heavy_Ind
 		x = 2
-		y = 2
-		cost = 0
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_Local_Heavy_Ind
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1126,12 +1289,13 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 			}
 		}
+		relative_position_id = CHI_Rebulid_7th_CT
 	}
 	focus = {
 		id = CHI_Civil_Military_Supply_Chain
 		x = 2
-		y = 3
-		cost = 0
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_Civil_Military_Supply_Chain
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1146,12 +1310,13 @@ focus_tree = {
 				tooltip = conversion_cost_civ_to_mil_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_Way_Of_Can_To_Asia
 	}
 	focus = {
 		id = CHI_Software_Tech_Park
 		x = -2
-		y = 3
-		cost = 0
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_Software_Tech_Park
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1174,12 +1339,13 @@ focus_tree = {
 				tooltip = production_speed_office_park_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_Way_Of_Can_To_Asia
 	}
 	focus = {
 		id = CHI_ROC_First
-		x = -4
-		y = 3
-		cost = 0
+		x = 1
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_ROC_First
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1190,12 +1356,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_TARIFF
 		}
+		relative_position_id = CHI_TARIFF
 	}
 	focus = {
 		id = CHI_Pacific_Trade_Zone
-		x = -6
-		y = 3
-		cost = 0
+		x = -1
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_Pacific_Trade_Zone
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1207,12 +1374,13 @@ focus_tree = {
 			focus = CHI_TARIFF
 			focus = CHI_Free_Trade
 		}
+		relative_position_id = CHI_TARIFF
 	}
 	focus = {
 		id = CHI_Investment_From_EU_JP
-		x = -8
-		y = 3
-		cost = 0
+		x = -1
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_Investment_From_EU_JP
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1223,12 +1391,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Free_Trade
 		}
+		relative_position_id = CHI_Free_Trade
 	}
 	focus = {
 		id = CHI_Free_Trade
-		x = -7
-		y = 2
-		cost = 0
+		x = -1
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_Free_Trade
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1247,12 +1416,13 @@ focus_tree = {
 				tooltip = production_speed_buildings_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_Fiscal_Policy_Adjustment
 	}
 	focus = {
 		id = CHI_TARIFF
-		x = -5
-		y = 2
-		cost = 0
+		x = 1
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_TARIFF
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1271,12 +1441,13 @@ focus_tree = {
 				tooltip = industrial_capacity_factory_tooltip
 			}
 		}
+		relative_position_id = CHI_Fiscal_Policy_Adjustment
 	}
 	focus = {
 		id = CHI_Fiscal_Policy_Adjustment
 		x = -6
 		y = 1
-		cost = 0
+		cost = 2
 		icon = GFX_focus_CHI_Fiscal_Policy_Adjustment
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1291,12 +1462,13 @@ focus_tree = {
 				tooltip = consumer_goods_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_Economy_Industry
 	}
 	focus = {
 		id = CHI_Defence_Economic_Policy
 		x = 4
 		y = 1
-		cost = 0
+		cost = 2
 		icon = GFX_focus_CHI_Defence_Economic_Policy
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1313,12 +1485,13 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 			}
 		}
+		relative_position_id = CHI_Economy_Industry
 	}
 	focus = {
 		id = CHI_Complete_Military_Idustry
-		x = 4
-		y = 5
-		cost = 0
+		x = 0
+		y = 4
+		cost = 2
 		icon = GFX_focus_CHI_Complete_Military_Idustry
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1328,24 +1501,26 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Civil_Military_Supply_Chain
 		}
+		relative_position_id = CHI_Defence_Economic_Policy
 	}
 	focus = {
 		id = CHI_NOMORE_Oil_Crisis
 		x = 7
 		y = 1
-		cost = 0
+		cost = 2
 		icon = GFX_focus_CHI_NOMORE_Oil_Crisis
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Economy_Industry
 		}
+		relative_position_id = CHI_Economy_Industry
 	}
 	focus = {
 		id = CHI_Maintain_Nuclear_Policy
-		x = 6
-		y = 2
-		cost = 0
+		x = -1
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_Maintain_Nuclear_Policy
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1365,24 +1540,26 @@ focus_tree = {
 				tooltip = production_speed_nuclear_reactor_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_NOMORE_Oil_Crisis
 	}
 	focus = {
 		id = CHI_Break_Solar_Monopoly
-		x = 8
-		y = 2
-		cost = 0
+		x = 1
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_Break_Solar_Monopoly
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_NOMORE_Oil_Crisis
 		}
+		relative_position_id = CHI_NOMORE_Oil_Crisis
 	}
 	focus = {
 		id = CHI_Self_Sufficiency
-		x = 8
-		y = 3
-		cost = 0
+		x = 0
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_Self_Sufficiency
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1392,12 +1569,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Break_Solar_Monopoly
 		}
+		relative_position_id = CHI_Break_Solar_Monopoly
 	}
 	focus = {
 		id = CHI_From_Downstream_To_Upstream
-		x = 8
-		y = 4
-		cost = 0
+		x = 0
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_From_Downstream_To_Upstream
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1412,24 +1590,26 @@ focus_tree = {
 				tooltip = production_lack_of_resource_penalty_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_Self_Sufficiency
 	}
 	focus = {
 		id = CHI_outward_expansion
-		x = 10
-		y = 3
-		cost = 0
+		x = 2
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_outward_expansion
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Break_Solar_Monopoly
 		}
+		relative_position_id = CHI_Break_Solar_Monopoly
 	}
 	focus = {
 		id = CHI_support_foreign_research
-		x = 12
-		y = 4
-		cost = 0
+		x = 2
+		y = 1
+		cost = 2
 		icon = GFX_focus_CHI_support_foreign_research
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1437,47 +1617,46 @@ focus_tree = {
 			focus = CHI_outward_expansion
 		}
 		completion_reward = {
-        # 【表象】給玩家看的漂亮文字
-        custom_effect_tooltip = CHI_allied_electronic_bonus_tt
-        
-        # 【底層】真實執行的代碼
-        hidden_effect = {
-            # 1. 先給台灣（自己）一張卡
-            add_tech_bonus = {
-                name = tech_bonus_electronics # 這個名字只是後台識別用
-                bonus = 1                   # 1.0 代表 +100% 研究速度
-                uses = 2                      # 1 張卡
-                category = electronics    # 限定：電子與計算機科技
-            }
-            
-            # 2. 判定：如果台灣有加入陣營，才發給盟友
-            if = {
-                limit = {
-                    is_in_faction = yes
-                }
-                # 3. 掃描全世界所有「其他國家」
-                every_other_country = {
-                    # 篩選條件：必須跟台灣（ROOT）在同一個陣營
-                    limit = {
-                        is_in_faction_with = ROOT
-                    }
-                    # 滿足條件的國家，全部發一張卡
-                    add_tech_bonus = {
-                        name = tech_bonus_electronics
-                        bonus = 1
-                        uses = 2
-                        category = electronics
-                    }
-                }
-            }
-        }
-    }
+			# 【表象】給玩家看的漂亮文字
+			custom_effect_tooltip = CHI_allied_electronic_bonus_tt
+			# 【底層】真實執行的代碼
+			hidden_effect = {
+				# 1. 先給台灣（自己）一張卡
+				add_tech_bonus = {
+					name = tech_bonus_electronics					# 這個名字只是後台識別用
+					bonus = 1					# 1.0 代表 +100% 研究速度
+					uses = 2					# 1 張卡
+					category = electronics					# 限定：電子與計算機科技
+				}
+				# 2. 判定：如果台灣有加入陣營，才發給盟友
+				if = {
+					limit = {
+						is_in_faction = yes
+					}
+					# 3. 掃描全世界所有「其他國家」
+					every_other_country = {
+						# 篩選條件：必須跟台灣（ROOT）在同一個陣營
+						limit = {
+							is_in_faction_with = ROOT
+						}
+						# 滿足條件的國家，全部發一張卡
+						add_tech_bonus = {
+							name = tech_bonus_electronics
+							bonus = 1
+							uses = 2
+							category = electronics
+						}
+					}
+				}
+			}
+		}
+		relative_position_id = CHI_outward_expansion
 	}
 	focus = {
 		id = CHI_international_division_of_labor
-		x = 10
-		y = 5
-		cost = 0
+		x = 0
+		y = 2
+		cost = 2
 		icon = GFX_focus_CHI_international_division_of_labor
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1495,12 +1674,13 @@ focus_tree = {
 				tooltip = resource_trade_cost_bonus_per_factory_tooltip
 			}
 		}
+		relative_position_id = CHI_outward_expansion
 	}
 	focus = {
 		id = CHI_i_am_become_death
-		x = 6
-		y = 6
-		cost = 0
+		x = 0
+		y = 4
+		cost = 2
 		icon = GFX_focus_CHI_i_am_become_death
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1510,21 +1690,24 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_Maintain_Nuclear_Policy
 		}
-		completion_reward = {
-
-		}
+		relative_position_id = CHI_Maintain_Nuclear_Policy
 	}
 	#}
 	##KMT軍事{
 	focus = {
 		id = CHI_dont_forget_homeland
-		x = 57
+		x = 56
 		y = 0
 		cost = 2
 		icon = GFX_focus_CHI_dont_forget_homeland
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = CHI.BF.11
+				}
+			}
 			custom_effect_tooltip = military_reform_decision_tt
 		}
 	}
@@ -1542,14 +1725,17 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_dont_forget_homeland
 		}
-		relative_position_id = CHI_dont_forget_homeland
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				ROC_army_strength_factor = 0.05
 				tooltip = army_strength_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_dont_forget_homeland
 	}
 	focus = {
 		id = CHI_modern_whampoa
@@ -1565,14 +1751,17 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_dont_forget_homeland
 		}
-		relative_position_id = CHI_dont_forget_homeland
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				ROC_experience_gain_army_factor = 0.15
 				tooltip = experience_gain_army_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_dont_forget_homeland
 	}
 	focus = {
 		id = CHI_shining_spear_and_iron_horses
@@ -1586,9 +1775,11 @@ focus_tree = {
 			focus = CHI_centralized_military_command
 			focus = CHI_modern_whampoa
 		}
-		relative_position_id = CHI_dont_forget_homeland
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				ROC_army_armor_attack_factor = 0.1
 				tooltip = army_armor_attack_factor_tooltip
@@ -1598,6 +1789,7 @@ focus_tree = {
 				tooltip = breakthrough_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_dont_forget_homeland
 	}
 	focus = {
 		id = CHI_painful_lesson_of_drones
@@ -1610,14 +1802,17 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_shining_spear_and_iron_horses
 		}
-		relative_position_id = CHI_shining_spear_and_iron_horses
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				ROC_army_defence_factor = 0.05
 				tooltip = army_defence_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_shining_spear_and_iron_horses
 	}
 	focus = {
 		id = CHI_reform_combined_logistics_command
@@ -1630,12 +1825,14 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_centralized_military_command
 		}
-		relative_position_id = CHI_centralized_military_command
 		completion_reward = {
 			set_technology = {
 				JAP_unmanned_vehicles = 1
 			}
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				ROC_army_org_factor = 0.05
 				tooltip = army_org_factor_tooltip
@@ -1647,8 +1844,9 @@ focus_tree = {
 			add_to_variable = {
 				ROC_no_supply_grace = 0.05
 				tooltip = no_supply_grace_tooltip
-			}			
+			}
 		}
+		relative_position_id = CHI_centralized_military_command
 	}
 	focus = {
 		id = CHI_military_railway_underground
@@ -1661,14 +1859,17 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_reform_combined_logistics_command
 		}
-		relative_position_id = CHI_reform_combined_logistics_command
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				ROC_supply_consumption_factor = -0.1
 				tooltip = supply_consumption_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_reform_combined_logistics_command
 	}
 	focus = {
 		id = CHI_new_whampoa_spirits
@@ -1682,9 +1883,11 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_modern_whampoa
 		}
-		relative_position_id = CHI_dont_forget_homeland
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				ROC_experience_gain_factor = 0.05
 				tooltip = experience_gain_factor_tooltip
@@ -1699,15 +1902,36 @@ focus_tree = {
 					name = "中華民國陸軍機械化步兵旅"
 					division_names_group = CHI_INF_2
 					regiments = {
-						mechanized = { x = 0 y = 0 }
-						mechanized = { x = 0 y = 1 }
-						mechanized = { x = 0 y = 2 }
-						modern_armor = { x = 1 y = 0 }
-						artillery_brigade = { x = 2 y = 0 }
+						mechanized = {
+							x = 0
+							y = 0
+						}
+						mechanized = {
+							x = 0
+							y = 1
+						}
+						mechanized = {
+							x = 0
+							y = 2
+						}
+						modern_armor = {
+							x = 1
+							y = 0
+						}
+						artillery_brigade = {
+							x = 2
+							y = 0
+						}
 					}
 					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
+						light_tank_recon = {
+							x = 0
+							y = 0
+						}
+						engineer = {
+							x = 0
+							y = 1
+						}
 					}
 				}
 			}
@@ -1718,8 +1942,9 @@ focus_tree = {
 					owner = CHI
 					count = 2
 				}
-        	}
+			}
 		}
+		relative_position_id = CHI_dont_forget_homeland
 	}
 	focus = {
 		id = CHI_unity_of_knowledge_and
@@ -1734,9 +1959,11 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_new_whampoa_spirits
 		}
-		relative_position_id = CHI_new_whampoa_spirits
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				ROC_training_time_factor = -0.15
 				tooltip = training_time_factor_tooltip
@@ -1746,6 +1973,7 @@ focus_tree = {
 				tooltip = military_development_monthly_tooltip
 			}
 		}
+		relative_position_id = CHI_new_whampoa_spirits
 	}
 	focus = {
 		id = CHI_Camaraderie_Diligence_Sincerity
@@ -1762,9 +1990,11 @@ focus_tree = {
 			focus = CHI_military_railway_underground
 			focus = CHI_unity_of_knowledge_and
 		}
-		relative_position_id = CHI_painful_lesson_of_drones
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				ROC_army_attack_factor = 0.1
 				tooltip = army_attack_factor_tooltip
@@ -1774,6 +2004,7 @@ focus_tree = {
 				tooltip = army_defence_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_painful_lesson_of_drones
 	}
 	focus = {
 		id = CHI_dominate_three_oceans
@@ -1799,7 +2030,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_dominate_three_oceans
 		}
-		relative_position_id = CHI_dominate_three_oceans
 		completion_reward = {
 			1150 = {
 				add_extra_state_shared_building_slots = 2
@@ -1810,6 +2040,7 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHI_dominate_three_oceans
 	}
 	focus = {
 		id = CHI_NCSIST_Project
@@ -1822,10 +2053,10 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_dont_forget_homeland
 		}
-		relative_position_id = CHI_dont_forget_homeland
 		completion_reward = {
 			custom_effect_tooltip = unlock_NCSIST_project_tt
 		}
+		relative_position_id = CHI_dont_forget_homeland
 	}
 	focus = {
 		id = CHI_solidarity
@@ -1838,14 +2069,17 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_dominate_three_oceans
 		}
-		relative_position_id = CHI_dominate_three_oceans
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				ROC_navy_org_factor = 0.05
 				tooltip = navy_org_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_dominate_three_oceans
 	}
 	focus = {
 		id = CHI_relaunch_project_zhenhai
@@ -1874,9 +2108,11 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_dominate_three_oceans
 		}
-		relative_position_id = CHI_dominate_three_oceans
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				CHI_naval_invasion_penalty = -0.15
 				tooltip = naval_invasion_penalty_tooltip
@@ -1899,15 +2135,32 @@ focus_tree = {
 					name = "中華民國海軍陸戰隊陸戰旅"
 					division_names_group = CHI_INF_8
 					regiments = {
-						marine = { x = 0 y = 0 }
-						marine = { x = 0 y = 1 }
-						marine = { x = 0 y = 2 }
-						marine = { x = 0 y = 3 }
+						marine = {
+							x = 0
+							y = 0
+						}
+						marine = {
+							x = 0
+							y = 1
+						}
+						marine = {
+							x = 0
+							y = 2
+						}
+						marine = {
+							x = 0
+							y = 3
+						}
 					}
-
 					support = {
-						engineer = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
+						engineer = {
+							x = 0
+							y = 0
+						}
+						recon = {
+							x = 0
+							y = 1
+						}
 					}
 				}
 			}
@@ -1918,9 +2171,9 @@ focus_tree = {
 					owner = CHI
 					count = 2
 				}
-        	}
-
+			}
 		}
+		relative_position_id = CHI_dominate_three_oceans
 	}
 	focus = {
 		id = CHI_spirit_reaches_to_rainbow
@@ -1946,14 +2199,17 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_spirit_reaches_to_rainbow
 		}
-		relative_position_id = CHI_spirit_reaches_to_rainbow
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				CHI_air_training_xp_gain_factor = 0.1
 				tooltip = air_training_xp_gain_factor_tooltip
 			}
 		}
+		relative_position_id = CHI_spirit_reaches_to_rainbow
 	}
 	focus = {
 		id = CHI_carry_forward_the_inspiration_of_our_airman
@@ -1969,14 +2225,17 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_need_of_talent
 		}
-		relative_position_id = CHI_forming_air_force_political_warfare_command
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				CHI_experience_gain_air = 0.01
 				tooltip = experience_gain_air_tooltip
 			}
 		}
+		relative_position_id = CHI_forming_air_force_political_warfare_command
 	}
 	focus = {
 		id = CHI_strengthen_anti_corruption_measures
@@ -2002,7 +2261,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_strengthen_anti_corruption_measures
 		}
-		relative_position_id = CHI_strengthen_anti_corruption_measures
 		completion_reward = {
 			524 = {
 				add_building_construction = {
@@ -2012,6 +2270,7 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHI_strengthen_anti_corruption_measures
 	}
 	focus = {
 		id = CHI_need_of_equipment
@@ -2037,7 +2296,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_need_of_equipment
 		}
-		relative_position_id = CHI_need_of_equipment
 		completion_reward = {
 			add_tech_bonus = {
 				name = CHI_american_fighters_reverse_enginnering
@@ -2045,12 +2303,13 @@ focus_tree = {
 				technology = air_equipment
 			}
 			add_tech_bonus = {
-                name = CHI_american_fighters_reverse_enginnering
-                bonus = 0.35                   
-                uses = 3                     
-                category = air_equipment   
-            }
+				name = CHI_american_fighters_reverse_enginnering
+				bonus = 0.35
+				uses = 3
+				category = air_equipment
+			}
 		}
+		relative_position_id = CHI_need_of_equipment
 	}
 	focus = {
 		id = CHI_funds_college
@@ -2063,10 +2322,10 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_need_of_equipment
 		}
-		relative_position_id = CHI_need_of_equipment
 		completion_reward = {
 			add_research_slot = 1
 		}
+		relative_position_id = CHI_need_of_equipment
 	}
 	focus = {
 		id = CHI_Air_force_special_allowance
@@ -2079,14 +2338,16 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_funds_college
 		}
-		relative_position_id = CHI_funds_college
 		completion_reward = {
 			set_temp_variable = {
 				var = income_var_temp
 				value = -50
 			}
 			add_income = yes
-			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = {
+				IDEA = CHI_ROC_army_dynamic
+				localization_key = modify_idea_tt
+			}
 			add_to_variable = {
 				ROC_aircraft_upkeep_factor = 0.01
 				tooltip = aircraft_upkeep_factor_tooltip
@@ -2096,6 +2357,7 @@ focus_tree = {
 				tooltip = air_mission_efficiency_tooltip
 			}
 		}
+		relative_position_id = CHI_funds_college
 	}
 	focus = {
 		id = CHI_relauch_ADF_project

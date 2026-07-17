@@ -123,10 +123,10 @@ focus_tree = {
 				limit = {
 					has_idea = CHI_Wartime_normal_system_idea
 				}
-			remove_ideas = CHI_Wartime_normal_system_idea
+				remove_ideas = CHI_Wartime_normal_system_idea
 			}
 			else = {
-			remove_ideas = CHI_Martial_law_declared_idea
+				remove_ideas = CHI_Martial_law_declared_idea
 			}
 		}
 	}
@@ -302,7 +302,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_Demobilized_reservists
-		x = 3
+		x = -1
 		y = 1
 		cost = 0.8
 		icon = GFX_focus_CHI_Demobilized_reservists
@@ -311,36 +311,6 @@ focus_tree = {
 		available = {
 			CHI_tsai_ing_wen_char = {
 				is_country_leader = yes
-			}
-		}
-		focus = {
-			id = CHI_Request_international_assistance
-			x = -1
-			y = 1
-			cost = 0.8
-			icon = GFX_focus_CHI_Request_international_assistance
-			continue_if_invalid = no
-			cancel_if_invalid = yes
-			prerequisite = {
-				focus = CHI_Guarantee_basic_food_and_clothing
-			}
-			completion_reward = {
-				hidden_effect = {
-					CHI = {
-						country_event = {
-							id = CHI.105
-							days = 7
-						}
-					}
-				}
-				custom_effect_tooltip = {
-					IDEA = CHI_reonstruction_dynamic
-					localization_key = modify_idea_tt
-				}
-				add_to_variable = {
-					CHI_RE_consumer_goods_factor = -0.1
-					tooltip = consumer_goods_factor_tooltip
-				}
 			}
 		}
 		mutually_exclusive = {
@@ -360,11 +330,11 @@ focus_tree = {
 				tooltip = stability_factor_tooltip
 			}
 		}
-		relative_position_id = CHI_Guarantee_basic_food_and_clothing
+		relative_position_id = CHI_Post_war_personnel_issues
 	}
 	focus = {
 		id = CHI_Priority_to_residential_electricity
-		x = 0
+		x = 1
 		y = 1
 		cost = 0.8
 		icon = GFX_focus_CHI_Priority_to_residential_electricity
@@ -381,6 +351,37 @@ focus_tree = {
 			add_to_variable = {
 				CHI_RE_production_speed_buildings_factor = 0.1
 				tooltip = production_speed_buildings_factor_tooltip
+			}
+		}
+		relative_position_id = CHI_Guarantee_basic_food_and_clothing
+	}
+	focus = {
+		id = CHI_Request_international_assistance
+		x = -1
+		y = 1
+		cost = 0.8
+		icon = GFX_focus_CHI_Request_international_assistance
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Guarantee_basic_food_and_clothing
+		}
+		completion_reward = {
+			hidden_effect = {
+				CHI = {
+					country_event = {
+						id = CHI.105
+						days = 7
+					}
+				}
+			}
+			custom_effect_tooltip = {
+				IDEA = CHI_reonstruction_dynamic
+				localization_key = modify_idea_tt
+			}
+			add_to_variable = {
+				CHI_RE_consumer_goods_factor = -0.1
+				tooltip = consumer_goods_factor_tooltip
 			}
 		}
 		relative_position_id = CHI_Guarantee_basic_food_and_clothing
@@ -413,14 +414,17 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_Ending_wartime_economic
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		cost = 0.8
 		icon = GFX_focus_CHI_Ending_wartime_economic
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_Priority_to_residential_electricity
+		}
+		prerequisite = {
+			focus = CHI_Request_international_assistance
 		}
 		completion_reward = {
 			custom_effect_tooltip = {
@@ -436,7 +440,7 @@ focus_tree = {
 				tooltip = business_value_factor_tooltip
 			}
 		}
-		relative_position_id = CHI_Guarantee_basic_food_and_clothing
+		relative_position_id = CHI_Request_international_assistance
 	}
 	focus = {
 		id = CHI_MilitaryCivilian_cooperation_reconstruction
@@ -500,8 +504,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_Connecting_lifelines
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		cost = 0.8
 		icon = GFX_focus_CHI_Connecting_lifelines
 		continue_if_invalid = no
@@ -537,12 +541,12 @@ focus_tree = {
 				tooltip = state_production_speed_energy_farm_factor_tooltip
 			}
 		}
-		relative_position_id = CHI_Emergency_repair_infrastructure
+		relative_position_id = CHI_Reopening_Kaohsiung_Port
 	}
 	focus = {
 		id = CHI_Surviving_disaster
-		x = 0
-		y = 3
+		x = 1
+		y = 1
 		cost = 0.5
 		icon = GFX_focus_CHI_Surviving_disaster
 		continue_if_invalid = no
@@ -570,7 +574,7 @@ focus_tree = {
 				}
 			}
 		}
-		relative_position_id = CHI_Post_war_personnel_issues
+		relative_position_id = CHI_Mobilizing_civil_society_groups
 	}
 	#}
 }
