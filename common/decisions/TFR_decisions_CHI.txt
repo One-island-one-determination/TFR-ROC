@@ -109,16 +109,23 @@ CHI_debug = {
           NOT = {tag = SOV}
           NOT = {tag = ENG}
           NOT = {tag = ITA}
+          NOT = {tag = BLR}
+          NOT = {tag = AZR}
+          NOT = {tag = YAM}
+          NOT = {tag = GEO}
+          NOT = {tag = ARM}
+          NOT = {tag = KKP}
+          NOT = {tag = NGK}
           capital_scope = {
             is_on_continent = europe
           }
-          NOT = {tag = POL}
+          NOT = {tag = LUX}
         }
         every_owned_state = {
-          add_core_of = POL
+          add_core_of = LUX
         }
         # 執行吞併並蒸發軍隊
-        POL = {
+        LUX = {
           annex_country = {
             target = PREV
             transfer_troops = yes
@@ -213,13 +220,49 @@ CHI_debug = {
           capital_scope = {
             is_on_continent = middle_east
           }
-          NOT = { tag = NEP }
+          NOT = { tag = PER }
         }
         every_owned_state = {
-          add_core_of = NEP
+          add_core_of = PER
         }
         # 執行吞併並蒸發軍隊
-        NEP = {
+        PER = {
+          annex_country = {
+            target = PREV
+            transfer_troops = no
+          }
+        }
+      }
+    }
+  }
+  merge_ALL_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+        limit = {
+          has_war = no
+          NOT = {
+            capital_scope = {
+            is_on_continent = asia}
+          }
+          NOT = {
+            capital_scope = {
+            is_on_continent = australia}
+          }
+          NOT = {tag = LUX}
+        }
+        every_owned_state = {
+          add_core_of = LUX
+        }
+        # 執行吞併並蒸發軍隊
+        LUX = {
           annex_country = {
             target = PREV
             transfer_troops = no
