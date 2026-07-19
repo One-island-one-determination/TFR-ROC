@@ -121,12 +121,12 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = CHI_Wartime_normal_system_idea
+					has_idea = CHI_Wartime_normal_system
 				}
-				remove_ideas = CHI_Wartime_normal_system_idea
+				remove_ideas = CHI_Wartime_normal_system
 			}
 			else = {
-				remove_ideas = CHI_Martial_law_declared_idea
+				remove_ideas = CHI_Martial_law_declared
 			}
 		}
 	}

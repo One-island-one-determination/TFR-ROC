@@ -838,6 +838,32 @@ country_event = {
         id = CHI.114514##俄人給我們挖的坑，導致後續變日本傀儡
         days = 5
       }
+      CHI = {
+      if = {
+        limit = {
+          has_country_leader = {
+            character = CHI_han_kuo_yu_char
+            ruling_only = yes
+          }
+        }
+        set_country_leader_portrait = {
+          ideology = conservative
+          portrait = GFX_HKY_taiwan_win
+        }
+      }
+      else_if = {
+        limit = {
+          has_country_leader = {
+            character = CHI_tsai_ing_wen_char
+            ruling_only = yes
+          }
+        }
+        set_country_leader_portrait = {
+          ideology = social_liberal
+          portrait = GFX_TIW_taiwan_win
+        }
+      }
+    }
     }
   }
   option = {
@@ -955,14 +981,13 @@ country_event = {
   is_triggered_only = yes
   fire_only_once = yes 
   hidden = yes
-  immediaten = {
+  immediate = {
     CHI = {
       # 扣除多給的數值
       add_political_power = -50
       add_stability = -0.3
       add_war_support = -0.075
       # 恢復原本的國家精神 (因為 1 被原代碼刪了，我們加回來)
-      add_idea = CHI_destroyed_country_1
       # 工廠送你了
     }
     JAP = {
@@ -1183,7 +1208,7 @@ country_event = {
         }
         set_country_leader_portrait = {
           ideology = conservative
-          portrait = GFX_portrait_CHI_han_kuo_yu_military
+          portrait = GFX_HKY_corps_commander
         }
       }
       else_if = {
@@ -1195,7 +1220,7 @@ country_event = {
         }
         set_country_leader_portrait = {
           ideology = social_liberal
-          portrait = GFX_portrait_CHI_tsai_ing_wen_military
+          portrait = GFX_TIW_corps_commander
         }
       }
     }
