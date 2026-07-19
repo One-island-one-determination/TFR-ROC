@@ -68,31 +68,6 @@ CHI_Legislative_Yuan_decisions = {
   scripted_gui = CHI_Legislative_Yuan_gui
 }
 
-CHI_test_of_will2 = {
-  icon = GFX_CHI_test_of_will_category_anim
-  picture = GFX_CHI_test_of_will_banner_animated
-  priority = 4
-  visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-    OR = {
-      NOT = {
-        is_ally_with = PRC
-        has_global_flag = PRC_taiwan_war_lost
-      }
-    }
-  }
-  visible = {
-    OR = {
-      NOT = {
-        is_ally_with = PRC
-        has_global_flag = PRC_taiwan_war_lost
-      }
-    }
-  }
-  scripted_gui = test_of_will_taiwan_gui
-}
-
 CHI_army_decisions = {
   icon = GFX_CHI_army_decisions_Icon
   #中華民國國軍
@@ -140,37 +115,6 @@ CHI_taiwan_war_category = {
   }
 }
 
-CHI_Taiwan_will = {
-  #大中華局勢
-  visible_when_empty = yes
-  priority = 99
-  visible = {
-    always = no
-  }
-  allowed = {
-    or = {
-      always = no
-    }
-  }
-}
-
-CHI_test_of_will = {
-  icon = GFX_CHI_test_of_will_category_anim
-  #picture = GFX_CHI_test_of_will_banner_animated
-  priority = 4
-  #visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    NOT = {
-      is_ally_with = PRC
-    }
-    date < 2025.1.1
-  }
-  scripted_gui = CHI_test_of_will
-}
-
 CHI_Military_purchasing_cat = {
   icon = GFX_CHI_Military_purchasing_cat_Icon
   priority = 1000
@@ -185,7 +129,6 @@ CHI_Military_purchasing_cat = {
         NOT = {
           is_ally_with = PRC
         }
-        date < 2025.1.1
         has_completed_focus = Defense_Strategy_White_Paper
       }
     }
