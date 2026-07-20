@@ -1644,7 +1644,7 @@ CHI_Legislative_Yuan_decisions = {
     modifier = {
       power_balance_weekly = 0.02
       social_liberal_drift = 0.05
-      social_democrat_drift = 0.05
+      social_democrat_drift = 0.02
       stability_weekly = 0.01
     }
     complete_effect = {
@@ -1903,6 +1903,7 @@ CHI_Legislative_Yuan_decisions = {
         NOT = {
           has_country_flag = DPP_agenda
           has_country_flag = TPP_agenda
+          has_completed_focus = CHI_thenationisinperil
         }
       }
     }
@@ -1934,7 +1935,7 @@ CHI_Legislative_Yuan_decisions = {
     modifier = {
       power_balance_weekly = -0.02
       conservative_drift = 0.05
-      authoritarian_democrat_drift = 0.05
+      authoritarian_democrat_drift = 0.02
       stability_weekly = 0.01
     }
     complete_effect = {
@@ -2070,7 +2071,7 @@ CHI_Legislative_Yuan_decisions = {
       national_socialist_drift = -0.08
       communist_drift = -0.08
       conservative_drift = 0.10
-      authoritarian_democrat_drift = 0.10
+      authoritarian_democrat_drift = 0.05
     }
     complete_effect = {
       set_country_flag = KMT_agenda
@@ -4284,3 +4285,11 @@ CHI_army_decisions = {
     }
   }
 }
+# 中科院研究(P2)
+CHI_NCSIST_category = {
+
+
+
+}
+
+
