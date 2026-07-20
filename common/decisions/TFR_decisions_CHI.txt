@@ -250,11 +250,13 @@ CHI_debug = {
           has_war = no
           NOT = {
             capital_scope = {
-            is_on_continent = asia}
+              is_on_continent = asia
+            }
           }
           NOT = {
             capital_scope = {
-            is_on_continent = australia}
+              is_on_continent = australia
+            }
           }
           NOT = {tag = LUX}
         }
@@ -314,6 +316,7 @@ CHI_debug = {
     set_country_flag = P4_CHI_Han_unlock
   }
 }
+
 # 疫苗
 CHI_NHCC_decisions = {
   #Debug 決議
@@ -3847,7 +3850,7 @@ CHI_taiwan_war_category = {
 
 # 國民黨派系互動決議
 CHI_KMT_politics_category = {
-    
+
   # 1. 扶植本土系
   CHI_boost_kmt_local = {
     icon = generic_propaganda
@@ -3864,7 +3867,7 @@ CHI_KMT_politics_category = {
       add_to_variable = { var = CHI_kmt_psg value = -2 }
       add_to_variable = { var = CHI_kmt_combat value = -2 }
       add_to_variable = { var = CHI_kmt_grassroots value = -2 }
-      
+
       # 【防呆機制】防止變數變成負數或超過100
       clamp_variable = { var = CHI_kmt_local min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
@@ -3878,7 +3881,7 @@ CHI_KMT_politics_category = {
   CHI_boost_kmt_psg = {
     icon = generic_propaganda
     available = {
-        check_variable = { CHI_kmt_psg value < 100 }
+      check_variable = { CHI_kmt_psg value < 100 }
     }
     visible = { always = yes }
     cost = 15
@@ -3888,7 +3891,7 @@ CHI_KMT_politics_category = {
       add_to_variable = { var = CHI_kmt_local value = -2 }
       add_to_variable = { var = CHI_kmt_combat value = -2 }
       add_to_variable = { var = CHI_kmt_grassroots value = -2 }
-      
+
       clamp_variable = { var = CHI_kmt_local min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_combat min = 0 max = 100 }
@@ -3911,7 +3914,7 @@ CHI_KMT_politics_category = {
       add_to_variable = { var = CHI_kmt_local value = -2 }
       add_to_variable = { var = CHI_kmt_psg value = -2 }
       add_to_variable = { var = CHI_kmt_grassroots value = -2 }
-      
+
       clamp_variable = { var = CHI_kmt_local min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_combat min = 0 max = 100 }
@@ -3934,7 +3937,7 @@ CHI_KMT_politics_category = {
       add_to_variable = { var = CHI_kmt_local value = -2 }
       add_to_variable = { var = CHI_kmt_psg value = -2 }
       add_to_variable = { var = CHI_kmt_combat value = -2 }
-      
+
       clamp_variable = { var = CHI_kmt_local min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_combat min = 0 max = 100 }
@@ -4283,4 +4286,187 @@ CHI_army_decisions = {
       custom_effect_tooltip = CHI_BUY_KOR_DESTROYERS_tt
     }
   }
+}
+
+# 援助阿拉伯共和國決議
+CHI_Aid_Arab_Republics_category = {
+  # 人道援助
+  CHI_humanitarian_aid = {
+    icon = GFX_CHI_
+    allowed = {
+      original_tag = CHI
+      set_global_flag = saudi_civil_war_flag
+    }
+    cancel_trigger = {
+      NOT = {
+        has_global_flag = saudi_civil_war_flag
+      }
+    }
+    cost = 25
+    fire_only_once = yes
+    days_remove = 60
+    modifier = {
+      consumer_goods_factor = 0.05
+    }
+    complete_effect = {
+      ARR = {
+        add_stability = 0.05
+        add_opinion_modifier = {
+          target = CHI
+          modifier = CHI_ARR_humanitarian_aid
+        }
+      }
+    }
+  }
+  # 販賣輕武器
+  CHI_Trafficking_small_arms = {
+    icon = GFX_decision_generic_industry
+    allowed = {
+      original_tag = CHI
+      set_global_flag = saudi_civil_war_flag
+    }
+    cancel_trigger = {
+      NOT = {
+        has_global_flag = saudi_civil_war_flag
+      }
+    }
+    days_remove = 90
+    days_re_enable = 90
+    custom_cost_trigger = {
+      has_equipment = {
+        infantry_equipment > 1999
+      }
+    }
+    ai_will_do = {
+      base = 25
+    }
+    custom_cost_text = decision_cost_ie_2000
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = -2000
+      }
+    }
+    modifier = {
+      income_growth_factor = 0.10
+    }
+    remove_effect = {
+      ARR = {
+        add_equipment_to_stockpile = {
+          type = infantry_equipment
+          amount = 2000
+          producer = CHI
+        }
+      }
+    }
+  }
+  # 販賣重武器
+  CHI_Trafficking_big_arms = {
+    icon = GFX_decision_generic_industry
+    allowed = {
+      original_tag = CHI
+      set_global_flag = saudi_civil_war_flag
+    }
+    cancel_trigger = {
+      NOT = {
+        has_global_flag = saudi_civil_war_flag
+      }
+    }
+    days_remove = 90
+    days_re_enable = 90
+    custom_cost_trigger = {
+      has_equipment = {
+        artillery_equipment_2 > 199
+      }
+    }
+    ai_will_do = {
+      base = 25
+    }
+    custom_cost_text = decision_cost_ae_200
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = artillery_equipment_2
+        amount = -200
+      }
+    }
+    modifier = {
+      income_growth_factor = 0.10
+    }
+    remove_effect = {
+      ARR = {
+        add_equipment_to_stockpile = {
+          type = artillery_equipment_2
+          amount = 200
+          producer = CHI
+        }
+      }
+    }
+  }
+  # 派遣駐外武官(先不用)
+  # CHI_dispatch_military_attaches_stationed_abroad = {
+  #   icon = GFX_decision_generic_industry
+  #   allowed = {
+  #     original_tag = CHI
+  #     set_global_flag = saudi_civil_war_flag
+  #   }
+  #   available = {
+  #     ARR = {
+  #       has_opinion = {
+  #         target = ROOT
+  #         value > 74
+  #       }
+  #     }
+  #   }
+  #   cancel_trigger = {
+  #     NOT = {
+  #       has_global_flag = saudi_civil_war_flag
+  #     }
+  #   }
+  #   days_remove = 90
+  #   days_re_enable = 90
+  #   custom_cost_trigger = {
+  #     command_power > 19
+  #     has_political_power > 19
+  #   }
+  #   ai_will_do = {
+  #     base = 25
+  #   }
+  #   custom_cost_text = decision_cost_20pp_20cp
+  #   complete_effect = {
+  #     add_command_power = -20
+  #     add_political_power = -20
+  #   }
+  #   modifier = {
+  #     experience_gain_army = 0.5
+  #   }
+  #   remove_effect = {
+  #     add_ideas = 在阿拉伯內戰中的經驗
+  #   }
+  # }
+  # 擴大志願軍
+  CHI_Expand_the_volunteer_army = {
+    icon = GFX_CHI_
+    allowed = {
+      original_tag = CHI
+      set_global_flag = saudi_civil_war_flag
+    }
+    available = {
+      has_global_flag = saudi_civil_war_flag
+      has_completed_focus = CHI_Operation_Desert
+    }
+    cancel_trigger = {
+      NOT = {
+        has_global_flag = saudi_civil_war_flag
+      }
+    }
+    cost = 75
+    fire_only_once = no
+    days_remove = 180
+    days_re_enable = 30
+    modifier = {
+      send_volunteer_size = 2
+      political_power_gain = -0.10
+    }
+  }
+
 }

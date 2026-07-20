@@ -633,8 +633,8 @@ focus_tree = {
           }
         }
       }
-    available = {has_completed_focus = island_of_energy_security}
-    available = {has_completed_focus = Get_out_of_the_epidemic}
+      available = {has_completed_focus = island_of_energy_security}
+      available = {has_completed_focus = Get_out_of_the_epidemic}
     }
     ai_will_do = {
       factor = 1
@@ -1212,11 +1212,21 @@ focus_tree = {
     ai_will_do = {
       factor = 1
     }
+    available = {
+      ARR = {
+        has_opinion = {
+          target = ROOT
+          value > 49
+        }
+      }
+      has_global_flag = saudi_civil_war_flag
+    }
     prerequisite = {
       focus = Find_alternative_sources
     }
     completion_reward = {
-
+      add_political_power = -50
+      unlock_decision_category_tooltip = CHI_Aid_Arab_Republics_category
     }
     relative_position_id = Unleashing_strategic_oil_reserves
   }
@@ -1524,7 +1534,6 @@ focus_tree = {
         state = 524
       }
       hidden_effect = {
-        clr_country_flag = CHI_has_oil_crash1
         if = {
           limit = {
             has_ideas = CHI_oil_crash10
@@ -1578,7 +1587,7 @@ focus_tree = {
     }
     completion_reward = {
       unlock_decision_tooltip = Investigate_senior_military_officials
-		  custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_battalion_upkeep_factor = 0.05
         tooltip = battalion_upkeep_factor_tooltip
@@ -1592,7 +1601,7 @@ focus_tree = {
         tooltip = ship_upkeep_factor_tooltip
       }
       add_to_variable = {
-        ROC_experience_gain_army_factor = 0.1 
+        ROC_experience_gain_army_factor = 0.1
         tooltip = experience_gain_army_factor_tooltip
       }
     }
@@ -1614,7 +1623,7 @@ focus_tree = {
       focus = Rectify_weakening_military_preparedness
     }
     completion_reward = {
-		  custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_conscription_factor = 0.1
         tooltip = conscription_factor_tooltip
@@ -1641,7 +1650,7 @@ focus_tree = {
       focus = Tighten_exemption_conditions
     }
     completion_reward = {
-		  custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_army_attack_factor = 0.025
         tooltip = army_attack_factor_tooltip
@@ -1681,7 +1690,7 @@ focus_tree = {
       focus = Hire_US_military_instructors
     }
     completion_reward = {
-		  custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_experience_gain_factor = 0.05
         tooltip = experience_gain_factor_tooltip
@@ -1748,7 +1757,7 @@ focus_tree = {
       focus = ROTC
     }
     completion_reward = {
-		  custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_coordination_bonus = 0.05
         tooltip = coordination_bonus_tooltip
@@ -1781,7 +1790,7 @@ focus_tree = {
       focus = ROTC
     }
     completion_reward = {
-		  custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_conscription_factor = 0.2
         tooltip = conscription_factor_tooltip
@@ -1790,86 +1799,86 @@ focus_tree = {
         ROC_training_time_factor = -0.05
         tooltip = training_time_factor_tooltip
       }
-        if = {
-          limit = {
-            NOT = {
-              has_template = "中華民國陸軍步兵旅"
+      if = {
+        limit = {
+          NOT = {
+            has_template = "中華民國陸軍步兵旅"
+          }
+        }
+        division_template = {
+          name = "中華民國陸軍步兵旅"
+          division_names_group = CHI_INF_1
+          is_locked = no
+          regiments = {
+            infantry = {
+              x = 0
+              y = 0
+            }
+            infantry = {
+              x = 0
+              y = 1
+            }
+            infantry = {
+              x = 0
+              y = 2
+            }
+            infantry = {
+              x = 0
+              y = 3
+            }
+            infantry = {
+              x = 1
+              y = 0
+            }
+            artillery_brigade = {
+              x = 1
+              y = 1
             }
           }
-          division_template = {
-            name = "中華民國陸軍步兵旅"
-            division_names_group = CHI_INF_1
-            is_locked = no
-            regiments = {
-              infantry = {
-                x = 0
-                y = 0
-              }
-              infantry = {
-                x = 0
-                y = 1
-              }
-              infantry = {
-                x = 0
-                y = 2
-              }
-              infantry = {
-                x = 0
-                y = 3
-              }
-              infantry = {
-                x = 1
-                y = 0
-              }
-              artillery_brigade = {
-                x = 1
-                y = 1
-              }
+          support = {
+            engineer = {
+              x = 0
+              y = 0
             }
-            support = {
-              engineer = {
-                x = 0
-                y = 0
-              }
-              recon = {
-                x = 0
-                y = 1
-              }
+            recon = {
+              x = 0
+              y = 1
             }
           }
         }
-        1149 = {
-          create_unit = {
-            division = "name = \"中華民國陸軍步兵第109旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
-            id = 13961
-            owner = CHI
-            count = 2
-          }
+      }
+      1149 = {
+        create_unit = {
+          division = "name = \"中華民國陸軍步兵第109旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+          id = 13961
+          owner = CHI
+          count = 2
         }
-        524 = {
-          create_unit = {
-            division = "name = \"中華民國陸軍步兵第117旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
-            id = 12068
-            owner = CHI
-            count = 1
-          }
+      }
+      524 = {
+        create_unit = {
+          division = "name = \"中華民國陸軍步兵第117旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+          id = 12068
+          owner = CHI
+          count = 1
         }
-        1148 = {
-          create_unit = {
-            division = "name = \"中華民國陸軍步兵第101旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
-            id = 13968
-            owner = CHI
-            count = 1
-          }
+      }
+      1148 = {
+        create_unit = {
+          division = "name = \"中華民國陸軍步兵第101旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+          id = 13968
+          owner = CHI
+          count = 1
         }
-        1150 = {
-          create_unit = {
-            division = "name = \"中華民國陸軍步兵第137旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
-            id = 13965
-            owner = CHI
-            count = 1
-          }
+      }
+      1150 = {
+        create_unit = {
+          division = "name = \"中華民國陸軍步兵第137旅\" division_template = \"中華民國陸軍步兵旅\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+          id = 13965
+          owner = CHI
+          count = 1
         }
+      }
     }
     relative_position_id = Tighten_exemption_conditions
   }
@@ -1893,7 +1902,7 @@ focus_tree = {
       focus = Introduce_scientific_training_standards
     }
     completion_reward = {
-		  custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_max_planning = 0.15
         tooltip = max_planning_tooltip
@@ -2175,7 +2184,7 @@ focus_tree = {
       focus = Interception_fighter_jet_from_other_countries
     }
     completion_reward = {
-		  custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_army_attack_factor = 0.05
         tooltip = army_attack_factor_tooltip
@@ -3069,7 +3078,7 @@ focus_tree = {
             mission = CHI_taiwan_war_mission
             days = -14
           }
-        }      
+        }
       }
     }
     relative_position_id = CHI_Coordinating_Allied_Bombing_Operations
@@ -3110,7 +3119,7 @@ focus_tree = {
             mission = CHI_taiwan_war_mission
             days = -14
           }
-        }      
+        }
       }
     }
     relative_position_id = CHI_Coordinating_Allied_Bombing_Operations

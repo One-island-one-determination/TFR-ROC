@@ -137,10 +137,19 @@ CHI_Military_purchasing_cat = {
 }
 
 CHI_KMT_politics_category = {
-    icon = generic_politics
-    scripted_gui = CHI_kmt_factions_pie_chart_gui 
-    visible = {
-        original_tag = CHI
-        is_debug = yes
-    }
+  icon = generic_politics
+  scripted_gui = CHI_kmt_factions_pie_chart_gui
+  visible = {
+    original_tag = CHI
+    is_debug = yes
+  }
+}
+
+CHI_Aid_Arab_Republics_category = {
+  icon = generic_politics
+  scripted_gui = None
+  visible = {
+    original_tag = CHI
+    has_global_flag = saudi_civil_war_flag
+  }
 }
