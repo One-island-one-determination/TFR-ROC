@@ -151,5 +151,48 @@ CHI_Aid_Arab_Republics_category = {
   visible = {
     original_tag = CHI
     has_global_flag = saudi_civil_war_flag
+    scripted_gui = CHI_kmt_factions_pie_chart_gui
+    visible = {
+      original_tag = CHI
+      is_debug = yes
+    }
+  }
+}
+
+CHI_NCSIST_category = {
+  icon = GFX_mio_CHI_NCSIST
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      AND = {
+        NOT = {
+          is_ally_with = PRC
+        }
+        has_completed_focus = CHI_NCSIST_Project
+      }
+    }
+  }
+}
+
+CHI_efficient_government_category = {
+  icon = GFX_decision_efficient_government
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      AND = {
+        NOT = {
+          is_ally_with = PRC
+        }
+        has_completed_focus = CHI_efficient_government
+      }
+    }
   }
 }
