@@ -1,0 +1,19 @@
+CHI_HKY_Stage_2_decisions = {
+  #韓國瑜二階段國策解鎖的國策群
+  #輸入名稱
+  CHI_HKY_Stage_2_ENGLISH_KEY_decision = {
+    icon = generic_military
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      has_country_flag = 2nd_HKY_win_flg
+    }
+    visible = {
+      has_country_flag = 2nd_HKY_win_flg
+    }
+    complete_effect = {
+      #DUMMY
+    }
+  }
+}

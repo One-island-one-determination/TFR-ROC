@@ -1,0 +1,14 @@
+CHI_HKY_Stage_2_decisions = {
+  #暫定
+  #韓國瑜二階段國策解鎖的
+  icon = NHCC
+  priority = 0
+  allowed = {
+    always = yes
+  }
+  visible = {
+    has_country_flag = 2nd_HKY_win_flg
+  }
+  #後續需要SCRIPTED GUI的時候再加，目前僅爲模板
+  #scripted_gui = CHI_vaccine_gui
+}
