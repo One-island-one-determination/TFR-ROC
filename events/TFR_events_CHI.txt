@@ -477,6 +477,10 @@ country_event = {
       load_focus_tree = P2_CHI_KMT
       set_country_flag = 2nd_HKY_win_flg
       focus_unlock = yes
+      country_event = {
+        id = CHI.H3.11
+        days = 1461
+      }
     }
   }
 }
@@ -1637,22 +1641,16 @@ country_event = {
   picture = GFX_CHI_event_taiwan_32
   is_triggered_only = yes
   fire_only_once = yes
+  immediate = {
+    hidden_effect = {
+      set_country_flag = HKY_2028_flg
+      complete_national_focus = CHI_duty_of_the_helmsman
+      focus_unlock = yes
+    }
+  }
   option = {
     name = taiwan.500.a
-    add_ideas = CHI_last_stand_idea
     set_country_flag = CHI_our_final_fight_flag
-    #focus_unlock = yes
-    #complete_national_focus = CHI_our_final_fight
-  }
-}
-####### 神秘公文
-country_event = {
-  id = CHI.300
-  title = CHI.300.t
-  desc = CHI.300.d
-  fire_only_once = yes
-  is_triggered_only = yes
-  option = {
-    name = CHI.300.a
+    complete_national_focus = CHI_thus_spoke_thucydides
   }
 }

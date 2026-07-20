@@ -1,0 +1,20 @@
+add_namespace = CHI.H3
+
+#######
+# HKY #
+#######
+
+country_event = {
+  id = CHI.H3.11
+  title = CHI.H3.11.t
+  desc = CHI.H3.11.d
+  picture = CHI_Event_H3_11
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.H3.11.a
+    set_country_flag = HKY_2028_flg
+    complete_national_focus = CHI_duty_of_the_helmsman
+    focus_unlock = yes
+  }
+}
