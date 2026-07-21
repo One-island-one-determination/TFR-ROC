@@ -500,12 +500,13 @@ country_event = {
       days = 250
     }
 
+    clr_global_flag = saudi_civil_war_flag
     set_country_flag = Arab_Republic_reconstruction
+    unlock_decision_category_tooltip = CHI_Assist_reconstruction_the_Arab_Republic_category
     set_variable = {
       CHI_Assist_reconstruction_progress = 0
     }
   }
-  unlock_decision_category_tooltip = CHI_Assist_reconstruction_the_Arab_Republic_category
 }
 
 country_event = {
