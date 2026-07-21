@@ -1,0 +1,25 @@
+add_namespace = CHI.H4
+
+#######
+# HKY #
+#######
+
+country_event = {
+  id = CHI.H4.1
+  title = CHI.H4.1.t
+  desc = CHI.H4.1.d
+  picture = CHI_Event_H4_1
+  fire_only_once = yes
+  is_triggered_only = yes
+  trigger = {
+    tag = CHI
+    CHI = {  # 指定國家
+      has_global_flag = PRC_japanese_gaw_victory_global  # 把這裡換成你要監聽的那個國策 ID
+    }
+  }
+  option = {
+    name = CHI.H4.1.a
+    load_focus_tree = P4_CHI_Han
+    focus_unlock = yes
+  }
+}

@@ -2418,6 +2418,9 @@ focus_tree = {
 		y = 10
 		cost = 0
 		icon = GFX_focus_CHI_duty_of_the_helmsman
+		allow_branch = {
+			has_country_flag = HKY_2028_flg
+		}
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 	}
@@ -2551,6 +2554,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_underground_assenmly_point
+		}
+		available = {
+			has_country_flag = CHI_our_final_fight_flag
 		}
 		relative_position_id = CHI_underground_assenmly_point
 	}
