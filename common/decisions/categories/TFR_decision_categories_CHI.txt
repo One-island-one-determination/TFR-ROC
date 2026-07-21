@@ -1,7 +1,7 @@
 CHI_debug = {
   icon = GFX_CHI_test_of_will_category_anim
   picture = GFX_CHI_test_of_will_banner_animated
-  priority = 100
+  priority = 1000
   visible_when_empty = yes
   allowed = {
     always = yes
@@ -10,12 +10,57 @@ CHI_debug = {
     is_debug = yes
   }
 }
+# 台海戰爭
+CHI_taiwan_war_category = {
+  #臺海戰爭
+  visible_when_empty = no
+  priority = 100
+  visible = {
+    has_global_flag = PRC_ongoing_taiwan_war
+    NOT = {
+      OR = {
+        has_global_flag = JAP_japan_lost
+        has_global_flag = JAP_japan_victory
+      }
+    }
+  }
+  allowed = {
+    original_tag = CHI
+  }
+}
+#協助阿拉伯共和國重建
+CHI_Assist_reconstruction_the_Arab_Republic_category = {
+  priority = 5
+  icon = GFX_decision_efficient_government
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      has_country_flag = Arab_Republic_reconstruction
+    }
+  }
+}
+#援助阿拉伯共和國
+CHI_Aid_Arab_Republics_category = {
+  priority = 7
+  icon = generic_politics
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    has_global_flag = saudi_civil_war_flag
+    is_debug = yes
+  }
+}
 
+#疫情
 CHI_NHCC_decisions = {
   #疫情
   icon = NHCC
   #picture = GFX_CHI_test_of_will_banner_animated
-  priority = 100
+  priority = 6
   #visible_when_empty = yes
   allowed = {
     always = yes
@@ -28,6 +73,65 @@ CHI_NHCC_decisions = {
   scripted_gui = CHI_vaccine_gui
 }
 
+#立法院
+CHI_Legislative_Yuan_decisions = {
+  #立法院
+  icon = GFX_CHI_Legislative_Yuan_decisions
+  priority = 5
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    always = yes
+  }
+  scripted_gui = CHI_Legislative_Yuan_gui
+}
+#國軍
+CHI_army_decisions = {
+  icon = GFX_CHI_army_decisions_Icon
+  #中華民國國軍
+  priority = 4
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    has_completed_focus = Rectify_weakening_military_preparedness
+  }
+}
+#軍購
+CHI_Military_purchasing_cat = {
+  icon = GFX_CHI_Military_purchasing_cat_Icon
+  priority = 3
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      AND = {
+        NOT = {
+          is_ally_with = PRC
+        }
+        has_completed_focus = Defense_Strategy_White_Paper
+      }
+    }
+  }
+  scripted_gui = CHI_Military_purchasing_info
+}
+#國民黨派系
+CHI_KMT_politics_category = {
+  priority = 2
+  icon = generic_politics
+  scripted_gui = CHI_kmt_factions_pie_chart_gui
+  visible = {
+    original_tag = CHI
+    is_debug = yes
+  }
+}
+#中共滲透
 CHI_PRC_Infiltration_decisions = {
   #滲透度
   icon = GFX_PRC_Infiltration
@@ -54,111 +158,7 @@ CHI_PRC_Infiltration_decisions = {
   scripted_gui = PRC_Infiltration_gui
 }
 
-CHI_Legislative_Yuan_decisions = {
-  #立法院
-  icon = GFX_CHI_Legislative_Yuan_decisions
-  priority = 5
-  visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    always = yes
-  }
-  scripted_gui = CHI_Legislative_Yuan_gui
-}
-
-CHI_army_decisions = {
-  icon = GFX_CHI_army_decisions_Icon
-  #中華民國國軍
-  priority = 2
-  visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    has_completed_focus = Rectify_weakening_military_preparedness
-  }
-}
-
-PHI_civil_war_dec = {
-  #菲律賓内戰
-  visible_when_empty = yes
-  priority = 4
-  visible = {
-    has_global_flag = PHI_civil_war_flag
-  }
-  allowed = {
-    or = {
-      original_tag = NDF
-      original_tag = AFP
-      original_tag = MIL
-    }
-  }
-}
-
-CHI_taiwan_war_category = {
-  #臺海戰爭
-  visible_when_empty = no
-  priority = 99
-  visible = {
-    has_global_flag = PRC_ongoing_taiwan_war
-    NOT = {
-      OR = {
-        has_global_flag = JAP_japan_lost
-        has_global_flag = JAP_japan_victory
-      }
-    }
-  }
-  allowed = {
-    original_tag = CHI
-  }
-}
-
-CHI_Military_purchasing_cat = {
-  icon = GFX_CHI_Military_purchasing_cat_Icon
-  priority = 1000
-  visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    OR = {
-      is_debug = yes
-      AND = {
-        NOT = {
-          is_ally_with = PRC
-        }
-        has_completed_focus = Defense_Strategy_White_Paper
-      }
-    }
-  }
-  scripted_gui = CHI_Military_purchasing_info
-}
-
-CHI_KMT_politics_category = {
-  icon = generic_politics
-  scripted_gui = CHI_kmt_factions_pie_chart_gui
-  visible = {
-    original_tag = CHI
-    is_debug = yes
-  }
-}
-
-CHI_Aid_Arab_Republics_category = {
-  icon = generic_politics
-  scripted_gui = None
-  visible = {
-    original_tag = CHI
-    has_global_flag = saudi_civil_war_flag
-    scripted_gui = CHI_kmt_factions_pie_chart_gui
-    visible = {
-      original_tag = CHI
-      is_debug = yes
-    }
-  }
-}
-
+# 中科院
 CHI_NCSIST_category = {
   icon = GFX_mio_CHI_NCSIST
   visible_when_empty = yes
@@ -197,16 +197,18 @@ CHI_efficient_government_category = {
   }
 }
 
-CHI_Assist_reconstruction_the_Arab_Republic_category = {
-  icon = GFX_decision_efficient_government
+PHI_civil_war_dec = {
+  #菲律賓内戰
   visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
+  priority = 4
   visible = {
-    OR = {
-      is_debug = yes
-      has_country_flag = Arab_Republic_reconstruction
+    has_global_flag = PHI_civil_war_flag
+  }
+  allowed = {
+    or = {
+      original_tag = NDF
+      original_tag = AFP
+      original_tag = MIL
     }
   }
 }
