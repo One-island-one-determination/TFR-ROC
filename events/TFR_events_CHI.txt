@@ -485,6 +485,29 @@ country_event = {
   }
 }
 
+# 阿拉伯共和國贏得內戰
+country_event = {
+  id = CHI.142
+  title = CHI.142.t
+  desc = CHI.142.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.142.a
+
+    add_timed_idea = {
+      idea = GER_victory_in_arabia
+      days = 250
+    }
+
+    set_country_flag = Arab_Republic_reconstruction
+    set_variable = {
+      CHI_Assist_reconstruction_progress = 0
+    }
+  }
+  unlock_decision_category_tooltip = CHI_Assist_reconstruction_the_Arab_Republic_category
+}
+
 country_event = {
   id = CHI.1001
   title = CHI.1001.t
@@ -625,7 +648,7 @@ country_event = {
     ai_chance = {
       base = 1
     }
-      add_war_support = 0.1
+    add_war_support = 0.1
   }
 }
 
@@ -843,31 +866,31 @@ country_event = {
         days = 5
       }
       CHI = {
-      if = {
-        limit = {
-          has_country_leader = {
-            character = CHI_han_kuo_yu_char
-            ruling_only = yes
+        if = {
+          limit = {
+            has_country_leader = {
+              character = CHI_han_kuo_yu_char
+              ruling_only = yes
+            }
+          }
+          set_country_leader_portrait = {
+            ideology = conservative
+            portrait = GFX_HKY_taiwan_win
           }
         }
-        set_country_leader_portrait = {
-          ideology = conservative
-          portrait = GFX_HKY_taiwan_win
-        }
-      }
-      else_if = {
-        limit = {
-          has_country_leader = {
-            character = CHI_tsai_ing_wen_char
-            ruling_only = yes
+        else_if = {
+          limit = {
+            has_country_leader = {
+              character = CHI_tsai_ing_wen_char
+              ruling_only = yes
+            }
+          }
+          set_country_leader_portrait = {
+            ideology = social_liberal
+            portrait = GFX_TIW_taiwan_win
           }
         }
-        set_country_leader_portrait = {
-          ideology = social_liberal
-          portrait = GFX_TIW_taiwan_win
-        }
       }
-    }
     }
   }
   option = {
@@ -910,9 +933,9 @@ country_event = {
       disband = yes
     }
     custom_effect_tooltip = CHI_win_taiwn_war_tt
-		trigger = {
-			original_tag = CHI
-		}
+    trigger = {
+      original_tag = CHI
+    }
     hidden_effect = {
       remove_ideas = CHI_repairs_under_fire_idea
       remove_ideas = CHI_repairs_under_fire_idea2
@@ -961,7 +984,7 @@ country_event = {
   title = CHI.114514.t
   desc = CHI.114514.d
   is_triggered_only = yes
-  fire_only_once = yes 
+  fire_only_once = yes
   hidden = yes
   immediate = {
     JAP = {
@@ -983,7 +1006,7 @@ country_event = {
   title = CHI.114515.t
   desc = CHI.114515.d
   is_triggered_only = yes
-  fire_only_once = yes 
+  fire_only_once = yes
   hidden = yes
   immediate = {
     CHI = {

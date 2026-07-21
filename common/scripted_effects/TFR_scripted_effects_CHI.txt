@@ -260,6 +260,16 @@ PRC_Infiltration_change = {
     }
   }
 }
+
+ARR_reconstruction = {
+  custom_effect_tooltip = ARR_reconstruction_tooltip
+
+  add_to_variable = {
+    var = CHI_Assist_reconstruction_progress
+    value = CHI_Assist_reconstruction_progress_temp
+  }
+}
+
 #原油危機的逐步改善，透過國策改善
 CHI_oil_crash_idea = {
   if = {

@@ -1562,68 +1562,68 @@ ideas = {
     CHI_corruption_problem_0 = {
       name = CHI_corruption_problem_name_0
       picture = GFX_CHI_corruption_problem
-      removal_cost = -1  
+      removal_cost = -1
       modifier = {
-      political_power_gain = -0.4
-      stability_factor = -0.3      
+        political_power_gain = -0.4
+        stability_factor = -0.3
       }
     }
     CHI_corruption_problem_1 = {
       name = CHI_corruption_problem_name_0
       picture = GFX_CHI_corruption_problem
-      removal_cost = -1  
+      removal_cost = -1
       modifier = {
-      political_power_gain = -0.3
-      stability_factor = -0.225      
+        political_power_gain = -0.3
+        stability_factor = -0.225
       }
     }
     CHI_corruption_problem_2 = {
       name = CHI_corruption_problem_name_0
       picture = GFX_CHI_corruption_problem
-      removal_cost = -1  
+      removal_cost = -1
       modifier = {
-      political_power_gain = -0.2
-      stability_factor = -0.15      
+        political_power_gain = -0.2
+        stability_factor = -0.15
       }
     }
     CHI_corruption_problem_3 = {
       name = CHI_corruption_problem_name_0
       picture = GFX_CHI_corruption_problem
-      removal_cost = -1  
+      removal_cost = -1
       modifier = {
-      political_power_gain = -0.1
-      stability_factor = -0.075      
+        political_power_gain = -0.1
+        stability_factor = -0.075
       }
     }
     CHI_corruption_problem_4 = {
       name = CHI_corruption_problem_name_4
       picture = GFX_CHI_corruption_problem
-      removal_cost = -1  
+      removal_cost = -1
       modifier = {
-      political_power_gain = 0
-      stability_factor = 0      
+        political_power_gain = 0
+        stability_factor = 0
       }
     }
     CHI_corruption_problem_5 = {
       name = CHI_corruption_problem_name_4
       picture = GFX_CHI_corruption_problem
-      removal_cost = -1  
+      removal_cost = -1
       modifier = {
-      political_power_gain = 0.1
-      stability_factor = 0.075      
+        political_power_gain = 0.1
+        stability_factor = 0.075
       }
     }
     CHI_corruption_problem_6 = {
       name = CHI_corruption_problem_name_6
       picture = GFX_CHI_corruption_problem
-      removal_cost = -1  
+      removal_cost = -1
       modifier = {
-      political_power_gain = 0.1
-      stability_factor = 0.075
-      war_support_factor = 0.15
-      income_growth_factor = 0.05
-      business_value_factor = 0.1
-      dtg_threshold_factor = 0.15      
+        political_power_gain = 0.1
+        stability_factor = 0.075
+        war_support_factor = 0.15
+        income_growth_factor = 0.05
+        business_value_factor = 0.1
+        dtg_threshold_factor = 0.15
       }
     }
 
@@ -1631,7 +1631,7 @@ ideas = {
     CHI_diplomatic_truce = {
       name = CHI_diplomatic_truce
       picture = CHI_diplomatic_truce
-      removal_cost = -1 
+      removal_cost = -1
       modifier = {
         political_power_gain = 0.5
       }
@@ -1686,30 +1686,50 @@ ideas = {
         academic_development_monthly = 0.05
       }
     }
+    #中華民國的重建貸款
+    CHI_invest_ARR = {
+      name = CHI_invest_ARR
+      picture = CHI_invest_ARR
+      removal_cost = -1
 
+      modifier = {
+        production_speed_buildings_factor = 0.05
+        repair_speed_infrastructure_factor = 0.20
+      }
+    }
+    CHI_invest_farming_development = {
+      name = CHI_invest_farming_development
+      picture = CHI_invest_farming_development
+      removal_cost = -1
 
+      modifier = {
+        monthly_population = 0.45
+        farming_development_monthly = 0.005
+      }      
+    }
   }
   hidden_ideas = {
     CHI_Economy_hidden = {
       # 中華民國經濟(動態民族精神用 - 研究與造價加成)
       name = CHI_Economy_hidden
       research_bonus = {
-        armor = -0.05         
-        electronics = 0.15    
+        armor = -0.05
+        electronics = 0.15
       }
 
       equipment_bonus = {
         armor = {
-            build_cost_ic = +0.3
+          build_cost_ic = +0.3
         }
         air_equipment = {
-            build_cost_ic = +0.5
+          build_cost_ic = +0.5
         }
         armored_car = {
-            build_cost_ic = +0.15
+          build_cost_ic = +0.15
         }
       }
     }
   }
+
 }
 

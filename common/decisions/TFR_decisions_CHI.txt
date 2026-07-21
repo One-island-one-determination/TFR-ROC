@@ -317,7 +317,7 @@ CHI_debug = {
   }
 }
 
-# 疫苗
+# 疫情
 CHI_NHCC_decisions = {
   #Debug 決議
   END_THE_Epidemic = {
@@ -4296,7 +4296,7 @@ CHI_Aid_Arab_Republics_category = {
     icon = GFX_CHI_
     allowed = {
       original_tag = CHI
-      set_global_flag = saudi_civil_war_flag
+      has_global_flag = saudi_civil_war_flag
     }
     cancel_trigger = {
       NOT = {
@@ -4324,7 +4324,7 @@ CHI_Aid_Arab_Republics_category = {
     icon = GFX_decision_generic_industry
     allowed = {
       original_tag = CHI
-      set_global_flag = saudi_civil_war_flag
+      has_global_flag = saudi_civil_war_flag
     }
     cancel_trigger = {
       NOT = {
@@ -4366,7 +4366,7 @@ CHI_Aid_Arab_Republics_category = {
     icon = GFX_decision_generic_industry
     allowed = {
       original_tag = CHI
-      set_global_flag = saudi_civil_war_flag
+      has_global_flag = saudi_civil_war_flag
     }
     cancel_trigger = {
       NOT = {
@@ -4408,7 +4408,7 @@ CHI_Aid_Arab_Republics_category = {
   #   icon = GFX_decision_generic_industry
   #   allowed = {
   #     original_tag = CHI
-  #     set_global_flag = saudi_civil_war_flag
+  #     has_global_flag = saudi_civil_war_flag
   #   }
   #   available = {
   #     ARR = {
@@ -4449,7 +4449,7 @@ CHI_Aid_Arab_Republics_category = {
     icon = GFX_CHI_
     allowed = {
       original_tag = CHI
-      set_global_flag = saudi_civil_war_flag
+      has_global_flag = saudi_civil_war_flag
     }
     available = {
       has_global_flag = saudi_civil_war_flag
@@ -4469,11 +4469,242 @@ CHI_Aid_Arab_Republics_category = {
       political_power_gain = -0.10
     }
   }
+}
 
+# 協助阿拉伯共和國重建
+CHI_Assist_reconstruction_the_Arab_Republic_category = {
+  # 向阿拉伯共和國提供重建貸款
+  CHI_Reconstruction_loans_Arab_Republic = {
+    icon = GFX_CHI_
+    allowed = {
+      original_tag = CHI
+      has_country_flag = Arab_Republic_reconstruction
+    }
+    cancel_trigger = {
+      NOT = {
+        has_country_flag = Arab_Republic_reconstruction
+      }
+    }
+    custom_cost_trigger = {
+      check_variable = {
+        var = income_var
+        value = 25
+      }
+    }
+    custom_cost_text = dx_more_than_25B
+    fire_only_once = yes
+    days_remove = 120
+    modifier = {
+      consumer_goods_factor = 0.05
+    }
+    complete_effect = {
+      set_temp_variable = {
+        var = income_var_temp
+        value = -25
+      }
+      add_income = yes
+
+      ARR = {
+        add_opinion_modifier = {
+          target = CHI
+          modifier = CHI_Assist_reconstruction
+        }
+        add_timed_idea = {
+          idea = CHI_invest_ARR
+          days = 120
+        }
+      }
+    }
+    remove_effect = {
+      add_to_temp_variable = {
+        var = CHI_Assist_reconstruction_progress_temp
+        value = 1
+      }
+
+      ARR_reconstruction = yes
+    }
+  }
+  # 協助保障農業與糧食安全
+  CHI_Help_ensure_agriculture_food_security = {
+    icon = GFX_CHI_
+    allowed = {
+      original_tag = CHI
+      has_country_flag = Arab_Republic_reconstruction
+    }
+    cancel_trigger = {
+      NOT = {
+        has_country_flag = Arab_Republic_reconstruction
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 60
+    modifier = {
+      consumer_goods_factor = 0.05
+    }
+    complete_effect = {
+      set_temp_variable = {
+        var = income_var_temp
+        value = -25
+      }
+
+      ARR = {
+        add_opinion_modifier = {
+          target = CHI
+          modifier = CHI_Assist_reconstruction
+        }
+        add_timed_idea = {
+          idea = CHI_invest_farming_development
+          days = 120
+        }
+      }
+    }
+    remove_effect = {
+      add_to_temp_variable = {
+        var = CHI_Assist_reconstruction_progress_temp
+        value = 1
+      }
+
+      ARR_reconstruction = yes
+    }
+  }
+  # 協助重建基礎建設
+  CHI_Assist_rebuilding_infrastructure = {
+    icon = GFX_CHI_
+    allowed = {
+      original_tag = CHI
+      has_country_flag = Arab_Republic_reconstruction
+    }
+    cancel_trigger = {
+      NOT = {
+        has_country_flag = Arab_Republic_reconstruction
+      }
+    }
+    cost = 50
+    fire_only_once = no
+    days_remove = 60
+    modifier = {
+      consumer_goods_factor = 0.05
+    }
+    complete_effect = {
+      ARR = {
+        add_opinion_modifier = {
+          target = CHI
+          modifier = CHI_Assist_reconstruction
+        }
+        292 = {
+          add_extra_state_shared_building_slots = 2
+        }
+      }
+    }
+    remove_effect = {
+      add_to_temp_variable = {
+        var = CHI_Assist_reconstruction_progress_temp
+        value = 1
+      }
+
+      ARR_reconstruction = yes
+    }
+  }
+  # 提議邦交
+  CHI_Propose_diplomatic_relations = {
+    icon = GFX_CHI_
+    allowed = {
+      original_tag = CHI
+      has_country_flag = Arab_Republic_reconstruction
+    }
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = reconstruction_times_to_five
+        check_variable = {
+          var = CHI_Assist_reconstruction_progress
+          value > 4
+        }
+      }
+    }
+    cancel_trigger = {
+      NOT = {
+        has_country_flag = Arab_Republic_reconstruction
+      }
+    }
+
+    cost = 60
+    fire_only_once = yes
+    days_remove = 10
+
+    complete_effect = {
+      custom_effect_tooltip = Propose_diplomatic_relations
+      set_country_flag = ARR_is_Diplomatic_countries
+
+      add_opinion_modifier = {
+        target = ARR
+        modifier = CHI_Diplomatic_countries
+      }
+      ARR = {
+        add_opinion_modifier = {
+          target = CHI
+          modifier = CHI_Diplomatic_countries
+        }
+      }
+    }
+  }
+  # 從關係中獲取利益
+  CHI_Gain_benefits_from_relationships = {
+    icon = GFX_CHI_
+    allowed = {
+      original_tag = CHI
+      has_country_flag = Arab_Republic_reconstruction
+    }
+    available = {
+      has_country_flag = ARR_is_Diplomatic_countries
+    }
+    cancel_trigger = {
+      NOT = {
+        has_country_flag = Arab_Republic_reconstruction
+      }
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+      ARR = {
+        give_resource_rights = {
+          receiver = CHI
+          state = 1063
+        }
+      }
+      clr_country_flag = Arab_Republic_reconstruction
+    }
+  }
+
+  #DEBUG
+  Debug_add_reconstruction_progress = {
+    icon = GFX_CHI_
+    visible = {
+      is_debug = yes
+    }
+    allowed = {
+      original_tag = CHI
+      has_country_flag = Arab_Republic_reconstruction
+    }
+
+    fire_only_once = no
+
+    complete_effect = {
+      add_to_temp_variable = {
+        var = CHI_Assist_reconstruction_progress_temp
+        value = 5
+      }
+
+      ARR_reconstruction = yes
+    }
+  }
+}
+
+# 干涉美國內戰決議
+CHI_Intervene_the_American_Civil_War = {
+  # 等等補
 }
 
 # 中科院研究(P2)
 CHI_NCSIST_category = {
 }
-
-

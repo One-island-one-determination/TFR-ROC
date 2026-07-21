@@ -196,3 +196,17 @@ CHI_efficient_government_category = {
     }
   }
 }
+
+CHI_Assist_reconstruction_the_Arab_Republic_category = {
+  icon = GFX_decision_efficient_government
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      has_country_flag = Arab_Republic_reconstruction
+    }
+  }
+}

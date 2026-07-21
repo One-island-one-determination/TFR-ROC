@@ -486,7 +486,6 @@
  CHI_import_korean_aviation: "進口韓國§3戰機§! £GFX_CHI_korea_texticon_medium "
  CHI_import_korean_aviation_desc: " \n\n\n\n£GFX_CHI_korean_weapons\n\n\n\n "
  CHI_korean_valuable_partners: "寶貴的貿易夥伴 £GFX_CHI_korea_texticon_medium "
- CHI_ARR_humanitarian_aid: "人道援助"
  CHI_test_of_will_third_blank: " "
  CHI_request_pdto_fuel_shipments: "請求太約燃料輸送 £GFX_CHI_taiwan_texticon_medium "
  CHI_request_pdto_fuel_shipments_desc: " \n\n\n\n£GFX_CHI_rise_up_taiwan_agitation\n\n\n\n "
@@ -1455,6 +1454,25 @@
  decision_cost_20pp_20cp_blocked: "£command_power_texticon §R50§! £pol_power §R100§!"
  decision_cost_20pp_20cp_tooltip: "執行此決議需要 £command_power §Y50§! £pol_power §Y100§!"
  
+ CHI_Assist_reconstruction_the_Arab_Republic_category: "協助阿拉伯共和國重建"
+ CHI_Assist_reconstruction_the_Arab_Republic_category_desc: "\n\n\n\n\n£GFX_CHI_Assist_reconstruction_the_Arab_Republic_banner\n\n\n\n\n\n\n\n\n\n§Y目前重建進度§!: [?CHI_Assist_reconstruction_progress]"
+
+ reconstruction_times_to_five: "§Y重建進度§! : 大於§Y5§!"
+ CHI_ARR_humanitarian_aid: "人道援助"
+ CHI_Assist_reconstruction: "協助重建"
+ CHI_Diplomatic_countries: "邦交國" 
+ Propose_diplomatic_relations: "我們將與§Y阿拉伯共和國§!成為邦交國"
+ ARR_is_Diplomatic_countries: "§Y阿拉伯共和國§!是我們的邦交國"
+ Arab_Republic_reconstruction: "協助§Y阿拉伯共和國§!重建"
+ ARR_reconstruction_tooltip: "  §Y重建進度§! : 增加§Y[?CHI_Assist_reconstruction_progress_temp]§!"
+ 
+ CHI_Reconstruction_loans_Arab_Republic: "向阿拉伯共和國提供重建貸款"
+ CHI_Help_ensure_agriculture_food_security: "協助保障農業與糧食安全"
+ CHI_Assist_rebuilding_infrastructure: "協助重建基礎建設"
+ CHI_Propose_diplomatic_relations: "提議邦交"
+ CHI_Gain_benefits_from_relationships: "從關係中獲取利益"
+
+ Debug_add_reconstruction_progress: "§YDEBUG§! : 重建進度加§Y5§!"
  CHI_GAN: "贛國"
  CHI_xiang: "湘國"
  CHI_min: "閩國"
@@ -1912,6 +1930,8 @@
  CHI_blue_sky_white_sun_never_falls: "青天白日永不落"
  CHI_blue_sky_white_sun_never_falls_tooltip: "整合：§Y政通人和§!、§Y破曉§!、§Y無往不利§!、§Y中華之愛§!為§W誰都§!§B不能§!§R欺辱她！§!"
  CHI_no_one_can_abuse_her: "§W誰都§!§B不能§!§R欺辱她！§!"
+ CHI_invest_ARR: "中華民國的重建貸款"
+ CHI_invest_farming_development: "中華民國協助農業發展"
 
  CHI_efficient_government: "效率政府"
  CHI_success_everywhere: "無往不利"
@@ -2170,3 +2190,6 @@
  CHI_begonia_leaf_desc: "解決了與蒙古的關係後，我國宣稱的最大疆域已完成九成以上，還有許多零碎的土地正在其他國家的控制之下，其中也有曾經站在同一陣線與中共作戰的夥伴，政府將派遣外交官前去討論，希望不會發生一些我們都不太樂見的結果......"
 #}
 
+## 戰略資源 {
+ oil: "石油"
+#}
