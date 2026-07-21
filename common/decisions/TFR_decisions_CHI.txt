@@ -299,13 +299,18 @@ CHI_debug = {
       }
     }
   }
-  load_P3HKY = {
+  load_P3_KMT_HKY = {
     icon = generic_decision
     allowed = { always = yes }
     visible = { always = yes }
     available = { always = yes }
-    complete_effect = {CHI={load_focus_tree = P3_CHI_Han}}
-    set_country_flag = P3_CHI_Han_unlock
+    complete_effect = {
+      CHI={
+        load_focus_tree = P2_CHI_KMT
+        set_country_flag = 2nd_HKY_win_flg
+        set_country_flag = HKY_2028_flg
+      }
+    }
   }
   load_P4HKY = {
     icon = generic_decision

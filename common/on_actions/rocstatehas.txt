@@ -541,6 +541,37 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					#金門
+					FROM.FROM = {
+						OR = {
+							state = 648
+						}
+					}
+					FROM = {
+						OR = {
+							is_ally_with = PRC
+							is_ally_with = CHI
+						}
+					}
+					ROOT = {
+						OR = {
+							is_ally_with = PRC
+							is_ally_with = CHI
+						}
+					}
+					not = {
+						has_global_flag = battle_of_kinmen
+					}
+				}
+				set_global_flag = battle_of_kinmen
+				CHI = {
+					country_event = {
+						id = ROC_CHI.34
+					}
+				}
+			}
 		}
 	}
 }

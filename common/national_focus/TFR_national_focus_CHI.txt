@@ -9,7 +9,7 @@ focus_tree = {
   }
   #Election
   focus = {
-    id = CHI_election
+    id = CHI_election_2020
     x = 0
     y = 0
     cost = 2
@@ -55,7 +55,7 @@ focus_tree = {
       is_completed_by_event = yes
     }
     prerequisite = {
-      focus = CHI_election
+      focus = CHI_election_2020
     }
     completion_reward = {
       add_political_power = 15
@@ -72,7 +72,7 @@ focus_tree = {
         value = 0.1
       }
     }
-    relative_position_id = CHI_election
+    relative_position_id = CHI_election_2020
   }
   focus = {
     id = four_persistences
@@ -301,7 +301,7 @@ focus_tree = {
       is_completed_by_event = yes
     }
     prerequisite = {
-      focus = CHI_election
+      focus = CHI_election_2020
     }
     completion_reward = {
       add_power_balance_value = {
@@ -322,6 +322,10 @@ focus_tree = {
           country_event = {
             id = CHI.5
             days = 1
+          }
+          country_event = {
+            id = ROC_CHI.33
+            days = 7
           }
         }
         remove_dynamic_modifier = {
@@ -344,7 +348,7 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = CHI_election
+    relative_position_id = CHI_election_2020
   }
   focus = {
     id = Taiwan_makes_fortune
@@ -544,10 +548,6 @@ focus_tree = {
           value = 0.15
         }
         add_to_variable = {
-          var = CHI_Republic_of_China_stability_weekly_var
-          value = 0.003
-        }
-        add_to_variable = {
           var = CHI_Republic_of_China_surrender_limit_var
           value = 0.05
         }
@@ -583,7 +583,7 @@ focus_tree = {
       add_political_power = -15
       custom_effect_tooltip = epidemic_focus_unlock
     }
-    relative_position_id = CHI_election
+    relative_position_id = CHI_election_2020
   }
   focus = {
     id = Coping_with_the_oil_crisis
@@ -613,7 +613,7 @@ focus_tree = {
       CHI_oil_crash_idea = yes
       set_country_flag = CHI_has_oil_crash2
     }
-    relative_position_id = CHI_election
+    relative_position_id = CHI_election_2020
   }
   focus = {
     id = Defense_Strategy_White_Paper
@@ -657,7 +657,7 @@ focus_tree = {
         focus_unlock = yes
       }
     }
-    relative_position_id = CHI_election
+    relative_position_id = CHI_election_2020
   }
   focus = {
     id = our_next_step
@@ -725,10 +725,6 @@ focus_tree = {
             value = 0.05
           }
           add_to_variable = {
-            var = CHI_taiwanese_independence_stability_weekly_var
-            value = 0.002
-          }
-          add_to_variable = {
             var = CHI_taiwanese_independence_conscription_factor_var
             value = 0.15
           }
@@ -760,7 +756,7 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = CHI_election
+    relative_position_id = CHI_election_2020
   }
   #}
   #防疫{
@@ -774,7 +770,7 @@ focus_tree = {
     cancel_if_invalid = yes
     # 應對疫情
     prerequisite = {
-      focus = CHI_election
+      focus = CHI_election_2020
     }
     allow_branch = {
       has_country_flag = covid_happen
@@ -799,7 +795,7 @@ focus_tree = {
         days = 50
       }
     }
-    relative_position_id = CHI_election
+    relative_position_id = CHI_election_2020
   }
   focus = {
     id = Develop_own_vaccine
@@ -1064,7 +1060,7 @@ focus_tree = {
     cancel_if_invalid = yes
     # 第四次石油危機
     prerequisite = {
-      focus = CHI_election
+      focus = CHI_election_2020
     }
     allow_branch = {
       has_country_flag = CHI_has_oil_crash1
@@ -1078,7 +1074,7 @@ focus_tree = {
     completion_reward = {
       add_political_power = -100
     }
-    relative_position_id = CHI_election
+    relative_position_id = CHI_election_2020
   }
   focus = {
     id = Unleashing_strategic_oil_reserves
