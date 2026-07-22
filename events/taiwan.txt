@@ -1742,14 +1742,10 @@ news_event = {
   immediate = {
     hidden_effect = {
       PHN = {
-        transfer_state = 1276
-        add_state_core = 1276
-        transfer_state = 628
-        add_state_core = 628
         transfer_state = 626
         add_state_core = 626
         set_capital = {
-          state = 628
+          state = 626
         }
         create_country_leader = {
           name = PHN_Torribio_D_Adachi
@@ -1771,20 +1767,6 @@ news_event = {
         add_state_core = 1273
         transfer_state = 623
         add_state_core = 623
-        transfer_state = 1279
-        add_state_core = 1279
-        transfer_state = 1281
-        add_state_core = 1281
-        transfer_state = 627
-        add_state_core = 627
-        transfer_state = 1280
-        add_state_core = 1280
-        transfer_state = 1278
-        add_state_core = 1278
-        transfer_state = 1277
-        add_state_core = 1277
-        transfer_state = 1279
-        add_state_core = 1279
         transfer_state = 1281
         add_state_core = 1281
         set_capital = {
@@ -1858,6 +1840,85 @@ news_event = {
           }
         }
       }
+      MIL = {
+        transfer_state = 1281
+        add_state_core = 1281
+        transfer_state = 627
+        add_state_core = 627
+        transfer_state = 1280
+        add_state_core = 1280
+        transfer_state = 1277
+        add_state_core = 1277
+        transfer_state = 1279
+        add_state_core = 1279
+        transfer_state = 1281
+        add_state_core = 1281
+        set_capital = {
+          state = 1280
+        }
+        create_country_leader = {
+          name = MIL_Murad_Ebrahim
+          picture = "gfx/Leaders/PHI_civil_war/MIL_Murad_Ebrahim.png"
+          ideology = national_derzhavism
+          expire = "1.1.1.1"
+        }
+        set_cosmetic_tag = MIL
+        set_party_name = {
+          ideology = national_derzhavism
+          long_name = PHI_MIL_long
+          name = PHI_MIL
+        }
+        division_template = {
+          name = "Minbing"
+          is_locked = no
+          regiments = {
+            militia = {
+              x = 0
+              y = 0
+            }
+            militia = {
+              x = 0
+              y = 1
+            }
+            militia = {
+              x = 0
+              y = 2
+            }
+            militia = {
+              x = 1
+              y = 0
+            }
+            militia = {
+              x = 1
+              y = 1
+            }
+          }
+        }
+        random_owned_controlled_state = {
+          create_unit = {
+            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            id = 6767
+            owner = MIL
+            count = 4
+          }
+        }
+        random_owned_controlled_state = {
+          create_unit = {
+            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            id = 6767
+            owner = MIL
+            count = 4
+          }
+        }
+        random_owned_controlled_state = {
+          create_unit = {
+            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            id = 6767
+            owner = MIL
+            count = 4
+          }
+        }
+      }
       AFP = {
         transfer_state = 1274
         add_state_core = 1274
@@ -1865,10 +1926,16 @@ news_event = {
         add_state_core = 327
         transfer_state = 1275
         add_state_core = 1275
+        transfer_state = 1278
+        add_state_core = 1278
         transfer_state = 624
         add_state_core = 624
         transfer_state = 625
         add_state_core = 625
+        transfer_state = 1276
+        add_state_core = 1276
+        transfer_state = 628
+        add_state_core = 628
         set_capital = {
           state = 1274
         }
@@ -1934,6 +2001,14 @@ news_event = {
             count = 4
           }
         }
+        1278 = {
+          create_unit = {
+            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            id = 1949
+            owner = AFP
+            count = 4
+          }
+        }
       }
       PRC = {
         transfer_state = 1384
@@ -1959,21 +2034,11 @@ news_event = {
     hidden_effect = {
       NDF = {
         declare_war_on = {
-          target = PHN
-          type = annex_everything
-        }
-        declare_war_on = {
           target = AFP
           type = annex_everything
         }
-      }
-      PHN = {
         declare_war_on = {
-          target = NDF
-          type = annex_everything
-        }
-        declare_war_on = {
-          target = AFP
+          target = MIL
           type = annex_everything
         }
       }
@@ -1983,7 +2048,17 @@ news_event = {
           type = annex_everything
         }
         declare_war_on = {
-          target = PHN
+          target = MIL
+          type = annex_everything
+        }
+      }
+      MIL = {
+        declare_war_on = {
+          target = NDF
+          type = annex_everything
+        }
+        declare_war_on = {
+          target = AFP
           type = annex_everything
         }
       }
