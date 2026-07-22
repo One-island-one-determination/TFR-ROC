@@ -2665,6 +2665,7 @@ focus_tree = {
       }
       custom_effect_tooltip = CHI_taiwan_war_begun_tooltip
       hidden_effect = {
+        set_country_flag = anti_PRC_flg
         if = {
           limit = {
             NOT = {
