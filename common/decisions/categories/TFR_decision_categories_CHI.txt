@@ -158,9 +158,35 @@ CHI_PRC_Infiltration_decisions = {
   scripted_gui = PRC_Infiltration_gui
 }
 
+
+
+#PHI內戰###################################################
+PHI_civil_war_dec = {
+  #菲律賓内戰
+  visible_when_empty = yes
+  priority = 4
+  visible = {
+    has_global_flag = PHI_civil_war_flag
+  }
+  allowed = {
+    or = {
+      original_tag = NDF
+      original_tag = AFP
+      original_tag = MIL
+    }
+  }
+}
+##########################################################
+
+####    ######    ######    ####
+####    ##  ##        ##    ####
+####    ######    ######    ####
+####    ##        ##        ####
+####    ##        ######    ####
+
 # 中科院
 CHI_NCSIST_category = {
-  icon = GFX_mio_CHI_NCSIST
+  icon = GFX_decison_CHI_NCSIST
   visible_when_empty = yes
   allowed = {
     original_tag = CHI
@@ -178,6 +204,27 @@ CHI_NCSIST_category = {
   }
 }
 
+#軍改
+CHI_dont_forget_homeland_category = {
+  icon = GFX_decision_dont_forget_homeland
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      AND = {
+        NOT = {
+          is_ally_with = PRC
+        }
+        has_completed_focus = CHI_dont_forget_homeland
+      }
+    }
+  }
+}
+
+#效率政府
 CHI_efficient_government_category = {
   icon = GFX_decision_efficient_government
   visible_when_empty = yes
@@ -197,18 +244,90 @@ CHI_efficient_government_category = {
   }
 }
 
-PHI_civil_war_dec = {
-  #菲律賓内戰
+#經濟與實業
+CHI_Economy_Industry_category = {
+  icon = GFX_decision_Economy_Industry
   visible_when_empty = yes
-  priority = 4
-  visible = {
-    has_global_flag = PHI_civil_war_flag
-  }
   allowed = {
-    or = {
-      original_tag = NDF
-      original_tag = AFP
-      original_tag = MIL
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      AND = {
+        NOT = {
+          is_ally_with = PRC
+        }
+        has_completed_focus = CHI_Economy_Industry
+      }
+    }
+  }
+}
+
+####    ######    ######    ####
+####    ##  ##        ##    ####
+####    ######    ######    ####
+####    ##            ##    ####
+####    ##        ######    ####
+
+CHI_GAW_situation_category = {
+  icon = GFX_decision_GAW_situation
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      has_completed_focus = CHI_thus_spoke_thucydides
+    }
+  }
+}
+
+####    ######    ##  ##    ####
+####    ##  ##    ##  ##    ####
+####    ######    ######    ####
+####    ##            ##    ####
+####    ##            ##    ####
+
+CHI_civilwar_category = {
+  icon = GFX_decision_civilwar
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      has_completed_focus = CHI_compete_for_central_plains
+    }
+  }
+}
+
+CHI_core_china_category = {
+  icon = GFX_decision_core_china
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      has_completed_focus = CHI_regional_political_tutelage
+    }
+  }
+}
+
+CHI_shanhe4province_category = {
+  icon = GFX_decision_shanhe4province
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      has_completed_focus = CHI_regional_political_tutelage
     }
   }
 }

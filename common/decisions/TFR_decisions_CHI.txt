@@ -4710,6 +4710,1044 @@ CHI_Intervene_the_American_Civil_War = {
   # 等等補
 }
 
-# 中科院研究(P2)
+####    ######    ######    ####
+####    ##  ##        ##    ####
+####    ######    ######    ####
+####    ##        ##        ####
+####    ##        ######    ####
+
+# 中科院研究
 CHI_NCSIST_category = {
+  #萬劍計畫
+  CHI_project_Wan_Chien = {
+    icon = GFX_CHI_project_Wan_Chien
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #勇武計畫
+  CHI_project_Yung_Wu = {
+    icon = GFX_CHI_project_Yung_Wus
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #M60A3升級
+  CHI_project_M60A3_upgrade = {
+    icon = GFX_CHI_project_M60A3_upgrade
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #外骨骼試驗
+  CHI_project_exoskeleton_trial = {
+    icon = GFX_CHI_project_exoskeleton_trial
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #CM13
+  CHI_project_CM13 = {
+    icon = GFX_CHI_project_CM13
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #麻雀計畫
+  CHI_project_sparrow = {
+    icon = GFX_CHI_project_sparrow
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #海鯤
+  CHI_project_Hai_Kun = {
+    icon = GFX_CHI_project_Hai_Kun
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #崑崙
+  CHI_project_Kun_Lun = {
+    icon = GFX_CHI_project_Kun_Lun
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #鎮冰
+  CHI_project_Zhen_Bing = {
+    icon = GFX_CHI_project_Zhen_Bing
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #澎湖
+  CHI_project_Peng_Hu = {
+    icon = GFX_CHI_project_Peng_Hu
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #勇鷹號現代化
+  CHI_project_Brave_Eagle = {
+    icon = GFX_CHI_project_Brave_Eagle
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #志航號
+  CHI_project_Zhi_Hang = {
+    icon = GFX_CHI_project_Zhi_Hang
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #天晴號
+  CHI_project_IPS67 = {
+    icon = GFX_CHI_project_IPS67
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+
+  #改進航電系統
+  CHI_project_Avionics = {
+    icon = GFX_CHI_project_Avionics
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+}
+
+#軍改
+CHI_dont_forget_homeland_category = {
+  #陸軍改革
+  CHI_project_ROCA_reform = {
+    icon = GFX_CHI_project_ROCA_reform
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #寧海計畫
+  CHI_project_Ning_Hai = {
+    icon = GFX_CHI_project_Ning_Hai
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #凌霄計畫
+  CHI_project_Ling_Hsiao = {
+    icon = GFX_CHI_project_Ling_Hsiao
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #駝峰炸射
+  CHI_project_hump_training = {
+    icon = GFX_CHI_project_hump_training
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+}
+
+#效率政府
+CHI_efficient_government_category = {
+  #嚴格道路品質管理
+  CHI_road_quality = {
+    icon = GFX_CHI_road_quality
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #公定發電優質煤限制
+  CHI_road_quality_coal = {
+    icon = GFX_CHI_quality_coal
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #水質監測網
+  CHI_water_monitor = {
+    icon = GFX_CHI_water_monitor
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #公有長期照護基金
+  CHI_public_ltc_fund = {
+    icon = GFX_CHI_public_ltc_fund
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #老幼共學
+  CHI_co_learning = {
+    icon = GFX_CHI_co_learning
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #青銀共居
+  CHI_co_living = {
+    icon = GFX_CHI_co_living
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #公營產業顧問中心：CHI_state_biz_advisor
+  CHI_state_biz_advisor = {
+    icon = GFX_CHI_state_biz_advisor
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #青年願景工程：CHI_youth_vision
+  CHI_youth_vision = {
+    icon = GFX_CHI_youth_vision
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #青年創業貸款：CHI_youth_startup_loan
+  CHI_youth_startup_loan = {
+    icon = GFX_CHI_youth_startup_loan
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #公共運輸整合：CHI_transit_integration
+  CHI_transit_integration = {
+    icon = GFX_CHI_transit_integration
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #完善捷運路網：CHI_mrt_network
+  CHI_mrt_network = {
+    icon = GFX_CHI_mrt_network
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #分離對陸情報體系：CHI_separate_prc_intel
+  CHI_separate_prc_intel = {
+    icon = GFX_CHI_separate_prc_intel
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+}
+
+##財政政策
+CHI_Economy_Industry_category = {
+  #軍工業擴張：CHI_mil_industry_expansion
+  CHI_mil_industry_expansion = {
+    icon = GFX_CHI_mil_industry_expansion
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #建立軍工生產線：CHI_mil_production_line
+  CHI_mil_production_line = {
+    icon = GFX_CHI_mil_production_line
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #批准CM13生產項目：CHI_approve_cm13
+  CHI_approve_cm13 = {
+    icon = GFX_CHI_approve_cm13
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #高端軍用發動機項目：CHI_advanced_mil_engine
+  CHI_advanced_mil_engine = {
+    icon = GFX_CHI_advanced_mil_engine
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #建成雲豹自產：CHI_domestic_cloud_leopard
+  CHI_domestic_cloud_leopard = {
+    icon = GFX_CHI_domestic_cloud_leopard
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #提升軍用品品質：CHI_improve_mil_quality
+  CHI_improve_mil_quality = {
+    icon = GFX_CHI_improve_mil_quality
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #擴大造船廠：CHI_expand_shipyards
+  CHI_expand_shipyards = {
+    icon = GFX_CHI_expand_shipyards
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #建立核五廠：CHI_build_nuke_plant_5
+  CHI_build_nuke_plant_5 = {
+    icon = GFX_CHI_build_nuke_plant_5
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #太陽能產業鋪設工程：CHI_solar_industry_project
+  CHI_solar_industry_project = {
+    icon = GFX_CHI_solar_industry_project
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #擴建加工廠：CHI_expand_processing_plant
+  CHI_expand_processing_plant = {
+    icon = GFX_CHI_expand_processing_plant
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #推行重工業政策：CHI_heavy_industry_policy
+  CHI_heavy_industry_policy = {
+    icon = GFX_CHI_heavy_industry_policy
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #國家建設計畫：CHI_national_construction_plan
+  CHI_national_construction_plan = {
+    icon = GFX_CHI_national_construction_plan
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #成立台灣光電公司：CHI_taiwan_optoelectronics
+  CHI_taiwan_optoelectronics = {
+    icon = GFX_CHI_taiwan_optoelectronics
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #開採矽砂：CHI_mine_silica_sand
+  CHI_mine_silica_sand = {
+    icon = GFX_CHI_mine_silica_sand
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #於自由國家投資：CHI_invest_free_nations
+  CHI_invest_free_nations = {
+    icon = GFX_CHI_invest_free_nations
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #挪威國事訪問：CHI_norway_state_visit
+  CHI_norway_state_visit = {
+    icon = GFX_CHI_norway_state_visit
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #提議歐亞共同合作研發：CHI_eurasia_joint_rd
+  CHI_eurasia_joint_rd = {
+    icon = GFX_CHI_eurasia_joint_rd
+    allowed = {
+
+    }
+    available = {
+
+    }
+    cancel_trigger = {
+
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+}
+
+
+
+####    ######    ######    ####
+####    ##  ##        ##    ####
+####    ######    ######    ####
+####    ##            ##    ####
+####    ##        ######    ####
+
+CHI_GAW_situation_category = {
+
+}
+
+
+
+####    ######    ##  ##    ####
+####    ##  ##    ##  ##    ####
+####    ######    ######    ####
+####    ##            ##    ####
+####    ##            ##    ####
+
+CHI_civilwar_category = {
+
+}
+
+CHI_core_china_category = {
+
+}
+
+CHI_shanhe4province_category = {
+
 }
