@@ -157,8 +157,45 @@ CHI_PRC_Infiltration_decisions = {
   }
   scripted_gui = PRC_Infiltration_gui
 }
+#美國內戰
+CHI_Intervene_the_American_Civil_War = {
+  icon = GFX_CHI_Intervene_the_American_Civil_War
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      AND = {
+        NOT = {
+          is_ally_with = PRC
+        }
+        has_completed_focus = Intervene_American_Civil_War
+      }
+    }
+  }
+}
 
-
+# 少子化
+CHI_demographic_crisis = {
+  icon = GFX_CHI_demographic_crisis
+  visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    OR = {
+      is_debug = yes
+      AND = {
+        NOT = {
+          is_ally_with = PRC
+        }
+        has_country_flag = CHI_demographic_crisis_flag
+      }
+    }
+  }
+}
 
 #PHI內戰###################################################
 PHI_civil_war_dec = {
@@ -296,24 +333,11 @@ CHI_civilwar_category = {
   allowed = {
     original_tag = CHI
   }
+  scripted_gui = TFR_CHI_chinese_civil_war_gui
   visible = {
     OR = {
       is_debug = yes
       has_completed_focus = CHI_compete_for_central_plains
-    }
-  }
-}
-
-CHI_core_china_category = {
-  icon = GFX_decision_core_china
-  visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    OR = {
-      is_debug = yes
-      has_completed_focus = CHI_regional_political_tutelage
     }
   }
 }

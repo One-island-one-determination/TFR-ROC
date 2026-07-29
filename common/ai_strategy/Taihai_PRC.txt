@@ -48,7 +48,7 @@ support_Taiwan = {
 	enable = {
 		has_war = no
 		has_global_flag = PRC_ongoing_taiwan_war
-		or = {
+		OR = {
 			tag = RAJ
 		}
 	}
@@ -69,7 +69,7 @@ support_Taiwan = {
 	enable = {
 		has_war = no
 		has_global_flag = PRC_ongoing_taiwan_war
-		or = {
+		OR = {
 			tag = PAK
 			tag = PRK
 		}

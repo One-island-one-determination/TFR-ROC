@@ -281,7 +281,9 @@ country_event = {
     effect_tooltip = {
       add_ideas = CHI_population_aging
     }
+    custom_effect_tooltip = CHI_demographic_crisis_tooltip
     hidden_effect = {
+      set_country_flag = CHI_demographic_crisis_flag
       add_dynamic_modifier = {
         modifier = CHI_population_aging_dynamic
       }

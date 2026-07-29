@@ -1,4 +1,5 @@
 guitypes = {
+	#疫情決議GUI
 	containerwindowtype = {
 		name = "CHI_vaccine_gui"
 		size = { width = 100%% height = 100 }
@@ -67,6 +68,7 @@ guitypes = {
 		}
 	}
 
+	#中共滲透GUI
 	containerwindowtype = {
 		name = "PRC_Infiltration_gui"
 		size = { width = 100%% height = 105 }
@@ -136,6 +138,7 @@ guitypes = {
 		}
 	}
 	
+	#軍購GUI
 	containerwindowtype = {
 		name = "CHI_Military_purchasing_interface"
 		size = { width = 100%% height = 530 }
@@ -200,6 +203,60 @@ guitypes = {
 				frame = 1
 				pdx_tooltip = "CSBC_tt"
 			}
+		}
+	}
+
+	#大亞洲戰爭GUI
+	containerwindowtype = {
+		name = "CHI_GAW_status"
+		size = { width = 100%% height = 500 }
+		
+		containerWindowType = {
+			name = "E"
+			position = { x = 250 y = 250 }
+
+			icontype = {
+				name = "gaw_background"
+				quadtexturesprite = "gaw_background"
+				position = { x = 0 y = 0 }
+				centerposition = yes				
+			}
+
+			iconType = {
+				name = "gaw_aus_1"
+				position = { x = -30 y = 31 }
+				quadTextureSprite = "gaw_aus_status_strip"
+				frame = 0
+			}
+			
+			iconType = {
+				name = "gaw_dongbei_1"
+				position = { x = -19 y = -248.5 }
+				quadTextureSprite = "gaw_dongbei_status_strip"
+				frame = 0
+			}
+
+			iconType = {
+				name = "gaw_eidn_1"
+				position = { x = -10 y = -4 }
+				quadTextureSprite = "gaw_eidn_status_strip"
+				frame = 0
+			}
+
+			iconType = {
+				name = "gaw_huabei_1"
+				position = { x = -61.5 y = -179.3 }
+				quadTextureSprite = "gaw_huabei_status_strip"
+				frame = 0
+			}
+
+			iconType = {
+				name = "gaw_huanan_1"
+				position = { x = -65 y = -105 }
+				quadTextureSprite = "gaw_huanan_status_strip"
+				frame = 0
+			}
+
 		}
 	}
 }

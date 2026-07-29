@@ -1,0 +1,1619 @@
+scripted_gui = {
+    TFR_CHI_chinese_civil_war_gui = {
+        context_type = decision_category
+        window_name = "CHI_CCW_status"
+        triggers = {
+
+            ##             ##
+            ##完全沒控制(紅)##
+            ##             ##
+
+            ccw_taiwan_0_visible = {
+                NOT = {
+                    OR = {
+                        524 = { is_owned_by = CHI }
+                        1148 = { is_owned_by = CHI }
+                        1149 = { is_owned_by = CHI }
+                        1150 = { is_owned_by = CHI }
+                        1151 = { is_owned_by = CHI }
+                    }
+                }
+            }
+            
+            ccw_anhui_0_visible = {
+                NOT = {
+                    OR = {
+                        1223 = { is_owned_by = CHI }
+                        606 = { is_owned_by = CHI }
+                        1221 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_beijing_s_0_visible = {
+                NOT = {
+                    608 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_beijing_0_visible = {
+                NOT = {
+                    608 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_jiangsu_0_visible = {
+                NOT = {
+                    OR = {
+                        598 = { is_owned_by = CHI }
+                        1228 = { is_owned_by = CHI }
+                        1429 = { is_owned_by = CHI }
+                        613 = { is_owned_by = CHI }
+                        1222 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_shandong_0_visible = {
+                NOT = {
+                    OR = {
+                        1426 = { is_owned_by = CHI }
+                        1231 = { is_owned_by = CHI }
+                        597 = { is_owned_by = CHI }
+                        1230 = { is_owned_by = CHI }
+                        1427 = { is_owned_by = CHI }
+                        1229 = { is_owned_by = CHI }
+                        1393 = { is_owned_by = CHI }
+                        1420 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_hebei_0_visible = {
+                NOT = {
+                    OR = {
+                        609 = { is_owned_by = CHI }
+                        610 = { is_owned_by = CHI }
+                        611 = { is_owned_by = CHI }
+                        1154 = { is_owned_by = CHI }
+                        1232 = { is_owned_by = CHI }
+                        1421 = { is_owned_by = CHI }
+                        614 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_tianjin_s_0_visible = {
+                NOT = {
+                    1157 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_tianjin_0_visible = {
+                NOT = {
+                    1157 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_shanxi_0_visible = {
+                NOT = {
+                    OR = {
+                        1233 = { is_owned_by = CHI }
+                        615 = { is_owned_by = CHI }
+                        1194 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_shan3xi_0_visible = {
+                NOT = {
+                    OR = {
+                        1201 = { is_owned_by = CHI }
+                        622 = { is_owned_by = CHI }
+                        1200 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_henan_0_visible = {
+                NOT = {
+                    OR = {
+                        607 = { is_owned_by = CHI }
+                        1226 = { is_owned_by = CHI }
+                        1225 = { is_owned_by = CHI }
+                        1224 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_ningxia_0_visible = {
+                NOT = {
+                    1199 = { is_owned_by = CHI }
+                }
+            }
+            
+            ccw_chongqing_0_visible = {
+                NOT = {
+                    1189 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_shanghai_0_visible = {
+                NOT = {
+                    1215 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_shanghai_s_0_visible = {
+                NOT = {
+                    1215 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_zhejiang_0_visible = {
+                NOT = {
+                    OR = {
+                        1220 = { is_owned_by = CHI }
+                        1159 = { is_owned_by = CHI }
+                        1219 = { is_owned_by = CHI }
+                        596 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_fujian_0_visible = {
+                NOT = {
+                    OR = {
+                        1217 = { is_owned_by = CHI }
+                        595 = { is_owned_by = CHI }
+                        1218 = { is_owned_by = CHI }
+                        1216 = { is_owned_by = CHI }
+                        1431 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_guangdong_0_visible = {
+                NOT = {
+                    OR = {
+                        1430 = { is_owned_by = CHI }
+                        1207 = { is_owned_by = CHI }
+                        1206 = { is_owned_by = CHI }
+                        592 = { is_owned_by = CHI }
+                        728 = { is_owned_by = CHI }
+                        1395 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_hongkong_0_visible = {
+                NOT = {
+                    326 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_hongkong_s_0_visible = {
+                NOT = {
+                    326 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_macau_0_visible = {
+                NOT = {
+                    729 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_macau_s_0_visible = {
+                NOT = {
+                    729 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_guangxi_0_visible = {
+                NOT = {
+                    OR = {
+                        599 = { is_owned_by = CHI }
+                        1191 = { is_owned_by = CHI }
+                        593 = { is_owned_by = CHI }
+                        594 = { is_owned_by = CHI }
+                        1203 = { is_owned_by = CHI }
+                        1204 = { is_owned_by = CHI }
+                        1205 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_yunnan_0_visible = {
+                NOT = {
+                    OR = {
+                        1196 = { is_owned_by = CHI }
+                        1192 = { is_owned_by = CHI }
+                        1195 = { is_owned_by = CHI }
+                        325 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_sichuan_0_visible = {
+                NOT = {
+                    OR = {
+                        601 = { is_owned_by = CHI }
+                        1168 = { is_owned_by = CHI }
+                        1190 = { is_owned_by = CHI }
+                        605 = { is_owned_by = CHI }
+                        1188 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_xizang_0_visible = {
+                NOT = {
+                    OR = {
+                        1155 = { is_owned_by = CHI }
+                        322 = { is_owned_by = CHI }
+                        1153 = { is_owned_by = CHI }
+                        1156 = { is_owned_by = CHI }
+                        1152 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_zangsouth_0_visible = {
+                NOT = {
+                    434 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_hubei_0_visible = {
+                NOT = {
+                    OR = {
+                        1212 = { is_owned_by = CHI }
+                        620 = { is_owned_by = CHI }
+                        1211 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_hunan_0_visible = {
+                NOT = {
+                    OR = {
+                        602 = { is_owned_by = CHI }
+                        1208 = { is_owned_by = CHI }
+                        1209 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_guizhou_0_visible = {
+                NOT = {
+                    OR = {
+                        1210 = { is_owned_by = CHI }
+                        603 = { is_owned_by = CHI }
+                        1197 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_jiangxi_0_visible = {
+                NOT = {
+                    OR = {
+                        1227 = { is_owned_by = CHI }
+                        1488 = { is_owned_by = CHI }
+                        1214 = { is_owned_by = CHI }
+                        1213 = { is_owned_by = CHI }
+                        600 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_hainan_0_visible = {
+                NOT = {
+                    591 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_xinjiang_0_visible = {
+                NOT = {
+                    OR = {
+                        1158 = { is_owned_by = CHI }
+                        1160 = { is_owned_by = CHI }
+                        1161 = { is_owned_by = CHI }
+                        1162 = { is_owned_by = CHI }
+                        1163 = { is_owned_by = CHI }
+                        1164 = { is_owned_by = CHI }
+                        1844 = { is_owned_by = CHI }
+                        618 = { is_owned_by = CHI }
+                        619 = { is_owned_by = CHI }
+                        287 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_qinghai_0_visible = {
+                NOT = {
+                    OR = {
+                        1186 = { is_owned_by = CHI }
+                        1187 = { is_owned_by = CHI }
+                        604 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_gansu_0_visible = {
+                NOT = {
+                    OR = {
+                        1198 = { is_owned_by = CHI }
+                        1183 = { is_owned_by = CHI }
+                        616 = { is_owned_by = CHI }
+                        283 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_neimeng_0_visible = {
+                NOT = {
+                    OR = {
+                        1166 = { is_owned_by = CHI }
+                        1167 = { is_owned_by = CHI }
+                        621 = { is_owned_by = CHI }
+                        1202 = { is_owned_by = CHI }
+                        612 = { is_owned_by = CHI }
+                        715 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_mon_0_visible = {
+                NOT = {
+                    OR = {
+                        1388 = { is_owned_by = CHI }
+                        1389 = { is_owned_by = CHI }
+                        1390 = { is_owned_by = CHI }
+                        1391 = { is_owned_by = CHI }
+                        330 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_tuva_0_visible = {
+                NOT = {
+                    329 = { is_owned_by = CHI }
+                }
+            }
+
+            ccw_liaoning_0_visible = {
+                NOT = {
+                    OR = {
+                        1425 = { is_owned_by = CHI }
+                        716 = { is_owned_by = CHI }
+                        1417 = { is_owned_by = CHI }
+                        1413 = { is_owned_by = CHI }
+                        1394 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_jilin_0_visible = {
+                NOT = {
+                    OR = {
+                        1414 = { is_owned_by = CHI }
+                        1415 = { is_owned_by = CHI }
+                        328 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_hlj_0_visible = {
+                NOT = {
+                    OR = {
+                        1424 = { is_owned_by = CHI }
+                        714 = { is_owned_by = CHI }
+                        717 = { is_owned_by = CHI }
+                        1416 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ##           ##
+            ##部分控制(黃)##
+            ##           ##
+
+            ccw_taiwan_1_visible = {
+                OR = {
+                        524 = { is_owned_by = CHI }
+                        1148 = { is_owned_by = CHI }
+                        1149 = { is_owned_by = CHI }
+                        1150 = { is_owned_by = CHI }
+                        1151 = { is_owned_by = CHI }
+                }
+
+                NOT = {
+                    AND = {
+                        524 = { is_owned_by = CHI }
+                        1148 = { is_owned_by = CHI }
+                        1149 = { is_owned_by = CHI }
+                        1150 = { is_owned_by = CHI }
+                        1151 = { is_owned_by = CHI }
+                    }
+                }
+            
+            }
+            
+            ccw_anhui_1_visible = {
+                OR = {
+                        1223 = { is_owned_by = CHI }
+                        606 = { is_owned_by = CHI }
+                        1221 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1223 = { is_owned_by = CHI }
+                        606 = { is_owned_by = CHI }
+                        1221 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_jiangsu_1_visible = {
+                OR = {
+                        598 = { is_owned_by = CHI }
+                        1228 = { is_owned_by = CHI }
+                        1429 = { is_owned_by = CHI }
+                        613 = { is_owned_by = CHI }
+                        1222 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    OR = {
+                        598 = { is_owned_by = CHI }
+                        1228 = { is_owned_by = CHI }
+                        1429 = { is_owned_by = CHI }
+                        613 = { is_owned_by = CHI }
+                        1222 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_shandong_1_visible = {
+                OR = {
+                        1426 = { is_owned_by = CHI }
+                        1231 = { is_owned_by = CHI }
+                        597 = { is_owned_by = CHI }
+                        1230 = { is_owned_by = CHI }
+                        1427 = { is_owned_by = CHI }
+                        1229 = { is_owned_by = CHI }
+                        1393 = { is_owned_by = CHI }
+                        1420 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1426 = { is_owned_by = CHI }
+                        1231 = { is_owned_by = CHI }
+                        597 = { is_owned_by = CHI }
+                        1230 = { is_owned_by = CHI }
+                        1427 = { is_owned_by = CHI }
+                        1229 = { is_owned_by = CHI }
+                        1393 = { is_owned_by = CHI }
+                        1420 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_hebei_1_visible = {
+                OR = {
+                        609 = { is_owned_by = CHI }
+                        610 = { is_owned_by = CHI }
+                        611 = { is_owned_by = CHI }
+                        1154 = { is_owned_by = CHI }
+                        1232 = { is_owned_by = CHI }
+                        1421 = { is_owned_by = CHI }
+                        614 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        609 = { is_owned_by = CHI }
+                        610 = { is_owned_by = CHI }
+                        611 = { is_owned_by = CHI }
+                        1154 = { is_owned_by = CHI }
+                        1232 = { is_owned_by = CHI }
+                        1421 = { is_owned_by = CHI }
+                        614 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_shanxi_1_visible = {
+                OR = {
+                        1233 = { is_owned_by = CHI }
+                        615 = { is_owned_by = CHI }
+                        1194 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1233 = { is_owned_by = CHI }
+                        615 = { is_owned_by = CHI }
+                        1194 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_shan3xi_1_visible = {
+                OR = {
+                        1201 = { is_owned_by = CHI }
+                        622 = { is_owned_by = CHI }
+                        1200 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1201 = { is_owned_by = CHI }
+                        622 = { is_owned_by = CHI }
+                        1200 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_henan_1_visible = {
+                OR = {
+                        607 = { is_owned_by = CHI }
+                        1226 = { is_owned_by = CHI }
+                        1225 = { is_owned_by = CHI }
+                        1224 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        607 = { is_owned_by = CHI }
+                        1226 = { is_owned_by = CHI }
+                        1225 = { is_owned_by = CHI }
+                        1224 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_zhejiang_1_visible = {
+                OR = {
+                        1220 = { is_owned_by = CHI }
+                        1159 = { is_owned_by = CHI }
+                        1219 = { is_owned_by = CHI }
+                        596 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1220 = { is_owned_by = CHI }
+                        1159 = { is_owned_by = CHI }
+                        1219 = { is_owned_by = CHI }
+                        596 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_fujian_1_visible = {
+                OR = {
+                        1217 = { is_owned_by = CHI }
+                        595 = { is_owned_by = CHI }
+                        1218 = { is_owned_by = CHI }
+                        1216 = { is_owned_by = CHI }
+                        1431 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1217 = { is_owned_by = CHI }
+                        595 = { is_owned_by = CHI }
+                        1218 = { is_owned_by = CHI }
+                        1216 = { is_owned_by = CHI }
+                        1431 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_guangdong_1_visible = {
+                OR = {
+                        1430 = { is_owned_by = CHI }
+                        1207 = { is_owned_by = CHI }
+                        1206 = { is_owned_by = CHI }
+                        592 = { is_owned_by = CHI }
+                        728 = { is_owned_by = CHI }
+                        1395 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1430 = { is_owned_by = CHI }
+                        1207 = { is_owned_by = CHI }
+                        1206 = { is_owned_by = CHI }
+                        592 = { is_owned_by = CHI }
+                        728 = { is_owned_by = CHI }
+                        1395 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+
+            ccw_guangxi_1_visible = {
+                OR = {
+                        599 = { is_owned_by = CHI }
+                        1191 = { is_owned_by = CHI }
+                        593 = { is_owned_by = CHI }
+                        594 = { is_owned_by = CHI }
+                        1203 = { is_owned_by = CHI }
+                        1204 = { is_owned_by = CHI }
+                        1205 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        599 = { is_owned_by = CHI }
+                        1191 = { is_owned_by = CHI }
+                        593 = { is_owned_by = CHI }
+                        594 = { is_owned_by = CHI }
+                        1203 = { is_owned_by = CHI }
+                        1204 = { is_owned_by = CHI }
+                        1205 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_yunnan_1_visible = {
+                OR = {
+                        1196 = { is_owned_by = CHI }
+                        1192 = { is_owned_by = CHI }
+                        1195 = { is_owned_by = CHI }
+                        325 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1196 = { is_owned_by = CHI }
+                        1192 = { is_owned_by = CHI }
+                        1195 = { is_owned_by = CHI }
+                        325 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_sichuan_1_visible = {
+                OR = {
+                        601 = { is_owned_by = CHI }
+                        1168 = { is_owned_by = CHI }
+                        1190 = { is_owned_by = CHI }
+                        605 = { is_owned_by = CHI }
+                        1188 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        601 = { is_owned_by = CHI }
+                        1168 = { is_owned_by = CHI }
+                        1190 = { is_owned_by = CHI }
+                        605 = { is_owned_by = CHI }
+                        1188 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_xizang_1_visible = {
+                OR = {
+                        1155 = { is_owned_by = CHI }
+                        322 = { is_owned_by = CHI }
+                        1153 = { is_owned_by = CHI }
+                        1156 = { is_owned_by = CHI }
+                        1152 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1155 = { is_owned_by = CHI }
+                        322 = { is_owned_by = CHI }
+                        1153 = { is_owned_by = CHI }
+                        1156 = { is_owned_by = CHI }
+                        1152 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_hubei_1_visible = {
+                OR = {
+                        1212 = { is_owned_by = CHI }
+                        620 = { is_owned_by = CHI }
+                        1211 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1212 = { is_owned_by = CHI }
+                        620 = { is_owned_by = CHI }
+                        1211 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_hunan_1_visible = {
+                OR = {
+                        602 = { is_owned_by = CHI }
+                        1208 = { is_owned_by = CHI }
+                        1209 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        602 = { is_owned_by = CHI }
+                        1208 = { is_owned_by = CHI }
+                        1209 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_guizhou_1_visible = {
+                OR = {
+                        1210 = { is_owned_by = CHI }
+                        603 = { is_owned_by = CHI }
+                        1197 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1210 = { is_owned_by = CHI }
+                        603 = { is_owned_by = CHI }
+                        1197 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_jiangxi_1_visible = {
+                OR = {
+                        1227 = { is_owned_by = CHI }
+                        1488 = { is_owned_by = CHI }
+                        1214 = { is_owned_by = CHI }
+                        1213 = { is_owned_by = CHI }
+                        600 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1227 = { is_owned_by = CHI }
+                        1488 = { is_owned_by = CHI }
+                        1214 = { is_owned_by = CHI }
+                        1213 = { is_owned_by = CHI }
+                        600 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_xinjiang_1_visible = {
+                OR = {
+                        1158 = { is_owned_by = CHI }
+                        1160 = { is_owned_by = CHI }
+                        1161 = { is_owned_by = CHI }
+                        1162 = { is_owned_by = CHI }
+                        1163 = { is_owned_by = CHI }
+                        1164 = { is_owned_by = CHI }
+                        1844 = { is_owned_by = CHI }
+                        618 = { is_owned_by = CHI }
+                        619 = { is_owned_by = CHI }
+                        287 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1158 = { is_owned_by = CHI }
+                        1160 = { is_owned_by = CHI }
+                        1161 = { is_owned_by = CHI }
+                        1162 = { is_owned_by = CHI }
+                        1163 = { is_owned_by = CHI }
+                        1164 = { is_owned_by = CHI }
+                        1844 = { is_owned_by = CHI }
+                        618 = { is_owned_by = CHI }
+                        619 = { is_owned_by = CHI }
+                        287 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_qinghai_1_visible = {
+                OR = {
+                        1186 = { is_owned_by = CHI }
+                        1187 = { is_owned_by = CHI }
+                        604 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1186 = { is_owned_by = CHI }
+                        1187 = { is_owned_by = CHI }
+                        604 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_gansu_1_visible = {
+                OR = {
+                        1198 = { is_owned_by = CHI }
+                        1183 = { is_owned_by = CHI }
+                        616 = { is_owned_by = CHI }
+                        283 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1198 = { is_owned_by = CHI }
+                        1183 = { is_owned_by = CHI }
+                        616 = { is_owned_by = CHI }
+                        283 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_neimeng_1_visible = {
+                OR = {
+                        1166 = { is_owned_by = CHI }
+                        1167 = { is_owned_by = CHI }
+                        621 = { is_owned_by = CHI }
+                        1202 = { is_owned_by = CHI }
+                        612 = { is_owned_by = CHI }
+                        715 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1166 = { is_owned_by = CHI }
+                        1167 = { is_owned_by = CHI }
+                        621 = { is_owned_by = CHI }
+                        1202 = { is_owned_by = CHI }
+                        612 = { is_owned_by = CHI }
+                        715 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_mon_1_visible = {
+                OR = {
+                        1388 = { is_owned_by = CHI }
+                        1389 = { is_owned_by = CHI }
+                        1390 = { is_owned_by = CHI }
+                        1391 = { is_owned_by = CHI }
+                        330 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1388 = { is_owned_by = CHI }
+                        1389 = { is_owned_by = CHI }
+                        1390 = { is_owned_by = CHI }
+                        1391 = { is_owned_by = CHI }
+                        330 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_liaoning_1_visible = {
+                OR = {
+                        1425 = { is_owned_by = CHI }
+                        716 = { is_owned_by = CHI }
+                        1417 = { is_owned_by = CHI }
+                        1413 = { is_owned_by = CHI }
+                        1394 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1425 = { is_owned_by = CHI }
+                        716 = { is_owned_by = CHI }
+                        1417 = { is_owned_by = CHI }
+                        1413 = { is_owned_by = CHI }
+                        1394 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_jilin_1_visible = {
+                OR = {
+                        1414 = { is_owned_by = CHI }
+                        1415 = { is_owned_by = CHI }
+                        328 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1414 = { is_owned_by = CHI }
+                        1415 = { is_owned_by = CHI }
+                        328 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ccw_hlj_1_visible = {
+                OR = {
+                        1424 = { is_owned_by = CHI }
+                        714 = { is_owned_by = CHI }
+                        717 = { is_owned_by = CHI }
+                        1416 = { is_owned_by = CHI }
+                    }
+                NOT = {
+                    AND = {
+                        1424 = { is_owned_by = CHI }
+                        714 = { is_owned_by = CHI }
+                        717 = { is_owned_by = CHI }
+                        1416 = { is_owned_by = CHI }
+                    }
+                }
+            }
+
+            ##           ##
+            ##完全控制(綠)##
+            ##           ##
+
+            ccw_taiwan_2_visible = {
+                AND = {
+                        524 = { is_owned_by = CHI }
+                        1148 = { is_owned_by = CHI }
+                        1149 = { is_owned_by = CHI }
+                        1150 = { is_owned_by = CHI }
+                        1151 = { is_owned_by = CHI }
+                    }
+            }
+            
+            ccw_anhui_2_visible = {
+                AND = {
+                        1223 = { is_owned_by = CHI }
+                        606 = { is_owned_by = CHI }
+                        1221 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_beijing_s_2_visible = {
+                AND = {
+                        608 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_beijing_2_visible = {
+                AND = {
+                        608 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_jiangsu_2_visible = {
+                AND = {
+                        598 = { is_owned_by = CHI }
+                        1228 = { is_owned_by = CHI }
+                        1429 = { is_owned_by = CHI }
+                        613 = { is_owned_by = CHI }
+                        1222 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_shandong_2_visible = {
+                AND = {
+                        1426 = { is_owned_by = CHI }
+                        1231 = { is_owned_by = CHI }
+                        597 = { is_owned_by = CHI }
+                        1230 = { is_owned_by = CHI }
+                        1427 = { is_owned_by = CHI }
+                        1229 = { is_owned_by = CHI }
+                        1393 = { is_owned_by = CHI }
+                        1420 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_hebei_2_visible = {
+                AND = {
+                        609 = { is_owned_by = CHI }
+                        610 = { is_owned_by = CHI }
+                        611 = { is_owned_by = CHI }
+                        1154 = { is_owned_by = CHI }
+                        1232 = { is_owned_by = CHI }
+                        1421 = { is_owned_by = CHI }
+                        614 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_tianjin_s_2_visible = {
+                AND = {
+                        1157 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_tianjin_2_visible = {
+                AND = {
+                        1157 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_shanxi_2_visible = {
+                AND = {
+                        1233 = { is_owned_by = CHI }
+                        615 = { is_owned_by = CHI }
+                        1194 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_shan3xi_2_visible = {
+                AND = {
+                        1201 = { is_owned_by = CHI }
+                        622 = { is_owned_by = CHI }
+                        1200 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_henan_2_visible = {
+                AND = {
+                        607 = { is_owned_by = CHI }
+                        1226 = { is_owned_by = CHI }
+                        1225 = { is_owned_by = CHI }
+                        1224 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_ningxia_2_visible = {
+                1199 = { is_owned_by = CHI }
+            }
+            
+            ccw_chongqing_2_visible = {
+                1189 = { is_owned_by = CHI }
+            }
+
+            ccw_shanghai_2_visible = {
+                1215 = { is_owned_by = CHI }
+            }
+
+            ccw_shanghai_s_2_visible = {
+                1215 = { is_owned_by = CHI }
+            }
+
+            ccw_zhejiang_2_visible = {
+                AND = {
+                        1220 = { is_owned_by = CHI }
+                        1159 = { is_owned_by = CHI }
+                        1219 = { is_owned_by = CHI }
+                        596 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_fujian_2_visible = {
+                AND = {
+                        1217 = { is_owned_by = CHI }
+                        595 = { is_owned_by = CHI }
+                        1218 = { is_owned_by = CHI }
+                        1216 = { is_owned_by = CHI }
+                        1431 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_guangdong_2_visible = {
+                AND = {
+                        1430 = { is_owned_by = CHI }
+                        1207 = { is_owned_by = CHI }
+                        1206 = { is_owned_by = CHI }
+                        592 = { is_owned_by = CHI }
+                        728 = { is_owned_by = CHI }
+                        1395 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_hongkong_2_visible = {
+                326 = { is_owned_by = CHI }
+            }
+
+            ccw_hongkong_s_2_visible = {
+                326 = { is_owned_by = CHI }
+            }
+
+            ccw_macau_2_visible = {
+                729 = { is_owned_by = CHI }
+            }
+
+            ccw_macau_s_2_visible = {
+                729 = { is_owned_by = CHI }
+            }
+
+            ccw_guangxi_2_visible = {
+                AND = {
+                        599 = { is_owned_by = CHI }
+                        1191 = { is_owned_by = CHI }
+                        593 = { is_owned_by = CHI }
+                        594 = { is_owned_by = CHI }
+                        1203 = { is_owned_by = CHI }
+                        1204 = { is_owned_by = CHI }
+                        1205 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_yunnan_2_visible = {
+                AND = {
+                        1196 = { is_owned_by = CHI }
+                        1192 = { is_owned_by = CHI }
+                        1195 = { is_owned_by = CHI }
+                        325 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_sichuan_2_visible = {
+                AND = {
+                        601 = { is_owned_by = CHI }
+                        1168 = { is_owned_by = CHI }
+                        1190 = { is_owned_by = CHI }
+                        605 = { is_owned_by = CHI }
+                        1188 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_xizang_2_visible = {
+                AND = {
+                        1155 = { is_owned_by = CHI }
+                        322 = { is_owned_by = CHI }
+                        1153 = { is_owned_by = CHI }
+                        1156 = { is_owned_by = CHI }
+                        1152 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_zangsouth_2_visible = {
+                434 = { is_owned_by = CHI }
+            }
+
+            ccw_hubei_2_visible = {
+                AND = {
+                        1212 = { is_owned_by = CHI }
+                        620 = { is_owned_by = CHI }
+                        1211 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_hunan_2_visible = {
+                AND = {
+                        602 = { is_owned_by = CHI }
+                        1208 = { is_owned_by = CHI }
+                        1209 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_guizhou_2_visible = {
+                AND = {
+                        1210 = { is_owned_by = CHI }
+                        603 = { is_owned_by = CHI }
+                        1197 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_jiangxi_2_visible = {
+                AND = {
+                        1227 = { is_owned_by = CHI }
+                        1488 = { is_owned_by = CHI }
+                        1214 = { is_owned_by = CHI }
+                        1213 = { is_owned_by = CHI }
+                        600 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_hainan_2_visible = {
+                591 = { is_owned_by = CHI }
+            }
+
+            ccw_xinjiang_2_visible = {
+                AND = {
+                        1158 = { is_owned_by = CHI }
+                        1160 = { is_owned_by = CHI }
+                        1161 = { is_owned_by = CHI }
+                        1162 = { is_owned_by = CHI }
+                        1163 = { is_owned_by = CHI }
+                        1164 = { is_owned_by = CHI }
+                        1844 = { is_owned_by = CHI }
+                        618 = { is_owned_by = CHI }
+                        619 = { is_owned_by = CHI }
+                        287 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_qinghai_2_visible = {
+                AND = {
+                        1186 = { is_owned_by = CHI }
+                        1187 = { is_owned_by = CHI }
+                        604 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_gansu_2_visible = {
+                AND = {
+                        1198 = { is_owned_by = CHI }
+                        1183 = { is_owned_by = CHI }
+                        616 = { is_owned_by = CHI }
+                        283 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_neimeng_2_visible = {
+                AND = {
+                        1166 = { is_owned_by = CHI }
+                        1167 = { is_owned_by = CHI }
+                        621 = { is_owned_by = CHI }
+                        1202 = { is_owned_by = CHI }
+                        612 = { is_owned_by = CHI }
+                        715 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_mon_2_visible = {
+                AND = {
+                        1388 = { is_owned_by = CHI }
+                        1389 = { is_owned_by = CHI }
+                        1390 = { is_owned_by = CHI }
+                        1391 = { is_owned_by = CHI }
+                        330 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_tuva_2_visible = {
+                329 = { is_owned_by = CHI }
+            }
+
+            ccw_liaoning_2_visible = {
+                AND = {
+                        1425 = { is_owned_by = CHI }
+                        716 = { is_owned_by = CHI }
+                        1417 = { is_owned_by = CHI }
+                        1413 = { is_owned_by = CHI }
+                        1394 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_jilin_2_visible = {
+                AND = {
+                        1414 = { is_owned_by = CHI }
+                        1415 = { is_owned_by = CHI }
+                        328 = { is_owned_by = CHI }
+                    }
+            }
+
+            ccw_hlj_2_visible = {
+                AND = {
+                        1424 = { is_owned_by = CHI }
+                        714 = { is_owned_by = CHI }
+                        717 = { is_owned_by = CHI }
+                        1416 = { is_owned_by = CHI }
+                    }
+            }
+
+            ##             ##
+            ##為核心省分(藍)##
+            ##             ##
+
+            ccw_taiwan_3_visible = {
+                AND = {
+                        524 = { is_core_of = CHI }
+                        1148 = { is_core_of = CHI }
+                        1149 = { is_core_of = CHI }
+                        1150 = { is_core_of = CHI }
+                        1151 = { is_core_of = CHI }
+                    }
+            }
+            
+            ccw_anhui_3_visible = {
+                AND = {
+                        1223 = { is_core_of = CHI }
+                        606 = { is_core_of = CHI }
+                        1221 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_beijing_s_3_visible = {
+                AND = {
+                        608 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_beijing_3_visible = {
+                AND = {
+                        608 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_jiangsu_3_visible = {
+                AND = {
+                        598 = { is_core_of = CHI }
+                        1228 = { is_core_of = CHI }
+                        1429 = { is_core_of = CHI }
+                        613 = { is_core_of = CHI }
+                        1222 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_shANDong_3_visible = {
+                AND = {
+                        1426 = { is_core_of = CHI }
+                        1231 = { is_core_of = CHI }
+                        597 = { is_core_of = CHI }
+                        1230 = { is_core_of = CHI }
+                        1427 = { is_core_of = CHI }
+                        1229 = { is_core_of = CHI }
+                        1393 = { is_core_of = CHI }
+                        1420 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_hebei_3_visible = {
+                AND = {
+                        609 = { is_core_of = CHI }
+                        610 = { is_core_of = CHI }
+                        611 = { is_core_of = CHI }
+                        1154 = { is_core_of = CHI }
+                        1232 = { is_core_of = CHI }
+                        1421 = { is_core_of = CHI }
+                        614 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_tianjin_s_3_visible = {
+                AND = {
+                        1157 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_tianjin_3_visible = {
+                AND = {
+                        1157 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_shanxi_3_visible = {
+                AND = {
+                        1233 = { is_core_of = CHI }
+                        615 = { is_core_of = CHI }
+                        1194 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_shan3xi_3_visible = {
+                AND = {
+                        1201 = { is_core_of = CHI }
+                        622 = { is_core_of = CHI }
+                        1200 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_henan_3_visible = {
+                AND = {
+                        607 = { is_core_of = CHI }
+                        1226 = { is_core_of = CHI }
+                        1225 = { is_core_of = CHI }
+                        1224 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_ningxia_3_visible = {
+                AND = {
+                        1199 = { is_core_of = CHI }
+                    }
+            }
+            
+            ccw_chongqing_3_visible = {
+                AND = {
+                        1189 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_shanghai_3_visible = {
+                AND = {
+                        1215 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_shanghai_s_3_visible = {
+                AND = {
+                        1215 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_zhejiang_3_visible = {
+                AND = {
+                        1220 = { is_core_of = CHI }
+                        1159 = { is_core_of = CHI }
+                        1219 = { is_core_of = CHI }
+                        596 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_fujian_3_visible = {
+                AND = {
+                        1217 = { is_core_of = CHI }
+                        595 = { is_core_of = CHI }
+                        1218 = { is_core_of = CHI }
+                        1216 = { is_core_of = CHI }
+                        1431 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_guangdong_3_visible = {
+                AND = {
+                        1430 = { is_core_of = CHI }
+                        1207 = { is_core_of = CHI }
+                        1206 = { is_core_of = CHI }
+                        592 = { is_core_of = CHI }
+                        728 = { is_core_of = CHI }
+                        1395 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_hongkong_3_visible = {
+                AND = {
+                        326 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_hongkong_s_3_visible = {
+                AND = {
+                        326 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_macau_3_visible = {
+                AND = {
+                        729 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_macau_s_3_visible = {
+                AND = {
+                        729 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_guangxi_3_visible = {
+                AND = {
+                        599 = { is_core_of = CHI }
+                        1191 = { is_core_of = CHI }
+                        593 = { is_core_of = CHI }
+                        594 = { is_core_of = CHI }
+                        1203 = { is_core_of = CHI }
+                        1204 = { is_core_of = CHI }
+                        1205 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_yunnan_3_visible = {
+                AND = {
+                        1196 = { is_core_of = CHI }
+                        1192 = { is_core_of = CHI }
+                        1195 = { is_core_of = CHI }
+                        325 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_sichuan_3_visible = {
+                AND = {
+                        601 = { is_core_of = CHI }
+                        1168 = { is_core_of = CHI }
+                        1190 = { is_core_of = CHI }
+                        605 = { is_core_of = CHI }
+                        1188 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_xizang_3_visible = {
+                AND = {
+                        1155 = { is_core_of = CHI }
+                        322 = { is_core_of = CHI }
+                        1153 = { is_core_of = CHI }
+                        1156 = { is_core_of = CHI }
+                        1152 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_zangsouth_3_visible = {
+                AND = {
+                        434 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_hubei_3_visible = {
+                AND = {
+                        1212 = { is_core_of = CHI }
+                        620 = { is_core_of = CHI }
+                        1211 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_hunan_3_visible = {
+                AND = {
+                        602 = { is_core_of = CHI }
+                        1208 = { is_core_of = CHI }
+                        1209 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_guizhou_3_visible = {
+                AND = {
+                        1210 = { is_core_of = CHI }
+                        603 = { is_core_of = CHI }
+                        1197 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_jiangxi_3_visible = {
+                AND = {
+                        1227 = { is_core_of = CHI }
+                        1488 = { is_core_of = CHI }
+                        1214 = { is_core_of = CHI }
+                        1213 = { is_core_of = CHI }
+                        600 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_hainan_3_visible = {
+                AND = {
+                        591 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_xinjiang_3_visible = {
+                AND = {
+                        1158 = { is_core_of = CHI }
+                        1160 = { is_core_of = CHI }
+                        1161 = { is_core_of = CHI }
+                        1162 = { is_core_of = CHI }
+                        1163 = { is_core_of = CHI }
+                        1164 = { is_core_of = CHI }
+                        1844 = { is_core_of = CHI }
+                        618 = { is_core_of = CHI }
+                        619 = { is_core_of = CHI }
+                        287 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_qinghai_3_visible = {
+                AND = {
+                        1186 = { is_core_of = CHI }
+                        1187 = { is_core_of = CHI }
+                        604 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_gansu_3_visible = {
+                AND = {
+                        1198 = { is_core_of = CHI }
+                        1183 = { is_core_of = CHI }
+                        616 = { is_core_of = CHI }
+                        283 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_neimeng_3_visible = {
+                AND = {
+                        1166 = { is_core_of = CHI }
+                        1167 = { is_core_of = CHI }
+                        621 = { is_core_of = CHI }
+                        1202 = { is_core_of = CHI }
+                        612 = { is_core_of = CHI }
+                        715 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_mon_3_visible = {
+                AND = {
+                        1388 = { is_core_of = CHI }
+                        1389 = { is_core_of = CHI }
+                        1390 = { is_core_of = CHI }
+                        1391 = { is_core_of = CHI }
+                        330 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_tuva_3_visible = {
+                AND = {
+                        329 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_liaoning_3_visible = {
+                AND = {
+                        1425 = { is_core_of = CHI }
+                        716 = { is_core_of = CHI }
+                        1417 = { is_core_of = CHI }
+                        1413 = { is_core_of = CHI }
+                        1394 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_jilin_3_visible = {
+                AND = {
+                        1414 = { is_core_of = CHI }
+                        1415 = { is_core_of = CHI }
+                        328 = { is_core_of = CHI }
+                    }
+            }
+
+            ccw_hlj_3_visible = {
+                AND = {
+                        1424 = { is_core_of = CHI }
+                        714 = { is_core_of = CHI }
+                        717 = { is_core_of = CHI }
+                        1416 = { is_core_of = CHI }
+                    }
+            }
+
+
+        }
+    }
+}
