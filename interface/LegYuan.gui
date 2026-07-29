@@ -1,0 +1,39 @@
+guitypes = {
+	#立法院UI
+  containerWindowType = {
+    name = "CHI_Legislative_Yuan_gui"
+    position = { x = -85 y = -450 }
+    size = { width = 600 height = 0 }
+    icontype = {
+      name = "frame"
+      quadtexturesprite = "GFX_frame"
+      position = { x = 410 y = -130 }
+      centerposition = yes
+    }
+    buttonType = {
+      name = "Open_kmt_dec"
+      position = { x = 399 y = -87 }
+      quadTextureSprite = "GFX_KMT_button_icon"
+      frame = 1
+      pdx_tooltip = "GFX_kmt_icon"
+    }
+    buttonType = {
+      name = "Open_tpp_dec"
+      position = { x = 400 y = -167 }
+      quadTextureSprite = "GFX_TPP_button_icon"
+      frame = 1
+      pdx_tooltip = "GFX_tpp_icon"
+    }
+    buttonType = {
+      name = "Open_dpp_dec"
+      position = { x = 399 y = -249 }
+      quadTextureSprite = "GFX_DPP_button_icon"
+      frame = 1
+      pdx_tooltip = "GFX_dpp_icon"
+    }
+  }
+
+}
+
+
+

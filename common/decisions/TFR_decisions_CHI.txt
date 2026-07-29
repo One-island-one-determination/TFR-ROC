@@ -3953,6 +3953,7 @@ CHI_KMT_politics_category = {
   }
 }
 
+# 國軍決議
 CHI_army_decisions = {
   CHI_imps = {
     #icon = GFX_CHI_Legislative_Yuan_decisions
@@ -4710,6 +4711,64 @@ CHI_Intervene_the_American_Civil_War = {
   # 等等補
 }
 
+# 少子化
+CHI_demographic_crisis = {
+  #公有長期照護基金
+  CHI_public_ltc_fund = {
+    icon = GFX_CHI_public_ltc_fund
+    available = {
+      has_completed_focus = CHI_efficient_government
+    }
+    visible = {
+      has_completed_focus = CHI_efficient_government
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #老幼共學
+  CHI_co_learning = {
+    icon = GFX_CHI_co_learning
+    available = {
+      has_completed_focus = CHI_Special_budget
+    }
+    visible = {
+      has_completed_focus = CHI_Special_budget
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+  #青銀共居
+  CHI_co_living = {
+    icon = GFX_CHI_co_living
+    available = {
+      has_completed_focus = CHI_Special_budget
+    }
+    visible = {
+      has_completed_focus = CHI_Special_budget
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+
+    }
+    remove_effect = {
+
+    }
+  }
+}
+
 ####    ######    ######    ####
 ####    ##  ##        ##    ####
 ####    ######    ######    ####
@@ -5150,69 +5209,6 @@ CHI_efficient_government_category = {
   #水質監測網
   CHI_water_monitor = {
     icon = GFX_CHI_water_monitor
-    allowed = {
-
-    }
-    available = {
-
-    }
-    cancel_trigger = {
-
-    }
-    cost = 100
-    fire_only_once = yes
-    complete_effect = {
-
-    }
-    remove_effect = {
-
-    }
-  }
-  #公有長期照護基金
-  CHI_public_ltc_fund = {
-    icon = GFX_CHI_public_ltc_fund
-    allowed = {
-
-    }
-    available = {
-
-    }
-    cancel_trigger = {
-
-    }
-    cost = 100
-    fire_only_once = yes
-    complete_effect = {
-
-    }
-    remove_effect = {
-
-    }
-  }
-  #老幼共學
-  CHI_co_learning = {
-    icon = GFX_CHI_co_learning
-    allowed = {
-
-    }
-    available = {
-
-    }
-    cancel_trigger = {
-
-    }
-    cost = 100
-    fire_only_once = yes
-    complete_effect = {
-
-    }
-    remove_effect = {
-
-    }
-  }
-  #青銀共居
-  CHI_co_living = {
-    icon = GFX_CHI_co_living
     allowed = {
 
     }
@@ -5744,9 +5740,6 @@ CHI_civilwar_category = {
 
 }
 
-CHI_core_china_category = {
-
-}
 
 CHI_shanhe4province_category = {
 
