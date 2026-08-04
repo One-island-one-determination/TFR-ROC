@@ -13,6 +13,7 @@ focus_tree = {
     continue_if_invalid = no
     cancel_if_invalid = yes
     completion_reward = {
+      country_event = { id = CHI.H4.2 }
       unlock_decision_category_tooltip = CHI_civilwar_category
     }
   }
@@ -42,6 +43,10 @@ focus_tree = {
     prerequisite = {
       focus = CHI_regional_political_tutelage
     }
+  
+    completion_reward = {
+      country_event = { id = CHI.H4.3 }
+    }
   }
   focus = {
     id = CHI_central_supervision_policy
@@ -57,6 +62,10 @@ focus_tree = {
     prerequisite = {
       focus = CHI_regional_political_tutelage
     }
+  
+    completion_reward = {
+      country_event = { id = CHI.H4.4 }
+    }
   }
   focus = {
     id = CHI_republic_achieved
@@ -66,6 +75,10 @@ focus_tree = {
     icon = GFX_focus_CHI_republic_achieved
     continue_if_invalid = no
     cancel_if_invalid = yes
+  
+    completion_reward = {
+      country_event = { id = CHI.H4.5 }
+    }
   }
   focus = {
     id = CHI_rapid_political_tutelage
@@ -77,6 +90,10 @@ focus_tree = {
     cancel_if_invalid = yes
     prerequisite = {
       focus = CHI_republic_achieved
+    }
+  
+    completion_reward = {
+      country_event = { id = CHI.H4.6 }
     }
   }
   focus = {
@@ -101,6 +118,10 @@ focus_tree = {
     cancel_if_invalid = yes
     prerequisite = {
       focus = CHI_establish_regional_seats
+    }
+  
+    completion_reward = {
+      country_event = { id = CHI.H4.7 }
     }
   }
   focus = {
