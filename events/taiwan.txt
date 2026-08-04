@@ -755,36 +755,6 @@ country_event = {
 
   option = {
     name = ROC_CHI.29.a
-    country_event = {
-      id = ROC_CHI.30
-      days = 5
-    }
-  }
-}
-
-country_event = {
-  id = ROC_CHI.30
-  title = ROC_CHI.30.t
-  desc = ROC_CHI.30.d
-  picture = ROC_CHI_Event_29
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = ROC_CHI.30.a
-    add_popularity = {
-      ideology = nationalist
-      popularity = 0.05
-    }
-    set_party_name = {
-      ideology = nationalist
-      long_name = CHI_KMT_nati
-      name = CHI_KMT_nati
-    }
-    set_temp_variable = {
-      coalition_partner_var_temp = token:nationalist
-    }
-    add_to_coalition = yes
   }
 }
 
