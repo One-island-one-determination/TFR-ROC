@@ -12,6 +12,9 @@ focus_tree = {
     icon = GFX_focus_CHI_compete_for_central_plains
     continue_if_invalid = no
     cancel_if_invalid = yes
+    completion_reward = {
+      unlock_decision_category_tooltip = CHI_civilwar_category
+    }
   }
   focus = {
     id = CHI_regional_political_tutelage

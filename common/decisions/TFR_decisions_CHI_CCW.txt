@@ -9,7 +9,7 @@ CHI_civilwar_category = {
                 check_variable = { CHI_ccw_dec_visible = 1 }
                 is_ai = yes
             }
-                    owns_state = 524
+            owns_state = 524
             owns_state = 1148
             owns_state = 1149
             owns_state = 1150
@@ -42,6 +42,15 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 524
+                state = 1148
+                state = 1149
+                state = 1150
+                state = 648
+            }
+        }
     }
 
 
@@ -63,7 +72,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -220,6 +229,13 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1223
+                state = 606
+                state = 1221
+            }
+        }
     }
 
 
@@ -239,7 +255,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -370,6 +386,11 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 608
+            }
+        }
     }
 
 
@@ -387,7 +408,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -510,6 +531,15 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 598
+                state = 1228
+                state = 1429
+                state = 613
+                state = 1222
+            }
+        }
     }
 
 
@@ -531,7 +561,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -703,6 +733,18 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1426
+                state = 1231
+                state = 597
+                state = 1230
+                state = 1427
+                state = 1229
+                state = 1393
+                state = 1420
+            }
+        }
     }
 
 
@@ -727,7 +769,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -926,6 +968,17 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 609
+                state = 610
+                state = 611
+                state = 1154
+                state = 1232
+                state = 1421
+                state = 614
+            }
+        }
     }
 
 
@@ -949,7 +1002,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -1120,6 +1173,11 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1157
+            }
+        }
     }
 
 
@@ -1137,7 +1195,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -1254,6 +1312,13 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1233
+                state = 615
+                state = 1194
+            }
+        }
     }
 
 
@@ -1273,7 +1338,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -1410,6 +1475,13 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1201
+                state = 622
+                state = 1200
+            }
+        }
     }
 
 
@@ -1429,7 +1501,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -1569,6 +1641,14 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 607
+                state = 1226
+                state = 1225
+                state = 1224
+            }
+        }
     }
 
 
@@ -1589,7 +1669,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -1730,6 +1810,11 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1199
+            }
+        }
     }
 
 
@@ -1747,7 +1832,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -1858,6 +1943,11 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1189
+            }
+        }
     }
 
 
@@ -1875,7 +1965,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -1986,6 +2076,11 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1215
+            }
+        }
     }
 
 
@@ -2003,7 +2098,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -2123,6 +2218,14 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1220
+                state = 1159
+                state = 1219
+                state = 596
+            }
+        }
     }
 
 
@@ -2143,7 +2246,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -2296,6 +2399,15 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1217
+                state = 595
+                state = 1218
+                state = 1216
+                state = 1431
+            }
+        }
     }
 
 
@@ -2317,7 +2429,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -2483,6 +2595,16 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1430
+                state = 1207
+                state = 1206
+                state = 592
+                state = 728
+                state = 1395
+            }
+        }
     }
 
 
@@ -2505,7 +2627,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -2666,6 +2788,11 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 326
+            }
+        }
     }
 
 
@@ -2683,7 +2810,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -2794,6 +2921,11 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 729
+            }
+        }
     }
 
 
@@ -2811,7 +2943,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -2940,6 +3072,17 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 599
+                state = 1191
+                state = 593
+                state = 594
+                state = 1203
+                state = 1204
+                state = 1205
+            }
+        }
     }
 
 
@@ -2963,7 +3106,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -3143,6 +3286,14 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1196
+                state = 1192
+                state = 1195
+                state = 325
+            }
+        }
     }
 
 
@@ -3163,7 +3314,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -3316,6 +3467,15 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 601
+                state = 1168
+                state = 1190
+                state = 605
+                state = 1188
+            }
+        }
     }
 
 
@@ -3337,7 +3497,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -3500,6 +3660,15 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1155
+                state = 322
+                state = 1153
+                state = 1156
+                state = 1152
+            }
+        }
     }
 
 
@@ -3521,7 +3690,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -3672,6 +3841,11 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 434
+            }
+        }
     }
 
 
@@ -3689,7 +3863,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -3806,6 +3980,13 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1212
+                state = 620
+                state = 1211
+            }
+        }
     }
 
 
@@ -3825,7 +4006,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -3962,6 +4143,13 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 602
+                state = 1208
+                state = 1209
+            }
+        }
     }
 
 
@@ -3981,7 +4169,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -4118,6 +4306,13 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1210
+                state = 603
+                state = 1197
+            }
+        }
     }
 
 
@@ -4137,7 +4332,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -4280,6 +4475,15 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1227
+                state = 1428
+                state = 1214
+                state = 1213
+                state = 600
+            }
+        }
     }
 
 
@@ -4301,7 +4505,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -4452,6 +4656,11 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 591
+            }
+        }
     }
 
 
@@ -4469,7 +4678,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -4559,7 +4768,7 @@ CHI_civilwar_category = {
                 check_variable = { CHI_ccw_dec_visible = 29 }
                 is_ai = yes
             }
-                    owns_state = 1158
+            owns_state = 1158
             owns_state = 1160
             owns_state = 1161
             owns_state = 1162
@@ -4610,6 +4819,21 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1158
+                state = 1160
+                state = 1161
+                state = 1162
+                state = 1163
+                state = 1164
+                state = 1165
+                state = 617
+                state = 618
+                state = 619
+                state = 287
+            }
+        }
     }
 
 
@@ -4637,7 +4861,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -4854,6 +5078,13 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1186
+                state = 1187
+                state = 604
+            }
+        }
     }
 
 
@@ -4873,7 +5104,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -5013,6 +5244,14 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1198
+                state = 1193
+                state = 616
+                state = 283
+            }
+        }
     }
 
 
@@ -5033,7 +5272,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -5189,6 +5428,16 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1166
+                state = 1167
+                state = 621
+                state = 1202
+                state = 612
+                state = 715
+            }
+        }
     }
 
 
@@ -5211,7 +5460,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -5384,6 +5633,15 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1388
+                state = 1389
+                state = 1390
+                state = 1391
+                state = 330
+            }
+        }
     }
 
 
@@ -5405,7 +5663,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -5556,6 +5814,11 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 329
+            }
+        }
     }
 
 
@@ -5573,7 +5836,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -5696,6 +5959,15 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1425
+                state = 716
+                state = 1417
+                state = 1413
+                state = 1394
+            }
+        }
     }
 
 
@@ -5717,7 +5989,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -5874,6 +6146,13 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1414
+                state = 1415
+                state = 328
+            }
+        }
     }
 
 
@@ -5893,7 +6172,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -6033,6 +6312,14 @@ CHI_civilwar_category = {
             }
         }
         on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1424
+                state = 714
+                state = 717
+                state = 1416
+            }
+        }
     }
 
     
@@ -6052,7 +6339,7 @@ CHI_civilwar_category = {
         }
         cost = 5
         days_remove = 5
-        fire_only_once = yes
+        fire_only_once = no
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -6163,6 +6450,6 @@ CHI_civilwar_category = {
         }
     }
 
-}
+    
 
 }

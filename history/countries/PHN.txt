@@ -142,9 +142,16 @@ set_politics = {
   ruling_party = nationalist
   last_election = "2016.1.16"
   election_frequency = 48
-  elections_allowed = yes
+  elections_allowed = no
 }
 set_popularities = {
   authoritarian_democrat = 40
   nationalist = 60
+}
+
+create_country_leader = {
+  name = PHN_Torribio_D_Adachi
+  picture = "gfx/Leaders/PHI_civil_war/PHN_Torribio_D_Adachi.png"
+  ideology = military_junta
+  expire = "1.1.1.1"
 }

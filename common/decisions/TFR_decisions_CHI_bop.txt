@@ -16,7 +16,12 @@ CHI_Identity_dispute_dec = {
 			power_balance_weekly = 0.003
 		}
 		complete_effect = {}
-		remove_effect = {}
+		remove_effect = {
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.02
+			}
+		}
 	}
 
 	CHI_celebrate_tw_sports_victory_decision = {
@@ -34,6 +39,10 @@ CHI_Identity_dispute_dec = {
 			add_power_balance_value = {
 				id = CHI_Identity_dispute
 				value = 0.05
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.03
 			}
 		}
 	}
@@ -54,6 +63,10 @@ CHI_Identity_dispute_dec = {
 				id = CHI_Identity_dispute
 				value = -0.05
 			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.03
+			}
 		}
 	}
 
@@ -72,6 +85,10 @@ CHI_Identity_dispute_dec = {
 			add_power_balance_value = {
 				id = CHI_Identity_dispute
 				value = 0.1
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.05
 			}
 		}
 	}
@@ -92,6 +109,10 @@ CHI_Identity_dispute_dec = {
 				id = CHI_Identity_dispute
 				value = -0.1
 			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -106,7 +127,12 @@ CHI_Identity_dispute_dec = {
 			power_balance_weekly = -0.005
 		}
 		complete_effect = {}
-		remove_effect = {}
+		remove_effect = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.03
+			}
+		}
 	}
 
 	CHI_desinicization_rectification_movement_decision = {
@@ -123,7 +149,12 @@ CHI_Identity_dispute_dec = {
 		modifier = {
 			power_balance_weekly = 0.007
 		}
-		complete_effect = {}
+		complete_effect = {
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.05
+			}
+		}
 	}
 
 	CHI_one_country_one_main_language_initiative_decision = {
@@ -140,7 +171,12 @@ CHI_Identity_dispute_dec = {
 		modifier = {
 			power_balance_weekly = -0.01
 		}
-		complete_effect = {}
+		complete_effect = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+		}
 	}
 
 	CHI_comprehensive_community_development_decision = {
@@ -154,7 +190,12 @@ CHI_Identity_dispute_dec = {
 			power_balance_weekly = 0.002
 		}
 		complete_effect = {}
-		remove_effect = {}
+		remove_effect = {
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.03
+			}
+		}
 	}
 
 	CHI_mourn_anti_authoritarian_figures_decision = {
@@ -168,7 +209,12 @@ CHI_Identity_dispute_dec = {
 			power_balance_weekly = 0.001
 		}
 		complete_effect = {}
-		remove_effect = {}
+		remove_effect = {
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.02
+			}
+		}
 	}
 
 }

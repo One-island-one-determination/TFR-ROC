@@ -49,12 +49,8 @@ focus_tree = {
       focus = CHI_Survivor_celebration
     }
     completion_reward = {
-      hidden_effect = {
-        CHI = {
-          country_event = {
-            id = CHI.101
-          }
-        }
+      country_event = {
+        id = CHI.101
       }
     }
   }
@@ -73,12 +69,8 @@ focus_tree = {
       focus = CHI_Self_sutureing_trauma
     }
     completion_reward = {
-      hidden_effect = {
-        CHI = {
-          country_event = {
-            id = CHI.102
-          }
-        }
+      country_event = {
+        id = CHI.102
       }
       add_ideas = {
         civilian_economy
@@ -161,13 +153,8 @@ focus_tree = {
       focus = CHI_Lifting_martial_law
     }
     completion_reward = {
-      custom_effect_tooltip = event_chi_103_tt
-      hidden_effect = {
-        CHI = {
-          country_event = {
-            id = CHI.103
-          }
-        }
+      country_event = {
+        id = CHI.103
       }
     }
   }
@@ -368,13 +355,9 @@ focus_tree = {
       focus = CHI_Guarantee_basic_food_and_clothing
     }
     completion_reward = {
-      hidden_effect = {
-        CHI = {
-          country_event = {
-            id = CHI.105
-            days = 7
-          }
-        }
+      country_event = {
+        id = CHI.105
+        days = 7
       }
       custom_effect_tooltip = {
         IDEA = CHI_reonstruction_dynamic
@@ -518,12 +501,8 @@ focus_tree = {
       focus = CHI_Reopening_Kaohsiung_Port
     }
     completion_reward = {
-      hidden_effect = {
-        CHI = {
-          country_event = {
-            id = CHI.106
-          }
-        }
+      country_event = {
+        id = CHI.106
       }
       custom_effect_tooltip = {
         IDEA = CHI_reonstruction_dynamic
@@ -566,13 +545,8 @@ focus_tree = {
       focus = CHI_Ending_wartime_economic
     }
     completion_reward = {
-      custom_effect_tooltip = event_chi_104_tt
-      hidden_effect = {
-        CHI = {
-          country_event = {
-            id = CHI.104
-          }
-        }
+      country_event = {
+        id = CHI.104
       }
     }
     relative_position_id = CHI_Mobilizing_civil_society_groups

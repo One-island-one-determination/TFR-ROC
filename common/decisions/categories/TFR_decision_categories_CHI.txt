@@ -156,20 +156,9 @@ CHI_PRC_Infiltration_decisions = {
   #visible_when_empty = yes
   allowed = {
     original_tag = CHI
-    OR = {
-      has_global_flag = PRC_ongoing_taiwan_war
-      NOT = {
-        has_global_flag = PRC_taiwan_war_lost
-      }
-    }
   }
   visible = {
-    OR = {
-      has_global_flag = PRC_ongoing_taiwan_war
-      NOT = {
-        has_global_flag = PRC_taiwan_war_lost
-      }
-    }
+    has_country_flag = CHI_PRC_Infiltration_flag
   }
   scripted_gui = PRC_Infiltration_gui
 }

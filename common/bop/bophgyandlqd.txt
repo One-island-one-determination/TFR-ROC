@@ -30,82 +30,12 @@ CHI_Identity_dispute = {
         conscription_factor = 0.05
         army_claim_attack_factor = 0.1
         army_claim_defence_factor = 0.1
+        conservative_drift = 0.12
       }
       on_activate = {
-        custom_effect_tooltip = CHI_Identity_dispute_ROC_side_tt
-        hidden_effect = {
-          if = {
-            limit = {
-              CHI_han_kuo_yu_char = {
-                is_country_leader = yes
-              }
-            }
-            hidden_effect = {
-              set_party_name = {
-                ideology = nationalist
-                long_name = CHI_army_party1
-                name = CHI_army_party1
-              }
-              set_party_name = {
-                ideology = conscription
-                long_name = CHI_conservative_party2
-                name = CHI_conservative_party2
-              }
-              set_party_name = {
-                ideology = authoritarian_democrat
-                long_name = CHI_authoritarian_democrat_party2
-                name = CHI_authoritarian_democrat_party2
-              }
-              set_party_name = {
-                ideology = market_liberal
-                long_name = CHI_market_liberal_party2
-                name = CHI_market_liberal_party2
-              }
-              set_party_name = {
-                ideology = social_liberal
-                long_name = CHI_social_liberal_party2
-                name = CHI_social_liberal_party2
-              }
-              set_party_name = {
-                ideology = social_democrat
-                long_name = CHI_social_democrat_party2
-                name = CHI_social_democrat_party2
-              }
-              add_popularity = {
-                ideology = authoritarian_democrat
-                popularity = 0.15
-              }
-              set_politics = {
-                ruling_party = authoritarian_democrat
-                elections_allowed = yes
-                election_frequency = 72
-              }
-              set_country_leader_portrait = {
-                ideology = authoritarian_democrat
-                portrait = GFX_portrait_CHI_han_kuo_yu_gaw_win
-              }
-              set_temp_variable = {
-                coalition_partner_var_temp = token:social_democrat
-              }
-              add_to_coalition = yes
-              set_temp_variable = {
-                coalition_partner_var_temp = token:social_liberal
-              }
-              add_to_coalition = yes
-              set_temp_variable = {
-                coalition_partner_var_temp = token:market_liberal
-              }
-              add_to_coalition = yes
-              set_temp_variable = {
-                coalition_partner_var_temp = token:authoritarian_democrat
-              }
-              add_to_coalition = yes
-              set_temp_variable = {
-                coalition_partner_var_temp = token:conservative
-              }
-              add_to_coalition = yes
-            }
-          }
+        add_popularity = {
+          ideology = conservative
+          popularity = 0.10
         }
         set_temp_variable = {
           var = CHI_influence_KMT_temp
@@ -170,8 +100,13 @@ CHI_Identity_dispute = {
         offensive_war_stability_factor = 0.05
         stability_factor = 0.05
         war_support_factor = 0.05
+        conservative_drift = 0.08
       }
       on_activate = {
+        add_popularity = {
+          ideology = conservative
+          popularity = 0.05
+        }
         set_temp_variable = {
           var = CHI_influence_KMT_temp
           value = 0.15
@@ -233,8 +168,13 @@ CHI_Identity_dispute = {
       modifier = {
         political_power_gain = 0.05
         war_support_factor = 0.05
+        conservative_drift = 0.05
       }
       on_activate = {
+        add_popularity = {
+          ideology = conservative
+          popularity = 0.05
+        }
         set_temp_variable = {
           var = CHI_influence_KMT_temp
           value = 0.1
@@ -296,8 +236,13 @@ CHI_Identity_dispute = {
       modifier = {
         political_power_gain = -0.01
         war_support_factor = 0.05
+        conservative_drift = 0.03
       }
       on_activate = {
+        add_popularity = {
+          ideology = conservative
+          popularity = 0.05
+        }
         set_temp_variable = {
           var = CHI_influence_KMT_temp
           value = 0.05
@@ -338,8 +283,13 @@ CHI_Identity_dispute = {
       modifier = {
         political_power_gain = -0.01
         defensive_war_stability_factor = 0.01
+        social_liberal_drift = 0.03
       }
       on_activate = {
+        add_popularity = {
+          ideology = social_liberal
+          popularity = 0.05
+        }
         set_temp_variable = {
           var = CHI_influence_DPP_temp
           value = 0.05
@@ -376,8 +326,13 @@ CHI_Identity_dispute = {
       modifier = {
         political_power_gain = 0.05
         defensive_war_stability_factor = 0.05
+        social_liberal_drift = 0.05
       }
       on_activate = {
+        add_popularity = {
+          ideology = social_liberal
+          popularity = 0.05
+        }
         set_temp_variable = {
           var = CHI_influence_DPP_temp
           value = 0.1
@@ -441,8 +396,13 @@ CHI_Identity_dispute = {
         defensive_war_stability_factor = 0.05
         army_core_attack_factor = 0.05
         army_core_defence_factor = 0.05
+        social_liberal_drift = 0.08
       }
       on_activate = {
+        add_popularity = {
+          ideology = social_liberal
+          popularity = 0.05
+        }
         set_temp_variable = {
           var = CHI_influence_DPP_temp
           value = 0.15
@@ -509,10 +469,15 @@ CHI_Identity_dispute = {
         conscription_factor = 0.05
         army_core_attack_factor = 0.10
         army_core_defence_factor = 0.10
+        social_liberal_drift = 0.12
       }
       on_activate = {
         custom_effect_tooltip = CHI_Identity_dispute_TW_side_tt
         custom_effect_tooltip = weiwancheng
+        add_popularity = {
+          ideology = social_liberal
+          popularity = 0.10
+        }
         set_temp_variable = {
           var = CHI_influence_DPP_temp
           value = 0.2

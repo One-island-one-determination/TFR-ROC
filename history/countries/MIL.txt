@@ -1,0 +1,60 @@
+capital = 1280
+
+set_research_slots = 3
+set_convoys = 50
+set_stability = 0.4
+
+set_country_flag = country_language_filipino
+set_country_flag = country_language_english
+
+set_variable = { Russian_Influence = 0.00 }
+set_variable = { Chinese_Influence = 0.10 }
+set_variable = { American_Influence = 0.10 }
+set_variable = { European_Influence = 0.0 }
+set_variable = { PDO_Influence = 0.0 }
+set_variable = { Sovereign_Influence = 0.80 }
+
+set_technology = {
+  ## Infantry ##
+  infantry_weapons1 = 1
+  infantry_weapons2 = 1
+  motorised_infantry = 1
+  infantry_rifle_upgrade = 1
+  support_weapons = 1
+  support_weapons2 = 1
+  night_vision = 1
+  body_armor = 1
+  camouflage = 1
+
+  ## Support Companies ##
+  tech_support = 1
+  tech_engineers = 1
+  tech_recon = 1
+  tech_military_police = 1
+
+  ## Artillery ##
+  gw_artillery = 1
+  interwar_antitank = 1
+  interwar_antiair = 1
+
+  ## Industry ##
+  basic_machine_tools = 1
+}
+
+set_politics = {
+  ruling_party = nationalist
+  last_election = "2016.1.16"
+  election_frequency = 48
+  elections_allowed = no
+}
+set_popularities = {
+  authoritarian_democrat = 20
+  nationalist = 80
+}
+
+create_country_leader = {
+  name = MIL_Murad_Ebrahim
+  picture = "gfx/Leaders/PHI_civil_war/MIL_Murad_Ebrahim.png"
+  ideology = salafi
+  expire = "1.1.1.1"
+}

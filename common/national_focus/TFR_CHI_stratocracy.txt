@@ -1,0 +1,618 @@
+focus_tree = {
+    id = CHI_stratocracy_focus
+    country = {
+        factor = 0
+    }
+    default = no
+    focus = {
+        id = CHI_night_of_crisis
+        icon = GFX_goal_unknown
+        x = 10
+        y = 0
+        cost = 3
+    }
+    focus = {
+        id = CHI_iron_fisted_national_defense
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_night_of_crisis }
+        mutually_exclusive = { focus = CHI_bringing_order_out_of_chaos }
+        x = 6
+        y = 1
+        cost = 3
+    }
+    focus = {
+        id = CHI_bringing_order_out_of_chaos
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_night_of_crisis }
+        mutually_exclusive = { focus = CHI_iron_fisted_national_defense }
+        x = 14
+        y = 1
+        cost = 3
+    }
+    focus = {
+        id = CHI_for_the_country
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_bringing_order_out_of_chaos }
+        x = 13
+        y = 2
+        cost = 3
+    }
+    focus = {
+        id = CHI_for_the_people
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_bringing_order_out_of_chaos }
+        x = 15
+        y = 2
+        cost = 3
+    }
+    focus = {
+        id = CHI_utilize_bureaucracy
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_for_the_country }
+        x = 9
+        y = 3
+        cost = 3
+    }
+    focus = {
+        id = CHI_notify_grassroots_officers
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_for_the_country }
+        x = 11
+        y = 3
+        cost = 3
+    }
+    focus = {
+        id = CHI_control_factions
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_for_the_country }
+        x = 13
+        y = 3
+        cost = 3
+    }
+    focus = {
+        id = CHI_disperse_protests
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_for_the_people }
+        x = 15
+        y = 3
+        cost = 3
+    }
+    focus = {
+        id = CHI_beat_opportunists
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_for_the_people }
+        x = 17
+        y = 3
+        cost = 3
+    }
+    focus = {
+        id = CHI_take_over_livelihood_facilities
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_for_the_people }
+        x = 19
+        y = 3
+        cost = 3
+    }
+    focus = {
+        id = CHI_our_common_cause
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_utilize_bureaucracy }
+        x = 9
+        y = 4
+        cost = 3
+    }
+    focus = {
+        id = CHI_deal_with_opposing_officers
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_notify_grassroots_officers }
+        x = 11
+        y = 4
+        cost = 3
+    }
+    focus = {
+        id = CHI_national_syllogism
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_control_factions }
+        x = 13
+        y = 4
+        cost = 3
+    }
+    focus = {
+        id = CHI_temporary_restoration_of_curfew
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_disperse_protests }
+        x = 15
+        y = 4
+        cost = 3
+    }
+    focus = {
+        id = CHI_arrest_mobs
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_beat_opportunists }
+        x = 17
+        y = 4
+        cost = 3
+    }
+    focus = {
+        id = CHI_guarantee_prices
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_take_over_livelihood_facilities }
+        x = 19
+        y = 4
+        cost = 3
+    }
+    focus = {
+        id = CHI_troops_guard_the_gates
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_our_common_cause }
+        prerequisite = { focus = CHI_deal_with_opposing_officers }
+        prerequisite = { focus = CHI_national_syllogism }
+        prerequisite = { focus = CHI_temporary_restoration_of_curfew }
+        prerequisite = { focus = CHI_arrest_mobs }
+        prerequisite = { focus = CHI_guarantee_prices }
+        x = 14
+        y = 5
+        cost = 3
+    }
+    focus = {
+        id = CHI_grant_emergency_powers_to_cec
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_troops_guard_the_gates }
+        x = 14
+        y = 6
+        cost = 3
+    }
+    focus = {
+        id = CHI_reelect_parliament
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_grant_emergency_powers_to_cec }
+        x = 8
+        y = 7
+        cost = 3
+    }
+    focus = {
+        id = CHI_only_state_media
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_reelect_parliament }
+        x = 8
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_seal_pro_communist_parties
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_only_state_media }
+        x = 8
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_restart_martial_law
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_seal_pro_communist_parties }
+        x = 8
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_require_other_parties_cooperate
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_seal_pro_communist_parties }
+        x = 10
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_expand_military_police_power
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_restart_martial_law }
+        x = 6
+        y = 11
+        cost = 3
+    }
+    focus = {
+        id = CHI_constitutional_amendment
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_restart_martial_law }
+        x = 8
+        y = 11
+        cost = 3
+    }
+    focus = {
+        id = CHI_rebuild_military_statistics_bureau
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_restart_martial_law }
+        x = 10
+        y = 11
+        cost = 3
+    }
+    focus = {
+        id = CHI_quickly_restart_political_tutelage
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_grant_emergency_powers_to_cec }
+        x = 14
+        y = 7
+        cost = 3
+    }
+    focus = {
+        id = CHI_political_training_committee
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_quickly_restart_political_tutelage }
+        x = 14
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_maintain_grassroots_democracy
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_political_training_committee }
+        mutually_exclusive = { focus = CHI_fully_suspend_elections }
+        x = 12
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_fully_suspend_elections
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_political_training_committee }
+        mutually_exclusive = { focus = CHI_maintain_grassroots_democracy }
+        x = 16
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_control_education
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_maintain_grassroots_democracy }
+        x = 12
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_require_further_study
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_fully_suspend_elections }
+        x = 16
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_soldiers_serve_country
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_grant_emergency_powers_to_cec }
+        x = 20
+        y = 7
+        cost = 3
+    }
+    focus = {
+        id = CHI_veteran_benefits
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_soldiers_serve_country }
+        x = 18
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_promote_patriot_officers
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_soldiers_serve_country }
+        x = 20
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_improve_military_treatment
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_soldiers_serve_country }
+        x = 22
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_win_over_local_factions
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_promote_patriot_officers }
+        x = 20
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_coercion_and_bribery_black
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_promote_patriot_officers }
+        x = 22
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_militarize_police
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_win_over_local_factions }
+        x = 20
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_whampoa_spirit_construction
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_militarize_police }
+        x = 20
+        y = 11
+        cost = 3
+    }
+    focus = {
+        id = CHI_military_and_party_one_mind
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_constitutional_amendment }
+        prerequisite = { focus = CHI_control_education focus = CHI_require_further_study }
+        prerequisite = { focus = CHI_whampoa_spirit_construction }
+        x = 14
+        y = 13
+        cost = 3
+    }
+    focus = {
+        id = CHI_expand_cec_power_scope
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_military_and_party_one_mind }
+        x = 4
+        y = 14
+        cost = 3
+    }
+    focus = {
+        id = CHI_nation_building_diplomacy
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_expand_cec_power_scope }
+        x = 2
+        y = 15
+        cost = 3
+    }
+    focus = {
+        id = CHI_suspend_parliament_elections
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_expand_cec_power_scope }
+        x = 4
+        y = 15
+        cost = 3
+    }
+    focus = {
+        id = CHI_national_orthodoxy_theory
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_expand_cec_power_scope }
+        x = 6
+        y = 15
+        cost = 3
+    }
+    focus = {
+        id = CHI_return_to_un
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_nation_building_diplomacy }
+        x = 2
+        y = 16
+        cost = 3
+    }
+    focus = {
+        id = CHI_restore_surrender_rewards
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_national_orthodoxy_theory }
+        x = 6
+        y = 16
+        cost = 3
+    }
+    focus = {
+        id = CHI_recruit_compatriot_spies
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_restore_surrender_rewards }
+        x = 6
+        y = 17
+        cost = 3
+    }
+    focus = {
+        id = CHI_restore_coastal_reconnaissance
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_recruit_compatriot_spies }
+        x = 6
+        y = 18
+        cost = 3
+    }
+    focus = {
+        id = CHI_gain_foothold_in_society
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_military_and_party_one_mind }
+        mutually_exclusive = { focus = CHI_military_first_rule }
+        x = 14
+        y = 14
+        cost = 3
+    }
+    focus = {
+        id = CHI_military_first_rule
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_military_and_party_one_mind }
+        mutually_exclusive = { focus = CHI_gain_foothold_in_society }
+        x = 21
+        y = 14
+        cost = 3
+    }
+    focus = {
+        id = CHI_new_ten_major_construction
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_gain_foothold_in_society }
+        x = 11
+        y = 15
+        cost = 3
+    }
+    focus = {
+        id = CHI_three_day_weekend
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_gain_foothold_in_society }
+        x = 17
+        y = 15
+        cost = 3
+    }
+    focus = {
+        id = CHI_expand_infrastructure_construction
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_new_ten_major_construction }
+        x = 9
+        y = 16
+        cost = 3
+    }
+    focus = {
+        id = CHI_expand_state_owned_enterprises
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_new_ten_major_construction }
+        x = 13
+        y = 16
+        cost = 3
+    }
+    focus = {
+        id = CHI_relax_financial_deregulation
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_expand_infrastructure_construction }
+        x = 8
+        y = 17
+        cost = 3
+    }
+    focus = {
+        id = CHI_concentrate_on_developing_key_industries
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_relax_financial_deregulation }
+        prerequisite = { focus = CHI_require_banks_relax_loan_restrictions }
+        x = 9
+        y = 18
+        cost = 3
+    }
+    focus = {
+        id = CHI_require_banks_relax_loan_restrictions
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_expand_infrastructure_construction }
+        x = 10
+        y = 17
+        cost = 3
+    }
+    focus = {
+        id = CHI_increase_export_orientation
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_expand_state_owned_enterprises }
+        x = 14
+        y = 17
+        cost = 3
+    }
+    focus = {
+        id = CHI_attract_foreign_investment
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_increase_export_orientation }
+        x = 14
+        y = 18
+        cost = 3
+    }
+    focus = {
+        id = CHI_housing_price_limits
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_three_day_weekend }
+        x = 16
+        y = 16
+        cost = 3
+    }
+    focus = {
+        id = CHI_increase_minimum_wage
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_three_day_weekend }
+        x = 18
+        y = 16
+        cost = 3
+    }
+    focus = {
+        id = CHI_establish_price_supervision
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_housing_price_limits }
+        x = 16
+        y = 17
+        cost = 3
+    }
+    focus = {
+        id = CHI_expand_unemployment_guarantee
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_establish_price_supervision }
+        x = 16
+        y = 18
+        cost = 3
+    }
+    focus = {
+        id = CHI_relieve_low_income_people
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_increase_minimum_wage }
+        x = 18
+        y = 17
+        cost = 3
+    }
+    focus = {
+        id = CHI_nationalize_food_banks
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_relieve_low_income_people }
+        x = 18
+        y = 18
+        cost = 3
+    }
+    focus = {
+        id = CHI_raise_social_status_military_police
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_military_first_rule }
+        x = 21
+        y = 15
+        cost = 3
+    }
+    focus = {
+        id = CHI_expand_military_industrial_system
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_raise_social_status_military_police }
+        x = 21
+        y = 16
+        cost = 3
+    }
+    focus = {
+        id = CHI_rebuild_shipyards
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_expand_military_industrial_system }
+        x = 21
+        y = 17
+        cost = 3
+    }
+    focus = {
+        id = CHI_expand_csist
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_military_and_party_one_mind }
+        x = 26
+        y = 14
+        cost = 3
+    }
+    focus = {
+        id = CHI_military_and_livelihood_research_advance
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_expand_csist }
+        mutually_exclusive = { focus = CHI_prioritize_military_research }
+        x = 25
+        y = 15
+        cost = 3
+    }
+    focus = {
+        id = CHI_prioritize_military_research
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_expand_csist }
+        mutually_exclusive = { focus = CHI_military_and_livelihood_research_advance }
+        x = 27
+        y = 15
+        cost = 3
+    }
+    focus = {
+        id = CHI_return_to_prosperous_era
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_restore_coastal_reconnaissance }
+        prerequisite = { focus = CHI_concentrate_on_developing_key_industries }
+        prerequisite = { focus = CHI_attract_foreign_investment }
+        prerequisite = { focus = CHI_expand_unemployment_guarantee }
+        prerequisite = { focus = CHI_nationalize_food_banks }
+        x = 14
+        y = 20
+        cost = 3
+    }
+}

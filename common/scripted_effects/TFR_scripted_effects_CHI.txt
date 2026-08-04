@@ -828,12 +828,6 @@ PDTO_taiwan_war = {
       }
       if = {
         limit = {
-          check_variable = { TWW_VAR = 7}
-        }
-        country_event = {id = ROC_CHI.11}
-      }
-      if = {
-        limit = {
           check_variable = { TWW_VAR = 6}
         }
         country_event = {id = ROC_CHI.9}

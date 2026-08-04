@@ -189,6 +189,9 @@ country_event = {
   desc = CHI.4.d
   is_triggered_only = yes
   fire_only_once = yes
+  immediate = {
+    hidden_effect = { set_country_flag = CHI_PRC_Infiltration_flag }
+  }
   option = {
     name = CHI.4.a
   }
@@ -857,6 +860,7 @@ country_event = {
   }
 }
 
+############台海勝利事件#############{
 country_event = {
   #TAIWAN WINS IN THE TAIWAN WAR, MAINLAND CHINA LOSES, TAIWAN IS HAPPY
   id = taiwan.32
@@ -867,6 +871,7 @@ country_event = {
   fire_only_once = yes
   immediate = {
     hidden_effect = {
+      clr_country_flag = CHI_PRC_Infiltration_flag
       country_event = {
         id = CHI.114514##俄人給我們挖的坑，導致後續變日本傀儡
         days = 5
@@ -909,6 +914,8 @@ country_event = {
     custom_effect_tooltip = tooltip_white_line
     custom_effect_tooltip = tooltip_white_line
     custom_effect_tooltip = CHI_Economy_additional_effects
+
+    ##經濟精神修改####
     add_to_variable = {
       var = CHI_Economy_industrial_capacity_factory
       value = -0.15
@@ -934,6 +941,8 @@ country_event = {
       value = -0.6
       tooltip = state_production_speed_energy_farm_factor_tooltip
     }
+    ####
+    
     delete_unit = {
       id = 1949
       disband = yes
@@ -949,6 +958,8 @@ country_event = {
       remove_ideas = CHI_hold_the_line_idea
       remove_ideas = CHI_wolfpack_tactics_idea
       remove_ideas = CHI_phantom_legions_idea
+      remove_ideas = CHI_mobilize_balckbear
+      remove_ideas = CHI_mobilize_balckbear_1
       remove_ideas = CHI_united_as_one_idea
       remove_ideas = CHI_Taiwan_Bravery_2
       remove_ideas = CHI_Taiwan_Bravery
@@ -981,9 +992,34 @@ country_event = {
       }
       CHI={load_focus_tree = CHI_transition}
       focus_unlock = yes
+      if = {
+        limit = {
+          has_country_flag = KMT_win_flg
+        }
+        add_ideas = CHI_DPP_protest
+        set_temp_variable = {
+          coalition_partner_var_temp = token:social_liberal
+        }
+        remove_from_coalition = yes
+      }
+      else_if = {
+        limit = {
+          has_country_flag = DPP_win_flg
+        }
+        add_ideas = CHI_KMT_protests
+        set_temp_variable = {
+          coalition_partner_var_temp = token:conservative
+        }
+        remove_from_coalition = yes
+        set_temp_variable = {
+          coalition_partner_var_temp = token:authoritarian_democrat
+        }
+        remove_from_coalition = yes
+      }
     }
   }
 }
+##############非常重要#################}
 
 country_event = {
   id = CHI.114514

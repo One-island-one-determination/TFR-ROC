@@ -73,6 +73,8 @@ CHI = {
   recruit_character = CHI_Qiu_xianzhi_char
   recruit_character = CHI_Gao_yuting_char
   recruit_character = CHI_Chen_Jiaohua_char
+  recruit_character = CHI_lin_de_wang_char
+  recruit_character = CHI_wu_rong_yuan_char
   set_party_name = {
     ideology = social_democrat
     long_name = CHI_NewPowerParty_long
@@ -180,7 +182,8 @@ CHI = {
     character = CHI_lin_de_wang_char
     promote_leader = yes
     country_leader = {
-      ideology = left_nationalism
+      desc = CHI_lin_de_wang_char_desc
+      ideology = marxism_leninism
       expire = "1.1.1.1"
     }
   }

@@ -7,417 +7,1828 @@ scripted_gui = {
             ##             ##
             ##完全沒控制(紅)##
             ##             ##
-
-            ccw_taiwan_0_visible = {
+            
+            gaw_aus_1_visible = {
                 NOT = {
                     OR = {
-                        524 = { is_controlled_by = CHI }
-                        1148 = { is_controlled_by = CHI }
-                        1149 = { is_controlled_by = CHI }
-                        1150 = { is_controlled_by = CHI }
-                        648 = { is_controlled_by = CHI }
+                        517 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        518 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        519 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        520 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        521 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        522 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        285 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        868 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        523 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        737 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        634 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        911 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        284 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1419= {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        723 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+
+            gaw_dongbei_1_visible = {
+                NOT = {
+                    OR = {
+                        1424 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        714 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        717 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1416 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1415 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1414 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1417 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1413 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1167 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        715 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        328 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        716 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1394 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1425 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+
+            gaw_eidn_1_visible = {
+                NOT = {
+                    OR = {
+                        673 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        667 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        668 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        721 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        669 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        738 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+
+            gaw_huabei_1_visible = {
+                NOT = {
+                    OR = {
+                        609 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        610 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        611 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        608 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1157 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1233 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1154 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1421 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1232 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1426 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        597 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1427 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1393 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1229 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1420 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        615 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        614 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1231 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1194 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        607 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1230 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1224 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1225 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1226 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1201 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        622 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1200 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+
+            gaw_huazh_1_visible = {
+                NOT = {
+                    OR = {
+                        1220 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1159 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1219 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        596 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1223 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        606 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1221 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1212 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        620 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1211 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        602 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1208 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1209 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1227 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1428 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1214 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1213 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        600 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1210 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        603 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1197 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1215 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+
+            gaw_huanan_1_visible = {
+                NOT = {
+                    OR = {
+                        1217 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        595 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1218 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1216 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1431 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1430 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1207 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1206 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        592 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        728 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1395 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        599 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1191 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        593 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        594 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1203 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1204 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1205 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        591 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        326 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        729 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+            gaw_idch_1_visible = {
+                NOT = {
+                    OR = {
+                        671 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        784 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        783 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        286 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        670 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        890 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        891 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        289 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        892 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        724 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        any_state = { 
+                            is_core_of = BRM 
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                    }
+                }
+            }
+            gaw_idnmya_1_visible = {
+                NOT = {
+                    OR = {
+                        817 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1386 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        816 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        336 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        333 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        834 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        733 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        334 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        335 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1387 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        672 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1385 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+
+            gaw_ind_1_visible = {
+                NOT = {
+                    OR = {
+                        323 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        any_state = { 
+                            is_core_of = IND
+                            NOT = {state = 789}
+                            NOT = {state = 1370}
+                            NOT = {state = 434}
+                            NOT = {state = 432}
+                            NOT = {state = 1366}
+                            NOT = {state = 1367}
+                            NOT = {state = 1368}
+                            NOT = {state = 1369}
+                            NOT = {state =1131}
+                            NOT = {state = 441}
+                            NOT = {state =1373}
+                            NOT = {state =439}
+                            NOT = {state =1381}
+
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                        422 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        281 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+            gaw_mon_1_visible = {
+                NOT = {
+                    OR = {
+                        any_state = { 
+                            is_core_of = MON 
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                    }
+                }
+            }
+            gaw_nind_1_visible = {
+                NOT = {
+                    OR = {
+                        430 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        324 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        789 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1370 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        434 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        432 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1366 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1367 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1368 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1369 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}   
+                    }
+                }
+            }
+
+            gaw_pak_1_visible = {
+                NOT = {
+                    OR = {
+                        any_state = {
+                            is_core_of = PAK 
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                        1131 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        441 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1373 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        439 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1381 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+            gaw_nk_1_visible = {
+                NOT = {
+                    OR = {
+                        any_state = {
+                            is_core_of = PRK
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                    }
+                }
+            }
+            gaw_phi_1_visible = {
+                NOT = {
+                    OR = {
+                        any_state = {                
+                            is_core_of = PHI 
+
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                    }
+                }
+            }
+
+            gaw_saibei_1_visible = {
+                NOT = {
+                    OR = {
+                        612 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1202 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1166 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        621 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
             }
             
-            ccw_anhui_0_visible = {
+            gaw_sk_1_visible = {
                 NOT = {
                     OR = {
-                        1223 = { is_controlled_by = CHI }
-                        606 = { is_controlled_by = CHI }
-                        1221 = { is_controlled_by = CHI }
+                        any_state = {
+                            is_core_of = KOR
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
                     }
                 }
             }
 
-            ccw_beijing_s_0_visible = {
-                NOT = {
-                    608 = { is_controlled_by = CHI }
-                }
-            }
-
-            ccw_beijing_0_visible = {
-                NOT = {
-                    608 = { is_controlled_by = CHI }
-                }
-            }
-
-            ccw_jiangsu_0_visible = {
+            gaw_taiwan_1_visible = {
                 NOT = {
                     OR = {
-                        598 = { is_controlled_by = CHI }
-                        1228 = { is_controlled_by = CHI }
-                        1429 = { is_controlled_by = CHI }
-                        613 = { is_controlled_by = CHI }
-                        1222 = { is_controlled_by = CHI }
+                        any_state = {
+                            is_core_of = CHI
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                            }
+                        any_state = {
+                            is_core_of = JAP
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                            }
+                        1382 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1383 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1384 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        879 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
             }
 
-            ccw_shandong_0_visible = {
+            gaw_tib_1_visible = {
                 NOT = {
                     OR = {
-                        1426 = { is_controlled_by = CHI }
-                        1231 = { is_controlled_by = CHI }
-                        597 = { is_controlled_by = CHI }
-                        1230 = { is_controlled_by = CHI }
-                        1427 = { is_controlled_by = CHI }
-                        1229 = { is_controlled_by = CHI }
-                        1393 = { is_controlled_by = CHI }
-                        1420 = { is_controlled_by = CHI }
+                        1155 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        322 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1153 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1156 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1152 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1186 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        604 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
             }
 
-            ccw_hebei_0_visible = {
+            gaw_xj_1_visible = {
                 NOT = {
                     OR = {
-                        609 = { is_controlled_by = CHI }
-                        610 = { is_controlled_by = CHI }
-                        611 = { is_controlled_by = CHI }
-                        1154 = { is_controlled_by = CHI }
-                        1232 = { is_controlled_by = CHI }
-                        1421 = { is_controlled_by = CHI }
-                        614 = { is_controlled_by = CHI }
+                        1158 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1160 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1161 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1162 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1163 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1164 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1165 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        617 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        618 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        619 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        287 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1198 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1193 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        616 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        283 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1199 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1187 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
             }
 
-            ccw_tianjin_s_0_visible = {
-                NOT = {
-                    1157 = { is_controlled_by = CHI }
-                }
-            }
-
-            ccw_tianjin_0_visible = {
-                NOT = {
-                    1157 = { is_controlled_by = CHI }
-                }
-            }
-
-            ccw_shanxi_0_visible = {
+            gaw_yunchuan_1_visible = {
                 NOT = {
                     OR = {
-                        1233 = { is_controlled_by = CHI }
-                        615 = { is_controlled_by = CHI }
-                        1194 = { is_controlled_by = CHI }
+                        1196 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1192 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1195 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        325 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        601 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1168 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1190 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        605 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1188 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1189 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
             }
 
-            ccw_shan3xi_0_visible = {
+            ##           ##
+            ##部分控制(黃)##
+            ##           ##
+
+            gaw_aus_2_visible = {
+                OR = {
+                        517 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        518 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        519 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        520 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        521 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        522 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        868 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        523 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        737 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        634 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        911 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        284 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1419= {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        723 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = { 285 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
                 NOT = {
-                    OR = {
-                        1201 = { is_controlled_by = CHI }
-                        622 = { is_controlled_by = CHI }
-                        1200 = { is_controlled_by = CHI }
+                    AND = {
+                        517 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        518 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        519 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        520 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        521 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        522 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        285 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        868 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        523 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        737 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        634 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        911 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        284 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1419= {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        723 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_dongbei_2_visible = {
+                OR = {
+                        1424 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        714 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        717 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1416 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1415 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1414 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1417 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1413 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1167 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        715 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        328 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1394 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1425 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {716 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        1424 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        714 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        717 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1416 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1415 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1414 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1417 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1413 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1167 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        715 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        328 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        716 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1394 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1425 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_eidn_2_visible = {
+                OR = {
+                        673 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        667 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        721 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        669 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        738 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {668 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        673 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        667 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        668 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        721 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        669 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        738 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_huabei_2_visible = {
+                OR = {
+                        609 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        610 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        611 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        608 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1157 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1233 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1154 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1421 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1232 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1426 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        597 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1427 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1393 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1229 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1420 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        615 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        614 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1231 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1194 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        607 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1230 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1224 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1225 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1226 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1201 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1200 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {622 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        609 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        610 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        611 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        608 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1157 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1233 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1154 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1421 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1232 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1426 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        597 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1427 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1393 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1229 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1420 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        615 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        614 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1231 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1194 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        607 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1230 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1224 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1225 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1226 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1201 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        622 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1200 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_huazh_2_visible = {
+                OR = {
+                        1220 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1159 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1219 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        596 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1223 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        606 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1212 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        620 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1211 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        602 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1208 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1209 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1227 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1428 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1214 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1213 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        600 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1210 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        603 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1197 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1215 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {1221 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        1220 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1159 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1219 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        596 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1223 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        606 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1221 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1212 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        620 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1211 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        602 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1208 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1209 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1227 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1428 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1214 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1213 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        600 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1210 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        603 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1197 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1215 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_huanan_2_visible = {
+                OR = {
+                        1217 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        595 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1218 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1216 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1431 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1430 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1207 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1206 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        728 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1395 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        599 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1191 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        593 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        594 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1203 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1204 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1205 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        591 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        326 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        729 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {592 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        1217 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        595 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1218 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1216 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1431 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1430 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1207 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1206 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        592 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        728 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1395 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        599 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1191 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        593 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        594 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1203 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1204 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1205 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        591 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        326 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        729 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+            gaw_idch_2_visible = {
+                OR = {
+                        671 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        784 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        783 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        286 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        670 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        890 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        891 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        892 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        724 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        any_state = { 
+                            is_core_of = BRM 
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                    }
+                NOT = {289 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        671 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        784 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        783 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        286 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        670 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        890 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        891 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        289 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        892 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        724 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        NOT = {
+                            any_state = { 
+                                is_core_of = BRM 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                    }
+                }
+            }
+            gaw_idnmya_2_visible = {
+                OR = {
+                        817 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1386 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        816 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        336 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        333 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        834 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        733 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        334 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        335 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        672 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1385 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {1387 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        817 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1386 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        816 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        336 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        333 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        834 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        733 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        334 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        335 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1387 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        672 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1385 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_ind_2_visible = {
+                OR = {
+                        323 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        any_state = { 
+                            is_core_of = IND
+                            NOT = {state = 789}
+                            NOT = {state = 1370}
+                            NOT = {state = 434}
+                            NOT = {state = 432}
+                            NOT = {state = 1366}
+                            NOT = {state = 1367}
+                            NOT = {state = 1368}
+                            NOT = {state = 1369}
+                            NOT = {state = 1131}
+                            NOT = {state = 441}
+                            NOT = {state = 1373}
+                            NOT = {state = 439}
+                            NOT = {state = 1381}
+                            NOT = {state = 1379}
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                        422 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        281 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {1379 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        323 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        NOT = {
+                            any_state = { 
+                                is_core_of = IND
+                                NOT = {state = 789}
+                                NOT = {state = 1370}
+                                NOT = {state = 434}
+                                NOT = {state = 432}
+                                NOT = {state = 1366}
+                                NOT = {state = 1367}
+                                NOT = {state = 1368}
+                                NOT = {state = 1369}
+                                NOT = {state =1131}
+                                NOT = {state = 441}
+                                NOT = {state =1373}
+                                NOT = {state =439}
+                                NOT = {state =1381}
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        422 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        281 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+            gaw_mon_2_visible = {
+                OR = {
+                        any_state = { 
+                            is_core_of = MON 
+                            NOT = {state = 1391}
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                    }
+                NOT = {1391 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        NOT = {
+                            any_state = { 
+                                is_core_of = MON 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                    }
+                }
+            }
+            gaw_nind_2_visible = {
+                OR = {
+                        324 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        789 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1370 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        434 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        432 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1366 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1367 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1368 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1369 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}   
+                    }
+                NOT = {430 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        430 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        324 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        789 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1370 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        434 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        432 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1366 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1367 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1368 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1369 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}   
+                    }
+                }
+                }
+
+            gaw_pak_2_visible = {
+                OR = {
+                        any_state = {
+                            is_core_of = PAK 
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                        1131 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        441 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1373 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1381 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {439 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = PAK 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        1131 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        441 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1373 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        439 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1381 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+            gaw_nk_2_visible = {
+                OR = {
+                        any_state = {
+                            is_core_of = PRK
+                            NOT = {state = 1043}
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                    }
+                NOT = {1043 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = PRK
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                    }
+                }
+            }
+            gaw_phi_2_visible = {
+                OR = {
+                        any_state = {                
+                            is_core_of = PHI 
+                            NOT = {state = 628}
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                    }
+                NOT = {628 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        NOT = {
+                            any_state = {                
+                                is_core_of = PHI 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
                     }
                 }
             }
 
-            ccw_henan_0_visible = {
+            gaw_saibei_2_visible = {
+                OR = {
+                        1202 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1166 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        621 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {612 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
                 NOT = {
-                    OR = {
-                        607 = { is_controlled_by = CHI }
-                        1226 = { is_controlled_by = CHI }
-                        1225 = { is_controlled_by = CHI }
-                        1224 = { is_controlled_by = CHI }
+                    AND = {
+                        612 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1202 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1166 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        621 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
-
-            ccw_ningxia_0_visible = {
-                NOT = {
-                    1199 = { is_controlled_by = CHI }
                 }
-            }
             
-            ccw_chongqing_0_visible = {
+            gaw_sk_2_visible = {
+                OR = {
+                        any_state = {
+                            is_core_of = KOR
+                            NOT = {state = 869}
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                        }
+                    }
+                NOT = {869 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
                 NOT = {
-                    1189 = { is_controlled_by = CHI }
-                }
-            }
-
-            ccw_shanghai_0_visible = {
-                NOT = {
-                    1215 = { is_controlled_by = CHI }
-                }
-            }
-
-            ccw_shanghai_s_0_visible = {
-                NOT = {
-                    1215 = { is_controlled_by = CHI }
-                }
-            }
-
-            ccw_zhejiang_0_visible = {
-                NOT = {
-                    OR = {
-                        1220 = { is_controlled_by = CHI }
-                        1159 = { is_controlled_by = CHI }
-                        1219 = { is_controlled_by = CHI }
-                        596 = { is_controlled_by = CHI }
+                    AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = KOR
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
                     }
                 }
             }
 
-            ccw_fujian_0_visible = {
+            gaw_taiwan_2_visible = {
+                OR = {
+                        any_state = {
+                            is_core_of = CHI
+                            NOT = {state = 1148}
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                            }
+                        any_state = {
+                            is_core_of = JAP
+                            NOT = {state = 1340}
+                            controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}
+                            }
+                        1382 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1383 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1384 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        879 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {1148 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {1340 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
                 NOT = {
-                    OR = {
-                        1217 = { is_controlled_by = CHI }
-                        595 = { is_controlled_by = CHI }
-                        1218 = { is_controlled_by = CHI }
-                        1216 = { is_controlled_by = CHI }
-                        1431 = { is_controlled_by = CHI }
+                    AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = CHI
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        NOT = {
+                            any_state = {
+                                is_core_of = JAP
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        1382 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1383 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1384 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        879 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
             }
 
-            ccw_guangdong_0_visible = {
+            gaw_tib_2_visible = {
+                OR = {
+                        1155 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        322 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1153 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1152 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1186 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        604 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {1156 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
                 NOT = {
-                    OR = {
-                        1430 = { is_controlled_by = CHI }
-                        1207 = { is_controlled_by = CHI }
-                        1206 = { is_controlled_by = CHI }
-                        592 = { is_controlled_by = CHI }
-                        728 = { is_controlled_by = CHI }
-                        1395 = { is_controlled_by = CHI }
+                    AND = {
+                        1155 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        322 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1153 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1156 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1152 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1186 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        604 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_xj_2_visible = {
+                OR = {
+                        1158 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1160 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1161 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1162 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1163 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1164 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        617 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        618 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        619 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        287 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1198 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1193 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        616 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        283 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1199 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1187 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {1165 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        1158 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1160 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1161 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1162 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1163 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1164 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1165 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        617 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        618 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        619 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        287 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1198 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1193 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        616 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        283 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1199 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1187 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_yunchuan_2_visible = {
+                OR = {
+                        1196 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1192 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1195 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        325 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        601 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1168 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1190 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        605 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1188 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                NOT = {1189 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}}
+                NOT = {
+                    AND = {
+                        1196 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1192 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1195 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        325 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        601 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1168 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1190 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        605 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1188 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1189 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            ##             ##
+            ##控制要點(黃綠)##
+            ##             ##
+
+            gaw_aus_3_visible = {
+                285 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                NOT = {
+                    AND = {
+                        517 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        518 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        519 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        520 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        521 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        522 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        285 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        868 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        523 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        737 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        634 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        911 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        284 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1419= {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        723 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_dongbei_3_visible = {
+                716 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                NOT = {
+                    AND = {
+                        1424 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        714 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        717 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1416 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1415 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1414 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1417 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1413 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1167 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        715 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        328 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        716 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1394 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1425 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_eidn_3_visible = {
+                668 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                NOT = {
+                    AND = {
+                        673 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        667 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        668 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        721 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        669 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        738 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_huabei_3_visible = {
+                622 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                NOT = {
+                    AND = {
+                        609 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        610 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        611 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        608 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1157 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1233 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1154 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1421 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1232 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1426 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        597 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1427 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1393 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1229 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1420 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        615 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        614 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1231 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1194 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        607 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1230 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1224 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1225 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1226 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1201 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        622 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1200 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
             }
 
-            ccw_hongkong_0_visible = {
+            gaw_huazh_3_visible = {
+                1221 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                 NOT = {
-                    326 = { is_controlled_by = CHI }
+                    AND = {
+                        1220 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1159 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1219 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        596 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1223 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        606 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1221 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1212 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        620 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1211 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        602 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1208 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1209 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1227 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1428 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1214 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1213 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        600 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1210 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        603 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1197 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1215 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_huanan_3_visible = {
+                592 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                NOT = {
+                    AND = {
+                        1217 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        595 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1218 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1216 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1431 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1430 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1207 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1206 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        592 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        728 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1395 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        599 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1191 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        593 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        594 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1203 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1204 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1205 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        591 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        326 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        729 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
                 }
             }
-
-            ccw_hongkong_s_0_visible = {
+            gaw_idch_3_visible = {
+                289 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                 NOT = {
-                    326 = { is_controlled_by = CHI }
+                    AND = {
+                        671 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        784 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        783 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        286 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        670 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        890 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        891 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        289 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        892 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        724 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        NOT = {
+                            any_state = { 
+                                is_core_of = BRM 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                    }
                 }
             }
-
-            ccw_macau_0_visible = {
+            gaw_idnmya_3_visible = {
+                1387 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                 NOT = {
-                    729 = { is_controlled_by = CHI }
+                    AND = {
+                        817 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1386 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        816 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        336 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        333 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        834 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        733 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        334 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        335 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1387 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        672 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1385 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+
+            gaw_ind_3_visible = {
+                1379 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                NOT = {
+                    AND = {
+                        323 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        NOT = {
+                            any_state = { 
+                                is_core_of = IND
+                                NOT = {state = 789}
+                                NOT = {state = 1370}
+                                NOT = {state = 434}
+                                NOT = {state = 432}
+                                NOT = {state = 1366}
+                                NOT = {state = 1367}
+                                NOT = {state = 1368}
+                                NOT = {state = 1369}
+                                NOT = {state =1131}
+                                NOT = {state = 441}
+                                NOT = {state =1373}
+                                NOT = {state =439}
+                                NOT = {state =1381}
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        422 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        281 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
                 }
             }
-
-            ccw_macau_s_0_visible = {
+            gaw_mon_3_visible = {
+                1391 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                 NOT = {
-                    729 = { is_controlled_by = CHI }
+                    AND = {
+                        NOT = {
+                            any_state = { 
+                                is_core_of = MON 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                    }
                 }
             }
-
-            ccw_guangxi_0_visible = {
+            gaw_nind_3_visible = {
+                430 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                 NOT = {
-                    OR = {
-                        599 = { is_controlled_by = CHI }
-                        1191 = { is_controlled_by = CHI }
-                        593 = { is_controlled_by = CHI }
-                        594 = { is_controlled_by = CHI }
-                        1203 = { is_controlled_by = CHI }
-                        1204 = { is_controlled_by = CHI }
-                        1205 = { is_controlled_by = CHI }
+                    AND = {
+                        430 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        324 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        789 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1370 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        434 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        432 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1366 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1367 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1368 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1369 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}   
+                    }
+                }
+                }
+
+            gaw_pak_3_visible = {
+                439 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                NOT = {
+                    AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = PAK 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        1131 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        441 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1373 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        439 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1381 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            }
+            gaw_nk_3_visible = {
+                1043 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                NOT = {
+                    AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = PRK
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
                     }
                 }
             }
 
-            ccw_yunnan_0_visible = {
+            gaw_phi_3_visible = {
+                628 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                 NOT = {
-                    OR = {
-                        1196 = { is_controlled_by = CHI }
-                        1192 = { is_controlled_by = CHI }
-                        1195 = { is_controlled_by = CHI }
-                        325 = { is_controlled_by = CHI }
+                    AND = {
+                        NOT = {
+                            any_state = {                
+                                is_core_of = PHI 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
                     }
                 }
             }
 
-            ccw_sichuan_0_visible = {
+            gaw_saibei_3_visible = {
+                621 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                 NOT = {
-                    OR = {
-                        601 = { is_controlled_by = CHI }
-                        1168 = { is_controlled_by = CHI }
-                        1190 = { is_controlled_by = CHI }
-                        605 = { is_controlled_by = CHI }
-                        1188 = { is_controlled_by = CHI }
+                    AND = {
+                        612 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1202 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1166 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        621 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+                }
+            
+            gaw_sk_3_visible = {
+                869 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                NOT = {
+                    AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = KOR
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
                     }
                 }
             }
 
-            ccw_xizang_0_visible = {
+            gaw_taiwan_3_visible = {
+                1148 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                1340 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                 NOT = {
-                    OR = {
-                        1155 = { is_controlled_by = CHI }
-                        322 = { is_controlled_by = CHI }
-                        1153 = { is_controlled_by = CHI }
-                        1156 = { is_controlled_by = CHI }
-                        1152 = { is_controlled_by = CHI }
+                    AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = CHI
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        NOT = {
+                            any_state = {
+                                is_core_of = JAP
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        1382 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1383 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1384 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        879 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
             }
 
-            ccw_zangsouth_0_visible = {
+            gaw_tib_3_visible = {
+                1156 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                 NOT = {
-                    434 = { is_controlled_by = CHI }
-                }
-            }
-
-            ccw_hubei_0_visible = {
-                NOT = {
-                    OR = {
-                        1212 = { is_controlled_by = CHI }
-                        620 = { is_controlled_by = CHI }
-                        1211 = { is_controlled_by = CHI }
+                    AND = {
+                        1155 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        322 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1153 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1156 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1152 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1186 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        604 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
+                }
 
-            ccw_hunan_0_visible = {
+            gaw_xj_3_visible = {
+                1165 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                 NOT = {
-                    OR = {
-                        602 = { is_controlled_by = CHI }
-                        1208 = { is_controlled_by = CHI }
-                        1209 = { is_controlled_by = CHI }
+                    AND = {
+                        1158 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1160 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1161 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1162 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1163 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1164 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1165 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        617 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        618 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        619 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        287 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1198 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1193 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        616 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        283 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1199 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1187 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
+                }
 
-            ccw_guizhou_0_visible = {
+            gaw_yunchuan_3_visible = {
+                1189 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                 NOT = {
-                    OR = {
-                        1210 = { is_controlled_by = CHI }
-                        603 = { is_controlled_by = CHI }
-                        1197 = { is_controlled_by = CHI }
+                    AND = {
+                        1196 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1192 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1195 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        325 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        601 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1168 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1190 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        605 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1188 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1189 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
+                }            
 
-            ccw_jiangxi_0_visible = {
-                NOT = {
-                    OR = {
-                        1227 = { is_controlled_by = CHI }
-                        1428 = { is_controlled_by = CHI }
-                        1214 = { is_controlled_by = CHI }
-                        1213 = { is_controlled_by = CHI }
-                        600 = { is_controlled_by = CHI }
+            ##           ##
+            ##完全控制(綠)##
+            ##           ##
+
+            gaw_aus_4_visible = {
+                AND = {
+                        517 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        518 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        519 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        520 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        521 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        522 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        285 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        868 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        523 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        737 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        634 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        911 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        284 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1419= {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        723 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
 
-            ccw_hainan_0_visible = {
-                NOT = {
-                    591 = { is_controlled_by = CHI }
-                }
-            }
-
-            ccw_xinjiang_0_visible = {
-                NOT = {
-                    OR = {
-                        1158 = { is_controlled_by = CHI }
-                        1160 = { is_controlled_by = CHI }
-                        1161 = { is_controlled_by = CHI }
-                        1162 = { is_controlled_by = CHI }
-                        1163 = { is_controlled_by = CHI }
-                        1164 = { is_controlled_by = CHI }
-                        1165 = { is_controlled_by = CHI }
-                        617 = { is_controlled_by = CHI }
-                        618 = { is_controlled_by = CHI }
-                        619 = { is_controlled_by = CHI }
-                        287 = { is_controlled_by = CHI }
+            gaw_dongbei_4_visible = {
+                AND = {
+                        1424 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        714 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        717 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1416 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1415 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1414 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1417 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1413 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1167 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        715 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        328 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        716 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1394 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1425 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
 
-            ccw_qinghai_0_visible = {
-                NOT = {
-                    OR = {
-                        1186 = { is_controlled_by = CHI }
-                        1187 = { is_controlled_by = CHI }
-                        604 = { is_controlled_by = CHI }
+            gaw_eidn_4_visible = {
+                AND = {
+                        673 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        667 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        668 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        721 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        669 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        738 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
 
-            ccw_gansu_0_visible = {
-                NOT = {
-                    OR = {
-                        1198 = { is_controlled_by = CHI }
-                        1193 = { is_controlled_by = CHI }
-                        616 = { is_controlled_by = CHI }
-                        283 = { is_controlled_by = CHI }
+            gaw_huabei_4_visible = {
+                AND = {
+                        609 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        610 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        611 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        608 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1157 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1233 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1154 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1421 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1232 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1426 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        597 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1427 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1393 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1229 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1420 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        615 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        614 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1231 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1194 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        607 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1230 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1224 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1225 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1226 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1201 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        622 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1200 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
 
-            ccw_neimeng_0_visible = {
-                NOT = {
-                    OR = {
-                        1166 = { is_controlled_by = CHI }
-                        1167 = { is_controlled_by = CHI }
-                        621 = { is_controlled_by = CHI }
-                        1202 = { is_controlled_by = CHI }
-                        612 = { is_controlled_by = CHI }
-                        715 = { is_controlled_by = CHI }
+            gaw_huazh_4_visible = {
+                AND = {
+                        1220 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1159 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1219 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        596 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1223 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        606 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1221 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1212 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        620 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1211 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        602 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1208 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1209 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1227 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1428 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1214 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1213 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        600 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1210 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        603 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1197 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1215 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
 
-            ccw_mon_0_visible = {
-                NOT = {
-                    OR = {
-                        1388 = { is_controlled_by = CHI }
-                        1389 = { is_controlled_by = CHI }
-                        1390 = { is_controlled_by = CHI }
-                        1391 = { is_controlled_by = CHI }
-                        330 = { is_controlled_by = CHI }
+            gaw_huanan_4_visible = {
+                AND = {
+                        1217 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        595 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1218 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1216 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1431 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1430 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1207 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1206 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        592 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        728 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1395 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        599 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1191 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        593 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        594 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1203 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1204 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1205 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        591 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        326 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        729 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
-
-            ccw_tuva_0_visible = {
-                NOT = {
-                    329 = { is_controlled_by = CHI }
-                }
-            }
-
-            ccw_liaoning_0_visible = {
-                NOT = {
-                    OR = {
-                        1425 = { is_controlled_by = CHI }
-                        716 = { is_controlled_by = CHI }
-                        1417 = { is_controlled_by = CHI }
-                        1413 = { is_controlled_by = CHI }
-                        1394 = { is_controlled_by = CHI }
+            gaw_idch_4_visible = {
+                AND = {
+                        671 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        784 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        783 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        286 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        670 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        890 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        891 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        289 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        892 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        724 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        NOT = {
+                            any_state = { 
+                                is_core_of = BRM 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
                     }
                 }
-            }
-
-            ccw_jilin_0_visible = {
-                NOT = {
-                    OR = {
-                        1414 = { is_controlled_by = CHI }
-                        1415 = { is_controlled_by = CHI }
-                        328 = { is_controlled_by = CHI }
+            gaw_idnmya_4_visible = {
+                AND = {
+                        817 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1386 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        816 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        336 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        333 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        834 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        733 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        334 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        335 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1387 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        672 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1385 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
 
-            ccw_hlj_0_visible = {
-                NOT = {
-                    OR = {
-                        1424 = { is_controlled_by = CHI }
-                        714 = { is_controlled_by = CHI }
-                        717 = { is_controlled_by = CHI }
-                        1416 = { is_controlled_by = CHI }
+            gaw_ind_4_visible = {
+                AND = {
+                        323 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        NOT = {
+                            any_state = { 
+                                is_core_of = IND
+                                NOT = {state = 789}
+                                NOT = {state = 1370}
+                                NOT = {state = 434}
+                                NOT = {state = 432}
+                                NOT = {state = 1366}
+                                NOT = {state = 1367}
+                                NOT = {state = 1368}
+                                NOT = {state = 1369}
+                                NOT = {state =1131}
+                                NOT = {state = 441}
+                                NOT = {state =1373}
+                                NOT = {state =439}
+                                NOT = {state =1381}
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        422 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        281 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
                     }
                 }
-            }
+            gaw_mon_4_visible = {
+                AND = {
+                        NOT = {
+                            any_state = { 
+                                is_core_of = MON 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                    }
+                }
+            gaw_nind_4_visible = {
+                AND = {
+                        430 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        324 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        789 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1370 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        434 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        432 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1366 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1367 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1368 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1369 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}   
+                    }
+                }
 
+            gaw_pak_4_visible = {
+                AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = PAK 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        1131 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        441 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1373 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        439 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1381 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
 
+            gaw_nk_4_visible = {
+                AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = PRK
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                    }
+                }
 
+            gaw_phi_4_visible = {
+                AND = {
+                        NOT = {
+                            any_state = {                
+                                is_core_of = PHI 
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                    }
+                }
+
+            gaw_saibei_4_visible = {
+                AND = {
+                        612 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1202 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1166 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        621 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+            
+            gaw_sk_4_visible = {
+                AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = KOR
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                    }
+                }
+
+            gaw_taiwan_4_visible = {
+                AND = {
+                        NOT = {
+                            any_state = {
+                                is_core_of = CHI
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        NOT = {
+                            any_state = {
+                                is_core_of = JAP
+                                NOT = { controller = {OR = {tag = ROOT is_in_faction_with = ROOT}} }
+                            }
+                        }
+                        1382 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1383 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1384 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        879 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+
+            gaw_tib_4_visible = {
+                AND = {
+                        1155 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        322 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1153 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1156 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1152 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1186 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        604 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+
+            gaw_xj_4_visible = {
+                AND = {
+                        1158 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1160 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1161 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1162 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1163 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1164 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1165 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        617 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        618 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        619 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        287 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1198 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1193 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        616 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        283 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1199 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1187 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
+
+            gaw_yunchuan_4_visible = {
+                AND = {
+                        1196 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1192 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1195 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        325 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        601 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1168 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1190 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        605 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1188 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                        1189 = {controller = {OR = {tag = ROOT is_in_faction_with = ROOT}}}
+                    }
+                }
 
 
         }
