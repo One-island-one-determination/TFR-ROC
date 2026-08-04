@@ -3,7 +3,12 @@ spriteTypes = {
   #Head of Government
 
   #CHI
-
+  #BG
+  spriteType = {
+    name = GFX_CHI_BG
+    texturefile = "gfx/interface/Taipei.dds"
+    alwaystransparent = yes
+  }
   spriteType = {
     name = "GFX_CHI_KMT_logo"
     texturefile = "gfx/texticons/CHI/CHI_KMT.png"
@@ -227,7 +232,7 @@ spriteTypes = {
     name = "GFX_USA_MP_Icon"
     texturefile = "gfx/texticons/CHI/USA_MP_Icon.png"
     legacy_lazy_load = no
-  }  
+  }
   spriteType = {
     name = "GFX_artillery_equipment_text_icon"
     texturefile = "gfx/texticons/artillery_equipment_text_icon.png"
