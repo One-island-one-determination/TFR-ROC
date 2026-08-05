@@ -285,12 +285,13 @@ country_event = {
       add_ideas = CHI_population_aging
     }
     hidden_effect = {
+      set_country_flag = CHI_Population_Aging_flag
       add_dynamic_modifier = {
         modifier = CHI_population_aging_dynamic
       }
       add_to_variable = {
         var = population_aging_monthly_population
-        value = -0.008
+        value = -0.8
       }
     }
   }
