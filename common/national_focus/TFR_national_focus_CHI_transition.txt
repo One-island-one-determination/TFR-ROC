@@ -118,8 +118,11 @@ focus_tree = {
         }
         remove_ideas = CHI_Wartime_normal_system
       }
-      else = {
-        remove_ideas = CHI_Martial_law_declared
+      if = {
+        limit = {
+          has_idea = CHI_Martial_law_declared_idea
+        }
+        remove_ideas = CHI_Martial_law_declared_idea
       }
     }
   }
