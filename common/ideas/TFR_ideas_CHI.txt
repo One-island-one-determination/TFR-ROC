@@ -1095,11 +1095,14 @@ ideas = {
         always = yes
       }
       removal_cost = -1
+      research_bonus = {
+        electronics = 0.30
+      }
       modifier = {
-        research_speed_factor = 0.05
-        stability_factor = 0.025
-        political_power_factor = 0.025
-        business_value_factor = 0.075
+        research_speed_factor = 0.08
+        stability_factor = 0.05
+        political_power_factor = 0.05
+        business_value_factor = 0.10
       }
     }
     CHI_tsmc_1_idea = {
@@ -1115,11 +1118,14 @@ ideas = {
         always = yes
       }
       removal_cost = -1
+      research_bonus = {
+        electronics = 0.45
+      }
       modifier = {
-        research_speed_factor = 0.075
-        stability_factor = 0.05
-        political_power_factor = 0.05
-        business_value_factor = 0.1
+        research_speed_factor = 0.12
+        stability_factor = 0.075
+        political_power_factor = 0.075
+        business_value_factor = 0.15
       }
     }
     CHI_tsmc_2_idea = {
@@ -1135,11 +1141,14 @@ ideas = {
         always = yes
       }
       removal_cost = -1
+      research_bonus = {
+        electronics = 0.60
+      }
       modifier = {
-        research_speed_factor = 0.1
-        stability_factor = 0.075
-        political_power_factor = 0.075
-        business_value_factor = 0.125
+        research_speed_factor = 0.15
+        stability_factor = 0.10
+        political_power_factor = 0.10
+        business_value_factor = 0.20
       }
     }
     CHI_PRC_infiltration_low = {
