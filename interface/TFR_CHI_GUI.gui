@@ -202,4 +202,119 @@ guitypes = {
 			}
 		}
 	}
+
+	containerwindowtype = {
+		name = "CHI_shanhe4province_gui"
+		size = { width = 100%% height = 250 }
+
+		# 進度條容器
+		containerwindowtype = {
+			name = "shanhe4province_container"
+			position = { x = 140 y = 125 }
+
+			icontype = {
+				name = "shanhe_background"
+				quadtexturesprite = "shanhe_background"
+				position = { x = 0 y = 0 }
+				centerposition = yes				
+			}
+
+			buttonType = {
+				name = "shanhe_shandong_1"
+				position = { x = -25 y = -23 }
+				quadTextureSprite = "shanhe_shandong"
+				frame = 1
+			}
+			buttonType = {
+				name = "shanhe_shanxi_1"
+				position = { x = -90 y = -67 }
+				quadTextureSprite = "shanhe_shanxi"
+				frame = 1
+			}
+			buttonType = {
+				name = "shanhe_hebei_1"
+				position = { x = -45 y = -106 }
+				quadTextureSprite = "shanhe_hebei"
+				frame = 1
+			}
+			buttonType = {
+				name = "shanhe_henan_1"
+				position = { x = -88 y = 13 }
+				quadTextureSprite = "shanhe_henan"
+				frame = 1
+			}
+
+
+			buttonType = {
+				name = "shanhe_shandong_2"
+				position = { x = -25 y = -23 }
+				quadTextureSprite = "shanhe_shandong"
+				frame = 2
+			}
+			buttonType = {
+				name = "shanhe_shanxi_2"
+				position = { x = -90 y = -67 }
+				quadTextureSprite = "shanhe_shanxi"
+				frame = 2
+			}
+			buttonType = {
+				name = "shanhe_hebei_2"
+				position = { x = -45 y = -106 }
+				quadTextureSprite = "shanhe_hebei"
+				frame = 2
+			}
+			buttonType = {
+				name = "shanhe_henan_2"
+				position = { x = -88 y = 13 }
+				quadTextureSprite = "shanhe_henan"
+				frame = 2
+			}
+		}
+		# 右側資訊面板
+        instantTextboxType = {
+            name = "shanhe_selected_title"
+            position = { x = 275 y = 30 }
+            font = "VCR02_16"
+            text = "當前選擇：[GetShanheSelectedName]" # 透過 Scripted Loc 轉換 1~4 為省份名稱
+            maxWidth = 200
+            maxHeight = 20
+        }
+
+        instantTextboxType = {
+            name = "shanhe_edu_title"
+            position = { x = 275 y = 60 }
+            font = "VCR02_16"
+            text = "教育權威化程度：[GetShanheEduText]" # 顯示 "中等"
+            maxWidth = 200
+            maxHeight = 20
+        }
+
+        instantTextboxType = {
+            name = "shanhe_edu_value"
+            position = { x = 275 y = 80 }
+            font = "VCR02_16"
+            text = "[GetShanheEduValue]" # 顯示數值 "60"
+            maxWidth = 200
+            maxHeight = 20
+        }
+
+        instantTextboxType = {
+            name = "shanhe_police_title"
+            position = { x = 275 y = 120 }
+            font = "VCR02_16"
+            text = "警察權力正常度：[GetShanhePoliceText]" # 顯示 "失常"
+            maxWidth = 200
+            maxHeight = 20
+        }
+
+        instantTextboxType = {
+            name = "shanhe_police_value"
+            position = { x = 275 y = 140 }
+            font = "VCR02_16"
+            text = "[GetShanhePoliceValue]" # 顯示數值 "40"
+            maxWidth = 200
+            maxHeight = 20
+        }
+		
+	}
 }

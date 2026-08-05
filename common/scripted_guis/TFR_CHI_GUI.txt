@@ -219,104 +219,37 @@ scripted_gui = {
       }
     }
   }
-  #意志之试炼
-  test_of_will_taiwan_gui = {
+  
+  ##山河四省
+  CHI_shanhe4province_gui = {
     context_type = decision_category
-    window_name = "test_of_will_taiwan_gui"
-    visible = {
-      tag = CHI
+    window_name = "CHI_shanhe4province_gui"
+    triggers = {
+
+      shanhe_shanxi_1_visible = { NOT = { check_variable = { CHI_shanhe_dec_visible = 1 } } }
+      shanhe_shandong_1_visible = { NOT = { check_variable = { CHI_shanhe_dec_visible = 2 } } }
+      shanhe_henan_1_visible = { NOT = { check_variable = { CHI_shanhe_dec_visible = 3 } } }
+      shanhe_hebei_1_visible = { NOT = { check_variable = { CHI_shanhe_dec_visible = 4 } } }
+
+      # 高亮按鈕 (已選中)：只有變數等於自己的 ID 才顯示
+      shanhe_shanxi_2_visible = { check_variable = { CHI_shanhe_dec_visible = 1 } }
+      shanhe_shandong_2_visible = { check_variable = { CHI_shanhe_dec_visible = 2 } }
+      shanhe_henan_2_visible = { check_variable = { CHI_shanhe_dec_visible = 3 } }
+      shanhe_hebei_2_visible = { check_variable = { CHI_shanhe_dec_visible = 4 } }
     }
     effects = {
-      test_of_will_taidong_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 1
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 1
-          }
-        }
-      }
-      test_of_will_taizhong_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 2
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 2
-          }
-        }
-      }
-      test_of_will_tainan_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 3
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 3
-          }
-        }
-      }
-      test_of_will_taipei_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 4
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 4
-          }
-        }
-      }
-      test_of_will_penghu_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 5
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 5
-          }
-        }
-      }
-      test_of_will_jinmen_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_will_visible = 6
-            }
-          }
-          clear_variable = CHI_will_visible
-        }
-        else = {
-          set_variable = {
-            CHI_will_visible = 6
-          }
-        }
-      }
+      shanhe_shanxi_1_click = { set_variable = { CHI_shanhe_dec_visible = 1 } }
+      shanhe_shandong_1_click = { set_variable = { CHI_shanhe_dec_visible = 2 } }
+      shanhe_henan_1_click = { set_variable = { CHI_shanhe_dec_visible = 3 } }
+      shanhe_hebei_1_click = { set_variable = { CHI_shanhe_dec_visible = 4 } }
+
+      shanhe_shanxi_2_click = { set_variable = { CHI_shanhe_dec_visible = 0 } }
+      shanhe_shandong_2_click = { set_variable = { CHI_shanhe_dec_visible = 0 } }
+      shanhe_henan_2_click = { set_variable = { CHI_shanhe_dec_visible = 0 } }
+      shanhe_hebei_2_click = { set_variable = { CHI_shanhe_dec_visible = 0 } }
     }
   }
+
+
+
 }
