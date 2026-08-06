@@ -15,6 +15,14 @@ focus_tree = {
     completion_reward = {
       country_event = { id = CHI.H4.2 }
       unlock_decision_category_tooltip = CHI_civilwar_category
+      custom_effect_tooltip = {
+        IDEA = CHI_ROC_army_dynamic
+        localization_key = modify_idea_tt
+      }
+      add_to_variable = {
+        ROC_cannot_call_allies_or_join_wars = 1
+        tooltip = cannot_call_allies_or_join_wars_tooltip
+      }
     }
   }
   focus = {
@@ -135,12 +143,15 @@ focus_tree = {
     icon = GFX_focus_CHI_finally_free
     continue_if_invalid = no
     cancel_if_invalid = yes
+    available = { has_completed_focus = CHI_begonia_leaf }
     prerequisite = {
       focus = CHI_establish_regional_seats
     }
   
     completion_reward = {
       country_event = { id = CHI.H4.7 }
+      custom_effect_tooltip = unrestricted_diplomacy_tt
+			set_country_flag = unrestricted_diplomacy_flag
     }
   }
   focus = {
