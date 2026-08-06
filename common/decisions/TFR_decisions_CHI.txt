@@ -5560,6 +5560,7 @@ CHI_dont_forget_homeland_category = {
     visible = {
       original_tag = CHI
       NOT = { has_country_flag = CHI_project_ROCA_reform_1_completed }
+      has_completed_focus = CHI_modern_whampoa
     }
     custom_cost_trigger = {
       has_army_experience > 49
@@ -5581,10 +5582,6 @@ CHI_dont_forget_homeland_category = {
     available = {
       has_country_flag = CHI_project_ROCA_reform_1_completed
       NOT = { has_country_flag = CHI_project_ROCA_reform_2_completed }
-      custom_trigger_tooltip = {
-        tooltip = CHI_project_ROCA_reform_2_requirement_tt
-        always = yes
-      }
     }
     visible = {
       original_tag = CHI
@@ -5602,6 +5599,7 @@ CHI_dont_forget_homeland_category = {
     remove_effect = {
       set_country_flag = CHI_project_ROCA_reform_2_completed
       custom_effect_tooltip = CHI_project_ROCA_reform_2_effect_tt
+      delete_unit = { disband = yes }
     }
   }
 
@@ -5627,10 +5625,17 @@ CHI_dont_forget_homeland_category = {
     }
     remove_effect = {
       set_country_flag = CHI_project_ROCA_reform_3_completed
-      add_ideas = CHI_project_ROCA_reform_3_idea
-      
+      # 遍歷並賦予特質給所有現有將軍
+      every_army_leader = {
+        limit = {
+          is_corps_commander = yes # 確保不發給海軍將領或純元帥
+        }
+        add_trait = {
+         trait = CHI_expanded_command_trait
+        }
+      }
       add_division_template = {
-        name = "中華民國陸軍軍部直屬戰鬥群"
+        name = "中華民國陸軍指揮所"
         division_names_group = CHI_INF_01
         regiments = {
           modern_armor = { x = 0 y = 0 }
@@ -5640,18 +5645,12 @@ CHI_dont_forget_homeland_category = {
           modern_sp_artillery_brigade = { x = 1 y = 1 }
         }
       }
-      random_owned_controlled_state = {
+        
+      1148 = {
         create_unit = {
-          division = "name = \"中華民國陸軍軍部直屬戰鬥群\" division_template = \"中華民國陸軍軍部直屬戰鬥群\" start_experience_factor = 0.5"
+          division = "name = \"中華民國陸軍指揮所\" division_template = \"中華民國陸軍指揮所\" start_experience_factor = 0.5"
           owner = CHI
-        }
-        create_unit = {
-          division = "name = \"中華民國陸軍軍部直屬戰鬥群\" division_template = \"中華民國陸軍軍部直屬戰鬥群\" start_experience_factor = 0.5"
-          owner = CHI
-        }
-        create_unit = {
-          division = "name = \"中華民國陸軍軍部直屬戰鬥群\" division_template = \"中華民國陸軍軍部直屬戰鬥群\" start_experience_factor = 0.5"
-          owner = CHI
+          count = 3
         }
       }
     }
@@ -5680,13 +5679,11 @@ CHI_dont_forget_homeland_category = {
     remove_effect = {
       set_country_flag = CHI_project_ROCA_reform_4_completed
       remove_ideas = CHI_project_ROCA_reform_1_idea
-      remove_ideas = CHI_project_ROCA_reform_3_idea
       
       add_to_variable = { var = ROC_army_org_factor value = 0.10 }
       add_to_variable = { var = ROC_combat_width_factor value = -0.15 }
       add_to_variable = { var = ROC_reinforce_rate value = 0.50 }
       add_to_variable = { var = ROC_initiative_factor value = 0.50 }
-      
       custom_effect_tooltip = CHI_project_ROCA_reform_4_effect_tt
     }
   }

@@ -1690,6 +1690,8 @@ focus_tree = {
       focus = CHI_dont_forget_homeland
     }
     completion_reward = {
+      custom_effect_tooltip = CHI_modern_whampoa_tooltip
+      country_lock_all_division_template = yes
       custom_effect_tooltip = {
         IDEA = CHI_ROC_army_dynamic
         localization_key = modify_idea_tt
@@ -2049,15 +2051,15 @@ focus_tree = {
         localization_key = modify_idea_tt
       }
       add_to_variable = {
-        CHI_naval_invasion_penalty = -0.15
+        ROC_naval_invasion_penalty = -0.15
         tooltip = naval_invasion_penalty_tooltip
       }
       add_to_variable = {
-        CHI_special_forces_attack_factor = 0.1
+        ROC_special_forces_attack_factor = 0.1
         tooltip = special_forces_attack_factor_tooltip
       }
       add_to_variable = {
-        CHI_special_forces_defence_factor = 0.1
+        ROC_special_forces_defence_factor = 0.1
         tooltip = special_forces_defence_factor_tooltip
       }
       if = {
@@ -2140,7 +2142,7 @@ focus_tree = {
         localization_key = modify_idea_tt
       }
       add_to_variable = {
-        CHI_air_training_xp_gain_factor = 0.1
+        ROC_air_training_xp_gain_factor = 0.1
         tooltip = air_training_xp_gain_factor_tooltip
       }
     }
@@ -2166,7 +2168,7 @@ focus_tree = {
         localization_key = modify_idea_tt
       }
       add_to_variable = {
-        CHI_experience_gain_air = 0.01
+        ROC_experience_gain_air = 0.01
         tooltip = experience_gain_air_tooltip
       }
     }
