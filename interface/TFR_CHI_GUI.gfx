@@ -41,5 +41,34 @@ spriteTypes = {
 	spritetype = {
 		name = "GFX_UGC"
 		texturefile = "gfx/interface/taiwan/UGC.png"
+	}
+	##山河四省決議
+	spritetype = {
+		name = "shanhe_shandong"
+		texturefile = "gfx/interface/decisions/CHI/shanhe_shandong.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spritetype = {
+		name = "shanhe_shanxi"
+		texturefile = "gfx/interface/decisions/CHI/shanhe_shanxi.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spritetype = {
+		name = "shanhe_henan"
+		texturefile = "gfx/interface/decisions/CHI/shanhe_henan.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spritetype = {
+		name = "shanhe_hebei"
+		texturefile = "gfx/interface/decisions/CHI/shanhe_hebei.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spritetype = {
+		name = "shanhe_background"
+		texturefile = "gfx/interface/decisions/CHI/shanhe_background.png"
 	}	
 }

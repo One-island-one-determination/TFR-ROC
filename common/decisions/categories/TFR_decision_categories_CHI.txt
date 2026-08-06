@@ -162,8 +162,67 @@ CHI_PRC_Infiltration_decisions = {
   }
   scripted_gui = PRC_Infiltration_gui
 }
+##統獨權力平衡
+CHI_Identity_dispute_dec = {
+  icon = generic_politics
+  allowed = {
+    original_tag = CHI
+  }
+}
 
+#人口老化
+CHI_Population_Aging_decisions = {
+  icon = GFX_decisons_CHI_population_aging
+  picture = GFX_banner_CHI_population_aging
+  priority = 1
+  #visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    has_country_flag = CHI_Population_Aging_flag
+  }
+}
 
+#中美洲內戰
+CHI_central_american_war_category = {
+  icon = GFX_decisons_CHI_central_american_war
+  picture = GFX_banner_CHI_central_american_war
+  priority = 1
+  #visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    GUA = { is_in_faction_with = ELS }
+  }
+}
+
+#中美洲戰後重建
+CHI_central_american_rebuild_category = {
+  icon = GFX_decisons_CHI_central_american_rebuild
+  picture = GFX_banner_CHI_central_american_rebuild
+  priority = 1
+  #visible_when_empty = yes
+  allowed = {
+    original_tag = CHI
+  }
+  visible = {
+    ELS = {
+      owns_state = 312
+			owns_state = 314
+			owns_state = 311
+			owns_state = 313
+			owns_state = 316
+			owns_state = 889
+			owns_state = 685
+			owns_state = 304
+			owns_state = 909
+			owns_state = 317
+			owns_state = 1377
+    }
+  }
+}
 
 #PHI內戰###################################################
 PHI_civil_war_dec = {
@@ -179,6 +238,20 @@ PHI_civil_war_dec = {
       original_tag = AFP
       original_tag = MIL
     }
+  }
+}
+
+#干涉菲律賓
+CHI_intervene_PHI_civil_war_category = {
+  icon = GFX_decisons_CHI_intervene_PHI_civil_war
+  picture = GFX_banner_CHI_intervene_PHI_civil_war
+  priority = 1
+  visible_when_empty = yes
+  visible = {
+    has_global_flag = PHI_civil_war_flag
+  }
+  allowed = {
+    original_tag = CHI
   }
 }
 ##########################################################
@@ -320,14 +393,43 @@ CHI_shanhe4province_category = {
   visible = {
     OR = {
       is_debug = yes
-      has_completed_focus = CHI_regional_political_tutelage
+      AND = {
+        has_completed_focus = CHI_regional_political_tutelage
+        OR = {
+          AND = {#shandong
+            owns_state = 1426
+            owns_state = 1231
+            owns_state = 597
+            owns_state = 1230
+            owns_state = 1427
+            owns_state = 1229
+            owns_state = 1393
+            owns_state = 1420
+          }
+          AND = {#shanxi
+            owns_state = 1233
+            owns_state = 615
+            owns_state = 1194
+          }
+          AND = {#henan
+            owns_state = 607
+            owns_state = 1226
+            owns_state = 1225
+            owns_state = 1224
+          }
+          AND = {#hebei
+            owns_state = 609
+            owns_state = 610
+            owns_state = 611
+            owns_state = 1154
+            owns_state = 1232
+            owns_state = 1421
+            owns_state = 614
+          }
+        }
+      }
     }
   }
+  scripted_gui = CHI_shanhe4province_gui
 }
 
-CHI_Identity_dispute_dec = {
-  icon = generic_politics
-  allowed = {
-    original_tag = CHI
-  }
-}
