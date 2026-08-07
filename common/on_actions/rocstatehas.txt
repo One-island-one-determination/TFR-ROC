@@ -1,6 +1,58 @@
 on_actions = {
   on_capitulation = {
     effect = {
+      # Prevent repeat Great Asian War / PDTO victory event when PRC or warlords capitulate post-GAW
+      if = {
+        limit = {
+          ROOT = {
+            OR = {
+              original_tag = PRC
+              original_tag = A74
+              original_tag = A75
+              original_tag = A77
+              original_tag = CNT
+              original_tag = NSF
+              original_tag = XIE
+              original_tag = NIS
+              original_tag = IMA
+              original_tag = GAN
+              original_tag = SHA
+              original_tag = NCM
+              original_tag = FAL
+              original_tag = RGT
+              original_tag = JIA
+              original_tag = CAG
+              original_tag = MSC
+              original_tag = HNJ
+              original_tag = UYY
+              original_tag = NLM
+              original_tag = XFT
+              original_tag = ESF
+              original_tag = XSM
+              original_tag = TAR
+              original_tag = SIK
+              original_tag = XIN
+              original_tag = YUN
+              original_tag = GXC
+              original_tag = PST
+              original_tag = CHF
+            }
+          }
+          OR = {
+            has_global_flag = PRC_china_collapse
+            has_global_flag = PRC_japanese_gaw_victory_global
+            FROM = { original_tag = CHI }
+          }
+        }
+        FROM = {
+          white_peace = ROOT
+          annex_country = {
+            target = ROOT
+            transfer_troops = no
+          }
+        }
+        set_global_flag = skip_default_capitulation
+      }
       if = {
         limit = {
           FROM = {
@@ -583,6 +635,62 @@ on_actions = {
         CHI = {
           country_event = {
             id = ROC_CHI.34
+          }
+        }
+      }
+      # Tibet & Zangnan Liberation & Truce with India
+      if = {
+        limit = {
+          CHI = {
+            has_war = yes
+            NOT = { has_country_flag = CHI_tibet_zangnan_secured }
+            controls_state = 1155 # Ngari / 阿里
+            controls_state = 322  # Nagqu / 那曲
+            controls_state = 1153 # Shigatse / 日喀則
+            controls_state = 1156 # Lhasa / 拉薩
+            controls_state = 1152 # Chamdo / 昌都
+            controls_state = 434  # Zangnan / 藏南
+            OR = {
+              has_war_with = RAJ
+              has_war_with = TIB
+              has_war_with = TAR
+              has_country_flag = CHI_liberating_tibet_flag
+            }
+          }
+        }
+        CHI = {
+          country_event = {
+            id = taiwan.102
+          }
+        }
+      }
+    }
+  }
+  on_daily = {
+    effect = {
+      # Tibet & Zangnan Liberation & Truce with India daily check
+      if = {
+        limit = {
+          CHI = {
+            has_war = yes
+            NOT = { has_country_flag = CHI_tibet_zangnan_secured }
+            controls_state = 1155 # Ngari / 阿里
+            controls_state = 322  # Nagqu / 那曲
+            controls_state = 1153 # Shigatse / 日喀則
+            controls_state = 1156 # Lhasa / 拉薩
+            controls_state = 1152 # Chamdo / 昌都
+            controls_state = 434  # Zangnan / 藏南
+            OR = {
+              has_war_with = RAJ
+              has_war_with = TIB
+              has_war_with = TAR
+              has_country_flag = CHI_liberating_tibet_flag
+            }
+          }
+        }
+        CHI = {
+          country_event = {
+            id = taiwan.102
           }
         }
       }

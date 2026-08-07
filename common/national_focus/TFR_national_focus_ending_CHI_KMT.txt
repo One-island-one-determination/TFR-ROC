@@ -8,8 +8,17 @@ focus_tree = {
     id = CHI_compete_for_central_plains
     x = 0
     y = 0
-    cost = 0
+    cost = 2
     icon = GFX_focus_CHI_compete_for_central_plains
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = CHI_wait_pdto_reorganization_tt
+        OR = {
+          has_global_flag = RAJ_india_dead
+          NOT = { RAJ = { is_in_faction_with = JAP } }
+        }
+      }
+    }
     continue_if_invalid = no
     cancel_if_invalid = yes
     completion_reward = {
@@ -23,13 +32,21 @@ focus_tree = {
         ROC_cannot_call_allies_or_join_wars = 1
         tooltip = cannot_call_allies_or_join_wars_tooltip
       }
+      hidden_effect = {
+        clr_country_flag = pdto_member
+        leave_faction = yes
+        if = {
+          limit = { is_subject = yes }
+          overlord = { end_puppet = ROOT }
+        }
+      }
     }
   }
   focus = {
     id = CHI_regional_political_tutelage
     x = 0
     y = 1
-    cost = 0
+    cost = 2
     icon = GFX_focus_CHI_regional_political_tutelage
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -58,7 +75,7 @@ focus_tree = {
     id = CHI_trust_localities
     x = -1
     y = 2
-    cost = 0
+    cost = 2
     icon = GFX_focus_CHI_trust_localities
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -78,7 +95,7 @@ focus_tree = {
     id = CHI_central_supervision_policy
     x = 1
     y = 2
-    cost = 0
+    cost = 2
     icon = GFX_focus_CHI_central_supervision_policy
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -98,11 +115,65 @@ focus_tree = {
     id = CHI_republic_achieved
     x = 0
     y = 4
-    cost = 0
+    cost = 2
     icon = GFX_focus_CHI_republic_achieved
     continue_if_invalid = no
     cancel_if_invalid = yes
-    
+    prerequisite = {
+      focus = CHI_trust_localities
+      focus = CHI_central_supervision_policy
+    }
+    available = {
+      has_war = no
+      custom_trigger_tooltip = {
+        tooltip = PRC_reunify_china_tt
+        all_state = {
+          if = {
+            limit = {
+              OR = {
+                state = 328  # Guangdong
+                state = 608  # Beijing
+                state = 1211 # Wuhan / Jianghan
+                state = 1222 # Jinling / Nanjing
+                state = 594  # Yunnan
+                state = 605  # Sichuan / Chengdu
+                state = 622  # Shaanxi / Xi'an
+                state = 283  # Shandong
+                state = 1165 # Henan
+                state = 619  # Shanxi
+                state = 322  # Zhejiang
+              }
+            }
+            is_owned_by = ROOT
+          }
+        }
+        NOT = { country_exists = PRC }
+        NOT = { country_exists = CNT }
+        NOT = { country_exists = A74 }
+        NOT = { country_exists = A75 }
+        NOT = { country_exists = A77 }
+        NOT = { country_exists = NSF }
+        NOT = { country_exists = XIE }
+        NOT = { country_exists = NIS }
+        NOT = { country_exists = IMA }
+        NOT = { country_exists = GAN }
+        NOT = { country_exists = SHA }
+        NOT = { country_exists = NCM }
+        NOT = { country_exists = FAL }
+        NOT = { country_exists = RGT }
+        NOT = { country_exists = JIA }
+        NOT = { country_exists = CAG }
+        NOT = { country_exists = MSC }
+        NOT = { country_exists = HNJ }
+        NOT = { country_exists = UYY }
+        NOT = { country_exists = NLM }
+        NOT = { country_exists = XFT }
+        NOT = { country_exists = ESF }
+        NOT = { country_exists = XSM }
+        NOT = { country_exists = CHF }
+      }
+    }
+  
     completion_reward = {
       country_event = { id = CHI.H4.5 }
     }
@@ -111,7 +182,7 @@ focus_tree = {
     id = CHI_rapid_political_tutelage
     x = -1
     y = 5
-    cost = 0
+    cost = 2
     icon = GFX_focus_CHI_rapid_political_tutelage
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -127,7 +198,7 @@ focus_tree = {
     id = CHI_establish_regional_seats
     x = -1
     y = 6
-    cost = 0
+    cost = 2
     icon = GFX_focus_CHI_establish_regional_seats
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -139,7 +210,7 @@ focus_tree = {
     id = CHI_finally_free
     x = -1
     y = 7
-    cost = 0
+    cost = 2
     icon = GFX_focus_CHI_finally_free
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -158,19 +229,22 @@ focus_tree = {
     id = CHI_mongolian_negotiations
     x = 1
     y = 5
-    cost = 0
+    cost = 2
     icon = GFX_focus_CHI_mongolian_negotiations
     continue_if_invalid = no
     cancel_if_invalid = yes
     prerequisite = {
       focus = CHI_republic_achieved
     }
+    completion_reward = {
+      country_event = { id = CHI.H4.91 }
+    }
   }
   focus = {
     id = CHI_tuva_problem
     x = 1
     y = 6
-    cost = 0
+    cost = 2
     icon = GFX_focus_CHI_tuva_problem
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -182,12 +256,15 @@ focus_tree = {
     id = CHI_begonia_leaf
     x = 1
     y = 7
-    cost = 0
+    cost = 2
     icon = GFX_focus_CHI_begonia_leaf
     continue_if_invalid = no
     cancel_if_invalid = yes
     prerequisite = {
       focus = CHI_tuva_problem
+    }
+    completion_reward = {
+      country_event = { id = taiwan.103 }
     }
   }
 }
