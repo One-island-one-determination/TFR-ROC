@@ -1230,10 +1230,23 @@ country_event = {
     activate_mission = CHI_taiwan_war_mission
     activate_mission = War_weariness_mission
     custom_effect_tooltip = PRC_second_wave_missile_strikes_tt
+
+    if = {
+      limit = { has_country_flag = CHI_anti_silent_dawn_flag }
+      custom_effect_tooltip = CHI_anti_silent_dawn_effect_tooltip
+      CHI = {
+        modify_timed_idea = {
+					idea = CHI_silent_dawn
+					days = -90
+				}
+      }
+    }
+
     set_variable = {
       var = TH_level
       value = 2
     }
+
     damage_units = {
       state = 1148
       damage = 0.15

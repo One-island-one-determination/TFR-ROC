@@ -1640,6 +1640,9 @@ ideas = {
     CHI_diplomatic_truce = {
       name = CHI_diplomatic_truce
       removal_cost = -1
+      modifier = {
+        political_power_gain = 0.05
+      }
     }
     #向民進黨讓步
     CHI_concession_to_DPP = {
@@ -1668,6 +1671,7 @@ ideas = {
         academic_development_monthly = -0.015
       }
     }
+
     CHI_no_one_can_abuse_her = {
       name = CHI_no_one_can_abuse_her
       picture = CHI_no_one_can_abuse_her
@@ -1680,7 +1684,7 @@ ideas = {
         army_org_factor = 0.05
         army_core_attack_factor = 0.025
         army_core_defence_factor = 0.025
-        encryption_factor = 5
+        encryption_factor = 0.1
         income_growth_factor = 0.05
         personal_value_factor = 0.5
         business_value_factor = 0.1
@@ -1691,6 +1695,7 @@ ideas = {
         academic_development_monthly = 0.05
       }
     }
+
     #中華民國的重建貸款
     CHI_invest_ARR = {
       name = CHI_invest_ARR
@@ -1713,6 +1718,7 @@ ideas = {
       }
     }
   }
+
   hidden_ideas = {
     CHI_Economy_hidden = {
       # 中華民國經濟(動態民族精神用 - 研究與造價加成)

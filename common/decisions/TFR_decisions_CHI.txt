@@ -4314,6 +4314,35 @@ CHI_army_decisions = {
       custom_effect_tooltip = CHI_BUY_KOR_DESTROYERS_tt
     }
   }
+  
+  CHI_anti_silent_dawn = {
+    icon = GFX_PRC_anti_western
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      tag = CHI
+    }
+    fire_only_once = no
+    cost = 50
+    days_remove = 50
+    fire_only_once = yes
+    remove_effect = {
+      set_country_flag = CHI_anti_silent_dawn_flag
+      custom_effect_tooltip = CHI_anti_silent_dawn_tooltip
+      1148 = {
+        add_building_construction = {
+          type = anti_air_building
+          level = 2
+          instant_build = yes
+        }
+      }
+    }
+    ai_will_do = {
+      base = 10
+    }
+  }
+
 }
 
 # 援助阿拉伯共和國決議
@@ -5266,7 +5295,7 @@ CHI_NCSIST_category = {
     cost = 100
     fire_only_once = yes
     complete_effect = {
-
+      
     }
     remove_effect = {
 
@@ -5285,6 +5314,7 @@ CHI_NCSIST_category = {
 
     }
     cost = 100
+    days_remove = 100
     fire_only_once = yes
     complete_effect = {
 

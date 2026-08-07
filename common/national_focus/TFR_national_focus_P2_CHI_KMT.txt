@@ -89,6 +89,7 @@ focus_tree = {
     }
     relative_position_id = CHI_Post_war_review_status_quo
   }
+
   focus = {
     id = CHI_Restore_provincial_government_functons
     x = 0
@@ -139,6 +140,7 @@ focus_tree = {
     }
     relative_position_id = CHI_Eleplant_in_room
   }
+
   focus = {
     id = CHI_reestablish_hainan_province
     x = 0
@@ -330,6 +332,7 @@ focus_tree = {
     }
     relative_position_id = CHI_Political_donations_act
   }
+
   focus = {
     id = CHI_restore_government_information_office
     x = 2
@@ -350,6 +353,7 @@ focus_tree = {
     }
     relative_position_id = CHI_Eleplant_in_room
   }
+
   focus = {
     id = CHI_reform_PTS
     x = 0
@@ -391,6 +395,7 @@ focus_tree = {
     }
     relative_position_id = CHI_reform_PTS
   }
+
   focus = {
     id = CHI_low_fertility_rate
     x = 4
@@ -404,7 +409,14 @@ focus_tree = {
       focus = CHI_Eleplant_in_room
     }
     relative_position_id = CHI_Eleplant_in_room
+    completion_reward = {
+      add_timed_idea = {
+        idea = CHI_diplomatic_truce
+        days = 200
+      }
+    }
   }
+
   focus = {
     id = CHI_Taipei_childcare
     x = 0
@@ -426,10 +438,6 @@ focus_tree = {
         value = -25
       }
       add_income = yes
-      add_timed_idea = {
-        idea = CHI_diplomatic_truce
-        days = 200
-      }
     }
     relative_position_id = CHI_low_fertility_rate
   }
@@ -828,6 +836,7 @@ focus_tree = {
     }
     relative_position_id = CHI_new_ten_propositions
   }
+
   focus = {
     id = CHI_sledgehammer_brings_justice
     x = -3
@@ -846,6 +855,7 @@ focus_tree = {
     }
     relative_position_id = CHI_new_ten_propositions
   }
+
   focus = {
     id = CHI_reestablish_special_investigation_division
     x = 0
@@ -943,7 +953,7 @@ focus_tree = {
         tooltip = war_support_factor_tooltip
       }
       add_to_variable = {
-        CHI_LCH_encryption_factor = 5
+        CHI_LCH_encryption_factor = 0.1
         tooltip = encryption_factor_tooltip
       }
     }
