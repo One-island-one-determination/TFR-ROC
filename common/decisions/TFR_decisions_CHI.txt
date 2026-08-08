@@ -5253,24 +5253,24 @@ CHI_Intervene_the_American_Civil_War_category = {
 }
 
 #人口老化
-CHI_Population_Aging_decisions = {
+# CHI_Population_Aging_decisions = {
 
-}
+# }
 
-#中美洲內戰
-CHI_central_american_war_category = {
+# #中美洲內戰
+# CHI_central_american_war_category = {
 
-}
+# }
 
-#中美洲戰後重建
-CHI_central_american_rebuild_category = {
+# #中美洲戰後重建
+# CHI_central_american_rebuild_category = {
 
-}
+# }
 
-#干涉菲律賓
-CHI_intervene_PHI_civil_war_category = {
+# #干涉菲律賓
+# CHI_intervene_PHI_civil_war_category = {
 
-}
+# }
 
 ####    ######    ######    ####
 ####    ##  ##        ##    ####
@@ -5283,297 +5283,444 @@ CHI_NCSIST_category = {
   #萬劍計畫
   CHI_project_Wan_Chien = {
     icon = GFX_CHI_project_Wan_Chien
-    allowed = {
-
-    }
-    available = {
-
-    }
-    cancel_trigger = {
-
-    }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    allowed = { original_tag = CHI }
+    available = {
+      has_completed_focus = CHI_NCSIST_Project
+    }
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
+    }
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
       
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #勇武計畫
   CHI_project_Yung_Wu = {
     icon = GFX_CHI_project_Yung_Wus
-    allowed = {
-
-    }
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
+    allowed = { original_tag = CHI }
     available = {
 
     }
-    cancel_trigger = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cost = 100
-    days_remove = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #M60A3升級
   CHI_project_M60A3_upgrade = {
     icon = GFX_CHI_project_M60A3_upgrade
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
     available = {
 
     }
-    cancel_trigger = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #外骨骼試驗
   CHI_project_exoskeleton_trial = {
     icon = GFX_CHI_project_exoskeleton_trial
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
     available = {
 
     }
-    cancel_trigger = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #CM13
   CHI_project_CM13 = {
     icon = GFX_CHI_project_CM13
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
-    available = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cancel_trigger = {
-
-    }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #麻雀計畫
   CHI_project_sparrow = {
     icon = GFX_CHI_project_sparrow
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
     available = {
 
-    }
-    cancel_trigger = {
 
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
+    }
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #海鯤
   CHI_project_Hai_Kun = {
     icon = GFX_CHI_project_Hai_Kun
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
     available = {
 
     }
-    cancel_trigger = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #崑崙
   CHI_project_Kun_Lun = {
     icon = GFX_CHI_project_Kun_Lun
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
     available = {
 
     }
-    cancel_trigger = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #鎮冰
   CHI_project_Zhen_Bing = {
     icon = GFX_CHI_project_Zhen_Bing
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
     available = {
 
     }
-    cancel_trigger = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #澎湖
   CHI_project_Peng_Hu = {
     icon = GFX_CHI_project_Peng_Hu
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
     available = {
 
     }
-    cancel_trigger = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #勇鷹號現代化
   CHI_project_Brave_Eagle = {
     icon = GFX_CHI_project_Brave_Eagle
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
     available = {
 
     }
-    cancel_trigger = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #志航號
   CHI_project_Zhi_Hang = {
     icon = GFX_CHI_project_Zhi_Hang
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
     available = {
 
     }
-    cancel_trigger = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
   #天晴號
   CHI_project_IPS67 = {
     icon = GFX_CHI_project_IPS67
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
     available = {
 
     }
-    cancel_trigger = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
 
   #改進航電系統
   CHI_project_Avionics = {
     icon = GFX_CHI_project_Avionics
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     allowed = {
 
     }
     available = {
 
     }
-    cancel_trigger = {
-
+    custom_cost_trigger = {
+      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+      mio:CHI_NCSIST_organization = { 
+        NOT = { check_variable = { funds < 199 } }
+      }
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
-
+      # 【第一步：扣除 MIO 資金】
+      mio:CHI_NCSIST_organization = { 
+        add_mio_funds = -200 
+      }
+      
     }
     remove_effect = {
-
+      set_technology = {
+        rocket_artillery4 = 1 # 1 代表解鎖
+      }
     }
   }
 }
@@ -6065,30 +6212,52 @@ CHI_Economy_Industry_category = {
   #軍工業擴張
   CHI_mil_industry_expansion = {
     icon = GFX_CHI_mil_industry_expansion
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     available = {
       has_completed_focus = CHI_Complete_Military_Idustry
     }
     visible = {
       original_tag = CHI
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
   #建立軍工生產線
   CHI_mil_production_line = {
     icon = GFX_CHI_mil_production_line
+    cost = 0 
+    days_remove = 100
+    fire_only_once = yes
     available = {
       has_completed_focus = CHI_Complete_Military_Idustry
     }
     visible = {
       original_tag = CHI
     }
-    cost = 100
-    fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+      }
+    }
+    remove_effect = {
       set_country_flag = CHI_mil_production_line_completed
     }
   }
@@ -6103,9 +6272,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6119,9 +6300,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6135,9 +6328,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6151,9 +6356,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6166,9 +6383,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6181,9 +6410,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6200,9 +6441,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6215,9 +6468,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6230,9 +6495,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6245,9 +6522,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6260,9 +6549,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6275,9 +6576,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6294,9 +6607,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6309,9 +6634,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 
@@ -6324,9 +6661,21 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 100
+    cost = 0 
+    days_remove = 100
     fire_only_once = yes
+    custom_cost_trigger = {
+      CHI_fiscal_budget_var > 0
+    }
+    custom_cost_text = CHI_fiscal_budget_1
     complete_effect = {
+      add_to_variable = {
+        CHI_fiscal_budget_var = -1
+        tooltip = CHI_fiscal_budget_var_tooltip
+      }
+    }
+    remove_effect = {
+     
     }
   }
 }
@@ -6351,699 +6700,3 @@ CHI_GAW_situation_category = {
 ####    ##            ##    ####
 ####    ##            ##    ####
 
-CHI_shanhe4province_category = {
-  ##山西##{
-  shanxi_teacher_training = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 1 }
-    }
-    cost = 25
-    days_remove = 15
-    available = {
-      owns_state = 1233
-      owns_state = 615
-      owns_state = 1194
-    }
-    remove_effect = {
-      add_to_variable = {
-        shanxi_edu_var = -5
-        tooltip = shanxi_edu_var_tt
-      }
-    }
-  }
-
-  shanxi_depoliticize_education = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 1 }
-    }
-    cost = 30
-    days_remove = 30
-    available = {
-      owns_state = 1233
-      owns_state = 615
-      owns_state = 1194
-    }
-    remove_effect = {
-      add_to_variable = {
-        shanxi_edu_var = -10
-        tooltip = shanxi_edu_var_tt
-      }
-    }
-  }
-
-  shanxi_ban_internet_addiction_camps = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 1 }
-    }
-    cost = 25
-    days_remove = 5
-    available = {
-      owns_state = 1233
-      owns_state = 615
-      owns_state = 1194
-    }
-    remove_effect = {
-      add_to_variable = {
-        shanxi_edu_var = -15
-        tooltip = shanxi_edu_var_tt
-      }
-      add_to_variable = {
-        shanxi_police_var = -5
-        tooltip = shanxi_police_var_tt
-      }
-    }
-  }
-
-  shanxi_depoliticize_police = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 1 }
-    }
-    cost = 15
-    days_remove = 10
-    available = {
-      owns_state = 1233
-      owns_state = 615
-      owns_state = 1194
-    }
-    remove_effect = {
-      add_to_variable = {
-        shanxi_police_var = 5
-        tooltip = shanxi_police_var_tt
-      }
-    }
-  }
-
-  shanxi_rule_of_law_lectures = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 1 }
-    }
-    cost = shanxi_pp_cost_var
-    days_remove = 30
-    available = {
-      owns_state = 1233
-      owns_state = 615
-      owns_state = 1194
-    }
-    remove_effect = {
-      add_to_variable = {
-        shanxi_police_var = 10
-        tooltip = shanxi_police_var_tt
-      }
-      add_to_variable = {
-        shanxi_pp_cost_var = 5
-        tooltip = shanxi_pp_cost_var_tt
-      }
-    }
-  }
-
-  shanxi_dismiss_bad_police = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 1 }
-    }
-    cost = 20
-    days_remove = 5
-    available = {
-      owns_state = 1233
-      owns_state = 615
-      owns_state = 1194
-    }
-    remove_effect = {
-      add_to_variable = {
-        shanxi_police_var = 10
-        tooltip = shanxi_police_var_tt
-      }
-      add_stability = -0.05
-    }
-  }
-
-  shanxi_end = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 1 }
-    }
-    cost = 50
-    days_remove = 50
-    available = {
-      owns_state = 1233
-      owns_state = 615
-      owns_state = 1194
-      shanxi_edu_var < 30
-      shanxi_police_var > 75
-    }
-    remove_effect = {
-      set_country_flag = end_shanxi_tutelage_flag
-    }
-  }
-  ##}
-  ##山東##{
-  shandong_teacher_training = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 2 }
-    }
-    cost = 25
-    days_remove = 15
-    available = {
-        owns_state = 1426
-        owns_state = 1231
-        owns_state = 597
-        owns_state = 1230
-        owns_state = 1427
-        owns_state = 1229
-        owns_state = 1393
-        owns_state = 1420
-    }
-    remove_effect = {
-      add_to_variable = {
-        shandong_edu_var = -5
-        tooltip = shandong_edu_var_tt
-      }
-    }
-  }
-
-  shandong_depoliticize_education = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 2 }
-    }
-    cost = 30
-    days_remove = 30
-    available = {
-        owns_state = 1426
-        owns_state = 1231
-        owns_state = 597
-        owns_state = 1230
-        owns_state = 1427
-        owns_state = 1229
-        owns_state = 1393
-        owns_state = 1420
-    }
-    remove_effect = {
-      add_to_variable = {
-        shandong_edu_var = -10
-        tooltip = shandong_edu_var_tt
-      }
-    }
-  }
-
-  shandong_ban_internet_addiction_camps = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 2 }
-    }
-    cost = 25
-    days_remove = 5
-    available = {
-        owns_state = 1426
-        owns_state = 1231
-        owns_state = 597
-        owns_state = 1230
-        owns_state = 1427
-        owns_state = 1229
-        owns_state = 1393
-        owns_state = 1420
-    }
-    remove_effect = {
-      add_to_variable = {
-        shandong_edu_var = -15
-        tooltip = shandong_edu_var_tt
-      }
-      add_to_variable = {
-        shandong_police_var = -5
-        tooltip = shandong_police_var_tt
-      }
-    }
-  }
-
-  shandong_depoliticize_police = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 2 }
-    }
-    cost = 15
-    days_remove = 10
-    available = {
-        owns_state = 1426
-        owns_state = 1231
-        owns_state = 597
-        owns_state = 1230
-        owns_state = 1427
-        owns_state = 1229
-        owns_state = 1393
-        owns_state = 1420
-    }
-    remove_effect = {
-      add_to_variable = {
-        shandong_police_var = 5
-        tooltip = shandong_police_var_tt
-      }
-    }
-  }
-
-  shandong_rule_of_law_lectures = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 2 }
-    }
-    cost = shandong_pp_cost_var
-    days_remove = 30
-    available = {
-        owns_state = 1426
-        owns_state = 1231
-        owns_state = 597
-        owns_state = 1230
-        owns_state = 1427
-        owns_state = 1229
-        owns_state = 1393
-        owns_state = 1420
-    }
-    remove_effect = {
-      add_to_variable = {
-        shandong_police_var = 10
-        tooltip = shandong_police_var_tt
-      }
-      add_to_variable = {
-        shandong_pp_cost_var = 5
-        tooltip = shandong_pp_cost_var_tt
-      }
-    }
-  }
-
-  shandong_dismiss_bad_police = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 2 }
-    }
-    cost = 20
-    days_remove = 5
-    available = {
-        owns_state = 1426
-        owns_state = 1231
-        owns_state = 597
-        owns_state = 1230
-        owns_state = 1427
-        owns_state = 1229
-        owns_state = 1393
-        owns_state = 1420
-    }
-    remove_effect = {
-      add_to_variable = {
-        shandong_police_var = 10
-        tooltip = shandong_police_var_tt
-      }
-      add_stability = -0.05
-    }
-  }
-
-  shandong_end = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 2 }
-    }
-    cost = 50
-    days_remove = 50
-    available = {
-        owns_state = 1426
-        owns_state = 1231
-        owns_state = 597
-        owns_state = 1230
-        owns_state = 1427
-        owns_state = 1229
-        owns_state = 1393
-        owns_state = 1420
-      shandong_edu_var < 30
-      shandong_police_var > 75
-    }
-    remove_effect = {
-      set_country_flag = end_shandong_tutelage_flag
-    }
-  }
-  ##}
-  ##河南##{
-  henan_teacher_training = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 3 }
-    }
-    cost = 25
-    days_remove = 15
-    available = {
-        owns_state = 607
-        owns_state = 1226
-        owns_state = 1225
-        owns_state = 1224
-    }
-    remove_effect = {
-      add_to_variable = {
-        henan_edu_var = -5
-        tooltip = henan_edu_var_tt
-      }
-    }
-  }
-
-  henan_depoliticize_education = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 3 }
-    }
-    cost = 30
-    days_remove = 30
-    available = {
-        owns_state = 607
-        owns_state = 1226
-        owns_state = 1225
-        owns_state = 1224
-    }
-    remove_effect = {
-      add_to_variable = {
-        henan_edu_var = -10
-        tooltip = henan_edu_var_tt
-      }
-    }
-  }
-
-  henan_ban_internet_addiction_camps = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 3 }
-    }
-    cost = 25
-    days_remove = 5
-    available = {
-        owns_state = 607
-        owns_state = 1226
-        owns_state = 1225
-        owns_state = 1224
-    }
-    remove_effect = {
-      add_to_variable = {
-        henan_edu_var = -15
-        tooltip = henan_edu_var_tt
-      }
-      add_to_variable = {
-        henan_police_var = -5
-        tooltip = henan_police_var_tt
-      }
-    }
-  }
-
-  henan_depoliticize_police = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 3 }
-    }
-    cost = 15
-    days_remove = 10
-    available = {
-        owns_state = 607
-        owns_state = 1226
-        owns_state = 1225
-        owns_state = 1224
-    }
-    remove_effect = {
-      add_to_variable = {
-        henan_police_var = 5
-        tooltip = henan_police_var_tt
-      }
-    }
-  }
-
-  henan_rule_of_law_lectures = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 3 }
-    }
-    cost = henan_pp_cost_var
-    days_remove = 30
-    available = {
-        owns_state = 607
-        owns_state = 1226
-        owns_state = 1225
-        owns_state = 1224
-    }
-    remove_effect = {
-      add_to_variable = {
-        henan_police_var = 10
-        tooltip = henan_police_var_tt
-      }
-      add_to_variable = {
-        henan_pp_cost_var = 5
-        tooltip = henan_pp_cost_var_tt
-      }
-    }
-  }
-
-  henan_dismiss_bad_police = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 3 }
-    }
-    cost = 20
-    days_remove = 5
-    available = {
-        owns_state = 607
-        owns_state = 1226
-        owns_state = 1225
-        owns_state = 1224
-    }
-    remove_effect = {
-      add_to_variable = {
-        henan_police_var = 10
-        tooltip = henan_police_var_tt
-      }
-      add_stability = -0.05
-    }
-  }
-
-  henan_end = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 3 }
-    }
-    cost = 50
-    days_remove = 50
-    available = {
-        owns_state = 607
-        owns_state = 1226
-        owns_state = 1225
-        owns_state = 1224
-      henan_edu_var < 30
-      henan_police_var > 75
-    }
-    remove_effect = {
-      set_country_flag = end_henan_tutelage_flag
-    }
-  }
-  ##}
-  ##河北##{
-  hebei_teacher_training = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 4 }
-    }
-    cost = 25
-    days_remove = 15
-    available = {
-        owns_state = 609
-        owns_state = 610
-        owns_state = 611
-        owns_state = 1154
-        owns_state = 1232
-        owns_state = 1421
-        owns_state = 614
-    }
-    remove_effect = {
-      add_to_variable = {
-        hebei_edu_var = -5
-        tooltip = hebei_edu_var_tt
-      }
-    }
-  }
-
-  hebei_depoliticize_education = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 4 }
-    }
-    cost = 30
-    days_remove = 30
-    available = {
-        owns_state = 609
-        owns_state = 610
-        owns_state = 611
-        owns_state = 1154
-        owns_state = 1232
-        owns_state = 1421
-        owns_state = 614
-    }
-    remove_effect = {
-      add_to_variable = {
-        hebei_edu_var = -10
-        tooltip = hebei_edu_var_tt
-      }
-    }
-  }
-
-  hebei_ban_internet_addiction_camps = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 4 }
-    }
-    cost = 25
-    days_remove = 5
-    available = {
-        owns_state = 609
-        owns_state = 610
-        owns_state = 611
-        owns_state = 1154
-        owns_state = 1232
-        owns_state = 1421
-        owns_state = 614
-    }
-    remove_effect = {
-      add_to_variable = {
-        hebei_edu_var = -15
-        tooltip = hebei_edu_var_tt
-      }
-      add_to_variable = {
-        hebei_police_var = -5
-        tooltip = hebei_police_var_tt
-      }
-    }
-  }
-
-  hebei_depoliticize_police = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 4 }
-    }
-    cost = 15
-    days_remove = 10
-    available = {
-        owns_state = 609
-        owns_state = 610
-        owns_state = 611
-        owns_state = 1154
-        owns_state = 1232
-        owns_state = 1421
-        owns_state = 614
-    }
-    remove_effect = {
-      add_to_variable = {
-        hebei_police_var = 5
-        tooltip = hebei_police_var_tt
-      }
-    }
-  }
-
-  hebei_rule_of_law_lectures = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 4 }
-    }
-    cost = hebei_pp_cost_var
-    days_remove = 30
-    available = {
-        owns_state = 609
-        owns_state = 610
-        owns_state = 611
-        owns_state = 1154
-        owns_state = 1232
-        owns_state = 1421
-        owns_state = 614
-    }
-    remove_effect = {
-      add_to_variable = {
-        hebei_police_var = 10
-        tooltip = hebei_police_var_tt
-      }
-      add_to_variable = {
-        hebei_pp_cost_var = 5
-        tooltip = hebei_pp_cost_var_tt
-      }
-    }
-  }
-
-  hebei_dismiss_bad_police = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 4 }
-    }
-    cost = 20
-    days_remove = 5
-    available = {
-        owns_state = 609
-        owns_state = 610
-        owns_state = 611
-        owns_state = 1154
-        owns_state = 1232
-        owns_state = 1421
-        owns_state = 614
-    }
-    remove_effect = {
-      add_to_variable = {
-        hebei_police_var = 10
-        tooltip = hebei_police_var_tt
-      }
-      add_stability = -0.05
-    }
-  }
-
-  hebei_end = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-    check_variable = { CHI_shanhe_dec_visible = 4 }
-    }
-    cost = 50
-    days_remove = 50
-    available = {
-        owns_state = 609
-        owns_state = 610
-        owns_state = 611
-        owns_state = 1154
-        owns_state = 1232
-        owns_state = 1421
-        owns_state = 614
-      hebei_edu_var < 30
-      hebei_police_var > 75
-    }
-    remove_effect = {
-      set_country_flag = end_hebei_tutelage_flag
-    }
-  }
-  ##}
-}

@@ -514,11 +514,30 @@ CHI_AIDC_organization = { #Aerospace Industrial Development Corp
 	#	owner = { controls_state = 622 }		
 	#}
 }
-#CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technology
-#	include = generic_task_force_ship_organization
-#	icon = GFX_mio_CHI_NCSIST
-#	allowed = {	
-#		tag = CHI
-#		has_dlc = "Arms Against Tyranny"
+
+CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technology
+	include = generic_TFR_UAV_equipment_organization
+	icon = GFX_mio_CHI_NCSIST
+	allowed = {	
+		tag = CHI
+		has_dlc = "Arms Against Tyranny"
+	}
+	#available = {
+	#	owner = { controls_state = 608 }		
+	#}
+
+    #equipment_type = {
+#		infantry_equipment
+#        support_equipment
+#        artillery_equipment
+#        anti_tank_equipment
+#		anti_air_equipment
 #	}
-#}
+
+#	research_categories = {
+#       infantry_weapons
+#		support_tech
+#       mio_cat_all_artillery_equipment
+#	}
+	
+}
