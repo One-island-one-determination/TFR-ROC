@@ -53,4 +53,58 @@ guiTypes = {
 			clicksound = click_ok
 		}
 	}
+	containerWindowType = {
+		name = "CHI_RESTORATION_OF_REPUBLIC_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="super_CHI_RESTORATION_OF_REPUBLIC"
+			spriteType = "GFX_CHI_RESTORATION_OF_REPUBLIC_superevent"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "CHI_restoration_of_republic_super_title"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "CHI_restoration_of_republic_super_quote"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "CHI_restoration_of_republic_super_btn"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
 }

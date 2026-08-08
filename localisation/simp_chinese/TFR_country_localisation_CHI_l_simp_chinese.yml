@@ -505,9 +505,8 @@
  CHI_project_ROCA_reform_1_idea_desc: "我們正在精簡人事並預備重整軍隊，目前已全面禁止向外派遣志願軍。"
 
  CHI_project_ROCA_reform_2: "編遣會議"
- CHI_project_ROCA_reform_2_desc: "編遣會議正式開始。所有師團的第3、4、5列將被鎖定，以統一並規範作戰編制，消除冗餘的軍事單位。"
- CHI_project_ROCA_reform_2_requirement_tt: "§Y要求：§! 請確保所有現役師團編制的作戰單位中，第3、4、5縱列（右側三排）沒有配置任何營。"
- CHI_project_ROCA_reform_2_effect_tt: "所有師團的第3、4、5列將被規範鎖定。"
+ CHI_project_ROCA_reform_2_desc: "編遣會議正式開始。所有已部署師團將刪除，以統一並規範作戰編制，消除冗餘的軍事單位。"
+ CHI_project_ROCA_reform_2_effect_tt: "編遣會議正式開始。§R將刪除現有已部署編制§"
 
  CHI_project_ROCA_reform_3: "恢復軍級番號"
  CHI_project_ROCA_reform_3_desc: "隨著軍隊重組順利進行，我們將恢復軍級番號，提升所有將領的指揮能力，並下達新的軍指揮所編制。"
@@ -551,7 +550,7 @@
  CHI_cost_50_army_xp_tt_blocked: "£army_experience §R50§!"
  CHI_cost_50_navy_xp_tt: "£navy_experience §Y50§!"
  CHI_cost_50_navy_xp_tt_blocked: "£navy_experience §R50§!"
- CHI_cost_50_air_xp_tt: "£air_experience §Y50!§"
+ CHI_cost_50_air_xp_tt: "£air_experience §Y50§!"
  CHI_cost_50_air_xp_tt_blocked: "£air_experience §R50§!"
  CHI_cost_30_air_xp_tt: "£air_experience §Y30§!"
  CHI_cost_30_air_xp_tt_blocked: "£air_experience §R30§!"
@@ -1327,6 +1326,7 @@
 
  naval_invasion_penalty_tooltip: "$MODIFIER_NAVAL_INVASION_PENALTY$：$RIGHT|-=0%$"
 
+ cannot_call_allies_or_join_wars_tooltip: "§R無法召喚盟友！§!"
 ###TFR
  battalion_upkeep_factor_tooltip: "$battalion_upkeep_factor$：$RIGHT|-=%1$"
  aircraft_upkeep_factor_tooltip: "$aircraft_upkeep_factor$：$RIGHT|-=%1$"
@@ -1481,6 +1481,24 @@
  taiwan.32.t: "中華民國屹立於世"
  taiwan.32.d: "隨著最後一支解放軍部隊撤回大陸，台灣兩岸的戰火硝煙逐漸散去，混濁的青天已再次湛藍，白日升，紅日落，英勇的國軍將士成功抵擋了共軍一輪又一輪猛攻，中共速勝佔領台灣的企圖已經破產，中國大陸四處已燃起反抗的火花，解放軍作為失敗者恥辱的撤回大陸時，中華民國正光榮的迎來勝利者的凱旋時刻！中華民國雖然已經走出了至暗時刻，但戰爭的陰霾久久不能散去，在普天同慶，國土光復時刻，對千瘡百孔的台灣寶島的重建工作已迫在眉睫。\n\n伴隨地面入侵部隊撤離，空軍與海軍也已停止所有軍事行動，天空與海域重新開放。滿目瘡痍的碼頭和機場正接收來自全球各地和太約盟友的人道主義援助。\n\n然而一切遠未結束。我們的城市化為廢墟，工廠遭摧毀，鐵路公路癱瘓，身為皇冠明珠的半導體產業更被徹底抹去。不僅如此，太約情報指出共軍此次慘敗極可能引發其國內政治動蕩，或將催生更具侵略性的領導層，在未來數年持續威脅我國民主自由。眼下，艱巨的重建任務正擺在面前。"
  taiwan.32.a: "梅花香自苦寒來"
+
+ CHI_tibet_zangnan_secured_tt: "（臨時文本）獲得西藏全境與藏南地區所有權，並與印度及相關陣營停火達成白和。"
+ CHI_begonia_leaf_send_diplomat_tt: "（臨時文本）向日本正式提出交涉，要求歸還東北地區與沿海租借港口。"
+ CHI_begonia_leaf_returned_tt: "（臨時文本）收回東北地區全境（遼寧、吉林、黑龍江、大連、旅順等）及沿海租借港口所有權與核心。"
+ CHI_japan_refused_tt: "（臨時文本）獲得對日本的宣戰理由。"
+ CHI_japan_refused_territory_demand: "（臨時文本）拒絕領土移交請求"
+ CHI_wait_pdto_reorganization_tt: "（臨時文本）印度已脫離太平洋防衛條約組織。"
+ CHI_mongolia_send_delegation_tt: "（臨時文本）向蒙古派出外交特使團，商討兩國合併事宜。"
+ CHI_mongolia_accept_merge_tt: "（臨時文本）同意與中華民國和平合併。"
+ CHI_mongolia_refuse_merge_tt: "（臨時文本）拒絕與中華民國合併。"
+ CHI_mongolia_annexed_tt: "（臨時文本）蒙古同意和平合併，中華民國和平收復蒙古全境並獲得核心。"
+ CHI_mongolia_war_declared_tt: "（臨時文本）蒙古拒絕和平合併，中華民國對蒙古正式宣戰。"
+ CHI_mongolia_focus_required_tt: "蒙古問題需透過國策「蒙古磋商」交涉解決，無法直接宣戰。"
+
+ CHI_republic_achieved_east_south_china_tt: "光復東南與華東地區"
+ CHI_republic_achieved_north_northeast_tt: "光復華北與東北地區"
+ CHI_republic_achieved_central_southwest_tt: "光復華中與西南地區"
+ CHI_republic_achieved_northwest_tt: "光復西北與邊疆地區"
  
  taiwan.34.t: "國防部函"
  taiwan.34.d: "受文者：總統府\n速別：最速件\n主旨：我國國防現狀\n\n我軍阻止解放軍攻入台灣本島的主要目標已失敗。解放軍利用我方防御漏洞，現控制多個主要城市及港口，嚴重削弱我軍作戰能力。因首要目標未達成，戰鬥已無法局限於海岸線，我軍被迫轉入城市及山地作戰。\n\n解放軍現已推進至環繞剩餘城市與山脈的第二防線，覆雜化的城市及山地環境可轉為防御優勢。國軍陸軍已在解放軍控制城市外圍建立防御陣地，更有能力阻滯其後續推進。\n\n太約組織在此次沖突中亦傷亡慘重，意外地對軍民心理產生雙重沖擊。在確認太約部隊確為並肩戰友後，民間志願人員正大量投入防御工事構築與後勤支援。此舉顯著提升士氣與防御效能，據指揮官報告，地面部隊作戰意願與戰備狀態已達歷史高點。"
@@ -2044,6 +2062,9 @@
  CHI_BUY_USA_DESTROYERS_tt: "§Y一對新艦隊將在夏威夷海軍基地部署§!"
  CHI_BUY_JAP_DESTROYERS_tt: "§Y一對新艦隊將在大阪海軍基地部署§!"
  CHI_BUY_KOR_DESTROYERS_tt: "§Y一對新艦隊將在釜山海軍基地部署§!"
+ CHI_anti_silent_dawn: "加強防空網"
+ CHI_anti_silent_dawn_tooltip: "或許有奇效"
+ CHI_anti_silent_dawn_effect_tooltip: "因為戰前加強了防空網，使得我們能降低空襲的影響"
  PHI_civil_war_AFP_WOM: "菲律賓共和國"
  PHI_civil_war_MILF_WON: "菲律賓伊斯蘭國"
  PHI_civil_war_NDF_WON: "菲律賓民主共和國"
@@ -2218,7 +2239,7 @@
  CHI_corruption_problem_name_0: "陳腐問題"
  CHI_corruption_problem_name_4: "初具成效"
  CHI_corruption_problem_name_6: "政通人和"
- CHI_diplomatic_truce: "外交休兵"
+ CHI_diplomatic_truce: "政治休兵"
  ##
  CHI_corruption: "貪污腐敗"
  CHI_Political_donations_act: "嚴懲政治獻金"
@@ -2431,6 +2452,7 @@
  CHI_forming_air_force_political_warfare_command_desc: "1920年，孫中山為了培育出能夠終結軍閥割據的革命軍隊，仿照蘇聯政工體系，建立「軍事委員會政治部」，之後幾經波折成為國防部下屬的總政治部，負責嚴抓軍隊思想與對外心理作戰，並在合適的情況下觀察並即時干預士兵的心理狀況。歷史一再證明部隊的真正核心在於優秀心理素質和對政府的絕對忠誠，兩廣事變發生時正是蔣介石憑藉國家大義，才說動廣東空軍的黃志剛與黃居谷等人「投誠」，這些烈士在抗戰中英勇赴義、為中國戰至最後一機一卒。\n\n因此，為空軍設置專門的政戰部門是絕對有必要的，我們會讓官兵們知道，他們所守護的國家也是他們最堅實的後盾!"
  CHI_carry_forward_the_inspiration_of_our_airman_desc: "在戰爭時期，我國空軍曾誕生出高志航、王光復、陳懷生等王牌飛行員，政府遷台後也培養出伍克振、廖振國、王同義、高鼎程等優秀人才，不止是他們，還有許多不為人知的藍天英雄們捍衛著這片自由的天空，而他們又會接續培養出更多的優秀後輩，生生不息綿延不絕，現在是如此，以後也將是如此！"
  CHI_modern_whampoa_desc: "中華民國陸軍，自國民黨黨軍、國民革命軍，再到中華民國國軍陸軍，是個歷史悠久的部隊，儘管過去的一些政策仍阻礙著我們，但現在已經開始出現好轉了，畢竟我們守下了解放軍的海岸攻勢，難道解放軍的裝備比我們差，現在我們已經證明了自己，是時候更進一步深化改革了！"
+ CHI_modern_whampoa_tooltip: "選擇此條軍改分支將給予您§G強大的陸軍加成§!，但是您將§R無法編輯部隊§!，並且僅能通過§Y決議§!訓練新部隊。"
  CHI_new_whampoa_spirits_desc: "許多年來，老派黃埔系將軍是國軍改革的重大阻力之一許多落後的戰術體系直到台海前夕才完成改革，他們擔憂著在北伐戰爭發揮巨大作用的戰術若是被全面替換會讓軍隊忘記自己的根，但戰術會變精神卻常存，台海戰爭證明了即使在戰術、裝備全面朝北約靠攏，國軍依舊是個不畏艱苦、愛國愛民的武裝組織，精神沒有消失，它存在在我們的心裡。"
  CHI_unity_of_knowledge_and_desc: "國防部將台海戰爭時期得到的教訓歸納總結出數份報告，上面條理分明編列著部隊新型的戰術改進與訓練項目，如此優秀的報告可不能塵封在檔案室裡，高層已經命人影印分發至各個單位進行訓練。"
  CHI_shining_spear_and_iron_horses_desc: "在下一代主力戰車開發之前，現在要立刻解決國軍戰車無法擊穿敵人裝甲與裝甲薄弱的問題，國防部預計將為CM-12換裝更大口徑的火炮並裝上爆炸反應裝甲來緊急解決當前的問題。"
@@ -2530,6 +2552,11 @@
  CHI_tuva_problem_desc: "圖瓦共和國——中文舊稱唐努烏梁海，數百年前俄羅斯帝國與大清帝國在這塊戰略要地進行統治博弈，在辛亥革命成功後唐努烏梁海隨著外蒙古脫離中國獨立後加入俄羅斯帝國，隨後又經歷蘇聯時代到現在的俄羅斯聯邦成為圖瓦共和國，我們收復外蒙古的行動已經造成俄羅斯的緊張，圖瓦問題可能會再度引發一場大戰。"
  CHI_begonia_leaf_desc: "解決了與蒙古的關係後，我國宣稱的最大疆域已完成九成以上，還有許多零碎的土地正在其他國家的控制之下，其中也有曾經站在同一陣線與中共作戰的夥伴，政府將派遣外交官前去討論，希望不會發生一些我們都不太樂見的結果......"
  CHI_GAW_situation_category: "大亞洲戰爭"
+
+ CHI_ending_tooltip: "《同島一命·烈焰升騰中華民國擴充》製作組感謝您遊玩§Y“同島一命”§!，並希望您§P體驗愉快§!!\n\n\n\n\n£GFX_chi_ending_texticon\n\n\n\n\n\n§g願中國終成自由！§!"
+ CHI_ending_tooltip2: "《同島一命·烈焰升騰中華民國擴充》製作組感謝您遊玩§Y“同島一命”§!，並希望您§P體驗愉快§!!\n\n\n\n\n£GFX_chi_ending_two_texticon\n\n\n\n\n\n§g中華民國萬歲！§!"
+ CHI_ending_tooltip3: "《同島一命·烈焰升騰中華民國擴充》製作組感謝您遊玩§Y“同島一命”§!，並希望您§P體驗愉快§!!\n\n\n\n\n£GFX_chi_ending_three_texticon\n\n\n\n\n\n§g革命尚未成功，同志仍須努力！§!"
+ CHI_ending_random_tt: "[Root.GetCHIEndingTooltip]"
 #}
 
 ## 戰略資源 {

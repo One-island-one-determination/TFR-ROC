@@ -15,6 +15,7 @@ country_event = {
     name = CHI.H4.1.a
     load_focus_tree = P4_CHI_Han
     focus_unlock = yes
+    set_cosmetic_tag = CHI_UNITED
   }
 }
 
@@ -59,7 +60,15 @@ country_event = {
   is_triggered_only = yes
   option = {
     name = CHI.H4.5.a
-    set_capital = 1035
+    set_capital = {
+      state = 1222
+      remember_old_capital = no
+    }
+    set_cosmetic_tag = CHI_UNITED
+    news_event = {
+      id = taiwan.101
+      days = 1
+    }
   }
 }
 
@@ -80,7 +89,127 @@ country_event = {
   desc = CHI.H4.7.d
   picture = CHI_Event_H4_7
   is_triggered_only = yes
+
+  immediate = {
+    hidden_effect = {
+      random_list = {
+        33 = { set_country_flag = CHI_ending_flag_1 }
+        33 = { set_country_flag = CHI_ending_flag_2 }
+        34 = { set_country_flag = CHI_ending_flag_3 }
+      }
+    }
+  }
+
   option = {
     name = CHI.H4.7.a
+    if = {
+      limit = { has_country_flag = CHI_ending_flag_2 }
+      custom_effect_tooltip = CHI_ending_tooltip2
+    }
+    else_if = {
+      limit = { has_country_flag = CHI_ending_flag_3 }
+      custom_effect_tooltip = CHI_ending_tooltip3
+    }
+    else = {
+      custom_effect_tooltip = CHI_ending_tooltip
+    }
   }
 }
+
+# ================================
+# Mongolia Negotiation Event Chain
+# ================================
+
+# H4-09-01: 蒙古問題 (CHI sends delegation)
+country_event = {
+  id = CHI.H4.91
+  title = CHI.H4.91.t
+  desc = CHI.H4.91.d
+  picture = CHI_Event_H4_91
+  is_triggered_only = yes
+  option = {
+    name = CHI.H4.91.a
+    custom_effect_tooltip = CHI_mongolia_send_delegation_tt
+    hidden_effect = {
+      if = {
+        limit = { country_exists = MON }
+        MON = { country_event = { id = CHI.H4.94 days = 1 } }
+      }
+      else = {
+        country_event = { id = CHI.H4.92 days = 1 }
+      }
+    }
+  }
+}
+
+# H4-09-04: 我們該不該同意合併? (Sent to MON)
+country_event = {
+  id = CHI.H4.94
+  title = CHI.H4.94.t
+  desc = CHI.H4.94.d
+  is_triggered_only = yes
+  option = {
+    name = CHI.H4.94.a
+    ai_chance = { base = 50 }
+    custom_effect_tooltip = CHI_mongolia_accept_merge_tt
+    hidden_effect = {
+      CHI = { country_event = { id = CHI.H4.92 days = 1 } }
+    }
+  }
+  option = {
+    name = CHI.H4.94.b
+    ai_chance = { base = 50 }
+    custom_effect_tooltip = CHI_mongolia_refuse_merge_tt
+    hidden_effect = {
+      CHI = { country_event = { id = CHI.H4.93 days = 1 } }
+    }
+  }
+}
+
+# H4-09-02: 五族共和，缺一不可！ (MON accepts - Annexation & Cores)
+country_event = {
+  id = CHI.H4.92
+  title = CHI.H4.92.t
+  desc = CHI.H4.92.d
+  picture = CHI_Event_H4_92
+  is_triggered_only = yes
+  option = {
+    name = CHI.H4.92.a
+    custom_effect_tooltip = CHI_mongolia_annexed_tt
+    hidden_effect = {
+      every_state = {
+        limit = {
+          OR = {
+            is_core_of = MON
+            state = 1388
+            state = 1389
+            state = 1390
+            state = 1391
+            state = 330
+          }
+        }
+        add_core_of = CHI
+      }
+      if = {
+        limit = { country_exists = MON }
+        annex_country = { target = MON transfer_troops = yes }
+      }
+    }
+  }
+}
+
+# H4-09-03: 成吉思汗的子孫永不屈服! (MON refuses - War, core via CCW decisions)
+country_event = {
+  id = CHI.H4.93
+  title = CHI.H4.93.t
+  desc = CHI.H4.93.d
+  picture = CHI_Event_H4_93
+  is_triggered_only = yes
+  option = {
+    name = CHI.H4.93.a
+    custom_effect_tooltip = CHI_mongolia_war_declared_tt
+    declare_war_on = { target = MON type = annex_everything }
+  }
+}
+
+

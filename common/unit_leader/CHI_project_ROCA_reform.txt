@@ -1,0 +1,21 @@
+leader_traits = {
+    CHI_expanded_command_trait = {
+        type = corps_commander # 只針對普通將軍，不包含元帥 (field_marshal)
+        
+        gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = CHI
+			}
+		}
+
+        corps_commander_modifier = {
+            max_commander_army_size = 20 # 原本 24 + 14 = 38
+        }
+        
+        
+        # 隱藏這個特質的圖示，讓它變成後台默默運作的 Buff，或者你想顯示出來也可以
+    }
+}
