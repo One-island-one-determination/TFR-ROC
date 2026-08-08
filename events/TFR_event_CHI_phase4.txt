@@ -15,6 +15,7 @@ country_event = {
     name = CHI.H4.1.a
     load_focus_tree = P4_CHI_Han
     focus_unlock = yes
+    set_cosmetic_tag = CHI_UNITED
   }
 }
 
@@ -88,8 +89,30 @@ country_event = {
   desc = CHI.H4.7.d
   picture = CHI_Event_H4_7
   is_triggered_only = yes
+
+  immediate = {
+    hidden_effect = {
+      random_list = {
+        33 = { set_country_flag = CHI_ending_flag_1 }
+        33 = { set_country_flag = CHI_ending_flag_2 }
+        34 = { set_country_flag = CHI_ending_flag_3 }
+      }
+    }
+  }
+
   option = {
     name = CHI.H4.7.a
+    if = {
+      limit = { has_country_flag = CHI_ending_flag_2 }
+      custom_effect_tooltip = CHI_ending_tooltip2
+    }
+    else_if = {
+      limit = { has_country_flag = CHI_ending_flag_3 }
+      custom_effect_tooltip = CHI_ending_tooltip3
+    }
+    else = {
+      custom_effect_tooltip = CHI_ending_tooltip
+    }
   }
 }
 
