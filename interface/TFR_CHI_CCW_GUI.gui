@@ -1,1108 +1,1116 @@
 guitypes = {
-	#中國內戰
-	containerwindowtype = {
-		name = "CHI_CCW_status"
-		size = { width = 100%% height = 500 }
-		
-		containerWindowType = {
-			name = "E"
-			position = { x = 250 y = 250 }
-
-			icontype = {
-				name = "ccw_background"
-				quadtexturesprite = "ccw_background"
-				position = { x = 0 y = 0 }
-				centerposition = yes				
-			}
-
-			##             ##
-            ##完全沒控制(紅)##
-            ##             ##
-
-			buttonType = {
-				name = "ccw_taiwan_0"
-				position = { x = 111 y = 61 }
-				quadTextureSprite = "ccw_taiwan_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_anhui_0"
-				position = { x = 85 y = -25.5 }
-				quadTextureSprite = "ccw_anhui_status_strip"
-				frame = 1
-			}
-
-			iconType = {
-				name = "ccw_beijing_s_0"
-				position = { x = 89 y = -90 }
-				quadTextureSprite = "ccw_beijing_s_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_beijing_0"
-				position = { x = 169.5 y = 152 }
-				quadTextureSprite = "ccw_beijing_status_strip"
-				frame = 1
-			}
-			
-			buttonType = {
-				name = "ccw_jiangsu_0"
-				position = { x = 98 y = -29 }
-				quadTextureSprite = "ccw_jiangsu_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_shandong_0"
-				position = { x = 84.3 y = -61.5 }
-				quadTextureSprite = "ccw_shandong_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_hebei_0"
-				position = { x = 73 y = -107 }
-				quadTextureSprite = "ccw_hebei_status_strip"
-				frame = 1
-			}
-
-			iconType = {
-				name = "ccw_tianjin_s_0"
-				position = { x = 99 y = -80 }
-				quadTextureSprite = "ccw_tianjin_s_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_tianjin_0"
-				position = { x = 71 y = 142 }
-				quadTextureSprite = "ccw_tianjin_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_shanxi_0"
-				position = { x = 47 y = -85 }
-				quadTextureSprite = "ccw_shanxi_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_shan3xi_0"
-				position = { x = 9 y = -75 }
-				quadTextureSprite = "ccw_shan3xi_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_henan_0"
-				position = { x = 48 y = -43 }
-				quadTextureSprite = "ccw_henan_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_ningxia_0"
-				position = { x = 1.5 y = -73 }
-				quadTextureSprite = "ccw_ningxia_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_chongqing_0"
-				position = { x = 7 y = -1.5 }
-				quadTextureSprite = "ccw_chongqing_status_strip"
-				frame = 1
-			}
-
-			iconType = {
-				name = "ccw_shanghai_s_0"
-				position = { x = 134 y = 2 }
-				quadTextureSprite = "ccw_shanghai_s_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_shanghai_0"
-				position = { x = -40.2 y = 144.5 }
-				quadTextureSprite = "ccw_shanghai_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_zhejiang_0"
-				position = { x = 110 y = 7 }
-				quadTextureSprite = "ccw_zhejiang_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_fujian_0"
-				position = { x = 92 y = 34.5 }
-				quadTextureSprite = "ccw_fujian_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_guangdong_0"
-				position = { x = 42.2 y = 60 }
-				quadTextureSprite = "ccw_guangdong_status_strip"
-				frame = 1
-			}
-
-			iconType = {
-				name = "ccw_hongkong_s_0"
-				position = { x = 76 y = 85 }
-				quadTextureSprite = "ccw_hongkong_s_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_hongkong_0"
-				position = { x = -146 y = 154 }
-				quadTextureSprite = "ccw_hongkong_status_strip"
-				frame = 1
-			}
-
-			iconType = {
-				name = "ccw_macau_s_0"
-				position = { x = 73 y = 89 }
-				quadTextureSprite = "ccw_macau_s_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_macau_0"
-				position = { x = -228.5 y = 143 }
-				quadTextureSprite = "ccw_macau_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_guangxi_0"
-				position = { x = 0.5 y = 51 }
-				quadTextureSprite = "ccw_guangxi_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_yunnan_0"
-				position = { x = -55 y = 26 }
-				quadTextureSprite = "ccw_yunnan_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_sichuan_0"
-				position = { x = -56.9 y = -21.7 }
-				quadTextureSprite = "ccw_sichuan_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_xizang_0"
-				position = { x = -212.5 y = -43 }
-				quadTextureSprite = "ccw_xizang_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_zangsouth_0"
-				position = { x = -102.5 y = 25 }
-				quadTextureSprite = "ccw_zangsouth_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_hubei_0"
-				position = { x = 32 y = -12.5 }
-				quadTextureSprite = "ccw_hubei_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_hunan_0"
-				position = { x = 35.8 y = 16.8 }
-				quadTextureSprite = "ccw_hunan_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_guizhou_0"
-				position = { x = -5 y = 25}
-				quadTextureSprite = "ccw_guizhou_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_jiangxi_0"
-				position = { x = 74 y = 18 }
-				quadTextureSprite = "ccw_jiangxi_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_hainan_0"
-				position = { x =33.5 y = 106 }
-				quadTextureSprite = "ccw_hainan_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_xinjiang_0"
-				position = { x = -248 y = -183 }
-				quadTextureSprite = "ccw_xinjiang_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_qinghai_0"
-				position = { x = -120 y = -71 }
-				quadTextureSprite = "ccw_qinghai_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_gansu_0"
-				position = { x = -98 y = -109 }
-				quadTextureSprite = "ccw_gansu_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_neimeng_0"
-				position = { x = -58 y = -237 }
-				quadTextureSprite = "ccw_neimeng_status_strip"
-				frame = 1
-			}
-			
-			buttonType = {
-				name = "ccw_mon_0"
-				position = { x = -134 y = -222 }
-				quadTextureSprite = "ccw_mon_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_tuva_0"
-				position = { x = -125.5 y = -241 }
-				quadTextureSprite = "ccw_tuva_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_liaoning_0"
-				position = { x = 116 y = -116 }
-				quadTextureSprite = "ccw_liaoning_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_jilin_0"
-				position = { x = 139 y = -149 }
-				quadTextureSprite = "ccw_jilin_status_strip"
-				frame = 1
-			}
-
-			buttonType = {
-				name = "ccw_hlj_0"
-				position = { x = 135 y = -240 }
-				quadTextureSprite = "ccw_hlj_status_strip"
-				frame = 1
-			}
-
-			##           ##
-            ##部分控制(黃)##
-            ##           ##
-
-            buttonType = {
-				name = "ccw_taiwan_1"
-				position = { x = 111 y = 61 }
-				quadTextureSprite = "ccw_taiwan_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_anhui_1"
-				position = { x = 85 y = -25.5 }
-				quadTextureSprite = "ccw_anhui_status_strip"
-				frame = 2
-			}
-			
-			buttonType = {
-				name = "ccw_jiangsu_1"
-				position = { x = 98 y = -29 }
-				quadTextureSprite = "ccw_jiangsu_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_shandong_1"
-				position = { x = 84.3 y = -61.5 }
-				quadTextureSprite = "ccw_shandong_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_hebei_1"
-				position = { x = 73 y = -107 }
-				quadTextureSprite = "ccw_hebei_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_shanxi_1"
-				position = { x = 47 y = -85 }
-				quadTextureSprite = "ccw_shanxi_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_shan3xi_1"
-				position = { x = 9 y = -75 }
-				quadTextureSprite = "ccw_shan3xi_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_henan_1"
-				position = { x = 48 y = -43 }
-				quadTextureSprite = "ccw_henan_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_zhejiang_1"
-				position = { x = 110 y = 7 }
-				quadTextureSprite = "ccw_zhejiang_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_fujian_1"
-				position = { x = 92 y = 34.5 }
-				quadTextureSprite = "ccw_fujian_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_guangdong_1"
-				position = { x = 42.2 y = 60 }
-				quadTextureSprite = "ccw_guangdong_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_guangxi_1"
-				position = { x = 0.5 y = 51 }
-				quadTextureSprite = "ccw_guangxi_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_yunnan_1"
-				position = { x = -55 y = 26 }
-				quadTextureSprite = "ccw_yunnan_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_sichuan_1"
-				position = { x = -56.9 y = -21.7 }
-				quadTextureSprite = "ccw_sichuan_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_xizang_1"
-				position = { x = -212.5 y = -43 }
-				quadTextureSprite = "ccw_xizang_status_strip"
-				frame = 2
-			}
-
-
-			buttonType = {
-				name = "ccw_hubei_1"
-				position = { x = 32 y = -12.5 }
-				quadTextureSprite = "ccw_hubei_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_hunan_1"
-				position = { x = 35.8 y = 16.8 }
-				quadTextureSprite = "ccw_hunan_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_guizhou_1"
-				position = { x = -5 y = 25}
-				quadTextureSprite = "ccw_guizhou_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_jiangxi_1"
-				position = { x = 74 y = 18 }
-				quadTextureSprite = "ccw_jiangxi_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_xinjiang_1"
-				position = { x = -248 y = -183 }
-				quadTextureSprite = "ccw_xinjiang_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_qinghai_1"
-				position = { x = -120 y = -71 }
-				quadTextureSprite = "ccw_qinghai_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_gansu_1"
-				position = { x = -98 y = -109 }
-				quadTextureSprite = "ccw_gansu_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_neimeng_1"
-				position = { x = -58 y = -237 }
-				quadTextureSprite = "ccw_neimeng_status_strip"
-				frame = 2
-			}
-			
-			buttonType = {
-				name = "ccw_mon_1"
-				position = { x = -134 y = -222 }
-				quadTextureSprite = "ccw_mon_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_liaoning_1"
-				position = { x = 116 y = -116 }
-				quadTextureSprite = "ccw_liaoning_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_jilin_1"
-				position = { x = 139 y = -149 }
-				quadTextureSprite = "ccw_jilin_status_strip"
-				frame = 2
-			}
-
-			buttonType = {
-				name = "ccw_hlj_1"
-				position = { x = 135 y = -240 }
-				quadTextureSprite = "ccw_hlj_status_strip"
-				frame = 2
-			}
-
-            ##           ##
-            ##完全控制(綠)##
-            ##           ##
-
-            buttonType = {
-				name = "ccw_taiwan_2"
-				position = { x = 111 y = 61 }
-				quadTextureSprite = "ccw_taiwan_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_anhui_2"
-				position = { x = 85 y = -25.5 }
-				quadTextureSprite = "ccw_anhui_status_strip"
-				frame = 3
-			}
-
-			iconType = {
-				name = "ccw_beijing_s_2"
-				position = { x = 89 y = -90 }
-				quadTextureSprite = "ccw_beijing_s_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_beijing_2"
-				position = { x = 169.5 y = 152 }
-				quadTextureSprite = "ccw_beijing_status_strip"
-				frame = 3
-			}
-			
-			buttonType = {
-				name = "ccw_jiangsu_2"
-				position = { x = 98 y = -29 }
-				quadTextureSprite = "ccw_jiangsu_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_shandong_2"
-				position = { x = 84.3 y = -61.5 }
-				quadTextureSprite = "ccw_shandong_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_hebei_2"
-				position = { x = 73 y = -107 }
-				quadTextureSprite = "ccw_hebei_status_strip"
-				frame = 3
-			}
-
-			iconType = {
-				name = "ccw_tianjin_s_2"
-				position = { x = 99 y = -80 }
-				quadTextureSprite = "ccw_tianjin_s_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_tianjin_2"
-				position = { x = 71 y = 142 }
-				quadTextureSprite = "ccw_tianjin_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_shanxi_2"
-				position = { x = 47 y = -85 }
-				quadTextureSprite = "ccw_shanxi_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_shan3xi_2"
-				position = { x = 9 y = -75 }
-				quadTextureSprite = "ccw_shan3xi_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_henan_2"
-				position = { x = 48 y = -43 }
-				quadTextureSprite = "ccw_henan_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_ningxia_2"
-				position = { x = 1.5 y = -73 }
-				quadTextureSprite = "ccw_ningxia_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_chongqing_2"
-				position = { x = 7 y = -1.5 }
-				quadTextureSprite = "ccw_chongqing_status_strip"
-				frame = 3
-			}
-
-			iconType = {
-				name = "ccw_shanghai_s_2"
-				position = { x = 134 y = 2 }
-				quadTextureSprite = "ccw_shanghai_s_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_shanghai_2"
-				position = { x = -40.2 y = 144.5 }
-				quadTextureSprite = "ccw_shanghai_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_zhejiang_2"
-				position = { x = 110 y = 7 }
-				quadTextureSprite = "ccw_zhejiang_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_fujian_2"
-				position = { x = 92 y = 34.5 }
-				quadTextureSprite = "ccw_fujian_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_guangdong_2"
-				position = { x = 42.2 y = 60 }
-				quadTextureSprite = "ccw_guangdong_status_strip"
-				frame = 3
-			}
-
-			iconType = {
-				name = "ccw_hongkong_s_2"
-				position = { x = 76 y = 85 }
-				quadTextureSprite = "ccw_hongkong_s_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_hongkong_2"
-				position = { x = -146 y = 154 }
-				quadTextureSprite = "ccw_hongkong_status_strip"
-				frame = 3
-			}
-
-			iconType = {
-				name = "ccw_macau_s_2"
-				position = { x = 73 y = 89 }
-				quadTextureSprite = "ccw_macau_s_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_macau_2"
-				position = { x = -228.5 y = 143 }
-				quadTextureSprite = "ccw_macau_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_guangxi_2"
-				position = { x = 0.5 y = 51 }
-				quadTextureSprite = "ccw_guangxi_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_yunnan_2"
-				position = { x = -55 y = 26 }
-				quadTextureSprite = "ccw_yunnan_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_sichuan_2"
-				position = { x = -56.9 y = -21.7 }
-				quadTextureSprite = "ccw_sichuan_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_xizang_2"
-				position = { x = -212.5 y = -43 }
-				quadTextureSprite = "ccw_xizang_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_zangsouth_2"
-				position = { x = -102.5 y = 25 }
-				quadTextureSprite = "ccw_zangsouth_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_hubei_2"
-				position = { x = 32 y = -12.5 }
-				quadTextureSprite = "ccw_hubei_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_hunan_2"
-				position = { x = 35.8 y = 16.8 }
-				quadTextureSprite = "ccw_hunan_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_guizhou_2"
-				position = { x = -5 y = 25}
-				quadTextureSprite = "ccw_guizhou_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_jiangxi_2"
-				position = { x = 74 y = 18 }
-				quadTextureSprite = "ccw_jiangxi_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_hainan_2"
-				position = { x =33.5 y = 106 }
-				quadTextureSprite = "ccw_hainan_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_xinjiang_2"
-				position = { x = -248 y = -183 }
-				quadTextureSprite = "ccw_xinjiang_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_qinghai_2"
-				position = { x = -120 y = -71 }
-				quadTextureSprite = "ccw_qinghai_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_gansu_2"
-				position = { x = -98 y = -109 }
-				quadTextureSprite = "ccw_gansu_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_neimeng_2"
-				position = { x = -58 y = -237 }
-				quadTextureSprite = "ccw_neimeng_status_strip"
-				frame = 3
-			}
-			
-			buttonType = {
-				name = "ccw_mon_2"
-				position = { x = -134 y = -222 }
-				quadTextureSprite = "ccw_mon_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_tuva_2"
-				position = { x = -125.5 y = -241 }
-				quadTextureSprite = "ccw_tuva_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_liaoning_2"
-				position = { x = 116 y = -116 }
-				quadTextureSprite = "ccw_liaoning_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_jilin_2"
-				position = { x = 139 y = -149 }
-				quadTextureSprite = "ccw_jilin_status_strip"
-				frame = 3
-			}
-
-			buttonType = {
-				name = "ccw_hlj_2"
-				position = { x = 135 y = -240 }
-				quadTextureSprite = "ccw_hlj_status_strip"
-				frame = 3
-			}
-
-            ##             ##
-            ##為核心省分(藍)##
-            ##             ##
-
-            buttonType = {
-				name = "ccw_taiwan_3"
-				position = { x = 111 y = 61 }
-				quadTextureSprite = "ccw_taiwan_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_anhui_3"
-				position = { x = 85 y = -25.5 }
-				quadTextureSprite = "ccw_anhui_status_strip"
-				frame = 4
-			}
-
-			iconType = {
-				name = "ccw_beijing_s_3"
-				position = { x = 89 y = -90 }
-				quadTextureSprite = "ccw_beijing_s_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_beijing_3"
-				position = { x = 169.5 y = 152 }
-				quadTextureSprite = "ccw_beijing_status_strip"
-				frame = 4
-			}
-			
-			buttonType = {
-				name = "ccw_jiangsu_3"
-				position = { x = 98 y = -29 }
-				quadTextureSprite = "ccw_jiangsu_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_shandong_3"
-				position = { x = 84.3 y = -61.5 }
-				quadTextureSprite = "ccw_shandong_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_hebei_3"
-				position = { x = 73 y = -107 }
-				quadTextureSprite = "ccw_hebei_status_strip"
-				frame = 4
-			}
-
-			iconType = {
-				name = "ccw_tianjin_s_3"
-				position = { x = 99 y = -80 }
-				quadTextureSprite = "ccw_tianjin_s_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_tianjin_3"
-				position = { x = 71 y = 142 }
-				quadTextureSprite = "ccw_tianjin_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_shanxi_3"
-				position = { x = 47 y = -85 }
-				quadTextureSprite = "ccw_shanxi_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_shan3xi_3"
-				position = { x = 9 y = -75 }
-				quadTextureSprite = "ccw_shan3xi_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_henan_3"
-				position = { x = 48 y = -43 }
-				quadTextureSprite = "ccw_henan_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_ningxia_3"
-				position = { x = 1.5 y = -73 }
-				quadTextureSprite = "ccw_ningxia_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_chongqing_3"
-				position = { x = 7 y = -1.5 }
-				quadTextureSprite = "ccw_chongqing_status_strip"
-				frame = 4
-			}
-
-			iconType = {
-				name = "ccw_shanghai_s_3"
-				position = { x = 134 y = 2 }
-				quadTextureSprite = "ccw_shanghai_s_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_shanghai_3"
-				position = { x = -40.2 y = 144.5 }
-				quadTextureSprite = "ccw_shanghai_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_zhejiang_3"
-				position = { x = 110 y = 7 }
-				quadTextureSprite = "ccw_zhejiang_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_fujian_3"
-				position = { x = 92 y = 34.5 }
-				quadTextureSprite = "ccw_fujian_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_guangdong_3"
-				position = { x = 42.2 y = 60 }
-				quadTextureSprite = "ccw_guangdong_status_strip"
-				frame = 4
-			}
-
-			iconType = {
-				name = "ccw_hongkong_s_3"
-				position = { x = 76 y = 85 }
-				quadTextureSprite = "ccw_hongkong_s_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_hongkong_3"
-				position = { x = -146 y = 154 }
-				quadTextureSprite = "ccw_hongkong_status_strip"
-				frame = 4
-			}
-
-			iconType = {
-				name = "ccw_macau_s_3"
-				position = { x = 73 y = 89 }
-				quadTextureSprite = "ccw_macau_s_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_macau_3"
-				position = { x = -228.5 y = 143 }
-				quadTextureSprite = "ccw_macau_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_guangxi_3"
-				position = { x = 0.5 y = 51 }
-				quadTextureSprite = "ccw_guangxi_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_yunnan_3"
-				position = { x = -55 y = 26 }
-				quadTextureSprite = "ccw_yunnan_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_sichuan_3"
-				position = { x = -56.9 y = -21.7 }
-				quadTextureSprite = "ccw_sichuan_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_xizang_3"
-				position = { x = -212.5 y = -43 }
-				quadTextureSprite = "ccw_xizang_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_zangsouth_3"
-				position = { x = -102.5 y = 25 }
-				quadTextureSprite = "ccw_zangsouth_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_hubei_3"
-				position = { x = 32 y = -12.5 }
-				quadTextureSprite = "ccw_hubei_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_hunan_3"
-				position = { x = 35.8 y = 16.8 }
-				quadTextureSprite = "ccw_hunan_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_guizhou_3"
-				position = { x = -5 y = 25}
-				quadTextureSprite = "ccw_guizhou_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_jiangxi_3"
-				position = { x = 74 y = 18 }
-				quadTextureSprite = "ccw_jiangxi_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_hainan_3"
-				position = { x =33.5 y = 106 }
-				quadTextureSprite = "ccw_hainan_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_xinjiang_3"
-				position = { x = -248 y = -183 }
-				quadTextureSprite = "ccw_xinjiang_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_qinghai_3"
-				position = { x = -120 y = -71 }
-				quadTextureSprite = "ccw_qinghai_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_gansu_3"
-				position = { x = -98 y = -109 }
-				quadTextureSprite = "ccw_gansu_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_neimeng_3"
-				position = { x = -58 y = -237 }
-				quadTextureSprite = "ccw_neimeng_status_strip"
-				frame = 4
-			}
-			
-			buttonType = {
-				name = "ccw_mon_3"
-				position = { x = -134 y = -222 }
-				quadTextureSprite = "ccw_mon_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_tuva_3"
-				position = { x = -125.5 y = -241 }
-				quadTextureSprite = "ccw_tuva_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_liaoning_3"
-				position = { x = 116 y = -116 }
-				quadTextureSprite = "ccw_liaoning_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_jilin_3"
-				position = { x = 139 y = -149 }
-				quadTextureSprite = "ccw_jilin_status_strip"
-				frame = 4
-			}
-
-			buttonType = {
-				name = "ccw_hlj_3"
-				position = { x = 135 y = -240 }
-				quadTextureSprite = "ccw_hlj_status_strip"
-				frame = 4
-			}
-
-		}
-	}
+  #中國內戰
+  containerwindowtype = {
+    name = "CHI_CCW_status"
+    size = { width = 100%% height = 500 }
+
+    containerWindowType = {
+      name = "E"
+      position = { x = 250 y = 250 }
+
+
+      icontype = {
+        name = "ccw_background"
+        quadtexturesprite = "ccw_background"
+        position = { x = 0 y = 0 }
+        centerposition = yes
+      }
+
+      ##             ##
+      ##完全沒控制(紅)##
+      ##             ##
+
+      buttonType = {
+        name = "ccw_taiwan_0"
+        position = { x = 111 y = 61 }
+        quadTextureSprite = "ccw_taiwan_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_anhui_0"
+        position = { x = 85 y = -25.5 }
+        quadTextureSprite = "ccw_anhui_status_strip"
+        frame = 1
+      }
+
+      iconType = {
+        name = "ccw_beijing_s_0"
+        position = { x = 89 y = -90 }
+        quadTextureSprite = "ccw_beijing_s_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_beijing_0"
+        position = { x = 169.5 y = 152 }
+        quadTextureSprite = "ccw_beijing_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_jiangsu_0"
+        position = { x = 98 y = -29 }
+        quadTextureSprite = "ccw_jiangsu_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_shandong_0"
+        position = { x = 84.3 y = -61.5 }
+        quadTextureSprite = "ccw_shandong_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_hebei_0"
+        position = { x = 73 y = -107 }
+        quadTextureSprite = "ccw_hebei_status_strip"
+        frame = 1
+      }
+
+      iconType = {
+        name = "ccw_tianjin_s_0"
+        position = { x = 99 y = -80 }
+        quadTextureSprite = "ccw_tianjin_s_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_tianjin_0"
+        position = { x = 71 y = 142 }
+        quadTextureSprite = "ccw_tianjin_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_shanxi_0"
+        position = { x = 47 y = -85 }
+        quadTextureSprite = "ccw_shanxi_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_shan3xi_0"
+        position = { x = 9 y = -75 }
+        quadTextureSprite = "ccw_shan3xi_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_henan_0"
+        position = { x = 48 y = -43 }
+        quadTextureSprite = "ccw_henan_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_ningxia_0"
+        position = { x = 1.5 y = -73 }
+        quadTextureSprite = "ccw_ningxia_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_chongqing_0"
+        position = { x = 7 y = -1.5 }
+        quadTextureSprite = "ccw_chongqing_status_strip"
+        frame = 1
+      }
+
+      iconType = {
+        name = "ccw_shanghai_s_0"
+        position = { x = 134 y = 2 }
+        quadTextureSprite = "ccw_shanghai_s_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_shanghai_0"
+        position = { x = -40.2 y = 144.5 }
+        quadTextureSprite = "ccw_shanghai_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_zhejiang_0"
+        position = { x = 110 y = 7 }
+        quadTextureSprite = "ccw_zhejiang_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_fujian_0"
+        position = { x = 92 y = 34.5 }
+        quadTextureSprite = "ccw_fujian_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_guangdong_0"
+        position = { x = 42.2 y = 60 }
+        quadTextureSprite = "ccw_guangdong_status_strip"
+        frame = 1
+      }
+
+      iconType = {
+        name = "ccw_hongkong_s_0"
+        position = { x = 76 y = 85 }
+        quadTextureSprite = "ccw_hongkong_s_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_hongkong_0"
+        position = { x = -146 y = 154 }
+        quadTextureSprite = "ccw_hongkong_status_strip"
+        frame = 1
+      }
+
+      iconType = {
+        name = "ccw_macau_s_0"
+        position = { x = 73 y = 89 }
+        quadTextureSprite = "ccw_macau_s_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_macau_0"
+        position = { x = -228.5 y = 143 }
+        quadTextureSprite = "ccw_macau_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_guangxi_0"
+        position = { x = 0.5 y = 51 }
+        quadTextureSprite = "ccw_guangxi_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_yunnan_0"
+        position = { x = -55 y = 26 }
+        quadTextureSprite = "ccw_yunnan_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_sichuan_0"
+        position = { x = -56.9 y = -21.7 }
+        quadTextureSprite = "ccw_sichuan_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_xizang_0"
+        position = { x = -212.5 y = -43 }
+        quadTextureSprite = "ccw_xizang_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_zangsouth_0"
+        position = { x = -102.5 y = 25 }
+        quadTextureSprite = "ccw_zangsouth_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_hubei_0"
+        position = { x = 32 y = -12.5 }
+        quadTextureSprite = "ccw_hubei_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_hunan_0"
+        position = { x = 35.8 y = 16.8 }
+        quadTextureSprite = "ccw_hunan_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_guizhou_0"
+        position = { x = -5 y = 25}
+        quadTextureSprite = "ccw_guizhou_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_jiangxi_0"
+        position = { x = 74 y = 18 }
+        quadTextureSprite = "ccw_jiangxi_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_hainan_0"
+        position = { x =33.5 y = 106 }
+        quadTextureSprite = "ccw_hainan_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_xinjiang_0"
+        position = { x = -248 y = -183 }
+        quadTextureSprite = "ccw_xinjiang_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_qinghai_0"
+        position = { x = -120 y = -71 }
+        quadTextureSprite = "ccw_qinghai_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_gansu_0"
+        position = { x = -98 y = -109 }
+        quadTextureSprite = "ccw_gansu_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_neimeng_0"
+        position = { x = -58 y = -237 }
+        quadTextureSprite = "ccw_neimeng_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_mon_0"
+        position = { x = -134 y = -222 }
+        quadTextureSprite = "ccw_mon_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_tuva_0"
+        position = { x = -125.5 y = -241 }
+        quadTextureSprite = "ccw_tuva_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_liaoning_0"
+        position = { x = 116 y = -116 }
+        quadTextureSprite = "ccw_liaoning_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_jilin_0"
+        position = { x = 139 y = -149 }
+        quadTextureSprite = "ccw_jilin_status_strip"
+        frame = 1
+      }
+
+      buttonType = {
+        name = "ccw_hlj_0"
+        position = { x = 135 y = -240 }
+        quadTextureSprite = "ccw_hlj_status_strip"
+        frame = 1
+      }
+
+      ##           ##
+      ##部分控制(黃)##
+      ##           ##
+
+      buttonType = {
+        name = "ccw_taiwan_1"
+        position = { x = 111 y = 61 }
+        quadTextureSprite = "ccw_taiwan_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_anhui_1"
+        position = { x = 85 y = -25.5 }
+        quadTextureSprite = "ccw_anhui_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_jiangsu_1"
+        position = { x = 98 y = -29 }
+        quadTextureSprite = "ccw_jiangsu_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_shandong_1"
+        position = { x = 84.3 y = -61.5 }
+        quadTextureSprite = "ccw_shandong_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_hebei_1"
+        position = { x = 73 y = -107 }
+        quadTextureSprite = "ccw_hebei_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_shanxi_1"
+        position = { x = 47 y = -85 }
+        quadTextureSprite = "ccw_shanxi_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_shan3xi_1"
+        position = { x = 9 y = -75 }
+        quadTextureSprite = "ccw_shan3xi_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_henan_1"
+        position = { x = 48 y = -43 }
+        quadTextureSprite = "ccw_henan_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_zhejiang_1"
+        position = { x = 110 y = 7 }
+        quadTextureSprite = "ccw_zhejiang_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_fujian_1"
+        position = { x = 92 y = 34.5 }
+        quadTextureSprite = "ccw_fujian_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_guangdong_1"
+        position = { x = 42.2 y = 60 }
+        quadTextureSprite = "ccw_guangdong_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_guangxi_1"
+        position = { x = 0.5 y = 51 }
+        quadTextureSprite = "ccw_guangxi_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_yunnan_1"
+        position = { x = -55 y = 26 }
+        quadTextureSprite = "ccw_yunnan_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_sichuan_1"
+        position = { x = -56.9 y = -21.7 }
+        quadTextureSprite = "ccw_sichuan_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_xizang_1"
+        position = { x = -212.5 y = -43 }
+        quadTextureSprite = "ccw_xizang_status_strip"
+        frame = 2
+      }
+
+
+      buttonType = {
+        name = "ccw_hubei_1"
+        position = { x = 32 y = -12.5 }
+        quadTextureSprite = "ccw_hubei_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_hunan_1"
+        position = { x = 35.8 y = 16.8 }
+        quadTextureSprite = "ccw_hunan_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_guizhou_1"
+        position = { x = -5 y = 25}
+        quadTextureSprite = "ccw_guizhou_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_jiangxi_1"
+        position = { x = 74 y = 18 }
+        quadTextureSprite = "ccw_jiangxi_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_xinjiang_1"
+        position = { x = -248 y = -183 }
+        quadTextureSprite = "ccw_xinjiang_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_qinghai_1"
+        position = { x = -120 y = -71 }
+        quadTextureSprite = "ccw_qinghai_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_gansu_1"
+        position = { x = -98 y = -109 }
+        quadTextureSprite = "ccw_gansu_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_neimeng_1"
+        position = { x = -58 y = -237 }
+        quadTextureSprite = "ccw_neimeng_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_mon_1"
+        position = { x = -134 y = -222 }
+        quadTextureSprite = "ccw_mon_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_liaoning_1"
+        position = { x = 116 y = -116 }
+        quadTextureSprite = "ccw_liaoning_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_jilin_1"
+        position = { x = 139 y = -149 }
+        quadTextureSprite = "ccw_jilin_status_strip"
+        frame = 2
+      }
+
+      buttonType = {
+        name = "ccw_hlj_1"
+        position = { x = 135 y = -240 }
+        quadTextureSprite = "ccw_hlj_status_strip"
+        frame = 2
+      }
+
+      ##           ##
+      ##完全控制(綠)##
+      ##           ##
+
+      buttonType = {
+        name = "ccw_taiwan_2"
+        position = { x = 111 y = 61 }
+        quadTextureSprite = "ccw_taiwan_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_anhui_2"
+        position = { x = 85 y = -25.5 }
+        quadTextureSprite = "ccw_anhui_status_strip"
+        frame = 3
+      }
+
+      iconType = {
+        name = "ccw_beijing_s_2"
+        position = { x = 89 y = -90 }
+        quadTextureSprite = "ccw_beijing_s_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_beijing_2"
+        position = { x = 169.5 y = 152 }
+        quadTextureSprite = "ccw_beijing_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_jiangsu_2"
+        position = { x = 98 y = -29 }
+        quadTextureSprite = "ccw_jiangsu_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_shandong_2"
+        position = { x = 84.3 y = -61.5 }
+        quadTextureSprite = "ccw_shandong_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_hebei_2"
+        position = { x = 73 y = -107 }
+        quadTextureSprite = "ccw_hebei_status_strip"
+        frame = 3
+      }
+
+      iconType = {
+        name = "ccw_tianjin_s_2"
+        position = { x = 99 y = -80 }
+        quadTextureSprite = "ccw_tianjin_s_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_tianjin_2"
+        position = { x = 71 y = 142 }
+        quadTextureSprite = "ccw_tianjin_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_shanxi_2"
+        position = { x = 47 y = -85 }
+        quadTextureSprite = "ccw_shanxi_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_shan3xi_2"
+        position = { x = 9 y = -75 }
+        quadTextureSprite = "ccw_shan3xi_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_henan_2"
+        position = { x = 48 y = -43 }
+        quadTextureSprite = "ccw_henan_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_ningxia_2"
+        position = { x = 1.5 y = -73 }
+        quadTextureSprite = "ccw_ningxia_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_chongqing_2"
+        position = { x = 7 y = -1.5 }
+        quadTextureSprite = "ccw_chongqing_status_strip"
+        frame = 3
+      }
+
+      iconType = {
+        name = "ccw_shanghai_s_2"
+        position = { x = 134 y = 2 }
+        quadTextureSprite = "ccw_shanghai_s_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_shanghai_2"
+        position = { x = -40.2 y = 144.5 }
+        quadTextureSprite = "ccw_shanghai_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_zhejiang_2"
+        position = { x = 110 y = 7 }
+        quadTextureSprite = "ccw_zhejiang_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_fujian_2"
+        position = { x = 92 y = 34.5 }
+        quadTextureSprite = "ccw_fujian_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_guangdong_2"
+        position = { x = 42.2 y = 60 }
+        quadTextureSprite = "ccw_guangdong_status_strip"
+        frame = 3
+      }
+
+      iconType = {
+        name = "ccw_hongkong_s_2"
+        position = { x = 76 y = 85 }
+        quadTextureSprite = "ccw_hongkong_s_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_hongkong_2"
+        position = { x = -146 y = 154 }
+        quadTextureSprite = "ccw_hongkong_status_strip"
+        frame = 3
+      }
+
+      iconType = {
+        name = "ccw_macau_s_2"
+        position = { x = 73 y = 89 }
+        quadTextureSprite = "ccw_macau_s_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_macau_2"
+        position = { x = -228.5 y = 143 }
+        quadTextureSprite = "ccw_macau_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_guangxi_2"
+        position = { x = 0.5 y = 51 }
+        quadTextureSprite = "ccw_guangxi_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_yunnan_2"
+        position = { x = -55 y = 26 }
+        quadTextureSprite = "ccw_yunnan_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_sichuan_2"
+        position = { x = -56.9 y = -21.7 }
+        quadTextureSprite = "ccw_sichuan_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_xizang_2"
+        position = { x = -212.5 y = -43 }
+        quadTextureSprite = "ccw_xizang_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_zangsouth_2"
+        position = { x = -102.5 y = 25 }
+        quadTextureSprite = "ccw_zangsouth_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_hubei_2"
+        position = { x = 32 y = -12.5 }
+        quadTextureSprite = "ccw_hubei_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_hunan_2"
+        position = { x = 35.8 y = 16.8 }
+        quadTextureSprite = "ccw_hunan_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_guizhou_2"
+        position = { x = -5 y = 25}
+        quadTextureSprite = "ccw_guizhou_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_jiangxi_2"
+        position = { x = 74 y = 18 }
+        quadTextureSprite = "ccw_jiangxi_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_hainan_2"
+        position = { x =33.5 y = 106 }
+        quadTextureSprite = "ccw_hainan_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_xinjiang_2"
+        position = { x = -248 y = -183 }
+        quadTextureSprite = "ccw_xinjiang_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_qinghai_2"
+        position = { x = -120 y = -71 }
+        quadTextureSprite = "ccw_qinghai_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_gansu_2"
+        position = { x = -98 y = -109 }
+        quadTextureSprite = "ccw_gansu_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_neimeng_2"
+        position = { x = -58 y = -237 }
+        quadTextureSprite = "ccw_neimeng_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_mon_2"
+        position = { x = -134 y = -222 }
+        quadTextureSprite = "ccw_mon_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_tuva_2"
+        position = { x = -125.5 y = -241 }
+        quadTextureSprite = "ccw_tuva_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_liaoning_2"
+        position = { x = 116 y = -116 }
+        quadTextureSprite = "ccw_liaoning_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_jilin_2"
+        position = { x = 139 y = -149 }
+        quadTextureSprite = "ccw_jilin_status_strip"
+        frame = 3
+      }
+
+      buttonType = {
+        name = "ccw_hlj_2"
+        position = { x = 135 y = -240 }
+        quadTextureSprite = "ccw_hlj_status_strip"
+        frame = 3
+      }
+
+      ##             ##
+      ##為核心省分(藍)##
+      ##             ##
+
+      buttonType = {
+        name = "ccw_taiwan_3"
+        position = { x = 111 y = 61 }
+        quadTextureSprite = "ccw_taiwan_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_anhui_3"
+        position = { x = 85 y = -25.5 }
+        quadTextureSprite = "ccw_anhui_status_strip"
+        frame = 4
+      }
+
+      iconType = {
+        name = "ccw_beijing_s_3"
+        position = { x = 89 y = -90 }
+        quadTextureSprite = "ccw_beijing_s_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_beijing_3"
+        position = { x = 169.5 y = 152 }
+        quadTextureSprite = "ccw_beijing_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_jiangsu_3"
+        position = { x = 98 y = -29 }
+        quadTextureSprite = "ccw_jiangsu_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_shandong_3"
+        position = { x = 84.3 y = -61.5 }
+        quadTextureSprite = "ccw_shandong_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_hebei_3"
+        position = { x = 73 y = -107 }
+        quadTextureSprite = "ccw_hebei_status_strip"
+        frame = 4
+      }
+
+      iconType = {
+        name = "ccw_tianjin_s_3"
+        position = { x = 99 y = -80 }
+        quadTextureSprite = "ccw_tianjin_s_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_tianjin_3"
+        position = { x = 71 y = 142 }
+        quadTextureSprite = "ccw_tianjin_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_shanxi_3"
+        position = { x = 47 y = -85 }
+        quadTextureSprite = "ccw_shanxi_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_shan3xi_3"
+        position = { x = 9 y = -75 }
+        quadTextureSprite = "ccw_shan3xi_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_henan_3"
+        position = { x = 48 y = -43 }
+        quadTextureSprite = "ccw_henan_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_ningxia_3"
+        position = { x = 1.5 y = -73 }
+        quadTextureSprite = "ccw_ningxia_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_chongqing_3"
+        position = { x = 7 y = -1.5 }
+        quadTextureSprite = "ccw_chongqing_status_strip"
+        frame = 4
+      }
+
+      iconType = {
+        name = "ccw_shanghai_s_3"
+        position = { x = 134 y = 2 }
+        quadTextureSprite = "ccw_shanghai_s_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_shanghai_3"
+        position = { x = -40.2 y = 144.5 }
+        quadTextureSprite = "ccw_shanghai_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_zhejiang_3"
+        position = { x = 110 y = 7 }
+        quadTextureSprite = "ccw_zhejiang_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_fujian_3"
+        position = { x = 92 y = 34.5 }
+        quadTextureSprite = "ccw_fujian_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_guangdong_3"
+        position = { x = 42.2 y = 60 }
+        quadTextureSprite = "ccw_guangdong_status_strip"
+        frame = 4
+      }
+
+      iconType = {
+        name = "ccw_hongkong_s_3"
+        position = { x = 76 y = 85 }
+        quadTextureSprite = "ccw_hongkong_s_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_hongkong_3"
+        position = { x = -146 y = 154 }
+        quadTextureSprite = "ccw_hongkong_status_strip"
+        frame = 4
+      }
+
+      iconType = {
+        name = "ccw_macau_s_3"
+        position = { x = 73 y = 89 }
+        quadTextureSprite = "ccw_macau_s_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_macau_3"
+        position = { x = -228.5 y = 143 }
+        quadTextureSprite = "ccw_macau_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_guangxi_3"
+        position = { x = 0.5 y = 51 }
+        quadTextureSprite = "ccw_guangxi_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_yunnan_3"
+        position = { x = -55 y = 26 }
+        quadTextureSprite = "ccw_yunnan_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_sichuan_3"
+        position = { x = -56.9 y = -21.7 }
+        quadTextureSprite = "ccw_sichuan_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_xizang_3"
+        position = { x = -212.5 y = -43 }
+        quadTextureSprite = "ccw_xizang_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_zangsouth_3"
+        position = { x = -102.5 y = 25 }
+        quadTextureSprite = "ccw_zangsouth_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_hubei_3"
+        position = { x = 32 y = -12.5 }
+        quadTextureSprite = "ccw_hubei_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_hunan_3"
+        position = { x = 35.8 y = 16.8 }
+        quadTextureSprite = "ccw_hunan_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_guizhou_3"
+        position = { x = -5 y = 25}
+        quadTextureSprite = "ccw_guizhou_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_jiangxi_3"
+        position = { x = 74 y = 18 }
+        quadTextureSprite = "ccw_jiangxi_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_hainan_3"
+        position = { x =33.5 y = 106 }
+        quadTextureSprite = "ccw_hainan_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_xinjiang_3"
+        position = { x = -248 y = -183 }
+        quadTextureSprite = "ccw_xinjiang_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_qinghai_3"
+        position = { x = -120 y = -71 }
+        quadTextureSprite = "ccw_qinghai_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_gansu_3"
+        position = { x = -98 y = -109 }
+        quadTextureSprite = "ccw_gansu_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_neimeng_3"
+        position = { x = -58 y = -237 }
+        quadTextureSprite = "ccw_neimeng_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_mon_3"
+        position = { x = -134 y = -222 }
+        quadTextureSprite = "ccw_mon_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_tuva_3"
+        position = { x = -125.5 y = -241 }
+        quadTextureSprite = "ccw_tuva_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_liaoning_3"
+        position = { x = 116 y = -116 }
+        quadTextureSprite = "ccw_liaoning_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_jilin_3"
+        position = { x = 139 y = -149 }
+        quadTextureSprite = "ccw_jilin_status_strip"
+        frame = 4
+      }
+
+      buttonType = {
+        name = "ccw_hlj_3"
+        position = { x = 135 y = -240 }
+        quadTextureSprite = "ccw_hlj_status_strip"
+        frame = 4
+      }
+
+      icontype = {
+        name = "ccw_cover"
+        quadtexturesprite = "ccw_cover"
+        position = { x = 0 y = 0 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+    }
+  }
 }
