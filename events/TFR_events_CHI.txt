@@ -1738,14 +1738,14 @@ country_event = {
 
 ### REUNIFICATION OF CHINA ###
 news_event = {
-  id = taiwan.101
-  title = taiwan.101.t
-  desc = taiwan.101.d
+  id = CHI.201
+  title = CHI.201.t
+  desc = CHI.201.d
   picture = GFX_news_event_ROC_nanjing_presidential_palace
   is_triggered_only = yes
   major = yes
   option = {
-    name = taiwan.101.a
+    name = CHI.201.a
     trigger = {
       tag = CHI
     }
@@ -1759,7 +1759,7 @@ news_event = {
     }
   }
   option = {
-    name = taiwan.101.b
+    name = CHI.201.b
     trigger = {
       NOT = { tag = CHI }
     }
@@ -1776,9 +1776,9 @@ news_event = {
 
 ### TIBET & ZANGNAN LIBERATION & TRUCE WITH INDIA ###
 country_event = {
-  id = taiwan.102
-  title = taiwan.102.t
-  desc = taiwan.102.d
+  id = CHI.202
+  title = CHI.202.t
+  desc = CHI.202.d
   picture = CHI_Event_H4_93
   is_triggered_only = yes
 
@@ -1856,38 +1856,38 @@ country_event = {
   }
 
   option = {
-    name = taiwan.102.a
+    name = CHI.202.a
     custom_effect_tooltip = CHI_tibet_zangnan_secured_tt
   }
 }
 
 ### BEGONIA LEAF: DEMAND RETURN OF LANDS FROM JAPAN ###
 country_event = {
-  id = taiwan.103
-  title = taiwan.103.t
-  desc = taiwan.103.d
+  id = CHI.203
+  title = CHI.203.t
+  desc = CHI.203.d
   picture = GFX_CHI_event_taiwan_32
   is_triggered_only = yes
 
   option = {
-    name = taiwan.103.a
+    name = CHI.203.a
     custom_effect_tooltip = CHI_begonia_leaf_send_diplomat_tt
     JAP = {
-      country_event = { id = taiwan.104 days = 3 }
+      country_event = { id = CHI.204 days = 3 }
     }
   }
 }
 
 ### JAPAN EVENT: ROC DEMANDS RETURN OF MANCHURIA AND TREATY PORTS ###
 country_event = {
-  id = taiwan.104
-  title = taiwan.104.t
-  desc = taiwan.104.d
+  id = CHI.204
+  title = CHI.204.t
+  desc = CHI.204.d
   picture = CHI_Event_H4_93
   is_triggered_only = yes
 
   option = {
-    name = taiwan.104.a
+    name = CHI.204.a
     ai_chance = { base = 100 }
     hidden_effect = {
       # Transfer all Chinese and Manchurian states held by JAP / PDTO puppets
@@ -2002,12 +2002,12 @@ country_event = {
         CHI = { annex_country = { target = JIA transfer_troops = no } }
       }
       CHI = {
-        country_event = { id = taiwan.105 days = 1 }
+        country_event = { id = CHI.205 days = 1 }
       }
     }
   }
   option = {
-    name = taiwan.104.b
+    name = CHI.204.b
     ai_chance = { base = 0 }
     add_opinion_modifier = {
       target = CHI
@@ -2022,21 +2022,21 @@ country_event = {
         type = take_claimed_state
         target = JAP
       }
-      country_event = { id = taiwan.106 days = 1 }
+      country_event = { id = CHI.206 days = 1 }
     }
   }
 }
 
 ### ROC RECEIVES SUCCESSFUL RETURN OF ALL LANDS ###
 country_event = {
-  id = taiwan.105
-  title = taiwan.105.t
-  desc = taiwan.105.d
+  id = CHI.205
+  title = CHI.205.t
+  desc = CHI.205.d
   picture = GFX_CHI_event_taiwan_32
   is_triggered_only = yes
 
   option = {
-    name = taiwan.105.a
+    name = CHI.205.a
     add_political_power = 150
     add_stability = 0.1
     add_war_support = 0.1
@@ -2069,14 +2069,14 @@ country_event = {
 
 ### ROC EVENT: JAPAN REFUSES TO RETURN TERRITORIES ###
 country_event = {
-  id = taiwan.106
-  title = taiwan.106.t
-  desc = taiwan.106.d
+  id = CHI.206
+  title = CHI.206.t
+  desc = CHI.206.d
   picture = GFX_Generic_Collapse
   is_triggered_only = yes
 
   option = {
-    name = taiwan.106.a
+    name = CHI.206.a
     add_war_support = 0.15
     custom_effect_tooltip = CHI_japan_refused_tt
   }
