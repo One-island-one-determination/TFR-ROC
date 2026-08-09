@@ -179,8 +179,23 @@ on_actions = {
           CHI = {  # 指定國家
             has_global_flag = PRC_japanese_gaw_victory_global  # 把這裡換成你要監聽的那個國策 ID
           }
+          NOT = { has_country_flag = CHI_gaw_portraits_set }
+          NOT = { has_completed_focus = CHI_republic_achieved }
         }
+        set_country_flag = CHI_gaw_portraits_set
         country_event = {id = CHI.H4.1}
+        set_portraits = {
+          character = CHI_han_kuo_yu_char
+          civilian = { large = "gfx/Leaders/CHI/CHI_han_kuo_yu_gaw_win.png" }
+        }
+        set_portraits = {
+          character = CHI_chiang_wan_an_char
+          civilian = { large = "gfx/Leaders/CHI/CHI_chiang_wan_an_gaw_win.png" }
+        }
+        set_portraits = {
+          character = CHI_lai_ching_te_char
+          civilian = { large = "gfx/Leaders/CHI/CHI_lai_ching_te_gaw_win.png" }
+        }
       }
     }
   }

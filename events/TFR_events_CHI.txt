@@ -879,31 +879,13 @@ country_event = {
         id = CHI.114514##俄人給我們挖的坑，導致後續變日本傀儡
         days = 5
       }
-      CHI = {
-        if = {
-          limit = {
-            has_country_leader = {
-              character = CHI_han_kuo_yu_char
-              ruling_only = yes
-            }
-          }
-          set_country_leader_portrait = {
-            ideology = conservative
-            portrait = GFX_HKY_taiwan_win
-          }
-        }
-        else_if = {
-          limit = {
-            has_country_leader = {
-              character = CHI_tsai_ing_wen_char
-              ruling_only = yes
-            }
-          }
-          set_country_leader_portrait = {
-            ideology = social_liberal
-            portrait = GFX_TIW_taiwan_win
-          }
-        }
+      set_portraits = {
+        character = CHI_han_kuo_yu_char
+        civilian = { large = "gfx/Leaders/CHI/CHI_han_kuo_yu_taiwan_win.png" }
+      }
+      set_portraits = {
+        character = CHI_tsai_ing_wen_char
+        civilian = { large = "gfx/Leaders/CHI/CHI_tsai_ing_wen_taiwan_win.png" }
       }
     }
   }
@@ -1283,31 +1265,13 @@ country_event = {
       army = yes
       navy = no
     }
-    CHI = {
-      if = {
-        limit = {
-          has_country_leader = {
-            character = CHI_han_kuo_yu_char
-            ruling_only = yes
-          }
-        }
-        set_country_leader_portrait = {
-          ideology = conservative
-          portrait = GFX_HKY_corps_commander
-        }
-      }
-      else_if = {
-        limit = {
-          has_country_leader = {
-            character = CHI_tsai_ing_wen_char
-            ruling_only = yes
-          }
-        }
-        set_country_leader_portrait = {
-          ideology = social_liberal
-          portrait = GFX_TIW_corps_commander
-        }
-      }
+    set_portraits = {
+      character = CHI_han_kuo_yu_char
+      civilian = { large = "gfx/Leaders/CHI/CHI_han_kuo_yu_military.png" }
+    }
+    set_portraits = {
+      character = CHI_tsai_ing_wen_char
+      civilian = { large = "gfx/Leaders/CHI/CHI_tsai_ing_wen_military.png" }
     }
   }
 }
