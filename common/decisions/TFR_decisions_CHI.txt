@@ -5880,22 +5880,43 @@ CHI_dont_forget_homeland_category = {
       if = {
         limit = { has_country_flag = CHI_ninghai_plan_completed_2 }
         set_country_flag = CHI_ninghai_plan_completed_3
-        swap_ideas = {
-          remove_idea = CHI_ninghai_plan_idea_2
-          add_idea = CHI_ninghai_plan_idea_3
-        }
+
+        custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+        add_to_variable = {  ROC_naval_coordination = 0.01         tooltip = naval_coordination_tooltip         }
+        add_to_variable = {  ROC_ships_speed_factor = 0.02         tooltip = ships_speed_factor_tooltip         }
+        add_to_variable = {  ROC_naval_detection = 0.05            tooltip = naval_detection_tooltip            }
+        add_to_variable = {  ROC_naval_morale = 0.02               tooltip = naval_morale_tooltip               }
+        add_to_variable = {  ROC_screen_attack_factor = 0.02       tooltip = screen_attack_factor_tooltip       }
+        add_to_variable = {  ROC_screen_defense_factor = 0.02      tooltip = screen_defense_factor_tooltip      }
+        add_to_variable = {  ROC_screening_fleet_efficiency = 0.05 tooltip = screening_fleet_efficiency_tooltip }
+
       }
       else_if = {
         limit = { has_country_flag = CHI_ninghai_plan_completed_1 }
         set_country_flag = CHI_ninghai_plan_completed_2
-        swap_ideas = {
-          remove_idea = CHI_ninghai_plan_idea_1
-          add_idea = CHI_ninghai_plan_idea_2
-        }
+
+        custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+        add_to_variable = {  ROC_naval_coordination = 0.01         tooltip = naval_coordination_tooltip         }
+        add_to_variable = {  ROC_ships_speed_factor = 0.02         tooltip = ships_speed_factor_tooltip         }
+        add_to_variable = {  ROC_naval_detection = 0.05            tooltip = naval_detection_tooltip            }
+        add_to_variable = {  ROC_naval_morale = 0.02               tooltip = naval_morale_tooltip               }
+        add_to_variable = {  ROC_screen_attack_factor = 0.02       tooltip = screen_attack_factor_tooltip       }
+        add_to_variable = {  ROC_screen_defense_factor = 0.02      tooltip = screen_defense_factor_tooltip      }
+        add_to_variable = {  ROC_screening_fleet_efficiency = 0.05 tooltip = screening_fleet_efficiency_tooltip }
+
       }
       else = {
         set_country_flag = CHI_ninghai_plan_completed_1
-        add_ideas = CHI_ninghai_plan_idea_1
+
+        custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }        
+        add_to_variable = {  ROC_naval_coordination = 0.01         tooltip = naval_coordination_tooltip         }
+        add_to_variable = {  ROC_ships_speed_factor = 0.02         tooltip = ships_speed_factor_tooltip         }
+        add_to_variable = {  ROC_naval_detection = 0.05            tooltip = naval_detection_tooltip            }
+        add_to_variable = {  ROC_naval_morale = 0.02               tooltip = naval_morale_tooltip               }
+        add_to_variable = {  ROC_screen_attack_factor = 0.02       tooltip = screen_attack_factor_tooltip       }
+        add_to_variable = {  ROC_screen_defense_factor = 0.02      tooltip = screen_defense_factor_tooltip      }
+        add_to_variable = {  ROC_screening_fleet_efficiency = 0.05 tooltip = screening_fleet_efficiency_tooltip }
+        
       }
     }
   }
@@ -5917,7 +5938,15 @@ CHI_dont_forget_homeland_category = {
     complete_effect = {
       add_air_experience = -50
       set_country_flag = CHI_lingxiao_plan_completed
-      add_ideas = CHI_lingxiao_plan_idea
+      
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_air_superiority_efficiency = 0.1  tooltip = air_superiority_efficiency_tooltip  }
+      add_to_variable = { ROC_air_intercept_efficiency = 0.1    tooltip = air_intercept_efficiency_tooltip    }
+      add_to_variable = { ROC_air_cas_efficiency = 0.15         tooltip = air_cas_efficiency_tooltip          }
+      add_to_variable = { ROC_air_attack_factor = 0.05          tooltip = air_attack_factor_tooltip           }
+      add_to_variable = { ROC_air_defence_factor = 0.05         tooltip = air_defence_factor_tooltip          }
+      add_to_variable = { ROC_air_cas_present_factor = 0.15     tooltip = air_cas_present_factor_tooltip      }
+      add_to_variable = { ROC_ground_attack_factor = 0.1        tooltip = ground_attack_factor_tooltip        }
     }
   }
   #駝峰炸射
@@ -5938,7 +5967,8 @@ CHI_dont_forget_homeland_category = {
     complete_effect = {
       add_air_experience = -30
       set_country_flag = CHI_project_hump_training_completed
-      add_ideas = CHI_project_hump_training_idea
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_air_superiority_efficiency = 0.05  tooltip = air_superiority_efficiency_tooltip  }
     }
   }
 }
@@ -6209,13 +6239,14 @@ CHI_Economy_Industry_category = {
   CHI_mil_industry_expansion = {
     icon = GFX_CHI_mil_industry_expansion
     cost = 0 
-    days_remove = 100
+    days_remove = 30
     available = {
       has_completed_focus = CHI_Complete_Military_Idustry
       NOT = { var_CHI_mil_industry_expansion > 5 }
     }
     visible = {
       original_tag = CHI
+      NOT = { var_CHI_mil_industry_expansion > 5 }
     }
     custom_cost_trigger = {
       CHI_fiscal_budget_var > 0
@@ -6230,7 +6261,20 @@ CHI_Economy_Industry_category = {
       }
     }
     remove_effect = {
-     
+      524 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = arms_factory
+          level = 1
+          instant_build = yes
+        }
+      }
+      custom_effect_tooltip = CHI_Economy_additional_effects
+      add_to_variable = {
+        var = CHI_Economy_industrial_capacity_factory
+        value = 0.05
+        tooltip = industrial_capacity_factory_tooltip
+      }
     }
   }
 
@@ -6238,7 +6282,7 @@ CHI_Economy_Industry_category = {
   CHI_mil_production_line = {
     icon = GFX_CHI_mil_production_line
     cost = 0 
-    days_remove = 100
+    days_remove = 30
     fire_only_once = yes
     available = {
       has_completed_focus = CHI_Complete_Military_Idustry
@@ -6272,7 +6316,7 @@ CHI_Economy_Industry_category = {
       original_tag = CHI
     }
     cost = 0 
-    days_remove = 100
+    days_remove = 30
     fire_only_once = yes
     custom_cost_trigger = {
       CHI_fiscal_budget_var > 0
@@ -6298,10 +6342,10 @@ CHI_Economy_Industry_category = {
     }
     visible = {
       original_tag = CHI
+      NOT = { var_CHI_advanced_mil_engine > 3 }
     }
     cost = 0 
     days_remove = 100
-    fire_only_once = yes
     custom_cost_trigger = {
       CHI_fiscal_budget_var > 0
     }
@@ -6343,7 +6387,14 @@ CHI_Economy_Industry_category = {
       }
     }
     remove_effect = {
-     
+      1150 = {
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+        }
+      }
     }
   }
 
@@ -6371,7 +6422,18 @@ CHI_Economy_Industry_category = {
       }
     }
     remove_effect = {
-     
+      custom_effect_tooltip = {
+        IDEA = CHI_ROC_army_dynamic
+        localization_key = modify_idea_tt
+      }
+      add_to_variable = {
+        ROC_supply_node_range = 0.05
+        tooltip = supply_node_range_tooltip
+      }
+      add_to_variable = {
+        ROC_no_supply_grace = 24
+        tooltip = no_supply_grace_tooltip
+      }
     }
   }
 
@@ -6385,10 +6447,10 @@ CHI_Economy_Industry_category = {
     }
     visible = {
       original_tag = CHI
+      NOT = { var_CHI_expand_shipyards > 10 }
     }
     cost = 0 
-    days_remove = 100
-    fire_only_once = yes
+    days_remove = 160
     custom_cost_trigger = {
       CHI_fiscal_budget_var > 0
     }
@@ -6402,7 +6464,14 @@ CHI_Economy_Industry_category = {
       }
     }
     remove_effect = {
-     
+      524 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = dockyard
+          level = 1
+          instant_build = yes
+        }
+      }
     }
   }
 
@@ -6417,7 +6486,7 @@ CHI_Economy_Industry_category = {
       original_tag = CHI
     }
     cost = 0 
-    days_remove = 100
+    days_remove = 150
     fire_only_once = yes
     custom_cost_trigger = {
       CHI_fiscal_budget_var > 0
@@ -6427,9 +6496,22 @@ CHI_Economy_Industry_category = {
       add_to_variable = {
         CHI_fiscal_budget_var = -1
       }
+      custom_effect_tooltip = CHI_Economy_additional_effects
+      add_to_variable = {
+        var = CHI_Economy_production_factory_efficiency_gain_factor
+        value = 0.15
+        tooltip = production_factory_efficiency_gain_factor_tooltip
+      }
     }
     remove_effect = {
-     
+      1150 = {
+        add_extra_state_shared_building_slots = 3
+        add_building_construction = {
+            type = nuclear_reactor
+            level = 3
+            instant_build = yes
+        }
+      }
     }
   }
 
@@ -6450,10 +6532,10 @@ CHI_Economy_Industry_category = {
     }
     visible = {
       original_tag = CHI
+      NOT = { var_CHI_solar_industry_project > 3 }
     }
     cost = 0 
-    days_remove = 100
-    fire_only_once = yes
+    days_remove = 30
     custom_cost_trigger = {
       CHI_fiscal_budget_var > 0
     }
@@ -6467,7 +6549,14 @@ CHI_Economy_Industry_category = {
       }
     }
     remove_effect = {
-     
+      1150 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+            type = energy_farm
+            level = 1
+            instant_build = yes
+        }
+      }
     }
   }
 
@@ -6483,8 +6572,7 @@ CHI_Economy_Industry_category = {
       original_tag = CHI
     }
     cost = 0 
-    days_remove = 100
-    fire_only_once = yes
+    days_remove = 30
     custom_cost_trigger = {
       CHI_fiscal_budget_var > 0
     }
@@ -6498,7 +6586,14 @@ CHI_Economy_Industry_category = {
       }
     }
     remove_effect = {
-     
+      1150 = {
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+        }
+      }
     }
   }
 
@@ -6512,7 +6607,7 @@ CHI_Economy_Industry_category = {
       original_tag = CHI
     }
     cost = 0 
-    days_remove = 100
+    days_remove = 120
     fire_only_once = yes
     custom_cost_trigger = {
       CHI_fiscal_budget_var > 0
@@ -6524,7 +6619,20 @@ CHI_Economy_Industry_category = {
       }
     }
     remove_effect = {
-     
+      1148 = {
+        add_extra_state_shared_building_slots = 3
+        add_building_construction = {
+            type = industrial_complex
+            level = 3
+            instant_build = yes
+        }
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+            type = office_park
+            level = 1
+            instant_build = yes
+        }
+      }
     }
   }
 
@@ -6550,7 +6658,17 @@ CHI_Economy_Industry_category = {
       }
     }
     remove_effect = {
-     
+      custom_effect_tooltip = CHI_Economy_additional_effects
+      add_to_variable = {
+        var = CHI_Economy_production_speed_buildings_factor
+        value = 0.15
+        tooltip = production_speed_buildings_factor_tooltip
+      }
+      add_to_variable = {
+        var = CHI_Economy_industrial_development_monthly
+        value = 0.025
+        tooltip = industrial_development_monthly_tooltip
+      }
     }
   }
 
