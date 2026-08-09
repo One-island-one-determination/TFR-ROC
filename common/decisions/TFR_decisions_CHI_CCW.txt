@@ -1037,7 +1037,12 @@ CHI_civilwar_category = {
       1427 = { add_core_of = ROOT }
       1229 = { add_core_of = ROOT }
       1393 = { add_core_of = ROOT }
-      1420 = { add_core_of = ROOT }
+      1420 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = {
+          modifier = CHI_Qingdao_City
+        }
+      }
     }
   }
 
@@ -1080,7 +1085,12 @@ CHI_civilwar_category = {
       1427 = { add_core_of = ROOT }
       1229 = { add_core_of = ROOT }
       1393 = { add_core_of = ROOT }
-      1420 = { add_core_of = ROOT }
+      1420 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = {
+          modifier = CHI_Qingdao_City
+        }
+      }
     }
   }
 
@@ -1123,7 +1133,12 @@ CHI_civilwar_category = {
       1427 = { add_core_of = ROOT }
       1229 = { add_core_of = ROOT }
       1393 = { add_core_of = ROOT }
-      1420 = { add_core_of = ROOT }
+      1420 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = {
+          modifier = CHI_Qingdao_City
+        }
+      }
     }
   }
 
@@ -3072,11 +3087,26 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1217 = { add_core_of = ROOT }
-      595 = { add_core_of = ROOT }
-      1218 = { add_core_of = ROOT }
-      1216 = { add_core_of = ROOT }
-      1431 = { add_core_of = ROOT }
+      1217 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      595 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      1218 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      1216 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      1431 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
     }
   }
 
@@ -3105,11 +3135,26 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1217 = { add_core_of = ROOT }
-      595 = { add_core_of = ROOT }
-      1218 = { add_core_of = ROOT }
-      1216 = { add_core_of = ROOT }
-      1431 = { add_core_of = ROOT }
+      1217 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      595 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      1218 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      1216 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      1431 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
     }
   }
 
@@ -3138,11 +3183,26 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1217 = { add_core_of = ROOT }
-      595 = { add_core_of = ROOT }
-      1218 = { add_core_of = ROOT }
-      1216 = { add_core_of = ROOT }
-      1431 = { add_core_of = ROOT }
+      1217 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      595 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      1218 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      1216 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
+      1431 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Fujian_Province }
+      }
     }
   }
 
@@ -5747,7 +5807,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      591 = { add_core_of = ROOT }
+      591 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = {
+          modifier = CHI_Hainan_Province
+        }
+      }
     }
   }
 
@@ -5768,7 +5833,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      591 = { add_core_of = ROOT }
+      591 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = {
+          modifier = CHI_Hainan_Province
+        }
+      }
     }
   }
 
@@ -5789,7 +5859,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      591 = { add_core_of = ROOT }
+      591 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = {
+          modifier = CHI_Hainan_Province
+        }
+      }
     }
   }
 
