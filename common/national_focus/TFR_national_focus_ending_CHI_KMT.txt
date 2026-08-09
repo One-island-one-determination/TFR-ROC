@@ -177,6 +177,18 @@ focus_tree = {
   
     completion_reward = {
       country_event = { id = CHI.H4.5 }
+      set_portraits = {
+        character = CHI_han_kuo_yu_char
+        civilian = { large = "gfx/Leaders/CHI/CHI_han_kuo_yu_ccw_ending.png" }
+      }
+      set_portraits = {
+        character = CHI_chiang_wan_an_char
+        civilian = { large = "gfx/Leaders/CHI/CHI_chiang_wan_an_ccw_ending.png" }
+      }
+      set_portraits = {
+        character = CHI_zhao_shao_kang_char
+        civilian = { large = "gfx/Leaders/CHI/CHI_zhao_shao_kang_ccw_ending.png" }
+      }
     }
   }
   focus = {
