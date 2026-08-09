@@ -105,32 +105,32 @@ focus_tree = {
     completion_reward = {
       1148 = {
         add_dynamic_modifier = {
-          modifier = CHi_Taiwan_Province
+          modifier = CHI_Taiwan_Province
         }
       }
       1149 = {
         add_dynamic_modifier = {
-          modifier = CHi_Taiwan_Province
+          modifier = CHI_Taiwan_Province
         }
       }
       1150 = {
         add_dynamic_modifier = {
-          modifier = CHi_Taiwan_Province
+          modifier = CHI_Taiwan_Province
         }
       }
       1451 = {
         add_dynamic_modifier = {
-          modifier = CHi_Taiwan_Province
+          modifier = CHI_Taiwan_Province
         }
       }
       524 = {
         add_dynamic_modifier = {
-          modifier = CHi_Taiwan_Province
+          modifier = CHI_Taiwan_Province
         }
       }
       648 = {
         add_dynamic_modifier = {
-          modifier = CHi_Fujian_Province
+          modifier = CHI_Fujian_Province
         }
       }
       add_timed_idea = {
@@ -158,12 +158,12 @@ focus_tree = {
       }
       1382 = {
         add_dynamic_modifier = {
-          modifier = CHi_Hainan_Province
+          modifier = CHI_Hainan_Province
         }
       }
       879 = {
         add_dynamic_modifier = {
-          modifier = CHi_Hainan_Province
+          modifier = CHI_Hainan_Province
         }
       }
     }
@@ -953,8 +953,8 @@ focus_tree = {
         tooltip = war_support_factor_tooltip
       }
       add_to_variable = {
-        CHI_LCH_encryption_factor = 0.1
-        tooltip = encryption_factor_tooltip
+        CHI_LCH_encryption = 5
+        tooltip = encryption_tooltip
       }
     }
     relative_position_id = CHI_lone_tower_of_dragon
@@ -1670,6 +1670,7 @@ focus_tree = {
     icon = GFX_focus_CHI_centralized_military_command
     continue_if_invalid = no
     cancel_if_invalid = yes
+    ai_will_do = { factor = 1 }
     mutually_exclusive = {
       focus = CHI_modern_whampoa
     }
@@ -1696,6 +1697,7 @@ focus_tree = {
     icon = GFX_focus_CHI_modern_whampoa
     continue_if_invalid = no
     cancel_if_invalid = yes
+    ai_will_do = { factor = 0 }
     mutually_exclusive = {
       focus = CHI_centralized_military_command
     }
@@ -1740,6 +1742,14 @@ focus_tree = {
       add_to_variable = {
         ROC_breakthrough_factor = 0.05
         tooltip = breakthrough_factor_tooltip
+      }
+      add_to_variable = {
+        ROC_army_armor_defence_factor = 0.05
+        tooltip = army_armor_defence_factor_tooltip
+      }
+      add_to_variable = {
+        ROC_mechanized_defence_factor = 0.05
+        tooltip = mechanized_defence_factor_tooltip
       }
     }
     relative_position_id = CHI_dont_forget_homeland
@@ -1821,6 +1831,14 @@ focus_tree = {
         ROC_supply_consumption_factor = -0.1
         tooltip = supply_consumption_factor_tooltip
       }
+      add_to_variable = {
+        ROC_supply_node_range = 0.05
+        tooltip = supply_node_range_tooltip
+      }
+      add_to_variable = {
+        ROC_repair_speed_rail_way_factor = 0.05
+        tooltip = repair_speed_rail_way_factor_tooltip
+      }
     }
     relative_position_id = CHI_reform_combined_logistics_command
   }
@@ -1844,56 +1862,13 @@ focus_tree = {
         ROC_experience_gain_factor = 0.05
         tooltip = experience_gain_factor_tooltip
       }
-      if = {
-        limit = {
-          NOT = {
-            has_template = "中華民國陸軍機械化步兵旅"
-          }
-        }
-        division_template = {
-          name = "中華民國陸軍機械化步兵旅"
-          division_names_group = CHI_INF_2
-          regiments = {
-            mechanized = {
-              x = 0
-              y = 0
-            }
-            mechanized = {
-              x = 0
-              y = 1
-            }
-            mechanized = {
-              x = 0
-              y = 2
-            }
-            modern_armor = {
-              x = 1
-              y = 0
-            }
-            artillery_brigade = {
-              x = 2
-              y = 0
-            }
-          }
-          support = {
-            light_tank_recon = {
-              x = 0
-              y = 0
-            }
-            engineer = {
-              x = 0
-              y = 1
-            }
-          }
-        }
+      add_to_variable = {
+        ROC_army_org_factor = 0.05
+        tooltip = army_org_factor_tooltip
       }
-      1149 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍機械化步兵旅\" division_template = \"中華民國陸軍機械化步兵旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 13968
-          owner = CHI
-          count = 2
-        }
+      add_to_variable = {
+        ROC_coordination_bonus = 0.05
+        tooltip = coordination_bonus_tooltip
       }
     }
     relative_position_id = CHI_dont_forget_homeland
@@ -2218,6 +2193,10 @@ focus_tree = {
           level = 3
           instant_build = yes
         }
+      }
+      add_to_variable = {
+        ROC_repair_speed_air_base_factor = 0.15
+        tooltip = repair_speed_air_base_factor_tooltip
       }
     }
     relative_position_id = CHI_strengthen_anti_corruption_measures
