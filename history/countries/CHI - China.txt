@@ -47,6 +47,22 @@ set_variable = { var = CHI_kmt_psg value = 30 }
 set_variable = { var = CHI_kmt_combat value = 20 }
 set_variable = { var = CHI_kmt_grassroots value = 10 }
 
+#CHI_ecn
+
+set_variable = { ecn_armor_research_var = -5 }
+set_variable = { ecn_electronics_research_var = 15 }
+set_variable = { ecn_armor_cost_var = 30 }
+set_variable = { ecn_air_cost_var = 50 }
+set_variable = { ecn_armored_car_var = 15 }
+
+add_ideas = {
+  CHI_Economy_hidden_armor_research_bonus
+  CHI_Economy_hidden_electronics_research_bonus
+  CHI_Economy_hidden_armor_cost_equipment_bonus
+  CHI_Economy_hidden_air_equipment_cost_equipment_bonus
+  CHI_Economy_hidden_armored_car_cost_equipment_bonus
+}
+
 #角色
 recruit_character = CHI_tsai_ing_wen_char
 recruit_character = CHI_han_kuo_yu_char
@@ -354,7 +370,6 @@ add_ideas = {
   CHI_low_international_recognition_idea
   CHI_american_protection_idea
   CHI_prc_embargo_idea0
-  CHI_Economy_hidden
   #Laws
   medium_police
   low_conscription

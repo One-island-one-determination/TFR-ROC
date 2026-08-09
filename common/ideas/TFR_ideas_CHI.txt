@@ -1636,7 +1636,7 @@ ideas = {
       }
     }
 
-    ##外交休兵
+    ##政治休兵
     CHI_diplomatic_truce = {
       name = CHI_diplomatic_truce
       removal_cost = -1
@@ -1684,7 +1684,7 @@ ideas = {
         army_org_factor = 0.05
         army_core_attack_factor = 0.025
         army_core_defence_factor = 0.025
-        encryption_factor = 0.1
+        encryption = 5
         income_growth_factor = 0.05
         personal_value_factor = 0.5
         business_value_factor = 0.1
@@ -1719,28 +1719,128 @@ ideas = {
     }
   }
 
+
+
+
+
+
+
+
+  ##CHI_Economy research_bonus and equipment_bonus
   hidden_ideas = {
-    CHI_Economy_hidden = {
-      # 中華民國經濟(動態民族精神用 - 研究與造價加成)
+    CHI_Economy_hidden_armor_research_bonus = {
       name = CHI_Economy_hidden
+      picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
       research_bonus = {
         armor = -0.05
+      }
+    }
+
+    CHI_Economy_hidden_electronics_research_bonus = {
+      name = CHI_Economy_hidden
+      picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
+      research_bonus = {
         electronics = 0.15
       }
+    }
 
+    CHI_Economy_hidden_armor_cost_equipment_bonus = {
+      name = CHI_Economy_hidden
+      picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
       equipment_bonus = {
         armor = {
-          build_cost_ic = +0.3
-        }
-        air_equipment = {
-          build_cost_ic = +0.5
-        }
-        armored_car = {
-          build_cost_ic = +0.15
+          build_cost_ic = 0.3
         }
       }
     }
+
+    CHI_Economy_hidden_air_equipment_cost_equipment_bonus = {
+      name = CHI_Economy_hidden
+      picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
+      equipment_bonus = {
+        air_equipment = {
+          build_cost_ic = 0.5
+        }
+      }
+    }
+
+    CHI_Economy_hidden_armored_car_cost_equipment_bonus = {
+      name = CHI_Economy_hidden
+      picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
+      equipment_bonus = {
+        armored_car = {
+          build_cost_ic = 0.15
+        }
+      }
+    }
+
+    ##----ZERO----####----for debug----##
+    CHI_Economy_hidden_armor_research_bonus_0 = {
+      name = CHI_Economy_hidden
+      picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
+      research_bonus = {
+        armor = 0
+      }
+    }
+
+    CHI_Economy_hidden_electronics_research_bonus_0 = {
+      name = CHI_Economy_hidden
+      picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
+      research_bonus = {
+        electronics = 0
+      }
+    }
+
+    CHI_Economy_hidden_armor_cost_equipment_bonus_0 = {
+      name = CHI_Economy_hidden
+      picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
+      equipment_bonus = {
+        armor = {
+          build_cost_ic = 0
+        }
+      }
+    }
+
+    CHI_Economy_hidden_air_equipment_cost_equipment_bonus_0 = {
+      name = CHI_Economy_hidden
+      picture = CHI_reintroduce_nuclear 
+      equipment_bonus = {
+        air_equipment = {
+          instant = yes
+          build_cost_ic = 0
+        }
+      }
+    }
+
+    CHI_Economy_hidden_armored_car_cost_equipment_bonus_0 = {
+      name = CHI_Economy_hidden
+      picture = CHI_reintroduce_nuclear 
+      equipment_bonus = {
+        armored_car = {
+          instant = yes
+          build_cost_ic = 0
+        }
+      }
+    }
+
+
+
+
+  #-----------hidden idea end--------------#
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
