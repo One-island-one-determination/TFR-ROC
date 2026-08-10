@@ -1,0 +1,80 @@
+PRC_attack_taiwan_category = {
+  warlord_attack_roc = {
+    icon = GFX_PRC_soliders
+    allowed = { 
+      OR = {
+        original_tag = PRC
+        tag = PRC
+        tag = CNT
+        tag = NTT
+        tag = MST
+        tag = NMA
+        tag = A74
+        tag = A75
+        tag = A77
+        tag = A78
+        tag = A81
+        tag = A83
+        tag = NSF
+        tag = XIE
+        tag = TND
+        tag = FAL
+        tag = APF
+        tag = NIS
+        tag = IMA
+        tag = YUN
+        tag = GAN
+        tag = SHA
+        tag = NCM
+        tag = FAL
+        tag = RGT
+        tag = JIA
+        tag = CAG
+        tag = MSC
+        tag = HNJ
+        tag = UYY
+        tag = NLM
+        tag = XFT
+        tag = ESF
+        tag = XSM
+        tag = CHF
+        tag = SIC
+      }
+    }
+    visible = {
+      CHI = { has_completed_focus = CHI_compete_for_central_plains }
+      NOT = { tag = JAP }
+      NOT = { is_subject_of = JAP }
+      NOT = { is_in_faction_with = JAP }
+      NOT = { has_country_flag = pdto_member }
+      OR = {
+        NOT = { tag = PRC }
+        NOT = { has_country_flag = PRC_restore_order_ongoing }
+      }
+    }
+    available = {
+      any_neighbor_country = { tag = CHI }
+      has_war = no
+    }
+    cost = 0
+    days_remove = 20
+    fire_only_once = yes
+    ai_will_do = {
+      factor = 100
+      modifier = {
+        factor = 0
+        has_war = yes
+      }
+    }
+    remove_effect = {
+      declare_war_on = { target = CHI type = annex_everything }
+      random_owned_controlled_state = {
+        create_unit = {
+          division = "division_template = \"Chinese CW Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+          owner = ROOT
+          count = 10
+        }
+      }
+    }
+  }
+}
