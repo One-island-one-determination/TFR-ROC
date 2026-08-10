@@ -372,6 +372,15 @@ CHI_debug = {
       }
     }
   }
+  set_ROCA_two = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      set_country_flag = CHI_ROC_army_dynamic_desc_phase_two
+    }
+  }
 
 }
 
@@ -5397,7 +5406,8 @@ CHI_NCSIST_category = {
       
     }
     remove_effect = {
-      #
+      custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+      add_to_variable = { CHI_Economy_equipment_conversion_speed = 0.15 tooltip = equipment_conversion_speed_tooltip}
     }
   }
   #外骨骼試驗
@@ -5456,7 +5466,10 @@ CHI_NCSIST_category = {
     }
     remove_effect = {
       #
-      set_country_flag =  CHI_project_CM13_flag
+      set_country_flag =  
+      country_event = {
+        id = 
+      }
     }
   }
   #麻雀計畫
