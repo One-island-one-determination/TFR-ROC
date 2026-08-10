@@ -5882,13 +5882,13 @@ CHI_dont_forget_homeland_category = {
         set_country_flag = CHI_ninghai_plan_completed_3
 
         custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
-        add_to_variable = {  ROC_naval_coordination = 0.01         tooltip = naval_coordination_tooltip         }
-        add_to_variable = {  ROC_ships_speed_factor = 0.02         tooltip = ships_speed_factor_tooltip         }
-        add_to_variable = {  ROC_naval_detection = 0.05            tooltip = naval_detection_tooltip            }
-        add_to_variable = {  ROC_naval_morale = 0.02               tooltip = naval_morale_tooltip               }
-        add_to_variable = {  ROC_screen_attack_factor = 0.02       tooltip = screen_attack_factor_tooltip       }
-        add_to_variable = {  ROC_screen_defense_factor = 0.02      tooltip = screen_defense_factor_tooltip      }
-        add_to_variable = {  ROC_screening_fleet_efficiency = 0.05 tooltip = screening_fleet_efficiency_tooltip }
+        add_to_variable = {  ROC_naval_coordination = 0.01          tooltip = naval_coordination_tooltip         }
+        add_to_variable = {  ROC_naval_speed_factor = 0.02          tooltip = naval_speed_factor_tooltip         }
+        add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
+        add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
+        add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
+        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
+        add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
 
       }
       else_if = {
@@ -5896,26 +5896,26 @@ CHI_dont_forget_homeland_category = {
         set_country_flag = CHI_ninghai_plan_completed_2
 
         custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
-        add_to_variable = {  ROC_naval_coordination = 0.01         tooltip = naval_coordination_tooltip         }
-        add_to_variable = {  ROC_ships_speed_factor = 0.02         tooltip = ships_speed_factor_tooltip         }
-        add_to_variable = {  ROC_naval_detection = 0.05            tooltip = naval_detection_tooltip            }
-        add_to_variable = {  ROC_naval_morale = 0.02               tooltip = naval_morale_tooltip               }
-        add_to_variable = {  ROC_screen_attack_factor = 0.02       tooltip = screen_attack_factor_tooltip       }
-        add_to_variable = {  ROC_screen_defense_factor = 0.02      tooltip = screen_defense_factor_tooltip      }
-        add_to_variable = {  ROC_screening_fleet_efficiency = 0.05 tooltip = screening_fleet_efficiency_tooltip }
+        add_to_variable = {  ROC_naval_coordination = 0.01          tooltip = naval_coordination_tooltip         }
+        add_to_variable = {  ROC_naval_speed_factor = 0.02          tooltip = naval_speed_factor_tooltip         }
+        add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
+        add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
+        add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
+        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
+        add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
 
       }
       else = {
         set_country_flag = CHI_ninghai_plan_completed_1
 
         custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }        
-        add_to_variable = {  ROC_naval_coordination = 0.01         tooltip = naval_coordination_tooltip         }
-        add_to_variable = {  ROC_ships_speed_factor = 0.02         tooltip = ships_speed_factor_tooltip         }
-        add_to_variable = {  ROC_naval_detection = 0.05            tooltip = naval_detection_tooltip            }
-        add_to_variable = {  ROC_naval_morale = 0.02               tooltip = naval_morale_tooltip               }
-        add_to_variable = {  ROC_screen_attack_factor = 0.02       tooltip = screen_attack_factor_tooltip       }
-        add_to_variable = {  ROC_screen_defense_factor = 0.02      tooltip = screen_defense_factor_tooltip      }
-        add_to_variable = {  ROC_screening_fleet_efficiency = 0.05 tooltip = screening_fleet_efficiency_tooltip }
+        add_to_variable = {  ROC_naval_coordination = 0.01          tooltip = naval_coordination_tooltip         }
+        add_to_variable = {  ROC_naval_speed_factor = 0.02          tooltip = naval_speed_factor_tooltip         }
+        add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
+        add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
+        add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
+        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
+        add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
         
       }
     }
