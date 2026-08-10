@@ -55,47 +55,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_taiwan = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 1 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 524 }
-        NOT = { owns_state = 1148 }
-        NOT = { owns_state = 1149 }
-        NOT = { owns_state = 1150 }
-        NOT = { owns_state = 648 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 524
-            owns_state = 1148
-            owns_state = 1149
-            owns_state = 1150
-            owns_state = 648
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_taiwan = {
     icon = generic_prepare_for_war
@@ -286,43 +245,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_anhui = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 2 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1223 }
-        NOT = { owns_state = 606 }
-        NOT = { owns_state = 1221 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1223
-            owns_state = 606
-            owns_state = 1221
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_anhui = {
     icon = generic_prepare_for_war
@@ -483,39 +405,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_beijing = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 3 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 608 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 608
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_beijing = {
     icon = generic_prepare_for_war
@@ -670,47 +559,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_jiangsu = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 4 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 598 }
-        NOT = { owns_state = 1228 }
-        NOT = { owns_state = 1429 }
-        NOT = { owns_state = 613 }
-        NOT = { owns_state = 1222 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 598
-            owns_state = 1228
-            owns_state = 1429
-            owns_state = 613
-            owns_state = 1222
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_jiangsu = {
     icon = generic_prepare_for_war
@@ -921,53 +769,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_shandong = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 5 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1426 }
-        NOT = { owns_state = 1231 }
-        NOT = { owns_state = 597 }
-        NOT = { owns_state = 1230 }
-        NOT = { owns_state = 1427 }
-        NOT = { owns_state = 1229 }
-        NOT = { owns_state = 1393 }
-        NOT = { owns_state = 1420 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1426
-            owns_state = 1231
-            owns_state = 597
-            owns_state = 1230
-            owns_state = 1427
-            owns_state = 1229
-            owns_state = 1393
-            owns_state = 1420
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_shandong = {
     icon = generic_prepare_for_war
@@ -1225,51 +1026,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_hebei = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 6 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 609 }
-        NOT = { owns_state = 610 }
-        NOT = { owns_state = 611 }
-        NOT = { owns_state = 1154 }
-        NOT = { owns_state = 1232 }
-        NOT = { owns_state = 1421 }
-        NOT = { owns_state = 614 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 609
-            owns_state = 610
-            owns_state = 611
-            owns_state = 1154
-            owns_state = 1232
-            owns_state = 1421
-            owns_state = 614
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_hebei = {
     icon = generic_prepare_for_war
@@ -1477,39 +1233,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_tianjin = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 7 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1157 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1157
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_tianjin = {
     icon = generic_prepare_for_war
@@ -1656,43 +1379,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_shanxi = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 8 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1233 }
-        NOT = { owns_state = 615 }
-        NOT = { owns_state = 1194 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1233
-            owns_state = 615
-            owns_state = 1194
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_shanxi = {
     icon = generic_prepare_for_war
@@ -1864,43 +1550,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_shan3xi = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 9 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1201 }
-        NOT = { owns_state = 622 }
-        NOT = { owns_state = 1200 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1201
-            owns_state = 622
-            owns_state = 1200
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_shan3xi = {
     icon = generic_prepare_for_war
@@ -2073,45 +1722,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_henan = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 10 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 607 }
-        NOT = { owns_state = 1226 }
-        NOT = { owns_state = 1225 }
-        NOT = { owns_state = 1224 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 607
-            owns_state = 1226
-            owns_state = 1225
-            owns_state = 1224
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_henan = {
     icon = generic_prepare_for_war
@@ -2286,39 +1896,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_ningxia = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 11 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1199 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1199
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_ningxia = {
     icon = generic_prepare_for_war
@@ -2457,39 +2034,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_chongqing = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 12 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1189 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1189
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_chongqing = {
     icon = generic_prepare_for_war
@@ -2628,39 +2172,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_shanghai = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 13 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1215 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1215
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_shanghai = {
     icon = generic_prepare_for_war
@@ -2811,45 +2322,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_zhejiang = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 14 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1220 }
-        NOT = { owns_state = 1159 }
-        NOT = { owns_state = 1219 }
-        NOT = { owns_state = 596 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1220
-            owns_state = 1159
-            owns_state = 1219
-            owns_state = 596
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_zhejiang = {
     icon = generic_prepare_for_war
@@ -3037,47 +2509,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_fujian = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 15 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1217 }
-        NOT = { owns_state = 595 }
-        NOT = { owns_state = 1218 }
-        NOT = { owns_state = 1216 }
-        NOT = { owns_state = 1431 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1217
-            owns_state = 595
-            owns_state = 1218
-            owns_state = 1216
-            owns_state = 1431
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_fujian = {
     icon = generic_prepare_for_war
@@ -3325,49 +2756,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_guangdong = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 16 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1430 }
-        NOT = { owns_state = 1207 }
-        NOT = { owns_state = 1206 }
-        NOT = { owns_state = 592 }
-        NOT = { owns_state = 728 }
-        NOT = { owns_state = 1395 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1430
-            owns_state = 1207
-            owns_state = 1206
-            owns_state = 592
-            owns_state = 728
-            owns_state = 1395
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_guangdong = {
     icon = generic_prepare_for_war
@@ -3561,39 +2949,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_hongkong = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 17 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 326 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 326
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_hongkong = {
     icon = generic_prepare_for_war
@@ -3732,39 +3087,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_macau = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 18 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 729 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 729
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_macau = {
     icon = generic_prepare_for_war
@@ -3927,51 +3249,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_guangxi = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 19 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 599 }
-        NOT = { owns_state = 1191 }
-        NOT = { owns_state = 593 }
-        NOT = { owns_state = 594 }
-        NOT = { owns_state = 1203 }
-        NOT = { owns_state = 1204 }
-        NOT = { owns_state = 1205 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 599
-            owns_state = 1191
-            owns_state = 593
-            owns_state = 594
-            owns_state = 1203
-            owns_state = 1204
-            owns_state = 1205
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_guangxi = {
     icon = generic_prepare_for_war
@@ -4188,45 +3465,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_yunnan = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 20 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1196 }
-        NOT = { owns_state = 1192 }
-        NOT = { owns_state = 1195 }
-        NOT = { owns_state = 325 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1196
-            owns_state = 1192
-            owns_state = 1195
-            owns_state = 325
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_yunnan = {
     icon = generic_prepare_for_war
@@ -4414,47 +3652,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_sichuan = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 21 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 601 }
-        NOT = { owns_state = 1168 }
-        NOT = { owns_state = 1190 }
-        NOT = { owns_state = 605 }
-        NOT = { owns_state = 1188 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 601
-            owns_state = 1168
-            owns_state = 1190
-            owns_state = 605
-            owns_state = 1188
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_sichuan = {
     icon = generic_prepare_for_war
@@ -4979,43 +4176,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_hubei = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 24 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1212 }
-        NOT = { owns_state = 620 }
-        NOT = { owns_state = 1211 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1212
-            owns_state = 620
-            owns_state = 1211
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_hubei = {
     icon = generic_prepare_for_war
@@ -5184,43 +4344,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_hunan = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 25 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 602 }
-        NOT = { owns_state = 1208 }
-        NOT = { owns_state = 1209 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 602
-            owns_state = 1208
-            owns_state = 1209
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_hunan = {
     icon = generic_prepare_for_war
@@ -5389,43 +4512,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_guizhou = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 26 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1210 }
-        NOT = { owns_state = 603 }
-        NOT = { owns_state = 1197 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1210
-            owns_state = 603
-            owns_state = 1197
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_guizhou = {
     icon = generic_prepare_for_war
@@ -5602,47 +4688,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_jiangxi = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 27 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1227 }
-        NOT = { owns_state = 1428 }
-        NOT = { owns_state = 1214 }
-        NOT = { owns_state = 1213 }
-        NOT = { owns_state = 600 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1227
-            owns_state = 1428
-            owns_state = 1214
-            owns_state = 1213
-            owns_state = 600
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_jiangxi = {
     icon = generic_prepare_for_war
@@ -5825,39 +4870,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_hainan = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 28 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 591 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 591
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_hainan = {
     icon = generic_prepare_for_war
@@ -5992,44 +5004,6 @@ CHI_civilwar_category = {
       owns_state = 618
       owns_state = 619
       owns_state = 287
-    }
-    on_map_mode = decision_view_only
-    highlight_states = {
-      highlight_state_targets = {
-        state = 1158
-        state = 1160
-        state = 1161
-        state = 1162
-        state = 1163
-        state = 1164
-        state = 1165
-        state = 617
-        state = 618
-        state = 619
-        state = 287
-      }
-    }
-  }
-  ccw_xinjiang_divider = {
-    icon = GFX_CHI_fully_under_control_animated
-    allowed = {original_tag = CHI}
-    available = { hidden_trigger = {always = no}}
-    visible = {
-      OR = {
-        check_variable = { CHI_ccw_dec_visible = 29 }
-        is_ai = yes
-      }
-      owns_state = 1158
-      owns_state = 1160
-      owns_state = 1161
-      owns_state = 1162
-      owns_state = 1163
-      owns_state = 1164
-      owns_state = 1165
-      owns_state = 617
-      owns_state = 618
-      owns_state = 619
-      owns_state = 287
       owns_state = 788
     }
     on_map_mode = decision_view_only
@@ -6051,43 +5025,6 @@ CHI_civilwar_category = {
     }
   }
 
-  ccw_xinjiang_warning_divider = {
-    icon = GFX_CHI_warning_enemy_present_animated
-    allowed = { original_tag = CHI }
-    available = { hidden_trigger = { always = no } }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 29 }
-      OR = {
-        NOT = { owns_state = 1158 }
-        NOT = { owns_state = 1160 }
-        NOT = { owns_state = 1161 }
-        NOT = { owns_state = 1162 }
-        NOT = { owns_state = 1163 }
-        NOT = { owns_state = 1164 }
-        NOT = { owns_state = 1165 }
-        NOT = { owns_state = 617 }
-        NOT = { owns_state = 618 }
-        NOT = { owns_state = 619 }
-        NOT = { owns_state = 287 }
-      }
-    }
-    on_map_mode = decision_view_only
-    highlight_states = {
-      highlight_state_targets = {
-        state = 1158
-        state = 1160
-        state = 1161
-        state = 1162
-        state = 1163
-        state = 1164
-        state = 1165
-        state = 617
-        state = 618
-        state = 619
-        state = 287
-      }
-    }
-  }
   ccw_xinjiang_warning_divider = {
     icon = GFX_CHI_warning_enemy_present_animated
     allowed = { original_tag = CHI }
@@ -6130,59 +5067,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_xinjiang = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 29 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1158 }
-        NOT = { owns_state = 1160 }
-        NOT = { owns_state = 1161 }
-        NOT = { owns_state = 1162 }
-        NOT = { owns_state = 1163 }
-        NOT = { owns_state = 1164 }
-        NOT = { owns_state = 1165 }
-        NOT = { owns_state = 617 }
-        NOT = { owns_state = 618 }
-        NOT = { owns_state = 619 }
-        NOT = { owns_state = 287 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1158
-            owns_state = 1160
-            owns_state = 1161
-            owns_state = 1162
-            owns_state = 1163
-            owns_state = 1164
-            owns_state = 1165
-            owns_state = 617
-            owns_state = 618
-            owns_state = 619
-            owns_state = 287
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_xinjiang = {
     icon = generic_prepare_for_war
@@ -6263,57 +5147,6 @@ CHI_civilwar_category = {
       owns_state = 618
       owns_state = 619
       owns_state = 287
-      OR = {
-        1158 = { NOT = { is_core_of = ROOT } }
-        1160 = { NOT = { is_core_of = ROOT } }
-        1161 = { NOT = { is_core_of = ROOT } }
-        1162 = { NOT = { is_core_of = ROOT } }
-        1163 = { NOT = { is_core_of = ROOT } }
-        1164 = { NOT = { is_core_of = ROOT } }
-        1165 = { NOT = { is_core_of = ROOT } }
-        617 = { NOT = { is_core_of = ROOT } }
-        618 = { NOT = { is_core_of = ROOT } }
-        619 = { NOT = { is_core_of = ROOT } }
-        287 = { NOT = { is_core_of = ROOT } }
-      }
-    }
-    remove_effect = {
-      1158 = { add_core_of = ROOT }
-      1160 = { add_core_of = ROOT }
-      1161 = { add_core_of = ROOT }
-      1162 = { add_core_of = ROOT }
-      1163 = { add_core_of = ROOT }
-      1164 = { add_core_of = ROOT }
-      1165 = { add_core_of = ROOT }
-      617 = { add_core_of = ROOT }
-      618 = { add_core_of = ROOT }
-      619 = { add_core_of = ROOT }
-      287 = { add_core_of = ROOT }
-    }
-  }
-  ccw_core_xinjiang = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 29 }
-      has_completed_focus = CHI_regional_political_tutelage
-      NOT = { has_completed_focus = CHI_trust_localities }
-      NOT = { has_completed_focus = CHI_central_supervision_policy }
-    }
-    cost = 50
-    days_remove = 50
-    available = {
-      owns_state = 1158
-      owns_state = 1160
-      owns_state = 1161
-      owns_state = 1162
-      owns_state = 1163
-      owns_state = 1164
-      owns_state = 1165
-      owns_state = 617
-      owns_state = 618
-      owns_state = 619
-      owns_state = 287
       owns_state = 788
       OR = {
         1158 = { NOT = { is_core_of = ROOT } }
@@ -6368,55 +5201,6 @@ CHI_civilwar_category = {
       owns_state = 618
       owns_state = 619
       owns_state = 287
-      OR = {
-        1158 = { NOT = { is_core_of = ROOT } }
-        1160 = { NOT = { is_core_of = ROOT } }
-        1161 = { NOT = { is_core_of = ROOT } }
-        1162 = { NOT = { is_core_of = ROOT } }
-        1163 = { NOT = { is_core_of = ROOT } }
-        1164 = { NOT = { is_core_of = ROOT } }
-        1165 = { NOT = { is_core_of = ROOT } }
-        617 = { NOT = { is_core_of = ROOT } }
-        618 = { NOT = { is_core_of = ROOT } }
-        619 = { NOT = { is_core_of = ROOT } }
-        287 = { NOT = { is_core_of = ROOT } }
-      }
-    }
-    remove_effect = {
-      1158 = { add_core_of = ROOT }
-      1160 = { add_core_of = ROOT }
-      1161 = { add_core_of = ROOT }
-      1162 = { add_core_of = ROOT }
-      1163 = { add_core_of = ROOT }
-      1164 = { add_core_of = ROOT }
-      1165 = { add_core_of = ROOT }
-      617 = { add_core_of = ROOT }
-      618 = { add_core_of = ROOT }
-      619 = { add_core_of = ROOT }
-      287 = { add_core_of = ROOT }
-    }
-  }
-  ccw_core_xinjiang_focus1 = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 29 }
-      has_completed_focus = CHI_trust_localities
-    }
-    cost = 40
-    days_remove = 100
-    available = {
-      owns_state = 1158
-      owns_state = 1160
-      owns_state = 1161
-      owns_state = 1162
-      owns_state = 1163
-      owns_state = 1164
-      owns_state = 1165
-      owns_state = 617
-      owns_state = 618
-      owns_state = 619
-      owns_state = 287
       owns_state = 788
       OR = {
         1158 = { NOT = { is_core_of = ROOT } }
@@ -6450,55 +5234,6 @@ CHI_civilwar_category = {
   }
 
 
-  ccw_core_xinjiang_focus2 = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 29 }
-      has_completed_focus = CHI_central_supervision_policy
-    }
-    cost = 60
-    days_remove = 5
-    available = {
-      owns_state = 1158
-      owns_state = 1160
-      owns_state = 1161
-      owns_state = 1162
-      owns_state = 1163
-      owns_state = 1164
-      owns_state = 1165
-      owns_state = 617
-      owns_state = 618
-      owns_state = 619
-      owns_state = 287
-      OR = {
-        1158 = { NOT = { is_core_of = ROOT } }
-        1160 = { NOT = { is_core_of = ROOT } }
-        1161 = { NOT = { is_core_of = ROOT } }
-        1162 = { NOT = { is_core_of = ROOT } }
-        1163 = { NOT = { is_core_of = ROOT } }
-        1164 = { NOT = { is_core_of = ROOT } }
-        1165 = { NOT = { is_core_of = ROOT } }
-        617 = { NOT = { is_core_of = ROOT } }
-        618 = { NOT = { is_core_of = ROOT } }
-        619 = { NOT = { is_core_of = ROOT } }
-        287 = { NOT = { is_core_of = ROOT } }
-      }
-    }
-    remove_effect = {
-      1158 = { add_core_of = ROOT }
-      1160 = { add_core_of = ROOT }
-      1161 = { add_core_of = ROOT }
-      1162 = { add_core_of = ROOT }
-      1163 = { add_core_of = ROOT }
-      1164 = { add_core_of = ROOT }
-      1165 = { add_core_of = ROOT }
-      617 = { add_core_of = ROOT }
-      618 = { add_core_of = ROOT }
-      619 = { add_core_of = ROOT }
-      287 = { add_core_of = ROOT }
-    }
-  }
   ccw_core_xinjiang_focus2 = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
@@ -6599,43 +5334,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_qinghai = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 30 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1186 }
-        NOT = { owns_state = 1187 }
-        NOT = { owns_state = 604 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1186
-            owns_state = 1187
-            owns_state = 604
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_qinghai = {
     icon = generic_prepare_for_war
@@ -6808,45 +5506,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_gansu = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 31 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1198 }
-        NOT = { owns_state = 1193 }
-        NOT = { owns_state = 616 }
-        NOT = { owns_state = 283 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1198
-            owns_state = 1193
-            owns_state = 616
-            owns_state = 283
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_gansu = {
     icon = generic_prepare_for_war
@@ -7038,49 +5697,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_neimeng = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 32 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1166 }
-        NOT = { owns_state = 1167 }
-        NOT = { owns_state = 621 }
-        NOT = { owns_state = 1202 }
-        NOT = { owns_state = 612 }
-        NOT = { owns_state = 715 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1166
-            owns_state = 1167
-            owns_state = 621
-            owns_state = 1202
-            owns_state = 612
-            owns_state = 715
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_neimeng = {
     icon = generic_prepare_for_war
@@ -7288,49 +5904,6 @@ CHI_civilwar_category = {
     }
   }
 
-
-
-  ccw_declare_war_on_mon = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 33 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1388 }
-        NOT = { owns_state = 1389 }
-        NOT = { owns_state = 1390 }
-        NOT = { owns_state = 1391 }
-        NOT = { owns_state = 330 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1388
-            owns_state = 1389
-            owns_state = 1390
-            owns_state = 1391
-            owns_state = 330
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_mon = {
     icon = generic_prepare_for_war
@@ -7680,47 +6253,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_liaoning = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 35 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1425 }
-        NOT = { owns_state = 716 }
-        NOT = { owns_state = 1417 }
-        NOT = { owns_state = 1413 }
-        NOT = { owns_state = 1394 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1425
-            owns_state = 716
-            owns_state = 1417
-            owns_state = 1413
-            owns_state = 1394
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_liaoning = {
     icon = generic_prepare_for_war
@@ -7911,43 +6443,6 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_jilin = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 36 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1414 }
-        NOT = { owns_state = 1415 }
-        NOT = { owns_state = 328 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1414
-            owns_state = 1415
-            owns_state = 328
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_jilin = {
     icon = generic_prepare_for_war
@@ -8119,45 +6614,6 @@ CHI_civilwar_category = {
   }
 
 
-  ccw_declare_war_on_hlj = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 37 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 1424 }
-        NOT = { owns_state = 714 }
-        NOT = { owns_state = 717 }
-        NOT = { owns_state = 1416 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 1424
-            owns_state = 714
-            owns_state = 717
-            owns_state = 1416
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
-        }
-      }
-    }
-  }
 
   ccw_declare_war_on_hlj = {
     icon = generic_prepare_for_war
