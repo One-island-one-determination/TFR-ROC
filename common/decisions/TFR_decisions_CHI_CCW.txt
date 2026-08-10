@@ -7524,69 +7524,38 @@ CHI_civilwar_category = {
 
 
 
-  ccw_declare_war_on_tuva = {
+  ccw_seize_tuva = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
       check_variable = { CHI_ccw_dec_visible = 34 }
+      has_completed_focus = CHI_tuva_problem
+      NOT = { has_country_flag = CHI_tuva_seized }
     }
     available = {
-      OR = {
-        NOT = { owns_state = 329 }
-      }
+      NOT = { owns_state = 329 }
     }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
+    cost = 50
+    days_remove = 2
+    fire_only_once = yes
+    ai_will_do = {
+      factor = 100
+    }
     remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 329
+      set_country_flag = CHI_tuva_seized
+      329 = { add_core_of = ROOT }
+      hidden_effect = {
+        329 = {
+          owner = {
+            save_event_target_as = tuva_old_owner
+            set_country_flag = CHI_tuva_taken_from_me
           }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = annex_everything }
         }
       }
-    }
-  }
-
-  ccw_declare_war_on_tuva = {
-    icon = generic_prepare_for_war
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 34 }
-    }
-    available = {
-      OR = {
-        NOT = { owns_state = 329 }
-      }
-    }
-    cost = 5
-    days_remove = 5
-    fire_only_once = no
-    remove_effect = {
-      every_other_country = {
-        limit = {
-          OR = {
-            owns_state = 329
-          }
-          NOT = { is_in_faction_with = ROOT }
-          NOT = { is_subject_of = ROOT }
-          NOT = { tag = JAP }
-          NOT = { is_in_faction_with = JAP }
-          NOT = { is_subject_of = JAP }
-          NOT = { has_country_flag = pdto_member }
-        }
-        ROOT = {
-          declare_war_on = { target = PREV type = CHI_civil_war }
+      transfer_state = 329
+      hidden_effect = {
+        event_target:tuva_old_owner = {
+          country_event = { id = CHI.H4.100 days = 14 }
         }
       }
     }
@@ -8320,7 +8289,6 @@ CHI_civilwar_category = {
       1416 = { add_core_of = ROOT }
     }
   }
-
 
 
 }
