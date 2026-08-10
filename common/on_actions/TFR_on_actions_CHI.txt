@@ -30,6 +30,12 @@ on_actions = {
           add_dynamic_modifier = {
             modifier = CHI_ROC_army_dynamic
           }
+          add_dynamic_modifier = {
+            modifier = CHI_ROC_airforce_dynamic
+          }
+          add_dynamic_modifier = {
+            modifier = CHI_ROC_navy_dynamic
+          }
           add_to_variable = {
             var = ROC_army_attack_factor
             value = -0.075

@@ -24,10 +24,7 @@ focus_tree = {
     completion_reward = {
       country_event = { id = CHI.H4.2 }
       unlock_decision_category_tooltip = CHI_civilwar_category
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_cannot_call_allies_or_join_wars = 1
         tooltip = cannot_call_allies_or_join_wars_tooltip

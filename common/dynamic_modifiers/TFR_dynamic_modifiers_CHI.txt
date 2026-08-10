@@ -169,30 +169,7 @@ CHI_ROC_army_dynamic = {
 	no_supply_grace                    = ROC_no_supply_grace                    # 攜行補給（小時）
 	supply_node_range                  = ROC_supply_node_range                  # 補給節點輻射範圍修正
 
-	# ==========================================
-	# 空軍數值 (Air Force)
-	# ==========================================
-	air_mission_efficiency             = ROC_air_mission_efficiency             # 空軍任務效率修正
-	air_training_xp_gain_factor        = ROC_air_training_xp_gain_factor        # 空軍演習經驗獲取係數
-  air_superiority_efficiency         = ROC_air_superiority_efficiency
-  air_intercept_efficiency           = ROC_air_intercept_efficiency
-  air_cas_efficiency                 = ROC_air_cas_efficiency
-  air_attack_factor                  = ROC_air_attack_factor
-  air_defence_factor                 = ROC_air_defence_factor
-  air_cas_present_factor             = ROC_air_cas_present_factor
-  ground_attack_factor               = ROC_ground_attack_factor
 
-  # ==========================================
-	# 海軍數值 (Navy)
-	# ==========================================
-	navy_org_factor                    = ROC_navy_org_factor                    # 海軍最大組織度修正
-  naval_coordination                 = ROC_naval_coordination
-  naval_speed_factor                 = ROC_naval_speed_factor
-  naval_detection                    = ROC_naval_detection
-  naval_morale_factor                = ROC_naval_morale_factor
-  navy_screen_attack_factor          = ROC_navy_screen_attack_factor
-  navy_screen_defense_factor         = ROC_navy_screen_defense_factor
-  screening_efficiency               = ROC_screening_efficiency
 
 	# ==========================================
 	# 人力、維護與軍隊訓練 (Manpower, Upkeep & Training)
@@ -202,8 +179,6 @@ CHI_ROC_army_dynamic = {
 	training_time_factor               = ROC_training_time_factor               # 部隊訓練時間修正（正值=變慢，負值=變快）
 	unit_upkeep_cost_factor            = ROC_unit_upkeep_cost_factor            # 海陸空單位整體維護費修正
 	battalion_upkeep_factor            = ROC_battalion_upkeep_factor            # 陸軍營級單位維護費修正
-	aircraft_upkeep_factor             = ROC_aircraft_upkeep_factor             # 飛機維護費修正
-	ship_upkeep_factor                 = ROC_ship_upkeep_factor                 # 艦艇維護費修正
 	military_development_monthly       = ROC_military_development_monthly       # [TFR特有] 每月軍事發展進度變化
 
 	# ==========================================
@@ -211,23 +186,59 @@ CHI_ROC_army_dynamic = {
 	# ==========================================
 	experience_gain_factor             = ROC_experience_gain_factor             # 經驗獲得倍率修正（將/陸/空/海）
 	experience_gain_army_factor        = ROC_experience_gain_army_factor        # 陸軍經驗獲取倍率
-	experience_gain_air                = ROC_experience_gain_air                # 空軍經驗獲取量
 	experience_loss_factor             = ROC_experience_loss_factor             # 部隊傷亡時的經驗流失係數
 	command_power_gain_mult            = ROC_command_power_gain_mult            # 指揮點數（CP）獲取倍率
 	army_doctrine_cost_factor          = ROC_army_doctrine_cost_factor          # 陸軍學說花費修正
-	navy_doctrine_cost_factor          = ROC_navy_doctrine_cost_factor          # 海軍學說花費修正
-	air_doctrine_cost_factor           = ROC_air_doctrine_cost_factor           # 空軍學說花費修正
 
 	# ==========================================
 	# 情報、基建與外交限制 (Intel, Infrastructure & Diplomacy)
 	# ==========================================
 	army_intel_to_others               = ROC_army_intel_to_others               # 洩漏給他國的陸軍情報（負值為保密）
-	airforce_intel_to_others           = ROC_airforce_intel_to_others           # 洩漏給他國的空軍情報
 	civilian_intel_to_others           = ROC_civilian_intel_to_others           # 洩漏給他國的民事情報
 	repair_speed_rail_way_factor       = ROC_repair_speed_rail_way_factor       # 鐵路修復速度修正
-	repair_speed_air_base_factor       = ROC_repair_speed_air_base_factor       # 空軍基地修復速度修正
 	cannot_call_allies_or_join_wars    = ROC_cannot_call_allies_or_join_wars    # 外交限制：無法召喚盟友或加入戰爭
 }
+
+# 空軍
+CHI_ROC_airforce_dynamic = {
+  icon = GFX_idea_CHI_ROC_airforce
+  enable = {
+    has_country_flag = CHI_ROC_army_flg
+  }
+	air_mission_efficiency             = ROC_air_mission_efficiency             # 空軍任務效率修正
+	air_training_xp_gain_factor        = ROC_air_training_xp_gain_factor        # 空軍演習經驗獲取係數
+  air_superiority_efficiency         = ROC_air_superiority_efficiency
+  air_intercept_efficiency           = ROC_air_intercept_efficiency
+  air_cas_efficiency                 = ROC_air_cas_efficiency
+  air_attack_factor                  = ROC_air_attack_factor
+  air_defence_factor                 = ROC_air_defence_factor
+  air_cas_present_factor             = ROC_air_cas_present_factor
+  ground_attack_factor               = ROC_ground_attack_factor
+	aircraft_upkeep_factor             = ROC_aircraft_upkeep_factor             # 飛機維護費修正
+	experience_gain_air                = ROC_experience_gain_air                # 空軍經驗獲取量
+	air_doctrine_cost_factor           = ROC_air_doctrine_cost_factor           # 空軍學說花費修正
+	airforce_intel_to_others           = ROC_airforce_intel_to_others           # 洩漏給他國的空軍情報
+	repair_speed_air_base_factor       = ROC_repair_speed_air_base_factor       # 空軍基地修復速度修正
+}
+
+# 海軍
+CHI_ROC_navy_dynamic = {
+  icon = GFX_idea_CHI_ROC_navy
+  enable = {
+    has_country_flag = CHI_ROC_army_flg
+  }
+	navy_org_factor                    = ROC_navy_org_factor                    # 海軍最大組織度修正
+  naval_coordination                 = ROC_naval_coordination
+  naval_speed_factor                 = ROC_naval_speed_factor
+  naval_detection                    = ROC_naval_detection
+  naval_morale_factor                = ROC_naval_morale_factor
+  navy_screen_attack_factor          = ROC_navy_screen_attack_factor
+  navy_screen_defense_factor         = ROC_navy_screen_defense_factor
+  screening_efficiency               = ROC_screening_efficiency
+	ship_upkeep_factor                 = ROC_ship_upkeep_factor                 # 艦艇維護費修正
+	navy_doctrine_cost_factor          = ROC_navy_doctrine_cost_factor          # 海軍學說花費修正
+}
+
 # 立法院
 CHI_LY_of_the_roc_dynamic = {
   icon = GFX_idea_CHI_LY_of_the_roc_dynamic
