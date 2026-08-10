@@ -1701,10 +1701,7 @@ focus_tree = {
       focus = CHI_dont_forget_homeland
     }
     completion_reward = {
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_army_strength_factor = 0.05
         tooltip = army_strength_factor_tooltip
@@ -1730,10 +1727,7 @@ focus_tree = {
     completion_reward = {
       custom_effect_tooltip = CHI_modern_whampoa_tooltip
       country_lock_all_division_template = yes
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_experience_gain_army_factor = 0.15
         tooltip = experience_gain_army_factor_tooltip
@@ -1754,10 +1748,7 @@ focus_tree = {
       focus = CHI_modern_whampoa
     }
     completion_reward = {
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_army_armor_attack_factor = 0.1
         tooltip = army_armor_attack_factor_tooltip
@@ -1789,10 +1780,7 @@ focus_tree = {
       focus = CHI_shining_spear_and_iron_horses
     }
     completion_reward = {
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_army_defence_factor = 0.05
         tooltip = army_defence_factor_tooltip
@@ -1815,10 +1803,7 @@ focus_tree = {
       set_technology = {
         JAP_unmanned_vehicles = 1
       }
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_army_org_factor = 0.05
         tooltip = army_org_factor_tooltip
@@ -1846,10 +1831,7 @@ focus_tree = {
       focus = CHI_reform_combined_logistics_command
     }
     completion_reward = {
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_supply_consumption_factor = -0.1
         tooltip = supply_consumption_factor_tooltip
@@ -1877,10 +1859,7 @@ focus_tree = {
       focus = CHI_modern_whampoa
     }
     completion_reward = {
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_experience_gain_factor = 0.05
         tooltip = experience_gain_factor_tooltip
@@ -1908,10 +1887,7 @@ focus_tree = {
       focus = CHI_new_whampoa_spirits
     }
     completion_reward = {
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_training_time_factor = -0.15
         tooltip = training_time_factor_tooltip
@@ -1939,10 +1915,7 @@ focus_tree = {
       focus = CHI_unity_of_knowledge_and
     }
     completion_reward = {
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_army_attack_factor = 0.1
         tooltip = army_attack_factor_tooltip
@@ -2018,10 +1991,7 @@ focus_tree = {
       focus = CHI_dominate_three_oceans
     }
     completion_reward = {
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_navy_org_factor = 0.05
         tooltip = navy_org_factor_tooltip
@@ -2057,10 +2027,7 @@ focus_tree = {
       focus = CHI_dominate_three_oceans
     }
     completion_reward = {
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_naval_invasion_penalty = -0.15
         tooltip = naval_invasion_penalty_tooltip
@@ -2148,10 +2115,7 @@ focus_tree = {
       focus = CHI_spirit_reaches_to_rainbow
     }
     completion_reward = {
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_air_training_xp_gain_factor = 0.1
         tooltip = air_training_xp_gain_factor_tooltip
@@ -2174,10 +2138,7 @@ focus_tree = {
       focus = CHI_need_of_talent
     }
     completion_reward = {
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_experience_gain_air = 0.01
         tooltip = experience_gain_air_tooltip
@@ -2296,10 +2257,7 @@ focus_tree = {
         value = -50
       }
       add_income = yes
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
-      }
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_aircraft_upkeep_factor = 0.01
         tooltip = aircraft_upkeep_factor_tooltip
