@@ -378,7 +378,12 @@ CHI_debug = {
     visible = { always = yes }
     available = { always = yes }
     complete_effect = {
-      set_country_flag = CHI_ROC_army_dynamic_desc_phase_two
+      remove_dynamic_modifier = {
+        modifier = CHI_ROC_army_dynamic
+      }
+      add_dynamic_modifier = {
+        modifier = CHI_ROC_army_dynamic_2
+      } 
     }
   }
 
@@ -5468,7 +5473,7 @@ CHI_NCSIST_category = {
       #
       set_country_flag =  
       country_event = {
-        id = 
+        id = CHI.BF.100
       }
     }
   }
@@ -5729,7 +5734,12 @@ CHI_NCSIST_category = {
       
     }
     remove_effect = {
-      #
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_air_superiority_efficiency = 0.2  tooltip = air_superiority_efficiency_tooltip  }
+      add_to_variable = { ROC_air_intercept_efficiency = 0.1    tooltip = air_intercept_efficiency_tooltip    }
+      add_to_variable = { ROC_air_escort_efficiency = 0.1      tooltip = air_escort_efficiency_tooltip        }      
+      add_to_variable = { ROC_air_cas_efficiency = 0.1          tooltip = air_cas_efficiency_tooltip          }
+      add_to_variable = { ROC_air_nav_efficiency = 0.1          tooltip = air_nav_efficiency_tooltip          }
     }
   }
 }
@@ -5865,7 +5875,7 @@ CHI_dont_forget_homeland_category = {
     remove_effect = {
       set_country_flag = CHI_project_ROCA_reform_4_completed
       remove_ideas = CHI_project_ROCA_reform_1_idea
-      
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = { var = ROC_army_org_factor value = 0.10 }
       add_to_variable = { var = ROC_combat_width_factor value = -0.15 }
       add_to_variable = { var = ROC_reinforce_rate value = 0.50 }
