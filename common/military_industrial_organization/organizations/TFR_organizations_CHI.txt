@@ -1,4 +1,4 @@
-##infantry equipment##
+﻿##infantry equipment##
 CHI_armaments_bureau_205_organization = { #Armaments Bureau 205th Arsenal
 	include = generic_TFR_UAV_equipment_organization
 	icon = GFX_mio_CHI_armaments_bureau_205
@@ -38,19 +38,257 @@ CHI_armaments_bureau_202_organization = { #Armaments Bureau 202nd Arsenal
 	#	owner = { controls_state = 608 }		
 	#}
 
-    #equipment_type = {
-#		infantry_equipment
-#        support_equipment
-#        artillery_equipment
-#        anti_tank_equipment
-#		anti_air_equipment
-#	}
+	equipment_type = {
+		armor
+		support_equipment
+		train_equipment		
+	}
 
-#	research_categories = {
-#       infantry_weapons
-#		support_tech
-#       mio_cat_all_artillery_equipment
-#	}
+	research_categories = {
+		armor
+		support_tech
+		train_tech
+	}
+
+	tree_header_text = {
+		text = mio_header_armor
+		x = 1
+	}
+
+	tree_header_text = {
+		text = mio_header_weapons
+		x = 5
+	}
+
+	tree_header_text = {
+		text = mio_header_trains
+		x = 8
+	}
+
+	initial_trait = {
+		token = generic_mio_initial_trait_tank_refurbishment_plant
+		name = generic_mio_initial_trait_tank_refurbishment_plant
+
+		limit_to_equipment_type = { armor }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+
+		production_bonus = {
+			production_conversion_speed_factor = 0.15
+			production_cost_factor = -0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_enemy_tank_refitting
+		name = generic_mio_trait_enemy_tank_refitting
+		icon = GFX_generic_mio_department_icon_tank_general_conversion
+
+		position = { x=1 y=0 }
+
+		limit_to_equipment_type = { armor }
+
+		production_bonus = {
+			production_conversion_speed_factor = 0.15
+			production_cost_factor = -0.03
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_efficient_scrap_recycling
+		name = generic_mio_trait_efficient_scrap_recycling
+		icon = GFX_generic_mio_trait_icon_recycle
+		
+		position = { x=-1 y=1 }
+		relative_position_id = generic_mio_trait_enemy_tank_refitting
+
+		any_parent = { generic_mio_trait_enemy_tank_refitting }
+
+		limit_to_equipment_type = { armor }
+
+		equipment_bonus = {
+			hardness = -0.06
+		}
+
+		production_bonus = {
+			production_resource_need_factor = -0.2
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_high_volume_smelter
+		name = generic_mio_trait_high_volume_smelter
+		icon = GFX_generic_mio_department_icon_tank_general_production
+		
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_efficient_scrap_recycling
+
+		any_parent = { generic_mio_trait_efficient_scrap_recycling }
+
+		limit_to_equipment_type = { armor }
+
+		production_bonus = {
+			production_capacity_factor = 0.06
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_high_powered_engine_production
+		name = generic_mio_trait_high_powered_engine_production
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = { x=1 y=2 }
+		relative_position_id = generic_mio_trait_enemy_tank_refitting
+
+		any_parent = { generic_mio_trait_enemy_tank_refitting }
+
+		limit_to_equipment_type = { armor }
+
+		equipment_bonus = {
+			maximum_speed = 0.1
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_heavy_duty_machine_tools
+		name = generic_mio_trait_heavy_duty_machine_tools
+		icon = GFX_generic_mio_department_icon_tank_general_production
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_high_volume_smelter
+
+		all_parents = { generic_mio_trait_high_powered_engine_production generic_mio_trait_high_volume_smelter }
+
+		limit_to_equipment_type = { armor }
+
+		equipment_bonus = {
+			maximum_speed = 0.1
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_multi_plant_cooperation
+		name = generic_mio_trait_multi_plant_cooperation
+		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_heavy_duty_machine_tools
+
+		any_parent = { generic_mio_trait_heavy_duty_machine_tools }
+
+		limit_to_equipment_type = { armor }
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.08
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_standardized_secondary_armament
+		name = generic_mio_trait_standardized_secondary_armament
+		icon = GFX_generic_mio_trait_icon_breakthrough
+
+		position = { x=3 y=0 }
+		relative_position_id = generic_mio_trait_enemy_tank_refitting
+
+		limit_to_equipment_type = { armor }
+
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_mass_small_arms_ammunition_production
+		name = generic_mio_trait_mass_small_arms_ammunition_production
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_standardized_secondary_armament
+
+		any_parent = { generic_mio_trait_standardized_secondary_armament }
+
+		limit_to_equipment_type = { armor support_equipment }
+		
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_plant_tech_exchange
+		name = generic_mio_trait_plant_tech_exchange
+		icon = GFX_generic_mio_department_icon_facilities
+		
+		position = { x=2 y=0 }
+		relative_position_id = generic_mio_trait_standardized_secondary_armament
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.06
+		}
+	}
+
+
+	trait = {
+		token = generic_mio_trait_24h_rotation_shifts
+		name = generic_mio_trait_24h_rotation_shifts
+		icon = GFX_generic_mio_trait_icon_production_capacity
+
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_plant_tech_exchange
+	
+		any_parent = { generic_mio_trait_plant_tech_exchange }
+
+		production_bonus = {
+			production_capacity_factor = 0.06
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_dual_plant_main_armament_production
+		name = generic_mio_trait_dual_plant_main_armament_production
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		position = { x=1 y=2 }
+		relative_position_id = generic_mio_trait_mass_small_arms_ammunition_production
+
+		all_parents = { generic_mio_trait_mass_small_arms_ammunition_production generic_mio_trait_24h_rotation_shifts }
+		
+		limit_to_equipment_type = { armor }
+
+		equipment_bonus = {
+			soft_attack = 0.05
+			reliability = -0.05
+		}
+		
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_long_distance_escort
+		name = generic_mio_trait_long_distance_escort
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+		
+		position = { x=2 y=0 }
+		relative_position_id = generic_mio_trait_plant_tech_exchange
+
+		limit_to_equipment_type = { train_equipment }
+
+		equipment_bonus = {
+			armor_value = 0.06
+			air_attack = 0.1
+		}
+	}
+
 	
 }
 
