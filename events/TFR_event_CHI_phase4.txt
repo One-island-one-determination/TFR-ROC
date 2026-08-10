@@ -1,5 +1,4 @@
 add_namespace = CHI.H4
-
 #######
 # HKY #
 #######
@@ -212,4 +211,113 @@ country_event = {
   }
 }
 
+# ================================
+# Tuvan Event Chain
+# ================================
 
+# CHI.H4.100: Tuva's old owner receives notification - starts border conflict
+# Fired on the OLD OWNER of Tuva (e.g. Russia) 14 days after ROC seizes state 329
+country_event = {
+  id = CHI.H4.100
+  title = CHI.H4.100.t
+  desc = CHI.H4.100.d
+  picture = GFX_CHI_event_taiwan_32
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.H4.100.a
+    # Start border conflict: old owner attacks Tuva to retake it
+    start_border_war = {
+      change_state_after_war = no
+      attacker = {
+        # Old owner attacks from their territory bordering Tuva
+        state = 575
+        num_provinces = 4
+      }
+      defender = {
+        # ROC defends Tuva
+        state = 329
+        num_provinces = 4
+        on_win = CHI.H4.101
+        on_lose = CHI.H4.102
+        on_cancel = CHI.H4.103
+      }
+    }
+  }
+}
+
+# CHI.H4.101: Taiwan wins the border conflict - Tuva is permanently secured
+country_event = {
+  id = CHI.H4.101
+  title = CHI.H4.101.t
+  desc = CHI.H4.101.d
+  picture = GFX_CHI_event_taiwan_32
+  is_triggered_only = yes
+
+  trigger = {
+  }
+
+  option = {
+    name = CHI.H4.101.a
+    hidden_effect = {
+      CHI = {
+        add_political_power = 50
+        add_stability = 0.05
+      }
+    }
+  }
+}
+
+# CHI.H4.102: Taiwan loses the border conflict - Tuva returned to original owner
+country_event = {
+  id = CHI.H4.102
+  title = CHI.H4.102.t
+  desc = CHI.H4.102.d
+  picture = GFX_CHI_event_taiwan_32
+  is_triggered_only = yes
+
+  trigger = {
+  }
+
+  option = {
+    name = CHI.H4.102.a
+    hidden_effect = {
+      CHI = {
+        add_stability = -0.1
+        add_political_power = -50
+      }
+      329 = { remove_core_of = CHI }
+      every_country = {
+        limit = { has_country_flag = CHI_tuva_taken_from_me }
+        transfer_state = 329
+        clr_country_flag = CHI_tuva_taken_from_me
+      }
+    }
+  }
+}
+
+# CHI.H4.103: Border conflict cancelled / draw
+country_event = {
+  id = CHI.H4.103
+  title = CHI.H4.103.t
+  desc = CHI.H4.103.d
+  picture = GFX_CHI_event_taiwan_32
+  is_triggered_only = yes
+
+  trigger = {
+  }
+
+  option = {
+    name = CHI.H4.103.a
+    hidden_effect = {
+      CHI = {
+        add_stability = -0.05
+        add_war_support = -0.05
+      }
+      every_country = {
+        limit = { has_country_flag = CHI_tuva_taken_from_me }
+        country_event = { id = CHI.H4.100 days = 30 }
+      }
+    }
+  }
+}
