@@ -35,12 +35,23 @@ country_event = {
   is_triggered_only = yes
   option = {
     name = CHI.BF.100.a
+    custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+    add_to_variable = { ROC_equipment_capture = 0.05 tooltip = equipment_capture_tooltip }
   }
   option = {
     name = CHI.BF.100.b
+    custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+    add_to_variable = { ROC_terrain_penalty_reduction = 0.15 tooltip = terrain_penalty_reduction_tooltip }
   }
   option = {
     name = CHI.BF.100.c
+    add_tech_bonus = {
+				name = CHI__panzer_research
+				#ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = armor
+			}
   }
 }
 #######
