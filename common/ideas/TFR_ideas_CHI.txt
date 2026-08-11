@@ -1720,6 +1720,33 @@ ideas = {
         farming_development_monthly = 0.005
       }
     }
+
+
+  #                 #
+  #------三階段------#
+  #                 #
+  #對外政治作戰局
+  CHI_external_political_warfare_bureau_idea = {
+    name = CHI_external_political_warfare_bureau_idea
+      picture = CHI_external_political_warfare_bureau_idea
+      removal_cost = -1
+
+      modifier = {
+        totalitarian_socialist_acceptance = 25
+        communist_acceptance = 25
+        libertarian_socialist_acceptance = 25
+        social_democrat_acceptance = 25
+        social_liberal_acceptance = 25
+        market_liberal_acceptance = 25
+        conservative_acceptance = 25
+        authoritarian_democrat_acceptance = 25
+        nationalist_acceptance = 25
+        fascist_acceptance = 25
+        national_socialist_acceptance = 25
+      }
+  }
+
+
   }
 
 
