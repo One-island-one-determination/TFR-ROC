@@ -883,9 +883,19 @@ country_event = {
         character = CHI_han_kuo_yu_char
         civilian = { large = "gfx/Leaders/CHI/CHI_han_kuo_yu_taiwan_win.png" }
       }
-      set_portraits = {
-        character = CHI_tsai_ing_wen_char
-        civilian = { large = "gfx/Leaders/CHI/CHI_tsai_ing_wen_taiwan_win.png" }
+      random_list = {
+        80 = {
+          set_portraits = {
+            character = CHI_tsai_ing_wen_char
+            civilian = { large = "gfx/Leaders/CHI/CHI_tsai_ing_wen_taiwan_win.png" }
+          }
+        }
+        20 = {
+          set_portraits = {
+            character = CHI_tsai_ing_wen_char
+            civilian = { large = "gfx/Leaders/CHI/CHI_tsai_ing_wen_taiwan_win_2.png" }
+          }
+        }
       }
     }
   }
