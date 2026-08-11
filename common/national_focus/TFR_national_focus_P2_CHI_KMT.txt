@@ -1578,6 +1578,11 @@ focus_tree = {
       unlock_decision_tooltip = CHI_invest_free_nations
       unlock_decision_tooltip = CHI_norway_state_visit
       unlock_decision_tooltip = CHI_eurasia_joint_rd
+      FIN = {
+        add_opinion_modifier = { target = ROOT modifier = CHI_outward_expansion_opinion_modifier }
+      }
+      add_opinion_modifier = { target = FIN modifier = CHI_outward_expansion_opinion_modifier }
+
     }
     relative_position_id = CHI_Break_Solar_Monopoly
   }
@@ -2359,6 +2364,7 @@ focus_tree = {
       focus = CHI_focus_on_polwar_core
     }
     relative_position_id = CHI_focus_on_polwar_core
+    completion_reward = { add_ideas = CHI_external_political_warfare_bureau_idea }
   }
   focus = {
     id = CHI_central_political_warfare_committee
