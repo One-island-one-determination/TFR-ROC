@@ -1,0 +1,46 @@
+	capital = 729
+
+	oob = "AAS_2020"
+
+	set_research_slots = 2
+	set_convoys = 5
+	set_stability = 0.3
+
+	set_country_flag = developed_country
+
+	set_variable = { Russian_Influence = 0.00 }
+	set_variable = { Chinese_Influence = 0.00 }
+	set_variable = { American_Influence = 0.0 }
+	set_variable = { European_Influence = 0.0 }
+	set_variable = { PDO_Influence = 0.90 }
+	set_variable = { Sovereign_Influence = 0.00 }
+
+	recruit_character = MCU_Government
+
+	set_technology = {
+		## Infantry ##
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		motorised_infantry = 1
+		support_weapons = 1
+		
+		## Support Companies ##
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		
+		## Industry ##
+	}
+
+	set_politics = {	
+		ruling_party = conservative
+		last_election = "2018.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+
+	set_popularities = {
+		conservative = 80
+		social_liberal = 15
+		nationalist = 5
+	}

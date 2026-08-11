@@ -321,3 +321,156 @@ country_event = {
     }
   }
 }
+
+
+country_event = {
+    id = CHI.H4.110
+    title = CHI.H4.110.t
+    desc = CHI.H4.110.d
+    picture = GFX_report_event_chinese_voting
+
+    is_triggered_only = yes
+
+    option = {
+        name = CHI.H4.110.a
+        hidden_effect = {
+            country_event = { id = CHI.H4.111 days = 3 }
+        }
+    }
+}
+
+country_event = {
+    id = CHI.H4.111
+    title = CHI.H4.111.t
+    desc = CHI.H4.111.d
+    picture = GFX_report_event_chinese_voting
+
+    is_triggered_only = yes
+
+    option = {
+        name = CHI.H4.111.a
+        
+        # Hong Kong (HKN - tag from main mod)
+        326 = {
+            add_core_of = HKN
+        }
+        release_puppet = HKN
+        
+        set_autonomy = {
+            target = HKN
+            autonomous_state = autonomy_puppet
+        }
+        
+        HKN = {
+            drop_cosmetic_tag = yes
+            remove_ideas = HKN_spirit_of_hk
+            add_ideas = {
+                # Government & Economy
+                ZZZ_capitalist_economy
+                ZZZ_parliamentary_republic
+
+                lower_trade
+                lower_taxes
+                lowest_interest_rates
+                lower_welfare
+                lower_safety
+
+                low_conscription
+                lower_female_service
+                lower_supervision
+                lower_training
+                lower_racial_integration
+                general_exemptions
+
+                lower_immigration
+                lower_education
+                lower_race
+                lower_female
+                lower_prison
+                medium_police
+
+                lower_academic
+                lower_farming
+                higher_poverty
+                lower_industry
+                lower_military
+                lower_society
+            }
+            create_country_leader = {
+                name = HKN_Government
+                picture = "gfx/leaders/HKN/Portrait_HKG_Gov.png"
+                ideology = supervised_democracy
+                expire = "1.1.1.1"
+                id = -1
+            }
+            set_politics = {
+                ruling_party = conservative
+                elections_allowed = yes
+            }
+            set_party_name = { ideology = conservative long_name = HKN_transitional_party name = HKN_transitional_party }
+        }
+        
+        # Macau (MCU - new tag from submod)
+        729 = {
+            add_core_of = MCU
+        }
+        release_puppet = MCU
+        
+        set_autonomy = {
+            target = MCU
+            autonomous_state = autonomy_puppet
+        }
+        
+        MCU = {
+            add_ideas = {
+                # Government & Economy
+                ZZZ_capitalist_economy
+                ZZZ_parliamentary_republic
+                
+                # Economic Laws
+                lower_trade
+                lower_taxes
+                lowest_interest_rates
+                lower_welfare
+                lower_safety
+                
+                # Manpower Laws
+                low_conscription
+                lower_female_service
+                lower_supervision
+                lower_training
+                lower_racial_integration
+                general_exemptions
+                
+                # Social Laws
+                lower_immigration
+                lower_education
+                lower_race
+                lower_female
+                lower_prison
+                medium_police
+                
+                # Development
+                lower_academic
+                lower_farming
+                higher_poverty
+                lower_industry
+                lower_military
+                lower_society
+            }
+            create_country_leader = {
+                name = MCU_Government
+                picture = "gfx/leaders/MCU/Portrait_MCU_Gov.png"
+                ideology = supervised_democracy
+                expire = "1.1.1.1"
+                id = -1
+            }
+            set_politics = {
+                ruling_party = conservative
+                elections_allowed = yes
+            }
+            set_party_name = { ideology = conservative long_name = MCU_transitional_party name = MCU_transitional_party }
+        }
+    }
+}
+

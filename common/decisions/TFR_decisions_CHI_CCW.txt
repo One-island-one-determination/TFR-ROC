@@ -1,28 +1,28 @@
 # ==============================================================================
-# 第三次戡亂戰爭／中國內戰（CCW）核心化與宣戰決議邏輯
+# 第三次戡亂戰爭／中國內戰（CCW）核心化與宣戰決議邏�?
 # ==============================================================================
-# 本檔案包含對中國各省份宣戰及核心化的決議。
+# 本檔案包含對中國各省份宣戰及核心化的決議�?
 # 
-# 幾乎每個省份/地區都有 4 個主要決議：
+# 幾乎每個省�?地區都有 4 個主要決議：
 # 
 # 1. ccw_declare_war_on_[省份]: 
-#    - 如果你未擁有該省份，允許你向該省份的持有者宣戰。
-#    - 戰爭目標類型通常為 `CHI_civil_war`。
+#    - 如果你未擁有該省份，允許你向該省份的持有者宣戰�?
+#    - 戰爭目標類型通常�?`CHI_civil_war`�?
 #
 # 2. ccw_core_[省份] (預設路徑): 
-#    - 需要國策 `CHI_regional_political_tutelage`。
-#    - 適用於「信任地方」與「中央監督」國策皆未完成的情況。
-#    - 成本: 50 政治點數 | 時間: 50 天
+#    - 需要國�?`CHI_regional_political_tutelage`�?
+#    - 適用於「信任地方」與「中央監督」國策皆未完成的情況�?
+#    - 成本: 50 政治點數 | 時間: 50 �?
 #
 # 3. ccw_core_[省份]_focus1 (地方分權路徑):
-#    - 需要國策 `CHI_trust_localities` (信任地方)。
-#    - 成本: 40 政治點數 | 時間: 100 天 (整合較慢)。
+#    - 需要國�?`CHI_trust_localities` (信任地方)�?
+#    - 成本: 40 政治點數 | 時間: 100 �?(整合較慢)�?
 #
 # 4. ccw_core_[省份]_focus2 (中央集權路徑):
-#    - 需要國策 `CHI_central_supervision_policy` (中央監督)。
-#    - 成本: 60 政治點數| 時間: 5 天 (幾乎瞬間整合)。
+#    - 需要國�?`CHI_central_supervision_policy` (中央監督)�?
+#    - 成本: 60 政治點數| 時間: 5 �?(幾乎瞬間整合)�?
 #
-# 注意：根據你在國策樹中選擇的政治路線，同一時間只會有其中一種核心化決議可見。
+# 注意：根據你在國策樹中選擇的政治路線，同一時間只會有其中一種核心化決議可見�?
 # ==============================================================================
 
 CHI_civilwar_category = {
@@ -2946,7 +2946,10 @@ CHI_civilwar_category = {
         check_variable = { CHI_ccw_dec_visible = 17 }
         is_ai = yes
       }
-      owns_state = 326
+      OR = {
+        owns_state = 326
+        326 = { owner = { is_subject_of = ROOT } }
+      }
     }
     on_map_mode = decision_view_only
     highlight_states = {
@@ -2962,9 +2965,8 @@ CHI_civilwar_category = {
     available = { hidden_trigger = { always = no } }
     visible = {
       check_variable = { CHI_ccw_dec_visible = 17 }
-      OR = {
-        NOT = { owns_state = 326 }
-      }
+      NOT = { owns_state = 326 }
+      NOT = { 326 = { owner = { is_subject_of = ROOT } } }
     }
     on_map_mode = decision_view_only
     highlight_states = {
@@ -3011,69 +3013,10 @@ CHI_civilwar_category = {
     }
   }
 
-  ccw_core_hongkong = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 17 }
-      has_completed_focus = CHI_regional_political_tutelage
-      NOT = { has_completed_focus = CHI_trust_localities }
-      NOT = { has_completed_focus = CHI_central_supervision_policy }
-    }
-    cost = 50
-    days_remove = 50
-    available = {
-      owns_state = 326
-      OR = {
-        326 = { NOT = { is_core_of = ROOT } }
-      }
-    }
-    remove_effect = {
-      326 = { add_core_of = ROOT }
-    }
-  }
 
 
-  ccw_core_hongkong_focus1 = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 17 }
-      has_completed_focus = CHI_trust_localities
-    }
-    cost = 40
-    days_remove = 100
-    available = {
-      owns_state = 326
-      OR = {
-        326 = { NOT = { is_core_of = ROOT } }
-      }
-    }
-    remove_effect = {
-      326 = { add_core_of = ROOT }
-    }
-  }
 
 
-  ccw_core_hongkong_focus2 = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 17 }
-      has_completed_focus = CHI_central_supervision_policy
-    }
-    cost = 60
-    days_remove = 5
-    available = {
-      owns_state = 326
-      OR = {
-        326 = { NOT = { is_core_of = ROOT } }
-      }
-    }
-    remove_effect = {
-      326 = { add_core_of = ROOT }
-    }
-  }
 
   ccw_macau_divider = {
     icon = GFX_CHI_fully_under_control_animated
@@ -3084,7 +3027,10 @@ CHI_civilwar_category = {
         check_variable = { CHI_ccw_dec_visible = 18 }
         is_ai = yes
       }
-      owns_state = 729
+      OR = {
+        owns_state = 729
+        729 = { owner = { is_subject_of = ROOT } }
+      }
     }
     on_map_mode = decision_view_only
     highlight_states = {
@@ -3100,9 +3046,8 @@ CHI_civilwar_category = {
     available = { hidden_trigger = { always = no } }
     visible = {
       check_variable = { CHI_ccw_dec_visible = 18 }
-      OR = {
-        NOT = { owns_state = 729 }
-      }
+      NOT = { owns_state = 729 }
+      NOT = { 729 = { owner = { is_subject_of = ROOT } } }
     }
     on_map_mode = decision_view_only
     highlight_states = {
@@ -3149,69 +3094,10 @@ CHI_civilwar_category = {
     }
   }
 
-  ccw_core_macau = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 18 }
-      has_completed_focus = CHI_regional_political_tutelage
-      NOT = { has_completed_focus = CHI_trust_localities }
-      NOT = { has_completed_focus = CHI_central_supervision_policy }
-    }
-    cost = 50
-    days_remove = 50
-    available = {
-      owns_state = 729
-      OR = {
-        729 = { NOT = { is_core_of = ROOT } }
-      }
-    }
-    remove_effect = {
-      729 = { add_core_of = ROOT }
-    }
-  }
 
 
-  ccw_core_macau_focus1 = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 18 }
-      has_completed_focus = CHI_trust_localities
-    }
-    cost = 40
-    days_remove = 100
-    available = {
-      owns_state = 729
-      OR = {
-        729 = { NOT = { is_core_of = ROOT } }
-      }
-    }
-    remove_effect = {
-      729 = { add_core_of = ROOT }
-    }
-  }
 
 
-  ccw_core_macau_focus2 = {
-    icon = generic_core_state
-    allowed = { original_tag = CHI }
-    visible = {
-      check_variable = { CHI_ccw_dec_visible = 18 }
-      has_completed_focus = CHI_central_supervision_policy
-    }
-    cost = 60
-    days_remove = 5
-    available = {
-      owns_state = 729
-      OR = {
-        729 = { NOT = { is_core_of = ROOT } }
-      }
-    }
-    remove_effect = {
-      729 = { add_core_of = ROOT }
-    }
-  }
 
   ccw_guangxi_divider = {
     icon = GFX_CHI_fully_under_control_animated
@@ -6774,4 +6660,26 @@ CHI_civilwar_category = {
   }
 
 
+
+  ccw_grant_hkmacau_autonomy = {
+    icon = generic_core_state
+    allowed = { original_tag = CHI }
+    visible = {
+      OR = {
+        check_variable = { CHI_ccw_dec_visible = 17 }
+        check_variable = { CHI_ccw_dec_visible = 18 }
+      }
+    }
+    cost = 50
+    days_remove = 50
+    available = {
+      owns_state = 326
+      owns_state = 729
+    }
+    remove_effect = {
+      country_event = { id = CHI.H4.110 }
+    }
+  }
+
 }
+

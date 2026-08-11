@@ -1,0 +1,33 @@
+characters = {
+  HKN_Government = {
+    name = HKN_Government
+    portraits = {
+      civilian = {
+        large = "gfx/leaders/HKN/Portrait_HKG_Gov.png"
+      }
+    }
+    country_leader = {
+      ideology = supervised_democracy
+      traits = { }
+      desc = HKN_Government_desc
+      expire = "1.1.1.1"
+      id = -1
+    }
+  }
+
+  MCU_Government = {
+    name = MCU_Government
+    portraits = {
+      civilian = {
+        large = "gfx/leaders/MCU/Portrait_MCU_Gov.png"
+      }
+    }
+    country_leader = {
+      ideology = supervised_democracy
+      traits = { }
+      desc = MCU_Government_desc
+      expire = "1.1.1.1"
+      id = -1
+    }
+  }
+}
