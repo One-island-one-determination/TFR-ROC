@@ -1,4 +1,4 @@
-﻿##infantry equipment##
+##infantry equipment##
 CHI_armaments_bureau_205_organization = { #Armaments Bureau 205th Arsenal
 	include = generic_TFR_UAV_equipment_organization
 	icon = GFX_mio_CHI_armaments_bureau_205
@@ -40,13 +40,11 @@ CHI_armaments_bureau_202_organization = { #Armaments Bureau 202nd Arsenal
 
 	equipment_type = {
 		armor
-		support_equipment
 		train_equipment		
 	}
 
 	research_categories = {
 		armor
-		support_tech
 		train_tech
 	}
 
@@ -109,7 +107,7 @@ CHI_armaments_bureau_202_organization = { #Armaments Bureau 202nd Arsenal
 		limit_to_equipment_type = { armor }
 
 		equipment_bonus = {
-			hardness = -0.06
+			default_moral = 0.03
 		}
 
 		production_bonus = {
@@ -176,7 +174,7 @@ CHI_armaments_bureau_202_organization = { #Armaments Bureau 202nd Arsenal
 	trait = {
 		token = generic_mio_trait_multi_plant_cooperation
 		name = generic_mio_trait_multi_plant_cooperation
-		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
+		icon = GFX_generic_mio_department_icon_facilities
 
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_heavy_duty_machine_tools
