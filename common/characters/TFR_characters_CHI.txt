@@ -1310,6 +1310,120 @@ characters = {
       id = -1
     }
   }
+  # 熊厚基
+  CHI_hsiung_hou_chi_char = {
+    portraits={
+      army={
+        small = "gfx/interface/ideas/CHI/advisors/CHI_hsiung_hou_chi.png"
+      }
+    }
+    advisor={
+      slot = air_chief
+      idea_token = CHI_hsiung_hou_chi_air_chief
+      ledger = air
+      allowed = { original_tag = CHI }
+      
+      traits = {
+        CHI_air_chief_first_harpoon_tester
+      }
+      cost = 150
+      ai_will_do = { factor = 1.000 }
+    }
+  }
+
+  # 劉任遠
+  CHI_liu_ren_yuan_char = {
+    portraits={
+        army={
+            small = "gfx/interface/ideas/CHI/advisors/CHI_liu_ren_yuan.png"
+        }
+    }
+    advisor={
+        slot = air_chief
+        idea_token = CHI_liu_ren_yuan_air_chief
+        ledger = air
+        allowed = { original_tag = CHI }
+        
+        traits = {
+            CHI_air_chief_senior_liaison_officer
+        }
+        cost = 150
+        ai_will_do = { factor = 1.000 }
+    }
+  }
+
+  # 黃志偉
+  CHI_huang_chi_wei_char = {
+    portraits={
+        army={
+            small = "gfx/interface/ideas/CHI/advisors/CHI_huang_chi_wei.png"
+        }
+    }
+    advisor={
+        slot = air_chief
+        idea_token = CHI_huang_chi_wei_air_chief
+        ledger = air
+        allowed = { original_tag = CHI }
+        
+        traits = {
+            CHI_air_chief_f16_seed_instructor_pilot
+        }
+        cost = 150
+        ai_will_do = { factor = 1.000 }
+    }
+  }
+
+  # 鄭榮豐
+  CHI_cheng_rong_feng_char = {
+    portraits={
+        army={
+            small = "gfx/interface/ideas/CHI/advisors/CHI_cheng_rong_feng.png"
+        }
+    }
+    advisor={
+        slot = air_chief
+        idea_token = CHI_cheng_rong_feng_air_chief
+        ledger = air
+        allowed = { original_tag = CHI }
+        
+        traits = {
+            CHI_air_chief_practical_staff_officer
+        }
+        cost = 150
+        ai_will_do = { factor = 1.000 }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #PHI civil war
   NDF_Nur_Misuari = {
     portraits = {
       civilian = {
@@ -1358,4 +1472,5 @@ characters = {
       id = -1
     }
   }
+
 }
