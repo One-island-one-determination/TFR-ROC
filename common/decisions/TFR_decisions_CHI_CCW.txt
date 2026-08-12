@@ -659,7 +659,10 @@ CHI_civilwar_category = {
       1228 = { add_core_of = ROOT }
       1429 = { add_core_of = ROOT }
       613 = { add_core_of = ROOT }
-      1222 = { add_core_of = ROOT }
+      1222 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Nanjing }
+      }
     }
   }
 
@@ -692,7 +695,10 @@ CHI_civilwar_category = {
       1228 = { add_core_of = ROOT }
       1429 = { add_core_of = ROOT }
       613 = { add_core_of = ROOT }
-      1222 = { add_core_of = ROOT }
+      1222 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Nanjing }
+      }
     }
   }
 
@@ -725,7 +731,10 @@ CHI_civilwar_category = {
       1228 = { add_core_of = ROOT }
       1429 = { add_core_of = ROOT }
       613 = { add_core_of = ROOT }
-      1222 = { add_core_of = ROOT }
+      1222 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Nanjing }
+      }
     }
   }
 
@@ -1639,7 +1648,10 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1201 = { add_core_of = ROOT }
-      622 = { add_core_of = ROOT }
+      622 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Xian }
+      }
       1200 = { add_core_of = ROOT }
     }
   }
@@ -1666,7 +1678,10 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1201 = { add_core_of = ROOT }
-      622 = { add_core_of = ROOT }
+      622 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Xian }
+      }
       1200 = { add_core_of = ROOT }
     }
   }
@@ -1693,7 +1708,10 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1201 = { add_core_of = ROOT }
-      622 = { add_core_of = ROOT }
+      622 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Xian }
+      }
       1200 = { add_core_of = ROOT }
     }
   }
@@ -2114,7 +2132,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1189 = { add_core_of = ROOT }
+      1189 = {
+        add_core_of = ROOT
+        remove_dynamic_modifier = { modifier = PRC_chongqing_city }
+        add_dynamic_modifier = { modifier = CHI_Chongqing }
+      }
     }
   }
 
@@ -2135,7 +2157,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1189 = { add_core_of = ROOT }
+      1189 = {
+        add_core_of = ROOT
+        remove_dynamic_modifier = { modifier = PRC_chongqing_city }
+        add_dynamic_modifier = { modifier = CHI_Chongqing }
+      }
     }
   }
 
@@ -2156,7 +2182,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1189 = { add_core_of = ROOT }
+      1189 = {
+        add_core_of = ROOT
+        remove_dynamic_modifier = { modifier = PRC_chongqing_city }
+        add_dynamic_modifier = { modifier = CHI_Chongqing }
+      }
     }
   }
 
@@ -2859,7 +2889,10 @@ CHI_civilwar_category = {
       1430 = { add_core_of = ROOT }
       1207 = { add_core_of = ROOT }
       1206 = { add_core_of = ROOT }
-      592 = { add_core_of = ROOT }
+      592 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Guangzhou }
+      }
       728 = { add_core_of = ROOT }
       1395 = { add_core_of = ROOT }
     }
@@ -2895,7 +2928,10 @@ CHI_civilwar_category = {
       1430 = { add_core_of = ROOT }
       1207 = { add_core_of = ROOT }
       1206 = { add_core_of = ROOT }
-      592 = { add_core_of = ROOT }
+      592 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Guangzhou }
+      }
       728 = { add_core_of = ROOT }
       1395 = { add_core_of = ROOT }
     }
@@ -2931,7 +2967,10 @@ CHI_civilwar_category = {
       1430 = { add_core_of = ROOT }
       1207 = { add_core_of = ROOT }
       1206 = { add_core_of = ROOT }
-      592 = { add_core_of = ROOT }
+      592 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Guangzhou }
+      }
       728 = { add_core_of = ROOT }
       1395 = { add_core_of = ROOT }
     }
@@ -6236,10 +6275,16 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1425 = { add_core_of = ROOT }
-      716 = { add_core_of = ROOT }
+      716 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Shenyang }
+      }
       1417 = { add_core_of = ROOT }
       1413 = { add_core_of = ROOT }
-      1394 = { add_core_of = ROOT }
+      1394 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Dalian }
+      }
     }
   }
 
@@ -6269,10 +6314,16 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1425 = { add_core_of = ROOT }
-      716 = { add_core_of = ROOT }
+      716 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Shenyang }
+      }
       1417 = { add_core_of = ROOT }
       1413 = { add_core_of = ROOT }
-      1394 = { add_core_of = ROOT }
+      1394 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Dalian }
+      }
     }
   }
 
@@ -6302,10 +6353,16 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1425 = { add_core_of = ROOT }
-      716 = { add_core_of = ROOT }
+      716 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Shenyang }
+      }
       1417 = { add_core_of = ROOT }
       1413 = { add_core_of = ROOT }
-      1394 = { add_core_of = ROOT }
+      1394 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Dalian }
+      }
     }
   }
 
@@ -6594,7 +6651,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1424 = { add_core_of = ROOT }
       714 = { add_core_of = ROOT }
-      717 = { add_core_of = ROOT }
+      717 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Harbin }
+      }
       1416 = { add_core_of = ROOT }
     }
   }
@@ -6624,7 +6684,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1424 = { add_core_of = ROOT }
       714 = { add_core_of = ROOT }
-      717 = { add_core_of = ROOT }
+      717 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Harbin }
+      }
       1416 = { add_core_of = ROOT }
     }
   }
@@ -6654,7 +6717,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1424 = { add_core_of = ROOT }
       714 = { add_core_of = ROOT }
-      717 = { add_core_of = ROOT }
+      717 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Harbin }
+      }
       1416 = { add_core_of = ROOT }
     }
   }
