@@ -4191,7 +4191,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1212 = { add_core_of = ROOT }
       620 = { add_core_of = ROOT }
-      1211 = { add_core_of = ROOT }
+      1211 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Wuhan }
+      }
     }
   }
 
@@ -4218,7 +4221,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1212 = { add_core_of = ROOT }
       620 = { add_core_of = ROOT }
-      1211 = { add_core_of = ROOT }
+      1211 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Wuhan }
+      }
     }
   }
 
@@ -4245,7 +4251,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1212 = { add_core_of = ROOT }
       620 = { add_core_of = ROOT }
-      1211 = { add_core_of = ROOT }
+      1211 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Wuhan }
+      }
     }
   }
 
