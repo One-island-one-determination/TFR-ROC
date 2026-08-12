@@ -1,8 +1,8 @@
-# 地標
+﻿# 地標
 CHI_gaoxiong = {
   icon = GFX_modifiers_CHI_gaoxiong
   enable = {
-    tag = CHI
+    is_owned_by = CHI
   }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
@@ -13,7 +13,7 @@ CHI_gaoxiong = {
 CHI_gaoxiong2 = {
   icon = GFX_modifiers_CHI_gaoxiong
   enable = {
-    tag = CHI
+    is_owned_by = CHI
   }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
@@ -24,7 +24,7 @@ CHI_gaoxiong2 = {
 CHI_taibei = {
   icon = GFX_modifiers_CHI_taibei
   enable = {
-    tag = CHI
+    is_owned_by = CHI
   }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
@@ -35,7 +35,7 @@ CHI_taibei = {
 CHI_taizhong = {
   icon = GFX_modifiers_CHI_taizhong
   enable = {
-    tag = CHI
+    is_owned_by = CHI
   }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
@@ -46,14 +46,14 @@ CHI_taizhong = {
 CHI_Taiwan_Province = {
   icon = GFX_modifiers_CHI_Taiwan_Province
   enable = {
-    tag = CHI
+    is_owned_by = CHI
   }
   local_building_slots_factor = 0.05
 }
 CHI_Fujian_Province = {
   icon = GFX_modifiers_CHI_Fujian_Province
   enable = {
-    tag = CHI
+    is_owned_by = CHI
   }
   army_core_defence_factor = 0.1
   state_production_speed_coastal_bunker_factor = 0.15
@@ -61,7 +61,7 @@ CHI_Fujian_Province = {
 CHI_Hainan_Province = {
   icon = GFX_modifiers_CHI_Hainan_Province
   enable = {
-    tag = CHI
+    is_owned_by = CHI
   }
   local_resources_factor = 0.05
   state_production_speed_coastal_bunker_factor = 0.15
@@ -69,7 +69,7 @@ CHI_Hainan_Province = {
 CHI_Qingdao_City = {
   icon = GFX_modifiers_CHI_Qingdao_City
   enable = {
-    tag = CHI
+    is_owned_by = CHI
   }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
@@ -80,7 +80,7 @@ CHI_Qingdao_City = {
 
 CHI_Chongqing = {
   icon = GFX_modifiers_CHI_Chongqing
-  enable = { tag = CHI }
+  enable = { is_owned_by = CHI }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
   local_supplies = 0.05
@@ -90,7 +90,7 @@ CHI_Chongqing = {
 
 CHI_Dalian = {
   icon = GFX_modifiers_CHI_Dalian
-  enable = { tag = CHI }
+  enable = { is_owned_by = CHI }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
   local_supplies = 0.05
@@ -100,7 +100,7 @@ CHI_Dalian = {
 
 CHI_Guangzhou = {
   icon = GFX_modifiers_CHI_Guangzhou
-  enable = { tag = CHI }
+  enable = { is_owned_by = CHI }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
   local_supplies = 0.05
@@ -110,7 +110,7 @@ CHI_Guangzhou = {
 
 CHI_Harbin = {
   icon = GFX_modifiers_CHI_Harbin
-  enable = { tag = CHI }
+  enable = { is_owned_by = CHI }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
   local_supplies = 0.05
@@ -120,7 +120,7 @@ CHI_Harbin = {
 
 CHI_Nanjing = {
   icon = GFX_modifiers_CHI_Nanjing
-  enable = { tag = CHI }
+  enable = { is_owned_by = CHI }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
   local_supplies = 0.05
@@ -130,7 +130,7 @@ CHI_Nanjing = {
 
 CHI_Shenyang = {
   icon = GFX_modifiers_CHI_Shenyang
-  enable = { tag = CHI }
+  enable = { is_owned_by = CHI }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
   local_supplies = 0.05
@@ -140,7 +140,7 @@ CHI_Shenyang = {
 
 CHI_Xian = {
   icon = GFX_modifiers_CHI_Xian
-  enable = { tag = CHI }
+  enable = { is_owned_by = CHI }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
   local_supplies = 0.05
@@ -150,7 +150,7 @@ CHI_Xian = {
 
 CHI_Wuhan = {
   icon = GFX_modifiers_CHI_Wuhan
-  enable = { tag = CHI }
+  enable = { is_owned_by = CHI }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
   local_supplies = 0.05
@@ -160,7 +160,7 @@ CHI_Wuhan = {
 
 CHI_Beijing = {
   icon = GFX_modifiers_CHI_Beijing
-  enable = { tag = CHI }
+  enable = { is_owned_by = CHI }
   state_production_speed_buildings_factor = 0.04
   local_building_slots = 4
   local_supplies = 0.05
