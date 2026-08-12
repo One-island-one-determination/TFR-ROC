@@ -1454,7 +1454,7 @@ scripted_gui = {
 
             ccw_hongkong_3_visible = {
                 AND = {
-                    326 = { is_core_of = CHI }
+                    OR = { 326 = { is_core_of = CHI } 326 = { is_core_of = HKN } }
                     OR = {
                         326 = { is_controlled_by = CHI }
                         326 = { is_controlled_by = HKN }
@@ -1466,7 +1466,7 @@ scripted_gui = {
 
             ccw_hongkong_s_3_visible = {
                 AND = {
-                    326 = { is_core_of = CHI }
+                    OR = { 326 = { is_core_of = CHI } 326 = { is_core_of = HKN } }
                     OR = {
                         326 = { is_controlled_by = CHI }
                         326 = { is_controlled_by = HKN }
@@ -1478,7 +1478,7 @@ scripted_gui = {
 
             ccw_macau_3_visible = {
                 AND = {
-                    729 = { is_core_of = CHI }
+                    OR = { 729 = { is_core_of = CHI } 729 = { is_core_of = MCU } }
                     OR = {
                         729 = { is_controlled_by = CHI }
                         729 = { is_controlled_by = MCU }
@@ -1488,7 +1488,7 @@ scripted_gui = {
 
             ccw_macau_s_3_visible = {
                 AND = {
-                    729 = { is_core_of = CHI }
+                    OR = { 729 = { is_core_of = CHI } 729 = { is_core_of = MCU } }
                     OR = {
                         729 = { is_controlled_by = CHI }
                         729 = { is_controlled_by = MCU }

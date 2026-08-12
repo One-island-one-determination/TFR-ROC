@@ -1,28 +1,28 @@
 # ==============================================================================
-# 第三次戡亂戰爭／中國內戰（CCW）核心化與宣戰決議邏�?
+# 第三次戡亂戰爭／中國內戰（CCW）核心化與宣戰決議邏�?
 # ==============================================================================
-# 本檔案包含對中國各省份宣戰及核心化的決議�?
+# 本檔案包含對中國各省份宣戰及核心化的決議�?
 # 
-# 幾乎每個省�?地區都有 4 個主要決議：
+# 幾乎每個省�?地區都有 4 個主要決議：
 # 
 # 1. ccw_declare_war_on_[省份]: 
-#    - 如果你未擁有該省份，允許你向該省份的持有者宣戰�?
-#    - 戰爭目標類型通常�?`CHI_civil_war`�?
+#    - 如果你未擁有該省份，允許你向該省份的持有者宣戰�?
+#    - 戰爭目標類型通常�?`CHI_civil_war`�?
 #
 # 2. ccw_core_[省份] (預設路徑): 
-#    - 需要國�?`CHI_regional_political_tutelage`�?
-#    - 適用於「信任地方」與「中央監督」國策皆未完成的情況�?
-#    - 成本: 50 政治點數 | 時間: 50 �?
+#    - 需要國�?`CHI_regional_political_tutelage`�?
+#    - 適用於「信任地方」與「中央監督」國策皆未完成的情況�?
+#    - 成本: 50 政治點數 | 時間: 50 �?
 #
 # 3. ccw_core_[省份]_focus1 (地方分權路徑):
-#    - 需要國�?`CHI_trust_localities` (信任地方)�?
-#    - 成本: 40 政治點數 | 時間: 100 �?(整合較慢)�?
+#    - 需要國�?`CHI_trust_localities` (信任地方)�?
+#    - 成本: 40 政治點數 | 時間: 100 �?(整合較慢)�?
 #
 # 4. ccw_core_[省份]_focus2 (中央集權路徑):
-#    - 需要國�?`CHI_central_supervision_policy` (中央監督)�?
-#    - 成本: 60 政治點數| 時間: 5 �?(幾乎瞬間整合)�?
+#    - 需要國�?`CHI_central_supervision_policy` (中央監督)�?
+#    - 成本: 60 政治點數| 時間: 5 �?(幾乎瞬間整合)�?
 #
-# 注意：根據你在國策樹中選擇的政治路線，同一時間只會有其中一種核心化決議可見�?
+# 注意：根據你在國策樹中選擇的政治路線，同一時間只會有其中一種核心化決議可見�?
 # ==============================================================================
 
 CHI_civilwar_category = {
@@ -485,7 +485,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      608 = { add_core_of = ROOT }
+      608 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Beijing }
+        remove_dynamic_modifier = { modifier = PRC_beijing_city }
+      }
     }
   }
 
@@ -506,7 +510,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      608 = { add_core_of = ROOT }
+      608 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Beijing }
+        remove_dynamic_modifier = { modifier = PRC_beijing_city }
+      }
     }
   }
 
@@ -527,7 +535,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      608 = { add_core_of = ROOT }
+      608 = {
+        add_core_of = ROOT
+        add_dynamic_modifier = { modifier = CHI_Beijing }
+        remove_dynamic_modifier = { modifier = PRC_beijing_city }
+      }
     }
   }
 
