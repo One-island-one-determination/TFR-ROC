@@ -177,6 +177,18 @@ CHI_Beiping = {
   local_manpower = 0.03
   mobilization_speed = 0.05
 }
+##GAW
+CHI_asia_pacific_armament = {
+  icon = GFX_modifiers_CHI_CHI_asia_pacific_armament
+  enable = {
+    tag = CHI
+  }
+  army_morale_factor = 0.05
+  org_loss_when_moving = 0.1
+  army_speed_factor = 0.05
+  attrition = -0.1
+  supply_consumption_factor = -0.1
+}
 
 ## 正面Buff
 # 中共滲透
@@ -576,7 +588,13 @@ CHI_population_aging_dynamic = {
     tag = CHI
   }
 
-  monthly_population = population_aging_monthly_population
+  monthly_population = PA_monthly_population
+  expense_growth_factor = PA_expense_growth_factor
+  personal_value_factor = PA_personal_value_factor
+  personal_expense_factor = PA_personal_expense_factor
+  inflation_monthly = PA_inflation_monthly
+  society_development_monthly = PA_society_development_monthly
+  poverty_development_monthly = PA_poverty_development_monthly
 }
 # 外匯危機
 financial_crisis_dynamic = {

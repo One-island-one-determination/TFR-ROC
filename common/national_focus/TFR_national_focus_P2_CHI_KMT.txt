@@ -2713,6 +2713,19 @@ focus_tree = {
     relative_position_id = CHI_changbai_foothills
   }
   focus = {
+    id = CHI_the_great_wall_war
+    x = 0
+    y = 1
+    cost = 0
+    icon = GFX_focus_CHI_the_great_wall_war
+    continue_if_invalid = no
+    cancel_if_invalid = yes
+    prerequisite = {
+      focus = CHI_under_yinshan
+    }
+    relative_position_id = CHI_under_yinshan
+  }
+  focus = {
     id = CHI_waves_of_nujiang
     x = -1
     y = 1
