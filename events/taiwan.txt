@@ -35,9 +35,6 @@ country_event = {
 
   immediate = {
     hidden_effect = {
-      PRC = {
-        load_oob = "The_PRC_Marine_Corps_tainan"
-      }
     }
   }
   option = {
@@ -256,9 +253,6 @@ country_event = {
 
   immediate = {
     hidden_effect = {
-      PRC = {
-        load_oob = "The_PRC_Marine_Corps_taizhong"
-      }
     }
   }
   option = {
@@ -293,9 +287,6 @@ country_event = {
 
   immediate = {
     hidden_effect = {
-      PRC = {
-        load_oob = "The_PRC_Marine_Corps_taidong"
-      }
       country_event = {
         id = ROC_CHI.13
         days = 5
@@ -344,9 +335,6 @@ country_event = {
 
   immediate = {
     hidden_effect = {
-      PRC = {
-        load_oob = "The_PRC_Marine_Corps_taibei"
-      }
       country_event = {
         id = ROC_CHI.16
         days = 3
@@ -526,15 +514,6 @@ country_event = {
 
   immediate = {
     hidden_effect = {
-      PRC = {
-        load_oob = "The_PRC_Marine_Corps_taibei"
-      }
-      PRC = {
-        load_oob = "The_PRC_Marine_Corps_taizhong"
-      }
-      PRC = {
-        load_oob = "The_PRC_Marine_Corps_tainan"
-      }
       damage_units = {
         state = 1148
         damage = 0.15
