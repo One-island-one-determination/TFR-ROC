@@ -62,6 +62,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Eliminate_communist_traitors
     continue_if_invalid = no
     cancel_if_invalid = yes
+    available = {always = no}
     mutually_exclusive = {
       focus = CHI_Preserving_diverse_voices
     }
@@ -69,13 +70,14 @@ focus_tree = {
       focus = CHI_Self_sutureing_trauma
     }
     completion_reward = {
-      country_event = {
-        id = CHI.102
-      }
-      add_ideas = {
-        civilian_economy
-        volunteer_only
-      }
+      # country_event = {
+      #   id = CHI.102
+      # }
+      # add_ideas = {
+      #   civilian_economy
+      #   volunteer_only
+      # }
+      custom_effect_tooltip = unfinished_content
     }
   }
   focus = {
@@ -134,11 +136,15 @@ focus_tree = {
     icon = GFX_focus_CHI_Restart_Temporary_Provisions
     continue_if_invalid = no
     cancel_if_invalid = yes
+    available = {always = no}
     mutually_exclusive = {
       focus = CHI_Lifting_martial_law
     }
     prerequisite = {
       focus = CHI_Eliminate_communist_traitors
+    }
+    completion_reward = {
+      custom_effect_tooltip = unfinished_content
     }
   }
   focus = {
