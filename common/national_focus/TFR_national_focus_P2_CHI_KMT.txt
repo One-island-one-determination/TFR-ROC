@@ -101,7 +101,7 @@ focus_tree = {
     prerequisite = {
       focus = CHI_Eleplant_in_room
     }
-    available = { NOT = { has_idea = CHI_diplomatic_truce} }
+    available = { NOT = { has_idea = CHI_political_truce} }
     completion_reward = {
       1148 = {
         add_dynamic_modifier = {
@@ -134,7 +134,7 @@ focus_tree = {
         }
       }
       add_timed_idea = {
-        idea = CHI_diplomatic_truce
+        idea = CHI_political_truce
         days = 200
       }
     }
@@ -198,7 +198,7 @@ focus_tree = {
     cancel_if_invalid = yes
     available = {
       has_completed_focus = CHI_one_day_tea_party
-      NOT = { has_idea = CHI_diplomatic_truce}
+      NOT = { has_idea = CHI_political_truce}
     }
     prerequisite = {
       focus = CHI_Eleplant_in_room
@@ -208,7 +208,7 @@ focus_tree = {
         id = CHI.H2.181
       }
       add_timed_idea = {
-        idea = CHI_diplomatic_truce
+        idea = CHI_political_truce
         days = 200
       }
     }
@@ -269,7 +269,7 @@ focus_tree = {
     available = {
       has_completed_focus = CHI_reestablish_special_investigation_division
       conservative > 0.4
-      NOT = { has_idea = CHI_diplomatic_truce}
+      NOT = { has_idea = CHI_political_truce}
     }
     prerequisite = {
       focus = CHI_Eleplant_in_room
@@ -279,7 +279,7 @@ focus_tree = {
         id = CHI.H2.151
       }
       add_timed_idea = {
-        idea = CHI_diplomatic_truce
+        idea = CHI_political_truce
         days = 200
       }
     }
@@ -344,10 +344,10 @@ focus_tree = {
     prerequisite = {
       focus = CHI_Eleplant_in_room
     }
-    available = { NOT = { has_idea = CHI_diplomatic_truce} }
+    available = { NOT = { has_idea = CHI_political_truce} }
     complete_effect = {
       add_timed_idea = {
-        idea = CHI_diplomatic_truce
+        idea = CHI_political_truce
         days = 200
       }
     }
@@ -404,14 +404,14 @@ focus_tree = {
     icon = GFX_focus_CHI_low_fertility_rate
     continue_if_invalid = no
     cancel_if_invalid = yes
-    available = { NOT = { has_idea = CHI_diplomatic_truce} }
+    available = { NOT = { has_idea = CHI_political_truce} }
     prerequisite = {
       focus = CHI_Eleplant_in_room
     }
     relative_position_id = CHI_Eleplant_in_room
     completion_reward = {
       add_timed_idea = {
-        idea = CHI_diplomatic_truce
+        idea = CHI_political_truce
         days = 200
       }
     }
@@ -1239,6 +1239,7 @@ focus_tree = {
         value = -0.15
         tooltip = conversion_cost_civ_to_mil_factor_tooltip
       }
+      add_ideas = CHI_Civil_Military_Supply_Chain_idea
     }
     relative_position_id = CHI_Way_Of_Can_To_Asia
   }
@@ -2347,6 +2348,7 @@ focus_tree = {
         ROC_air_mission_efficiency = 0.05
         tooltip = air_mission_efficiency_tooltip
       }
+      add_ideas = CHI_Air_force_special_allowance_idea
     }
     relative_position_id = CHI_funds_college
   }
@@ -2394,7 +2396,7 @@ focus_tree = {
     id = CHI_march_into_the_waves
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_march_into_the_waves
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2407,7 +2409,7 @@ focus_tree = {
     id = CHI_duty_of_the_helmsman
     x = 29
     y = 10
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_duty_of_the_helmsman
     allow_branch = {
       has_country_flag = HKY_2028_flg
@@ -2419,7 +2421,7 @@ focus_tree = {
     id = CHI_focus_on_polwar_core
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_focus_on_polwar_core
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2443,7 +2445,7 @@ focus_tree = {
     id = CHI_external_political_warfare_bureau
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_external_political_warfare_bureau
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2457,7 +2459,7 @@ focus_tree = {
     id = CHI_central_political_warfare_committee
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_central_political_warfare_committee
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2470,7 +2472,7 @@ focus_tree = {
     id = CHI_mainland_peoples_liaison
     x = -2
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_mainland_peoples_liaison
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2483,7 +2485,7 @@ focus_tree = {
     id = CHI_welcome_home_children
     x = 2
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_welcome_home_children
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2496,7 +2498,7 @@ focus_tree = {
     id = CHI_expand_the_defense_line
     x = 2
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_expand_the_defense_line
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2507,12 +2509,19 @@ focus_tree = {
       focus = CHI_welcome_home_children
     }
     relative_position_id = CHI_central_political_warfare_committee
+    completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      add_to_variable = {
+        ROC_army_non_core_defence_factor = 0.1
+        tooltip = army_non_core_defence_factor_tooltip
+      }
+    }
   }
   focus = {
     id = CHI_the_giant_returns
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_the_giant_returns
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2520,12 +2529,19 @@ focus_tree = {
       focus = CHI_central_political_warfare_committee
     }
     relative_position_id = CHI_central_political_warfare_committee
+    completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      add_to_variable = {
+        ROC_conscription_factor = 0.1
+        tooltip = conscription_factor_tooltip
+      }
+    }
   }
   focus = {
     id = CHI_pacific_military_exercise
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_pacific_military_exercise
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2533,12 +2549,20 @@ focus_tree = {
       focus = CHI_expand_the_defense_line
     }
     relative_position_id = CHI_expand_the_defense_line
+    completion_reward = {
+      every_country = {
+        limit = {
+          is_in_faction_with = ROOT
+        }
+        navy_experience = 15
+      }
+    }
   }
   focus = {
     id = CHI_underground_assenmly_point
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_underground_assenmly_point
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2548,13 +2572,14 @@ focus_tree = {
     relative_position_id = CHI_the_giant_returns
     completion_reward = {
       country_event = { id = CHI.H3.12 }
+      custom_effect_tooltip = { CHI_underground_assenmly_point_tooltip }
     }
   }
   focus = {
     id = CHI_thus_spoke_thucydides
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_thus_spoke_thucydides
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2568,6 +2593,7 @@ focus_tree = {
       unlock_decision_category_tooltip = CHI_GAW_situation_category
       hidden_effect = {
         set_cosmetic_tag = CHI_UNITED
+        add_timed_idea = { idea = CHI_underground_assenmly_point_idea days = 30} 
       }
     }
     relative_position_id = CHI_underground_assenmly_point
@@ -2576,7 +2602,7 @@ focus_tree = {
     id = CHI_eastern_terrain_mapping
     x = -3
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_eastern_terrain_mapping
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2592,7 +2618,7 @@ focus_tree = {
     id = CHI_coverage_priority_tactics
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_coverage_priority_tactics
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2605,7 +2631,7 @@ focus_tree = {
     id = CHI_surpass_overlord
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_surpass_overlord
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2618,7 +2644,7 @@ focus_tree = {
     id = CHI_northern_joint_command
     x = -1
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_northern_joint_command
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2634,7 +2660,7 @@ focus_tree = {
     id = CHI_the_hunter
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_the_hunter
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2647,7 +2673,7 @@ focus_tree = {
     id = CHI_operation_peak_leaper
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_operation_peak_leaper
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2660,7 +2686,7 @@ focus_tree = {
     id = CHI_asia_pacific_armament
     x = 4
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_asia_pacific_armament
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2672,12 +2698,26 @@ focus_tree = {
       focus = CHI_thus_spoke_thucydides
     }
     relative_position_id = CHI_thus_spoke_thucydides
+    completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_coordination_bonus  = 0.1 tooltip = coordination_bonus_tooltip }
+      add_to_variable = { ROC_army_breakthrough_against_minor_factor  = 0.15 tooltip = army_breakthrough_against_minor_factor_tooltip_150 }
+      add_to_variable = { ROC_land_night_attack  = 0.15 tooltip = land_night_attack_tooltip_200 }
+      add_to_variable = { ROC_org_loss_at_low_org_factor  = 0.1 tooltip = org_loss_at_low_org_factor_tooltip_70 }
+      add_to_variable = { ROC_planning_speed  = 0.15 tooltip = planning_speed_tooltip_15 }
+      hidden_effect = {
+        country_event = {id = CHI.H3.101 days = 150}
+        country_event = {id = CHI.H3.102 days = 200}
+        country_event = {id = CHI.H3.103 days = 70}
+        country_event = {id = CHI.H3.104 days = 15}
+      }
+    }
   }
   focus = {
     id = CHI_rekindle_confidence
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_rekindle_confidence
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2685,12 +2725,25 @@ focus_tree = {
       focus = CHI_asia_pacific_armament
     }
     relative_position_id = CHI_asia_pacific_armament
+    completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_air_close_air_support_org_damage_factor  = 0.1 tooltip = air_close_air_support_org_damage_factor_tooltip }
+      add_to_variable = { ROC_air_nav_efficiency  = 0.05 tooltip = air_nav_efficiency_tooltip }
+      add_to_variable = { ROC_air_superiority_bonus_in_combat  = 0.15 tooltip = air_superiority_bonus_in_combat_tooltip }
+
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_planning_speed  = 0.1 tooltip = planning_speed_tooltip }
+
+      custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_naval_morale_factor  = 0.1 tooltip = naval_morale_factor_tooltip }
+      
+    }
   }
   focus = {
     id = CHI_changbai_foothills
     x = -3
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_changbai_foothills
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2698,12 +2751,28 @@ focus_tree = {
       focus = CHI_rekindle_confidence
     }
     relative_position_id = CHI_rekindle_confidence
+    completion_reward = {
+      1424 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      714 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      717 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1416 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1415 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1414 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1417 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1413 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1167 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      715 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      328 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      716 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1394 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1425 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+    }
   }
   focus = {
     id = CHI_under_yinshan
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_under_yinshan
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2711,12 +2780,18 @@ focus_tree = {
       focus = CHI_changbai_foothills
     }
     relative_position_id = CHI_changbai_foothills
+    completion_reward = {
+      612 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1202 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1166 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      621 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+    }
   }
   focus = {
     id = CHI_the_great_wall_war
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_the_great_wall_war
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2724,12 +2799,41 @@ focus_tree = {
       focus = CHI_under_yinshan
     }
     relative_position_id = CHI_under_yinshan
+    completion_reward = {
+      609 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      610 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      611 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      608 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1157 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1233 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1154 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1421 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1232 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1426 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      597 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1427 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1393 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1229 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1420 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      615 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      614 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1231 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1194 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      607 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1230 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1224 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1225 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1226 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1201 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      622 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1200 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}          
+    }
   }
   focus = {
     id = CHI_waves_of_nujiang
     x = -1
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_waves_of_nujiang
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2737,12 +2841,24 @@ focus_tree = {
       focus = CHI_rekindle_confidence
     }
     relative_position_id = CHI_rekindle_confidence
+    completion_reward = {
+      1196 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
+      1192 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
+      1195 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
+      325 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
+      601 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
+      1168 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
+      1190 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
+      605 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
+      1188 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
+      1189 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}      
+    }
   }
   focus = {
     id = CHI_among_the_mountains
     x = 1
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_among_the_mountains
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2750,12 +2866,21 @@ focus_tree = {
       focus = CHI_rekindle_confidence
     }
     relative_position_id = CHI_rekindle_confidence
+    completion_reward = {
+      1155 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      322 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1153 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1156 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1152 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1186 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      604 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+    }
   }
   focus = {
     id = CHI_land_of_abundance
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_land_of_abundance
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2763,12 +2888,24 @@ focus_tree = {
       focus = CHI_waves_of_nujiang
     }
     relative_position_id = CHI_waves_of_nujiang
+    completion_reward = {
+      1196 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1192 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1195 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      325 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      601 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1168 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1190 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      605 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1188 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1189 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}      
+    }
   }
   focus = {
     id = CHI_jiangnan_mist_and_rain
     x = 3
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_jiangnan_mist_and_rain
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2776,12 +2913,43 @@ focus_tree = {
       focus = CHI_rekindle_confidence
     }
     relative_position_id = CHI_rekindle_confidence
+    completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_invasion_preparation  = -0.3 tooltip = invasion_preparation_tooltip_300 }
+      add_to_variable = { ROC_naval_invasion_penalty  = -0.1 tooltip = naval_invasion_penalty_tooltip_300 }
+      
+      hidden_effect = {
+        country_event = {id = CHI.H3.105 days = 300}
+      }
+
+      1217 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      595 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1218 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1216 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1431 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1430 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1207 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1206 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      592 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      728 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1395 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      599 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1191 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      593 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      594 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1203 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1204 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1205 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      591 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      326 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      729 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+    }
   }
   focus = {
     id = CHI_gather_at_yangtze
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_gather_at_yangtze
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2789,12 +2957,36 @@ focus_tree = {
       focus = CHI_jiangnan_mist_and_rain
     }
     relative_position_id = CHI_jiangnan_mist_and_rain
+    completion_reward = {
+      1220 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1159 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1219 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      596 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1223 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      606 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1221 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1212 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      620 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1211 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      602 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1208 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1209 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1227 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1428 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1214 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1213 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      600 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1210 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      603 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1197 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1215 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+    }
   }
   focus = {
     id = CHI_land_of_milk_and_jujube
     x = 0
     y = 1
-    cost = 0
+    cost = 3
     icon = GFX_focus_CHI_land_of_milk_and_jujube
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -2802,6 +2994,25 @@ focus_tree = {
       focus = CHI_among_the_mountains
     }
     relative_position_id = CHI_among_the_mountains
+    completion_reward = {
+      1158 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1160 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1161 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1162 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1163 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1164 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1165 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      617 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      618 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      619 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      287 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1198 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1193 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      616 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      283 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1199 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1187 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+    }
   }
   #}
 }
