@@ -1663,8 +1663,8 @@ ideas = {
     }
 
     ##政治休兵
-    CHI_diplomatic_truce = {
-      name = CHI_diplomatic_truce
+    CHI_political_truce = {
+      name = CHI_political_truce
       removal_cost = -1
       modifier = {
         political_power_gain = 0.05
@@ -1722,17 +1722,7 @@ ideas = {
       }
     }
 
-    CHI_Pacific_Trade_Zone_idea = {
-      name = CHI_Pacific_Trade_Zone_idea
-      picture = CHI_Pacific_Trade_Zone_idea
-      removal_cost = -1
-
-      modifier = {
-        income_growth_factor = 0.05
-        personal_value_factor = 0.05
-        business_value_factor = 0.1
-      }
-    }
+    
 
 
   #                 #
@@ -1769,8 +1759,9 @@ ideas = {
 
 
 
-  ##CHI_Economy research_bonus and equipment_bonus
+  ##hidden_ideas, generally be research_bonus and equipment_bonus
   hidden_ideas = {
+    #-----------hidden idea CHI_Economy start--------------#{
     CHI_Economy_hidden_armor_research_bonus = {
       name = CHI_Economy_hidden
       picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
@@ -1869,7 +1860,60 @@ ideas = {
 
 
 
-  #-----------hidden idea end--------------#
+  #-----------hidden idea CHI_Economy end--------------#}
+
+  CHI_Civil_Military_Supply_Chain_idea = {
+      name = CHI_Civil_Military_Supply_Chain
+      equipment_bonus = {
+        infantry_equipment = {
+          instant = yes
+          build_cost_ic = -0.05
+        }
+        support_equipment = {
+          instant = yes
+          build_cost_ic = -0.05
+        }
+      }
+    }
+  CHI_project_CM13_idea = {
+    name = CHI_project_CM13
+    equipment_bonus = {
+      armor = {
+        instant = yes
+        soft_attack = 0.05
+        reliability = 0.05
+      }
+    }
+  }
+  CHI_Air_force_special_allowance_idea = {
+    name = CHI_Air_force_special_allowance
+    equipment_bonus = {
+      small_plane_airframe = {
+        reliability = 0.05
+      }
+    }
+
+  }
+  CHI_Pacific_Trade_Zone_idea = {
+    name = CHI_Pacific_Trade_Zone
+    modifier = {
+      income_growth_factor = 0.05
+      personal_value_factor = 0.05
+      business_value_factor = 0.1
+    }
+  }
+  CHI_underground_assenmly_point_idea = {
+    name = CHI_underground_assenmly_point
+    modifier = {
+      industry_air_damage_factor = -0.75
+    }
+  }
+
+
+
+
+
+
   }
 
 

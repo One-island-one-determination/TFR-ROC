@@ -179,7 +179,7 @@ CHI_Beiping = {
 }
 ##GAW
 CHI_asia_pacific_armament = {
-  icon = GFX_modifiers_CHI_CHI_asia_pacific_armament
+  icon = GFX_modifiers_CHI_asia_pacific_armament
   enable = {
     tag = CHI
   }
@@ -188,6 +188,12 @@ CHI_asia_pacific_armament = {
   army_speed_factor = 0.05
   attrition = -0.1
   supply_consumption_factor = -0.1
+}
+CHI_waves_of_nujiang = {
+  icon = GFX_modifiers_CHI_waves_of_nujiang
+  enable = { tag = CHI }
+  terrain_penalty_reduction = -0.15
+  acclimatization_hot_climate_gain_factor = -0.2
 }
 
 ## 正面Buff
@@ -262,6 +268,10 @@ CHI_ROC_army_dynamic = {
 	planning_speed                     = ROC_planning_speed                     # 作戰計畫制定速度
   terrain_penalty_reduction          = ROC_terrain_penalty_reduction
   army_non_core_defence_factor       = ROC_army_non_core_defence_factor
+  recon_factor                       = ROC_recon_factor
+  army_breakthrough_against_minor_factor  = ROC_army_breakthrough_against_minor_factor
+  land_night_attack                  = ROC_land_night_attack
+  org_loss_at_low_org_factor         = ROC_org_loss_at_low_org_factor 
 
 	# ==========================================
 	# 兵種特化加成 (Unit Specific Bonuses)
@@ -272,7 +282,7 @@ CHI_ROC_army_dynamic = {
 	special_forces_attack_factor       = ROC_special_forces_attack_factor       # 特種部隊攻擊修正
 	special_forces_defence_factor      = ROC_special_forces_defence_factor      # 特種部隊防禦修正
   naval_invasion_penalty             = ROC_naval_invasion_penalty             # 兩棲登陸作戰懲罰減免
-
+  invasion_preparation               = ROC_invasion_preparation
 	# ==========================================
 	# 本土防衛與補給系統 (Home Defense & Supply System)
 	# ==========================================
@@ -340,6 +350,10 @@ CHI_ROC_army_dynamic_2 = {
 	planning_speed                     = ROC_planning_speed                     # 作戰計畫制定速度
   terrain_penalty_reduction          = ROC_terrain_penalty_reduction
   army_non_core_defence_factor       = ROC_army_non_core_defence_factor
+  recon_factor                       = ROC_recon_factor
+  army_breakthrough_against_minor_factor  = ROC_army_breakthrough_against_minor_factor
+  land_night_attack                  = ROC_land_night_attack
+  org_loss_at_low_org_factor         = ROC_org_loss_at_low_org_factor
 
 	# ==========================================
 	# 兵種特化加成 (Unit Specific Bonuses)
@@ -350,6 +364,7 @@ CHI_ROC_army_dynamic_2 = {
 	special_forces_attack_factor       = ROC_special_forces_attack_factor       # 特種部隊攻擊修正
 	special_forces_defence_factor      = ROC_special_forces_defence_factor      # 特種部隊防禦修正
   naval_invasion_penalty             = ROC_naval_invasion_penalty             # 兩棲登陸作戰懲罰減免
+  invasion_preparation               = ROC_invasion_preparation
 
 	# ==========================================
 	# 本土防衛與補給系統 (Home Defense & Supply System)
@@ -416,6 +431,10 @@ CHI_ROC_army_dynamic_3 = {
 	planning_speed                     = ROC_planning_speed                     # 作戰計畫制定速度
   terrain_penalty_reduction          = ROC_terrain_penalty_reduction
   army_non_core_defence_factor       = ROC_army_non_core_defence_factor
+  recon_factor                       = ROC_recon_factor
+  army_breakthrough_against_minor_factor  = ROC_army_breakthrough_against_minor_factor
+  land_night_attack                  = ROC_land_night_attack
+  org_loss_at_low_org_factor         = ROC_org_loss_at_low_org_factor
 
 	# ==========================================
 	# 兵種特化加成 (Unit Specific Bonuses)
@@ -426,7 +445,8 @@ CHI_ROC_army_dynamic_3 = {
 	special_forces_attack_factor       = ROC_special_forces_attack_factor       # 特種部隊攻擊修正
 	special_forces_defence_factor      = ROC_special_forces_defence_factor      # 特種部隊防禦修正
   naval_invasion_penalty             = ROC_naval_invasion_penalty             # 兩棲登陸作戰懲罰減免
-
+  invasion_preparation               = ROC_invasion_preparation
+  
 	# ==========================================
 	# 本土防衛與補給系統 (Home Defense & Supply System)
 	# ==========================================
@@ -490,6 +510,8 @@ CHI_ROC_airforce_dynamic = {
   airforce_intel_to_others           = ROC_airforce_intel_to_others           # 洩漏給他國的空軍情報
 	air_escort_efficiency              = ROC_air_escort_efficiency
   repair_speed_air_base_factor       = ROC_repair_speed_air_base_factor       # 空軍基地修復速度修正
+  air_close_air_support_org_damage_factor = ROC_air_close_air_support_org_damage_factor
+  air_superiority_bonus_in_combat    = ROC_air_superiority_bonus_in_combat
 }
 
 # 海軍
