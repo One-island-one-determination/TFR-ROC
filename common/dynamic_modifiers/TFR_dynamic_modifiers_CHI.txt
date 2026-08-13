@@ -190,11 +190,22 @@ CHI_asia_pacific_armament = {
   supply_consumption_factor = -0.1
 }
 CHI_waves_of_nujiang = {
-  icon = GFX_modifiers_CHI_waves_of_nujiang
+  # icon = GFX_modifiers_CHI_waves_of_nujiang
   enable = { tag = CHI }
   terrain_penalty_reduction = -0.15
   acclimatization_hot_climate_gain_factor = -0.2
 }
+CHI_eastern_terrain_mapping = {
+  # icon = GFX_modifiers_CHI_waves_of_nujiang
+  enable = { tag = CHI }
+  terrain_penalty_reduction = -0.25
+}
+CHI_northern_joint_command = {
+  # icon = GFX_modifiers_CHI_northern_joint_command
+  enable = { tag = CHI }
+  air_mission_efficiency = 0.2
+}
+
 
 ## 正面Buff
 # 中共滲透
@@ -512,6 +523,11 @@ CHI_ROC_airforce_dynamic = {
   repair_speed_air_base_factor       = ROC_repair_speed_air_base_factor       # 空軍基地修復速度修正
   air_close_air_support_org_damage_factor = ROC_air_close_air_support_org_damage_factor
   air_superiority_bonus_in_combat    = ROC_air_superiority_bonus_in_combat
+  air_superiority_detect_factor      = ROC_air_superiority_detect_factor
+  enemy_army_bonus_air_superiority_factor = ROC_enemy_army_bonus_air_superiority_factor
+  static_anti_air_damage_factor      = ROC_static_anti_air_damage_factor
+  air_strategic_bomber_bombing_factor = ROC_air_strategic_bomber_bombing_factor 
+  air_strategic_bomber_night_penalty  = ROC_air_strategic_bomber_night_penalty
 }
 
 # 海軍

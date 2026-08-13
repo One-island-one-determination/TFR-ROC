@@ -5303,66 +5303,114 @@ CHI_Population_Aging_decisions = {
   CHI_pub_care_fund = {
     icon = GFX_CHI_pub_care_fund
     visible = {
-
+      has_completed_focus = CHI_efficient_government
     }
     available = {
-
-    }
-    cancel_trigger = {
-
+      has_completed_focus = CHI_efficient_government
     }
     cost = 60
     days_remove = 120
     fire_only_once = yes
-    complete_effect = {
-
-    }
+    modifier = { expense_growth_factor = 0.1 }
     remove_effect = {
-
+      add_to_variable = { var_CHI_Population_Aging_decisions = 1 }
+      custom_effect_tooltip = { IDEA = CHI_population_aging_dynamic localization_key = modify_idea_tt }
+      add_to_variable = {
+        PA_monthly_population = 0.2
+        tooltip = monthly_population_tooltip
+      }
+      add_to_variable = {
+        PA_expense_growth_factor = -0.1
+        tooltip = expense_growth_factor_tooltip
+      }
+      add_to_variable = {
+        PA_personal_value_factor = 0.005
+        tooltip = personal_value_factor_tooltip
+      }
     }
   }
   #老幼共學
   CHI_co_learning = {
     icon = GFX_CHI_co_learning
     visible = {
-
+      has_completed_focus = CHI_Special_budget
     }
     available = {
-
-    }
-    cancel_trigger = {
-
+      has_completed_focus = CHI_Special_budget
     }
     cost = 60
     days_remove = 120
     fire_only_once = yes
-    complete_effect = {
-
-    }
+    modifier = { expense_growth_factor = 0.1 }
     remove_effect = {
-
+      add_to_variable = { var_CHI_Population_Aging_decisions = 1 }
+      custom_effect_tooltip = { IDEA = CHI_population_aging_dynamic localization_key = modify_idea_tt }
+      add_to_variable = {
+        PA_monthly_population = 0.1
+        tooltip = monthly_population_tooltip
+      }
+      add_to_variable = {
+        PA_expense_growth_factor = -0.05
+        tooltip = expense_growth_factor_tooltip
+      }
+      add_to_variable = {
+        PA_personal_expense_factor = -0.05
+        tooltip = personal_expense_factor_tooltip
+      }
+      add_to_variable = {
+        PA_personal_value_factor = 0.005
+        tooltip = personal_value_factor_tooltip
+      }
     }
   }
   #青銀共居
   CHI_co_living = {
     icon = GFX_CHI_co_living
     visible = {
-
+      has_completed_focus = CHI_Special_budget
     }
     available = {
-
-    }
-    cancel_trigger = {
-
+      has_completed_focus = CHI_Special_budget
     }
     cost = 60
     days_remove = 120
     fire_only_once = yes
-    complete_effect = {
-
-    }
+    modifier = { expense_growth_factor = 0.1 }
     remove_effect = {
+      add_to_variable = { var_CHI_Population_Aging_decisions = 1 }
+      custom_effect_tooltip = { IDEA = CHI_population_aging_dynamic localization_key = modify_idea_tt }
+      add_to_variable = {
+        PA_monthly_population = 0.1
+        tooltip = monthly_population_tooltip
+      }
+      add_to_variable = {
+        PA_expense_growth_factor = -0.025
+        tooltip = expense_growth_factor_tooltip
+      }
+      add_to_variable = {
+        PA_personal_expense_factor = -0.05
+        tooltip = personal_expense_factor_tooltip
+      }
+      add_to_variable = {
+        PA_personal_value_factor = 0.005
+        tooltip = personal_value_factor_tooltip
+      }
+    }
+  }
 
+  #終結少子化
+  CHI_Population_Aging_end = {
+    icon = GFX_Population_Aging_end
+    available = {
+      check_variable = { var_CHI_Population_Aging_decisions = 10 }
+      custom_trigger_tooltip = CHI_Population_Aging_end_avaliable_tooltip
+    }
+    cost = 0
+    days_remove = 0
+    fire_only_once = yes
+    complete_effect = {
+      clr_country_flag = CHI_Population_Aging_flag
+      custom_effect_tooltip = CHI_Population_Aging_end_tooltip
     }
   }
 }

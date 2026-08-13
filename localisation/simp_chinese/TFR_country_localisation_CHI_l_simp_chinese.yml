@@ -480,11 +480,6 @@
 
  CHI_road_quality: "嚴格道路品質管理"
  CHI_road_quality_coal: "公定發電優質煤限制"
- CHI_water_monitor: "水質監測網"
- CHI_pub_care_fund: "公有長期照護基金"
- CHI_public_ltc_fund: "公有長期照護基金"
- CHI_co_learning: "老幼共學"
- CHI_co_living: "青銀共居"
  CHI_state_biz_advisor: "公營產業顧問中心"
  CHI_youth_vision: "青年願景工程"
  CHI_youth_startup_loan: "青年創業貸款"
@@ -2171,10 +2166,33 @@
  CHI_win_taiwn_war_tt: "戰爭結束了!"
  load_CHI_reconstruction_focus_tree: "將加載§Y中華民國戰後重建國策§!"
  
- CHI_population_aging: "人口老齡化"
- CHI_population_aging_dynamic: "人口老齡化"
- CHI_population_aging_decisions: "少子化危機"
+ CHI_population_aging: "人口危機"
+ CHI_population_aging_dynamic: "人口危機"
+ CHI_population_aging_decisions: "人口危機"
  CHI_population_aging_decisions_desc: "戰後帶來的人口增長曾是島嶼最堅強的後盾，但其造成的老齡化卻成為現在國家沉重的負擔。\n長期以來，教育成本提高、房價壓力沉重、工時增長與就業不穩定，使年輕世代對成家生育抱持遲疑。婚齡持續延後，生育率屢創新低，新生兒人數逐年下滑。當教室逐漸空置，產業開始面臨勞動力短缺，少子化已不再只是預估的數字，而是滲入整個社會的結構性問題。人口基礎的萎縮，直接影響我國未來數十年的國力。\n勞動人口減少，經濟成長動能放緩；扶養比上升，財政與社福負擔加重；兵源縮減，使國防體系承受大量壓力。當外部威脅節節攀高，內部人口卻在急速收縮，國家承擔風險的能力也隨之下降。如果無法建立更友善的育兒條件與穩定的生活預期，未來世代的規模將持續縮小，社會活力亦將逐步流失。\n§R這足以決定國家未來的命運。§!\n\n當前少子化影響:\n月度人口[?PA_monthly_population|=%+1] \n月度支出增長[?PA_expense_growth_factor|=%+1] \n月度通膨率變化[?PA_inflation_monthly|=%+1] \n個人產值係數[?PA_personal_value_factor|=%+1]\n私人消費係數[?PA_personal_expense_factor|=%+1] \n月度貧困率[?PA_poverty_development_monthly|=%+1] \n月度社會發展[?PA_society_development_monthly|=%+1]"
+ CHI_pub_care_fund: "公有長期照護基金"
+ CHI_co_learning: "老幼共學"
+ CHI_co_living: "青銀共居"
+ CHI_Population_Aging_end: "終結人口危機"
+ CHI_Population_Aging_end_avaliable_tooltip: "須完成所有人口危機相關決議與國策([?var_CHI_Population_Aging_decisions]/10)"
+ CHI_Population_Aging_end_tooltip: "移除§Y人口危機§!動態修正及人口危機決議"
+ expense_growth_factor_tooltip: "月度开支增长率：[?modifier@expense_growth_factor|=-1%]"
+ personal_expense_factor_tooltip: "个人消费支出系数：[?modifier@personal_expense_factor|=-1%]"
+ inflation_monthly_tooltip: "£inflation 月度通胀率变化：[?modifier@inflation_monthly|=-2%]"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  CHI_Common_decisions_divider: ""
  CHI_Common_decisions_divider_desc: "\n\n\n£GFX_CHI_Public_decisions_pr\n\n\n\n\n\n\n\"平時這裡不該這麼安靜的\""
  CHI_TPP_decisions_divider: ""

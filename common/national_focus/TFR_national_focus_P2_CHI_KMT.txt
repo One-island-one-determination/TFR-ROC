@@ -2391,7 +2391,7 @@ focus_tree = {
     relative_position_id = CHI_american_fighters_reverse_enginnering
   }
   #}
-  #HKY大東亞前(2028){
+  #HKY大東亞(2028){
   focus = {
     id = CHI_march_into_the_waves
     x = 0
@@ -2493,6 +2493,14 @@ focus_tree = {
       focus = CHI_march_into_the_waves
     }
     relative_position_id = CHI_march_into_the_waves
+    completion_reward = {
+      add_to_variable = { var_CHI_Population_Aging_decisions = 1 }
+      custom_effect_tooltip = { IDEA = CHI_population_aging_dynamic localization_key = modify_idea_tt }
+      add_to_variable = {
+        PA_monthly_population = 0.1
+        tooltip = monthly_population_tooltip
+      }
+    }
   }
   focus = {
     id = CHI_expand_the_defense_line
@@ -2613,6 +2621,30 @@ focus_tree = {
       focus = CHI_thus_spoke_thucydides
     }
     relative_position_id = CHI_thus_spoke_thucydides
+    completion_reward = {
+      1424 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1217 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      595  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1218 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1216 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1431 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1430 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1207 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1206 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      592  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      728  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1395 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      599  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1191 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      593  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      594  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1203 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1204 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1205 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      591  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      326  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      729  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+    }
   }
   focus = {
     id = CHI_coverage_priority_tactics
@@ -2655,6 +2687,30 @@ focus_tree = {
       focus = CHI_thus_spoke_thucydides
     }
     relative_position_id = CHI_thus_spoke_thucydides
+    completion_reward = {
+      424  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      714  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      717  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      1416 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      1415 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      1414 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      1417 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      1413 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      1167 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      715  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      328  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      716  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      1394 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      1425 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      every_state = {
+        limit = {is_core_of = KOR}
+        add_dynamic_modifier = { modifier = CHI_northern_joint_command }
+      }
+      every_state = {
+        limit = {is_core_of = PRK}
+        add_dynamic_modifier = { modifier = CHI_northern_joint_command }
+      }
+    }
   }
   focus = {
     id = CHI_the_hunter
@@ -2668,6 +2724,29 @@ focus_tree = {
       focus = CHI_northern_joint_command
     }
     relative_position_id = CHI_northern_joint_command
+    completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+      add_to_variable = {
+        ROC_air_intercept_efficiency = 0.1
+        tooltip = air_intercept_efficiency_tooltip
+      }
+      add_to_variable = {
+        ROC_air_superiority_detect_factor = 0.1
+        tooltip = air_superiority_detect_factor_tooltip
+      }
+      add_to_variable = {
+        ROC_ground_attack_factor = -0.15
+        tooltip = ground_attack_factor_tooltip
+      }
+      add_to_variable = {
+        ROC_enemy_army_bonus_air_superiority_factor = -0.15
+        tooltip = enemy_army_bonus_air_superiority_factor_tooltip
+      }
+      add_to_variable = {
+        ROC_static_anti_air_damage_factor = 0.2
+        tooltip = static_anti_air_damage_factor_tooltip
+      }
+    }
   }
   focus = {
     id = CHI_operation_peak_leaper
@@ -2681,6 +2760,29 @@ focus_tree = {
       focus = CHI_the_hunter
     }
     relative_position_id = CHI_the_hunter
+    completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+      add_to_variable = {
+        ROC_air_superiority_efficiency = 0.05
+        tooltip = air_superiority_efficiency_tooltip
+      }
+      add_to_variable = {
+        ROC_air_close_air_support_org_damage_factor = 0.05
+        tooltip = air_close_air_support_org_damage_factor_tooltip
+      }
+      add_to_variable = {
+        ROC_air_nav_efficiency = 0.1
+        tooltip = air_nav_efficiency_tooltip
+      }
+      add_to_variable = {
+        ROC_air_strategic_bomber_bombing_factor = 0.05
+        tooltip = air_strategic_bomber_bombing_factor_tooltip
+      }
+      add_to_variable = {
+        ROC_air_strategic_bomber_night_penalty = -0.15
+        tooltip = air_strategic_bomber_night_penalty_tooltip
+      }
+    }
   }
   focus = {
     id = CHI_asia_pacific_armament

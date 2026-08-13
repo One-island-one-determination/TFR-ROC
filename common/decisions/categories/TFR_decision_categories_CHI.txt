@@ -184,45 +184,45 @@ CHI_Population_Aging_decisions = {
   }
 }
 
-#中美洲內戰
-CHI_central_american_war_category = {
-  icon = GFX_decisons_CHI_central_american_war
-  picture = GFX_banner_CHI_central_american_war
-  priority = 1
-  #visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    GUA = { is_in_faction_with = ELS }
-  }
-}
+# #中美洲內戰
+# CHI_central_american_war_category = {
+#   icon = GFX_decisons_CHI_central_american_war
+#   picture = GFX_banner_CHI_central_american_war
+#   priority = 1
+#   #visible_when_empty = yes
+#   allowed = {
+#     original_tag = CHI
+#   }
+#   visible = {
+#     GUA = { is_in_faction_with = ELS }
+#   }
+# }
 
-#中美洲戰後重建
-CHI_central_american_rebuild_category = {
-  icon = GFX_decisons_CHI_central_american_rebuild
-  picture = GFX_banner_CHI_central_american_rebuild
-  priority = 1
-  #visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    ELS = {
-      owns_state = 312
-			owns_state = 314
-			owns_state = 311
-			owns_state = 313
-			owns_state = 316
-			owns_state = 889
-			owns_state = 685
-			owns_state = 304
-			owns_state = 909
-			owns_state = 317
-			owns_state = 1377
-    }
-  }
-}
+# #中美洲戰後重建
+# CHI_central_american_rebuild_category = {
+#   icon = GFX_decisons_CHI_central_american_rebuild
+#   picture = GFX_banner_CHI_central_american_rebuild
+#   priority = 1
+#   #visible_when_empty = yes
+#   allowed = {
+#     original_tag = CHI
+#   }
+#   visible = {
+#     ELS = {
+#       owns_state = 312
+# 			owns_state = 314
+# 			owns_state = 311
+# 			owns_state = 313
+# 			owns_state = 316
+# 			owns_state = 889
+# 			owns_state = 685
+# 			owns_state = 304
+# 			owns_state = 909
+# 			owns_state = 317
+# 			owns_state = 1377
+#     }
+#   }
+# }
 
 #PHI內戰###################################################
 PHI_civil_war_dec = {
