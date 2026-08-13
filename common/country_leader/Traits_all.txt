@@ -419,4 +419,51 @@ leader_traits = {
     stability_factor = -0.05		#穩定度 -5%
     war_support_factor = 0.05		#戰爭支持度 +5%
   }
+  CHI_air_chief_first_harpoon_tester = {
+    experience_gain_air = 0.04 
+    air_agility_factor = 0.05 
+    air_night_penalty = -0.15 
+    # fighter_design_cost_factor = -0.05 # 警告：若是原版引擎請註解此行
+    # CAS_equipment_design_cost_factor = -0.05 # 警告：若是原版引擎請註解此行
+    equipment_bonus = {
+      small_plane_naval_bomber_airframe = {
+        air_range = 0.1 
+        naval_strike_attack = 0.15 # 修正：刪除了重複的行
+      }
+    }
+}
+
+CHI_air_chief_senior_liaison_officer = {
+    experience_gain_air = 0.04 
+    air_mission_efficiency = 0.1 
+    air_night_penalty = -0.1 
+    air_intercept_efficiency = 0.05 
+    air_accidents_factor = -0.1 
+    air_manpower_requirement_factor = -0.1 
+}
+
+CHI_air_chief_f16_seed_instructor_pilot = {
+    experience_gain_air = 0.3 # 警告：+30% 經驗非常高，可考慮下調至 0.1 或 0.15 平衡
+    air_ace_generation_chance_factor = 0.5  
+    air_mission_efficiency = 0.2 
+    army_bonus_air_superiority_factor = 0.05 
+    air_agility_factor = 0.1 
+    air_night_penalty = -0.05 # 修正：改為負數，減少夜戰懲罰
+    equipment_bonus = {
+        small_plane_airframe = {
+            # 修正：移除了 instant = yes，避免裝備加成崩潰
+            air_attack = 0.05
+        }
+    }
+}
+
+CHI_air_chief_practical_staff_officer = {
+    experience_gain_air = 0.1  
+    air_home_defence_factor = 0.1  
+    army_bonus_air_superiority_factor = 0.1 
+    air_agility_factor = 0.05    
+    air_fuel_consumption_factor = -0.1  
+    production_speed_radar_station_factor = 0.25 # 注意：在顧問中可能無效，請於遊戲內實測
+    air_weather_penalty = -0.1 
+}
 }

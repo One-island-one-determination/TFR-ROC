@@ -1567,6 +1567,29 @@ ideas = {
       }
     }
     
+    #中華民國的重建貸款
+    CHI_invest_ARR = {
+      name = CHI_invest_ARR
+      picture = CHI_invest_ARR
+      removal_cost = -1
+
+      modifier = {
+        production_speed_buildings_factor = 0.05
+        repair_speed_infrastructure_factor = 0.20
+      }
+    }
+    CHI_invest_farming_development = {
+      name = CHI_invest_farming_development
+      picture = CHI_invest_farming_development
+      removal_cost = -1
+
+      modifier = {
+        monthly_population = 0.45
+        farming_development_monthly = 0.005
+      }
+    }
+
+
     #                 #
     #------二階段------#
     #                 #
@@ -1699,25 +1722,15 @@ ideas = {
       }
     }
 
-    #中華民國的重建貸款
-    CHI_invest_ARR = {
-      name = CHI_invest_ARR
-      picture = CHI_invest_ARR
+    CHI_Pacific_Trade_Zone_idea = {
+      name = CHI_Pacific_Trade_Zone_idea
+      picture = CHI_Pacific_Trade_Zone_idea
       removal_cost = -1
 
       modifier = {
-        production_speed_buildings_factor = 0.05
-        repair_speed_infrastructure_factor = 0.20
-      }
-    }
-    CHI_invest_farming_development = {
-      name = CHI_invest_farming_development
-      picture = CHI_invest_farming_development
-      removal_cost = -1
-
-      modifier = {
-        monthly_population = 0.45
-        farming_development_monthly = 0.005
+        income_growth_factor = 0.05
+        personal_value_factor = 0.05
+        business_value_factor = 0.1
       }
     }
 
@@ -1728,22 +1741,22 @@ ideas = {
   #對外政治作戰局
   CHI_external_political_warfare_bureau_idea = {
     name = CHI_external_political_warfare_bureau_idea
-      picture = CHI_external_political_warfare_bureau_idea
-      removal_cost = -1
+    picture = CHI_external_political_warfare_bureau_idea
+    removal_cost = -1
 
-      modifier = {
-        totalitarian_socialist_acceptance = 25
-        communist_acceptance = 25
-        libertarian_socialist_acceptance = 25
-        social_democrat_acceptance = 25
-        social_liberal_acceptance = 25
-        market_liberal_acceptance = 25
-        conservative_acceptance = 25
-        authoritarian_democrat_acceptance = 25
-        nationalist_acceptance = 25
-        fascist_acceptance = 25
-        national_socialist_acceptance = 25
-      }
+    modifier = {
+      totalitarian_socialist_acceptance = 25
+      communist_acceptance = 25
+      libertarian_socialist_acceptance = 25
+      social_democrat_acceptance = 25
+      social_liberal_acceptance = 25
+      market_liberal_acceptance = 25
+      conservative_acceptance = 25
+      authoritarian_democrat_acceptance = 25
+      nationalist_acceptance = 25
+      fascist_acceptance = 25
+      national_socialist_acceptance = 25
+    }
   }
 
 
