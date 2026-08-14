@@ -172,7 +172,7 @@ focus_tree = {
         id = CHI_free_world_union
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_control_five_yuans }
-        x = 50
+        x = 49
         y = 7
         cost = 3
     }
@@ -327,7 +327,7 @@ focus_tree = {
         id = CHI_declare_communism_evil
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_taiwanese_taiwan }
-        x = 40
+        x = 38
         y = 8
         cost = 3
     }
@@ -336,40 +336,48 @@ focus_tree = {
         id = CHI_restrict_foreign_labor
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_advocate_taiwan_subjectivity }
-        x = 30
+        x = 26
         y = 9
         cost = 3
     }
     focus = {
         id = CHI_overthrow_greater_china_narrative
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_promote_national_normalization }
-        x = 32
+        prerequisite = { focus = CHI_promote_national_normalization focus = CHI_advocate_taiwan_subjectivity}
+        x = 30
         y = 9
         cost = 3
     }
     focus = {
         id = CHI_strike_taiwan_leftist_narrative
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_promote_national_normalization }
-        x = 36
+        prerequisite = { focus = CHI_promote_national_normalization focus = CHI_declare_communism_evil}
+        x = 34
         y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_fund_liberal_group
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_strike_taiwan_leftist_narrative}
+        x = 35
+        y = 10
         cost = 3
     }
     focus = {
         id = CHI_anti_extremist_intelligence_network
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_declare_communism_evil }
-        x = 40
-        y = 9
+        prerequisite = { focus = CHI_declare_communism_evil focus = CHI_integrate_with_japan}
+        x = 38
+        y = 10
         cost = 3
     }
     # y=9
     focus = {
         id = CHI_coordinate_wage_growth
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_restrict_foreign_labor focus = CHI_encourage_corporate_mergers }
-        x = 27
+        prerequisite = { focus = CHI_restrict_foreign_labor focus = CHI_encourage_corporate_mergers focus = CHI_lower_corporate_tax}
+        x = 25
         y = 10
         cost = 3
     }
@@ -377,15 +385,15 @@ focus_tree = {
         id = CHI_new_taiwan_curriculum
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_overthrow_greater_china_narrative }
-        x = 32
+        x = 30
         y = 10
         cost = 3
     }
     focus = {
         id = CHI_clear_local_corruption
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_strike_taiwan_leftist_narrative }
-        x = 36
+        prerequisite = { focus = CHI_strike_taiwan_leftist_narrative focus = CHI_overthrow_greater_china_narrative}
+        x = 33
         y = 10
         cost = 3
     }
@@ -394,8 +402,8 @@ focus_tree = {
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_anti_extremist_intelligence_network }
         mutually_exclusive = { focus = CHI_reorganize_sid }
-        x = 39
-        y = 10
+        x = 37
+        y = 11
         cost = 3
     }
     focus = {
@@ -403,8 +411,8 @@ focus_tree = {
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_anti_extremist_intelligence_network }
         mutually_exclusive = { focus = CHI_expand_police_agency }
-        x = 41
-        y = 10
+        x = 39
+        y = 11
         cost = 3
     }
     # y=10
@@ -412,7 +420,7 @@ focus_tree = {
         id = CHI_confiscate_chinese_real_estate
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_coordinate_wage_growth }
-        x = 25
+        x = 24
         y = 11
         cost = 3
     }
@@ -420,7 +428,7 @@ focus_tree = {
         id = CHI_fertility_policy_subsidies
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_coordinate_wage_growth }
-        x = 29
+        x = 26
         y = 11
         cost = 3
     }
@@ -429,7 +437,7 @@ focus_tree = {
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_new_taiwan_curriculum }
         mutually_exclusive = { focus = CHI_inviolable_personal_freedom }
-        x = 31
+        x = 29
         y = 11
         cost = 3
     }
@@ -438,15 +446,15 @@ focus_tree = {
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_new_taiwan_curriculum }
         mutually_exclusive = { focus = CHI_whole_gov_anti_communist }
-        x = 34
+        x = 31
         y = 11
         cost = 3
     }
     focus = {
         id = CHI_establish_our_local_power
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_clear_local_corruption }
-        x = 37
+        prerequisite = { focus = CHI_clear_local_corruption focus = CHI_fund_liberal_group}
+        x = 34
         y = 11
         cost = 3
     }
@@ -458,7 +466,7 @@ focus_tree = {
         id = CHI_integrate_with_japan
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_free_world_union }
-        x = 44
+        x = 43
         y = 8
         cost = 3
     }
@@ -467,7 +475,7 @@ focus_tree = {
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_free_world_union }
         mutually_exclusive = { focus = CHI_perfect_northward_diplomacy }
-        x = 48
+        x = 46
         y = 8
         cost = 3
     }
@@ -484,7 +492,7 @@ focus_tree = {
         id = CHI_new_us_policy
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_free_world_union }
-        x = 56
+        x = 55
         y = 8
         cost = 3
     }
@@ -493,7 +501,7 @@ focus_tree = {
         id = CHI_japan_taiwan_maritime_solution
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_integrate_with_japan }
-        x = 44
+        x = 43
         y = 9
         cost = 3
     }
@@ -501,15 +509,15 @@ focus_tree = {
         id = CHI_berlin_taipei_tech
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_appeal_eu_cooperation }
-        x = 47
+        x = 46
         y = 9
         cost = 3
     }
     focus = {
-        id = CHI_escape_asia_enter_europe
+        id = CHI_leave_asia_enter_europe
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_appeal_eu_cooperation focus = CHI_perfect_northward_diplomacy }
-        x = 50
+        x = 49
         y = 9
         cost = 3
     }
@@ -517,15 +525,7 @@ focus_tree = {
         id = CHI_rebuild_taiwan_russia_relations
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_perfect_northward_diplomacy }
-        x = 53
-        y = 9
-        cost = 3
-    }
-    focus = {
-        id = CHI_new_us_agreement
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_new_us_policy }
-        x = 56
+        x = 52
         y = 9
         cost = 3
     }
@@ -533,15 +533,15 @@ focus_tree = {
     focus = {
         id = CHI_friends_of_democracy
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_japan_taiwan_maritime_solution focus = CHI_berlin_taipei_tech }
-        x = 45
+        prerequisite = { focus = CHI_berlin_taipei_tech }
+        x = 46
         y = 10
         cost = 3
     }
     focus = {
         id = CHI_friends_of_anti_communism
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_escape_asia_enter_europe focus = CHI_rebuild_taiwan_russia_relations }
+        prerequisite = { focus = CHI_rebuild_taiwan_russia_relations }
         x = 51
         y = 10
         cost = 3
@@ -550,14 +550,13 @@ focus_tree = {
         id = CHI_solve_energy_dilemma
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_rebuild_taiwan_russia_relations focus = CHI_new_us_agreement }
-        x = 55
+        x = 53
         y = 10
         cost = 3
     }
 
     ##=====================================================
-    ## Ending Section (Green Box)
-    ## *線不能這樣排，這只是示意圖
+    ## Ending Section
     ##=====================================================
     focus = {
         id = CHI_freedom_house
@@ -566,7 +565,7 @@ focus_tree = {
         prerequisite = { focus = CHI_establish_our_local_power }
         prerequisite = { focus = CHI_expand_police_agency focus = CHI_reorganize_sid }
         mutually_exclusive = { focus = CHI_unshakable_ruling_party focus = CHI_semi_permanent_mobilization }
-        x = 31
+        x = 32
         y = 13
         cost = 3
     }
@@ -577,7 +576,7 @@ focus_tree = {
         prerequisite = { focus = CHI_establish_our_local_power }
         prerequisite = { focus = CHI_expand_police_agency focus = CHI_reorganize_sid }
         mutually_exclusive = { focus = CHI_freedom_house focus = CHI_semi_permanent_mobilization }
-        x = 35
+        x = 34
         y = 13
         cost = 3
     }
@@ -587,7 +586,7 @@ focus_tree = {
         prerequisite = { focus = CHI_whole_gov_anti_communist }
         prerequisite = { focus = CHI_expand_police_agency focus = CHI_reorganize_sid }
         mutually_exclusive = { focus = CHI_freedom_house focus = CHI_unshakable_ruling_party }
-        x = 39
+        x = 36
         y = 13
         cost = 3
     }
