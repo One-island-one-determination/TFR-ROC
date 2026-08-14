@@ -1070,3 +1070,150 @@ CHI_corruption_problem_effect = {
     }
   }
 }
+#改善經濟---裝甲製造debuff
+CHI_Economy_hidden_armor_cost_equipment_bonus_effect = {
+  if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p30
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p30
+      add_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p20
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p20
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p20
+      add_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p10
+      add_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_0
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_0
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_0
+      add_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_n10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_n10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_n10
+      add_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_n20
+    }
+  }
+  add_to_variable = { ecn_armor_cost_var = 10 }
+}
+#改善經濟---飛機製造debuff
+CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = {
+  if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p30
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p30
+      add_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p20
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p20
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p20
+      add_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p10
+      add_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_0
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_0
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_0
+      add_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_n10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_n10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_n10
+      add_idea = CHI_Economy_hidden_ air_equipment_cost_equipment_bonus_n20
+    }
+  }
+  add_to_variable = { ecn_air_cost_var = 10 }
+}
+#改善經濟---裝甲車製造debuff
+CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = {
+  if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p30
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p30
+      add_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p20
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p20
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p20
+      add_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p10
+      add_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_0
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_0
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_0
+      add_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_n10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_n10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_n10
+      add_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_n20
+    }
+  }
+  add_to_variable = { ecn_armored_car_var = 10 }
+}

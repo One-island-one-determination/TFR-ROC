@@ -342,34 +342,31 @@ CHI_debug = {
       }
     }
   }
-  set_ecn_zero = {
+  add_ecn_armor = {
     icon = generic_decision
     allowed = { always = yes }
     visible = { always = yes }
     available = { always = yes }
     complete_effect = {
-      set_variable = { ecn_armor_research_var = 0 }
-      set_variable = { ecn_electronics_research_var = 0 }
-      set_variable = { ecn_armor_cost_var = 0 }
-      set_variable = { ecn_air_cost_var = 0 }
-      set_variable = { ecn_armored_car_var = 0 }
-      
-        remove_ideas = {
-          CHI_Economy_hidden_armor_research_bonus
-          CHI_Economy_hidden_electronics_research_bonus
-          CHI_Economy_hidden_armor_cost_equipment_bonus
-          CHI_Economy_hidden_air_equipment_cost_equipment_bonus
-          CHI_Economy_hidden_armored_car_cost_equipment_bonus
-        }
-
-        add_ideas = {
-          CHI_Economy_hidden_armor_research_bonus_0
-          CHI_Economy_hidden_electronics_research_bonus_0
-          CHI_Economy_hidden_armor_cost_equipment_bonus_0
-          CHI_Economy_hidden_air_equipment_cost_equipment_bonus_0
-          CHI_Economy_hidden_armored_car_cost_equipment_bonus_0
-        }
-      
+      CHI_Economy_hidden_armor_cost_equipment_bonus_effect = yes      
+    }
+  }
+  add_ecn_air_equipment = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes    
+    }
+  }
+  add_ecn_armored_car = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = yes      
     }
   }
   set_ROCA_two = {
@@ -4022,6 +4019,7 @@ CHI_KMT_politics_category = {
   }
 }
 
+# 國軍
 CHI_army_decisions = {
   CHI_imps = {
     #icon = GFX_CHI_Legislative_Yuan_decisions
@@ -4035,6 +4033,7 @@ CHI_army_decisions = {
         }
       }
     }
+    visible = { NOT = { has_country_flag = KMT_ROCA_reform_flag }}
     ai_will_do = {
       base = 10
     }
@@ -4070,6 +4069,7 @@ CHI_army_decisions = {
         }
       }
     }
+    visible = { NOT = { has_country_flag = KMT_ROCA_reform_flag }}
     ai_will_do = {
       base = 10
     }
@@ -4109,6 +4109,7 @@ CHI_army_decisions = {
         }
       }
     }
+    visible = { NOT = { has_country_flag = KMT_ROCA_reform_flag }}
     ai_will_do = {
       base = 10
     }
@@ -4130,237 +4131,237 @@ CHI_army_decisions = {
       clr_country_flag = CHI_ETJTNRA
     }
   }
-  CHI_buy_USA_destroyers = {
-    visible = {
-      USN = {
-        exists = yes
-      }
-    }
-    allowed = {
-      tag = CHI
-    }
-    cost = 100
-    fire_only_once = no
-    days_remove = 120
-    days_re_enable = 356
-    is_good = no
-    ai_will_do = {
-      base = 10
-    }
-    modifier = {
-      consumer_goods_factor = 0.15
-    }
-    complete_effect = {
-      set_temp_variable = {
-        var = debt_var_temp
-        value = 45
-      }
-      add_debt_with_inflation = yes
-      hidden_effect = {
-        load_oob = "CHI_BUY_USA_DESTROYERS2"
-      }
-      custom_effect_tooltip = CHI_BUY_USA_DESTROYERS_tt
-    }
-  }
-  CHI_buy_USA_destroyers_hawaii = {
-    visible = {
-      USN = {
-        exists = yes
-      }
-    }
-    allowed = {
-      tag = CHI
-    }
-    #custom_cost_trigger = {
-    #check_variable = {
-    #	var = income_var
-    #	value = 25
-    #}
-    #	political_power > 74
-    #}
-    cost = 75
-    fire_only_once = no
-    days_remove = 70
-    days_re_enable = 356
-    is_good = no
-    ai_will_do = {
-      base = 10
-    }
-    modifier = {
-      consumer_goods_factor = 0.10
-    }
-    complete_effect = {
-      set_temp_variable = {
-        var = debt_var_temp
-        value = 25
-      }
-      add_debt_with_inflation = yes
-      hidden_effect = {
-        load_oob = "CHI_BUY_USA_DESTROYERS"
-      }
-      custom_effect_tooltip = CHI_BUY_USA_DESTROYERS_tt
-    }
-  }
-  CHI_buy_USA_submarines = {
-    visible = {
-      USN = {
-        exists = yes
-      }
-    }
-    allowed = {
-      tag = CHI
-    }
-    cost = 50
-    fire_only_once = no
-    days_remove = 70
-    days_re_enable = 356
-    is_good = no
-    ai_will_do = {
-      base = 10
-    }
-    modifier = {
-      consumer_goods_factor = 0.05
-    }
-    complete_effect = {
-      set_temp_variable = {
-        var = debt_var_temp
-        value = 15
-      }
-      add_debt_with_inflation = yes
-      hidden_effect = {
-        load_oob = "CHI_BUY_USA_DESTROYERS3"
-      }
-      custom_effect_tooltip = CHI_BUY_USA_DESTROYERS_tt
-    }
-  }
-  CHI_buy_JAP_destroyers = {
-    visible = {
-      USN = {
-        exists = yes
-      }
-    }
-    allowed = {
-      tag = CHI
-    }
-    cost = 75
-    fire_only_once = no
-    days_remove = 70
-    days_re_enable = 356
-    is_good = no
-    ai_will_do = {
-      base = 10
-    }
-    modifier = {
-      consumer_goods_factor = 0.10
-    }
-    complete_effect = {
-      set_temp_variable = {
-        var = debt_var_temp
-        value = 25
-      }
-      add_debt_with_inflation = yes
-      hidden_effect = {
-        load_oob = "CHI_buy_JAP_destroyers2"
-      }
-      custom_effect_tooltip = CHI_BUY_JAP_DESTROYERS_tt
-    }
-  }
-  CHI_buy_JAP_submarines = {
-    visible = {
-      USN = {
-        exists = yes
-      }
-    }
-    allowed = {
-      tag = CHI
-    }
-    cost = 50
-    fire_only_once = no
-    days_remove = 70
-    days_re_enable = 356
-    is_good = no
-    ai_will_do = {
-      base = 10
-    }
-    modifier = {
-      consumer_goods_factor = 0.05
-    }
-    complete_effect = {
-      set_temp_variable = {
-        var = debt_var_temp
-        value = 15
-      }
-      add_debt_with_inflation = yes
-      hidden_effect = {
-        load_oob = "CHI_buy_JAP_destroyers"
-      }
-      custom_effect_tooltip = CHI_BUY_JAP_DESTROYERS_tt
-    }
-  }
-  CHI_buy_KOR_destroyers = {
-    visible = {
-      USN = {
-        exists = yes
-      }
-    }
-    allowed = {
-      tag = CHI
-    }
-    cost = 75
-    fire_only_once = no
-    days_remove = 70
-    days_re_enable = 356
-    is_good = no
-    ai_will_do = {
-      base = 10
-    }
-    modifier = {
-      consumer_goods_factor = 0.10
-    }
-    complete_effect = {
-      set_temp_variable = {
-        var = debt_var_temp
-        value = 25
-      }
-      add_debt_with_inflation = yes
-      hidden_effect = {
-        load_oob = "CHI_buy_KOR_destroyers2"
-      }
-      custom_effect_tooltip = CHI_BUY_KOR_DESTROYERS_tt
-    }
-  }
-  CHI_buy_KOR_submarines = {
-    visible = {
-      USN = {
-        exists = yes
-      }
-    }
-    allowed = {
-      tag = CHI
-    }
-    cost = 50
-    fire_only_once = no
-    days_remove = 70
-    days_re_enable = 356
-    is_good = no
-    ai_will_do = {
-      base = 10
-    }
-    modifier = {
-      consumer_goods_factor = 0.05
-    }
-    complete_effect = {
-      set_temp_variable = {
-        var = debt_var_temp
-        value = 15
-      }
-      add_debt_with_inflation = yes
-      hidden_effect = {
-        load_oob = "CHI_buy_KOR_destroyers"
-      }
-      custom_effect_tooltip = CHI_BUY_KOR_DESTROYERS_tt
-    }
-  }
+  # CHI_buy_USA_destroyers = {
+  #   visible = {
+  #     USN = {
+  #       exists = yes
+  #     }
+  #   }
+  #   allowed = {
+  #     tag = CHI
+  #   }
+  #   cost = 100
+  #   fire_only_once = no
+  #   days_remove = 120
+  #   days_re_enable = 356
+  #   is_good = no
+  #   ai_will_do = {
+  #     base = 10
+  #   }
+  #   modifier = {
+  #     consumer_goods_factor = 0.15
+  #   }
+  #   complete_effect = {
+  #     set_temp_variable = {
+  #       var = debt_var_temp
+  #       value = 45
+  #     }
+  #     add_debt_with_inflation = yes
+  #     hidden_effect = {
+  #       load_oob = "CHI_BUY_USA_DESTROYERS2"
+  #     }
+  #     custom_effect_tooltip = CHI_BUY_USA_DESTROYERS_tt
+  #   }
+  # }
+  # CHI_buy_USA_destroyers_hawaii = {
+  #   visible = {
+  #     USN = {
+  #       exists = yes
+  #     }
+  #   }
+  #   allowed = {
+  #     tag = CHI
+  #   }
+  #   #custom_cost_trigger = {
+  #   #check_variable = {
+  #   #	var = income_var
+  #   #	value = 25
+  #   #}
+  #   #	political_power > 74
+  #   #}
+  #   cost = 75
+  #   fire_only_once = no
+  #   days_remove = 70
+  #   days_re_enable = 356
+  #   is_good = no
+  #   ai_will_do = {
+  #     base = 10
+  #   }
+  #   modifier = {
+  #     consumer_goods_factor = 0.10
+  #   }
+  #   complete_effect = {
+  #     set_temp_variable = {
+  #       var = debt_var_temp
+  #       value = 25
+  #     }
+  #     add_debt_with_inflation = yes
+  #     hidden_effect = {
+  #       load_oob = "CHI_BUY_USA_DESTROYERS"
+  #     }
+  #     custom_effect_tooltip = CHI_BUY_USA_DESTROYERS_tt
+  #   }
+  # }
+  # CHI_buy_USA_submarines = {
+  #   visible = {
+  #     USN = {
+  #       exists = yes
+  #     }
+  #   }
+  #   allowed = {
+  #     tag = CHI
+  #   }
+  #   cost = 50
+  #   fire_only_once = no
+  #   days_remove = 70
+  #   days_re_enable = 356
+  #   is_good = no
+  #   ai_will_do = {
+  #     base = 10
+  #   }
+  #   modifier = {
+  #     consumer_goods_factor = 0.05
+  #   }
+  #   complete_effect = {
+  #     set_temp_variable = {
+  #       var = debt_var_temp
+  #       value = 15
+  #     }
+  #     add_debt_with_inflation = yes
+  #     hidden_effect = {
+  #       load_oob = "CHI_BUY_USA_DESTROYERS3"
+  #     }
+  #     custom_effect_tooltip = CHI_BUY_USA_DESTROYERS_tt
+  #   }
+  # }
+  # CHI_buy_JAP_destroyers = {
+  #   visible = {
+  #     USN = {
+  #       exists = yes
+  #     }
+  #   }
+  #   allowed = {
+  #     tag = CHI
+  #   }
+  #   cost = 75
+  #   fire_only_once = no
+  #   days_remove = 70
+  #   days_re_enable = 356
+  #   is_good = no
+  #   ai_will_do = {
+  #     base = 10
+  #   }
+  #   modifier = {
+  #     consumer_goods_factor = 0.10
+  #   }
+  #   complete_effect = {
+  #     set_temp_variable = {
+  #       var = debt_var_temp
+  #       value = 25
+  #     }
+  #     add_debt_with_inflation = yes
+  #     hidden_effect = {
+  #       load_oob = "CHI_buy_JAP_destroyers2"
+  #     }
+  #     custom_effect_tooltip = CHI_BUY_JAP_DESTROYERS_tt
+  #   }
+  # }
+  # CHI_buy_JAP_submarines = {
+  #   visible = {
+  #     USN = {
+  #       exists = yes
+  #     }
+  #   }
+  #   allowed = {
+  #     tag = CHI
+  #   }
+  #   cost = 50
+  #   fire_only_once = no
+  #   days_remove = 70
+  #   days_re_enable = 356
+  #   is_good = no
+  #   ai_will_do = {
+  #     base = 10
+  #   }
+  #   modifier = {
+  #     consumer_goods_factor = 0.05
+  #   }
+  #   complete_effect = {
+  #     set_temp_variable = {
+  #       var = debt_var_temp
+  #       value = 15
+  #     }
+  #     add_debt_with_inflation = yes
+  #     hidden_effect = {
+  #       load_oob = "CHI_buy_JAP_destroyers"
+  #     }
+  #     custom_effect_tooltip = CHI_BUY_JAP_DESTROYERS_tt
+  #   }
+  # }
+  # CHI_buy_KOR_destroyers = {
+  #   visible = {
+  #     USN = {
+  #       exists = yes
+  #     }
+  #   }
+  #   allowed = {
+  #     tag = CHI
+  #   }
+  #   cost = 75
+  #   fire_only_once = no
+  #   days_remove = 70
+  #   days_re_enable = 356
+  #   is_good = no
+  #   ai_will_do = {
+  #     base = 10
+  #   }
+  #   modifier = {
+  #     consumer_goods_factor = 0.10
+  #   }
+  #   complete_effect = {
+  #     set_temp_variable = {
+  #       var = debt_var_temp
+  #       value = 25
+  #     }
+  #     add_debt_with_inflation = yes
+  #     hidden_effect = {
+  #       load_oob = "CHI_buy_KOR_destroyers2"
+  #     }
+  #     custom_effect_tooltip = CHI_BUY_KOR_DESTROYERS_tt
+  #   }
+  # }
+  # CHI_buy_KOR_submarines = {
+  #   visible = {
+  #     USN = {
+  #       exists = yes
+  #     }
+  #   }
+  #   allowed = {
+  #     tag = CHI
+  #   }
+  #   cost = 50
+  #   fire_only_once = no
+  #   days_remove = 70
+  #   days_re_enable = 356
+  #   is_good = no
+  #   ai_will_do = {
+  #     base = 10
+  #   }
+  #   modifier = {
+  #     consumer_goods_factor = 0.05
+  #   }
+  #   complete_effect = {
+  #     set_temp_variable = {
+  #       var = debt_var_temp
+  #       value = 15
+  #     }
+  #     add_debt_with_inflation = yes
+  #     hidden_effect = {
+  #       load_oob = "CHI_buy_KOR_destroyers"
+  #     }
+  #     custom_effect_tooltip = CHI_BUY_KOR_DESTROYERS_tt
+  #   }
+  # }
   
   CHI_anti_silent_dawn = {
     icon = GFX_PRC_anti_western
@@ -4387,6 +4388,338 @@ CHI_army_decisions = {
     }
     ai_will_do = {
       base = 10
+    }
+  }
+
+
+  ##軍事改革______KMTP2__________##
+  #陸軍改革 Phase 1：預備軍事編遣
+  CHI_project_ROCA_reform_1 = {
+    icon = GFX_CHI_project_ROCA_reform
+    available = {
+      NOT = { has_country_flag = CHI_project_ROCA_reform_1_completed }
+    }
+    visible = {
+      original_tag = CHI
+      NOT = { has_country_flag = CHI_project_ROCA_reform_1_completed }
+      has_completed_focus = CHI_modern_whampoa
+    }
+    custom_cost_trigger = {
+      has_army_experience > 49
+    }
+    custom_cost_text = CHI_cost_50_army_xp_tt
+    days_remove = 14
+    complete_effect = {
+      add_army_experience = -50
+    }
+    remove_effect = {
+      set_country_flag = CHI_project_ROCA_reform_1_completed
+      add_ideas = CHI_project_ROCA_reform_1_idea
+    }
+  }
+
+  #陸軍改革 Phase 2：編遣會議
+  CHI_project_ROCA_reform_2 = {
+    icon = GFX_CHI_project_ROCA_reform
+    available = {
+      has_country_flag = CHI_project_ROCA_reform_1_completed
+      NOT = { has_country_flag = CHI_project_ROCA_reform_2_completed }
+    }
+    visible = {
+      original_tag = CHI
+      has_country_flag = CHI_project_ROCA_reform_1_completed
+      NOT = { has_country_flag = CHI_project_ROCA_reform_2_completed }
+    }
+    custom_cost_trigger = {
+      has_army_experience > 49
+    }
+    custom_cost_text = CHI_cost_50_army_xp_tt
+    days_remove = 14
+    complete_effect = {
+      add_army_experience = -50
+    }
+    remove_effect = {
+      set_country_flag = CHI_project_ROCA_reform_2_completed
+      custom_effect_tooltip = CHI_project_ROCA_reform_2_effect_tt
+      delete_unit = { disband = yes }
+    }
+  }
+
+  #陸軍改革 Phase 3：恢復軍級番號
+  CHI_project_ROCA_reform_3 = {
+    icon = GFX_CHI_project_ROCA_reform
+    available = {
+      has_country_flag = CHI_project_ROCA_reform_2_completed
+      NOT = { has_country_flag = CHI_project_ROCA_reform_3_completed }
+    }
+    visible = {
+      original_tag = CHI
+      has_country_flag = CHI_project_ROCA_reform_2_completed
+      NOT = { has_country_flag = CHI_project_ROCA_reform_3_completed }
+    }
+    custom_cost_trigger = {
+      has_army_experience > 49
+    }
+    custom_cost_text = CHI_cost_50_army_xp_tt
+    days_remove = 14
+    complete_effect = {
+      add_army_experience = -50
+    }
+    remove_effect = {
+      set_country_flag = CHI_project_ROCA_reform_3_completed
+      # 遍歷並賦予特質給所有現有將軍
+      every_army_leader = {
+        limit = {
+          is_corps_commander = yes # 確保不發給海軍將領或純元帥
+        }
+        add_trait = {
+         trait = CHI_expanded_command_trait
+        }
+      }
+      # add_division_template = {
+      #   name = "中華民國陸軍指揮所"
+      #   division_names_group = CHI_INF_01
+      #   regiments = {
+      #     modern_armor = { x = 0 y = 0 }
+      #     modern_armor = { x = 0 y = 1 }
+      #     modern_armor = { x = 0 y = 2 }
+      #     modern_sp_artillery_brigade = { x = 1 y = 0 }
+      #     modern_sp_artillery_brigade = { x = 1 y = 1 }
+      #   }
+      # }
+        
+      # 1148 = {
+      #   create_unit = {
+      #     division = "name = \"中華民國陸軍指揮所\" division_template = \"中華民國陸軍指揮所\" start_experience_factor = 0.5"
+      #     owner = CHI
+      #     count = 3
+      #   }
+      # }
+
+      # 1. 發放並鎖住「機步旅」模板
+      add_division_template = {
+        name = "整編機步旅"
+        is_locked = yes # 【關鍵】鎖定模板，玩家無法編輯或刪除
+        priority = 2
+        regiments = {
+          motorized = { x = 0 y = 0 }
+          motorized = { x = 0 y = 1 }
+          motorized = { x = 0 y = 2 }
+          motorized = { x = 0 y = 3 }
+          motorized = { x = 0 y = 4 }
+          motorized = { x = 1 y = 0 }
+          motorized = { x = 1 y = 1 }
+        }
+        support = {
+          recon = { x = 0 y = 0 }
+          engineer = { x = 0 y = 1 }		
+        }
+      }
+        
+        # 2. 發放並鎖住「裝甲旅」模板
+        add_division_template = {
+          name = "整編裝甲旅"
+          is_locked = yes
+          priority = 3
+          regiments = {
+            modern_armor = { x = 0 y = 0 } 
+            modern_armor = { x = 0 y = 1 }
+            modern_armor = { x = 0 y = 2 }
+            modern_armor = { x = 0 y = 3 }
+            modern_armor = { x = 0 y = 4 }
+            sp_artillery_brigade = { x = 1 y = 0 }
+            sp_artillery_brigade = { x = 1 y = 1 }
+            sp_rocket_artillery_brigade = { x = 1 y = 2 } 
+          }
+          support = {
+          recon = { x = 0 y = 0 }
+          engineer = { x = 0 y = 1 }		
+        }
+        }
+
+        # 3. 發放並鎖住「軍指揮部」模板
+        add_division_template = {
+          name = "軍指揮部"
+          is_locked = yes
+          priority = 3
+          regiments = {
+            modern_armor = { x = 0 y = 0 }
+            modern_armor = { x = 0 y = 1 }
+            modern_armor = { x = 0 y = 2 }
+            bus = { x = 1 y = 0 } 
+          }
+          support = {
+          recon = { x = 0 y = 0 }
+          engineer = { x = 0 y = 1 }		
+        }
+        }
+
+        load_oob = "CHI_dynamic_spawn_oob"
+    }
+  }
+
+  #陸軍改革 Phase 4：確立軍事指揮系統
+  CHI_project_ROCA_reform_4 = {
+    icon = GFX_CHI_project_ROCA_reform
+    available = {
+      has_country_flag = CHI_project_ROCA_reform_3_completed
+      NOT = { has_country_flag = CHI_project_ROCA_reform_4_completed }
+    }
+    visible = {
+      original_tag = CHI
+      has_country_flag = CHI_project_ROCA_reform_3_completed
+      NOT = { has_country_flag = CHI_project_ROCA_reform_4_completed }
+    }
+    custom_cost_trigger = {
+      has_army_experience > 49
+    }
+    custom_cost_text = CHI_cost_50_army_xp_tt
+    days_remove = 14
+    complete_effect = {
+      add_army_experience = -50
+    }
+    remove_effect = {
+      set_country_flag = CHI_project_ROCA_reform_4_completed
+      remove_ideas = CHI_project_ROCA_reform_1_idea
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { var = ROC_army_org_factor value = 0.10 }
+      add_to_variable = { var = ROC_combat_width_factor value = -0.15 }
+      add_to_variable = { var = ROC_reinforce_rate value = 0.50 }
+      add_to_variable = { var = ROC_initiative_factor value = 0.50 }
+      custom_effect_tooltip = CHI_project_ROCA_reform_4_effect_tt
+    }
+  }
+  #寧海計畫
+  CHI_project_Ning_Hai = {
+    icon = GFX_CHI_project_Ning_Hai
+    available = {
+      NOT = { has_country_flag = CHI_ninghai_plan_completed_3 }
+    }
+    visible = {
+      original_tag = CHI
+      NOT = { has_country_flag = CHI_ninghai_plan_completed_3 }
+    }
+    custom_cost_trigger = {
+      has_navy_experience > 49
+    }
+    custom_cost_text = CHI_cost_50_navy_xp_tt
+    days_remove = 14
+    complete_effect = {
+      add_navy_experience = -50
+      if = {
+        limit = { has_country_flag = CHI_ninghai_plan_completed_2 }
+        set_country_flag = CHI_ninghai_plan_completed_3
+
+        custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
+        add_to_variable = {  ROC_naval_coordination = 0.01          tooltip = naval_coordination_tooltip         }
+        add_to_variable = {  ROC_naval_speed_factor = 0.02          tooltip = naval_speed_factor_tooltip         }
+        add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
+        add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
+        add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
+        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
+        add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
+
+      }
+      else_if = {
+        limit = { has_country_flag = CHI_ninghai_plan_completed_1 }
+        set_country_flag = CHI_ninghai_plan_completed_2
+
+        custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
+        add_to_variable = {  ROC_naval_coordination = 0.01          tooltip = naval_coordination_tooltip         }
+        add_to_variable = {  ROC_naval_speed_factor = 0.02          tooltip = naval_speed_factor_tooltip         }
+        add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
+        add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
+        add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
+        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
+        add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
+
+      }
+      else = {
+        set_country_flag = CHI_ninghai_plan_completed_1
+
+        custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
+        add_to_variable = {  ROC_naval_coordination = 0.01          tooltip = naval_coordination_tooltip         }
+        add_to_variable = {  ROC_naval_speed_factor = 0.02          tooltip = naval_speed_factor_tooltip         }
+        add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
+        add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
+        add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
+        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
+        add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
+        
+      }
+    }
+  }
+  #凌霄計畫
+  CHI_project_Ling_Hsiao = {
+    icon = GFX_CHI_project_Ling_Hsiao
+    available = {
+      NOT = { has_country_flag = CHI_lingxiao_plan_completed }
+    }
+    visible = {
+      original_tag = CHI
+      NOT = { has_country_flag = CHI_lingxiao_plan_completed }
+    }
+    custom_cost_trigger = {
+      has_air_experience > 49
+    }
+    custom_cost_text = CHI_cost_50_air_xp_tt
+    days_remove = 14
+    complete_effect = {
+      add_air_experience = -50
+      set_country_flag = CHI_lingxiao_plan_completed
+      
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_air_superiority_efficiency = 0.1  tooltip = air_superiority_efficiency_tooltip  }
+      add_to_variable = { ROC_air_intercept_efficiency = 0.1    tooltip = air_intercept_efficiency_tooltip    }
+      add_to_variable = { ROC_air_cas_efficiency = 0.15         tooltip = air_cas_efficiency_tooltip          }
+      add_to_variable = { ROC_air_attack_factor = 0.05          tooltip = air_attack_factor_tooltip           }
+      add_to_variable = { ROC_air_defence_factor = 0.05         tooltip = air_defence_factor_tooltip          }
+      add_to_variable = { ROC_air_cas_present_factor = 0.15     tooltip = air_cas_present_factor_tooltip      }
+      add_to_variable = { ROC_ground_attack_factor = 0.1        tooltip = ground_attack_factor_tooltip        }
+    }
+  }
+  #駝峰炸射
+  CHI_project_hump_training = {
+    icon = GFX_CHI_project_hump_training
+    available = {
+      NOT = { has_country_flag = CHI_project_hump_training_completed }
+    }
+    visible = {
+      original_tag = CHI
+      NOT = { has_country_flag = CHI_project_hump_training_completed }
+    }
+    custom_cost_trigger = {
+      has_air_experience > 29
+    }
+    custom_cost_text = CHI_cost_30_air_xp_tt
+    days_remove = 14
+    complete_effect = {
+      add_air_experience = -30
+      set_country_flag = CHI_project_hump_training_completed
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_air_superiority_efficiency = 0.05  tooltip = air_superiority_efficiency_tooltip  }
+    }
+  }
+
+  CHI_repeatable_spawn_decision = {
+    icon = generic_prepare_offensive
+    cost = 5
+    days_re_enable = 30
+    fire_only_once = no
+    
+    visible = {
+        original_tag = CHI
+        has_completed_focus = CHI_modern_whampoa
+    }
+    
+    available = {
+        # 【關鍵】必須先完成軍改，解鎖了模板後才能點擊
+        has_country_flag = CHI_project_ROCA_reform_4_completed
+    }
+    
+    complete_effect = {
+        load_oob = "CHI_dynamic_spawn_oob"
+        custom_effect_tooltip = CHI_repeatable_spawn_tt
     }
   }
 
@@ -5301,6 +5634,91 @@ CHI_Intervene_the_American_Civil_War_category = {
 
 #人口老化
 CHI_Population_Aging_decisions = {
+  CHI_expand_public_ltc = {
+    icon = GFX_CHI_expand_public_ltc
+    available = {
+      check_variable = { var = var_CHI_expand_public_ltc value = 2 compare = less_than_or_equals }
+    }
+    visible = { 
+      check_variable = { var = var_CHI_expand_public_ltc value = 2 compare = less_than_or_equals }
+    }
+    cost = 60
+    days_remove = 180
+    modifier = { expense_growth_factor = 0.05 }
+    complete_effect = {
+      set_temp_variable = {
+        var = income_var_temp
+        value = -10
+      }
+      add_income = yes
+    }
+    remove_effect = {
+      add_to_variable = { var_CHI_Population_Aging_decisions = 1 }
+      custom_effect_tooltip = { IDEA = CHI_population_aging_dynamic localization_key = modify_idea_tt }
+      add_to_variable = {
+        PA_society_development_monthly = 0.01
+        tooltip = society_development_monthly_tooltip
+      }
+      add_to_variable = {
+        PA_personal_expense_factor = -0.025
+        tooltip = personal_expense_factor_tooltip
+      }
+    }
+  }
+  CHI_childcare_subsidies = {
+    icon = GFX_CHI_childcare_subsidies
+    available = {
+      check_variable = { var = var_CHI_childcare_subsidies value = 3 compare = less_than_or_equals }
+    }
+    visible = { 
+      check_variable = { var = var_CHI_childcare_subsidies value = 3 compare = less_than_or_equals }
+    }
+    cost = 50
+    days_remove = 60
+    complete_effect = {
+      set_temp_variable = {
+        var = income_var_temp
+        value = -10
+      }
+      add_income = yes
+    }
+    modifier = { expense_growth_factor = 0.1 }
+    remove_effect = {
+      add_to_variable = {
+        PA_monthly_population = 0.1
+        tooltip = monthly_population_tooltip
+      }
+      add_to_variable = {
+        PA_expense_growth_factor = 0.025
+        tooltip = expense_growth_factor_tooltip
+      }
+    }
+  }
+  CHI_increase_pensions = {
+    icon = GFX_CHI_increase_pensions
+    cost = 50
+    days_remove = 120
+    modifier = { expense_growth_factor = 0.1 }
+    complete_effect = {
+      set_temp_variable = {
+        var = income_var_temp
+        value = -10
+      }
+      add_income = yes
+    }
+    remove_effect = {
+      add_to_variable = {
+        PA_poverty_development_monthly = 0.01
+        tooltip = poverty_development_monthly_tooltip
+      }
+      add_to_variable = {
+        PA_personal_expense_factor = 0.05
+        tooltip = personal_expense_factor_tooltip
+      }
+    }
+  }
+
+
   #公有長期照護基金
   CHI_pub_care_fund = {
     icon = GFX_CHI_pub_care_fund
@@ -5623,147 +6041,147 @@ CHI_NCSIST_category = {
       add_to_variable = { ROC_breakthrough_factor = 0.07 tooltip = breakthrough_factor_tooltip}
     }
   }
-  #海鯤
-  CHI_project_Hai_Kun = {
-    icon = GFX_CHI_project_Hai_Kun
-    cost = 0 
-    days_remove = 80
-    fire_only_once = yes
-    allowed = { original_tag = CHI }
-    available = {
-      has_completed_focus = CHI_relaunch_project_zhenhai
-    }
-    custom_cost_trigger = {
-      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
-        NOT = { check_variable = { funds < 199 } }
-      }
-    }
-    custom_cost_text = CHI_NCSIST_funds_200
-    complete_effect = {
-      # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
-      }
+  # #海鯤
+  # CHI_project_Hai_Kun = {
+  #   icon = GFX_CHI_project_Hai_Kun
+  #   cost = 0 
+  #   days_remove = 80
+  #   fire_only_once = yes
+  #   allowed = { original_tag = CHI }
+  #   available = {
+  #     has_completed_focus = CHI_relaunch_project_zhenhai
+  #   }
+  #   custom_cost_trigger = {
+  #     # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+  #     mio:CHI_NCSIST_organization = { 
+  #       NOT = { check_variable = { funds < 199 } }
+  #     }
+  #   }
+  #   custom_cost_text = CHI_NCSIST_funds_200
+  #   complete_effect = {
+  #     # 【第一步：扣除 MIO 資金】
+  #     mio:CHI_NCSIST_organization = { 
+  #       add_mio_funds = -200 
+  #     }
       
-    }
-    remove_effect = {
-      #
-    }
-  }
-  #崑崙
-  CHI_project_Kun_Lun = {
-    icon = GFX_CHI_project_Kun_Lun
-    cost = 0 
-    days_remove = 80
-    fire_only_once = yes
-    allowed = { original_tag = CHI }
-    available = {
-      has_completed_focus = CHI_relaunch_project_zhenhai
-    }
-    custom_cost_trigger = {
-      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
-        NOT = { check_variable = { funds < 199 } }
-      }
-    }
-    custom_cost_text = CHI_NCSIST_funds_200
-    complete_effect = {
-      # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
-      }
+  #   }
+  #   remove_effect = {
+  #     #
+  #   }
+  # }
+  # #崑崙
+  # CHI_project_Kun_Lun = {
+  #   icon = GFX_CHI_project_Kun_Lun
+  #   cost = 0 
+  #   days_remove = 80
+  #   fire_only_once = yes
+  #   allowed = { original_tag = CHI }
+  #   available = {
+  #     has_completed_focus = CHI_relaunch_project_zhenhai
+  #   }
+  #   custom_cost_trigger = {
+  #     # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+  #     mio:CHI_NCSIST_organization = { 
+  #       NOT = { check_variable = { funds < 199 } }
+  #     }
+  #   }
+  #   custom_cost_text = CHI_NCSIST_funds_200
+  #   complete_effect = {
+  #     # 【第一步：扣除 MIO 資金】
+  #     mio:CHI_NCSIST_organization = { 
+  #       add_mio_funds = -200 
+  #     }
       
-    }
-    remove_effect = {
-      #
-    }
-  }
-  #鎮冰
-  CHI_project_Zhen_Bing = {
-    icon = GFX_CHI_project_Zhen_Bing
-    cost = 0 
-    days_remove = 100
-    fire_only_once = yes
-    allowed = { original_tag = CHI }
-    available = {
-      has_completed_focus = CHI_relaunch_project_zhenhai
-    }
-    custom_cost_trigger = {
-      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
-        NOT = { check_variable = { funds < 199 } }
-      }
-    }
-    custom_cost_text = CHI_NCSIST_funds_200
-    complete_effect = {
-      # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
-      }
+  #   }
+  #   remove_effect = {
+  #     #
+  #   }
+  # }
+  # #鎮冰
+  # CHI_project_Zhen_Bing = {
+  #   icon = GFX_CHI_project_Zhen_Bing
+  #   cost = 0 
+  #   days_remove = 100
+  #   fire_only_once = yes
+  #   allowed = { original_tag = CHI }
+  #   available = {
+  #     has_completed_focus = CHI_relaunch_project_zhenhai
+  #   }
+  #   custom_cost_trigger = {
+  #     # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+  #     mio:CHI_NCSIST_organization = { 
+  #       NOT = { check_variable = { funds < 199 } }
+  #     }
+  #   }
+  #   custom_cost_text = CHI_NCSIST_funds_200
+  #   complete_effect = {
+  #     # 【第一步：扣除 MIO 資金】
+  #     mio:CHI_NCSIST_organization = { 
+  #       add_mio_funds = -200 
+  #     }
       
-    }
-    remove_effect = {
-      #
-    }
-  }
-  #澎湖
-  CHI_project_Peng_Hu = {
-    icon = GFX_CHI_project_Peng_Hu
-    cost = 0 
-    days_remove = 100
-    fire_only_once = yes
-    allowed = { original_tag = CHI }
-    available = {
-      has_completed_focus = CHI_relaunch_project_zhenhai
-    }
-    custom_cost_trigger = {
-      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
-        NOT = { check_variable = { funds < 199 } }
-      }
-    }
-    custom_cost_text = CHI_NCSIST_funds_200
-    complete_effect = {
-      # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
-      }
+  #   }
+  #   remove_effect = {
+  #     #
+  #   }
+  # }
+  # #澎湖
+  # CHI_project_Peng_Hu = {
+  #   icon = GFX_CHI_project_Peng_Hu
+  #   cost = 0 
+  #   days_remove = 100
+  #   fire_only_once = yes
+  #   allowed = { original_tag = CHI }
+  #   available = {
+  #     has_completed_focus = CHI_relaunch_project_zhenhai
+  #   }
+  #   custom_cost_trigger = {
+  #     # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+  #     mio:CHI_NCSIST_organization = { 
+  #       NOT = { check_variable = { funds < 199 } }
+  #     }
+  #   }
+  #   custom_cost_text = CHI_NCSIST_funds_200
+  #   complete_effect = {
+  #     # 【第一步：扣除 MIO 資金】
+  #     mio:CHI_NCSIST_organization = { 
+  #       add_mio_funds = -200 
+  #     }
       
-    }
-    remove_effect = {
-      #
-    }
-  }
-  #勇鷹號現代化
-  CHI_project_Brave_Eagle = {
-    icon = GFX_CHI_project_Brave_Eagle
-    cost = 0 
-    days_remove = 30
-    fire_only_once = yes
-    allowed = { original_tag = CHI }
-    available = {
-      has_completed_focus = CHI_Air_force_special_allowance
-    }
-    custom_cost_trigger = {
-      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
-        NOT = { check_variable = { funds < 199 } }
-      }
-    }
-    custom_cost_text = CHI_NCSIST_funds_200
-    complete_effect = {
-      # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
-      }
+  #   }
+  #   remove_effect = {
+  #     #
+  #   }
+  # }
+  # #勇鷹號現代化
+  # CHI_project_Brave_Eagle = {
+  #   icon = GFX_CHI_project_Brave_Eagle
+  #   cost = 0 
+  #   days_remove = 30
+  #   fire_only_once = yes
+  #   allowed = { original_tag = CHI }
+  #   available = {
+  #     has_completed_focus = CHI_Air_force_special_allowance
+  #   }
+  #   custom_cost_trigger = {
+  #     # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+  #     mio:CHI_NCSIST_organization = { 
+  #       NOT = { check_variable = { funds < 199 } }
+  #     }
+  #   }
+  #   custom_cost_text = CHI_NCSIST_funds_200
+  #   complete_effect = {
+  #     # 【第一步：扣除 MIO 資金】
+  #     mio:CHI_NCSIST_organization = { 
+  #       add_mio_funds = -200 
+  #     }
       
-    }
-    remove_effect = {
-      #
-      set_country_flag = CHI_project_Brave_Eagle_flag
-    }
-  }
+  #   }
+  #   remove_effect = {
+  #     #
+  #     set_country_flag = CHI_project_Brave_Eagle_flag
+  #   }
+  # }
   #志航號
   CHI_project_Zhi_Hang = {
     icon = GFX_CHI_project_Zhi_Hang
@@ -5862,452 +6280,206 @@ CHI_NCSIST_category = {
   }
 }
 
-#軍改
-CHI_dont_forget_homeland_category = {
-  #陸軍改革
-  #陸軍改革 Phase 1：預備軍事編遣
-  CHI_project_ROCA_reform_1 = {
-    icon = GFX_CHI_project_ROCA_reform
-    available = {
-      NOT = { has_country_flag = CHI_project_ROCA_reform_1_completed }
-    }
-    visible = {
-      original_tag = CHI
-      NOT = { has_country_flag = CHI_project_ROCA_reform_1_completed }
-      has_completed_focus = CHI_modern_whampoa
-    }
-    custom_cost_trigger = {
-      has_army_experience > 49
-    }
-    custom_cost_text = CHI_cost_50_army_xp_tt
-    days_remove = 14
-    complete_effect = {
-      add_army_experience = -50
-    }
-    remove_effect = {
-      set_country_flag = CHI_project_ROCA_reform_1_completed
-      add_ideas = CHI_project_ROCA_reform_1_idea
-    }
-  }
-
-  #陸軍改革 Phase 2：編遣會議
-  CHI_project_ROCA_reform_2 = {
-    icon = GFX_CHI_project_ROCA_reform
-    available = {
-      has_country_flag = CHI_project_ROCA_reform_1_completed
-      NOT = { has_country_flag = CHI_project_ROCA_reform_2_completed }
-    }
-    visible = {
-      original_tag = CHI
-      has_country_flag = CHI_project_ROCA_reform_1_completed
-      NOT = { has_country_flag = CHI_project_ROCA_reform_2_completed }
-    }
-    custom_cost_trigger = {
-      has_army_experience > 49
-    }
-    custom_cost_text = CHI_cost_50_army_xp_tt
-    days_remove = 14
-    complete_effect = {
-      add_army_experience = -50
-    }
-    remove_effect = {
-      set_country_flag = CHI_project_ROCA_reform_2_completed
-      custom_effect_tooltip = CHI_project_ROCA_reform_2_effect_tt
-      delete_unit = { disband = yes }
-    }
-  }
-
-  #陸軍改革 Phase 3：恢復軍級番號
-  CHI_project_ROCA_reform_3 = {
-    icon = GFX_CHI_project_ROCA_reform
-    available = {
-      has_country_flag = CHI_project_ROCA_reform_2_completed
-      NOT = { has_country_flag = CHI_project_ROCA_reform_3_completed }
-    }
-    visible = {
-      original_tag = CHI
-      has_country_flag = CHI_project_ROCA_reform_2_completed
-      NOT = { has_country_flag = CHI_project_ROCA_reform_3_completed }
-    }
-    custom_cost_trigger = {
-      has_army_experience > 49
-    }
-    custom_cost_text = CHI_cost_50_army_xp_tt
-    days_remove = 14
-    complete_effect = {
-      add_army_experience = -50
-    }
-    remove_effect = {
-      set_country_flag = CHI_project_ROCA_reform_3_completed
-      # 遍歷並賦予特質給所有現有將軍
-      every_army_leader = {
-        limit = {
-          is_corps_commander = yes # 確保不發給海軍將領或純元帥
-        }
-        add_trait = {
-         trait = CHI_expanded_command_trait
-        }
-      }
-      add_division_template = {
-        name = "中華民國陸軍指揮所"
-        division_names_group = CHI_INF_01
-        regiments = {
-          modern_armor = { x = 0 y = 0 }
-          modern_armor = { x = 0 y = 1 }
-          modern_armor = { x = 0 y = 2 }
-          modern_sp_artillery_brigade = { x = 1 y = 0 }
-          modern_sp_artillery_brigade = { x = 1 y = 1 }
-        }
-      }
-        
-      1148 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍指揮所\" division_template = \"中華民國陸軍指揮所\" start_experience_factor = 0.5"
-          owner = CHI
-          count = 3
-        }
-      }
-    }
-  }
-
-  #陸軍改革 Phase 4：確立軍事指揮系統
-  CHI_project_ROCA_reform_4 = {
-    icon = GFX_CHI_project_ROCA_reform
-    available = {
-      has_country_flag = CHI_project_ROCA_reform_3_completed
-      NOT = { has_country_flag = CHI_project_ROCA_reform_4_completed }
-    }
-    visible = {
-      original_tag = CHI
-      has_country_flag = CHI_project_ROCA_reform_3_completed
-      NOT = { has_country_flag = CHI_project_ROCA_reform_4_completed }
-    }
-    custom_cost_trigger = {
-      has_army_experience > 49
-    }
-    custom_cost_text = CHI_cost_50_army_xp_tt
-    days_remove = 14
-    complete_effect = {
-      add_army_experience = -50
-    }
-    remove_effect = {
-      set_country_flag = CHI_project_ROCA_reform_4_completed
-      remove_ideas = CHI_project_ROCA_reform_1_idea
-      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
-      add_to_variable = { var = ROC_army_org_factor value = 0.10 }
-      add_to_variable = { var = ROC_combat_width_factor value = -0.15 }
-      add_to_variable = { var = ROC_reinforce_rate value = 0.50 }
-      add_to_variable = { var = ROC_initiative_factor value = 0.50 }
-      custom_effect_tooltip = CHI_project_ROCA_reform_4_effect_tt
-    }
-  }
-  #寧海計畫
-  CHI_project_Ning_Hai = {
-    icon = GFX_CHI_project_Ning_Hai
-    available = {
-      NOT = { has_country_flag = CHI_ninghai_plan_completed_3 }
-    }
-    visible = {
-      original_tag = CHI
-      NOT = { has_country_flag = CHI_ninghai_plan_completed_3 }
-    }
-    custom_cost_trigger = {
-      has_navy_experience > 49
-    }
-    custom_cost_text = CHI_cost_50_navy_xp_tt
-    days_remove = 14
-    complete_effect = {
-      add_navy_experience = -50
-      if = {
-        limit = { has_country_flag = CHI_ninghai_plan_completed_2 }
-        set_country_flag = CHI_ninghai_plan_completed_3
-
-        custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
-        add_to_variable = {  ROC_naval_coordination = 0.01          tooltip = naval_coordination_tooltip         }
-        add_to_variable = {  ROC_naval_speed_factor = 0.02          tooltip = naval_speed_factor_tooltip         }
-        add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
-        add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
-        add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
-        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
-        add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
-
-      }
-      else_if = {
-        limit = { has_country_flag = CHI_ninghai_plan_completed_1 }
-        set_country_flag = CHI_ninghai_plan_completed_2
-
-        custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
-        add_to_variable = {  ROC_naval_coordination = 0.01          tooltip = naval_coordination_tooltip         }
-        add_to_variable = {  ROC_naval_speed_factor = 0.02          tooltip = naval_speed_factor_tooltip         }
-        add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
-        add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
-        add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
-        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
-        add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
-
-      }
-      else = {
-        set_country_flag = CHI_ninghai_plan_completed_1
-
-        custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
-        add_to_variable = {  ROC_naval_coordination = 0.01          tooltip = naval_coordination_tooltip         }
-        add_to_variable = {  ROC_naval_speed_factor = 0.02          tooltip = naval_speed_factor_tooltip         }
-        add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
-        add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
-        add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
-        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
-        add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
-        
-      }
-    }
-  }
-  #凌霄計畫
-  CHI_project_Ling_Hsiao = {
-    icon = GFX_CHI_project_Ling_Hsiao
-    available = {
-      NOT = { has_country_flag = CHI_lingxiao_plan_completed }
-    }
-    visible = {
-      original_tag = CHI
-      NOT = { has_country_flag = CHI_lingxiao_plan_completed }
-    }
-    custom_cost_trigger = {
-      has_air_experience > 49
-    }
-    custom_cost_text = CHI_cost_50_air_xp_tt
-    days_remove = 14
-    complete_effect = {
-      add_air_experience = -50
-      set_country_flag = CHI_lingxiao_plan_completed
-      
-      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
-      add_to_variable = { ROC_air_superiority_efficiency = 0.1  tooltip = air_superiority_efficiency_tooltip  }
-      add_to_variable = { ROC_air_intercept_efficiency = 0.1    tooltip = air_intercept_efficiency_tooltip    }
-      add_to_variable = { ROC_air_cas_efficiency = 0.15         tooltip = air_cas_efficiency_tooltip          }
-      add_to_variable = { ROC_air_attack_factor = 0.05          tooltip = air_attack_factor_tooltip           }
-      add_to_variable = { ROC_air_defence_factor = 0.05         tooltip = air_defence_factor_tooltip          }
-      add_to_variable = { ROC_air_cas_present_factor = 0.15     tooltip = air_cas_present_factor_tooltip      }
-      add_to_variable = { ROC_ground_attack_factor = 0.1        tooltip = ground_attack_factor_tooltip        }
-    }
-  }
-  #駝峰炸射
-  CHI_project_hump_training = {
-    icon = GFX_CHI_project_hump_training
-    available = {
-      NOT = { has_country_flag = CHI_project_hump_training_completed }
-    }
-    visible = {
-      original_tag = CHI
-      NOT = { has_country_flag = CHI_project_hump_training_completed }
-    }
-    custom_cost_trigger = {
-      has_air_experience > 29
-    }
-    custom_cost_text = CHI_cost_30_air_xp_tt
-    days_remove = 14
-    complete_effect = {
-      add_air_experience = -30
-      set_country_flag = CHI_project_hump_training_completed
-      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
-      add_to_variable = { ROC_air_superiority_efficiency = 0.05  tooltip = air_superiority_efficiency_tooltip  }
-    }
-  }
-}
-
 #效率政府
 CHI_efficient_government_category = {
   #嚴格道路品質管理
   CHI_road_quality = {
     icon = GFX_CHI_road_quality
-    allowed = {
-
-    }
     available = {
-
+      has_completed_focus = CHI_efficient_government
     }
-    cancel_trigger = {
-
-    }
-    cost = 100
+    cost = 50
     fire_only_once = yes
+    days_remove = 30
     complete_effect = {
-
-    }
+      custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+      add_to_variable = {
+        CHI_Economy_business_value_factor = -0.05
+        tooltip = business_value_factor_tooltip
+      }
+      set_temp_variable = {
+        var = income_var_temp
+        value = -10
+      }
+      add_income = yes
+    } 
     remove_effect = {
-
+      every_owned_state = { 
+        limit = { infrastructure < 3 }
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
     }
   }
   #公定發電優質煤限制
-  CHI_road_quality_coal = {
+  CHI_quality_coal = {
     icon = GFX_CHI_quality_coal
-    allowed = {
-
-    }
     available = {
-
+      has_completed_focus = CHI_efficient_government
+      check_variable = { var = var_CHI_quality_coal value = 3 compare = less_than_or_equals }
     }
-    cancel_trigger = {
-
+    visible = { 
+      check_variable = { var = var_CHI_quality_coal value = 3 compare = less_than_or_equals }
     }
-    cost = 100
-    fire_only_once = yes
+    cost = 50
+    days_remove = 30
     complete_effect = {
-
+      set_temp_variable = {
+        var = income_var_temp
+        value = -10
+      }
+      add_income = yes
     }
     remove_effect = {
-
-    }
-  }
-  #水質監測網
-  CHI_water_monitor = {
-    icon = GFX_CHI_water_monitor
-    allowed = {
-
-    }
-    available = {
-
-    }
-    cancel_trigger = {
-
-    }
-    cost = 100
-    fire_only_once = yes
-    complete_effect = {
-
-    }
-    remove_effect = {
-
+      custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+      add_to_variable = {
+        CHI_Economy_line_change_production_efficiency_factor = 0.05
+        tooltip = line_change_production_efficiency_factor_tooltip
+      }
     }
   }
   #公營產業顧問中心：CHI_state_biz_advisor
   CHI_state_biz_advisor = {
     icon = GFX_CHI_state_biz_advisor
-    allowed = {
-
-    }
     available = {
-
+      has_completed_focus = CHI_Special_budget
+      check_variable = { var = var_CHI_state_biz_advisor value = 3 compare = less_than_or_equals }
     }
-    cancel_trigger = {
-
+    visible = { 
+      check_variable = { var = var_CHI_state_biz_advisor value = 3 compare = less_than_or_equals }
     }
-    cost = 100
-    fire_only_once = yes
-    complete_effect = {
-
-    }
+    cost = 50
+    days_remove = 30
+    # complete_effect = {
+    # }
     remove_effect = {
-
+      custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+      add_to_variable = {
+        CHI_Economy_production_factory_max_efficiency_factor = 0.1
+        tooltip = production_factory_max_efficiency_factor_tooltip
+      }
     }
   }
   #青年願景工程：CHI_youth_vision
   CHI_youth_vision = {
     icon = GFX_CHI_youth_vision
-    allowed = {
-
-    }
     available = {
-
+      has_completed_focus = CHI_Special_budget
     }
-    cancel_trigger = {
-
-    }
-    cost = 100
+    cost = 50
     fire_only_once = yes
-    complete_effect = {
+    days_remove = 30
+    # complete_effect = {
 
-    }
+    # }
     remove_effect = {
-
+      custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+      add_to_variable = {
+        CHI_Economy_personal_value_factor = 0.05
+        tooltip = personal_value_factor_tooltip
+      }
     }
   }
   #青年創業貸款：CHI_youth_startup_loan
   CHI_youth_startup_loan = {
     icon = GFX_CHI_youth_startup_loan
-    allowed = {
-
-    }
     available = {
-
+      has_completed_focus = CHI_Special_budget
+      check_variable = { var = var_CHI_youth_startup_loan value = 2 compare = less_than_or_equals }
     }
-    cancel_trigger = {
-
+    visible = { 
+      check_variable = { var = var_CHI_youth_startup_loan value = 2 compare = less_than_or_equals }
     }
-    cost = 100
-    fire_only_once = yes
-    complete_effect = {
+    cost = 50
+    days_remove = 30
+    # complete_effect = {
 
-    }
+    # }
     remove_effect = {
-
+      custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+      add_to_variable = {
+        CHI_Economy_business_value_factor = 0.05
+        tooltip = business_value_factor_tooltip
+      }
     }
   }
   #公共運輸整合：CHI_transit_integration
   CHI_transit_integration = {
     icon = GFX_CHI_transit_integration
-    allowed = {
-
-    }
     available = {
-
+      has_completed_focus = CHI_Special_budget
+      check_variable = { var = var_CHI_transit_integration value = 5 compare = less_than_or_equals }
     }
-    cancel_trigger = {
+    visible = { 
+      check_variable = { var = var_CHI_transit_integration value = 5 compare = less_than_or_equals }
+    } 
+    cost = 50
+    days_remove = 30
+    # complete_effect = {
 
-    }
-    cost = 100
-    fire_only_once = yes
-    complete_effect = {
-
-    }
+    # }
     remove_effect = {
+      custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+      add_to_variable = {
+        CHI_Economy_production_speed_rail_way_factor = 0.05
+        tooltip = production_speed_rail_way_factor_tooltip
+      }
+      add_to_variable = {
+        CHI_Economy_production_speed_infrastructure_factor = 0.05
+        tooltip = production_speed_infrastructure_factor_tooltip
+      }
 
     }
   }
   #完善捷運路網：CHI_mrt_network
   CHI_mrt_network = {
     icon = GFX_CHI_mrt_network
-    allowed = {
-
-    }
     available = {
-
+      has_completed_focus = CHI_Special_budget
     }
-    cancel_trigger = {
-
-    }
-    cost = 100
+    cost = 50
     fire_only_once = yes
-    complete_effect = {
+    days_remove = 30
+    # complete_effect = {
 
-    }
+    # }
     remove_effect = {
-
+      custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+      add_to_variable = {
+        CHI_Economy_business_value_factor = 0.1
+        tooltip = business_value_factor_tooltip
+      }
     }
   }
   #分離對陸情報體系：CHI_separate_prc_intel
   CHI_separate_prc_intel = {
     icon = GFX_CHI_separate_prc_intel
-    allowed = {
-
-    }
     available = {
-
-    }
-    cancel_trigger = {
-
+      has_completed_focus = CHI_Special_budget
     }
     cost = 100
     fire_only_once = yes
-    complete_effect = {
-
-    }
+    # complete_effect = {
+    days_remove = 120
+    # }
     remove_effect = {
-
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      add_to_variable = {
+        CHI_army_attack_against_major_factor = 0.15
+        tooltip = army_attack_against_major_factor_tooltip
+      }
+      add_to_variable = {
+        CHI_army_defence_against_major_factor = 0.15
+        tooltip = army_defence_against_major_factor_tooltip
+      }
     }
   }
 }
 
-##財政政策
+#財政政策
 CHI_Economy_Industry_category = {
   # ═══════════════════════════════════════
   # Group 1: 要求國策「完善軍工體系」
@@ -6320,11 +6492,11 @@ CHI_Economy_Industry_category = {
     days_remove = 30
     available = {
       has_completed_focus = CHI_Complete_Military_Idustry
-      NOT = { var_CHI_mil_industry_expansion > 5 }
+      check_variable = { var = var_CHI_mil_industry_expansion value = 5 compare = less_than_or_equals }
     }
     visible = {
       original_tag = CHI
-      NOT = { var_CHI_mil_industry_expansion > 5 }
+      check_variable = { var = var_CHI_mil_industry_expansion value = 5 compare = less_than_or_equals }
     }
     custom_cost_trigger = {
       check_variable = { CHI_fiscal_budget_var > 0 }
@@ -6376,6 +6548,9 @@ CHI_Economy_Industry_category = {
       add_to_variable = {
         CHI_fiscal_budget_var = -1
       }
+      CHI_Economy_hidden_armor_cost_equipment_bonus_effect = yes
+      CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
+      CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = yes
     }
     remove_effect = {
       set_country_flag = CHI_mil_production_line_completed
@@ -6406,7 +6581,7 @@ CHI_Economy_Industry_category = {
       }
     }
     remove_effect = {
-     
+      CHI_Economy_hidden_armor_cost_equipment_bonus_effect = yes
     }
   }
 
@@ -6416,11 +6591,11 @@ CHI_Economy_Industry_category = {
     available = {
       has_completed_focus = CHI_Complete_Military_Idustry
       has_country_flag = CHI_mil_production_line_completed
-      NOT = { var_CHI_advanced_mil_engine > 3 }
+      check_variable = { var = var_CHI_advanced_mil_engine value = 3 compare = less_than_or_equals }
     }
     visible = {
       original_tag = CHI
-      NOT = { var_CHI_advanced_mil_engine > 3 }
+      check_variable = { var = var_CHI_advanced_mil_engine value = 3 compare = less_than_or_equals }
     }
     cost = 0 
     days_remove = 100
@@ -6436,8 +6611,11 @@ CHI_Economy_Industry_category = {
         var_CHI_advanced_mil_engine = 1
       }
     }
+    complete_effect = {
+      CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
+    }
     remove_effect = {
-     
+      CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
     }
   }
 
@@ -6473,6 +6651,7 @@ CHI_Economy_Industry_category = {
             instant_build = yes
         }
       }
+      CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = yes
     }
   }
 
@@ -6509,6 +6688,7 @@ CHI_Economy_Industry_category = {
         ROC_no_supply_grace = 24
         tooltip = no_supply_grace_tooltip
       }
+      add_ideas = CHI_improve_mil_quality_idea
     }
   }
 
@@ -6518,11 +6698,11 @@ CHI_Economy_Industry_category = {
     available = {
       has_completed_focus = CHI_Complete_Military_Idustry
       has_completed_focus = CHI_relaunch_project_zhenhai
-      NOT = { var_CHI_expand_shipyards > 10 }
+      check_variable = { var = var_CHI_expand_shipyards value = 10 compare = less_than_or_equals }
     }
     visible = {
       original_tag = CHI
-      NOT = { var_CHI_expand_shipyards > 10 }
+      check_variable = { var = var_CHI_expand_shipyards value = 10 compare = less_than_or_equals }
     }
     cost = 0 
     days_remove = 160
@@ -6602,12 +6782,12 @@ CHI_Economy_Industry_category = {
       OR = {
         has_completed_focus = CHI_From_Downstream_To_Upstream
         has_completed_focus = CHI_international_division_of_labor
-        NOT = { var_CHI_solar_industry_project > 3 }
+        check_variable = { var = var_CHI_solar_industry_project value = 3 compare = less_than_or_equals }
       }
     }
     visible = {
       original_tag = CHI
-      NOT = { var_CHI_solar_industry_project > 3 }
+      check_variable = { var = var_CHI_solar_industry_project value = 3 compare = less_than_or_equals }
     }
     cost = 0 
     days_remove = 30
@@ -6641,10 +6821,11 @@ CHI_Economy_Industry_category = {
     available = {
       has_completed_focus = CHI_Rebulid_7th_CT
       has_completed_focus = CHI_Way_Of_Can_To_Asia
-      NOT = { var_CHI_expand_processing_plant > 3 }
+      check_variable = { var = var_CHI_expand_processing_plant value = 3 compare = less_than_or_equals }
     }
     visible = {
       original_tag = CHI
+      check_variable = { var = var_CHI_expand_processing_plant value = 3 compare = less_than_or_equals }
     }
     cost = 0 
     days_remove = 30
@@ -6758,7 +6939,7 @@ CHI_Economy_Industry_category = {
       original_tag = CHI
     }
     cost = 0 
-    days_remove = 100
+    days_remove = 50
     fire_only_once = yes
     custom_cost_trigger = {
       check_variable = { CHI_fiscal_budget_var > 0 }
@@ -6769,37 +6950,35 @@ CHI_Economy_Industry_category = {
         CHI_fiscal_budget_var = -1
       }
     }
-    remove_effect = {
-     
-    }
+    modifier = { production_speed_energy_farm_factor = 0.05 }
   }
 
-  #開採矽砂
-  CHI_mine_silica_sand = {
-    icon = GFX_CHI_mine_silica_sand
-    available = {
-      has_completed_focus = CHI_Self_Sufficiency
-      has_completed_focus = CHI_Rebulid_7th_CT
-    }
-    visible = {
-      original_tag = CHI
-    }
-    cost = 0 
-    days_remove = 100
-    fire_only_once = yes
-    custom_cost_trigger = {
-      check_variable = { CHI_fiscal_budget_var > 0 }
-    }
-    custom_cost_text = CHI_fiscal_budget_cost
-    complete_effect = {
-      add_to_variable = {
-        CHI_fiscal_budget_var = -1
-      }
-    }
-    remove_effect = {
+  # #開採矽砂
+  # CHI_mine_silica_sand = {
+  #   icon = GFX_CHI_mine_silica_sand
+  #   available = {
+  #     has_completed_focus = CHI_Self_Sufficiency
+  #     has_completed_focus = CHI_Rebulid_7th_CT
+  #   }
+  #   visible = {
+  #     original_tag = CHI
+  #   }
+  #   cost = 0 
+  #   days_remove = 100
+  #   fire_only_once = yes
+  #   custom_cost_trigger = {
+  #     check_variable = { CHI_fiscal_budget_var > 0 }
+  #   }
+  #   custom_cost_text = CHI_fiscal_budget_cost
+  #   complete_effect = {
+  #     add_to_variable = {
+  #       CHI_fiscal_budget_var = -1
+  #     }
+  #   }
+  #   remove_effect = {
      
-    }
-  }
+  #   }
+  # }
 
   # ═══════════════════════════════════════
   # Group 3: 要求國策「向外發展」
@@ -6816,7 +6995,7 @@ CHI_Economy_Industry_category = {
       original_tag = CHI
     }
     cost = 0 
-    days_remove = 100
+    days_remove = 50
     fire_only_once = yes
     custom_cost_trigger = {
       check_variable = { CHI_fiscal_budget_var > 0 }
@@ -6827,64 +7006,62 @@ CHI_Economy_Industry_category = {
         CHI_fiscal_budget_var = -1
       }
     }
-    remove_effect = {
-     
-    }
+    modifier = { production_speed_energy_farm_factor = 0.05 }
   }
 
-  #挪威國事訪問
-  CHI_norway_state_visit = {
-    icon = GFX_CHI_norway_state_visit
-    available = {
-      has_completed_focus = CHI_outward_expansion
-      has_completed_focus = CHI_Rebulid_7th_CT
-    }
-    visible = {
-      original_tag = CHI
-    }
-    cost = 0 
-    days_remove = 100
-    fire_only_once = yes
-    custom_cost_trigger = {
-      check_variable = { CHI_fiscal_budget_var > 0 }
-    }
-    custom_cost_text = CHI_fiscal_budget_cost
-    complete_effect = {
-      add_to_variable = {
-        CHI_fiscal_budget_var = -1
-      }
-    }
-    remove_effect = {
+  # #挪威國事訪問
+  # CHI_norway_state_visit = {
+  #   icon = GFX_CHI_norway_state_visit
+  #   available = {
+  #     has_completed_focus = CHI_outward_expansion
+  #     has_completed_focus = CHI_Rebulid_7th_CT
+  #   }
+  #   visible = {
+  #     original_tag = CHI
+  #   }
+  #   cost = 0 
+  #   days_remove = 100
+  #   fire_only_once = yes
+  #   custom_cost_trigger = {
+  #     check_variable = { CHI_fiscal_budget_var > 0 }
+  #   }
+  #   custom_cost_text = CHI_fiscal_budget_cost
+  #   complete_effect = {
+  #     add_to_variable = {
+  #       CHI_fiscal_budget_var = -1
+  #     }
+  #   }
+  #   remove_effect = {
      
-    }
-  }
+  #   }
+  # }
 
-  #提議歐亞共同合作研發
-  CHI_eurasia_joint_rd = {
-    icon = GFX_CHI_eurasia_joint_rd
-    available = {
-      has_completed_focus = CHI_outward_expansion
-      has_completed_focus = CHI_Rebulid_7th_CT
-    }
-    visible = {
-      original_tag = CHI
-    }
-    cost = 0 
-    days_remove = 100
-    fire_only_once = yes
-    custom_cost_trigger = {
-      check_variable = { CHI_fiscal_budget_var > 0 }
-    }
-    custom_cost_text = CHI_fiscal_budget_cost
-    complete_effect = {
-      add_to_variable = {
-        CHI_fiscal_budget_var = -1
-      }
-    }
-    remove_effect = {
+  # #提議歐亞共同合作研發
+  # CHI_eurasia_joint_rd = {
+  #   icon = GFX_CHI_eurasia_joint_rd
+  #   available = {
+  #     has_completed_focus = CHI_outward_expansion
+  #     has_completed_focus = CHI_Rebulid_7th_CT
+  #   }
+  #   visible = {
+  #     original_tag = CHI
+  #   }
+  #   cost = 0 
+  #   days_remove = 100
+  #   fire_only_once = yes
+  #   custom_cost_trigger = {
+  #     check_variable = { CHI_fiscal_budget_var > 0 }
+  #   }
+  #   custom_cost_text = CHI_fiscal_budget_cost
+  #   complete_effect = {
+  #     add_to_variable = {
+  #       CHI_fiscal_budget_var = -1
+  #     }
+  #   }
+  #   remove_effect = {
      
-    }
-  }
+  #   }
+  # }
 }
 
 

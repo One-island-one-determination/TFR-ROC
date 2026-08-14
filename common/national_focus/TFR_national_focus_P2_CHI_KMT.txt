@@ -70,7 +70,14 @@ focus_tree = {
     }
     relative_position_id = CHI_Post_war_review_status_quo
     completion_reward = {
-      unlock_decision_tooltip = XX
+      unlock_decision_tooltip = CHI_co_learning
+      unlock_decision_tooltip = CHI_co_living
+      unlock_decision_tooltip = CHI_state_biz_advisor
+      unlock_decision_tooltip = CHI_youth_vision
+      unlock_decision_tooltip = CHI_youth_startup_loan
+      unlock_decision_tooltip = CHI_transit_integration
+      unlock_decision_tooltip = CHI_mrt_network
+      unlock_decision_tooltip = CHI_separate_prc_intel
     }
   }
   focus = {
@@ -348,7 +355,7 @@ focus_tree = {
       focus = CHI_Eleplant_in_room
     }
     available = { NOT = { has_idea = CHI_political_truce} }
-    complete_effect = {
+    completion_reward = {
       add_timed_idea = {
         idea = CHI_political_truce
         days = 200
@@ -513,7 +520,8 @@ focus_tree = {
         CHI_SE_political_power_gain = 0.01
         tooltip = political_power_gain_tooltip
       }
-      unlock_decision_tooltip = XX
+      unlock_decision_tooltip = CHI_road_quality
+      unlock_decision_tooltip = CHI_quality_coal
     }
     relative_position_id = CHI_Han_Post_war
   }
@@ -1769,6 +1777,7 @@ focus_tree = {
         id = CHI.BF.11
       }
       custom_effect_tooltip = military_reform_decision_tt
+      set_country_flag = KMT_ROCA_reform_flag
     }
   }
   focus = {
@@ -2283,6 +2292,9 @@ focus_tree = {
       focus = CHI_spirit_reaches_to_rainbow
     }
     relative_position_id = CHI_spirit_reaches_to_rainbow
+    completion_reward = {
+      CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
+    }
   }
   focus = {
     id = CHI_american_fighters_reverse_enginnering

@@ -286,7 +286,9 @@ CHI_ROC_army_dynamic = {
   recon_factor                       = ROC_recon_factor
   army_breakthrough_against_minor_factor  = ROC_army_breakthrough_against_minor_factor
   land_night_attack                  = ROC_land_night_attack
-  org_loss_at_low_org_factor         = ROC_org_loss_at_low_org_factor 
+  org_loss_at_low_org_factor         = ROC_org_loss_at_low_org_factor
+  army_attack_against_major_factor   = ROC_army_attack_against_major_factor
+  army_defence_against_major_factor  = ROC_army_defence_against_major_factor 
 
 	# ==========================================
 	# 兵種特化加成 (Unit Specific Bonuses)
@@ -369,6 +371,8 @@ CHI_ROC_army_dynamic_2 = {
   army_breakthrough_against_minor_factor  = ROC_army_breakthrough_against_minor_factor
   land_night_attack                  = ROC_land_night_attack
   org_loss_at_low_org_factor         = ROC_org_loss_at_low_org_factor
+  army_attack_against_major_factor   = ROC_army_attack_against_major_factor
+  army_defence_against_major_factor  = ROC_army_defence_against_major_factor
 
 	# ==========================================
 	# 兵種特化加成 (Unit Specific Bonuses)
@@ -450,6 +454,8 @@ CHI_ROC_army_dynamic_3 = {
   army_breakthrough_against_minor_factor  = ROC_army_breakthrough_against_minor_factor
   land_night_attack                  = ROC_land_night_attack
   org_loss_at_low_org_factor         = ROC_org_loss_at_low_org_factor
+  army_attack_against_major_factor   = ROC_army_attack_against_major_factor
+  army_defence_against_major_factor  = ROC_army_defence_against_major_factor
 
 	# ==========================================
 	# 兵種特化加成 (Unit Specific Bonuses)
@@ -621,6 +627,9 @@ CHI_Economy = {
   local_resources_factor = CHI_Economy_local_resources_factor
   production_factory_efficiency_gain_factor = CHI_Economy_production_factory_efficiency_gain_factor
   industrial_development_monthly = CHI_Economy_industrial_development_monthly
+  production_factory_max_efficiency_factor = CHI_Economy_production_factory_max_efficiency_factor
+  production_speed_rail_way_factor = CHI_Economy_production_speed_rail_way_factor
+  production_speed_infrastructure_factor = CHI_Economy_production_speed_infrastructure_factor
 }
 
 ## 負面Buff

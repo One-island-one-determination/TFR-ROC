@@ -52,15 +52,15 @@ set_variable = { var = CHI_kmt_grassroots value = 10 }
 set_variable = { ecn_armor_research_var = -5 }
 set_variable = { ecn_electronics_research_var = 15 }
 set_variable = { ecn_armor_cost_var = 30 }
-set_variable = { ecn_air_cost_var = 50 }
-set_variable = { ecn_armored_car_var = 15 }
+set_variable = { ecn_air_cost_var = 30 }
+set_variable = { ecn_armored_car_var = 30 }
 
 add_ideas = {
   CHI_Economy_hidden_armor_research_bonus
   CHI_Economy_hidden_electronics_research_bonus
-  CHI_Economy_hidden_armor_cost_equipment_bonus
-  CHI_Economy_hidden_air_equipment_cost_equipment_bonus
-  CHI_Economy_hidden_armored_car_cost_equipment_bonus
+  CHI_Economy_hidden_armor_cost_equipment_bonus_p30
+  CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p30
+  CHI_Economy_hidden_armored_car_cost_equipment_bonus_p30
 }
 
 #角色

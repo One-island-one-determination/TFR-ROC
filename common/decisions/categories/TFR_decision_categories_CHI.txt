@@ -283,25 +283,6 @@ CHI_NCSIST_category = {
   }
 }
 
-#軍改
-CHI_dont_forget_homeland_category = {
-  icon = GFX_decision_dont_forget_homeland
-  visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    OR = {
-      is_debug = yes
-      AND = {
-        NOT = {
-          is_ally_with = PRC
-        }
-        has_completed_focus = CHI_dont_forget_homeland
-      }
-    }
-  }
-}
 
 #效率政府
 CHI_efficient_government_category = {
@@ -313,12 +294,8 @@ CHI_efficient_government_category = {
   visible = {
     OR = {
       is_debug = yes
-      AND = {
-        NOT = {
-          is_ally_with = PRC
-        }
-        has_completed_focus = CHI_efficient_government
-      }
+      has_completed_focus = CHI_Special_budget
+      has_completed_focus = CHI_efficient_government
     }
   }
 }

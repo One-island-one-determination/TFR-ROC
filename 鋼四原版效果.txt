@@ -1,0 +1,254 @@
+
+##============[factor結尾皆為「百分比」]==========##
+
+# ==========================================
+# 建築、地區與資源 (Buildings, States & Resources)
+# ==========================================
+global_building_slots_factor = 0.1 # 地區最大工廠數 
+global_building_slots = 0.1 # 地區最大工廠數 
+local_building_slots_factor = 0.1 # 當地最大工廠數 
+local_building_slots = 0.1 # 當地最大工廠數 
+local_factory_energy_consumption = 0.1 # 本地工廠能源消耗 
+local_resources = 0.1 # 當地資源 
+local_resources_factor = 0.1 # 戰略資源獲取效率 
+local_resources_oil_factor = 0.1 # 石油獲取效率 
+local_resources_aluminium_factor = 0.1 # 鋁獲取效率 
+local_resources_rubber_factor = 0.1 # 橡膠獲取效率 
+local_resources_tungsten_factor = 0.1 # 鎢獲取效率 
+local_resources_steel_factor = 0.1 # 鋼鐵獲取效率 
+local_resources_chromium_factor = 0.1 # 鉻獲取效率 
+local_resources_coal_factor = 0.1 # 煤獲取效率 
+local_manpower = 0.1 # 當地人力 
+local_supplies = 0.1 # 當地補給能力 
+local_factories = 0.1 # 當地工廠數 
+state_resources_factor = 0.1 # 當地可用資源 
+slots_from_population_factor = 0.1 # 來自人口的建築位 
+slots_from_infrastructure_factor = 0.1 # 來自基礎設施的建築位 
+additional_slots_cap = 0.1 # 來自科技的建築位 
+
+# ==========================================
+# 建設速度 (Construction Speed)
+# ==========================================
+production_speed_buildings_factor = 0.1 # 建設速度 
+production_speed_buildings_powered_factor = 0.1 # 已供能的建設速度 
+production_speed_facility_factor = 0.1 # 設施建設速度 
+production_speed_infrastructure_factor = 0.1 # 基礎設施建設速度 
+production_speed_arms_factory_factor = 0.1 # 軍用工廠建設速度 
+production_speed_industrial_complex_factor = 0.1 # 民用工廠建設速度 
+production_speed_air_base_factor = 0.1 # 空軍基地建設速度 
+production_speed_naval_base_factor = 0.1 # 海軍基地建設速度 
+production_speed_bunker_factor = 0.1 # 陸上要塞建設速度 
+production_speed_coastal_bunker_factor = 0.1 # 海岸要塞建設速度 
+production_speed_dockyard_factor = 0.1 # 海軍船塢建設速度 
+production_speed_anti_air_building_factor = 0.1 # 防空陣地建設速度 
+production_speed_synthetic_refinery_factor = 0.1 # 合成煉油廠建設速度 
+production_speed_radar_station_factor = 0.1 # 雷達站建設速度 
+production_speed_rocket_site_factor = 0.1 # 火箭基地建設速度 
+production_speed_nuclear_reactor_factor = 0.1 # 核反應堆建設速度 
+production_speed_fuel_silo_factor = 0.1 # 儲油罐建設速度 
+production_speed_rail_way_factor = 0.1 # 鐵路建設速度 
+production_speed_supply_node_factor = 0.1 # 補給中心建設速度 
+
+# ==========================================
+# 工業、生產與貿易 (Industry, Production & Trade)
+# ==========================================
+building_convertion_factor = 0.1 # 建築轉換系數 
+conversion_cost_mil_to_civ_factor = 0.1 # 軍用工廠轉民用工廠花費 
+conversion_cost_civ_to_mil_factor = 0.1 # 民用工廠轉軍用工廠花費 
+consumer_goods_factor = 0.1 # 生活消費品工廠系數 
+industrial_capacity_factor = 0.1 # 工廠產出 
+industrial_capacity_powered_factor = 0.1 # 已供能的工廠產出 
+industrial_capacity_dockyard_factor = 0.1 # 海軍船塢產出 
+industry_air_damage_factor = 0.1 # 工廠受轟炸易損性 
+industry_repair_factor = 0.1 # 工廠修覆速度 
+industry_free_repair_factor = 0.1 # 免費維修 
+production_factory_max_efficiency = 0.1 # 生產效率上限 
+production_factory_start_efficiency_factor = 0.1 # 基礎生產效率 
+production_factory_efficiency_gain_factor = 0.1 # 生產效率增長 
+line_change_production_efficiency_factor = 0.1 # 生產效率保持 
+production_lack_of_resource_penalty_factor = 0.1 # 缺乏戰略資源懲罰 
+production_oil_factor = 0.1 # 合成油 
+energy_gain_factor = 0.1 # 從煤炭獲得的能量 
+fuel_gain_factor = 0.1 # 從石油獲得的燃油 
+max_fuel_factor = 0.1 # 燃油容量 
+fuel_cost = 0.1 # 燃油消耗 
+factory_energy_consumption = 0.1 # 工廠能源消耗 
+min_export_factor = 0.1 # 出口資源 
+trade_opinion_factor = 0.1 # 貿易影響力系數 
+
+# ==========================================
+# 政治、外交與法案 (Politics, Diplomacy & Laws)
+# ==========================================
+political_power_gain = 0.1 # 每日政治點數獲取 
+political_power_cost = 0.1 # 每日消耗的政治點數 
+political_power_factor = 0.1 # 政治點數 
+stability_factor = 0.1 # 穩定度 
+stability_weekly = 0.1 # 每周穩定度 
+war_support_factor = 0.1 # 戰爭支持度 
+war_support_weekly = 0.1 # 每周戰爭支持度 
+surrender_limit = 0.1 # 投降界限 
+command_power_gain = 0.1 # 每日指揮點數增長 
+max_command_power = 0.1 # 最大指揮點數提高 
+global_monthly_population = 0.1 # 每月人口 
+conscription_factor = 0.1 # 可征募人口 
+weekly_manpower = 0.1 # 每周人力 
+communism_drift = 0.1 # 每日共產主義支持率 
+democratic_drift = 0.1 # 每日民主主義支持率 
+fascism_drift = 0.1 # 每日法西斯主義支持率 
+neutrality_drift = 0.1 # 每日中立主義支持率 
+opinion_gain_monthly = 0.1 # 改善關系獲得的評價 
+justify_war_goal_time = 0.1 # 正當化戰爭目標所需時間 
+generate_wargoal_tension_limit = 0.1 # 制造戰爭目標的緊張度限制 
+join_faction_tension_limit = 0.1 # 加入陣營的緊張度限制 
+guarantee_cost = 0.1 # 保障獨立花費 
+embargo_threshold_factor = 0.1 # 實施禁運的緊張度限制 
+embargo_cost_factor = 0.1 # 禁運花費修正 
+legitimacy_daily = 0.1 # 每日正統性增長 
+
+# ==========================================
+# 陸軍與戰鬥 (Army & Combat)
+# ==========================================
+army_attack_factor = 0.1 # 陸軍師攻擊 
+army_defence_factor = 0.1 # 陸軍師防御 
+army_core_attack_factor = 0.1 # 陸軍師核心領土攻擊 
+army_core_defence_factor = 0.1 # 陸軍師核心領土防御 
+army_org = 0.1 # 陸軍師組織度 
+army_org_factor = 0.1 # 陸軍師組織度 
+army_org_regain = 0.1 # 陸軍組織度恢覆 
+army_morale = 0.1 # 陸軍師組織度恢覆速率 
+army_speed_factor = 0.1 # 陸軍師速度 
+army_strength = 0.1 # HP 
+breakthrough = 0.1 # 突破 
+max_dig_in = 0.1 # 塹壕上限 
+dig_in_speed = 0.1 # 塹壕速度 
+land_reinforce_rate = 0.1 # 增援率 
+planning_speed = 0.1 # 計劃速度 
+max_planning = 0.1 # 計劃加成上限 
+attrition = 0.1 # 陸軍師損耗 
+out_of_supply_factor = 0.1 # 非戰鬥補給耗盡懲罰 
+supply_consumption_factor = 0.1 # 補給消耗 
+combat_width_factor = 0.1 # 己方戰場寬度 
+land_night_attack = 0.1 # 陸戰夜戰攻擊 
+recon_factor = 0.1 # 偵查 
+equipment_capture = 0.1 # 裝備繳獲比例 
+casualty_trickleback = 0.1 # 傷兵覆原 
+experience_loss_factor = 0.1 # 有經驗的士兵的損失 
+initiative_factor = 0.1 # 主動性 
+coordination_bonus = 0.1 # 協同性 
+
+# ==========================================
+# 陸軍兵種特化 (Army Sub-Units)
+# ==========================================
+army_infantry_attack_factor = 0.1 # 步兵攻擊 
+army_infantry_defence_factor = 0.1 # 步兵防御 
+army_armor_attack_factor = 0.1 # 裝甲攻擊 
+army_armor_defence_factor = 0.1 # 裝甲防御 
+army_artillery_attack_factor = 0.1 # 炮兵攻擊 
+army_artillery_defence_factor = 0.1 # 炮兵防御 
+special_forces_attack_factor = 0.1 # 特種攻擊 
+special_forces_defence_factor = 0.1 # 特種防御 
+motorized_attack_factor = 0.1 # 摩托化攻擊 
+motorized_defence_factor = 0.1 # 摩托化防御 
+mechanized_attack_factor = 0.1 # 機械化攻擊 
+mechanized_defence_factor = 0.1 # 機械化防御 
+cavalry_attack_factor = 0.1 # 騎兵攻擊 
+cavalry_defence_factor = 0.1 # 騎兵防御 
+
+# ==========================================
+# 海軍與艦艇 (Navy & Ships)
+# ==========================================
+naval_speed = 0.1 # 海軍速度 
+naval_hit_chance = 0.1 # 海軍命中率 
+naval_detection = 0.1 # 海軍探測 
+navy_org = 0.1 # 海軍組織度 
+naval_morale = 0.1 # 海軍組織度恢覆速率 
+navy_submarine_attack_factor = 0.1 # 潛艇攻擊 
+navy_submarine_defence_factor = 0.1 # 潛艇防御 
+navy_capital_ship_attack_factor = 0.1 # 主力艦攻擊 
+navy_capital_ship_defence_factor = 0.1 # 主力艦裝甲 
+navy_screen_attack_factor = 0.1 # 屏衛艦攻擊 
+navy_screen_defence_factor = 0.1 # 屏衛艦防御 
+navy_anti_air_attack = 0.1 # 海軍對空攻擊 
+navy_max_range = 0.1 # 海軍最大航程 
+submarine_detection_factor = 0.1 # 對潛探測 
+screening_efficiency = 0.1 # 屏衛效率 
+positioning = 0.1 # 陣位 
+naval_coordination = 0.1 # 艦隊協同性 
+convoy_raiding_efficiency_factor = 0.1 # 襲擊運輸船任務效率 
+amphibious_invasion = 0.1 # 兩棲登陸速度 
+naval_invasion_penalty = 0.1 # 登陸懲罰 
+naval_invasion_preparation = 0.1 # 登陸準備時間 
+shore_bombardment = 0.1 # 對岸炮擊加成 
+
+# ==========================================
+# 空軍與飛機 (Airforce & Planes)
+# ==========================================
+air_attack = 0.1 # 對空攻擊 
+air_defence = 0.1 # 空中防御 
+air_max_speed = 0.1 # 空軍最大速度 
+air_agility = 0.1 # 機動 
+air_range = 0.1 # 空軍航程 
+air_bombing = 0.1 # 對地轟炸 
+ground_attack = 0.1 # 對地攻擊 
+naval_strike_attack = 0.1 # 對海轟炸 
+air_superiority = 0.1 # 空優 
+air_mission_efficiency = 0.1 # 空軍任務效率 
+air_accidents = 0.1 # 空軍事故幾率 
+air_night_penalty = 0.1 # 夜間行動懲罰 
+air_weather_penalty = 0.1 # 惡劣天氣懲罰 
+carrier_traffic = 0.1 # 航母起降能力 
+carrier_sortie_efficiency_factor = 0.1 # 艦載機出擊效率 
+
+# ==========================================
+# 經驗與訓練 (Experience & Training)
+# ==========================================
+xp_gain_factor = 0.1 # 指揮官經驗增長 
+xp_gain_army = 0.1 # 陸軍經驗增長 
+xp_gain_navy = 0.1 # 海軍經驗增長 
+xp_gain_air = 0.1 # 空軍經驗增長 
+training_time_factor = 0.1 # 訓練時間 
+training_time_army = 0.1 # 陸軍師訓練時間 
+training_time_navy = 0.1 # 海軍訓練時間 
+training_time_air = 0.1 # 空軍訓練時間 
+
+# ==========================================
+# 情報、間諜與抵抗 (Intelligence, Spies & Resistance)
+# ==========================================
+spy_acquire_intel_efficiency = 0.1 # 情報收集 
+spy_boost_party_popularity_efficiency = 0.1 # 提高黨派支持率 
+spy_attempt_coup_efficiency = 0.1 # 嘗試政變 
+encryption = 0.1 # 加密 
+decryption = 0.1 # 解密 
+intelligence_agency_defense = 0.1 # 反間諜 
+intel_network_gain = 0.1 # 情報網強度增長 
+operative_slot = 0.1 # 特工位 
+resistance_growth = 0.1 # 抵抗增長速度 
+resistance_decay = 0.1 # 抵抗下降速度 
+compliance_growth = 0.1 # 順從度增長速度 
+partisan_effect_factor = 0.1 # 我軍遊擊隊效果 
+
+# ==========================================
+# 科技與設計花費 (Tech & Design Cost)
+# ==========================================
+research_speed_factor = 0.1 # 科研速度 
+land_doctrine_cost_factor = 0.1 # 陸軍學說花費 
+naval_doctrine_cost_factor = 0.1 # 海軍學說花費 
+air_doctrine_cost_factor = 0.1 # 空軍學說花費 
+fighter_design_cost_factor = 0.1 # 戰鬥機設計花費 
+cas_equipment_design_cost_factor = 0.1 # 近距支援機設計花費 
+nav_bomber_equipment_design_cost_factor = 0.1 # 海軍轟炸機設計花費 
+tac_bomber_equipment_design_cost_factor = 0.1 # 戰術轟炸機設計花費 
+strat_bomber_equipment_design_cost_factor = 0.1 # 戰略轟炸機設計花費 
+ship_hull_light_design_cost_factor = 0.1 # 輕型艦艇設計花費 
+ship_hull_heavy_design_cost_factor = 0.1 # 重型戰艦設計花費 
+ship_hull_carrier_design_cost_factor = 0.1 # 航空母艦設計花費 
+ship_hull_submarine_design_cost_factor = 0.1 # 潛艇設計花費 
+
+# ==========================================
+# 專項計劃 (Special Projects)
+# ==========================================
+special_project_speed_factor = 0.1 # 專項計劃速度 
+specialization_nuclear_speed_factor = 0.1 # 核能專項計劃速度 
+sp_air_jet_engine_speed_factor = 0.1 # 噴氣發動機研究速度 
+sp_nuclear_bomb_speed_factor = 0.1 # 核彈計劃研究速度 
+sp_naval_nuclear_submarine_speed_factor = 0.1 # 核潛艇研究速度 
