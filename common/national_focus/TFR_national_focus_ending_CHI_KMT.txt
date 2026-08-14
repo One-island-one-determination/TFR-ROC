@@ -22,7 +22,6 @@ focus_tree = {
     continue_if_invalid = no
     cancel_if_invalid = yes
     completion_reward = {
-      scoped_play_song = "StrugglingintheSoutheast"
       country_event = { id = CHI.H4.2 }
       unlock_decision_category_tooltip = CHI_civilwar_category
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
@@ -33,6 +32,7 @@ focus_tree = {
       hidden_effect = {
         set_cosmetic_tag = CHI_UNITED
         clr_country_flag = pdto_member
+        scoped_play_song = "StrugglingintheSoutheast"
         leave_faction = yes
         if = {
           limit = { is_subject = yes }
