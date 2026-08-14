@@ -1748,8 +1748,21 @@ ideas = {
       national_socialist_acceptance = 25
     }
   }
+  #國光行動
+  CHI_operation_national_glory_idea = {
+    name = CHI_operation_national_glory_idea
+    picture = CHI_operation_national_glory_idea
+    removal_cost = -1
 
-
+    modifier = {
+      naval_invasion_penalty = -0.2
+      targeted_modifier = {
+        tag = PRC
+        attack_bonus_against = 0.2
+        defense_bonus_against = 0.2
+        breakthrough_bonus_against = 0.2
+      }
+    }
   }
 
 
@@ -1757,6 +1770,8 @@ ideas = {
 
 
 
+
+  }
 
 
   ##hidden_ideas, generally be research_bonus and equipment_bonus
@@ -1808,6 +1823,10 @@ ideas = {
       }
     }
 
+
+
+
+
     ##----ZERO----####----for debug----##
     CHI_Economy_hidden_armor_research_bonus_0 = {
       name = CHI_Economy_hidden
@@ -1856,9 +1875,6 @@ ideas = {
         }
       }
     }
-
-
-
 
   #-----------hidden idea CHI_Economy end--------------#}
 

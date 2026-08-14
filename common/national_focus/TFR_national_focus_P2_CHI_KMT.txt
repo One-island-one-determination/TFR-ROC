@@ -69,6 +69,9 @@ focus_tree = {
       focus = CHI_Post_war_review_status_quo
     }
     relative_position_id = CHI_Post_war_review_status_quo
+    completion_reward = {
+      unlock_decision_tooltip = XX
+    }
   }
   focus = {
     id = CHI_Eleplant_in_room
@@ -510,6 +513,7 @@ focus_tree = {
         CHI_SE_political_power_gain = 0.01
         tooltip = political_power_gain_tooltip
       }
+      unlock_decision_tooltip = XX
     }
     relative_position_id = CHI_Han_Post_war
   }
@@ -2658,9 +2662,20 @@ focus_tree = {
       focus = CHI_eastern_terrain_mapping
     }
     relative_position_id = CHI_eastern_terrain_mapping
+    completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
+      add_to_variable = {
+        ROC_shore_bombardment_collateral_damage = 0.1
+        tooltip = shore_bombardment_collateral_damage_tooltip
+      }
+      add_to_variable = {
+        ROC_shore_bombardment_bonus = 0.1
+        tooltip = shore_bombardment_bonus_tooltip
+      }
+    }
   }
   focus = {
-    id = CHI_surpass_overlord
+    id = CHI_surpass_overlord#國光行動
     x = 0
     y = 1
     cost = 3
@@ -2671,6 +2686,13 @@ focus_tree = {
       focus = CHI_coverage_priority_tactics
     }
     relative_position_id = CHI_coverage_priority_tactics
+    completion_reward = {
+      add_timed_idea = {
+        idea = CHI_operation_national_glory_idea
+        time = 90
+      }
+      unlock_decision_tooltip = CHI_opreation_haiwei
+    }
   }
   focus = {
     id = CHI_northern_joint_command

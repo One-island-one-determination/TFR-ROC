@@ -972,3 +972,19 @@
 			cic_to_target_factor = 给TAG国家自己民用工厂的百分比（就是TAG抽你厂）
 			mic_to_target_factor = 给TAG国家自己军用工厂的百分比（就是TAG抽你厂）
 		}
+
+
+
+
+
+
+
+
+
+##________________TFRROC________________TFROIOD_______________##
+
+custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+add_to_variable = {
+	ROC_air_intercept_efficiency = 0.1
+	tooltip = air_intercept_efficiency_tooltip
+}

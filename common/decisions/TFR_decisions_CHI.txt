@@ -383,7 +383,9 @@ CHI_debug = {
       }
       add_dynamic_modifier = {
         modifier = CHI_ROC_army_dynamic_2
-      } 
+      }
+      clr_country_flag = CHI_ROC_army_flg
+      set_country_flag = CHI_ROC_army_flg_2 
     }
   }
 
@@ -6894,7 +6896,20 @@ CHI_Economy_Industry_category = {
 ####    ##        ######    ####
 
 CHI_GAW_situation_category = {
-
+  #海威行動
+  CHI_opreation_haiwei = {
+    icon = GFX_CHI_opreation_haiwei
+    visible = {
+      has_completed_focus = CHI_surpass_overlord
+    }
+    available = {
+      has_completed_focus = CHI_surpass_overlord
+    }
+    cost = 50
+    days_remove = 30
+    fire_only_once = yes
+    modifier = { naval_invasion_penalty = -0.1 }
+  }
 }
 
 
