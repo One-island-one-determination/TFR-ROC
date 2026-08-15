@@ -192,7 +192,6 @@ scripted_gui = {
                         326 = { is_controlled_by = CHI }
                         326 = { is_controlled_by = HKN }
                         326 = { is_controlled_by = MCU }
-                        326 = { is_controlled_by = HKN }
                     }
                 }
             }
@@ -203,7 +202,6 @@ scripted_gui = {
                         326 = { is_controlled_by = CHI }
                         326 = { is_controlled_by = HKN }
                         326 = { is_controlled_by = MCU }
-                        326 = { is_controlled_by = HKN }
                     }
                 }
             }
@@ -642,8 +640,6 @@ scripted_gui = {
                     }
                 }
             }
-
-
             ccw_guangxi_1_visible = {
                 OR = {
                         599 = { is_controlled_by = CHI }
@@ -1095,18 +1091,16 @@ scripted_gui = {
             ccw_hongkong_2_visible = {
                 OR = {
                     326 = { is_controlled_by = CHI }
-                        326 = { is_controlled_by = HKN }
-                        326 = { is_controlled_by = MCU }
                     326 = { is_controlled_by = HKN }
+                    326 = { is_controlled_by = MCU }
                 }
             }
 
             ccw_hongkong_s_2_visible = {
                 OR = {
                     326 = { is_controlled_by = CHI }
-                        326 = { is_controlled_by = HKN }
-                        326 = { is_controlled_by = MCU }
                     326 = { is_controlled_by = HKN }
+                    326 = { is_controlled_by = MCU }
                 }
             }
 
@@ -1453,46 +1447,43 @@ scripted_gui = {
             }
 
             ccw_hongkong_3_visible = {
-                AND = {
-                    OR = { 326 = { is_core_of = CHI } 326 = { is_core_of = HKN } }
-                    OR = {
+                OR = {
+                    AND = {
                         326 = { is_controlled_by = CHI }
-                        326 = { is_controlled_by = HKN }
-                        326 = { is_controlled_by = MCU }
-                        326 = { is_controlled_by = HKN }
+                        326 = { is_core_of = CHI }
                     }
+                    326 = { is_controlled_by = HKN }
+                    326 = { is_controlled_by = MCU }
                 }
             }
 
             ccw_hongkong_s_3_visible = {
-                AND = {
-                    OR = { 326 = { is_core_of = CHI } 326 = { is_core_of = HKN } }
-                    OR = {
+                OR = {
+                    AND = {
                         326 = { is_controlled_by = CHI }
-                        326 = { is_controlled_by = HKN }
-                        326 = { is_controlled_by = MCU }
-                        326 = { is_controlled_by = HKN }
+                        326 = { is_core_of = CHI }
                     }
+                    326 = { is_controlled_by = HKN }
+                    326 = { is_controlled_by = MCU }
                 }
             }
 
             ccw_macau_3_visible = {
-                AND = {
-                    OR = { 729 = { is_core_of = CHI } 729 = { is_core_of = MCU } }
-                    OR = {
+                OR = {
+                    AND = {
                         729 = { is_controlled_by = CHI }
-                        729 = { is_controlled_by = MCU }
+                        729 = { is_core_of = CHI }
                     }
+                    729 = { is_controlled_by = MCU }
                 }
             }
-
             ccw_macau_s_3_visible = {
-                AND = {
-                    OR = { 729 = { is_core_of = CHI } 729 = { is_core_of = MCU } }
-                    OR = {
+                OR = {
+                    AND = {
                         729 = { is_controlled_by = CHI }
-                        729 = { is_controlled_by = MCU }
+                        729 = { is_core_of = CHI }
                     }
+                    729 = { is_controlled_by = MCU }
                 }
             }
 
