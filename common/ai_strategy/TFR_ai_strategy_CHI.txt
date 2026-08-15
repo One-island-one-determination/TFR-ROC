@@ -1,0 +1,122 @@
+CHI_passive_protection = {
+
+	allowed = {
+		original_tag = CHI
+	}
+	enable = {
+		original_tag = CHI
+		date < 2025.1.1
+	}
+
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = east_china_mainland  #Lower Yangtze
+		value = -200
+	}
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = -500
+	}
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = -500
+	}
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			OR = {
+				state = 524
+				state = 1148
+				state = 1149
+				state = 1150
+			}
+		}
+		ratio = 0.0
+		ordertype = front
+		execution_type = careful
+		manual_attack = no
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.2
+		states = {
+			524
+			1148
+			1149
+			1150
+		}
+		subtract_fronts_from_need = yes
+	}
+}
+
+CHI_army_building = {
+	allowed = {
+		original_tag = CHI
+	}
+	enable = {
+		original_tag = CHI
+	}
+
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = force_build_armies
+		value = 500
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 15
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 25
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 30
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 15
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 5
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 40
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 20
+	}
+}
