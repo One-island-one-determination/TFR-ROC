@@ -190,9 +190,6 @@ country_event = {
   picture = CHI_Event_4
   is_triggered_only = yes
   fire_only_once = yes
-  immediate = {
-    hidden_effect = { set_country_flag = CHI_PRC_Infiltration_flag }
-  }
   option = {
     name = CHI.4.a
   }
@@ -528,10 +525,10 @@ country_event = {
   hidden = yes
   immediate = {
     set_temp_variable = {
-				var = academic_development_var_temp
-				value = 0.3
-		}
-		add_academic_development = yes
+      var = academic_development_var_temp
+      value = 0.3
+    }
+    add_academic_development = yes
 
     add_to_variable = {
       CHI_SE_academic_development_monthly = 0.025
@@ -875,7 +872,6 @@ country_event = {
   fire_only_once = yes
   immediate = {
     hidden_effect = {
-      clr_country_flag = CHI_PRC_Infiltration_flag
       country_event = {
         id = CHI.114514##俄人給我們挖的坑，導致後續變日本傀儡
         days = 5
@@ -938,7 +934,7 @@ country_event = {
       tooltip = state_production_speed_energy_farm_factor_tooltip
     }
     ####
-    
+
     delete_unit = {
       id = 1949
       disband = no
@@ -1229,9 +1225,9 @@ country_event = {
       custom_effect_tooltip = CHI_anti_silent_dawn_effect_tooltip
       CHI = {
         modify_timed_idea = {
-					idea = CHI_silent_dawn
-					days = -90
-				}
+          idea = CHI_silent_dawn
+          days = -90
+        }
       }
     }
 

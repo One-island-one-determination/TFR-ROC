@@ -349,7 +349,7 @@ CHI_debug = {
     visible = { always = yes }
     available = { always = yes }
     complete_effect = {
-      CHI_Economy_hidden_armor_cost_equipment_bonus_effect = yes      
+      CHI_Economy_hidden_armor_cost_equipment_bonus_effect = yes
     }
   }
   add_ecn_air_equipment = {
@@ -358,7 +358,7 @@ CHI_debug = {
     visible = { always = yes }
     available = { always = yes }
     complete_effect = {
-      CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes    
+      CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
     }
   }
   add_ecn_armored_car = {
@@ -367,7 +367,7 @@ CHI_debug = {
     visible = { always = yes }
     available = { always = yes }
     complete_effect = {
-      CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = yes      
+      CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = yes
     }
   }
   set_ROCA_two = {
@@ -383,7 +383,7 @@ CHI_debug = {
         modifier = CHI_ROC_army_dynamic_2
       }
       clr_country_flag = CHI_ROC_army_flg
-      set_country_flag = CHI_ROC_army_flg_2 
+      set_country_flag = CHI_ROC_army_flg_2
     }
   }
 
@@ -1159,9 +1159,6 @@ CHI_PRC_Infiltration_decisions = {
     icon = GFX_PRC_Infiltration_mission
     allowed = {
       tag = CHI
-    }
-    activation = {
-      always = yes
     }
     available = {
       has_global_flag = PRC_taiwan_war_lost
@@ -4363,7 +4360,7 @@ CHI_army_decisions = {
   #     custom_effect_tooltip = CHI_BUY_KOR_DESTROYERS_tt
   #   }
   # }
-  
+
   CHI_anti_silent_dawn = {
     icon = GFX_PRC_anti_western
     allowed = {
@@ -4474,7 +4471,7 @@ CHI_army_decisions = {
           is_corps_commander = yes # 確保不發給海軍將領或純元帥
         }
         add_trait = {
-         trait = CHI_expanded_command_trait
+          trait = CHI_expanded_command_trait
         }
       }
       # add_division_template = {
@@ -4488,7 +4485,7 @@ CHI_army_decisions = {
       #     modern_sp_artillery_brigade = { x = 1 y = 1 }
       #   }
       # }
-        
+
       # 1148 = {
       #   create_unit = {
       #     division = "name = \"中華民國陸軍指揮所\" division_template = \"中華民國陸軍指揮所\" start_experience_factor = 0.5"
@@ -4513,49 +4510,49 @@ CHI_army_decisions = {
         }
         support = {
           recon = { x = 0 y = 0 }
-          engineer = { x = 0 y = 1 }		
+          engineer = { x = 0 y = 1 }
         }
       }
-        
-        # 2. 發放並鎖住「裝甲旅」模板
-        add_division_template = {
-          name = "整編裝甲旅"
-          is_locked = yes
-          priority = 3
-          regiments = {
-            modern_armor = { x = 0 y = 0 } 
-            modern_armor = { x = 0 y = 1 }
-            modern_armor = { x = 0 y = 2 }
-            modern_armor = { x = 0 y = 3 }
-            modern_armor = { x = 0 y = 4 }
-            sp_artillery_brigade = { x = 1 y = 0 }
-            sp_artillery_brigade = { x = 1 y = 1 }
-            sp_rocket_artillery_brigade = { x = 1 y = 2 } 
-          }
-          support = {
-          recon = { x = 0 y = 0 }
-          engineer = { x = 0 y = 1 }		
-        }
-        }
 
-        # 3. 發放並鎖住「軍指揮部」模板
-        add_division_template = {
-          name = "軍指揮部"
-          is_locked = yes
-          priority = 3
-          regiments = {
-            modern_armor = { x = 0 y = 0 }
-            modern_armor = { x = 0 y = 1 }
-            modern_armor = { x = 0 y = 2 }
-            bus = { x = 1 y = 0 } 
-          }
-          support = {
+      # 2. 發放並鎖住「裝甲旅」模板
+      add_division_template = {
+        name = "整編裝甲旅"
+        is_locked = yes
+        priority = 3
+        regiments = {
+          modern_armor = { x = 0 y = 0 }
+          modern_armor = { x = 0 y = 1 }
+          modern_armor = { x = 0 y = 2 }
+          modern_armor = { x = 0 y = 3 }
+          modern_armor = { x = 0 y = 4 }
+          sp_artillery_brigade = { x = 1 y = 0 }
+          sp_artillery_brigade = { x = 1 y = 1 }
+          sp_rocket_artillery_brigade = { x = 1 y = 2 }
+        }
+        support = {
           recon = { x = 0 y = 0 }
-          engineer = { x = 0 y = 1 }		
+          engineer = { x = 0 y = 1 }
         }
-        }
+      }
 
-        load_oob = "CHI_dynamic_spawn_oob"
+      # 3. 發放並鎖住「軍指揮部」模板
+      add_division_template = {
+        name = "軍指揮部"
+        is_locked = yes
+        priority = 3
+        regiments = {
+          modern_armor = { x = 0 y = 0 }
+          modern_armor = { x = 0 y = 1 }
+          modern_armor = { x = 0 y = 2 }
+          bus = { x = 1 y = 0 }
+        }
+        support = {
+          recon = { x = 0 y = 0 }
+          engineer = { x = 0 y = 1 }
+        }
+      }
+
+      load_oob = "CHI_dynamic_spawn_oob"
     }
   }
 
@@ -4646,7 +4643,7 @@ CHI_army_decisions = {
         add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
         add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
         add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
-        
+
       }
     }
   }
@@ -4668,7 +4665,7 @@ CHI_army_decisions = {
     complete_effect = {
       add_air_experience = -50
       set_country_flag = CHI_lingxiao_plan_completed
-      
+
       custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
       add_to_variable = { ROC_air_superiority_efficiency = 0.1  tooltip = air_superiority_efficiency_tooltip  }
       add_to_variable = { ROC_air_intercept_efficiency = 0.1    tooltip = air_intercept_efficiency_tooltip    }
@@ -4707,20 +4704,20 @@ CHI_army_decisions = {
     cost = 5
     days_re_enable = 30
     fire_only_once = no
-    
+
     visible = {
-        original_tag = CHI
-        has_completed_focus = CHI_modern_whampoa
+      original_tag = CHI
+      has_completed_focus = CHI_modern_whampoa
     }
-    
+
     available = {
-        # 【關鍵】必須先完成軍改，解鎖了模板後才能點擊
-        has_country_flag = CHI_project_ROCA_reform_4_completed
+      # 【關鍵】必須先完成軍改，解鎖了模板後才能點擊
+      has_country_flag = CHI_project_ROCA_reform_4_completed
     }
-    
+
     complete_effect = {
-        load_oob = "CHI_dynamic_spawn_oob"
-        custom_effect_tooltip = CHI_repeatable_spawn_tt
+      load_oob = "CHI_dynamic_spawn_oob"
+      custom_effect_tooltip = CHI_repeatable_spawn_tt
     }
   }
 
@@ -5640,7 +5637,7 @@ CHI_Population_Aging_decisions = {
     available = {
       check_variable = { var = var_CHI_expand_public_ltc value = 2 compare = less_than_or_equals }
     }
-    visible = { 
+    visible = {
       check_variable = { var = var_CHI_expand_public_ltc value = 2 compare = less_than_or_equals }
     }
     cost = 60
@@ -5671,7 +5668,7 @@ CHI_Population_Aging_decisions = {
     available = {
       check_variable = { var = var_CHI_childcare_subsidies value = 3 compare = less_than_or_equals }
     }
-    visible = { 
+    visible = {
       check_variable = { var = var_CHI_childcare_subsidies value = 3 compare = less_than_or_equals }
     }
     cost = 50
@@ -5862,7 +5859,7 @@ CHI_NCSIST_category = {
   #萬劍計畫
   CHI_project_Wan_Chien = {
     icon = GFX_CHI_project_Wan_Chien
-    cost = 0 
+    cost = 0
     days_remove = 50
     fire_only_once = yes
     allowed = { original_tag = CHI }
@@ -5871,17 +5868,17 @@ CHI_NCSIST_category = {
     }
     custom_cost_trigger = {
       # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
+      mio:CHI_NCSIST_organization = {
         NOT = { check_variable = { funds < 199 } }
       }
     }
     custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
       # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = -200
       }
-      
+
     }
     remove_effect = {
       set_technology = {
@@ -5892,7 +5889,7 @@ CHI_NCSIST_category = {
   #勇武計畫
   CHI_project_Yung_Wu = {
     icon = GFX_CHI_project_Yung_Wus
-    cost = 0 
+    cost = 0
     days_remove = 70
     fire_only_once = yes
     allowed = { original_tag = CHI }
@@ -5901,17 +5898,17 @@ CHI_NCSIST_category = {
     }
     custom_cost_trigger = {
       # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
+      mio:CHI_NCSIST_organization = {
         NOT = { check_variable = { funds < 199 } }
       }
     }
     custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
       # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = -200
       }
-      
+
     }
     remove_effect = {
       set_technology = {
@@ -5923,7 +5920,7 @@ CHI_NCSIST_category = {
   #M60A3升級
   CHI_project_M60A3_upgrade = {
     icon = GFX_CHI_project_M60A3_upgrade
-    cost = 0 
+    cost = 0
     days_remove = 30
     fire_only_once = yes
     allowed = { original_tag = CHI }
@@ -5932,17 +5929,17 @@ CHI_NCSIST_category = {
     }
     custom_cost_trigger = {
       # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
+      mio:CHI_NCSIST_organization = {
         NOT = { check_variable = { funds < 199 } }
       }
     }
     custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
       # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = -200
       }
-      
+
     }
     remove_effect = {
       custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
@@ -5952,7 +5949,7 @@ CHI_NCSIST_category = {
   #外骨骼試驗
   CHI_project_exoskeleton_trial = {
     icon = GFX_CHI_project_exoskeleton_trial
-    cost = 0 
+    cost = 0
     days_remove = 100
     fire_only_once = yes
     allowed = { original_tag = CHI }
@@ -5961,17 +5958,17 @@ CHI_NCSIST_category = {
     }
     custom_cost_trigger = {
       # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
+      mio:CHI_NCSIST_organization = {
         NOT = { check_variable = { funds < 199 } }
       }
     }
     custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
       # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = -200
       }
-      
+
     }
     remove_effect = {
       set_technology = {
@@ -5982,7 +5979,7 @@ CHI_NCSIST_category = {
   #CM13
   CHI_project_CM13 = {
     icon = GFX_CHI_project_CM13
-    cost = 0 
+    cost = 0
     days_remove = 180
     fire_only_once = yes
     allowed = { original_tag = CHI }
@@ -5991,17 +5988,17 @@ CHI_NCSIST_category = {
     }
     custom_cost_trigger = {
       # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
+      mio:CHI_NCSIST_organization = {
         NOT = { check_variable = { funds < 199 } }
       }
     }
     custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
       # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = -200
       }
-      
+
     }
     remove_effect = {
       #
@@ -6015,7 +6012,7 @@ CHI_NCSIST_category = {
   #麻雀計畫
   CHI_project_sparrow = {
     icon = GFX_CHI_project_sparrow
-    cost = 0 
+    cost = 0
     days_remove = 100
     fire_only_once = yes
     allowed = { original_tag = CHI }
@@ -6024,17 +6021,17 @@ CHI_NCSIST_category = {
     }
     custom_cost_trigger = {
       # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
+      mio:CHI_NCSIST_organization = {
         NOT = { check_variable = { funds < 199 } }
       }
     }
     custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
       # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = -200
       }
-      
+
     }
     remove_effect = {
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
@@ -6045,7 +6042,7 @@ CHI_NCSIST_category = {
   # #海鯤
   # CHI_project_Hai_Kun = {
   #   icon = GFX_CHI_project_Hai_Kun
-  #   cost = 0 
+  #   cost = 0
   #   days_remove = 80
   #   fire_only_once = yes
   #   allowed = { original_tag = CHI }
@@ -6054,17 +6051,17 @@ CHI_NCSIST_category = {
   #   }
   #   custom_cost_trigger = {
   #     # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-  #     mio:CHI_NCSIST_organization = { 
+  #     mio:CHI_NCSIST_organization = {
   #       NOT = { check_variable = { funds < 199 } }
   #     }
   #   }
   #   custom_cost_text = CHI_NCSIST_funds_200
   #   complete_effect = {
   #     # 【第一步：扣除 MIO 資金】
-  #     mio:CHI_NCSIST_organization = { 
-  #       add_mio_funds = -200 
+  #     mio:CHI_NCSIST_organization = {
+  #       add_mio_funds = -200
   #     }
-      
+
   #   }
   #   remove_effect = {
   #     #
@@ -6073,7 +6070,7 @@ CHI_NCSIST_category = {
   # #崑崙
   # CHI_project_Kun_Lun = {
   #   icon = GFX_CHI_project_Kun_Lun
-  #   cost = 0 
+  #   cost = 0
   #   days_remove = 80
   #   fire_only_once = yes
   #   allowed = { original_tag = CHI }
@@ -6082,17 +6079,17 @@ CHI_NCSIST_category = {
   #   }
   #   custom_cost_trigger = {
   #     # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-  #     mio:CHI_NCSIST_organization = { 
+  #     mio:CHI_NCSIST_organization = {
   #       NOT = { check_variable = { funds < 199 } }
   #     }
   #   }
   #   custom_cost_text = CHI_NCSIST_funds_200
   #   complete_effect = {
   #     # 【第一步：扣除 MIO 資金】
-  #     mio:CHI_NCSIST_organization = { 
-  #       add_mio_funds = -200 
+  #     mio:CHI_NCSIST_organization = {
+  #       add_mio_funds = -200
   #     }
-      
+
   #   }
   #   remove_effect = {
   #     #
@@ -6101,7 +6098,7 @@ CHI_NCSIST_category = {
   # #鎮冰
   # CHI_project_Zhen_Bing = {
   #   icon = GFX_CHI_project_Zhen_Bing
-  #   cost = 0 
+  #   cost = 0
   #   days_remove = 100
   #   fire_only_once = yes
   #   allowed = { original_tag = CHI }
@@ -6110,17 +6107,17 @@ CHI_NCSIST_category = {
   #   }
   #   custom_cost_trigger = {
   #     # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-  #     mio:CHI_NCSIST_organization = { 
+  #     mio:CHI_NCSIST_organization = {
   #       NOT = { check_variable = { funds < 199 } }
   #     }
   #   }
   #   custom_cost_text = CHI_NCSIST_funds_200
   #   complete_effect = {
   #     # 【第一步：扣除 MIO 資金】
-  #     mio:CHI_NCSIST_organization = { 
-  #       add_mio_funds = -200 
+  #     mio:CHI_NCSIST_organization = {
+  #       add_mio_funds = -200
   #     }
-      
+
   #   }
   #   remove_effect = {
   #     #
@@ -6129,7 +6126,7 @@ CHI_NCSIST_category = {
   # #澎湖
   # CHI_project_Peng_Hu = {
   #   icon = GFX_CHI_project_Peng_Hu
-  #   cost = 0 
+  #   cost = 0
   #   days_remove = 100
   #   fire_only_once = yes
   #   allowed = { original_tag = CHI }
@@ -6138,17 +6135,17 @@ CHI_NCSIST_category = {
   #   }
   #   custom_cost_trigger = {
   #     # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-  #     mio:CHI_NCSIST_organization = { 
+  #     mio:CHI_NCSIST_organization = {
   #       NOT = { check_variable = { funds < 199 } }
   #     }
   #   }
   #   custom_cost_text = CHI_NCSIST_funds_200
   #   complete_effect = {
   #     # 【第一步：扣除 MIO 資金】
-  #     mio:CHI_NCSIST_organization = { 
-  #       add_mio_funds = -200 
+  #     mio:CHI_NCSIST_organization = {
+  #       add_mio_funds = -200
   #     }
-      
+
   #   }
   #   remove_effect = {
   #     #
@@ -6157,7 +6154,7 @@ CHI_NCSIST_category = {
   # #勇鷹號現代化
   # CHI_project_Brave_Eagle = {
   #   icon = GFX_CHI_project_Brave_Eagle
-  #   cost = 0 
+  #   cost = 0
   #   days_remove = 30
   #   fire_only_once = yes
   #   allowed = { original_tag = CHI }
@@ -6166,17 +6163,17 @@ CHI_NCSIST_category = {
   #   }
   #   custom_cost_trigger = {
   #     # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-  #     mio:CHI_NCSIST_organization = { 
+  #     mio:CHI_NCSIST_organization = {
   #       NOT = { check_variable = { funds < 199 } }
   #     }
   #   }
   #   custom_cost_text = CHI_NCSIST_funds_200
   #   complete_effect = {
   #     # 【第一步：扣除 MIO 資金】
-  #     mio:CHI_NCSIST_organization = { 
-  #       add_mio_funds = -200 
+  #     mio:CHI_NCSIST_organization = {
+  #       add_mio_funds = -200
   #     }
-      
+
   #   }
   #   remove_effect = {
   #     #
@@ -6186,7 +6183,7 @@ CHI_NCSIST_category = {
   #志航號
   CHI_project_Zhi_Hang = {
     icon = GFX_CHI_project_Zhi_Hang
-    cost = 0 
+    cost = 0
     days_remove = 100
     fire_only_once = yes
     allowed = { original_tag = CHI }
@@ -6196,17 +6193,17 @@ CHI_NCSIST_category = {
     }
     custom_cost_trigger = {
       # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
+      mio:CHI_NCSIST_organization = {
         NOT = { check_variable = { funds < 199 } }
       }
     }
     custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
       # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = -200
       }
-      
+
     }
     remove_effect = {
       set_technology = {
@@ -6217,7 +6214,7 @@ CHI_NCSIST_category = {
   #天晴號
   CHI_project_IPS67 = {
     icon = GFX_CHI_project_IPS67
-    cost = 0 
+    cost = 0
     days_remove = 100
     fire_only_once = yes
     allowed = { original_tag = CHI }
@@ -6227,17 +6224,17 @@ CHI_NCSIST_category = {
     }
     custom_cost_trigger = {
       # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
+      mio:CHI_NCSIST_organization = {
         NOT = { check_variable = { funds < 199 } }
       }
     }
     custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
       # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = -200
       }
-      
+
     }
     remove_effect = {
       set_technology = {
@@ -6249,7 +6246,7 @@ CHI_NCSIST_category = {
   #改進航電系統
   CHI_project_Avionics = {
     icon = GFX_CHI_project_Avionics
-    cost = 0 
+    cost = 0
     days_remove = 30
     fire_only_once = yes
     allowed = { original_tag = CHI }
@@ -6258,23 +6255,23 @@ CHI_NCSIST_category = {
     }
     custom_cost_trigger = {
       # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = { 
+      mio:CHI_NCSIST_organization = {
         NOT = { check_variable = { funds < 199 } }
       }
     }
     custom_cost_text = CHI_NCSIST_funds_200
     complete_effect = {
       # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = { 
-        add_mio_funds = -200 
+      mio:CHI_NCSIST_organization = {
+        add_mio_funds = -200
       }
-      
+
     }
     remove_effect = {
       custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
       add_to_variable = { ROC_air_superiority_efficiency = 0.2  tooltip = air_superiority_efficiency_tooltip  }
       add_to_variable = { ROC_air_intercept_efficiency = 0.1    tooltip = air_intercept_efficiency_tooltip    }
-      add_to_variable = { ROC_air_escort_efficiency = 0.1      tooltip = air_escort_efficiency_tooltip        }      
+      add_to_variable = { ROC_air_escort_efficiency = 0.1      tooltip = air_escort_efficiency_tooltip        }
       add_to_variable = { ROC_air_cas_efficiency = 0.1          tooltip = air_cas_efficiency_tooltip          }
       add_to_variable = { ROC_air_nav_efficiency = 0.1          tooltip = air_nav_efficiency_tooltip          }
     }
@@ -6303,9 +6300,9 @@ CHI_efficient_government_category = {
         value = -10
       }
       add_income = yes
-    } 
+    }
     remove_effect = {
-      every_owned_state = { 
+      every_owned_state = {
         limit = { infrastructure < 3 }
         add_building_construction = {
           type = infrastructure
@@ -6322,7 +6319,7 @@ CHI_efficient_government_category = {
       has_completed_focus = CHI_efficient_government
       check_variable = { var = var_CHI_quality_coal value = 3 compare = less_than_or_equals }
     }
-    visible = { 
+    visible = {
       check_variable = { var = var_CHI_quality_coal value = 3 compare = less_than_or_equals }
     }
     cost = 50
@@ -6349,7 +6346,7 @@ CHI_efficient_government_category = {
       has_completed_focus = CHI_Special_budget
       check_variable = { var = var_CHI_state_biz_advisor value = 3 compare = less_than_or_equals }
     }
-    visible = { 
+    visible = {
       check_variable = { var = var_CHI_state_biz_advisor value = 3 compare = less_than_or_equals }
     }
     cost = 50
@@ -6391,7 +6388,7 @@ CHI_efficient_government_category = {
       has_completed_focus = CHI_Special_budget
       check_variable = { var = var_CHI_youth_startup_loan value = 2 compare = less_than_or_equals }
     }
-    visible = { 
+    visible = {
       check_variable = { var = var_CHI_youth_startup_loan value = 2 compare = less_than_or_equals }
     }
     cost = 50
@@ -6414,9 +6411,9 @@ CHI_efficient_government_category = {
       has_completed_focus = CHI_Special_budget
       check_variable = { var = var_CHI_transit_integration value = 5 compare = less_than_or_equals }
     }
-    visible = { 
+    visible = {
       check_variable = { var = var_CHI_transit_integration value = 5 compare = less_than_or_equals }
-    } 
+    }
     cost = 50
     days_remove = 30
     # complete_effect = {
@@ -6489,7 +6486,7 @@ CHI_Economy_Industry_category = {
   #軍工業擴張
   CHI_mil_industry_expansion = {
     icon = GFX_CHI_mil_industry_expansion
-    cost = 0 
+    cost = 0
     days_remove = 30
     available = {
       has_completed_focus = CHI_Complete_Military_Idustry
@@ -6532,7 +6529,7 @@ CHI_Economy_Industry_category = {
   #建立軍工生產線
   CHI_mil_production_line = {
     icon = GFX_CHI_mil_production_line
-    cost = 0 
+    cost = 0
     days_remove = 30
     fire_only_once = yes
     available = {
@@ -6569,7 +6566,7 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 0 
+    cost = 0
     days_remove = 30
     fire_only_once = yes
     custom_cost_trigger = {
@@ -6598,7 +6595,7 @@ CHI_Economy_Industry_category = {
       original_tag = CHI
       check_variable = { var = var_CHI_advanced_mil_engine value = 3 compare = less_than_or_equals }
     }
-    cost = 0 
+    cost = 0
     days_remove = 100
     custom_cost_trigger = {
       check_variable = { CHI_fiscal_budget_var > 0 }
@@ -6631,7 +6628,7 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 0 
+    cost = 0
     days_remove = 100
     fire_only_once = yes
     custom_cost_trigger = {
@@ -6647,9 +6644,9 @@ CHI_Economy_Industry_category = {
       1150 = {
         add_extra_state_shared_building_slots = 2
         add_building_construction = {
-            type = arms_factory
-            level = 2
-            instant_build = yes
+          type = arms_factory
+          level = 2
+          instant_build = yes
         }
       }
       CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = yes
@@ -6667,7 +6664,7 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 0 
+    cost = 0
     days_remove = 100
     fire_only_once = yes
     custom_cost_trigger = {
@@ -6705,7 +6702,7 @@ CHI_Economy_Industry_category = {
       original_tag = CHI
       check_variable = { var = var_CHI_expand_shipyards value = 10 compare = less_than_or_equals }
     }
-    cost = 0 
+    cost = 0
     days_remove = 160
     custom_cost_trigger = {
       check_variable = { CHI_fiscal_budget_var > 0 }
@@ -6741,7 +6738,7 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 0 
+    cost = 0
     days_remove = 150
     fire_only_once = yes
     custom_cost_trigger = {
@@ -6763,9 +6760,9 @@ CHI_Economy_Industry_category = {
       1150 = {
         add_extra_state_shared_building_slots = 3
         add_building_construction = {
-            type = nuclear_reactor
-            level = 3
-            instant_build = yes
+          type = nuclear_reactor
+          level = 3
+          instant_build = yes
         }
       }
     }
@@ -6790,7 +6787,7 @@ CHI_Economy_Industry_category = {
       original_tag = CHI
       check_variable = { var = var_CHI_solar_industry_project value = 3 compare = less_than_or_equals }
     }
-    cost = 0 
+    cost = 0
     days_remove = 30
     custom_cost_trigger = {
       check_variable = { CHI_fiscal_budget_var > 0 }
@@ -6808,9 +6805,9 @@ CHI_Economy_Industry_category = {
       1150 = {
         add_extra_state_shared_building_slots = 1
         add_building_construction = {
-            type = energy_farm
-            level = 1
-            instant_build = yes
+          type = energy_farm
+          level = 1
+          instant_build = yes
         }
       }
     }
@@ -6828,7 +6825,7 @@ CHI_Economy_Industry_category = {
       original_tag = CHI
       check_variable = { var = var_CHI_expand_processing_plant value = 3 compare = less_than_or_equals }
     }
-    cost = 0 
+    cost = 0
     days_remove = 30
     custom_cost_trigger = {
       check_variable = { CHI_fiscal_budget_var > 0 }
@@ -6846,9 +6843,9 @@ CHI_Economy_Industry_category = {
       1150 = {
         add_extra_state_shared_building_slots = 2
         add_building_construction = {
-            type = industrial_complex
-            level = 2
-            instant_build = yes
+          type = industrial_complex
+          level = 2
+          instant_build = yes
         }
       }
     }
@@ -6863,7 +6860,7 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 0 
+    cost = 0
     days_remove = 120
     fire_only_once = yes
     custom_cost_trigger = {
@@ -6879,15 +6876,15 @@ CHI_Economy_Industry_category = {
       1148 = {
         add_extra_state_shared_building_slots = 3
         add_building_construction = {
-            type = industrial_complex
-            level = 3
-            instant_build = yes
+          type = industrial_complex
+          level = 3
+          instant_build = yes
         }
         add_extra_state_shared_building_slots = 1
         add_building_construction = {
-            type = office_park
-            level = 1
-            instant_build = yes
+          type = office_park
+          level = 1
+          instant_build = yes
         }
       }
     }
@@ -6902,7 +6899,7 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 0 
+    cost = 0
     days_remove = 100
     fire_only_once = yes
     custom_cost_trigger = {
@@ -6939,7 +6936,7 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 0 
+    cost = 0
     days_remove = 50
     fire_only_once = yes
     custom_cost_trigger = {
@@ -6964,7 +6961,7 @@ CHI_Economy_Industry_category = {
   #   visible = {
   #     original_tag = CHI
   #   }
-  #   cost = 0 
+  #   cost = 0
   #   days_remove = 100
   #   fire_only_once = yes
   #   custom_cost_trigger = {
@@ -6977,7 +6974,7 @@ CHI_Economy_Industry_category = {
   #     }
   #   }
   #   remove_effect = {
-     
+
   #   }
   # }
 
@@ -6995,7 +6992,7 @@ CHI_Economy_Industry_category = {
     visible = {
       original_tag = CHI
     }
-    cost = 0 
+    cost = 0
     days_remove = 50
     fire_only_once = yes
     custom_cost_trigger = {
@@ -7020,7 +7017,7 @@ CHI_Economy_Industry_category = {
   #   visible = {
   #     original_tag = CHI
   #   }
-  #   cost = 0 
+  #   cost = 0
   #   days_remove = 100
   #   fire_only_once = yes
   #   custom_cost_trigger = {
@@ -7033,7 +7030,7 @@ CHI_Economy_Industry_category = {
   #     }
   #   }
   #   remove_effect = {
-     
+
   #   }
   # }
 
@@ -7047,7 +7044,7 @@ CHI_Economy_Industry_category = {
   #   visible = {
   #     original_tag = CHI
   #   }
-  #   cost = 0 
+  #   cost = 0
   #   days_remove = 100
   #   fire_only_once = yes
   #   custom_cost_trigger = {
@@ -7060,7 +7057,7 @@ CHI_Economy_Industry_category = {
   #     }
   #   }
   #   remove_effect = {
-     
+
   #   }
   # }
 }
