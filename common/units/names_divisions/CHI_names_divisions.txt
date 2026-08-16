@@ -2,7 +2,7 @@ CHI_INF_1 = {
   name = "陸軍步兵旅"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "infantry" }
+  division_types = { infantry }
   fallback_name = "中華民國陸軍步兵第%d旅"
   ordered =
   {
@@ -39,7 +39,7 @@ CHI_INF_2 = {
   name = "陸軍機械化步兵旅"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "mechanized" }
+  division_types = { mechanized }
   fallback_name = "中華民國陸軍機械化步兵第%d旅"
   ordered =
   {
@@ -53,7 +53,7 @@ CHI_INF_3 = {
   name = "陸軍裝甲步兵旅"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "mechanized" }
+  division_types = { mechanized }
   fallback_name = "中華民國陸軍裝甲步兵第%d旅"
   ordered =
   {
@@ -67,7 +67,7 @@ CHI_INF_4 = {
   name = "陸軍摩托化步兵旅"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "motorized" }
+  division_types = { motorized }
   fallback_name = "中華民國陸軍摩托化步兵第%d旅"
   ordered =
   {
@@ -80,8 +80,8 @@ CHI_INF_5 = {
   for_countries = { CHI }
   can_use = { always = yes }
   division_types = {
-    "armored"
-    "medium_armor"
+    armored
+    medium_armor
   }
   fallback_name = "中華民國陸軍第%d裝甲旅"
   ordered =
@@ -98,14 +98,14 @@ CHI_INF_6 = {
   name = "陸軍輕裝甲旅"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "light_armor" }
+  division_types = { light_armor }
   fallback_name = "中華民國陸軍第%d輕裝甲旅"
 }
 CHI_INF_7 = {
   name = "陸軍航空特戰旅"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "paratrooper" "special_forces" "air_assault" }
+  division_types = { paratrooper special_forces air_assault }
   fallback_name = "中華民國陸軍空降特戰第%d旅"
   ordered =
   {
@@ -119,7 +119,7 @@ CHI_INF_8 = {
   name = "海軍陸戰隊陸戰旅"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "marine" "marines" }
+  division_types = { marine marines }
   fallback_name = "中華民國海軍陸戰隊第%d旅"
   ordered =
   {
@@ -133,14 +133,14 @@ CHI_INF_9 = {
   name = "陸軍山地作戰部隊"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "mountaineers" "mountaineer" }
+  division_types = { mountaineers mountaineer }
   fallback_name = "中華民國陸軍山地特戰第%d營"
 }
 CHI_INF_10 = {
   name = "陸軍特種作戰營"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "special_forces" }
+  division_types = { special_forces }
   fallback_name = "中華民國陸軍特種作戰第%d營"
   ordered =
   {
@@ -156,14 +156,14 @@ CHI_INF_11 = {
   name = "守備大隊"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "garrison" }
+  division_types = { garrison }
   fallback_name = "中華民國陸軍第%d守備大隊"
 }
 CHI_INF_12 = {
   name = "陸軍地區指揮部"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "garrison" }
+  division_types = { garrison }
   fallback_name = "中華民國陸軍第%d守備區"
   ordered =
   {
@@ -183,21 +183,21 @@ CHI_INF_13 = {
   name = "陸軍後備動員部隊"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "militia" }
+  division_types = { militia }
   fallback_name = "中華民國陸軍後備第%d旅"
 }
 CHI_INF_14 = {
   name = "海軍陸戰隊兩棲作戰旅"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "marine" "marines" }
+  division_types = { marine marines }
   fallback_name = "中華民國海軍陸戰隊第%d兩棲作戰旅"
 }
 CHI_INF_15 = {
   name = "陸軍砲兵指揮部"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "artillery" }
+  division_types = { artillery }
   fallback_name = "中華民國陸軍砲兵第%d指揮部"
   ordered =
   {
@@ -210,7 +210,7 @@ CHI_INF_16 = {
   name = "憲兵指揮部"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "military_police" "garrison" }
+  division_types = { military_police garrison }
   fallback_name = "中華民國憲兵第%d指揮部"
   ordered =
   {
@@ -224,7 +224,7 @@ CHI_INF_17 = {
   name = "防空暨飛彈部隊"
   for_countries = { CHI }
   can_use = { always = yes }
-  division_types = { "anti_air" }
+  division_types = { anti_air }
   fallback_name = "中華民國空軍防空暨飛彈第%d旅"
   ordered =
   {

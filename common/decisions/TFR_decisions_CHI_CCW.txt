@@ -33,7 +33,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 1 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 1 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 524
@@ -59,7 +59,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 1 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 1 } is_ai = yes }
       OR = {
         NOT = { owns_state = 524 }
         NOT = { owns_state = 1148 }
@@ -87,9 +87,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 1 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 1 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 524 }
         NOT = { owns_state = 1148 }
@@ -97,11 +97,26 @@ CHI_civilwar_category = {
         NOT = { owns_state = 1150 }
         NOT = { owns_state = 648 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 524
+            owns_state = 1148
+            owns_state = 1149
+            owns_state = 1150
+            owns_state = 648
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -123,13 +138,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 0
+    }
   }
 
   ccw_core_taiwan = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 1 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 1 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -157,6 +175,10 @@ CHI_civilwar_category = {
       1150 = { add_core_of = ROOT }
       648 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -164,7 +186,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 1 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 1 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -190,6 +212,10 @@ CHI_civilwar_category = {
       1150 = { add_core_of = ROOT }
       648 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -197,7 +223,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 1 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 1 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -223,6 +249,10 @@ CHI_civilwar_category = {
       1150 = { add_core_of = ROOT }
       648 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_anhui_divider = {
@@ -231,7 +261,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 2 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 2 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1223
@@ -253,7 +283,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 2 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 2 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1223 }
         NOT = { owns_state = 606 }
@@ -277,19 +307,32 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 2 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 2 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1223 }
         NOT = { owns_state = 606 }
         NOT = { owns_state = 1221 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1223
+            owns_state = 606
+            owns_state = 1221
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -309,13 +352,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_core_anhui = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 2 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 2 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -337,6 +383,10 @@ CHI_civilwar_category = {
       606 = { add_core_of = ROOT }
       1221 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -344,7 +394,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 2 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 2 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -364,6 +414,10 @@ CHI_civilwar_category = {
       606 = { add_core_of = ROOT }
       1221 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -371,7 +425,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 2 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 2 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -391,6 +445,10 @@ CHI_civilwar_category = {
       606 = { add_core_of = ROOT }
       1221 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_beijing_divider = {
@@ -399,7 +457,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 3 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 3 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 608
@@ -417,7 +475,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 3 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 3 } is_ai = yes }
       OR = {
         NOT = { owns_state = 608 }
       }
@@ -437,17 +495,28 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 3 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 3 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 608 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 608
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -465,13 +534,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 70
+    }
   }
 
   ccw_core_beijing = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 3 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 3 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -491,6 +563,10 @@ CHI_civilwar_category = {
         remove_dynamic_modifier = { modifier = PRC_beijing_city }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -498,7 +574,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 3 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 3 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -516,6 +592,10 @@ CHI_civilwar_category = {
         remove_dynamic_modifier = { modifier = PRC_beijing_city }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -523,7 +603,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 3 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 3 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -541,6 +621,10 @@ CHI_civilwar_category = {
         remove_dynamic_modifier = { modifier = PRC_beijing_city }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_jiangsu_divider = {
@@ -549,7 +633,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 4 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 4 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 598
@@ -575,7 +659,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 4 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 4 } is_ai = yes }
       OR = {
         NOT = { owns_state = 598 }
         NOT = { owns_state = 1228 }
@@ -603,9 +687,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 4 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 4 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 598 }
         NOT = { owns_state = 1228 }
@@ -613,11 +697,26 @@ CHI_civilwar_category = {
         NOT = { owns_state = 613 }
         NOT = { owns_state = 1222 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 598
+            owns_state = 1228
+            owns_state = 1429
+            owns_state = 613
+            owns_state = 1222
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -639,13 +738,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_core_jiangsu = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 4 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 4 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -676,6 +778,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Nanjing }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -683,7 +789,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 4 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 4 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -712,6 +818,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Nanjing }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -719,7 +829,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 4 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 4 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -748,6 +858,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Nanjing }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_shandong_divider = {
@@ -756,7 +870,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 5 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 5 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1426
@@ -788,7 +902,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 5 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 5 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1426 }
         NOT = { owns_state = 1231 }
@@ -822,9 +936,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 5 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 5 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1426 }
         NOT = { owns_state = 1231 }
@@ -835,11 +949,29 @@ CHI_civilwar_category = {
         NOT = { owns_state = 1393 }
         NOT = { owns_state = 1420 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1426
+            owns_state = 1231
+            owns_state = 597
+            owns_state = 1230
+            owns_state = 1427
+            owns_state = 1229
+            owns_state = 1393
+            owns_state = 1420
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -864,13 +996,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 70
+    }
   }
 
   ccw_core_shandong = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 5 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 5 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -913,6 +1048,10 @@ CHI_civilwar_category = {
         }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -920,7 +1059,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 5 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 5 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -961,6 +1100,10 @@ CHI_civilwar_category = {
         }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -968,7 +1111,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 5 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 5 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -1009,6 +1152,10 @@ CHI_civilwar_category = {
         }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_hebei_divider = {
@@ -1017,7 +1164,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 6 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 6 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 609
@@ -1047,7 +1194,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 6 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 6 } is_ai = yes }
       OR = {
         NOT = { owns_state = 609 }
         NOT = { owns_state = 610 }
@@ -1079,9 +1226,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 6 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 6 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 609 }
         NOT = { owns_state = 610 }
@@ -1091,11 +1238,28 @@ CHI_civilwar_category = {
         NOT = { owns_state = 1421 }
         NOT = { owns_state = 614 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 609
+            owns_state = 610
+            owns_state = 611
+            owns_state = 1154
+            owns_state = 1232
+            owns_state = 1421
+            owns_state = 614
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -1119,13 +1283,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 70
+    }
   }
 
   ccw_core_hebei = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 6 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 6 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -1160,6 +1327,10 @@ CHI_civilwar_category = {
       1421 = { add_core_of = ROOT }
       614 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -1167,7 +1338,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 6 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 6 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -1200,6 +1371,10 @@ CHI_civilwar_category = {
       1421 = { add_core_of = ROOT }
       614 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -1207,7 +1382,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 6 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 6 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -1240,6 +1415,10 @@ CHI_civilwar_category = {
       1421 = { add_core_of = ROOT }
       614 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_tianjin_divider = {
@@ -1248,7 +1427,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 7 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 7 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1157
@@ -1266,7 +1445,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 7 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 7 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1157 }
       }
@@ -1286,17 +1465,28 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 7 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 7 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1157 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1157
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -1314,13 +1504,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 70
+    }
   }
 
   ccw_core_tianjin = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 7 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 7 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -1336,6 +1529,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1157 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -1343,7 +1540,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 7 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 7 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -1357,6 +1554,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1157 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -1364,7 +1565,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 7 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 7 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -1378,6 +1579,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1157 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_shanxi_divider = {
@@ -1386,7 +1591,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 8 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 8 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1233
@@ -1408,7 +1613,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 8 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 8 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1233 }
         NOT = { owns_state = 615 }
@@ -1432,19 +1637,32 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 8 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 8 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1233 }
         NOT = { owns_state = 615 }
         NOT = { owns_state = 1194 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1233
+            owns_state = 615
+            owns_state = 1194
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -1464,13 +1682,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 70
+    }
   }
 
   ccw_core_shanxi = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 8 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 8 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -1493,6 +1714,10 @@ CHI_civilwar_category = {
       615 = { add_core_of = ROOT }
       1194 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -1500,7 +1725,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 8 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 8 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -1521,6 +1746,10 @@ CHI_civilwar_category = {
       615 = { add_core_of = ROOT }
       1194 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -1528,7 +1757,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 8 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 8 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -1549,6 +1778,10 @@ CHI_civilwar_category = {
       615 = { add_core_of = ROOT }
       1194 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_shan3xi_divider = {
@@ -1557,7 +1790,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 9 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 9 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1201
@@ -1579,7 +1812,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 9 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 9 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1201 }
         NOT = { owns_state = 622 }
@@ -1603,19 +1836,32 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 9 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 9 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1201 }
         NOT = { owns_state = 622 }
         NOT = { owns_state = 1200 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1201
+            owns_state = 622
+            owns_state = 1200
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -1635,13 +1881,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 50
+    }
   }
 
   ccw_core_shan3xi = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 9 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 9 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -1666,6 +1915,10 @@ CHI_civilwar_category = {
       }
       1200 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -1673,7 +1926,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 9 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 9 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -1696,6 +1949,10 @@ CHI_civilwar_category = {
       }
       1200 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -1703,7 +1960,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 9 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 9 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -1726,6 +1983,10 @@ CHI_civilwar_category = {
       }
       1200 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_henan_divider = {
@@ -1734,7 +1995,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 10 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 10 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 607
@@ -1758,7 +2019,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 10 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 10 } is_ai = yes }
       OR = {
         NOT = { owns_state = 607 }
         NOT = { owns_state = 1226 }
@@ -1784,20 +2045,34 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 10 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 10 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 607 }
         NOT = { owns_state = 1226 }
         NOT = { owns_state = 1225 }
         NOT = { owns_state = 1224 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 607
+            owns_state = 1226
+            owns_state = 1225
+            owns_state = 1224
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -1818,13 +2093,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 70
+    }
   }
 
   ccw_core_henan = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 10 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 10 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -1850,6 +2128,10 @@ CHI_civilwar_category = {
       1225 = { add_core_of = ROOT }
       1224 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -1857,7 +2139,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 10 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 10 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -1881,6 +2163,10 @@ CHI_civilwar_category = {
       1225 = { add_core_of = ROOT }
       1224 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -1888,7 +2174,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 10 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 10 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -1912,6 +2198,10 @@ CHI_civilwar_category = {
       1225 = { add_core_of = ROOT }
       1224 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_ningxia_divider = {
@@ -1920,7 +2210,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 11 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 11 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1199
@@ -1938,7 +2228,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 11 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 11 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1199 }
       }
@@ -1958,17 +2248,28 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 11 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 11 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1199 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1199
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -1986,13 +2287,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 50
+    }
   }
 
   ccw_core_ningxia = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 11 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 11 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -2008,6 +2312,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1199 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2015,7 +2323,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 11 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 11 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -2029,6 +2337,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1199 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2036,7 +2348,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 11 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 11 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -2050,6 +2362,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1199 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_chongqing_divider = {
@@ -2058,7 +2374,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 12 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 12 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1189
@@ -2076,7 +2392,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 12 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 12 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1189 }
       }
@@ -2096,17 +2412,28 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 12 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 12 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1189 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1189
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -2124,13 +2451,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 60
+    }
   }
 
   ccw_core_chongqing = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 12 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 12 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -2150,6 +2480,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Chongqing }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2157,7 +2491,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 12 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 12 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -2175,6 +2509,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Chongqing }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2182,7 +2520,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 12 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 12 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -2200,6 +2538,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Chongqing }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_shanghai_divider = {
@@ -2208,7 +2550,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 13 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 13 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1215
@@ -2226,7 +2568,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 13 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 13 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1215 }
       }
@@ -2246,17 +2588,28 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 13 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 13 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1215 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1215
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -2274,13 +2627,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_core_shanghai = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 13 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 13 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -2296,6 +2652,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1215 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2303,7 +2663,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 13 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 13 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -2317,6 +2677,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1215 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2324,7 +2688,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 13 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 13 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -2338,6 +2702,10 @@ CHI_civilwar_category = {
     remove_effect = {
       1215 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_zhejiang_divider = {
@@ -2346,7 +2714,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 14 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 14 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1220
@@ -2370,7 +2738,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 14 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 14 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1220 }
         NOT = { owns_state = 1159 }
@@ -2396,20 +2764,34 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 14 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 14 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1220 }
         NOT = { owns_state = 1159 }
         NOT = { owns_state = 1219 }
         NOT = { owns_state = 596 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1220
+            owns_state = 1159
+            owns_state = 1219
+            owns_state = 596
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -2430,13 +2812,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 1000
+    }
   }
 
   ccw_core_zhejiang = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 14 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 14 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -2461,6 +2846,10 @@ CHI_civilwar_category = {
       1219 = { add_core_of = ROOT }
       596 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2468,7 +2857,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 14 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 14 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -2491,6 +2880,10 @@ CHI_civilwar_category = {
       1219 = { add_core_of = ROOT }
       596 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2498,7 +2891,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 14 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 14 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -2521,6 +2914,10 @@ CHI_civilwar_category = {
       1219 = { add_core_of = ROOT }
       596 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_fujian_divider = {
@@ -2529,7 +2926,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 15 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 15 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1217
@@ -2555,7 +2952,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 15 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 15 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1217 }
         NOT = { owns_state = 595 }
@@ -2583,9 +2980,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 15 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 15 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1217 }
         NOT = { owns_state = 595 }
@@ -2593,11 +2990,26 @@ CHI_civilwar_category = {
         NOT = { owns_state = 1216 }
         NOT = { owns_state = 1431 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1217
+            owns_state = 595
+            owns_state = 1218
+            owns_state = 1216
+            owns_state = 1431
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -2619,13 +3031,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 1000
+    }
   }
 
   ccw_core_fujian = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 15 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 15 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -2668,6 +3083,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2675,7 +3094,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 15 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 15 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -2716,6 +3135,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2723,7 +3146,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 15 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 15 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -2764,6 +3187,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_guangdong_divider = {
@@ -2772,7 +3199,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 16 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 16 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1430
@@ -2800,7 +3227,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 16 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 16 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1430 }
         NOT = { owns_state = 1207 }
@@ -2830,9 +3257,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 16 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 16 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1430 }
         NOT = { owns_state = 1207 }
@@ -2841,11 +3268,27 @@ CHI_civilwar_category = {
         NOT = { owns_state = 728 }
         NOT = { owns_state = 1395 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1430
+            owns_state = 1207
+            owns_state = 1206
+            owns_state = 592
+            owns_state = 728
+            owns_state = 1395
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -2868,13 +3311,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 800
+    }
   }
 
   ccw_core_guangdong = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 16 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 16 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -2908,6 +3354,10 @@ CHI_civilwar_category = {
       728 = { add_core_of = ROOT }
       1395 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2915,7 +3365,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 16 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 16 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -2947,6 +3397,10 @@ CHI_civilwar_category = {
       728 = { add_core_of = ROOT }
       1395 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -2954,7 +3408,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 16 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 16 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -2986,6 +3440,10 @@ CHI_civilwar_category = {
       728 = { add_core_of = ROOT }
       1395 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_hongkong_divider = {
@@ -2994,7 +3452,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 17 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 17 } is_ai = yes }
         is_ai = yes
       }
       OR = {
@@ -3015,7 +3473,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 17 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 17 } is_ai = yes }
       NOT = { owns_state = 326 }
       NOT = { 326 = { owner = { is_subject_of = ROOT } } }
     }
@@ -3034,17 +3492,28 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 17 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 17 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 326 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 326
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -3062,6 +3531,9 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 800
+    }
   }
 
 
@@ -3075,7 +3547,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 18 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 18 } is_ai = yes }
         is_ai = yes
       }
       OR = {
@@ -3096,7 +3568,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 18 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 18 } is_ai = yes }
       NOT = { owns_state = 729 }
       NOT = { 729 = { owner = { is_subject_of = ROOT } } }
     }
@@ -3115,17 +3587,28 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 18 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 18 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 729 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 729
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -3143,6 +3626,9 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 800
+    }
   }
 
 
@@ -3156,7 +3642,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 19 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 19 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 599
@@ -3186,7 +3672,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 19 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 19 } is_ai = yes }
       OR = {
         NOT = { owns_state = 599 }
         NOT = { owns_state = 1191 }
@@ -3218,9 +3704,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 19 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 19 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 599 }
         NOT = { owns_state = 1191 }
@@ -3230,11 +3716,28 @@ CHI_civilwar_category = {
         NOT = { owns_state = 1204 }
         NOT = { owns_state = 1205 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 599
+            owns_state = 1191
+            owns_state = 593
+            owns_state = 594
+            owns_state = 1203
+            owns_state = 1204
+            owns_state = 1205
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -3258,13 +3761,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 60
+    }
   }
 
   ccw_core_guangxi = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 19 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 19 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -3298,6 +3804,10 @@ CHI_civilwar_category = {
       1204 = { add_core_of = ROOT }
       1205 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -3305,7 +3815,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 19 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 19 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -3337,6 +3847,10 @@ CHI_civilwar_category = {
       1204 = { add_core_of = ROOT }
       1205 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -3344,7 +3858,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 19 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 19 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -3376,6 +3890,10 @@ CHI_civilwar_category = {
       1204 = { add_core_of = ROOT }
       1205 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_yunnan_divider = {
@@ -3384,7 +3902,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 20 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 20 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1196
@@ -3408,7 +3926,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 20 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 20 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1196 }
         NOT = { owns_state = 1192 }
@@ -3434,20 +3952,34 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 20 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 20 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1196 }
         NOT = { owns_state = 1192 }
         NOT = { owns_state = 1195 }
         NOT = { owns_state = 325 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1196
+            owns_state = 1192
+            owns_state = 1195
+            owns_state = 325
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -3468,13 +4000,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 60
+    }
   }
 
   ccw_core_yunnan = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 20 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 20 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -3499,6 +4034,10 @@ CHI_civilwar_category = {
       1195 = { add_core_of = ROOT }
       325 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -3506,7 +4045,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 20 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 20 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -3529,6 +4068,10 @@ CHI_civilwar_category = {
       1195 = { add_core_of = ROOT }
       325 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -3536,7 +4079,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 20 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 20 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -3559,6 +4102,10 @@ CHI_civilwar_category = {
       1195 = { add_core_of = ROOT }
       325 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_sichuan_divider = {
@@ -3567,7 +4114,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 21 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 21 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 601
@@ -3593,7 +4140,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 21 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 21 } is_ai = yes }
       OR = {
         NOT = { owns_state = 601 }
         NOT = { owns_state = 1168 }
@@ -3621,9 +4168,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 21 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 21 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 601 }
         NOT = { owns_state = 1168 }
@@ -3631,11 +4178,26 @@ CHI_civilwar_category = {
         NOT = { owns_state = 605 }
         NOT = { owns_state = 1188 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 601
+            owns_state = 1168
+            owns_state = 1190
+            owns_state = 605
+            owns_state = 1188
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -3657,13 +4219,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 60
+    }
   }
 
   ccw_core_sichuan = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 21 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 21 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -3691,6 +4256,10 @@ CHI_civilwar_category = {
       605 = { add_core_of = ROOT }
       1188 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -3698,7 +4267,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 21 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 21 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -3724,6 +4293,10 @@ CHI_civilwar_category = {
       605 = { add_core_of = ROOT }
       1188 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -3731,7 +4304,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 21 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 21 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -3757,6 +4330,10 @@ CHI_civilwar_category = {
       605 = { add_core_of = ROOT }
       1188 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_xizang_divider = {
@@ -3765,7 +4342,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 22 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 22 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1155
@@ -3791,7 +4368,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 22 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 22 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1155 }
         NOT = { owns_state = 322 }
@@ -3818,9 +4395,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 22 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 22 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1155 }
         NOT = { owns_state = 322 }
@@ -3828,11 +4405,26 @@ CHI_civilwar_category = {
         NOT = { owns_state = 1156 }
         NOT = { owns_state = 1152 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1155
+            owns_state = 322
+            owns_state = 1153
+            owns_state = 1156
+            owns_state = 1152
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -3854,13 +4446,22 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 0.01
+      modifier = {
+        add = 100
+        owns_state = 1186 # Qinghai
+        owns_state = 1187 # Qinghai
+        owns_state = 604  # Qinghai
+      }
+    }
   }
 
   ccw_core_xizang = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 22 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 22 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -3888,6 +4489,10 @@ CHI_civilwar_category = {
       1156 = { add_core_of = ROOT }
       1152 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -3895,7 +4500,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 22 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 22 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -3921,6 +4526,10 @@ CHI_civilwar_category = {
       1156 = { add_core_of = ROOT }
       1152 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -3928,7 +4537,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 22 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 22 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -3954,6 +4563,10 @@ CHI_civilwar_category = {
       1156 = { add_core_of = ROOT }
       1152 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_zangsouth_divider = {
@@ -3962,7 +4575,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 23 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 23 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 434
@@ -3980,7 +4593,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 23 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 23 } is_ai = yes }
       OR = {
         NOT = { owns_state = 434 }
       }
@@ -3999,17 +4612,28 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 23 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 23 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 434 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 434
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -4027,13 +4651,22 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 0.01
+      modifier = {
+        add = 100
+        owns_state = 1186 # Qinghai
+        owns_state = 1187 # Qinghai
+        owns_state = 604  # Qinghai
+      }
+    }
   }
 
   ccw_core_zangsouth = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 23 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 23 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -4049,6 +4682,10 @@ CHI_civilwar_category = {
     remove_effect = {
       434 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4056,7 +4693,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 23 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 23 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -4070,6 +4707,10 @@ CHI_civilwar_category = {
     remove_effect = {
       434 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4077,7 +4718,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 23 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 23 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -4091,6 +4732,10 @@ CHI_civilwar_category = {
     remove_effect = {
       434 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_hubei_divider = {
@@ -4099,7 +4744,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 24 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 24 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1212
@@ -4121,7 +4766,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 24 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 24 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1212 }
         NOT = { owns_state = 620 }
@@ -4145,19 +4790,32 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 24 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 24 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1212 }
         NOT = { owns_state = 620 }
         NOT = { owns_state = 1211 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1212
+            owns_state = 620
+            owns_state = 1211
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -4177,13 +4835,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 80
+    }
   }
 
   ccw_core_hubei = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 24 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 24 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -4208,6 +4869,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Wuhan }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4215,7 +4880,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 24 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 24 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -4238,6 +4903,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Wuhan }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4245,7 +4914,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 24 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 24 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -4268,6 +4937,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Wuhan }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_hunan_divider = {
@@ -4276,7 +4949,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 25 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 25 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 602
@@ -4298,7 +4971,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 25 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 25 } is_ai = yes }
       OR = {
         NOT = { owns_state = 602 }
         NOT = { owns_state = 1208 }
@@ -4322,19 +4995,32 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 25 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 25 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 602 }
         NOT = { owns_state = 1208 }
         NOT = { owns_state = 1209 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 602
+            owns_state = 1208
+            owns_state = 1209
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -4354,13 +5040,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 80
+    }
   }
 
   ccw_core_hunan = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 25 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 25 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -4382,6 +5071,10 @@ CHI_civilwar_category = {
       1208 = { add_core_of = ROOT }
       1209 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4389,7 +5082,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 25 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 25 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -4409,6 +5102,10 @@ CHI_civilwar_category = {
       1208 = { add_core_of = ROOT }
       1209 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4416,7 +5113,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 25 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 25 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -4436,6 +5133,10 @@ CHI_civilwar_category = {
       1208 = { add_core_of = ROOT }
       1209 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_guizhou_divider = {
@@ -4444,7 +5145,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 26 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 26 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1210
@@ -4466,7 +5167,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 26 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 26 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1210 }
         NOT = { owns_state = 603 }
@@ -4490,19 +5191,32 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 26 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 26 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1210 }
         NOT = { owns_state = 603 }
         NOT = { owns_state = 1197 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1210
+            owns_state = 603
+            owns_state = 1197
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -4522,13 +5236,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 60
+    }
   }
 
   ccw_core_guizhou = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 26 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 26 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -4550,6 +5267,10 @@ CHI_civilwar_category = {
       603 = { add_core_of = ROOT }
       1197 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4557,7 +5278,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 26 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 26 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -4577,6 +5298,10 @@ CHI_civilwar_category = {
       603 = { add_core_of = ROOT }
       1197 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4584,7 +5309,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 26 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 26 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -4604,6 +5329,10 @@ CHI_civilwar_category = {
       603 = { add_core_of = ROOT }
       1197 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_jiangxi_divider = {
@@ -4612,7 +5341,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 27 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 27 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1227
@@ -4638,7 +5367,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 27 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 27 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1227 }
         NOT = { owns_state = 1428 }
@@ -4666,9 +5395,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 27 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 27 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1227 }
         NOT = { owns_state = 1428 }
@@ -4676,11 +5405,26 @@ CHI_civilwar_category = {
         NOT = { owns_state = 1213 }
         NOT = { owns_state = 600 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1227
+            owns_state = 1428
+            owns_state = 1214
+            owns_state = 1213
+            owns_state = 600
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -4702,13 +5446,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_core_jiangxi = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 27 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 27 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -4736,6 +5483,10 @@ CHI_civilwar_category = {
       1213 = { add_core_of = ROOT }
       600 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4743,7 +5494,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 27 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 27 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -4769,6 +5520,10 @@ CHI_civilwar_category = {
       1213 = { add_core_of = ROOT }
       600 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4776,7 +5531,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 27 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 27 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -4802,6 +5557,10 @@ CHI_civilwar_category = {
       1213 = { add_core_of = ROOT }
       600 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_hainan_divider = {
@@ -4810,7 +5569,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 28 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 28 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 591
@@ -4828,7 +5587,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 28 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 28 } is_ai = yes }
       OR = {
         NOT = { owns_state = 591 }
       }
@@ -4848,17 +5607,28 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 28 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 28 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 591 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 591
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -4876,13 +5646,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 50
+    }
   }
 
   ccw_core_hainan = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 28 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 28 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -4903,6 +5676,10 @@ CHI_civilwar_category = {
         }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4910,7 +5687,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 28 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 28 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -4929,6 +5706,10 @@ CHI_civilwar_category = {
         }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -4936,7 +5717,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 28 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 28 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -4955,6 +5736,10 @@ CHI_civilwar_category = {
         }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_xinjiang_divider = {
@@ -4963,7 +5748,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 29 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 29 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1158
@@ -5003,7 +5788,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 29 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 29 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1158 }
         NOT = { owns_state = 1160 }
@@ -5045,9 +5830,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 29 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 29 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1158 }
         NOT = { owns_state = 1160 }
@@ -5062,11 +5847,33 @@ CHI_civilwar_category = {
         NOT = { owns_state = 287 }
         NOT = { owns_state = 788 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1158
+            owns_state = 1160
+            owns_state = 1161
+            owns_state = 1162
+            owns_state = 1163
+            owns_state = 1164
+            owns_state = 1165
+            owns_state = 617
+            owns_state = 618
+            owns_state = 619
+            owns_state = 287
+            owns_state = 788
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -5095,13 +5902,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 50
+    }
   }
 
   ccw_core_xinjiang = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 29 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 29 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -5150,6 +5960,10 @@ CHI_civilwar_category = {
       287 = { add_core_of = ROOT }
       788 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -5157,7 +5971,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 29 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 29 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -5204,6 +6018,10 @@ CHI_civilwar_category = {
       287 = { add_core_of = ROOT }
       788 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -5211,7 +6029,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 29 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 29 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -5258,6 +6076,10 @@ CHI_civilwar_category = {
       287 = { add_core_of = ROOT }
       788 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_qinghai_divider = {
@@ -5266,7 +6088,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 30 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 30 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1186
@@ -5288,7 +6110,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 30 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 30 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1186 }
         NOT = { owns_state = 1187 }
@@ -5312,19 +6134,32 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 30 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 30 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1186 }
         NOT = { owns_state = 1187 }
         NOT = { owns_state = 604 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1186
+            owns_state = 1187
+            owns_state = 604
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -5344,13 +6179,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 50
+    }
   }
 
   ccw_core_qinghai = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 30 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 30 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -5372,6 +6210,10 @@ CHI_civilwar_category = {
       1187 = { add_core_of = ROOT }
       604 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -5379,7 +6221,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 30 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 30 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -5399,6 +6241,10 @@ CHI_civilwar_category = {
       1187 = { add_core_of = ROOT }
       604 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -5406,7 +6252,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 30 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 30 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -5426,6 +6272,10 @@ CHI_civilwar_category = {
       1187 = { add_core_of = ROOT }
       604 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_gansu_divider = {
@@ -5434,7 +6284,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 31 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 31 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1198
@@ -5458,7 +6308,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 31 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 31 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1198 }
         NOT = { owns_state = 1193 }
@@ -5484,20 +6334,34 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 31 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 31 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1198 }
         NOT = { owns_state = 1193 }
         NOT = { owns_state = 616 }
         NOT = { owns_state = 283 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1198
+            owns_state = 1193
+            owns_state = 616
+            owns_state = 283
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -5518,13 +6382,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 50
+    }
   }
 
   ccw_core_gansu = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 31 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 31 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -5549,6 +6416,10 @@ CHI_civilwar_category = {
       616 = { add_core_of = ROOT }
       283 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -5556,7 +6427,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 31 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 31 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -5579,6 +6450,10 @@ CHI_civilwar_category = {
       616 = { add_core_of = ROOT }
       283 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -5586,7 +6461,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 31 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 31 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -5609,6 +6484,10 @@ CHI_civilwar_category = {
       616 = { add_core_of = ROOT }
       283 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_neimeng_divider = {
@@ -5617,7 +6496,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 32 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 32 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1166
@@ -5645,7 +6524,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 32 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 32 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1166 }
         NOT = { owns_state = 1167 }
@@ -5675,9 +6554,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 32 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 32 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1166 }
         NOT = { owns_state = 1167 }
@@ -5686,11 +6565,27 @@ CHI_civilwar_category = {
         NOT = { owns_state = 612 }
         NOT = { owns_state = 715 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1166
+            owns_state = 1167
+            owns_state = 621
+            owns_state = 1202
+            owns_state = 612
+            owns_state = 715
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -5713,13 +6608,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 50
+    }
   }
 
   ccw_core_neimeng = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 32 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 32 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -5750,6 +6648,10 @@ CHI_civilwar_category = {
       612 = { add_core_of = ROOT }
       715 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -5757,7 +6659,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 32 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 32 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -5786,6 +6688,10 @@ CHI_civilwar_category = {
       612 = { add_core_of = ROOT }
       715 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -5793,7 +6699,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 32 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 32 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -5822,6 +6728,10 @@ CHI_civilwar_category = {
       612 = { add_core_of = ROOT }
       715 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_mon_divider = {
@@ -5830,7 +6740,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 33 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 33 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1388
@@ -5856,7 +6766,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 33 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 33 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1388 }
         NOT = { owns_state = 1389 }
@@ -5882,12 +6792,12 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 33 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 33 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       custom_trigger_tooltip = {
         tooltip = CHI_mongolia_focus_required_tt
-        any_other_country = {
+        hidden_trigger = { any_other_country = {
           NOT = { tag = MON }
           NOT = { tag = JAP }
           NOT = { is_in_faction_with = JAP }
@@ -5900,13 +6810,29 @@ CHI_civilwar_category = {
             owns_state = 1391
             owns_state = 330
           }
-        }
+        } }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1388
+            owns_state = 1389
+            owns_state = 1390
+            owns_state = 1391
+            owns_state = 330
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+          NOT = { tag = MON }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -5929,13 +6855,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 50
+    }
   }
 
   ccw_core_mon = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 33 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 33 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -5963,6 +6892,10 @@ CHI_civilwar_category = {
       1391 = { add_core_of = ROOT }
       330 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -5970,7 +6903,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 33 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 33 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -5996,6 +6929,10 @@ CHI_civilwar_category = {
       1391 = { add_core_of = ROOT }
       330 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -6003,7 +6940,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 33 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 33 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -6029,6 +6966,10 @@ CHI_civilwar_category = {
       1391 = { add_core_of = ROOT }
       330 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_tuva_divider = {
@@ -6037,7 +6978,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 34 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 34 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 329
@@ -6055,7 +6996,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 34 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 34 } is_ai = yes }
       OR = {
         NOT = { owns_state = 329 }
       }
@@ -6074,7 +7015,7 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 34 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 34 } is_ai = yes }
       has_completed_focus = CHI_tuva_problem
       NOT = { has_country_flag = CHI_tuva_seized }
     }
@@ -6111,7 +7052,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 34 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 34 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -6127,6 +7068,10 @@ CHI_civilwar_category = {
     remove_effect = {
       329 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -6134,7 +7079,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 34 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 34 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -6148,6 +7093,10 @@ CHI_civilwar_category = {
     remove_effect = {
       329 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -6155,7 +7104,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 34 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 34 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -6169,6 +7118,10 @@ CHI_civilwar_category = {
     remove_effect = {
       329 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_liaoning_divider = {
@@ -6177,7 +7130,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 35 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 35 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1425
@@ -6203,7 +7156,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 35 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 35 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1425 }
         NOT = { owns_state = 716 }
@@ -6231,9 +7184,9 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 35 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 35 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1425 }
         NOT = { owns_state = 716 }
@@ -6241,11 +7194,26 @@ CHI_civilwar_category = {
         NOT = { owns_state = 1413 }
         NOT = { owns_state = 1394 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1425
+            owns_state = 716
+            owns_state = 1417
+            owns_state = 1413
+            owns_state = 1394
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -6267,13 +7235,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 50
+    }
   }
 
   ccw_core_liaoning = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 35 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 35 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -6307,6 +7278,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Dalian }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -6314,7 +7289,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 35 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 35 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -6346,6 +7321,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Dalian }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -6353,7 +7332,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 35 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 35 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -6385,6 +7364,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Dalian }
       }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_jilin_divider = {
@@ -6393,7 +7376,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 36 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 36 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1414
@@ -6415,7 +7398,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 36 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 36 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1414 }
         NOT = { owns_state = 1415 }
@@ -6439,19 +7422,32 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 36 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 36 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1414 }
         NOT = { owns_state = 1415 }
         NOT = { owns_state = 328 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1414
+            owns_state = 1415
+            owns_state = 328
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -6471,13 +7467,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 50
+    }
   }
 
   ccw_core_jilin = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 36 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 36 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -6499,6 +7498,10 @@ CHI_civilwar_category = {
       1415 = { add_core_of = ROOT }
       328 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -6506,7 +7509,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 36 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 36 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -6526,6 +7529,10 @@ CHI_civilwar_category = {
       1415 = { add_core_of = ROOT }
       328 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -6533,7 +7540,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 36 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 36 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -6553,6 +7560,10 @@ CHI_civilwar_category = {
       1415 = { add_core_of = ROOT }
       328 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
   ccw_hlj_divider = {
@@ -6561,7 +7572,7 @@ CHI_civilwar_category = {
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 37 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 37 } is_ai = yes }
         is_ai = yes
       }
       owns_state = 1424
@@ -6585,7 +7596,7 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     available = { hidden_trigger = { always = no } }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 37 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 37 } is_ai = yes }
       OR = {
         NOT = { owns_state = 1424 }
         NOT = { owns_state = 714 }
@@ -6610,20 +7621,34 @@ CHI_civilwar_category = {
     icon = generic_prepare_for_war
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 37 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 37 } is_ai = yes }
     }
-    available = {
+    available = { hidden_trigger = { OR = { is_ai = no NOT = { has_country_flag = CHI_ai_ccw_cooldown } AND = { is_ai = yes NOT = { has_war = yes } } } }
       OR = {
         NOT = { owns_state = 1424 }
         NOT = { owns_state = 714 }
         NOT = { owns_state = 717 }
         NOT = { owns_state = 1416 }
       }
+      hidden_trigger = { any_other_country = {
+        OR = {
+            owns_state = 1424
+            owns_state = 714
+            owns_state = 717
+            owns_state = 1416
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+      } }
     }
     cost = 5
     days_remove = 5
     fire_only_once = no
-    remove_effect = {
+    remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
       every_other_country = {
         limit = {
           OR = {
@@ -6644,13 +7669,16 @@ CHI_civilwar_category = {
         }
       }
     }
+    ai_will_do = {
+      base = 50
+    }
   }
 
   ccw_core_hlj = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 37 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 37 } is_ai = yes }
       has_completed_focus = CHI_regional_political_tutelage
       NOT = { has_completed_focus = CHI_trust_localities }
       NOT = { has_completed_focus = CHI_central_supervision_policy }
@@ -6678,6 +7706,10 @@ CHI_civilwar_category = {
       }
       1416 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -6685,7 +7717,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 37 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 37 } is_ai = yes }
       has_completed_focus = CHI_trust_localities
     }
     cost = 40
@@ -6711,6 +7743,10 @@ CHI_civilwar_category = {
       }
       1416 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -6718,7 +7754,7 @@ CHI_civilwar_category = {
     icon = generic_core_state
     allowed = { original_tag = CHI }
     visible = {
-      check_variable = { CHI_ccw_dec_visible = 37 }
+      OR = { check_variable = { CHI_ccw_dec_visible = 37 } is_ai = yes }
       has_completed_focus = CHI_central_supervision_policy
     }
     cost = 60
@@ -6744,6 +7780,10 @@ CHI_civilwar_category = {
       }
       1416 = { add_core_of = ROOT }
     }
+
+    ai_will_do = {
+      base = 100
+    }
   }
 
 
@@ -6753,8 +7793,8 @@ CHI_civilwar_category = {
     allowed = { original_tag = CHI }
     visible = {
       OR = {
-        check_variable = { CHI_ccw_dec_visible = 17 }
-        check_variable = { CHI_ccw_dec_visible = 18 }
+        OR = { check_variable = { CHI_ccw_dec_visible = 17 } is_ai = yes }
+        OR = { check_variable = { CHI_ccw_dec_visible = 18 } is_ai = yes }
       }
     }
     cost = 50
