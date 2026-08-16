@@ -158,7 +158,9 @@ CHI_PRC_Infiltration_decisions = {
     original_tag = CHI
   }
   visible = {
-    has_country_flag = CHI_PRC_Infiltration_flag
+    NOT = {
+      has_global_flag = PRC_taiwan_war_lost
+    }
   }
   scripted_gui = PRC_Infiltration_gui
 }
