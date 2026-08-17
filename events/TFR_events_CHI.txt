@@ -281,18 +281,37 @@ country_event = {
   is_triggered_only = yes
   option = {
     name = CHI.11.a
-    effect_tooltip = {
-      add_ideas = CHI_population_aging
+    set_country_flag = CHI_Population_Aging_flag
+    add_dynamic_modifier = {
+      modifier = CHI_population_aging_dynamic
     }
-    hidden_effect = {
-      set_country_flag = CHI_Population_Aging_flag
-      add_dynamic_modifier = {
-        modifier = CHI_population_aging_dynamic
-      }
-      add_to_variable = {
-        var = population_aging_monthly_population
-        value = -0.8
-      }
+    set_variable = {
+      var = PA_monthly_population
+      value = -0.6
+    }
+    set_variable = {
+      var = PA_expense_growth_factor
+      value = 0.1
+    }
+    set_variable = {
+      var = PA_personal_value_factor
+      value = -0.05
+    }
+    set_variable = {
+      var = PA_personal_expense_factor
+      value = 0.1
+    }
+    set_variable = {
+      var = PA_inflation_monthly
+      value = -0.01
+    }
+    set_variable = {
+      var = PA_society_development_monthly
+      value = -0.02
+    }
+    set_variable = {
+      var = PA_poverty_development_monthly
+      value = -0.01
     }
   }
 }

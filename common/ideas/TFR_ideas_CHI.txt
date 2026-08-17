@@ -1526,19 +1526,7 @@ ideas = {
         research_speed_factor = 0.10
       }
     }
-    CHI_population_aging = {
-      picture = CHI_population_aging
-      allowed = {
-        always = no
-      }
-      allowed_civil_war = {
-        always = yes
-      }
-      removal_cost = -1
-      modifier = {
-        monthly_population = -0.008
-      }
-    }
+
     CHI_Wartime_normal_system = {
       name = CHI_Wartime_normal_system
       picture = CHI_Wartime_normal_system
