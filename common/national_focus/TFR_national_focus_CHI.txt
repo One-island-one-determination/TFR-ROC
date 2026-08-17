@@ -1195,7 +1195,7 @@ focus_tree = {
   }
   focus = {
     id = CHI_Operation_Desert
-    #沙漠行動
+    #大漠行動
     x = 1
     y = 3
     cost = 2
@@ -1206,12 +1206,6 @@ focus_tree = {
       factor = 1
     }
     available = {
-      ARR = {
-        has_opinion = {
-          target = ROOT
-          value > 49
-        }
-      }
       has_global_flag = saudi_civil_war_flag
     }
     prerequisite = {
