@@ -185,6 +185,8 @@ focus_tree = {
   
     completion_reward = {
       country_event = { id = CHI.H4.5 }
+      remove_dynamic_modifier = { modifier = CHI_Economy }
+      add_dynamic_modifier = { modifier = CHI_Economy_cn }
       set_portraits = {
         character = CHI_han_kuo_yu_char
         civilian = { large = "gfx/Leaders/CHI/CHI_han_kuo_yu_ccw_ending.png" }
