@@ -4445,6 +4445,11 @@ CHI_civilwar_category = {
           declare_war_on = { target = PREV type = CHI_civil_war }
         }
       }
+      if = {
+        limit = { NOT = { has_global_flag = CHI_xizang_war_news_fired } }
+        set_global_flag = CHI_xizang_war_news_fired
+        hidden_effect = { news_event = { id = CHI.H4.xizang_war_news } }
+      }
     }
     ai_will_do = {
       base = 0.01
