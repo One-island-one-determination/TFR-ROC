@@ -430,7 +430,6 @@ CHI_NHCC_decisions = {
       remove_ideas = CHI_covid_idea_4
       remove_ideas = CHI_covid_idea_5
       set_country_flag = cancel_covid_mission
-      clr_country_flag = covid_happen
       clr_country_flag = Handling_epidemic
       clr_country_flag = Vaccine_research_end
       custom_effect_tooltip = CHI_no_covid_tt
@@ -567,11 +566,9 @@ CHI_NHCC_decisions = {
           }
         }
         set_country_flag = cancel_covid_mission
-        clr_country_flag = covid_happen
         clr_country_flag = Handling_epidemic
         clr_country_flag = Vaccine_research_end
         custom_effect_tooltip = CHI_no_covid_tt
-        focus_unlock = yes
       }
       else = {
         CHI_decrease_coroldpirus = yes
@@ -723,9 +720,11 @@ CHI_NHCC_decisions = {
       has_country_flag = Handling_epidemic
     }
     visible = {
-      has_country_flag = covid_happen
-      NOT = {
-        has_country_flag = cancel_covid_mission
+      AND = {
+        has_country_flag = covid_happen
+        NOT = {
+          has_country_flag = cancel_covid_mission
+        }
       }
     }
     priority = 100
@@ -748,7 +747,12 @@ CHI_NHCC_decisions = {
       has_country_flag = Handling_epidemic
     }
     visible = {
-      has_country_flag = covid_happen
+      AND = {
+        has_country_flag = covid_happen
+        NOT = {
+          has_country_flag = cancel_covid_mission
+        }
+      }
     }
     priority = 90
     fire_only_once = no
@@ -771,7 +775,12 @@ CHI_NHCC_decisions = {
       has_country_flag = Handling_epidemic
     }
     visible = {
-      has_country_flag = covid_happen
+      AND = {
+        has_country_flag = covid_happen
+        NOT = {
+          has_country_flag = cancel_covid_mission
+        }
+      }
     }
     fire_only_once = yes
     cost = 25

@@ -434,8 +434,8 @@ focus_tree = {
         }
       }
       swap_ideas = {
-        add_idea = "high_safety"
-        remove_idea = "medium_safety"
+        add_idea = "higher_safety"
+        remove_idea = "high_safety"
       }
       hidden_effect = {
         add_to_variable = {
@@ -630,8 +630,8 @@ focus_tree = {
           }
         }
       }
-      available = {has_completed_focus = island_of_energy_security}
-      available = {has_completed_focus = Get_out_of_the_epidemic}
+      has_completed_focus = island_of_energy_security
+      has_completed_focus = Get_out_of_the_epidemic
     }
     ai_will_do = {
       factor = 1
@@ -859,6 +859,14 @@ focus_tree = {
     ai_will_do = {
       factor = 1
     }
+    available = {
+      AND = {
+        has_country_flag = covid_happen
+        NOT = {
+          has_country_flag = cancel_covid_mission
+        }
+      }
+    }
     prerequisite = {
       focus = NHCC_Expand
     }
@@ -881,7 +889,12 @@ focus_tree = {
     continue_if_invalid = no
     cancel_if_invalid = yes
     available = {
-      has_country_flag = covid_happen
+      AND = {
+        has_country_flag = covid_happen
+        NOT = {
+          has_country_flag = cancel_covid_mission
+        }
+      }
     }
     ai_will_do = {
       factor = 1
@@ -908,7 +921,12 @@ focus_tree = {
     continue_if_invalid = no
     cancel_if_invalid = yes
     available = {
-      has_country_flag = covid_happen
+      AND = {
+        has_country_flag = covid_happen
+        NOT = {
+          has_country_flag = cancel_covid_mission
+        }
+      }
     }
     ai_will_do = {
       factor = 1
@@ -941,7 +959,12 @@ focus_tree = {
     cancel_if_invalid = yes
     relative_position_id = NHCC_Expand
     available = {
-      has_country_flag = covid_happen
+      AND = {
+        has_country_flag = covid_happen
+        NOT = {
+          has_country_flag = cancel_covid_mission
+        }
+      }
     }
     ai_will_do = {
       factor = 1
