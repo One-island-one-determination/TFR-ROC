@@ -3040,11 +3040,11 @@ focus_tree = {
     }
   }
   focus = {
-    id = CHI_jiangnan_mist_and_rain
+    id = CHI_winds_and_rains_of_min_and_yue
     x = 3
     y = 1
     cost = 3
-    icon = GFX_focus_CHI_jiangnan_mist_and_rain
+    icon = GFX_focus_CHI_winds_and_rains_of_min_and_yue
     continue_if_invalid = no
     cancel_if_invalid = yes
     prerequisite = {
@@ -3092,9 +3092,9 @@ focus_tree = {
     continue_if_invalid = no
     cancel_if_invalid = yes
     prerequisite = {
-      focus = CHI_jiangnan_mist_and_rain
+      focus = CHI_winds_and_rains_of_min_and_yue
     }
-    relative_position_id = CHI_jiangnan_mist_and_rain
+    relative_position_id = CHI_winds_and_rains_of_min_and_yue
     completion_reward = {
       1220 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
       1159 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
