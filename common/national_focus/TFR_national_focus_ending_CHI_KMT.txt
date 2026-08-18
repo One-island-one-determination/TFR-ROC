@@ -237,9 +237,8 @@ focus_tree = {
     icon = GFX_focus_CHI_finally_free
     continue_if_invalid = no
     cancel_if_invalid = yes
-    available = { has_completed_focus = CHI_begonia_leaf }
     prerequisite = {
-      focus = CHI_establish_regional_seats
+      focus = CHI_begonia_leaf
     }
   
     completion_reward = {
@@ -288,6 +287,9 @@ focus_tree = {
     cancel_if_invalid = yes
     prerequisite = {
       focus = CHI_tuva_problem
+    }
+    prerequisite = {
+      focus = CHI_establish_regional_seats
     }
     completion_reward = {
       country_event = { id = CHI.H4.101 }
