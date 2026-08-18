@@ -1446,14 +1446,14 @@ news_event = {
           state = 623
         }
         set_politics = {
-          ruling_party = totalitarian_socialist
+          ruling_party = communist
           last_election = "2016.1.16"
           election_frequency = 48
           elections_allowed = no
         }
         set_popularities = {
-          communist = 35
-          totalitarian_socialist = 65
+          totalitarian_socialist = 35
+          communist = 65
         }
         create_country_leader = {
           name = NDF_Nur_Misuari
@@ -1473,7 +1473,7 @@ news_event = {
           name = PHI_NAP
         }
         division_template = {
-          name = "Minbing"
+          name = "PHI_Militia"
           is_locked = no
           regiments = {
             militia = {
@@ -1500,7 +1500,7 @@ news_event = {
         }
         random_owned_controlled_state = {
           create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = NDF
             count = 4
@@ -1508,7 +1508,7 @@ news_event = {
         }
         random_owned_controlled_state = {
           create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = NDF
             count = 4
@@ -1516,7 +1516,7 @@ news_event = {
         }
         random_owned_controlled_state = {
           create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = NDF
             count = 4
@@ -1562,7 +1562,7 @@ news_event = {
           name = PHI_MIL
         }
         division_template = {
-          name = "Minbing"
+          name = "PHI_Militia"
           is_locked = no
           regiments = {
             militia = {
@@ -1589,7 +1589,7 @@ news_event = {
         }
         random_owned_controlled_state = {
           create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 6767
             owner = MIL
             count = 4
@@ -1597,7 +1597,7 @@ news_event = {
         }
         random_owned_controlled_state = {
           create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 6767
             owner = MIL
             count = 4
@@ -1605,7 +1605,7 @@ news_event = {
         }
         random_owned_controlled_state = {
           create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 6767
             owner = MIL
             count = 4
@@ -1655,7 +1655,7 @@ news_event = {
           name = PHI_AFP
         }
         division_template = {
-          name = "Minbing"
+          name = "PHI_Militia"
           is_locked = no
           regiments = {
             militia = {
@@ -1682,7 +1682,7 @@ news_event = {
         }
         random_owned_controlled_state = {
           create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = AFP
             count = 4
@@ -1690,7 +1690,7 @@ news_event = {
         }
         random_owned_controlled_state = {
           create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = AFP
             count = 4
@@ -1698,7 +1698,7 @@ news_event = {
         }
         random_owned_controlled_state = {
           create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = AFP
             count = 4
@@ -1706,15 +1706,12 @@ news_event = {
         }
         1278 = {
           create_unit = {
-            division = "name = \"MinbingBrigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = AFP
             count = 4
           }
         }
-      }
-      PRC = {
-        transfer_state = 1384
       }
     }
   }
