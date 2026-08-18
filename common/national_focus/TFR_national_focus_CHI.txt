@@ -2233,6 +2233,7 @@ focus_tree = {
     completion_reward = {
       add_political_power = -50
       hidden_effect = {
+        country_event = { id = CHI.TW.27 days = 1}
         remove_ideas = CHI_american_protection_idea
         add_dynamic_modifier = {
           modifier = financial_crisis_dynamic
@@ -2259,7 +2260,7 @@ focus_tree = {
         }
         if = {
           limit = {
-            has_idea = CHI_taiwanese_independence_dynamic
+            CHI_tsai_ing_wen_char = { is_country_leader = yes }
           }
           country_event = {
             id = CHI.7

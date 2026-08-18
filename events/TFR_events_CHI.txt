@@ -1267,6 +1267,14 @@ country_event = {
       character = CHI_tsai_ing_wen_char
       civilian = { large = "gfx/Leaders/CHI/CHI_tsai_ing_wen_military.png" }
     }
+    #削減寂靜黎明debuff
+    if = {
+      limit = { has_country_flag = CHI_anti_silent_dawn_flag }
+      country_event = {
+        id = CHI.TW.24
+        days = 1
+      }
+    }
   }
 }
 ##############非常重要#################}
@@ -2003,7 +2011,8 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = CHI.TW.8.a
+      name = CHI.TW.8.a
+      add_political_power = 100
     }
 }
 
@@ -2206,7 +2215,11 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = CHI.TW.24.a
+      name = CHI.TW.24.a
+      modify_timed_idea = {
+        idea = CHI_silent_dawn
+        days = 90
+      }
     }
 }
 
@@ -2235,7 +2248,11 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = CHI.TW.27.a
+      name = CHI.TW.27.a
+      country_event = {
+        id = CHI.TW.28
+        days = 7
+      }
     }
 }
 
@@ -2248,7 +2265,10 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = CHI.TW.28.a
+      name = CHI.TW.28.a
+      country_event = {
+        id = CHI.TW.29
+      }
     }
 }
 
@@ -2261,10 +2281,22 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = CHI.TW.29.a
+      name = CHI.TW.29.a
+      add_manpower = 3500
+      add_political_power = -40
+      add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = -0.1
+			}
     }
     option = {
-        name = CHI.TW.29.b
+      name = CHI.TW.29.b
+      add_manpower = 500
+      add_political_power = 50
+      add_power_balance_value = {
+				id = CHI_Identity_dispute
+				value = 0.1
+			}
     }
 }
 

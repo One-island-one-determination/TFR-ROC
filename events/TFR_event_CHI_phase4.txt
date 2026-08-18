@@ -279,7 +279,11 @@ country_event = {
 
   trigger = {
   }
-
+  immediate = {
+    hidden_effect = {
+      329 = { controller = { save_event_target_as = tuva_controller } }
+    }
+  }
   option = {
     name = CHI.H4.114.a
     hidden_effect = {
