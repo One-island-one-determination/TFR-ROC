@@ -1757,7 +1757,7 @@ ideas = {
     }
   }
 
-
+  
 
 
 
@@ -2073,6 +2073,21 @@ ideas = {
       industry_air_damage_factor = -0.75
     }
   }
+  CHI_rekindle_confidence_idea = {
+    name = CHI_rekindle_confidence
+    targeted_modifier = {
+      tag = {
+        every_country = {
+          limit = { is_in_faction_with = PRC }
+        }
+      }    # this can also take a variable that stores a scope
+      attack_bonus_against = 0.05
+      defense_bonus_against = 0.05
+    }
+  }
+
+
+
 
 
 
