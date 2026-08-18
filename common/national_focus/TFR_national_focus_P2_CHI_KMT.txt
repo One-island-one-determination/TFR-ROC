@@ -2633,8 +2633,8 @@ focus_tree = {
     icon = GFX_focus_CHI_eastern_terrain_mapping
     continue_if_invalid = no
     cancel_if_invalid = yes
-    mutually_exclusive = {
-      focus = CHI_asia_pacific_armament
+    available = {
+      has_completed_focus = CHI_northern_joint_command
     }
     prerequisite = {
       focus = CHI_thus_spoke_thucydides
@@ -2831,7 +2831,6 @@ focus_tree = {
     cancel_if_invalid = yes
     mutually_exclusive = {
       focus = CHI_northern_joint_command
-      focus = CHI_eastern_terrain_mapping
     }
     prerequisite = {
       focus = CHI_thus_spoke_thucydides
@@ -2970,7 +2969,7 @@ focus_tree = {
   }
   focus = {
     id = CHI_waves_of_nujiang
-    x = -1
+    x = 1
     y = 1
     cost = 3
     icon = GFX_focus_CHI_waves_of_nujiang
@@ -2994,11 +2993,11 @@ focus_tree = {
     }
   }
   focus = {
-    id = CHI_among_the_mountains
-    x = 1
+    id = CHI_storms_of_south_asia
+    x = -1
     y = 1
     cost = 3
-    icon = GFX_focus_CHI_among_the_mountains
+    icon = GFX_focus_CHI_storms_of_south_asia
     continue_if_invalid = no
     cancel_if_invalid = yes
     prerequisite = {
@@ -3122,17 +3121,17 @@ focus_tree = {
     }
   }
   focus = {
-    id = CHI_land_of_milk_and_jujube
+    id = CHI_between_plateau_fronts
     x = 0
     y = 1
     cost = 3
-    icon = GFX_focus_CHI_land_of_milk_and_jujube
+    icon = GFX_focus_CHI_between_plateau_fronts
     continue_if_invalid = no
     cancel_if_invalid = yes
     prerequisite = {
-      focus = CHI_among_the_mountains
+      focus = CHI_storms_of_south_asia
     }
-    relative_position_id = CHI_among_the_mountains
+    relative_position_id = CHI_storms_of_south_asia
     completion_reward = {
       1158 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
       1160 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}

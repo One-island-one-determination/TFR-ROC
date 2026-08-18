@@ -7355,11 +7355,11 @@ spriteTypes = {
     legacy_lazy_load = no
   }
   spriteType = {
-    name = "GFX_focus_CHI_among_the_mountains_shine"
-    texturefile = "gfx/interface/goals/CHI/CHI_among_the_mountains.png"
+    name = "GFX_focus_CHI_storms_of_south_asia_shine"
+    texturefile = "gfx/interface/goals/CHI/CHI_storms_of_south_asia.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-      animationmaskfile = "gfx/interface/goals/CHI/CHI_among_the_mountains.png"
+      animationmaskfile = "gfx/interface/goals/CHI/CHI_storms_of_south_asia.png"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
       animationrotation = -90.0
       animationlooping = no
@@ -7371,7 +7371,7 @@ spriteTypes = {
       animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-      animationmaskfile = "gfx/interface/goals/CHI/CHI_among_the_mountains.png"
+      animationmaskfile = "gfx/interface/goals/CHI/CHI_storms_of_south_asia.png"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
       animationrotation = 90.0
       animationlooping = no
@@ -7475,11 +7475,11 @@ spriteTypes = {
     legacy_lazy_load = no
   }
   spriteType = {
-    name = "GFX_focus_CHI_land_of_milk_and_jujube_shine"
-    texturefile = "gfx/interface/goals/CHI/CHI_land_of_milk_and_jujube.png"
+    name = "GFX_focus_CHI_between_plateau_fronts_shine"
+    texturefile = "gfx/interface/goals/CHI/CHI_between_plateau_fronts.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-      animationmaskfile = "gfx/interface/goals/CHI/CHI_land_of_milk_and_jujube.png"
+      animationmaskfile = "gfx/interface/goals/CHI/CHI_between_plateau_fronts.png"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
       animationrotation = -90.0
       animationlooping = no
@@ -7491,7 +7491,37 @@ spriteTypes = {
       animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-      animationmaskfile = "gfx/interface/goals/CHI/CHI_land_of_milk_and_jujube.png"
+      animationmaskfile = "gfx/interface/goals/CHI/CHI_between_plateau_fronts.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = 90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+  }
+  spriteType = {
+    name = "GFX_focus_CHI_the_great_wall_war_shine"
+    texturefile = "gfx/interface/goals/CHI/CHI_the_great_wall_war.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+      animationmaskfile = "gfx/interface/goals/CHI/CHI_the_great_wall_war.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = -90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    animation = {
+      animationmaskfile = "gfx/interface/goals/CHI/CHI_the_great_wall_war.png"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
       animationrotation = 90.0
       animationlooping = no
