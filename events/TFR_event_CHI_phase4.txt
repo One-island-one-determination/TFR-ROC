@@ -222,7 +222,7 @@ country_event = {
   id = CHI.H4.112
   title = CHI.H4.112.t
   desc = CHI.H4.112.d
-  picture = CHI_event_H4_112
+  picture = CHI_Event_H4_112
   is_triggered_only = yes
 
   option = {
@@ -252,7 +252,7 @@ country_event = {
   id = CHI.H4.113
   title = CHI.H4.113.t
   desc = CHI.H4.113.d
-  picture = CHI_event_H4_113
+  picture = CHI_Event_H4_113
   is_triggered_only = yes
 
   trigger = {
@@ -274,7 +274,7 @@ country_event = {
   id = CHI.H4.114
   title = CHI.H4.114.t
   desc = CHI.H4.114.d
-  picture = CHI_event_H4_114
+  picture = CHI_Event_H4_114
   is_triggered_only = yes
 
   trigger = {
@@ -302,7 +302,7 @@ country_event = {
   id = CHI.H4.115
   title = CHI.H4.115.t
   desc = CHI.H4.115.d
-  picture = CHI_event_H4_115
+  picture = CHI_Event_H4_115
   is_triggered_only = yes
 
   trigger = {
@@ -368,28 +368,28 @@ country_event = {
   id = CHI.H4.101
   title = CHI.H4.101.t
   desc = CHI.H4.101.d
-  picture = CHI_event_H4_101
+  picture = CHI_Event_H4_101
   is_triggered_only = yes
 
   option = {
     name = CHI.H4.101.a
     custom_effect_tooltip = CHI_begonia_leaf_send_diplomat_tt
     JAP = {
-      country_event = { id = CHI.204 days = 3 }
+      country_event = { id = CHI.H4.104 days = 3 }
     }
   }
 }
 
 ### JAPAN EVENT: ROC DEMANDS RETURN OF MANCHURIA AND TREATY PORTS ###
 country_event = {
-  id = CHI.204
-  title = CHI.204.t
-  desc = CHI.204.d
+  id = CHI.H4.104
+  title = CHI.H4.104.t
+  desc = CHI.H4.104.d
   picture = CHI_Event_H4_93
   is_triggered_only = yes
 
   option = {
-    name = CHI.204.a
+    name = CHI.H4.104.a
     ai_chance = { base = 100 }
     hidden_effect = {
       # Transfer all Chinese and Manchurian states held by JAP / PDTO puppets
@@ -509,7 +509,7 @@ country_event = {
     }
   }
   option = {
-    name = CHI.204.b
+    name = CHI.H4.104.b
     ai_chance = { base = 0 }
     add_opinion_modifier = {
       target = CHI
