@@ -361,8 +361,18 @@ news_event = {
 		trigger = { NOT = { tag = CHI } }
 	}
 }
+# BEGONIA LEAF but just a normal event
+country_event = {
+  id = CHI.H4.100
+  title = CHI.H4.100.t
+  desc = CHI.H4.100.d
+  picture = CHI_Event_H4_100
+  is_triggered_only = yes
 
-
+  option = {
+    name = CHI.H4.100.a
+  }
+}
 ### BEGONIA LEAF: DEMAND RETURN OF LANDS FROM JAPAN ###
 country_event = {
   id = CHI.H4.101

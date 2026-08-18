@@ -943,7 +943,6 @@ country_event = {
   }
   option = {
     name = taiwan.32.a
-    clr_country_flag = CHI_protecting_the_island_flag
     custom_effect_tooltip = CHI_taiwan_war_victory_demobilization_tooltip
     custom_effect_tooltip = tooltip_white_line
     add_ideas = CHI_lower_mainland_influence_idea
@@ -1056,58 +1055,13 @@ country_event = {
     }
   }
 }
-##############非常重要#################}
-
-country_event = {
-  id = CHI.114514
-  title = CHI.114514.t
-  desc = CHI.114514.d
-  is_triggered_only = yes
-  fire_only_once = yes
-  hidden = yes
-  immediate = {
-    JAP = {
-      complete_national_focus = JAP_recovery_assistance
-      complete_national_focus = JAP_new_cooperation_agreement
-      add_political_power = -75
-    }
-    hidden_effect = {
-      country_event = {
-        id = CHI.114515
-        hours = 2
-      }
-    }
-  }
-}
-
-country_event = {
-  id = CHI.114515
-  title = CHI.114515.t
-  desc = CHI.114515.d
-  is_triggered_only = yes
-  fire_only_once = yes
-  hidden = yes
-  immediate = {
-    CHI = {
-      # 扣除多給的數值
-      add_political_power = -50
-      add_stability = -0.3
-      add_war_support = -0.075
-      # 恢復原本的國家精神 (因為 1 被原代碼刪了，我們加回來)
-      # 工廠送你了
-    }
-    JAP = {
-      end_puppet = CHI
-    }
-  }
-}
 
 country_event = {
   #Second Wave of Missile Strikes
   id = taiwan.33
-  title = taiwan.33.t
-  desc = taiwan.33.d
-  picture = GFX_PRC_rocket_strikes2
+  title = CHI.TW.3.t
+  desc = CHI.TW.3.d
+  picture = CHI_Event_TW_3
   is_triggered_only = yes
   fire_only_once = yes
 
@@ -1254,27 +1208,15 @@ country_event = {
     }
   }
   option = {
-    name = taiwan.33.a
-    set_country_flag = CHI_protecting_the_island_flag
+    name = CHI.TW.3.a
     clr_country_flag = Taiwan_war
     focus_unlock = yes
-    complete_national_focus = CHI_island_in_one_fate
+    # complete_national_focus = CHI_island_in_one_fate
     add_ideas = CHI_repairs_under_fire_idea
     # 中華民國經濟debuff
     activate_mission = CHI_taiwan_war_mission
     activate_mission = War_weariness_mission
     custom_effect_tooltip = PRC_second_wave_missile_strikes_tt
-
-    if = {
-      limit = { has_country_flag = CHI_anti_silent_dawn_flag }
-      custom_effect_tooltip = CHI_anti_silent_dawn_effect_tooltip
-      CHI = {
-        modify_timed_idea = {
-          idea = CHI_silent_dawn
-          days = -90
-        }
-      }
-    }
 
     set_variable = {
       var = TH_level
@@ -1324,6 +1266,51 @@ country_event = {
     set_portraits = {
       character = CHI_tsai_ing_wen_char
       civilian = { large = "gfx/Leaders/CHI/CHI_tsai_ing_wen_military.png" }
+    }
+  }
+}
+##############非常重要#################}
+
+country_event = {
+  id = CHI.114514
+  title = CHI.114514.t
+  desc = CHI.114514.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  hidden = yes
+  immediate = {
+    JAP = {
+      complete_national_focus = JAP_recovery_assistance
+      complete_national_focus = JAP_new_cooperation_agreement
+      add_political_power = -75
+    }
+    hidden_effect = {
+      country_event = {
+        id = CHI.114515
+        hours = 2
+      }
+    }
+  }
+}
+
+country_event = {
+  id = CHI.114515
+  title = CHI.114515.t
+  desc = CHI.114515.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  hidden = yes
+  immediate = {
+    CHI = {
+      # 扣除多給的數值
+      add_political_power = -50
+      add_stability = -0.3
+      add_war_support = -0.075
+      # 恢復原本的國家精神 (因為 1 被原代碼刪了，我們加回來)
+      # 工廠送你了
+    }
+    JAP = {
+      end_puppet = CHI
     }
   }
 }
@@ -1927,18 +1914,18 @@ country_event = {
   }
 }
 
-country_event = {
-    id = CHI.TW.3
-    title = CHI.TW.3.t
-    desc = CHI.TW.3.d
-    picture = CHI_Event_TW_3
-    fire_only_once = yes
-    is_triggered_only = yes
+# country_event = {
+#     id = CHI.TW.3
+#     title = CHI.TW.3.t
+#     desc = CHI.TW.3.d
+#     picture = CHI_Event_TW_3
+#     fire_only_once = yes
+#     is_triggered_only = yes
     
-    option = {
-        name = CHI.TW.3.a
-    }
-}
+#     option = {
+#         name = CHI.TW.3.a
+#     }
+# }
 
 country_event = {
     id = CHI.TW.4
@@ -1975,7 +1962,8 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = CHI.TW.9.a
+      name = CHI.TW.9.a
+      country_event = { id = CHI.TW.10 }
     }
 }
 
@@ -1988,7 +1976,8 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = CHI.TW.10.a
+      name = CHI.TW.10.a
+      remove_ideas = CHI_low_international_recognition_idea
     }
 }
 

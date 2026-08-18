@@ -292,7 +292,8 @@ focus_tree = {
       focus = CHI_establish_regional_seats
     }
     completion_reward = {
-      country_event = { id = CHI.H4.101 }
+      country_event = { id = CHI.H4.100}
+      country_event = { id = CHI.H4.101 days = 7}
     }
   }
 }
