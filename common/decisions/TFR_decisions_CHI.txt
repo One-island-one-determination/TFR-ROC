@@ -3323,31 +3323,8 @@ CHI_taiwan_war_category = {
     is_good = no
     selectable_mission = no
     days_mission_timeout = 365
-    timeout_effect = {
-    }
     complete_effect = {
       custom_effect_tooltip = CHI_taiwan_war_LOSE_tt
-    }
-  }
-
-  War_weariness_mission = {
-    activation = {
-      has_war = yes
-      has_global_flag = PRC_ongoing_taiwan_war
-    }
-    allowed = {
-      tag = CHI
-    }
-    available = {
-      has_war = no
-    }
-    priority = 100
-    is_good = no
-    selectable_mission = no
-    days_mission_timeout = 14
-    timeout_effect = {
-      PDTO_taiwan_war = yes
-      activate_mission = War_weariness_mission
     }
   }
 
