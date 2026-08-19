@@ -639,226 +639,174 @@ on_actions = {
       #   }
       # }
       
-      #BeiJing
+       #BeiJing
       if = {
-        limit = { FROM.FROM = { state = 608 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_44_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 608 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.44 }
-            set_country_flag = CHI_TW_44_fired
-          }
+          NOT = { has_country_flag = CHI_TW_44_fired }
         }
+        set_country_flag = CHI_TW_44_fired
+        country_event = { id = CHI.TW.44 }
       }
       #Tianjin
       if = {
-        limit = { FROM.FROM = { state = 1157 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_45_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 1157 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.45 }
-            set_country_flag = CHI_TW_45_fired
-          }
+          NOT = { has_country_flag = CHI_TW_45_fired }
         }
+        set_country_flag = CHI_TW_45_fired
+        country_event = { id = CHI.TW.45 }
       }
       #HeiLongJiang
       if = {
-        limit = { FROM.FROM = { state = 714 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_46_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 714 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.46 }
-            set_country_flag = CHI_TW_46_fired
-          }
+          NOT = { has_country_flag = CHI_TW_46_fired }
         }
+        set_country_flag = CHI_TW_46_fired
+        country_event = { id = CHI.TW.46 }
       }
       #URumQi
       if = {
-        limit = { FROM.FROM = { state = 1165 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_47_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 1165 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.47 }
-            set_country_flag = CHI_TW_47_fired
-          }
+          NOT = { has_country_flag = CHI_TW_47_fired }
         }
+        set_country_flag = CHI_TW_47_fired
+        country_event = { id = CHI.TW.47 }
       }
       #NanJing
       if = {
-        limit = { FROM.FROM = { state = 1222 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_48_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 1222 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.48 }
-            set_country_flag = CHI_TW_48_fired
-          }
+          NOT = { has_country_flag = CHI_TW_48_fired }
         }
+        set_country_flag = CHI_TW_48_fired
+        country_event = { id = CHI.TW.48 }
       }
       #ShanHai
       if = {
-        limit = { FROM.FROM = { state = 1215 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_49_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 1215 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.49 }
-            set_country_flag = CHI_TW_49_fired
-          }
+          NOT = { has_country_flag = CHI_TW_49_fired }
         }
+        set_country_flag = CHI_TW_49_fired
+        country_event = { id = CHI.TW.49 }
       }
       #YanAn
       if = {
-        limit = { FROM.FROM = { state = 1201 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_50_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 1201 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.50 }
-            set_country_flag = CHI_TW_50_fired
-          }
+          NOT = { has_country_flag = CHI_TW_50_fired }
         }
+        set_country_flag = CHI_TW_50_fired
+        country_event = { id = CHI.TW.50 }
       }
       #ChongQing
       if = {
-        limit = { FROM.FROM = { state = 1189 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_51_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 1189 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.51 }
-            set_country_flag = CHI_TW_51_fired
-          }
+          NOT = { has_country_flag = CHI_TW_51_fired }
         }
+        set_country_flag = CHI_TW_51_fired
+        country_event = { id = CHI.TW.51 }
       }
       #WuHan
       if = {
-        limit = { FROM.FROM = { state = 1211 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_52_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 1211 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.52 }
-            set_country_flag = CHI_TW_52_fired
-          }
+          NOT = { has_country_flag = CHI_TW_52_fired }
         }
+        set_country_flag = CHI_TW_52_fired
+        country_event = { id = CHI.TW.52 }
       }
       #GuangZhou
       if = {
-        limit = { FROM.FROM = { state = 592 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_53_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 592 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.53 }
-            set_country_flag = CHI_TW_53_fired
-          }
+          NOT = { has_country_flag = CHI_TW_53_fired }
         }
+        set_country_flag = CHI_TW_53_fired
+        country_event = { id = CHI.TW.53 }
       }
       #XiAn
       if = {
-        limit = { FROM.FROM = { state = 622 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_54_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 622 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.54 }
-            set_country_flag = CHI_TW_54_fired
-          }
+          NOT = { has_country_flag = CHI_TW_54_fired }
         }
+        set_country_flag = CHI_TW_54_fired
+        country_event = { id = CHI.TW.54 }
       }
       #JiNan
       if = {
-        limit = { FROM.FROM = { state = 597 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_55_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 597 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.55 }
-            set_country_flag = CHI_TW_55_fired
-          }
+          NOT = { has_country_flag = CHI_TW_55_fired }
         }
+        set_country_flag = CHI_TW_55_fired
+        country_event = { id = CHI.TW.55 }
       }
       #GuiLin
       if = {
-        limit = { FROM.FROM = { state = 599 } }
-        if = {
-          limit = {
-            FROM = {
-              tag = CHI
-              has_completed_focus = CHI_compete_for_central_plains
-              NOT = { has_country_flag = CHI_TW_56_fired } 
-            }
+        limit = {
+          FROM.FROM = { state = 599 }
+          ROOT = {
+            tag = CHI
+            has_completed_focus = CHI_compete_for_central_plains
           }
-          FROM = {
-            country_event = { id = CHI.TW.56 }
-            set_country_flag = CHI_TW_56_fired
-          }
+          NOT = { has_country_flag = CHI_TW_56_fired }
         }
+        set_country_flag = CHI_TW_56_fired
+        country_event = { id = CHI.TW.56 }
       }
       # Tibet & Zangnan Liberation & Truce with India
       if = {

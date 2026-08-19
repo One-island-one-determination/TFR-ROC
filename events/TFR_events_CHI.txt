@@ -2232,10 +2232,17 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = CHI.TW.25.a
+      name = CHI.TW.25.a
+      608 = {
+        set_state_name = STATE_608_BEIPING
+        remove_dynamic_modifier = { modifier = CHI_Beijing }
+        add_dynamic_modifier = { modifier = CHI_Beiping }
+      }
+      add_political_power = 50
     }
     option = {
-        name = CHI.TW.25.b
+      name = CHI.TW.25.b
+      add_stability = 0.02
     }
 }
 
@@ -2309,7 +2316,7 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = CHI.TW.44.a
+      name = CHI.TW.44.a
     }
 }
 

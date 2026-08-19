@@ -215,7 +215,17 @@ country_event = {
 # ================================
 # Tuvan Event Chain
 # ================================
+country_event = {
+  id = CHI.H4.111
+  title = CHI.H4.111.t
+  desc = CHI.H4.111.d
+  picture = CHI_Event_H4_111
+  is_triggered_only = yes
 
+  option = {
+    name = CHI.H4.111.a
+  }
+}
 # CHI.H4.112: Tuva's old owner receives notification - starts border conflict
 # Fired on the OLD OWNER of Tuva (e.g. Russia) 14 days after ROC seizes state 329
 country_event = {
@@ -241,7 +251,7 @@ country_event = {
         num_provinces = 4
         on_win = CHI.H4.113
         on_lose = CHI.H4.114
-        # on_cancel = CHI.H4.115
+        on_cancel = CHI.H4.115
       }
     }
   }
@@ -281,7 +291,7 @@ country_event = {
   }
   immediate = {
     hidden_effect = {
-      329 = { controller = { save_event_target_as = tuva_controller } }
+      329 = { controller = { save_event_target_as = tuva_old_owner } }
     }
   }
   option = {

@@ -1,5 +1,5 @@
 # ==============================================================================
-# 第三次戡亂戰爭／中國內戰（CCW）核心化與宣戰決議邏�?
+# 第二次北伐戰爭／中國內戰（CCW）核心化與宣戰決議邏�?
 # ==============================================================================
 # 本檔案包含對中國各省份宣戰及核心化的決議�?
 # 
@@ -562,6 +562,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Beijing }
         remove_dynamic_modifier = { modifier = PRC_beijing_city }
       }
+      country_event = {
+        id = CHI.TW.25
+        days = 5
+      }
     }
 
     ai_will_do = {
@@ -591,6 +595,10 @@ CHI_civilwar_category = {
         add_dynamic_modifier = { modifier = CHI_Beijing }
         remove_dynamic_modifier = { modifier = PRC_beijing_city }
       }
+      country_event = {
+        id = CHI.TW.25
+        days = 5
+      }
     }
 
     ai_will_do = {
@@ -619,6 +627,10 @@ CHI_civilwar_category = {
         add_core_of = ROOT
         add_dynamic_modifier = { modifier = CHI_Beijing }
         remove_dynamic_modifier = { modifier = PRC_beijing_city }
+      }
+      country_event = {
+        id = CHI.TW.25
+        days = 5
       }
     }
 
@@ -1013,7 +1025,7 @@ CHI_civilwar_category = {
     cost = 50
     days_remove = 50
     available = {
-      has_country_flag = end_shandong_tutelage_flag
+      #has_country_flag = end_shandong_tutelage_flag
       owns_state = 1426
       owns_state = 1231
       owns_state = 597
@@ -1065,7 +1077,7 @@ CHI_civilwar_category = {
     cost = 40
     days_remove = 100
     available = {
-      has_country_flag = end_shandong_tutelage_flag
+      #has_country_flag = end_shandong_tutelage_flag
       owns_state = 1426
       owns_state = 1231
       owns_state = 597
@@ -1117,7 +1129,7 @@ CHI_civilwar_category = {
     cost = 60
     days_remove = 5
     available = {
-      has_country_flag = end_shandong_tutelage_flag
+      #has_country_flag = end_shandong_tutelage_flag
       owns_state = 1426
       owns_state = 1231
       owns_state = 597
@@ -1300,7 +1312,7 @@ CHI_civilwar_category = {
     cost = 50
     days_remove = 50
     available = {
-      has_country_flag = end_hebei_tutelage_flag
+      #has_country_flag = end_hebei_tutelage_flag
       owns_state = 609
       owns_state = 610
       owns_state = 611
@@ -1344,7 +1356,7 @@ CHI_civilwar_category = {
     cost = 40
     days_remove = 100
     available = {
-      has_country_flag = end_hebei_tutelage_flag
+      #has_country_flag = end_hebei_tutelage_flag
       owns_state = 609
       owns_state = 610
       owns_state = 611
@@ -1388,7 +1400,7 @@ CHI_civilwar_category = {
     cost = 60
     days_remove = 5
     available = {
-      has_country_flag = end_hebei_tutelage_flag
+      #has_country_flag = end_hebei_tutelage_flag
       owns_state = 609
       owns_state = 610
       owns_state = 611
@@ -1699,7 +1711,7 @@ CHI_civilwar_category = {
     cost = 50
     days_remove = 50
     available = {
-      has_country_flag = end_shanxi_tutelage_flag
+      #has_country_flag = end_shanxi_tutelage_flag
       owns_state = 1233
       owns_state = 615
       owns_state = 1194
@@ -1731,7 +1743,7 @@ CHI_civilwar_category = {
     cost = 40
     days_remove = 100
     available = {
-      has_country_flag = end_shanxi_tutelage_flag
+      #has_country_flag = end_shanxi_tutelage_flag
       owns_state = 1233
       owns_state = 615
       owns_state = 1194
@@ -1763,7 +1775,7 @@ CHI_civilwar_category = {
     cost = 60
     days_remove = 5
     available = {
-      has_country_flag = end_shanxi_tutelage_flag
+      #has_country_flag = end_shanxi_tutelage_flag
       owns_state = 1233
       owns_state = 615
       owns_state = 1194
@@ -2110,7 +2122,7 @@ CHI_civilwar_category = {
     cost = 50
     days_remove = 50
     available = {
-      has_country_flag = end_henan_tutelage_flag
+      #has_country_flag = end_henan_tutelage_flag
       owns_state = 607
       owns_state = 1226
       owns_state = 1225
@@ -2145,7 +2157,7 @@ CHI_civilwar_category = {
     cost = 40
     days_remove = 100
     available = {
-      has_country_flag = end_henan_tutelage_flag
+      #has_country_flag = end_henan_tutelage_flag
       owns_state = 607
       owns_state = 1226
       owns_state = 1225
@@ -2180,7 +2192,7 @@ CHI_civilwar_category = {
     cost = 60
     days_remove = 5
     available = {
-      has_country_flag = end_henan_tutelage_flag
+      #has_country_flag = end_henan_tutelage_flag
       owns_state = 607
       owns_state = 1226
       owns_state = 1225
@@ -7028,10 +7040,22 @@ CHI_civilwar_category = {
       NOT = { owns_state = 329 }
     }
     cost = 50
-    days_remove = 2
+    days_remove = 5
     fire_only_once = yes
     ai_will_do = {
       factor = 100
+    }
+    complete_effect = {
+      hidden_effect = {
+        329 = {
+          owner = {
+            save_event_target_as = tuva_old_owner
+          }
+        }
+      }
+      country_event = {
+        id = CHI.H4.111
+      }
     }
     remove_effect = {
       set_country_flag = CHI_tuva_seized
@@ -7039,7 +7063,6 @@ CHI_civilwar_category = {
       hidden_effect = {
         329 = {
           owner = {
-            save_event_target_as = tuva_old_owner
             set_country_flag = CHI_tuva_taken_from_me
           }
         }
