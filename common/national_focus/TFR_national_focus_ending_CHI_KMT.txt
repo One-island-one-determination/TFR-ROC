@@ -199,6 +199,18 @@ focus_tree = {
         character = CHI_zhao_shao_kang_char
         civilian = { large = "gfx/Leaders/CHI/CHI_zhao_shao_kang_ccw_ending.png" }
       }
+      hidden_effect = {
+        1148 = { remove_core_of = PRC remove_claim_by = PRC } # 台灣北部
+        1149 = { remove_core_of = PRC remove_claim_by = PRC } # 台灣中部
+        1150 = { remove_core_of = PRC remove_claim_by = PRC } # 台灣南部
+        524 = { remove_core_of = PRC remove_claim_by = PRC }  # 台灣東部
+        1451 = { remove_core_of = PRC remove_claim_by = PRC } # 澎湖
+        648 = { remove_core_of = PRC remove_claim_by = PRC } # 金門島
+        1382 = { remove_core_of = PRC remove_claim_by = PRC } # 中控南沙群島
+        1383 = { remove_core_of = PRC remove_claim_by = PRC } # 越控南沙群島
+        1384 = { remove_core_of = PRC remove_claim_by = PRC } # 菲控南沙群島
+        879 = { remove_core_of = PRC remove_claim_by = PRC }  # 西沙群島
+      }
     }
   }
   focus = {

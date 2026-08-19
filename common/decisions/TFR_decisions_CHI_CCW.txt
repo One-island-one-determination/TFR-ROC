@@ -169,11 +169,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      524 = { add_core_of = ROOT }
-      1148 = { add_core_of = ROOT }
-      1149 = { add_core_of = ROOT }
-      1150 = { add_core_of = ROOT }
-      648 = { add_core_of = ROOT }
+      524 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1148 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1149 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1150 = { add_core_of = ROOT remove_all_other_cores = yes }
+      648 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -206,11 +206,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      524 = { add_core_of = ROOT }
-      1148 = { add_core_of = ROOT }
-      1149 = { add_core_of = ROOT }
-      1150 = { add_core_of = ROOT }
-      648 = { add_core_of = ROOT }
+      524 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1148 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1149 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1150 = { add_core_of = ROOT remove_all_other_cores = yes }
+      648 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -243,11 +243,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      524 = { add_core_of = ROOT }
-      1148 = { add_core_of = ROOT }
-      1149 = { add_core_of = ROOT }
-      1150 = { add_core_of = ROOT }
-      648 = { add_core_of = ROOT }
+      524 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1148 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1149 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1150 = { add_core_of = ROOT remove_all_other_cores = yes }
+      648 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -379,9 +379,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1223 = { add_core_of = ROOT }
-      606 = { add_core_of = ROOT }
-      1221 = { add_core_of = ROOT }
+      1223 = { add_core_of = ROOT remove_all_other_cores = yes }
+      606 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1221 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -410,9 +410,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1223 = { add_core_of = ROOT }
-      606 = { add_core_of = ROOT }
-      1221 = { add_core_of = ROOT }
+      1223 = { add_core_of = ROOT remove_all_other_cores = yes }
+      606 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1221 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -441,9 +441,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1223 = { add_core_of = ROOT }
-      606 = { add_core_of = ROOT }
-      1221 = { add_core_of = ROOT }
+      1223 = { add_core_of = ROOT remove_all_other_cores = yes }
+      606 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1221 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -558,7 +558,7 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       608 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Beijing }
         remove_dynamic_modifier = { modifier = PRC_beijing_city }
       }
@@ -591,7 +591,7 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       608 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Beijing }
         remove_dynamic_modifier = { modifier = PRC_beijing_city }
       }
@@ -624,7 +624,7 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       608 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Beijing }
         remove_dynamic_modifier = { modifier = PRC_beijing_city }
       }
@@ -781,12 +781,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      598 = { add_core_of = ROOT }
-      1228 = { add_core_of = ROOT }
-      1429 = { add_core_of = ROOT }
-      613 = { add_core_of = ROOT }
+      598 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1228 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1429 = { add_core_of = ROOT remove_all_other_cores = yes }
+      613 = { add_core_of = ROOT remove_all_other_cores = yes }
       1222 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Nanjing }
       }
     }
@@ -821,12 +821,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      598 = { add_core_of = ROOT }
-      1228 = { add_core_of = ROOT }
-      1429 = { add_core_of = ROOT }
-      613 = { add_core_of = ROOT }
+      598 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1228 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1429 = { add_core_of = ROOT remove_all_other_cores = yes }
+      613 = { add_core_of = ROOT remove_all_other_cores = yes }
       1222 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Nanjing }
       }
     }
@@ -861,12 +861,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      598 = { add_core_of = ROOT }
-      1228 = { add_core_of = ROOT }
-      1429 = { add_core_of = ROOT }
-      613 = { add_core_of = ROOT }
+      598 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1228 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1429 = { add_core_of = ROOT remove_all_other_cores = yes }
+      613 = { add_core_of = ROOT remove_all_other_cores = yes }
       1222 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Nanjing }
       }
     }
@@ -1046,15 +1046,15 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1426 = { add_core_of = ROOT }
-      1231 = { add_core_of = ROOT }
-      597 = { add_core_of = ROOT }
-      1230 = { add_core_of = ROOT }
-      1427 = { add_core_of = ROOT }
-      1229 = { add_core_of = ROOT }
-      1393 = { add_core_of = ROOT }
+      1426 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1231 = { add_core_of = ROOT remove_all_other_cores = yes }
+      597 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1230 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1427 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1229 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1393 = { add_core_of = ROOT remove_all_other_cores = yes }
       1420 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = {
           modifier = CHI_Qingdao_City
         }
@@ -1098,15 +1098,15 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1426 = { add_core_of = ROOT }
-      1231 = { add_core_of = ROOT }
-      597 = { add_core_of = ROOT }
-      1230 = { add_core_of = ROOT }
-      1427 = { add_core_of = ROOT }
-      1229 = { add_core_of = ROOT }
-      1393 = { add_core_of = ROOT }
+      1426 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1231 = { add_core_of = ROOT remove_all_other_cores = yes }
+      597 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1230 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1427 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1229 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1393 = { add_core_of = ROOT remove_all_other_cores = yes }
       1420 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = {
           modifier = CHI_Qingdao_City
         }
@@ -1150,15 +1150,15 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1426 = { add_core_of = ROOT }
-      1231 = { add_core_of = ROOT }
-      597 = { add_core_of = ROOT }
-      1230 = { add_core_of = ROOT }
-      1427 = { add_core_of = ROOT }
-      1229 = { add_core_of = ROOT }
-      1393 = { add_core_of = ROOT }
+      1426 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1231 = { add_core_of = ROOT remove_all_other_cores = yes }
+      597 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1230 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1427 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1229 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1393 = { add_core_of = ROOT remove_all_other_cores = yes }
       1420 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = {
           modifier = CHI_Qingdao_City
         }
@@ -1331,13 +1331,13 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      609 = { add_core_of = ROOT }
-      610 = { add_core_of = ROOT }
-      611 = { add_core_of = ROOT }
-      1154 = { add_core_of = ROOT }
-      1232 = { add_core_of = ROOT }
-      1421 = { add_core_of = ROOT }
-      614 = { add_core_of = ROOT }
+      609 = { add_core_of = ROOT remove_all_other_cores = yes }
+      610 = { add_core_of = ROOT remove_all_other_cores = yes }
+      611 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1154 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1232 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1421 = { add_core_of = ROOT remove_all_other_cores = yes }
+      614 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -1375,13 +1375,13 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      609 = { add_core_of = ROOT }
-      610 = { add_core_of = ROOT }
-      611 = { add_core_of = ROOT }
-      1154 = { add_core_of = ROOT }
-      1232 = { add_core_of = ROOT }
-      1421 = { add_core_of = ROOT }
-      614 = { add_core_of = ROOT }
+      609 = { add_core_of = ROOT remove_all_other_cores = yes }
+      610 = { add_core_of = ROOT remove_all_other_cores = yes }
+      611 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1154 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1232 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1421 = { add_core_of = ROOT remove_all_other_cores = yes }
+      614 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -1419,13 +1419,13 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      609 = { add_core_of = ROOT }
-      610 = { add_core_of = ROOT }
-      611 = { add_core_of = ROOT }
-      1154 = { add_core_of = ROOT }
-      1232 = { add_core_of = ROOT }
-      1421 = { add_core_of = ROOT }
-      614 = { add_core_of = ROOT }
+      609 = { add_core_of = ROOT remove_all_other_cores = yes }
+      610 = { add_core_of = ROOT remove_all_other_cores = yes }
+      611 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1154 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1232 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1421 = { add_core_of = ROOT remove_all_other_cores = yes }
+      614 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -1539,7 +1539,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1157 = { add_core_of = ROOT }
+      1157 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -1564,7 +1564,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1157 = { add_core_of = ROOT }
+      1157 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -1589,7 +1589,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1157 = { add_core_of = ROOT }
+      1157 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -1722,9 +1722,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1233 = { add_core_of = ROOT }
-      615 = { add_core_of = ROOT }
-      1194 = { add_core_of = ROOT }
+      1233 = { add_core_of = ROOT remove_all_other_cores = yes }
+      615 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1194 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -1754,9 +1754,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1233 = { add_core_of = ROOT }
-      615 = { add_core_of = ROOT }
-      1194 = { add_core_of = ROOT }
+      1233 = { add_core_of = ROOT remove_all_other_cores = yes }
+      615 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1194 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -1786,9 +1786,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1233 = { add_core_of = ROOT }
-      615 = { add_core_of = ROOT }
-      1194 = { add_core_of = ROOT }
+      1233 = { add_core_of = ROOT remove_all_other_cores = yes }
+      615 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1194 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -1920,12 +1920,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1201 = { add_core_of = ROOT }
+      1201 = { add_core_of = ROOT remove_all_other_cores = yes }
       622 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Xian }
       }
-      1200 = { add_core_of = ROOT }
+      1200 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -1954,12 +1954,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1201 = { add_core_of = ROOT }
+      1201 = { add_core_of = ROOT remove_all_other_cores = yes }
       622 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Xian }
       }
-      1200 = { add_core_of = ROOT }
+      1200 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -1988,12 +1988,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1201 = { add_core_of = ROOT }
+      1201 = { add_core_of = ROOT remove_all_other_cores = yes }
       622 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Xian }
       }
-      1200 = { add_core_of = ROOT }
+      1200 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2135,10 +2135,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      607 = { add_core_of = ROOT }
-      1226 = { add_core_of = ROOT }
-      1225 = { add_core_of = ROOT }
-      1224 = { add_core_of = ROOT }
+      607 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1226 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1225 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1224 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2170,10 +2170,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      607 = { add_core_of = ROOT }
-      1226 = { add_core_of = ROOT }
-      1225 = { add_core_of = ROOT }
-      1224 = { add_core_of = ROOT }
+      607 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1226 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1225 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1224 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2205,10 +2205,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      607 = { add_core_of = ROOT }
-      1226 = { add_core_of = ROOT }
-      1225 = { add_core_of = ROOT }
-      1224 = { add_core_of = ROOT }
+      607 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1226 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1225 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1224 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2322,7 +2322,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1199 = { add_core_of = ROOT }
+      1199 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2347,7 +2347,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1199 = { add_core_of = ROOT }
+      1199 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2372,7 +2372,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1199 = { add_core_of = ROOT }
+      1199 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2487,7 +2487,7 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1189 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         remove_dynamic_modifier = { modifier = PRC_chongqing_city }
         add_dynamic_modifier = { modifier = CHI_Chongqing }
       }
@@ -2516,7 +2516,7 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1189 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         remove_dynamic_modifier = { modifier = PRC_chongqing_city }
         add_dynamic_modifier = { modifier = CHI_Chongqing }
       }
@@ -2545,7 +2545,7 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1189 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         remove_dynamic_modifier = { modifier = PRC_chongqing_city }
         add_dynamic_modifier = { modifier = CHI_Chongqing }
       }
@@ -2662,7 +2662,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1215 = { add_core_of = ROOT }
+      1215 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2687,7 +2687,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1215 = { add_core_of = ROOT }
+      1215 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2712,7 +2712,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1215 = { add_core_of = ROOT }
+      1215 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2853,10 +2853,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1220 = { add_core_of = ROOT }
-      1159 = { add_core_of = ROOT }
-      1219 = { add_core_of = ROOT }
-      596 = { add_core_of = ROOT }
+      1220 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1159 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1219 = { add_core_of = ROOT remove_all_other_cores = yes }
+      596 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2887,10 +2887,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1220 = { add_core_of = ROOT }
-      1159 = { add_core_of = ROOT }
-      1219 = { add_core_of = ROOT }
-      596 = { add_core_of = ROOT }
+      1220 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1159 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1219 = { add_core_of = ROOT remove_all_other_cores = yes }
+      596 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -2921,10 +2921,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1220 = { add_core_of = ROOT }
-      1159 = { add_core_of = ROOT }
-      1219 = { add_core_of = ROOT }
-      596 = { add_core_of = ROOT }
+      1220 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1159 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1219 = { add_core_of = ROOT remove_all_other_cores = yes }
+      596 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -3075,23 +3075,23 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1217 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       595 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       1218 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       1216 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       1431 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
     }
@@ -3127,23 +3127,23 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1217 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       595 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       1218 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       1216 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       1431 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
     }
@@ -3179,23 +3179,23 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       1217 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       595 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       1218 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       1216 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
       1431 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Fujian_Province }
       }
     }
@@ -3356,15 +3356,15 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1430 = { add_core_of = ROOT }
-      1207 = { add_core_of = ROOT }
-      1206 = { add_core_of = ROOT }
+      1430 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1207 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1206 = { add_core_of = ROOT remove_all_other_cores = yes }
       592 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Guangzhou }
       }
-      728 = { add_core_of = ROOT }
-      1395 = { add_core_of = ROOT }
+      728 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1395 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -3399,15 +3399,15 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1430 = { add_core_of = ROOT }
-      1207 = { add_core_of = ROOT }
-      1206 = { add_core_of = ROOT }
+      1430 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1207 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1206 = { add_core_of = ROOT remove_all_other_cores = yes }
       592 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Guangzhou }
       }
-      728 = { add_core_of = ROOT }
-      1395 = { add_core_of = ROOT }
+      728 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1395 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -3442,15 +3442,15 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1430 = { add_core_of = ROOT }
-      1207 = { add_core_of = ROOT }
-      1206 = { add_core_of = ROOT }
+      1430 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1207 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1206 = { add_core_of = ROOT remove_all_other_cores = yes }
       592 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Guangzhou }
       }
-      728 = { add_core_of = ROOT }
-      1395 = { add_core_of = ROOT }
+      728 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1395 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -3808,13 +3808,13 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      599 = { add_core_of = ROOT }
-      1191 = { add_core_of = ROOT }
-      593 = { add_core_of = ROOT }
-      594 = { add_core_of = ROOT }
-      1203 = { add_core_of = ROOT }
-      1204 = { add_core_of = ROOT }
-      1205 = { add_core_of = ROOT }
+      599 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1191 = { add_core_of = ROOT remove_all_other_cores = yes }
+      593 = { add_core_of = ROOT remove_all_other_cores = yes }
+      594 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1203 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1204 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1205 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -3851,13 +3851,13 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      599 = { add_core_of = ROOT }
-      1191 = { add_core_of = ROOT }
-      593 = { add_core_of = ROOT }
-      594 = { add_core_of = ROOT }
-      1203 = { add_core_of = ROOT }
-      1204 = { add_core_of = ROOT }
-      1205 = { add_core_of = ROOT }
+      599 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1191 = { add_core_of = ROOT remove_all_other_cores = yes }
+      593 = { add_core_of = ROOT remove_all_other_cores = yes }
+      594 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1203 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1204 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1205 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -3894,13 +3894,13 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      599 = { add_core_of = ROOT }
-      1191 = { add_core_of = ROOT }
-      593 = { add_core_of = ROOT }
-      594 = { add_core_of = ROOT }
-      1203 = { add_core_of = ROOT }
-      1204 = { add_core_of = ROOT }
-      1205 = { add_core_of = ROOT }
+      599 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1191 = { add_core_of = ROOT remove_all_other_cores = yes }
+      593 = { add_core_of = ROOT remove_all_other_cores = yes }
+      594 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1203 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1204 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1205 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4041,10 +4041,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1196 = { add_core_of = ROOT }
-      1192 = { add_core_of = ROOT }
-      1195 = { add_core_of = ROOT }
-      325 = { add_core_of = ROOT }
+      1196 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1192 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1195 = { add_core_of = ROOT remove_all_other_cores = yes }
+      325 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4075,10 +4075,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1196 = { add_core_of = ROOT }
-      1192 = { add_core_of = ROOT }
-      1195 = { add_core_of = ROOT }
-      325 = { add_core_of = ROOT }
+      1196 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1192 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1195 = { add_core_of = ROOT remove_all_other_cores = yes }
+      325 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4109,10 +4109,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1196 = { add_core_of = ROOT }
-      1192 = { add_core_of = ROOT }
-      1195 = { add_core_of = ROOT }
-      325 = { add_core_of = ROOT }
+      1196 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1192 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1195 = { add_core_of = ROOT remove_all_other_cores = yes }
+      325 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4262,11 +4262,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      601 = { add_core_of = ROOT }
-      1168 = { add_core_of = ROOT }
-      1190 = { add_core_of = ROOT }
-      605 = { add_core_of = ROOT }
-      1188 = { add_core_of = ROOT }
+      601 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1168 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1190 = { add_core_of = ROOT remove_all_other_cores = yes }
+      605 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1188 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4299,11 +4299,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      601 = { add_core_of = ROOT }
-      1168 = { add_core_of = ROOT }
-      1190 = { add_core_of = ROOT }
-      605 = { add_core_of = ROOT }
-      1188 = { add_core_of = ROOT }
+      601 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1168 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1190 = { add_core_of = ROOT remove_all_other_cores = yes }
+      605 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1188 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4336,11 +4336,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      601 = { add_core_of = ROOT }
-      1168 = { add_core_of = ROOT }
-      1190 = { add_core_of = ROOT }
-      605 = { add_core_of = ROOT }
-      1188 = { add_core_of = ROOT }
+      601 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1168 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1190 = { add_core_of = ROOT remove_all_other_cores = yes }
+      605 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1188 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4500,11 +4500,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1155 = { add_core_of = ROOT }
-      322 = { add_core_of = ROOT }
-      1153 = { add_core_of = ROOT }
-      1156 = { add_core_of = ROOT }
-      1152 = { add_core_of = ROOT }
+      1155 = { add_core_of = ROOT remove_all_other_cores = yes }
+      322 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1153 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1156 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1152 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4537,11 +4537,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1155 = { add_core_of = ROOT }
-      322 = { add_core_of = ROOT }
-      1153 = { add_core_of = ROOT }
-      1156 = { add_core_of = ROOT }
-      1152 = { add_core_of = ROOT }
+      1155 = { add_core_of = ROOT remove_all_other_cores = yes }
+      322 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1153 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1156 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1152 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4574,11 +4574,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1155 = { add_core_of = ROOT }
-      322 = { add_core_of = ROOT }
-      1153 = { add_core_of = ROOT }
-      1156 = { add_core_of = ROOT }
-      1152 = { add_core_of = ROOT }
+      1155 = { add_core_of = ROOT remove_all_other_cores = yes }
+      322 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1153 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1156 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1152 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4697,7 +4697,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      434 = { add_core_of = ROOT }
+      434 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4722,7 +4722,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      434 = { add_core_of = ROOT }
+      434 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4747,7 +4747,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      434 = { add_core_of = ROOT }
+      434 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -4879,10 +4879,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1212 = { add_core_of = ROOT }
-      620 = { add_core_of = ROOT }
+      1212 = { add_core_of = ROOT remove_all_other_cores = yes }
+      620 = { add_core_of = ROOT remove_all_other_cores = yes }
       1211 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Wuhan }
       }
     }
@@ -4913,10 +4913,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1212 = { add_core_of = ROOT }
-      620 = { add_core_of = ROOT }
+      1212 = { add_core_of = ROOT remove_all_other_cores = yes }
+      620 = { add_core_of = ROOT remove_all_other_cores = yes }
       1211 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Wuhan }
       }
     }
@@ -4947,10 +4947,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1212 = { add_core_of = ROOT }
-      620 = { add_core_of = ROOT }
+      1212 = { add_core_of = ROOT remove_all_other_cores = yes }
+      620 = { add_core_of = ROOT remove_all_other_cores = yes }
       1211 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Wuhan }
       }
     }
@@ -5084,9 +5084,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      602 = { add_core_of = ROOT }
-      1208 = { add_core_of = ROOT }
-      1209 = { add_core_of = ROOT }
+      602 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1208 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1209 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -5115,9 +5115,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      602 = { add_core_of = ROOT }
-      1208 = { add_core_of = ROOT }
-      1209 = { add_core_of = ROOT }
+      602 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1208 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1209 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -5146,9 +5146,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      602 = { add_core_of = ROOT }
-      1208 = { add_core_of = ROOT }
-      1209 = { add_core_of = ROOT }
+      602 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1208 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1209 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -5280,9 +5280,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1210 = { add_core_of = ROOT }
-      603 = { add_core_of = ROOT }
-      1197 = { add_core_of = ROOT }
+      1210 = { add_core_of = ROOT remove_all_other_cores = yes }
+      603 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1197 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -5311,9 +5311,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1210 = { add_core_of = ROOT }
-      603 = { add_core_of = ROOT }
-      1197 = { add_core_of = ROOT }
+      1210 = { add_core_of = ROOT remove_all_other_cores = yes }
+      603 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1197 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -5342,9 +5342,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1210 = { add_core_of = ROOT }
-      603 = { add_core_of = ROOT }
-      1197 = { add_core_of = ROOT }
+      1210 = { add_core_of = ROOT remove_all_other_cores = yes }
+      603 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1197 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -5494,11 +5494,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1227 = { add_core_of = ROOT }
-      1428 = { add_core_of = ROOT }
-      1214 = { add_core_of = ROOT }
-      1213 = { add_core_of = ROOT }
-      600 = { add_core_of = ROOT }
+      1227 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1428 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1214 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1213 = { add_core_of = ROOT remove_all_other_cores = yes }
+      600 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -5531,11 +5531,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1227 = { add_core_of = ROOT }
-      1428 = { add_core_of = ROOT }
-      1214 = { add_core_of = ROOT }
-      1213 = { add_core_of = ROOT }
-      600 = { add_core_of = ROOT }
+      1227 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1428 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1214 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1213 = { add_core_of = ROOT remove_all_other_cores = yes }
+      600 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -5568,11 +5568,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1227 = { add_core_of = ROOT }
-      1428 = { add_core_of = ROOT }
-      1214 = { add_core_of = ROOT }
-      1213 = { add_core_of = ROOT }
-      600 = { add_core_of = ROOT }
+      1227 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1428 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1214 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1213 = { add_core_of = ROOT remove_all_other_cores = yes }
+      600 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -5687,7 +5687,7 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       591 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = {
           modifier = CHI_Hainan_Province
         }
@@ -5717,7 +5717,7 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       591 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = {
           modifier = CHI_Hainan_Province
         }
@@ -5747,7 +5747,7 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       591 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = {
           modifier = CHI_Hainan_Province
         }
@@ -5964,18 +5964,18 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1158 = { add_core_of = ROOT }
-      1160 = { add_core_of = ROOT }
-      1161 = { add_core_of = ROOT }
-      1162 = { add_core_of = ROOT }
-      1163 = { add_core_of = ROOT }
-      1164 = { add_core_of = ROOT }
-      1165 = { add_core_of = ROOT }
-      617 = { add_core_of = ROOT }
-      618 = { add_core_of = ROOT }
-      619 = { add_core_of = ROOT }
-      287 = { add_core_of = ROOT }
-      788 = { add_core_of = ROOT }
+      1158 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1160 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1161 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1162 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1163 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1164 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1165 = { add_core_of = ROOT remove_all_other_cores = yes }
+      617 = { add_core_of = ROOT remove_all_other_cores = yes }
+      618 = { add_core_of = ROOT remove_all_other_cores = yes }
+      619 = { add_core_of = ROOT remove_all_other_cores = yes }
+      287 = { add_core_of = ROOT remove_all_other_cores = yes }
+      788 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6022,18 +6022,18 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1158 = { add_core_of = ROOT }
-      1160 = { add_core_of = ROOT }
-      1161 = { add_core_of = ROOT }
-      1162 = { add_core_of = ROOT }
-      1163 = { add_core_of = ROOT }
-      1164 = { add_core_of = ROOT }
-      1165 = { add_core_of = ROOT }
-      617 = { add_core_of = ROOT }
-      618 = { add_core_of = ROOT }
-      619 = { add_core_of = ROOT }
-      287 = { add_core_of = ROOT }
-      788 = { add_core_of = ROOT }
+      1158 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1160 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1161 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1162 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1163 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1164 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1165 = { add_core_of = ROOT remove_all_other_cores = yes }
+      617 = { add_core_of = ROOT remove_all_other_cores = yes }
+      618 = { add_core_of = ROOT remove_all_other_cores = yes }
+      619 = { add_core_of = ROOT remove_all_other_cores = yes }
+      287 = { add_core_of = ROOT remove_all_other_cores = yes }
+      788 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6080,18 +6080,18 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1158 = { add_core_of = ROOT }
-      1160 = { add_core_of = ROOT }
-      1161 = { add_core_of = ROOT }
-      1162 = { add_core_of = ROOT }
-      1163 = { add_core_of = ROOT }
-      1164 = { add_core_of = ROOT }
-      1165 = { add_core_of = ROOT }
-      617 = { add_core_of = ROOT }
-      618 = { add_core_of = ROOT }
-      619 = { add_core_of = ROOT }
-      287 = { add_core_of = ROOT }
-      788 = { add_core_of = ROOT }
+      1158 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1160 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1161 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1162 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1163 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1164 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1165 = { add_core_of = ROOT remove_all_other_cores = yes }
+      617 = { add_core_of = ROOT remove_all_other_cores = yes }
+      618 = { add_core_of = ROOT remove_all_other_cores = yes }
+      619 = { add_core_of = ROOT remove_all_other_cores = yes }
+      287 = { add_core_of = ROOT remove_all_other_cores = yes }
+      788 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6223,9 +6223,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1186 = { add_core_of = ROOT }
-      1187 = { add_core_of = ROOT }
-      604 = { add_core_of = ROOT }
+      1186 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1187 = { add_core_of = ROOT remove_all_other_cores = yes }
+      604 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6254,9 +6254,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1186 = { add_core_of = ROOT }
-      1187 = { add_core_of = ROOT }
-      604 = { add_core_of = ROOT }
+      1186 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1187 = { add_core_of = ROOT remove_all_other_cores = yes }
+      604 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6285,9 +6285,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1186 = { add_core_of = ROOT }
-      1187 = { add_core_of = ROOT }
-      604 = { add_core_of = ROOT }
+      1186 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1187 = { add_core_of = ROOT remove_all_other_cores = yes }
+      604 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6428,10 +6428,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1198 = { add_core_of = ROOT }
-      1193 = { add_core_of = ROOT }
-      616 = { add_core_of = ROOT }
-      283 = { add_core_of = ROOT }
+      1198 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1193 = { add_core_of = ROOT remove_all_other_cores = yes }
+      616 = { add_core_of = ROOT remove_all_other_cores = yes }
+      283 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6462,10 +6462,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1198 = { add_core_of = ROOT }
-      1193 = { add_core_of = ROOT }
-      616 = { add_core_of = ROOT }
-      283 = { add_core_of = ROOT }
+      1198 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1193 = { add_core_of = ROOT remove_all_other_cores = yes }
+      616 = { add_core_of = ROOT remove_all_other_cores = yes }
+      283 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6496,10 +6496,10 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1198 = { add_core_of = ROOT }
-      1193 = { add_core_of = ROOT }
-      616 = { add_core_of = ROOT }
-      283 = { add_core_of = ROOT }
+      1198 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1193 = { add_core_of = ROOT remove_all_other_cores = yes }
+      616 = { add_core_of = ROOT remove_all_other_cores = yes }
+      283 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6658,12 +6658,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1166 = { add_core_of = ROOT }
-      1167 = { add_core_of = ROOT }
-      621 = { add_core_of = ROOT }
-      1202 = { add_core_of = ROOT }
-      612 = { add_core_of = ROOT }
-      715 = { add_core_of = ROOT }
+      1166 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1167 = { add_core_of = ROOT remove_all_other_cores = yes }
+      621 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1202 = { add_core_of = ROOT remove_all_other_cores = yes }
+      612 = { add_core_of = ROOT remove_all_other_cores = yes }
+      715 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6698,12 +6698,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1166 = { add_core_of = ROOT }
-      1167 = { add_core_of = ROOT }
-      621 = { add_core_of = ROOT }
-      1202 = { add_core_of = ROOT }
-      612 = { add_core_of = ROOT }
-      715 = { add_core_of = ROOT }
+      1166 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1167 = { add_core_of = ROOT remove_all_other_cores = yes }
+      621 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1202 = { add_core_of = ROOT remove_all_other_cores = yes }
+      612 = { add_core_of = ROOT remove_all_other_cores = yes }
+      715 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6738,12 +6738,12 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1166 = { add_core_of = ROOT }
-      1167 = { add_core_of = ROOT }
-      621 = { add_core_of = ROOT }
-      1202 = { add_core_of = ROOT }
-      612 = { add_core_of = ROOT }
-      715 = { add_core_of = ROOT }
+      1166 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1167 = { add_core_of = ROOT remove_all_other_cores = yes }
+      621 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1202 = { add_core_of = ROOT remove_all_other_cores = yes }
+      612 = { add_core_of = ROOT remove_all_other_cores = yes }
+      715 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6903,11 +6903,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1388 = { add_core_of = ROOT }
-      1389 = { add_core_of = ROOT }
-      1390 = { add_core_of = ROOT }
-      1391 = { add_core_of = ROOT }
-      330 = { add_core_of = ROOT }
+      1388 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1389 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1390 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1391 = { add_core_of = ROOT remove_all_other_cores = yes }
+      330 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6940,11 +6940,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1388 = { add_core_of = ROOT }
-      1389 = { add_core_of = ROOT }
-      1390 = { add_core_of = ROOT }
-      1391 = { add_core_of = ROOT }
-      330 = { add_core_of = ROOT }
+      1388 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1389 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1390 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1391 = { add_core_of = ROOT remove_all_other_cores = yes }
+      330 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -6977,11 +6977,11 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1388 = { add_core_of = ROOT }
-      1389 = { add_core_of = ROOT }
-      1390 = { add_core_of = ROOT }
-      1391 = { add_core_of = ROOT }
-      330 = { add_core_of = ROOT }
+      1388 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1389 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1390 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1391 = { add_core_of = ROOT remove_all_other_cores = yes }
+      330 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -7059,7 +7059,7 @@ CHI_civilwar_category = {
     }
     remove_effect = {
       set_country_flag = CHI_tuva_seized
-      329 = { add_core_of = ROOT }
+      329 = { add_core_of = ROOT remove_all_other_cores = yes }
       hidden_effect = {
         329 = {
           owner = {
@@ -7094,7 +7094,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      329 = { add_core_of = ROOT }
+      329 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -7119,7 +7119,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      329 = { add_core_of = ROOT }
+      329 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -7144,7 +7144,7 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      329 = { add_core_of = ROOT }
+      329 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -7294,15 +7294,15 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1425 = { add_core_of = ROOT }
+      1425 = { add_core_of = ROOT remove_all_other_cores = yes }
       716 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Shenyang }
       }
-      1417 = { add_core_of = ROOT }
-      1413 = { add_core_of = ROOT }
+      1417 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1413 = { add_core_of = ROOT remove_all_other_cores = yes }
       1394 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Dalian }
       }
     }
@@ -7337,15 +7337,15 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1425 = { add_core_of = ROOT }
+      1425 = { add_core_of = ROOT remove_all_other_cores = yes }
       716 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Shenyang }
       }
-      1417 = { add_core_of = ROOT }
-      1413 = { add_core_of = ROOT }
+      1417 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1413 = { add_core_of = ROOT remove_all_other_cores = yes }
       1394 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Dalian }
       }
     }
@@ -7380,15 +7380,15 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1425 = { add_core_of = ROOT }
+      1425 = { add_core_of = ROOT remove_all_other_cores = yes }
       716 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Shenyang }
       }
-      1417 = { add_core_of = ROOT }
-      1413 = { add_core_of = ROOT }
+      1417 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1413 = { add_core_of = ROOT remove_all_other_cores = yes }
       1394 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Dalian }
       }
     }
@@ -7522,9 +7522,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1414 = { add_core_of = ROOT }
-      1415 = { add_core_of = ROOT }
-      328 = { add_core_of = ROOT }
+      1414 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1415 = { add_core_of = ROOT remove_all_other_cores = yes }
+      328 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -7553,9 +7553,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1414 = { add_core_of = ROOT }
-      1415 = { add_core_of = ROOT }
-      328 = { add_core_of = ROOT }
+      1414 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1415 = { add_core_of = ROOT remove_all_other_cores = yes }
+      328 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -7584,9 +7584,9 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1414 = { add_core_of = ROOT }
-      1415 = { add_core_of = ROOT }
-      328 = { add_core_of = ROOT }
+      1414 = { add_core_of = ROOT remove_all_other_cores = yes }
+      1415 = { add_core_of = ROOT remove_all_other_cores = yes }
+      328 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -7726,13 +7726,13 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1424 = { add_core_of = ROOT }
-      714 = { add_core_of = ROOT }
+      1424 = { add_core_of = ROOT remove_all_other_cores = yes }
+      714 = { add_core_of = ROOT remove_all_other_cores = yes }
       717 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Harbin }
       }
-      1416 = { add_core_of = ROOT }
+      1416 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -7763,13 +7763,13 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1424 = { add_core_of = ROOT }
-      714 = { add_core_of = ROOT }
+      1424 = { add_core_of = ROOT remove_all_other_cores = yes }
+      714 = { add_core_of = ROOT remove_all_other_cores = yes }
       717 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Harbin }
       }
-      1416 = { add_core_of = ROOT }
+      1416 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -7800,13 +7800,13 @@ CHI_civilwar_category = {
       }
     }
     remove_effect = {
-      1424 = { add_core_of = ROOT }
-      714 = { add_core_of = ROOT }
+      1424 = { add_core_of = ROOT remove_all_other_cores = yes }
+      714 = { add_core_of = ROOT remove_all_other_cores = yes }
       717 = {
-        add_core_of = ROOT
+        add_core_of = ROOT remove_all_other_cores = yes
         add_dynamic_modifier = { modifier = CHI_Harbin }
       }
-      1416 = { add_core_of = ROOT }
+      1416 = { add_core_of = ROOT remove_all_other_cores = yes }
     }
 
     ai_will_do = {
@@ -7837,4 +7837,5 @@ CHI_civilwar_category = {
   }
 
 }
+
 
