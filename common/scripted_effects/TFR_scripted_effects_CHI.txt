@@ -539,51 +539,6 @@ CHI_influence_SDP_add = {
   }
 }
 
-remove_Taihai_idea = {#移除精神台海戰爭與禁運
-  PRC = {
-    clr_country_flag = Taiwan_war
-    clr_country_flag = CHI_taihai_war
-    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-  }
-  AST = {
-    clr_country_flag = Taiwan_war
-    clr_country_flag = CHI_taihai_war
-    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-  }
-  CHI = {
-
-    # 徹底移除動態修正 (極度重要！)
-    remove_dynamic_modifier = {
-      modifier = CHI_TaiHai_dynamic
-    }
-    #移除禁運
-    if = {
-      limit = { has_idea = CHI_prc_embargo_idea0 }
-      remove_ideas = CHI_prc_embargo_idea0
-    }
-    else_if = {
-      limit = { has_idea = CHI_prc_embargo_idea1 }
-      remove_ideas = CHI_prc_embargo_idea1
-    }
-    else_if = {
-      limit = { has_idea = CHI_prc_embargo_idea2 }
-      remove_ideas = CHI_prc_embargo_idea2
-    }
-    else = {
-      limit = { has_idea = CHI_prc_embargo_idea3 }
-      remove_ideas = CHI_prc_embargo_idea4
-    }
-
-    clr_country_flag = Taiwan_war
-    clr_country_flag = CHI_taihai_war
-    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-  }
-  JAP = {
-    clr_country_flag = Taiwan_war
-    clr_country_flag = CHI_taihai_war
-    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-  }
-}
 
 de_prc_embargo_idea = {
   if = {

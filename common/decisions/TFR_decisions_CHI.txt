@@ -5668,6 +5668,7 @@ CHI_Population_Aging_decisions = {
     }
     modifier = { expense_growth_factor = 0.1 }
     remove_effect = {
+      custom_effect_tooltip = { IDEA = CHI_population_aging_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         PA_monthly_population = 0.1
         tooltip = monthly_population_tooltip
@@ -5691,6 +5692,7 @@ CHI_Population_Aging_decisions = {
       add_income = yes
     }
     remove_effect = {
+      custom_effect_tooltip = { IDEA = CHI_population_aging_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         PA_poverty_development_monthly = 0.01
         tooltip = poverty_development_monthly_tooltip

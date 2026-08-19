@@ -621,69 +621,15 @@ country_event = {
   }
   option = {
     name = taiwan.2.a
-    ai_chance = {
-      base = 1
+    JAP = {
+      add_opinion_modifier = { target = ROOT modifier = CHI_TY_01_opinion_modifier }
     }
-    hidden_effect = {
-      if = {
-        limit = {
-          PRC = {
-            is_ai = no
-          }
-        }
-        #remove_ideas = CHI_Taiwan_Bravery
-        #add_ideas = CHI_Taiwan_Bravery_2
-        1148 = {
-          add_building_construction = {
-            type = bunker
-            level = 5
-            instant_build = yes
-            province = 7186
-          }
-        }
-        1148 = {
-          add_building_construction = {
-            type = bunker
-            level = 5
-            instant_build = yes
-            province = 13961
-          }
-        }
-        1149 = {
-          add_building_construction = {
-            type = bunker
-            level = 5
-            instant_build = yes
-            province = 13968
-          }
-        }
-        1150 = {
-          add_building_construction = {
-            type = bunker
-            level = 5
-            instant_build = yes
-            province = 12068
-          }
-        }
-        1150 = {
-          add_building_construction = {
-            type = bunker
-            level = 5
-            instant_build = yes
-            province = 13965
-          }
-        }
-        load_oob = CHI_taipei_reserves
-      }
-    }
+    add_opinion_modifier = { target = JAP modifier = CHI_TY_01_opinion_modifier }
     if = {
       limit = {
         has_government = social_liberal
       }
       add_ideas = CHI_mobilize_balckbear
-    }
-    effect_tooltip = {
-      remove_ideas = CHI_american_protection_idea
     }
   }
 }
@@ -700,10 +646,14 @@ country_event = {
   }
   option = {
     name = taiwan.3.a
-    ai_chance = {
-      base = 1
+    JAP = {
+      add_opinion_modifier = { target = ROOT modifier = CHI_TY_021_opinion_modifier }
     }
-    add_war_support = 0.1
+    add_opinion_modifier = { target = JAP modifier = CHI_TY_022_opinion_modifier }
+    AST = {
+      add_opinion_modifier = { target = ROOT modifier = CHI_TY_021_opinion_modifier }
+    }
+    add_opinion_modifier = { target = AST modifier = CHI_TY_022_opinion_modifier }
   }
 }
 
@@ -939,55 +889,6 @@ country_event = {
           }
         }
       }
-    }
-  }
-  option = {
-    name = taiwan.32.a
-    custom_effect_tooltip = CHI_taiwan_war_victory_demobilization_tooltip
-    custom_effect_tooltip = tooltip_white_line
-    add_ideas = CHI_lower_mainland_influence_idea
-    remove_Taihai_idea = yes
-    custom_effect_tooltip = tooltip_white_line
-    custom_effect_tooltip = tooltip_white_line
-    custom_effect_tooltip = CHI_Economy_additional_effects
-
-    ##經濟精神修改####
-    add_to_variable = {
-      var = CHI_Economy_industrial_capacity_factory
-      value = -0.15
-      tooltip = industrial_capacity_factory_tooltip
-    }
-    add_to_variable = {
-      var = CHI_Economy_consumer_goods_factor
-      value = 0.1
-      tooltip = consumer_goods_factor_tooltip
-    }
-    add_to_variable = {
-      var = CHI_Economy_production_speed_buildings_factor
-      value = -0.05
-      tooltip = production_speed_buildings_factor_tooltip
-    }
-    add_to_variable = {
-      var = CHI_Economy_business_value_factor
-      value = -0.1
-      tooltip = business_value_factor_tooltip
-    }
-    add_to_variable = {
-      var = CHI_Economy_production_speed_energy_farm_factor
-      value = -0.6
-      tooltip = state_production_speed_energy_farm_factor_tooltip
-    }
-    ####
-
-    delete_unit = {
-      id = 1949
-      disband = no
-    }
-    custom_effect_tooltip = CHI_win_taiwn_war_tt
-    trigger = {
-      original_tag = CHI
-    }
-    hidden_effect = {
       remove_ideas = CHI_repairs_under_fire_idea
       remove_ideas = CHI_repairs_under_fire_idea2
       remove_ideas = CHI_repairs_under_fire_idea3
@@ -1017,41 +918,88 @@ country_event = {
       remove_ideas = CHI_PRC_infiltration_low
       remove_ideas = CHI_PRC_infiltration_middle
       remove_ideas = CHI_PRC_infiltration_high
-      remove_dynamic_modifier = {
-        modifier = CHI_PRC_Infiltration
-      }
-      remove_dynamic_modifier = {
-        modifier = CHI_NSM_dynamic
-      }
-      remove_dynamic_modifier = {
-        modifier = CHI_Defend_Taiwan_dynamic
+      remove_ideas = CHI_prc_embargo_idea0
+      remove_ideas = CHI_prc_embargo_idea1
+      remove_ideas = CHI_prc_embargo_idea2
+      remove_ideas = CHI_prc_embargo_idea3
+      remove_dynamic_modifier = { modifier = CHI_PRC_Infiltration }
+      remove_dynamic_modifier = { modifier = CHI_NSM_dynamic }
+      remove_dynamic_modifier = {  modifier = CHI_Defend_Taiwan_dynamic }
+      country_event = { id = CHI.TW.22 days = 5 }
+    }
+  }
+  option = {
+    name = taiwan.32.a
+    custom_effect_tooltip = CHI_taiwan_war_victory_demobilization_tooltip
+    add_ideas = CHI_lower_mainland_influence_idea
+    custom_effect_tooltip = CHI_Economy_additional_effects
+    ##經濟精神修改####
+    add_to_variable = {
+      var = CHI_Economy_industrial_capacity_factory
+      value = -0.15
+      tooltip = industrial_capacity_factory_tooltip
+    }
+    add_to_variable = {
+      var = CHI_Economy_consumer_goods_factor
+      value = 0.1
+      tooltip = consumer_goods_factor_tooltip
+    }
+    add_to_variable = {
+      var = CHI_Economy_production_speed_buildings_factor
+      value = -0.05
+      tooltip = production_speed_buildings_factor_tooltip
+    }
+    add_to_variable = {
+      var = CHI_Economy_business_value_factor
+      value = -0.1
+      tooltip = business_value_factor_tooltip
+    }
+    add_to_variable = {
+      var = CHI_Economy_production_speed_energy_farm_factor
+      value = -0.6
+      tooltip = state_production_speed_energy_farm_factor_tooltip
+    }
+    ####
+    custom_effect_tooltip = CHI_win_taiwn_war_tt
+    trigger = {
+      original_tag = CHI
+    }
+    hidden_effect = {
+      delete_unit = {
+        id = 1949
+        disband = no
       }
       CHI={load_focus_tree = CHI_transition}
       focus_unlock = yes
       if = {
-        limit = {
-          has_country_flag = KMT_win_flg
-        }
+        limit = { has_country_flag = KMT_win_flg }
         add_ideas = CHI_DPP_protest
-        set_temp_variable = {
-          coalition_partner_var_temp = token:social_liberal
-        }
+        set_temp_variable = { coalition_partner_var_temp = token:social_liberal }
+        remove_from_coalition = yes
+        set_temp_variable = { coalition_partner_var_temp = token:social_democrat }
+        remove_from_coalition = yes
+        set_temp_variable = { coalition_partner_var_temp = token:market_liberal }
+        remove_from_coalition = yes
+        set_temp_variable = { coalition_partner_var_temp = token:nationalist }
         remove_from_coalition = yes
       }
       else_if = {
-        limit = {
-          has_country_flag = DPP_win_flg
-        }
+        limit = { has_country_flag = DPP_win_flg }
         add_ideas = CHI_KMT_protests
-        set_temp_variable = {
-          coalition_partner_var_temp = token:conservative
-        }
+        set_temp_variable = { coalition_partner_var_temp = token:authoritarian_democrat }
         remove_from_coalition = yes
-        set_temp_variable = {
-          coalition_partner_var_temp = token:authoritarian_democrat
-        }
+        set_temp_variable = { coalition_partner_var_temp = token:social_liberal }
+        remove_from_coalition = yes
+        set_temp_variable = { coalition_partner_var_temp = token:conservative }
+        remove_from_coalition = yes
+        set_temp_variable = { coalition_partner_var_temp = token:social_democrat }
+        remove_from_coalition = yes
+        set_temp_variable = { coalition_partner_var_temp = token:market_liberal }
+        remove_from_coalition = yes
+        set_temp_variable = { coalition_partner_var_temp = token:nationalist }
         remove_from_coalition = yes
       }
+
     }
   }
 }
@@ -1067,142 +1015,28 @@ country_event = {
 
   immediate = {
     hidden_effect = {
-      if = {
-        limit = {
-          CHI = {
-            is_ai = yes
-          }
-        }
-        add_equipment_to_stockpile = {
-          type = motorized_equipment
-          amount = 400
-        }
-        add_equipment_to_stockpile = {
-          type = train_equipment
-          amount = 40
+      1149 = {
+        create_unit = {
+          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+          id = 1949
+          owner = CHI
+          count = 5
         }
       }
-      if = {
-        limit = {
-          CHI = {
-            is_ai = yes
-          }
-          JAP = {
-            is_ai = yes
-          }
-        }
-        if = {
-          limit = {
-            NOT = {
-              has_template = "Minbing"
-            }
-          }
-          division_template = {
-            name = "Minbing"
-            is_locked = no
-            regiments = {
-              militia = {
-                x = 0
-                y = 0
-              }
-              militia = {
-                x = 0
-                y = 1
-              }
-              militia = {
-                x = 0
-                y = 2
-              }
-              militia = {
-                x = 1
-                y = 0
-              }
-              militia = {
-                x = 1
-                y = 1
-              }
-            }
-            support = {
-              recon = {
-                x = 0
-                y = 0
-              }
-              engineer = {
-                x = 0
-                y = 1
-              }
-            }
-          }
-        }
-        524 = {
-          create_unit = {
-            division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-            prioritize_location = 11914
-            id = 1949
-            owner = CHI
-            count = 5
-          }
+      1148 = {
+        create_unit = {
+          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+          id = 1949
+          owner = CHI
+          count = 10
         }
       }
-      if = {
-        limit = {
-          CHI = {
-            is_ai = yes
-          }
-          PRC = {
-            is_ai = no
-          }
-        }
-        if = {
-          limit = {
-            NOT = {
-              has_template = "Minbing"
-            }
-          }
-          division_template = {
-            name = "Minbing"
-            is_locked = no
-            regiments = {
-              militia = {
-                x = 0
-                y = 0
-              }
-              militia = {
-                x = 0
-                y = 1
-              }
-              militia = {
-                x = 0
-                y = 2
-              }
-              militia = {
-                x = 1
-                y = 0
-              }
-              militia = {
-                x = 1
-                y = 1
-              }
-            }
-            support = {
-              recon = {
-                x = 0
-                y = 0
-              }
-              engineer = {
-                x = 0
-                y = 1
-              }
-            }
-          }
-        }
-        random_owned_controlled_state = {
-          create_unit = {
-            division = "name = \"Minbing Brigade\" division_template = \"Minbing\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-            id = 1949
-            owner = CHI
-            count = 3
-          }
+      1150 = {
+        create_unit = {
+          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+          id = 1949
+          owner = CHI
+          count = 10
         }
       }
     }
@@ -1211,7 +1045,7 @@ country_event = {
     name = CHI.TW.3.a
     clr_country_flag = Taiwan_war
     focus_unlock = yes
-    # complete_national_focus = CHI_island_in_one_fate
+    add_war_support = 0.15
     add_ideas = CHI_repairs_under_fire_idea
     # 中華民國經濟debuff
     activate_mission = CHI_taiwan_war_mission
@@ -1960,38 +1794,43 @@ country_event = {
 # }
 
 country_event = {
-    id = CHI.TW.4
-    title = CHI.TW.4.t
-    desc = CHI.TW.4.d
-    picture = CHI_Event_TW_4
-    fire_only_once = yes
-    is_triggered_only = yes
-    immediate = { hidden_effect = { country_event = { id = CHI.TW.1 days = 2 } } }
-    option = {
-      name = CHI.TW.4.a
-      country_event = { id = CHI.TW.5 }
-      set_temp_variable = {
-        coalition_partner_var_temp = token:authoritarian_democrat
+  id = CHI.TW.4
+  title = CHI.TW.4.t
+  desc = CHI.TW.4.d
+  picture = CHI_Event_TW_4
+  fire_only_once = yes
+  is_triggered_only = yes
+  immediate = { hidden_effect = { country_event = { id = CHI.TW.1 days = 2 } } }
+  option = {
+    name = CHI.TW.4.a
+    country_event = { id = CHI.TW.5 }
+    set_temp_variable = { coalition_partner_var_temp = token:authoritarian_democrat }
+    add_to_coalition = yes
+    set_temp_variable = { coalition_partner_var_temp = token:social_liberal }
+    add_to_coalition = yes
+    set_temp_variable = { coalition_partner_var_temp = token:conservative }
+    add_to_coalition = yes
+    set_temp_variable = { coalition_partner_var_temp = token:social_democrat }
+    add_to_coalition = yes
+    set_temp_variable = { coalition_partner_var_temp = token:market_liberal }
+    add_to_coalition = yes
+    set_temp_variable = { coalition_partner_var_temp = token:nationalist }
+    add_to_coalition = yes
+    add_stability = 0.1
+    if = {
+      limit = {
+        has_ideas = CHI_KMT_protests
       }
-      add_to_coalition = yes
-      set_temp_variable = {
-        coalition_partner_var_temp = token:social_liberal
-      }
-      add_to_coalition = yes
-      if = {
-        limit = {
-          has_ideas = CHI_KMT_protests
-        }
-        remove_ideas = CHI_KMT_protests
-      }
-      if = {
-        limit = {
-          has_ideas = CHI_DPP_protest
-        }
-        remove_ideas = CHI_DPP_protest
-      }
-      
+      remove_ideas = CHI_KMT_protests
     }
+    if = {
+      limit = {
+        has_ideas = CHI_DPP_protest
+      }
+      remove_ideas = CHI_DPP_protest
+    }
+    
+  }
 }
 
 country_event = {
@@ -2061,7 +1900,15 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = CHI.TW.6.a
+      name = CHI.TW.6.a
+      1148 = {
+        create_unit = {
+          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+          id = 1949
+          owner = CHI
+          count = 10
+        }
+      }
     }
 }
 
@@ -2103,6 +1950,12 @@ country_event = {
   
   option = {
     name = CHI.TW.11.a
+    add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 1000 producer = JAP }
+    add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 100 producer = JAP }
+    add_equipment_to_stockpile = {type = mechanized_equipment_1 amount = 100 producer = JAP }
+    add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = JAP }
+    add_equipment_to_stockpile = {type = modern_tank_equipment_1 amount = 100 producer = JAP }
+    add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 1000 producer = AST }
     country_event = {
       id = CHI.TW.2
       days = 5
@@ -2111,16 +1964,21 @@ country_event = {
 }
 
 country_event = {
-    id = CHI.TW.13
-    title = CHI.TW.13.t
-    desc = CHI.TW.13.d
-    picture = CHI_Event_TW_13
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.13.a
+  id = CHI.TW.13
+  title = CHI.TW.13.t
+  desc = CHI.TW.13.d
+  picture = CHI_Event_TW_13
+  fire_only_once = yes
+  is_triggered_only = yes
+  immediate = { hidden_effect = { country_event = { id = CHI.TW.18 days = 5 } } }
+  option = {
+    name = CHI.TW.13.a
+    add_stability = -0.05
+    add_power_balance_value = {
+      id = CHI_Identity_dispute
+      value = 0.1
     }
+  }
 }
 
 country_event = {
@@ -2138,16 +1996,25 @@ country_event = {
 }
 
 country_event = {
-    id = CHI.TW.18
-    title = CHI.TW.18.t
-    desc = CHI.TW.18.d
-    picture = CHI_Event_TW_18
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.18.a
+  id = CHI.TW.18
+  title = CHI.TW.18.t
+  desc = CHI.TW.18.d
+  picture = CHI_Event_TW_18
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.18.a
+    custom_effect_tooltip = { IDEA = CHI_population_aging_dynamic localization_key = modify_idea_tt }
+    add_to_variable = {
+      PA_monthly_population = -0.2
+      tooltip = monthly_population_tooltip
     }
+    add_to_variable = {
+      PA_expense_growth_factor = 0.1
+      tooltip = expense_growth_factor_tooltip
+    }
+  }
 }
 #HongKong and Macau
 country_event = {
@@ -2302,46 +2169,68 @@ country_event = {
 }
 
 country_event = {
-    id = CHI.TW.22
-    title = CHI.TW.22.t
-    desc = CHI.TW.22.d
-    picture = CHI_Event_TW_22
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.22.a
-    }
-}
-
-country_event = {
-    id = CHI.TW.23
-    title = CHI.TW.23.t
-    desc = CHI.TW.23.d
-    picture = CHI_Event_TW_23
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.23.a
-    }
-}
-
-country_event = {
-    id = CHI.TW.24
-    title = CHI.TW.24.t
-    desc = CHI.TW.24.d
-    picture = CHI_Event_TW_24
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.24.a
-      modify_timed_idea = {
-        idea = CHI_silent_dawn
-        days = 90
+  id = CHI.TW.22
+  title = CHI.TW.22.t
+  desc = CHI.TW.22.d
+  picture = CHI_Event_TW_22
+  fire_only_once = yes
+  is_triggered_only = yes
+  immediate = { 
+    hidden_effect = { 
+      country_event = { id = CHI.TW.13 days = 5 } 
+      1382 = {
+        add_core_of = CHI
+        transfer_state_to = CHI
       }
+      879 = {
+        add_core_of = CHI
+        transfer_state_to = CHI
+      }
+      if = {
+        limit = {
+          1383 = { is_core_of = PRC }
+        }
+        1383 = {
+          add_core_of = CHI
+          transfer_state_to = CHI
+        }
+      }     
+    } 
+  }
+  option = {
+    name = CHI.TW.22.a
+
+  }
+}
+
+country_event = {
+  id = CHI.TW.23
+  title = CHI.TW.23.t
+  desc = CHI.TW.23.d
+  picture = CHI_Event_TW_23
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.23.a
+  }
+}
+
+country_event = {
+  id = CHI.TW.24
+  title = CHI.TW.24.t
+  desc = CHI.TW.24.d
+  picture = CHI_Event_TW_24
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.24.a
+    modify_timed_idea = {
+      idea = CHI_silent_dawn
+      days = 90
     }
+  }
 }
 
 country_event = {
@@ -2366,6 +2255,19 @@ country_event = {
       add_stability = 0.02
     }
 }
+
+# country_event = {
+#   id = CHI.TW.26
+#   title = CHI.TW.26.t
+#   desc = CHI.TW.26.d
+#   picture = CHI_Event_TW_26
+#   fire_only_once = yes
+#   is_triggered_only = yes
+  
+#   option = {
+#     name = CHI.TW.26.a
+#   }
+# }
 
 country_event = {
     id = CHI.TW.27
