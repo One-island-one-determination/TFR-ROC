@@ -1705,6 +1705,18 @@ country_event = {
 }
 
 country_event = {
+  id = CHI.CT.12
+  title = CHI.CT.12.t
+  desc = CHI.CT.12.d
+  picture = CHI_Event_CT_12
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.CT.12.a
+  }
+}
+
+country_event = {
   id = CHI.CT.13
   title = CHI.CT.13.t
   desc = CHI.CT.13.d
@@ -2331,6 +2343,289 @@ country_event = {
 }
 
 country_event = {
+  id = CHI.TW.30
+  title = CHI.TW.30.t
+  desc = CHI.TW.30.d
+  picture = CHI_Event_TW_30
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.30.a
+    army_experience = 10
+    add_war_support = -0.05
+    add_stability = -0.05
+    custom_effect_tooltip = CHI_taibei_invade2_tt
+    effect_tooltip = {
+      1148 = {
+        add_manpower = -10213
+        damage_building = {
+          type = infrastructure
+          damage = 2
+        }
+        damage_building = {
+          type = arms_factory
+          damage = 2
+        }
+        damage_building = {
+          type = industrial_complex
+          damage = 2
+        }
+        damage_building = {
+          type = dockyard
+          damage = 2
+        }
+      }
+    }
+    custom_effect_tooltip = CHI_hualian_invade3_tt
+  }
+}
+
+country_event = {
+  id = CHI.TW.31
+  title = CHI.TW.31.t
+  desc = CHI.TW.31.d
+  picture = CHI_Event_TW_31
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.31.a
+    army_experience = 10
+    add_war_support = -0.05
+    add_stability = -0.05
+    custom_effect_tooltip = CHI_taizhong_invade2_tt
+    effect_tooltip = {
+      1149 = {
+        add_manpower = -7492
+        damage_building = {
+          type = infrastructure
+          damage = 2
+        }
+        damage_building = {
+          type = arms_factory
+          damage = 2
+        }
+        damage_building = {
+          type = industrial_complex
+          damage = 2
+        }
+        damage_building = {
+          type = dockyard
+          damage = 2
+        }
+      }
+    }
+    custom_effect_tooltip = CHI_hualian_invade3_tt
+  }
+}
+
+country_event = {
+  id = CHI.TW.32
+  title = CHI.TW.32.t
+  desc = CHI.TW.32.d
+  picture = CHI_Event_TW_32
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.32.a
+    army_experience = 10
+    add_war_support = -0.05
+    add_stability = -0.05
+    custom_effect_tooltip = CHI_gaoxiong_invade2_tt
+    effect_tooltip = {
+      1150 = {
+        add_manpower = -7316
+        damage_building = {
+          type = infrastructure
+          damage = 2
+        }
+        damage_building = {
+          type = arms_factory
+          damage = 2
+        }
+        damage_building = {
+          type = industrial_complex
+          damage = 2
+        }
+        damage_building = {
+          type = dockyard
+          damage = 2
+        }
+      }
+    }
+    custom_effect_tooltip = CHI_hualian_invade3_tt
+  }
+}
+
+country_event = {
+  id = CHI.TW.33
+  title = CHI.TW.33.t
+  desc = CHI.TW.33.d
+  picture = CHI_Event_TW_33
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.33.a
+    army_experience = 10
+    add_war_support = -0.05
+    add_stability = -0.05
+    custom_effect_tooltip = CHI_hualian_invade2_tt
+    effect_tooltip = {
+      524 = {
+        add_manpower = -4362
+        damage_building = {
+          type = infrastructure
+          damage = 2
+        }
+        damage_building = {
+          type = arms_factory
+          damage = 2
+        }
+        damage_building = {
+          type = industrial_complex
+          damage = 2
+        }
+        damage_building = {
+          type = dockyard
+          damage = 2
+        }
+      }
+    }
+    custom_effect_tooltip = CHI_hualian_invade3_tt
+  }
+}
+
+country_event = {
+    id = CHI.TW.34
+    title = CHI.TW.34.t
+    desc = CHI.TW.34.d
+    picture = CHI_Event_TW_34
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.TW.34.a
+        add_manpower = -126
+        add_war_support = 0.05
+    }
+}
+
+country_event = {
+    id = CHI.TW.35
+    title = CHI.TW.35.t
+    desc = CHI.TW.35.d
+    picture = CHI_Event_TW_35
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.TW.35.a
+    }
+}
+
+country_event = {
+    id = CHI.TW.36
+    title = CHI.TW.36.t
+    desc = CHI.TW.36.d
+    picture = CHI_Event_TW_36
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.TW.36.a
+    }
+}
+
+country_event = {
+    id = CHI.TW.37
+    title = CHI.TW.37.t
+    desc = CHI.TW.37.d
+    picture = CHI_Event_TW_37
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.TW.37.a
+    }
+}
+
+country_event = {
+    id = CHI.TW.38
+    title = CHI.TW.38.t
+    desc = CHI.TW.38.d
+    picture = CHI_Event_TW_38
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.TW.38.a
+    }
+}
+
+country_event = {
+    id = CHI.TW.39
+    title = CHI.TW.39.t
+    desc = CHI.TW.39.d
+    picture = CHI_Event_TW_39
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.TW.39.a
+    }
+}
+
+country_event = {
+    id = CHI.TW.40
+    title = CHI.TW.40.t
+    desc = CHI.TW.40.d
+    picture = CHI_Event_TW_40
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.TW.40.a
+    }
+}
+
+country_event = {
+    id = CHI.TW.41
+    title = CHI.TW.41.t
+    desc = CHI.TW.41.d
+    picture = CHI_Event_TW_41
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.TW.41.a
+    }
+}
+
+country_event = {
+    id = CHI.TW.42
+    title = CHI.TW.42.t
+    desc = CHI.TW.42.d
+    picture = CHI_Event_TW_42
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.TW.42.a
+    }
+}
+
+country_event = {
+    id = CHI.TW.43
+    title = CHI.TW.43.t
+    desc = CHI.TW.43.d
+    picture = CHI_Event_TW_43
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.TW.43.a
+    }
+}
+country_event = {
     id = CHI.TW.44
     title = CHI.TW.44.t
     desc = CHI.TW.44.d
@@ -2370,16 +2665,16 @@ country_event = {
 }
 
 country_event = {
-    id = CHI.TW.47
-    title = CHI.TW.47.t
-    desc = CHI.TW.47.d
-    picture = CHI_Event_TW_47
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.47.a
-    }
+  id = CHI.TW.47
+  title = CHI.TW.47.t
+  desc = CHI.TW.47.d
+  picture = CHI_Event_TW_47
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.47.a
+  }
 }
 
 country_event = {
