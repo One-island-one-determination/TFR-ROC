@@ -428,7 +428,7 @@ focus_tree = {
         id = CHI_guardian_of_the_sky
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_remember_lessons_of_taiwan_strait_war }
-        x = 12
+        x = 15
         y = 12
         cost = 3
     }
@@ -436,7 +436,7 @@ focus_tree = {
         id = CHI_what_we_fight_for
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_remember_lessons_of_taiwan_strait_war }
-        x = 18
+        x = 19
         y = 12
         cost = 3
     }
@@ -452,7 +452,8 @@ focus_tree = {
         id = CHI_csist_rd_projects
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_remember_lessons_of_taiwan_strait_war }
-        x = 30
+        mutually_exclusive = { focus = CHI_pdto_unified_design }
+        x = 27
         y = 12
         cost = 3
     }
@@ -460,7 +461,7 @@ focus_tree = {
         id = CHI_control_south_china_sea
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_remember_lessons_of_taiwan_strait_war }
-        x = 36
+        x = 32
         y = 12
         cost = 3
     }
@@ -468,7 +469,7 @@ focus_tree = {
         id = CHI_reverse_engineer_f15
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_guardian_of_the_sky }
-        x = 10
+        x = 13
         y = 13
         cost = 3
     }
@@ -476,7 +477,7 @@ focus_tree = {
         id = CHI_contact_mitsubishi_enterprise
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_guardian_of_the_sky }
-        x = 14
+        x = 17
         y = 13
         cost = 3
     }
@@ -484,7 +485,7 @@ focus_tree = {
         id = CHI_expand_reserves
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_what_we_fight_for }
-        x = 16
+        x = 19
         y = 13
         cost = 3
     }
@@ -492,7 +493,7 @@ focus_tree = {
         id = CHI_localized_whampoa_spirit
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_what_we_fight_for }
-        x = 20
+        x = 21
         y = 13
         cost = 3
     }
@@ -500,23 +501,23 @@ focus_tree = {
         id = CHI_pierce_enemy_bulletproof_vests
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_replace_individual_combat_equipment }
-        x = 24
+        x = 23
         y = 13
         cost = 3
     }
     focus = {
         id = CHI_ammunition_self_sufficiency
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_csist_rd_projects }
-        x = 28
+        prerequisite = { focus = CHI_replace_individual_combat_equipment }
+        x = 25
         y = 13
         cost = 3
     }
     focus = {
         id = CHI_pdto_rd_system
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_csist_rd_projects }
-        x = 32
+        prerequisite = { focus = CHI_csist_rd_projects focus = CHI_pdto_unified_design }
+        x = 28
         y = 13
         cost = 3
     }
@@ -524,7 +525,7 @@ focus_tree = {
         id = CHI_domestic_ship_building
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_control_south_china_sea }
-        x = 36
+        x = 31
         y = 13
         cost = 3
     }
@@ -532,7 +533,7 @@ focus_tree = {
         id = CHI_american_tech
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_reverse_engineer_f15 }
-        x = 10
+        x = 14
         y = 14
         cost = 3
     }
@@ -540,15 +541,23 @@ focus_tree = {
         id = CHI_japan_taiwan_australia_air_force
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_contact_mitsubishi_enterprise }
-        x = 14
+        x = 16
         y = 14
+        cost = 3
+    }
+    focus = {
+        id = CHI_shield_of_taiwan
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_japan_taiwan_australia_air_force focus = CHI_american_tech}
+        x = 16
+        y = 15
         cost = 3
     }
     focus = {
         id = CHI_increase_combat_bonus
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_expand_reserves }
-        x = 16
+        x = 19
         y = 14
         cost = 3
     }
@@ -556,7 +565,7 @@ focus_tree = {
         id = CHI_new_cultural_ethos
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_localized_whampoa_spirit }
-        x = 20
+        x = 21
         y = 14
         cost = 3
     }
@@ -571,8 +580,24 @@ focus_tree = {
     focus = {
         id = CHI_self_strengthening_armored_force
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_ammunition_self_sufficiency }
+        prerequisite = {  }
         x = 28
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_rejuvenating_kaohsiung_heavy_industries
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_ammunition_self_sufficiency focus = CHI_reference_us_tanks focus = CHI_trap_them_in_port}
+        x = 25
+        y = 15
+        cost = 3
+    }
+    focus = {
+        id = CHI_reference_us_tanks
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_pdto_rd_system }
+        x = 27
         y = 14
         cost = 3
     }
@@ -580,7 +605,7 @@ focus_tree = {
         id = CHI_trap_them_in_port
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_domestic_ship_building }
-        x = 36
+        x = 30
         y = 14
         cost = 3
     }
@@ -589,42 +614,31 @@ focus_tree = {
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_increase_combat_bonus }
         prerequisite = { focus = CHI_new_cultural_ethos }
-        x = 18
+        x = 19
         y = 15
         cost = 3
     }
     focus = {
         id = CHI_popularize_drones
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_truth_within_shooting_radius }
-        x = 24
-        y = 15
+        prerequisite = { focus = CHI_guardian_of_the_sky }
+        x = 15
+        y = 13
         cost = 3
     }
     focus = {
         id = CHI_pdto_unified_design
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_self_strengthening_armored_force }
-        mutually_exclusive = { focus = CHI_reference_us_tanks }
-        x = 27
-        y = 15
-        cost = 3
-    }
-    focus = {
-        id = CHI_reference_us_tanks
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_self_strengthening_armored_force }
-        mutually_exclusive = { focus = CHI_pdto_unified_design }
+        prerequisite = { focus = CHI_remember_lessons_of_taiwan_strait_war }
+        mutually_exclusive = { focus = CHI_csist_rd_projects }
         x = 29
-        y = 15
+        y = 12
         cost = 3
     }
     focus = {
         id = CHI_army_belonging_to_taiwanese
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_military_loves_people }
-        prerequisite = { focus = CHI_popularize_drones }
-        prerequisite = { focus = CHI_pdto_unified_design focus = CHI_reference_us_tanks }
+        prerequisite = { focus = CHI_shield_of_taiwan focus = CHI_military_loves_people focus = CHI_rejuvenating_kaohsiung_heavy_industries}
         x = 24
         y = 17
         cost = 3
