@@ -867,6 +867,7 @@ country_event = {
   fire_only_once = yes
   immediate = {
     hidden_effect = {
+      clr_country_flag = taiwan_war_events
       country_event = {
         id = CHI.114514##俄人給我們挖的坑，導致後續變日本傀儡
         days = 5
@@ -1015,6 +1016,8 @@ country_event = {
 
   immediate = {
     hidden_effect = {
+      set_country_flag = taiwan_war_events
+      country_event = { id = CHI.TW.999 days = 5 }
       1149 = {
         create_unit = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
@@ -1770,7 +1773,7 @@ country_event = {
   id = CHI.TW.1
   title = CHI.TW.1.t
   desc = CHI.TW.1.d
-  picture = ROC_CHI_Event_3
+  picture = CHI_Event_TW_1
   is_triggered_only = yes
   fire_only_once = yes
   option = {
@@ -1849,7 +1852,7 @@ country_event = {
   id = CHI.TW.5
   title = CHI.TW.5.t
   desc = CHI.TW.5.d
-  picture = ROC_CHI_Event_6
+  picture = CHI_Event_TW_5
   fire_only_once = yes
   is_triggered_only = yes
 
@@ -2503,127 +2506,137 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = CHI.TW.34.a
-        add_manpower = -126
-        add_war_support = 0.05
+      name = CHI.TW.34.a
+      add_manpower = -126
+      add_war_support = 0.05
+      set_country_flag = chi_tw_34_done
     }
 }
 
 country_event = {
-    id = CHI.TW.35
-    title = CHI.TW.35.t
-    desc = CHI.TW.35.d
-    picture = CHI_Event_TW_35
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.35.a
-    }
+  id = CHI.TW.35
+  title = CHI.TW.35.t
+  desc = CHI.TW.35.d
+  picture = CHI_Event_TW_35
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.35.a
+    set_country_flag = chi_tw_35_done
+  }
 }
 
 country_event = {
-    id = CHI.TW.36
-    title = CHI.TW.36.t
-    desc = CHI.TW.36.d
-    picture = CHI_Event_TW_36
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.36.a
-    }
+  id = CHI.TW.36
+  title = CHI.TW.36.t
+  desc = CHI.TW.36.d
+  picture = CHI_Event_TW_36
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.36.a
+    set_country_flag = chi_tw_36_done
+  }
 }
 
 country_event = {
-    id = CHI.TW.37
-    title = CHI.TW.37.t
-    desc = CHI.TW.37.d
-    picture = CHI_Event_TW_37
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.37.a
-    }
+  id = CHI.TW.37
+  title = CHI.TW.37.t
+  desc = CHI.TW.37.d
+  picture = CHI_Event_TW_37
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.37.a
+    set_country_flag = chi_tw_37_done
+  }
 }
 
 country_event = {
-    id = CHI.TW.38
-    title = CHI.TW.38.t
-    desc = CHI.TW.38.d
-    picture = CHI_Event_TW_38
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.38.a
-    }
+  id = CHI.TW.38
+  title = CHI.TW.38.t
+  desc = CHI.TW.38.d
+  picture = CHI_Event_TW_38
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.38.a
+    set_country_flag = chi_tw_38_done
+  }
 }
 
 country_event = {
-    id = CHI.TW.39
-    title = CHI.TW.39.t
-    desc = CHI.TW.39.d
-    picture = CHI_Event_TW_39
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.39.a
-    }
+  id = CHI.TW.39
+  title = CHI.TW.39.t
+  desc = CHI.TW.39.d
+  picture = CHI_Event_TW_39
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.39.a
+    set_country_flag = chi_tw_39_done
+  }
 }
 
 country_event = {
-    id = CHI.TW.40
-    title = CHI.TW.40.t
-    desc = CHI.TW.40.d
-    picture = CHI_Event_TW_40
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.40.a
-    }
+  id = CHI.TW.40
+  title = CHI.TW.40.t
+  desc = CHI.TW.40.d
+  picture = CHI_Event_TW_40
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.40.a
+    set_country_flag = chi_tw_40_done
+  }
 }
 
 country_event = {
-    id = CHI.TW.41
-    title = CHI.TW.41.t
-    desc = CHI.TW.41.d
-    picture = CHI_Event_TW_41
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.41.a
-    }
+  id = CHI.TW.41
+  title = CHI.TW.41.t
+  desc = CHI.TW.41.d
+  picture = CHI_Event_TW_41
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.41.a
+    set_country_flag = chi_tw_41_done
+  }
 }
 
 country_event = {
-    id = CHI.TW.42
-    title = CHI.TW.42.t
-    desc = CHI.TW.42.d
-    picture = CHI_Event_TW_42
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.42.a
-    }
+  id = CHI.TW.42
+  title = CHI.TW.42.t
+  desc = CHI.TW.42.d
+  picture = CHI_Event_TW_42
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.42.a
+    set_country_flag = chi_tw_42_done
+  }
 }
 
 country_event = {
-    id = CHI.TW.43
-    title = CHI.TW.43.t
-    desc = CHI.TW.43.d
-    picture = CHI_Event_TW_43
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.43.a
-    }
+  id = CHI.TW.43
+  title = CHI.TW.43.t
+  desc = CHI.TW.43.d
+  picture = CHI_Event_TW_43
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.TW.43.a
+    set_country_flag = chi_tw_43_done
+  }
 }
 country_event = {
     id = CHI.TW.44
@@ -2792,4 +2805,59 @@ country_event = {
     option = {
         name = CHI.TW.56.a
     }
+}
+
+country_event = {
+  id = CHI.TW.999
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    if = {
+      limit = { has_country_flag = taiwan_war_events }
+      # 隨機觸發 34~43 其中的一個
+      random_list = {
+        10 = { 
+          trigger = { NOT = { has_country_flag = chi_tw_34_done } }
+          country_event = { id = CHI.TW.34 } 
+        }
+        10 = { 
+          trigger = { NOT = { has_country_flag = chi_tw_35_done } }
+          country_event = { id = CHI.TW.35 } 
+        }
+        10 = { 
+          trigger = { NOT = { has_country_flag = chi_tw_36_done } }
+          country_event = { id = CHI.TW.36 } 
+        }
+        10 = { 
+          trigger = { NOT = { has_country_flag = chi_tw_37_done } }
+          country_event = { id = CHI.TW.37 } 
+        }
+        10 = { 
+          trigger = { NOT = { has_country_flag = chi_tw_38_done } }
+          country_event = { id = CHI.TW.38 } 
+        }
+        10 = { 
+          trigger = { NOT = { has_country_flag = chi_tw_39_done } }
+          country_event = { id = CHI.TW.39 } 
+        }
+        10 = { 
+          trigger = { NOT = { has_country_flag = chi_tw_40_done } }
+          country_event = { id = CHI.TW.40 } 
+        }
+        10 = { 
+          trigger = { NOT = { has_country_flag = chi_tw_41_done } }
+          country_event = { id = CHI.TW.41 } 
+        }
+        10 = { 
+          trigger = { NOT = { has_country_flag = chi_tw_42_done } }
+          country_event = { id = CHI.TW.42 } 
+        }
+        10 = { 
+          trigger = { NOT = { has_country_flag = chi_tw_43_done } }
+          country_event = { id = CHI.TW.43 } 
+        }
+      }
+      country_event = { id = taiwan.999 days = 20 }
+    }
+  }
 }
