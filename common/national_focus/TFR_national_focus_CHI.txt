@@ -93,8 +93,8 @@ focus_tree = {
       add_political_power = 50
       effect_tooltip = {
         swap_ideas = {
-          add_idea = "CHI_independence_four_persistences"
-          remove_idea = "CHI_taiwanese_independence_movement_idea"
+          add_idea = CHI_independence_four_persistences
+          remove_idea = CHI_taiwanese_independence_movement_idea
         }
       }
       unlock_decision_tooltip = Promote_Taiwan_internationally
@@ -186,8 +186,8 @@ focus_tree = {
       add_society_development = yes
       effect_tooltip = {
         swap_ideas = {
-          add_idea = "CHI_independence_Continue_transform_justice"
-          remove_idea = "CHI_taiwanese_independence_movement_idea"
+          add_idea = CHI_independence_Continue_transform_justice
+          remove_idea = CHI_taiwanese_independence_movement_idea
         }
       }
       swap_ideas = {
@@ -432,10 +432,6 @@ focus_tree = {
           remove_idea = Republic_of_China_idea
           add_idea = Republic_of_China_Whistleblower_Protection_Act_idea
         }
-      }
-      swap_ideas = {
-        add_idea = "higher_safety"
-        remove_idea = "high_safety"
       }
       hidden_effect = {
         add_to_variable = {
@@ -2003,7 +1999,7 @@ focus_tree = {
       }
       add_debt = yes
       add_equipment_to_stockpile = {
-        type = modern_tank_chassis_2
+        type = modern_tank_equipment_2
         variant_name = "M1A2 Abrams MK0"
         amount = 400
         producer = USA
@@ -2305,6 +2301,7 @@ focus_tree = {
           value = 0.02
         }
       }
+      add_political_power = 40
     }
     relative_position_id = Pacific_War
   }
@@ -2340,6 +2337,7 @@ focus_tree = {
           value = 0.05
         }
       }
+      add_political_power = 50
     }
     relative_position_id = Pacific_War
   }
@@ -2372,6 +2370,10 @@ focus_tree = {
           value = 0.05
         }
       }
+      modify_timed_idea = {
+        idea = generic_world_wide_financial_crisis_1
+        days = -50
+      }
     }
     relative_position_id = TJ_hold_emergency_talks
   }
@@ -2403,6 +2405,10 @@ focus_tree = {
           var = financial_crisis_poverty_development_monthly
           value = 0.01
         }
+      }
+      modify_timed_idea = {
+        idea = generic_world_wide_financial_crisis_1
+        days = -50
       }
     }
     relative_position_id = TJ_hold_emergency_talks
@@ -2480,6 +2486,10 @@ focus_tree = {
           modifier = financial_crisis_dynamic
         }
       }
+      modify_timed_idea = {
+        idea = generic_world_wide_financial_crisis_1
+        days = -50
+      }
     }
     relative_position_id = TJ_hold_emergency_talks
   }
@@ -2526,7 +2536,7 @@ focus_tree = {
     completion_reward = {
       add_timed_idea = {
         idea = CHI_InvestingAI
-        days = 365
+        days = 100
       }
       custom_effect_tooltip = after_idea_expires
       effect_tooltip = {
@@ -2564,6 +2574,11 @@ focus_tree = {
           instant_build = yes
         }
       }
+      set_temp_variable = {
+        var = poverty_development_var_temp 
+        value = 0.3
+      }
+      add_poverty_development = yes
     }
     relative_position_id = Semiconductor_mobilization
   }
@@ -2610,6 +2625,16 @@ focus_tree = {
         idea = CHI_scientists_from_america_idea
         days = 180
       }
+      set_temp_variable = {
+        var = industrial_development_var_temp 
+        value = 0.2
+      }
+      add_industrial_development = yes
+      set_temp_variable = {
+        var = society_development_var_temp 
+        value = 0.2
+      }
+      add_society_development = yes
     }
     relative_position_id = Semiconductor_mobilization
   }
@@ -2655,6 +2680,7 @@ focus_tree = {
     }
     completion_reward = {
       add_ideas = CHI_made_in_TW
+      add_political_power = 100
     }
     relative_position_id = Pacific_War
   }
