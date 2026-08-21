@@ -1,0 +1,81 @@
+add_namespace = CHI.TW #條件觸發
+
+
+country_event = {  # 中科炸毀機率
+    id = CHI.TW.60
+    hidden = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        random_list = {
+            50 = {
+                CHI = {
+                    country_event = { 
+                        id = CHI.TW.61 
+                        days = 30 
+                    }
+                }
+            }
+            50 = {
+            }
+        }
+    }
+}
+
+country_event = { # 中科炸毀事件
+    id = CHI.TW.61
+    title = CHI.TW.61.t
+    desc = CHI.TW.61.d
+    picture = GFX_report_event_generic_factory_explosion
+
+    is_triggered_only = yes
+
+    option = {
+        name = CHI.TW.61.a
+
+
+        add_stability = -0.05
+        add_ideas = CHI_ncsist_destroyed
+    }
+}
+
+country_event = { 
+    id = CHI.TW.62
+    hidden = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+
+        if = {
+            limit = {
+                has_idea = CHI_ncsist_destroyed
+            }
+            CHI = {
+                country_event = { id = CHI.TW.63 }
+            }
+        }
+    }
+}
+
+country_event = { # 重建中科院
+    id = CHI.TW.63
+    title = CHI.TW.63.t
+    desc = CHI.TW.63.d
+    picture = GFX_report_event_generic_factory
+
+    is_triggered_only = yes
+
+    option = {
+        name = CHI.TW.63.a
+
+        remove_ideas = CHI_ncsist_destroyed
+
+        add_timed_idea = {
+            idea = CHI_ncsist_rebuilding
+            days = 180
+        }
+    }
+}
+

@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+		
+
+		CHI_ncsist_destroyed = {
+			picture = CHI_three_quilt_coupons
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.10       
+				production_speed_buildings_factor = -0.15   
+				research_speed_factor = -0.05             
+			}
+		}
+
+		CHI_ncsist_rebuilding = {
+			picture = CHI_childcare_policy
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.10   
+				political_power_cost = 0.2   
+			}
+		}
+		
+	}
+}
+

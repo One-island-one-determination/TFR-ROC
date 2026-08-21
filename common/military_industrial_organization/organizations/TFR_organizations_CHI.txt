@@ -1008,15 +1008,42 @@ CHI_AIDC_organization = { #Aerospace Industrial Development Corp
 	}
 }
 CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technology
-	include = generic_TFR_UAV_equipment_organization
 	icon = GFX_mio_CHI_NCSIST
 	allowed = {	
 		tag = CHI
 		has_dlc = "Arms Against Tyranny"
 	}
-	#available = {
-	#	owner = { controls_state = 608 }		
-	#}
+ 	
+    available = {
+		
+		IF = {
+			limit = {
+				FROM = {
+					original_tag = CHI
+				}
+			}
+			FROM = {
+				NOT = { has_idea = CHI_ncsist_destroyed  }
+		}
+    }
+
+		IF = {
+			limit = {
+				FROM = {
+					original_tag = CHI
+				}
+			}
+			FROM = {
+				NOT = { has_idea = CHI_ncsist_rebuilding  }
+		}
+    }
+ }
+
+    visible = {
+        always = yes
+    }
+
+ 
 
     equipment_type = {
 		infantry_equipment
