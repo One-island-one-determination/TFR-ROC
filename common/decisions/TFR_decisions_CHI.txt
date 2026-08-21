@@ -5651,6 +5651,7 @@ CHI_Population_Aging_decisions = {
         var = income_var_temp
         value = -10
       }
+      add_to_variable = { var_CHI_expand_public_ltc = 1 }
       add_income = yes
     }
     remove_effect = {
@@ -5682,6 +5683,7 @@ CHI_Population_Aging_decisions = {
         value = -10
       }
       add_income = yes
+      add_to_variable = { var_CHI_childcare_subsidies = 1 }
     }
     modifier = { expense_growth_factor = 0.1 }
     remove_effect = {
@@ -6335,6 +6337,7 @@ CHI_efficient_government_category = {
         value = -10
       }
       add_income = yes
+      add_to_variable = { var_CHI_quality_coal = 1 }
     }
     remove_effect = {
       custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
@@ -6356,8 +6359,9 @@ CHI_efficient_government_category = {
     }
     cost = 50
     days_remove = 30
-    # complete_effect = {
-    # }
+    complete_effect = {
+      add_to_variable = { var_CHI_state_biz_advisor = 1 }
+    }
     remove_effect = {
       custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
       add_to_variable = {
@@ -6398,9 +6402,9 @@ CHI_efficient_government_category = {
     }
     cost = 50
     days_remove = 30
-    # complete_effect = {
-
-    # }
+    complete_effect = {
+      add_to_variable = { var_CHI_youth_startup_loan = 1 }
+    }
     remove_effect = {
       custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
       add_to_variable = {
@@ -6421,9 +6425,9 @@ CHI_efficient_government_category = {
     }
     cost = 50
     days_remove = 30
-    # complete_effect = {
-
-    # }
+    complete_effect = {
+      add_to_variable = { var_CHI_transit_integration = 1 }
+    }
     remove_effect = {
       custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
       add_to_variable = {
