@@ -386,7 +386,24 @@ CHI_debug = {
       set_country_flag = CHI_ROC_army_flg_2
     }
   }
-
+  remove_economy_types = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      remove_economy_types = yes
+    }
+  }
+  remove_gov_types = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      remove_gov_types = yes
+    }
+  }
 }
 
 # 疫情
