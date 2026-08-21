@@ -1718,6 +1718,22 @@ country_event = {
 
   option = {
     name = CHI.CT.12.a
+    add_popularity = {
+      ideology = social_liberal
+      popularity = 0.05
+    }
+    add_popularity = {
+      ideology = conservative
+      popularity = 0.05
+    }
+  }
+  
+  option = {
+    name = CHI.CT.12.b
+    add_popularity = {
+      ideology = authoritarian_democrat
+      popularity = 0.05
+    }
   }
 }
 
