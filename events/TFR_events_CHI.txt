@@ -1023,6 +1023,7 @@ country_event = {
   immediate = {
     hidden_effect = {
       set_country_flag = taiwan_war_events
+      PRC = { add_timed_idea = { idea = PRC_TW_war days = 300 } }
       country_event = { id = CHI.TW.999 days = 5 }
       1149 = {
         create_unit = {
@@ -1030,6 +1031,12 @@ country_event = {
           id = 1949
           owner = CHI
           count = 5
+        }
+        create_unit = {
+        division = "division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
+        owner = PRC
+        id = 1949
+        count = 5
         }
       }
       1148 = {
@@ -1039,6 +1046,12 @@ country_event = {
           owner = CHI
           count = 10
         }
+        create_unit = {
+        division = "division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
+        owner = PRC
+        id = 1949
+        count = 5
+        }
       }
       1150 = {
         create_unit = {
@@ -1046,6 +1059,12 @@ country_event = {
           id = 1949
           owner = CHI
           count = 10
+        }
+        create_unit = {
+        division = "division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
+        owner = PRC
+        id = 1949
+        count = 5
         }
       }
     }
@@ -2836,7 +2855,6 @@ country_event = {
   immediate = {
     if = {
       limit = { has_country_flag = taiwan_war_events }
-      # 隨機觸發 34~43 其中的一個
       random_list = {
         10 = { 
           trigger = { NOT = { has_country_flag = chi_tw_34_done } }
@@ -2879,7 +2897,7 @@ country_event = {
           country_event = { id = CHI.TW.43 } 
         }
       }
-      country_event = { id = taiwan.999 days = 20 }
+      country_event = { id = CHI.TW.999 days = 20 }
     }
   }
 }

@@ -1532,6 +1532,15 @@ ideas = {
       }
     }
     
+    PRC_TW_war = {
+    name = PRC_TW_war
+    picture = PRC_plan_high_alert
+    removal_cost = -1
+    modifier = {
+      invasion_preparation = -0.45
+    }
+  }
+
     #中華民國的重建貸款
     CHI_invest_ARR = {
       name = CHI_invest_ARR
@@ -1748,7 +1757,7 @@ ideas = {
     #-----------hidden idea CHI_Economy start--------------#{
     CHI_Economy_hidden_armor_research_bonus = {
       name = CHI_Economy_hidden
-      picture =  GFX_idea_CHI_Economy_tw
+      picture =  idea_CHI_Economy_tw
       research_bonus = {
         armor = -0.05
       }
@@ -1756,7 +1765,7 @@ ideas = {
 
     CHI_Economy_hidden_electronics_research_bonus = {
       name = CHI_Economy_hidden
-      picture = GFX_idea_CHI_Economy_tw
+      picture = idea_CHI_Economy_tw
       research_bonus = {
         electronics = 0.15
       }
@@ -1764,7 +1773,7 @@ ideas = {
     #+30
     CHI_Economy_hidden_armor_cost_equipment_bonus_p30 = {
       name = CHI_Economy_hidden
-      picture = GFX_idea_CHI_Economy_tw 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
         armor = {
           build_cost_ic = 0.3 instant = yes
@@ -1774,7 +1783,7 @@ ideas = {
 
     CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p30 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
         small_plane_airframe = {
           build_cost_ic = 0.3 instant = yes
@@ -1790,7 +1799,7 @@ ideas = {
 
     CHI_Economy_hidden_armored_car_cost_equipment_bonus_p30 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
 				mechanized_equipment = {
 					build_cost_ic = 0.30 instant = yes
@@ -1803,7 +1812,7 @@ ideas = {
     #+20
     CHI_Economy_hidden_armor_cost_equipment_bonus_p20 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
         armor = {
           build_cost_ic = 0.2 instant = yes
@@ -1813,7 +1822,7 @@ ideas = {
 
     CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p20 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
         small_plane_airframe = {
           build_cost_ic = 0.2 instant = yes
@@ -1829,7 +1838,7 @@ ideas = {
 
     CHI_Economy_hidden_armored_car_cost_equipment_bonus_p20 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear
+      picture = idea_CHI_Economy_tw
       equipment_bonus = { 
         mechanized_equipment = {
 					build_cost_ic = 0.20 instant = yes
@@ -1843,7 +1852,7 @@ ideas = {
     #+10
     CHI_Economy_hidden_armor_cost_equipment_bonus_p10 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
         armor = {
           build_cost_ic = 0.1 instant = yes
@@ -1853,7 +1862,7 @@ ideas = {
 
     CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p10 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
         small_plane_airframe = {
           build_cost_ic = 0.1 instant = yes
@@ -1869,7 +1878,7 @@ ideas = {
 
     CHI_Economy_hidden_armored_car_cost_equipment_bonus_p10 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = { 
         mechanized_equipment = {
 					build_cost_ic = 0.10 instant = yes
@@ -1883,7 +1892,7 @@ ideas = {
     ##----ZERO----####----for debug----##
     CHI_Economy_hidden_armor_research_bonus_0 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
+      picture = idea_CHI_Economy_tw # 加上這行，指定與主系統相同的圖片
       research_bonus = {
         armor = 0 instant = yes
       }
@@ -1891,7 +1900,7 @@ ideas = {
 
     CHI_Economy_hidden_electronics_research_bonus_0 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
+      picture = idea_CHI_Economy_tw # 加上這行，指定與主系統相同的圖片
       research_bonus = {
         electronics = 0 instant = yes
       }
@@ -1899,7 +1908,7 @@ ideas = {
 
     CHI_Economy_hidden_armor_cost_equipment_bonus_0 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear # 加上這行，指定與主系統相同的圖片
+      picture = idea_CHI_Economy_tw # 加上這行，指定與主系統相同的圖片
       equipment_bonus = {
         armor = {
           build_cost_ic = 0 instant = yes
@@ -1909,7 +1918,7 @@ ideas = {
 
     CHI_Economy_hidden_air_equipment_cost_equipment_bonus_0 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
         small_plane_airframe = {
           build_cost_ic = 0 instant = yes
@@ -1925,7 +1934,7 @@ ideas = {
 
     CHI_Economy_hidden_armored_car_cost_equipment_bonus_0 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = { 
         mechanized_equipment = {
 					build_cost_ic = 0 instant = yes
@@ -1939,7 +1948,7 @@ ideas = {
     #-10
     CHI_Economy_hidden_armor_cost_equipment_bonus_n10 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
         armor = {
           build_cost_ic = -0.1 instant = yes
@@ -1949,7 +1958,7 @@ ideas = {
 
     CHI_Economy_hidden_air_equipment_cost_equipment_bonus_n10 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
         small_plane_airframe = {
           build_cost_ic = -0.1 instant = yes
@@ -1965,7 +1974,7 @@ ideas = {
 
     CHI_Economy_hidden_armored_car_cost_equipment_bonus_n10 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = { 
         mechanized_equipment = {
 					build_cost_ic = -0.1 instant = yes
@@ -1979,7 +1988,7 @@ ideas = {
     #-20
     CHI_Economy_hidden_armor_cost_equipment_bonus_n20 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
         armor = {
           build_cost_ic = -0.2 instant = yes
@@ -1989,7 +1998,7 @@ ideas = {
 
     CHI_Economy_hidden_air_equipment_cost_equipment_bonus_n20 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = {
         small_plane_airframe = {
           build_cost_ic = -0.2 instant = yes
@@ -2005,7 +2014,7 @@ ideas = {
 
     CHI_Economy_hidden_armored_car_cost_equipment_bonus_n20 = {
       name = CHI_Economy_hidden
-      picture = CHI_reintroduce_nuclear 
+      picture = idea_CHI_Economy_tw 
       equipment_bonus = { 
         mechanized_equipment = {
 					build_cost_ic = -0.2 instant = yes
@@ -2016,7 +2025,7 @@ ideas = {
       }
     }
   #-----------hidden idea CHI_Economy end--------------#}
-
+  
   CHI_Civil_Military_Supply_Chain_idea = {
     name = CHI_Civil_Military_Supply_Chain
     equipment_bonus = {
