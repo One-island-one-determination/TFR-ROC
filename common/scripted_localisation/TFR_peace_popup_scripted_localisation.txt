@@ -656,6 +656,23 @@ defined_text = {
                 tag = SIC
                 has_cosmetic_tag = SIC_long_march
             }
+			PRC = {
+				has_country_flag = PRC_loji_overlord_flag
+			}
+        }
+        localization_key = TFR_PEACE_POPUP_FLAVOR_CHI_SIC_LONG_MARCH_LOJI
+    }
+	
+	text = {
+        trigger = {
+            event_target:winning_country = {
+                tag = CHI
+				has_cosmetic_tag = CHI_UNITED
+            }
+            event_target:losing_country = {
+                tag = SIC
+                has_cosmetic_tag = SIC_long_march
+            }
         }
         localization_key = TFR_PEACE_POPUP_FLAVOR_CHI_SIC_LONG_MARCH
     }
