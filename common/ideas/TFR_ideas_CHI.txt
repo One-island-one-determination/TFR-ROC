@@ -857,10 +857,10 @@ ideas = {
       modifier = {
         army_core_defence_factor = 0.15
         army_org_factor = 0.1
-        army_org_regain = 0.15
-        dig_in_speed_factor = 0.15
+        army_morale_factor = 0.1
+        dig_in_speed_factor = 0.1
         max_dig_in_factor = 0.15
-        terrain_penalty_reduction = 0.15
+        terrain_penalty_reduction = 0.2
       }
     }
     CHI_pdto_fuel_shipments_idea = {
@@ -876,9 +876,9 @@ ideas = {
       }
       removal_cost = -1
       modifier = {
-        base_fuel_gain = 150
+        base_fuel_gain = 200
         army_fuel_consumption_factor = -0.2
-        country_resource_oil = 25
+        country_resource_oil = 20
       }
     }
     CHI_repairs_under_fire_idea = {
@@ -921,12 +921,12 @@ ideas = {
       }
       removal_cost = -1
       modifier = {
-        production_speed_buildings_factor = -0.5
-        cas_damage_reduction = -0.15
+        production_speed_buildings_factor = -0.6
+        cas_damage_reduction = -0.17
         civilian_factory_use = 2
-        industry_air_damage_factor = 0.45
-        industry_repair_factor = -0.45
-        industry_free_repair_factor = -0.45
+        industry_air_damage_factor = 0.5
+        industry_repair_factor = -0.5
+        industry_free_repair_factor = -0.5
       }
     }
     CHI_repairs_under_fire_2_idea = {
@@ -945,12 +945,12 @@ ideas = {
       }
       removal_cost = -1
       modifier = {
-        production_speed_buildings_factor = -0.1
-        cas_damage_reduction = -0.05
+        production_speed_buildings_factor = -0.3
+        cas_damage_reduction = -0.09
         civilian_factory_use = 1
-        industry_air_damage_factor = 0.1
-        industry_repair_factor = -0.1
-        industry_free_repair_factor = -0.1
+        industry_air_damage_factor = 0.25
+        industry_repair_factor = -0.25
+        industry_free_repair_factor = -0.25
       }
     }
     CHI_hold_the_line_idea = {
@@ -969,11 +969,11 @@ ideas = {
       }
       removal_cost = -1
       modifier = {
-        land_bunker_effectiveness_factor = 0.15
+        land_bunker_effectiveness_factor = 0.1
         coastal_bunker_effectiveness_factor = 0.1
-        army_org_regain = 0.15
+        army_morale_factor = 0.1
         coordination_bonus = 0.1
-        dig_in_speed_factor = 0.25
+        dig_in_speed_factor = 0.2
       }
     }
     
@@ -1222,10 +1222,9 @@ ideas = {
 
       modifier = {
         army_speed_factor = 0.05
-        army_retreat_speed_factor = 0.15
+        army_retreat_speed_factor = 0.2
         command_power_cost_factor = -0.10
-        supply_consumption_factor = -0.1
-        max_planning_factor = 0.05
+        supply_consumption_factor = -0.2
         strategic_redeployment_speed = 0.2
       }
     }
@@ -1250,11 +1249,10 @@ ideas = {
       modifier = {
         stability_factor = 0.12
         war_support_factor = 0.15
-        resistance_target = -0.2
         garrison_damage = -0.15
-        mobilization_speed = 0.12
-        command_power_gain = 0.1
-        political_power_gain = -0.1
+        mobilization_speed = 0.15
+        command_power_gain = 0.2
+        political_power_gain = -0.2
         consumer_goods_factor = 0.05
       }
     }
@@ -1277,8 +1275,8 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        compliance_growth_on_our_occupied_states = -0.05
-        resistance_growth_on_our_occupied_states = -0.05
+        compliance_growth_on_our_occupied_states = -0.1
+        resistance_growth_on_our_occupied_states = 0.05
         resistance_target_on_our_occupied_states = 0.05
         local_intel_to_enemies = -0.1
       }
@@ -1305,8 +1303,8 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        compliance_growth_on_our_occupied_states = -0.10
-        resistance_growth_on_our_occupied_states = -0.10
+        compliance_growth_on_our_occupied_states = -0.2
+        resistance_growth_on_our_occupied_states = 0.15
         resistance_target_on_our_occupied_states = 0.10
       }
       targeted_modifier = {
@@ -1334,9 +1332,9 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        army_core_attack_factor = 0.15
-        supply_combat_penalties_on_core_factor = -0.05
-        army_core_defence_factor = 0.15
+        army_core_attack_factor = 0.1
+        supply_combat_penalties_on_core_factor = -0.1
+        army_core_defence_factor = 0.1
       }
     }
     #外匯危機
@@ -1395,11 +1393,10 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        stability_factor = 0.05
-        resistance_growth_on_our_occupied_states = -0.15
-        resistance_target_on_our_occupied_states = 0.15
+        stability_factor = 0.1
+        resistance_target_on_our_occupied_states = 0.1
         garrison_damage = -0.1
-        mobilization_speed = 0.05
+        mobilization_speed = 0.1
       }
     }
     financial_crisis_2 = {
@@ -1522,13 +1519,12 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        stability_factor = -0.10
-        conscription_factor = 0.10
-        industrial_capacity_factory = 0.10
-        production_speed_arms_factory_factor = 0.10
-        repair_speed_arms_factory_factor = 0.25
-        industry_repair_factor = 0.25
-        industry_air_damage_factor = -0.25
+        stability_factor = -0.1
+        industrial_capacity_factory = 0.1
+        production_speed_arms_factory_factor = 0.1
+        repair_speed_arms_factory_factor = 0.2
+        industry_repair_factor = 0.2
+        industry_air_damage_factor = -0.2
       }
     }
     

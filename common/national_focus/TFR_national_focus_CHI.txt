@@ -2789,7 +2789,7 @@ focus_tree = {
         }
         add_to_variable = {
           var = CHI_NSM_mobilization_speed
-          value = 0.25
+          value = 0.3
         }
         add_to_variable = {
           var = CHI_NSM_conscription_factor
@@ -2850,11 +2850,11 @@ focus_tree = {
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_army_core_defence_factor
-          value = 0.05
+          value = 0.1
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_conscription_factor
-          value = 0.05
+          value = 0.1
         }
       }
     }
@@ -3010,19 +3010,19 @@ focus_tree = {
       hidden_effect = {
         add_to_variable = {
           var = CHI_Defend_Taiwan_army_core_attack_factor
-          value = 0.05
+          value = 0.1
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_army_core_defence_factor
-          value = 0.05
+          value = 0.1
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_mobilization_speed
-          value = 0.25
+          value = 0.1
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_conscription_factor
-          value = 0.25
+          value = 0.2
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_weekly_bombing_war_support
@@ -3035,10 +3035,6 @@ focus_tree = {
         add_to_variable = {
           var = CHI_Defend_Taiwan_weekly_convoys_war_support
           value = 0.01
-        }
-        add_to_variable = {
-          var = CHI_Defend_Taiwan_monthly_population
-          value = -0.01
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_local_intel_to_enemies
@@ -3071,6 +3067,8 @@ focus_tree = {
           mission = PRC_taiwan_war_countdown
           days = -14
         }
+        add_stability = -0.1
+        add_war_support = -0.1
       }
       hidden_effect = {
         JAP = {
@@ -3111,6 +3109,24 @@ focus_tree = {
         add_days_mission_timeout = {
           mission = PRC_taiwan_war_countdown
           days = -14
+        }
+      }
+      1218 = {
+        damage_building = {
+          type = naval_base
+          damage = 0.5
+        }
+      }
+      595 = {
+        damage_building = {
+          type = naval_base
+          damage = 0.5
+        }
+      }
+      1431 = {
+        damage_building = {
+          type = naval_base
+          damage = 0.5
         }
       }
       hidden_effect = {
@@ -3408,7 +3424,7 @@ focus_tree = {
       focus = CHI_National_Spiritual_Mobilization
     }
     completion_reward = {
-      add_war_support = 0.05
+      add_war_support = 0.1
       add_ideas = CHI_AD_idea_1
       add_power_balance_value = {
         id = CHI_Identity_dispute
@@ -3659,13 +3675,19 @@ focus_tree = {
       524 = {
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
+          instant_build = yes
+          province = 13962
+        }
+        add_building_construction = {
+          type = coastal_bunker
+          level = 2
           instant_build = yes
           province = 4096
         }
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
           province = 11914
         }
@@ -3673,42 +3695,61 @@ focus_tree = {
       1149 = {
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
           province = 13968
         }
         add_building_construction = {
-          type = anti_air_building
-          level = 1
+          type = coastal_bunker
+          level = 2
           instant_build = yes
+          province = 13967
+        }
+        add_building_construction = {
+          type = coastal_bunker
+          level = 2
+          instant_build = yes
+          province = 11959
         }
       }
       1150 = {
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
           province = 13965
         }
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
           province = 12068
+        }
+        add_building_construction = {
+          type = coastal_bunker
+          level = 2
+          instant_build = yes
+          province = 13966
         }
       }
       1148 = {
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
-          province = 14937
+          province = 7186
         }
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
           province = 13961
+        }
+        add_building_construction = {
+          type = coastal_bunker
+          level = 2
+          instant_build = yes
+          province = 14937
         }
       }
     }
@@ -3817,7 +3858,7 @@ focus_tree = {
       hidden_effect = {
         add_to_variable = {
           var = CHI_NSM_army_strength_factor
-          value = 0.05
+          value = 0.1
         }
         add_to_variable = {
           var = CHI_NSM_army_retreat_speed_factor
@@ -3825,7 +3866,7 @@ focus_tree = {
         }
         add_to_variable = {
           var = CHI_NSM_experience_loss_factor
-          value = -0.05
+          value = -0.1
         }
         add_to_variable = {
           var = CHI_NSM_command_abilities_cost_factor
@@ -3911,6 +3952,18 @@ focus_tree = {
       swap_ideas = {
         remove_idea = CHI_thenationisinperil_1
         add_idea = CHI_thenationisinperil_2
+      }
+      if = {
+        limit = { has_idea = CHI_repairs_under_fire_idea }
+        remove_ideas = CHI_repairs_under_fire_idea
+      }
+      else_if = {
+        limit = { has_idea = CHI_repairs_under_fire_1_idea }
+        remove_ideas = CHI_repairs_under_fire_1_idea
+      }
+      else_if = {
+        limit = { has_idea = CHI_repairs_under_fire_2_idea }
+        remove_ideas = CHI_repairs_under_fire_2_idea
       }
     }
     relative_position_id = CHI_thenationisinperil
