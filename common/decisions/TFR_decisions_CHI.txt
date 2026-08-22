@@ -4365,7 +4365,7 @@ CHI_army_decisions = {
   # }
 
   CHI_anti_silent_dawn = {
-    icon = GFX_PRC_anti_western
+    icon = GFX_decision_generic_radar
     allowed = {
       tag = CHI
     }
@@ -4652,7 +4652,7 @@ CHI_army_decisions = {
   }
   #凌霄計畫
   CHI_project_Ling_Hsiao = {
-    icon = GFX_CHI_project_Ling_Hsiao
+    icon = GFX_decision_generic_air
     available = {
       NOT = { has_country_flag = CHI_lingxiao_plan_completed }
     }
@@ -4681,7 +4681,7 @@ CHI_army_decisions = {
   }
   #駝峰炸射
   CHI_project_hump_training = {
-    icon = GFX_CHI_project_hump_training
+    icon = GFX_decision_generic_air
     available = {
       NOT = { has_country_flag = CHI_project_hump_training_completed }
     }

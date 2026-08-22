@@ -792,25 +792,29 @@ CHI_Defend_Taiwan_dynamic = {
   # = CHI_Defend_Taiwan_
 }
 
-# CHI_TaiHai_dynamic = {
-#   icon = GFX_idea_JAP_Taiwan_Intervention
-#   enable = {
-#     tag = CHI
-#   }
-#   consumer_goods_factor = TH_consumer_goods_factor
-#   stability_factor = TH_SF
-#   industry_repair_factor = TH_industry_repair_factor
-#   army_core_attack_factor = TH_all
-#   army_core_defence_factor = TH_all
-#   supply_combat_penalties_on_core_factor = TH_SF
-#   resistance_growth_on_our_occupied_states = TH_RGOS
-#   income_growth_factor = TH_one_to_twenty
-#   business_value_factor = TH_one_to_twenty
-#   industrial_development_monthly = TH_one_to_fifteen
-#   farming_development_monthly = TH_one_to_fifteen
-#   poverty_development_monthly = TH_one_to_ten
-#   society_development_monthly = TH_one_to_ten
-# }
+CHI_TaiHai_dynamic = {
+  icon = GFX_idea_JAP_Taiwan_Intervention
+  enable = {
+    tag = CHI
+  }
+  consumer_goods_factor = TH_consumer_goods_factor
+  stability_factor = TH_stability_factor
+  industry_repair_factor = TH_industry_repair_factor
+  army_core_attack_factor = TH_army_core_attack_factor
+  army_core_defence_factor = TH_army_core_defence_factor
+  supply_combat_penalties_on_core_factor = TH_supply_combat_penalties_on_core_factor
+  resistance_growth_on_our_occupied_states = TH_resistance_growth_on_our_occupied_states
+  income_growth_factor = TH_income_growth_factor
+  business_value_factor = TH_business_value_factor
+  # industrial_development_monthly = TH_industrial_development_monthly
+  # farming_development_monthly = TH_farming_development_monthly
+  poverty_development_monthly = TH_poverty_development_monthly
+  society_development_monthly = TH_society_development_monthly
+  army_speed_factor = TH_army_speed_factor
+  army_morale_factor = TH_army_morale_factor
+  dig_in_speed_factor = TH_dig_in_speed_factor
+  max_dig_in_factor TH_max_dig_in_factor
+}
 
 ##戰後重建
 CHI_reonstruction_dynamic = {
