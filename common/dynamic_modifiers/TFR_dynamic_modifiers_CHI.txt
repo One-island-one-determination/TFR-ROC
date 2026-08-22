@@ -540,8 +540,79 @@ CHI_ROC_airforce_dynamic = {
   air_strategic_bomber_night_penalty  = ROC_air_strategic_bomber_night_penalty
 }
 
+# 空軍2
+CHI_ROC_airforce_dynamic_2 = {
+  icon = GFX_idea_CHI_ROC_airforce
+  enable = {
+    has_country_flag = CHI_ROC_army_flg
+  }
+	air_mission_efficiency             = ROC_air_mission_efficiency             # 空軍任務效率修正
+	air_training_xp_gain_factor        = ROC_air_training_xp_gain_factor        # 空軍演習經驗獲取係數
+  air_superiority_efficiency         = ROC_air_superiority_efficiency
+  air_intercept_efficiency           = ROC_air_intercept_efficiency
+  air_cas_efficiency                 = ROC_air_cas_efficiency
+  air_attack_factor                  = ROC_air_attack_factor
+  air_defence_factor                 = ROC_air_defence_factor
+  air_cas_present_factor             = ROC_air_cas_present_factor
+  ground_attack_factor               = ROC_ground_attack_factor
+	aircraft_upkeep_factor             = ROC_aircraft_upkeep_factor             # 飛機維護費修正
+	experience_gain_air                = ROC_experience_gain_air                # 空軍經驗獲取量
+	air_doctrine_cost_factor           = ROC_air_doctrine_cost_factor           # 空軍學說花費修正
+	air_nav_efficiency                 = ROC_air_nav_efficiency
+  airforce_intel_to_others           = ROC_airforce_intel_to_others           # 洩漏給他國的空軍情報
+	air_escort_efficiency              = ROC_air_escort_efficiency
+  repair_speed_air_base_factor       = ROC_repair_speed_air_base_factor       # 空軍基地修復速度修正
+  air_close_air_support_org_damage_factor = ROC_air_close_air_support_org_damage_factor
+  air_superiority_bonus_in_combat    = ROC_air_superiority_bonus_in_combat
+  air_superiority_detect_factor      = ROC_air_superiority_detect_factor
+  enemy_army_bonus_air_superiority_factor = ROC_enemy_army_bonus_air_superiority_factor
+  static_anti_air_damage_factor      = ROC_static_anti_air_damage_factor
+  air_strategic_bomber_bombing_factor = ROC_air_strategic_bomber_bombing_factor 
+  air_strategic_bomber_night_penalty  = ROC_air_strategic_bomber_night_penalty
+}
+
 # 海軍
 CHI_ROC_navy_dynamic = {
+  icon = GFX_idea_CHI_ROC_navy
+  enable = {
+    has_country_flag = CHI_ROC_army_flg
+  }
+	navy_org_factor                    = ROC_navy_org_factor                    # 海軍最大組織度修正
+  naval_coordination                 = ROC_naval_coordination
+  naval_speed_factor                 = ROC_naval_speed_factor
+  naval_detection                    = ROC_naval_detection
+  naval_morale_factor                = ROC_naval_morale_factor
+  navy_screen_attack_factor          = ROC_navy_screen_attack_factor
+  navy_screen_defense_factor         = ROC_navy_screen_defense_factor
+  screening_efficiency               = ROC_screening_efficiency
+	ship_upkeep_factor                 = ROC_ship_upkeep_factor                 # 艦艇維護費修正
+	navy_doctrine_cost_factor          = ROC_navy_doctrine_cost_factor          # 海軍學說花費修正
+  shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
+  shore_bombardment_bonus            = ROC_shore_bombardment_bonus
+}
+
+# 海軍2
+CHI_ROC_navy_dynamic_2 = {
+  icon = GFX_idea_CHI_ROC_navy
+  enable = {
+    has_country_flag = CHI_ROC_army_flg
+  }
+	navy_org_factor                    = ROC_navy_org_factor                    # 海軍最大組織度修正
+  naval_coordination                 = ROC_naval_coordination
+  naval_speed_factor                 = ROC_naval_speed_factor
+  naval_detection                    = ROC_naval_detection
+  naval_morale_factor                = ROC_naval_morale_factor
+  navy_screen_attack_factor          = ROC_navy_screen_attack_factor
+  navy_screen_defense_factor         = ROC_navy_screen_defense_factor
+  screening_efficiency               = ROC_screening_efficiency
+	ship_upkeep_factor                 = ROC_ship_upkeep_factor                 # 艦艇維護費修正
+	navy_doctrine_cost_factor          = ROC_navy_doctrine_cost_factor          # 海軍學說花費修正
+  shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
+  shore_bombardment_bonus            = ROC_shore_bombardment_bonus
+}
+
+# 海軍3
+CHI_ROC_navy_dynamic_3 = {
   icon = GFX_idea_CHI_ROC_navy
   enable = {
     has_country_flag = CHI_ROC_army_flg

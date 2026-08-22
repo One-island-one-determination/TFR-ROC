@@ -931,8 +931,14 @@ country_event = {
       remove_ideas = CHI_prc_embargo_idea3
       remove_dynamic_modifier = { modifier = CHI_PRC_Infiltration }
       remove_dynamic_modifier = { modifier = CHI_NSM_dynamic }
-      remove_dynamic_modifier = {  modifier = CHI_Defend_Taiwan_dynamic }
+      remove_dynamic_modifier = { modifier = CHI_Defend_Taiwan_dynamic }
       country_event = { id = CHI.TW.22 days = 5 }
+      remove_dynamic_modifier = { modifier = CHI_ROC_army_dynamic }
+      remove_dynamic_modifier = { modifier = CHI_ROC_navy_dynamic }
+      remove_dynamic_modifier = { modifier = CHI_ROC_airforce_dynamic }
+      add_dynamic_modifier = { modifier = CHI_ROC_army_dynamic_2 }
+      add_dynamic_modifier = { modifier = CHI_ROC_navy_dynamic_2 }
+      add_dynamic_modifier = { modifier = CHI_ROC_airforce_dynamic_2 }
     }
   }
   option = {
