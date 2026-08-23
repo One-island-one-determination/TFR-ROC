@@ -4627,6 +4627,7 @@ CHI_army_decisions = {
     visible = {
       original_tag = CHI
       NOT = { has_country_flag = CHI_ninghai_plan_completed_3 }
+      has_completed_focus = CHI_dont_forget_homeland
     }
     custom_cost_trigger = {
       has_navy_experience > 49
@@ -4687,6 +4688,7 @@ CHI_army_decisions = {
     visible = {
       original_tag = CHI
       NOT = { has_country_flag = CHI_lingxiao_plan_completed }
+      has_completed_focus = CHI_dont_forget_homeland
     }
     custom_cost_trigger = {
       has_air_experience > 49
@@ -4716,6 +4718,7 @@ CHI_army_decisions = {
     visible = {
       original_tag = CHI
       NOT = { has_country_flag = CHI_project_hump_training_completed }
+      has_completed_focus = CHI_dont_forget_homeland
     }
     custom_cost_trigger = {
       has_air_experience > 29
@@ -4738,7 +4741,10 @@ CHI_army_decisions = {
 
     visible = {
       original_tag = CHI
-      has_completed_focus = CHI_modern_whampoa
+      OR = { 
+        is_debug = yes
+        has_completed_focus = CHI_modern_whampoa 
+      }
     }
 
     available = {
@@ -5176,7 +5182,7 @@ CHI_Intervene_the_American_Civil_War_category = {
     }
     available = {
       has_global_flag = USA_american_civil_war_global
-      has_completed_focus = Intervene_American_Civil_War
+      has_country_flag = Intervene_American_Civil_War_flag
     }
     cancel_trigger = {
       has_global_flag = USA_american_civil_war_over_global
@@ -5218,7 +5224,7 @@ CHI_Intervene_the_American_Civil_War_category = {
     }
     available = {
       has_global_flag = USA_american_civil_war_global
-      has_completed_focus = Intervene_American_Civil_War
+      has_country_flag = Intervene_American_Civil_War_flag
     }
     cancel_trigger = {
       OR = {
@@ -5416,7 +5422,7 @@ CHI_Intervene_the_American_Civil_War_category = {
     }
     available = {
       has_global_flag = USA_american_civil_war_global
-      has_completed_focus = Intervene_American_Civil_War
+      has_country_flag = Intervene_American_Civil_War_flag
     }
     cancel_trigger = {
       OR = {

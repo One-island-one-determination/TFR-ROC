@@ -182,8 +182,10 @@ CHI_Population_Aging_decisions = {
     original_tag = CHI
   }
   visible = {
-    has_country_flag = CHI_Population_Aging_flag
-    is_debug = yes
+    OR = {
+      has_country_flag = CHI_Population_Aging_flag
+      is_debug = yes
+    }
   }
 }
 

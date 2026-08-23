@@ -63,10 +63,6 @@ on_actions = {
         country_event = taiwan.34
       }
       if = {
-        limit = { PRC = { has_completed_focus = PRC_shake_up_the_politburo } }
-        CHI = { country_event = { id = CHI.TW.23 } }
-      }
-      if = {
         limit = {
           tag = CHI
           CHI = {  # 指定國家
@@ -98,6 +94,10 @@ on_actions = {
       if = {
         limit = { PRC = { has_completed_focus = PRC_operation_silent_dawn } }
         CHI = { country_event = { id = CHI.TW.6 } }
+      }
+      if = {
+        limit = { PRC = { has_completed_focus = PRC_shake_up_the_politburo } }
+        CHI = { country_event = { id = CHI.TW.23 } }
       }
     }
   }

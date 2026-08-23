@@ -279,11 +279,9 @@ country_event = {
   picture = GFX_red_line_go_down
   fire_only_once = yes
   is_triggered_only = yes
-  option = {
-    name = CHI.11.a
-    set_country_flag = CHI_Population_Aging_flag
-    add_dynamic_modifier = {
-      modifier = CHI_population_aging_dynamic
+  immediate = {
+    hidden_effect = {
+      set_country_flag = CHI_Population_Aging_flag
     }
     set_variable = {
       var = PA_monthly_population
@@ -312,6 +310,12 @@ country_event = {
     set_variable = {
       var = PA_poverty_development_monthly
       value = -0.01
+    }
+  }
+  option = {
+    name = CHI.11.a
+    add_dynamic_modifier = {
+      modifier = CHI_population_aging_dynamic
     }
   }
 }
@@ -939,6 +943,7 @@ country_event = {
       add_dynamic_modifier = { modifier = CHI_ROC_army_dynamic_2 }
       add_dynamic_modifier = { modifier = CHI_ROC_navy_dynamic_2 }
       add_dynamic_modifier = { modifier = CHI_ROC_airforce_dynamic_2 }
+      remove_dynamic_modifier = { modifier = CHI_TaiHai_dynamic }
     }
   }
   option = {
@@ -2031,7 +2036,18 @@ country_event = {
     
     option = {
       name = CHI.TW.10.a
-      remove_ideas = CHI_low_international_recognition_idea
+      if = {
+        limit = { has_idea  = CHI_low_international_recognition_idea}
+        remove_ideas = CHI_low_international_recognition_idea
+      }
+      if = {
+        limit = { has_idea  = CHI_low_international_recognition_KMT1_idea}
+        remove_ideas = CHI_low_international_recognition_KMT1_idea
+      }
+      if = {
+        limit = { has_idea  = CHI_low_international_recognition_KMT2_idea}
+        remove_ideas = CHI_low_international_recognition_KMT2_idea
+      }
     }
 }
 
@@ -2323,7 +2339,7 @@ country_event = {
     name = CHI.TW.24.a
     modify_timed_idea = {
       idea = CHI_silent_dawn
-      days = 90
+      days = -90
     }
   }
 }
