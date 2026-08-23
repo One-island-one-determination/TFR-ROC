@@ -1021,7 +1021,7 @@ country_event = {
     }
   }
 }
-
+#}
 country_event = {
   #Second Wave of Missile Strikes
   id = taiwan.33
@@ -1063,11 +1063,13 @@ country_event = {
           owner = CHI
           count = 5
         }
+      }
+      1149 = {
         create_unit = {
-        division = "division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
-        owner = PRC
-        id = 1949
-        count = 5
+          division = "name = \"解放军空降旅\" division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
+          owner = PRC
+          id = 1949
+          count = 5
         }
       }
       1148 = {
@@ -1077,11 +1079,13 @@ country_event = {
           owner = CHI
           count = 10
         }
+      }
+      1148 = {
         create_unit = {
-        division = "division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
-        owner = PRC
-        id = 1949
-        count = 5
+          division = "name = \"解放军空降旅\" division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
+          owner = PRC
+          id = 1949
+          count = 5
         }
       }
       1150 = {
@@ -1091,11 +1095,13 @@ country_event = {
           owner = CHI
           count = 10
         }
+      }
+      1150 = {
         create_unit = {
-        division = "division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
-        owner = PRC
-        id = 1949
-        count = 5
+          division = "name = \"解放军空降旅\" division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
+          owner = PRC
+          id = 1949
+          count = 5
         }
       }
       set_variable = { TH_consumer_goods_factor = 0.1 }
