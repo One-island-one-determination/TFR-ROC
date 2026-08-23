@@ -1223,9 +1223,9 @@ ideas = {
       modifier = {
         army_speed_factor = 0.05
         army_retreat_speed_factor = 0.2
-        command_power_cost_factor = -0.10
+        command_power_gain_mult = 0.10
         supply_consumption_factor = -0.2
-        strategic_redeployment_speed = 0.2
+        # strategic_redeployment_speed = 0.2
       }
     }
     #宣布戒嚴
@@ -1249,7 +1249,7 @@ ideas = {
       modifier = {
         stability_factor = 0.12
         war_support_factor = 0.15
-        garrison_damage = -0.15
+        # garrison_damage = -0.15
         mobilization_speed = 0.15
         command_power_gain = 0.2
         political_power_gain = -0.2
@@ -1395,7 +1395,7 @@ ideas = {
       modifier = {
         stability_factor = 0.1
         resistance_target_on_our_occupied_states = 0.1
-        garrison_damage = -0.1
+        # garrison_damage = -0.1
         mobilization_speed = 0.1
       }
     }
@@ -1687,7 +1687,6 @@ ideas = {
         dtg_threshold_factor = 0.15
         society_development_monthly = 0.075
         poverty_development_monthly = 0.05
-        academic_development_var = 30
         academic_development_monthly = 0.05
       }
     }
@@ -1730,13 +1729,13 @@ ideas = {
 
     modifier = {
       naval_invasion_penalty = -0.2
-      targeted_modifier = {
+    }
+    targeted_modifier = {
         tag = PRC
         attack_bonus_against = 0.2
         defense_bonus_against = 0.2
         breakthrough_bonus_against = 0.2
       }
-    }
   }
 
   
@@ -1753,7 +1752,7 @@ ideas = {
     #-----------hidden idea CHI_Economy start--------------#{
     CHI_Economy_hidden_armor_research_bonus = {
       name = CHI_Economy_hidden
-      picture =  idea_CHI_Economy_tw
+      picture =  GFX_idea_CHI_Economy_tw
       research_bonus = {
         armor = -0.05
       }
@@ -1761,7 +1760,7 @@ ideas = {
 
     CHI_Economy_hidden_electronics_research_bonus = {
       name = CHI_Economy_hidden
-      picture = idea_CHI_Economy_tw
+      picture = GFX_idea_CHI_Economy_tw
       research_bonus = {
         electronics = 0.15
       }
@@ -1886,21 +1885,21 @@ ideas = {
     }
 
     ##----ZERO----####----for debug----##
-    CHI_Economy_hidden_armor_research_bonus_0 = {
-      name = CHI_Economy_hidden
-      picture = idea_CHI_Economy_tw # 加上這行，指定與主系統相同的圖片
-      research_bonus = {
-        armor = 0 instant = yes
-      }
-    }
+    # CHI_Economy_hidden_armor_research_bonus_0 = {
+    #   name = CHI_Economy_hidden
+    #   picture = idea_CHI_Economy_tw # 加上這行，指定與主系統相同的圖片
+    #   research_bonus = {
+    #     armor = 0 instant = yes
+    #   }
+    # }
 
-    CHI_Economy_hidden_electronics_research_bonus_0 = {
-      name = CHI_Economy_hidden
-      picture = idea_CHI_Economy_tw # 加上這行，指定與主系統相同的圖片
-      research_bonus = {
-        electronics = 0 instant = yes
-      }
-    }
+    # CHI_Economy_hidden_electronics_research_bonus_0 = {
+    #   name = CHI_Economy_hidden
+    #   picture = idea_CHI_Economy_tw # 加上這行，指定與主系統相同的圖片
+    #   research_bonus = {
+    #     electronics = 0 instant = yes
+    #   }
+    # }
 
     CHI_Economy_hidden_armor_cost_equipment_bonus_0 = {
       name = CHI_Economy_hidden
@@ -2080,11 +2079,7 @@ ideas = {
   CHI_rekindle_confidence_idea = {
     name = CHI_rekindle_confidence
     targeted_modifier = {
-      tag = {
-        every_country = {
-          limit = { is_in_faction_with = PRC }
-        }
-      }    # this can also take a variable that stores a scope
+      tag = PRC
       attack_bonus_against = 0.05
       defense_bonus_against = 0.05
     }

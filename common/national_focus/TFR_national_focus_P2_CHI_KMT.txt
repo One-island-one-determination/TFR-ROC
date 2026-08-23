@@ -13,7 +13,7 @@ focus_tree = {
     continue_if_invalid = no
     cancel_if_invalid = yes
     allow_branch = {
-      has_country_flag = 2nd_HKY_win_flg
+      has_country_flag = second_HKY_win_flg
     }
     completion_reward = {
       country_event = {
@@ -615,7 +615,7 @@ focus_tree = {
       focus = CHI_Three_Labor_arrows
     }
     completion_reward = {
-      stability_factor = 0.02
+      # stability_factor = 0.02
       increase_welfare = yes
       custom_effect_tooltip = CHI_Economy_additional_effects
       add_to_variable = {
@@ -1377,13 +1377,13 @@ focus_tree = {
         # 1. 讓盟友增加對我的好感
         add_opinion_modifier = {
           target = ROOT
-          modifier = GFX_focus_CHI_Investment_From_EU_JP_opinion_modifier
+          modifier = CHI_Investment_From_EU_JP_opinion_modifier
         }
         # 2. 讓我也增加對該盟友的好感
         ROOT = {
           add_opinion_modifier = {
             target = PREV # PREV 代表當前迴圈中的那個盟友
-            modifier =GFX_focus_CHI_Investment_From_EU_JP_opinion_modifier
+            modifier = CHI_Investment_From_EU_JP_opinion_modifier
           }
         }
       }
@@ -3168,5 +3168,5 @@ focus_tree = {
       1187 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
     }
   }
-  #}
+#}
 }

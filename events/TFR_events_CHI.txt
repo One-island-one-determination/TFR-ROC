@@ -531,7 +531,7 @@ country_event = {
         elections_allowed = yes
       }
       load_focus_tree = P2_CHI_KMT
-      set_country_flag = 2nd_HKY_win_flg
+      set_country_flag = second_HKY_win_flg
       focus_unlock = yes
       country_event = {
         id = CHI.H3.11
@@ -1036,39 +1036,11 @@ country_event = {
       set_country_flag = taiwan_war_events
       PRC = { add_timed_idea = { idea = PRC_TW_war days = 300 } }
       country_event = { id = CHI.TW.999 days = 5 }
-      PRC = {
-        division_template = {
-        name = "Kong Jiang Bing Lü" 
-          division_names_group = PRC_PAR_02
-          is_locked = yes
-          regiments = {
-            paratrooper = { x = 0 y = 0 }
-            paratrooper = { x = 0 y = 1 }
-            paratrooper = { x = 0 y = 2 }
-            paratrooper = { x = 0 y = 3 }
-            paratrooper = { x = 1 y = 0 }
-            paratrooper = { x = 1 y = 1 }
-            artillery_brigade = { x = 2 y = 0 }
-          }
-          
-          support = {
-            artillery = { x = 0 y = 0 }
-          }
-        }
-      }
       1149 = {
         create_unit = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 5
-        }
-      }
-      1149 = {
-        create_unit = {
-          division = "name = \"解放军空降旅\" division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
-          owner = PRC
-          id = 1949
           count = 5
         }
       }
@@ -1080,28 +1052,12 @@ country_event = {
           count = 10
         }
       }
-      1148 = {
-        create_unit = {
-          division = "name = \"解放军空降旅\" division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
-          owner = PRC
-          id = 1949
-          count = 5
-        }
-      }
       1150 = {
         create_unit = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
           count = 10
-        }
-      }
-      1150 = {
-        create_unit = {
-          division = "name = \"解放军空降旅\" division_template = \"Kong Jiang Bing Lü\" start_experience_factor = 1 start_equipment_factor = 1"
-          owner = PRC
-          id = 1949
-          count = 5
         }
       }
       set_variable = { TH_consumer_goods_factor = 0.1 }
@@ -1906,7 +1862,12 @@ country_event = {
   picture = CHI_Event_TW_4
   fire_only_once = yes
   is_triggered_only = yes
-  immediate = { hidden_effect = { country_event = { id = CHI.TW.1 days = 2 } } }
+  immediate = { 
+    hidden_effect = { 
+      country_event = { id = CHI.TW.1 days = 2 } 
+      PRC = { load_oob = "CHI_PRC_taiwan_war_airbone" }
+    } 
+  }
   option = {
     name = CHI.TW.4.a
     country_event = { id = CHI.TW.5 }
