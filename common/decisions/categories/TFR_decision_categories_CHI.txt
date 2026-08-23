@@ -329,7 +329,7 @@ CHI_Economy_Industry_category = {
 ####    ##        ######    ####
 
 CHI_GAW_situation_category = {
-  icon = GFX_CHI_army_decisions_Icon
+  icon = CHI_GAW_decision_category
   visible_when_empty = yes
   allowed = {
     original_tag = CHI
@@ -350,7 +350,7 @@ CHI_GAW_situation_category = {
 ####    ##            ##    ####
 
 CHI_civilwar_category = {
-  icon = GFX_CHI_army_decisions_Icon
+  icon = CHI_CCW_decision_category
   visible_when_empty = yes
   allowed = {
     original_tag = CHI

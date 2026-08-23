@@ -1031,6 +1031,26 @@ country_event = {
       set_country_flag = taiwan_war_events
       PRC = { add_timed_idea = { idea = PRC_TW_war days = 300 } }
       country_event = { id = CHI.TW.999 days = 5 }
+      PRC = {
+        division_template = {
+        name = "Kong Jiang Bing Lü" 
+          division_names_group = PRC_PAR_02
+          is_locked = yes
+          regiments = {
+            paratrooper = { x = 0 y = 0 }
+            paratrooper = { x = 0 y = 1 }
+            paratrooper = { x = 0 y = 2 }
+            paratrooper = { x = 0 y = 3 }
+            paratrooper = { x = 1 y = 0 }
+            paratrooper = { x = 1 y = 1 }
+            artillery_brigade = { x = 2 y = 0 }
+          }
+          
+          support = {
+            artillery = { x = 0 y = 0 }
+          }
+        }
+      }
       1149 = {
         create_unit = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
@@ -1073,6 +1093,17 @@ country_event = {
         count = 5
         }
       }
+      set_variable = { TH_consumer_goods_factor = 0.1 }
+      set_variable = { TH_stability_factor  = -0.1 }
+      set_variable = { TH_industry_repair_factor = -0.1 }
+      set_variable = { TH_army_core_attack_factor = 0.1 }
+      set_variable = { TH_army_core_defence_factor  = 0.1 }
+      set_variable = { TH_supply_combat_penalties_on_core_factor = -0.1}
+      set_variable = { TH_resistance_growth_on_our_occupied_states = 0.05 }
+      set_variable = { TH_income_growth_factor = -0.1}
+      set_variable = { TH_business_value_factor = -0.1}
+      set_variable = { TH_poverty_development_monthly = -0.02}
+      set_variable = { TH_society_development_monthly = -0.01}
     }
   }
   option = {
@@ -1080,9 +1111,11 @@ country_event = {
     clr_country_flag = Taiwan_war
     focus_unlock = yes
     add_war_support = 0.15
+    add_dynamic_modifier = { modifier = CHI_TaiHai_dynamic }
     add_ideas = CHI_repairs_under_fire_idea
     # 中華民國經濟debuff
     activate_mission = CHI_taiwan_war_mission
+    activate_mission = CHI_defend_penghu_mission
     custom_effect_tooltip = PRC_second_wave_missile_strikes_tt
     country_event = {
         id = CHI.TW.4

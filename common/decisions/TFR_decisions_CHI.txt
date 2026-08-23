@@ -3344,7 +3344,35 @@ CHI_taiwan_war_category = {
       custom_effect_tooltip = CHI_taiwan_war_LOSE_tt
     }
   }
-
+  CHI_defend_penghu_mission = {
+    activation = {
+      has_war = yes
+      has_global_flag = PRC_ongoing_taiwan_war
+    }
+    allowed = {
+      tag = CHI
+    }
+    available = {
+      PRC = {
+        1451 = {
+          is_fully_controlled_by = PRC
+        }
+      }
+    }
+    priority = 90
+    is_good = no
+    selectable_mission = no
+    days_mission_timeout = 30
+    complete_effect = {
+      add_stability = -0.05
+      add_political_power = -50
+    }
+    timeout_effect = {
+      custom_effect_tooltip = { IDEA = CHI_TaiHai_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { TH_army_core_attack_factor = 0.1 tooltip = army_core_attack_factor_tooltip }
+      add_to_variable = { TH_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tooltip }
+    }
+  }
   CHI_war_propaganda = {
     icon = GFX_decision_generic_propaganda_campaigns
     allowed = {
