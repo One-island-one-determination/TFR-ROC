@@ -1,6 +1,6 @@
 ##infantry equipment##
 CHI_armaments_bureau_205_organization = { #Armaments Bureau 205th Arsenal
-	include = generic_TFR_UAV_equipment_organization
+	include = generic_infantry_equipment_organization
 	icon = GFX_mio_CHI_armaments_bureau_205
 	allowed = {	
 		tag = CHI
@@ -212,7 +212,7 @@ CHI_armaments_bureau_202_organization = { #Armaments Bureau 202nd Arsenal
 
 		any_parent = { generic_mio_trait_standardized_secondary_armament }
 
-		limit_to_equipment_type = { armor support_equipment }
+		limit_to_equipment_type = { armor }
 		
 		production_bonus = {
 			production_cost_factor = -0.05
@@ -1008,6 +1008,9 @@ CHI_AIDC_organization = { #Aerospace Industrial Development Corp
 	}
 }
 CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technology
+	initial_trait = {
+		name = generic_mio_initial_trait_infantry_manufacturer
+	}
 	icon = GFX_mio_CHI_NCSIST
 	allowed = {	
 		tag = CHI
@@ -1015,29 +1018,9 @@ CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technolo
 	}
  	
     available = {
-		
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = CHI
-				}
-			}
-			FROM = {
-				NOT = { has_idea = CHI_ncsist_destroyed  }
-		}
-    }
-
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = CHI
-				}
-			}
-			FROM = {
-				NOT = { has_idea = CHI_ncsist_rebuilding  }
-		}
-    }
- }
+		NOT = { has_idea = CHI_ncsist_destroyed }
+		NOT = { has_idea = CHI_ncsist_rebuilding }
+	}
 
     visible = {
         always = yes
@@ -1065,7 +1048,6 @@ CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technolo
 		icon = GFX_generic_mio_trait_icon_working
 
 		position = { x=3 y=0 }
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_eq_all_cv_aircraft large_plane_maritime_patrol_plane_airframe }
 
 		production_bonus = {
 			production_capacity_factor = 0.05
@@ -1080,7 +1062,6 @@ CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technolo
 		position = { x=2 y=1 }
 		relative_position_id = generic_mio_trait_NCSIST_working_1
 		all_parents = { generic_mio_trait_NCSIST_working_1 }
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_eq_all_cv_aircraft large_plane_maritime_patrol_plane_airframe }
 
 		production_bonus = {
 			production_capacity_factor = 0.05
@@ -1095,7 +1076,6 @@ CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technolo
 		position = { x=-2 y=1 }
 		relative_position_id = generic_mio_trait_NCSIST_working_1
 		all_parents = { generic_mio_trait_NCSIST_working_1 }
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_eq_all_cv_aircraft large_plane_maritime_patrol_plane_airframe }
 
 		production_bonus = {
 			production_capacity_factor = 0.05
@@ -1111,7 +1091,7 @@ CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technolo
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_NCSIST_working_2
 		all_parents = { generic_mio_trait_NCSIST_working_2 }
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_eq_all_cv_aircraft large_plane_maritime_patrol_plane_airframe }
+		mutually_exclusive = { generic_mio_trait_NCSIST_working_5 }
 
 		production_bonus = {
 			production_capacity_factor = 0.05
@@ -1126,7 +1106,6 @@ CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technolo
 		position = { x=-1 y=1 }
 		relative_position_id = generic_mio_trait_NCSIST_working_2
 		all_parents = { generic_mio_trait_NCSIST_working_2 }
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_eq_all_cv_aircraft large_plane_maritime_patrol_plane_airframe }
 		mutually_exclusive = { generic_mio_trait_NCSIST_working_4}
 		production_bonus = {
 			production_capacity_factor = 0.05
@@ -1141,7 +1120,6 @@ CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technolo
 		position = { x=-1 y=1 }
 		relative_position_id = generic_mio_trait_NCSIST_working_4
 		all_parents = { generic_mio_trait_NCSIST_working_4 generic_mio_trait_NCSIST_working_5 }
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_eq_all_cv_aircraft large_plane_maritime_patrol_plane_airframe }
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -1155,7 +1133,6 @@ CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technolo
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_NCSIST_working_3
 		all_parents = { generic_mio_trait_NCSIST_working_3 }
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_eq_all_cv_aircraft large_plane_maritime_patrol_plane_airframe }
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -1170,7 +1147,6 @@ CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technolo
 		relative_position_id = generic_mio_trait_NCSIST_working_7
 		all_parents = { generic_mio_trait_NCSIST_working_7 }
 				mutually_exclusive = { generic_mio_trait_NCSIST_working_9}
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_eq_all_cv_aircraft large_plane_maritime_patrol_plane_airframe }
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -1183,7 +1159,7 @@ CHI_NCSIST_organization = { #National Chung-Shan Institute of Science & Technolo
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_NCSIST_working_7
 		all_parents = { generic_mio_trait_NCSIST_working_7 }
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_eq_all_cv_aircraft large_plane_maritime_patrol_plane_airframe }
+		mutually_exclusive = { generic_mio_trait_NCSIST_working_8 }
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
