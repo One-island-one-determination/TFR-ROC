@@ -4748,8 +4748,10 @@ CHI_army_decisions = {
     }
 
     available = {
-      # 【關鍵】必須先完成軍改，解鎖了模板後才能點擊
-      has_country_flag = CHI_project_ROCA_reform_4_completed
+      OR = { 
+        is_debug = yes
+        has_country_flag = CHI_project_ROCA_reform_4_completed
+      }
     }
 
     complete_effect = {
