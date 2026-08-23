@@ -295,7 +295,7 @@ CHI_debug = {
     complete_effect = {
       CHI={
         load_focus_tree = P2_CHI_KMT
-        set_country_flag = 2nd_HKY_win_flg
+        set_country_flag = second_HKY_win_flg
       }
     }
   }
@@ -307,7 +307,7 @@ CHI_debug = {
     complete_effect = {
       CHI={
         load_focus_tree = P2_CHI_KMT
-        set_country_flag = 2nd_HKY_win_flg
+        set_country_flag = second_HKY_win_flg
         set_country_flag = HKY_2028_flg
         set_country_flag = CHI_our_final_fight_flag_debug
       }
@@ -4526,7 +4526,7 @@ CHI_army_decisions = {
       # }
 
       # 1. 發放並鎖住「機步旅」模板
-      add_division_template = {
+      division_template = {
         name = "整編機步旅"
         is_locked = yes # 【關鍵】鎖定模板，玩家無法編輯或刪除
         priority = 2
@@ -4546,7 +4546,7 @@ CHI_army_decisions = {
       }
 
       # 2. 發放並鎖住「裝甲旅」模板
-      add_division_template = {
+      division_template = {
         name = "整編裝甲旅"
         is_locked = yes
         priority = 3
@@ -4567,7 +4567,7 @@ CHI_army_decisions = {
       }
 
       # 3. 發放並鎖住「軍指揮部」模板
-      add_division_template = {
+      division_template = {
         name = "軍指揮部"
         is_locked = yes
         priority = 3
@@ -4736,7 +4736,7 @@ CHI_army_decisions = {
   CHI_repeatable_spawn_decision = {
     icon = generic_prepare_offensive
     cost = 5
-    days_re_enable = 30
+    days_remove = 30
     fire_only_once = no
 
     visible = {
@@ -4755,7 +4755,7 @@ CHI_army_decisions = {
     }
 
     complete_effect = {
-      load_oob = "CHI_dynamic_spawn_oob"
+      hidden_effect = { load_oob = "CHI_dynamic_spawn_oob" }
       custom_effect_tooltip = CHI_repeatable_spawn_tt
     }
   }
