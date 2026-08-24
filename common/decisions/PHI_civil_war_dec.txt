@@ -74,12 +74,8 @@ PHI_civil_war_dec = {
               expire="1.1.1.1"
             }
             set_cosmetic_tag = PHI_civil_war_NDF_WON
-            set_country_flag = eadi_member
             set_party_name = { ideology = communist long_name = PHI_NDF_long name = PHI_NDF }
             set_party_name = { ideology = totalitarian_socialist long_name = PHI_NAP_long name = PHI_NAP }
-          }
-          PRC = {
-            add_to_faction = PHI
           }
           news_event = {
             id = ROC.43
@@ -126,7 +122,6 @@ PHI_civil_war_dec = {
               nationalist = 60
             }
             set_cosmetic_tag = PHI_civil_war_AFP_WON
-            set_country_flag = pdto_member
             create_country_leader = {
               name = AFP_Romeo_S_Brauner_the_Younger
               picture = "gfx/Leaders/PHI_civil_war/AFP_Romeo_S_Brauner_the_Younger.png"
@@ -137,9 +132,6 @@ PHI_civil_war_dec = {
               id = ROC.55
               days = 720
             }
-          }
-          JAP = {
-            add_to_faction = PHI
           }
           news_event = {
             id = ROC.44
@@ -248,26 +240,6 @@ PHI_civil_war_dec = {
             country_event = {
               id = ROC.55
               days = 720
-            }
-            random_list = {
-              50 = {
-                set_country_flag = pdto_member
-                JAP = {
-                  add_to_faction = PHI
-                }
-                news_event = {
-                  id = ROC.46
-                }
-              }
-              50 = {
-                set_country_flag = eadi_member
-                PRC = {
-                  add_to_faction = PHI
-                }
-                news_event = {
-                  id = ROC.47
-                }
-              }
             }
           }
         }
