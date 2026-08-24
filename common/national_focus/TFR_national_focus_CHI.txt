@@ -2723,7 +2723,7 @@ focus_tree = {
             division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = CHI
-            count = 3
+            count = 2
           }
         }
         524 = {
@@ -2731,7 +2731,7 @@ focus_tree = {
             division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = CHI
-            count = 3
+            count = 1
           }
         }
         1148 = {
@@ -2739,7 +2739,7 @@ focus_tree = {
             division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = CHI
-            count = 3
+            count = 2
           }
         }
         1150 = {
@@ -2747,7 +2747,7 @@ focus_tree = {
             division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = CHI
-            count = 3
+            count = 1
           }
         }
       }
@@ -2883,78 +2883,6 @@ focus_tree = {
     }
     completion_reward = {
       add_ideas = CHI_MPFTMO_idea
-      if = {
-        limit = {
-          NOT = {
-            has_template = "中華民國陸軍後備旅"
-          }
-        }
-        division_template = {
-          name = "中華民國陸軍後備旅"
-          division_names_group = CHI_INF_1
-          is_locked = no
-          regiments = {
-            infantry = {
-              x = 0
-              y = 0
-            }
-            infantry = {
-              x = 0
-              y = 1
-            }
-            infantry = {
-              x = 0
-              y = 2
-            }
-            infantry = {
-              x = 1
-              y = 0
-            }
-            artillery_brigade = {
-              x = 1
-              y = 1
-            }
-          }
-          support = {
-            engineer = {
-              x = 0
-              y = 0
-            }
-          }
-        }
-      }
-      1149 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      524 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      1148 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      1150 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
     }
     relative_position_id = CHI_Defend_Taiwan
   }
@@ -3506,7 +3434,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 2
         }
       }
       524 = {
@@ -3514,7 +3442,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 1
         }
       }
       1148 = {
@@ -3522,7 +3450,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 1
         }
       }
       1150 = {
@@ -3530,7 +3458,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 1
         }
       }
       hidden_effect = {
@@ -3627,7 +3555,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 2
         }
       }
       524 = {
@@ -3635,7 +3563,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 1
         }
       }
       1148 = {
@@ -3643,7 +3571,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 2
         }
       }
       1150 = {
@@ -3651,7 +3579,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 1
         }
       }
     }
@@ -3786,78 +3714,7 @@ focus_tree = {
           add_idea = CHI_NSM_idea_3
         }
       }
-      if = {
-        limit = {
-          NOT = {
-            has_template = "中華民國陸軍後備旅"
-          }
-        }
-        division_template = {
-          name = "中華民國陸軍後備旅"
-          division_names_group = CHI_INF_1
-          is_locked = no
-          regiments = {
-            infantry = {
-              x = 0
-              y = 0
-            }
-            infantry = {
-              x = 0
-              y = 1
-            }
-            infantry = {
-              x = 0
-              y = 2
-            }
-            infantry = {
-              x = 1
-              y = 0
-            }
-            artillery_brigade = {
-              x = 1
-              y = 1
-            }
-          }
-          support = {
-            engineer = {
-              x = 0
-              y = 0
-            }
-          }
-        }
-      }
-      1149 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      524 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      1148 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      1150 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
+      
       hidden_effect = {
         add_to_variable = {
           var = CHI_NSM_army_strength_factor
