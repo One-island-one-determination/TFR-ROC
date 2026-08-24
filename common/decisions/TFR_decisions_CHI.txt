@@ -5974,36 +5974,36 @@ CHI_NCSIST_category = {
       add_to_variable = { CHI_Economy_equipment_conversion_speed = 0.15 tooltip = equipment_conversion_speed_tooltip}
     }
   }
-  #外骨骼試驗
-  CHI_project_exoskeleton_trial = {
-    icon = GFX_CHI_project_exoskeleton_trial
-    cost = 0
-    days_remove = 100
-    fire_only_once = yes
-    allowed = { original_tag = CHI }
-    available = {
-      has_completed_focus = CHI_new_whampoa_spirits
-    }
-    custom_cost_trigger = {
-      # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-      mio:CHI_NCSIST_organization = {
-        NOT = { check_variable = { funds < 199 } }
-      }
-    }
-    custom_cost_text = CHI_NCSIST_funds_200
-    complete_effect = {
-      # 【第一步：扣除 MIO 資金】
-      mio:CHI_NCSIST_organization = {
-        add_mio_funds = -200
-      }
+  # #外骨骼試驗
+  # CHI_project_exoskeleton_trial = {
+  #   icon = GFX_CHI_project_exoskeleton_trial
+  #   cost = 0
+  #   days_remove = 100
+  #   fire_only_once = yes
+  #   allowed = { original_tag = CHI }
+  #   available = {
+  #     has_completed_focus = CHI_new_whampoa_spirits
+  #   }
+  #   custom_cost_trigger = {
+  #     # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
+  #     mio:CHI_NCSIST_organization = {
+  #       NOT = { check_variable = { funds < 199 } }
+  #     }
+  #   }
+  #   custom_cost_text = CHI_NCSIST_funds_200
+  #   complete_effect = {
+  #     # 【第一步：扣除 MIO 資金】
+  #     mio:CHI_NCSIST_organization = {
+  #       add_mio_funds = -200
+  #     }
 
-    }
-    remove_effect = {
-      set_technology = {
-        body_armor6 = 1 # 1 代表解鎖
-      }
-    }
-  }
+  #   }
+  #   remove_effect = {
+  #     set_technology = {
+  #       body_armor6 = 1 # 1 代表解鎖
+  #     }
+  #   }
+  # }
   #CM13
   CHI_project_CM13 = {
     icon = GFX_CHI_project_CM13
