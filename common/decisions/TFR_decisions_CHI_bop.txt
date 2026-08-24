@@ -138,6 +138,7 @@ CHI_Identity_dispute_dec = {
 	CHI_desinicization_rectification_movement_decision = {
 		icon = generic_political_rally
 		cost = 20
+		days_remove = 365
 		fire_only_once = yes
 		allowed = { original_tag = CHI }
 		available = {
@@ -160,6 +161,7 @@ CHI_Identity_dispute_dec = {
 	CHI_one_country_one_main_language_initiative_decision = {
 		icon = generic_political_rally
 		cost = 25
+		days_remove = 365
 		fire_only_once = yes
 		allowed = { original_tag = CHI }
 		available = {

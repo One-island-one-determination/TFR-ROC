@@ -319,7 +319,6 @@ CHI_debug = {
     visible = { always = yes }
     available = { always = yes }
     complete_effect = {CHI={load_focus_tree = P4_CHI_Han}}
-    set_country_flag = P4_CHI_Han_unlock
   }
   load_CHI_stratocracy = {
     icon = generic_decision
@@ -549,7 +548,6 @@ CHI_NHCC_decisions = {
     priority = 200
     is_good = no
     selectable_mission = no
-    cost = 15
     days_mission_timeout = 90
     timeout_effect = {
       CHI_increase_coronavirus = yes
@@ -2789,12 +2787,10 @@ CHI_Military_purchasing_cat = {
         amount = 50
         producer = JAP
       }
-      else = {
-        add_equipment_to_stockpile = {
-          type = modern_tank_equipment_1
-          amount = 50
-          producer = JAP
-        }
+      add_equipment_to_stockpile = {
+        type = modern_tank_equipment_1
+        amount = 50
+        producer = JAP
       }
       hidden_effect = {
         JAP = {
@@ -3406,7 +3402,7 @@ CHI_taiwan_war_category = {
     }
     available = {
       NOT = {
-        has_ideas = CHI_anti_western_proaganda_idea
+        has_idea = CHI_anti_western_proaganda_idea
       }
     }
     fire_only_once = no
@@ -3956,7 +3952,7 @@ CHI_KMT_politics_category = {
   CHI_boost_kmt_local = {
     icon = generic_propaganda
     available = {
-      check_variable = { CHI_kmt_local value < 100 }
+      check_variable = { CHI_kmt_local < 100 }
     }
     visible = { always = yes }
     cost = 15
@@ -3974,7 +3970,7 @@ CHI_KMT_politics_category = {
       clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_combat min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_grassroots min = 0 max = 100 }
-      CHI_calculate_kmt_pie_chart = yes
+      # CHI_calculate_kmt_pie_chart = yes
     }
   }
 
@@ -3982,7 +3978,7 @@ CHI_KMT_politics_category = {
   CHI_boost_kmt_psg = {
     icon = generic_propaganda
     available = {
-      check_variable = { CHI_kmt_psg value < 100 }
+      check_variable = { CHI_kmt_psg < 100 }
     }
     visible = { always = yes }
     cost = 15
@@ -3997,7 +3993,7 @@ CHI_KMT_politics_category = {
       clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_combat min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_grassroots min = 0 max = 100 }
-      CHI_calculate_kmt_pie_chart = yes
+      # CHI_calculate_kmt_pie_chart = yes
     }
   }
 
@@ -4005,7 +4001,7 @@ CHI_KMT_politics_category = {
   CHI_boost_kmt_combat = {
     icon = generic_propaganda
     available = {
-      check_variable = { CHI_kmt_combat value < 100 }
+      check_variable = { CHI_kmt_combat < 100 }
     }
     visible = { always = yes }
     cost = 15
@@ -4020,7 +4016,7 @@ CHI_KMT_politics_category = {
       clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_combat min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_grassroots min = 0 max = 100 }
-      CHI_calculate_kmt_pie_chart = yes
+      # CHI_calculate_kmt_pie_chart = yes
     }
   }
 
@@ -4028,7 +4024,7 @@ CHI_KMT_politics_category = {
   CHI_boost_kmt_grassroots = {
     icon = generic_propaganda
     available = {
-      check_variable = { CHI_kmt_grassroots value < 100 }
+      check_variable = { CHI_kmt_grassroots < 100 }
     }
     visible = { always = yes }
     cost = 15
@@ -4043,7 +4039,7 @@ CHI_KMT_politics_category = {
       clamp_variable = { var = CHI_kmt_psg min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_combat min = 0 max = 100 }
       clamp_variable = { var = CHI_kmt_grassroots min = 0 max = 100 }
-      CHI_calculate_kmt_pie_chart = yes
+      # CHI_calculate_kmt_pie_chart = yes
     }
   }
 }
@@ -4053,12 +4049,10 @@ CHI_army_decisions = {
   CHI_imps = {
     #icon = GFX_CHI_Legislative_Yuan_decisions
     available = {
-      hidden_effect = {
-        NOT = {
-          OR = {
-            has_country_flag = CHI_Strengthentraining
-            has_country_flag = CHI_ETJTNRA
-          }
+      NOT = {
+        OR = {
+          has_country_flag = CHI_Strengthentraining
+          has_country_flag = CHI_ETJTNRA
         }
       }
     }
@@ -4089,12 +4083,10 @@ CHI_army_decisions = {
   CHI_Strengthentraining = {
     #icon = GFX_CHI_Legislative_Yuan_decisions
     available = {
-      hidden_effect = {
-        NOT = {
-          OR = {
-            has_country_flag = CHI_imps
-            has_country_flag = CHI_ETJTNRA
-          }
+      NOT = {
+        OR = {
+          has_country_flag = CHI_imps
+          has_country_flag = CHI_ETJTNRA
         }
       }
     }
@@ -4120,21 +4112,19 @@ CHI_army_decisions = {
       set_country_flag = CHI_Strengthentraining
     }
     remove_effect = {
-      add_army_experience = 25
-      add_navy_experience = 25
-      add_air_experience  = 25
+      army_experience = 25
+      navy_experience = 25
+      air_experience  = 25
       clr_country_flag = CHI_Strengthentraining
     }
   }
   CHI_ETJTNRA = {
     #icon = GFX_CHI_Legislative_Yuan_decisions
     available = {
-      hidden_effect = {
-        NOT = {
-          OR = {
-            has_country_flag = CHI_imps
-            has_country_flag = CHI_Strengthentraining
-          }
+      NOT = {
+        OR = {
+          has_country_flag = CHI_imps
+          has_country_flag = CHI_Strengthentraining
         }
       }
     }
@@ -4439,7 +4429,7 @@ CHI_army_decisions = {
     custom_cost_text = CHI_cost_50_army_xp_tt
     days_remove = 14
     complete_effect = {
-      add_army_experience = -50
+      army_experience = -50
     }
     remove_effect = {
       set_country_flag = CHI_project_ROCA_reform_1_completed
@@ -4465,7 +4455,7 @@ CHI_army_decisions = {
     custom_cost_text = CHI_cost_50_army_xp_tt
     days_remove = 14
     complete_effect = {
-      add_army_experience = -50
+      army_experience = -50
     }
     remove_effect = {
       set_country_flag = CHI_project_ROCA_reform_2_completed
@@ -4492,7 +4482,7 @@ CHI_army_decisions = {
     custom_cost_text = CHI_cost_50_army_xp_tt
     days_remove = 14
     complete_effect = {
-      add_army_experience = -50
+      army_experience = -50
     }
     remove_effect = {
       set_country_flag = CHI_project_ROCA_reform_3_completed
@@ -4556,9 +4546,9 @@ CHI_army_decisions = {
           modern_armor = { x = 0 y = 2 }
           modern_armor = { x = 0 y = 3 }
           modern_armor = { x = 0 y = 4 }
-          sp_artillery_brigade = { x = 1 y = 0 }
-          sp_artillery_brigade = { x = 1 y = 1 }
-          sp_rocket_artillery_brigade = { x = 1 y = 2 }
+          modern_sp_artillery_brigade = { x = 1 y = 0 }
+          modern_sp_artillery_brigade = { x = 1 y = 1 }
+          motorized_rocket_brigade = { x = 1 y = 2 }
         }
         support = {
           recon = { x = 0 y = 0 }
@@ -4605,7 +4595,7 @@ CHI_army_decisions = {
     custom_cost_text = CHI_cost_50_army_xp_tt
     days_remove = 14
     complete_effect = {
-      add_army_experience = -50
+      army_experience = -50
     }
     remove_effect = {
       set_country_flag = CHI_project_ROCA_reform_4_completed
@@ -4613,7 +4603,7 @@ CHI_army_decisions = {
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = { var = ROC_army_org_factor value = 0.10 }
       add_to_variable = { var = ROC_combat_width_factor value = -0.15 }
-      add_to_variable = { var = ROC_reinforce_rate value = 0.50 }
+      add_to_variable = { var = ROC_land_reinforce_rate value = 0.50 }
       add_to_variable = { var = ROC_initiative_factor value = 0.50 }
       custom_effect_tooltip = CHI_project_ROCA_reform_4_effect_tt
     }
@@ -4635,7 +4625,7 @@ CHI_army_decisions = {
     custom_cost_text = CHI_cost_50_navy_xp_tt
     days_remove = 14
     complete_effect = {
-      add_navy_experience = -50
+      navy_experience = -50
       if = {
         limit = { has_country_flag = CHI_ninghai_plan_completed_2 }
         set_country_flag = CHI_ninghai_plan_completed_3
@@ -4646,7 +4636,7 @@ CHI_army_decisions = {
         add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
         add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
         add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
-        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
+        add_to_variable = {  ROC_navy_screen_defence_factor = 0.02  tooltip = navy_screen_defence_factor_tooltip }
         add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
 
       }
@@ -4660,7 +4650,7 @@ CHI_army_decisions = {
         add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
         add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
         add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
-        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
+        add_to_variable = {  ROC_navy_screen_defence_factor = 0.02  tooltip = navy_screen_defence_factor_tooltip }
         add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
 
       }
@@ -4673,7 +4663,7 @@ CHI_army_decisions = {
         add_to_variable = {  ROC_naval_detection = 0.05             tooltip = naval_detection_tooltip            }
         add_to_variable = {  ROC_naval_morale_factor = 0.02         tooltip = naval_morale_factor_tooltip        }
         add_to_variable = {  ROC_navy_screen_attack_factor = 0.02   tooltip = navy_screen_attack_factor_tooltip  }
-        add_to_variable = {  ROC_navy_screen_defense_factor = 0.02  tooltip = navy_screen_defense_factor_tooltip }
+        add_to_variable = {  ROC_navy_screen_defence_factor = 0.02  tooltip = navy_screen_defence_factor_tooltip }
         add_to_variable = {  ROC_screening_efficiency = 0.05        tooltip = screening_efficiency_tooltip       }
 
       }
@@ -4696,7 +4686,7 @@ CHI_army_decisions = {
     custom_cost_text = CHI_cost_50_air_xp_tt
     days_remove = 14
     complete_effect = {
-      add_air_experience = -50
+      air_experience = -50
       set_country_flag = CHI_lingxiao_plan_completed
 
       custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
@@ -4726,7 +4716,7 @@ CHI_army_decisions = {
     custom_cost_text = CHI_cost_30_air_xp_tt
     days_remove = 14
     complete_effect = {
-      add_air_experience = -30
+      air_experience = -30
       set_country_flag = CHI_project_hump_training_completed
       custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
       add_to_variable = { ROC_air_superiority_efficiency = 0.05  tooltip = air_superiority_efficiency_tooltip  }
@@ -4767,10 +4757,8 @@ CHI_Aid_Arab_Republics_category = {
   # 人道援助
   CHI_humanitarian_aid = {
     icon = GFX_CHI_
-    allowed = {
-      original_tag = CHI
-      has_global_flag = saudi_civil_war_flag
-    }
+    allowed = { original_tag = CHI }
+    visible = { has_global_flag = saudi_civil_war_flag }
     cancel_trigger = {
       NOT = {
         has_global_flag = saudi_civil_war_flag
@@ -4797,8 +4785,8 @@ CHI_Aid_Arab_Republics_category = {
     icon = GFX_decision_generic_industry
     allowed = {
       original_tag = CHI
-      has_global_flag = saudi_civil_war_flag
     }
+    visible = { has_global_flag = saudi_civil_war_flag }
     cancel_trigger = {
       NOT = {
         has_global_flag = saudi_civil_war_flag
@@ -4839,8 +4827,8 @@ CHI_Aid_Arab_Republics_category = {
     icon = GFX_decision_generic_industry
     allowed = {
       original_tag = CHI
-      has_global_flag = saudi_civil_war_flag
     }
+    visible = { has_global_flag = saudi_civil_war_flag }
     cancel_trigger = {
       NOT = {
         has_global_flag = saudi_civil_war_flag
@@ -4922,10 +4910,9 @@ CHI_Aid_Arab_Republics_category = {
     icon = GFX_CHI_
     allowed = {
       original_tag = CHI
-      has_global_flag = saudi_civil_war_flag
     }
+    visible = { has_global_flag = saudi_civil_war_flag }
     available = {
-      has_global_flag = saudi_civil_war_flag
       has_completed_focus = CHI_Operation_Desert
     }
     cancel_trigger = {
@@ -4951,8 +4938,8 @@ CHI_Assist_reconstruction_the_Arab_Republic_category = {
     icon = GFX_CHI_Reconstruction_loans_Arab_Republic
     allowed = {
       original_tag = CHI
-      has_country_flag = Arab_Republic_reconstruction
     }
+    visible = { has_country_flag = Arab_Republic_reconstruction }
     cancel_trigger = {
       NOT = {
         has_country_flag = Arab_Republic_reconstruction
@@ -5002,8 +4989,8 @@ CHI_Assist_reconstruction_the_Arab_Republic_category = {
     icon = GFX_CHI_Help_ensure_agriculture_food_security
     allowed = {
       original_tag = CHI
-      has_country_flag = Arab_Republic_reconstruction
     }
+    visible = { has_country_flag = Arab_Republic_reconstruction }
     cancel_trigger = {
       NOT = {
         has_country_flag = Arab_Republic_reconstruction
@@ -5046,8 +5033,8 @@ CHI_Assist_reconstruction_the_Arab_Republic_category = {
     icon = GFX_CHI_Assist_rebuilding_infrastructure
     allowed = {
       original_tag = CHI
-      has_country_flag = Arab_Republic_reconstruction
     }
+    visible = { has_country_flag = Arab_Republic_reconstruction }
     cancel_trigger = {
       NOT = {
         has_country_flag = Arab_Republic_reconstruction
@@ -5084,8 +5071,8 @@ CHI_Assist_reconstruction_the_Arab_Republic_category = {
     icon = GFX_CHI_Propose_diplomatic_relations
     allowed = {
       original_tag = CHI
-      has_country_flag = Arab_Republic_reconstruction
     }
+    visible = { has_country_flag = Arab_Republic_reconstruction }
     available = {
       custom_trigger_tooltip = {
         tooltip = reconstruction_times_to_five
@@ -5126,8 +5113,8 @@ CHI_Assist_reconstruction_the_Arab_Republic_category = {
     icon = GFX_CHI_Gain_benefits_from_relationships
     allowed = {
       original_tag = CHI
-      has_country_flag = Arab_Republic_reconstruction
     }
+    visible = { has_country_flag = Arab_Republic_reconstruction }
     available = {
       has_country_flag = ARR_is_Diplomatic_countries
     }
@@ -5157,9 +5144,7 @@ CHI_Assist_reconstruction_the_Arab_Republic_category = {
     }
     allowed = {
       original_tag = CHI
-      has_country_flag = Arab_Republic_reconstruction
     }
-
     fire_only_once = no
 
     complete_effect = {
@@ -5180,8 +5165,8 @@ CHI_Intervene_the_American_Civil_War_category = {
     icon = GFX_CHI_USA_Expand_the_volunteer_army
     allowed = {
       original_tag = CHI
-      has_global_flag = USA_american_civil_war_global
     }
+    visible = { has_global_flag = USA_american_civil_war_global }
     available = {
       has_global_flag = USA_american_civil_war_global
       has_country_flag = Intervene_American_Civil_War_flag
@@ -5205,8 +5190,8 @@ CHI_Intervene_the_American_Civil_War_category = {
     icon = none
     allowed = {
       original_tag = CHI
-      has_global_flag = USA_american_civil_war_global
     }
+    visible = { has_global_flag = USA_american_civil_war_global }
     available = {
       hidden_trigger = {
         always = no
@@ -5222,8 +5207,8 @@ CHI_Intervene_the_American_Civil_War_category = {
     icon = GFX_CHI_Publicly_support_USC
     allowed = {
       original_tag = CHI
-      has_global_flag = USA_american_civil_war_global
     }
+    visible = { has_global_flag = USA_american_civil_war_global }
     available = {
       has_global_flag = USA_american_civil_war_global
       has_country_flag = Intervene_American_Civil_War_flag
@@ -5265,13 +5250,13 @@ CHI_Intervene_the_American_Civil_War_category = {
     icon = GFX_CHI_Send_humanitarian_aid_to_the_USC
     allowed = {
       original_tag = CHI
-      has_global_flag = USA_american_civil_war_global
     }
     available = {
       has_global_flag = USA_american_civil_war_global
       has_country_flag = CHI_support_USC
     }
     visible = {
+      has_global_flag = USA_american_civil_war_global
       OR = {
         has_country_flag = CHI_support_USC
         is_debug = yes
@@ -5309,13 +5294,13 @@ CHI_Intervene_the_American_Civil_War_category = {
     icon = GFX_CHI_Trafficking_small_arms_to_USC
     allowed = {
       original_tag = CHI
-      has_global_flag = USA_american_civil_war_global
     }
     available = {
       has_global_flag = USA_american_civil_war_global
       has_country_flag = CHI_support_USC
     }
     visible = {
+      has_global_flag = USA_american_civil_war_global
       OR = {
         has_country_flag = CHI_support_USC
         is_debug = yes
@@ -5364,13 +5349,13 @@ CHI_Intervene_the_American_Civil_War_category = {
     icon = GFX_CHI_Trafficking_big_arms
     allowed = {
       original_tag = CHI
-      has_global_flag = USA_american_civil_war_global
     }
     available = {
       has_global_flag = USA_american_civil_war_global
       has_country_flag = CHI_support_USC
     }
     visible = {
+      has_global_flag = USA_american_civil_war_global
       OR = {
         has_country_flag = CHI_support_USC
         is_debug = yes
@@ -5420,8 +5405,8 @@ CHI_Intervene_the_American_Civil_War_category = {
     icon = GFX_CHI_Publicly_support_USB
     allowed = {
       original_tag = CHI
-      has_global_flag = USA_american_civil_war_global
     }
+    visible = { has_global_flag = USA_american_civil_war_global }
     available = {
       has_global_flag = USA_american_civil_war_global
       has_country_flag = Intervene_American_Civil_War_flag
@@ -5460,13 +5445,13 @@ CHI_Intervene_the_American_Civil_War_category = {
     icon = GFX_CHI_Send_humanitarian_aid_to_the_USB
     allowed = {
       original_tag = CHI
-      has_global_flag = USA_american_civil_war_global
     }
     available = {
       has_global_flag = USA_american_civil_war_global
       has_country_flag = CHI_support_USB
     }
     visible = {
+      has_global_flag = USA_american_civil_war_global
       OR = {
         has_country_flag = CHI_support_USB
         is_debug = yes
@@ -5504,13 +5489,13 @@ CHI_Intervene_the_American_Civil_War_category = {
     icon = GFX_CHI_Trafficking_small_arms_to_USB
     allowed = {
       original_tag = CHI
-      has_global_flag = USA_american_civil_war_global
     }
     available = {
       has_global_flag = USA_american_civil_war_global
       has_country_flag = CHI_support_USB
     }
     visible = {
+      has_global_flag = USA_american_civil_war_global
       OR = {
         has_country_flag = CHI_support_USB
         is_debug = yes
@@ -5559,13 +5544,13 @@ CHI_Intervene_the_American_Civil_War_category = {
     icon = GFX_CHI_Trafficking_big_arms_to_USB
     allowed = {
       original_tag = CHI
-      has_global_flag = USA_american_civil_war_global
     }
     available = {
       has_global_flag = USA_american_civil_war_global
       has_country_flag = CHI_support_USB
     }
     visible = {
+      has_global_flag = USA_american_civil_war_global
       OR = {
         has_country_flag = CHI_support_USB
         is_debug = yes
@@ -5616,8 +5601,8 @@ CHI_Intervene_the_American_Civil_War_category = {
     icon = GFX_CHI_Experimenting_with_combat_methods_in_the_USA
     allowed = {
       original_tag = CHI
-      has_global_flag = USA_american_civil_war_global
     }
+    visible = { has_global_flag = USA_american_civil_war_global }
     available = {
       has_global_flag = USA_american_civil_war_global
       OR = {
@@ -5864,7 +5849,7 @@ CHI_Population_Aging_decisions = {
     icon = GFX_Population_Aging_end
     available = {
       check_variable = { var_CHI_Population_Aging_decisions = 10 }
-      custom_trigger_tooltip = CHI_Population_Aging_end_avaliable_tooltip
+      custom_trigger_tooltip = { CHI_Population_Aging_end_avaliable_tooltip }
     }
     cost = 0
     days_remove = 0

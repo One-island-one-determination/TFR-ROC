@@ -1886,13 +1886,13 @@ country_event = {
     add_stability = 0.1
     if = {
       limit = {
-        has_ideas = CHI_KMT_protests
+        has_idea = CHI_KMT_protests
       }
       remove_ideas = CHI_KMT_protests
     }
     if = {
       limit = {
-        has_ideas = CHI_DPP_protest
+        has_idea = CHI_DPP_protest
       }
       remove_ideas = CHI_DPP_protest
     }
@@ -2879,43 +2879,43 @@ country_event = {
       limit = { has_country_flag = taiwan_war_events }
       random_list = {
         10 = { 
-          trigger = { NOT = { has_country_flag = chi_tw_34_done } }
+          modifier = { factor = 0 has_country_flag = chi_tw_34_done }
           country_event = { id = CHI.TW.34 } 
         }
         10 = { 
-          trigger = { NOT = { has_country_flag = chi_tw_35_done } }
+          modifier = { factor = 0 has_country_flag = chi_tw_35_done }
           country_event = { id = CHI.TW.35 } 
         }
         10 = { 
-          trigger = { NOT = { has_country_flag = chi_tw_36_done } }
+          modifier = { factor = 0 has_country_flag = chi_tw_36_done }
           country_event = { id = CHI.TW.36 } 
         }
         10 = { 
-          trigger = { NOT = { has_country_flag = chi_tw_37_done } }
+          modifier = { factor = 0 has_country_flag = chi_tw_37_done }
           country_event = { id = CHI.TW.37 } 
         }
         10 = { 
-          trigger = { NOT = { has_country_flag = chi_tw_38_done } }
+          modifier = { factor = 0 has_country_flag = chi_tw_38_done }
           country_event = { id = CHI.TW.38 } 
         }
         10 = { 
-          trigger = { NOT = { has_country_flag = chi_tw_39_done } }
+          modifier = { factor = 0 has_country_flag = chi_tw_39_done }
           country_event = { id = CHI.TW.39 } 
         }
         10 = { 
-          trigger = { NOT = { has_country_flag = chi_tw_40_done } }
+          modifier = { factor = 0 has_country_flag = chi_tw_40_done }
           country_event = { id = CHI.TW.40 } 
         }
         10 = { 
-          trigger = { NOT = { has_country_flag = chi_tw_41_done } }
+          modifier = { factor = 0 has_country_flag = chi_tw_41_done }
           country_event = { id = CHI.TW.41 } 
         }
         10 = { 
-          trigger = { NOT = { has_country_flag = chi_tw_42_done } }
+          modifier = { factor = 0 has_country_flag = chi_tw_42_done }
           country_event = { id = CHI.TW.42 } 
         }
         10 = { 
-          trigger = { NOT = { has_country_flag = chi_tw_43_done } }
+          modifier = { factor = 0 has_country_flag = chi_tw_43_done }
           country_event = { id = CHI.TW.43 } 
         }
       }

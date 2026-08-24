@@ -144,7 +144,7 @@ CHI_increase_prc_embargo_idea = {
     limit = {
       has_idea = CHI_prc_embargo_idea3
     }
-    remove_idea = CHI_prc_embargo_idea3
+    remove_ideas = CHI_prc_embargo_idea3
   }
 }
 
@@ -384,10 +384,7 @@ CHI_oil_crash_idea = {
     limit = {
       has_idea = CHI_oil_crash13
     }
-    remove_idea = CHI_oil_crash13
-  }
-  else = {
-    add_ideas = CHI_oil_crash1
+    remove_ideas = CHI_oil_crash13
   }
 }
 

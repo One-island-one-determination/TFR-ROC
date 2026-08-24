@@ -276,7 +276,7 @@ CHI_ROC_army_dynamic = {
 	army_strength_factor               = ROC_army_strength_factor               # 陸軍兵力/耐久度修正
 	breakthrough_factor                = ROC_breakthrough_factor                # 陸軍突破能力修正
 	combat_width_factor                = ROC_combat_width_factor                # 戰鬥寬度修正
-	reinforce_rate                     = ROC_reinforce_rate                     # 增援率（預備隊投入戰鬥的機率）
+	land_reinforce_rate                     = ROC_land_reinforce_rate                     # 增援率（預備隊投入戰鬥的機率）
 	initiative_factor                  = ROC_initiative_factor                  # 主動性修正（影響戰術選擇與增援）
 	coordination_bonus                 = ROC_coordination_bonus                 # 協同作戰加成（集火目標能力）
 	max_planning                       = ROC_max_planning                       # 最大作戰計畫加成上限修正
@@ -319,7 +319,6 @@ CHI_ROC_army_dynamic = {
 	conscription_factor                = ROC_conscription_factor                # 適役人口係數修正（徵兵比例）
 	mobilization_speed                 = ROC_mobilization_speed                 # 動員速度（法案切換生效速度）
 	training_time_factor               = ROC_training_time_factor               # 部隊訓練時間修正（正值=變慢，負值=變快）
-	unit_upkeep_cost_factor            = ROC_unit_upkeep_cost_factor            # 海陸空單位整體維護費修正
 	battalion_upkeep_factor            = ROC_battalion_upkeep_factor            # 陸軍營級單位維護費修正
 	military_development_monthly       = ROC_military_development_monthly       # [TFR特有] 每月軍事發展進度變化
 
@@ -330,7 +329,7 @@ CHI_ROC_army_dynamic = {
 	experience_gain_army_factor        = ROC_experience_gain_army_factor        # 陸軍經驗獲取倍率
 	experience_loss_factor             = ROC_experience_loss_factor             # 部隊傷亡時的經驗流失係數
 	command_power_gain_mult            = ROC_command_power_gain_mult            # 指揮點數（CP）獲取倍率
-	army_doctrine_cost_factor          = ROC_army_doctrine_cost_factor          # 陸軍學說花費修正
+	land_doctrine_cost_factor          = ROC_land_doctrine_cost_factor          # 陸軍學說花費修正
 
 	# ==========================================
 	# 情報、基建與外交限制 (Intel, Infrastructure & Diplomacy)
@@ -360,7 +359,7 @@ CHI_ROC_army_dynamic_2 = {
 	army_strength_factor               = ROC_army_strength_factor               # 陸軍兵力/耐久度修正
 	breakthrough_factor                = ROC_breakthrough_factor                # 陸軍突破能力修正
 	combat_width_factor                = ROC_combat_width_factor                # 戰鬥寬度修正
-	reinforce_rate                     = ROC_reinforce_rate                     # 增援率（預備隊投入戰鬥的機率）
+	land_reinforce_rate                     = ROC_land_reinforce_rate                     # 增援率（預備隊投入戰鬥的機率）
 	initiative_factor                  = ROC_initiative_factor                  # 主動性修正（影響戰術選擇與增援）
 	coordination_bonus                 = ROC_coordination_bonus                 # 協同作戰加成（集火目標能力）
 	max_planning                       = ROC_max_planning                       # 最大作戰計畫加成上限修正
@@ -402,7 +401,6 @@ CHI_ROC_army_dynamic_2 = {
 	conscription_factor                = ROC_conscription_factor                # 適役人口係數修正（徵兵比例）
 	mobilization_speed                 = ROC_mobilization_speed                 # 動員速度（法案切換生效速度）
 	training_time_factor               = ROC_training_time_factor               # 部隊訓練時間修正（正值=變慢，負值=變快）
-	unit_upkeep_cost_factor            = ROC_unit_upkeep_cost_factor            # 海陸空單位整體維護費修正
 	battalion_upkeep_factor            = ROC_battalion_upkeep_factor            # 陸軍營級單位維護費修正
 	military_development_monthly       = ROC_military_development_monthly       # [TFR特有] 每月軍事發展進度變化
 
@@ -413,7 +411,7 @@ CHI_ROC_army_dynamic_2 = {
 	experience_gain_army_factor        = ROC_experience_gain_army_factor        # 陸軍經驗獲取倍率
 	experience_loss_factor             = ROC_experience_loss_factor             # 部隊傷亡時的經驗流失係數
 	command_power_gain_mult            = ROC_command_power_gain_mult            # 指揮點數（CP）獲取倍率
-	army_doctrine_cost_factor          = ROC_army_doctrine_cost_factor          # 陸軍學說花費修正
+	land_doctrine_cost_factor          = ROC_land_doctrine_cost_factor          # 陸軍學說花費修正
 
 	# ==========================================
 	# 情報、基建與外交限制 (Intel, Infrastructure & Diplomacy)
@@ -443,7 +441,7 @@ CHI_ROC_army_dynamic_3 = {
 	army_strength_factor               = ROC_army_strength_factor               # 陸軍兵力/耐久度修正
 	breakthrough_factor                = ROC_breakthrough_factor                # 陸軍突破能力修正
 	combat_width_factor                = ROC_combat_width_factor                # 戰鬥寬度修正
-	reinforce_rate                     = ROC_reinforce_rate                     # 增援率（預備隊投入戰鬥的機率）
+	land_reinforce_rate                     = ROC_land_reinforce_rate                     # 增援率（預備隊投入戰鬥的機率）
 	initiative_factor                  = ROC_initiative_factor                  # 主動性修正（影響戰術選擇與增援）
 	coordination_bonus                 = ROC_coordination_bonus                 # 協同作戰加成（集火目標能力）
 	max_planning                       = ROC_max_planning                       # 最大作戰計畫加成上限修正
@@ -487,7 +485,6 @@ CHI_ROC_army_dynamic_3 = {
 	conscription_factor                = ROC_conscription_factor                # 適役人口係數修正（徵兵比例）
 	mobilization_speed                 = ROC_mobilization_speed                 # 動員速度（法案切換生效速度）
 	training_time_factor               = ROC_training_time_factor               # 部隊訓練時間修正（正值=變慢，負值=變快）
-	unit_upkeep_cost_factor            = ROC_unit_upkeep_cost_factor            # 海陸空單位整體維護費修正
 	battalion_upkeep_factor            = ROC_battalion_upkeep_factor            # 陸軍營級單位維護費修正
 	military_development_monthly       = ROC_military_development_monthly       # [TFR特有] 每月軍事發展進度變化
 
@@ -498,7 +495,7 @@ CHI_ROC_army_dynamic_3 = {
 	experience_gain_army_factor        = ROC_experience_gain_army_factor        # 陸軍經驗獲取倍率
 	experience_loss_factor             = ROC_experience_loss_factor             # 部隊傷亡時的經驗流失係數
 	command_power_gain_mult            = ROC_command_power_gain_mult            # 指揮點數（CP）獲取倍率
-	army_doctrine_cost_factor          = ROC_army_doctrine_cost_factor          # 陸軍學說花費修正
+	land_doctrine_cost_factor          = ROC_land_doctrine_cost_factor          # 陸軍學說花費修正
 
 	# ==========================================
 	# 情報、基建與外交限制 (Intel, Infrastructure & Diplomacy)
@@ -583,10 +580,10 @@ CHI_ROC_navy_dynamic = {
   naval_detection                    = ROC_naval_detection
   naval_morale_factor                = ROC_naval_morale_factor
   navy_screen_attack_factor          = ROC_navy_screen_attack_factor
-  navy_screen_defense_factor         = ROC_navy_screen_defense_factor
+  navy_screen_defence_factor         = ROC_navy_screen_defence_factor
   screening_efficiency               = ROC_screening_efficiency
 	ship_upkeep_factor                 = ROC_ship_upkeep_factor                 # 艦艇維護費修正
-	navy_doctrine_cost_factor          = ROC_navy_doctrine_cost_factor          # 海軍學說花費修正
+	naval_doctrine_cost_factor          = ROC_naval_doctrine_cost_factor          # 海軍學說花費修正
   shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
   shore_bombardment_bonus            = ROC_shore_bombardment_bonus
 }
@@ -603,10 +600,10 @@ CHI_ROC_navy_dynamic_2 = {
   naval_detection                    = ROC_naval_detection
   naval_morale_factor                = ROC_naval_morale_factor
   navy_screen_attack_factor          = ROC_navy_screen_attack_factor
-  navy_screen_defense_factor         = ROC_navy_screen_defense_factor
+  navy_screen_defence_factor         = ROC_navy_screen_defence_factor
   screening_efficiency               = ROC_screening_efficiency
 	ship_upkeep_factor                 = ROC_ship_upkeep_factor                 # 艦艇維護費修正
-	navy_doctrine_cost_factor          = ROC_navy_doctrine_cost_factor          # 海軍學說花費修正
+	naval_doctrine_cost_factor          = ROC_naval_doctrine_cost_factor          # 海軍學說花費修正
   shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
   shore_bombardment_bonus            = ROC_shore_bombardment_bonus
 }
@@ -623,10 +620,10 @@ CHI_ROC_navy_dynamic_3 = {
   naval_detection                    = ROC_naval_detection
   naval_morale_factor                = ROC_naval_morale_factor
   navy_screen_attack_factor          = ROC_navy_screen_attack_factor
-  navy_screen_defense_factor         = ROC_navy_screen_defense_factor
+  navy_screen_defence_factor         = ROC_navy_screen_defence_factor
   screening_efficiency               = ROC_screening_efficiency
 	ship_upkeep_factor                 = ROC_ship_upkeep_factor                 # 艦艇維護費修正
-	navy_doctrine_cost_factor          = ROC_navy_doctrine_cost_factor          # 海軍學說花費修正
+	naval_doctrine_cost_factor          = ROC_naval_doctrine_cost_factor          # 海軍學說花費修正
   shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
   shore_bombardment_bonus            = ROC_shore_bombardment_bonus
 }
@@ -916,7 +913,7 @@ CHI_success_everywhere = {
   stability_factor = CHI_SE_stability_factor
   army_core_attack_factor = CHI_SE_army_core_attack_factor
   army_core_defence_factor = CHI_SE_army_core_defence_factor
-  academic_development_var = CHI_SE_academic_development_var
+  # academic_development_var = CHI_SE_academic_development_var
   academic_development_monthly = CHI_SE_academic_development_monthly
 }
 #破曉
