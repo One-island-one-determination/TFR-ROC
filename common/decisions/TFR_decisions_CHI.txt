@@ -4743,8 +4743,8 @@ CHI_army_decisions = {
         has_country_flag = CHI_project_ROCA_reform_4_completed
       }
     }
-
-    complete_effect = {
+    complete_effect = { add_manpower = -15000 }
+    remove_effect = {
       hidden_effect = { load_oob = "CHI_dynamic_spawn_oob" }
       custom_effect_tooltip = CHI_repeatable_spawn_tt
     }
