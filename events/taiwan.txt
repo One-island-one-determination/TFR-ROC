@@ -497,6 +497,9 @@ news_event = {
 
   immediate = {
     hidden_effect = {
+      PHI = {
+        transfer_navy = { target = PHN size = 1.0 }
+      }
       PHN = {
         transfer_state = 626
         add_state_core = 626
@@ -526,6 +529,54 @@ news_event = {
           ideology = nationalist
           long_name = PHI_PHN_long
           name = PHI_PHN
+        }
+        division_template = {
+          name = "PHI_Militia"
+          is_locked = no
+          regiments = {
+            militia = { x = 0 y = 0 }
+            militia = { x = 0 y = 1 }
+            militia = { x = 0 y = 2 }
+            militia = { x = 1 y = 0 }
+            militia = { x = 1 y = 1 }
+          }
+        }
+        random_owned_controlled_state = {
+          create_unit = {
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 1 start_equipment_factor = 1.0"
+            id = 1949
+            owner = PHN
+            count = 10
+          }
+        }
+        random_owned_controlled_state = {
+          create_unit = {
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 1 start_equipment_factor = 1.0"
+            id = 1949
+            owner = PHN
+            count = 10
+          }
+        }
+        random_owned_controlled_state = {
+          create_unit = {
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 1 start_equipment_factor = 1.0"
+            id = 1949
+            owner = PHN
+            count = 10
+          }
+        }
+        626 = {
+          create_unit = {
+            division = "name = \"PHI Militia Brigade\" division_template = \"PHI_Militia\" start_experience_factor = 1 start_equipment_factor = 1.0"
+            id = 1949
+            owner = PHN
+            count = 10
+          }
+        }
+        add_equipment_to_stockpile = {
+          type = convoy
+          amount = 100
+          producer = PHN
         }
       }
       NDF = {
