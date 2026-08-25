@@ -883,7 +883,14 @@ news_event = {
   picture = PHI_civil_war4
   is_triggered_only = yes
   major = yes
-
+  immediate = {
+    hidden_effect = {
+      CHI = {
+        transfer_state = 1384
+        add_state_core = 1384
+      }
+    }
+  }
   option = {
     name = ROC.44.a
   }
