@@ -226,9 +226,43 @@ country_event = {
   fire_only_once = yes
   option = {
     name = ROC.21.a
-    add_equipment_to_stockpile = {type = tac_bomber_equipment_1 amount = 100 producer = USA }
+    if = {
+      limit = {
+        has_dlc = "By Blood Alone"
+      }
+      add_equipment_to_stockpile = {
+        type = medium_plane_airframe_1
+        variant_name = "MQ-9 Reaper"
+        amount = 100
+        producer = USA
+      }
+    }
+    else = {
+      add_equipment_to_stockpile = {
+        type = tac_bomber_equipment_1
+        amount = 100
+        producer = USA
+      }
+    }
     add_equipment_to_stockpile = {type = motorized_rocket_equipment_1 amount = 200 producer = USA }
-    add_equipment_to_stockpile = {type = fighter_equipment_2 amount = 100 producer = USA }
+    if = {
+      limit = {
+        has_dlc = "By Blood Alone"
+      }
+      add_equipment_to_stockpile = {
+        type = small_plane_airframe_1
+        variant_name = "F-16/IQ"
+        amount = 100
+        producer = USA
+      }									
+    }
+    else = {
+      add_equipment_to_stockpile = {
+        type = fighter_equipment
+        amount = 100
+        producer = USA
+      }
+    }
     add_equipment_to_stockpile = {type = spaa_equipment_1 amount = 100 producer = USA }
   }
 }

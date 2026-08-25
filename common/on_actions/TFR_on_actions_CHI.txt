@@ -102,6 +102,22 @@ on_actions = {
     }
   }
 
+  on_monthly_VIN = {
+    effect= {
+      if = {
+        limit = { is_in_faction_with = PRC }
+      }
+      set_country_flag = CHI_enemy_flag
+    }
+  }
+  on_monthly_PHI = {
+    effect= {
+      if = {
+        limit = { is_in_faction_with = PRC }
+      }
+      set_country_flag = CHI_enemy_flag
+    }
+  }
 
 
 

@@ -24,6 +24,16 @@ country_event = {
     load_focus_tree = P4_CHI_Han
     focus_unlock = yes
     set_cosmetic_tag = CHI_UNITED
+    if = {
+      limit = { PHI = { has_country_flag = CHI_enemy_flag } }
+      transfer_state = 1384
+      add_state_core = 1384
+    }
+    if = {
+      limit = { VIN = { has_country_flag = CHI_enemy_flag } }
+      transfer_state = 1383
+      add_state_core = 1383
+    }
   }
 }
 
