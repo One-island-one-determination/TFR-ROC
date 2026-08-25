@@ -26,13 +26,17 @@ country_event = {
     set_cosmetic_tag = CHI_UNITED
     if = {
       limit = { PHI = { has_country_flag = CHI_enemy_flag } }
-      transfer_state = 1384
-      add_state_core = 1384
+      CHI = {
+        transfer_state = 1384
+        add_state_core = 1384
+      }
     }
     if = {
       limit = { VIN = { has_country_flag = CHI_enemy_flag } }
-      transfer_state = 1383
-      add_state_core = 1383
+      CHI = {
+        transfer_state = 1383
+        add_state_core = 1383
+      }
     }
   }
 }
