@@ -23,6 +23,10 @@ focus_tree = {
     cancel_if_invalid = yes
     completion_reward = {
       country_event = { id = CHI.H4.2 }
+      if = {
+        limit = { country_exists = CHF }
+        country_event = { id = CHI.TW.64 days = 3 }
+      }
       unlock_decision_category_tooltip = CHI_civilwar_category
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {

@@ -2977,3 +2977,24 @@ country_event = {
     }
   }
 }
+
+country_event = {
+	id = CHI.TW.64
+	title = CHI.TW.64.t
+	desc = CHI.TW.64.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CHI.TW.64.a
+		if = {
+			limit = { country_exists = CHF }
+			CHF = {
+				every_unit_leader = {
+					set_nationality = CHI
+				}
+			}
+			annex_country = { target = CHF transfer_troops = yes }
+		}
+	}
+}
