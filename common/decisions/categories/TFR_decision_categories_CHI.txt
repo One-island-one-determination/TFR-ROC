@@ -58,7 +58,7 @@ CHI_Aid_Arab_Republics_category = {
 }
 # 干涉美國內戰
 CHI_Intervene_the_American_Civil_War_category = {
-  priority = 10000
+  priority = 10
   icon = GFX_CHI_Intervene_the_American_Civil_War_category
   allowed = {
     original_tag = CHI
@@ -93,7 +93,7 @@ CHI_NHCC_decisions = {
 CHI_Legislative_Yuan_decisions = {
   #立法院
   icon = GFX_CHI_Legislative_Yuan_decisions
-  priority = 5
+  priority = 10
   visible_when_empty = yes
   allowed = {
     original_tag = CHI
@@ -233,7 +233,7 @@ CHI_Population_Aging_decisions = {
 PHI_civil_war_dec = {
   #菲律賓内戰
   visible_when_empty = yes
-  priority = 4
+  priority = 999
   visible = {
     has_global_flag = PHI_civil_war_flag
   }
@@ -332,6 +332,7 @@ CHI_Economy_Industry_category = {
 
 CHI_GAW_situation_category = {
   icon = CHI_GAW_decision_category
+  priority = 999
   visible_when_empty = yes
   allowed = {
     original_tag = CHI
@@ -353,6 +354,7 @@ CHI_GAW_situation_category = {
 
 CHI_civilwar_category = {
   icon = CHI_CCW_decision_category
+  priority = 999
   visible_when_empty = yes
   allowed = {
     original_tag = CHI
