@@ -885,9 +885,14 @@ news_event = {
   major = yes
   immediate = {
     hidden_effect = {
-      CHI = {
-        transfer_state = 1384
-        add_state_core = 1384
+      if = {
+        limit = {
+          CHI = { has_country_flag = CHI_supported_PHI_gov_flag }
+        }
+        CHI = {
+          transfer_state = 1384
+          add_state_core = 1384
+        }
       }
     }
   }

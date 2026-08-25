@@ -1,0 +1,13 @@
+on_actions = {
+	on_send_volunteers = {
+		effect = {
+			if = {
+				limit = {
+					tag = CHI
+					FROM = { tag = AFP }
+				}
+				set_country_flag = CHI_supported_PHI_gov_flag
+			}
+		}
+	}
+}
