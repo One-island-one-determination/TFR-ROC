@@ -1185,7 +1185,7 @@ CHI_PRC_Infiltration_decisions = {
       tag = CHI
     }
     available = {
-      has_global_flag = PRC_taiwan_war_lost
+      NOT = { has_global_flag = PRC_taiwan_war_lost }
     }
     priority = 200
     is_good = no
@@ -1197,7 +1197,11 @@ CHI_PRC_Infiltration_decisions = {
         value = 5
       }
       PRC_Infiltration_change = yes
-      activate_mission = PRC_infiltration_becoming_serious_mission
+      if = {
+        limit = {NOT = { has_global_flag = PRC_taiwan_war_lost }}
+        activate_mission = PRC_infiltration_becoming_serious_mission
+      }
+      
     }
   }
   # 在軍隊中搜索通敵者
