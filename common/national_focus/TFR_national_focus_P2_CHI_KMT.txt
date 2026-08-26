@@ -8,7 +8,7 @@ focus_tree = {
     id = CHI_Han_Post_war
     x = 29
     y = 0
-    cost = 3
+    cost = 1
     icon = GFX_focus_CHI_Han_Post_war
     continue_if_invalid = no
     cancel_if_invalid = yes
@@ -34,7 +34,7 @@ focus_tree = {
     }
     relative_position_id = CHI_Han_Post_war
     completion_reward = {
-      add_political_power = 100
+      add_political_power = 200
     }
   }
   focus = {
@@ -545,13 +545,13 @@ focus_tree = {
     relative_position_id = CHI_efficient_government
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_success_everywhere localization_key = modify_idea_tt }
-      add_to_variable = { CHI_SE_energy_produced_coal = 2 }
-      add_to_variable = { CHI_SE_resource_gain_efficiency = 0.1 }
-      add_to_variable = { CHI_SE_steel_gain_factor = 0.1 }
-      add_to_variable = { CHI_SE_chromium_gain_factor = 0.1 }
-      add_to_variable = { CHI_SE_coal_gain_factor = 0.1 }
-      add_to_variable = { CHI_SE_aluminium_gain_factor = 0.1 }
-      add_to_variable = { CHI_SE_tungsten_gain_factor = 0.1 }
+      add_to_variable = { CHI_SE_energy_gain_factor = 2 tooltip = energy_gain_factor_tooltip}
+      add_to_variable = { CHI_SE_local_resources_factor  = 0.1 tooltip = local_resources_factor_tooltip}
+      add_to_variable = { CHI_SE_local_resources_steel_factor = 0.1 tooltip = local_resources_steel_factor_tooltip }
+      add_to_variable = { CHI_SE_local_resources_chromium_factor = 0.1 tooltip = local_resources_chromium_factor_tooltip }
+      add_to_variable = { CHI_SE_local_resources_coal_factor = 0.1 tooltip = local_resources_coal_factor_tooltip }
+      add_to_variable = { CHI_SE_local_resources_aluminium_factor = 0.1 tooltip = local_resources_aluminium_factor_tooltip }
+      add_to_variable = { CHI_SE_local_resources_tungsten_factor = 0.1 tooltip = local_resources_tungsten_factor_tooltip }
     }
   }
   focus = {
@@ -609,8 +609,8 @@ focus_tree = {
       custom_effect_tooltip = CHI_wartime_success_everywhere
       add_to_variable = { CHI_SEW_fuel_gain_factor = -0.25 }
       add_to_variable = { CHI_SEW_factory_energy_consumption = -0.15 }
-      add_to_variable = { CHI_SEW_shortages_penalty_factor = -0.15 }
-      # Missing specific modifier for 出口資源-20%, usually handled by trade laws, but can't easily be modified by variable.
+      add_to_variable = { CHI_SEW_production_lack_of_resource_penalty_factor = -0.15 }
+      add_to_variable = { CHI_SEW_min_export_factor = -0.2 tooltip = min_export_factor_tooltip}
     }
   }
   focus = {
@@ -627,11 +627,11 @@ focus_tree = {
     relative_position_id = CHI_efficient_government
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_success_everywhere localization_key = modify_idea_tt }
-      add_to_variable = { CHI_SE_poverty_development_monthly = 0.003 }
-      add_to_variable = { CHI_SE_consumer_goods_factor = 0.05 }
-      add_to_variable = { CHI_SE_society_development_monthly = 0.002 }
-      add_to_variable = { CHI_SE_stability_factor = 0.1 }
-      add_to_variable = { CHI_SE_political_power_cost = 0.2 }
+      add_to_variable = { CHI_SE_poverty_development_monthly = 0.003 tooltip = poverty_development_monthly_tooltip }
+      add_to_variable = { CHI_SE_consumer_goods_factor = 0.05 tooltip = consumer_goods_factor_tooltip }
+      add_to_variable = { CHI_SE_society_development_monthly = 0.002 tooltip = society_development_monthly_tooltip }
+      add_to_variable = { CHI_SE_stability_factor = 0.1 tooltip = stability_factor_tooltip}
+      add_to_variable = { CHI_SE_political_power_cost = 0.2 tooltip = political_power_cost_tooltip}
     }
   }
   focus = {
@@ -646,7 +646,7 @@ focus_tree = {
       focus = CHI_Three_Labor_arrows
     }
     completion_reward = {
-      # stability_factor = 0.02
+      add_stability = 0.02
       increase_welfare = yes
       custom_effect_tooltip = CHI_Economy_additional_effects
       add_to_variable = {
@@ -899,7 +899,7 @@ focus_tree = {
       add_stability = -0.2
       add_popularity = { ideology = nationalist popularity = 0.05 }
       custom_effect_tooltip = { IDEA = CHI_dawn localization_key = modify_idea_tt }
-      add_to_variable = { CHI_D_society_development_monthly = 0.03 }
+      add_to_variable = { CHI_D_society_development_monthly = 0.03 tooltip = society_development_monthly_tooltip}
     }
     relative_position_id = CHI_new_ten_propositions
   }
@@ -1058,12 +1058,12 @@ focus_tree = {
         id = CHI.H2.431
       }
       add_manpower = -153
-      add_operative_slot = 1
       custom_effect_tooltip = { IDEA = CHI_love_to_chunghua localization_key = modify_idea_tt }
-      add_to_variable = { CHI_LCH_ideology_drift_defense = 0.1 }
-      add_to_variable = { CHI_LCH_surrender_limit = 0.1 }
-      add_to_variable = { CHI_LCH_intelligence_agency_defense = 0.05 }
-      add_to_variable = { CHI_LCH_encryption = 5 }
+      add_to_variable = { CHI_LCH_drift_defence_factor = 0.1 tooltip = drift_defence_factor_tooltip }
+      add_to_variable = { CHI_LCH_surrender_limit = 0.1 tooltip = surrender_limit_tooltip }
+      add_to_variable = { CHI_LCH_intelligence_agency_defense = 0.05 tooltip = intelligence_agency_defense_tooltip}
+      add_to_variable = { CHI_LCH_encryption = 5 tooltip = encryption_tooltip }
+      add_to_variable = { CHI_LCH_operative_slot = 1 tooltip = operative_slot_tooltip }
     }
     relative_position_id = CHI_cyber_security_managment_act_amendement
   }
@@ -2086,6 +2086,9 @@ focus_tree = {
       focus = CHI_dont_forget_homeland
     }
     relative_position_id = CHI_dont_forget_homeland
+    completion_reward = {
+      unlock_decision_tooltip = CHI_project_Ning_Hai
+    }
   }
   focus = {
     id = CHI_renovate_Tsoying_naval_base
@@ -2161,6 +2164,9 @@ focus_tree = {
       focus = CHI_renovate_Tsoying_naval_base
     }
     relative_position_id = CHI_renovate_Tsoying_naval_base
+    completion_reward = {
+      unlock_decision_tooltip = CHI_expand_shipyards
+    }
   }
   focus = {
     id = CHI_making_great_achievements_on_beachhead
@@ -2250,9 +2256,12 @@ focus_tree = {
     }
     relative_position_id = CHI_dont_forget_homeland
     completion_reward = {
+      unlock_decision_tooltip = CHI_project_Ling_Hsiao
+      unlock_decision_tooltip = CHI_project_hump_training
+            
       custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
-      add_to_variable = { ROC_experience_gain_air = 0.04 }
-      add_to_variable = { ROC_air_cas_efficiency = 0.1 }
+      add_to_variable = { ROC_experience_gain_air = 0.04 tooltip = experience_gain_air_tooltip}
+      add_to_variable = { ROC_air_cas_efficiency = 0.1 tooltip = air_cas_efficiency_tooltip}
     }
   }
   focus = {
