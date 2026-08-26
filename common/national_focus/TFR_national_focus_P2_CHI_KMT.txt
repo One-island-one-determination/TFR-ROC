@@ -34,7 +34,7 @@ focus_tree = {
     }
     relative_position_id = CHI_Han_Post_war
     completion_reward = {
-      add_political_power = 200
+      add_political_power = 100
     }
   }
   focus = {
@@ -243,6 +243,9 @@ focus_tree = {
         idea = CHI_concession_to_DPP
         days = 20
       }
+      add_political_power = 100
+      add_stability = 0.1
+      add_war_support = 0.1
     }
     relative_position_id = CHI_negotiate_with_DPP
   }
@@ -540,6 +543,16 @@ focus_tree = {
       focus = CHI_efficient_government
     }
     relative_position_id = CHI_efficient_government
+    completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_success_everywhere localization_key = modify_idea_tt }
+      add_to_variable = { CHI_SE_energy_produced_coal = 2 }
+      add_to_variable = { CHI_SE_resource_gain_efficiency = 0.1 }
+      add_to_variable = { CHI_SE_steel_gain_factor = 0.1 }
+      add_to_variable = { CHI_SE_chromium_gain_factor = 0.1 }
+      add_to_variable = { CHI_SE_coal_gain_factor = 0.1 }
+      add_to_variable = { CHI_SE_aluminium_gain_factor = 0.1 }
+      add_to_variable = { CHI_SE_tungsten_gain_factor = 0.1 }
+    }
   }
   focus = {
     id = CHI_strategic_reserves
@@ -592,6 +605,13 @@ focus_tree = {
       focus = CHI_mineral_exporation
     }
     relative_position_id = CHI_mineral_exporation
+    completion_reward = {
+      custom_effect_tooltip = CHI_wartime_success_everywhere
+      add_to_variable = { CHI_SEW_fuel_gain_factor = -0.25 }
+      add_to_variable = { CHI_SEW_factory_energy_consumption = -0.15 }
+      add_to_variable = { CHI_SEW_shortages_penalty_factor = -0.15 }
+      # Missing specific modifier for 出口資源-20%, usually handled by trade laws, but can't easily be modified by variable.
+    }
   }
   focus = {
     id = CHI_Three_Labor_arrows
@@ -605,6 +625,14 @@ focus_tree = {
       focus = CHI_efficient_government
     }
     relative_position_id = CHI_efficient_government
+    completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_success_everywhere localization_key = modify_idea_tt }
+      add_to_variable = { CHI_SE_poverty_development_monthly = 0.003 }
+      add_to_variable = { CHI_SE_consumer_goods_factor = 0.05 }
+      add_to_variable = { CHI_SE_society_development_monthly = 0.002 }
+      add_to_variable = { CHI_SE_stability_factor = 0.1 }
+      add_to_variable = { CHI_SE_political_power_cost = 0.2 }
+    }
   }
   focus = {
     id = CHI_abolish_one_fixed_one_flexed
@@ -867,6 +895,11 @@ focus_tree = {
       country_event = {
         id = CHI.H2.41
       }
+      add_political_power = 80
+      add_stability = -0.2
+      add_popularity = { ideology = nationalist popularity = 0.05 }
+      custom_effect_tooltip = { IDEA = CHI_dawn localization_key = modify_idea_tt }
+      add_to_variable = { CHI_D_society_development_monthly = 0.03 }
     }
     relative_position_id = CHI_new_ten_propositions
   }
@@ -1025,6 +1058,12 @@ focus_tree = {
         id = CHI.H2.431
       }
       add_manpower = -153
+      add_operative_slot = 1
+      custom_effect_tooltip = { IDEA = CHI_love_to_chunghua localization_key = modify_idea_tt }
+      add_to_variable = { CHI_LCH_ideology_drift_defense = 0.1 }
+      add_to_variable = { CHI_LCH_surrender_limit = 0.1 }
+      add_to_variable = { CHI_LCH_intelligence_agency_defense = 0.05 }
+      add_to_variable = { CHI_LCH_encryption = 5 }
     }
     relative_position_id = CHI_cyber_security_managment_act_amendement
   }
@@ -1046,6 +1085,16 @@ focus_tree = {
       focus = CHI_one_day_tea_party
     }
     relative_position_id = CHI_finish_them
+    completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_dawn localization_key = modify_idea_tt }
+      add_to_variable = { CHI_D_surrender_limit = 0.5 }
+      add_to_variable = { CHI_D_max_command_power = 10 }
+      add_to_variable = { CHI_D_political_advisor_cost_factor = -0.05 }
+      add_to_variable = { CHI_D_high_command_cost_factor = -0.05 }
+      add_to_variable = { CHI_D_conscription = 0.03 }
+      add_to_variable = { CHI_D_army_core_attack_factor = 0.1 }
+      add_to_variable = { CHI_D_army_core_defence_factor = 0.1 }
+    }
   }
   focus = {
     id = CHI_blue_sky_white_sun_never_falls
@@ -2210,6 +2259,9 @@ focus_tree = {
       unlock_decision_tooltip = CHI_project_Ling_Hsiao
       unlock_decision_tooltip = CHI_project_hump_training
             
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_experience_gain_air = 0.04 }
+      add_to_variable = { ROC_air_cas_efficiency = 0.1 }
     }
   }
   focus = {

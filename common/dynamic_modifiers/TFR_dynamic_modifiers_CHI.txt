@@ -913,8 +913,18 @@ CHI_success_everywhere = {
   stability_factor = CHI_SE_stability_factor
   army_core_attack_factor = CHI_SE_army_core_attack_factor
   army_core_defence_factor = CHI_SE_army_core_defence_factor
-  # academic_development_var = CHI_SE_academic_development_var
   academic_development_monthly = CHI_SE_academic_development_monthly
+  resource_gain_efficiency = CHI_SE_resource_gain_efficiency
+  poverty_development_monthly = CHI_SE_poverty_development_monthly
+  consumer_goods_factor = CHI_SE_consumer_goods_factor
+  society_development_monthly = CHI_SE_society_development_monthly
+  political_power_cost = CHI_SE_political_power_cost
+  coal_gain_factor = CHI_SE_coal_gain_factor
+  steel_gain_factor = CHI_SE_steel_gain_factor
+  chromium_gain_factor = CHI_SE_chromium_gain_factor
+  aluminium_gain_factor = CHI_SE_aluminium_gain_factor
+  tungsten_gain_factor = CHI_SE_tungsten_gain_factor
+  energy_produced_coal = CHI_SE_energy_produced_coal
 }
 #破曉
 CHI_dawn = {
@@ -928,6 +938,13 @@ CHI_dawn = {
   society_development_monthly = CHI_D_society_development_monthly
   poverty_development_monthly = CHI_D_poverty_development_monthly
   party_popularity_stability_factor = CHI_D_party_popularity_stability_factor
+  surrender_limit = CHI_D_surrender_limit
+  max_command_power = CHI_D_max_command_power
+  political_advisor_cost_factor = CHI_D_political_advisor_cost_factor
+  high_command_cost_factor = CHI_D_high_command_cost_factor
+  conscription = CHI_D_conscription
+  army_core_attack_factor = CHI_D_army_core_attack_factor
+  army_core_defence_factor = CHI_D_army_core_defence_factor
 }
 #中華之愛
 CHI_love_to_chunghua = {
@@ -939,4 +956,17 @@ CHI_love_to_chunghua = {
   army_org_factor = CHI_LCH_army_org_factor
   society_development_monthly = CHI_LCH_society_development_monthly
   encryption = CHI_LCH_encryption
+  ideology_drift_defense = CHI_LCH_ideology_drift_defense
+  surrender_limit = CHI_LCH_surrender_limit
+  intelligence_agency_defense = CHI_LCH_intelligence_agency_defense
+}
+
+CHI_wartime_success_everywhere = {
+  enable = {
+    tag = CHI
+    has_war = yes
+  }
+  fuel_gain_factor = CHI_SEW_fuel_gain_factor
+  factory_energy_consumption = CHI_SEW_factory_energy_consumption
+  shortages_penalty_factor = CHI_SEW_shortages_penalty_factor
 }
