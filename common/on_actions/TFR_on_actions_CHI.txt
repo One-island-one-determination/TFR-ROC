@@ -99,6 +99,10 @@ on_actions = {
         limit = { PRC = { has_completed_focus = PRC_shake_up_the_politburo } }
         CHI = { country_event = { id = CHI.TW.23 } }
       }
+      if = {
+        limit = { CHI = { is_in_faction_with = JAP } }
+        CHI = { country_event = { id = taiwan.3 } }
+      }
     }
   }
 
