@@ -122,7 +122,7 @@ focus_tree = {
         }
         remove_ideas = CHI_Wartime_normal_system
       }
-      if = {
+      else_if = {
         limit = {
           has_idea = CHI_Martial_law_declared_idea
         }
@@ -295,6 +295,18 @@ focus_tree = {
       add_to_variable = {
         CHI_RE_business_value_factor = -0.05
         tooltip = business_value_factor_tooltip
+      }
+      custom_effect_tooltip = {
+        IDEA = CHI_ROC_army_dynamic
+        localization_key = modify_idea_tt
+      }
+      add_to_variable = {
+        ROC_training_time_factor = -0.1
+        tooltip = training_time_factor_tooltip
+      }
+      add_to_variable = {
+        ROC_conscription_factor = 0.05
+        tooltip = conscription_factor_tooltip
       }
     }
     relative_position_id = CHI_Post_war_personnel_issues
