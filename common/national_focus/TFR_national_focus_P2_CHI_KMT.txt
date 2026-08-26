@@ -33,6 +33,9 @@ focus_tree = {
       focus = CHI_Han_Post_war
     }
     relative_position_id = CHI_Han_Post_war
+    completion_reward = {
+      add_political_power = 200
+    }
   }
   focus = {
     id = CHI_Pork_Rice
@@ -2034,6 +2037,9 @@ focus_tree = {
       focus = CHI_dont_forget_homeland
     }
     relative_position_id = CHI_dont_forget_homeland
+    completion_reward = {
+      unlock_decision_tooltip = CHI_project_Ning_Hai
+    }
   }
   focus = {
     id = CHI_renovate_Tsoying_naval_base
@@ -2109,6 +2115,9 @@ focus_tree = {
       focus = CHI_renovate_Tsoying_naval_base
     }
     relative_position_id = CHI_renovate_Tsoying_naval_base
+    completion_reward = {
+      unlock_decision_tooltip = CHI_expand_shipyards
+    }
   }
   focus = {
     id = CHI_making_great_achievements_on_beachhead
@@ -2197,6 +2206,11 @@ focus_tree = {
       focus = CHI_dont_forget_homeland
     }
     relative_position_id = CHI_dont_forget_homeland
+    completion_reward = {
+      unlock_decision_tooltip = CHI_project_Ling_Hsiao
+      unlock_decision_tooltip = CHI_project_hump_training
+            
+    }
   }
   focus = {
     id = CHI_need_of_talent
