@@ -2086,6 +2086,9 @@ focus_tree = {
       focus = CHI_dont_forget_homeland
     }
     relative_position_id = CHI_dont_forget_homeland
+    completion_reward = {
+      unlock_decision_tooltip = CHI_project_Ning_Hai
+    }
   }
   focus = {
     id = CHI_renovate_Tsoying_naval_base
@@ -2161,6 +2164,9 @@ focus_tree = {
       focus = CHI_renovate_Tsoying_naval_base
     }
     relative_position_id = CHI_renovate_Tsoying_naval_base
+    completion_reward = {
+      unlock_decision_tooltip = CHI_expand_shipyards
+    }
   }
   focus = {
     id = CHI_making_great_achievements_on_beachhead
@@ -2250,6 +2256,9 @@ focus_tree = {
     }
     relative_position_id = CHI_dont_forget_homeland
     completion_reward = {
+      unlock_decision_tooltip = CHI_project_Ling_Hsiao
+      unlock_decision_tooltip = CHI_project_hump_training
+            
       custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
       add_to_variable = { ROC_experience_gain_air = 0.04 }
       add_to_variable = { ROC_air_cas_efficiency = 0.1 }
