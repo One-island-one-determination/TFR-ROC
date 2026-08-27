@@ -2738,6 +2738,8 @@ focus_tree = {
     }
     relative_position_id = CHI_thus_spoke_thucydides
     completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_terrain_penalty_reduction = -0.25 tooltip = terrain_penalty_reduction_tooltip }
       1424 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       1217 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       595  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
@@ -2760,6 +2762,7 @@ focus_tree = {
       591  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       326  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       729  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+
     }
   }
   focus = {
@@ -2822,6 +2825,8 @@ focus_tree = {
     }
     relative_position_id = CHI_thus_spoke_thucydides
     completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_air_mission_efficiency = 0.2 tooltip = air_mission_efficiency_tooltip }
       424  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       714  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       717  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
@@ -2844,6 +2849,7 @@ focus_tree = {
         limit = {is_core_of = PRK}
         add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }
       }
+
     }
   }
   focus = {
@@ -3084,6 +3090,9 @@ focus_tree = {
     }
     relative_position_id = CHI_rekindle_confidence
     completion_reward = {
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { ROC_terrain_penalty_reduction = -0.15 tooltip = terrain_penalty_reduction_tooltip }
+      add_to_variable = { ROC_acclimatization_hot_climate_gain_factor = -0.2 tooltip = acclimatization_hot_climate_gain_factor_tooltip }
       1196 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       1192 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       1195 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
@@ -3094,6 +3103,7 @@ focus_tree = {
       605 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       1188 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       1189 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}      
+
     }
   }
   focus = {
