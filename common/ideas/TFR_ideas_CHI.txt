@@ -1632,19 +1632,10 @@ ideas = {
         dtg_threshold_factor = 0.15
       }
     }
-
-    ##政治休兵
-    CHI_political_truce = {
-      name = CHI_political_truce
-      removal_cost = -1
-      modifier = {
-        political_power_gain = 0.05
-      }
-    }
     #向民進黨讓步
     CHI_concession_to_DPP = {
       name = CHI_concession_to_DPP
-      picture = CHI_concession_to_DPP
+      picture = GFX_idea_CHI_concession_to_DPP
       removal_cost = -1
       modifier = {
         social_liberal_drift = 0.75
@@ -1671,24 +1662,81 @@ ideas = {
 
     CHI_no_one_can_abuse_her = {
       name = CHI_no_one_can_abuse_her
-      picture = CHI_no_one_can_abuse_her
+      picture = GFX_idea_CHI_no_one_can_abuse_her
       removal_cost = -1
       modifier = {
-        political_power_gain = 0.3
+        # 政治/内政
+        political_power_gain = 0.7
         stability_factor = 0.125
         party_popularity_stability_factor = 0.1
-        war_support_factor = 0.25
-        army_org_factor = 0.05
-        army_core_attack_factor = 0.025
-        army_core_defence_factor = 0.025
-        encryption = 5
+        political_advisor_cost_factor = -0.05
+        high_command_cost_factor = -0.05
+
+        # 经济/民生
         income_growth_factor = 0.05
-        personal_value_factor = 0.5
         business_value_factor = 0.1
         dtg_threshold_factor = 0.15
-        society_development_monthly = 0.075
+        personal_value_factor = 0.5
+        society_development_monthly = 0.105
         poverty_development_monthly = 0.05
-        academic_development_monthly = 0.05
+
+        # 战争/军事
+        war_support_factor = 0.25
+        surrender_limit = 0.6
+        max_command_power = 10
+        conscription = 0.03
+        army_core_attack_factor = 0.1
+        army_core_defence_factor = 0.1
+        army_org_factor = 0.05
+
+        # 情报/特工
+        encryption = 10
+        drift_defence_factor = 0.1
+        intelligence_agency_defense = 0.05
+        operative_slot = 1
+      }
+    }
+
+    CHI_no_one_can_abuse_her_CHI_mainland_peoples_liaison= {
+      name = CHI_no_one_can_abuse_her
+      picture = GFX_idea_CHI_no_one_can_abuse_her
+      removal_cost = -1
+      modifier = {
+        # 政治/内政
+        political_power_gain = 0.7
+        stability_factor = 0.125
+        party_popularity_stability_factor = 0.1
+        political_advisor_cost_factor = -0.05
+        high_command_cost_factor = -0.05
+
+        # 经济/民生
+        income_growth_factor = 0.05
+        business_value_factor = 0.1
+        dtg_threshold_factor = 0.15
+        personal_value_factor = 0.5
+        society_development_monthly = 0.105
+        poverty_development_monthly = 0.05
+
+        # 战争/军事
+        war_support_factor = 0.25
+        surrender_limit = 0.6
+        max_command_power = 10
+        conscription = 0.03
+        army_core_attack_factor = 0.1
+        army_core_defence_factor = 0.1
+        army_org_factor = 0.05
+
+        # 情报/特工
+        encryption = 10
+        drift_defence_factor = 0.1
+        intelligence_agency_defense = 0.05
+        operative_slot = 1
+      
+        #新增者
+        decryption = 5
+        compliance_gain = 0.03
+        required_garrison_factor = -0.05
+        non_core_manpower = 0.02
       }
     }
 
@@ -1696,7 +1744,7 @@ ideas = {
     CHI_project_ROCA_reform_1_idea = {
       picture = generic_infantry_bonus
       rule = {
-          can_send_volunteers = no
+        can_send_volunteers = no
       }
     }
 
@@ -2021,6 +2069,14 @@ ideas = {
       }
     }
   #-----------hidden idea CHI_Economy end--------------#}
+  ##政治休兵
+  CHI_political_truce = {
+    name = CHI_political_truce
+    removal_cost = -1
+    modifier = {
+      political_power_gain = 0.05
+    }
+  }
   
   CHI_Civil_Military_Supply_Chain_idea = {
     name = CHI_Civil_Military_Supply_Chain
