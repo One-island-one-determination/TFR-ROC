@@ -53,6 +53,48 @@ CHI_passive_protection = {
 	}
 }
 
+CHI_active_defense = {
+	allowed = {
+		original_tag = CHI
+	}
+	enable = {
+		original_tag = CHI
+		has_war_with = PRC
+	}
+	abort = {
+		NOT = { has_war_with = PRC }
+	}
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+		states = {
+			524
+			1148
+			1149
+			1150
+			648
+			1451
+		}
+		subtract_fronts_from_need = no
+	}
+	ai_strategy = {
+		type = area_priority
+		id = east_china_mainland
+		value = -100 # Focus on Taiwan
+	}
+	ai_strategy = {
+		type = build_building
+		id = coastal_bunker
+		value = 200
+	}
+	ai_strategy = {
+		type = build_building
+		id = anti_air_building
+		value = 150
+	}
+}
+
 CHI_army_building = {
 	allowed = {
 		original_tag = CHI
@@ -92,32 +134,32 @@ CHI_army_building = {
 	ai_strategy = {
 		type = role_ratio
 		id = marines
-		value = 10
+		value = 15
 	}
 	ai_strategy = {
 		type = role_ratio
 		id = paratroopers
-		value = 5
+		value = 0
 	}
 	ai_strategy = {
 		type = role_ratio
 		id = garrison
-		value = 5
+		value = 25
 	}
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = 100
+		value = 150
 	}
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 40
+		value = 60
 	}
 	ai_strategy = {
 		type = unit_ratio
 		id = naval_bomber
-		value = 20
+		value = 30
 	}
 	ai_strategy = {
 		type = naval_invasion_focus
@@ -127,7 +169,12 @@ CHI_army_building = {
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 80
+		value = 60
+	}
+    ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 20
 	}
 	ai_strategy = {
 		type = unit_ratio
@@ -137,11 +184,16 @@ CHI_army_building = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = convoy
-		value = -30
+		value = 10
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = screen_ship
-		value = 50
+		value = 20
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
+		value = -50
 	}
 }
