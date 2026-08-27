@@ -2988,23 +2988,23 @@ focus_tree = {
     }
     relative_position_id = CHI_rekindle_confidence
     completion_reward = {
-      1424 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      714 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      717 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1416 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1415 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1414 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1417 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1413 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1167 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      715 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      328 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      716 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1394 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1425 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1424 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      714 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      717 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1416 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1415 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1414 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1417 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1413 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1167 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      715 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      328 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      716 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1394 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1425 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       every_state = {
         limit = { is_core_of = PRK }
-        add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }
+        add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }
       }
     
     
@@ -3023,10 +3023,10 @@ focus_tree = {
     }
     relative_position_id = CHI_changbai_foothills
     completion_reward = {
-      612 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1202 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1166 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      621 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      612 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1202 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1166 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      621 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
     }
   }
   focus = {
@@ -3042,33 +3042,33 @@ focus_tree = {
     }
     relative_position_id = CHI_under_yinshan
     completion_reward = {
-      609 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      610 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      611 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      608 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1157 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1233 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1154 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1421 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1232 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1426 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      597 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1427 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1393 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1229 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1420 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      615 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      614 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1231 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1194 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      607 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1230 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1224 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1225 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1226 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1201 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      622 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1200 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}          
+      609 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      610 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      611 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      608 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1157 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1233 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1154 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1421 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1232 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1426 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      597 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1427 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1393 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1229 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1420 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      615 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      614 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1231 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1194 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      607 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1230 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1224 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1225 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1226 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1201 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      622 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1200 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}          
     }
   }
   focus = {
@@ -3109,20 +3109,20 @@ focus_tree = {
     }
     relative_position_id = CHI_rekindle_confidence
     completion_reward = {
-      # 1155 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      # 322 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      # 1153 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      # 1156 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      # 1152 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      # 1186 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      # 604 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      # 1155 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      # 322 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      # 1153 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      # 1156 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      # 1152 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      # 1186 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      # 604 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       every_state = {
         limit = { is_core_of = PAK }
-        add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }
+        add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }
       }
       every_state = {
         limit = { is_core_of = BRM }
-        add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }
+        add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }
       }
     
     }
@@ -3140,16 +3140,16 @@ focus_tree = {
     }
     relative_position_id = CHI_waves_of_nujiang
     completion_reward = {
-      1196 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1192 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1195 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      325 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      601 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1168 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1190 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      605 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1188 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1189 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}      
+      1196 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1192 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1195 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      325 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      601 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1168 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1190 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      605 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1188 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1189 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}      
     }
   }
   focus = {
@@ -3173,27 +3173,27 @@ focus_tree = {
       #   country_event = {id = CHI.H3.105 days = 300}
       # }
 
-      1217 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      595 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1218 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1216 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1431 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1430 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1207 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1206 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      592 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      728 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1395 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      599 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1191 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      593 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      594 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1203 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1204 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1205 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      591 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      326 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      729 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1217 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      595 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1218 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1216 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1431 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1430 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1207 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1206 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      592 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      728 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1395 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      599 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1191 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      593 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      594 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1203 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1204 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1205 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      591 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      326 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      729 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
     }
   }
   focus = {
@@ -3209,28 +3209,28 @@ focus_tree = {
     }
     relative_position_id = CHI_winds_and_rains_of_min_and_yue
     completion_reward = {
-      1220 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1159 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1219 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      596 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1223 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      606 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1221 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1212 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      620 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1211 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      602 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1208 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1209 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1227 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1428 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1214 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1213 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      600 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1210 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      603 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1197 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1215 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1220 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1159 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1219 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      596 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1223 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      606 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1221 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1212 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      620 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1211 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      602 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1208 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1209 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1227 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1428 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1214 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1213 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      600 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1210 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      603 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1197 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1215 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
     }
   }
   focus = {
@@ -3246,23 +3246,23 @@ focus_tree = {
     }
     relative_position_id = CHI_storms_of_south_asia
     completion_reward = {
-      1158 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1160 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1161 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1162 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1163 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1164 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1165 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      617 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      618 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      619 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      287 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1198 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1193 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      616 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      283 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1199 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
-      1187 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament }}
+      1158 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1160 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1161 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1162 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1163 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1164 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1165 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      617 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      618 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      619 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      287 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1198 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1193 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      616 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      283 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1199 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1187 = { add_dynamic_modifier = { modifier = CHI_asia_pacific_armament } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
     }
   }
 #}
