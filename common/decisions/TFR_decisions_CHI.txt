@@ -5969,10 +5969,10 @@ CHI_Population_Aging_decisions = {
   CHI_expand_public_ltc = {
     icon = GFX_CHI_expand_public_ltc
     available = {
-      check_variable = { var = var_CHI_expand_public_ltc value = 2 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_expand_public_ltc value = 1 compare = less_than_or_equals }
     }
     visible = {
-      check_variable = { var = var_CHI_expand_public_ltc value = 2 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_expand_public_ltc value = 1 compare = less_than_or_equals }
     }
     cost = 60
     days_remove = 180
@@ -6001,10 +6001,10 @@ CHI_Population_Aging_decisions = {
   CHI_childcare_subsidies = {
     icon = GFX_CHI_childcare_subsidies
     available = {
-      check_variable = { var = var_CHI_childcare_subsidies value = 3 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_childcare_subsidies value = 2 compare = less_than_or_equals }
     }
     visible = {
-      check_variable = { var = var_CHI_childcare_subsidies value = 3 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_childcare_subsidies value = 2 compare = less_than_or_equals }
     }
     cost = 50
     days_remove = 60
@@ -6659,10 +6659,10 @@ CHI_efficient_government_category = {
     icon = GFX_CHI_quality_coal
     available = {
       has_completed_focus = CHI_efficient_government
-      check_variable = { var = var_CHI_quality_coal value = 3 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_quality_coal value = 2 compare = less_than_or_equals }
     }
     visible = {
-      check_variable = { var = var_CHI_quality_coal value = 3 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_quality_coal value = 2 compare = less_than_or_equals }
     }
     cost = 50
     days_remove = 30
@@ -6687,10 +6687,10 @@ CHI_efficient_government_category = {
     icon = GFX_CHI_state_biz_advisor
     available = {
       has_completed_focus = CHI_Special_budget
-      check_variable = { var = var_CHI_state_biz_advisor value = 3 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_state_biz_advisor value = 2 compare = less_than_or_equals }
     }
     visible = {
-      check_variable = { var = var_CHI_state_biz_advisor value = 3 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_state_biz_advisor value = 2 compare = less_than_or_equals }
     }
     cost = 50
     days_remove = 30
@@ -6730,10 +6730,10 @@ CHI_efficient_government_category = {
     icon = GFX_CHI_youth_startup_loan
     available = {
       has_completed_focus = CHI_Special_budget
-      check_variable = { var = var_CHI_youth_startup_loan value = 2 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_youth_startup_loan value = 1 compare = less_than_or_equals }
     }
     visible = {
-      check_variable = { var = var_CHI_youth_startup_loan value = 2 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_youth_startup_loan value = 1 compare = less_than_or_equals }
     }
     cost = 50
     days_remove = 30
@@ -6753,10 +6753,10 @@ CHI_efficient_government_category = {
     icon = GFX_CHI_transit_integration
     available = {
       has_completed_focus = CHI_Special_budget
-      check_variable = { var = var_CHI_transit_integration value = 5 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_transit_integration value = 4 compare = less_than_or_equals }
     }
     visible = {
-      check_variable = { var = var_CHI_transit_integration value = 5 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_transit_integration value = 4 compare = less_than_or_equals }
     }
     cost = 50
     days_remove = 30
@@ -6834,11 +6834,11 @@ CHI_Economy_Industry_category = {
     days_remove = 30
     available = {
       has_completed_focus = CHI_Complete_Military_Idustry
-      check_variable = { var = var_CHI_mil_industry_expansion value = 5 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_mil_industry_expansion value = 4 compare = less_than_or_equals }
     }
     visible = {
       original_tag = CHI
-      check_variable = { var = var_CHI_mil_industry_expansion value = 5 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_mil_industry_expansion value = 4 compare = less_than_or_equals }
     }
     custom_cost_trigger = {
       check_variable = { CHI_fiscal_budget_var > 0 }
@@ -6933,11 +6933,11 @@ CHI_Economy_Industry_category = {
     available = {
       has_completed_focus = CHI_Complete_Military_Idustry
       has_country_flag = CHI_mil_production_line_completed
-      check_variable = { var = var_CHI_advanced_mil_engine value = 3 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_advanced_mil_engine value = 2 compare = less_than_or_equals }
     }
     visible = {
       original_tag = CHI
-      check_variable = { var = var_CHI_advanced_mil_engine value = 3 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_advanced_mil_engine value = 2 compare = less_than_or_equals }
     }
     cost = 0
     days_remove = 100
@@ -7040,11 +7040,11 @@ CHI_Economy_Industry_category = {
     available = {
       has_completed_focus = CHI_Complete_Military_Idustry
       has_completed_focus = CHI_relaunch_project_zhenhai
-      check_variable = { var = var_CHI_expand_shipyards value = 10 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_expand_shipyards value = 9 compare = less_than_or_equals }
     }
     visible = {
       original_tag = CHI
-      check_variable = { var = var_CHI_expand_shipyards value = 10 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_expand_shipyards value = 9 compare = less_than_or_equals }
     }
     cost = 0
     days_remove = 80
@@ -7124,12 +7124,12 @@ CHI_Economy_Industry_category = {
       OR = {
         has_completed_focus = CHI_From_Downstream_To_Upstream
         has_completed_focus = CHI_international_division_of_labor
-        check_variable = { var = var_CHI_solar_industry_project value = 3 compare = less_than_or_equals }
+        check_variable = { var = var_CHI_solar_industry_project value = 2 compare = less_than_or_equals }
       }
     }
     visible = {
       original_tag = CHI
-      check_variable = { var = var_CHI_solar_industry_project value = 3 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_solar_industry_project value = 2 compare = less_than_or_equals }
     }
     cost = 0
     days_remove = 30
@@ -7163,11 +7163,11 @@ CHI_Economy_Industry_category = {
     available = {
       has_completed_focus = CHI_Rebulid_7th_CT
       has_completed_focus = CHI_Way_Of_Can_To_Asia
-      check_variable = { var = var_CHI_expand_processing_plant value = 3 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_expand_processing_plant value = 2 compare = less_than_or_equals }
     }
     visible = {
       original_tag = CHI
-      check_variable = { var = var_CHI_expand_processing_plant value = 3 compare = less_than_or_equals }
+      check_variable = { var = var_CHI_expand_processing_plant value = 2 compare = less_than_or_equals }
     }
     cost = 0
     days_remove = 30
