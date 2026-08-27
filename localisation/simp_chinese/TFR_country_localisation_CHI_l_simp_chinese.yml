@@ -1406,18 +1406,18 @@
 
  cannot_call_allies_or_join_wars_tooltip: "§R無法召喚盟友！§!"
 ###TFR
- battalion_upkeep_factor_tooltip: "$battalion_upkeep_factor$：$RIGHT|-=%1$"
- aircraft_upkeep_factor_tooltip: "$aircraft_upkeep_factor$：$RIGHT|-=%1$"
- ship_upkeep_factor_tooltip: "$ship_upkeep_factor$：$RIGHT|-=%1$"
- military_development_monthly_tooltip: "$military_development_monthly$：$RIGHT|+=%1$"
+ battalion_upkeep_factor_tooltip: "£GFX_division_upkeep 陆军维护费：$RIGHT|-=%1$"
+ aircraft_upkeep_factor_tooltip: "£air_efficiency_texticon 空军维护费：$RIGHT|-=%1$"
+ ship_upkeep_factor_tooltip: "£navy_anchor_texticon：$RIGHT|-=%1$"
+ military_development_monthly_tooltip: "£development 月度军事发展：$RIGHT|+=%1$"
  unit_upkeep_attrition_factor_tooltip: "$MODIFIER_UNIT_UPKEEP_ATTRITION_FACTOR$：$RIGHT|-=%1$"
  state_production_speed_energy_farm_factor_tooltip: "$modifier_state_production_speed_energy_farm_factor$：$RIGHT|+=%1$"
- business_value_factor_tooltip: "$business_value_factor$：$RIGHT|+=%1$"
- academic_development_var_tooltip: "£development 教育水平：[?academic_development_var|+1%]"
- academic_development_monthly_tooltip: "£development 月度教育水平增长：[?modifier@academic_development_monthly|=+1%]"
- poverty_development_monthly_tooltip: "£development 月度贫困率变化：[?modifier@poverty_development_monthly|=+1%]"
- society_development_monthly_tooltip: "£development 月度社会发展： [?modifier@society_development_monthly|=+1%]"
- personal_value_factor_tooltip: "$personal_value_factor$：$RIGHT|+=%1$"
+ business_value_factor_tooltip: "£GFX_dx_blue 商业产值系数：$RIGHT|+=%1$"
+ academic_development_var_tooltip: "£development 教育水平：$RIGHT|+=%1$"
+ academic_development_monthly_tooltip: "£development 月度教育水平增长：$RIGHT|+=%1$"
+ poverty_development_monthly_tooltip: "£development 月度贫困率变化：$RIGHT|+=%1$"
+ society_development_monthly_tooltip: "£development 月度社会发展：$RIGHT|+=%1$"
+ personal_value_factor_tooltip: "£GFX_dx_yellow 个人产值系数：$RIGHT|+=%1$"
  production_speed_office_park_factor_tooltip: "$modifier_production_speed_office_park_factor$：$RIGHT|+=%1$"
  production_speed_nuclear_reactor_factor_tooltip: "$modifier_production_speed_nuclear_reactor_factor$：$RIGHT|+=%1$"
 
@@ -2216,6 +2216,8 @@
  
  CHI_population_aging: "人口危機"
  CHI_population_aging_dynamic: "人口危機"
+ CHI_population_aging_dynamic: "東亞各國長期面臨少子化與高齡化的雙重壓力，經濟發展成熟、教育成本提高與生活負擔沉重，使出生率持續下滑。\n\n臺灣尤為嚴重——低生育率已維持多年，青年人口逐步萎縮，老年人口比例快速攀升，整體人口結構呈現倒金字塔化。\n\n勞動力縮減、社福負擔增加、可動員役齡人口下降人口逐漸下降..，種種問題衝擊著台灣社會，倘若我們再不重視問題，§R臺灣將墜入萬劫不復的深淵§!。"
+ 
  CHI_Population_Aging_decisions: "人口危機"
  CHI_Population_Aging_decisions_desc: "戰後帶來的人口增長曾是島嶼最堅強的後盾，但其造成的老齡化卻成為現在國家沉重的負擔。\n長期以來，教育成本提高、房價壓力沉重、工時增長與就業不穩定，使年輕世代對成家生育抱持遲疑。婚齡持續延後，生育率屢創新低，新生兒人數逐年下滑。當教室逐漸空置，產業開始面臨勞動力短缺，少子化已不再只是預估的數字，而是滲入整個社會的結構性問題。人口基礎的萎縮，直接影響我國未來數十年的國力。\n勞動人口減少，經濟成長動能放緩；扶養比上升，財政與社福負擔加重；兵源縮減，使國防體系承受大量壓力。當外部威脅節節攀高，內部人口卻在急速收縮，國家承擔風險的能力也隨之下降。如果無法建立更友善的育兒條件與穩定的生活預期，未來世代的規模將持續縮小，社會活力亦將逐步流失。\n§R這足以決定國家未來的命運。§!\n\n當前少子化影響:\n月度人口[?PA_monthly_population|=%+1] \n月度支出增長[?PA_expense_growth_factor|=%+1] \n月度通膨率變化[?PA_inflation_monthly|=%+1] \n個人產值係數[?PA_personal_value_factor|=%+1]\n私人消費係數[?PA_personal_expense_factor|=%+1] \n月度貧困率[?PA_poverty_development_monthly|=%+1] \n月度社會發展[?PA_society_development_monthly|=%+1]"
  CHI_expand_public_ltc: "擴建政府長照機構"

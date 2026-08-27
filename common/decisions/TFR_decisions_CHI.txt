@@ -6019,6 +6019,7 @@ CHI_Population_Aging_decisions = {
     modifier = { expense_growth_factor = 0.1 }
     remove_effect = {
       custom_effect_tooltip = { IDEA = CHI_population_aging_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { var_CHI_Population_Aging_decisions = 1 }
       add_to_variable = {
         PA_monthly_population = 0.1
         tooltip = monthly_population_tooltip
@@ -6033,6 +6034,7 @@ CHI_Population_Aging_decisions = {
     icon = GFX_CHI_increase_pensions
     cost = 50
     days_remove = 120
+    fire_only_once = yes
     modifier = { expense_growth_factor = 0.1 }
     complete_effect = {
       set_temp_variable = {
@@ -6043,6 +6045,7 @@ CHI_Population_Aging_decisions = {
     }
     remove_effect = {
       custom_effect_tooltip = { IDEA = CHI_population_aging_dynamic localization_key = modify_idea_tt }
+      add_to_variable = { var_CHI_Population_Aging_decisions = 1 }
       add_to_variable = {
         PA_poverty_development_monthly = 0.01
         tooltip = poverty_development_monthly_tooltip
