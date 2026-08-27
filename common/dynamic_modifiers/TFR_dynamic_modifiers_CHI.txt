@@ -183,30 +183,32 @@ CHI_asia_pacific_armament = {
   enable = {
     tag = CHI
   }
-  army_morale_factor = 0.05
-  org_loss_when_moving = 0.1
+  local_org_regain = 0.05
+  org_loss_when_moving = -0.1
   army_speed_factor = 0.05
-  attrition = -0.1
+  local_attrition = -0.1
   supply_consumption_factor = -0.1
 }
 
 CHI_waves_of_nujiang = {
   # icon = GFX_modifiers_CHI_waves_of_nujiang
   enable = { tag = CHI }
-  terrain_penalty_reduction = -0.15
-  acclimatization_hot_climate_gain_factor = -0.2
+  army_attack_factor = 0.1
+  local_attrition = -0.15
 }
 
 CHI_eastern_terrain_mapping = {
   # icon = GFX_modifiers_CHI_waves_of_nujiang
   enable = { tag = CHI }
-  terrain_penalty_reduction = -0.25
+  army_speed_factor = 0.1
+  army_attack_factor = 0.1
 }
 
 CHI_northern_joint_command = {
   # icon = GFX_modifiers_CHI_northern_joint_command
   enable = { tag = CHI }
-  air_mission_efficiency = 0.2
+  army_attack_factor = 0.05
+  army_defence_factor = 0.05
 }
 
 

@@ -2738,28 +2738,28 @@ focus_tree = {
     }
     relative_position_id = CHI_thus_spoke_thucydides
     completion_reward = {
-      1424 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1217 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      595  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1218 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1216 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1431 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1430 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1207 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1206 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      592  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      728  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1395 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      599  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1191 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      593  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      594  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1203 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1204 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      1205 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      591  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      326  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
-      729  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping }}
+      1424 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1217 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      595  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1218 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1216 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1431 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1430 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1207 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1206 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      592  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      728  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1395 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      599  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1191 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      593  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      594  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1203 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1204 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1205 = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      591  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      326  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      729  = { add_dynamic_modifier = { modifier = CHI_eastern_terrain_mapping } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
     }
   }
   focus = {
@@ -2801,7 +2801,7 @@ focus_tree = {
     completion_reward = {
       add_timed_idea = {
         idea = CHI_operation_national_glory_idea
-        time = 90
+        days = 90
       }
       unlock_decision_tooltip = CHI_opreation_haiwei
     }
@@ -2822,27 +2822,27 @@ focus_tree = {
     }
     relative_position_id = CHI_thus_spoke_thucydides
     completion_reward = {
-      424  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      714  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      717  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      1416 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      1415 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      1414 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      1417 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      1413 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      1167 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      715  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      328  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      716  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      1394 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
-      1425 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command }}
+      424  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      714  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      717  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1416 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1415 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1414 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1417 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1413 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1167 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      715  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      328  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      716  = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1394 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1425 = { add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
       every_state = {
         limit = {is_core_of = KOR}
-        add_dynamic_modifier = { modifier = CHI_northern_joint_command }
+        add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }
       }
       every_state = {
         limit = {is_core_of = PRK}
-        add_dynamic_modifier = { modifier = CHI_northern_joint_command }
+        add_dynamic_modifier = { modifier = CHI_northern_joint_command } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }
       }
     }
   }
@@ -3084,16 +3084,16 @@ focus_tree = {
     }
     relative_position_id = CHI_rekindle_confidence
     completion_reward = {
-      1196 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
-      1192 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
-      1195 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
-      325 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
-      601 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
-      1168 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
-      1190 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
-      605 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
-      1188 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}
-      1189 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang }}      
+      1196 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1192 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1195 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      325 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      601 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1168 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1190 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      605 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1188 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}
+      1189 = { add_dynamic_modifier = { modifier = CHI_waves_of_nujiang } remove_dynamic_modifier = { modifier = PRC_unplanned_offensive }}      
     }
   }
   focus = {
