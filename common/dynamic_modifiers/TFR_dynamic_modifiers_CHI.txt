@@ -310,8 +310,7 @@ CHI_ROC_army_dynamic = {
 	no_supply_grace                    = ROC_no_supply_grace                    # 攜行補給（小時）
 	supply_node_range                  = ROC_supply_node_range                  # 補給節點輻射範圍修正
   equipment_capture                  = ROC_equipment_capture
-
-
+  army_fuel_consumption_factor       = ROC_army_fuel_consumption_factor
 
 	# ==========================================
 	# 人力、維護與軍隊訓練 (Manpower, Upkeep & Training)
@@ -394,6 +393,7 @@ CHI_ROC_army_dynamic_2 = {
 	no_supply_grace                    = ROC_no_supply_grace                    # 攜行補給（小時）
 	supply_node_range                  = ROC_supply_node_range                  # 補給節點輻射範圍修正
   equipment_capture                  = ROC_equipment_capture
+  army_fuel_consumption_factor       = ROC_army_fuel_consumption_factor
 
 	# ==========================================
 	# 人力、維護與軍隊訓練 (Manpower, Upkeep & Training)
@@ -476,6 +476,7 @@ CHI_ROC_army_dynamic_3 = {
 	no_supply_grace                    = ROC_no_supply_grace                    # 攜行補給（小時）
 	supply_node_range                  = ROC_supply_node_range                  # 補給節點輻射範圍修正
   equipment_capture                  = ROC_equipment_capture
+  army_fuel_consumption_factor       = ROC_army_fuel_consumption_factor
 
 
 
@@ -535,6 +536,7 @@ CHI_ROC_airforce_dynamic = {
   static_anti_air_damage_factor      = ROC_static_anti_air_damage_factor
   air_strategic_bomber_bombing_factor = ROC_air_strategic_bomber_bombing_factor 
   air_strategic_bomber_night_penalty  = ROC_air_strategic_bomber_night_penalty
+  air_fuel_consumption_factor = ROC_air_fuel_consumption_factor
 }
 
 # 空軍2
@@ -566,6 +568,7 @@ CHI_ROC_airforce_dynamic_2 = {
   static_anti_air_damage_factor      = ROC_static_anti_air_damage_factor
   air_strategic_bomber_bombing_factor = ROC_air_strategic_bomber_bombing_factor 
   air_strategic_bomber_night_penalty  = ROC_air_strategic_bomber_night_penalty
+  air_fuel_consumption_factor = ROC_air_fuel_consumption_factor
 }
 
 # 海軍
@@ -586,6 +589,7 @@ CHI_ROC_navy_dynamic = {
 	naval_doctrine_cost_factor          = ROC_naval_doctrine_cost_factor          # 海軍學說花費修正
   shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
   shore_bombardment_bonus            = ROC_shore_bombardment_bonus
+  navy_fuel_consumption_factor = ROC_navy_fuel_consumption_factor
 }
 
 # 海軍2
@@ -606,6 +610,7 @@ CHI_ROC_navy_dynamic_2 = {
 	naval_doctrine_cost_factor          = ROC_naval_doctrine_cost_factor          # 海軍學說花費修正
   shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
   shore_bombardment_bonus            = ROC_shore_bombardment_bonus
+  navy_fuel_consumption_factor = ROC_navy_fuel_consumption_factor
 }
 
 # 海軍3
@@ -626,6 +631,7 @@ CHI_ROC_navy_dynamic_3 = {
 	naval_doctrine_cost_factor          = ROC_naval_doctrine_cost_factor          # 海軍學說花費修正
   shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
   shore_bombardment_bonus            = ROC_shore_bombardment_bonus
+  navy_fuel_consumption_factor = ROC_navy_fuel_consumption_factor
 }
 
 # 立法院
@@ -698,6 +704,7 @@ CHI_Economy = {
   production_factory_max_efficiency_factor = CHI_Economy_production_factory_max_efficiency_factor
   production_speed_rail_way_factor = CHI_Economy_production_speed_rail_way_factor
   production_speed_infrastructure_factor = CHI_Economy_production_speed_infrastructure_factor
+  factory_energy_consumption = CHI_Economy_factory_energy_consumption
 }
 
 CHI_Economy_cn = {
@@ -728,6 +735,7 @@ CHI_Economy_cn = {
   production_factory_max_efficiency_factor = CHI_Economy_production_factory_max_efficiency_factor
   production_speed_rail_way_factor = CHI_Economy_production_speed_rail_way_factor
   production_speed_infrastructure_factor = CHI_Economy_production_speed_infrastructure_factor
+  factory_energy_consumption = CHI_Economy_factory_energy_consumption
 }
 
 ## 負面Buff
@@ -925,12 +933,6 @@ CHI_success_everywhere = {
   local_resources_aluminium_factor = CHI_SE_local_resources_aluminium_factor
   local_resources_tungsten_factor = CHI_SE_local_resources_tungsten_factor
   energy_gain_factor = CHI_SE_energy_gain_factor
-  army_fuel_consumption_factor = CHI_SE_army_fuel_consumption_factor
-  navy_fuel_consumption_factor = CHI_SE_navy_fuel_consumption_factor
-  air_fuel_consumption_factor = CHI_SE_air_fuel_consumption_factor
-  factory_energy_consumption = CHI_SE_factory_energy_consumption
-  production_lack_of_resource_penalty_factor = CHI_SE_production_lack_of_resource_penalty_factor
-  min_export_factor = CHI_SE_min_export_factor
 }
 #破曉
 CHI_dawn = {

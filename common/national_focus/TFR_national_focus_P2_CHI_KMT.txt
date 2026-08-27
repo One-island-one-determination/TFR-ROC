@@ -609,12 +609,15 @@ focus_tree = {
       set_country_flag = CHI_wartime_success_everywhere_flag
       custom_effect_tooltip = CHI_wartime_success_everywhere
       effect_tooltip = {
-        add_to_variable = { CHI_SE_army_fuel_consumption_factor = -0.25 tooltip = army_fuel_consumption_factor_tooltip}
-        add_to_variable = { CHI_SE_navy_fuel_consumption_factor = -0.25 tooltip = navy_fuel_consumption_factor_tooltip}
-        add_to_variable = { CHI_SE_air_fuel_consumption_factor = -0.25 tooltip = air_fuel_consumption_factor_tooltip}
-        add_to_variable = { CHI_SE_factory_energy_consumption = -0.15 tooltip = factory_energy_consumption_tooltip }
-        add_to_variable = { CHI_SE_production_lack_of_resource_penalty_factor = -0.15 tooltip = lack_of_resource_penalty_factor_tooltip}
-        add_to_variable = { CHI_SE_min_export_factor = -0.2 tooltip = min_export_factor_tooltip }
+        custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+        add_to_variable = { ROC_army_fuel_consumption_factor = -0.25 tooltip = army_fuel_consumption_factor_tooltip}
+        custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
+        add_to_variable = { ROC_navy_fuel_consumption_factor = -0.25 tooltip = navy_fuel_consumption_factor_tooltip}
+        custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+        add_to_variable = { ROC_air_fuel_consumption_factor = -0.25 tooltip = air_fuel_consumption_factor_tooltip}
+        custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+        add_to_variable = { CHI_Economy_factory_energy_consumption = -0.15 tooltip = factory_energy_consumption_tooltip }
+        add_to_variable = { CHI_Economy_production_lack_of_resource_penalty_factor = -0.15 tooltip = lack_of_resource_penalty_factor_tooltip}
       }
     }
   }
