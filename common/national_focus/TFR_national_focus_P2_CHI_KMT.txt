@@ -545,7 +545,7 @@ focus_tree = {
     relative_position_id = CHI_efficient_government
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_success_everywhere localization_key = modify_idea_tt }
-      add_to_variable = { CHI_SE_energy_gain_factor = 2 tooltip = energy_gain_factor_tooltip}
+      add_to_variable = { CHI_SE_energy_gain_factor = 0.1 tooltip = energy_gain_factor_tooltip}
       add_to_variable = { CHI_SE_local_resources_factor  = 0.1 tooltip = local_resources_factor_tooltip}
       add_to_variable = { CHI_SE_local_resources_steel_factor = 0.1 tooltip = local_resources_steel_factor_tooltip }
       add_to_variable = { CHI_SE_local_resources_chromium_factor = 0.1 tooltip = local_resources_chromium_factor_tooltip }
@@ -1090,13 +1090,13 @@ focus_tree = {
     relative_position_id = CHI_finish_them
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_dawn localization_key = modify_idea_tt }
-      add_to_variable = { CHI_D_surrender_limit = 0.5 }
-      add_to_variable = { CHI_D_max_command_power = 10 }
-      add_to_variable = { CHI_D_political_advisor_cost_factor = -0.05 }
-      add_to_variable = { CHI_D_high_command_cost_factor = -0.05 }
-      add_to_variable = { CHI_D_conscription = 0.03 }
-      add_to_variable = { CHI_D_army_core_attack_factor = 0.1 }
-      add_to_variable = { CHI_D_army_core_defence_factor = 0.1 }
+      add_to_variable = { CHI_D_surrender_limit = 0.5 tooltip = surrender_limit_tooltip }
+      add_to_variable = { CHI_D_max_command_power = 10 tooltip = max_command_power_tooltip}
+      add_to_variable = { CHI_D_political_advisor_cost_factor = -0.05 tooltip = political_advisor_cost_factor_tooltip }
+      add_to_variable = { CHI_D_high_command_cost_factor = -0.05 tooltip = high_command_cost_tooltip }
+      add_to_variable = { CHI_D_conscription = 0.03 tooltip = conscription_tooltip }
+      add_to_variable = { CHI_D_army_core_attack_factor = 0.1 tooltip = army_core_attack_factor_tooltip }
+      add_to_variable = { CHI_D_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tooltip }
     }
   }
   focus = {
@@ -2322,6 +2322,9 @@ focus_tree = {
       focus = CHI_need_of_talent
     }
     relative_position_id = CHI_need_of_talent
+    completion_reward = {
+      custom_effect_tooltip = CHI_strengthen_anti_corruption_measures_tt
+    }
   }
   focus = {
     id = CHI_forming_air_force_political_warfare_command
