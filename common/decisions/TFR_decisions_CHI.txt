@@ -1185,9 +1185,11 @@ CHI_PRC_Infiltration_decisions = {
       tag = CHI
     }
     available = {
-      NOT = { has_country_flag = CHI_taiwan_war_end }
+      has_country_flag = CHI_taiwan_war_end
     }
-    visible = { NOT = { has_country_flag = CHI_taiwan_war_end }}
+    visible = {
+      always = no
+    }
     priority = 200
     is_good = no
     selectable_mission = no
@@ -1199,10 +1201,9 @@ CHI_PRC_Infiltration_decisions = {
       }
       PRC_Infiltration_change = yes
       if = {
-        limit = {NOT = { has_country_flag = CHI_taiwan_war_end }}
+        limit = { NOT = { has_country_flag = CHI_taiwan_war_end } }
         activate_mission = PRC_infiltration_becoming_serious_mission
       }
-      
     }
   }
   # 在軍隊中搜索通敵者
@@ -5030,14 +5031,14 @@ CHI_army_decisions = {
 
     visible = {
       original_tag = CHI
-      OR = { 
+      OR = {
         is_debug = yes
-        has_completed_focus = CHI_modern_whampoa 
+        has_completed_focus = CHI_modern_whampoa
       }
     }
 
     available = {
-      OR = { 
+      OR = {
         is_debug = yes
         has_country_flag = CHI_project_ROCA_reform_4_completed
       }
@@ -5507,7 +5508,12 @@ CHI_Intervene_the_American_Civil_War_category = {
     allowed = {
       original_tag = CHI
     }
-    visible = { has_global_flag = USA_american_civil_war_global }
+    visible = {
+      has_global_flag = USA_american_civil_war_global
+      NOT = {
+        has_country_flag = CHI_support_USC
+      }
+    }
     available = {
       has_global_flag = USA_american_civil_war_global
       has_country_flag = Intervene_American_Civil_War_flag
@@ -5705,7 +5711,12 @@ CHI_Intervene_the_American_Civil_War_category = {
     allowed = {
       original_tag = CHI
     }
-    visible = { has_global_flag = USA_american_civil_war_global }
+    visible = {
+      has_global_flag = USA_american_civil_war_global
+      NOT = {
+        has_country_flag = CHI_support_USC
+      }
+    }
     available = {
       has_global_flag = USA_american_civil_war_global
       has_country_flag = Intervene_American_Civil_War_flag
@@ -6158,7 +6169,7 @@ CHI_Population_Aging_decisions = {
       custom_effect_tooltip = CHI_Population_Aging_end_tooltip
     }
   }
-  
+
 }
 
 # #中美洲內戰
