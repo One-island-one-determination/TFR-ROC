@@ -2459,6 +2459,9 @@ focus_tree = {
       focus = CHI_american_fighters_reverse_enginnering
     }
     relative_position_id = CHI_Air_force_special_allowance
+    completion_reward = {
+      unlock_decision_tooltip = CHI_project_Zhi_Hang
+    }
   }
   focus = {
     id = CHI_sino_japanese_fighter_cooperation_program
@@ -2476,6 +2479,9 @@ focus_tree = {
     }
     prerequisite = {
       focus = CHI_Air_force_special_allowance
+    }
+    completion_reward = {
+      unlock_decision_tooltip = CHI_project_IPS67
     }
     relative_position_id = CHI_american_fighters_reverse_enginnering
   }
