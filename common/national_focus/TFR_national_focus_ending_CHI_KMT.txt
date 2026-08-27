@@ -42,6 +42,10 @@ focus_tree = {
           limit = { is_subject = yes }
           overlord = { end_puppet = ROOT }
         }
+        add_to_variable = { CHI_SE_fuel_gain_factor = -0.25 tooltip = fuel_gain_factor_tooltip}
+        add_to_variable = { CHI_SE_factory_energy_consumption = -0.15 tooltip = factory_energy_consumption_tooltip }
+        add_to_variable = { CHI_SE_production_lack_of_resource_penalty_factor = -0.15 tooltip = lack_of_resource_penalty_factor_tooltip}
+        add_to_variable = { CHI_SE_min_export_factor = -0.2 tooltip = min_export_factor_tooltip }
       }
     }
   }
@@ -261,6 +265,12 @@ focus_tree = {
       country_event = { id = CHI.H4.7 }
       custom_effect_tooltip = unrestricted_diplomacy_tt
 			set_country_flag = unrestricted_diplomacy_flag
+      hidden_effect = {
+        add_to_variable = { CHI_SE_fuel_gain_factor = 0.25 tooltip = fuel_gain_factor_tooltip}
+        add_to_variable = { CHI_SE_factory_energy_consumption = 0.15 tooltip = factory_energy_consumption_tooltip }
+        add_to_variable = { CHI_SE_production_lack_of_resource_penalty_factor = 0.15 tooltip = lack_of_resource_penalty_factor_tooltip}
+        add_to_variable = { CHI_SE_min_export_factor = 0.2 tooltip = min_export_factor_tooltip }
+      }
     }
   }
   focus = {

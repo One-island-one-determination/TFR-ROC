@@ -213,7 +213,7 @@ PRC_Infiltration_change = {
   }
   if = {
     limit = {
-      check_variable = { CHI_PRC_Infiltration_progress < 25 }
+      check_variable = { CHI_PRC_Infiltration_progress < 10 }
     }
     hidden_effect = {
       remove_ideas = CHI_PRC_infiltration_low

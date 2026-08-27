@@ -17,7 +17,11 @@ country_event = {
       remove_dynamic_modifier = { modifier = CHI_ROC_navy_dynamic_2 }
       add_dynamic_modifier = { modifier = CHI_ROC_army_dynamic_3 }
       add_dynamic_modifier = { modifier = CHI_ROC_navy_dynamic_3 }
-    }
+      add_to_variable = { CHI_SE_fuel_gain_factor = 0.25 tooltip = fuel_gain_factor_tooltip}
+      add_to_variable = { CHI_SE_factory_energy_consumption = 0.15 tooltip = factory_energy_consumption_tooltip }
+      add_to_variable = { CHI_SE_production_lack_of_resource_penalty_factor = 0.15 tooltip = lack_of_resource_penalty_factor_tooltip}
+      add_to_variable = { CHI_SE_min_export_factor = 0.2 tooltip = min_export_factor_tooltip }
+  }
   }
   option = {
     name = CHI.H4.1.a

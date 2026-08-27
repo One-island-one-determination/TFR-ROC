@@ -606,11 +606,14 @@ focus_tree = {
     }
     relative_position_id = CHI_mineral_exporation
     completion_reward = {
+      set_country_flag = CHI_wartime_success_everywhere_flag
       custom_effect_tooltip = CHI_wartime_success_everywhere
-      add_to_variable = { CHI_SEW_fuel_gain_factor = -0.25 }
-      add_to_variable = { CHI_SEW_factory_energy_consumption = -0.15 }
-      add_to_variable = { CHI_SEW_production_lack_of_resource_penalty_factor = -0.15 }
-      add_to_variable = { CHI_SEW_min_export_factor = -0.2 tooltip = min_export_factor_tooltip}
+      effect_tooltip = {
+        add_to_variable = { CHI_SE_fuel_gain_factor = -0.25 tooltip = fuel_gain_factor_tooltip}
+        add_to_variable = { CHI_SE_factory_energy_consumption = -0.15 tooltip = factory_energy_consumption_tooltip }
+        add_to_variable = { CHI_SE_production_lack_of_resource_penalty_factor = -0.15 tooltip = lack_of_resource_penalty_factor_tooltip}
+        add_to_variable = { CHI_SE_min_export_factor = -0.2 tooltip = min_export_factor_tooltip }
+      }
     }
   }
   focus = {
@@ -2377,7 +2380,8 @@ focus_tree = {
       add_tech_bonus = {
         name = CHI_american_fighters_reverse_enginnering
         ahead_reduction = 1
-        technology = air_equipment
+        uses = 1
+        category = air_equipment
       }
       add_tech_bonus = {
         name = CHI_american_fighters_reverse_enginnering

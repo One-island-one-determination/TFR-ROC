@@ -1185,8 +1185,9 @@ CHI_PRC_Infiltration_decisions = {
       tag = CHI
     }
     available = {
-      NOT = { has_global_flag = PRC_taiwan_war_lost }
+      NOT = { has_global_flag = CHI_taiwan_war_end }
     }
+    visible = { NOT = { has_global_flag = CHI_taiwan_war_end }}
     priority = 200
     is_good = no
     selectable_mission = no
@@ -1198,7 +1199,7 @@ CHI_PRC_Infiltration_decisions = {
       }
       PRC_Infiltration_change = yes
       if = {
-        limit = {NOT = { has_global_flag = PRC_taiwan_war_lost }}
+        limit = {NOT = { has_global_flag = CHI_taiwan_war_end }}
         activate_mission = PRC_infiltration_becoming_serious_mission
       }
       

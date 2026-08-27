@@ -909,41 +909,28 @@ country_event = {
       }
       remove_decision = PRC_infiltration_becoming_serious_mission
       remove_mission = PRC_infiltration_becoming_serious_mission
-      remove_ideas = CHI_repairs_under_fire_idea
-      remove_ideas = CHI_repairs_under_fire_idea2
-      remove_ideas = CHI_repairs_under_fire_idea3
-      remove_ideas = CHI_hold_the_line_idea
-      remove_ideas = CHI_wolfpack_tactics_idea
-      remove_ideas = CHI_phantom_legions_idea
-      remove_ideas = CHI_mobilize_balckbear
-      remove_ideas = CHI_mobilize_balckbear_1
-      remove_ideas = CHI_united_as_one_idea
-      remove_ideas = CHI_Taiwan_Bravery_2
-      remove_ideas = CHI_Taiwan_Bravery
-      remove_ideas = CHI_pdto_fuel_shipments_idea
-      remove_ideas = CHI_last_stand_1_idea
-      remove_ideas = CHI_last_stand_idea
-      remove_ideas = CHI_chinese_blockade
-      remove_ideas = CHI_thenationisinperil_1
-      remove_ideas = CHI_STCC_idea
-      remove_ideas = CHI_Coordinating_Allied_Bombing_Operations_idea
-      remove_ideas = CHI_thenationisinperil_2
-      remove_ideas = CHI_last_stand_1_idea
-      remove_ideas = CHI_AD_idea_1
-      remove_ideas = CHI_AD_idea_2
-      remove_ideas = CHI_MPFTMO_idea
-      remove_ideas = CHI_Taiwan_the_Bravest_ideas_2
-      remove_ideas = CHI_Taiwan_the_Bravest_ideas_1
-      remove_ideas = CHI_Onelifeonthesameisland_idea
-      remove_ideas = CHI_PRC_infiltration_low
-      remove_ideas = CHI_PRC_infiltration_middle
-      remove_ideas = CHI_PRC_infiltration_high
-      remove_ideas = CHI_People_surrender
-      remove_ideas = CHI_Information_transparency
-      remove_ideas = CHI_prc_embargo_idea0
-      remove_ideas = CHI_prc_embargo_idea1
-      remove_ideas = CHI_prc_embargo_idea2
-      remove_ideas = CHI_prc_embargo_idea3
+      set_country_flag = CHI_taiwan_war_end
+      remove_ideas = { 
+        CHI_repairs_under_fire_idea CHI_repairs_under_fire_idea2 CHI_repairs_under_fire_idea3
+        CHI_hold_the_line_idea
+        CHI_wolfpack_tactics_idea
+        CHI_phantom_legions_idea
+        CHI_mobilize_balckbear CHI_mobilize_balckbear_1
+        CHI_united_as_one_idea 
+        CHI_Taiwan_Bravery CHI_Taiwan_Bravery_2
+        CHI_pdto_fuel_shipments_idea 
+        CHI_last_stand_idea CHI_last_stand_1_idea
+        CHI_chinese_blockade
+        CHI_STCC_idea
+        CHI_Coordinating_Allied_Bombing_Operations_idea
+        CHI_thenationisinperil_1 CHI_thenationisinperil_2
+        CHI_AD_idea_1 CHI_AD_idea_2
+        CHI_MPFTMO_idea
+        CHI_Taiwan_the_Bravest_ideas_2 CHI_Taiwan_the_Bravest_ideas_1
+        CHI_Onelifeonthesameisland_idea
+        CHI_PRC_infiltration_low CHI_PRC_infiltration_middle CHI_PRC_infiltration_high CHI_People_surrender CHI_Information_transparency
+        CHI_prc_embargo_idea0  CHI_prc_embargo_idea1 CHI_prc_embargo_idea2 CHI_prc_embargo_idea3
+      }
       remove_dynamic_modifier = { modifier = CHI_PRC_Infiltration }
       remove_dynamic_modifier = { modifier = CHI_NSM_dynamic }
       remove_dynamic_modifier = { modifier = CHI_Defend_Taiwan_dynamic }
@@ -1587,6 +1574,10 @@ country_event = {
       set_country_flag = HKY_2028_flg
       complete_national_focus = CHI_duty_of_the_helmsman
       focus_unlock = yes
+      add_to_variable = { CHI_SE_fuel_gain_factor = -0.25 tooltip = fuel_gain_factor_tooltip}
+      add_to_variable = { CHI_SE_factory_energy_consumption = -0.15 tooltip = factory_energy_consumption_tooltip }
+      add_to_variable = { CHI_SE_production_lack_of_resource_penalty_factor = -0.15 tooltip = lack_of_resource_penalty_factor_tooltip}
+      add_to_variable = { CHI_SE_min_export_factor = -0.2 tooltip = min_export_factor_tooltip }
     }
   }
   option = {
