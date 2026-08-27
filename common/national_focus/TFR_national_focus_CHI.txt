@@ -1232,6 +1232,7 @@ focus_tree = {
       focus = Find_alternative_sources
     }
     completion_reward = {
+      set_country_flag = CHI_saudi_civil_war_flag
       country_event = { id = CHI.99 }
       add_political_power = -50
       unlock_decision_category_tooltip = CHI_Aid_Arab_Republics_category

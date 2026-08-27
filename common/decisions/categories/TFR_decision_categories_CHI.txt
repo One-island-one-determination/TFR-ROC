@@ -51,7 +51,7 @@ CHI_Aid_Arab_Republics_category = {
   }
   visible = {
     OR = {
-      has_global_flag = saudi_civil_war_flag
+      has_country_flag = CHI_saudi_civil_war_flag
       is_debug = yes
     }
   }
@@ -65,7 +65,7 @@ CHI_Intervene_the_American_Civil_War_category = {
   }
   visible = {
     OR = {
-      has_global_flag = USA_american_civil_war_global
+      has_country_flag = Intervene_American_Civil_War_flag
       is_debug = yes
     }
   }
