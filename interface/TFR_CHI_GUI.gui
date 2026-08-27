@@ -1,206 +1,213 @@
 guitypes = {
-	containerwindowtype = {
-		name = "CHI_vaccine_gui"
-		size = { width = 100%% height = 100 }
+  containerwindowtype = {
+    name = "CHI_vaccine_gui"
+    size = { width = 100%% height = 100 }
 
-		# 進度條容器
-		containerwindowtype = {
-			name = "progbar_container"
-			position = { x = 20 y = 20 }
+    # 進度條容器
+    containerwindowtype = {
+      name = "progbar_container"
+      position = { x = 20 y = 20 }
 
-			# 進度條本體
-			icontype = {
-				name = "support_progbar_vaccine"
-				quadtexturesprite = "GFX_PRCref_support_progress_red"
-				position = { x = 8 y = 7 }
-			}
-			icontype = {
-				name = "progbar_frame"
-				spritetype = "GFX_PRCref_progress_frame"
-				alwaystransparent = yes
-			}
+      # 進度條本體
+      icontype = {
+        name = "support_progbar_vaccine"
+        quadtexturesprite = "GFX_PRCref_support_progress_red"
+        position = { x = 8 y = 7 }
+      }
+      icontype = {
+        name = "progbar_frame"
+        spritetype = "GFX_PRCref_progress_frame"
+        alwaystransparent = yes
+      }
 
-			# 百分比文字
-			instantTextBoxType = {
-				name = "support_reforms_text"
-				text = "[?CHI:CHI_vaccine_progress]%"
-				position = { x = 395 y = 10 }
-				font = "VCR02_24"
-				format = center
-				maxwidth = 110
-				maxheight = 30
-				text_color_code = C
-			}
-		}
+      # 百分比文字
+      instantTextBoxType = {
+        name = "support_reforms_text"
+        text = "[?CHI:CHI_vaccine_progress]%"
+        position = { x = 395 y = 10 }
+        font = "VCR02_24"
+        format = center
+        maxwidth = 110
+        maxheight = 30
+        text_color_code = C
+      }
+    }
 
-		# 標題
-		instantTextBoxType = {
-			name = "Title"
-			position = { x = 30 y = -10 }
-			text = CHI_vaccine_tt
-			font = "VCR02_24"
-			maxwidth = 500
-			#maxheight = 36
-			format = left
-		}
-
-
-		instantTextBoxType = {
-			name = "description"
-			position = { x = 0 y = 75 }
-			text = CHI_vaccine_dece
-			font = "VCR02_12"
-			maxwidth = 482
-			#maxheight = 36
-			format = center
-		}
-
-		instantTextBoxType = {
-			name = "vaccine"
-			position = { x = 0 y = -5 }
-			text = CHI_vaccine_number
-			font = "VCR02_14"
-			maxwidth = 482
-			#maxheight = 36
-			format = center
-			pdx_tooltip = CHI_vaccine_progbar_tt
-		}
-	}
-
-	containerwindowtype = {
-		name = "PRC_Infiltration_gui"
-		size = { width = 100%% height = 105 }
-
-		# 進度條容器
-		containerwindowtype = {
-			name = "progbar_container"
-			position = { x = 20 y = 20 }
-
-			# 進度條本體
-			icontype = {
-				name = "support_progbar_vaccine"
-				quadtexturesprite = "GFX_CHIinf_support_progress"
-				position = { x = 8 y = 7 }
-			}
-			icontype = {
-				name = "progbar_frame"
-				spritetype = "GFX_CHIinf_progress_frame"
-				alwaystransparent = yes
-			}
-
-			# 百分比文字
-			instantTextBoxType = {
-				name = "support_infiltration_text"
-				text = "[?CHI:CHI_PRC_Infiltration_progress]%"
-				position = { x = 395 y = 10 }
-				font = "VCR02_24"
-				format = center
-				maxwidth = 110
-				maxheight = 30
-				text_color_code = R
-			}
-		}
-
-		# 標題
-		instantTextBoxType = {
-			name = "Title"
-			position = { x = 30 y = -10 }
-			text = CHI_Infiltration_tt
-			font = "VCR02_24"
-			maxwidth = 500
-			#maxheight = 36
-			format = center
-			format = left
-		}
+    # 標題
+    instantTextBoxType = {
+      name = "Title"
+      position = { x = 30 y = -10 }
+      text = CHI_vaccine_tt
+      font = "VCR02_24"
+      maxwidth = 500
+      #maxheight = 36
+      format = left
+    }
 
 
-		instantTextBoxType = {
-			name = "description"
-			position = { x = 30 y = 80 }
-			text = CHI_Infiltration_dece
-			font = "VCR02_12"
-			maxwidth = 482
-			#maxheight = 36
-			format = left
-		}
+    instantTextBoxType = {
+      name = "description"
+      position = { x = 0 y = 75 }
+      text = CHI_vaccine_dece
+      font = "VCR02_12"
+      maxwidth = 482
+      #maxheight = 36
+      format = center
+    }
 
-		instantTextBoxType = {
-			name = "situation"
-			position = { x = 0 y = -5 }
-			text = CHI_Infiltration_situation
-			font = "VCR02_14"
-			maxwidth = 482
-			#maxheight = 36
-			format = right
-			pdx_tooltip = CHI_Infiltration_dece_tt
-		}
-	}
-	
-	containerwindowtype = {
-		name = "CHI_Military_purchasing_interface"
-		size = { width = 100%% height = 530 }
-		
-		containerWindowType = {
-			name = "E"
-			position = { x = 245 y = 265 }
+    instantTextBoxType = {
+      name = "vaccine"
+      position = { x = 0 y = -5 }
+      text = CHI_vaccine_number
+      font = "VCR02_14"
+      maxwidth = 482
+      #maxheight = 36
+      format = center
+      pdx_tooltip = CHI_vaccine_progbar_tt
+    }
+  }
 
-			icontype = {
-				name = "GFX_base"
-				quadtexturesprite = "GFX_MP_base"
-				position = { x = 0 y = 0 }
-				centerposition = yes				
-			}
+  containerwindowtype = {
+    name = "PRC_Infiltration_gui"
+    size = { width = 100%% height = 105 }
 
-			buttonType = {
-				name = "KORBUTTON"
-				position = { x = 70 y = -130 }
-				quadTextureSprite = "GFX_KORBUTTON"
-				frame = 1
-				pdx_tooltip = "KORBUTTON_tt"
-			}
-			buttonType = {
-				name = "JAPBUTTON"
-				position = { x = 70 y = -20 }
-				quadTextureSprite = "GFX_JAPBUTTON"
-				frame = 1
-				pdx_tooltip = "JAPBUTTON_tt"
-			}
-			buttonType = {
-				name = "USABUTTON"
-				position = { x = 70 y = 90 }
-				quadTextureSprite = "GFX_USABUTTON"
-				frame = 1
-				pdx_tooltip = "USABUTTON_tt"
-			}
-			buttonType = {
-				name = "NCSIST"
-				position = { x = 70 y = 200 }
-				quadTextureSprite = "GFX_NCSIST"
-				frame = 1
-				pdx_tooltip = "NCSIST_tt"
-			}
-			buttonType = {
-				name = "UGC"
-				position = { x = 110 y = 200 }
-				quadTextureSprite = "GFX_UGC"
-				frame = 1
-				pdx_tooltip = "UGC_tt"
-			}
-			buttonType = {
-				name = "AIDC"
-				position = { x = 150 y = 200 }
-				quadTextureSprite = "GFX_AIDC"
-				frame = 1
-				pdx_tooltip = "AIDC_tt"
-			}
-			buttonType = {
-				name = "CSBC"
-				position = { x = 190 y = 200 }
-				quadTextureSprite = "GFX_CSBC"
-				frame = 1
-				pdx_tooltip = "CSBC_tt"
-			}
-		}
-	}
+    # 進度條容器
+    containerwindowtype = {
+      name = "progbar_container"
+      position = { x = 20 y = 20 }
+
+      # 進度條本體
+      icontype = {
+        name = "support_progbar_vaccine"
+        quadtexturesprite = "GFX_CHIinf_support_progress"
+        position = { x = 8 y = 7 }
+      }
+      icontype = {
+        name = "progbar_frame"
+        spritetype = "GFX_CHIinf_progress_frame"
+        alwaystransparent = yes
+      }
+
+      # 百分比文字
+      instantTextBoxType = {
+        name = "support_infiltration_text"
+        text = "[?CHI:CHI_PRC_Infiltration_progress]%"
+        position = { x = 395 y = 10 }
+        font = "VCR02_24"
+        format = center
+        maxwidth = 110
+        maxheight = 30
+        text_color_code = R
+      }
+    }
+
+    # 標題
+    instantTextBoxType = {
+      name = "Title"
+      position = { x = 30 y = -10 }
+      text = CHI_Infiltration_tt
+      font = "VCR02_24"
+      maxwidth = 500
+      #maxheight = 36
+      format = center
+      format = left
+    }
+
+
+    instantTextBoxType = {
+      name = "description"
+      position = { x = 30 y = 80 }
+      text = CHI_Infiltration_dece
+      font = "VCR02_12"
+      maxwidth = 482
+      #maxheight = 36
+      format = left
+    }
+
+    instantTextBoxType = {
+      name = "situation"
+      position = { x = 0 y = -5 }
+      text = CHI_Infiltration_situation
+      font = "VCR02_14"
+      maxwidth = 482
+      #maxheight = 36
+      format = right
+      pdx_tooltip = CHI_Infiltration_dece_tt
+    }
+  }
+
+  containerwindowtype = {
+    name = "CHI_Military_purchasing_interface"
+    size = { width = 100%% height = 530 }
+
+    containerWindowType = {
+      name = "E"
+      position = { x = 245 y = 265 }
+
+      icontype = {
+        name = "GFX_base"
+        quadtexturesprite = "GFX_MP_base"
+        position = { x = 0 y = 0 }
+        centerposition = yes
+      }
+
+      buttonType = {
+        name = "KORBUTTON"
+        position = { x = 70 y = -130 }
+        quadTextureSprite = "GFX_KORBUTTON"
+        frame = 1
+        pdx_tooltip = "KORBUTTON_tt"
+      }
+      buttonType = {
+        name = "JAPBUTTON"
+        position = { x = 70 y = -20 }
+        quadTextureSprite = "GFX_JAPBUTTON"
+        frame = 1
+        pdx_tooltip = "JAPBUTTON_tt"
+      }
+      buttonType = {
+        name = "USABUTTON"
+        position = { x = 70 y = 90 }
+        quadTextureSprite = "GFX_USABUTTON"
+        frame = 1
+        pdx_tooltip = "USABUTTON_tt"
+      }
+      buttonType = {
+        name = "NCSIST"
+        position = { x = 70 y = 200 }
+        quadTextureSprite = "GFX_NCSIST"
+        frame = 1
+        pdx_tooltip = "NCSIST_tt"
+      }
+      buttonType = {
+        name = "UGC"
+        position = { x = 110 y = 200 }
+        quadTextureSprite = "GFX_UGC"
+        frame = 1
+        pdx_tooltip = "UGC_tt"
+      }
+      buttonType = {
+        name = "AIDC"
+        position = { x = 150 y = 200 }
+        quadTextureSprite = "GFX_AIDC"
+        frame = 1
+        pdx_tooltip = "AIDC_tt"
+      }
+      buttonType = {
+        name = "CSBC"
+        position = { x = 190 y = 200 }
+        quadTextureSprite = "GFX_CSBC"
+        frame = 1
+        pdx_tooltip = "CSBC_tt"
+      }
+      iconType = {
+        name = GFX_Incomplete
+        quadtexturesprite = "GFX_MP_Incomplete"
+        position = { x = 0 y = 0 }
+        centerposition = yes
+        alwaystransparent = yes				
+      }
+    }
+  }
 
 }
