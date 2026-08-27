@@ -89,19 +89,41 @@ on_actions = {
     }
   }
 
-  on_daily = {
+  on_daily_CHI = {
     effect = {
       if = {
-        limit = { PRC = { has_completed_focus = PRC_operation_silent_dawn } }
-        CHI = { country_event = { id = CHI.TW.6 } }
+        limit = {
+          AND = {
+            PRC = { has_completed_focus = PRC_operation_silent_dawn }
+            NOT = { has_country_flag = CHI_TW_6_flag }
+          }
+        }
+        CHI = {
+          country_event = { id = CHI.TW.6 }
+          set_country_flag = CHI_TW_6_flag 
+        }
       }
       if = {
-        limit = { PRC = { has_completed_focus = PRC_shake_up_the_politburo } }
-        CHI = { country_event = { id = CHI.TW.23 } }
+        limit = {
+          PRC = { has_completed_focus = PRC_shake_up_the_politburo }
+          NOT = { has_country_flag = CHI_TW_23_flag }
+        }
+        CHI = { 
+          country_event = { id = CHI.TW.23 }
+          set_country_flag = CHI_TW_23_flag
+        }
       }
       if = {
-        limit = { CHI = { is_in_faction_with = JAP } }
-        CHI = { country_event = { id = taiwan.3 } }
+        limit = {
+          AND = {
+            CHI = { is_in_faction_with = JAP } 
+            NOT = { has_country_flag = taiwan_3_flag }
+          }
+        }
+        CHI = {
+          country_event = { id = taiwan.3 } 
+          set_country_flag = taiwan_3_flag
+        }
       }
     }
   }
@@ -109,7 +131,12 @@ on_actions = {
   on_monthly_VIN = {
     effect= {
       if = {
-        limit = { is_in_faction_with = PRC }
+        limit = {
+          AND = {
+            is_in_faction_with = PRC 
+            NOT = { has_country_flag = CHI_enemy_flag }
+          }
+        }
       }
       set_country_flag = CHI_enemy_flag
     }
@@ -117,7 +144,12 @@ on_actions = {
   on_monthly_PHI = {
     effect= {
       if = {
-        limit = { is_in_faction_with = PRC }
+        limit = {
+          AND = {
+            is_in_faction_with = PRC 
+            NOT = { has_country_flag = CHI_enemy_flag }
+          }
+        }
       }
       set_country_flag = CHI_enemy_flag
     }
