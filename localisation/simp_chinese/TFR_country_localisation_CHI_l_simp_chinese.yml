@@ -726,7 +726,9 @@
  Increase_vehicle_research_funding: "§3中科院§! - 增加載具研究經費"
  Increase_fighter_research_funding: "§3中科院§! - 增加戰鬥機裝備研究經費"
  Increase_ship_research_funding: "§3中科院§! - 增加戰艦裝備研究經費"
-
+ Buy_weapons_from_UGC: "未完成"
+ Buy_weapons_from_AIDC: "未完成"
+ Buy_weapons_from_CSBC: "未完成"
  CHI_TaiHai_dynamic: "臺海戰爭"
  CHI_TaiHai_dynamic_desc: "自乙未戰爭以來，臺灣再一次遭到大規模入侵。昔日的戰火早已成為歷史課本中的文字，但如今，砲火再次落在城市之中，警報聲已成為人們生活的一部分。\n\n戰爭爆發後，共軍對臺灣本島發動大規模的導彈襲擊，港口、機場、交通樞紐與工業設施遭到猛烈轟炸。緊接而來的，是大規模兩棲登陸與空中突襲。從北部都市到南方港口，從沿海鄉鎮到山區避難所，整個社會都被迫在短時間內轉入戰時狀態。\n\n這是一場臺灣幾代人從未真正經歷過的戰爭，無數家庭骨肉分離、導彈在城市留下可怖傷疤，工廠停擺、交通中斷，無數平凡的人被推向戰爭深淵。醫護人員在超負荷的醫院中工作，工人試圖恢復受損的生產線，志工穿梭於避難所與受災地區，而國軍則在槍聲與砲火中守衛每一寸土地。\n\n一百三十年前臺灣曾在壓倒性的軍事實力面前失去自由，而歷史似乎要再次重演，但這一次，我們不再是裝備簡陋、孤立無援的民主國，我們早已擁有穩定的制度、強大的軍隊以及可靠的盟友。\n\n過去的臺灣人在明知不可能戰勝敵人的絕望下仍拿起武器反抗入侵者，任何人都理應明白:\n\n§R臺灣絕不向入侵者屈膝§!"
  CHI_thenationisinperil: "國家危難之時"
@@ -1404,20 +1406,23 @@
 
  cannot_call_allies_or_join_wars_tooltip: "§R無法召喚盟友！§!"
 ###TFR
- battalion_upkeep_factor_tooltip: "$battalion_upkeep_factor$：$RIGHT|-=%1$"
- aircraft_upkeep_factor_tooltip: "$aircraft_upkeep_factor$：$RIGHT|-=%1$"
- ship_upkeep_factor_tooltip: "$ship_upkeep_factor$：$RIGHT|-=%1$"
- military_development_monthly_tooltip: "$military_development_monthly$：$RIGHT|+=%1$"
+ battalion_upkeep_factor_tooltip: "£GFX_division_upkeep 陆军维护费：$RIGHT|-=%1$"
+ aircraft_upkeep_factor_tooltip: "£air_efficiency_texticon 空军维护费：$RIGHT|-=%1$"
+ ship_upkeep_factor_tooltip: "£navy_anchor_texticon：$RIGHT|-=%1$"
+ military_development_monthly_tooltip: "£development 月度军事发展：$RIGHT|+=%1$"
  unit_upkeep_attrition_factor_tooltip: "$MODIFIER_UNIT_UPKEEP_ATTRITION_FACTOR$：$RIGHT|-=%1$"
  state_production_speed_energy_farm_factor_tooltip: "$modifier_state_production_speed_energy_farm_factor$：$RIGHT|+=%1$"
- business_value_factor_tooltip: "$business_value_factor$：$RIGHT|+=%1$"
- academic_development_var_tooltip: "£development 教育水平：[?academic_development_var|+1%]"
- academic_development_monthly_tooltip: "£development 月度教育水平增长：[?modifier@academic_development_monthly|=+1%]"
- poverty_development_monthly_tooltip: "£development 月度贫困率变化：[?modifier@poverty_development_monthly|=+1%]"
- society_development_monthly_tooltip: "£development 月度社会发展： [?modifier@society_development_monthly|=+1%]"
- personal_value_factor_tooltip: "$personal_value_factor$：$RIGHT|+=%1$"
+ business_value_factor_tooltip: "£GFX_dx_blue 商业产值系数：$RIGHT|+=%1$"
+ academic_development_var_tooltip: "£development 教育水平：$RIGHT|+=%1$"
+ academic_development_monthly_tooltip: "£development 月度教育水平增长：$RIGHT|+=%1$"
+ poverty_development_monthly_tooltip: "£development 月度贫困率变化：$RIGHT|+=%1$"
+ society_development_monthly_tooltip: "£development 月度社会发展：$RIGHT|+=%1$"
+ personal_value_factor_tooltip: "£GFX_dx_yellow 个人产值系数：$RIGHT|+=%1$"
  production_speed_office_park_factor_tooltip: "$modifier_production_speed_office_park_factor$：$RIGHT|+=%1$"
  production_speed_nuclear_reactor_factor_tooltip: "$modifier_production_speed_nuclear_reactor_factor$：$RIGHT|+=%1$"
+ expense_growth_factor_tooltip: "月度开支增长率：$RIGHT|-=%1$"
+ personal_expense_factor_tooltip: "个人消费支出系数：$RIGHT|-=%1$"
+ inflation_monthly_tooltip: "£inflation 月度通胀率变化：$RIGHT|-=%2$"
 
 ###############
 
@@ -2214,6 +2219,8 @@
  
  CHI_population_aging: "人口危機"
  CHI_population_aging_dynamic: "人口危機"
+ CHI_population_aging_dynamic: "東亞各國長期面臨少子化與高齡化的雙重壓力，經濟發展成熟、教育成本提高與生活負擔沉重，使出生率持續下滑。\n\n臺灣尤為嚴重——低生育率已維持多年，青年人口逐步萎縮，老年人口比例快速攀升，整體人口結構呈現倒金字塔化。\n\n勞動力縮減、社福負擔增加、可動員役齡人口下降人口逐漸下降..，種種問題衝擊著台灣社會，倘若我們再不重視問題，§R臺灣將墜入萬劫不復的深淵§!。"
+ 
  CHI_Population_Aging_decisions: "人口危機"
  CHI_Population_Aging_decisions_desc: "戰後帶來的人口增長曾是島嶼最堅強的後盾，但其造成的老齡化卻成為現在國家沉重的負擔。\n長期以來，教育成本提高、房價壓力沉重、工時增長與就業不穩定，使年輕世代對成家生育抱持遲疑。婚齡持續延後，生育率屢創新低，新生兒人數逐年下滑。當教室逐漸空置，產業開始面臨勞動力短缺，少子化已不再只是預估的數字，而是滲入整個社會的結構性問題。人口基礎的萎縮，直接影響我國未來數十年的國力。\n勞動人口減少，經濟成長動能放緩；扶養比上升，財政與社福負擔加重；兵源縮減，使國防體系承受大量壓力。當外部威脅節節攀高，內部人口卻在急速收縮，國家承擔風險的能力也隨之下降。如果無法建立更友善的育兒條件與穩定的生活預期，未來世代的規模將持續縮小，社會活力亦將逐步流失。\n§R這足以決定國家未來的命運。§!\n\n當前少子化影響:\n月度人口[?PA_monthly_population|=%+1] \n月度支出增長[?PA_expense_growth_factor|=%+1] \n月度通膨率變化[?PA_inflation_monthly|=%+1] \n個人產值係數[?PA_personal_value_factor|=%+1]\n私人消費係數[?PA_personal_expense_factor|=%+1] \n月度貧困率[?PA_poverty_development_monthly|=%+1] \n月度社會發展[?PA_society_development_monthly|=%+1]"
  CHI_expand_public_ltc: "擴建政府長照機構"
@@ -2227,9 +2234,7 @@
  CHI_Population_Aging_end: "終結人口危機"
  CHI_Population_Aging_end_avaliable_tooltip: "須完成所有人口危機相關決議與國策([?var_CHI_Population_Aging_decisions]/10)"
  CHI_Population_Aging_end_tooltip: "移除§Y人口危機§!動態修正及人口危機決議"
- expense_growth_factor_tooltip: "月度开支增长率：[?modifier@expense_growth_factor|=-1%]"
- personal_expense_factor_tooltip: "个人消费支出系数：[?modifier@personal_expense_factor|=-1%]"
- inflation_monthly_tooltip: "£inflation 月度通胀率变化：[?modifier@inflation_monthly|=-2%]"
+
  
  
  
