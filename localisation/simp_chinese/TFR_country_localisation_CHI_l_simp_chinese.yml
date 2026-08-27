@@ -1420,6 +1420,9 @@
  personal_value_factor_tooltip: "£GFX_dx_yellow 个人产值系数：$RIGHT|+=%1$"
  production_speed_office_park_factor_tooltip: "$modifier_production_speed_office_park_factor$：$RIGHT|+=%1$"
  production_speed_nuclear_reactor_factor_tooltip: "$modifier_production_speed_nuclear_reactor_factor$：$RIGHT|+=%1$"
+ expense_growth_factor_tooltip: "月度开支增长率：$RIGHT|-=%1$"
+ personal_expense_factor_tooltip: "个人消费支出系数：$RIGHT|-=%1$"
+ inflation_monthly_tooltip: "£inflation 月度通胀率变化：$RIGHT|-=%2$"
 
 ###############
 
@@ -2231,9 +2234,7 @@
  CHI_Population_Aging_end: "終結人口危機"
  CHI_Population_Aging_end_avaliable_tooltip: "須完成所有人口危機相關決議與國策([?var_CHI_Population_Aging_decisions]/10)"
  CHI_Population_Aging_end_tooltip: "移除§Y人口危機§!動態修正及人口危機決議"
- expense_growth_factor_tooltip: "月度开支增长率：[?modifier@expense_growth_factor|=-1%]"
- personal_expense_factor_tooltip: "个人消费支出系数：[?modifier@personal_expense_factor|=-1%]"
- inflation_monthly_tooltip: "£inflation 月度通胀率变化：[?modifier@inflation_monthly|=-2%]"
+
  
  
  
