@@ -1,4 +1,12 @@
 spriteTypes = {
+  spriteType = {
+    name = "GFX_news_event_roc_mon_conflict"
+    texturefile = "gfx/event_pictures/news_events/roc_mon_conflict.png"
+  }
+  spriteType = {
+    name = "GFX_news_event_roc_raj_conflict"
+    texturefile = "gfx/event_pictures/news_events/roc_raj_conflict.png"
+  }
 	########### GENERIC ################
 	spriteType = {
 		name = "GFX_CHI_2020_Election"
@@ -130,8 +138,21 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "PHI_civil_war4"
-		texturefile = "gfx/event_pictures/PHI_civil_war4.png"
+		texturefile = "gfx/event_pictures/news_events/PHI_civil_war4.png"
 	}
+	spriteType = {
+		name = "PHI_civil_war5"
+		texturefile = "gfx/event_pictures/news_events/PHI_civil_war5.png"
+	}
+	spriteType = {
+		name = "PHI_civil_war6"
+		texturefile = "gfx/event_pictures/news_events/PHI_civil_war6.png"
+	}
+	spriteType = {
+		name = "PHI_civil_war7"
+		texturefile = "gfx/event_pictures/news_events/PHI_civil_war7.png"
+	}
+
 	spriteType = {
 		name = "PLAlands3"
 		texturefile = "gfx/event_pictures/PLAlands3.png"
@@ -143,58 +164,6 @@ spriteTypes = {
 	spriteType = {
 		name = "ROC_taihai_Hospital"
 		texturefile = "gfx/event_pictures/ROC_taihai_Hospital.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_3"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_3.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_4_1"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_4_1.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_4_2"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_4_2.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_5"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_5.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_6"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_6.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_7"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_7.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_8"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_8.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_9"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_9.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_10"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_10.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_11"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_11.dds"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_12"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_12.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_13"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_13.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_14"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_14.png"
 	}
 	spriteType = {
 		name = "PLAlands5"
@@ -209,28 +178,16 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Tsaiingwen_2.png"
 	}
 	spriteType = {
-		name = "ROC_CHI_Event_16"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_15.png"
+		name = "ROC_Event_1"
+		texturefile = "gfx/event_pictures/ROC_Event_1.png"
 	}
 	spriteType = {
-		name = "ROC_CHI_Event_17"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_17.png"
+		name = "ROC_Event_13"
+		texturefile = "gfx/event_pictures/ROC_Event_13.png"
 	}
 	spriteType = {
-		name = "ROC_CHI_Event_18"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_18.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_19"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_19.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_20"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_20.png"
-	}
-	spriteType = {
-		name = "ROC_CHI_Event_21"
-		texturefile = "gfx/event_pictures/ROC_CHI_Event_21.png"
+		name = "ROC_Event_19"
+		texturefile = "gfx/event_pictures/ROC_Event_19.png"
 	}
 	spriteType = {
 		name = "ROC_Event_77"
@@ -369,8 +326,20 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/ROC_CHI_Event_38.png"
 	}
 	spriteType = {
+		name = "CHI_Event_4"
+		texturefile = "gfx/event_pictures/CHI_Event_4.png"
+	}
+	spriteType = {
+		name = "CHI_Event_5"
+		texturefile = "gfx/event_pictures/CHI_Event_5.png"
+	}
+	spriteType = {
 		name = "CHI_Event_9"
 		texturefile = "gfx/event_pictures/CHI_Event_9.png"
+	}
+	spriteType = {
+		name = "CHI_Event_99"
+		texturefile = "gfx/event_pictures/CHI_Event_99.png"
 	}
 	spriteType = {
 		name = "CHI_Event_101"
@@ -379,6 +348,10 @@ spriteTypes = {
 	spriteType = {
 		name = "CHI_Event_103"
 		texturefile = "gfx/event_pictures/CHI_Event_103.png"
+	}
+	spriteType = {
+		name = "CHI_Event_104"
+		texturefile = "gfx/event_pictures/CHI_Event_104.png"
 	}
 	spriteType = {
 		name = "CHI_Event_105"
@@ -393,6 +366,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/CHI_Event_107.png"
 	}
 	spriteType = {
+		name = "CHI_Event_108"
+		texturefile = "gfx/event_pictures/CHI_Event_108.png"
+	}
+	spriteType = {
+		name = "CHI_Event_109"
+		texturefile = "gfx/event_pictures/CHI_Event_109.png"
+	}
+	spriteType = {
 		name = "CHI_Event_110"
 		texturefile = "gfx/event_pictures/CHI_Event_110.png"
 	}
@@ -405,12 +386,20 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/CHI_Event_121.png"
 	}
 	spriteType = {
+		name = "CHI_Event_130"
+		texturefile = "gfx/event_pictures/CHI_Event_130.png"
+	}
+	spriteType = {
 		name = "CHI_Event_141"
 		texturefile = "gfx/event_pictures/CHI_Event_141.png"
 	}
 	spriteType = {
 		name = "CHI_Event_BF_11"
 		texturefile = "gfx/event_pictures/CHI_Event_BF_11.png"
+	}
+	spriteType = {
+		name = "CHI_Event_BF_100"
+		texturefile = "gfx/event_pictures/CHI_Event_BF_100.png"
 	}
 	spriteType = {
 		name = "CHI_Event_H2_11"
@@ -457,6 +446,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/CHI_Event_H2_181.png"
 	}
 	spriteType = {
+		name = "CHI_Event_H2_221"
+		texturefile = "gfx/event_pictures/CHI_Event_H2_221.png"
+	}
+	spriteType = {
 		name = "CHI_Event_H2_222"
 		texturefile = "gfx/event_pictures/CHI_Event_H2_222.png"
 	}
@@ -477,6 +470,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/CHI_Event_H2_301.png"
 	}
 	spriteType = {
+		name = "CHI_Event_H2_321"
+		texturefile = "gfx/event_pictures/CHI_Event_H2_321.png"
+	}
+	spriteType = {
+		name = "CHI_Event_H2_331"
+		texturefile = "gfx/event_pictures/CHI_Event_H2_331.png"
+	}
+	spriteType = {
 		name = "CHI_Event_H2_391"
 		texturefile = "gfx/event_pictures/CHI_Event_H2_391.png"
 	}
@@ -487,6 +488,18 @@ spriteTypes = {
 	spriteType = {
 		name = "CHI_Event_H2_431"
 		texturefile = "gfx/event_pictures/CHI_Event_H2_431.png"
+	}
+	spriteType = {
+		name = "CHI_Event_H3_11"
+		texturefile = "gfx/event_pictures/CHI_Event_H3_11.png"
+	}
+	spriteType = {
+		name = "CHI_Event_H3_21"
+		texturefile = "gfx/event_pictures/CHI_Event_H3_21.png"
+	}
+	spriteType = {
+		name = "CHI_Event_H3_111"
+		texturefile = "gfx/event_pictures/CHI_Event_H3_111.png"
 	}
 	spriteType = {
 		name = "ROC_Event_21"
@@ -510,7 +523,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "CHI_Event_H4_1"
-		texturefile = "gfx/event_pictures/Pacific_War_event.png"
+		texturefile = "gfx/event_pictures/CHI_Event_H4_1.png"
 	}
 	spriteType = {
 		name = "CHI_Event_H4_2"
@@ -547,6 +560,331 @@ spriteTypes = {
 	spriteType = {
 		name = "CHI_Event_H4_93"
 		texturefile = "gfx/event_pictures/CHI_Event_H4_93.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_H4_100"
+		texturefile = "gfx/event_pictures/CHI_Event_H4_100.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_H4_101"
+		texturefile = "gfx/event_pictures/CHI_Event_H4_101.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_H4_102"
+		texturefile = "gfx/event_pictures/CHI_Event_H4_102.png"
+	}
+	
+	spriteType = {
+		name = "CHI_Event_H4_111"
+		texturefile = "gfx/event_pictures/CHI_Event_H4_111.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_H4_112"
+		texturefile = "gfx/event_pictures/CHI_Event_H4_112.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_H4_113"
+		texturefile = "gfx/event_pictures/CHI_Event_H4_113.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_H4_114"
+		texturefile = "gfx/event_pictures/CHI_Event_H4_114.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_H4_115"
+		texturefile = "gfx/event_pictures/CHI_Event_H4_115.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_CT_12"
+		texturefile = "gfx/event_pictures/CHI_Event_CT_12.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_CT_13"
+		texturefile = "gfx/event_pictures/CHI_Event_CT_13.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_CT_14"
+		texturefile = "gfx/event_pictures/CHI_Event_CT_14.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_CT_15"
+		texturefile = "gfx/event_pictures/CHI_Event_CT_15.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_CT_16"
+		texturefile = "gfx/event_pictures/CHI_Event_CT_16.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_1"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_1.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_2"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_2.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_3"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_3.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_4"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_4.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_5"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_5.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_6"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_6.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_7"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_6.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_9"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_9.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_10"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_10.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_11"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_11.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_13"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_13.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_14"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_14.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_8"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_8.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_18"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_18.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_20"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_20.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_21"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_21.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_22"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_22.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_23"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_23.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_24"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_24.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_25"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_25.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_27"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_27.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_28"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_28.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_29"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_29.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_30"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_30.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_31"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_31.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_32"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_32.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_33"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_33.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_34"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_34.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_35"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_35.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_36"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_36.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_37"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_37.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_38"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_38.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_39"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_39.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_40"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_40.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_41"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_41.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_42"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_42.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_43"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_43.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_44"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_44.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_45"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_45.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_46"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_46.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_47"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_47.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_48"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_48.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_49"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_49.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_50"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_50.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_51"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_51.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_52"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_52.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_53"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_53.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_54"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_54.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_55"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_55.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_56"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_56.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_60"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_60.png"
+	}
+
+	spriteType = {
+		name = "CHI_Event_TW_61"
+		texturefile = "gfx/event_pictures/CHI_Event_TW_61.png"
 	}
 }
 

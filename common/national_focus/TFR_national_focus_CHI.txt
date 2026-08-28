@@ -93,8 +93,8 @@ focus_tree = {
       add_political_power = 50
       effect_tooltip = {
         swap_ideas = {
-          add_idea = "CHI_independence_four_persistences"
-          remove_idea = "CHI_taiwanese_independence_movement_idea"
+          add_idea = CHI_independence_four_persistences
+          remove_idea = CHI_taiwanese_independence_movement_idea
         }
       }
       unlock_decision_tooltip = Promote_Taiwan_internationally
@@ -186,8 +186,8 @@ focus_tree = {
       add_society_development = yes
       effect_tooltip = {
         swap_ideas = {
-          add_idea = "CHI_independence_Continue_transform_justice"
-          remove_idea = "CHI_taiwanese_independence_movement_idea"
+          add_idea = CHI_independence_Continue_transform_justice
+          remove_idea = CHI_taiwanese_independence_movement_idea
         }
       }
       swap_ideas = {
@@ -421,6 +421,7 @@ focus_tree = {
       focus = Taiwan_safe_people_rich
     }
     completion_reward = {
+      increase_safety = yes
       add_political_power = 25
       set_temp_variable = {
         var = society_development_var_temp
@@ -432,10 +433,6 @@ focus_tree = {
           remove_idea = Republic_of_China_idea
           add_idea = Republic_of_China_Whistleblower_Protection_Act_idea
         }
-      }
-      swap_ideas = {
-        add_idea = "high_safety"
-        remove_idea = "medium_safety"
       }
       hidden_effect = {
         add_to_variable = {
@@ -630,8 +627,8 @@ focus_tree = {
           }
         }
       }
-      available = {has_completed_focus = island_of_energy_security}
-      available = {has_completed_focus = Get_out_of_the_epidemic}
+      has_completed_focus = island_of_energy_security
+      has_completed_focus = Get_out_of_the_epidemic
     }
     ai_will_do = {
       factor = 1
@@ -859,6 +856,14 @@ focus_tree = {
     ai_will_do = {
       factor = 1
     }
+    available = {
+      AND = {
+        has_country_flag = covid_happen
+        NOT = {
+          has_country_flag = cancel_covid_mission
+        }
+      }
+    }
     prerequisite = {
       focus = NHCC_Expand
     }
@@ -881,7 +886,12 @@ focus_tree = {
     continue_if_invalid = no
     cancel_if_invalid = yes
     available = {
-      has_country_flag = covid_happen
+      AND = {
+        has_country_flag = covid_happen
+        NOT = {
+          has_country_flag = cancel_covid_mission
+        }
+      }
     }
     ai_will_do = {
       factor = 1
@@ -908,7 +918,12 @@ focus_tree = {
     continue_if_invalid = no
     cancel_if_invalid = yes
     available = {
-      has_country_flag = covid_happen
+      AND = {
+        has_country_flag = covid_happen
+        NOT = {
+          has_country_flag = cancel_covid_mission
+        }
+      }
     }
     ai_will_do = {
       factor = 1
@@ -941,7 +956,12 @@ focus_tree = {
     cancel_if_invalid = yes
     relative_position_id = NHCC_Expand
     available = {
-      has_country_flag = covid_happen
+      AND = {
+        has_country_flag = covid_happen
+        NOT = {
+          has_country_flag = cancel_covid_mission
+        }
+      }
     }
     ai_will_do = {
       factor = 1
@@ -1195,7 +1215,7 @@ focus_tree = {
   }
   focus = {
     id = CHI_Operation_Desert
-    #沙漠行動
+    #大漠行動
     x = 1
     y = 3
     cost = 2
@@ -1206,18 +1226,14 @@ focus_tree = {
       factor = 1
     }
     available = {
-      ARR = {
-        has_opinion = {
-          target = ROOT
-          value > 49
-        }
-      }
       has_global_flag = saudi_civil_war_flag
     }
     prerequisite = {
       focus = Find_alternative_sources
     }
     completion_reward = {
+      set_country_flag = CHI_saudi_civil_war_flag
+      country_event = { id = CHI.99 }
       add_political_power = -50
       unlock_decision_category_tooltip = CHI_Aid_Arab_Republics_category
     }
@@ -1529,25 +1545,25 @@ focus_tree = {
       hidden_effect = {
         if = {
           limit = {
-            has_ideas = CHI_oil_crash10
+            has_idea = CHI_oil_crash10
           }
           remove_ideas = CHI_oil_crash10
         }
         if = {
           limit = {
-            has_ideas = CHI_oil_crash11
+            has_idea = CHI_oil_crash11
           }
           remove_ideas = CHI_oil_crash11
         }
         if = {
           limit = {
-            has_ideas = CHI_oil_crash12
+            has_idea = CHI_oil_crash12
           }
           remove_ideas = CHI_oil_crash12
         }
         if = {
           limit = {
-            has_ideas = CHI_oil_crash13
+            has_idea = CHI_oil_crash13
           }
           remove_ideas = CHI_oil_crash13
         }
@@ -1585,18 +1601,22 @@ focus_tree = {
         ROC_battalion_upkeep_factor = 0.05
         tooltip = battalion_upkeep_factor_tooltip
       }
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_aircraft_upkeep_factor = 0.05
         tooltip = aircraft_upkeep_factor_tooltip
       }
+      custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
-        ROC_ship_upkeep_factor = 0.05
+        RROC_ship_upkeep_factor = 0.05
         tooltip = ship_upkeep_factor_tooltip
       }
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_experience_gain_army_factor = 0.1
         tooltip = experience_gain_army_factor_tooltip
       }
+      set_country_flag = Rectify_weakening_military_preparedness_flag
     }
     relative_position_id = Pacific_War
   }
@@ -1660,6 +1680,7 @@ focus_tree = {
         ROC_command_power_gain_mult = 0.05
         tooltip = experience_gain_factor_tooltip
       }
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_air_doctrine_cost_factor = -0.1
         tooltip = air_doctrine_cost_factor_tooltip
@@ -1912,12 +1933,14 @@ focus_tree = {
         ROC_battalion_upkeep_factor = 0.025
         tooltip = battalion_upkeep_factor_tooltip
       }
+      custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_aircraft_upkeep_factor = 0.025
         tooltip = aircraft_upkeep_factor_tooltip
       }
+      custom_effect_tooltip = { IDEA = CHI_ROC_navy_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
-        OC_ship_upkeep_factor = 0.025
+        ROC_ship_upkeep_factor = 0.025
         tooltip = ship_upkeep_factor_tooltip
       }
     }
@@ -1980,7 +2003,7 @@ focus_tree = {
       }
       add_debt = yes
       add_equipment_to_stockpile = {
-        type = modern_tank_chassis_2
+        type = modern_tank_equipment_2
         variant_name = "M1A2 Abrams MK0"
         amount = 400
         producer = USA
@@ -2208,9 +2231,9 @@ focus_tree = {
       has_country_flag = American_Civil_War_happen_flg
     }
     completion_reward = {
-      custom_effect_tooltip = Pacific_War_tooltip
       add_political_power = -50
       hidden_effect = {
+        country_event = { id = CHI.TW.27 days = 1}
         remove_ideas = CHI_american_protection_idea
         add_dynamic_modifier = {
           modifier = financial_crisis_dynamic
@@ -2237,7 +2260,7 @@ focus_tree = {
         }
         if = {
           limit = {
-            has_idea = CHI_taiwanese_independence_dynamic
+            CHI_tsai_ing_wen_char = { is_country_leader = yes }
           }
           country_event = {
             id = CHI.7
@@ -2282,6 +2305,7 @@ focus_tree = {
           value = 0.02
         }
       }
+      add_political_power = 40
     }
     relative_position_id = Pacific_War
   }
@@ -2317,6 +2341,7 @@ focus_tree = {
           value = 0.05
         }
       }
+      add_political_power = 50
     }
     relative_position_id = Pacific_War
   }
@@ -2349,6 +2374,10 @@ focus_tree = {
           value = 0.05
         }
       }
+      modify_timed_idea = {
+        idea = generic_world_wide_financial_crisis_1
+        days = -50
+      }
     }
     relative_position_id = TJ_hold_emergency_talks
   }
@@ -2380,6 +2409,10 @@ focus_tree = {
           var = financial_crisis_poverty_development_monthly
           value = 0.01
         }
+      }
+      modify_timed_idea = {
+        idea = generic_world_wide_financial_crisis_1
+        days = -50
       }
     }
     relative_position_id = TJ_hold_emergency_talks
@@ -2457,6 +2490,10 @@ focus_tree = {
           modifier = financial_crisis_dynamic
         }
       }
+      modify_timed_idea = {
+        idea = generic_world_wide_financial_crisis_1
+        days = -50
+      }
     }
     relative_position_id = TJ_hold_emergency_talks
   }
@@ -2503,7 +2540,7 @@ focus_tree = {
     completion_reward = {
       add_timed_idea = {
         idea = CHI_InvestingAI
-        days = 365
+        days = 100
       }
       custom_effect_tooltip = after_idea_expires
       effect_tooltip = {
@@ -2541,6 +2578,11 @@ focus_tree = {
           instant_build = yes
         }
       }
+      set_temp_variable = {
+        var = poverty_development_var_temp 
+        value = 0.3
+      }
+      add_poverty_development = yes
     }
     relative_position_id = Semiconductor_mobilization
   }
@@ -2587,6 +2629,16 @@ focus_tree = {
         idea = CHI_scientists_from_america_idea
         days = 180
       }
+      set_temp_variable = {
+        var = industrial_development_var_temp 
+        value = 0.2
+      }
+      add_industrial_development = yes
+      set_temp_variable = {
+        var = society_development_var_temp 
+        value = 0.2
+      }
+      add_society_development = yes
     }
     relative_position_id = Semiconductor_mobilization
   }
@@ -2607,11 +2659,13 @@ focus_tree = {
     }
     prerequisite = {
       focus = Introduce_scientific_training_standards
+      focus = abolition_of_bayonet
     }
     completion_reward = {
       add_war_support = 0.05
       add_stability = -0.025
       unlock_decision_category_tooltip = CHI_Intervene_the_American_Civil_War_category
+      set_country_flag = Intervene_American_Civil_War_flag
     }
     relative_position_id = Recruiting_US_refugee_talent
   }
@@ -2632,6 +2686,7 @@ focus_tree = {
     }
     completion_reward = {
       add_ideas = CHI_made_in_TW
+      add_political_power = 100
     }
     relative_position_id = Pacific_War
   }
@@ -2665,52 +2720,12 @@ focus_tree = {
       custom_effect_tooltip = CHI_taiwan_war_begun_tooltip
       hidden_effect = {
         set_country_flag = anti_PRC_flg
-        if = {
-          limit = {
-            NOT = {
-              has_template = "中華民國陸軍後備旅"
-            }
-          }
-          division_template = {
-            name = "中華民國陸軍後備旅"
-            division_names_group = CHI_INF_1
-            is_locked = no
-            regiments = {
-              infantry = {
-                x = 0
-                y = 0
-              }
-              infantry = {
-                x = 0
-                y = 1
-              }
-              infantry = {
-                x = 0
-                y = 2
-              }
-              infantry = {
-                x = 1
-                y = 0
-              }
-              artillery_brigade = {
-                x = 1
-                y = 1
-              }
-            }
-            support = {
-              engineer = {
-                x = 0
-                y = 0
-              }
-            }
-          }
-        }
         1149 = {
           create_unit = {
             division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = CHI
-            count = 3
+            count = 2
           }
         }
         524 = {
@@ -2718,7 +2733,7 @@ focus_tree = {
             division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = CHI
-            count = 3
+            count = 1
           }
         }
         1148 = {
@@ -2726,7 +2741,7 @@ focus_tree = {
             division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = CHI
-            count = 3
+            count = 2
           }
         }
         1150 = {
@@ -2734,7 +2749,7 @@ focus_tree = {
             division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
             id = 1949
             owner = CHI
-            count = 3
+            count = 1
           }
         }
       }
@@ -2779,7 +2794,7 @@ focus_tree = {
         }
         add_to_variable = {
           var = CHI_NSM_mobilization_speed
-          value = 0.25
+          value = 0.3
         }
         add_to_variable = {
           var = CHI_NSM_conscription_factor
@@ -2840,11 +2855,11 @@ focus_tree = {
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_army_core_defence_factor
-          value = 0.05
+          value = 0.1
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_conscription_factor
-          value = 0.05
+          value = 0.1
         }
       }
     }
@@ -2870,78 +2885,6 @@ focus_tree = {
     }
     completion_reward = {
       add_ideas = CHI_MPFTMO_idea
-      if = {
-        limit = {
-          NOT = {
-            has_template = "中華民國陸軍後備旅"
-          }
-        }
-        division_template = {
-          name = "中華民國陸軍後備旅"
-          division_names_group = CHI_INF_1
-          is_locked = no
-          regiments = {
-            infantry = {
-              x = 0
-              y = 0
-            }
-            infantry = {
-              x = 0
-              y = 1
-            }
-            infantry = {
-              x = 0
-              y = 2
-            }
-            infantry = {
-              x = 1
-              y = 0
-            }
-            artillery_brigade = {
-              x = 1
-              y = 1
-            }
-          }
-          support = {
-            engineer = {
-              x = 0
-              y = 0
-            }
-          }
-        }
-      }
-      1149 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      524 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      1148 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      1150 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
     }
     relative_position_id = CHI_Defend_Taiwan
   }
@@ -3000,19 +2943,19 @@ focus_tree = {
       hidden_effect = {
         add_to_variable = {
           var = CHI_Defend_Taiwan_army_core_attack_factor
-          value = 0.05
+          value = 0.1
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_army_core_defence_factor
-          value = 0.05
+          value = 0.1
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_mobilization_speed
-          value = 0.25
+          value = 0.1
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_conscription_factor
-          value = 0.25
+          value = 0.2
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_weekly_bombing_war_support
@@ -3025,10 +2968,6 @@ focus_tree = {
         add_to_variable = {
           var = CHI_Defend_Taiwan_weekly_convoys_war_support
           value = 0.01
-        }
-        add_to_variable = {
-          var = CHI_Defend_Taiwan_monthly_population
-          value = -0.01
         }
         add_to_variable = {
           var = CHI_Defend_Taiwan_local_intel_to_enemies
@@ -3061,6 +3000,8 @@ focus_tree = {
           mission = PRC_taiwan_war_countdown
           days = -14
         }
+        add_stability = -0.1
+        add_war_support = -0.1
       }
       hidden_effect = {
         JAP = {
@@ -3103,6 +3044,24 @@ focus_tree = {
           days = -14
         }
       }
+      1218 = {
+        damage_building = {
+          type = naval_base
+          damage = 0.5
+        }
+      }
+      595 = {
+        damage_building = {
+          type = naval_base
+          damage = 0.5
+        }
+      }
+      1431 = {
+        damage_building = {
+          type = naval_base
+          damage = 0.5
+        }
+      }
       hidden_effect = {
         JAP = {
           add_days_mission_timeout = {
@@ -3142,7 +3101,7 @@ focus_tree = {
     }
     completion_reward = {
       add_ideas = CHI_Martial_law_declared_idea
-      upgrade_economy_law = yes
+      add_ideas = war_mobilization
     }
     relative_position_id = CHI_Mobilize_police_force_to_maintain_order
   }
@@ -3398,7 +3357,7 @@ focus_tree = {
       focus = CHI_National_Spiritual_Mobilization
     }
     completion_reward = {
-      add_war_support = 0.05
+      add_war_support = 0.1
       add_ideas = CHI_AD_idea_1
       add_power_balance_value = {
         id = CHI_Identity_dispute
@@ -3477,7 +3436,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 2
         }
       }
       524 = {
@@ -3485,7 +3444,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 1
         }
       }
       1148 = {
@@ -3493,7 +3452,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 1
         }
       }
       1150 = {
@@ -3501,7 +3460,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 1
         }
       }
       hidden_effect = {
@@ -3598,7 +3557,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 2
         }
       }
       524 = {
@@ -3606,7 +3565,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 1
         }
       }
       1148 = {
@@ -3614,7 +3573,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 2
         }
       }
       1150 = {
@@ -3622,7 +3581,7 @@ focus_tree = {
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           id = 1949
           owner = CHI
-          count = 3
+          count = 1
         }
       }
     }
@@ -3649,13 +3608,19 @@ focus_tree = {
       524 = {
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
+          instant_build = yes
+          province = 13962
+        }
+        add_building_construction = {
+          type = coastal_bunker
+          level = 2
           instant_build = yes
           province = 4096
         }
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
           province = 11914
         }
@@ -3663,42 +3628,61 @@ focus_tree = {
       1149 = {
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
           province = 13968
         }
         add_building_construction = {
-          type = anti_air_building
-          level = 1
+          type = coastal_bunker
+          level = 2
           instant_build = yes
+          province = 13967
+        }
+        add_building_construction = {
+          type = coastal_bunker
+          level = 2
+          instant_build = yes
+          province = 11959
         }
       }
       1150 = {
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
           province = 13965
         }
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
           province = 12068
+        }
+        add_building_construction = {
+          type = coastal_bunker
+          level = 2
+          instant_build = yes
+          province = 13966
         }
       }
       1148 = {
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
-          province = 14937
+          province = 7186
         }
         add_building_construction = {
           type = coastal_bunker
-          level = 1
+          level = 2
           instant_build = yes
           province = 13961
+        }
+        add_building_construction = {
+          type = coastal_bunker
+          level = 2
+          instant_build = yes
+          province = 14937
         }
       }
     }
@@ -3732,82 +3716,11 @@ focus_tree = {
           add_idea = CHI_NSM_idea_3
         }
       }
-      if = {
-        limit = {
-          NOT = {
-            has_template = "中華民國陸軍後備旅"
-          }
-        }
-        division_template = {
-          name = "中華民國陸軍後備旅"
-          division_names_group = CHI_INF_1
-          is_locked = no
-          regiments = {
-            infantry = {
-              x = 0
-              y = 0
-            }
-            infantry = {
-              x = 0
-              y = 1
-            }
-            infantry = {
-              x = 0
-              y = 2
-            }
-            infantry = {
-              x = 1
-              y = 0
-            }
-            artillery_brigade = {
-              x = 1
-              y = 1
-            }
-          }
-          support = {
-            engineer = {
-              x = 0
-              y = 0
-            }
-          }
-        }
-      }
-      1149 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      524 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      1148 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
-      1150 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 3
-        }
-      }
+      
       hidden_effect = {
         add_to_variable = {
           var = CHI_NSM_army_strength_factor
-          value = 0.05
+          value = 0.1
         }
         add_to_variable = {
           var = CHI_NSM_army_retreat_speed_factor
@@ -3815,7 +3728,7 @@ focus_tree = {
         }
         add_to_variable = {
           var = CHI_NSM_experience_loss_factor
-          value = -0.05
+          value = -0.1
         }
         add_to_variable = {
           var = CHI_NSM_command_abilities_cost_factor
@@ -3901,6 +3814,18 @@ focus_tree = {
       swap_ideas = {
         remove_idea = CHI_thenationisinperil_1
         add_idea = CHI_thenationisinperil_2
+      }
+      if = {
+        limit = { has_idea = CHI_repairs_under_fire_idea }
+        remove_ideas = CHI_repairs_under_fire_idea
+      }
+      else_if = {
+        limit = { has_idea = CHI_repairs_under_fire_1_idea }
+        remove_ideas = CHI_repairs_under_fire_1_idea
+      }
+      else_if = {
+        limit = { has_idea = CHI_repairs_under_fire_2_idea }
+        remove_ideas = CHI_repairs_under_fire_2_idea
       }
     }
     relative_position_id = CHI_thenationisinperil

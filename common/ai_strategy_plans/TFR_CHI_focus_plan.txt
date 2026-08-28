@@ -1,0 +1,135 @@
+TFR_AI_CHI_opening_priority = {
+	allowed = {
+		original_tag = CHI
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_national_focuses = {
+        # Oil Crisis & Energy Strategy (Prioritize Nuclear over Green)
+		Coping_with_the_oil_crisis
+		third_oil_crisis
+		Unleashing_strategic_oil_reserves
+		South_China_Sea_oil_exploration
+		Find_alternative_sources
+		Technology_exchange_exchange_for_oil
+		Electricity_prices_freeze_and_rise
+		Life_extension_of_nuclear_power_unit_three
+		CHI_Restart_core_four
+		The_power_plant_on_full_fire
+		Accelerating_the_energy_transition
+		Expand_investment_green_energy_companies
+
+        # COVID-19 Management (Rush to remove debuffs)
+		Responding_the_epidemic
+		NHCC_Expand
+		Isolate_patient
+		Suspension_of_work_and_classes
+		Taiwan_locked_down
+		Buy_vaccines
+		Develop_own_vaccine
+		Get_out_of_the_epidemic
+		Issuance_of_triple_coupons
+
+        # Phase 1 Wartime Survival
+		CHI_thenationisinperil
+		CHI_National_Spiritual_Mobilization
+		CHI_Defend_Taiwan
+		CHI_Mobilize_police_force_to_maintain_order
+		CHI_Martial_law_declared
+		CHI_Protect_the_homeland
+		CHI_Strengthen_coastal_defense
+		CHI_Fight_to_the_death
+
+		# Reconstruction & Infrastructure
+		CHI_Emergency_reconstruction_begins
+		CHI_Repair_Taoyuan_Airport
+		CHI_Reopening_Kaohsiung_Port
+		CHI_Emergency_repair_infrastructure
+		CHI_Ending_wartime_economic
+		# Economy & Resource Management
+		CHI_Establish_Taiwan_mining_Corporation
+		CHI_emergency_resources_extraction_mechanism
+		CHI_mineral_exporation
+		CHI_strategic_reserves
+		# KMT Political Path
+		CHI_Han_Post_war
+		CHI_Post_war_review_status_quo
+		CHI_Pork_Rice
+		CHI_Special_budget
+		CHI_Eleplant_in_room
+		CHI_Restore_provincial_government_functons
+		CHI_reestablish_hainan_province
+		CHI_Establish_local_officials
+		CHI_negotiate_with_DPP
+		CHI_political_concession
+		CHI_enemys_enemy
+		# Military Preparation
+		CHI_spirit_reaches_to_rainbow
+		CHI_making_great_achievements_on_beachhead
+	}
+	focus_factors = {
+        # High Priority: Resolve Oil Crisis and pursue Nuclear Energy
+		Coping_with_the_oil_crisis = 800
+		third_oil_crisis = 750
+		Unleashing_strategic_oil_reserves = 700
+		Find_alternative_sources = 650
+		South_China_Sea_oil_exploration = 600
+		Technology_exchange_exchange_for_oil = 550
+		Electricity_prices_freeze_and_rise = 500
+		Life_extension_of_nuclear_power_unit_three = 800
+		CHI_Restart_core_four = 750
+		The_power_plant_on_full_fire = 600
+
+        # DO NOT DO: Avoid Green Energy
+		Accelerating_the_energy_transition = 0
+		Expand_investment_green_energy_companies = 0
+
+        # Very High Priority: COVID Management
+		Responding_the_epidemic = 950
+		NHCC_Expand = 900
+		Isolate_patient = 850
+		Suspension_of_work_and_classes = 800
+		Taiwan_locked_down = 750
+		Buy_vaccines = 700
+		Develop_own_vaccine = 650
+		Get_out_of_the_epidemic = 600
+		Issuance_of_triple_coupons = 550
+
+        # Highest Priority: Phase 1 Wartime Survival
+		CHI_thenationisinperil = 1000
+		CHI_National_Spiritual_Mobilization = 950
+		CHI_Defend_Taiwan = 900
+		CHI_Mobilize_police_force_to_maintain_order = 850
+		CHI_Martial_law_declared = 800
+		CHI_Protect_the_homeland = 750
+		CHI_Strengthen_coastal_defense = 700
+		CHI_Fight_to_the_death = 650
+
+		CHI_Emergency_reconstruction_begins = 500
+		CHI_Emergency_repair_infrastructure = 450
+		CHI_Repair_Taoyuan_Airport = 400
+		CHI_Reopening_Kaohsiung_Port = 400
+		CHI_Ending_wartime_economic = 350
+		CHI_spirit_reaches_to_rainbow = 300
+		CHI_making_great_achievements_on_beachhead = 300
+		CHI_Establish_Taiwan_mining_Corporation = 250
+		CHI_mineral_exporation = 240
+		CHI_emergency_resources_extraction_mechanism = 230
+		CHI_strategic_reserves = 200
+		CHI_Han_Post_war = 150
+		CHI_Post_war_review_status_quo = 140
+		CHI_Pork_Rice = 130
+		CHI_Special_budget = 120
+		CHI_Eleplant_in_room = 110
+		CHI_Restore_provincial_government_functons = 100
+		CHI_reestablish_hainan_province = 90
+		CHI_Establish_local_officials = 80
+		CHI_negotiate_with_DPP = 70
+		CHI_political_concession = 60
+		CHI_enemys_enemy = 50
+	}
+}

@@ -751,12 +751,6 @@ defined_text = {
               controller = {
                 is_ally_with = JAP
               }
-              controller = {
-                is_ally_with = HKN
-              }
-              controller = {
-                is_ally_with = SHZ
-              }
             }
           }
         }
@@ -764,38 +758,7 @@ defined_text = {
     }
     localization_key = "neutral_control"
   }
-  text = {
-    trigger = {
-      OR = {
-        NOT = {
-          326 = {
-            OR = {
-              controller = {
-                tag = HKN
-              }
-            }
-          }
-        }
-      }
-    }
-    localization_key = "SHZ_control"
-  }
-  text = {
-    trigger = {
-      OR = {
-        NOT = {
-          326 = {
-            OR = {
-              controller = {
-                tag = SHZ
-              }
-            }
-          }
-        }
-      }
-    }
-    localization_key = "HKN_control"
-  }
+
 }
 
 defined_text = {
@@ -832,50 +795,12 @@ defined_text = {
               controller = {
                 is_ally_with = JAP
               }
-              controller = {
-                is_ally_with = HKN
-              }
-              controller = {
-                is_ally_with = SHZ
-              }
             }
           }
         }
       }
     }
     localization_key = "neutral_control"
-  }
-  text = {
-    trigger = {
-      OR = {
-        NOT = {
-          1395 = {
-            OR = {
-              controller = {
-                tag = HKN
-              }
-            }
-          }
-        }
-      }
-    }
-    localization_key = "SHZ_control"
-  }
-  text = {
-    trigger = {
-      OR = {
-        NOT = {
-          1395 = {
-            OR = {
-              controller = {
-                tag = SHZ
-              }
-            }
-          }
-        }
-      }
-    }
-    localization_key = "HKN_control"
   }
 }
 

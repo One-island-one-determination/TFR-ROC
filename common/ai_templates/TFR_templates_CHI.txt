@@ -1,0 +1,78 @@
+CHI_garrison_template_1 = {
+	roles = {
+		garrison
+	}
+	match_to_count = 0.5
+	target_width = 20
+	upgrade_prio = {
+		soft_attack = 10
+		defense = 20
+		organization = 15
+	}
+	infantry = {
+		target_width = 20
+		width_weight = 2
+		upgrade_prio = {
+			defense = 10
+		}
+	}
+	artillery_brigade = {
+		target_width = 0
+		width_weight = 0.5
+	}
+	engineer = {
+		target_width = 0
+		width_weight = 0
+		upgrade_prio = {
+			defense = 15
+		}
+	}
+	artillery = {
+		target_width = 0
+		width_weight = 0
+		upgrade_prio = {
+			soft_attack = 10
+		}
+	}
+	anti_air = {
+		target_width = 0
+		width_weight = 0
+		upgrade_prio = {
+			air_attack = 15
+		}
+	}
+}
+
+CHI_marine_template_1 = {
+	roles = {
+		marines
+	}
+	match_to_count = 0.5
+	target_width = 25
+	upgrade_prio = {
+		soft_attack = 15
+		breakthrough = 10
+		organization = 10
+	}
+	marine = {
+		target_width = 25
+		width_weight = 2
+		upgrade_prio = {
+			soft_attack = 10
+		}
+	}
+	engineer = {
+		target_width = 0
+		width_weight = 0
+		upgrade_prio = {
+			breakthrough = 10
+		}
+	}
+	artillery = {
+		target_width = 0
+		width_weight = 0
+		upgrade_prio = {
+			soft_attack = 15
+		}
+	}
+}

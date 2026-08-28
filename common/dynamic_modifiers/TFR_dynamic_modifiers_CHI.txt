@@ -1,499 +1,994 @@
 # 地標
 CHI_gaoxiong = {
-  icon = GFX_modifiers_CHI_gaoxiong
-  enable = {
-    tag = CHI
-  }
-  state_production_speed_buildings_factor = 0.04
-  local_building_slots = 4
-  local_supplies = 0.05
-  local_manpower = 0.03
-  mobilization_speed = 0.05
+	icon = GFX_modifiers_CHI_gaoxiong
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
 }
+
 CHI_gaoxiong2 = {
-  icon = GFX_modifiers_CHI_gaoxiong
-  enable = {
-    tag = CHI
-  }
-  state_production_speed_buildings_factor = 0.04
-  local_building_slots = 4
-  local_supplies = 0.05
-  local_manpower = 0.03
-  mobilization_speed = 0.05
+	icon = GFX_modifiers_CHI_gaoxiong
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
 }
+
 CHI_taibei = {
-  icon = GFX_modifiers_CHI_taibei
-  enable = {
-    tag = CHI
-  }
-  state_production_speed_buildings_factor = 0.04
-  local_building_slots = 4
-  local_supplies = 0.05
-  local_manpower = 0.03
-  mobilization_speed = 0.05
+	icon = GFX_modifiers_CHI_taibei
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
 }
+
 CHI_taizhong = {
-  icon = GFX_modifiers_CHI_taizhong
-  enable = {
-    tag = CHI
-  }
-  state_production_speed_buildings_factor = 0.04
-  local_building_slots = 4
-  local_supplies = 0.05
-  local_manpower = 0.03
-  mobilization_speed = 0.05
+	icon = GFX_modifiers_CHI_taizhong
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
 }
+
 CHI_Taiwan_Province = {
-  icon = GFX_modifiers_CHI_Taiwan_Province
-  enable = {
-    tag = CHI
-  }
-  local_building_slots_factor = 0.05
+	icon = GFX_modifiers_CHI_Taiwan_Province
+	enable = {
+		is_owned_by = CHI
+	}
+	local_building_slots_factor = 0.05
 }
+
 CHI_Fujian_Province = {
-  icon = GFX_modifiers_CHI_Fujian_Province
-  enable = {
-    tag = CHI
-  }
-  army_core_defence_factor = 0.1
-  state_production_speed_coastal_bunker_factor = 0.15
+	icon = GFX_modifiers_CHI_Fujian_Province
+	enable = {
+		is_owned_by = CHI
+	}
+	army_core_defence_factor = 0.1
+	state_production_speed_coastal_bunker_factor = 0.15
 }
+
 CHI_Hainan_Province = {
-  icon = GFX_modifiers_CHI_Hainan_Province
-  enable = {
-    tag = CHI
-  }
-  local_resources_factor = 0.05
-  state_production_speed_coastal_bunker_factor = 0.15
+	icon = GFX_modifiers_CHI_Hainan_Province
+	enable = {
+		is_owned_by = CHI
+	}
+	local_resources_factor = 0.05
+	state_production_speed_coastal_bunker_factor = 0.15
 }
+
 CHI_Qingdao_City = {
-  icon = GFX_modifiers_CHI_Qingdao_City
-  enable = {
-    tag = CHI
-  }
-  state_production_speed_buildings_factor = 0.04
-  local_building_slots = 4
-  local_supplies = 0.05
-  local_manpower = 0.03
-  mobilization_speed = 0.05
+	icon = GFX_modifiers_CHI_Qingdao_City
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+
+CHI_Chongqing = {
+	icon = GFX_modifiers_CHI_Chongqing
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+
+CHI_Dalian = {
+	icon = GFX_modifiers_CHI_Dalian
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+
+CHI_Guangzhou = {
+	icon = GFX_modifiers_CHI_Guangzhou
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+
+CHI_Harbin = {
+	icon = GFX_modifiers_CHI_Harbin
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+
+CHI_Nanjing = {
+	icon = GFX_modifiers_CHI_Nanjing
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+
+CHI_Shenyang = {
+	icon = GFX_modifiers_CHI_Shenyang
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+
+CHI_Xian = {
+	icon = GFX_modifiers_CHI_Xian
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+
+CHI_Wuhan = {
+	icon = GFX_modifiers_CHI_Wuhan
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+
+CHI_Beijing = {
+	icon = GFX_modifiers_CHI_Beijing
+	enable = {
+		is_owned_by = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+
+CHI_Beiping = {
+	icon = GFX_modifiers_CHI_Beiping
+	enable = {
+		tag = CHI
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+
+##GAW
+CHI_asia_pacific_armament = {
+	icon = CHI_Coordinating_Allied_Bombing_Operations
+	enable = {
+		tag = CHI
+	}
+	local_org_regain = 0.05
+	org_loss_when_moving = -0.1
+	army_speed_factor = 0.05
+	local_attrition = -0.1
+	supply_consumption_factor = -0.1
+}
+
+CHI_waves_of_nujiang = {
+	icon = GFX_idea_CHI_operation_national_glory_idea
+	enable = {
+		tag = CHI
+	}
+	army_attack_factor = 0.1
+	local_attrition = -0.15
+	local_org_regain = 0.05
+}
+
+CHI_eastern_terrain_mapping = {
+	icon = GFX_idea_CHI_operation_national_glory_idea
+	enable = {
+		tag = CHI
+	}
+	army_speed_factor = 0.1
+	army_attack_factor = 0.1
+}
+
+CHI_northern_joint_command = {
+	icon = GFX_idea_CHI_operation_national_glory_idea
+	enable = {
+		tag = CHI
+	}
+	local_org_regain = 0.05
+	army_attack_factor = 0.05
+	army_defence_factor = 0.05
 }
 
 ## 正面Buff
 # 中共滲透
 CHI_PRC_Infiltration = {
-  enable = {
-    tag = CHI
-  }
-  army_core_attack_factor = CHI_PRC_Infiltration_buff
-  army_core_defence_factor = CHI_PRC_Infiltration_buff
+	enable = {
+		tag = CHI
+	}
+	army_core_attack_factor = CHI_PRC_Infiltration_buff
+	army_core_defence_factor = CHI_PRC_Infiltration_buff
 }
+
 # 台灣獨立運動
 CHI_taiwanese_independence_dynamic = {
-  icon = GFX_idea_TAI_taiwanese_independence_movements
-
-  enable = {
-    NOT = {
-      has_country_flag = KMT_win_flg
-    }
-  }
-
-  political_power_gain = CHI_taiwanese_independence_political_power_gain_var
-  army_core_attack_factor = CHI_taiwanese_independence_core_attack_var
-  army_core_defence_factor = CHI_taiwanese_independence_core_defence_var
-  stability_factor = CHI_taiwanese_independence_stability_factor_var
-  surrender_limit = CHI_taiwanese_independence_surrender_limit_var
-  war_support_factor = CHI_taiwanese_independence_war_support_factor_var
-  society_development_monthly = CHI_taiwanese_independence_society_development_monthly_var
-  conscription_factor = CHI_taiwanese_independence_conscription_factor_var
-  social_liberal_drift = CHI_taiwanese_independence_social_liberal_drift_var
+	icon = GFX_idea_TAI_taiwanese_independence_movements
+	enable = {
+		NOT = {
+			has_country_flag = KMT_win_flg
+		}
+	}
+	political_power_gain = CHI_taiwanese_independence_political_power_gain_var
+	army_core_attack_factor = CHI_taiwanese_independence_core_attack_var
+	army_core_defence_factor = CHI_taiwanese_independence_core_defence_var
+	stability_factor = CHI_taiwanese_independence_stability_factor_var
+	surrender_limit = CHI_taiwanese_independence_surrender_limit_var
+	war_support_factor = CHI_taiwanese_independence_war_support_factor_var
+	society_development_monthly = CHI_taiwanese_independence_society_development_monthly_var
+	conscription_factor = CHI_taiwanese_independence_conscription_factor_var
+	social_liberal_drift = CHI_taiwanese_independence_social_liberal_drift_var
 }
+
 # 憲政新政
 Republic_of_China_dynamic = {
-  icon = GFX_idea_ROC
-
-  enable = {
-    has_country_flag = KMT_win_flg
-  }
-
-  political_power_gain = CHI_Republic_of_China_political_power_gain_var
-  army_core_attack_factor = CHI_Republic_of_China_core_attack_var
-  army_core_defence_factor = CHI_Republic_of_China_core_defence_var
-  stability_factor = CHI_Republic_of_China_stability_factor_var
-  surrender_limit = CHI_Republic_of_China_surrender_limit_var
-  war_support_factor = CHI_Republic_of_China_war_support_factor_var
-  society_development_monthly = CHI_Republic_of_China_society_development_monthly_var
-  conscription_factor = CHI_Republic_of_China_conscription_factor_var
+	icon = GFX_idea_ROC
+	enable = {
+		has_country_flag = KMT_win_flg
+	}
+	political_power_gain = CHI_Republic_of_China_political_power_gain_var
+	army_core_attack_factor = CHI_Republic_of_China_core_attack_var
+	army_core_defence_factor = CHI_Republic_of_China_core_defence_var
+	stability_factor = CHI_Republic_of_China_stability_factor_var
+	surrender_limit = CHI_Republic_of_China_surrender_limit_var
+	war_support_factor = CHI_Republic_of_China_war_support_factor_var
+	society_development_monthly = CHI_Republic_of_China_society_development_monthly_var
+	conscription_factor = CHI_Republic_of_China_conscription_factor_var
 }
-# 國軍
+
+#ROCA1
 CHI_ROC_army_dynamic = {
-  icon = GFX_idea_CHI_ROC_army
-
-  enable = {
-    has_country_flag = CHI_ROC_army_flg
-  }
-
-  # ==========================================
+	icon = GFX_idea_CHI_ROC_army
+	enable = {
+		has_country_flag = CHI_ROC_army_flg
+	}
+	# ==========================================
 	# 陸軍核心戰鬥與組織 (Army Core Combat & Organization)
 	# ==========================================
-	army_attack_factor                 = ROC_army_attack_factor                 # 陸軍整體攻擊力修正
-	army_defence_factor                = ROC_army_defence_factor                # 陸軍整體防禦力修正
-	army_org_factor                    = ROC_army_org_factor                    # 陸軍最大組織度修正
-	army_org_regain                    = ROC_army_org_regain                    # 陸軍組織度恢復速度
-	army_morale_factor                 = ROC_army_morale_factor                 # 陸軍士氣（影響組織度恢復速率）
-	army_strength_factor               = ROC_army_strength_factor               # 陸軍兵力/耐久度修正
-	breakthrough_factor                = ROC_breakthrough_factor                # 陸軍突破能力修正
-	combat_width_factor                = ROC_combat_width_factor                # 戰鬥寬度修正
-	reinforce_rate                     = ROC_reinforce_rate                     # 增援率（預備隊投入戰鬥的機率）
-	initiative_factor                  = ROC_initiative_factor                  # 主動性修正（影響戰術選擇與增援）
-	coordination_bonus                 = ROC_coordination_bonus                 # 協同作戰加成（集火目標能力）
-	max_planning                       = ROC_max_planning                       # 最大作戰計畫加成上限修正
-	planning_speed                     = ROC_planning_speed                     # 作戰計畫制定速度
-
+	army_attack_factor = ROC_army_attack_factor	# 陸軍整體攻擊力修正
+	army_defence_factor = ROC_army_defence_factor	# 陸軍整體防禦力修正
+	army_org_factor = ROC_army_org_factor	# 陸軍最大組織度修正
+	army_org_regain = ROC_army_org_regain	# 陸軍組織度恢復速度
+	army_morale_factor = ROC_army_morale_factor	# 陸軍士氣（影響組織度恢復速率）
+	army_strength_factor = ROC_army_strength_factor	# 陸軍兵力/耐久度修正
+	breakthrough_factor = ROC_breakthrough_factor	# 陸軍突破能力修正
+	combat_width_factor = ROC_combat_width_factor	# 戰鬥寬度修正
+	land_reinforce_rate = ROC_land_reinforce_rate	# 增援率（預備隊投入戰鬥的機率）
+	initiative_factor = ROC_initiative_factor	# 主動性修正（影響戰術選擇與增援）
+	coordination_bonus = ROC_coordination_bonus	# 協同作戰加成（集火目標能力）
+	max_planning = ROC_max_planning	# 最大作戰計畫加成上限修正
+	planning_speed = ROC_planning_speed	# 作戰計畫制定速度
+	terrain_penalty_reduction = ROC_terrain_penalty_reduction
+	acclimatization_hot_climate_gain_factor = ROC_acclimatization_hot_climate_gain_factor
+	army_non_core_defence_factor = ROC_army_non_core_defence_factor
+	recon_factor = ROC_recon_factor
+	army_breakthrough_against_minor_factor = ROC_army_breakthrough_against_minor_factor
+	land_night_attack = ROC_land_night_attack
+	org_loss_at_low_org_factor = ROC_org_loss_at_low_org_factor
+	army_attack_against_major_factor = ROC_army_attack_against_major_factor
+	army_defence_against_major_factor = ROC_army_defence_against_major_factor
 	# ==========================================
 	# 兵種特化加成 (Unit Specific Bonuses)
 	# ==========================================
-	army_armor_attack_factor           = ROC_army_armor_attack_factor           # 裝甲部隊攻擊修正
-	army_armor_defence_factor          = ROC_army_armor_defence_factor          # 裝甲部隊防禦修正
-	mechanized_defence_factor          = ROC_mechanized_defence_factor          # 機械化部隊防禦修正
-	special_forces_attack_factor       = ROC_special_forces_attack_factor       # 特種部隊攻擊修正
-	special_forces_defence_factor      = ROC_special_forces_defence_factor      # 特種部隊防禦修正
-  naval_invasion_penalty             = ROC_naval_invasion_penalty             # 兩棲登陸作戰懲罰減免
-
+	army_armor_attack_factor = ROC_army_armor_attack_factor	# 裝甲部隊攻擊修正
+	army_armor_defence_factor = ROC_army_armor_defence_factor	# 裝甲部隊防禦修正
+	mechanized_defence_factor = ROC_mechanized_defence_factor	# 機械化部隊防禦修正
+	special_forces_attack_factor = ROC_special_forces_attack_factor	# 特種部隊攻擊修正
+	special_forces_defence_factor = ROC_special_forces_defence_factor	# 特種部隊防禦修正
+	naval_invasion_penalty = ROC_naval_invasion_penalty	# 兩棲登陸作戰懲罰減免
+	invasion_preparation = ROC_invasion_preparation
 	# ==========================================
 	# 本土防衛與補給系統 (Home Defense & Supply System)
 	# ==========================================
-	army_core_attack_factor            = ROC_army_core_attack_factor            # 核心領土陸軍攻擊修正
-	army_core_defence_factor           = ROC_army_core_defence_factor           # 核心領土陸軍防禦修正
-	supply_consumption_factor          = ROC_supply_consumption_factor          # 整體補給消耗修正
-	supply_combat_penalties_on_core_factor = ROC_supply_combat_penalties_on_core_factor # 核心領土缺乏補給戰鬥懲罰減免
-	no_supply_grace                    = ROC_no_supply_grace                    # 攜行補給（小時）
-	supply_node_range                  = ROC_supply_node_range                  # 補給節點輻射範圍修正
-
-	# ==========================================
-	# 空軍數值 (Air Force)
-	# ==========================================
-	air_mission_efficiency             = ROC_air_mission_efficiency             # 空軍任務效率修正
-	air_training_xp_gain_factor        = ROC_air_training_xp_gain_factor        # 空軍演習經驗獲取係數
-  air_superiority_efficiency         = ROC_air_superiority_efficiency
-  air_intercept_efficiency           = ROC_air_intercept_efficiency
-  air_cas_efficiency                 = ROC_air_cas_efficiency
-  air_attack_factor                  = ROC_air_attack_factor
-  air_defence_factor                 = ROC_air_defence_factor
-  air_cas_present_factor             = ROC_air_cas_present_factor
-  ground_attack_factor               = ROC_ground_attack_factor
-
-  # ==========================================
-	# 海軍數值 (Navy)
-	# ==========================================
-	navy_org_factor                    = ROC_navy_org_factor                    # 海軍最大組織度修正
-  naval_coordination                 = ROC_naval_coordination
-  naval_speed_factor                 = ROC_naval_speed_factor
-  naval_detection                    = ROC_naval_detection
-  naval_morale_factor                = ROC_naval_morale_factor
-  navy_screen_attack_factor          = ROC_navy_screen_attack_factor
-  navy_screen_defense_factor         = ROC_navy_screen_defense_factor
-  screening_efficiency               = ROC_screening_efficiency
-
+	army_core_attack_factor = ROC_army_core_attack_factor	# 核心領土陸軍攻擊修正
+	army_core_defence_factor = ROC_army_core_defence_factor	# 核心領土陸軍防禦修正
+	supply_consumption_factor = ROC_supply_consumption_factor	# 整體補給消耗修正
+	supply_combat_penalties_on_core_factor = ROC_supply_combat_penalties_on_core_factor	# 核心領土缺乏補給戰鬥懲罰減免
+	no_supply_grace = ROC_no_supply_grace	# 攜行補給（小時）
+	supply_node_range = ROC_supply_node_range	# 補給節點輻射範圍修正
+	equipment_capture = ROC_equipment_capture
+	army_fuel_consumption_factor = ROC_army_fuel_consumption_factor
 	# ==========================================
 	# 人力、維護與軍隊訓練 (Manpower, Upkeep & Training)
 	# ==========================================
-	conscription_factor                = ROC_conscription_factor                # 適役人口係數修正（徵兵比例）
-	mobilization_speed                 = ROC_mobilization_speed                 # 動員速度（法案切換生效速度）
-	training_time_factor               = ROC_training_time_factor               # 部隊訓練時間修正（正值=變慢，負值=變快）
-	unit_upkeep_cost_factor            = ROC_unit_upkeep_cost_factor            # 海陸空單位整體維護費修正
-	battalion_upkeep_factor            = ROC_battalion_upkeep_factor            # 陸軍營級單位維護費修正
-	aircraft_upkeep_factor             = ROC_aircraft_upkeep_factor             # 飛機維護費修正
-	ship_upkeep_factor                 = ROC_ship_upkeep_factor                 # 艦艇維護費修正
-	military_development_monthly       = ROC_military_development_monthly       # [TFR特有] 每月軍事發展進度變化
-
+	conscription_factor = ROC_conscription_factor	# 適役人口係數修正（徵兵比例）
+	mobilization_speed = ROC_mobilization_speed	# 動員速度（法案切換生效速度）
+	training_time_factor = ROC_training_time_factor	# 部隊訓練時間修正（正值=變慢，負值=變快）
+	battalion_upkeep_factor = ROC_battalion_upkeep_factor	# 陸軍營級單位維護費修正
+	military_development_monthly = ROC_military_development_monthly	# [TFR特有] 每月軍事發展進度變化
 	# ==========================================
 	# 經驗、指揮點數與學說 (XP, CP & Doctrine)
 	# ==========================================
-	experience_gain_factor             = ROC_experience_gain_factor             # 經驗獲得倍率修正（將/陸/空/海）
-	experience_gain_army_factor        = ROC_experience_gain_army_factor        # 陸軍經驗獲取倍率
-	experience_gain_air                = ROC_experience_gain_air                # 空軍經驗獲取量
-	experience_loss_factor             = ROC_experience_loss_factor             # 部隊傷亡時的經驗流失係數
-	command_power_gain_mult            = ROC_command_power_gain_mult            # 指揮點數（CP）獲取倍率
-	army_doctrine_cost_factor          = ROC_army_doctrine_cost_factor          # 陸軍學說花費修正
-	navy_doctrine_cost_factor          = ROC_navy_doctrine_cost_factor          # 海軍學說花費修正
-	air_doctrine_cost_factor           = ROC_air_doctrine_cost_factor           # 空軍學說花費修正
-
+	experience_gain_factor = ROC_experience_gain_factor	# 經驗獲得倍率修正（將/陸/空/海）
+	experience_gain_army_factor = ROC_experience_gain_army_factor	# 陸軍經驗獲取倍率
+	experience_loss_factor = ROC_experience_loss_factor	# 部隊傷亡時的經驗流失係數
+	command_power_gain_mult = ROC_command_power_gain_mult	# 指揮點數（CP）獲取倍率
+	land_doctrine_cost_factor = ROC_land_doctrine_cost_factor	# 陸軍學說花費修正
 	# ==========================================
 	# 情報、基建與外交限制 (Intel, Infrastructure & Diplomacy)
 	# ==========================================
-	army_intel_to_others               = ROC_army_intel_to_others               # 洩漏給他國的陸軍情報（負值為保密）
-	airforce_intel_to_others           = ROC_airforce_intel_to_others           # 洩漏給他國的空軍情報
-	civilian_intel_to_others           = ROC_civilian_intel_to_others           # 洩漏給他國的民事情報
-	repair_speed_rail_way_factor       = ROC_repair_speed_rail_way_factor       # 鐵路修復速度修正
-	repair_speed_air_base_factor       = ROC_repair_speed_air_base_factor       # 空軍基地修復速度修正
-	cannot_call_allies_or_join_wars    = ROC_cannot_call_allies_or_join_wars    # 外交限制：無法召喚盟友或加入戰爭
+	army_intel_to_others = ROC_army_intel_to_others	# 洩漏給他國的陸軍情報（負值為保密）
+	civilian_intel_to_others = ROC_civilian_intel_to_others	# 洩漏給他國的民事情報
+	repair_speed_rail_way_factor = ROC_repair_speed_rail_way_factor	# 鐵路修復速度修正
+	cannot_call_allies_or_join_wars = ROC_cannot_call_allies_or_join_wars	# 外交限制：無法召喚盟友或加入戰爭
 }
+
+# 國軍2
+CHI_ROC_army_dynamic_2 = {
+	icon = GFX_idea_CHI_ROC_army
+	enable = {
+		has_country_flag = CHI_ROC_army_flg
+	}
+	# ==========================================
+	# 陸軍核心戰鬥與組織 (Army Core Combat & Organization)
+	# ==========================================
+	army_attack_factor = ROC_army_attack_factor	# 陸軍整體攻擊力修正
+	army_defence_factor = ROC_army_defence_factor	# 陸軍整體防禦力修正
+	army_org_factor = ROC_army_org_factor	# 陸軍最大組織度修正
+	army_org_regain = ROC_army_org_regain	# 陸軍組織度恢復速度
+	army_morale_factor = ROC_army_morale_factor	# 陸軍士氣（影響組織度恢復速率）
+	army_strength_factor = ROC_army_strength_factor	# 陸軍兵力/耐久度修正
+	breakthrough_factor = ROC_breakthrough_factor	# 陸軍突破能力修正
+	combat_width_factor = ROC_combat_width_factor	# 戰鬥寬度修正
+	land_reinforce_rate = ROC_land_reinforce_rate	# 增援率（預備隊投入戰鬥的機率）
+	initiative_factor = ROC_initiative_factor	# 主動性修正（影響戰術選擇與增援）
+	coordination_bonus = ROC_coordination_bonus	# 協同作戰加成（集火目標能力）
+	max_planning = ROC_max_planning	# 最大作戰計畫加成上限修正
+	planning_speed = ROC_planning_speed	# 作戰計畫制定速度
+	terrain_penalty_reduction = ROC_terrain_penalty_reduction
+	acclimatization_hot_climate_gain_factor = ROC_acclimatization_hot_climate_gain_factor
+	army_non_core_defence_factor = ROC_army_non_core_defence_factor
+	recon_factor = ROC_recon_factor
+	army_breakthrough_against_minor_factor = ROC_army_breakthrough_against_minor_factor
+	land_night_attack = ROC_land_night_attack
+	org_loss_at_low_org_factor = ROC_org_loss_at_low_org_factor
+	army_attack_against_major_factor = ROC_army_attack_against_major_factor
+	army_defence_against_major_factor = ROC_army_defence_against_major_factor
+	# ==========================================
+	# 兵種特化加成 (Unit Specific Bonuses)
+	# ==========================================
+	army_armor_attack_factor = ROC_army_armor_attack_factor	# 裝甲部隊攻擊修正
+	army_armor_defence_factor = ROC_army_armor_defence_factor	# 裝甲部隊防禦修正
+	mechanized_defence_factor = ROC_mechanized_defence_factor	# 機械化部隊防禦修正
+	special_forces_attack_factor = ROC_special_forces_attack_factor	# 特種部隊攻擊修正
+	special_forces_defence_factor = ROC_special_forces_defence_factor	# 特種部隊防禦修正
+	naval_invasion_penalty = ROC_naval_invasion_penalty	# 兩棲登陸作戰懲罰減免
+	invasion_preparation = ROC_invasion_preparation
+	# ==========================================
+	# 本土防衛與補給系統 (Home Defense & Supply System)
+	# ==========================================
+	army_core_attack_factor = ROC_army_core_attack_factor	# 核心領土陸軍攻擊修正
+	army_core_defence_factor = ROC_army_core_defence_factor	# 核心領土陸軍防禦修正
+	supply_consumption_factor = ROC_supply_consumption_factor	# 整體補給消耗修正
+	supply_combat_penalties_on_core_factor = ROC_supply_combat_penalties_on_core_factor	# 核心領土缺乏補給戰鬥懲罰減免
+	no_supply_grace = ROC_no_supply_grace	# 攜行補給（小時）
+	supply_node_range = ROC_supply_node_range	# 補給節點輻射範圍修正
+	equipment_capture = ROC_equipment_capture
+	army_fuel_consumption_factor = ROC_army_fuel_consumption_factor
+	# ==========================================
+	# 人力、維護與軍隊訓練 (Manpower, Upkeep & Training)
+	# ==========================================
+	conscription_factor = ROC_conscription_factor	# 適役人口係數修正（徵兵比例）
+	mobilization_speed = ROC_mobilization_speed	# 動員速度（法案切換生效速度）
+	training_time_factor = ROC_training_time_factor	# 部隊訓練時間修正（正值=變慢，負值=變快）
+	battalion_upkeep_factor = ROC_battalion_upkeep_factor	# 陸軍營級單位維護費修正
+	military_development_monthly = ROC_military_development_monthly	# [TFR特有] 每月軍事發展進度變化
+	# ==========================================
+	# 經驗、指揮點數與學說 (XP, CP & Doctrine)
+	# ==========================================
+	experience_gain_factor = ROC_experience_gain_factor	# 經驗獲得倍率修正（將/陸/空/海）
+	experience_gain_army_factor = ROC_experience_gain_army_factor	# 陸軍經驗獲取倍率
+	experience_loss_factor = ROC_experience_loss_factor	# 部隊傷亡時的經驗流失係數
+	command_power_gain_mult = ROC_command_power_gain_mult	# 指揮點數（CP）獲取倍率
+	land_doctrine_cost_factor = ROC_land_doctrine_cost_factor	# 陸軍學說花費修正
+	# ==========================================
+	# 情報、基建與外交限制 (Intel, Infrastructure & Diplomacy)
+	# ==========================================
+	army_intel_to_others = ROC_army_intel_to_others	# 洩漏給他國的陸軍情報（負值為保密）
+	civilian_intel_to_others = ROC_civilian_intel_to_others	# 洩漏給他國的民事情報
+	repair_speed_rail_way_factor = ROC_repair_speed_rail_way_factor	# 鐵路修復速度修正
+	cannot_call_allies_or_join_wars = ROC_cannot_call_allies_or_join_wars	# 外交限制：無法召喚盟友或加入戰爭
+}
+
+# 國軍3
+CHI_ROC_army_dynamic_3 = {
+	icon = GFX_idea_CHI_ROC_army
+	enable = {
+		has_country_flag = CHI_ROC_army_flg
+	}
+	# ==========================================
+	# 陸軍核心戰鬥與組織 (Army Core Combat & Organization)
+	# ==========================================
+	army_attack_factor = ROC_army_attack_factor	# 陸軍整體攻擊力修正
+	army_defence_factor = ROC_army_defence_factor	# 陸軍整體防禦力修正
+	army_org_factor = ROC_army_org_factor	# 陸軍最大組織度修正
+	army_org_regain = ROC_army_org_regain	# 陸軍組織度恢復速度
+	army_morale_factor = ROC_army_morale_factor	# 陸軍士氣（影響組織度恢復速率）
+	army_strength_factor = ROC_army_strength_factor	# 陸軍兵力/耐久度修正
+	breakthrough_factor = ROC_breakthrough_factor	# 陸軍突破能力修正
+	combat_width_factor = ROC_combat_width_factor	# 戰鬥寬度修正
+	land_reinforce_rate = ROC_land_reinforce_rate	# 增援率（預備隊投入戰鬥的機率）
+	initiative_factor = ROC_initiative_factor	# 主動性修正（影響戰術選擇與增援）
+	coordination_bonus = ROC_coordination_bonus	# 協同作戰加成（集火目標能力）
+	max_planning = ROC_max_planning	# 最大作戰計畫加成上限修正
+	planning_speed = ROC_planning_speed	# 作戰計畫制定速度
+	terrain_penalty_reduction = ROC_terrain_penalty_reduction
+	acclimatization_hot_climate_gain_factor = ROC_acclimatization_hot_climate_gain_factor
+	army_non_core_defence_factor = ROC_army_non_core_defence_factor
+	recon_factor = ROC_recon_factor
+	army_breakthrough_against_minor_factor = ROC_army_breakthrough_against_minor_factor
+	land_night_attack = ROC_land_night_attack
+	org_loss_at_low_org_factor = ROC_org_loss_at_low_org_factor
+	army_attack_against_major_factor = ROC_army_attack_against_major_factor
+	army_defence_against_major_factor = ROC_army_defence_against_major_factor
+	# ==========================================
+	# 兵種特化加成 (Unit Specific Bonuses)
+	# ==========================================
+	army_armor_attack_factor = ROC_army_armor_attack_factor	# 裝甲部隊攻擊修正
+	army_armor_defence_factor = ROC_army_armor_defence_factor	# 裝甲部隊防禦修正
+	mechanized_defence_factor = ROC_mechanized_defence_factor	# 機械化部隊防禦修正
+	special_forces_attack_factor = ROC_special_forces_attack_factor	# 特種部隊攻擊修正
+	special_forces_defence_factor = ROC_special_forces_defence_factor	# 特種部隊防禦修正
+	naval_invasion_penalty = ROC_naval_invasion_penalty	# 兩棲登陸作戰懲罰減免
+	invasion_preparation = ROC_invasion_preparation
+	# ==========================================
+	# 本土防衛與補給系統 (Home Defense & Supply System)
+	# ==========================================
+	army_core_attack_factor = ROC_army_core_attack_factor	# 核心領土陸軍攻擊修正
+	army_core_defence_factor = ROC_army_core_defence_factor	# 核心領土陸軍防禦修正
+	supply_consumption_factor = ROC_supply_consumption_factor	# 整體補給消耗修正
+	supply_combat_penalties_on_core_factor = ROC_supply_combat_penalties_on_core_factor	# 核心領土缺乏補給戰鬥懲罰減免
+	no_supply_grace = ROC_no_supply_grace	# 攜行補給（小時）
+	supply_node_range = ROC_supply_node_range	# 補給節點輻射範圍修正
+	equipment_capture = ROC_equipment_capture
+	army_fuel_consumption_factor = ROC_army_fuel_consumption_factor
+	# ==========================================
+	# 人力、維護與軍隊訓練 (Manpower, Upkeep & Training)
+	# ==========================================
+	conscription_factor = ROC_conscription_factor	# 適役人口係數修正（徵兵比例）
+	mobilization_speed = ROC_mobilization_speed	# 動員速度（法案切換生效速度）
+	training_time_factor = ROC_training_time_factor	# 部隊訓練時間修正（正值=變慢，負值=變快）
+	battalion_upkeep_factor = ROC_battalion_upkeep_factor	# 陸軍營級單位維護費修正
+	military_development_monthly = ROC_military_development_monthly	# [TFR特有] 每月軍事發展進度變化
+	# ==========================================
+	# 經驗、指揮點數與學說 (XP, CP & Doctrine)
+	# ==========================================
+	experience_gain_factor = ROC_experience_gain_factor	# 經驗獲得倍率修正（將/陸/空/海）
+	experience_gain_army_factor = ROC_experience_gain_army_factor	# 陸軍經驗獲取倍率
+	experience_loss_factor = ROC_experience_loss_factor	# 部隊傷亡時的經驗流失係數
+	command_power_gain_mult = ROC_command_power_gain_mult	# 指揮點數（CP）獲取倍率
+	land_doctrine_cost_factor = ROC_land_doctrine_cost_factor	# 陸軍學說花費修正
+	# ==========================================
+	# 情報、基建與外交限制 (Intel, Infrastructure & Diplomacy)
+	# ==========================================
+	army_intel_to_others = ROC_army_intel_to_others	# 洩漏給他國的陸軍情報（負值為保密）
+	civilian_intel_to_others = ROC_civilian_intel_to_others	# 洩漏給他國的民事情報
+	repair_speed_rail_way_factor = ROC_repair_speed_rail_way_factor	# 鐵路修復速度修正
+	cannot_call_allies_or_join_wars = ROC_cannot_call_allies_or_join_wars	# 外交限制：無法召喚盟友或加入戰爭
+}
+
+# 空軍
+CHI_ROC_airforce_dynamic = {
+	icon = GFX_idea_CHI_ROC_airforce
+	enable = {
+		has_country_flag = CHI_ROC_army_flg
+	}
+	air_mission_efficiency = ROC_air_mission_efficiency	# 空軍任務效率修正
+	air_training_xp_gain_factor = ROC_air_training_xp_gain_factor	# 空軍演習經驗獲取係數
+	air_superiority_efficiency = ROC_air_superiority_efficiency
+	air_intercept_efficiency = ROC_air_intercept_efficiency
+	air_cas_efficiency = ROC_air_cas_efficiency
+	air_attack_factor = ROC_air_attack_factor
+	air_defence_factor = ROC_air_defence_factor
+	air_cas_present_factor = ROC_air_cas_present_factor
+	ground_attack_factor = ROC_ground_attack_factor
+	aircraft_upkeep_factor = ROC_aircraft_upkeep_factor	# 飛機維護費修正
+	experience_gain_air = ROC_experience_gain_air	# 空軍經驗獲取量
+	air_doctrine_cost_factor = ROC_air_doctrine_cost_factor	# 空軍學說花費修正
+	air_nav_efficiency = ROC_air_nav_efficiency
+	airforce_intel_to_others = ROC_airforce_intel_to_others	# 洩漏給他國的空軍情報
+	air_escort_efficiency = ROC_air_escort_efficiency
+	repair_speed_air_base_factor = ROC_repair_speed_air_base_factor	# 空軍基地修復速度修正
+	air_close_air_support_org_damage_factor = ROC_air_close_air_support_org_damage_factor
+	air_superiority_bonus_in_combat = ROC_air_superiority_bonus_in_combat
+	air_superiority_detect_factor = ROC_air_superiority_detect_factor
+	enemy_army_bonus_air_superiority_factor = ROC_enemy_army_bonus_air_superiority_factor
+	static_anti_air_damage_factor = ROC_static_anti_air_damage_factor
+	air_strategic_bomber_bombing_factor = ROC_air_strategic_bomber_bombing_factor
+	air_strategic_bomber_night_penalty = ROC_air_strategic_bomber_night_penalty
+	air_fuel_consumption_factor = ROC_air_fuel_consumption_factor
+}
+
+# 空軍2
+CHI_ROC_airforce_dynamic_2 = {
+	icon = GFX_idea_CHI_ROC_airforce
+	enable = {
+		has_country_flag = CHI_ROC_army_flg
+	}
+	air_mission_efficiency = ROC_air_mission_efficiency	# 空軍任務效率修正
+	air_training_xp_gain_factor = ROC_air_training_xp_gain_factor	# 空軍演習經驗獲取係數
+	air_superiority_efficiency = ROC_air_superiority_efficiency
+	air_intercept_efficiency = ROC_air_intercept_efficiency
+	air_cas_efficiency = ROC_air_cas_efficiency
+	air_attack_factor = ROC_air_attack_factor
+	air_defence_factor = ROC_air_defence_factor
+	air_cas_present_factor = ROC_air_cas_present_factor
+	ground_attack_factor = ROC_ground_attack_factor
+	aircraft_upkeep_factor = ROC_aircraft_upkeep_factor	# 飛機維護費修正
+	experience_gain_air = ROC_experience_gain_air	# 空軍經驗獲取量
+	air_doctrine_cost_factor = ROC_air_doctrine_cost_factor	# 空軍學說花費修正
+	air_nav_efficiency = ROC_air_nav_efficiency
+	airforce_intel_to_others = ROC_airforce_intel_to_others	# 洩漏給他國的空軍情報
+	air_escort_efficiency = ROC_air_escort_efficiency
+	repair_speed_air_base_factor = ROC_repair_speed_air_base_factor	# 空軍基地修復速度修正
+	air_close_air_support_org_damage_factor = ROC_air_close_air_support_org_damage_factor
+	air_superiority_bonus_in_combat = ROC_air_superiority_bonus_in_combat
+	air_superiority_detect_factor = ROC_air_superiority_detect_factor
+	enemy_army_bonus_air_superiority_factor = ROC_enemy_army_bonus_air_superiority_factor
+	static_anti_air_damage_factor = ROC_static_anti_air_damage_factor
+	air_strategic_bomber_bombing_factor = ROC_air_strategic_bomber_bombing_factor
+	air_strategic_bomber_night_penalty = ROC_air_strategic_bomber_night_penalty
+	air_fuel_consumption_factor = ROC_air_fuel_consumption_factor
+}
+
+# 海軍
+CHI_ROC_navy_dynamic = {
+	icon = GFX_idea_CHI_ROC_navy
+	enable = {
+		has_country_flag = CHI_ROC_army_flg
+	}
+	navy_org_factor = ROC_navy_org_factor	# 海軍最大組織度修正
+	naval_coordination = ROC_naval_coordination
+	naval_speed_factor = ROC_naval_speed_factor
+	naval_detection = ROC_naval_detection
+	naval_morale_factor = ROC_naval_morale_factor
+	navy_screen_attack_factor = ROC_navy_screen_attack_factor
+	navy_screen_defence_factor = ROC_navy_screen_defence_factor
+	screening_efficiency = ROC_screening_efficiency
+	ship_upkeep_factor = ROC_ship_upkeep_factor	# 艦艇維護費修正
+	naval_doctrine_cost_factor = ROC_naval_doctrine_cost_factor	# 海軍學說花費修正
+	shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
+	shore_bombardment_bonus = ROC_shore_bombardment_bonus
+	navy_fuel_consumption_factor = ROC_navy_fuel_consumption_factor
+}
+
+# 海軍2
+CHI_ROC_navy_dynamic_2 = {
+	icon = GFX_idea_CHI_ROC_navy
+	enable = {
+		has_country_flag = CHI_ROC_army_flg
+	}
+	navy_org_factor = ROC_navy_org_factor	# 海軍最大組織度修正
+	naval_coordination = ROC_naval_coordination
+	naval_speed_factor = ROC_naval_speed_factor
+	naval_detection = ROC_naval_detection
+	naval_morale_factor = ROC_naval_morale_factor
+	navy_screen_attack_factor = ROC_navy_screen_attack_factor
+	navy_screen_defence_factor = ROC_navy_screen_defence_factor
+	screening_efficiency = ROC_screening_efficiency
+	ship_upkeep_factor = ROC_ship_upkeep_factor	# 艦艇維護費修正
+	naval_doctrine_cost_factor = ROC_naval_doctrine_cost_factor	# 海軍學說花費修正
+	shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
+	shore_bombardment_bonus = ROC_shore_bombardment_bonus
+	navy_fuel_consumption_factor = ROC_navy_fuel_consumption_factor
+}
+
+# 海軍3
+CHI_ROC_navy_dynamic_3 = {
+	icon = GFX_idea_CHI_ROC_navy
+	enable = {
+		has_country_flag = CHI_ROC_army_flg
+	}
+	navy_org_factor = ROC_navy_org_factor	# 海軍最大組織度修正
+	naval_coordination = ROC_naval_coordination
+	naval_speed_factor = ROC_naval_speed_factor
+	naval_detection = ROC_naval_detection
+	naval_morale_factor = ROC_naval_morale_factor
+	navy_screen_attack_factor = ROC_navy_screen_attack_factor
+	navy_screen_defence_factor = ROC_navy_screen_defence_factor
+	screening_efficiency = ROC_screening_efficiency
+	ship_upkeep_factor = ROC_ship_upkeep_factor	# 艦艇維護費修正
+	naval_doctrine_cost_factor = ROC_naval_doctrine_cost_factor	# 海軍學說花費修正
+	shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
+	shore_bombardment_bonus = ROC_shore_bombardment_bonus
+	navy_fuel_consumption_factor = ROC_navy_fuel_consumption_factor
+}
+
 # 立法院
 CHI_LY_of_the_roc_dynamic = {
-  icon = GFX_idea_CHI_LY_of_the_roc_dynamic
-  enable = {
-    tag = CHI
-  }
-  stability_factor = CHI_LFY_stability_factor
-  political_power_gain = CHI_LFY_political_power_gain
-  party_popularity_stability_factor = CHI_LFY_party_popularity_stability_factor
-  war_support_weekly_factor = CHI_LFY_war_support_weekly_factor
-  social_liberal_drift = CHI_LFY_social_liberal_drift
-  market_liberal_drift = CHI_LFY_market_liberal_drift
-  social_democrat_drift = CHI_LFY_social_democrat_drift
-  army_core_defence_factor = CHI_LFY_army_core_defence_factor
-  army_core_attack_factor = CHI_LFY_army_core_attack_factor
-  mobilization_speed = CHI_LFY_mobilization_speed
-  production_speed_nuclear_reactor_factor = CHI_LFY_production_speed_nuclear_reactor_factor
-  production_speed_energy_farm_factor = CHI_LFY_production_speed_energy_farm_factor
-  master_ideology_drift = CHI_LFY_master_ideology_drift
-  opinion_gain_monthly_same_ideology_factor = CHI_LFY_opinion_gain_monthly_same_ideology_factor
-  conservative_drift = CHI_LFY_conservative_drift
-  authoritarian_democrat_drift = CHI_LFY_authoritarian_democrat_drift
-  society_development_monthly = CHI_LFY_society_development_monthly
-  production_speed_power_plant_factor = CHI_LFY_production_speed_power_plant_factor
-  industrial_capacity_factory = CHI_LFY_industrial_capacity_factory
-  consumer_goods_factor = CHI_LFY_consumer_goods_factor
-  production_speed_office_park_factor = CHI_LFY_production_speed_office_park_factor
-  business_value_factor = CHI_LFY_business_value_factor
-  personal_value_factor = CHI_LFY_personal_value_factor
-  income_growth_factor = CHI_LFY_income_growth_factor
-  poverty_development_monthly = CHI_LFY_poverty_development_monthly
+	icon = GFX_idea_CHI_LY_of_the_roc_dynamic
+	enable = {
+		tag = CHI
+	}
+	stability_factor = CHI_LFY_stability_factor
+	political_power_gain = CHI_LFY_political_power_gain
+	party_popularity_stability_factor = CHI_LFY_party_popularity_stability_factor
+	war_support_weekly_factor = CHI_LFY_war_support_weekly_factor
+	social_liberal_drift = CHI_LFY_social_liberal_drift
+	market_liberal_drift = CHI_LFY_market_liberal_drift
+	social_democrat_drift = CHI_LFY_social_democrat_drift
+	army_core_defence_factor = CHI_LFY_army_core_defence_factor
+	army_core_attack_factor = CHI_LFY_army_core_attack_factor
+	mobilization_speed = CHI_LFY_mobilization_speed
+	production_speed_nuclear_reactor_factor = CHI_LFY_production_speed_nuclear_reactor_factor
+	production_speed_energy_farm_factor = CHI_LFY_production_speed_energy_farm_factor
+	master_ideology_drift = CHI_LFY_master_ideology_drift
+	opinion_gain_monthly_same_ideology_factor = CHI_LFY_opinion_gain_monthly_same_ideology_factor
+	conservative_drift = CHI_LFY_conservative_drift
+	authoritarian_democrat_drift = CHI_LFY_authoritarian_democrat_drift
+	society_development_monthly = CHI_LFY_society_development_monthly
+	production_speed_power_plant_factor = CHI_LFY_production_speed_power_plant_factor
+	industrial_capacity_factory = CHI_LFY_industrial_capacity_factory
+	consumer_goods_factor = CHI_LFY_consumer_goods_factor
+	production_speed_office_park_factor = CHI_LFY_production_speed_office_park_factor
+	business_value_factor = CHI_LFY_business_value_factor
+	personal_value_factor = CHI_LFY_personal_value_factor
+	income_growth_factor = CHI_LFY_income_growth_factor
+	poverty_development_monthly = CHI_LFY_poverty_development_monthly
 }
+
 #重啟核能
 CHI_reintroduce_nuclear_dynamic = {
-  icon = GFX_idea_CHI_reintroduce_nuclear
-  enable = {
-    tag = CHI
-  }
-  production_speed_nuclear_reactor_factor = CHI_reintroduce_nuclear_production_speed_nuclear_reactor
-  production_factory_max_efficiency_factor = CHI_reintroduce_nuclear_production_factory_max_efficiency
+	icon = GFX_idea_CHI_reintroduce_nuclear
+	enable = {
+		tag = CHI
+	}
+	production_speed_nuclear_reactor_factor = CHI_reintroduce_nuclear_production_speed_nuclear_reactor
+	production_factory_max_efficiency_factor = CHI_reintroduce_nuclear_production_factory_max_efficiency
 }
+
 # 中華民國經濟
 CHI_Economy = {
-  icon = GFX_idea_CHI_reintroduce_nuclear #TODO 以後再補上圖片，目前借用"重啟核能"的icon
-  enable = {
-    tag = CHI
-  }
-  custom_modifier_tooltip = CHI_Economy_fake
+	icon = GFX_idea_CHI_Economy_tw
+	enable = {
+		tag = CHI
+	}
+	custom_modifier_tooltip = CHI_Economy_fake
+	consumer_goods_factor = CHI_Economy_consumer_goods_factor
+	production_speed_buildings_factor = CHI_Economy_production_speed_buildings_factor
+	industrial_capacity_dockyard = CHI_Economy_industrial_capacity_dockyard
+	production_speed_energy_farm_factor = CHI_Economy_production_speed_energy_farm_factor
+	personal_value_factor = CHI_Economy_personal_value_factor
+	business_value_factor = CHI_Economy_business_value_factor
+	poverty_development_monthly = CHI_Economy_poverty_development_monthly
+	industrial_capacity_factory = CHI_Economy_industrial_capacity_factory
+	line_change_production_efficiency_factor = CHI_Economy_line_change_production_efficiency_factor
+	production_lack_of_resource_penalty_factor = CHI_Economy_production_lack_of_resource_penalty_factor
+	production_speed_synthetic_refinery_factor = CHI_Economy_production_speed_synthetic_refinery_factor
+	conversion_cost_civ_to_mil_factor = CHI_Economy_conversion_cost_civ_to_mil_factor
+	production_speed_office_park_factor = CHI_Economy_production_speed_office_park_factor
+	production_speed_nuclear_reactor_factor = CHI_Economy_production_speed_nuclear_reactor_factor
+	resource_trade_cost_bonus_per_factory = CHI_Economy_resource_trade_cost_bonus_per_factory
+	local_resources_factor = CHI_Economy_local_resources_factor
+	production_factory_efficiency_gain_factor = CHI_Economy_production_factory_efficiency_gain_factor
+	industrial_development_monthly = CHI_Economy_industrial_development_monthly
+	production_factory_max_efficiency_factor = CHI_Economy_production_factory_max_efficiency_factor
+	production_speed_rail_way_factor = CHI_Economy_production_speed_rail_way_factor
+	production_speed_infrastructure_factor = CHI_Economy_production_speed_infrastructure_factor
+	factory_energy_consumption = CHI_Economy_factory_energy_consumption
+}
 
-  consumer_goods_factor               = CHI_Economy_consumer_goods_factor
-  production_speed_buildings_factor   = CHI_Economy_production_speed_buildings_factor
-  industrial_capacity_dockyard        = CHI_Economy_industrial_capacity_dockyard
-  production_speed_energy_farm_factor = CHI_Economy_production_speed_energy_farm_factor
-  personal_value_factor               = CHI_Economy_personal_value_factor
-  business_value_factor               = CHI_Economy_business_value_factor
-  poverty_development_monthly         = CHI_Economy_poverty_development_monthly
-  industrial_capacity_factory         = CHI_Economy_industrial_capacity_factory
-  line_change_production_efficiency_factor = CHI_Economy_line_change_production_efficiency_factor
-  production_lack_of_resource_penalty_factor = CHI_Economy_production_lack_of_resource_penalty_factor
-  production_speed_synthetic_refinery_factor = CHI_Economy_production_speed_synthetic_refinery_factor
-  conversion_cost_civ_to_mil_factor = CHI_Economy_conversion_cost_civ_to_mil_factor
-  production_speed_office_park_factor = CHI_Economy_production_speed_office_park_factor
-  production_speed_nuclear_reactor_factor = CHI_Economy_production_speed_nuclear_reactor_factor
-  resource_trade_cost_bonus_per_factory = CHI_Economy_resource_trade_cost_bonus_per_factory
-  local_resources_factor = CHI_Economy_local_resources_factor
-  production_factory_efficiency_gain_factor = CHI_Economy_production_factory_efficiency_gain_factor
-  industrial_development_monthly = CHI_Economy_industrial_development_monthly
+CHI_Economy_cn = {
+	icon = GFX_idea_CHI_Economy_cn
+	enable = {
+		tag = CHI
+	}
+	custom_modifier_tooltip = CHI_Economy_fake
+	consumer_goods_factor = CHI_Economy_consumer_goods_factor
+	production_speed_buildings_factor = CHI_Economy_production_speed_buildings_factor
+	industrial_capacity_dockyard = CHI_Economy_industrial_capacity_dockyard
+	production_speed_energy_farm_factor = CHI_Economy_production_speed_energy_farm_factor
+	personal_value_factor = CHI_Economy_personal_value_factor
+	business_value_factor = CHI_Economy_business_value_factor
+	poverty_development_monthly = CHI_Economy_poverty_development_monthly
+	industrial_capacity_factory = CHI_Economy_industrial_capacity_factory
+	line_change_production_efficiency_factor = CHI_Economy_line_change_production_efficiency_factor
+	production_lack_of_resource_penalty_factor = CHI_Economy_production_lack_of_resource_penalty_factor
+	production_speed_synthetic_refinery_factor = CHI_Economy_production_speed_synthetic_refinery_factor
+	conversion_cost_civ_to_mil_factor = CHI_Economy_conversion_cost_civ_to_mil_factor
+	production_speed_office_park_factor = CHI_Economy_production_speed_office_park_factor
+	production_speed_nuclear_reactor_factor = CHI_Economy_production_speed_nuclear_reactor_factor
+	resource_trade_cost_bonus_per_factory = CHI_Economy_resource_trade_cost_bonus_per_factory
+	local_resources_factor = CHI_Economy_local_resources_factor
+	production_factory_efficiency_gain_factor = CHI_Economy_production_factory_efficiency_gain_factor
+	industrial_development_monthly = CHI_Economy_industrial_development_monthly
+	production_factory_max_efficiency_factor = CHI_Economy_production_factory_max_efficiency_factor
+	production_speed_rail_way_factor = CHI_Economy_production_speed_rail_way_factor
+	production_speed_infrastructure_factor = CHI_Economy_production_speed_infrastructure_factor
+	factory_energy_consumption = CHI_Economy_factory_energy_consumption
 }
 
 ## 負面Buff
 # 人口老齡化
 CHI_population_aging_dynamic = {
-  icon = GFX_idea_CHI_population_aging
-
-  enable = {
-    tag = CHI
-  }
-
-  monthly_population = population_aging_monthly_population
+	icon = GFX_idea_CHI_population_aging
+	enable = {
+		tag = CHI
+	}
+	monthly_population = PA_monthly_population
+	expense_growth_factor = PA_expense_growth_factor
+	personal_value_factor = PA_personal_value_factor
+	personal_expense_factor = PA_personal_expense_factor
+	inflation_monthly = PA_inflation_monthly
+	society_development_monthly = PA_society_development_monthly
+	poverty_development_monthly = PA_poverty_development_monthly
 }
+
 # 外匯危機
 financial_crisis_dynamic = {
-  icon = GFX_idea_CHI_financial_crisis
-
-  enable = {
-    has_country_flag = American_Civil_War_happen_flg
-  }
-
-  income_growth_factor = financial_crisis_income_growth_factor
-  inflation_monthly = financial_crisis_inflation_monthly
-  business_value_factor = financial_crisis_business_value_factor
-  personal_value_factor = financial_crisis_personal_value_factor
-  poverty_development_monthly = financial_crisis_poverty_development_monthly
+	icon = GFX_idea_CHI_financial_crisis
+	enable = {
+		has_country_flag = American_Civil_War_happen_flg
+	}
+	income_growth_factor = financial_crisis_income_growth_factor
+	inflation_monthly = financial_crisis_inflation_monthly
+	business_value_factor = financial_crisis_business_value_factor
+	personal_value_factor = financial_crisis_personal_value_factor
+	poverty_development_monthly = financial_crisis_poverty_development_monthly
 }
 
 # 政黨勢力影響
 CHI_influence_KMT_dynamic = {
-  enable = {
-    has_country_flag = CHI_lfy_flag
-  }
-  stability_factor = CHI_influence_KMT_dynamic_var
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	stability_factor = CHI_influence_KMT_dynamic_var
 }
+
 CHI_influence_DPP_dynamic = {
-  enable = {
-    has_country_flag = CHI_lfy_flag
-  }
-  war_support_factor = CHI_influence_DPP_dynamic_var
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	war_support_factor = CHI_influence_DPP_dynamic_var
 }
+
 CHI_influence_TPP_dynamic = {
-  enable = {
-    has_country_flag = CHI_lfy_flag
-  }
-  society_development_monthly  = CHI_influence_dynamic_var
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	society_development_monthly = CHI_influence_dynamic_var
 }
+
 CHI_influence_NPSU_dynamic = {
-  enable = {
-    has_country_flag = CHI_lfy_flag
-  }
-  political_power_factor  = CHI_influence_NPSU_dynamic_var
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	political_power_factor = CHI_influence_NPSU_dynamic_var
 }
+
 CHI_influence_NPP_dynamic = {
-  enable = {
-    has_country_flag = CHI_lfy_flag
-  }
-  production_speed_industrial_complex_factor  = CHI_influence_NPP_dynamic_var
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	production_speed_industrial_complex_factor = CHI_influence_NPP_dynamic_var
 }
+
 CHI_influence_TSP_dynamic = {
-  enable = {
-    has_country_flag = CHI_lfy_flag
-  }
-  political_power_factor  = CHI_influence_TSP_dynamic_var
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	political_power_factor = CHI_influence_TSP_dynamic_var
 }
+
 CHI_influence_SDP_dynamic = {
-  enable = {
-    has_country_flag = CHI_lfy_flag
-  }
-  industrial_capacity_factory  = CHI_influence_SDP_dynamic_var
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	industrial_capacity_factory = CHI_influence_SDP_dynamic_var
 }
+
 CHI_influence_PFP_dynamic = {
-  enable = {
-    has_country_flag = CHI_lfy_flag
-  }
-  political_power_factor  = CHI_influence_PFP_dynamic_var
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	political_power_factor = CHI_influence_PFP_dynamic_var
 }
+
 CHI_influence_NP_dynamic = {
-  enable = {
-    has_country_flag = CHI_lfy_flag
-  }
-  political_power_factor  = CHI_influence_NP_dynamic_var
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	political_power_factor = CHI_influence_NP_dynamic_var
 }
+
 CHI_influence_LP_dynamic = {
-  enable = {
-    has_country_flag = CHI_lfy_flag
-  }
-  political_power_factor  = CHI_influence_LP_dynamic_var
+	enable = {
+		has_country_flag = CHI_lfy_flag
+	}
+	political_power_factor = CHI_influence_LP_dynamic_var
 }
 
 ## 戰時Buff
-
 # 國民精神總動員
 CHI_NSM_dynamic = {
-  icon = GFX_idea_CHI_LY_of_the_roc_dynamic
-  enable = {
-    tag = CHI
-  }
-  mobilization_speed = CHI_NSM_mobilization_speed
-  conscription_factor = CHI_NSM_conscription_factor
-  training_time_factor = CHI_NSM_training_time_factor
-  minimum_training_level = CHI_NSM_minimum_training_level
-  army_strength_factor = CHI_NSM_army_strength_factor
-  army_retreat_speed_factor = CHI_NSM_army_retreat_speed_factor
-  experience_loss_factor = CHI_NSM_experience_loss_factor
-  command_abilities_cost_factor = CHI_NSM_command_abilities_cost_factor
-  local_intel_to_enemies = CHI_NSM_local_intel_to_enemies
+	icon = GFX_idea_CHI_LY_of_the_roc_dynamic
+	enable = {
+		tag = CHI
+	}
+	mobilization_speed = CHI_NSM_mobilization_speed
+	conscription_factor = CHI_NSM_conscription_factor
+	training_time_factor = CHI_NSM_training_time_factor
+	minimum_training_level = CHI_NSM_minimum_training_level
+	army_strength_factor = CHI_NSM_army_strength_factor
+	army_retreat_speed_factor = CHI_NSM_army_retreat_speed_factor
+	experience_loss_factor = CHI_NSM_experience_loss_factor
+	command_abilities_cost_factor = CHI_NSM_command_abilities_cost_factor
+	local_intel_to_enemies = CHI_NSM_local_intel_to_enemies
 }
+
 # 保衛台灣
 CHI_Defend_Taiwan_dynamic = {
-  icon = GFX_idea_CHI_LY_of_the_roc_dynamic
-  enable = {
-    tag = CHI
-  }
-  army_core_attack_factor = CHI_Defend_Taiwan_army_core_attack_factor
-  army_core_defence_factor = CHI_Defend_Taiwan_army_core_defence_factor
-  conscription_factor = CHI_Defend_Taiwan_conscription_factor
-  mobilization_speed = CHI_Defend_Taiwan_mobilization_speed
-  weekly_bombing_war_support = CHI_Defend_Taiwan_weekly_bombing_war_support
-  weekly_casualties_war_support = CHI_Defend_Taiwan_weekly_casualties_war_support
-  weekly_convoys_war_support = CHI_Defend_Taiwan_weekly_convoys_war_support
-  monthly_population = CHI_Defend_Taiwan_monthly_population
-  local_intel_to_enemies = CHI_Defend_Taiwan_local_intel_to_enemies
-  # = CHI_Defend_Taiwan_
+	icon = GFX_idea_CHI_LY_of_the_roc_dynamic
+	enable = {
+		tag = CHI
+	}
+	army_core_attack_factor = CHI_Defend_Taiwan_army_core_attack_factor
+	army_core_defence_factor = CHI_Defend_Taiwan_army_core_defence_factor
+	conscription_factor = CHI_Defend_Taiwan_conscription_factor
+	mobilization_speed = CHI_Defend_Taiwan_mobilization_speed
+	weekly_bombing_war_support = CHI_Defend_Taiwan_weekly_bombing_war_support
+	weekly_casualties_war_support = CHI_Defend_Taiwan_weekly_casualties_war_support
+	weekly_convoys_war_support = CHI_Defend_Taiwan_weekly_convoys_war_support
+	monthly_population = CHI_Defend_Taiwan_monthly_population
+	local_intel_to_enemies = CHI_Defend_Taiwan_local_intel_to_enemies
+	# = CHI_Defend_Taiwan_
 }
 
 CHI_TaiHai_dynamic = {
-  icon = GFX_idea_JAP_Taiwan_Intervention
-  enable = {
-    tag = CHI
-  }
-  consumer_goods_factor = TH_consumer_goods_factor
-  stability_factor = TH_SF
-  industry_repair_factor = TH_industry_repair_factor
-  army_core_attack_factor = TH_all
-  army_core_defence_factor = TH_all
-  supply_combat_penalties_on_core_factor = TH_SF
-  resistance_growth_on_our_occupied_states = TH_RGOS
-  income_growth_factor = TH_one_to_twenty
-  business_value_factor = TH_one_to_twenty
-  industrial_development_monthly = TH_one_to_fifteen
-  farming_development_monthly = TH_one_to_fifteen
-  poverty_development_monthly = TH_one_to_ten
-  society_development_monthly = TH_one_to_ten
+	icon = GFX_idea_JAP_Taiwan_Intervention
+	enable = {
+		tag = CHI
+	}
+	consumer_goods_factor = TH_consumer_goods_factor
+	stability_factor = TH_stability_factor
+	industry_repair_factor = TH_industry_repair_factor
+	army_core_attack_factor = TH_army_core_attack_factor
+	army_core_defence_factor = TH_army_core_defence_factor
+	supply_combat_penalties_on_core_factor = TH_supply_combat_penalties_on_core_factor
+	resistance_growth_on_our_occupied_states = TH_resistance_growth_on_our_occupied_states
+	income_growth_factor = TH_income_growth_factor
+	business_value_factor = TH_business_value_factor
+	# industrial_development_monthly = TH_industrial_development_monthly
+	# farming_development_monthly = TH_farming_development_monthly
+	poverty_development_monthly = TH_poverty_development_monthly
+	society_development_monthly = TH_society_development_monthly
+	# army_speed_factor = TH_army_speed_factor
+	# army_morale_factor = TH_army_morale_factor
+	# dig_in_speed_factor = TH_dig_in_speed_factor
+	# max_dig_in_factor TH_max_dig_in_factor
 }
 
 ##戰後重建
 CHI_reonstruction_dynamic = {
-  icon = GFX_CHI_reonstruction_dynamic
-  enable = {
-    tag = CHI
-  }
-  political_power_factor = CHI_RE_political_power_factor
-  stability_factor = CHI_RE_stability_factor
-  consumer_goods_factor = CHI_RE_consumer_goods_factor
-  war_support_factor = CHI_RE_war_support_factor
-  production_speed_buildings_factor = CHI_RE_production_speed_buildings_factor
-  industrial_capacity_factory = CHI_RE_industrial_capacity_factory
-  industry_free_repair_factor = CHI_RE_industry_free_repair_factor
-  state_production_speed_energy_farm_factor = CHI_RE_state_production_speed_energy_farm_factor#能源農場建造速度
-  business_value_factor = CHI_RE_business_value_factor#商業產值係數
-
+	icon = GFX_CHI_reonstruction_dynamic
+	enable = {
+		tag = CHI
+	}
+	political_power_factor = CHI_RE_political_power_factor
+	stability_factor = CHI_RE_stability_factor
+	consumer_goods_factor = CHI_RE_consumer_goods_factor
+	war_support_factor = CHI_RE_war_support_factor
+	production_speed_buildings_factor = CHI_RE_production_speed_buildings_factor
+	industrial_capacity_factory = CHI_RE_industrial_capacity_factory
+	industry_free_repair_factor = CHI_RE_industry_free_repair_factor
+	state_production_speed_energy_farm_factor = CHI_RE_state_production_speed_energy_farm_factor	#能源農場建造速度
+	business_value_factor = CHI_RE_business_value_factor	#商業產值係數
 }
 
 ###韓國瑜
 #無往不利
 CHI_success_everywhere = {
-  icon = GFX_CHI_success_everywhere
-  enable = {
-    tag = CHI
-  }
-  political_power_gain = CHI_SE_political_power_gain
-  stability_factor = CHI_SE_stability_factor
-  army_core_attack_factor = CHI_SE_army_core_attack_factor
-  army_core_defence_factor = CHI_SE_army_core_defence_factor
-  academic_development_var = CHI_SE_academic_development_var
-  academic_development_monthly = CHI_SE_academic_development_monthly
+	icon = CHI_three_quilt_coupons
+	enable = {
+		tag = CHI
+	}
+	political_power_gain = CHI_SE_political_power_gain
+	stability_factor = CHI_SE_stability_factor
+	army_core_attack_factor = CHI_SE_army_core_attack_factor
+	army_core_defence_factor = CHI_SE_army_core_defence_factor
+	academic_development_monthly = CHI_SE_academic_development_monthly
+	poverty_development_monthly = CHI_SE_poverty_development_monthly
+	consumer_goods_factor = CHI_SE_consumer_goods_factor
+	society_development_monthly = CHI_SE_society_development_monthly
+	political_power_cost = CHI_SE_political_power_cost
+	local_resources_factor = CHI_SE_local_resources_factor
+	local_resources_coal_factor = CHI_SE_local_resources_coal_factor
+	local_resources_steel_factor = CHI_SE_local_resources_steel_factor
+	local_resources_chromium_factor = CHI_SE_local_resources_chromium_factor
+	local_resources_aluminium_factor = CHI_SE_local_resources_aluminium_factor
+	local_resources_tungsten_factor = CHI_SE_local_resources_tungsten_factor
+	energy_gain_factor = CHI_SE_energy_gain_factor
 }
+
 #破曉
 CHI_dawn = {
-  icon = GFX_CHI_dawn
-  enable = {
-    tag = CHI
-  }
-  political_power_gain = CHI_D_political_power_gain
-  stability_factor = CHI_D_stability_factor
-  personal_value_factor = CHI_D_personal_value_factor
-  society_development_monthly = CHI_D_society_development_monthly
-  poverty_development_monthly = CHI_D_poverty_development_monthly
-  party_popularity_stability_factor = CHI_D_party_popularity_stability_factor
+	icon = GFX_CHI_dawn
+	enable = {
+		tag = CHI
+	}
+	political_power_gain = CHI_D_political_power_gain
+	stability_factor = CHI_D_stability_factor
+	personal_value_factor = CHI_D_personal_value_factor
+	society_development_monthly = CHI_D_society_development_monthly
+	poverty_development_monthly = CHI_D_poverty_development_monthly
+	party_popularity_stability_factor = CHI_D_party_popularity_stability_factor
+	surrender_limit = CHI_D_surrender_limit
+	max_command_power = CHI_D_max_command_power
+	political_advisor_cost_factor = CHI_D_political_advisor_cost_factor
+	high_command_cost_factor = CHI_D_high_command_cost_factor
+	conscription = CHI_D_conscription
+	army_core_attack_factor = CHI_D_army_core_attack_factor
+	army_core_defence_factor = CHI_D_army_core_defence_factor
 }
+
 #中華之愛
 CHI_love_to_chunghua = {
-  icon = GFX_CHI_love_to_chunghua
-  enable = {
-    tag = CHI
-  }
-  war_support_factor = CHI_LCH_war_support_factor
-  army_org_factor = CHI_LCH_army_org_factor
-  society_development_monthly = CHI_LCH_society_development_monthly
-  encryption = CHI_LCH_encryption
+	icon = GFX_CHI_love_to_chunghua
+	enable = {
+		tag = CHI
+	}
+	war_support_factor = CHI_LCH_war_support_factor
+	army_org_factor = CHI_LCH_army_org_factor
+	society_development_monthly = CHI_LCH_society_development_monthly
+	encryption = CHI_LCH_encryption
+	drift_defence_factor = CHI_LCH_drift_defence_factor
+	surrender_limit = CHI_LCH_surrender_limit
+	intelligence_agency_defense = CHI_LCH_intelligence_agency_defense
+	operative_slot = CHI_LCH_operative_slot
 }

@@ -51,21 +51,21 @@ CHI_Aid_Arab_Republics_category = {
   }
   visible = {
     OR = {
-      has_global_flag = saudi_civil_war_flag
+      has_country_flag = CHI_saudi_civil_war_flag
       is_debug = yes
     }
   }
 }
 # 干涉美國內戰
 CHI_Intervene_the_American_Civil_War_category = {
-  priority = 10000
+  priority = 10
   icon = GFX_CHI_Intervene_the_American_Civil_War_category
   allowed = {
     original_tag = CHI
   }
   visible = {
     OR = {
-      has_global_flag = USA_american_civil_war_global
+      has_country_flag = Intervene_American_Civil_War_flag
       is_debug = yes
     }
   }
@@ -93,7 +93,7 @@ CHI_NHCC_decisions = {
 CHI_Legislative_Yuan_decisions = {
   #立法院
   icon = GFX_CHI_Legislative_Yuan_decisions
-  priority = 5
+  priority = 10
   visible_when_empty = yes
   allowed = {
     original_tag = CHI
@@ -113,7 +113,7 @@ CHI_army_decisions = {
     original_tag = CHI
   }
   visible = {
-    has_completed_focus = Rectify_weakening_military_preparedness
+    has_country_flag = Rectify_weakening_military_preparedness_flag
   }
 }
 #軍購
@@ -158,7 +158,9 @@ CHI_PRC_Infiltration_decisions = {
     original_tag = CHI
   }
   visible = {
-    has_country_flag = CHI_PRC_Infiltration_flag
+    NOT = {
+      has_country_flag = CHI_taiwan_war_end
+    }
   }
   scripted_gui = PRC_Infiltration_gui
 }
@@ -172,63 +174,66 @@ CHI_Identity_dispute_dec = {
 
 #人口老化
 CHI_Population_Aging_decisions = {
-  icon = GFX_decisons_CHI_population_aging
-  picture = GFX_banner_CHI_population_aging
+  icon = GFX_decision_category_generic_recore
+  # picture = GFX_banner_CHI_population_aging
   priority = 1
   #visible_when_empty = yes
   allowed = {
     original_tag = CHI
   }
   visible = {
-    has_country_flag = CHI_Population_Aging_flag
-  }
-}
-
-#中美洲內戰
-CHI_central_american_war_category = {
-  icon = GFX_decisons_CHI_central_american_war
-  picture = GFX_banner_CHI_central_american_war
-  priority = 1
-  #visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    GUA = { is_in_faction_with = ELS }
-  }
-}
-
-#中美洲戰後重建
-CHI_central_american_rebuild_category = {
-  icon = GFX_decisons_CHI_central_american_rebuild
-  picture = GFX_banner_CHI_central_american_rebuild
-  priority = 1
-  #visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    ELS = {
-      owns_state = 312
-			owns_state = 314
-			owns_state = 311
-			owns_state = 313
-			owns_state = 316
-			owns_state = 889
-			owns_state = 685
-			owns_state = 304
-			owns_state = 909
-			owns_state = 317
-			owns_state = 1377
+    OR = {
+      has_country_flag = CHI_Population_Aging_flag
+      is_debug = yes
     }
   }
 }
+
+# #中美洲內戰
+# CHI_central_american_war_category = {
+#   icon = GFX_decisons_CHI_central_american_war
+#   picture = GFX_banner_CHI_central_american_war
+#   priority = 1
+#   #visible_when_empty = yes
+#   allowed = {
+#     original_tag = CHI
+#   }
+#   visible = {
+#     GUA = { is_in_faction_with = ELS }
+#   }
+# }
+
+# #中美洲戰後重建
+# CHI_central_american_rebuild_category = {
+#   icon = GFX_decisons_CHI_central_american_rebuild
+#   picture = GFX_banner_CHI_central_american_rebuild
+#   priority = 1
+#   #visible_when_empty = yes
+#   allowed = {
+#     original_tag = CHI
+#   }
+#   visible = {
+#     ELS = {
+#       owns_state = 312
+# 			owns_state = 314
+# 			owns_state = 311
+# 			owns_state = 313
+# 			owns_state = 316
+# 			owns_state = 889
+# 			owns_state = 685
+# 			owns_state = 304
+# 			owns_state = 909
+# 			owns_state = 317
+# 			owns_state = 1377
+#     }
+#   }
+# }
 
 #PHI內戰###################################################
 PHI_civil_war_dec = {
   #菲律賓内戰
   visible_when_empty = yes
-  priority = 4
+  priority = 999
   visible = {
     has_global_flag = PHI_civil_war_flag
   }
@@ -242,18 +247,18 @@ PHI_civil_war_dec = {
 }
 
 #干涉菲律賓
-CHI_intervene_PHI_civil_war_category = {
-  icon = GFX_decisons_CHI_intervene_PHI_civil_war
-  picture = GFX_banner_CHI_intervene_PHI_civil_war
-  priority = 1
-  visible_when_empty = yes
-  visible = {
-    has_global_flag = PHI_civil_war_flag
-  }
-  allowed = {
-    original_tag = CHI
-  }
-}
+# CHI_intervene_PHI_civil_war_category = {
+#   icon = GFX_decisons_CHI_intervene_PHI_civil_war
+#   picture = GFX_banner_CHI_intervene_PHI_civil_war
+#   priority = 1
+#   visible_when_empty = yes
+#   visible = {
+#     has_global_flag = PHI_civil_war_flag
+#   }
+#   allowed = {
+#     original_tag = CHI
+#   }
+# }
 ##########################################################
 
 ####    ######    ######    ####
@@ -282,29 +287,10 @@ CHI_NCSIST_category = {
   }
 }
 
-#軍改
-CHI_dont_forget_homeland_category = {
-  icon = GFX_decision_dont_forget_homeland
-  visible_when_empty = yes
-  allowed = {
-    original_tag = CHI
-  }
-  visible = {
-    OR = {
-      is_debug = yes
-      AND = {
-        NOT = {
-          is_ally_with = PRC
-        }
-        has_completed_focus = CHI_dont_forget_homeland
-      }
-    }
-  }
-}
 
 #效率政府
 CHI_efficient_government_category = {
-  icon = GFX_decision_efficient_government
+  icon = GFX_CHI_test_of_will_rise_up_taiwan
   visible_when_empty = yes
   allowed = {
     original_tag = CHI
@@ -312,19 +298,15 @@ CHI_efficient_government_category = {
   visible = {
     OR = {
       is_debug = yes
-      AND = {
-        NOT = {
-          is_ally_with = PRC
-        }
-        has_completed_focus = CHI_efficient_government
-      }
+      has_completed_focus = CHI_Special_budget
+      has_completed_focus = CHI_efficient_government
     }
   }
 }
 
 #經濟與實業
 CHI_Economy_Industry_category = {
-  icon = GFX_decision_Economy_Industry
+  icon = GFX_decision_generic_attract_foreign_investors
   visible_when_empty = yes
   allowed = {
     original_tag = CHI
@@ -349,7 +331,8 @@ CHI_Economy_Industry_category = {
 ####    ##        ######    ####
 
 CHI_GAW_situation_category = {
-  icon = GFX_decision_GAW_situation
+  icon = CHI_GAW_decision_category
+  priority = 999
   visible_when_empty = yes
   allowed = {
     original_tag = CHI
@@ -370,7 +353,8 @@ CHI_GAW_situation_category = {
 ####    ##            ##    ####
 
 CHI_civilwar_category = {
-  icon = GFX_decision_civilwar
+  icon = CHI_CCW_decision_category
+  priority = 999
   visible_when_empty = yes
   allowed = {
     original_tag = CHI

@@ -48,20 +48,51 @@ set_variable = { var = CHI_kmt_combat value = 20 }
 set_variable = { var = CHI_kmt_grassroots value = 10 }
 
 #CHI_ecn
-
+add_dynamic_modifier = { modifier = CHI_Economy }
+set_variable = { CHI_Economy_consumer_goods_factor = 0.05 }
+set_variable = { CHI_Economy_production_speed_buildings_factor = -0.15 }
+set_variable = { CHI_Economy_industrial_capacity_dockyard = -0.15 }
+set_variable = { CHI_Economy_production_speed_energy_farm_factor = -0.15 }
+set_variable = { CHI_Economy_personal_value_factor = -0.05 }
+set_variable = { CHI_Economy_business_value_factor = 0.05 }
+set_variable = { CHI_Economy_poverty_development_monthly = -0.02 }
+set_variable = { CHI_Economy_modifier_unit_modular_light_armor_design_cost_factor = 0.15 }
 set_variable = { ecn_armor_research_var = -5 }
 set_variable = { ecn_electronics_research_var = 15 }
 set_variable = { ecn_armor_cost_var = 30 }
-set_variable = { ecn_air_cost_var = 50 }
-set_variable = { ecn_armored_car_var = 15 }
-
+set_variable = { ecn_air_cost_var = 30 }
+set_variable = { ecn_armored_car_var = 30 }
 add_ideas = {
   CHI_Economy_hidden_armor_research_bonus
   CHI_Economy_hidden_electronics_research_bonus
-  CHI_Economy_hidden_armor_cost_equipment_bonus
-  CHI_Economy_hidden_air_equipment_cost_equipment_bonus
-  CHI_Economy_hidden_armored_car_cost_equipment_bonus
+  CHI_Economy_hidden_armor_cost_equipment_bonus_p30
+  CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p30
+  CHI_Economy_hidden_armored_car_cost_equipment_bonus_p30
 }
+
+##
+add_dynamic_modifier = { modifier = CHI_taiwanese_independence_dynamic }
+add_to_variable = { CHI_taiwanese_independence_political_power_gain_var = -0.3 }
+
+##CHI三軍
+set_country_flag = CHI_ROC_army_flg
+add_dynamic_modifier = { modifier = CHI_ROC_army_dynamic }
+add_dynamic_modifier = { modifier = CHI_ROC_airforce_dynamic }
+add_dynamic_modifier = { modifier = CHI_ROC_navy_dynamic }
+add_to_variable = { ROC_army_attack_factor = -0.075 }
+add_to_variable = { ROC_army_defence_factor = -0.025 }
+add_to_variable = { ROC_conscription_factor = -0.3 }
+add_to_variable = { ROC_experience_gain_army_factor = -0.1 }
+add_to_variable = { ROC_army_morale_factor = -0.05 }
+add_to_variable = { ROC_experience_gain_factor = -0.1 }
+add_to_variable = { ROC_max_planning = -0.05 }
+add_to_variable = { ROC_army_org_factor = -0.05 }
+add_to_variable = { ROC_supply_consumption_factor = -0.075 }
+add_to_variable = { ROC_military_development_monthly = -0.015 }
+add_to_variable = { ROC_battalion_upkeep_factor = -0.075 }
+add_to_variable = { ROC_aircraft_upkeep_factor = -0.075 }
+add_to_variable = { ROC_ship_upkeep_factor = -0.075 }
+add_to_variable = { CHI_PRC_Infiltration_timeout_mission_var = 30 }
 
 #角色
 recruit_character = CHI_tsai_ing_wen_char
@@ -81,27 +112,20 @@ recruit_character = CHI_chiu_kuo_cheng_char
 recruit_character = CHI_kao_kuang_chi_char
 recruit_character = CHI_lee_hsi_min_char
 recruit_character = CHI_lin_chen_yi_char
-recruit_character = CHI_huoh_shoou_yeh_char
 recruit_character = CHI_hsu_yen_pu_char
 recruit_character = CHI_chang_guan_chung_char
-recruit_character = CHI_wang_shin_lung_char
 recruit_character = CHI_hung_chi_chang_char
 recruit_character = CHI_Taipei_Demon
 recruit_character = CHI_cai_yanming
 recruit_character = CHI_nobody_char
 recruit_character = CHI_huo_shou_yeh_char
-recruit_character = CHI_hsu_yen_pu_char
 recruit_character = CHI_chen_zhen_xiang_char
 recruit_character = CHI_yen_teh_fa_char
 recruit_character = CHI_hu_chen_pu_char
 recruit_character = CHI_hsieh_chien_tung_char
-recruit_character = CHI_chiu_kou_cheng_char
 recruit_character = CHI_lee_shying_jow_char
 recruit_character = CHI_zhao_shi_zhang_char
-recruit_character = CHI_chen_yao_duan_char
 recruit_character = CHI_wang_hsin_lung_char
-recruit_character = CHI_chen_pao_yu_char
-recruit_character = CHI_chang_guan_chung_char
 recruit_character = CHI_chu_kai_sheng_char
 recruit_character = CHI_yu_bei_chan_char
 recruit_character = CHI_hsueh_shih_min_char
@@ -113,11 +137,13 @@ recruit_character = CHI_cheng_te_mei_char
 recruit_character = CHI_chai_hui_chen_char
 recruit_character = CHI_chung_shu_ming_char
 recruit_character = CHI_lu_kun_hsiu_char
-recruit_character = CHI_kao_kuang_chi_char
-recruit_character = CHI_lee_hsi_min_char
-recruit_character = CHI_lin_chen_yi_char
 recruit_character = CHI_tang_hua_char
 recruit_character = CHI_liu_chih_pin_char
+recruit_character = CHI_hsiung_hou_chi_char
+recruit_character = CHI_liu_ren_yuan_char
+recruit_character = CHI_huang_chi_wei_char
+recruit_character = CHI_cheng_rong_feng_char
+
 set_research_slots = 5
 set_convoys = 700
 set_stability = 0.3
@@ -358,22 +384,28 @@ if = {
   }
 }
 
-add_opinion_modifier = {
-  target = JAP
-  modifier = past_japanese_war_crimes
-}
-
 add_ideas = {
   #National Spirits
-  # CHI_gdp_fix
+  #CHI_gdp_fix
   CHI_tsmc_idea	#CHI_lower_mainland_influence_idea
   CHI_low_international_recognition_idea
   CHI_american_protection_idea
   CHI_prc_embargo_idea0
   #Laws
   medium_police
-  low_conscription
   higher_poverty
+  high_welfare
+  low_conscription
+  high_safety
+  medium_conscription
+  high_education
+  low_police
+  high_prison
+  high_race
+  #social development
+  higher_poverty
+  high_industry
+  higher_academic
   #內閣
   CHI_Su_Tseng_chang_hog
   CHI_Hsu_Kuoyung_sec
@@ -715,3 +747,20 @@ news_event = {
   id = ROC.41
   days = 1200
 }
+country_event = {
+  id = CHI.CT.13
+  days = 1207
+}
+country_event = {
+  id = CHI.CT.14
+  days = 1215
+}
+country_event = {
+  id = CHI.CT.15
+  days = 1219
+}
+country_event = {
+  id = CHI.CT.16
+  days = 1231
+}
+

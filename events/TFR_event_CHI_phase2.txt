@@ -9,6 +9,7 @@ country_event = {
   id = CHI.BF.11
   title = CHI.BF.11.t
   desc = CHI.BF.11.d
+  picture = CHI_Event_BF_11
   fire_only_once = yes
   is_triggered_only = yes
   option = {
@@ -27,6 +28,35 @@ country_event = {
   }
 }
 
+country_event = {
+  id = CHI.BF.100
+  title = CHI.BF.100.t
+  desc = CHI.BF.100.d
+  picture = CHI_Event_BF_100
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.BF.100.a
+    add_equipment_to_stockpile = {type = modern_tank_equipment_1 amount = 500 producer = PRC }
+    custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+    add_to_variable = { ROC_equipment_capture = 0.05 tooltip = equipment_capture_tooltip }
+  }
+  option = {
+    name = CHI.BF.100.b
+    custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
+    add_to_variable = { ROC_terrain_penalty_reduction = 0.15 tooltip = terrain_penalty_reduction_tooltip }
+  }
+  option = {
+    name = CHI.BF.100.c
+    add_tech_bonus = {
+				name = CHI_panzer_research
+				#ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+  }
+}
 #######
 # HKY #
 #######
@@ -162,6 +192,7 @@ country_event = {
   id = CHI.H2.221
   title = CHI.H2.221.t
   desc = CHI.H2.221.d
+  picture = CHI_Event_H2_221
   fire_only_once = yes
   is_triggered_only = yes
   immediate = {

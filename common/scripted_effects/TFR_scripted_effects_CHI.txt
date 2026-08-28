@@ -144,7 +144,7 @@ CHI_increase_prc_embargo_idea = {
     limit = {
       has_idea = CHI_prc_embargo_idea3
     }
-    remove_idea = CHI_prc_embargo_idea3
+    remove_ideas = CHI_prc_embargo_idea3
   }
 }
 
@@ -213,7 +213,7 @@ PRC_Infiltration_change = {
   }
   if = {
     limit = {
-      check_variable = { CHI_PRC_Infiltration_progress < 25 }
+      check_variable = { CHI_PRC_Infiltration_progress < 10 }
     }
     hidden_effect = {
       remove_ideas = CHI_PRC_infiltration_low
@@ -384,10 +384,7 @@ CHI_oil_crash_idea = {
     limit = {
       has_idea = CHI_oil_crash13
     }
-    remove_idea = CHI_oil_crash13
-  }
-  else = {
-    add_ideas = CHI_oil_crash1
+    remove_ideas = CHI_oil_crash13
   }
 }
 
@@ -539,386 +536,6 @@ CHI_influence_SDP_add = {
   }
 }
 
-PDTO_taiwan_war = {
-  if = {
-    limit = {
-      NOT = { has_country_flag = Taiwan_war }
-    }
-    set_country_flag = Taiwan_war
-    set_variable = { TWW_VAR = 2 }
-    country_event = {id = ROC_CHI.2}
-    hidden_effect = {
-      add_dynamic_modifier = {
-        modifier = CHI_TaiHai_dynamic
-      }
-      add_to_variable = {
-        var = TH_consumer_goods_factor
-        value = 0.05
-      }
-      add_to_variable = {
-        var = TH_industry_repair_factor
-        value = -0.25
-      }
-      add_to_variable = {
-        var = TH_SF
-        value = -0.05
-      }
-      add_to_variable = {
-        var = TH_all
-        value = 0.01
-      }
-      add_to_variable = {
-        var = TH_one_to_twenty
-        value = -0.01
-      }
-      add_to_variable = {
-        var = TH_one_to_fifteen
-        value = -0.01
-      }
-      add_to_variable = {
-        var = TH_one_to_ten
-        value = -0.005
-      }
-    }
-  }
-  else_if = {
-    limit = {
-      check_variable = { TWW_VAR > 20}
-    }
-    hidden_effect = {
-      add_to_variable = {
-        var = TH_all
-        value = 0.01
-      }
-      add_to_variable = {
-        var = TH_SF
-        value = -0.01
-      }
-      add_to_variable = {
-        var = TH_RGOS
-        value = 0.01
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 23}
-        }
-        country_event = {id = ROC_CHI.32}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 22}
-        }
-        country_event = {id = ROC_CHI.20}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 21}
-        }
-        country_event = {id = ROC_CHI.31}
-      }
-    }
-
-    add_to_variable = {
-      var = TWW_VAR
-      value = 1
-    }
-  }
-  else_if = {
-    limit = {
-      AND = {
-        check_variable = { TWW_VAR > 15}
-        check_variable = { TWW_VAR < 21}
-      }
-    }
-    hidden_effect = {
-      add_to_variable = {
-        var = TH_all
-        value = 0.01
-      }
-      add_to_variable = {
-        var = TH_one_to_twenty
-        value = -0.01
-      }
-      add_to_variable = {
-        var = TH_SF
-        value = -0.01
-      }
-      add_to_variable = {
-        var = TH_RGOS
-        value = 0.01
-      }if = {
-        limit = {
-          check_variable = { TWW_VAR = 20}
-        }
-        country_event = {id = ROC_CHI.29}
-        hidden_effect = {
-          add_to_variable = {
-            var = TH_industry_repair_factor
-            value = 0.2
-          }
-        }
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 19}
-        }
-        country_event = {id = ROC_CHI.28}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 18}
-        }
-        country_event = {id = ROC_CHI.27}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 17}
-        }
-        country_event = {id = ROC_CHI.21}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 16}
-        }
-        country_event = {id = ROC_CHI.41}
-      }
-    }
-    add_to_variable = {
-      var = TWW_VAR
-      value = 1
-    }
-  }
-  else_if = {
-    limit = {
-      AND = {
-        check_variable = { TWW_VAR > 10}
-        check_variable = { TWW_VAR < 16}
-      }
-    }
-    hidden_effect = {
-      add_to_variable = {
-        var = TH_all
-        value = 0.01
-      }
-      add_to_variable = {
-        var = TH_one_to_twenty
-        value = -0.01
-      }
-      add_to_variable = {
-        var = TH_one_to_fifteen
-        value = -0.01
-      }
-      add_to_variable = {
-        var = TH_SF
-        value = -0.01
-      }
-      add_to_variable = {
-        var = TH_RGOS
-        value = 0.01
-      }
-      add_to_variable = {
-        var = TH_one_to_ten
-        value = -0.005
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 15}
-        }
-        country_event = {id = ROC_CHI.40}
-        hidden_effect = {
-          add_to_variable = {
-            var = TH_consumer_goods_factor
-            value = 0.05
-          }
-          add_to_variable = {
-            var = TH_industry_repair_factor
-            value = 0.2
-          }
-        }
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 14}
-        }
-        country_event = {id = ROC_CHI.39}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 13}
-        }
-        country_event = {id = ROC_CHI.17}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 12}
-        }
-        country_event = {id = ROC_CHI.38}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 11}
-        }
-        country_event = {id = ROC_CHI.15}
-      }
-    }
-    add_to_variable = {
-      var = TWW_VAR
-      value = 1
-    }
-  }
-  else_if = {
-    limit = {
-      AND = {
-        check_variable = { TWW_VAR > 1}
-        check_variable = { TWW_VAR < 11}
-      }
-    }
-    hidden_effect = {
-      add_to_variable = {
-        var = TH_all
-        value = 0.01
-      }
-      add_to_variable = {
-        var = TH_one_to_twenty
-        value = -0.01
-      }
-      add_to_variable = {
-        var = TH_one_to_fifteen
-        value = -0.01
-      }
-      add_to_variable = {
-        var = TH_one_to_ten
-        value = -0.005
-      }
-      add_to_variable = {
-        var = TH_SF
-        value = -0.01
-      }
-      add_to_variable = {
-        var = TH_RGOS
-        value = 0.01
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 10}
-        }
-        country_event = {id = ROC_CHI.18}
-        hidden_effect = {
-          add_to_variable = {
-            var = TH_consumer_goods_factor
-            value = 0.05
-          }
-          add_to_variable = {
-            var = TH_industry_repair_factor
-            value = 0.25
-          }
-        }
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 9}
-        }
-        country_event = {id = ROC_CHI.12}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 8}
-        }
-        country_event = {id = ROC_CHI.14}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 6}
-        }
-        country_event = {id = ROC_CHI.9}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 5}
-        }
-        country_event = {id = ROC_CHI.8}
-        hidden_effect = {
-          add_to_variable = {
-            var = TH_consumer_goods_factor
-            value = 0.05
-          }
-          add_to_variable = {
-            var = TH_industry_repair_factor
-            value = 0.2
-          }
-        }
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 4}
-        }
-        country_event = {id = ROC.40}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 3}
-        }
-        country_event = {id = ROC_CHI.6}
-      }
-      if = {
-        limit = {
-          check_variable = { TWW_VAR = 2}
-        }
-        country_event = {id = ROC_CHI.5}
-      }
-    }
-    add_to_variable = {
-      var = TWW_VAR
-      value = 1
-    }
-  }
-}
-
-remove_Taihai_idea = {#移除精神台海戰爭與禁運
-  PRC = {
-    clr_country_flag = Taiwan_war
-    clr_country_flag = CHI_taihai_war
-    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-  }
-  AST = {
-    clr_country_flag = Taiwan_war
-    clr_country_flag = CHI_taihai_war
-    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-  }
-  CHI = {
-
-    # 徹底移除動態修正 (極度重要！)
-    remove_dynamic_modifier = {
-      modifier = CHI_TaiHai_dynamic
-    }
-    #移除禁運
-    if = {
-      limit = { has_idea = CHI_prc_embargo_idea0 }
-      remove_ideas = CHI_prc_embargo_idea0
-    }
-    else_if = {
-      limit = { has_idea = CHI_prc_embargo_idea1 }
-      remove_ideas = CHI_prc_embargo_idea1
-    }
-    else_if = {
-      limit = { has_idea = CHI_prc_embargo_idea2 }
-      remove_ideas = CHI_prc_embargo_idea2
-    }
-    else = {
-      limit = { has_idea = CHI_prc_embargo_idea3 }
-      remove_ideas = CHI_prc_embargo_idea4
-    }
-
-    clr_country_flag = Taiwan_war
-    clr_country_flag = CHI_taihai_war
-    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-  }
-  JAP = {
-    clr_country_flag = Taiwan_war
-    clr_country_flag = CHI_taihai_war
-    clr_country_flag = PRC_adapt_to_modern_defense_time_flag
-  }
-}
 
 de_prc_embargo_idea = {
   if = {
@@ -1069,4 +686,151 @@ CHI_corruption_problem_effect = {
       add_idea = CHI_corruption_problem_6
     }
   }
+}
+#改善經濟---裝甲製造debuff
+CHI_Economy_hidden_armor_cost_equipment_bonus_effect = {
+  if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p30
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p30
+      add_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p20
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p20
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p20
+      add_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_p10
+      add_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_0
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_0
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_0
+      add_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_n10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_n10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_n10
+      add_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_n20
+    }
+  }
+  add_to_variable = { ecn_armor_cost_var = 10 }
+}
+#改善經濟---飛機製造debuff
+CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = {
+  if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p30
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p30
+      add_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p20
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p20
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p20
+      add_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_p10
+      add_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_0
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_0
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_0
+      add_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_n10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_n10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_n10
+      add_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_n20
+    }
+  }
+  add_to_variable = { ecn_air_cost_var = 10 }
+}
+#改善經濟---裝甲車製造debuff
+CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = {
+  if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p30
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p30
+      add_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p20
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p20
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p20
+      add_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_p10
+      add_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_0
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_0
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_0
+      add_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_n10
+    }
+  }
+  else_if = {
+    limit = {
+      has_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_n10
+    }
+    swap_ideas = {
+      remove_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_n10
+      add_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_n20
+    }
+  }
+  add_to_variable = { ecn_armored_car_var = 10 }
 }

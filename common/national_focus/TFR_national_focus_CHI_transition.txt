@@ -19,6 +19,7 @@ focus_tree = {
       navy_experience = 25
       air_experience = 25
       add_political_power = 100
+      country_event = { id = CHI.TW.9 }
     }
   }
   focus = {
@@ -32,6 +33,7 @@ focus_tree = {
     completion_reward = {
       add_stability = 0.2
       add_political_power = 75
+      country_event = { id = CHI.TW.8 }
     }
   }
   focus = {
@@ -62,6 +64,7 @@ focus_tree = {
     icon = GFX_focus_CHI_Eliminate_communist_traitors
     continue_if_invalid = no
     cancel_if_invalid = yes
+    available = {always = no}
     mutually_exclusive = {
       focus = CHI_Preserving_diverse_voices
     }
@@ -69,13 +72,14 @@ focus_tree = {
       focus = CHI_Self_sutureing_trauma
     }
     completion_reward = {
-      country_event = {
-        id = CHI.102
-      }
-      add_ideas = {
-        civilian_economy
-        volunteer_only
-      }
+      # country_event = {
+      #   id = CHI.102
+      # }
+      # add_ideas = {
+      #   civilian_economy
+      #   volunteer_only
+      # }
+      custom_effect_tooltip = unfinished_content
     }
   }
   focus = {
@@ -118,7 +122,7 @@ focus_tree = {
         }
         remove_ideas = CHI_Wartime_normal_system
       }
-      if = {
+      else_if = {
         limit = {
           has_idea = CHI_Martial_law_declared_idea
         }
@@ -134,11 +138,15 @@ focus_tree = {
     icon = GFX_focus_CHI_Restart_Temporary_Provisions
     continue_if_invalid = no
     cancel_if_invalid = yes
+    available = {always = no}
     mutually_exclusive = {
       focus = CHI_Lifting_martial_law
     }
     prerequisite = {
       focus = CHI_Eliminate_communist_traitors
+    }
+    completion_reward = {
+      custom_effect_tooltip = unfinished_content
     }
   }
   focus = {
@@ -288,6 +296,18 @@ focus_tree = {
         CHI_RE_business_value_factor = -0.05
         tooltip = business_value_factor_tooltip
       }
+      custom_effect_tooltip = {
+        IDEA = CHI_ROC_army_dynamic
+        localization_key = modify_idea_tt
+      }
+      add_to_variable = {
+        ROC_training_time_factor = -0.1
+        tooltip = training_time_factor_tooltip
+      }
+      add_to_variable = {
+        ROC_conscription_factor = 0.05
+        tooltip = conscription_factor_tooltip
+      }
     }
     relative_position_id = CHI_Post_war_personnel_issues
   }
@@ -385,6 +405,18 @@ focus_tree = {
       focus = CHI_Emergency_repair_infrastructure
     }
     relative_position_id = CHI_Emergency_repair_infrastructure
+    completion_reward = {
+      country_event = {
+        id = CHI.109
+      }
+      1148 = {
+        add_building_construction = {
+          type = air_base
+          level = 1
+          instant_build = yes
+        }
+      }
+    }
   }
   focus = {
     id = CHI_Reopening_Kaohsiung_Port
@@ -398,6 +430,18 @@ focus_tree = {
       focus = CHI_Emergency_repair_infrastructure
     }
     relative_position_id = CHI_Emergency_repair_infrastructure
+    completion_reward = {
+      country_event = {
+        id = CHI.108
+      }
+      1150 = {
+        add_building_construction = {
+          type = naval_base
+          level = 1
+          instant_build = yes
+        }
+      }
+    }
   }
   focus = {
     id = CHI_Ending_wartime_economic
@@ -551,6 +595,7 @@ focus_tree = {
       country_event = {
         id = CHI.104
       }
+      hidden_effect = {  country_event = { id = CHI.TW.14 days = 3 }}
     }
     relative_position_id = CHI_Mobilizing_civil_society_groups
   }

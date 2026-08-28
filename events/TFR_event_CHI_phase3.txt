@@ -20,12 +20,88 @@ country_event = {
 }
 
 country_event = {
-  id = CHI.H3.12
-  title = CHI.H3.12.t
-  desc = CHI.H3.12.d
-  picture = CHI_Event_H3_12
+  id = CHI.H3.21
+  title = CHI.H3.21.t
+  desc = CHI.H3.21.d
+  picture = CHI_Event_H3_21
+  fire_only_once = yes
   is_triggered_only = yes
   option = {
-    name = CHI.H3.12.a
+    name = CHI.H3.21.a
+    navy_experience = 50
+    air_experience = 50
+  }
+}
+
+country_event = {
+  id = CHI.H3.111
+  title = CHI.H3.111.t
+  desc = CHI.H3.111.d
+  picture = CHI_Event_H3_111
+  is_triggered_only = yes
+  option = {
+    name = CHI.H3.111.a
+  }
+}
+
+##Hidden event
+country_event = {
+  id = CHI.H3.101
+  title = CHI.H3.101.t
+  desc = CHI.H3.101.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  hidden = yes
+  immediate = {
+    add_to_variable = { ROC_army_breakthrough_against_minor_factor  = -0.15 tooltip = army_breakthrough_against_minor_factor_tooltip_150 }
+  }
+}
+
+country_event = {
+  id = CHI.H3.102
+  title = CHI.H3.102.t
+  desc = CHI.H3.102.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  hidden = yes
+  immediate = {
+    add_to_variable = { ROC_land_night_attack  = -0.15 tooltip = land_night_attack_tooltip_200 }
+  }
+}
+
+country_event = {
+  id = CHI.H3.103
+  title = CHI.H3.103.t
+  desc = CHI.H3.103.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  hidden = yes
+  immediate = {
+    add_to_variable = { ROC_org_loss_at_low_org_factor  = -0.1 tooltip = org_loss_at_low_org_factor_tooltip_70 }
+  }
+}
+
+country_event = {
+  id = CHI.H3.104
+  title = CHI.H3.104.t
+  desc = CHI.H3.104.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  hidden = yes
+  immediate = {
+    add_to_variable = { ROC_planning_speed  = -0.15 tooltip = planning_speed_tooltip_15 }
+  }
+}
+
+country_event = {
+  id = CHI.H3.105
+  title = CHI.H3.105.t
+  desc = CHI.H3.105.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  hidden = yes
+  immediate = {
+    add_to_variable = { ROC_invasion_preparation  = -0.3 tooltip = invasion_preparation_tooltip_300 }
+    add_to_variable = { ROC_naval_invasion_penalty  = -0.1 tooltip = naval_invasion_penalty_tooltip_300 }
   }
 }

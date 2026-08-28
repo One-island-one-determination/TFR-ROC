@@ -6,8 +6,8 @@ focus_tree = {
   default = no
   focus = {
     id = CHI_compete_for_central_plains
-    x = 0
-    y = 0
+    x = 8
+    y = 1
     cost = 2
     icon = GFX_focus_CHI_compete_for_central_plains
     available = {
@@ -23,11 +23,12 @@ focus_tree = {
     cancel_if_invalid = yes
     completion_reward = {
       country_event = { id = CHI.H4.2 }
-      unlock_decision_category_tooltip = CHI_civilwar_category
-      custom_effect_tooltip = {
-        IDEA = CHI_ROC_army_dynamic
-        localization_key = modify_idea_tt
+      if = {
+        limit = { country_exists = CHF }
+        country_event = { id = CHI.TW.64 days = 3 }
       }
+      unlock_decision_category_tooltip = CHI_civilwar_category
+      custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
       add_to_variable = {
         ROC_cannot_call_allies_or_join_wars = 1
         tooltip = cannot_call_allies_or_join_wars_tooltip
@@ -35,18 +36,27 @@ focus_tree = {
       hidden_effect = {
         set_cosmetic_tag = CHI_UNITED
         clr_country_flag = pdto_member
+        scoped_play_song = "StrugglingintheSoutheast"
         leave_faction = yes
         if = {
           limit = { is_subject = yes }
           overlord = { end_puppet = ROOT }
+        }
+        if = {       
+          limit = { has_country_flag = CHI_wartime_success_everywhere_flag }   
+          add_to_variable = { ROC_army_fuel_consumption_factor = 0.25 tooltip = army_fuel_consumption_factor_tooltip}
+          add_to_variable = { ROC_navy_fuel_consumption_factor = 0.25 tooltip = navy_fuel_consumption_factor_tooltip}
+          add_to_variable = { ROC_air_fuel_consumption_factor = 0.25 tooltip = air_fuel_consumption_factor_tooltip}
+          add_to_variable = { CHI_Economy_factory_energy_consumption = -0.15 tooltip = factory_energy_consumption_tooltip }
+          add_to_variable = { CHI_Economy_production_lack_of_resource_penalty_factor = -0.15 tooltip = lack_of_resource_penalty_factor_tooltip}
         }
       }
     }
   }
   focus = {
     id = CHI_regional_political_tutelage
-    x = 0
-    y = 1
+    x = 8
+    y = 2
     cost = 2
     icon = GFX_focus_CHI_regional_political_tutelage
     continue_if_invalid = no
@@ -74,8 +84,8 @@ focus_tree = {
   }
   focus = {
     id = CHI_trust_localities
-    x = -1
-    y = 2
+    x = 7
+    y = 3
     cost = 2
     icon = GFX_focus_CHI_trust_localities
     continue_if_invalid = no
@@ -94,8 +104,8 @@ focus_tree = {
   }
   focus = {
     id = CHI_central_supervision_policy
-    x = 1
-    y = 2
+    x = 9
+    y = 3
     cost = 2
     icon = GFX_focus_CHI_central_supervision_policy
     continue_if_invalid = no
@@ -114,8 +124,8 @@ focus_tree = {
   }
   focus = {
     id = CHI_republic_achieved
-    x = 0
-    y = 4
+    x = 8
+    y = 5
     cost = 2
     icon = GFX_focus_CHI_republic_achieved
     continue_if_invalid = no
@@ -187,6 +197,8 @@ focus_tree = {
   
     completion_reward = {
       country_event = { id = CHI.H4.5 }
+      remove_dynamic_modifier = { modifier = CHI_Economy }
+      add_dynamic_modifier = { modifier = CHI_Economy_cn }
       set_portraits = {
         character = CHI_han_kuo_yu_char
         civilian = { large = "gfx/Leaders/CHI/CHI_han_kuo_yu_ccw_ending.png" }
@@ -199,12 +211,24 @@ focus_tree = {
         character = CHI_zhao_shao_kang_char
         civilian = { large = "gfx/Leaders/CHI/CHI_zhao_shao_kang_ccw_ending.png" }
       }
+      hidden_effect = {
+        1148 = { remove_core_of = PRC remove_claim_by = PRC } # 台灣北部
+        1149 = { remove_core_of = PRC remove_claim_by = PRC } # 台灣中部
+        1150 = { remove_core_of = PRC remove_claim_by = PRC } # 台灣南部
+        524 = { remove_core_of = PRC remove_claim_by = PRC }  # 台灣東部
+        1451 = { remove_core_of = PRC remove_claim_by = PRC } # 澎湖
+        648 = { remove_core_of = PRC remove_claim_by = PRC } # 金門島
+        1382 = { remove_core_of = PRC remove_claim_by = PRC } # 中控南沙群島
+        1383 = { remove_core_of = PRC remove_claim_by = PRC } # 越控南沙群島
+        1384 = { remove_core_of = PRC remove_claim_by = PRC } # 菲控南沙群島
+        879 = { remove_core_of = PRC remove_claim_by = PRC }  # 西沙群島
+      }
     }
   }
   focus = {
     id = CHI_rapid_political_tutelage
-    x = -1
-    y = 5
+    x = 7
+    y = 6
     cost = 2
     icon = GFX_focus_CHI_rapid_political_tutelage
     continue_if_invalid = no
@@ -219,8 +243,8 @@ focus_tree = {
   }
   focus = {
     id = CHI_establish_regional_seats
-    x = -1
-    y = 6
+    x = 7
+    y = 7
     cost = 2
     icon = GFX_focus_CHI_establish_regional_seats
     continue_if_invalid = no
@@ -231,27 +255,36 @@ focus_tree = {
   }
   focus = {
     id = CHI_finally_free
-    x = -1
-    y = 7
+    x = 8
+    y = 9
     cost = 2
     icon = GFX_focus_CHI_finally_free
     continue_if_invalid = no
     cancel_if_invalid = yes
-    available = { has_completed_focus = CHI_begonia_leaf }
     prerequisite = {
-      focus = CHI_establish_regional_seats
+      focus = CHI_begonia_leaf
     }
   
     completion_reward = {
       country_event = { id = CHI.H4.7 }
       custom_effect_tooltip = unrestricted_diplomacy_tt
 			set_country_flag = unrestricted_diplomacy_flag
+      hidden_effect = {
+        if = {       
+          limit = { has_country_flag = CHI_wartime_success_everywhere_flag } 
+            add_to_variable = { ROC_army_fuel_consumption_factor = 0.25 tooltip = army_fuel_consumption_factor_tooltip}
+            add_to_variable = { ROC_navy_fuel_consumption_factor = 0.25 tooltip = navy_fuel_consumption_factor_tooltip}
+            add_to_variable = { ROC_air_fuel_consumption_factor = 0.25 tooltip = air_fuel_consumption_factor_tooltip}
+            add_to_variable = { CHI_Economy_factory_energy_consumption = 0.15 tooltip = factory_energy_consumption_tooltip }
+            add_to_variable = { CHI_Economy_production_lack_of_resource_penalty_factor = 0.15 tooltip = lack_of_resource_penalty_factor_tooltip}
+        }
+      }
     }
   }
   focus = {
     id = CHI_mongolian_negotiations
-    x = 1
-    y = 5
+    x = 9
+    y = 6
     cost = 2
     icon = GFX_focus_CHI_mongolian_negotiations
     continue_if_invalid = no
@@ -265,8 +298,8 @@ focus_tree = {
   }
   focus = {
     id = CHI_tuva_problem
-    x = 1
-    y = 6
+    x = 9
+    y = 7
     cost = 2
     icon = GFX_focus_CHI_tuva_problem
     continue_if_invalid = no
@@ -280,8 +313,8 @@ focus_tree = {
   }
   focus = {
     id = CHI_begonia_leaf
-    x = 1
-    y = 7
+    x = 8
+    y = 8
     cost = 2
     icon = GFX_focus_CHI_begonia_leaf
     continue_if_invalid = no
@@ -289,8 +322,12 @@ focus_tree = {
     prerequisite = {
       focus = CHI_tuva_problem
     }
+    prerequisite = {
+      focus = CHI_establish_regional_seats
+    }
     completion_reward = {
-      country_event = { id = CHI.203 }
+      country_event = { id = CHI.H4.100}
+      country_event = { id = CHI.H4.101 days = 7}
     }
   }
 }

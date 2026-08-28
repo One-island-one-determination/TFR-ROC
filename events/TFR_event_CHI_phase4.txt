@@ -10,11 +10,43 @@ country_event = {
   picture = CHI_Event_H4_1
   fire_only_once = yes
   is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      every_state = { remove_dynamic_modifier = { modifier = CHI_asia_pacific_armament } }
+      remove_dynamic_modifier = { modifier = CHI_ROC_army_dynamic_2 }
+      remove_dynamic_modifier = { modifier = CHI_ROC_navy_dynamic_2 }
+      add_dynamic_modifier = { modifier = CHI_ROC_army_dynamic_3 }
+      add_dynamic_modifier = { modifier = CHI_ROC_navy_dynamic_3 }
+
+      if = {       
+        limit = { has_country_flag = CHI_wartime_success_everywhere_flag } 
+        add_to_variable = { ROC_army_fuel_consumption_factor = 0.25 tooltip = army_fuel_consumption_factor_tooltip}
+        add_to_variable = { ROC_navy_fuel_consumption_factor = 0.25 tooltip = navy_fuel_consumption_factor_tooltip}
+        add_to_variable = { ROC_air_fuel_consumption_factor = 0.25 tooltip = air_fuel_consumption_factor_tooltip}
+        add_to_variable = { CHI_Economy_factory_energy_consumption = 0.15 tooltip = factory_energy_consumption_tooltip }
+        add_to_variable = { CHI_Economy_production_lack_of_resource_penalty_factor = 0.15 tooltip = lack_of_resource_penalty_factor_tooltip}
+      }
+    }
+  }
   option = {
     name = CHI.H4.1.a
     load_focus_tree = P4_CHI_Han
     focus_unlock = yes
     set_cosmetic_tag = CHI_UNITED
+    if = {
+      limit = { PHI = { has_country_flag = CHI_enemy_flag } }
+      CHI = {
+        transfer_state = 1384
+        add_state_core = 1384
+      }
+    }
+    if = {
+      limit = { VIN = { has_country_flag = CHI_enemy_flag } }
+      CHI = {
+        transfer_state = 1383
+        add_state_core = 1383
+      }
+    }
   }
 }
 
@@ -91,6 +123,7 @@ country_event = {
 
   immediate = {
     hidden_effect = {
+			scoped_play_song = "MedalofValor"
       random_list = {
         33 = { set_country_flag = CHI_ending_flag_1 }
         33 = { set_country_flag = CHI_ending_flag_2 }
@@ -208,24 +241,35 @@ country_event = {
     name = CHI.H4.93.a
     custom_effect_tooltip = CHI_mongolia_war_declared_tt
     declare_war_on = { target = MON type = annex_everything }
+    news_event = { id = CHI.H4.93_news }
   }
 }
 
 # ================================
 # Tuvan Event Chain
 # ================================
-
-# CHI.H4.100: Tuva's old owner receives notification - starts border conflict
-# Fired on the OLD OWNER of Tuva (e.g. Russia) 14 days after ROC seizes state 329
 country_event = {
-  id = CHI.H4.100
-  title = CHI.H4.100.t
-  desc = CHI.H4.100.d
-  picture = GFX_CHI_event_taiwan_32
+  id = CHI.H4.111
+  title = CHI.H4.111.t
+  desc = CHI.H4.111.d
+  picture = CHI_Event_H4_111
   is_triggered_only = yes
 
   option = {
-    name = CHI.H4.100.a
+    name = CHI.H4.111.a
+  }
+}
+# CHI.H4.112: Tuva's old owner receives notification - starts border conflict
+# Fired on the OLD OWNER of Tuva (e.g. Russia) 14 days after ROC seizes state 329
+country_event = {
+  id = CHI.H4.112
+  title = CHI.H4.112.t
+  desc = CHI.H4.112.d
+  picture = CHI_Event_H4_112
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.H4.112.a
     # Start border conflict: old owner attacks Tuva to retake it
     start_border_war = {
       change_state_after_war = no
@@ -238,27 +282,27 @@ country_event = {
         # ROC defends Tuva
         state = 329
         num_provinces = 4
-        on_win = CHI.H4.101
-        on_lose = CHI.H4.102
-        on_cancel = CHI.H4.103
+        on_win = CHI.H4.113
+        on_lose = CHI.H4.114
+        on_cancel = CHI.H4.115
       }
     }
   }
 }
 
-# CHI.H4.101: Taiwan wins the border conflict - Tuva is permanently secured
+# CHI.H4.113: Taiwan wins the border conflict - Tuva is permanently secured
 country_event = {
-  id = CHI.H4.101
-  title = CHI.H4.101.t
-  desc = CHI.H4.101.d
-  picture = GFX_CHI_event_taiwan_32
+  id = CHI.H4.113
+  title = CHI.H4.113.t
+  desc = CHI.H4.113.d
+  picture = CHI_Event_H4_113
   is_triggered_only = yes
 
   trigger = {
   }
 
   option = {
-    name = CHI.H4.101.a
+    name = CHI.H4.113.a
     hidden_effect = {
       CHI = {
         add_political_power = 50
@@ -268,19 +312,23 @@ country_event = {
   }
 }
 
-# CHI.H4.102: Taiwan loses the border conflict - Tuva returned to original owner
+# CHI.H4.114: Taiwan loses the border conflict - Tuva returned to original owner
 country_event = {
-  id = CHI.H4.102
-  title = CHI.H4.102.t
-  desc = CHI.H4.102.d
-  picture = GFX_CHI_event_taiwan_32
+  id = CHI.H4.114
+  title = CHI.H4.114.t
+  desc = CHI.H4.114.d
+  picture = CHI_Event_H4_114
   is_triggered_only = yes
 
   trigger = {
   }
-
+  immediate = {
+    hidden_effect = {
+      329 = { controller = { save_event_target_as = tuva_old_owner } }
+    }
+  }
   option = {
-    name = CHI.H4.102.a
+    name = CHI.H4.114.a
     hidden_effect = {
       CHI = {
         add_stability = -0.1
@@ -296,19 +344,19 @@ country_event = {
   }
 }
 
-# CHI.H4.103: Border conflict cancelled / draw
+# CHI.H4.115: Border conflict cancelled / draw
 country_event = {
-  id = CHI.H4.103
-  title = CHI.H4.103.t
-  desc = CHI.H4.103.d
-  picture = GFX_CHI_event_taiwan_32
+  id = CHI.H4.115
+  title = CHI.H4.115.t
+  desc = CHI.H4.115.d
+  picture = CHI_Event_H4_115
   is_triggered_only = yes
 
   trigger = {
   }
 
   option = {
-    name = CHI.H4.103.a
+    name = CHI.H4.115.a
     hidden_effect = {
       CHI = {
         add_stability = -0.05
@@ -316,8 +364,279 @@ country_event = {
       }
       every_country = {
         limit = { has_country_flag = CHI_tuva_taken_from_me }
-        country_event = { id = CHI.H4.100 days = 30 }
+        country_event = { id = CHI.H4.112 days = 30 }
       }
     }
+  }
+}
+
+
+# ROC Invades Mongolia
+news_event = {
+	id = CHI.H4.93_news
+	title = CHI.H4.93_news.t
+	desc = CHI.H4.93_news.d
+	picture = GFX_news_event_roc_mon_conflict
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CHI.H4.93_news.a
+		trigger = { tag = CHI }
+	}
+	option = {
+		name = CHI.H4.93_news.a
+		trigger = { NOT = { tag = CHI } }
+	}
+}
+
+# Sino-Indian War
+news_event = {
+	id = CHI.H4.xizang_war_news
+	title = CHI.H4.xizang_war_news.t
+	desc = CHI.H4.xizang_war_news.d
+	picture = GFX_news_event_roc_raj_conflict
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CHI.H4.xizang_war_news.a
+		trigger = { tag = CHI }
+	}
+	option = {
+		name = CHI.H4.xizang_war_news.a
+		trigger = { NOT = { tag = CHI } }
+	}
+}
+# BEGONIA LEAF but just a normal event
+country_event = {
+  id = CHI.H4.100
+  title = CHI.H4.100.t
+  desc = CHI.H4.100.d
+  picture = CHI_Event_H4_100
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.H4.100.a
+  }
+}
+### BEGONIA LEAF: DEMAND RETURN OF LANDS FROM JAPAN ###
+country_event = {
+  id = CHI.H4.101
+  title = CHI.H4.101.t
+  desc = CHI.H4.101.d
+  picture = CHI_Event_H4_101
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.H4.101.a
+    custom_effect_tooltip = CHI_begonia_leaf_send_diplomat_tt
+    JAP = {
+      country_event = { id = CHI.H4.104 days = 3 }
+    }
+  }
+}
+
+### JAPAN EVENT: ROC DEMANDS RETURN OF MANCHURIA AND TREATY PORTS ###
+country_event = {
+  id = CHI.H4.104
+  title = CHI.H4.104.t
+  desc = CHI.H4.104.d
+  picture = CHI_Event_H4_93
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.H4.104.a
+    ai_chance = { base = 100 }
+    hidden_effect = {
+      # Transfer all Chinese and Manchurian states held by JAP / PDTO puppets
+      every_state = {
+        limit = {
+          OR = {
+            is_owned_by = JAP
+            is_controlled_by = JAP
+            owner = { is_subject_of = JAP }
+            controller = { is_subject_of = JAP }
+            owner = { is_in_faction_with = JAP }
+            controller = { is_in_faction_with = JAP }
+          }
+          OR = {
+            state = 608 state = 1157 state = 609 state = 610 state = 611 state = 1154 state = 1232 state = 1421 state = 614
+            state = 1426 state = 1231 state = 597 state = 1230 state = 1427 state = 1229 state = 1393 state = 1420
+            state = 1215 state = 598 state = 1228 state = 1429 state = 613 state = 1222 state = 1220 state = 1159 state = 1219 state = 596
+            state = 1425 state = 716 state = 1417 state = 1413 state = 1394 state = 1414 state = 1415 state = 328 state = 1424 state = 714 state = 717 state = 1416
+            state = 591 state = 326 state = 729 state = 1430 state = 1207 state = 1206 state = 592 state = 728 state = 1395
+            state = 1223 state = 606 state = 1221 state = 1233 state = 615 state = 1194 state = 1201 state = 622 state = 1200
+            state = 607 state = 1226 state = 1225 state = 1224 state = 1199 state = 1189 state = 1217 state = 595 state = 1218 state = 1216 state = 1431
+            state = 599 state = 1191 state = 593 state = 594 state = 1203 state = 1204 state = 1205 state = 1196 state = 1192 state = 1195 state = 325
+            state = 601 state = 1168 state = 1190 state = 605 state = 1188 state = 1155 state = 322 state = 1153 state = 1156 state = 1152 state = 434 state = 788
+            state = 1212 state = 620 state = 1211 state = 602 state = 1208 state = 1209 state = 1210 state = 603 state = 1197
+            state = 1227 state = 1428 state = 1214 state = 1213 state = 600 state = 1158 state = 1160 state = 1161 state = 1162 state = 1163 state = 1164 state = 1165 state = 617 state = 618 state = 619 state = 287
+            state = 1186 state = 1187 state = 604 state = 1198 state = 1193 state = 616 state = 283 state = 1166 state = 1167 state = 621 state = 1202 state = 612 state = 715
+          }
+        }
+        CHI = { transfer_state = PREV }
+      }
+      # Direct transfer of Manchuria, Northern ports, Shandong and Shanghai/coastal states
+      CHI = {
+        # Liaoning & Dalian / Lushun
+        transfer_state = 1425
+        transfer_state = 716
+        transfer_state = 1417
+        transfer_state = 1413
+        transfer_state = 1394
+        # Jilin
+        transfer_state = 1414
+        transfer_state = 1415
+        transfer_state = 328
+        # Heilongjiang
+        transfer_state = 1424
+        transfer_state = 714
+        transfer_state = 717
+        transfer_state = 1416
+        # Beijing, Tianjin, Hebei
+        transfer_state = 608
+        transfer_state = 1157
+        transfer_state = 609
+        transfer_state = 610
+        transfer_state = 611
+        transfer_state = 1154
+        transfer_state = 1232
+        transfer_state = 1421
+        transfer_state = 614
+        # Shandong (Qingdao, Weihai, etc.)
+        transfer_state = 1426
+        transfer_state = 1231
+        transfer_state = 597
+        transfer_state = 1230
+        transfer_state = 1427
+        transfer_state = 1229
+        transfer_state = 1393
+        transfer_state = 1420
+        # Shanghai, Jiangsu, Zhejiang
+        transfer_state = 1215
+        transfer_state = 598
+        transfer_state = 1228
+        transfer_state = 1429
+        transfer_state = 613
+        transfer_state = 1222
+        transfer_state = 1220
+        transfer_state = 1159
+        transfer_state = 1219
+        transfer_state = 596
+        # Guangdong, Hainan, Hong Kong, Macau
+        transfer_state = 591
+        transfer_state = 326
+        transfer_state = 729
+        transfer_state = 1430
+        transfer_state = 1207
+        transfer_state = 1206
+        transfer_state = 592
+        transfer_state = 728
+        transfer_state = 1395
+      }
+      # Annex remaining PDTO puppets in China if existing
+      if = {
+        limit = { country_exists = FAL }
+        CHI = { annex_country = { target = FAL transfer_troops = no } }
+      }
+      if = {
+        limit = { country_exists = IMA }
+        CHI = { annex_country = { target = IMA transfer_troops = no } }
+      }
+      if = {
+        limit = { country_exists = A77 }
+        CHI = { annex_country = { target = A77 transfer_troops = no } }
+      }
+      if = {
+        limit = { country_exists = NSF }
+        CHI = { annex_country = { target = NSF transfer_troops = no } }
+      }
+      if = {
+        limit = { country_exists = CHF }
+        CHI = { annex_country = { target = CHF transfer_troops = no } }
+      }
+      if = {
+        limit = { country_exists = JIA }
+        CHI = { annex_country = { target = JIA transfer_troops = no } }
+      }
+      CHI = {
+        country_event = { id = CHI.H4.102 days = 1 }
+      }
+    }
+  }
+  option = {
+    name = CHI.H4.104.b
+    ai_chance = { base = 0 }
+    add_opinion_modifier = {
+      target = CHI
+      modifier = CHI_japan_refused_territory_demand
+    }
+    CHI = {
+      add_opinion_modifier = {
+        target = JAP
+        modifier = CHI_japan_refused_territory_demand
+      }
+      create_wargoal = {
+        type = take_claimed_state
+        target = JAP
+      }
+      country_event = { id = CHI.H4.103 days = 1 }
+    }
+  }
+}
+
+### ROC RECEIVES SUCCESSFUL RETURN OF ALL LANDS ###
+country_event = {
+  id = CHI.H4.102
+  title = CHI.H4.102.t
+  desc = CHI.H4.102.d
+  picture = CHI_Event_H4_102
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.H4.102.a
+    add_political_power = 150
+    add_stability = 0.1
+    add_war_support = 0.1
+    JAP = { add_to_faction = CHI }
+    set_country_flag = pdto_member
+    custom_effect_tooltip = CHI_begonia_leaf_returned_tt
+    hidden_effect = {
+      # Ensure all transferred states are owned, controlled and cored
+      every_state = {
+        limit = {
+          OR = {
+            is_owned_by = JAP
+            is_controlled_by = JAP
+            owner = { is_subject_of = JAP }
+            controller = { is_subject_of = JAP }
+          }
+          OR = {
+            state = 608 state = 1157 state = 609 state = 610 state = 611 state = 1154 state = 1232 state = 1421 state = 614
+            state = 1426 state = 1231 state = 597 state = 1230 state = 1427 state = 1229 state = 1393 state = 1420
+            state = 1215 state = 598 state = 1228 state = 1429 state = 613 state = 1222 state = 1220 state = 1159 state = 1219 state = 596
+            state = 1425 state = 716 state = 1417 state = 1413 state = 1394 state = 1414 state = 1415 state = 328 state = 1424 state = 714 state = 717 state = 1416
+            state = 591 state = 326 state = 729 state = 1430 state = 1207 state = 1206 state = 592 state = 728 state = 1395
+          }
+        }
+        CHI = { transfer_state = PREV }
+      }
+    }
+  }
+}
+
+### ROC EVENT: JAPAN REFUSES TO RETURN TERRITORIES ###
+country_event = {
+  id = CHI.H4.103
+  title = CHI.H4.103.t
+  desc = CHI.H4.103.d
+  picture = CHI_Event_H4_102
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.H4.103.a
+    add_war_support = 0.15
+    custom_effect_tooltip = CHI_japan_refused_tt
   }
 }

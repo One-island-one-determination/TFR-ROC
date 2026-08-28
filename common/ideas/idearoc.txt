@@ -14,10 +14,10 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        stability_factor = -0.10
-        production_factory_efficiency_gain_factor = 0.075
-        line_change_production_efficiency_factor = 0.075
-        research_speed_factor = 0.05
+        stability_factor = -0.05
+        production_factory_efficiency_gain_factor = 0.15
+        line_change_production_efficiency_factor = 0.15
+        research_speed_factor = 0.1
       }
     }
     CHI_anti_western_proaganda_idea = {
@@ -551,7 +551,7 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        army_morale_factor = 0.15
+        army_morale_factor = 0.1
         army_speed_factor = 0.05
         dig_in_speed_factor = 0.1
         max_dig_in_factor = 0.1
@@ -583,8 +583,8 @@ ideas = {
 
       modifier = {
         army_morale_factor = 0.15
-        army_speed_factor = 0.10
-        surrender_limit = 0.15
+        army_speed_factor = 0.15
+        surrender_limit = 0.2
         dig_in_speed_factor = 0.20
         max_dig_in_factor = 0.20
         local_intel_to_enemies = -0.1
@@ -886,7 +886,7 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        mobilization_speed = 0.25
+        mobilization_speed = 0.3
         conscription_factor = 0.10
         training_time_factor = -0.10
         minimum_training_level = -0.10
@@ -932,9 +932,9 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        army_strength_factor = 0.05
+        army_strength_factor = 0.1
         army_retreat_speed_factor = -0.15
-        experience_loss_factor = -0.05
+        experience_loss_factor = -0.1
         command_abilities_cost_factor = -0.1
       }
       targeted_modifier = {
@@ -960,8 +960,8 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        air_superiority_efficiency = 0.05
-        air_mission_efficiency = 0.05
+        air_superiority_efficiency = 0.1
+        air_mission_efficiency = 0.1
         air_accidents_factor = -0.1
       }
     }
@@ -983,8 +983,9 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        army_core_defence_factor = 0.05
-        resistance_growth_on_our_occupied_states = 0.10
+        army_core_defence_factor = 0.1
+        army_core_attack_factor = 0.1
+        resistance_growth_on_our_occupied_states = 0.15
       }
     }
     CHI_Taiwan_the_Bravest_ideas_2 = {
@@ -1005,9 +1006,9 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        army_core_defence_factor = 0.10
-        army_core_attack_factor = 0.05
-        resistance_growth_on_our_occupied_states = 0.25
+        army_core_defence_factor = 0.2
+        army_core_attack_factor = 0.2
+        resistance_growth_on_our_occupied_states = 0.35
         resistance_target_on_our_occupied_states = 0.10
       }
     }
@@ -1046,9 +1047,9 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        conscription_factor = 0.10
-        army_core_attack_factor = 0.05
-        army_core_defence_factor = 0.05
+        conscription_factor = 0.1
+        army_core_attack_factor = 0.1
+        army_core_defence_factor = 0.1
       }
     }
     CHI_Defend_Taiwan_ideas_2 = {
@@ -1069,14 +1070,13 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        army_core_attack_factor = 0.05
-        army_core_defence_factor = 0.05
-        mobilization_speed = 0.25
-        conscription_factor = 0.25
+        army_core_attack_factor = 0.1
+        army_core_defence_factor = 0.1
+        mobilization_speed = 0.1
+        conscription_factor = 0.2
         weekly_bombing_war_support = 0.01
         weekly_casualties_war_support = 0.01
         weekly_convoys_war_support = 0.01
-        monthly_population = -0.01
         local_intel_to_enemies = -0.1
       }
     }

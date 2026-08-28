@@ -1,0 +1,693 @@
+defined_text = {
+	name = GetLoserAllies
+	text = {
+		trigger = {
+			has_global_flag = losing_country_multiple
+		}
+		localization_key = TNO_PEACE_POPUP_COUNTRY_PLURAL
+	}
+	text = {
+		localization_key = TNO_PEACE_POPUP_COUNTRY_SINGULAR
+	}
+}
+
+defined_text = {
+	name = GetWinnerAllies
+	text = {
+		trigger = {
+			has_global_flag = winning_country_multiple
+		}
+		localization_key = TNO_PEACE_POPUP_COUNTRY_PLURAL
+	}
+	text = {
+		localization_key = TNO_PEACE_POPUP_COUNTRY_SINGULAR
+	}
+}
+
+defined_text = {
+	name = GetLoserAlliesWithHas
+	text = {
+		trigger = {
+			has_global_flag = losing_country_multiple
+		}
+		localization_key = TNO_PEACE_POPUP_COUNTRY_PLURAL_HAS
+	}
+	text = {
+		localization_key = TNO_PEACE_POPUP_COUNTRY_SINGULAR_HAS
+	}
+}
+
+defined_text = {
+	name = GetWinnerAlliesWithHas
+	text = {
+		trigger = {
+			has_global_flag = winning_country_multiple
+		}
+		localization_key = TNO_PEACE_POPUP_COUNTRY_PLURAL_HAS
+	}
+	text = {
+		localization_key = TNO_PEACE_POPUP_COUNTRY_SINGULAR_HAS
+	}
+}
+
+#defined_text = {
+	#	name = GetLoserFactionLeader
+	#	text = {
+		#		trigger = {
+			#			OR = {
+				#				global_event_target:losing_country = {
+					#					is_faction_leader = yes
+					#				}
+				#				any_country = {
+					#					limit = {
+						#						is_in_faction_with = global_event_target:losing_country
+						#						is_faction_leader = yes
+						#					}
+					#					has_war_with = global_event_target:winning_country
+					#				}
+				#			}
+			#		}
+		#		localization_key = TNO_PEACE_POPUP_LOSER_FACTION_LEADER
+		#	}
+	#	text = {
+		#		localization_key = TNO_PEACE_POPUP_LOSER_NOT_FACTION_LEADER
+		#	}
+	#}
+#
+#defined_text = {
+	#	name = GetWinnerFactionLeader
+	#	text = {
+		#		trigger = {
+			#			OR = {
+				#				global_event_target:winning_country = {
+					#					is_faction_leader = yes
+					#				}
+				#				any_country = {
+					#					limit = {
+						#						is_in_faction_with = global_event_target:winning_country
+						#						is_faction_leader = yes
+						#					}
+					#					has_war_with = global_event_target:losing_country
+					#				}
+				#			}
+			#		}
+		#		localization_key = TNO_PEACE_POPUP_WINNER_FACTION_LEADER
+		#	}
+	#	text = {
+		#		localization_key = TNO_PEACE_POPUP_WINNER_NOT_FACTION_LEADER
+		#	}
+	#}
+
+defined_text = {
+	name = GetWarStatus
+	text = {
+		trigger = {
+			has_global_flag = war_won
+		}
+		localization_key = TFR_PEACE_POPUP_WAR_CONCLUSION
+	}
+	text = {
+		trigger = {
+			has_global_flag = war_continuing
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONTINUING
+	}
+}
+
+
+#### PUT YOUR VARIOUS CATEGORIES/TRIGGERS IN HERE ###
+
+# Refer to the winning country's tag like so "global_event_target:winning_country"
+# and the losing country's tag like so "global_event_target:losing_country"
+
+defined_text = {
+	name = GetWarConclusionLoc
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = SYR
+			}
+			event_target:losing_country = {
+				original_tag = HTS
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_WAR_CONCLUSION_SYR_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = SER
+			}
+			event_target:losing_country = {
+				original_tag = KOS
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_WAR_CONCLUSION_SER_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = APA
+			}
+			event_target:losing_country = {
+				original_tag = CLM
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_WAR_CONCLUSION_APA_CLM_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = APA
+			}
+			event_target:losing_country = {
+				original_tag = CAL
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_WAR_CONCLUSION_APA_CLM_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = HRL
+			}
+			event_target:losing_country = {
+				original_tag = LBA
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_WAR_HRL_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = LBA
+			}
+			event_target:losing_country = {
+				original_tag = HRL
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_WAR_LBA_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = GER
+			}
+			event_target:losing_country = {
+				original_tag = ZZZ
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_WAR_GER_WEF_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ZZZ
+			}
+			event_target:losing_country = {
+				original_tag = GER
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_WAR_ZZZ_WEF_WIN
+	}
+	text = {
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_DEFAULT
+	}
+}
+
+
+
+defined_text = {
+	name = GetWarContinuationLoc
+	text = {
+		localization_key = TFR_PEACE_POPUP_WAR_CONTINUING_DEFAULT
+	}
+}
+
+
+defined_text = {
+	name = GetFlavor
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = SYR
+			}
+			event_target:losing_country = {
+				tag = HTS
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_HTS
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = SYR
+			}
+			event_target:winning_country = {
+				OR = {
+					original_tag = HTS
+					original_tag = ROJ
+				}
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SYR_LOSE
+	}
+	
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = SER
+			}
+			event_target:losing_country = {
+				tag = KOS
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SER
+	}
+	
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = APA
+			}
+			event_target:losing_country = {
+				tag = CLM
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_APA_CLM
+	}
+	
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = APA
+			}
+			event_target:losing_country = {
+				tag = CAL
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_APA_CAL
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = ATW
+			}
+			event_target:losing_country = {
+				tag = FLA
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_ATW_FLA
+	}
+
+	#PTF
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = PTF
+			}
+			event_target:losing_country = {
+				tag = SAT
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PTF_SAT
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = PTF
+			}
+			event_target:losing_country = {
+				tag = GMA
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PTF_GMA
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = PTF
+			}
+			event_target:losing_country = {
+				tag = LCN
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PTF_LCN
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = PTF
+			}
+			event_target:losing_country = {
+				tag = ATP
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PTF_LCN
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = PTF
+			}
+			event_target:losing_country = {
+				tag = UOA
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PTF_UOA
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = PTF
+			}
+			event_target:losing_country = {
+				tag = USC
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PTF_USC
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = PTF
+			}
+			event_target:losing_country = {
+				tag = APA
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PTF_APA
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FROM
+			}
+			event_target:losing_country = {
+				tag = PTF
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PTF
+	}	
+	
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FROM
+			}
+			event_target:losing_country = {
+				tag = APA
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_APA
+	}
+	
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FROM
+			}
+			event_target:losing_country = {
+				tag = USC
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_USC
+	}
+	
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FROM
+			}
+			event_target:losing_country = {
+				tag = USB
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_USB
+	}	
+	
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FROM
+			}
+			event_target:losing_country = {
+				tag = LOS
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_LOS
+	}	
+	
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FROM
+			}
+			event_target:losing_country = {
+				tag = BLA
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_BLA
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = PRC
+			}
+			event_target:losing_country = {
+				tag = CHI
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PRC_CHI
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = APA
+			}
+			event_target:losing_country = {
+				tag = CAC
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_APA_CAC
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = HRL
+			}
+			event_target:losing_country = {
+				tag = EGY
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_HRL_EGY
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FROM
+			}
+			event_target:losing_country = {
+				tag = ATW
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_ATW
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FROM
+			}
+			event_target:losing_country = {
+				tag = NSM
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_NSM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = EGY
+			}
+			event_target:losing_country = {
+				tag = SUD
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_EGY_SUD
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = SOV
+			}
+			event_target:losing_country = {
+				tag = POL
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SOV_POL
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = GMA
+			}
+			event_target:losing_country = {
+				original_tag = AOF
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SOL_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = FAA
+			}
+			event_target:losing_country = {
+				original_tag = GMA
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SOL_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = GMA
+			}
+			event_target:losing_country = {
+				original_tag = FAA
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_GMA_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = AOF
+			}
+			event_target:losing_country = {
+				original_tag = GMA
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_GMA_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = SYR
+			}
+			event_target:losing_country = {
+				tag = ISR
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SYR_ISR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = SOV
+			}
+			event_target:losing_country = {
+				tag = ENG
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SOV_ENG
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = TAL
+			}
+			event_target:losing_country = {
+				tag = AFG
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_TAL_AFG
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FROM
+			}
+			event_target:losing_country = {
+				tag = ABK
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_ABK
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = GER
+			}
+			event_target:losing_country = {
+				tag = ZZZ
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_GER_ZZZ
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = ZZZ
+			}
+			event_target:losing_country = {
+				tag = GER
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_ZZZ_GER
+	}
+	####################### OIOD EDITS STARTS HERE #######################
+    text = {
+        trigger = {
+            event_target:winning_country = {
+                tag = CHI
+				has_cosmetic_tag = CHI_UNITED
+            }
+            event_target:losing_country = {
+                tag = SIC
+                has_cosmetic_tag = SIC_long_march
+            }
+			PRC = {
+				has_country_flag = PRC_loji_overlord_flag
+			}
+        }
+        localization_key = TFR_PEACE_POPUP_FLAVOR_CHI_SIC_LONG_MARCH
+    }
+	
+	text = {
+        trigger = {
+            event_target:winning_country = {
+                tag = CHI
+				has_cosmetic_tag = CHI_UNITED
+            }
+            event_target:losing_country = {
+                tag = SIC
+                has_cosmetic_tag = SIC_long_march
+            }
+        }
+        localization_key = TFR_PEACE_POPUP_FLAVOR_CHI_SIC_LONG_MARCH_LOJI
+    }
+
+    text = {
+        trigger = {
+            event_target:winning_country = {
+                tag = CHI
+				has_cosmetic_tag = CHI_UNITED
+            }
+            event_target:losing_country = {
+                tag = PRC
+            }
+        }
+        localization_key = TFR_PEACE_POPUP_FLAVOR_CHI_PRC
+	####################### OIOD EDITS ENDS HERE #######################
+	}
+}

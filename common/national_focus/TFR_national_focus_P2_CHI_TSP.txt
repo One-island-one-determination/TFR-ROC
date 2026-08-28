@@ -1,0 +1,593 @@
+focus_tree = {
+    id = P2_CHI_TSP
+    country = {
+        factor = 0
+    }
+    default = no
+
+    ##=====================================================
+    ## 台灣優先 (Taiwan First) - Root
+    ##=====================================================
+    focus = {
+        id = CHI_taiwan_first
+        icon = GFX_goal_unknown
+        x = 34
+        y = 0
+        cost = 3
+    }
+
+    ##=====================================================
+    ## Three Pillars (y=1)
+    ##=====================================================
+    focus = {
+        id = CHI_establish_anti_china_alliance
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_taiwan_first }
+        x = 30
+        y = 1
+        cost = 3
+    }
+    focus = {
+        id = CHI_our_formosa
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_taiwan_first }
+        x = 34
+        y = 1
+        cost = 3
+    }
+    focus = {
+        id = CHI_social_normalization
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_taiwan_first }
+        x = 38
+        y = 1
+        cost = 3
+    }
+
+    ##=====================================================
+    ## Sub-Pillars (y=2)
+    ##=====================================================
+    focus = {
+        id = CHI_new_mccarthyism
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_establish_anti_china_alliance }
+        x = 29
+        y = 2
+        cost = 3
+    }
+    focus = {
+        id = CHI_unite_taiwan_faction
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_establish_anti_china_alliance }
+        x = 31
+        y = 2
+        cost = 3
+    }
+    focus = {
+        id = CHI_correct_greater_china_history
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_our_formosa }
+        x = 33
+        y = 2
+        cost = 3
+    }
+    focus = {
+        id = CHI_promote_local_spirit
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_our_formosa }
+        x = 35
+        y = 2
+        cost = 3
+    }
+    focus = {
+        id = CHI_promote_democratic_spirit
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_social_normalization }
+        x = 37
+        y = 2
+        cost = 3
+    }
+    focus = {
+        id = CHI_rebuild_traditional_values
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_social_normalization }
+        x = 39
+        y = 2
+        cost = 3
+    }
+
+    ##=====================================================
+    ## Convergence (y=3)
+    ##=====================================================
+    focus = {
+        id = CHI_challenge_interpretation_644
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_new_mccarthyism }
+        prerequisite = { focus = CHI_unite_taiwan_faction }
+        x = 30
+        y = 3
+        cost = 3
+    }
+    focus = {
+        id = CHI_reform_party_state_legacy
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_correct_greater_china_history }
+        prerequisite = { focus = CHI_promote_local_spirit }
+        x = 34
+        y = 3
+        cost = 3
+    }
+    focus = {
+        id = CHI_court_conservative_voters
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_promote_democratic_spirit }
+        prerequisite = { focus = CHI_rebuild_traditional_values }
+        x = 38
+        y = 3
+        cost = 3
+    }
+
+    ##=====================================================
+    ## Bridge to Power (y=4-5)
+    ##=====================================================
+    focus = {
+        id = CHI_by_peoples_mandate
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_challenge_interpretation_644 }
+        prerequisite = { focus = CHI_reform_party_state_legacy }
+        prerequisite = { focus = CHI_court_conservative_voters }
+        x = 34
+        y = 4
+        cost = 3
+    }
+    focus = {
+        id = CHI_control_five_yuans
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_by_peoples_mandate }
+        x = 34
+        y = 5
+        cost = 3
+    }
+
+    ##=====================================================
+    ## Three Main Branches (y=6)
+    ##=====================================================
+    focus = {
+        id = CHI_maintain_market_freedom
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_control_five_yuans }
+        x = 18
+        y = 7
+        cost = 3
+    }
+    focus = {
+        id = CHI_taiwanese_taiwan
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_control_five_yuans }
+        x = 34
+        y = 7
+        cost = 3
+    }
+    focus = {
+        id = CHI_free_world_union
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_control_five_yuans }
+        x = 49
+        y = 7
+        cost = 3
+    }
+
+    ##=====================================================
+    ## 維護市場自由性 Branch (y=7+)
+    ##=====================================================
+    focus = {
+        id = CHI_reclaim_semiconductor_dominance
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_maintain_market_freedom }
+        x = 14
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_cancel_mandatory_health_insurance
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_maintain_market_freedom }
+        x = 18
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_restructure_fsc
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_maintain_market_freedom }
+        x = 22
+        y = 8
+        cost = 3
+    }
+    # y=8
+    focus = {
+        id = CHI_accelerate_traditional_industry_exit
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_reclaim_semiconductor_dominance }
+        x = 12
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_gov_led_vertical_integration
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_reclaim_semiconductor_dominance }
+        x = 14
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_fund_tsmc_reconstruction
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_reclaim_semiconductor_dominance }
+        x = 16
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_encourage_commercial_insurance
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_cancel_mandatory_health_insurance }
+        x = 18
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_lower_corporate_tax
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_restructure_fsc }
+        x = 20
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_encourage_corporate_mergers
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_restructure_fsc }
+        x = 24
+        y = 9
+        cost = 3
+    }
+    # y=9
+    focus = {
+        id = CHI_establish_taiwan_future_fund
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_accelerate_traditional_industry_exit }
+        x = 12
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_expand_science_parks
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_gov_led_vertical_integration }
+        x = 14
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_emerging_supply_chain
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_gov_led_vertical_integration focus = CHI_fund_tsmc_reconstruction }
+        x = 16
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_encourage_foreign_capital
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_lower_corporate_tax }
+        x = 20
+        y = 10
+        cost = 3
+    }
+    # y=10
+    focus = {
+        id = CHI_academia_sinica_tech_assist
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_expand_science_parks }
+        x = 14
+        y = 11
+        cost = 3
+    }
+    focus = {
+        id = CHI_multinational_corp_hub_island
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_emerging_supply_chain }
+        x = 16
+        y = 11
+        cost = 3
+    }
+
+    ##=====================================================
+    ## 台灣人的台灣 Branch (y=7+)
+    ##=====================================================
+    focus = {
+        id = CHI_advocate_taiwan_subjectivity
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_taiwanese_taiwan }
+        x = 30
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_promote_national_normalization
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_taiwanese_taiwan }
+        x = 34
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_declare_communism_evil
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_taiwanese_taiwan }
+        x = 38
+        y = 8
+        cost = 3
+    }
+    # y=8
+    focus = {
+        id = CHI_restrict_foreign_labor
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_advocate_taiwan_subjectivity }
+        x = 26
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_overthrow_greater_china_narrative
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_promote_national_normalization focus = CHI_advocate_taiwan_subjectivity}
+        x = 30
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_strike_taiwan_leftist_narrative
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_promote_national_normalization focus = CHI_declare_communism_evil}
+        x = 34
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_fund_liberal_group
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_strike_taiwan_leftist_narrative}
+        x = 35
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_anti_extremist_intelligence_network
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_declare_communism_evil focus = CHI_integrate_with_japan}
+        x = 38
+        y = 10
+        cost = 3
+    }
+    # y=9
+    focus = {
+        id = CHI_coordinate_wage_growth
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_restrict_foreign_labor focus = CHI_encourage_corporate_mergers focus = CHI_lower_corporate_tax}
+        x = 25
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_new_taiwan_curriculum
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_overthrow_greater_china_narrative }
+        x = 30
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_clear_local_corruption
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_strike_taiwan_leftist_narrative focus = CHI_overthrow_greater_china_narrative}
+        x = 33
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_expand_police_agency
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_anti_extremist_intelligence_network }
+        mutually_exclusive = { focus = CHI_reorganize_sid }
+        x = 37
+        y = 11
+        cost = 3
+    }
+    focus = {
+        id = CHI_reorganize_sid
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_anti_extremist_intelligence_network }
+        mutually_exclusive = { focus = CHI_expand_police_agency }
+        x = 39
+        y = 11
+        cost = 3
+    }
+    # y=10
+    focus = {
+        id = CHI_confiscate_chinese_real_estate
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_coordinate_wage_growth }
+        x = 24
+        y = 11
+        cost = 3
+    }
+    focus = {
+        id = CHI_fertility_policy_subsidies
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_coordinate_wage_growth }
+        x = 26
+        y = 11
+        cost = 3
+    }
+    focus = {
+        id = CHI_whole_gov_anti_communist
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_new_taiwan_curriculum }
+        mutually_exclusive = { focus = CHI_inviolable_personal_freedom }
+        x = 29
+        y = 11
+        cost = 3
+    }
+    focus = {
+        id = CHI_inviolable_personal_freedom
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_new_taiwan_curriculum }
+        mutually_exclusive = { focus = CHI_whole_gov_anti_communist }
+        x = 31
+        y = 11
+        cost = 3
+    }
+    focus = {
+        id = CHI_establish_our_local_power
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_clear_local_corruption focus = CHI_fund_liberal_group}
+        x = 34
+        y = 11
+        cost = 3
+    }
+
+    ##=====================================================
+    ## 自由世界聯合 Branch (y=7+)
+    ##=====================================================
+    focus = {
+        id = CHI_integrate_with_japan
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_free_world_union }
+        x = 43
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_appeal_eu_cooperation
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_free_world_union }
+        mutually_exclusive = { focus = CHI_perfect_northward_diplomacy }
+        x = 46
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_perfect_northward_diplomacy
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_free_world_union }
+        mutually_exclusive = { focus = CHI_appeal_eu_cooperation }
+        x = 52
+        y = 8
+        cost = 3
+    }
+    focus = {
+        id = CHI_new_us_policy
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_free_world_union }
+        x = 55
+        y = 8
+        cost = 3
+    }
+    # y=8
+    focus = {
+        id = CHI_japan_taiwan_maritime_solution
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_integrate_with_japan }
+        x = 43
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_berlin_taipei_tech
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_appeal_eu_cooperation }
+        x = 46
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_leave_asia_enter_europe
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_appeal_eu_cooperation focus = CHI_perfect_northward_diplomacy }
+        x = 49
+        y = 9
+        cost = 3
+    }
+    focus = {
+        id = CHI_rebuild_taiwan_russia_relations
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_perfect_northward_diplomacy }
+        x = 52
+        y = 9
+        cost = 3
+    }
+    # y=9
+    focus = {
+        id = CHI_friends_of_democracy
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_berlin_taipei_tech }
+        x = 46
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_friends_of_anti_communism
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_rebuild_taiwan_russia_relations }
+        x = 51
+        y = 10
+        cost = 3
+    }
+    focus = {
+        id = CHI_solve_energy_dilemma
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_rebuild_taiwan_russia_relations focus = CHI_new_us_agreement }
+        x = 53
+        y = 10
+        cost = 3
+    }
+
+    ##=====================================================
+    ## Ending Section
+    ##=====================================================
+    focus = {
+        id = CHI_freedom_house
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_inviolable_personal_freedom }
+        prerequisite = { focus = CHI_establish_our_local_power }
+        prerequisite = { focus = CHI_expand_police_agency focus = CHI_reorganize_sid }
+        mutually_exclusive = { focus = CHI_unshakable_ruling_party focus = CHI_semi_permanent_mobilization }
+        x = 32
+        y = 13
+        cost = 3
+    }
+    focus = {
+        id = CHI_unshakable_ruling_party
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_whole_gov_anti_communist focus = CHI_inviolable_personal_freedom }
+        prerequisite = { focus = CHI_establish_our_local_power }
+        prerequisite = { focus = CHI_expand_police_agency focus = CHI_reorganize_sid }
+        mutually_exclusive = { focus = CHI_freedom_house focus = CHI_semi_permanent_mobilization }
+        x = 34
+        y = 13
+        cost = 3
+    }
+    focus = {
+        id = CHI_semi_permanent_mobilization
+        icon = GFX_goal_unknown
+        prerequisite = { focus = CHI_whole_gov_anti_communist }
+        prerequisite = { focus = CHI_expand_police_agency focus = CHI_reorganize_sid }
+        mutually_exclusive = { focus = CHI_freedom_house focus = CHI_unshakable_ruling_party }
+        x = 36
+        y = 13
+        cost = 3
+    }
+}
