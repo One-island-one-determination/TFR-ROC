@@ -912,18 +912,17 @@ country_event = {
         }
       }
       set_variable = {CHI_PRC_Infiltration_progress = 0 }
-      remove_decision = PRC_infiltration_becoming_serious_mission
       remove_mission = PRC_infiltration_becoming_serious_mission
       set_country_flag = CHI_taiwan_war_end
-      remove_ideas = { 
+      remove_ideas = {
         CHI_repairs_under_fire_idea CHI_repairs_under_fire_idea2 CHI_repairs_under_fire_idea3
         CHI_hold_the_line_idea
         CHI_wolfpack_tactics_idea
         CHI_phantom_legions_idea
         CHI_mobilize_balckbear CHI_mobilize_balckbear_1
-        CHI_united_as_one_idea 
+        CHI_united_as_one_idea
         CHI_Taiwan_Bravery CHI_Taiwan_Bravery_2
-        CHI_pdto_fuel_shipments_idea 
+        CHI_pdto_fuel_shipments_idea
         CHI_last_stand_idea CHI_last_stand_1_idea
         CHI_chinese_blockade
         CHI_STCC_idea
@@ -1060,9 +1059,9 @@ country_event = {
     activate_mission = CHI_defend_penghu_mission
     custom_effect_tooltip = PRC_second_wave_missile_strikes_tt
     country_event = {
-        id = CHI.TW.4
-        days = 1
-      }
+      id = CHI.TW.4
+      days = 1
+    }
 
     damage_units = {
       state = 1148
@@ -1576,8 +1575,8 @@ country_event = {
   fire_only_once = yes
   immediate = {
     hidden_effect = {
-      if = {       
-        limit = { has_country_flag = CHI_wartime_success_everywhere_flag } 
+      if = {
+        limit = { has_country_flag = CHI_wartime_success_everywhere_flag }
         add_to_variable = { ROC_army_fuel_consumption_factor = -0.25 tooltip = army_fuel_consumption_factor_tooltip}
         add_to_variable = { ROC_navy_fuel_consumption_factor = -0.25 tooltip = navy_fuel_consumption_factor_tooltip}
         add_to_variable = { ROC_air_fuel_consumption_factor = -0.25 tooltip = air_fuel_consumption_factor_tooltip}
@@ -1737,7 +1736,7 @@ country_event = {
       popularity = 0.05
     }
   }
-  
+
   option = {
     name = CHI.CT.12.b
     add_popularity = {
@@ -1830,7 +1829,7 @@ country_event = {
 #     picture = CHI_Event_TW_3
 #     fire_only_once = yes
 #     is_triggered_only = yes
-    
+
 #     option = {
 #         name = CHI.TW.3.a
 #     }
@@ -1843,11 +1842,11 @@ country_event = {
   picture = CHI_Event_TW_4
   fire_only_once = yes
   is_triggered_only = yes
-  immediate = { 
-    hidden_effect = { 
-      country_event = { id = CHI.TW.1 days = 2 } 
+  immediate = {
+    hidden_effect = {
+      country_event = { id = CHI.TW.1 days = 2 }
       PRC = { load_oob = "CHI_PRC_taiwan_war_airborne" }
-    } 
+    }
   }
   option = {
     name = CHI.TW.4.a
@@ -1877,7 +1876,7 @@ country_event = {
       }
       remove_ideas = CHI_DPP_protest
     }
-    
+
   }
 }
 
@@ -1940,77 +1939,77 @@ country_event = {
 }
 
 country_event = {
-    id = CHI.TW.6
-    title = CHI.TW.6.t
-    desc = CHI.TW.6.d
-    picture = CHI_Event_TW_6
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.6.a
-      1148 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 10
-        }
+  id = CHI.TW.6
+  title = CHI.TW.6.t
+  desc = CHI.TW.6.d
+  picture = CHI_Event_TW_6
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.6.a
+    1148 = {
+      create_unit = {
+        division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+        id = 1949
+        owner = CHI
+        count = 10
       }
     }
+  }
 }
 
 country_event = {
-    id = CHI.TW.8
-    title = CHI.TW.8.t
-    desc = CHI.TW.8.d
-    picture = CHI_Event_TW_8
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.8.a
-      add_political_power = 100
-    }
+  id = CHI.TW.8
+  title = CHI.TW.8.t
+  desc = CHI.TW.8.d
+  picture = CHI_Event_TW_8
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.8.a
+    add_political_power = 100
+  }
 }
 
 country_event = {
-    id = CHI.TW.9
-    title = CHI.TW.9.t
-    desc = CHI.TW.9.d
-    picture = CHI_Event_TW_9
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.9.a
-      country_event = { id = CHI.TW.10 }
-    }
+  id = CHI.TW.9
+  title = CHI.TW.9.t
+  desc = CHI.TW.9.d
+  picture = CHI_Event_TW_9
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.9.a
+    country_event = { id = CHI.TW.10 }
+  }
 }
 
 country_event = {
-    id = CHI.TW.10
-    title = CHI.TW.10.t
-    desc = CHI.TW.10.d
-    picture = CHI_Event_TW_10
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.10.a
-      if = {
-        limit = { has_idea  = CHI_low_international_recognition_idea}
-        remove_ideas = CHI_low_international_recognition_idea
-      }
-      if = {
-        limit = { has_idea  = CHI_low_international_recognition_KMT1_idea}
-        remove_ideas = CHI_low_international_recognition_KMT1_idea
-      }
-      if = {
-        limit = { has_idea  = CHI_low_international_recognition_KMT2_idea}
-        remove_ideas = CHI_low_international_recognition_KMT2_idea
-      }
+  id = CHI.TW.10
+  title = CHI.TW.10.t
+  desc = CHI.TW.10.d
+  picture = CHI_Event_TW_10
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.10.a
+    if = {
+      limit = { has_idea  = CHI_low_international_recognition_idea}
+      remove_ideas = CHI_low_international_recognition_idea
     }
+    if = {
+      limit = { has_idea  = CHI_low_international_recognition_KMT1_idea}
+      remove_ideas = CHI_low_international_recognition_KMT1_idea
+    }
+    if = {
+      limit = { has_idea  = CHI_low_international_recognition_KMT2_idea}
+      remove_ideas = CHI_low_international_recognition_KMT2_idea
+    }
+  }
 }
 
 country_event = {
@@ -2020,7 +2019,7 @@ country_event = {
   picture = CHI_Event_TW_11
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.11.a
     add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 1000 producer = JAP }
@@ -2055,44 +2054,44 @@ country_event = {
 }
 
 country_event = {
-    id = CHI.TW.14
-    title = CHI.TW.14.t
-    desc = CHI.TW.14.d
-    picture = CHI_Event_TW_14
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.14.a
-      if = {
-        limit = { has_country_flag = KMT_win_flg }
-        add_ideas = CHI_DPP_protest
-        set_temp_variable = { coalition_partner_var_temp = token:social_liberal }
-        remove_from_coalition = yes
-        set_temp_variable = { coalition_partner_var_temp = token:social_democrat }
-        remove_from_coalition = yes
-        set_temp_variable = { coalition_partner_var_temp = token:market_liberal }
-        remove_from_coalition = yes
-        set_temp_variable = { coalition_partner_var_temp = token:nationalist }
-        remove_from_coalition = yes
-      }
-      else_if = {
-        limit = { has_country_flag = DPP_win_flg }
-        add_ideas = CHI_KMT_protests
-        set_temp_variable = { coalition_partner_var_temp = token:authoritarian_democrat }
-        remove_from_coalition = yes
-        set_temp_variable = { coalition_partner_var_temp = token:social_liberal }
-        remove_from_coalition = yes
-        set_temp_variable = { coalition_partner_var_temp = token:conservative }
-        remove_from_coalition = yes
-        set_temp_variable = { coalition_partner_var_temp = token:social_democrat }
-        remove_from_coalition = yes
-        set_temp_variable = { coalition_partner_var_temp = token:market_liberal }
-        remove_from_coalition = yes
-        set_temp_variable = { coalition_partner_var_temp = token:nationalist }
-        remove_from_coalition = yes
-      }
+  id = CHI.TW.14
+  title = CHI.TW.14.t
+  desc = CHI.TW.14.d
+  picture = CHI_Event_TW_14
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.14.a
+    if = {
+      limit = { has_country_flag = KMT_win_flg }
+      add_ideas = CHI_DPP_protest
+      set_temp_variable = { coalition_partner_var_temp = token:social_liberal }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:social_democrat }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:market_liberal }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:nationalist }
+      remove_from_coalition = yes
     }
+    else_if = {
+      limit = { has_country_flag = DPP_win_flg }
+      add_ideas = CHI_KMT_protests
+      set_temp_variable = { coalition_partner_var_temp = token:authoritarian_democrat }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:social_liberal }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:conservative }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:social_democrat }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:market_liberal }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:nationalist }
+      remove_from_coalition = yes
+    }
+  }
 }
 
 country_event = {
@@ -2102,7 +2101,7 @@ country_event = {
   picture = CHI_Event_TW_18
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.18.a
     custom_effect_tooltip = { IDEA = CHI_population_aging_dynamic localization_key = modify_idea_tt }
@@ -2118,154 +2117,154 @@ country_event = {
 }
 #HongKong and Macau
 country_event = {
-    id = CHI.TW.21
-    title = CHI.TW.21.t
-    desc = CHI.TW.21.d
-    picture = CHI_Event_TW_21
+  id = CHI.TW.21
+  title = CHI.TW.21.t
+  desc = CHI.TW.21.d
+  picture = CHI_Event_TW_21
 
-    is_triggered_only = yes
+  is_triggered_only = yes
 
-    option = {
-        name = CHI.TW.21.a
-        hidden_effect = {
-            country_event = { id = CHI.TW.211 days = 3 }
-        }
+  option = {
+    name = CHI.TW.21.a
+    hidden_effect = {
+      country_event = { id = CHI.TW.211 days = 3 }
     }
+  }
 }
 
 country_event = {
-    id = CHI.TW.211
-    title = CHI.TW.211.t
-    desc = CHI.TW.211.d
-    picture = CHI_Event_TW_21
+  id = CHI.TW.211
+  title = CHI.TW.211.t
+  desc = CHI.TW.211.d
+  picture = CHI_Event_TW_21
 
-    is_triggered_only = yes
+  is_triggered_only = yes
 
-    option = {
-        name = CHI.TW.211.a
-        
-        # Hong Kong (HKN - tag from main mod)
-        326 = {
-            add_core_of = HKN
-        }
-        release_puppet = HKN
-        
-        set_autonomy = {
-            target = HKN
-            autonomous_state = autonomy_puppet
-        }
-        
-        HKN = {
-            drop_cosmetic_tag = yes
-            remove_ideas = HKN_spirit_of_hk
-            add_ideas = {
-                # Government & Economy
-                ZZZ_capitalist_economy
-                ZZZ_parliamentary_republic
+  option = {
+    name = CHI.TW.211.a
 
-                lower_trade
-                lower_taxes
-                lowest_interest_rates
-                lower_welfare
-                lower_safety
-
-                low_conscription
-                lower_female_service
-                lower_supervision
-                lower_training
-                lower_racial_integration
-                general_exemptions
-
-                lower_immigration
-                lower_education
-                lower_race
-                lower_female
-                lower_prison
-                medium_police
-
-                lower_academic
-                lower_farming
-                higher_poverty
-                lower_industry
-                lower_military
-                lower_society
-            }
-            create_country_leader = {
-                name = HKN_Government
-                picture = "gfx/leaders/HKN/Portrait_HKG_Gov.png"
-                ideology = supervised_democracy
-                expire = "1.1.1.1"
-                id = -1
-            }
-            set_politics = {
-                ruling_party = conservative
-                elections_allowed = yes
-            }
-            set_party_name = { ideology = conservative long_name = HKN_transitional_party name = HKN_transitional_party }
-        }
-        
-        # Macau (MCU - new tag from submod)
-        729 = {
-            add_core_of = MCU
-        }
-        release_puppet = MCU
-        
-        set_autonomy = {
-            target = MCU
-            autonomous_state = autonomy_puppet
-        }
-        
-        MCU = {
-            add_ideas = {
-                # Government & Economy
-                ZZZ_capitalist_economy
-                ZZZ_parliamentary_republic
-                
-                # Economic Laws
-                lower_trade
-                lower_taxes
-                lowest_interest_rates
-                lower_welfare
-                lower_safety
-                
-                # Manpower Laws
-                low_conscription
-                lower_female_service
-                lower_supervision
-                lower_training
-                lower_racial_integration
-                general_exemptions
-                
-                # Social Laws
-                lower_immigration
-                lower_education
-                lower_race
-                lower_female
-                lower_prison
-                medium_police
-                
-                # Development
-                lower_academic
-                lower_farming
-                higher_poverty
-                lower_industry
-                lower_military
-                lower_society
-            }
-            create_country_leader = {
-                name = MCU_Government
-                picture = "gfx/leaders/MCU/Portrait_MCU_Gov.png"
-                ideology = supervised_democracy
-                expire = "1.1.1.1"
-                id = -1
-            }
-            set_politics = {
-                ruling_party = conservative
-                elections_allowed = yes
-            }
-            set_party_name = { ideology = conservative long_name = MCU_transitional_party name = MCU_transitional_party }
-        }
+    # Hong Kong (HKN - tag from main mod)
+    326 = {
+      add_core_of = HKN
     }
+    release_puppet = HKN
+
+    set_autonomy = {
+      target = HKN
+      autonomous_state = autonomy_puppet
+    }
+
+    HKN = {
+      drop_cosmetic_tag = yes
+      remove_ideas = HKN_spirit_of_hk
+      add_ideas = {
+        # Government & Economy
+        ZZZ_capitalist_economy
+        ZZZ_parliamentary_republic
+
+        lower_trade
+        lower_taxes
+        lowest_interest_rates
+        lower_welfare
+        lower_safety
+
+        low_conscription
+        lower_female_service
+        lower_supervision
+        lower_training
+        lower_racial_integration
+        general_exemptions
+
+        lower_immigration
+        lower_education
+        lower_race
+        lower_female
+        lower_prison
+        medium_police
+
+        lower_academic
+        lower_farming
+        higher_poverty
+        lower_industry
+        lower_military
+        lower_society
+      }
+      create_country_leader = {
+        name = HKN_Government
+        picture = "gfx/leaders/HKN/Portrait_HKG_Gov.png"
+        ideology = supervised_democracy
+        expire = "1.1.1.1"
+        id = -1
+      }
+      set_politics = {
+        ruling_party = conservative
+        elections_allowed = yes
+      }
+      set_party_name = { ideology = conservative long_name = HKN_transitional_party name = HKN_transitional_party }
+    }
+
+    # Macau (MCU - new tag from submod)
+    729 = {
+      add_core_of = MCU
+    }
+    release_puppet = MCU
+
+    set_autonomy = {
+      target = MCU
+      autonomous_state = autonomy_puppet
+    }
+
+    MCU = {
+      add_ideas = {
+        # Government & Economy
+        ZZZ_capitalist_economy
+        ZZZ_parliamentary_republic
+
+        # Economic Laws
+        lower_trade
+        lower_taxes
+        lowest_interest_rates
+        lower_welfare
+        lower_safety
+
+        # Manpower Laws
+        low_conscription
+        lower_female_service
+        lower_supervision
+        lower_training
+        lower_racial_integration
+        general_exemptions
+
+        # Social Laws
+        lower_immigration
+        lower_education
+        lower_race
+        lower_female
+        lower_prison
+        medium_police
+
+        # Development
+        lower_academic
+        lower_farming
+        higher_poverty
+        lower_industry
+        lower_military
+        lower_society
+      }
+      create_country_leader = {
+        name = MCU_Government
+        picture = "gfx/leaders/MCU/Portrait_MCU_Gov.png"
+        ideology = supervised_democracy
+        expire = "1.1.1.1"
+        id = -1
+      }
+      set_politics = {
+        ruling_party = conservative
+        elections_allowed = yes
+      }
+      set_party_name = { ideology = conservative long_name = MCU_transitional_party name = MCU_transitional_party }
+    }
+  }
 }
 
 country_event = {
@@ -2275,9 +2274,9 @@ country_event = {
   picture = CHI_Event_TW_22
   fire_only_once = yes
   is_triggered_only = yes
-  immediate = { 
-    hidden_effect = { 
-      country_event = { id = CHI.TW.13 days = 5 } 
+  immediate = {
+    hidden_effect = {
+      country_event = { id = CHI.TW.13 days = 5 }
       1382 = {
         add_core_of = CHI
         transfer_state_to = CHI
@@ -2294,8 +2293,8 @@ country_event = {
           add_core_of = CHI
           transfer_state_to = CHI
         }
-      }     
-    } 
+      }
+    }
   }
   option = {
     name = CHI.TW.22.a
@@ -2310,7 +2309,7 @@ country_event = {
   picture = CHI_Event_TW_23
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.23.a
   }
@@ -2323,7 +2322,7 @@ country_event = {
   picture = CHI_Event_TW_24
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.24.a
     modify_timed_idea = {
@@ -2334,26 +2333,26 @@ country_event = {
 }
 
 country_event = {
-    id = CHI.TW.25
-    title = CHI.TW.25.t
-    desc = CHI.TW.25.d
-    picture = CHI_Event_TW_25
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.25.a
-      608 = {
-        set_state_name = STATE_608_BEIPING
-        remove_dynamic_modifier = { modifier = CHI_Beijing }
-        add_dynamic_modifier = { modifier = CHI_Beiping }
-      }
-      add_political_power = 50
+  id = CHI.TW.25
+  title = CHI.TW.25.t
+  desc = CHI.TW.25.d
+  picture = CHI_Event_TW_25
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.25.a
+    608 = {
+      set_state_name = STATE_608_BEIPING
+      remove_dynamic_modifier = { modifier = CHI_Beijing }
+      add_dynamic_modifier = { modifier = CHI_Beiping }
     }
-    option = {
-      name = CHI.TW.25.b
-      add_stability = 0.02
-    }
+    add_political_power = 50
+  }
+  option = {
+    name = CHI.TW.25.b
+    add_stability = 0.02
+  }
 }
 
 # country_event = {
@@ -2363,71 +2362,71 @@ country_event = {
 #   picture = CHI_Event_TW_26
 #   fire_only_once = yes
 #   is_triggered_only = yes
-  
+
 #   option = {
 #     name = CHI.TW.26.a
 #   }
 # }
 
 country_event = {
-    id = CHI.TW.27
-    title = CHI.TW.27.t
-    desc = CHI.TW.27.d
-    picture = CHI_Event_TW_27
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.27.a
-      country_event = {
-        id = CHI.TW.28
-        days = 7
-      }
+  id = CHI.TW.27
+  title = CHI.TW.27.t
+  desc = CHI.TW.27.d
+  picture = CHI_Event_TW_27
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.27.a
+    country_event = {
+      id = CHI.TW.28
+      days = 7
     }
+  }
 }
 
 country_event = {
-    id = CHI.TW.28
-    title = CHI.TW.28.t
-    desc = CHI.TW.28.d
-    picture = CHI_Event_TW_28
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.28.a
-      country_event = {
-        id = CHI.TW.29
-      }
+  id = CHI.TW.28
+  title = CHI.TW.28.t
+  desc = CHI.TW.28.d
+  picture = CHI_Event_TW_28
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.28.a
+    country_event = {
+      id = CHI.TW.29
     }
+  }
 }
 
 country_event = {
-    id = CHI.TW.29
-    title = CHI.TW.29.t
-    desc = CHI.TW.29.d
-    picture = CHI_Event_TW_29
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.29.a
-      add_manpower = 3500
-      add_political_power = -40
-      add_power_balance_value = {
-				id = CHI_Identity_dispute
-				value = -0.1
-			}
+  id = CHI.TW.29
+  title = CHI.TW.29.t
+  desc = CHI.TW.29.d
+  picture = CHI_Event_TW_29
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.29.a
+    add_manpower = 3500
+    add_political_power = -40
+    add_power_balance_value = {
+      id = CHI_Identity_dispute
+      value = -0.1
     }
-    option = {
-      name = CHI.TW.29.b
-      add_manpower = 500
-      add_political_power = 50
-      add_power_balance_value = {
-				id = CHI_Identity_dispute
-				value = 0.1
-			}
+  }
+  option = {
+    name = CHI.TW.29.b
+    add_manpower = 500
+    add_political_power = 50
+    add_power_balance_value = {
+      id = CHI_Identity_dispute
+      value = 0.1
     }
+  }
 }
 
 country_event = {
@@ -2583,19 +2582,19 @@ country_event = {
 }
 
 country_event = {
-    id = CHI.TW.34
-    title = CHI.TW.34.t
-    desc = CHI.TW.34.d
-    picture = CHI_Event_TW_34
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.34.a
-      add_manpower = -126
-      add_war_support = 0.05
-      set_country_flag = chi_tw_34_done
-    }
+  id = CHI.TW.34
+  title = CHI.TW.34.t
+  desc = CHI.TW.34.d
+  picture = CHI_Event_TW_34
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.34.a
+    add_manpower = -126
+    add_war_support = 0.05
+    set_country_flag = chi_tw_34_done
+  }
 }
 
 country_event = {
@@ -2605,7 +2604,7 @@ country_event = {
   picture = CHI_Event_TW_35
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.35.a
     set_country_flag = chi_tw_35_done
@@ -2619,7 +2618,7 @@ country_event = {
   picture = CHI_Event_TW_36
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.36.a
     set_country_flag = chi_tw_36_done
@@ -2633,7 +2632,7 @@ country_event = {
   picture = CHI_Event_TW_37
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.37.a
     set_country_flag = chi_tw_37_done
@@ -2647,7 +2646,7 @@ country_event = {
   picture = CHI_Event_TW_38
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.38.a
     set_country_flag = chi_tw_38_done
@@ -2661,7 +2660,7 @@ country_event = {
   picture = CHI_Event_TW_39
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.39.a
     set_country_flag = chi_tw_39_done
@@ -2675,7 +2674,7 @@ country_event = {
   picture = CHI_Event_TW_40
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.40.a
     set_country_flag = chi_tw_40_done
@@ -2689,7 +2688,7 @@ country_event = {
   picture = CHI_Event_TW_41
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.41.a
     set_country_flag = chi_tw_41_done
@@ -2703,7 +2702,7 @@ country_event = {
   picture = CHI_Event_TW_42
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.42.a
     set_country_flag = chi_tw_42_done
@@ -2717,49 +2716,49 @@ country_event = {
   picture = CHI_Event_TW_43
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.43.a
     set_country_flag = chi_tw_43_done
   }
 }
 country_event = {
-    id = CHI.TW.44
-    title = CHI.TW.44.t
-    desc = CHI.TW.44.d
-    picture = CHI_Event_TW_44
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-      name = CHI.TW.44.a
-    }
+  id = CHI.TW.44
+  title = CHI.TW.44.t
+  desc = CHI.TW.44.d
+  picture = CHI_Event_TW_44
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.44.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.45
-    title = CHI.TW.45.t
-    desc = CHI.TW.45.d
-    picture = CHI_Event_TW_45
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.45.a
-    }
+  id = CHI.TW.45
+  title = CHI.TW.45.t
+  desc = CHI.TW.45.d
+  picture = CHI_Event_TW_45
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.45.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.46
-    title = CHI.TW.46.t
-    desc = CHI.TW.46.d
-    picture = CHI_Event_TW_46
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.46.a
-    }
+  id = CHI.TW.46
+  title = CHI.TW.46.t
+  desc = CHI.TW.46.d
+  picture = CHI_Event_TW_46
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.46.a
+  }
 }
 
 country_event = {
@@ -2769,153 +2768,153 @@ country_event = {
   picture = CHI_Event_TW_47
   fire_only_once = yes
   is_triggered_only = yes
-  
+
   option = {
     name = CHI.TW.47.a
   }
 }
 
 country_event = {
-    id = CHI.TW.48
-    title = CHI.TW.48.t
-    desc = CHI.TW.48.d
-    picture = CHI_Event_TW_48
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.48.a
-    }
+  id = CHI.TW.48
+  title = CHI.TW.48.t
+  desc = CHI.TW.48.d
+  picture = CHI_Event_TW_48
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.48.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.49
-    title = CHI.TW.49.t
-    desc = CHI.TW.49.d
-    picture = CHI_Event_TW_49
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.49.a
-    }
+  id = CHI.TW.49
+  title = CHI.TW.49.t
+  desc = CHI.TW.49.d
+  picture = CHI_Event_TW_49
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.49.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.50
-    title = CHI.TW.50.t
-    desc = CHI.TW.50.d
-    picture = CHI_Event_TW_50
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.50.a
-    }
+  id = CHI.TW.50
+  title = CHI.TW.50.t
+  desc = CHI.TW.50.d
+  picture = CHI_Event_TW_50
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.50.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.51
-    title = CHI.TW.51.t
-    desc = CHI.TW.51.d
-    picture = CHI_Event_TW_51
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.51.a
-    }
+  id = CHI.TW.51
+  title = CHI.TW.51.t
+  desc = CHI.TW.51.d
+  picture = CHI_Event_TW_51
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.51.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.52
-    title = CHI.TW.52.t
-    desc = CHI.TW.52.d
-    picture = CHI_Event_TW_52
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.52.a
-    }
+  id = CHI.TW.52
+  title = CHI.TW.52.t
+  desc = CHI.TW.52.d
+  picture = CHI_Event_TW_52
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.52.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.53
-    title = CHI.TW.53.t
-    desc = CHI.TW.53.d
-    picture = CHI_Event_TW_53
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.53.a
-    }
+  id = CHI.TW.53
+  title = CHI.TW.53.t
+  desc = CHI.TW.53.d
+  picture = CHI_Event_TW_53
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.53.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.54
-    title = CHI.TW.54.t
-    desc = CHI.TW.54.d
-    picture = CHI_Event_TW_54
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.54.a
-    }
+  id = CHI.TW.54
+  title = CHI.TW.54.t
+  desc = CHI.TW.54.d
+  picture = CHI_Event_TW_54
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.54.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.55
-    title = CHI.TW.55.t
-    desc = CHI.TW.55.d
-    picture = CHI_Event_TW_55
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.55.a
-    }
+  id = CHI.TW.55
+  title = CHI.TW.55.t
+  desc = CHI.TW.55.d
+  picture = CHI_Event_TW_55
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.55.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.56
-    title = CHI.TW.56.t
-    desc = CHI.TW.56.d
-    picture = CHI_Event_TW_56
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.56.a
-    }
+  id = CHI.TW.56
+  title = CHI.TW.56.t
+  desc = CHI.TW.56.d
+  picture = CHI_Event_TW_56
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.56.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.60
-    title = CHI.TW.60.t
-    desc = CHI.TW.60.d
-    picture = CHI_Event_TW_60
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.60.a
-    }
+  id = CHI.TW.60
+  title = CHI.TW.60.t
+  desc = CHI.TW.60.d
+  picture = CHI_Event_TW_60
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.60.a
+  }
 }
 
 country_event = {
-    id = CHI.TW.61
-    title = CHI.TW.61.t
-    desc = CHI.TW.61.d
-    picture = CHI_Event_TW_61
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    option = {
-        name = CHI.TW.61.a
-    }
+  id = CHI.TW.61
+  title = CHI.TW.61.t
+  desc = CHI.TW.61.d
+  picture = CHI_Event_TW_61
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.61.a
+  }
 }
 
 country_event = {
@@ -2926,45 +2925,45 @@ country_event = {
     if = {
       limit = { has_country_flag = taiwan_war_events }
       random_list = {
-        10 = { 
+        10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_34_done }
-          country_event = { id = CHI.TW.34 } 
+          country_event = { id = CHI.TW.34 }
         }
-        10 = { 
+        10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_35_done }
-          country_event = { id = CHI.TW.35 } 
+          country_event = { id = CHI.TW.35 }
         }
-        10 = { 
+        10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_36_done }
-          country_event = { id = CHI.TW.36 } 
+          country_event = { id = CHI.TW.36 }
         }
-        10 = { 
+        10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_37_done }
-          country_event = { id = CHI.TW.37 } 
+          country_event = { id = CHI.TW.37 }
         }
-        10 = { 
+        10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_38_done }
-          country_event = { id = CHI.TW.38 } 
+          country_event = { id = CHI.TW.38 }
         }
-        10 = { 
+        10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_39_done }
-          country_event = { id = CHI.TW.39 } 
+          country_event = { id = CHI.TW.39 }
         }
-        10 = { 
+        10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_40_done }
-          country_event = { id = CHI.TW.40 } 
+          country_event = { id = CHI.TW.40 }
         }
-        10 = { 
+        10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_41_done }
-          country_event = { id = CHI.TW.41 } 
+          country_event = { id = CHI.TW.41 }
         }
-        10 = { 
+        10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_42_done }
-          country_event = { id = CHI.TW.42 } 
+          country_event = { id = CHI.TW.42 }
         }
-        10 = { 
+        10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_43_done }
-          country_event = { id = CHI.TW.43 } 
+          country_event = { id = CHI.TW.43 }
         }
       }
       country_event = { id = CHI.TW.999 days = 20 }
@@ -2973,22 +2972,22 @@ country_event = {
 }
 
 country_event = {
-	id = CHI.TW.64
-	title = CHI.TW.64.t
-	desc = CHI.TW.64.d
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = CHI.TW.64.a
-		if = {
-			limit = { country_exists = CHF }
-			CHF = {
-				every_unit_leader = {
-					set_nationality = CHI
-				}
-			}
-			annex_country = { target = CHF transfer_troops = yes }
-		}
-	}
+  id = CHI.TW.64
+  title = CHI.TW.64.t
+  desc = CHI.TW.64.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.64.a
+    if = {
+      limit = { country_exists = CHF }
+      CHF = {
+        every_unit_leader = {
+          set_nationality = CHI
+        }
+      }
+      annex_country = { target = CHF transfer_troops = yes }
+    }
+  }
 }
