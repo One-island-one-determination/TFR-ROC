@@ -1200,17 +1200,10 @@ CHI_PRC_Infiltration_decisions = {
 		selectable_mission = no
 		days_mission_timeout = CHI_PRC_Infiltration_timeout_mission_var
 		timeout_effect = {
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = 5
-			}
-			PRC_Infiltration_change = yes
 			if = {
-				limit = {
-					NOT = {
-						has_country_flag = CHI_taiwan_war_end
-					}
-				}
+				limit = { NOT = { has_country_flag = CHI_taiwan_war_end } }
+        set_temp_variable = { CHI_PRC_Infiltration_progress_temp = 5 }
+        PRC_Infiltration_change = yes
 				activate_mission = PRC_infiltration_becoming_serious_mission
 			}
 		}

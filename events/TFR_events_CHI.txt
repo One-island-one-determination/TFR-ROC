@@ -911,6 +911,7 @@ country_event = {
           }
         }
       }
+      set_variable = {CHI_PRC_Infiltration_progress = 0 }
       remove_decision = PRC_infiltration_becoming_serious_mission
       remove_mission = PRC_infiltration_becoming_serious_mission
       set_country_flag = CHI_taiwan_war_end
