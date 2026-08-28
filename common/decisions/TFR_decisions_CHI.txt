@@ -7337,7 +7337,7 @@ CHI_Population_Aging_decisions = {
         tooltip = personal_expense_factor_tooltip
       }
       add_to_variable = {
-        PA_personal_value_factor = 0.005
+        PA_personal_value_factor = 0.002
         tooltip = personal_value_factor_tooltip
       }
     }
@@ -7381,8 +7381,8 @@ CHI_Population_Aging_decisions = {
         tooltip = personal_expense_factor_tooltip
       }
       add_to_variable = {
-        PA_personal_value_factor = 0.005
-        tooltip = personal_value_factor_tooltip
+        PA_inflation_monthly = -0.002
+        tooltip = inflation_monthly_tooltip
       }
     }
   }
