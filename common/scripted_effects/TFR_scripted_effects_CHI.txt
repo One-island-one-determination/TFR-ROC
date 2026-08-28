@@ -734,7 +734,7 @@ CHI_Economy_hidden_armor_cost_equipment_bonus_effect = {
       add_idea = CHI_Economy_hidden_armor_cost_equipment_bonus_n20
     }
   }
-  add_to_variable = { ecn_armor_cost_var = 10 }
+  add_to_variable = { ecn_armor_cost_var = -10 }
 }
 #改善經濟---飛機製造debuff
 CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = {
@@ -783,7 +783,7 @@ CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = {
       add_idea = CHI_Economy_hidden_air_equipment_cost_equipment_bonus_n20
     }
   }
-  add_to_variable = { ecn_air_cost_var = 10 }
+  add_to_variable = { ecn_air_cost_var = -10 }
 }
 #改善經濟---裝甲車製造debuff
 CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = {
@@ -832,5 +832,5 @@ CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = {
       add_idea = CHI_Economy_hidden_armored_car_cost_equipment_bonus_n20
     }
   }
-  add_to_variable = { ecn_armored_car_var = 10 }
+  add_to_variable = { ecn_armored_car_var = -10 }
 }

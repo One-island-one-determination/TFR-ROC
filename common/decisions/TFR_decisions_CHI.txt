@@ -3757,6 +3757,7 @@ CHI_taiwan_war_category = {
 		activation = {
 			has_war = yes
 			has_global_flag = PRC_ongoing_taiwan_war
+      has_country_flag = CHI_defend_penghu_mission_flag
 		}
 		allowed = {
 			tag = CHI
@@ -3775,6 +3776,7 @@ CHI_taiwan_war_category = {
 		complete_effect = {
 			add_stability = -0.05
 			add_political_power = -50
+      clr_country_flag = CHI_defend_penghu_mission_flag
 		}
 		timeout_effect = {
 			custom_effect_tooltip = {
@@ -3789,6 +3791,7 @@ CHI_taiwan_war_category = {
 				TH_army_core_defence_factor = 0.1
 				tooltip = army_core_defence_factor_tooltip
 			}
+      clr_country_flag = CHI_defend_penghu_mission_flag
 		}
 	}
 	CHI_war_propaganda = {
@@ -7800,7 +7803,7 @@ CHI_NCSIST_category = {
 		}
 		available = {
 			has_completed_focus = CHI_relauch_ADF_project
-			has_country_flag = CHI_project_Brave_Eagle_flag
+			# has_country_flag = CHI_project_Brave_Eagle_flag
 		}
 		custom_cost_trigger = {
 			# 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
@@ -8298,11 +8301,11 @@ CHI_Economy_Industry_category = {
 			add_to_variable = {
 				CHI_fiscal_budget_var = -1
 			}
-			CHI_Economy_hidden_armor_cost_equipment_bonus_effect = yes
-			CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
-			CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = yes
 		}
 		remove_effect = {
+      CHI_Economy_hidden_armor_cost_equipment_bonus_effect = yes
+			CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
+			CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = yes
 			set_country_flag = CHI_mil_production_line_completed
 		}
 	}
@@ -8378,7 +8381,7 @@ CHI_Economy_Industry_category = {
 			}
 		}
 		complete_effect = {
-			CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
+			add_to_variable = { CHI_fiscal_budget_var = -1 }
 		}
 		remove_effect = {
 			CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
