@@ -5967,6 +5967,9 @@ CHI_Intervene_the_American_Civil_War_category = {
 #人口老化
 CHI_Population_Aging_decisions = {
   CHI_expand_public_ltc = {
+    ai_will_do = {
+      factor = 100
+    }
     icon = GFX_CHI_expand_public_ltc
     available = {
       check_variable = { var = var_CHI_expand_public_ltc value = 1 compare = less_than_or_equals }
@@ -5999,6 +6002,9 @@ CHI_Population_Aging_decisions = {
     }
   }
   CHI_childcare_subsidies = {
+    ai_will_do = {
+      factor = 100
+    }
     icon = GFX_CHI_childcare_subsidies
     available = {
       check_variable = { var = var_CHI_childcare_subsidies value = 2 compare = less_than_or_equals }
@@ -6031,6 +6037,9 @@ CHI_Population_Aging_decisions = {
     }
   }
   CHI_increase_pensions = {
+    ai_will_do = {
+      factor = 100
+    }
     icon = GFX_CHI_increase_pensions
     cost = 50
     days_remove = 120
@@ -6060,6 +6069,9 @@ CHI_Population_Aging_decisions = {
 
   #公有長期照護基金
   CHI_pub_care_fund = {
+    ai_will_do = {
+      factor = 100
+    }
     icon = GFX_CHI_pub_care_fund
     visible = {
       has_completed_focus = CHI_efficient_government
@@ -6090,6 +6102,9 @@ CHI_Population_Aging_decisions = {
   }
   #老幼共學
   CHI_co_learning = {
+    ai_will_do = {
+      factor = 100
+    }
     icon = GFX_CHI_co_learning
     visible = {
       has_completed_focus = CHI_Special_budget
@@ -6124,6 +6139,9 @@ CHI_Population_Aging_decisions = {
   }
   #青銀共居
   CHI_co_living = {
+    ai_will_do = {
+      factor = 100
+    }
     icon = GFX_CHI_co_living
     visible = {
       has_completed_focus = CHI_Special_budget
@@ -6159,6 +6177,9 @@ CHI_Population_Aging_decisions = {
 
   #終結少子化
   CHI_Population_Aging_end = {
+    ai_will_do = {
+      factor = 100
+    }
     icon = GFX_Population_Aging_end
     available = {
       check_variable = { var_CHI_Population_Aging_decisions = 10 }
