@@ -1184,39 +1184,40 @@ CHI_NHCC_decisions = {
 # 中共的滲透
 CHI_PRC_Infiltration_decisions = {
   # 中共滲透日益嚴重
-  PRC_infiltration_becoming_serious_mission = {
-    icon = GFX_PRC_Infiltration_mission
-    allowed = {
-      tag = CHI
-    }
-    available = {
-      has_country_flag = CHI_taiwan_war_end
-    }
-    visible = {
-      NOT = {
-        has_country_flag = CHI_taiwan_war_end
-      }
-    }
-    priority = 200
-    is_good = no
-    selectable_mission = no
-    days_mission_timeout = CHI_PRC_Infiltration_timeout_mission_var
-    timeout_effect = {
-      if = {
-        limit = {
-          NOT = {
-            has_country_flag = CHI_taiwan_war_end
-          }
-        }
-        set_temp_variable = { CHI_PRC_Infiltration_progress_temp = 5 }
-        PRC_Infiltration_change = yes
-        activate_mission = PRC_infiltration_becoming_serious_mission
-      }
-    }
+	PRC_infiltration_becoming_serious_mission = {
+		icon = GFX_PRC_Infiltration_mission
+		allowed = {
+			tag = CHI
+		}
+		activation = { 
+			NOT = { has_country_flag = CHI_taiwan_war_end } # 防反复开始
+		}
+		available = {
+			has_country_flag = CHI_taiwan_war_end
+		}
+		visible = {
+			always = no
+		}
+		priority = 200
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = CHI_PRC_Infiltration_timeout_mission_var
+		timeout_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = CHI_taiwan_war_end
+					}
+				}
+				set_temp_variable = { CHI_PRC_Infiltration_progress_temp = 5 }
+				PRC_Infiltration_change = yes
+				activate_mission = PRC_infiltration_becoming_serious_mission
+			}
+		}
 		complete_effect = {
 			remove_mission = PRC_infiltration_becoming_serious_mission
 		}
-  }
+	}
   # 在軍隊中搜索通敵者
   Investigate_senior_military_officials = {
     ai_will_do = {
