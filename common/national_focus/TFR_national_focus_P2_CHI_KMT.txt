@@ -2708,10 +2708,7 @@ focus_tree = {
       focus = CHI_underground_assenmly_point
     }
     available = {
-      OR = {
-        has_country_flag = CHI_our_final_fight_flag
-        has_country_flag = CHI_our_final_fight_flag_debug
-      }
+      has_country_flag = CHI_our_final_fight_flag
     }
     completion_reward = {
       unlock_decision_category_tooltip = CHI_GAW_situation_category

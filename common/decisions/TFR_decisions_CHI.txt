@@ -1,580 +1,408 @@
 # 特殊DEBUG
 CHI_debug = {
-	#Debug 決議
-	Open_army_decisions = {
-		icon = generic_military
-		allowed = {
-			tag = CHI
-		}
-		activation = {
-			is_debug = yes
-		}
-		available = {
-			is_debug = yes
-		}
-		visible = {
-			is_debug = yes
-		}
-		complete_effect = {
-			complete_national_focus = Rectify_weakening_military_preparedness
-		}
-	}
-	CHI_taiwan_war_start = {
-		icon = generic_military
-		allowed = {
-			tag = CHI
-		}
-		activation = {
-			is_debug = yes
-		}
-		available = {
-			is_debug = yes
-		}
-		visible = {
-			is_debug = yes
-		}
-		complete_effect = {
-			PRC = {
-				load_focus_tree = PRC_taiwan_war_tree
-				complete_national_focus = PRC_the_final_opportunity
-				complete_national_focus = PRC_prepare_landing_craft
-				complete_national_focus = PRC_modern_combined_arms
-				complete_national_focus = PRC_blockade_taiwan
-				complete_national_focus = PRC_conduct_final_training
-				complete_national_focus = PRC_expand_the_j20_program
-				complete_national_focus = PRC_plan_on_high_alert
-				complete_national_focus = PRC_sieze_kinmen
-				complete_national_focus = PRC_operation_silent_dawn
-				complete_national_focus = PRC_finish_what_mao_started
-			}
-			JAP = {
-				country_event = {
-					id = jap.17
-				}
-				complete_national_focus = JAP_form_pdto2
-			}
-		}
-	}
-	merge_south_america_lag_fix = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		cost = 0
-		fire_only_once = no
-		complete_effect = {
-			# 掃描全世界所有其他國家
-			every_other_country = {
-				limit = {
-					is_major = no
-					has_war = no
-					capital_scope = {
-						is_on_continent = south_america
-					}
-					NOT = {
-						tag = URG
-					}
-				}
-				# 在吞併之前，掃描目標國家的每一個州，強制給予核心
-				every_owned_state = {
-					add_core_of = URG
-				}
-				# 執行吞併並蒸發軍隊
-				URG = {
-					annex_country = {
-						target = PREV
-						transfer_troops = no
-					}
-				}
-			}
-		}
-	}
-	merge_europe_lag_fix = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		cost = 0
-		fire_only_once = no
-		complete_effect = {
-			# 掃描全世界所有其他國家
-			every_other_country = {
-				limit = {
-					has_war = no
-					NOT = {
-						tag = UKR
-					}
-					NOT = {
-						tag = NOV
-					}
-					NOT = {
-						tag = DPR
-					}
-					NOT = {
-						tag = FRA
-					}
-					NOT = {
-						tag = GER
-					}
-					NOT = {
-						tag = SOV
-					}
-					NOT = {
-						tag = ENG
-					}
-					NOT = {
-						tag = ITA
-					}
-					NOT = {
-						tag = BLR
-					}
-					NOT = {
-						tag = AZR
-					}
-					NOT = {
-						tag = YAM
-					}
-					NOT = {
-						tag = GEO
-					}
-					NOT = {
-						tag = ARM
-					}
-					NOT = {
-						tag = KKP
-					}
-					NOT = {
-						tag = NGK
-					}
-					capital_scope = {
-						is_on_continent = europe
-					}
-					NOT = {
-						tag = LUX
-					}
-				}
-				every_owned_state = {
-					add_core_of = LUX
-				}
-				# 執行吞併並蒸發軍隊
-				LUX = {
-					annex_country = {
-						target = PREV
-						transfer_troops = yes
-					}
-				}
-			}
-		}
-	}
-	merge_africa_lag_fix = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		cost = 0
-		fire_only_once = no
-		complete_effect = {
-			# 掃描全世界所有其他國家
-			every_other_country = {
-				limit = {
-					is_major = no
-					has_war = no
-					capital_scope = {
-						is_on_continent = africa
-					}
-					NOT = {
-						tag = EQG
-					}
-				}
-				every_owned_state = {
-					add_core_of = EQG
-				}
-				# 執行吞併並蒸發軍隊
-				EQG = {
-					annex_country = {
-						target = PREV
-						transfer_troops = no
-					}
-				}
-			}
-		}
-	}
-	merge_asia_lag_fix = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		cost = 0
-		fire_only_once = no
-		complete_effect = {
-			# 掃描全世界所有其他國家
-			every_other_country = {
-				limit = {
-					is_major = no
-					has_war = no
-					capital_scope = {
-						is_on_continent = asia
-					}
-					NOT = {
-						tag = NEP
-					}
-					NOT = {
-						tag = MON
-					}
-					NOT = {
-						tag = KOR
-					}
-					NOT = {
-						tag = PRK
-					}
-					NOT = {
-						tag = HKN
-					}
-					NOT = {
-						tag = MCU
-					}
-				}
-				every_owned_state = {
-					add_core_of = NEP
-				}
-				# 執行吞併並蒸發軍隊
-				NEP = {
-					annex_country = {
-						target = PREV
-						transfer_troops = no
-					}
-				}
-			}
-		}
-	}
-	merge_middle_east_lag_fix = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		cost = 0
-		fire_only_once = no
-		complete_effect = {
-			# 掃描全世界所有其他國家
-			every_other_country = {
-				limit = {
-					is_major = no
-					has_war = no
-					capital_scope = {
-						is_on_continent = middle_east
-					}
-					NOT = {
-						tag = PER
-					}
-				}
-				every_owned_state = {
-					add_core_of = PER
-				}
-				# 執行吞併並蒸發軍隊
-				PER = {
-					annex_country = {
-						target = PREV
-						transfer_troops = no
-					}
-				}
-			}
-		}
-	}
-	merge_ALL_lag_fix = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		cost = 0
-		fire_only_once = no
-		complete_effect = {
-			# 掃描全世界所有其他國家
-			every_other_country = {
-				limit = {
-					has_war = no
-					NOT = {
-						capital_scope = {
-							is_on_continent = asia
-						}
-					}
-					NOT = {
-						capital_scope = {
-							is_on_continent = australia
-						}
-					}
-					NOT = {
-						tag = LUX
-					}
-				}
-				every_owned_state = {
-					add_core_of = LUX
-				}
-				# 執行吞併並蒸發軍隊
-				LUX = {
-					annex_country = {
-						target = PREV
-						transfer_troops = no
-					}
-				}
-			}
-		}
-	}
-	load_P1 = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			CHI = {
-				load_focus_tree = CHI_tree_focus
-			}
-		}
-	}
-	load_transition = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			CHI = {
-				load_focus_tree = CHI_transition
-			}
-		}
-	}
-	load_P2_KMT_HKY = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			CHI = {
-				load_focus_tree = P2_CHI_KMT
-				set_country_flag = second_HKY_win_flg
-			}
-		}
-	}
-	load_P3_KMT_HKY = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			CHI = {
-				load_focus_tree = P2_CHI_KMT
-				set_country_flag = second_HKY_win_flg
-				set_country_flag = HKY_2028_flg
-				set_country_flag = CHI_our_final_fight_flag_debug
-			}
-		}
-	}
-	load_P4HKY = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			CHI = {
-				load_focus_tree = P4_CHI_Han
-			}
-		}
-	}
-	load_CHI_stratocracy = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			CHI = {
-				load_focus_tree = CHI_stratocracy_focus
-			}
-		}
-	}
-	load_P2_DPP_LCT = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			CHI = {
-				load_focus_tree = P2_CHI_DPP
-			}
-		}
-	}
-	add_ecn_armor = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			CHI_Economy_hidden_armor_cost_equipment_bonus_effect = yes
-		}
-	}
-	add_ecn_air_equipment = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
-		}
-	}
-	add_ecn_armored_car = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = yes
-		}
-	}
-	set_ROCA_two = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			remove_dynamic_modifier = {
-				modifier = CHI_ROC_army_dynamic
-			}
-			add_dynamic_modifier = {
-				modifier = CHI_ROC_army_dynamic_2
-			}
-			clr_country_flag = CHI_ROC_army_flg
-			set_country_flag = CHI_ROC_army_flg_2
-		}
-	}
-	remove_economy_types = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			remove_economy_types = yes
-		}
-	}
-	remove_gov_types = {
-		icon = generic_decision
-		allowed = {
-			always = yes
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			remove_gov_types = yes
-		}
-	}
+  #Debug 決議
+  Open_army_decisions = {
+    icon = generic_military
+    allowed = {
+      tag = CHI
+    }
+    activation = {
+      is_debug = yes
+    }
+    available = {
+      is_debug = yes
+    }
+    visible = {
+      is_debug = yes
+    }
+    complete_effect = {
+      complete_national_focus = Rectify_weakening_military_preparedness
+    }
+  }
+  CHI_taiwan_war_start = {
+    icon = generic_military
+    allowed = {
+      tag = CHI
+    }
+    activation = {
+      is_debug = yes
+    }
+    available = {
+      is_debug = yes
+    }
+    visible = {
+      is_debug = yes
+    }
+    complete_effect = {
+      PRC = {
+        load_focus_tree = PRC_taiwan_war_tree
+        complete_national_focus = PRC_the_final_opportunity
+        complete_national_focus = PRC_prepare_landing_craft
+        complete_national_focus = PRC_modern_combined_arms
+        complete_national_focus = PRC_blockade_taiwan
+        complete_national_focus = PRC_conduct_final_training
+        complete_national_focus = PRC_expand_the_j20_program
+        complete_national_focus = PRC_plan_on_high_alert
+        complete_national_focus = PRC_sieze_kinmen
+        complete_national_focus = PRC_operation_silent_dawn
+        complete_national_focus = PRC_finish_what_mao_started
+      }
+      JAP = {
+        country_event = {
+          id = jap.17
+        }
+        complete_national_focus = JAP_form_pdto2
+      }
+    }
+  }
+  merge_south_america_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+        limit = {
+          is_major = no
+          has_war = no
+          capital_scope = {
+            is_on_continent = south_america
+          }
+          NOT = { tag = URG }
+        }
+        # 在吞併之前，掃描目標國家的每一個州，強制給予核心
+        every_owned_state = {
+          add_core_of = URG
+        }
+        # 執行吞併並蒸發軍隊
+        URG = {
+          annex_country = {
+            target = PREV
+            transfer_troops = no
+          }
+        }
+      }
+    }
+  }
+  merge_europe_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+        limit = {
+          has_war = no
+          NOT = {tag = UKR}
+          NOT = {tag = NOV}
+          NOT = {tag = DPR}
+          NOT = {tag = FRA}
+          NOT = {tag = GER}
+          NOT = {tag = SOV}
+          NOT = {tag = ENG}
+          NOT = {tag = ITA}
+          NOT = {tag = BLR}
+          NOT = {tag = AZR}
+          NOT = {tag = YAM}
+          NOT = {tag = GEO}
+          NOT = {tag = ARM}
+          NOT = {tag = KKP}
+          NOT = {tag = NGK}
+          capital_scope = {
+            is_on_continent = europe
+          }
+          NOT = {tag = LUX}
+        }
+        every_owned_state = {
+          add_core_of = LUX
+        }
+        # 執行吞併並蒸發軍隊
+        LUX = {
+          annex_country = {
+            target = PREV
+            transfer_troops = yes
+          }
+        }
+      }
+    }
+  }
+  merge_africa_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+        limit = {
+          is_major = no
+          has_war = no
+          capital_scope = {
+            is_on_continent = africa
+          }
+          NOT = { tag = EQG }
+        }
+        every_owned_state = {
+          add_core_of = EQG
+        }
+        # 執行吞併並蒸發軍隊
+        EQG = {
+          annex_country = {
+            target = PREV
+            transfer_troops = no
+          }
+        }
+      }
+    }
+  }
+  merge_asia_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+        limit = {
+          is_major = no
+          has_war = no
+          capital_scope = {
+            is_on_continent = asia
+          }
+          NOT = { tag = NEP }
+          NOT = { tag = MON }
+          NOT = { tag = KOR }
+          NOT = { tag = PRK }
+          NOT = { tag = HKN }
+          NOT = { tag = MCU }
+        }
+        every_owned_state = {
+          add_core_of = NEP
+        }
+        # 執行吞併並蒸發軍隊
+        NEP = {
+          annex_country = {
+            target = PREV
+            transfer_troops = no
+          }
+        }
+      }
+    }
+  }
+  merge_middle_east_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+        limit = {
+          is_major = no
+          has_war = no
+          capital_scope = {
+            is_on_continent = middle_east
+          }
+          NOT = { tag = PER }
+        }
+        every_owned_state = {
+          add_core_of = PER
+        }
+        # 執行吞併並蒸發軍隊
+        PER = {
+          annex_country = {
+            target = PREV
+            transfer_troops = no
+          }
+        }
+      }
+    }
+  }
+  merge_ALL_lag_fix = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    cost = 0
+    fire_only_once = no
+
+    complete_effect = {
+      # 掃描全世界所有其他國家
+      every_other_country = {
+        limit = {
+          has_war = no
+          NOT = {
+            capital_scope = {
+              is_on_continent = asia
+            }
+          }
+          NOT = {
+            capital_scope = {
+              is_on_continent = australia
+            }
+          }
+          NOT = {tag = LUX}
+        }
+        every_owned_state = {
+          add_core_of = LUX
+        }
+        # 執行吞併並蒸發軍隊
+        LUX = {
+          annex_country = {
+            target = PREV
+            transfer_troops = no
+          }
+        }
+      }
+    }
+  }
+  load_P1 = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = CHI_tree_focus}}
+  }
+  load_transition = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = CHI_transition}}
+  }
+  load_P2_KMT_HKY = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI={
+        load_focus_tree = P2_CHI_KMT
+        set_country_flag = second_HKY_win_flg
+      }
+    }
+  }
+  load_P3_KMT_HKY = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI={
+        load_focus_tree = P2_CHI_KMT
+        set_country_flag = second_HKY_win_flg
+        set_country_flag = HKY_2028_flg
+        country_event = { id = taiwan.500 }
+      }
+    }
+  }
+  load_P4HKY = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {CHI={load_focus_tree = P4_CHI_Han}}
+  }
+  load_CHI_stratocracy = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI = {
+        load_focus_tree = CHI_stratocracy_focus
+      }
+    }
+  }
+  load_P2_DPP_LCT = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI = {
+        load_focus_tree = P2_CHI_DPP
+      }
+    }
+  }
+  add_ecn_armor = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI_Economy_hidden_armor_cost_equipment_bonus_effect = yes
+    }
+  }
+  add_ecn_air_equipment = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
+    }
+  }
+  add_ecn_armored_car = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = yes
+    }
+  }
+  set_ROCA_two = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      remove_dynamic_modifier = {
+        modifier = CHI_ROC_army_dynamic
+      }
+      add_dynamic_modifier = {
+        modifier = CHI_ROC_army_dynamic_2
+      }
+      clr_country_flag = CHI_ROC_army_flg
+      set_country_flag = CHI_ROC_army_flg_2
+    }
+  }
+  remove_economy_types = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      remove_economy_types = yes
+    }
+  }
+  remove_gov_types = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      remove_gov_types = yes
+    }
+  }
 }
 
 # 疫情
