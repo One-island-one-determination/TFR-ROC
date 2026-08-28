@@ -647,9 +647,11 @@ focus_tree = {
       add_political_power = -15
       custom_effect_tooltip = army_focus_unlock
       set_country_flag = CHIMilitarreform
+      unlock_decision_category_tooltip = CHI_Military_purchasing_cat
       hidden_effect = {
         focus_unlock = yes
       }
+      set_country_flag = Defense_Strategy_White_Paper_flag
     }
     relative_position_id = CHI_election_2020
   }

@@ -131,7 +131,7 @@ CHI_Military_purchasing_cat = {
         NOT = {
           is_ally_with = PRC
         }
-        has_completed_focus = Defense_Strategy_White_Paper
+        has_country_flag = Defense_Strategy_White_Paper_flag
       }
     }
   }
@@ -160,6 +160,7 @@ CHI_PRC_Infiltration_decisions = {
       has_country_flag = CHI_taiwan_war_end
     }
   }
+  
   scripted_gui = PRC_Infiltration_gui
 }
 ##統獨權力平衡
