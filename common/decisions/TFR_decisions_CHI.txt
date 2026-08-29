@@ -7405,6 +7405,7 @@ CHI_Population_Aging_decisions = {
     fire_only_once = yes
     complete_effect = {
       clr_country_flag = CHI_Population_Aging_flag
+      remove_dynamic_modifier = { modifier = CHI_population_aging_dynamic }
       custom_effect_tooltip = CHI_Population_Aging_end_tooltip
     }
   }
