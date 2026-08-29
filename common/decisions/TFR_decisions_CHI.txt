@@ -7218,7 +7218,7 @@ CHI_Population_Aging_decisions = {
         tooltip = monthly_population_tooltip
       }
       add_to_variable = {
-        PA_expense_growth_factor = 0.025
+        PA_expense_growth_factor = -0.025
         tooltip = expense_growth_factor_tooltip
       }
     }
@@ -7254,7 +7254,7 @@ CHI_Population_Aging_decisions = {
         tooltip = poverty_development_monthly_tooltip
       }
       add_to_variable = {
-        PA_personal_expense_factor = 0.05
+        PA_personal_expense_factor = -0.05
         tooltip = personal_expense_factor_tooltip
       }
     }
@@ -7382,7 +7382,7 @@ CHI_Population_Aging_decisions = {
         tooltip = personal_expense_factor_tooltip
       }
       add_to_variable = {
-        PA_inflation_monthly = -0.002
+        PA_inflation_monthly = 0.002
         tooltip = inflation_monthly_tooltip
       }
     }
