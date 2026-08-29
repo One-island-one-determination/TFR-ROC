@@ -1782,8 +1782,8 @@ focus_tree = {
       custom_effect_tooltip = CHI_Economy_additional_effects
       add_to_variable = {
         var = CHI_Economy_resource_trade_cost_bonus_per_factory
-        value = 1
-        tooltip = resource_trade_cost_bonus_per_factory_tooltip
+        value = -0.1
+        tooltip = CHI_trade_cost_for_target_factor_tt
       }
     }
     relative_position_id = CHI_outward_expansion

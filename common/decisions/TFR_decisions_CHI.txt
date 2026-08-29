@@ -1211,6 +1211,7 @@ CHI_PRC_Infiltration_decisions = {
 				}
 				set_temp_variable = { CHI_PRC_Infiltration_progress_temp = 5 }
 				PRC_Infiltration_change = yes
+				remove_mission = PRC_infiltration_becoming_serious_mission
 				activate_mission = PRC_infiltration_becoming_serious_mission
 			}
 		}
@@ -3106,7 +3107,12 @@ CHI_Military_purchasing_cat = {
       }
     }
     available = {
-      country_exists = USA
+      OR = {
+        country_exists = USA
+        country_exists = USB
+        country_exists = USC
+        has_global_flag = USA_american_civil_war_over_global
+      }
     }
     fire_only_once = no
     cancel_if_not_visible = no
@@ -3192,7 +3198,12 @@ CHI_Military_purchasing_cat = {
       }
     }
     available = {
-      country_exists = USA
+      OR = {
+        country_exists = USA
+        country_exists = USB
+        country_exists = USC
+        has_global_flag = USA_american_civil_war_over_global
+      }
     }
     fire_only_once = no
     cancel_if_not_visible = no
@@ -3278,7 +3289,12 @@ CHI_Military_purchasing_cat = {
       }
     }
     available = {
-      country_exists = USA
+      OR = {
+        country_exists = USA
+        country_exists = USB
+        country_exists = USC
+        has_global_flag = USA_american_civil_war_over_global
+      }
     }
     fire_only_once = no
     cancel_if_not_visible = no
@@ -3347,7 +3363,12 @@ CHI_Military_purchasing_cat = {
       }
     }
     available = {
-      country_exists = USA
+      OR = {
+        country_exists = USA
+        country_exists = USB
+        country_exists = USC
+        has_global_flag = USA_american_civil_war_over_global
+      }
     }
     fire_only_once = no
     cancel_if_not_visible = no
@@ -3411,7 +3432,12 @@ CHI_Military_purchasing_cat = {
       }
     }
     available = {
-      country_exists = USA
+      OR = {
+        country_exists = USA
+        country_exists = USB
+        country_exists = USC
+        has_global_flag = USA_american_civil_war_over_global
+      }
     }
     fire_only_once = no
     cancel_if_not_visible = no
@@ -7395,7 +7421,7 @@ CHI_Population_Aging_decisions = {
     icon = GFX_Population_Aging_end
     available = {
       check_variable = {
-        var_CHI_Population_Aging_decisions = 10
+        var_CHI_Population_Aging_decisions = 6
       }
       custom_trigger_tooltip = {
         tooltip = CHI_Population_Aging_end_avaliable_tooltip
@@ -7444,19 +7470,38 @@ CHI_NCSIST_category = {
 		}
 		custom_cost_trigger = {
 			# 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-			mio:CHI_NCSIST_organization = {
-				NOT = {
-					check_variable = {
-						funds < 199
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					NOT = {
+						check_variable = {
+							funds < 199
+						}
 					}
+				}
+			}
+			else = {
+				check_variable = {
+					var = income_var
+					value > 199
 				}
 			}
 		}
 		custom_cost_text = CHI_NCSIST_funds_200
 		complete_effect = {
 			# 【第一步：扣除 MIO 資金】
-			mio:CHI_NCSIST_organization = {
-				add_mio_funds = -200
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					add_mio_funds = -200
+				}
+			}
+			else = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = -200
+				}
+				add_income_with_inflation = yes
 			}
 		}
 		remove_effect = {
@@ -7482,19 +7527,38 @@ CHI_NCSIST_category = {
 		}
 		custom_cost_trigger = {
 			# 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-			mio:CHI_NCSIST_organization = {
-				NOT = {
-					check_variable = {
-						funds < 199
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					NOT = {
+						check_variable = {
+							funds < 199
+						}
 					}
+				}
+			}
+			else = {
+				check_variable = {
+					var = income_var
+					value > 199
 				}
 			}
 		}
 		custom_cost_text = CHI_NCSIST_funds_200
 		complete_effect = {
 			# 【第一步：扣除 MIO 資金】
-			mio:CHI_NCSIST_organization = {
-				add_mio_funds = -200
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					add_mio_funds = -200
+				}
+			}
+			else = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = -200
+				}
+				add_income_with_inflation = yes
 			}
 		}
 		remove_effect = {
@@ -7521,19 +7585,38 @@ CHI_NCSIST_category = {
 		}
 		custom_cost_trigger = {
 			# 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-			mio:CHI_NCSIST_organization = {
-				NOT = {
-					check_variable = {
-						funds < 199
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					NOT = {
+						check_variable = {
+							funds < 199
+						}
 					}
+				}
+			}
+			else = {
+				check_variable = {
+					var = income_var
+					value > 199
 				}
 			}
 		}
 		custom_cost_text = CHI_NCSIST_funds_200
 		complete_effect = {
 			# 【第一步：扣除 MIO 資金】
-			mio:CHI_NCSIST_organization = {
-				add_mio_funds = -200
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					add_mio_funds = -200
+				}
+			}
+			else = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = -200
+				}
+				add_income_with_inflation = yes
 			}
 		}
 		remove_effect = {
@@ -7593,19 +7676,38 @@ CHI_NCSIST_category = {
 		}
 		custom_cost_trigger = {
 			# 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-			mio:CHI_NCSIST_organization = {
-				NOT = {
-					check_variable = {
-						funds < 199
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					NOT = {
+						check_variable = {
+							funds < 199
+						}
 					}
+				}
+			}
+			else = {
+				check_variable = {
+					var = income_var
+					value > 199
 				}
 			}
 		}
 		custom_cost_text = CHI_NCSIST_funds_200
 		complete_effect = {
 			# 【第一步：扣除 MIO 資金】
-			mio:CHI_NCSIST_organization = {
-				add_mio_funds = -200
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					add_mio_funds = -200
+				}
+			}
+			else = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = -200
+				}
+				add_income_with_inflation = yes
 			}
 		}
 		remove_effect = {
@@ -7634,19 +7736,38 @@ CHI_NCSIST_category = {
 		}
 		custom_cost_trigger = {
 			# 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-			mio:CHI_NCSIST_organization = {
-				NOT = {
-					check_variable = {
-						funds < 199
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					NOT = {
+						check_variable = {
+							funds < 199
+						}
 					}
+				}
+			}
+			else = {
+				check_variable = {
+					var = income_var
+					value > 199
 				}
 			}
 		}
 		custom_cost_text = CHI_NCSIST_funds_200
 		complete_effect = {
 			# 【第一步：扣除 MIO 資金】
-			mio:CHI_NCSIST_organization = {
-				add_mio_funds = -200
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					add_mio_funds = -200
+				}
+			}
+			else = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = -200
+				}
+				add_income_with_inflation = yes
 			}
 		}
 		remove_effect = {
@@ -7818,19 +7939,38 @@ CHI_NCSIST_category = {
 		}
 		custom_cost_trigger = {
 			# 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-			mio:CHI_NCSIST_organization = {
-				NOT = {
-					check_variable = {
-						funds < 199
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					NOT = {
+						check_variable = {
+							funds < 199
+						}
 					}
+				}
+			}
+			else = {
+				check_variable = {
+					var = income_var
+					value > 199
 				}
 			}
 		}
 		custom_cost_text = CHI_NCSIST_funds_200
 		complete_effect = {
 			# 【第一步：扣除 MIO 資金】
-			mio:CHI_NCSIST_organization = {
-				add_mio_funds = -200
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					add_mio_funds = -200
+				}
+			}
+			else = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = -200
+				}
+				add_income_with_inflation = yes
 			}
 		}
 		remove_effect = {
@@ -7857,19 +7997,38 @@ CHI_NCSIST_category = {
 		}
 		custom_cost_trigger = {
 			# 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-			mio:CHI_NCSIST_organization = {
-				NOT = {
-					check_variable = {
-						funds < 199
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					NOT = {
+						check_variable = {
+							funds < 199
+						}
 					}
+				}
+			}
+			else = {
+				check_variable = {
+					var = income_var
+					value > 199
 				}
 			}
 		}
 		custom_cost_text = CHI_NCSIST_funds_200
 		complete_effect = {
 			# 【第一步：扣除 MIO 資金】
-			mio:CHI_NCSIST_organization = {
-				add_mio_funds = -200
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					add_mio_funds = -200
+				}
+			}
+			else = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = -200
+				}
+				add_income_with_inflation = yes
 			}
 		}
 		remove_effect = {
@@ -7895,19 +8054,38 @@ CHI_NCSIST_category = {
 		}
 		custom_cost_trigger = {
 			# 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
-			mio:CHI_NCSIST_organization = {
-				NOT = {
-					check_variable = {
-						funds < 199
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					NOT = {
+						check_variable = {
+							funds < 199
+						}
 					}
+				}
+			}
+			else = {
+				check_variable = {
+					var = income_var
+					value > 199
 				}
 			}
 		}
 		custom_cost_text = CHI_NCSIST_funds_200
 		complete_effect = {
 			# 【第一步：扣除 MIO 資金】
-			mio:CHI_NCSIST_organization = {
-				add_mio_funds = -200
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:CHI_NCSIST_organization = {
+					add_mio_funds = -200
+				}
+			}
+			else = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = -200
+				}
+				add_income_with_inflation = yes
 			}
 		}
 		remove_effect = {
