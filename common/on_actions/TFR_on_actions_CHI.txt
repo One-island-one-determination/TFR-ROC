@@ -129,7 +129,7 @@ on_actions = {
   }
 
   on_monthly_VIN = {
-    effect= {
+    effect = {
       if = {
         limit = {
           AND = {
@@ -137,12 +137,12 @@ on_actions = {
             NOT = { has_country_flag = CHI_enemy_flag }
           }
         }
+        set_country_flag = CHI_enemy_flag
       }
-      set_country_flag = CHI_enemy_flag
     }
   }
   on_monthly_PHI = {
-    effect= {
+    effect = {
       if = {
         limit = {
           AND = {
@@ -150,8 +150,8 @@ on_actions = {
             NOT = { has_country_flag = CHI_enemy_flag }
           }
         }
+        set_country_flag = CHI_enemy_flag
       }
-      set_country_flag = CHI_enemy_flag
     }
   }
 

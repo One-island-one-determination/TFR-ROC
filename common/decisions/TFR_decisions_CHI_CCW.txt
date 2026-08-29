@@ -7825,6 +7825,7 @@ CHI_civilwar_category = {
         OR = { check_variable = { CHI_ccw_dec_visible = 18 } is_ai = yes }
       }
     }
+    fire_only_once = yes
     cost = 50
     days_remove = 50
     available = {
