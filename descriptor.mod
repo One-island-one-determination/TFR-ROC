@@ -1,6 +1,7 @@
-version="1.1.0"
-name="TFR - Republic of China"
+version="1.1.2"
+name="The Fire Rises: One Island, One Determination"
 tags={
+	"Alternative History"
 	"Gameplay"
 	"National Focuses"
 }
@@ -9,5 +10,4 @@ dependencies={
 }
 picture="Thumbnail.png"
 supported_version="1.19.*"
-path="C:/Users/Derek/Documents/Paradox Interactive/Hearts of Iron IV/mod/TFR-ROC"
 remote_file_id="3609728809"
