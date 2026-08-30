@@ -303,11 +303,9 @@ country_event = {
 
   option = {
     name = CHI.H4.113.a
-    hidden_effect = {
-      CHI = {
-        add_political_power = 50
-        add_stability = 0.05
-      }
+    CHI = {
+      add_political_power = 50
+      add_stability = 0.05
     }
   }
 }
@@ -320,13 +318,13 @@ country_event = {
   picture = CHI_Event_H4_114
   is_triggered_only = yes
 
-  trigger = {
-  }
-  immediate = {
-    hidden_effect = {
-      329 = { controller = { save_event_target_as = tuva_old_owner } }
-    }
-  }
+  # trigger = {
+  # }
+  # immediate = {
+  #   hidden_effect = {
+  #     329 = { controller = { save_event_target_as = tuva_old_owner } }
+  #   }
+  # }
   option = {
     name = CHI.H4.114.a
     hidden_effect = {

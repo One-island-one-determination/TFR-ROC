@@ -6689,9 +6689,8 @@ CHI_Intervene_the_American_Civil_War_category = {
     }
     visible = {
       has_global_flag = USA_american_civil_war_global
-      NOT = {
-        has_country_flag = CHI_support_USC
-      }
+      NOT = { has_country_flag = CHI_support_USC }
+      NOT = { has_country_flag = CHI_support_USB }
     }
     available = {
       has_global_flag = USA_american_civil_war_global
@@ -6892,9 +6891,8 @@ CHI_Intervene_the_American_Civil_War_category = {
     }
     visible = {
       has_global_flag = USA_american_civil_war_global
-      NOT = {
-        has_country_flag = CHI_support_USC
-      }
+      NOT = { has_country_flag = CHI_support_USC }
+      NOT = { has_country_flag = CHI_support_USB }
     }
     available = {
       has_global_flag = USA_american_civil_war_global
