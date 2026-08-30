@@ -5324,7 +5324,8 @@ CHI_army_decisions = {
 					}
 				}
 			}
-			load_oob = "CHI_dynamic_spawn_oob"
+			hidden_effect = { load_oob = "CHI_dynamic_spawn_oob" }
+      custom_effect_tooltip = CHI_repeatable_spawn_tt
 		}
 	}
 	#陸軍改革 Phase 4：確立軍事指揮系統
@@ -5875,7 +5876,8 @@ CHI_army_decisions = {
 					}
 				}
 			}
-			load_oob = "CHI_dynamic_spawn_oob"
+			hidden_effect = { load_oob = "CHI_dynamic_spawn_oob" }
+      custom_effect_tooltip = CHI_repeatable_spawn_tt
 		}
 	}
 	#陸軍改革 Phase 4：確立軍事指揮系統
