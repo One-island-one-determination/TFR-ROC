@@ -1641,75 +1641,77 @@ country_event = {
   is_triggered_only = yes
 
   immediate = {
-    set_country_flag = CHI_tibet_zangnan_secured
-    # Transfer Tibetan states, Zangnan, and Aksai Chin to ROC
-    CHI = {
-      transfer_state = 1155 # Ngari / 阿里
-      transfer_state = 322  # Nagqu / 那曲
-      transfer_state = 1153 # Shigatse / 日喀則
-      transfer_state = 1156 # Lhasa / 拉薩
-      transfer_state = 1152 # Chamdo / 昌都
-      transfer_state = 434  # Zangnan / 藏南
-      transfer_state = 788  # Aksai Chin / 阿克賽欽
-    }
-
-
-    every_state = {
-      limit = {
-        OR = {
-          is_owned_by = RAJ
-          is_controlled_by = RAJ
-          owner = { is_subject_of = RAJ }
-          controller = { is_subject_of = RAJ }
-        }
-        OR = {
-          state = 1155
-          state = 322
-          state = 1153
-          state = 1156
-          state = 1152
-          state = 434
-          state = 788
-        }
+    hidden_effect = {
+      set_country_flag = CHI_tibet_zangnan_secured
+      # Transfer Tibetan states, Zangnan, and Aksai Chin to ROC
+      CHI = {
+        transfer_state = 1155 # Ngari / 阿里
+        transfer_state = 322  # Nagqu / 那曲
+        transfer_state = 1153 # Shigatse / 日喀則
+        transfer_state = 1156 # Lhasa / 拉薩
+        transfer_state = 1152 # Chamdo / 昌都
+        transfer_state = 434  # Zangnan / 藏南
+        transfer_state = 788  # Aksai Chin / 阿克賽欽
       }
-      CHI = { transfer_state = PREV }
-    }
 
-    if = {
-      limit = { country_exists = TIB }
-      CHI = { annex_country = { target = TIB transfer_troops = no } }
-    }
-    if = {
-      limit = { country_exists = TAR }
-      CHI = { annex_country = { target = TAR transfer_troops = no } }
-    }
-    # White peace with India / RAJ and all of its allies/subjects
-    CHI = {
-      if = {
-        limit = { country_exists = RAJ }
-        white_peace = RAJ
+
+      every_state = {
+        limit = {
+          OR = {
+            is_owned_by = RAJ
+            is_controlled_by = RAJ
+            owner = { is_subject_of = RAJ }
+            controller = { is_subject_of = RAJ }
+          }
+          OR = {
+            state = 1155
+            state = 322
+            state = 1153
+            state = 1156
+            state = 1152
+            state = 434
+            state = 788
+          }
+        }
+        CHI = { transfer_state = PREV }
       }
+
       if = {
         limit = { country_exists = TIB }
-        white_peace = TIB
+        CHI = { annex_country = { target = TIB transfer_troops = no } }
       }
       if = {
         limit = { country_exists = TAR }
-        white_peace = TAR
+        CHI = { annex_country = { target = TAR transfer_troops = no } }
       }
-    }
-    every_enemy_country = {
-      limit = {
-        OR = {
-          tag = RAJ
-          original_tag = RAJ
-          is_subject_of = RAJ
-          is_in_faction_with = RAJ
-          tag = TIB
-          tag = TAR
+      # White peace with India / RAJ and all of its allies/subjects
+      CHI = {
+        if = {
+          limit = { country_exists = RAJ }
+          white_peace = RAJ
+        }
+        if = {
+          limit = { country_exists = TIB }
+          white_peace = TIB
+        }
+        if = {
+          limit = { country_exists = TAR }
+          white_peace = TAR
         }
       }
-      white_peace = ROOT
+      every_enemy_country = {
+        limit = {
+          OR = {
+            tag = RAJ
+            original_tag = RAJ
+            is_subject_of = RAJ
+            is_in_faction_with = RAJ
+            tag = TIB
+            tag = TAR
+          }
+        }
+        white_peace = ROOT
+      }
     }
   }
 
