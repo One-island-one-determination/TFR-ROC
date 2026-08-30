@@ -1124,12 +1124,9 @@ focus_tree = {
       custom_effect_tooltip = CHI_blue_sky_white_sun_never_falls_tooltip
       hidden_effect = {
         remove_ideas = CHI_corruption_problem_6
-        remove_dynamic_modifier = {
-          modifier = CHI_love_to_chunghua
-        }
-        remove_dynamic_modifier = {
-          modifier = CHI_dawn
-        }
+        remove_dynamic_modifier = { modifier = CHI_love_to_chunghua }
+        remove_dynamic_modifier = { modifier = CHI_dawn }
+        remove_dynamic_modifier = { modifier = CHI_success_everywhere }
         add_ideas = CHI_no_one_can_abuse_her
       }
     }
@@ -2710,6 +2707,9 @@ focus_tree = {
       focus = CHI_underground_assenmly_point
     }
     available = {
+      has_country_flag = CHI_our_final_fight_flag
+    }
+    allow_branch = {
       has_country_flag = CHI_our_final_fight_flag
     }
     completion_reward = {

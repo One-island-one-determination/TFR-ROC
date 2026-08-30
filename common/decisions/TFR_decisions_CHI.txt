@@ -7421,7 +7421,7 @@ CHI_Population_Aging_decisions = {
     icon = GFX_Population_Aging_end
     available = {
       check_variable = {
-        var_CHI_Population_Aging_decisions = 6
+        var_CHI_Population_Aging_decisions > 8
       }
       custom_trigger_tooltip = {
         tooltip = CHI_Population_Aging_end_avaliable_tooltip
@@ -7975,7 +7975,7 @@ CHI_NCSIST_category = {
 		}
 		remove_effect = {
 			set_technology = {
-				improved_small_airframe = 1				# 1 代表解鎖
+				advanced_small_airframe = 1				# 1 代表解鎖
 			}
 		}
 	}
@@ -7993,7 +7993,6 @@ CHI_NCSIST_category = {
 		}
 		available = {
 			has_completed_focus = CHI_sino_japanese_fighter_cooperation_program
-			has_country_flag = CHI_project_Brave_Eagle_flag
 		}
 		custom_cost_trigger = {
 			# 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
@@ -8033,7 +8032,7 @@ CHI_NCSIST_category = {
 		}
 		remove_effect = {
 			set_technology = {
-				improved_small_airframe = 1				# 1 代表解鎖
+				advanced_small_airframe = 1				# 1 代表解鎖
 			}
 		}
 	}
