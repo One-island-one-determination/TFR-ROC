@@ -228,22 +228,7 @@ CHI_Population_Aging_decisions = {
 #   }
 # }
 
-#PHI內戰###################################################
-PHI_civil_war_dec = {
-  #菲律賓内戰
-  visible_when_empty = yes
-  priority = 999
-  visible = {
-    has_global_flag = PHI_civil_war_flag
-  }
-  allowed = {
-    or = {
-      original_tag = NDF
-      original_tag = AFP
-      original_tag = MIL
-    }
-  }
-}
+
 
 #干涉菲律賓
 # CHI_intervene_PHI_civil_war_category = {
