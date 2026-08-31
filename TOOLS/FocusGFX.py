@@ -4,7 +4,62 @@ import os
 # 1. 在這裡輸入你的名單 (換行分隔)
 # ==========================================
 text_input = """
-CHI_Inciting_democracyactivists_withinChina
+CHI_reclaim_national_father_thought
+CHI_new_practice_of_three_principles
+CHI_perfect_civil_rights
+CHI_chinese_nation
+CHI_of_by_for_the_people
+CHI_restore_refugee_naturalization
+CHI_preparatory_provincial_government
+CHI_strength_in_numbers
+CHI_sun_yat_sen_thought_research_society
+CHI_light_of_the_nation
+CHI_birth_planning
+CHI_reform_health_insurance
+CHI_crack_down_on_housing_prices
+CHI_conventional_economic_direction
+CHI_lankai_model_experiment
+CHI_government_calculation_unit
+CHI_auxiliary_civil_service_system
+CHI_ai_ruled_economy
+CHI_limited_capital_market
+CHI_people_livelihood
+CHI_restore_control_yuan_functions
+CHI_grant_disciplinary_power
+CHI_control_yuan_election_system
+CHI_new_worker_peasant_policy
+CHI_inspect_labor_law_implementation
+CHI_labor_union_law_reform
+CHI_food_control
+CHI_fund_council_of_agriculture
+CHI_labor_insurance_reform_bill
+CHI_welfare_enterprise_plan
+CHI_public_insurance_bonds
+CHI_cabinet_meeting
+CHI_premier_johnny_chiang
+CHI_premier_jaw_shaw_kong
+CHI_utilize_bureaucracy
+CHI_establish_ministry_of_civil_rights
+CHI_separate_department_of_child_and_youth
+CHI_blooming_rose
+CHI_national_civil_servant_plan
+CHI_massive_pay_raise_for_public_officials
+CHI_overturn_108_curriculum
+CHI_reforge_iron_army
+CHI_military_democracy
+CHI_follow_the_principle
+CHI_conscription_training_crash_course
+CHI_national_defense_diplomacy
+CHI_fully_promote_cabinet_system
+CHI_elderly_care_policy
+CHI_labor_insurance_benefit_system_amendment
+CHI_new_labor_policy
+CHI_promote_new_learning
+CHI_three_principles_curriculum
+CHI_live_up_to_expectations
+CHI_bottom_of_rivers
+CHI_do_not_disband_the_group
+CHI_do_not_lose_ambition
 """
 
 # 清理字串：用換行符號分割，並自動去除頭尾空白與空行
