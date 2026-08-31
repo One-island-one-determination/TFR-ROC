@@ -763,3 +763,217 @@ country_event = {
 country_event = { id = CHI.hidden.0_1 days = 700 }
 country_event = { id = CHI.hidden.0_2 days = 700 }
 country_event = { id = CHI.hidden.0_3 days = 700 }
+
+
+set_politics = {
+  ruling_party = social_liberal
+  last_election = "2016.1.16"
+  election_frequency = 48
+  elections_allowed = yes
+}
+set_popularities = {
+  conservative = 35
+  social_liberal = 45
+  market_liberal = 7
+  totalitarian_socialist = 1
+  communist = 1
+  libertarian_socialist = 3
+  social_democrat = 5
+  authoritarian_democrat = 3
+}
+set_country_flag = CHI_lfy_flag
+set_country_flag = CHI_stage_1
+add_dynamic_modifier = {
+  modifier = CHI_influence_KMT_dynamic
+}
+add_dynamic_modifier = {
+  modifier = CHI_influence_DPP_dynamic
+}
+add_dynamic_modifier = {
+  modifier = CHI_influence_TPP_dynamic
+}
+add_dynamic_modifier = {
+  modifier = CHI_influence_NPSU_dynamic
+}
+add_dynamic_modifier = {
+  modifier = CHI_influence_NPP_dynamic
+}
+add_dynamic_modifier = {
+  modifier = CHI_influence_TSP_dynamic
+}
+add_dynamic_modifier = {
+  modifier = CHI_influence_SDP_dynamic
+}
+add_dynamic_modifier = {
+  modifier = CHI_influence_NP_dynamic
+}
+add_dynamic_modifier = {
+  modifier = CHI_influence_PFP_dynamic
+}
+add_dynamic_modifier = {
+  modifier = CHI_influence_LP_dynamic
+}
+recruit_character = CHI_sunyoulian_char
+recruit_character = CHI_fanyun_char
+recruit_character = CHI_chenboguang_char
+recruit_character = CHI_zhanganle_char
+recruit_character = CHI_chiang_wan_an_char
+recruit_character = CHI_Chen_xinxing_char
+recruit_character = CHI_Xu_yongming_char
+recruit_character = CHI_Qiu_xianzhi_char
+recruit_character = CHI_Gao_yuting_char
+recruit_character = CHI_Chen_Jiaohua_char
+recruit_character = CHI_lin_de_wang_char
+recruit_character = CHI_wu_rong_yuan_char
+set_party_name = {
+  ideology = social_democrat
+  long_name = CHI_NewPowerParty_long
+  name = CHI_NewPowerParty_long
+}
+set_party_name = {
+  ideology = social_liberal
+  long_name = CHI_Taiwan_Democrati_Progressive_Party_long
+  name = CHI_Taiwan_Democrati_Progressive_Party
+}
+set_party_name = {
+  ideology = market_liberal
+  long_name = CHI_Taiwan_People_Party_long
+  name = CHI_Taiwan_People_Party
+}
+set_party_name = {
+  ideology = conservative
+  long_name = CHI_Kuomintang_long
+  name = CHI_Kuomintang
+}
+set_party_name = {
+  ideology = authoritarian_democrat
+  long_name = CHI_Kuomintang2_long
+  name = CHI_Kuomintang2
+}
+set_party_name = {
+  ideology = nationalist
+  long_name = CHI_National_Army_long
+  name = CHI_National_Army
+}
+set_party_name = {
+  ideology = fascist
+  long_name = PRC_status_banned
+  name = PRC_status_banned
+}
+set_party_name = {
+  ideology = national_socialist
+  long_name = PRC_status_banned
+  name = PRC_status_banned
+}
+set_party_name = {
+  ideology = libertarian_socialist
+  long_name = CHI_Taiwan_Labor_Party_long
+  name = CHI_Taiwan_Labor_Party
+}
+set_party_name = {
+  ideology = communist
+  long_name = CHI_TaiwanCommunistParty_long
+  name = CHI_TaiwanCommunistParty
+}
+set_party_name = {
+  ideology = totalitarian_socialist
+  long_name = CHI_TaiwanMao_long
+  name = CHI_TaiwanMao
+}
+promote_character = {
+  character = CHI_sunyoulian_char
+  ideology = post_leftism
+}
+promote_character = {
+  character = CHI_Xu_yongming_char
+  ideology = social_democracy
+}
+promote_character = {
+  character = CHI_chenboguang_char
+  ideology = chinese_exceptionalism
+}
+promote_character = {
+  character = CHI_Chen_xinxing_char
+  ideology = maoism
+}
+add_country_leader_role = {
+  character = CHI_tsai_ing_wen_char
+  promote_leader = yes
+  country_leader = {
+    desc = CHI_tsai_ing_wen_char_desc
+    traits = {
+      CHI_hos_madam_president
+    }
+    ideology = Taiwanese_Progressivism
+    expire = "1.1.1.1"
+  }
+}
+add_country_leader_role = {
+  character = CHI_han_kuo_yu_char
+  promote_leader = yes
+  country_leader = {
+    desc = CHI_han_kuo_yu_char_desc
+    traits = {
+      hos_president_of_the_commoners
+    }
+    ideology = Taiwanese_constitutionalism
+    expire = "1.1.1.1"
+  }
+}
+add_country_leader_role = {
+  character = CHI_ko_wen_je_char
+  promote_leader = yes
+  country_leader = {
+    ideology = taiwanese_liberal_populism2
+    expire = "1.1.1.1"
+  }
+}
+add_country_leader_role = {
+  character = CHI_lin_de_wang_char
+  promote_leader = yes
+  country_leader = {
+    desc = CHI_lin_de_wang_char_desc
+    ideology = marxism_leninism
+    expire = "1.1.1.1"
+  }
+}
+add_country_leader_role = {
+  character = CHI_Chen_xinxing_char
+  promote_leader = yes
+  country_leader = {
+    ideology = maoism
+    expire = "1.1.1.1"
+  }
+}
+add_country_leader_role = {
+  character = CHI_wu_rong_yuan_char
+  promote_leader = yes
+  country_leader = {
+    ideology = labour_syndicalism
+    expire = "1.1.1.1"
+  }
+}
+add_country_leader_role = {
+  character = CHI_sunyoulian_char
+  promote_leader = yes
+  country_leader = {
+    ideology = post_leftism
+    expire = "1.1.1.1"
+  }
+}
+add_country_leader_role = {
+  character = CHI_chenboguang_char
+  promote_leader = yes
+  country_leader = {
+    ideology = chinese_exceptionalism
+    expire = "1.1.1.1"
+  }
+}
+add_country_leader_role = {
+  character = CHI_zhanganle_char
+  promote_leader = yes
+  country_leader = {
+    ideology = national_derzhavism
+    expire = "1.1.1.1"
+  }
+}
