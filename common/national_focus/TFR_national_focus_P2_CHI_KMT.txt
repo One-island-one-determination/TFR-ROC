@@ -1133,6 +1133,942 @@ focus_tree = {
     relative_position_id = CHI_End_of_Chaos
   }
   #}
+  
+  #CWA{
+	focus = {
+		id = CHI_reclaim_national_father_thought
+		icon = GFX_focus_CHI_reclaim_national_father_thought
+		x = 27
+		y = 0
+    offset = {
+			x = -3
+			y = 0
+			trigger = { has_completed_focus = CHI_premier_jaw_shaw_kong }
+		}
+		cost = 1
+		icon = GFX_focus_CHI_reclaim_national_father_thought
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		allow_branch = {
+			has_country_flag = second_CWA_win_flg
+		}
+	}
+
+	focus = {
+		id = CHI_new_practice_of_three_principles
+		icon = GFX_focus_CHI_new_practice_of_three_principles
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_reclaim_national_father_thought
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_reclaim_national_father_thought
+	}
+
+	focus = {
+		id = CHI_perfect_civil_rights
+		icon = GFX_focus_CHI_perfect_civil_rights
+		x = 1
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_practice_of_three_principles
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_new_practice_of_three_principles
+	}
+
+	focus = {
+		id = CHI_chinese_nation
+		icon = GFX_focus_CHI_chinese_nation
+		x = 18
+		y = 1
+		offset = {
+			x = -9
+			y = 0
+			trigger = { has_completed_focus = CHI_premier_jaw_shaw_kong }
+		}
+		offset = {
+			x = -12
+			y = 0
+			trigger = { has_completed_focus = CHI_premier_johnny_chiang }
+		}
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_practice_of_three_principles
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_new_practice_of_three_principles
+	}
+
+	focus = {
+		id = CHI_of_by_for_the_people
+		icon = GFX_focus_CHI_of_by_for_the_people
+		x = 26
+		y = 1
+		offset = {
+			x = -9
+			y = 0
+			trigger = { has_completed_focus = CHI_premier_jaw_shaw_kong }
+		}
+		offset = {
+			x = -12
+			y = 0
+			trigger = { has_completed_focus = CHI_premier_johnny_chiang }
+		}
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_practice_of_three_principles
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_new_practice_of_three_principles
+	}
+
+	focus = {
+		id = CHI_restore_control_yuan_functions
+		icon = GFX_focus_CHI_restore_control_yuan_functions
+		x = -12
+		y = 2
+		offset = {
+			x = 4
+			y = 0
+			trigger = { has_completed_focus = CHI_premier_jaw_shaw_kong }
+		}
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_perfect_civil_rights
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_new_practice_of_three_principles
+	}
+
+	focus = {
+		id = CHI_grant_disciplinary_power
+		icon = GFX_focus_CHI_grant_disciplinary_power
+		x = -1
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_restore_control_yuan_functions
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_restore_control_yuan_functions
+	}
+
+	focus = {
+		id = CHI_control_yuan_election_system
+		icon = GFX_focus_CHI_control_yuan_election_system
+		x = 1
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_restore_control_yuan_functions
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_restore_control_yuan_functions
+	}
+
+	focus = {
+		id = CHI_inspect_labor_law_implementation
+		icon = GFX_focus_CHI_inspect_labor_law_implementation
+		x = -2
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_worker_peasant_policy
+		}
+		prerequisite = {
+			focus = CHI_restore_control_yuan_functions
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_new_worker_peasant_policy
+	}
+
+	focus = {
+		id = CHI_labor_union_law_reform
+		icon = GFX_focus_CHI_labor_union_law_reform
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_inspect_labor_law_implementation
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_inspect_labor_law_implementation
+	}
+
+	focus = {
+		id = CHI_food_control
+		icon = GFX_focus_CHI_food_control
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_worker_peasant_policy
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_new_worker_peasant_policy
+	}
+
+	focus = {
+		id = CHI_fund_council_of_agriculture
+		icon = GFX_focus_CHI_fund_council_of_agriculture
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_food_control
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_food_control
+	}
+
+	focus = {
+		id = CHI_labor_insurance_reform_bill
+		icon = GFX_focus_CHI_labor_insurance_reform_bill
+		x = 2
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_worker_peasant_policy
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_new_worker_peasant_policy
+	}
+
+	focus = {
+		id = CHI_welfare_enterprise_plan
+		icon = GFX_focus_CHI_welfare_enterprise_plan
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_fund_council_of_agriculture
+		}
+		prerequisite = {
+			focus = CHI_labor_insurance_reform_bill
+		}
+		prerequisite = {
+			focus = CHI_labor_union_law_reform
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_fund_council_of_agriculture
+	}
+
+	focus = {
+		id = CHI_public_insurance_bonds
+		icon = GFX_focus_CHI_public_insurance_bonds
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_welfare_enterprise_plan
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_welfare_enterprise_plan
+	}
+
+	focus = {
+		id = CHI_cabinet_meeting
+		icon = GFX_focus_CHI_cabinet_meeting
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_perfect_civil_rights
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_perfect_civil_rights
+	}
+
+	focus = {
+		id = CHI_premier_johnny_chiang
+		icon = GFX_focus_CHI_premier_johnny_chiang
+		x = -1
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_premier_jaw_shaw_kong
+		}
+		prerequisite = {
+			focus = CHI_cabinet_meeting
+		}
+		allow_branch = { NOT = { has_completed_focus = CHI_premier_jaw_shaw_kong } }
+		completion_reward = {  }
+		relative_position_id = CHI_cabinet_meeting
+	}
+
+	focus = {
+		id = CHI_premier_jaw_shaw_kong
+		icon = GFX_focus_CHI_premier_jaw_shaw_kong
+		x = 9
+		y = 1
+		offset = {
+			x = -9
+			y = 0
+			trigger = { has_completed_focus = CHI_premier_jaw_shaw_kong }
+		}
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_premier_johnny_chiang
+		}
+		prerequisite = {
+			focus = CHI_cabinet_meeting
+		}
+		allow_branch = { NOT = { has_completed_focus = CHI_premier_johnny_chiang } }
+		completion_reward = {  }
+		relative_position_id = CHI_cabinet_meeting
+	}
+
+	focus = {
+		id = CHI_utilize_bureaucracy
+		icon = GFX_focus_CHI_utilize_bureaucracy
+		x = -4
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_premier_johnny_chiang
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_premier_johnny_chiang
+	}
+
+	focus = {
+		id = CHI_establish_ministry_of_civil_rights
+		icon = GFX_focus_CHI_establish_ministry_of_civil_rights
+		x = -2
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_utilize_bureaucracy
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_utilize_bureaucracy
+	}
+
+	focus = {
+		id = CHI_separate_department_of_child_and_youth
+		icon = GFX_focus_CHI_separate_department_of_child_and_youth
+		x = 0
+		y = 2
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_establish_ministry_of_civil_rights
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_establish_ministry_of_civil_rights
+	}
+
+	focus = {
+		id = CHI_blooming_rose
+		icon = GFX_focus_CHI_blooming_rose
+		x = 0
+		y = 2
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_public_insurance_bonds
+		}
+		prerequisite = {
+			focus = CHI_separate_department_of_child_and_youth
+		}
+		prerequisite = {
+			focus = CHI_massive_pay_raise_for_public_officials
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_separate_department_of_child_and_youth
+	}
+
+	focus = {
+		id = CHI_national_civil_servant_plan
+		icon = GFX_focus_CHI_national_civil_servant_plan
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_utilize_bureaucracy
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_utilize_bureaucracy
+	}
+
+	focus = {
+		id = CHI_overturn_108_curriculum
+		icon = GFX_focus_CHI_overturn_108_curriculum
+		x = 2
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_utilize_bureaucracy
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_utilize_bureaucracy
+	}
+
+	focus = {
+		id = CHI_reforge_iron_army
+		icon = GFX_focus_CHI_reforge_iron_army
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_premier_johnny_chiang
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_premier_johnny_chiang
+	}
+
+	focus = {
+		id = CHI_military_democracy
+		icon = GFX_focus_CHI_military_democracy
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_reforge_iron_army
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_reforge_iron_army
+	}
+
+	focus = {
+		id = CHI_follow_the_principle
+		icon = GFX_focus_CHI_follow_the_principle
+		x = 1
+		y = 3
+		offset = {
+			x = -9
+			y = 0
+			trigger = { has_completed_focus = CHI_premier_jaw_shaw_kong }
+		}
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_conscription_training_crash_course
+			focus = CHI_reforge_iron_army
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_cabinet_meeting
+	}
+
+	focus = {
+		id = CHI_conscription_training_crash_course
+		icon = GFX_focus_CHI_conscription_training_crash_course
+		x = -6
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_premier_jaw_shaw_kong
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_premier_jaw_shaw_kong
+	}
+
+	focus = {
+		id = CHI_national_defense_diplomacy
+		icon = GFX_focus_CHI_national_defense_diplomacy
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_conscription_training_crash_course
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_conscription_training_crash_course
+	}
+
+	focus = {
+		id = CHI_fully_promote_cabinet_system
+		icon = GFX_focus_CHI_fully_promote_cabinet_system
+		x = -4
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_premier_jaw_shaw_kong
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_premier_jaw_shaw_kong
+	}
+
+	focus = {
+		id = CHI_elderly_care_policy
+		icon = GFX_focus_CHI_elderly_care_policy
+		x = -2
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_labor_insurance_benefit_system_amendment
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_labor_insurance_benefit_system_amendment
+	}
+
+	focus = {
+		id = CHI_labor_insurance_benefit_system_amendment
+		icon = GFX_focus_CHI_labor_insurance_benefit_system_amendment
+		x = -2
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_premier_jaw_shaw_kong
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_premier_jaw_shaw_kong
+	}
+
+	focus = {
+		id = CHI_new_labor_policy
+		icon = GFX_focus_CHI_new_labor_policy
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_labor_insurance_benefit_system_amendment
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_labor_insurance_benefit_system_amendment
+	}
+
+	focus = {
+		id = CHI_promote_new_learning
+		icon = GFX_focus_CHI_promote_new_learning
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_premier_jaw_shaw_kong
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_premier_jaw_shaw_kong
+	}
+
+	focus = {
+		id = CHI_three_principles_curriculum
+		icon = GFX_focus_CHI_three_principles_curriculum
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_promote_new_learning
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_promote_new_learning
+	}
+
+	focus = {
+		id = CHI_live_up_to_expectations
+		icon = GFX_focus_CHI_live_up_to_expectations
+		x = 0
+		y = 3
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_three_principles_curriculum
+		}
+		prerequisite = {
+			focus = CHI_bottom_of_rivers
+		}
+		prerequisite = {
+			focus = CHI_new_labor_policy
+		}
+		prerequisite = {
+			focus = CHI_elderly_care_policy
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_premier_jaw_shaw_kong
+	}
+
+	focus = {
+		id = CHI_bottom_of_rivers
+		icon = GFX_focus_CHI_bottom_of_rivers
+		x = 2
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_premier_jaw_shaw_kong
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_premier_jaw_shaw_kong
+	}
+
+	focus = {
+		id = CHI_do_not_disband_the_group
+		icon = GFX_focus_CHI_do_not_disband_the_group
+		x = 4
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_premier_jaw_shaw_kong
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_premier_jaw_shaw_kong
+	}
+
+	focus = {
+		id = CHI_do_not_lose_ambition
+		icon = GFX_focus_CHI_do_not_lose_ambition
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_do_not_disband_the_group
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_do_not_disband_the_group
+	}
+
+	focus = {
+		id = CHI_restore_refugee_naturalization
+		icon = GFX_focus_CHI_restore_refugee_naturalization
+		x = -2
+		y = 2
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_chinese_nation
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_chinese_nation
+	}
+
+	focus = {
+		id = CHI_strength_in_numbers
+		icon = GFX_focus_CHI_strength_in_numbers
+		x = 0
+		y = 2
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_chinese_nation
+		}
+		prerequisite = {
+			focus = CHI_birth_planning
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_chinese_nation
+	}
+
+	focus = {
+		id = CHI_sun_yat_sen_thought_research_society
+		icon = GFX_focus_CHI_sun_yat_sen_thought_research_society
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_strength_in_numbers
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_strength_in_numbers
+	}
+
+	focus = {
+		id = CHI_light_of_the_nation
+		icon = GFX_focus_CHI_light_of_the_nation
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_sun_yat_sen_thought_research_society
+		}
+		prerequisite = {
+			focus = CHI_preparatory_provincial_government
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_sun_yat_sen_thought_research_society
+	}
+
+	focus = {
+		id = CHI_birth_planning
+		icon = GFX_focus_CHI_birth_planning
+		x = -6
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_of_by_for_the_people
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_of_by_for_the_people
+	}
+
+	focus = {
+		id = CHI_reform_health_insurance
+		icon = GFX_focus_CHI_reform_health_insurance
+		x = -4
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_of_by_for_the_people
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_of_by_for_the_people
+	}
+
+	focus = {
+		id = CHI_crack_down_on_housing_prices
+		icon = GFX_focus_CHI_crack_down_on_housing_prices
+		x = 0
+		y = 2
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_reform_health_insurance
+		}
+		prerequisite = {
+			focus = CHI_birth_planning
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_reform_health_insurance
+	}
+
+	focus = {
+		id = CHI_conventional_economic_direction
+		icon = GFX_focus_CHI_conventional_economic_direction
+		x = -2
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_lankai_model_experiment
+		}
+		prerequisite = {
+			focus = CHI_of_by_for_the_people
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_of_by_for_the_people
+	}
+
+	focus = {
+		id = CHI_lankai_model_experiment
+		icon = GFX_focus_CHI_lankai_model_experiment
+		x = 1
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = CHI_conventional_economic_direction
+		}
+		prerequisite = {
+			focus = CHI_of_by_for_the_people
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_of_by_for_the_people
+	}
+
+	focus = {
+		id = CHI_government_calculation_unit
+		icon = GFX_focus_CHI_government_calculation_unit
+		x = -1
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_lankai_model_experiment
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_lankai_model_experiment
+	}
+
+	focus = {
+		id = CHI_auxiliary_civil_service_system
+		icon = GFX_focus_CHI_auxiliary_civil_service_system
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_government_calculation_unit
+		}
+    available = { has_completed_focus = CHI_limited_capital_market }
+    completion_reward = {  }
+		relative_position_id = CHI_government_calculation_unit
+	}
+
+	focus = {
+		id = CHI_ai_ruled_economy
+		icon = GFX_focus_CHI_ai_ruled_economy
+		x = 1
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_lankai_model_experiment
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_lankai_model_experiment
+	}
+
+	focus = {
+		id = CHI_limited_capital_market
+		icon = GFX_focus_CHI_limited_capital_market
+		x = 0
+		y = 1
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_ai_ruled_economy
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_ai_ruled_economy
+	}
+
+	focus = {
+		id = CHI_people_livelihood
+		icon = GFX_focus_CHI_people_livelihood
+		x = -2
+		y = 4
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_auxiliary_civil_service_system
+			focus = CHI_conventional_economic_direction
+		}
+		prerequisite = {
+			focus = CHI_crack_down_on_housing_prices
+		}
+		completion_reward = {  }
+		relative_position_id = CHI_of_by_for_the_people
+	}
+
+	focus = {
+		id = CHI_new_worker_peasant_policy
+		icon = GFX_focus_CHI_new_worker_peasant_policy
+		x = -10
+		y = 1
+		cost = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {  }
+		relative_position_id = CHI_premier_johnny_chiang
+		prerequisite = {
+			focus = CHI_premier_johnny_chiang
+		}
+	}
+
+	focus = {
+		id = CHI_massive_pay_raise_for_public_officials
+		icon = GFX_focus_CHI_massive_pay_raise_for_public_officials
+		x = 0
+		y = 2
+		cost = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {  }
+		relative_position_id = CHI_national_civil_servant_plan
+		prerequisite = {
+			focus = CHI_national_civil_servant_plan
+		}
+	}
+
+	focus = {
+		id = CHI_preparatory_provincial_government
+		icon = GFX_focus_CHI_preparatory_provincial_government
+		x = 0
+		y = 1
+		cost = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {  }
+		relative_position_id = CHI_restore_refugee_naturalization
+		prerequisite = {
+			focus = CHI_restore_refugee_naturalization
+		}
+	}
+	#}
+  
+  
   ##KMT經濟{
   focus = {
     id = CHI_Economy_Industry
@@ -1823,6 +2759,21 @@ focus_tree = {
     id = CHI_dont_forget_homeland
     x = 56
     y = 0
+    offset = {
+			x = 10
+			y = 0
+			trigger = { has_completed_focus = CHI_reclaim_national_father_thought }
+		}
+    offset = {
+			x = -12
+			y = 0
+			trigger = {
+        OR = {
+          has_completed_focus = CHI_premier_jaw_shaw_kong
+          has_completed_focus = CHI_premier_johnny_chiang
+        }
+      }
+		}
     cost = 3
     icon = GFX_focus_CHI_dont_forget_homeland
     continue_if_invalid = no
