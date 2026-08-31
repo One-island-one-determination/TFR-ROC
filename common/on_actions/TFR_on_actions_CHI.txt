@@ -89,44 +89,44 @@ on_actions = {
     }
   }
 
-  on_daily_CHI = {
-    effect = {
-      if = {
-        limit = {
-          AND = {
-            PRC = { has_completed_focus = PRC_operation_silent_dawn }
-            NOT = { has_country_flag = CHI_TW_6_flag }
-          }
-        }
-        CHI = {
-          country_event = { id = CHI.TW.6 }
-          set_country_flag = CHI_TW_6_flag 
-        }
-      }
-      if = {
-        limit = {
-          PRC = { has_completed_focus = PRC_shake_up_the_politburo }
-          NOT = { has_country_flag = CHI_TW_23_flag }
-        }
-        CHI = { 
-          country_event = { id = CHI.TW.23 }
-          set_country_flag = CHI_TW_23_flag
-        }
-      }
-      if = {
-        limit = {
-          AND = {
-            CHI = { is_in_faction_with = JAP } 
-            NOT = { has_country_flag = taiwan_3_flag }
-          }
-        }
-        CHI = {
-          country_event = { id = taiwan.3 } 
-          set_country_flag = taiwan_3_flag
-        }
-      }
-    }
-  }
+  # on_daily_CHI = {
+  #   effect = {
+  #     if = {
+  #       limit = {
+  #         AND = {
+  #           PRC = { has_completed_focus = PRC_operation_silent_dawn }
+  #           NOT = { has_country_flag = CHI_TW_6_flag }
+  #         }
+  #       }
+  #       CHI = {
+  #         country_event = { id = CHI.TW.6 }
+  #         set_country_flag = CHI_TW_6_flag 
+  #       }
+  #     }
+  #     if = {
+  #       limit = {
+  #         PRC = { has_completed_focus = PRC_shake_up_the_politburo }
+  #         NOT = { has_country_flag = CHI_TW_23_flag }
+  #       }
+  #       CHI = { 
+  #         country_event = { id = CHI.TW.23 }
+  #         set_country_flag = CHI_TW_23_flag
+  #       }
+  #     }
+  #     if = {
+  #       limit = {
+  #         AND = {
+  #           CHI = { is_in_faction_with = JAP } 
+  #           NOT = { has_country_flag = taiwan_3_flag }
+  #         }
+  #       }
+  #       CHI = {
+  #         country_event = { id = taiwan.3 } 
+  #         set_country_flag = taiwan_3_flag
+  #       }
+  #     }
+  #   }
+  # }
 
   on_monthly_VIN = {
     effect = {

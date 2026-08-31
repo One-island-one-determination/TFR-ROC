@@ -397,6 +397,12 @@ news_event = {
 	major = yes
 	is_triggered_only = yes
 	fire_only_once = yes
+  immediate = {  
+    hidden_effect = {
+      country_event = { id = CHI.hidden.4 days = 1}
+      set_country_flag = hidden_flag_4
+    }
+  }
 	option = {
 		name = CHI.H4.xizang_war_news.a
 		trigger = { tag = CHI }
