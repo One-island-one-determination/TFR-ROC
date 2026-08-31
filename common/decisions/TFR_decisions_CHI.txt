@@ -3694,11 +3694,15 @@ CHI_Military_purchasing_cat = {
         is_ai = yes
       }
     }
+    available = { always = no }
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 30
     days_remove = 30
     days_re_enable = 30
+    complete_effect = {
+      custom_effect_tooltip = unfinished_content
+    }
   }
   #AIDC
   Buy_weapons_from_AIDC = {
@@ -3725,11 +3729,15 @@ CHI_Military_purchasing_cat = {
         is_ai = yes
       }
     }
+    available = { always = no }
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 30
     days_remove = 30
     days_re_enable = 30
+    complete_effect = { 
+      custom_effect_tooltip = unfinished_content
+    }
   }
   #CSBC
   Buy_weapons_from_CSBC = {
@@ -3744,11 +3752,15 @@ CHI_Military_purchasing_cat = {
         is_ai = yes
       }
     }
+    available = { always = no }
     fire_only_once = no
     cancel_if_not_visible = no
     cost = 30
     days_remove = 30
     days_re_enable = 30
+    complete_effect = { 
+      custom_effect_tooltip = unfinished_content
+    }
   }
 }
 

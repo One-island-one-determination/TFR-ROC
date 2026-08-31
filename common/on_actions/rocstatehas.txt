@@ -581,36 +581,36 @@ on_actions = {
       }
     }
   }
-  on_daily = {
-    effect = {
-      # Tibet & Zangnan Liberation & Truce with India daily check
-      if = {
-        limit = {
-          CHI = {
-            has_war = yes
-            NOT = { has_country_flag = CHI_tibet_zangnan_secured }
-            controls_state = 1155 # Ngari / 阿里
-            controls_state = 322  # Nagqu / 那曲
-            controls_state = 1153 # Shigatse / 日喀則
-            controls_state = 1156 # Lhasa / 拉薩
-            controls_state = 1152 # Chamdo / 昌都
-            controls_state = 434  # Zangnan / 藏南
-            OR = {
-              has_war_with = RAJ
-              has_war_with = TIB
-              has_war_with = TAR
-              has_country_flag = CHI_liberating_tibet_flag
-            }
-          }
-        }
-        CHI = {
-          country_event = {
-            id = CHI.202
-          }
-        }
-      }
-    }
-  }
+  # on_daily = {
+  #   effect = {
+  #     # Tibet & Zangnan Liberation & Truce with India daily check
+  #     if = {
+  #       limit = {
+  #         CHI = {
+  #           has_war = yes
+  #           NOT = { has_country_flag = CHI_tibet_zangnan_secured }
+  #           controls_state = 1155 # Ngari / 阿里
+  #           controls_state = 322  # Nagqu / 那曲
+  #           controls_state = 1153 # Shigatse / 日喀則
+  #           controls_state = 1156 # Lhasa / 拉薩
+  #           controls_state = 1152 # Chamdo / 昌都
+  #           controls_state = 434  # Zangnan / 藏南
+  #           OR = {
+  #             has_war_with = RAJ
+  #             has_war_with = TIB
+  #             has_war_with = TAR
+  #             has_country_flag = CHI_liberating_tibet_flag
+  #           }
+  #         }
+  #       }
+  #       CHI = {
+  #         country_event = {
+  #           id = CHI.202
+  #         }
+  #       }
+  #     }
+  #   }
+  # }
 
   
 }
