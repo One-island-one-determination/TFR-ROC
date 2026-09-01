@@ -320,6 +320,19 @@ CHI_debug = {
     available = { always = yes }
     complete_effect = {CHI={load_focus_tree = P4_CHI_Han}}
   }
+  load_P2_KMT_CWA = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI={
+        load_focus_tree = P2_CHI_KMT
+        set_country_flag = second_CWA_win_flg
+        complete_national_focus = CHI_reclaim_national_father_thought
+      }
+    }
+  }
   load_CHI_stratocracy = {
     icon = generic_decision
     allowed = { always = yes }
@@ -401,6 +414,21 @@ CHI_debug = {
     available = { always = yes }
     complete_effect = {
       remove_gov_types = yes
+    }
+  }
+  you_dont_need_cores = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI = {
+        remove_state_core = 524
+        # remove_state_core = 648
+        remove_state_core = 1148
+        remove_state_core = 1149
+        remove_state_core = 1150
+      }
     }
   }
 }
