@@ -467,6 +467,35 @@ on_actions = {
           }
         }
       }
+      #Tuva
+      if = {
+        limit = {
+          FROM.FROM = { state = 329 }
+          FROM = {
+            tag = CHI
+            has_country_flag = CHI_owns_tuva
+          }
+          ROOT = { 
+            OR = {
+              tag = TAN
+              tag = FLN
+              tag = KAZ
+              tag = MON
+              tag = PRC
+            }
+          }
+        }
+        CHI = {
+          transfer_state = 329
+        }
+      }
+
+
+
+
+
+
+
     }
   }
   # on_daily = {
