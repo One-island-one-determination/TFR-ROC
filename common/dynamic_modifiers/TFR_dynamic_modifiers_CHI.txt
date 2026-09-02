@@ -196,7 +196,7 @@ CHI_Beijing = {
 CHI_Beiping = {
 	icon = GFX_modifiers_CHI_Beiping
 	enable = {
-		tag = CHI
+		is_owned_by = CHI
 	}
 	state_production_speed_buildings_factor = 0.04
 	local_building_slots = 4
