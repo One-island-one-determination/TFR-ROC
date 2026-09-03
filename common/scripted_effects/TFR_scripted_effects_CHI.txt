@@ -834,3 +834,25 @@ CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = {
   }
   add_to_variable = { ecn_armored_car_var = -10 }
 }
+
+CHI_broken_tech_island_electronics_research_speed_1_2 = {
+  swap_ideas = {
+    remove_idea = CHI_broken_tech_island_electronics_research_speed_1
+    add_idea = CHI_broken_tech_island_electronics_research_speed_2
+  }
+  add_to_variable = { CHI_BI_electronics_research_var = 25 }
+}
+CHI_broken_tech_island_electronics_research_speed_2_3 = {
+  swap_ideas = {
+    remove_idea = CHI_broken_tech_island_electronics_research_speed_2
+    add_idea = CHI_broken_tech_island_electronics_research_speed_3
+  }
+  add_to_variable = { CHI_BI_electronics_research_var = 35 }
+}
+CHI_broken_tech_island_electronics_research_speed_3_4 = {
+  swap_ideas = {
+    remove_idea = CHI_broken_tech_island_electronics_research_speed_3
+    add_idea = CHI_broken_tech_island_electronics_research_speed_4
+  }
+  add_to_variable = { CHI_BI_electronics_research_var = 15 }
+}

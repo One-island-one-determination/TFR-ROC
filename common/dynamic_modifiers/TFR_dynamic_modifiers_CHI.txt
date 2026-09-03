@@ -931,7 +931,7 @@ CHI_reonstruction_dynamic = {
 	business_value_factor = CHI_RE_business_value_factor	#商業產值係數
 }
 
-###韓國瑜
+####_______________________韓國瑜_______________________####
 #無往不利
 CHI_success_everywhere = {
 	icon = GFX_idea_CHI_three_quilt_coupons
@@ -991,4 +991,16 @@ CHI_love_to_chunghua = {
 	surrender_limit = CHI_LCH_surrender_limit
 	intelligence_agency_defense = CHI_LCH_intelligence_agency_defense
 	operative_slot = CHI_LCH_operative_slot
+}
+####____________________賴清德____________________##
+CHI_broken_tech_island = {
+	icon = GFX_idea_CHI_broken_tech_island
+	enable = { tag = CHI }
+	custom_modifier_tooltip = CHI_broken_tech_island_electronics_research_speed
+	stability_factor = CHI_BI_stability_factor
+	consumer_goods_factor = CHI_BI_consumer_goods_factor
+	research_speed_factor = CHI_BI_research_speed_factor
+	business_value_factor = CHI_BI_business_value_factor
+	industrial_development_monthly = CHI_BI_industrial_development_monthly
+	production_speed_energy_farm_factor = CHI_BI_production_speed_energy_farm_factor
 }
