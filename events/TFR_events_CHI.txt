@@ -7,6 +7,7 @@ add_namespace = CHI.TW #條件觸發
 add_namespace = taiwan
 add_namespace = taiwan_temp_skeleton
 add_namespace = taiwan_detente
+add_namespace = CHI.hidden
 # 中華民國2020年大選
 country_event = {
   id = CHI.1
@@ -1584,6 +1585,11 @@ country_event = {
         add_to_variable = { CHI_Economy_factory_energy_consumption = -0.15 tooltip = factory_energy_consumption_tooltip }
         add_to_variable = { CHI_Economy_production_lack_of_resource_penalty_factor = -0.15 tooltip = lack_of_resource_penalty_factor_tooltip}
       }
+
+      country_event = { id = CHI.hidden.5 days = 1}
+      set_country_flag = hidden_flag_5
+      country_event = { id = CHI.hidden.6 days = 1}
+      set_country_flag = hidden_flag_6
     }
   }
   option = {
@@ -1641,75 +1647,77 @@ country_event = {
   is_triggered_only = yes
 
   immediate = {
-    set_country_flag = CHI_tibet_zangnan_secured
-    # Transfer Tibetan states, Zangnan, and Aksai Chin to ROC
-    CHI = {
-      transfer_state = 1155 # Ngari / 阿里
-      transfer_state = 322  # Nagqu / 那曲
-      transfer_state = 1153 # Shigatse / 日喀則
-      transfer_state = 1156 # Lhasa / 拉薩
-      transfer_state = 1152 # Chamdo / 昌都
-      transfer_state = 434  # Zangnan / 藏南
-      transfer_state = 788  # Aksai Chin / 阿克賽欽
-    }
-
-
-    every_state = {
-      limit = {
-        OR = {
-          is_owned_by = RAJ
-          is_controlled_by = RAJ
-          owner = { is_subject_of = RAJ }
-          controller = { is_subject_of = RAJ }
-        }
-        OR = {
-          state = 1155
-          state = 322
-          state = 1153
-          state = 1156
-          state = 1152
-          state = 434
-          state = 788
-        }
+    hidden_effect = {
+      set_country_flag = CHI_tibet_zangnan_secured
+      # Transfer Tibetan states, Zangnan, and Aksai Chin to ROC
+      CHI = {
+        transfer_state = 1155 # Ngari / 阿里
+        transfer_state = 322  # Nagqu / 那曲
+        transfer_state = 1153 # Shigatse / 日喀則
+        transfer_state = 1156 # Lhasa / 拉薩
+        transfer_state = 1152 # Chamdo / 昌都
+        transfer_state = 434  # Zangnan / 藏南
+        transfer_state = 788  # Aksai Chin / 阿克賽欽
       }
-      CHI = { transfer_state = PREV }
-    }
 
-    if = {
-      limit = { country_exists = TIB }
-      CHI = { annex_country = { target = TIB transfer_troops = no } }
-    }
-    if = {
-      limit = { country_exists = TAR }
-      CHI = { annex_country = { target = TAR transfer_troops = no } }
-    }
-    # White peace with India / RAJ and all of its allies/subjects
-    CHI = {
-      if = {
-        limit = { country_exists = RAJ }
-        white_peace = RAJ
+
+      every_state = {
+        limit = {
+          OR = {
+            is_owned_by = RAJ
+            is_controlled_by = RAJ
+            owner = { is_subject_of = RAJ }
+            controller = { is_subject_of = RAJ }
+          }
+          OR = {
+            state = 1155
+            state = 322
+            state = 1153
+            state = 1156
+            state = 1152
+            state = 434
+            state = 788
+          }
+        }
+        CHI = { transfer_state = PREV }
       }
+
       if = {
         limit = { country_exists = TIB }
-        white_peace = TIB
+        CHI = { annex_country = { target = TIB transfer_troops = no } }
       }
       if = {
         limit = { country_exists = TAR }
-        white_peace = TAR
+        CHI = { annex_country = { target = TAR transfer_troops = no } }
       }
-    }
-    every_enemy_country = {
-      limit = {
-        OR = {
-          tag = RAJ
-          original_tag = RAJ
-          is_subject_of = RAJ
-          is_in_faction_with = RAJ
-          tag = TIB
-          tag = TAR
+      # White peace with India / RAJ and all of its allies/subjects
+      CHI = {
+        if = {
+          limit = { country_exists = RAJ }
+          white_peace = RAJ
+        }
+        if = {
+          limit = { country_exists = TIB }
+          white_peace = TIB
+        }
+        if = {
+          limit = { country_exists = TAR }
+          white_peace = TAR
         }
       }
-      white_peace = ROOT
+      every_enemy_country = {
+        limit = {
+          OR = {
+            tag = RAJ
+            original_tag = RAJ
+            is_subject_of = RAJ
+            is_in_faction_with = RAJ
+            tag = TIB
+            tag = TAR
+          }
+        }
+        white_peace = ROOT
+      }
     }
   }
 
@@ -2348,6 +2356,7 @@ country_event = {
       remove_dynamic_modifier = { modifier = CHI_Beijing }
       add_dynamic_modifier = { modifier = CHI_Beiping }
     }
+    set_province_name = { id = 9843 name = VICTORY_POINTS_9843_BEIPING }
     add_political_power = 50
   }
   option = {
@@ -2989,6 +2998,192 @@ country_event = {
         }
       }
       annex_country = { target = CHF transfer_troops = yes }
+    }
+  }
+}
+
+
+
+
+
+
+####Hidden Events
+country_event = {
+  id = CHI.hidden.0_1
+  title = CHI.hidden.0_1.t
+  desc = CHI.hidden.0_1.d
+  is_triggered_only = yes
+  hidden = yes
+  immediate = { country_event = { id = CHI.hidden.1 } set_country_flag = hidden_flag_1 }
+}
+
+country_event = {
+  id = CHI.hidden.0_2
+  title = CHI.hidden.0_2.t
+  desc = CHI.hidden.0_2.d
+  is_triggered_only = yes
+  hidden = yes
+  immediate = { country_event = { id = CHI.hidden.2 } set_country_flag = hidden_flag_2 }
+}
+
+country_event = {
+  id = CHI.hidden.0_3
+  title = CHI.hidden.0_3.t
+  desc = CHI.hidden.0_3.d
+  is_triggered_only = yes
+  hidden = yes
+  immediate = { country_event = { id = CHI.hidden.3 } set_country_flag = hidden_flag_3 }
+}
+
+country_event = {
+  id = CHI.hidden.1
+  title = CHI.hidden.1.t
+  desc = CHI.hidden.1.d
+  is_triggered_only = yes
+  hidden = yes
+  immediate = {
+    if = {
+      limit = {
+        PRC = { has_completed_focus = PRC_operation_silent_dawn }
+        NOT = { has_country_flag = CHI_TW_6_flag }
+      }
+      country_event = { id = CHI.TW.6 }
+      set_country_flag = CHI_TW_6_flag
+      clr_country_flag = hidden_flag_1
+    }
+    else_if = {
+      limit = { has_country_flag = hidden_flag_1 }
+      country_event = { id = CHI.hidden.1 days = 1 }
+    }
+  }
+}
+
+country_event = {
+  id = CHI.hidden.2
+  title = CHI.hidden.2.t
+  desc = CHI.hidden.2.d
+  is_triggered_only = yes
+  hidden = yes
+  immediate = {
+    if = {
+      limit = {
+        PRC = { has_completed_focus = PRC_the_final_opportunity }
+        NOT = { has_country_flag = CHI_TW_23_flag }
+        }
+      CHI = { 
+        country_event = { id = CHI.TW.23 }
+        set_country_flag = CHI_TW_23_flag
+      }
+      clr_country_flag = hidden_flag_2
+    }
+    else_if = {
+      limit = { has_country_flag = hidden_flag_2 }
+      country_event = { id = CHI.hidden.2 days = 1 }
+    }
+  }
+}
+
+country_event = {
+  id = CHI.hidden.3
+  title = CHI.hidden.3.t
+  desc = CHI.hidden.3.d
+  is_triggered_only = yes
+  hidden = yes
+  immediate = {
+    if = {
+      limit = {
+        CHI = { is_in_faction_with = JAP } 
+        NOT = { has_country_flag = taiwan_3_flag }
+      }
+      CHI = {
+        country_event = { id = taiwan.3 } 
+        set_country_flag = taiwan_3_flag
+      }
+      clr_country_flag = hidden_flag_3
+    }
+    else_if = {
+      limit = { has_country_flag = hidden_flag_3 }
+      country_event = { id = CHI.hidden.3 days = 1 }
+    }
+  }
+}
+
+country_event = {
+  id = CHI.hidden.4
+  title = CHI.hidden.4.t
+  desc = CHI.hidden.4.d
+  is_triggered_only = yes
+  hidden = yes
+  immediate = {
+    if = {
+      limit = {
+        CHI = {
+          has_war = yes
+          NOT = { has_country_flag = CHI_tibet_zangnan_secured }
+          controls_state = 1155 # Ngari / 阿里
+          controls_state = 322  # Nagqu / 那曲
+          controls_state = 1153 # Shigatse / 日喀則
+          controls_state = 1156 # Lhasa / 拉薩
+          controls_state = 1152 # Chamdo / 昌都
+          controls_state = 434  # Zangnan / 藏南
+          OR = {
+            has_war_with = RAJ
+            has_war_with = TIB
+            has_war_with = TAR
+            has_country_flag = CHI_liberating_tibet_flag
+          }
+        }
+      }
+      CHI = { country_event = { id = CHI.202 } }
+      clr_country_flag = hidden_flag_4
+    }
+    else_if = {
+      limit = { has_country_flag = hidden_flag_4 }
+      country_event = { id = CHI.hidden.4 days = 1 }
+    }
+  }
+}
+
+country_event = {
+  id = CHI.hidden.5
+  title = CHI.hidden.5.t
+  desc = CHI.hidden.5.d
+  is_triggered_only = yes
+  hidden = yes
+  immediate = {
+    if = {
+      limit = {
+        VIN = { is_in_faction_with = PRC }
+        VIN = { NOT = { has_country_flag = CHI_enemy_flag } }
+      }
+      VIN = { set_country_flag = CHI_enemy_flag }
+      clr_country_flag = hidden_flag_5
+    }
+    else_if = {
+      limit = { has_country_flag = hidden_flag_5 }
+      country_event = { id = CHI.hidden.5 days = 7 }
+    }
+  }
+}
+
+country_event = {
+  id = CHI.hidden.6
+  title = CHI.hidden.6.t
+  desc = CHI.hidden.6.d
+  is_triggered_only = yes
+  hidden = yes
+  immediate = {
+    if = {
+      limit = {
+        PHI = { is_in_faction_with = PRC }
+        PHI = { NOT = { has_country_flag = CHI_enemy_flag } }
+      }
+      PHI = { set_country_flag = CHI_enemy_flag }
+      clr_country_flag = hidden_flag_6
+    }
+    else_if = {
+      limit = { has_country_flag = hidden_flag_6 }
+      country_event = { id = CHI.hidden.6 days = 7 }
     }
   }
 }

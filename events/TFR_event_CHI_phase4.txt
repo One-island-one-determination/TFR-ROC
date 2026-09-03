@@ -303,11 +303,10 @@ country_event = {
 
   option = {
     name = CHI.H4.113.a
-    hidden_effect = {
-      CHI = {
-        add_political_power = 50
-        add_stability = 0.05
-      }
+    CHI = {
+      add_political_power = 50
+      add_stability = 0.05
+      set_country_flag = CHI_owns_tuva
     }
   }
 }
@@ -320,13 +319,13 @@ country_event = {
   picture = CHI_Event_H4_114
   is_triggered_only = yes
 
-  trigger = {
-  }
-  immediate = {
-    hidden_effect = {
-      329 = { controller = { save_event_target_as = tuva_old_owner } }
-    }
-  }
+  # trigger = {
+  # }
+  # immediate = {
+  #   hidden_effect = {
+  #     329 = { controller = { save_event_target_as = tuva_old_owner } }
+  #   }
+  # }
   option = {
     name = CHI.H4.114.a
     hidden_effect = {
@@ -399,6 +398,12 @@ news_event = {
 	major = yes
 	is_triggered_only = yes
 	fire_only_once = yes
+  immediate = {  
+    hidden_effect = {
+      country_event = { id = CHI.hidden.4 days = 1}
+      set_country_flag = hidden_flag_4
+    }
+  }
 	option = {
 		name = CHI.H4.xizang_war_news.a
 		trigger = { tag = CHI }

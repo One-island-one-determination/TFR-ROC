@@ -196,7 +196,7 @@ CHI_Beijing = {
 CHI_Beiping = {
 	icon = GFX_modifiers_CHI_Beiping
 	enable = {
-		tag = CHI
+		is_owned_by = CHI
 	}
 	state_production_speed_buildings_factor = 0.04
 	local_building_slots = 4
@@ -207,7 +207,7 @@ CHI_Beiping = {
 
 ##GAW
 CHI_asia_pacific_armament = {
-	icon = CHI_Coordinating_Allied_Bombing_Operations
+	icon = GFX_idea_CHI_Coordinating_Allied_Bombing_Operations
 	enable = {
 		tag = CHI
 	}
@@ -714,7 +714,7 @@ CHI_Economy = {
 	conversion_cost_civ_to_mil_factor = CHI_Economy_conversion_cost_civ_to_mil_factor
 	production_speed_office_park_factor = CHI_Economy_production_speed_office_park_factor
 	production_speed_nuclear_reactor_factor = CHI_Economy_production_speed_nuclear_reactor_factor
-	resource_trade_cost_bonus_per_factory = CHI_Economy_resource_trade_cost_bonus_per_factory
+	trade_cost_for_target_factor = CHI_Economy_resource_trade_cost_bonus_per_factory
 	local_resources_factor = CHI_Economy_local_resources_factor
 	production_factory_efficiency_gain_factor = CHI_Economy_production_factory_efficiency_gain_factor
 	industrial_development_monthly = CHI_Economy_industrial_development_monthly
@@ -744,7 +744,7 @@ CHI_Economy_cn = {
 	conversion_cost_civ_to_mil_factor = CHI_Economy_conversion_cost_civ_to_mil_factor
 	production_speed_office_park_factor = CHI_Economy_production_speed_office_park_factor
 	production_speed_nuclear_reactor_factor = CHI_Economy_production_speed_nuclear_reactor_factor
-	resource_trade_cost_bonus_per_factory = CHI_Economy_resource_trade_cost_bonus_per_factory
+	trade_cost_for_target_factor = CHI_Economy_resource_trade_cost_bonus_per_factory
 	local_resources_factor = CHI_Economy_local_resources_factor
 	production_factory_efficiency_gain_factor = CHI_Economy_production_factory_efficiency_gain_factor
 	industrial_development_monthly = CHI_Economy_industrial_development_monthly
@@ -934,7 +934,7 @@ CHI_reonstruction_dynamic = {
 ###韓國瑜
 #無往不利
 CHI_success_everywhere = {
-	icon = CHI_three_quilt_coupons
+	icon = GFX_idea_CHI_three_quilt_coupons
 	enable = {
 		tag = CHI
 	}

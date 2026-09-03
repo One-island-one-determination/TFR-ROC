@@ -53,119 +53,7 @@ on_actions = {
         }
         set_global_flag = skip_default_capitulation
       }
-      if = {
-        limit = {
-          FROM = {
-            OR = {
-              original_tag = NDF
-              original_tag = MIL
-              original_tag = AFP
-            }
-          }
-          ROOT = {
-            OR = {
-              original_tag = NDF
-              original_tag = MIL
-              original_tag = AFP
-            }
-          }
-        }
-        FROM = {
-          white_peace = ROOT
-          annex_country = {
-            target = ROOT
-            transfer_troops = no
-          }
-        }
-        set_global_flag = skip_default_capitulation
-      }
-      if = {
-        limit = {
-          FROM = {
-            OR = {
-              original_tag = PHN
-            }
-          }
-          ROOT = {
-            OR = {
-              original_tag = MIL
-              original_tag = PHI
-            }
-          }
-        }
-        FROM = {
-          white_peace = ROOT
-          PHI = {
-            annex_country = {
-              target = PHN
-              transfer_troops = yes
-            }
-            annex_country = {
-              target = MIL
-              transfer_troops = yes
-            }
-            annex_country = {
-              target = AFP
-              transfer_troops = yes
-            }
-            annex_country = {
-              target = NDF
-              transfer_troops = yes
-            }
-            every_state = {
-              limit = {
-                is_core_of = PHI
-              }
-              remove_core_of = NAP
-              remove_core_of = AFP
-              remove_core_of = MIL
-              remove_core_of = PHN
-            }
-            set_politics = {
-              ruling_party = nationalist
-              last_election = "2016.1.16"
-              election_frequency = 48
-              elections_allowed = yes
-            }
-            set_popularities = {
-              authoritarian_democrat = 40
-              nationalist = 60
-            }
-            set_cosmetic_tag = PHI_civil_war_AFP_WON
-            create_country_leader = {
-              name = PHN_Torribio_D_Adachi
-              picture = "gfx/Leaders/PHI_civil_war/PHN_Torribio_D_Adachi.png"
-              ideology = military_junta
-              expire = "1.1.1.1"
-            }
-            country_event = {
-              id = ROC.55
-              days = 720
-            }
-            random_list = {
-              50 = {
-                set_country_flag = pdto_member
-                JAP = {
-                  add_to_faction = PHI
-                }
-                news_event = {
-                  id = ROC.46
-                }
-              }
-              50 = {
-                set_country_flag = eadi_member
-                PRC = {
-                  add_to_faction = PHI
-                }
-                news_event = {
-                  id = ROC.47
-                }
-              }
-            }
-          }
-        }
-        set_global_flag = skip_default_capitulation
-      }
+
       if = {
         limit = {
           NOT = {
@@ -579,36 +467,67 @@ on_actions = {
           }
         }
       }
-    }
-  }
-  on_daily = {
-    effect = {
-      # Tibet & Zangnan Liberation & Truce with India daily check
+      #Tuva
       if = {
         limit = {
-          CHI = {
-            has_war = yes
-            NOT = { has_country_flag = CHI_tibet_zangnan_secured }
-            controls_state = 1155 # Ngari / 阿里
-            controls_state = 322  # Nagqu / 那曲
-            controls_state = 1153 # Shigatse / 日喀則
-            controls_state = 1156 # Lhasa / 拉薩
-            controls_state = 1152 # Chamdo / 昌都
-            controls_state = 434  # Zangnan / 藏南
+          FROM.FROM = { state = 329 }
+          FROM = {
+            tag = CHI
+            has_country_flag = CHI_owns_tuva
+          }
+          ROOT = { 
             OR = {
-              has_war_with = RAJ
-              has_war_with = TIB
-              has_war_with = TAR
-              has_country_flag = CHI_liberating_tibet_flag
+              tag = TAN
+              tag = FLN
+              tag = KAZ
+              tag = MON
+              tag = PRC
             }
           }
         }
         CHI = {
-          country_event = {
-            id = CHI.202
-          }
+          transfer_state = 329
         }
       }
+
+
+
+
+
+
+
     }
   }
+  # on_daily = {
+  #   effect = {
+  #     # Tibet & Zangnan Liberation & Truce with India daily check
+  #     if = {
+  #       limit = {
+  #         CHI = {
+  #           has_war = yes
+  #           NOT = { has_country_flag = CHI_tibet_zangnan_secured }
+  #           controls_state = 1155 # Ngari / 阿里
+  #           controls_state = 322  # Nagqu / 那曲
+  #           controls_state = 1153 # Shigatse / 日喀則
+  #           controls_state = 1156 # Lhasa / 拉薩
+  #           controls_state = 1152 # Chamdo / 昌都
+  #           controls_state = 434  # Zangnan / 藏南
+  #           OR = {
+  #             has_war_with = RAJ
+  #             has_war_with = TIB
+  #             has_war_with = TAR
+  #             has_country_flag = CHI_liberating_tibet_flag
+  #           }
+  #         }
+  #       }
+  #       CHI = {
+  #         country_event = {
+  #           id = CHI.202
+  #         }
+  #       }
+  #     }
+  #   }
+  # }
+
+  
 }

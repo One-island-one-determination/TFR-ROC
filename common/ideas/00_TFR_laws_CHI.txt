@@ -1,0 +1,575 @@
+# ideas = {
+# 	safety_laws = {
+# 		law = yes
+# 		use_list_view = yes
+# 		CHI_safety_law = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_safety_law
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_idea = CHI_safety_law
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				stability_factor = -0.025
+# 				production_factory_efficiency_gain_factor = 0.05
+# 				production_speed_buildings_factor = 0.05
+# 				industrial_capacity_factory = 0.025
+# 				industrial_capacity_dockyard = 0.025
+# 				society_development_monthly = -0.005
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 		CHI_safety_law_hard = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_safety_law_hard
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_idea = CHI_safety_law_hard
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				stability_factor = -0.05
+# 				production_factory_efficiency_gain_factor = 0.07
+# 				production_speed_buildings_factor = 0.07
+# 				industrial_capacity_factory = 0.03
+# 				industrial_capacity_dockyard = 0.03
+# 				society_development_monthly = -0.01
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 	}
+# 	police_laws = {
+# 		law = yes
+# 		use_list_view = yes
+# 		CHI_police_law = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_police_law
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					NOT = {
+# 						has_country_flag = CHI_police_law_outed_flag
+# 					}
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				political_power_factor = -0.01
+# 				stability_factor = 0.03
+# 				personal_expense = 0.2
+# 				resistance_growth = -0.1
+# 				resistance_decay = 0.1
+# 				compliance_growth = 0.1
+# 				army_intel_to_others = 15
+# 				airforce_intel_to_others = 15
+# 				navy_intel_to_others = 15
+# 				civilian_intel_to_others = 15
+# 				society_development_monthly = -0.005
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 		CHI_defentic_democracy = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_police_law
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_country_flag = CHI_defentic_democracy_flag
+# 					NOT = {
+# 						has_country_flag = CHI_police_law_outed_flag
+# 					}
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				political_power_factor = -0.1
+# 				stability_factor = 0.07
+# 				personal_expense = 0.5
+# 				resistance_growth = -0.15
+# 				resistance_decay = 0.15
+# 				compliance_growth = 0.15
+# 				army_intel_to_others = 15
+# 				airforce_intel_to_others = 15
+# 				navy_intel_to_others = 15
+# 				civilian_intel_to_others = 15
+# 				society_development_monthly = 0.005
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 		CHI_surveillance_state_law = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_surveillance_state
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_country_flag = CHI_surveillance_state_law_flag
+# 					has_idea = CHI_surveillance_state_law
+# 					NOT = {
+# 						has_country_flag = CHI_police_law_outed_flag
+# 					}
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				political_power_factor = -0.075
+# 				stability_factor = 0.075
+# 				personal_expense = 0.3
+# 				resistance_growth = -0.3
+# 				resistance_decay = 0.3
+# 				compliance_growth = 0.3
+# 				society_development_monthly = -0.015
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 		CHI_police_law_hard = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_police_law_hard
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_country_flag = CHI_police_more_hard_flag
+# 					NOT = {
+# 						has_country_flag = CHI_police_law_outed_flag
+# 					}
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				political_power_factor = -0.03
+# 				stability_factor = 0.05
+# 				personal_expense = 0.25
+# 				resistance_growth = -0.3
+# 				resistance_decay = 0.3
+# 				compliance_growth = 0.3
+# 				army_intel_to_others = 8
+# 				airforce_intel_to_others = 8
+# 				navy_intel_to_others = 8
+# 				civilian_intel_to_others = 8
+# 				society_development_monthly = -0.01
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 		CHI_police_law_household = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_police_law_household
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_country_flag = CHI_police_more_hard_flag
+# 					NOT = {
+# 						has_country_flag = CHI_police_law_outed_flag
+# 					}
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				political_power_factor = 0.05
+# 				stability_factor = 0.1
+# 				personal_expense = 0.4
+# 				resistance_growth = -0.4
+# 				resistance_decay = 0.4
+# 				compliance_growth = 0.4
+# 				army_intel_to_others = 2
+# 				airforce_intel_to_others = 2
+# 				navy_intel_to_others = 2
+# 				civilian_intel_to_others = 2
+# 				society_development_monthly = -0.025
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 	}
+# 	welfare_laws = {
+# 		law = yes
+# 		use_list_view = yes
+# 		CHI_taiwan_welfare = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 3
+# 			picture = laws_CHI_taiwan_welfare
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_idea = CHI_taiwan_welfare
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				personal_expense = 0.35
+# 				stability_factor = 0.03
+# 				production_speed_infrastructure_factor = 0.1
+# 				society_development_monthly = 0.003
+# 				poverty_development_monthly = 0.003
+# 			}
+# 		}
+# 		CHI_welfare_hard_laws = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 4
+# 			picture = laws_CHI_welfare_hard_laws
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_country_flag = CHI_welfare_hard_flag
+# 					NOT = {
+# 						has_country_flag = CHI_police_law_outed_flag
+# 					}
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				stability_factor = 0.015
+# 				poverty_development_monthly = 0.001
+# 				society_development_monthly = 0.001
+# 				personal_expense = 0.3
+# 			}
+# 		}
+# 	}	
+# 	education_laws = {
+# 		law = yes
+# 		use_list_view = yes
+# 		CHI_taiwan_education = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 3
+# 			picture = laws_CHI_taiwan_education
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_idea = CHI_taiwan_education
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				stability_factor = -0.015
+# 				personal_expense = 0.1
+# 				academic_development_monthly = 0.007
+# 			}
+# 		}
+# 		CHI_education_under_guidance = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 4
+# 			picture = laws_CHI_taiwan_education_under_guidance
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_country_flag = CHI_education_under_guidance_flag
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				stability_factor = -0.02
+# 				personal_expense = 0.1
+# 				academic_development_monthly = 0.012
+# 			}
+# 		}
+# 	}	
+# 	immigration_laws = {
+# 		law = yes
+# 		use_list_view = yes
+# 		CHI_taiwan_immigration = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 2
+# 			picture = laws_CHI_taiwan_immigration
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_idea = CHI_taiwan_immigration
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				monthly_population = 0.2
+# 				political_power_gain = -0.1
+# 				min_export = -0.01
+# 			}
+# 		}
+# 	}	
+# 	mobilization_laws = {
+# 		law = yes
+# 		use_list_view = yes
+# 		CHI_mobilization_hard_laws = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_mobilization_hard_laws
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					NOT = {
+# 						has_country_flag = CHI_mobilization_reform_flag
+# 					}
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				stability_factor = -0.05
+# 				conscription = 0.04
+# 				conscription_factor = -0.8
+# 				industrial_capacity_factory = -0.05
+# 				industrial_capacity_dockyard = -0.05
+# 				production_speed_buildings_factor = -0.15
+# 				training_time_factor = -0.7
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 		CHI_mobilization_hard_laws_2 = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_mobilization_hard_laws_2
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_country_flag = CHI_mobilization_upgrade_flag
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				stability_factor = -0.1
+# 				conscription = 0.05
+# 				conscription_factor = -0.15
+# 				industrial_capacity_factory = -0.1
+# 				industrial_capacity_dockyard = -0.1
+# 				production_speed_buildings_factor = -0.15
+# 				training_time_factor = -0.5
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 	}
+	
+# 	female_service_laws = {
+# 		law = yes
+# 		use_list_view = yes
+# 		CHI_only_male_service = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_only_male_service
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_idea = CHI_only_male_service
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				conscription_factor = -0.05
+# 				army_org_factor = 0.03
+# 				female_random_army_leader_chance = -0.5
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 	}	
+# 	draft_exemption_laws = {
+# 		law = yes
+# 		use_list_view = yes
+# 		CHI_social_agent_law = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_social_agent_law
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_idea = CHI_social_agent_law
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				war_support_factor = -0.05
+# 				conscription_factor = 0.05
+# 				production_speed_buildings_factor = 0.025
+# 				farming_development_monthly = -0.001
+# 				society_development_monthly = -0.001
+# 				academic_development_monthly = -0.001
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 	}
+# 	training_laws = {
+# 		law = yes
+# 		use_list_view = yes
+# 		CHI_all_army_elite = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 1
+# 			picture = laws_CHI_all_army_elite
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_idea = CHI_all_army_elite
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			modifier = {
+# 				stability_factor = -0.1
+# 				minimum_training_level = 0.15
+# 				training_time_army_factor = 0.2
+# 				army_org_factor = 0.2
+# 				coordination_bonus = 0.2
+# 				special_forces_cap = 0.25
+# 				battalion_upkeep_factor = 0.25
+# 				aircraft_upkeep_factor = 0.25
+# 				ship_upkeep_factor = 0.25
+# 				military_development_monthly = 0.02
+# 			}
+# 			ai_will_do = {
+# 				base = 1
+# 			}
+# 		}
+# 	}	
+# 	female_laws = {
+# 		law = yes
+# 		use_list_view = yes
+# 		CHI_equal_female = {
+# 			removal_cost = -1
+# 			cost = 100
+# 			level = 3
+# 			allowed = { tag = CHI }
+# 			visible = {
+# 				hidden_trigger = {
+# 					original_tag = CHI
+# 					has_idea = CHI_equal_female
+# 				}
+# 			}
+# 			allowed_to_remove = {
+# 				hidden_trigger = {
+# 					always = no
+# 				}
+# 			}
+# 			picture = laws_CHI_equal_female
+# 			default = yes
+# 			allowed_to_remove = {
+# 			}
+# 			modifier = {
+# 				MONTHLY_POPULATION = -0.05
+# 				industrial_capacity_factory = 0.065
+# 				industrial_capacity_dockyard = 0.03
+# 				society_development_monthly = 0.006
+# 			}
+# 		}
+# 	}	
+# }

@@ -513,6 +513,7 @@
  CHI_project_ROCA_reform_3_desc: "隨著軍隊重組順利進行，我們將恢復軍級番號，提升所有將領的指揮能力，並下達新的軍指揮所編制。"
  CHI_project_ROCA_reform_3_idea: "恢復軍級番號"
  CHI_project_ROCA_reform_3_idea_desc: "我們的軍級作戰編制已經恢復，將軍們的指揮能力獲得了全面提升。"
+ CHI_expanded_command_trait: "恢復軍級番號"
 
  CHI_project_ROCA_reform_4: "確立軍事指揮系統"
  CHI_project_ROCA_reform_4_desc: "國軍的現代化軍事指揮系統已正式確立！我們的師團組織度、戰場寬度適應力、增援及主動性皆獲得大幅提升，並重新開放志願軍的派遣。"
@@ -787,6 +788,7 @@
  CHI_Wartime_normal_system_desc: "台北市議員苗博雅曾經解釋過當代戰爭的特徵:不是所有地方都是前線，即使金門、馬祖遭受解放軍入侵台灣本島民眾仍能正常生活，歷史中八年抗戰戰爭期間抑或是國共內戰，身處後方的學生老師依然能夠正常上下學，50年前的戰爭尚且如此，現代戰爭自然也不必多說。\n\n等到真正「山洪浩蕩」的時候，本島居民的將不會受到太多影響，上班、上學、公共服務正常運行，國家僅在前線兵源不足或是共軍發動轟炸時才會有所行動。因此，政府將在此呼籲各界無須驚慌，國家當前不會進入緊急狀態或發動戒嚴，也不會主動挑起兩岸的軍事紛爭。\n\n不過也有零星反對者也對此提出異議，指出當年中國幅員遼闊，前線距離那些仍能正常作息的城市與學校相當遙遠，可隨著共軍武器長程化與精確化進程越發明顯，現在台灣幾乎都在共軍沿岸基地的打擊範圍內，何來「後方」一說?"
  CHI_Martial_law_declared: "宣佈戒嚴"
  CHI_Martial_law_declared_desc: "對許多臺灣人而言，「戒嚴」兩字承載著沉重的歷史記憶與不安情緒。那段時期的陰影，讓社會對任何形式的權力收縮都格外敏感。\n\n然而在戰火逼近、通訊與交通面臨威脅之際，維持社會秩序與關鍵設施運作成為當務之急。政府不得不在安全與自由之間做出艱難取捨，啟動臨時性的緊急管制措施，以確保整體防衛體系能有效運作。\n\n我們並非要走回頭路，而是在非常時期為了守護這座島嶼所做的非常決定。當危機解除，權力也將回歸常態。"
+ CHI_Martial_law: "戒嚴狀態"
  CHI_Arresting_traitors: "抓捕通敵者"
  CHI_Arresting_traitors_desc: "當戰爭逼近，威脅不僅來自邊境之外，也可能潛伏於國境之內。情報顯示，部分勢力正暗中配合敵方行動，透過散播謠言、蒐集資訊與動搖民心，試圖從內部削弱我們的抵抗能力。\n\n這些人，被稱為第五縱隊。\n\n他們未必身著敵軍制服，卻在關鍵時刻比正面進攻更具破壞性。政府決定啟動全面的反滲透行動，整合情報、警政與安全體系，優先清查疑似通敵網絡，切斷其與外部勢力的聯繫。然而，我們也必須承認，這是一條危險的道路。過度的懷疑可能撕裂社會，錯誤的指控可能留下難以彌補的傷痕。在安全與自由之間，國家被迫做出取捨。\n\n若內部自行崩解，再堅固的防線，也將毫無意義。"
  CHI_Inciting_democracyactivists_withinChina: "煽動中國境內民運人士"
@@ -1223,6 +1225,7 @@
  factory_energy_consumption_tooltip: " $MODIFIER_FACTORY_ENERGY_CONSUMPTION$: $RIGHT|-=%1$"
  min_export_tooltip: "$MODIFIER_MIN_EXPORT_FACTOR$：$RIGHT|Y=%1$"
  resource_trade_cost_bonus_per_factory_tooltip: " $MODIFIER_RESOURCE_TRADE_COST_BONUS_PER_FACTORY$：$RIGHT|+=0$"
+ CHI_trade_cost_for_target_factor_tt: " $MODIFIER_TRADE_COST_TO_TARGET_FACTOR$：$RIGHT|G=%1$"
  consumer_goods_expected_value_tooltip: "$MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE$：$RIGHT|Y=%1$"
  conversion_cost_civ_to_mil_factor_tooltip: "$MODIFIER_CONVERSION_COST_CIV_TO_MIL_FACTOR$：$RIGHT|-=%$"
  conversion_cost_mil_to_civ_factor_tooltip: "$MODIFIER_CONVERSION_COST_MIL_TO_CIV_FACTOR$：$RIGHT|-=%$"
@@ -1334,7 +1337,6 @@
  production_speed_rocket_site_factor_tooltip: "$modifier_production_speed_rocket_site_factor$：$RIGHT|+=%$"
  production_speed_nuclear_reactor_factor_tooltip: "$modifier_production_speed_nuclear_reactor_factor$：$RIGHT|+=%$"
  production_speed_fuel_silo_factor_tooltip: "$modifier_production_speed_fuel_silo_factor$：$RIGHT|+=%$"
- production_speed_railway_factor_tooltip: "$modifier_production_speed_rail_way_factor$：$RIGHT|+=%$"
  production_speed_rail_way_factor_tooltip: "$modifier_production_speed_rail_way_factor$：$RIGHT|+=%$"
  production_speed_supply_node_factor_tooltip: "$modifier_production_speed_supply_node_factor$：$RIGHT|+=%$"
  army_fuel_capacity_factor_tooltip: "$MODIFIER_ARMY_FUEL_CONSUMPTION_FACTOR$：$RIGHT|+=%2$"
@@ -1451,8 +1453,8 @@
  personal_value_factor_tooltip: "£GFX_dx_yellow 个人产值系数：$RIGHT|+=%1$"
  production_speed_office_park_factor_tooltip: "$modifier_production_speed_office_park_factor$：$RIGHT|+=%1$"
  production_speed_nuclear_reactor_factor_tooltip: "$modifier_production_speed_nuclear_reactor_factor$：$RIGHT|+=%1$"
- expense_growth_factor_tooltip: "月度开支增长率：$RIGHT|-=%1$"
- personal_expense_factor_tooltip: "个人消费支出系数：$RIGHT|-=%1$"
+ expense_growth_factor_tooltip: "£GFX_dx 月度开支增长率：$RIGHT|-=%1$"
+ personal_expense_factor_tooltip: "£GFX_dx_yellow 个人消费支出系数：$RIGHT|-=%1$"
  inflation_monthly_tooltip: "£inflation 月度通胀率变化：$RIGHT|Y=%2$"
 
  inflation_monthly_factor_tooltip: "£inflation 月度通胀系数：$RIGHT|Y=%1$"
@@ -2333,7 +2335,7 @@
  CHI_population_aging_dynamic_desc: "東亞各國長期面臨少子化與高齡化的雙重壓力，經濟發展成熟、教育成本提高與生活負擔沉重，使出生率持續下滑。\n\n臺灣尤為嚴重——低生育率已維持多年，青年人口逐步萎縮，老年人口比例快速攀升，整體人口結構呈現倒金字塔化。\n\n勞動力縮減、社福負擔增加、可動員役齡人口下降人口逐漸下降..，種種問題衝擊著台灣社會，倘若我們再不重視問題，§R臺灣將墜入萬劫不復的深淵§!。"
  
  CHI_Population_Aging_decisions: "人口危機"
- CHI_Population_Aging_decisions_desc: "戰後帶來的人口增長曾是島嶼最堅強的後盾，但其造成的老齡化卻成為現在國家沉重的負擔。\n長期以來，教育成本提高、房價壓力沉重、工時增長與就業不穩定，使年輕世代對成家生育抱持遲疑。婚齡持續延後，生育率屢創新低，新生兒人數逐年下滑。當教室逐漸空置，產業開始面臨勞動力短缺，少子化已不再只是預估的數字，而是滲入整個社會的結構性問題。人口基礎的萎縮，直接影響我國未來數十年的國力。\n勞動人口減少，經濟成長動能放緩；扶養比上升，財政與社福負擔加重；兵源縮減，使國防體系承受大量壓力。當外部威脅節節攀高，內部人口卻在急速收縮，國家承擔風險的能力也隨之下降。如果無法建立更友善的育兒條件與穩定的生活預期，未來世代的規模將持續縮小，社會活力亦將逐步流失。\n§R這足以決定國家未來的命運。§!\n\n當前少子化影響:\n月度人口[?PA_monthly_population|=%+1] \n月度支出增長[?PA_expense_growth_factor|=%+1] \n月度通膨率變化[?PA_inflation_monthly|=%+1] \n個人產值係數[?PA_personal_value_factor|=%+1]\n私人消費係數[?PA_personal_expense_factor|=%+1] \n月度貧困率[?PA_poverty_development_monthly|=%+1] \n月度社會發展[?PA_society_development_monthly|=%+1]"
+ CHI_Population_Aging_decisions_desc: "戰後帶來的人口增長曾是島嶼最堅強的後盾，但其造成的老齡化卻成為現在國家沉重的負擔。\n長期以來，教育成本提高、房價壓力沉重、工時增長與就業不穩定，使年輕世代對成家生育抱持遲疑。婚齡持續延後，生育率屢創新低，新生兒人數逐年下滑。當教室逐漸空置，產業開始面臨勞動力短缺，少子化已不再只是預估的數字，而是滲入整個社會的結構性問題。人口基礎的萎縮，直接影響我國未來數十年的國力。\n勞動人口減少，經濟成長動能放緩；扶養比上升，財政與社福負擔加重；兵源縮減，使國防體系承受大量壓力。當外部威脅節節攀高，內部人口卻在急速收縮，國家承擔風險的能力也隨之下降。如果無法建立更友善的育兒條件與穩定的生活預期，未來世代的規模將持續縮小，社會活力亦將逐步流失。\n§R這足以決定國家未來的命運。§!\n\n當前少子化影響:\n月度人口[?PA_monthly_population|=%+1] \n月度支出增長[?PA_expense_growth_factor|=%-1] \n月度通膨率變化[?PA_inflation_monthly|=%+1] \n個人產值係數[?PA_personal_value_factor|=%+1]\n私人消費係數[?PA_personal_expense_factor|=%-1] \n月度貧困率[?PA_poverty_development_monthly|=%+1] \n月度社會發展[?PA_society_development_monthly|=%+1]"
  CHI_expand_public_ltc: "擴建政府長照機構"
  CHI_expand_public_ltc_desc: "本決議可執行2次，目前已執行[?var_CHI_expand_public_ltc]次"
  CHI_childcare_subsidies: "提供育兒補貼"
@@ -2343,7 +2345,7 @@
  CHI_co_learning: "老幼共學"
  CHI_co_living: "青銀共居"
  CHI_Population_Aging_end: "終結人口危機"
- CHI_Population_Aging_end_avaliable_tooltip: "須完成所有人口危機相關決議與國策([?var_CHI_Population_Aging_decisions]/10)"
+ CHI_Population_Aging_end_avaliable_tooltip: "須完成所有人口危機相關決議與國策([?var_CHI_Population_Aging_decisions]/8)"
  CHI_Population_Aging_end_tooltip: "移除§Y人口危機§!動態修正及人口危機決議"
 
  
@@ -2427,6 +2429,7 @@
  CHI_Beiping: "北平市"
 
  STATE_608_BEIPING: "北平"
+ VICTORY_POINTS_9843_BEIPING: "北平"
 
 
  CHI_Establish_local_officials: "宣稱正統"
@@ -2702,7 +2705,7 @@
  CHI_underground_assenmly_point_tooltip: "完成國策§Y修昔底德如是說§!時工廠受轟炸易損性-75%持續一個月"
  
  CHI_thus_spoke_thucydides_desc: "修昔底德陷阱——當某個區域有兩大強權崛起時可能會因為對對方的恐懼造成戰略誤判引發一場毀滅性戰爭。\n\n美國陷入內戰之後中國共產黨領導的共產中國被世界認為是無庸置疑的地方霸權，但是太約在台海的勝利與迅速崛起打破了世人的認知，這個東亞霸主不是無法被推倒的高牆。\n\n如今中國走出戰爭的陰霾，太約加深彼此合作形成一體化的軍事集團，雙方在東南亞的外交博弈激化了亞洲的緊張關係，而這顆宣戰的按鈕終於被按下，東亞再次重燃戰火......"
- CHI_our_final_fight: "§Y大亞洲戰爭§!已經§R開始。§!"
+ CHI_our_final_fight_flag: "§Y大亞洲戰爭§!已經§R開始。§!"
  
  CHI_eastern_terrain_mapping_desc: "在韓戰時期，蔣介石政府曾經向美國提議從福建登錄中國分散解放軍的兵力遭到美國否決，這份計畫再度被提出時引起了太約高層的興趣。經過表決後同意以中華民國為主帶領部分部隊對福建沿海登錄襲擾。\n\n現在要測繪對岸現在的沿海地形尋找適合登錄的地區。"
  CHI_coverage_priority_tactics_desc: "對岸的防禦火炮著實煩人，如果想盡可能保證有生力量登陸上岸就必須摧毀敵人的岸防火炮，遺憾的是，大約的空軍主力正在朝鮮半島與東協交戰，我們沒有足夠的空中力量完成轟炸任務，目前只能採取讓戰艦火炮轟炸並用無人機蜂群戰術的方式清理敵人。"
