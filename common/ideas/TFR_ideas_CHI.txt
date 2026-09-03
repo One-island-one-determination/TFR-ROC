@@ -1733,6 +1733,51 @@ ideas = {
 				breakthrough_bonus_against = 0.2
 			}
 		}
+
+
+
+
+
+
+		#_____________賴清德________________#
+		CHI_TSMC_aggressive_invest = {
+			name = CHI_TSMC_aggressive_invest
+			picture = CHI_TSMC_aggressive_invest
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_office_park_factor = 0.15
+				consumer_goods_factor = -0.05
+				income_growth_factor = 0.05
+			}
+			
+		}
+		CHI_reshuffle_cabinet = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			removal_cost = -1
+			modifier = {
+				foreign_minister_cost_factor = -0.95
+				economic_minister_cost_factor = -0.95
+				interior_minister_cost_factor = -0.95
+				intelligence_minister_cost_factor = -0.95
+				theorist_minister_cost_factor = -0.95
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 	##hidden_ideas, generally be research_bonus and equipment_bonus
 	hidden_ideas = {
@@ -2092,6 +2137,51 @@ ideas = {
 				tag = PRC
 				attack_bonus_against = 0.05
 				defense_bonus_against = 0.05
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#_____________賴清德________________#
+		#破碎的科技島_電子
+		CHI_broken_tech_island_electronics_research_speed_1 = {
+			name = CHI_broken_tech_island
+			picture = CHI_broken_tech_island
+			research_bonus = {
+				electronics = -0.8
+			}
+		}
+		CHI_broken_tech_island_electronics_research_speed_2 = {
+			name = CHI_broken_tech_island
+			picture = CHI_broken_tech_island
+			research_bonus = {
+				electronics = -0.55
+			}
+		}
+		CHI_broken_tech_island_electronics_research_speed_3 = {
+			name = CHI_broken_tech_island
+			picture = CHI_broken_tech_island
+			research_bonus = {
+				electronics = -0.2
+			}
+		}
+		CHI_broken_tech_island_electronics_research_speed_4 = {
+			name = CHI_broken_tech_island
+			picture = CHI_broken_tech_island
+			research_bonus = {
+				electronics = -0.05
 			}
 		}
 	}
