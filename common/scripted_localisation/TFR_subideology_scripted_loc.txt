@@ -45,6 +45,7 @@ defined_text = {
 		localization_key = "[GetSubIdeologyLocNatSoc]"
 	}
 }
+
 	
 #Totalitarian socialist
 	
@@ -923,7 +924,7 @@ defined_text = {
 	
 defined_text = {
 	name = GetSubIdeologyLocSocLib
-	text = {
+		text = {
 		trigger = {
 			has_country_leader_ideology = Taiwanese_Progressivism
 		}
@@ -1198,7 +1199,7 @@ defined_text = {
 	
 defined_text = {
 	name = GetSubIdeologyLocCon
-	text = {
+		text = {
 		trigger = {
 			has_country_leader_ideology = Taiwanese_constitutionalism
 		}
@@ -2092,7 +2093,15 @@ defined_text = {
 		}
 		localization_key = state_liberalism
 	}
+	text = {
+		trigger = {
+			tag = CHI
+			has_country_leader_ideology = han_kuo_yu_thoughts
+		}
+		localization_key = han_kuo_yu_thoughts
+	}
 }
+
 
 	#Despotist
 	
