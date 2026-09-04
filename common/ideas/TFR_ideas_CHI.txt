@@ -1753,6 +1753,7 @@ ideas = {
 			
 		}
 		CHI_reshuffle_cabinet = {
+			name = CHI_reshuffle_cabinet
 			picture = generic_parliament_idea
 		    traits = {
 		        ZZZ_blank_idea_trait
@@ -1766,6 +1767,85 @@ ideas = {
 				theorist_minister_cost_factor = -0.95
 			}
 		}
+		CHI_democratic_taiwan = {
+			name = CHI_democratic_taiwan
+			picture = CHI_democratic_taiwan
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.001
+				social_liberal_drift = 0.0015
+			}
+		}
+		CHI_resist_china_protect_taiwan = {
+			name = CHI_resist_china_protect_taiwan
+			picture = CHI_resist_china_protect_taiwan
+			removal_cost = -1
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		CHI_diverse_big_coliation = {
+			name = CHI_diverse_big_coliation
+			picture = CHI_diverse_big_coliation
+			removal_cost = -1
+			modifier = {
+				social_liberal_drift = 0.001
+				social_democrat_drift = 0.001
+				market_liberal_drift = 0.001
+				conservative_drift = 0.001
+			}
+		}
+		CHI_new_taiwan_gogo = {
+			name = CHI_new_taiwan_gogo
+			picture = CHI_new_taiwan_gogo
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+		CHI_taiwan_good_together = {
+			name = CHI_taiwan_good_together
+			picture = CHI_taiwan_good_together
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.25
+				monthly_population = 0.4
+				expense_growth_factor = 0.15
+				consumer_goods_factor = 0.1
+				inflation_monthly = -0.001
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+				personal_expense_factor = 0.12
+				personal_value_factor = 0.05
+				business_value_factor = 0.14
+				society_development_monthly = 0.015
+				academic_development_monthly = 0.01
+				farming_development_monthly = 0.005
+				poverty_development_monthly = 0.015
+			}
+		}
+
+
+
+
+
+
+
 
 
 

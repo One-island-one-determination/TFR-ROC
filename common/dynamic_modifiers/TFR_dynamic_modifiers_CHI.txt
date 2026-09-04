@@ -1004,3 +1004,25 @@ CHI_broken_tech_island = {
 	industrial_development_monthly = CHI_BI_industrial_development_monthly
 	production_speed_energy_farm_factor = CHI_BI_production_speed_energy_farm_factor
 }
+CHI_housing_justice = {
+	icon = GFX_idea_CHI_housing_justice
+	enable = { tag = CHI }
+	inflation_monthly = CHI_HJ_inflation_monthly
+	stability_factor = CHI_HJ_stability_factor
+	production_speed_buildings_factor = CHI_HJ_production_speed_buildings_factor
+	poverty_development_monthly = CHI_HJ_poverty_development_monthly
+	expense_growth_factor = CHI_HJ_expense_growth_factor
+}
+CHI_sustainable_taiwan = {
+	icon = GFX_idea_CHI_sustainable_taiwan
+	enable = { tag = CHI }
+	stability_factor = CHI_ST_stability_factor
+	research_speed_factor = CHI_ST_research_speed_factor
+	personal_expense_factor = CHI_ST_personal_expense_factor
+	expense_growth_factor = CHI_ST_expense_growth_factor
+	personal_value_factor = CHI_ST_personal_value_factor
+	business_value_factor = CHI_ST_business_value_factor
+	monthly_population = CHI_ST_monthly_population
+	society_development_monthly = CHI_ST_society_development_monthly
+	academic_development_monthly = CHI_ST_academic_development_monthly
+}

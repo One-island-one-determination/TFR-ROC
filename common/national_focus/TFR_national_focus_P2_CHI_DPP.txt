@@ -22,7 +22,7 @@ focus_tree = {
         y = 1
         cost = 3
         completion_reward = {
-            #NO content
+            country_event = { id = CHI.L2.CHI_smart_prosperous_taiwan }
         }
     }
     # ==========================================
@@ -32,6 +32,7 @@ focus_tree = {
         id = CHI_smart_prosperous_taiwan
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_three_great_visions }
+        allow_branch = { has_country_flag = CHI_smart_prosperous_taiwan_flag }
         x = 12
         y = 2
         cost = 3
@@ -271,7 +272,7 @@ focus_tree = {
         y = 3
         cost = 3
         completion_reward = {
-
+            add_timed_idea = { idea = CHI_democratic_taiwan time =70 }
         }
     }
     focus = {
@@ -282,7 +283,26 @@ focus_tree = {
         y = 4
         cost = 3
         completion_reward = {
-
+            if = {
+                limit = { has_idea = CHI_democratic_taiwan }
+                modify_timed_idea = {
+                    idea = CHI_democratic_taiwan
+                    days = 70
+                }
+            }
+            else = {
+                add_timed_idea = { idea = CHI_democratic_taiwan time =70 }
+            }
+            set_temp_variable = {
+                var = CHI_influence_KMT_temp
+                value = 0.15
+            }
+            CHI_influence_KMT_add = yes
+            set_temp_variable = {
+                var = CHI_influence_TPP_temp
+                value = 0.25
+            }
+            CHI_influence_TPP_add = yes
         }
     }
     focus = {
@@ -294,7 +314,23 @@ focus_tree = {
         y = 4
         cost = 3
         completion_reward = {
-
+            add_stability = 0.075
+            524 = {
+                remove_building = {
+                    type = nuclear_reactor
+                    level = 1
+                }
+            }
+            set_temp_variable = {
+                var = CHI_influence_DPP_temp
+                value = 0.15
+            }
+            CHI_influence_DPP_add = yes
+            set_temp_variable = {
+                var = CHI_influence_NPP_temp
+                value = 0.25
+            }
+            CHI_influence_NPP_add = yes
         }
     }
     focus = {
@@ -306,7 +342,17 @@ focus_tree = {
         y = 4
         cost = 3
         completion_reward = {
-
+            add_stability = -0.1
+            set_temp_variable = {
+                var = CHI_influence_DPP_temp
+                value = -0.1
+            }
+            CHI_influence_DPP_add = yes
+            set_temp_variable = {
+                var = CHI_influence_NPP_temp
+                value = -0.1
+            }
+            CHI_influence_NPP_add = yes
         }
     }
     focus = {
@@ -317,7 +363,16 @@ focus_tree = {
         y = 5
         cost = 3
         completion_reward = {
-
+            add_war_support = 0.05
+            add_ideas = CHI_resist_china_protect_taiwan
+            add_popularity = {
+				ideology = social_liberal
+				popularity = 0.07
+			}
+            add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
         }
     }
     focus = {
@@ -328,7 +383,8 @@ focus_tree = {
         y = 5
         cost = 3
         completion_reward = {
-
+            add_war_support = 0.05
+            unlock_decision_tooltip = CHI_promote_taiwan_subjectivity
         }
     }
     focus = {
@@ -339,7 +395,15 @@ focus_tree = {
         y = 5
         cost = 3
         completion_reward = {
-
+            add_tech_bonus = {
+				name = CHI_experimental_advanced_nuclear
+				#ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = nuclear
+			}
+            unlock_decision_tooltip = CHI_final_disposal_high_level_nuclear_waste
+            unlock_decision_tooltip = CHI_smr_pilot
         }
     }
     focus = {
@@ -350,7 +414,47 @@ focus_tree = {
         y = 6
         cost = 3
         completion_reward = {
-
+            set_temp_variable = {
+                var = CHI_influence_DPP_temp
+                value = 0.1
+            }
+            CHI_influence_DPP_add = yes
+            set_temp_variable = {
+                var = CHI_influence_KMT_temp
+                value = 0.1
+            }
+            CHI_influence_KMT_add = yes
+            set_temp_variable = {
+                var = CHI_influence_TPP_temp
+                value = 0.1
+            }
+            CHI_influence_TPP_add = yes
+            set_temp_variable = {
+                var = CHI_influence_NSU_temp
+                value = 0.1
+            }
+            CHI_influence_NSU_add = yes
+            set_temp_variable = {
+                var = CHI_influence_PFP_temp
+                value = 0.1
+            }
+            CHI_influence_PFP_add = yes
+            set_temp_variable = {
+                var = CHI_influence_NPP_temp
+                value = 0.1
+            }
+            CHI_influence_NPP_add = yes
+            set_temp_variable = {
+                var = CHI_influence_TSP_temp
+                value = 0.1
+            }
+            CHI_influence_TSP_add = yes
+            set_temp_variable = {
+                var = CHI_influence_SDP_temp
+                value = 0.1
+            }
+            CHI_influence_SDP_add = yes
+            add_timed_idea = { idea = CHI_diverse_big_coliation days = 90}
         }
     }
     focus = {
@@ -361,7 +465,12 @@ focus_tree = {
         y = 6
         cost = 3
         completion_reward = {
-
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                technology = { energy_farms energy_farms1 energy_farms2 energy_farms3 energy_farms4 }
+            }
+            unlock_decision_tooltip = CHI_protect_electric_lifeline
         }
     }
     focus = {
@@ -372,7 +481,7 @@ focus_tree = {
         y = 6
         cost = 3
         completion_reward = {
-
+            unlock_decision_tooltip = CHI_bring_back_blue_sky
         }
     }
     focus = {
@@ -384,7 +493,10 @@ focus_tree = {
         y = 7
         cost = 3
         completion_reward = {
-
+            add_war_support = 0.05
+            add_stability = 0.05
+            custom_effect_tooltip = { IDEA = CHI_taiwanese_independence_dynamic localization_key = modify_idea_tt }
+            add_to_variable = { CHI_taiwanese_independence_political_power_gain_var = 0.15 tooltip = political_power_gain_tooltip }
         }
     }
     focus = {
@@ -395,7 +507,7 @@ focus_tree = {
         y = 8
         cost = 3
         completion_reward = {
-
+            # country_event = { id = CHI. }
         }
     }
     # --- Right Sub-branch (Diplomacy) ---
@@ -407,7 +519,7 @@ focus_tree = {
         y = 3
         cost = 3
         completion_reward = {
-
+            unlock_decision_category_tooltip = CHI_MOFA
         }
     }
     focus = {
@@ -523,7 +635,9 @@ focus_tree = {
         y = 2
         cost = 3
         completion_reward = {
-
+            country_event = { id = CHI.L2.CHI_housing_justice_white_paper }
+            add_timed_idea = { idea = CHI_new_taiwan_gogo days = 180 }
+            unlock_decision_tooltip = CHI_development_of_taiwan_economy
         }
     }
 
@@ -556,6 +670,7 @@ focus_tree = {
         x = 35
         y = 3
         cost = 3
+        allow_branch = { has_country_flag = CHI_housing_justice_white_paper_flag }
         completion_reward = {
 
         }
