@@ -530,7 +530,9 @@ focus_tree = {
         y = 4
         cost = 3
         completion_reward = {
-
+            custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+            add_to_variable = { CHI_Economy_business_value_factor tooltip = business_value_factor_tooltip }
+            add_to_variable = { CHI_Economy_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tooltip }
         }
     }
     focus = {
@@ -541,7 +543,7 @@ focus_tree = {
         y = 4
         cost = 3
         completion_reward = {
-
+            add_timed_idea = { idea = CHI_taiwan_japan_mutual_support time = 180 }
         }
     }
     focus = {
@@ -552,7 +554,38 @@ focus_tree = {
         y = 4
         cost = 3
         completion_reward = {
-
+            869 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+            1412 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+            1149 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+            1150 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
         }
     }
     focus = {
@@ -564,8 +597,62 @@ focus_tree = {
         y = 5
         cost = 3
         completion_reward = {
+            set_temp_variable = {
+                var = global.JAP_influence_VIN_var_temp
+                value = 0.1
+            }
+            JAP_add_VIN_influence = yes
 
+            set_temp_variable = {
+                var = global.JAP_influence_PHI_var_temp
+                value = 0.1
+            }
+            JAP_add_PHI_influence = yes
+
+            set_temp_variable = {
+                var = global.JAP_influence_MAL_var_temp
+                value = 0.1
+            }
+            JAP_add_MAL_influence = yes
+
+
+            set_temp_variable = {
+                var = global.JAP_influence_SIG_var_temp
+                value = 0.1
+            }
+            JAP_add_SIG_influence = yes
+
+            set_temp_variable = {
+                var = global.JAP_influence_INS_var_temp
+                value = 0.1
+            }
+            JAP_add_INS_influence = yes
+
+            set_temp_variable = {
+                var = global.JAP_influence_SIA_var_temp
+                value = 0.1
+            }
+            JAP_add_SIA_influence = yes
+   
+            # set_temp_variable = {
+            #     var = global.JAP_influence_LAO_var_temp
+            #     value = 0.1
+            # }
+            # JAP_add_LAO_influence = yes
+
+            # set_temp_variable = {
+            #     var = global.JAP_influence_CAM_var_temp
+            #     value = 0.1
+            # }
+            # JAP_add_CAM_influence = yes
+
+            # set_temp_variable = {
+            #     var = global.JAP_influence_BRM_var_temp
+            #     value = 0.1
+            # }
+            # JAP_add_BRM_influence = yes
         }
+
     }
     focus = {
         id = CHI_northeast_asia_diplomatic_normalization
@@ -576,7 +663,26 @@ focus_tree = {
         y = 5
         cost = 3
         completion_reward = {
-
+            JAP = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = CHI_formal_diplomatic_relations
+				}
+			}
+			add_opinion_modifier = {
+				target = JAP
+				modifier = CHI_formal_diplomatic_relations
+			}
+            KOR = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = CHI_formal_diplomatic_relations
+				}
+			}
+			add_opinion_modifier = {
+				target = KOR
+				modifier = CHI_formal_diplomatic_relations
+			}
         }
     }
     focus = {
@@ -589,7 +695,10 @@ focus_tree = {
         y = 6
         cost = 3
         completion_reward = {
-
+            unlock_decision_tooltip = CHI_invest_vietnam
+            unlock_decision_tooltip = CHI_invest_indonesia
+            unlock_decision_tooltip = CHI_invest_thailand
+            unlock_decision_tooltip = CHI_invest_philippines
         }
     }
     focus = {
@@ -600,7 +709,10 @@ focus_tree = {
         y = 7
         cost = 3
         completion_reward = {
-
+            unlock_decision_tooltip = CHI_development_team_philippines
+            unlock_decision_tooltip = CHI_development_team_indonesia
+            unlock_decision_tooltip = CHI_development_team_vietnam
+            unlock_decision_tooltip = CHI_development_team_thailand
         }
     }
     focus = {
@@ -610,8 +722,16 @@ focus_tree = {
         x = 26
         y = 7
         cost = 3
+        available = {
+            OR = {
+                has_tech = photonic_computing
+                has_tech = high_temperature_superconductors
+            }
+        }
         completion_reward = {
-
+            JAP = { add_ideas = CHI_made_in_taiwan }
+            KOR = { add_ideas = CHI_made_in_taiwan }
+            AST = { add_ideas = CHI_made_in_taiwan }
         }
     }
     focus = {
@@ -623,7 +743,7 @@ focus_tree = {
         y = 8
         cost = 3
         completion_reward = {
-
+            add_timed_idea = { idea = CHI_solve_the_lack_of_chips time = 200 }
         }
     }
 
@@ -638,6 +758,18 @@ focus_tree = {
             country_event = { id = CHI.L2.CHI_housing_justice_white_paper }
             add_timed_idea = { idea = CHI_new_taiwan_gogo days = 180 }
             unlock_decision_tooltip = CHI_development_of_taiwan_economy
+            hidden_effect = { 
+                # custom_effect_tooltip = { IDEA = CHI_sustainable_taiwan localization_key = modify_idea_tt }
+                add_to_variable = { CHI_ST_stability_factor = 0.03 tooltip = stability_factor_tooltip }
+                # add_to_variable = { CHI_ST_research_speed_factor = 0 tooltip = research_speed_factor_tooltip }
+                add_to_variable = { CHI_ST_personal_expense_factor = 0.05 tooltip = personal_expense_factor_tooltip }
+                # add_to_variable = { CHI_ST_expense_growth_factor = 0 tooltip = expense_growth_factor_tooltip }
+                # add_to_variable = { CHI_ST_personal_value_factor = 0 tooltip = personal_value_factor_tooltip }
+                # add_to_variable = { CHI_ST_business_value_factor = 0 tooltip = business_value_factor_tooltip }
+                # add_to_variable = { CHI_ST_monthly_population tooltip = monthly_population_tooltip }
+                add_to_variable = { CHI_ST_society_development_monthly = 0.005 tooltip = society_development_monthly_tooltip }
+                add_to_variable = { CHI_ST_academic_development_monthly = 0.005 tooltip = academic_development_monthly_tooltip }
+            }
         }
     }
 
@@ -649,7 +781,7 @@ focus_tree = {
         y = 3
         cost = 3
         completion_reward = {
-
+            add_dynamic_modifier = { modifier = CHI_sustainable_taiwan }
         }
     }
     focus = {
@@ -660,7 +792,8 @@ focus_tree = {
         y = 3
         cost = 3
         completion_reward = {
-
+            unlock_decision_tooltip = CHI_revitalize_linhai
+            unlock_decision_tooltip = CHI_linyuan_southward_expansion
         }
     }
     focus = {
@@ -672,7 +805,13 @@ focus_tree = {
         cost = 3
         allow_branch = { has_country_flag = CHI_housing_justice_white_paper_flag }
         completion_reward = {
-
+            custom_effect_tooltip = { IDEA = CHI_housing_justice localization_key = modify_idea_tt }
+            add_to_variable = { CHI_HJ_inflation_monthly = -0.001 tooltip = inflation_monthly_tooltip }
+            # add_to_variable = { CHI_HJ_consumer_goods_factor = 0.1 tooltip = consumer_goods_factor_tooltip }
+            add_to_variable = { CHI_HJ_stability_factor = 0.1 tooltip = stability_factor_tooltip }
+            # add_to_variable = { CHI_HJ_production_speed_buildings_factor = -0.2 tooltip = production_speed_buildings_factor_tooltip}
+            add_to_variable = { CHI_HJ_poverty_development_monthly = 0.01 tooltip = poverty_development_monthly_tooltip }
+            add_to_variable = { CHI_HJ_expense_growth_factor = 0.02 tooltip = expense_growth_factor_tooltip}
         }
     }
 
@@ -684,7 +823,10 @@ focus_tree = {
         y = 4
         cost = 3
         completion_reward = {
-
+            custom_effect_tooltip = { IDEA = CHI_sustainable_taiwan localization_key = modify_idea_tt }
+            add_to_variable = { CHI_ST_stability_factor = 0.05 tooltip = stability_factor_tooltip }
+            add_to_variable = { CHI_ST_monthly_population = 0.15 tooltip = monthly_population_tooltip }
+            add_to_variable = { CHI_ST_consumer_goods_factor = 0.05 tooltip = consumer_goods_factor_tooltip }
         }
     }
     focus = {
@@ -696,7 +838,8 @@ focus_tree = {
         y = 4
         cost = 3
         completion_reward = {
-
+            unlock_decision_tooltip = CHI_modernize_sixth_cracker
+            unlock_decision_tooltip = CHI_modernize_taichung_aviation
         }
     }
     focus = {
@@ -708,7 +851,8 @@ focus_tree = {
         y = 4
         cost = 3
         completion_reward = {
-
+            unlock_decision_tooltip = CHI_promote_sixth_sector_industry
+            unlock_decision_tooltip = CHI_expand_heping_industrial_park
         }
     }
     focus = {
@@ -719,7 +863,13 @@ focus_tree = {
         y = 4
         cost = 3
         completion_reward = {
-
+            custom_effect_tooltip = { IDEA = CHI_housing_justice localization_key = modify_idea_tt }
+            add_to_variable = { CHI_HJ_inflation_monthly = -0.0007 tooltip = inflation_monthly_tooltip }
+            add_to_variable = { CHI_HJ_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tooltip }
+            add_to_variable = { CHI_HJ_stability_factor = 0.05 tooltip = stability_factor_tooltip }
+            add_to_variable = { CHI_HJ_poverty_development_monthly = 0.01 tooltip = poverty_development_monthly_tooltip }
+            add_to_variable = { CHI_HJ_expense_growth_factor = -0.05 tooltip = expense_growth_factor_tooltip}
+        
         }
     }
 
@@ -731,7 +881,13 @@ focus_tree = {
         y = 5
         cost = 3
         completion_reward = {
-
+            custom_effect_tooltip = { IDEA = CHI_sustainable_taiwan localization_key = modify_idea_tt }
+            add_to_variable = { CHI_ST_stability_factor = 0.02 tooltip = stability_factor_tooltip }
+            add_to_variable = { CHI_ST_personal_expense_factor = 0.05 tooltip = personal_expense_factor_tooltip }
+            add_to_variable = { CHI_ST_monthly_population = 0.1 tooltip = monthly_population_tooltip }
+            add_to_variable = { CHI_ST_society_development_monthly = 0.005 tooltip = society_development_monthly_tooltip }
+            add_to_variable = { CHI_ST_consumer_goods_factor = 0.05 tooltip = consumer_goods_factor_tooltip }            
+            unlock_decision_tooltip = CHI_state_elderly_care
         }
     }
     focus = {
@@ -742,7 +898,13 @@ focus_tree = {
         y = 5
         cost = 3
         completion_reward = {
-
+            custom_effect_tooltip = { IDEA = CHI_sustainable_taiwan localization_key = modify_idea_tt }
+            add_to_variable = { CHI_ST_research_speed_factor = 0.05 tooltip = research_speed_factor_tooltip }
+            add_to_variable = { CHI_ST_expense_growth_factor = 0.02 tooltip = expense_growth_factor_tooltip }
+            add_to_variable = { CHI_ST_monthly_population = 0.15 tooltip = monthly_population_tooltip }
+            add_to_variable = { CHI_ST_academic_development_monthly = 0.005 tooltip = academic_development_monthly_tooltip }
+            add_to_variable = { CHI_ST_consumer_goods_factor = 0.05 tooltip = consumer_goods_factor_tooltip }            
+            unlock_decision_tooltip = CHI_assist_disadvantaged_families
         }
     }
     focus = {
@@ -753,7 +915,8 @@ focus_tree = {
         y = 5
         cost = 3
         completion_reward = {
-
+            unlock_decision_tooltip = CHI_taoyuan_mrt_extension
+            unlock_decision_tooltip = CHI_thsr_yilan_extension
         }
     }
     focus = {
@@ -764,7 +927,20 @@ focus_tree = {
         y = 5
         cost = 3
         completion_reward = {
-
+            custom_effect_tooltip = { IDEA = CHI_housing_justice localization_key = modify_idea_tt }
+            add_to_variable = { CHI_HJ_stability_factor = 0.1 tooltip = stability_factor_tooltip }
+            add_to_variable = { CHI_HJ_production_speed_buildings_factor = 0.15 tooltip = production_speed_buildings_factor_tooltip}
+            add_to_variable = { CHI_HJ_poverty_development_monthly = 0.01 tooltip = poverty_development_monthly_tooltip }
+            add_to_variable = { CHI_HJ_expense_growth_factor = 0.03 tooltip = expense_growth_factor_tooltip}
+            1148 = { add_extra_state_shared_building_slots = 1 }
+            1149 = { add_extra_state_shared_building_slots = 1 }
+            1150 = { add_extra_state_shared_building_slots = 1 }
+            add_to_variable = { var_CHI_Population_Aging_decisions = 1 tooltip = var_CHI_Population_Aging_decisions_tooltip }
+            set_temp_variable = {
+                var = income_var_temp
+                value = -75
+            }
+            add_income_with_inflation = yes
         }
     }
     focus = {
@@ -775,7 +951,10 @@ focus_tree = {
         y = 5
         cost = 3
         completion_reward = {
-
+            custom_effect_tooltip = { IDEA = CHI_housing_justice localization_key = modify_idea_tt }
+            add_to_variable = { CHI_HJ_inflation_monthly = -0.0008 tooltip = inflation_monthly_tooltip }
+            add_to_variable = { CHI_HJ_production_speed_buildings_factor = -0.05 tooltip = production_speed_buildings_factor_tooltip}
+            add_to_variable = { CHI_HJ_expense_growth_factor = 0.07 tooltip = expense_growth_factor_tooltip}
         }
     }
 
@@ -788,7 +967,13 @@ focus_tree = {
         y = 6
         cost = 3
         completion_reward = {
-
+            custom_effect_tooltip = { IDEA = CHI_sustainable_taiwan localization_key = modify_idea_tt }
+            add_to_variable = { CHI_ST_stability_factor = 0.05 tooltip = stability_factor_tooltip }
+            add_to_variable = { CHI_ST_personal_expense_factor = 0.02 tooltip = personal_expense_factor_tooltip }
+            add_to_variable = { CHI_ST_expense_growth_factor = 0.03 tooltip = expense_growth_factor_tooltip }
+            add_to_variable = { CHI_ST_business_value_factor = 0.07 tooltip = business_value_factor_tooltip }
+            add_to_variable = { CHI_ST_society_development_monthly = 0.005 tooltip = society_development_monthly_tooltip }
+            add_to_variable = { CHI_ST_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tooltip }            
         }
     }
     focus = {
@@ -799,7 +984,8 @@ focus_tree = {
         y = 6
         cost = 3
         completion_reward = {
-
+            unlock_decision_tooltip = CHI_expand_kaohsiung_military_refining
+            unlock_decision_tooltip = CHI_expand_arsenal_205
         }
     }
     focus = {
@@ -810,7 +996,8 @@ focus_tree = {
         y = 6
         cost = 3
         completion_reward = {
-
+            unlock_decision_tooltip = CHI_huatung_aviation_upgrade
+            unlock_decision_tooltip = CHI_hualien_port_support
         }
     }
     focus = {
@@ -822,7 +1009,18 @@ focus_tree = {
         y = 6
         cost = 3
         completion_reward = {
-
+            custom_effect_tooltip = { IDEA = CHI_housing_justice localization_key = modify_idea_tt }
+            add_to_variable = { CHI_HJ_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tooltip }
+            add_to_variable = { CHI_HJ_stability_factor = 0.05 tooltip = stability_factor_tooltip }
+            add_to_variable = { CHI_HJ_production_speed_buildings_factor = 0.15 tooltip = production_speed_buildings_factor_tooltip}
+            add_to_variable = { CHI_HJ_poverty_development_monthly = 0.01 tooltip = poverty_development_monthly_tooltip }
+            add_to_variable = { CHI_HJ_expense_growth_factor = 0.03 tooltip = expense_growth_factor_tooltip}
+            set_temp_variable = {
+                var = income_var_temp
+                value = -50
+            }
+            add_income_with_inflation = yes
+            add_to_variable = { var_CHI_Population_Aging_decisions = 1 tooltip = var_CHI_Population_Aging_decisions_tooltip }
         }
     }
 
@@ -837,9 +1035,13 @@ focus_tree = {
         y = 7
         cost = 3
         completion_reward = {
-
+            remove_dynamic_modifier = { modifier = CHI_sustainable_taiwan }
+            remove_dynamic_modifier = { modifier = CHI_housing_justice }
+            add_ideas = CHI_taiwan_good_together
         }
     }
+
+    #mil
     focus = {
         id = CHI_remember_lessons_of_taiwan_strait_war
         icon = GFX_goal_unknown

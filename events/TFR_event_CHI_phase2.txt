@@ -387,12 +387,12 @@ country_event = { ##TEMP for idea CHI_broken_tech_island
   is_triggered_only = yes
   immediate = { 
     hidden_effect = {
-      add_to_variable = { CHI_BI_stability_factor = -0.2 }
-      add_to_variable = { CHI_BI_consumer_goods_factor = 0.3 }
-      add_to_variable = { CHI_BI_research_speed_factor = -0.2 }
-      add_to_variable = { CHI_BI_business_value_factor = -0.35 }
-      add_to_variable = { CHI_BI_industrial_development_monthly = -0.02 }
-      add_to_variable = { CHI_BI_production_speed_energy_farm_factor = -0.9}
+      set_variable = { CHI_BI_stability_factor = -0.2 }
+      set_variable = { CHI_BI_consumer_goods_factor = 0.3 }
+      set_variable = { CHI_BI_research_speed_factor = -0.2 }
+      set_variable = { CHI_BI_business_value_factor = -0.35 }
+      set_variable = { CHI_BI_industrial_development_monthly = -0.02 }
+      set_variable = { CHI_BI_production_speed_energy_farm_factor = -0.9}
       add_ideas = CHI_broken_tech_island_electronics_research_speed_1
       set_variable = { CHI_BI_electronics_research_var = -80 }
     }
@@ -415,8 +415,12 @@ country_event = { ##TEMP for idea CHI_housing_justice
   is_triggered_only = yes
   immediate = { 
     hidden_effect = {
-      add_to_variable = {}
-
+      set_variable = { CHI_HJ_inflation_monthly = 0.015 }
+      set_variable = { CHI_HJ_consumer_goods_factor = 0.1 }
+      set_variable = { CHI_HJ_stability_factor = -0.2 }
+      set_variable = { CHI_HJ_production_speed_buildings_factor = -0.2 }
+      set_variable = { CHI_HJ_poverty_development_monthly = -0.03}
+      # set_variable = { CHI_HJ_expense_growth_factor = 0 }
     }
   }
   option = {

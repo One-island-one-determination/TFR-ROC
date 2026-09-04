@@ -1806,8 +1806,36 @@ ideas = {
 				production_speed_buildings_factor = 0.15
 			}
 		}
-
-
+        CHI_taiwan_japan_mutual_support = {
+			name = CHI_taiwan_japan_mutual_support
+			picture = CHI_taiwan_japan_mutual_support
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.06
+				income_growth_factor = 0.07
+			}
+		}
+		CHI_solve_the_lack_of_chips = {
+			name = CHI_solve_the_lack_of_chips
+			picture = CHI_solve_the_lack_of_chips
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = 0.1
+				business_value_factor = 0.15
+				consumer_goods_factor = -0.1
+			}
+		}
+		CHI_made_in_taiwan = {
+			name = CHI_made_in_taiwan
+			picture = CHI_made_in_taiwan
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
 
 
 

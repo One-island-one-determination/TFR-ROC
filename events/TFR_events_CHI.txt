@@ -466,17 +466,11 @@ country_event = {
   is_triggered_only = yes
   option = {
     name = CHI.110.a
-    trigger = { CHI_han_kuo_yu_char = is_country_leader }
     country_event = {
       id = CHI.111
       days = 3
     }
   }
-  # option = {
-  #   name = CHI.110.b
-  #   trigger = { CHI_tsai_ing_wen_char = is_country_leader }
-  #   custom_effect_tooltip = unfinished_content
-  # }
 }
 
 country_event = {

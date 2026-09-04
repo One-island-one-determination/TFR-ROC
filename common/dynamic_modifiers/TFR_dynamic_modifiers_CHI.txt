@@ -1008,6 +1008,7 @@ CHI_housing_justice = {
 	icon = GFX_idea_CHI_housing_justice
 	enable = { tag = CHI }
 	inflation_monthly = CHI_HJ_inflation_monthly
+	consumer_goods_factor = CHI_HJ_consumer_goods_factor
 	stability_factor = CHI_HJ_stability_factor
 	production_speed_buildings_factor = CHI_HJ_production_speed_buildings_factor
 	poverty_development_monthly = CHI_HJ_poverty_development_monthly
@@ -1025,4 +1026,5 @@ CHI_sustainable_taiwan = {
 	monthly_population = CHI_ST_monthly_population
 	society_development_monthly = CHI_ST_society_development_monthly
 	academic_development_monthly = CHI_ST_academic_development_monthly
+	consumer_goods_factor = CHI_ST_consumer_goods_factor
 }
