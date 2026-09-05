@@ -23,3 +23,19 @@ soundeffect = {
 		sound = "ROC_restoration_super_sound_file"
 	}
 }
+
+sound = {
+	name = "TFR_se_second_gaw_file"
+	file = "Super_Events/TFR_se_second_gaw.wav"
+	volume = 0.65
+}
+
+soundeffect = {
+	name = "TFR_se_second_gaw"
+	sounds = {
+		sound = "TFR_se_second_gaw_file"
+	}
+	volume = 0.65
+	max_audible = 1
+	max_audible_behaviour = fail
+}

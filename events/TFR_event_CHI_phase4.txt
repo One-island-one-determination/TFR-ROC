@@ -580,10 +580,11 @@ country_event = {
         target = JAP
         modifier = CHI_japan_refused_territory_demand
       }
-      create_wargoal = {
-        type = take_claimed_state
+      declare_war_on = {
         target = JAP
+        type = take_claimed_state
       }
+      news_event = { id = CHI.H4.999 }
       country_event = { id = CHI.H4.103 days = 1 }
     }
   }
@@ -643,4 +644,26 @@ country_event = {
     set_global_flag = second_pan_asian_war_ongoing
     custom_effect_tooltip = CHI_japan_refused_tt
   }
+}
+
+news_event = {
+	id = CHI.H4.999
+	title = CHI.H4.999.t
+	desc = CHI.H4.999.d
+	picture = GFX_CHI_second_gaw_start_news
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = CHI.H4.999.a
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				set_country_flag = CHI_second_gaw_super_flag
+				scoped_sound_effect = TFR_se_second_gaw
+				scoped_play_song = "one_minute_of_silence"
+			}
+		}
+	}
 }
