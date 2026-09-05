@@ -1,0 +1,88 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = second_pan_asian_war_ongoing
+					FROM = { tag = CHI }
+					ROOT = {
+						OR = {
+							tag = JAP tag = AST tag = RAJ tag = SIA tag = VIN 
+							tag = LAO tag = CAM tag = BRM tag = PHI tag = INS 
+							tag = PNG tag = NZL tag = MAL tag = BAN tag = NEP 
+							tag = BHU tag = KOR tag = SIG
+						}
+					}
+				}
+				ROOT = {
+					every_subject_country = {
+						ROOT = { end_puppet = PREV }
+					}
+				}
+				FROM = {
+					puppet = ROOT
+					white_peace = ROOT
+				}
+				ROOT = {
+					load_focus_tree = generic_focus
+					add_ideas = PRC_unwilling_ally
+					clr_country_flag = pdto_member
+					add_popularity = {
+						ideology = nationalist
+						popularity = 0.3
+					}
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no 
+					}
+					set_party_name = { 
+						ideology = military_junta 
+						long_name = CHI_military_administration_party_long 
+						name = CHI_military_administration_party 
+					}
+					set_cosmetic_tag = CHI_military_administration
+					JAP_leave_PEC = yes
+					
+					every_state = {
+						limit = {
+							is_core_of = ROOT
+							is_controlled_by = FROM
+							NOT = { is_core_of = FROM }
+						}
+						transfer_state_to = ROOT
+						set_state_owner_to = ROOT
+						set_state_controller_to = ROOT
+					}
+					
+					every_country = {
+						limit = {
+							is_in_faction_with = ROOT
+							any_controlled_state = {
+								NOT = { is_controlled_by = ROOT }
+								is_core_of = ROOT
+								NOT = { is_core_of = PREV }
+							}
+						}
+						every_controlled_state = {
+							limit = {
+								NOT = { is_controlled_by = ROOT }
+								is_core_of = ROOT
+								NOT = { is_core_of = PREV }
+							}
+							transfer_state_to = ROOT
+							set_state_owner_to = ROOT
+							set_state_controller_to = ROOT
+						}
+					}
+					
+					create_country_leader = {
+						name = CHI_military_governor
+						picture = "gfx/Leaders/CHI/TaipeiDemon.png"
+						ideology = military_junta
+					}
+				}
+				set_global_flag = skip_default_capitulation
+			}
+		}
+	}
+}
