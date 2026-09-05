@@ -55,10 +55,10 @@ ideas = {
         has_government = conservative
       }
     }
-    CHI_Johnny_Chiang_hog = {
+    CHI_Chiang_Yi_huah_hog = {
       #江宜樺
-      picture = CHI_Johnny_Chiang_hog
-      name = CHI_Johnny_Chiang_hog
+      picture = CHI_Chiang_Yi_huah_hog
+      name = CHI_Chiang_Yi_huah_hog
       visible = {
         tag = CHI
       }
@@ -71,6 +71,46 @@ ideas = {
       }
       available = {
         has_government = conservative
+      }
+    }
+    CHI_Johnny_Chiang_hog = {
+      #江啟臣
+      picture = CHI_Johnny_Chiang_for
+      name = CHI_Johnny_Chiang_for
+      visible = {
+        tag = CHI
+        has_country_flag = CHI_cabinet_meeting_flag
+      }
+      allowed_to_remove = {
+        always = no
+      }
+      traits = {
+        CHI_minister_KMT
+        pragmatic_political_scholar				#腳踏實地的政治學者
+      }
+      available = {
+        has_government = conservative
+        always = no
+      }
+    }
+    CHI_Jaw_Shaw_Kong_hog = {
+      #趙少康
+      picture = CHI_Jaw_Shaw_Kong_hog
+      name = CHI_Jaw_Shaw_Kong_hog
+      visible = {
+        tag = CHI
+        has_country_flag = CHI_cabinet_meeting_flag
+      }
+      allowed_to_remove = {
+        always = no
+      }
+      traits = {
+        CHI_minister_KMT
+        pragmatic_political_scholar				#腳踏實地的政治學者
+      }
+      available = {
+        has_government = conservative
+        always = no
       }
     }
     CHI_wang_jinpyng_hog = {
