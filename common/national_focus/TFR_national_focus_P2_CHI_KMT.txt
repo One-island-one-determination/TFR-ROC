@@ -1493,9 +1493,11 @@ focus_tree = {
 			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
 			# add_to_variable = { CHI_BF_ tooltip = _tooltip }
 			add_to_variable = { CHI_BF_stability_factor = 0.15 tooltip = stability_factor_tooltip }
-			add_to_variable = { CHI_BF_personal_value_factor = 0.05 tooltip = personal_value_facto_tooltip }
-			add_to_variable = { CHI_BF_line_change_production_efficiency_factor = 0.15 tooltip = line_change_production_efficiency_factor_tooltip }
 			add_to_variable = { CHI_BF_society_development_monthly = 0.001 tooltip = society_development_monthly_tooltip }
+
+			custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+			add_to_variable = { CHI_Economy_personal_value_factor = 0.05 tooltip = personal_value_facto_tooltip }
+			add_to_variable = { CHI_Economy_line_change_production_efficiency_factor = 0.15 tooltip = line_change_production_efficiency_factor_tooltip }
 		}
 		relative_position_id = CHI_new_worker_peasant_policy
 	}
@@ -1511,8 +1513,8 @@ focus_tree = {
 			focus = CHI_new_worker_peasant_policy
 		}
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
-			add_to_variable = { CHI_BF_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tooltip }
+			custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+			add_to_variable = { CHI_Economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tooltip }
 		}
 		relative_position_id = CHI_new_worker_peasant_policy
 	}
@@ -1565,8 +1567,8 @@ focus_tree = {
 			focus = CHI_new_worker_peasant_policy
 		}
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
-			add_to_variable = { CHI_BF_business_value_factor = -0.05 tooltip = business_value_factor_tooltip }
+			custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+			add_to_variable = { CHI_Economy_business_value_factor = -0.05 tooltip = business_value_factor_tooltip }
 		}
 		relative_position_id = CHI_new_worker_peasant_policy
 	}
@@ -1643,8 +1645,8 @@ focus_tree = {
 			focus = CHI_labor_insurance_reform_bill
 		}
 		completion_reward = { 
-			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
-			add_to_variable = { CHI_BF_personal_value_factor = 0.15 tooltip = personal_value_factor_tooltip } 
+			custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt }
+			add_to_variable = { CHI_Economy_personal_value_factor = 0.15 tooltip = personal_value_factor_tooltip } 
 		}
 		relative_position_id = CHI_labor_insurance_reform_bill
 	}
@@ -1968,11 +1970,71 @@ focus_tree = {
 		icon = GFX_focus_CHI_fully_promote_cabinet_system
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = { NOT = { has_country_flag = CHI_fully_promote_cabinet_system_flg } }
 		prerequisite = {
 			focus = CHI_premier_jaw_shaw_kong
 		}
 		completion_reward = {
-			# partially unavailable
+			set_country_flag = CHI_fully_promote_cabinet_system_flg
+		}
+		relative_position_id = CHI_premier_jaw_shaw_kong
+	}
+	focus = {
+		id = CHI_establish_executive_expansion
+		x = -4
+		y = 1
+		cost = 3
+		icon = GFX_focus_establish_executive_expansion
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		allow_branch = {
+			NOT = { has_country_flag = CHI_establish_executive_expansion_flg }
+			has_country_flag = CHI_fully_promote_cabinet_system_flg
+		}
+		prerequisite = {
+			focus = CHI_premier_jaw_shaw_kong
+		}
+		completion_reward = {
+			set_country_flag = CHI_establish_executive_expansion_flg
+		}
+		relative_position_id = CHI_premier_jaw_shaw_kong
+	}
+	focus = {
+		id = CHI_structural_constitutional_amendment
+		x = -4
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_structural_constitutional_amendment
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		allow_branch = {
+			NOT = { has_country_flag = CHI_structural_constitutional_amendment_flg }
+			has_country_flag = CHI_establish_executive_expansion_flg
+		}
+		prerequisite = {
+			focus = CHI_premier_jaw_shaw_kong
+		}
+		completion_reward = {
+			set_country_flag = CHI_structural_constitutional_amendment_flg
+		}
+		relative_position_id = CHI_premier_jaw_shaw_kong
+	}
+	focus = {
+		id = CHI_reality_of_five_powers
+		x = -4
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_reality_of_five_powers
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		allow_branch = {
+			has_country_flag = CHI_structural_constitutional_amendment_flg
+		}
+		prerequisite = {
+			focus = CHI_premier_jaw_shaw_kong
+		}
+		completion_reward = {
+			set_country_flag = CHI_reality_of_five_powers_flg
 		}
 		relative_position_id = CHI_premier_jaw_shaw_kong
 	}
