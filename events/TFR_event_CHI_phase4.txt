@@ -580,6 +580,8 @@ country_event = {
         target = JAP
         type = take_claimed_state
       }
+      create_faction = CHI_nanjing_pact_faction
+      set_country_flag = nanjing_pact_member
       news_event = { id = CHI.H4.999 }
       country_event = { id = CHI.H4.103 days = 1 }
     }
