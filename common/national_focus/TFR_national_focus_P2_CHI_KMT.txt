@@ -1307,6 +1307,7 @@ focus_tree = {
 				value = 0.05
 			}
 			add_society_development = yes
+			add_dynamic_modifier = { modifier = CHI_bloody_flower }
 		}
 		relative_position_id = CHI_reclaim_national_father_thought
 	}
@@ -1877,8 +1878,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
 			# add_to_variable = { CHI_BF_ tooltip = _tooltip }
-			army_org_factor = 0.05
-			military_development_monthly = 0.005
+			add_to_variable = { CHI_BF_army_org_factor = 0.05 tooltip = army_org_factor_tooltip }
+			add_to_variable = { CHI_BF_military_development_monthly = 0.005 tooltip = military_development_monthly_tooltip }
 		}
 		relative_position_id = CHI_premier_johnny_chiang
 	}
@@ -2241,7 +2242,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
 			# add_to_variable = { CHI_BF_ tooltip = _tooltip }
-			monthly_population = 0.1
+			add_to_variable = { CHI_BF_monthly_population = 0.1 tooltip = monthly_population_tooltip }
+			
 		}
 		relative_position_id = CHI_chinese_nation
 	}

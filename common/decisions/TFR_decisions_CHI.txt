@@ -4299,6 +4299,19 @@ CHI_taiwan_war_category = {
       custom_effect_tooltip = CHI_taiwan_war_LOSE_tt
     }
   }
+  CHI_give_up = {
+    icon = GFX_CHI_give_up
+    allowed = { tag = CHI }
+    visible = { is_debug = yes }
+    available = { surrender_progress > 0.7 }
+    fire_only_once = yes
+    cost = 100
+    days_remove = 1
+    complete_effect = {
+      effect_tooltip = { delete_unit = { disband = yes } }
+      country_event = { id = CHI.hidden.test }
+    }
+  }
   CHI_defend_penghu_mission = {
     activation = {
       has_war = yes
