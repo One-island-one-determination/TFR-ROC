@@ -1741,14 +1741,16 @@ CHI_Legislative_Yuan_decisions = {
       base = 10
       modifier = {
         factor = 50
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
         factor = 0
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -1789,14 +1791,16 @@ CHI_Legislative_Yuan_decisions = {
       base = 10
       modifier = {
         factor = 50
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
         factor = 0
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -1860,14 +1864,16 @@ CHI_Legislative_Yuan_decisions = {
       base = 10
       modifier = {
         factor = 50
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
         factor = 0
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -1979,14 +1985,16 @@ CHI_Legislative_Yuan_decisions = {
       base = 10
       modifier = {
         factor = 50
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
         factor = 0
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -2053,15 +2061,17 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
       modifier = {
-        factor = 50
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        factor = 0
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
-        factor = 0
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        factor = 50
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -2100,15 +2110,17 @@ CHI_Legislative_Yuan_decisions = {
     }
     ai_will_do = {
       modifier = {
-        factor = 50
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        factor = 0
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
-        factor = 0
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        factor = 50
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -2161,15 +2173,17 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
       modifier = {
-        factor = 50
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        factor = 0
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
-        factor = 0
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        factor = 50
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -2241,15 +2255,17 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
       modifier = {
-        factor = 50
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        factor = 0
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
-        factor = 0
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        factor = 50
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
