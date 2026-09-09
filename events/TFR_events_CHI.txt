@@ -3182,17 +3182,3 @@ country_event = {
   }
 }
 
-
-country_event = {
-  id = CHI.hidden.test
-  title = CHI.hidden.test.t
-  desc = CHI.hidden.test.d
-
-  is_triggered_only = yes
-
-  option = {
-    name = CHI.hidden.test.a
-    delete_unit = { disband = yes }
-    AOC = { change_tag_from = CHI }
-  }
-}
