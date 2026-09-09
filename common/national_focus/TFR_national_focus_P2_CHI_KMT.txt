@@ -2388,7 +2388,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = CHI_lankai_model_experiment
+			focus = CHI_lange_model_experiment
 		}
 		prerequisite = {
 			focus = CHI_of_by_for_the_people
@@ -2404,11 +2404,11 @@ focus_tree = {
 		relative_position_id = CHI_of_by_for_the_people
 	}
 	focus = {
-		id = CHI_lankai_model_experiment
+		id = CHI_lange_model_experiment
 		x = 7
 		y = 1
 		cost = 3
-		icon = GFX_focus_CHI_lankai_model_experiment
+		icon = GFX_focus_CHI_lange_model_experiment
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
@@ -2435,7 +2435,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = CHI_lankai_model_experiment
+			focus = CHI_lange_model_experiment
 		}
 		completion_reward = {
 			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
@@ -2447,7 +2447,7 @@ focus_tree = {
 			add_to_variable = { CHI_BF_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tooltip }
 			add_to_variable = { CHI_BF_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tooltip }
 		}
-		relative_position_id = CHI_lankai_model_experiment
+		relative_position_id = CHI_lange_model_experiment
 	}
 	focus = {
 		id = CHI_auxiliary_civil_service_system
@@ -2481,7 +2481,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = CHI_lankai_model_experiment
+			focus = CHI_lange_model_experiment
 		}
 		completion_reward = {
 			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
@@ -2490,7 +2490,7 @@ focus_tree = {
 			add_to_variable = { CHI_BF_production_speed_rail_way_factor = 0.1 tooltip = production_speed_rail_way_factor_tooltip }
 			add_to_variable = { CHI_BF_production_speed_infrastructure_factor = 0.1 tooltip = production_speed_infrastructure_factor_tooltip }	
 		}
-		relative_position_id = CHI_lankai_model_experiment
+		relative_position_id = CHI_lange_model_experiment
 	}
 	focus = {
 		id = CHI_limited_capital_market
