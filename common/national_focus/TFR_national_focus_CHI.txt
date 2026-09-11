@@ -2262,23 +2262,23 @@ focus_tree = {
           var = financial_crisis_poverty_development_monthly
           value = -0.03
         }
-        if = {
-          limit = {
-            has_country_leader = {
-              character = CHI_tsai_ing_wen_char
-              ruling_only = yes
-            }
-          }
-          country_event = {
-            id = CHI.7
-            days = 1
+      }
+      if = {
+        limit = {
+          has_country_leader = {
+            character = CHI_tsai_ing_wen_char
+            ruling_only = yes
           }
         }
-        else = {
-          country_event = {
-            id = CHI.8
-            days = 1
-          }
+        country_event = {
+          id = CHI.7
+          days = 1
+        }
+      }
+      else = {
+        country_event = {
+          id = CHI.8
+          days = 1
         }
       }
     }

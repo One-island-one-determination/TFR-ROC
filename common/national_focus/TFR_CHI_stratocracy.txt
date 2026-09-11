@@ -50,7 +50,7 @@ focus_tree = {
         cost = 3
     }
     focus = {
-        id = CHI_utilize_bureaucracy
+        id = CHI_utilize_bureaucracy_str
         icon = GFX_goal_unknown
         prerequisite = { focus = CHI_for_the_country }
         x = 17
@@ -100,7 +100,7 @@ focus_tree = {
     focus = {
         id = CHI_our_common_cause
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_utilize_bureaucracy }
+        prerequisite = { focus = CHI_utilize_bureaucracy_str }
         x = 17
         y = 4
         cost = 3

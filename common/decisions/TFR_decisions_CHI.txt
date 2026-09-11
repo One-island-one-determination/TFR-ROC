@@ -3811,11 +3811,8 @@ CHI_Military_purchasing_cat = {
       civilian_factory_use = 3
     }
     remove_effect = {
-      random_owned_controlled_state = {
-        is_core_of = ROOT
-        free_building_slots = {
-          building = arms_factory size > 0
-        }
+      random_core_state = {
+        add_extra_state_shared_building_slots = 1
         add_building_construction = {
           type = arms_factory
           level = 1
@@ -4053,11 +4050,8 @@ CHI_Military_purchasing_cat = {
       civilian_factory_use = 3
     }
     remove_effect = {
-      random_owned_controlled_state = {
-        is_core_of = ROOT
-        free_building_slots = {
-          building = arms_factory size > 0
-        }
+      random_core_state = {
+        add_extra_state_shared_building_slots = 1
         add_building_construction = {
           type = arms_factory
           level = 1
@@ -8009,8 +8003,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8072,8 +8065,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8136,8 +8128,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8233,8 +8224,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8299,8 +8289,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8508,8 +8497,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8571,8 +8559,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8634,8 +8621,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -9681,7 +9667,7 @@ CHI_GAW_situation_category = {
       naval_invasion_penalty = -0.2
     }
     targeted_modifier = {
-      target = PRC
+      tag = PRC
       attack_bonus_against = 0.15
     }
   }
