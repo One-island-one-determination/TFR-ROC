@@ -1290,6 +1290,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			#NO content 
+			set_variable = { JSK_foci_completed = 0}
 		}
 	}
 	focus = {
@@ -1489,8 +1490,8 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_new_worker_peasant_policy
 		}
-		prerequisite = {
-			focus = CHI_restore_control_yuan_functions
+		available = {
+			has_completed_focus = CHI_restore_control_yuan_functions
 		}
 		completion_reward = {
 			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
@@ -1973,12 +1974,13 @@ focus_tree = {
 		icon = GFX_focus_CHI_fully_promote_cabinet_system
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		allow_branch = { NOT = { has_country_flag = CHI_fully_promote_cabinet_system_flg } }
+		allow_branch = { check_variable = { JSK_foci_completed = 0 } }
 		prerequisite = {
 			focus = CHI_premier_jaw_shaw_kong
 		}
 		completion_reward = {
-			set_country_flag = CHI_fully_promote_cabinet_system_flg
+			add_to_variable = { JSK_foci_completed = 1 }
+			mark_focus_tree_layout_dirty = yes
 		}
 		relative_position_id = CHI_premier_jaw_shaw_kong
 	}
@@ -1990,15 +1992,13 @@ focus_tree = {
 		icon = GFX_focus_establish_executive_expansion
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		allow_branch = {
-			NOT = { has_country_flag = CHI_establish_executive_expansion_flg }
-			has_country_flag = CHI_fully_promote_cabinet_system_flg
-		}
+		allow_branch = { check_variable = { JSK_foci_completed = 1 } }
 		prerequisite = {
 			focus = CHI_premier_jaw_shaw_kong
 		}
 		completion_reward = {
-			set_country_flag = CHI_establish_executive_expansion_flg
+			add_to_variable = { JSK_foci_completed = 1 }
+			mark_focus_tree_layout_dirty = yes
 		}
 		relative_position_id = CHI_premier_jaw_shaw_kong
 	}
@@ -2010,15 +2010,13 @@ focus_tree = {
 		icon = GFX_focus_CHI_structural_constitutional_amendment
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		allow_branch = {
-			NOT = { has_country_flag = CHI_structural_constitutional_amendment_flg }
-			has_country_flag = CHI_establish_executive_expansion_flg
-		}
+		allow_branch = { check_variable = { JSK_foci_completed = 2 } }
 		prerequisite = {
 			focus = CHI_premier_jaw_shaw_kong
 		}
 		completion_reward = {
-			set_country_flag = CHI_structural_constitutional_amendment_flg
+			add_to_variable = { JSK_foci_completed = 1 }
+			mark_focus_tree_layout_dirty = yes
 		}
 		relative_position_id = CHI_premier_jaw_shaw_kong
 	}
@@ -2030,14 +2028,13 @@ focus_tree = {
 		icon = GFX_focus_CHI_reality_of_five_powers
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		allow_branch = {
-			has_country_flag = CHI_structural_constitutional_amendment_flg
-		}
+		allow_branch = { check_variable = { JSK_foci_completed = 3 } }
 		prerequisite = {
 			focus = CHI_premier_jaw_shaw_kong
 		}
 		completion_reward = {
-			set_country_flag = CHI_reality_of_five_powers_flg
+			add_to_variable = { JSK_foci_completed = 1 }
+			mark_focus_tree_layout_dirty = yes
 		}
 		relative_position_id = CHI_premier_jaw_shaw_kong
 	}
