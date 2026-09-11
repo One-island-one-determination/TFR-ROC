@@ -2996,6 +2996,180 @@ country_event = {
   }
 }
 
+country_event = {
+  id = CHI.transition_1
+  title = CHI.B2.1.t
+  desc = CHI.B2.1.d
+  picture = CHI_Event_B2_1
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.1.a
+    country_event = { id = CHI.transition_2 }
+  }
+}
+
+country_event = {
+  id = CHI.transition_2
+  title = CHI.B2.2.t
+  desc = CHI.B2.2.d
+  picture = CHI_Event_B2_2
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.2.a #軍政或韓國瑜獨裁
+    country_event = { id = CHI.transition_3 days = 2 }
+  }
+  option = {
+    name = CHI.B2.2.b  #國父或趙少康
+    country_event = { id = CHI.transition_6 }
+  }
+}
+
+country_event = {
+  id = CHI.transition_3
+  title = CHI.B2.3.t
+  desc = CHI.B2.3.d
+  picture = CHI_Event_B2_3
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.3.a #軍政
+    country_event = { id = CHI.transition_4 }
+  }
+  option = {
+    name = CHI.B2.3.b #韓國瑜獨裁
+    country_event = { id = CHI.transition_5 }
+  }
+}
+
+country_event = {
+  id = CHI.transition_4 #軍政
+  title = CHI.B2.4.t
+  desc = CHI.B2.4.d
+  picture = CHI_Event_B2_4
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.4.a
+    custom_effect_tooltip = CHI_stratocracy_tooltip
+  }
+}
+
+country_event = {
+  id = CHI.transition_5 #韓獨裁
+  title = CHI.B2.5.t
+  desc = CHI.B2.5.d
+  picture = CHI_Event_B2_5
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.5.a
+    custom_effect_tooltip = CHI_HKY_autocracy_tooltip
+  }
+}
+
+country_event = {
+  id = CHI.transition_6
+  title = CHI.B2.6.t
+  desc = CHI.B2.6.d
+  picture = CHI_Event_B2_6
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.6.a
+    country_event = { id = CHI.transition_7 }
+  }
+  # option = {
+  #   name = CHI.B2.6.b
+  #   country_event = { id = CHI.transition_8 }
+  # }
+}
+
+country_event = {
+  id = CHI.transition_7
+  title = CHI.B2.7.t
+  desc = CHI.B2.7.d
+  picture = CHI_Event_B2_7
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.7.a
+    custom_effect_tooltip = P2CWA_unlock_tt
+    complete_national_focus = GFX_focus_CHI_reclaim_national_father_thought
+    hidden_effect = {
+      set_politics = {
+        ruling_party = conservative
+        last_election = "2024.1.11"
+        election_frequency = 48
+        elections_allowed = yes
+      }
+      load_focus_tree = P2_CHI_KMT
+      set_country_flag = second_CWA_win_flg
+      focus_unlock = yes
+    }
+
+    CHI_chiang_wan_an_char = {
+			if = {
+				limit = { has_ideology = constitutionalist }
+				promote_character = constitutionalist
+			}
+			else = {
+				add_country_leader_role = {
+					country_leader = {
+						desc = CHI_chiang_wan_an_char_desc
+						ideology = constitutionalist
+						traits = { hos_president_of_the_commoners }
+					}
+					promote_leader = yes
+				}
+			}
+		}
+
+    
+  }
+}
+
+country_event = {
+  id = CHI.transition_8
+  title = CHI.B2.8.t
+  desc = CHI.B2.8.d
+  picture = CHI_Event_B2_8
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.8.a
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

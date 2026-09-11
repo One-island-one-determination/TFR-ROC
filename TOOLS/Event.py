@@ -47,6 +47,7 @@ def generate_localisation(hoi4_id, title, desc, option_a):
     loc = f""" {hoi4_id}.t: "{title}"
  {hoi4_id}.d: "{desc_formatted}"
  {hoi4_id}.a: "{option_a}"
+
 """
     return loc
 
