@@ -2919,8 +2919,40 @@ focus_tree = {
     }
     completion_reward = {
       add_stability = -0.1
-      upgrade_economy_law = yes
       add_ideas = CHI_Wartime_normal_system
+      if = {
+        limit = {
+          has_idea = mass_consumerism
+        }
+      }
+      
+      else_if = {
+        limit = {
+          has_idea = civilian_mobilization
+        }
+        add_ideas = mass_consumerism
+      }
+      else_if = {
+        limit = {
+          has_idea = early_mobilization
+        }
+        add_ideas = civilian_mobilization
+      }
+      else_if = {
+        limit = {
+          has_idea = partial_mobilization
+        }
+        add_ideas = early_mobilization
+      }
+      else_if = {
+        limit = {
+          has_idea = war_mobilization
+        }
+        add_ideas = partial_mobilization
+      }
+      else = {
+        add_ideas = war_mobilization
+      }
     }
     relative_position_id = CHI_Mobilize_police_force_to_maintain_order
   }
