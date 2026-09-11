@@ -18,7 +18,7 @@ CHI_birth_planning
 CHI_reform_health_insurance
 CHI_crack_down_on_housing_prices
 CHI_conventional_economic_direction
-CHI_lankai_model_experiment
+CHI_lange_model_experiment
 CHI_government_calculation_unit
 CHI_auxiliary_civil_service_system
 CHI_ai_ruled_economy

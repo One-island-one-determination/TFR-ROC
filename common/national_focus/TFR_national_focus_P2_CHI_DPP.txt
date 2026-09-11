@@ -272,7 +272,7 @@ focus_tree = {
         y = 3
         cost = 3
         completion_reward = {
-            add_timed_idea = { idea = CHI_democratic_taiwan time =70 }
+            add_timed_idea = { idea = CHI_democratic_taiwan days =70 }
         }
     }
     focus = {
@@ -291,7 +291,7 @@ focus_tree = {
                 }
             }
             else = {
-                add_timed_idea = { idea = CHI_democratic_taiwan time =70 }
+                add_timed_idea = { idea = CHI_democratic_taiwan days = 70 }
             }
             set_temp_variable = {
                 var = CHI_influence_KMT_temp
@@ -430,10 +430,10 @@ focus_tree = {
             }
             CHI_influence_TPP_add = yes
             set_temp_variable = {
-                var = CHI_influence_NSU_temp
+                var = CHI_influence_NPSU_temp
                 value = 0.1
             }
-            CHI_influence_NSU_add = yes
+            CHI_influence_NPSU_add = yes
             set_temp_variable = {
                 var = CHI_influence_PFP_temp
                 value = 0.1
@@ -468,7 +468,11 @@ focus_tree = {
             add_tech_bonus = {
                 bonus = 1
                 uses = 1
-                technology = { energy_farms energy_farms1 energy_farms2 energy_farms3 energy_farms4 }
+                technology = energy_farms 
+				technology = energy_farms1 
+				technology = energy_farms2 
+				technology = energy_farms3 
+				technology = energy_farms4 
             }
             unlock_decision_tooltip = CHI_protect_electric_lifeline
         }
@@ -543,7 +547,7 @@ focus_tree = {
         y = 4
         cost = 3
         completion_reward = {
-            add_timed_idea = { idea = CHI_taiwan_japan_mutual_support time = 180 }
+            add_timed_idea = { idea = CHI_taiwan_japan_mutual_support days = 180 }
         }
     }
     focus = {
@@ -743,7 +747,7 @@ focus_tree = {
         y = 8
         cost = 3
         completion_reward = {
-            add_timed_idea = { idea = CHI_solve_the_lack_of_chips time = 200 }
+            add_timed_idea = { idea = CHI_solve_the_lack_of_chips days = 200 }
         }
     }
 

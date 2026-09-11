@@ -75,8 +75,8 @@ ideas = {
     }
     CHI_Johnny_Chiang_hog = {
       #江啟臣
-      picture = CHI_Johnny_Chiang_for
-      name = CHI_Johnny_Chiang_for
+      picture = CHI_Johnny_Chiang_hog
+      name = CHI_Johnny_Chiang_hog
       visible = {
         tag = CHI
         has_country_flag = CHI_cabinet_meeting_flag
@@ -185,7 +185,7 @@ ideas = {
       }
     }
     CHI_Chiang_Yi_huah_for = {
-      #江啟臣
+      #江宜樺
       picture = CHI_Chiang_Yi_huah_for
       name = CHI_Chiang_Yi_huah_for
       visible = {
@@ -251,7 +251,7 @@ ideas = {
         CHI_increase_prc_embargo_idea = yes
       }
       on_remove = {
-        CHI_de_prc_embargo_idea = yes
+        de_prc_embargo_idea = yes
       }
     }
     CHI_Shen_Jongchin_eco = {
