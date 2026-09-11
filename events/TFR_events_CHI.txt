@@ -3099,7 +3099,14 @@ country_event = {
   picture = CHI_Event_B2_7
   fire_only_once = yes
   is_triggered_only = yes
-  
+  immediate = { 
+    hidden_effect = {
+      country_event = {
+        id = CHI.CWA_2028_temp
+        days = 1461
+      }
+    }
+   }
   option = {
     name = CHI.B2.7.a
     custom_effect_tooltip = P2CWA_unlock_tt
@@ -3150,7 +3157,21 @@ country_event = {
   }
 }
 
-
+country_event = {
+  id = CHI.CWA_2028_temp
+  title = CHI.CWA_2028_temp.t
+  desc = CHI.CWA_2028_temp.d
+  picture = CHI_Event_B2_7
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.CWA_2028_temp.a
+    set_country_flag = CWA_2028_flg
+    complete_national_focus = CHI_dont_wait_dont_rely
+    focus_unlock = yes
+  }
+}
 
 
 

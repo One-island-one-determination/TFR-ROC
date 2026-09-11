@@ -4121,6 +4121,21 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = CHI_dont_wait_dont_rely
+		x = 29
+		y = 10
+		cost = 3
+		icon = GFX_focus_CHI_dont_wait_dont_rely
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		allow_branch = {
+			has_country_flag = CWA_2028_flg
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
 		id = CHI_march_into_the_waves
 		x = 0
 		y = 1
@@ -4130,6 +4145,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_duty_of_the_helmsman
+			focus = CHI_dont_wait_dont_rely
 		}
 		completion_reward = {
 			country_event = {
