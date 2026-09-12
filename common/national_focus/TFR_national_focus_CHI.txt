@@ -2262,23 +2262,23 @@ focus_tree = {
           var = financial_crisis_poverty_development_monthly
           value = -0.03
         }
-      }
-      if = {
-        limit = {
-          has_country_leader = {
-            character = CHI_tsai_ing_wen_char
-            ruling_only = yes
+        if = {
+          limit = {
+            has_country_leader = {
+              character = CHI_tsai_ing_wen_char
+              ruling_only = yes
+            }
+          }
+          country_event = {
+            id = CHI.7
+            days = 1
           }
         }
-        country_event = {
-          id = CHI.7
-          days = 1
-        }
-      }
-      else = {
-        country_event = {
-          id = CHI.8
-          days = 1
+        else = {
+          country_event = {
+            id = CHI.8
+            days = 1
+          }
         }
       }
     }
@@ -2919,8 +2919,18 @@ focus_tree = {
     }
     completion_reward = {
       add_stability = -0.1
-      upgrade_economy_law = yes
       add_ideas = CHI_Wartime_normal_system
+      if = {
+        limit = {
+          NOT = {
+            has_idea = total_mobilization
+          }
+        }
+        upgrade_economy_law = yes
+      }
+      else = {
+        add_ideas = total_mobilization
+      }
     }
     relative_position_id = CHI_Mobilize_police_force_to_maintain_order
   }
