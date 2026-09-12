@@ -467,7 +467,7 @@ on_actions = {
           }
         }
       }
-      #Tuva
+      #圖瓦
       if = {
         limit = {
           FROM.FROM = { state = 329 }
@@ -496,8 +496,20 @@ on_actions = {
           remove_core_of = SOV
         }
       }
-
-
+      #西沙群島
+      if = {
+        limit = {
+          FROM.FROM = { state = 879 }
+          FROM = {
+            tag = CHI
+            has_country_flag = CHI_owns_xisha
+          }
+          ROOT = { tag = VIN }
+        }
+        CHI = {
+          transfer_state = 879
+        }
+      }
 
 
 
