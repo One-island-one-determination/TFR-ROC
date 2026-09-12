@@ -12,7 +12,7 @@ CHI_of_by_for_the_people
 CHI_restore_refugee_naturalization
 CHI_preparatory_provincial_government
 CHI_strength_in_numbers
-CHI_sun_yat_sen_thought_research_society
+CHI_sun_yat_sen_thought_research_club
 CHI_easy_know_hard_do
 CHI_birth_planning
 CHI_reform_health_insurance
@@ -65,9 +65,12 @@ CHI_do_not_lose_ambition
 # 清理字串：用換行符號分割，並自動去除頭尾空白與空行
 focus_list = [f.strip() for f in text_input.split('\n') if f.strip()]
 
-# 準備輸出的字串 (加上 P 社的 SpriteTypes 外殼)
+# 準備輸出的字串
 base_output = ""
 shine_output = ""
+national_focus_output = ""
+loc_names_output = ""
+loc_descs_output = ""
 
 # ==========================================
 # 2. 迴圈生成代碼
@@ -115,6 +118,24 @@ for focus in focus_list:
 \t}}"""
     shine_output += shine_sprite
 
+    # --- 國策結構代碼 ---
+    focus_node = f"""
+\tfocus = {{
+\t\tid = {focus}
+\t\ticon = GFX_focus_{focus}
+\t\tx = 0
+\t\ty = 0
+\t\tcost = 3
+\t}}"""
+    national_focus_output += focus_node
+
+    # --- Localisation 代碼 (分離名稱與敘述) ---
+    loc_names_output += f' {focus}:0 ""\n'
+    loc_descs_output += f' {focus}_desc:0 ""\n'
+
+# 組合 Localisation 輸出 (先列出所有名稱，再列出所有敘述)
+localisation_output = "l_english:\n" + loc_names_output + "\n" + loc_descs_output
+
 # ==========================================
 # 3. 匯出成檔案
 # ==========================================
@@ -124,5 +145,11 @@ with open("goals_CHI_base.txt", "w", encoding="utf-8") as f:
 with open("goals_CHI_shine.txt", "w", encoding="utf-8") as f:
     f.write(shine_output)
 
+with open("national_focus.txt", "w", encoding="utf-8") as f:
+    f.write(national_focus_output)
+
+with open("focus_localisation.yml", "w", encoding="utf-8-sig") as f:
+    f.write(localisation_output)
+
 print(f" 轉換完成！已成功處理 {len(focus_list)} 個國策圖示。")
-print(" 產出檔案：goals_CHI_base.txt, goals_CHI_shine.txt")
+print(" 產出檔案：goals_CHI_base.txt, goals_CHI_shine.txt, national_focus.txt, focus_localisation.yml")
