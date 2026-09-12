@@ -946,7 +946,6 @@ country_event = {
   option = {
     name = taiwan.32.a
     custom_effect_tooltip = CHI_taiwan_war_victory_demobilization_tooltip
-    add_ideas = CHI_lower_mainland_influence_idea
     custom_effect_tooltip = CHI_Economy_additional_effects
     ##經濟精神修改####
     add_to_variable = {
@@ -2130,6 +2129,12 @@ country_event = {
   option = {
     name = CHI.TW.21.a
     hidden_effect = {
+      326 = {
+        remove_core_of = PRC
+      }  
+      729 = {
+        remove_core_of = PRC
+      }  
       country_event = { id = CHI.TW.211 days = 3 }
     }
   }
