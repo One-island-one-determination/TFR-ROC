@@ -7629,15 +7629,15 @@ CHI_Intervene_the_American_Civil_War_category = {
     }
     days_remove = 180
     custom_cost_trigger = {
-      command_power > 99
+      command_power > 79
       has_political_power > 49
     }
     ai_will_do = {
       base = 25
     }
-    custom_cost_text = decision_cost_50pp_100cp
+    custom_cost_text = decision_cost_50pp_80cp
     complete_effect = {
-      add_command_power = -100
+      add_command_power = -80
       add_political_power = -50
     }
     modifier = {
