@@ -18,6 +18,15 @@ on_actions = {
 					every_subject_country = {
 						ROOT = { end_puppet = PREV }
 					}
+					every_owned_state = {
+						limit = {
+							OR = {
+								is_core_of = CHI
+								is_claimed_by = CHI
+							}
+						}
+						transfer_state_to = CHI
+					}
 				}
 				FROM = {
 					puppet = ROOT
