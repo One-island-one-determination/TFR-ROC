@@ -4078,11 +4078,14 @@ focus_tree = {
 	#}
 	#HKY大東亞(2028){
 	focus = {
-		id = CHI_duty_of_the_helmsman
+		id = CHI_transition_2028
 		x = 29
 		y = 10
 		cost = 3
-		icon = GFX_focus_CHI_duty_of_the_helmsman
+		icon = {
+			GFX_focus_CHI_duty_of_the_helmsman = { has_country_flag = second_HKY_win_flg }
+			GFX_focus_CHI_dont_wait_dont_rely = { has_country_flag = second_CWA_win_flg }
+		}
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		allow_branch = {
@@ -4109,21 +4112,21 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = CHI_dont_wait_dont_rely
-		x = 29
-		y = 10
-		cost = 3
-		icon = GFX_focus_CHI_dont_wait_dont_rely
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		allow_branch = {
-			has_country_flag = CWA_2028_flg
-		}
-		completion_reward = {
+	# focus = {
+	# 	id = CHI_dont_wait_dont_rely
+	# 	x = 29
+	# 	y = 10
+	# 	cost = 3
+	# 	icon = GFX_focus_CHI_dont_wait_dont_rely
+	# 	continue_if_invalid = no
+	# 	cancel_if_invalid = yes
+	# 	allow_branch = {
+	# 		has_country_flag = CWA_2028_flg
+	# 	}
+	# 	completion_reward = {
 
-		}
-	}
+	# 	}
+	# }
 	focus = {
 		id = CHI_march_into_the_waves
 		x = 0
@@ -4133,15 +4136,14 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = CHI_duty_of_the_helmsman
-			focus = CHI_dont_wait_dont_rely
+			focus = CHI_transition_2028
 		}
 		completion_reward = {
 			country_event = {
 				id = CHI.H3.21
 			}
 		}
-		relative_position_id = CHI_duty_of_the_helmsman
+		relative_position_id = CHI_transition_2028
 	}
 	focus = {
 		id = CHI_focus_on_polwar_core
