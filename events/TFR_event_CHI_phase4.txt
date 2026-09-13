@@ -307,6 +307,9 @@ country_event = {
       add_political_power = 50
       add_stability = 0.05
       set_country_flag = CHI_owns_tuva
+      329 = {
+        remove_dynamic_modifier = { modifier = SOV_republic_of_russia }
+      }
     }
   }
 }
