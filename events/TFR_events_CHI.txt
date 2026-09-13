@@ -1006,16 +1006,19 @@ country_event = {
       country_event = { id = CHI.TW.999 days = 5 }
       CHI = {
         create_unit = {
+          owner = CHI
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           location = 13968 # Taichung (State 1149)
           count = 5
         }
         create_unit = {
+          owner = CHI
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           location = 7186 # Taipei (State 1148)
           count = 10
         }
         create_unit = {
+          owner = CHI
           division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
           location = 12068 # Kaohsiung (State 1150)
           count = 5
