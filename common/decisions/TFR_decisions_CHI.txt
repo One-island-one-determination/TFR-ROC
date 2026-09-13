@@ -388,14 +388,12 @@ CHI_debug = {
     visible = { always = yes }
     available = { always = yes }
     complete_effect = {
-      remove_dynamic_modifier = {
-        modifier = CHI_ROC_army_dynamic
-      }
-      add_dynamic_modifier = {
-        modifier = CHI_ROC_army_dynamic_2
-      }
-      clr_country_flag = CHI_ROC_army_flg
+      clr_country_flag = CHI_ROC_army_flg_1
       set_country_flag = CHI_ROC_army_flg_2
+      clr_country_flag = CHI_ROC_airforce_flg_1
+      set_country_flag = CHI_ROC_airforce_flg_2
+      clr_country_flag = CHI_ROC_navy_flg_1
+      set_country_flag = CHI_ROC_navy_flg_2
     }
   }
   remove_economy_types = {
