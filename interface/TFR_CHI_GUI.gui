@@ -202,4 +202,312 @@ guitypes = {
       }
     }
   }
+
+  containerWindowType = {
+    name = "CHI_party_and_politics_interface"
+    size = { width = 100%% height = 850 }
+
+
+    containerWindowType = {
+      name = "E"
+      position = { x = 245 y = 265 }
+
+      buttonType = {
+        name = "NDC_a"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 3
+        centerposition = yes
+      }
+      buttonType = {
+        name = "NDC_b"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 4
+        centerposition = yes
+      }
+      buttonType = {
+        name = "NDC_c"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 5
+        centerposition = yes
+      }
+      buttonType = {
+        name = "NDC_d"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 6
+        centerposition = yes
+      }
+
+      icontype = {
+        name = "NDC_frame"
+        quadtexturesprite = "GFX_NDC_frame"
+        position = { x = -163 y = -135 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+
+      buttonType = {
+        name = "LY_a"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 1
+        centerposition = yes
+      }
+      buttonType = {
+        name = "LY_b"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 2
+        centerposition = yes
+      }
+      buttonType = {
+        name = "LY_c"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 7
+        centerposition = yes
+      }
+      buttonType = {
+        name = "LY_d"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 8
+        centerposition = yes
+      }
+
+      icontype = {
+        name = "LY_frame"
+        quadtexturesprite = "GFX_LY_frame"
+        position = { x = 0  y = -135 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+
+      buttonType = {
+        name = "MOD_a"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 3
+        centerposition = yes
+      }
+      buttonType = {
+        name = "MOD_b"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 4
+        centerposition = yes
+      }
+      buttonType = {
+        name = "MOD_c"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 5
+        centerposition = yes
+      }
+      buttonType = {
+        name = "MOD_d"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 6
+        centerposition = yes
+      }
+
+      icontype = {
+        name = "MOD_frame"
+        quadtexturesprite = "GFX_MOD_frame"
+        position = { x = 163 y = -135 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+
+      buttonType = {
+        name = "EY_a"
+        position = { x = 163 y = 465 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 1
+        centerposition = yes
+      }
+      buttonType = {
+        name = "EY_b"
+        position = { x = 163 y = 475 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 2
+        centerposition = yes
+      }
+      buttonType = {
+        name = "EY_c"
+        position = { x = 163 y = 475 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 7
+        centerposition = yes
+      }
+      buttonType = {
+        name = "EY_d"
+        position = { x = 163 y = 465 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 8
+        centerposition = yes
+      }
+
+      icontype = {
+        name = "EY_frame"
+        quadtexturesprite = "GFX_EY_frame"
+        position = { x = 163 y = 475 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+      
+      #card1{
+      buttonType = {
+        name = "PAP_card_1a"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 3
+      }
+      buttonType = {
+        name = "PAP_card_1b"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 4
+      }
+      buttonType = {
+        name = "PAP_card_1c"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 5
+      }
+      buttonType = {
+        name = "PAP_card_1d"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 6
+      }
+      #}
+      icontype = {
+        name = "PAP_frame_1"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -173 y = 500 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+      #card2{
+      buttonType = {
+        name = "PAP_card_2a"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 3
+      }
+      buttonType = {
+        name = "PAP_card_2b"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 4
+      }
+      buttonType = {
+        name = "PAP_card_2c"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 5
+      }
+      buttonType = {
+        name = "PAP_card_2d"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 6
+      }
+      #}
+      icontype = {
+        name = "PAP_frame_2"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -123 y = 500 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+      #card3{
+      buttonType = {
+        name = "PAP_card_3a"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 1
+      }
+      buttonType = {
+        name = "PAP_card_3b"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 2
+      }
+      buttonType = {
+        name = "PAP_card_3c"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 7
+      }
+      buttonType = {
+        name = "PAP_card_3d"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 8
+      }
+      #}
+      icontype = {
+        name = "PAP_frame_3"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -73 y = 500 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+      #card4{
+      buttonType = {
+        name = "PAP_card_4a"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 1
+      }
+      buttonType = {
+        name = "PAP_card_4b"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 2
+      }
+      buttonType = {
+        name = "PAP_card_4c"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 7
+      }
+      buttonType = {
+        name = "PAP_card_4d"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 8
+      }
+      #}
+      icontype = {
+        name = "PAP_frame_4"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -23 y = 500 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+
+      instantTextBoxType = {
+        name = "Title"
+        position = { x = -220 y = 0 }
+        text = CHI_PAP_tt
+        font = "VCR02_12"
+        format = left
+      }
+    }
+  }
 }

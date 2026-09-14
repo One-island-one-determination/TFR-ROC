@@ -7953,6 +7953,7 @@ CHI_Population_Aging_decisions = {
 # #中美洲戰後重建
 # CHI_central_american_rebuild_category = {
 # }
+
 ####    ######    ######    ####
 ####    ##  ##        ##    ####
 ####    ######    ######    ####
@@ -9639,6 +9640,92 @@ CHI_Economy_Industry_category = {
   # }
 }
 
+#黨與政
+CHI_party_and_politics_category = {
+  #NDC{
+  CHI_PRCup_NDC = {
+    available = {
+      has_country_flag = NDCSpaec
+      NOT = {
+        has_country_flag = MODisPRC
+      }
+    }
+    complete_effect = {
+      set_country_flag = NDCisPRC
+      clr_country_flag = NDCSpaec
+      if = {
+        limit = {
+          has_country_flag = oneIsPRC
+        }
+        clr_country_flag = oneIsPRC
+        set_country_flag = oneIsSpace
+      }
+      if = {
+        limit = {
+          has_country_flag = twoIsPRC
+        }
+        clr_country_flag = twoIsPRC
+        set_country_flag = twoIsSpace
+      }
+      CHI_Faction_change = yes
+    }
+  }
+  CHI_PRCdown_NDC = {
+    available = {
+      has_country_flag = NDCisPRC
+    }
+    complete_effect = {
+      clr_country_flag = NDCisPRC
+      set_country_flag = NDCSpaec
+      set_country_flag = PRCisHL
+    }
+  }
+  #}
+
+  #KK{
+  CHI_KKup_NDC = {
+    available = {
+      has_country_flag = NDCSpaec
+      NOT = {
+        has_country_flag = MODisKK
+      }
+    }
+    complete_effect = {
+      set_country_flag = NDCisKK
+      clr_country_flag = NDCSpaec
+
+      if = {
+        limit = {
+          has_country_flag = oneIsKK
+        }
+        clr_country_flag = oneIsKK
+        set_country_flag = oneIsSpace
+      }
+      if = {
+        limit = {
+          has_country_flag = twoIsKK
+        }
+        clr_country_flag = twoIsKK
+        set_country_flag = twoIsSpace
+      }
+
+      CHI_Faction_change = yes
+    }
+  }
+  CHI_KKdown_NDC = {
+    available = {
+      has_country_flag = NDCisKK
+    }
+    complete_effect = {
+      clr_country_flag = NDCisKK
+      set_country_flag = NDCSpaec
+      set_country_flag = KKisHL
+    }
+  }
+  #}
+
+  
+}
 ####    ######    ######    ####
 ####    ##  ##        ##    ####
 ####    ######    ######    ####

@@ -1,3 +1,85 @@
+CHI_Faction_change = {
+  #one{
+  if = {
+    limit = {
+      has_country_flag = oneIsSpace
+      has_country_flag = PRCisHL
+    }
+    clr_country_flag = oneIsSpace
+    clr_country_flag = PRCisHL
+    set_country_flag = oneIsPRC
+  }
+  if = {
+    limit = {
+      has_country_flag = oneIsSpace
+      has_country_flag = KKisHL
+    }
+    clr_country_flag = oneIsSpace
+    clr_country_flag = KKisHL
+    set_country_flag = oneIsKK
+  }
+  if = {
+    limit = {
+      has_country_flag = oneIsSpace
+      has_country_flag = JGisHL
+    }
+    clr_country_flag = oneIsSpace
+    clr_country_flag = JGisHL
+    set_country_flag = oneIsJG
+  }
+  if = {
+    limit = {
+      has_country_flag = oneIsSpace
+      has_country_flag = GAisHL
+    }
+    clr_country_flag = oneIsSpace
+    clr_country_flag = GAisHL
+    set_country_flag = oneIsGA
+  }
+  #}
+
+  #two{
+  if = {
+    limit = {
+      has_country_flag = twoIsSpace
+      has_country_flag = PRCisHL
+    }
+    clr_country_flag = twoIsSpace
+    clr_country_flag = PRCisHL
+    set_country_flag = oneIsPRC
+  }
+  if = {
+    limit = {
+      has_country_flag = twoIsSpace
+      has_country_flag = KKisHL
+    }
+    clr_country_flag = twoIsSpace
+    clr_country_flag = KKisHL
+    set_country_flag = oneIsKK
+  }
+  if = {
+    limit = {
+      has_country_flag = twoIsSpace
+      has_country_flag = JGisHL
+    }
+    clr_country_flag = twoIsSpace
+    clr_country_flag = JGisHL
+    set_country_flag = oneIsJG
+  }
+  if = {
+    limit = {
+      has_country_flag = twoIsSpace
+      has_country_flag = GAisHL
+    }
+    clr_country_flag = twoIsSpace
+    clr_country_flag = GAisHL
+    set_country_flag = oneIsGA
+  }
+  #}
+
+  
+}
+
 CHI_increase_coronavirus = {
   if = {
     limit = {

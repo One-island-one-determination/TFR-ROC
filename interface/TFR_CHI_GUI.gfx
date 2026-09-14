@@ -1,66 +1,103 @@
 spriteTypes = {
-	progressbartype = {
-		name = "GFX_CHIinf_support_progress"
-		texturefile1 = "gfx/interface/progress_bar_graphics/bar_Infiltration_red.png"
-		texturefile2 = "gfx/interface/progress_bar_graphics/bar_Infiltration_blue.png"
-		size = { x = 404 y = 36 }
-		effectfile = "gfx/FX/progress.lua"
-	}	
-	spritetype = {
-		name = "GFX_CHIinf_progress_frame"
-		texturefile = "gfx/interface/progress_bar_graphics/bar_Infiltration_frame.png"
-	}
-	spritetype = {
-		name = "GFX_MP_base"
-		texturefile = "gfx/interface/taiwan/MP_base.png"
-	}
-	spritetype = {
-		name = "GFX_KORBUTTON"
-		texturefile = "gfx/interface/taiwan/KORBUTTON.png"
-	}
-	spritetype = {
-		name = "GFX_JAPBUTTON"
-		texturefile = "gfx/interface/taiwan/JAPBUTTON.png"
-	}
-	spritetype = {
-		name = "GFX_USABUTTON"
-		texturefile = "gfx/interface/taiwan/USABUTTON.png"
-	}
-	spritetype = {
-		name = "GFX_AIDC"
-		texturefile = "gfx/interface/taiwan/AIDC.png"
-	}
-	spritetype = {
-		name = "GFX_CSBC"
-		texturefile = "gfx/interface/taiwan/CSBC.png"
-	}
-	spritetype = {
-		name = "GFX_NCSIST"
-		texturefile = "gfx/interface/taiwan/NCSIST.png"
-	}
-	spritetype = {
-		name = "GFX_UGC"
-		texturefile = "gfx/interface/taiwan/UGC.png"
-	}
-	spritetype = {
-		name = "GFX_NCSIST_Banner"
-		texturefile = "gfx/texticons/banners/decisions/NCSIST_Banner.png"
-		legacy_lazy_load = no
-	}
-	spritetype = {
-		name = "GFX_UGC_Banner"
-		texturefile = "gfx/texticons/banners/decisions/UGC_Banner.png"
-		legacy_lazy_load = no
-	}
-	spritetype = {
-		name = "GFX_AIDC_Banner"
-		texturefile = "gfx/texticons/banners/decisions/AIDC_Banner.png"
-		legacy_lazy_load = no
-	}
-	spritetype = {
-		name = "GFX_CSBC_Banner"
-		texturefile = "gfx/texticons/banners/decisions/CSBC_Banner.png"
-		legacy_lazy_load = no
-	}
-	
+  progressbartype = {
+    name = "GFX_CHIinf_support_progress"
+    texturefile1 = "gfx/interface/progress_bar_graphics/bar_Infiltration_red.png"
+    texturefile2 = "gfx/interface/progress_bar_graphics/bar_Infiltration_blue.png"
+    size = { x = 404 y = 36 }
+    effectfile = "gfx/FX/progress.lua"
+  }
+  spritetype = {
+    name = "GFX_CHIinf_progress_frame"
+    texturefile = "gfx/interface/progress_bar_graphics/bar_Infiltration_frame.png"
+  }
+  spritetype = {
+    name = "GFX_MP_base"
+    texturefile = "gfx/interface/Military_purchasing/MP_base.png"
+  }
+  spritetype = {
+    name = "GFX_KORBUTTON"
+    texturefile = "gfx/interface/Military_purchasing/KORBUTTON.png"
+  }
+  spritetype = {
+    name = "GFX_JAPBUTTON"
+    texturefile = "gfx/interface/Military_purchasing/JAPBUTTON.png"
+  }
+  spritetype = {
+    name = "GFX_USABUTTON"
+    texturefile = "gfx/interface/Military_purchasing/USABUTTON.png"
+  }
+  spritetype = {
+    name = "GFX_AIDC"
+    texturefile = "gfx/interface/Military_purchasing/AIDC.png"
+  }
+  spritetype = {
+    name = "GFX_CSBC"
+    texturefile = "gfx/interface/Military_purchasing/CSBC.png"
+  }
+  spritetype = {
+    name = "GFX_NCSIST"
+    texturefile = "gfx/interface/Military_purchasing/NCSIST.png"
+  }
+  spritetype = {
+    name = "GFX_UGC"
+    texturefile = "gfx/interface/Military_purchasing/UGC.png"
+  }
+  spritetype = {
+    name = "GFX_NCSIST_Banner"
+    texturefile = "gfx/texticons/banners/decisions/NCSIST_Banner.png"
+    legacy_lazy_load = no
+  }
+  spritetype = {
+    name = "GFX_UGC_Banner"
+    texturefile = "gfx/texticons/banners/decisions/UGC_Banner.png"
+    legacy_lazy_load = no
+  }
+  spritetype = {
+    name = "GFX_AIDC_Banner"
+    texturefile = "gfx/texticons/banners/decisions/AIDC_Banner.png"
+    legacy_lazy_load = no
+  }
+  spritetype = {
+    name = "GFX_CSBC_Banner"
+    texturefile = "gfx/texticons/banners/decisions/CSBC_Banner.png"
+    legacy_lazy_load = no
+  }
+
+  spritetype = {
+    name = "GFX_PAP_base"
+    texturefile = "gfx/interface/Party_and_politics/PAP_base.png"
+  }
+  spritetype = {
+    name = "GFX_NDC_frame"
+    texturefile = "gfx/interface/Party_and_politics/NDC_frame.png"
+  }
+  spritetype = {
+    name = "GFX_LY_frame"
+    texturefile = "gfx/interface/Party_and_politics/LY_frame.png"
+  }
+  spritetype = {
+    name = "GFX_MOD_frame"
+    texturefile = "gfx/interface/Party_and_politics/MOD_frame.png"
+  }
+  spritetype = {
+    name = "GFX_EY_frame"
+    texturefile = "gfx/interface/Party_and_politics/EY_frame.png"
+  }
+  spritetype = {
+    name = "GFX_PAP_frame"
+    texturefile = "gfx/interface/Party_and_politics/PAP_frame.png"
+  }
+  #派系
+  spritetype = {
+    name = "GFX_Faction"
+    texturefile = "gfx/interface/Party_and_politics/Faction.png"
+    noOfFrames = 8
+    transparencecheck = yes
+  }
+  spritetype = {
+    name = "GFX_Faction_big"
+    texturefile = "gfx/interface/Party_and_politics/Faction_big.png"
+    noOfFrames = 8
+    transparencecheck = yes
+  }
 }
