@@ -253,6 +253,20 @@ focus_tree = {
     prerequisite = {
       focus = CHI_rapid_political_tutelage
     }
+    completion_reward = {
+      set_party_name = { ideology = totalitarian_socialist long_name = CHI_totalitarian_socialist_han_kuo_yu_ending name = CHI_totalitarian_socialist_han_kuo_yu_ending }
+      set_party_name = { ideology = communist long_name = CHI_authoritarian_socialist_han_kuo_yu_ending name = CHI_authoritarian_socialist_han_kuo_yu_ending }
+      set_party_name = { ideology = libertarian_socialist long_name = CHI_libertarian_socialist_han_kuo_yu_ending name = CHI_libertarian_socialist_han_kuo_yu_ending }
+      set_party_name = { ideology = social_democrat long_name = CHI_social_democrat_han_kuo_yu_ending name = CHI_social_democrat_han_kuo_yu_ending }
+      set_party_name = { ideology = social_liberal long_name = CHI_social_liberal_han_kuo_yu_ending name = CHI_social_liberal_han_kuo_yu_ending }
+      set_party_name = { ideology = market_liberal long_name = CHI_market_liberal_han_kuo_yu_ending name = CHI_market_liberal_han_kuo_yu_ending }
+      set_party_name = { ideology = conservative long_name = CHI_conservative_han_kuo_yu_ending name = CHI_conservative_han_kuo_yu_ending }
+      set_party_name = { ideology = nationalist long_name = CHI_despotic_han_kuo_yu_ending name = CHI_despotic_han_kuo_yu_ending }
+      set_party_name = { ideology = fascist long_name = CHI_fascism_han_kuo_yu_ending name = CHI_fascism_han_kuo_yu_ending }
+      set_party_name = { ideology = national_socialist long_name = CHI_national_socialist_han_kuo_yu_ending name = CHI_national_socialist_han_kuo_yu_ending }
+
+
+    }
   }
   focus = {
     id = CHI_finally_free
