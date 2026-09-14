@@ -1498,11 +1498,11 @@ CHI_NCSIST_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		NOT = {
-			has_idea = CHI_ncsist_destroyed
-		}
-		NOT = {
-			has_idea = CHI_ncsist_rebuilding
+		FROM = {
+			OR = {
+				NOT = { has_idea = CHI_ncsist_destroyed }
+				NOT = { has_idea = CHI_ncsist_rebuilding }
+			}
 		}
 	}
 	visible = {

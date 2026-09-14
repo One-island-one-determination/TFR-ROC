@@ -275,12 +275,12 @@ country_event = {
   }
 }
 
-# 人口老齡化
+# 人口首次負增長
 country_event = {
   id = CHI.11
   title = CHI.11.t
   desc = CHI.11.d
-  picture = GFX_red_line_go_down
+  picture = GFX_CHI_population_crisis
   fire_only_once = yes
   is_triggered_only = yes
   immediate = {
@@ -890,19 +890,19 @@ country_event = {
       }
       set_portraits = {
         character = CHI_han_kuo_yu_char
-        civilian = { large = "gfx/Leaders/CHI/CHI_han_kuo_yu_taiwan_win.png" }
+        civilian = { large = "gfx/leaders/CHI/CHI_han_kuo_yu_taiwan_win.png" }
       }
       random_list = {
         80 = {
           set_portraits = {
             character = CHI_tsai_ing_wen_char
-            civilian = { large = "gfx/Leaders/CHI/CHI_tsai_ing_wen_taiwan_win.png" }
+            civilian = { large = "gfx/leaders/CHI/CHI_tsai_ing_wen_taiwan_win.png" }
           }
         }
         20 = {
           set_portraits = {
             character = CHI_tsai_ing_wen_char
-            civilian = { large = "gfx/Leaders/CHI/CHI_tsai_ing_wen_taiwan_win_2.png" }
+            civilian = { large = "gfx/leaders/CHI/CHI_tsai_ing_wen_taiwan_win_2.png" }
           }
         }
       }
@@ -934,19 +934,18 @@ country_event = {
       remove_dynamic_modifier = { modifier = CHI_NSM_dynamic }
       remove_dynamic_modifier = { modifier = CHI_Defend_Taiwan_dynamic }
       country_event = { id = CHI.TW.22 days = 5 }
-      remove_dynamic_modifier = { modifier = CHI_ROC_army_dynamic }
-      remove_dynamic_modifier = { modifier = CHI_ROC_navy_dynamic }
-      remove_dynamic_modifier = { modifier = CHI_ROC_airforce_dynamic }
-      add_dynamic_modifier = { modifier = CHI_ROC_army_dynamic_2 }
-      add_dynamic_modifier = { modifier = CHI_ROC_navy_dynamic_2 }
-      add_dynamic_modifier = { modifier = CHI_ROC_airforce_dynamic_2 }
+      clr_country_flag = CHI_ROC_army_flg_1
+      clr_country_flag = CHI_ROC_navy_flg_1
+      clr_country_flag = CHI_ROC_airforce_flg_1
+      set_country_flag = CHI_ROC_army_flg_2
+      set_country_flag = CHI_ROC_navy_flg_2
+      set_country_flag = CHI_ROC_airforce_flg_2
       remove_dynamic_modifier = { modifier = CHI_TaiHai_dynamic }
     }
   }
   option = {
     name = taiwan.32.a
     custom_effect_tooltip = CHI_taiwan_war_victory_demobilization_tooltip
-    add_ideas = CHI_lower_mainland_influence_idea
     custom_effect_tooltip = CHI_Economy_additional_effects
     ##經濟精神修改####
     add_to_variable = {
@@ -1005,30 +1004,27 @@ country_event = {
       set_country_flag = taiwan_war_events
       PRC = { add_timed_idea = { idea = PRC_TW_war days = 300 } }
       country_event = { id = CHI.TW.999 days = 5 }
-      1149 = {
+      CHI = {
         create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
           owner = CHI
+          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+          location = 13968 # Taichung (State 1149)
+          count = 5
+        }
+        create_unit = {
+          owner = CHI
+          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+          location = 7186 # Taipei (State 1148)
+          count = 10
+        }
+        create_unit = {
+          owner = CHI
+          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+          location = 12068 # Kaohsiung (State 1150)
           count = 5
         }
       }
-      1148 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 10
-        }
-      }
-      1150 = {
-        create_unit = {
-          division = "name = \"中華民國陸軍後備步兵旅\" division_template = \"中華民國陸軍後備旅\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-          id = 1949
-          owner = CHI
-          count = 10
-        }
-      }
+
       set_variable = { TH_consumer_goods_factor = 0.1 }
       set_variable = { TH_stability_factor  = -0.1 }
       set_variable = { TH_industry_repair_factor = -0.1 }
@@ -1097,11 +1093,11 @@ country_event = {
     }
     set_portraits = {
       character = CHI_han_kuo_yu_char
-      civilian = { large = "gfx/Leaders/CHI/CHI_han_kuo_yu_military.png" }
+      civilian = { large = "gfx/leaders/CHI/CHI_han_kuo_yu_military.png" }
     }
     set_portraits = {
       character = CHI_tsai_ing_wen_char
-      civilian = { large = "gfx/Leaders/CHI/CHI_tsai_ing_wen_military.png" }
+      civilian = { large = "gfx/leaders/CHI/CHI_tsai_ing_wen_military.png" }
     }
     #削減寂靜黎明debuff
     if = {
@@ -2130,6 +2126,12 @@ country_event = {
   option = {
     name = CHI.TW.21.a
     hidden_effect = {
+      326 = {
+        remove_core_of = PRC
+      }  
+      729 = {
+        remove_core_of = PRC
+      }  
       country_event = { id = CHI.TW.211 days = 3 }
     }
   }
@@ -2288,6 +2290,7 @@ country_event = {
         add_core_of = CHI
         transfer_state_to = CHI
       }
+      set_country_flag = CHI_owns_xisha
       if = {
         limit = {
           1383 = { is_core_of = PRC }
@@ -2979,7 +2982,7 @@ country_event = {
   id = CHI.TW.64
   title = CHI.TW.64.t
   desc = CHI.TW.64.d
-
+  picture = CHI_Event_TW_64
   is_triggered_only = yes
 
   option = {
@@ -2995,6 +2998,201 @@ country_event = {
     }
   }
 }
+
+country_event = {
+  id = CHI.transition_1
+  title = CHI.B2.1.t
+  desc = CHI.B2.1.d
+  picture = CHI_Event_B2_1
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.1.a
+    country_event = { id = CHI.transition_2 }
+  }
+}
+
+country_event = {
+  id = CHI.transition_2
+  title = CHI.B2.2.t
+  desc = CHI.B2.2.d
+  picture = CHI_Event_B2_2
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  # option = {
+  #   name = CHI.B2.2.a #軍政或韓國瑜獨裁
+  #   country_event = { id = CHI.transition_3 days = 2 }
+  # }
+  option = {
+    name = CHI.B2.2.b  #國父或趙少康
+    country_event = { id = CHI.transition_6 }
+  }
+}
+
+country_event = {
+  id = CHI.transition_3
+  title = CHI.B2.3.t
+  desc = CHI.B2.3.d
+  picture = CHI_Event_B2_3
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.3.a #軍政
+    country_event = { id = CHI.transition_4 }
+  }
+  option = {
+    name = CHI.B2.3.b #韓國瑜獨裁
+    country_event = { id = CHI.transition_5 }
+  }
+}
+
+country_event = {
+  id = CHI.transition_4 #軍政
+  title = CHI.B2.4.t
+  desc = CHI.B2.4.d
+  picture = CHI_Event_B2_4
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.4.a
+    custom_effect_tooltip = CHI_stratocracy_tooltip
+  }
+}
+
+country_event = {
+  id = CHI.transition_5 #韓獨裁
+  title = CHI.B2.5.t
+  desc = CHI.B2.5.d
+  picture = CHI_Event_B2_5
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.5.a
+    custom_effect_tooltip = CHI_HKY_autocracy_tooltip
+  }
+}
+
+country_event = {
+  id = CHI.transition_6
+  title = CHI.B2.6.t
+  desc = CHI.B2.6.d
+  picture = CHI_Event_B2_6
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.6.a
+    country_event = { id = CHI.transition_7 }
+  }
+  # option = {
+  #   name = CHI.B2.6.b
+  #   country_event = { id = CHI.transition_8 }
+  # }
+}
+
+country_event = {
+  id = CHI.transition_7
+  title = CHI.B2.7.t
+  desc = CHI.B2.7.d
+  picture = CHI_Event_B2_7
+  fire_only_once = yes
+  is_triggered_only = yes
+  immediate = { 
+    hidden_effect = {
+      country_event = {
+        id = CHI.CWA_2028_temp
+        days = 1461
+      }
+    }
+   }
+  option = {
+    name = CHI.B2.7.a
+    custom_effect_tooltip = P2CWA_unlock_tt
+    complete_national_focus = CHI_reclaim_national_father_thought
+    hidden_effect = {
+      set_politics = {
+        ruling_party = conservative
+        last_election = "2024.1.11"
+        election_frequency = 48
+        elections_allowed = yes
+      }
+      load_focus_tree = P2_CHI_KMT
+      set_country_flag = second_CWA_win_flg
+      focus_unlock = yes
+    }
+
+    CHI_chiang_wan_an_char = {
+			if = {
+				limit = { has_ideology = constitutionalist }
+				promote_character = constitutionalist
+			}
+			else = {
+				add_country_leader_role = {
+					country_leader = {
+						desc = CHI_chiang_wan_an_char_desc
+						ideology = constitutionalist
+						traits = { hos_president_of_the_commoners }
+					}
+					promote_leader = yes
+				}
+			}
+		}
+
+    
+  }
+}
+
+country_event = {
+  id = CHI.transition_8
+  title = CHI.B2.8.t
+  desc = CHI.B2.8.d
+  picture = CHI_Event_B2_8
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.B2.8.a
+  }
+}
+
+country_event = {
+  id = CHI.CWA_2028_temp
+  title = CHI.CWA_2028_temp.t
+  desc = CHI.CWA_2028_temp.d
+  picture = CHI_Event_B2_7
+  fire_only_once = yes
+  is_triggered_only = yes
+  
+  option = {
+    name = CHI.CWA_2028_temp.a
+    set_country_flag = HKY_2028_flg
+    complete_national_focus = CHI_transition_2028
+    focus_unlock = yes
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3181,3 +3379,4 @@ country_event = {
     }
   }
 }
+

@@ -388,14 +388,12 @@ CHI_debug = {
     visible = { always = yes }
     available = { always = yes }
     complete_effect = {
-      remove_dynamic_modifier = {
-        modifier = CHI_ROC_army_dynamic
-      }
-      add_dynamic_modifier = {
-        modifier = CHI_ROC_army_dynamic_2
-      }
-      clr_country_flag = CHI_ROC_army_flg
+      clr_country_flag = CHI_ROC_army_flg_1
       set_country_flag = CHI_ROC_army_flg_2
+      clr_country_flag = CHI_ROC_airforce_flg_1
+      set_country_flag = CHI_ROC_airforce_flg_2
+      clr_country_flag = CHI_ROC_navy_flg_1
+      set_country_flag = CHI_ROC_navy_flg_2
     }
   }
   remove_economy_types = {
@@ -1741,14 +1739,16 @@ CHI_Legislative_Yuan_decisions = {
       base = 10
       modifier = {
         factor = 50
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
         factor = 0
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -1789,14 +1789,16 @@ CHI_Legislative_Yuan_decisions = {
       base = 10
       modifier = {
         factor = 50
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
         factor = 0
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -1860,14 +1862,16 @@ CHI_Legislative_Yuan_decisions = {
       base = 10
       modifier = {
         factor = 50
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
         factor = 0
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -1979,14 +1983,16 @@ CHI_Legislative_Yuan_decisions = {
       base = 10
       modifier = {
         factor = 50
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
         factor = 0
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -2053,15 +2059,17 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
       modifier = {
-        factor = 50
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        factor = 0
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
-        factor = 0
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        factor = 50
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -2100,15 +2108,17 @@ CHI_Legislative_Yuan_decisions = {
     }
     ai_will_do = {
       modifier = {
-        factor = 50
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        factor = 0
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
-        factor = 0
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        factor = 50
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -2161,15 +2171,17 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
       modifier = {
-        factor = 50
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        factor = 0
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
-        factor = 0
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        factor = 50
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -2241,15 +2253,17 @@ CHI_Legislative_Yuan_decisions = {
     ai_will_do = {
       base = 10
       modifier = {
-        factor = 50
-        CHI_han_kuo_yu_char = {
-          is_country_leader = yes
+        factor = 0
+        has_country_leader = {
+          character = CHI_tsai_ing_wen_char
+          ruling_only = yes
         }
       }
       modifier = {
-        factor = 0
-        CHI_tsai_ing_wen_char = {
-          is_country_leader = yes
+        factor = 50
+        has_country_leader = {
+          character = CHI_han_kuo_yu_char
+          ruling_only = yes
         }
       }
     }
@@ -3795,11 +3809,8 @@ CHI_Military_purchasing_cat = {
       civilian_factory_use = 3
     }
     remove_effect = {
-      random_owned_controlled_state = {
-        is_core_of = ROOT
-        free_building_slots = {
-          building = arms_factory size > 0
-        }
+      random_core_state = {
+        add_extra_state_shared_building_slots = 1
         add_building_construction = {
           type = arms_factory
           level = 1
@@ -4037,11 +4048,8 @@ CHI_Military_purchasing_cat = {
       civilian_factory_use = 3
     }
     remove_effect = {
-      random_owned_controlled_state = {
-        is_core_of = ROOT
-        free_building_slots = {
-          building = arms_factory size > 0
-        }
+      random_core_state = {
+        add_extra_state_shared_building_slots = 1
         add_building_construction = {
           type = arms_factory
           level = 1
@@ -4299,6 +4307,7 @@ CHI_taiwan_war_category = {
       custom_effect_tooltip = CHI_taiwan_war_LOSE_tt
     }
   }
+  
   CHI_defend_penghu_mission = {
     activation = {
       has_war = yes
@@ -7618,15 +7627,15 @@ CHI_Intervene_the_American_Civil_War_category = {
     }
     days_remove = 180
     custom_cost_trigger = {
-      command_power > 99
+      command_power > 79
       has_political_power > 49
     }
     ai_will_do = {
       base = 25
     }
-    custom_cost_text = decision_cost_50pp_100cp
+    custom_cost_text = decision_cost_50pp_80cp
     complete_effect = {
-      add_command_power = -100
+      add_command_power = -80
       add_political_power = -50
     }
     modifier = {
@@ -7993,8 +8002,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8056,8 +8064,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8120,8 +8127,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8217,8 +8223,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8283,8 +8288,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8492,8 +8496,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8555,8 +8558,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -8618,8 +8620,7 @@ CHI_NCSIST_category = {
       }
       else = {
         check_variable = {
-          var = income_var
-          value > 199
+          income_var > 199
         }
       }
     }
@@ -9751,7 +9752,7 @@ CHI_GAW_situation_category = {
       naval_invasion_penalty = -0.2
     }
     targeted_modifier = {
-      target = PRC
+      tag = PRC
       attack_bonus_against = 0.15
     }
   }

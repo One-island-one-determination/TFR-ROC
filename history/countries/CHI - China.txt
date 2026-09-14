@@ -74,7 +74,9 @@ add_dynamic_modifier = { modifier = CHI_taiwanese_independence_dynamic }
 add_to_variable = { CHI_taiwanese_independence_political_power_gain_var = -0.3 }
 
 ##CHI三軍
-set_country_flag = CHI_ROC_army_flg
+set_country_flag = CHI_ROC_army_flg_1
+set_country_flag = CHI_ROC_airforce_flg_1
+set_country_flag = CHI_ROC_navy_flg_1
 add_dynamic_modifier = { modifier = CHI_ROC_army_dynamic }
 add_dynamic_modifier = { modifier = CHI_ROC_airforce_dynamic }
 add_dynamic_modifier = { modifier = CHI_ROC_navy_dynamic }
@@ -823,8 +825,7 @@ recruit_character = CHI_Xu_yongming_char
 recruit_character = CHI_Qiu_xianzhi_char
 recruit_character = CHI_Gao_yuting_char
 recruit_character = CHI_Chen_Jiaohua_char
-recruit_character = CHI_lin_de_wang_char
-recruit_character = CHI_wu_rong_yuan_char
+
 set_party_name = {
   ideology = social_democrat
   long_name = CHI_NewPowerParty_long

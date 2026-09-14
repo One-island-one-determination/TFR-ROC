@@ -57,3 +57,201 @@ defined_text = {
     localization_key = "CHI_no_Infiltration"
   }
 }
+
+defined_text = {
+  name = Get_CHI_ROC_army_dynamic
+  text = {
+    trigger = { 
+      CHI = {
+        NOT = { has_country_flag = CHI_ROC_army_flg_1 }
+        NOT = { has_country_flag = CHI_ROC_army_flg_2 }  
+        NOT = { has_country_flag = CHI_ROC_army_flg_3 } 
+      } 
+    }
+    localization_key = "unfinished_content"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_army_flg_1 } }
+    localization_key = "CHI_ROC_army_dynamic_1"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_army_flg_2 } }
+    localization_key = "CHI_ROC_army_dynamic_2"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_army_flg_3 } }
+    localization_key = "CHI_ROC_army_dynamic_3"
+  }
+}
+
+defined_text = {
+  name = Get_CHI_ROC_army_dynamic_desc
+  text = {
+    trigger = { 
+      CHI = {
+        NOT = { has_country_flag = CHI_ROC_army_flg_1 }
+        NOT = { has_country_flag = CHI_ROC_army_flg_2 }  
+        NOT = { has_country_flag = CHI_ROC_army_flg_3 } 
+      } 
+    }
+    localization_key = "unfinished_content"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_army_flg_1 } }
+    localization_key = "CHI_ROC_army_dynamic_1_desc"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_army_flg_2 } }
+    localization_key = "CHI_ROC_army_dynamic_2_desc"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_army_flg_3 } }
+    localization_key = "CHI_ROC_army_dynamic_3_desc"
+  }
+}
+
+defined_text = {
+  name = Get_CHI_ROC_airforce_dynamic
+  text = {
+    trigger = { 
+      CHI = {
+        NOT = { has_country_flag = CHI_ROC_airforce_flg_1 }
+        NOT = { has_country_flag = CHI_ROC_airforce_flg_2 }  
+      } 
+    }
+    localization_key = "unfinished_content"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_airforce_flg_1 } }
+    localization_key = "CHI_ROC_airforce_dynamic_1"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_airforce_flg_2 } }
+    localization_key = "CHI_ROC_airforce_dynamic_2"
+  }
+}
+
+defined_text = {
+  name = Get_CHI_ROC_airforce_dynamic_desc
+  text = {
+    trigger = { 
+      CHI = {
+        NOT = { has_country_flag = CHI_ROC_airforce_flg_1 }
+        NOT = { has_country_flag = CHI_ROC_airforce_flg_2 }  
+      } 
+    }
+    localization_key = "unfinished_content"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_airforce_flg_1 } }
+    localization_key = "CHI_ROC_airforce_dynamic_1_desc"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_airforce_flg_2 } }
+    localization_key = "CHI_ROC_airforce_dynamic_2_desc"
+  }
+}
+
+defined_text = {
+  name = Get_CHI_ROC_navy_dynamic
+  text = {
+    trigger = { 
+      CHI = {
+        NOT = { has_country_flag = CHI_ROC_navy_flg_1 }
+        NOT = { has_country_flag = CHI_ROC_navy_flg_2 }  
+        NOT = { has_country_flag = CHI_ROC_navy_flg_3 } 
+      } 
+    }
+    localization_key = "unfinished_content"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_navy_flg_1 } }
+    localization_key = "CHI_ROC_navy_dynamic_1"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_navy_flg_2 } }
+    localization_key = "CHI_ROC_navy_dynamic_2"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_navy_flg_3 } }
+    localization_key = "CHI_ROC_navy_dynamic_3"
+  }
+}
+
+defined_text = {
+  name = Get_CHI_ROC_navy_dynamic_desc
+  text = {
+    trigger = { 
+      CHI = {
+        NOT = { has_country_flag = CHI_ROC_navy_flg_1 }
+        NOT = { has_country_flag = CHI_ROC_navy_flg_2 }  
+        NOT = { has_country_flag = CHI_ROC_navy_flg_3 } 
+      } 
+    }
+    localization_key = "unfinished_content"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_navy_flg_1 } }
+    localization_key = "CHI_ROC_navy_dynamic_1_desc"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_navy_flg_2 } }
+    localization_key = "CHI_ROC_navy_dynamic_2_desc"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_navy_flg_3 } }
+    localization_key = "CHI_ROC_navy_dynamic_3_desc"
+  }
+}
+
+defined_text = {
+  name = Get_CHI_transition_2028
+  text = {
+    trigger = { 
+      CHI = {
+        NOT = { has_country_flag = second_HKY_win_flg }
+        NOT = { has_country_flag = second_CWA_win_flg }  
+        NOT = { has_country_flag = second_JSK_win_flg } 
+      } 
+    }
+    localization_key = "unfinished_content"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = second_HKY_win_flg } }
+    localization_key = "CHI_duty_of_the_helmsman"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = second_CWA_win_flg } }
+    localization_key = "CHI_dont_wait_dont_rely"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = second_JSK_win_flg } }
+    localization_key = "CHI_transition_2028_jsk"
+  }
+}
+
+defined_text = {
+  name = Get_CHI_transition_2028_desc
+  text = {
+    trigger = { 
+      CHI = {
+        NOT = { has_country_flag = second_HKY_win_flg }
+        NOT = { has_country_flag = second_CWA_win_flg }  
+        NOT = { has_country_flag = second_JSK_win_flg } 
+      } 
+    }
+    localization_key = "unfinished_content"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = second_HKY_win_flg } }
+    localization_key = "CHI_duty_of_the_helmsman_desc"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = second_CWA_win_flg } }
+    localization_key = "CHI_dont_wait_dont_rely_desc"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = second_JSK_win_flg } }
+    localization_key = "CHI_transition_2028_jsk_desc"
+  }
+}

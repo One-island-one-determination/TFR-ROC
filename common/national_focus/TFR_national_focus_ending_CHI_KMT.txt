@@ -201,15 +201,15 @@ focus_tree = {
       add_dynamic_modifier = { modifier = CHI_Economy_cn }
       set_portraits = {
         character = CHI_han_kuo_yu_char
-        civilian = { large = "gfx/Leaders/CHI/CHI_han_kuo_yu_ccw_ending.png" }
+        civilian = { large = "gfx/leaders/CHI/CHI_han_kuo_yu_ccw_ending.png" }
       }
       set_portraits = {
         character = CHI_chiang_wan_an_char
-        civilian = { large = "gfx/Leaders/CHI/CHI_chiang_wan_an_ccw_ending.png" }
+        civilian = { large = "gfx/leaders/CHI/CHI_chiang_wan_an_ccw_ending.png" }
       }
       set_portraits = {
         character = CHI_zhao_shao_kang_char
-        civilian = { large = "gfx/Leaders/CHI/CHI_zhao_shao_kang_ccw_ending.png" }
+        civilian = { large = "gfx/leaders/CHI/CHI_zhao_shao_kang_ccw_ending.png" }
       }
       hidden_effect = {
         1148 = { remove_core_of = PRC remove_claim_by = PRC } # 台灣北部
@@ -222,6 +222,7 @@ focus_tree = {
         1383 = { remove_core_of = PRC remove_claim_by = PRC } # 越控南沙群島
         1384 = { remove_core_of = PRC remove_claim_by = PRC } # 菲控南沙群島
         879 = { remove_core_of = PRC remove_claim_by = PRC }  # 西沙群島
+        876 = { remove_core_of = PRC remove_claim_by = PRC }  # 釣魚台
       }
     }
   }
@@ -252,6 +253,20 @@ focus_tree = {
     prerequisite = {
       focus = CHI_rapid_political_tutelage
     }
+    completion_reward = {
+      set_party_name = { ideology = totalitarian_socialist long_name = CHI_totalitarian_socialist_han_kuo_yu_ending name = CHI_totalitarian_socialist_han_kuo_yu_ending }
+      set_party_name = { ideology = communist long_name = CHI_authoritarian_socialist_han_kuo_yu_ending name = CHI_authoritarian_socialist_han_kuo_yu_ending }
+      set_party_name = { ideology = libertarian_socialist long_name = CHI_libertarian_socialist_han_kuo_yu_ending name = CHI_libertarian_socialist_han_kuo_yu_ending }
+      set_party_name = { ideology = social_democrat long_name = CHI_social_democrat_han_kuo_yu_ending name = CHI_social_democrat_han_kuo_yu_ending }
+      set_party_name = { ideology = social_liberal long_name = CHI_social_liberal_han_kuo_yu_ending name = CHI_social_liberal_han_kuo_yu_ending }
+      set_party_name = { ideology = market_liberal long_name = CHI_market_liberal_han_kuo_yu_ending name = CHI_market_liberal_han_kuo_yu_ending }
+      set_party_name = { ideology = conservative long_name = CHI_conservative_han_kuo_yu_ending name = CHI_conservative_han_kuo_yu_ending }
+      set_party_name = { ideology = nationalist long_name = CHI_despotic_han_kuo_yu_ending name = CHI_despotic_han_kuo_yu_ending }
+      set_party_name = { ideology = fascist long_name = CHI_fascism_han_kuo_yu_ending name = CHI_fascism_han_kuo_yu_ending }
+      set_party_name = { ideology = national_socialist long_name = CHI_national_socialist_han_kuo_yu_ending name = CHI_national_socialist_han_kuo_yu_ending }
+
+
+    }
   }
   focus = {
     id = CHI_finally_free
@@ -263,6 +278,9 @@ focus_tree = {
     cancel_if_invalid = yes
     prerequisite = {
       focus = CHI_begonia_leaf
+    }
+    available = {
+      has_war = no
     }
   
     completion_reward = {

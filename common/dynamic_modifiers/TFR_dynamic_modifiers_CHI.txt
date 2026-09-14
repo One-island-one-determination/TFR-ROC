@@ -214,7 +214,7 @@ CHI_asia_pacific_armament = {
 	local_org_regain = 0.05
 	org_loss_when_moving = -0.1
 	army_speed_factor = 0.05
-	local_attrition = -0.1
+	attrition_for_controller = -0.1
 	supply_consumption_factor = -0.1
 }
 
@@ -224,7 +224,7 @@ CHI_waves_of_nujiang = {
 		tag = CHI
 	}
 	army_attack_factor = 0.1
-	local_attrition = -0.15
+	attrition_for_controller = -0.15
 	local_org_regain = 0.05
 }
 
@@ -296,161 +296,7 @@ Republic_of_China_dynamic = {
 CHI_ROC_army_dynamic = {
 	icon = GFX_idea_CHI_ROC_army
 	enable = {
-		has_country_flag = CHI_ROC_army_flg
-	}
-	# ==========================================
-	# 陸軍核心戰鬥與組織 (Army Core Combat & Organization)
-	# ==========================================
-	army_attack_factor = ROC_army_attack_factor	# 陸軍整體攻擊力修正
-	army_defence_factor = ROC_army_defence_factor	# 陸軍整體防禦力修正
-	army_org_factor = ROC_army_org_factor	# 陸軍最大組織度修正
-	army_org_regain = ROC_army_org_regain	# 陸軍組織度恢復速度
-	army_morale_factor = ROC_army_morale_factor	# 陸軍士氣（影響組織度恢復速率）
-	army_strength_factor = ROC_army_strength_factor	# 陸軍兵力/耐久度修正
-	breakthrough_factor = ROC_breakthrough_factor	# 陸軍突破能力修正
-	combat_width_factor = ROC_combat_width_factor	# 戰鬥寬度修正
-	land_reinforce_rate = ROC_land_reinforce_rate	# 增援率（預備隊投入戰鬥的機率）
-	initiative_factor = ROC_initiative_factor	# 主動性修正（影響戰術選擇與增援）
-	coordination_bonus = ROC_coordination_bonus	# 協同作戰加成（集火目標能力）
-	max_planning = ROC_max_planning	# 最大作戰計畫加成上限修正
-	planning_speed = ROC_planning_speed	# 作戰計畫制定速度
-	terrain_penalty_reduction = ROC_terrain_penalty_reduction
-	acclimatization_hot_climate_gain_factor = ROC_acclimatization_hot_climate_gain_factor
-	army_non_core_defence_factor = ROC_army_non_core_defence_factor
-	recon_factor = ROC_recon_factor
-	army_breakthrough_against_minor_factor = ROC_army_breakthrough_against_minor_factor
-	land_night_attack = ROC_land_night_attack
-	org_loss_at_low_org_factor = ROC_org_loss_at_low_org_factor
-	army_attack_against_major_factor = ROC_army_attack_against_major_factor
-	army_defence_against_major_factor = ROC_army_defence_against_major_factor
-	# ==========================================
-	# 兵種特化加成 (Unit Specific Bonuses)
-	# ==========================================
-	army_armor_attack_factor = ROC_army_armor_attack_factor	# 裝甲部隊攻擊修正
-	army_armor_defence_factor = ROC_army_armor_defence_factor	# 裝甲部隊防禦修正
-	mechanized_defence_factor = ROC_mechanized_defence_factor	# 機械化部隊防禦修正
-	special_forces_attack_factor = ROC_special_forces_attack_factor	# 特種部隊攻擊修正
-	special_forces_defence_factor = ROC_special_forces_defence_factor	# 特種部隊防禦修正
-	naval_invasion_penalty = ROC_naval_invasion_penalty	# 兩棲登陸作戰懲罰減免
-	invasion_preparation = ROC_invasion_preparation
-	# ==========================================
-	# 本土防衛與補給系統 (Home Defense & Supply System)
-	# ==========================================
-	army_core_attack_factor = ROC_army_core_attack_factor	# 核心領土陸軍攻擊修正
-	army_core_defence_factor = ROC_army_core_defence_factor	# 核心領土陸軍防禦修正
-	supply_consumption_factor = ROC_supply_consumption_factor	# 整體補給消耗修正
-	supply_combat_penalties_on_core_factor = ROC_supply_combat_penalties_on_core_factor	# 核心領土缺乏補給戰鬥懲罰減免
-	no_supply_grace = ROC_no_supply_grace	# 攜行補給（小時）
-	supply_node_range = ROC_supply_node_range	# 補給節點輻射範圍修正
-	equipment_capture = ROC_equipment_capture
-	army_fuel_consumption_factor = ROC_army_fuel_consumption_factor
-	# ==========================================
-	# 人力、維護與軍隊訓練 (Manpower, Upkeep & Training)
-	# ==========================================
-	conscription_factor = ROC_conscription_factor	# 適役人口係數修正（徵兵比例）
-	mobilization_speed = ROC_mobilization_speed	# 動員速度（法案切換生效速度）
-	training_time_factor = ROC_training_time_factor	# 部隊訓練時間修正（正值=變慢，負值=變快）
-	battalion_upkeep_factor = ROC_battalion_upkeep_factor	# 陸軍營級單位維護費修正
-	military_development_monthly = ROC_military_development_monthly	# [TFR特有] 每月軍事發展進度變化
-	# ==========================================
-	# 經驗、指揮點數與學說 (XP, CP & Doctrine)
-	# ==========================================
-	experience_gain_factor = ROC_experience_gain_factor	# 經驗獲得倍率修正（將/陸/空/海）
-	experience_gain_army_factor = ROC_experience_gain_army_factor	# 陸軍經驗獲取倍率
-	experience_loss_factor = ROC_experience_loss_factor	# 部隊傷亡時的經驗流失係數
-	command_power_gain_mult = ROC_command_power_gain_mult	# 指揮點數（CP）獲取倍率
-	land_doctrine_cost_factor = ROC_land_doctrine_cost_factor	# 陸軍學說花費修正
-	# ==========================================
-	# 情報、基建與外交限制 (Intel, Infrastructure & Diplomacy)
-	# ==========================================
-	army_intel_to_others = ROC_army_intel_to_others	# 洩漏給他國的陸軍情報（負值為保密）
-	civilian_intel_to_others = ROC_civilian_intel_to_others	# 洩漏給他國的民事情報
-	repair_speed_rail_way_factor = ROC_repair_speed_rail_way_factor	# 鐵路修復速度修正
-	cannot_call_allies_or_join_wars = ROC_cannot_call_allies_or_join_wars	# 外交限制：無法召喚盟友或加入戰爭
-}
-
-# 國軍2
-CHI_ROC_army_dynamic_2 = {
-	icon = GFX_idea_CHI_ROC_army
-	enable = {
-		has_country_flag = CHI_ROC_army_flg
-	}
-	# ==========================================
-	# 陸軍核心戰鬥與組織 (Army Core Combat & Organization)
-	# ==========================================
-	army_attack_factor = ROC_army_attack_factor	# 陸軍整體攻擊力修正
-	army_defence_factor = ROC_army_defence_factor	# 陸軍整體防禦力修正
-	army_org_factor = ROC_army_org_factor	# 陸軍最大組織度修正
-	army_org_regain = ROC_army_org_regain	# 陸軍組織度恢復速度
-	army_morale_factor = ROC_army_morale_factor	# 陸軍士氣（影響組織度恢復速率）
-	army_strength_factor = ROC_army_strength_factor	# 陸軍兵力/耐久度修正
-	breakthrough_factor = ROC_breakthrough_factor	# 陸軍突破能力修正
-	combat_width_factor = ROC_combat_width_factor	# 戰鬥寬度修正
-	land_reinforce_rate = ROC_land_reinforce_rate	# 增援率（預備隊投入戰鬥的機率）
-	initiative_factor = ROC_initiative_factor	# 主動性修正（影響戰術選擇與增援）
-	coordination_bonus = ROC_coordination_bonus	# 協同作戰加成（集火目標能力）
-	max_planning = ROC_max_planning	# 最大作戰計畫加成上限修正
-	planning_speed = ROC_planning_speed	# 作戰計畫制定速度
-	terrain_penalty_reduction = ROC_terrain_penalty_reduction
-	acclimatization_hot_climate_gain_factor = ROC_acclimatization_hot_climate_gain_factor
-	army_non_core_defence_factor = ROC_army_non_core_defence_factor
-	recon_factor = ROC_recon_factor
-	army_breakthrough_against_minor_factor = ROC_army_breakthrough_against_minor_factor
-	land_night_attack = ROC_land_night_attack
-	org_loss_at_low_org_factor = ROC_org_loss_at_low_org_factor
-	army_attack_against_major_factor = ROC_army_attack_against_major_factor
-	army_defence_against_major_factor = ROC_army_defence_against_major_factor
-	# ==========================================
-	# 兵種特化加成 (Unit Specific Bonuses)
-	# ==========================================
-	army_armor_attack_factor = ROC_army_armor_attack_factor	# 裝甲部隊攻擊修正
-	army_armor_defence_factor = ROC_army_armor_defence_factor	# 裝甲部隊防禦修正
-	mechanized_defence_factor = ROC_mechanized_defence_factor	# 機械化部隊防禦修正
-	special_forces_attack_factor = ROC_special_forces_attack_factor	# 特種部隊攻擊修正
-	special_forces_defence_factor = ROC_special_forces_defence_factor	# 特種部隊防禦修正
-	naval_invasion_penalty = ROC_naval_invasion_penalty	# 兩棲登陸作戰懲罰減免
-	invasion_preparation = ROC_invasion_preparation
-	# ==========================================
-	# 本土防衛與補給系統 (Home Defense & Supply System)
-	# ==========================================
-	army_core_attack_factor = ROC_army_core_attack_factor	# 核心領土陸軍攻擊修正
-	army_core_defence_factor = ROC_army_core_defence_factor	# 核心領土陸軍防禦修正
-	supply_consumption_factor = ROC_supply_consumption_factor	# 整體補給消耗修正
-	supply_combat_penalties_on_core_factor = ROC_supply_combat_penalties_on_core_factor	# 核心領土缺乏補給戰鬥懲罰減免
-	no_supply_grace = ROC_no_supply_grace	# 攜行補給（小時）
-	supply_node_range = ROC_supply_node_range	# 補給節點輻射範圍修正
-	equipment_capture = ROC_equipment_capture
-	army_fuel_consumption_factor = ROC_army_fuel_consumption_factor
-	# ==========================================
-	# 人力、維護與軍隊訓練 (Manpower, Upkeep & Training)
-	# ==========================================
-	conscription_factor = ROC_conscription_factor	# 適役人口係數修正（徵兵比例）
-	mobilization_speed = ROC_mobilization_speed	# 動員速度（法案切換生效速度）
-	training_time_factor = ROC_training_time_factor	# 部隊訓練時間修正（正值=變慢，負值=變快）
-	battalion_upkeep_factor = ROC_battalion_upkeep_factor	# 陸軍營級單位維護費修正
-	military_development_monthly = ROC_military_development_monthly	# [TFR特有] 每月軍事發展進度變化
-	# ==========================================
-	# 經驗、指揮點數與學說 (XP, CP & Doctrine)
-	# ==========================================
-	experience_gain_factor = ROC_experience_gain_factor	# 經驗獲得倍率修正（將/陸/空/海）
-	experience_gain_army_factor = ROC_experience_gain_army_factor	# 陸軍經驗獲取倍率
-	experience_loss_factor = ROC_experience_loss_factor	# 部隊傷亡時的經驗流失係數
-	command_power_gain_mult = ROC_command_power_gain_mult	# 指揮點數（CP）獲取倍率
-	land_doctrine_cost_factor = ROC_land_doctrine_cost_factor	# 陸軍學說花費修正
-	# ==========================================
-	# 情報、基建與外交限制 (Intel, Infrastructure & Diplomacy)
-	# ==========================================
-	army_intel_to_others = ROC_army_intel_to_others	# 洩漏給他國的陸軍情報（負值為保密）
-	civilian_intel_to_others = ROC_civilian_intel_to_others	# 洩漏給他國的民事情報
-	repair_speed_rail_way_factor = ROC_repair_speed_rail_way_factor	# 鐵路修復速度修正
-	cannot_call_allies_or_join_wars = ROC_cannot_call_allies_or_join_wars	# 外交限制：無法召喚盟友或加入戰爭
-}
-
-# 國軍3
-CHI_ROC_army_dynamic_3 = {
-	icon = GFX_idea_CHI_ROC_army
-	enable = {
-		has_country_flag = CHI_ROC_army_flg
+		tag = CHI
 	}
 	# ==========================================
 	# 陸軍核心戰鬥與組織 (Army Core Combat & Organization)
@@ -527,39 +373,7 @@ CHI_ROC_army_dynamic_3 = {
 CHI_ROC_airforce_dynamic = {
 	icon = GFX_idea_CHI_ROC_airforce
 	enable = {
-		has_country_flag = CHI_ROC_army_flg
-	}
-	air_mission_efficiency = ROC_air_mission_efficiency	# 空軍任務效率修正
-	air_training_xp_gain_factor = ROC_air_training_xp_gain_factor	# 空軍演習經驗獲取係數
-	air_superiority_efficiency = ROC_air_superiority_efficiency
-	air_intercept_efficiency = ROC_air_intercept_efficiency
-	air_cas_efficiency = ROC_air_cas_efficiency
-	air_attack_factor = ROC_air_attack_factor
-	air_defence_factor = ROC_air_defence_factor
-	air_cas_present_factor = ROC_air_cas_present_factor
-	ground_attack_factor = ROC_ground_attack_factor
-	aircraft_upkeep_factor = ROC_aircraft_upkeep_factor	# 飛機維護費修正
-	experience_gain_air = ROC_experience_gain_air	# 空軍經驗獲取量
-	air_doctrine_cost_factor = ROC_air_doctrine_cost_factor	# 空軍學說花費修正
-	air_nav_efficiency = ROC_air_nav_efficiency
-	airforce_intel_to_others = ROC_airforce_intel_to_others	# 洩漏給他國的空軍情報
-	air_escort_efficiency = ROC_air_escort_efficiency
-	repair_speed_air_base_factor = ROC_repair_speed_air_base_factor	# 空軍基地修復速度修正
-	air_close_air_support_org_damage_factor = ROC_air_close_air_support_org_damage_factor
-	air_superiority_bonus_in_combat = ROC_air_superiority_bonus_in_combat
-	air_superiority_detect_factor = ROC_air_superiority_detect_factor
-	enemy_army_bonus_air_superiority_factor = ROC_enemy_army_bonus_air_superiority_factor
-	static_anti_air_damage_factor = ROC_static_anti_air_damage_factor
-	air_strategic_bomber_bombing_factor = ROC_air_strategic_bomber_bombing_factor
-	air_strategic_bomber_night_penalty = ROC_air_strategic_bomber_night_penalty
-	air_fuel_consumption_factor = ROC_air_fuel_consumption_factor
-}
-
-# 空軍2
-CHI_ROC_airforce_dynamic_2 = {
-	icon = GFX_idea_CHI_ROC_airforce
-	enable = {
-		has_country_flag = CHI_ROC_army_flg
+		tag = CHI
 	}
 	air_mission_efficiency = ROC_air_mission_efficiency	# 空軍任務效率修正
 	air_training_xp_gain_factor = ROC_air_training_xp_gain_factor	# 空軍演習經驗獲取係數
@@ -591,49 +405,7 @@ CHI_ROC_airforce_dynamic_2 = {
 CHI_ROC_navy_dynamic = {
 	icon = GFX_idea_CHI_ROC_navy
 	enable = {
-		has_country_flag = CHI_ROC_army_flg
-	}
-	navy_org_factor = ROC_navy_org_factor	# 海軍最大組織度修正
-	naval_coordination = ROC_naval_coordination
-	naval_speed_factor = ROC_naval_speed_factor
-	naval_detection = ROC_naval_detection
-	naval_morale_factor = ROC_naval_morale_factor
-	navy_screen_attack_factor = ROC_navy_screen_attack_factor
-	navy_screen_defence_factor = ROC_navy_screen_defence_factor
-	screening_efficiency = ROC_screening_efficiency
-	ship_upkeep_factor = ROC_ship_upkeep_factor	# 艦艇維護費修正
-	naval_doctrine_cost_factor = ROC_naval_doctrine_cost_factor	# 海軍學說花費修正
-	shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
-	shore_bombardment_bonus = ROC_shore_bombardment_bonus
-	navy_fuel_consumption_factor = ROC_navy_fuel_consumption_factor
-}
-
-# 海軍2
-CHI_ROC_navy_dynamic_2 = {
-	icon = GFX_idea_CHI_ROC_navy
-	enable = {
-		has_country_flag = CHI_ROC_army_flg
-	}
-	navy_org_factor = ROC_navy_org_factor	# 海軍最大組織度修正
-	naval_coordination = ROC_naval_coordination
-	naval_speed_factor = ROC_naval_speed_factor
-	naval_detection = ROC_naval_detection
-	naval_morale_factor = ROC_naval_morale_factor
-	navy_screen_attack_factor = ROC_navy_screen_attack_factor
-	navy_screen_defence_factor = ROC_navy_screen_defence_factor
-	screening_efficiency = ROC_screening_efficiency
-	ship_upkeep_factor = ROC_ship_upkeep_factor	# 艦艇維護費修正
-	naval_doctrine_cost_factor = ROC_naval_doctrine_cost_factor	# 海軍學說花費修正
-	shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
-	shore_bombardment_bonus = ROC_shore_bombardment_bonus
-	navy_fuel_consumption_factor = ROC_navy_fuel_consumption_factor
-}
-
-# 海軍3
-CHI_ROC_navy_dynamic_3 = {
-	icon = GFX_idea_CHI_ROC_navy
-	enable = {
-		has_country_flag = CHI_ROC_army_flg
+		tag = CHI
 	}
 	navy_org_factor = ROC_navy_org_factor	# 海軍最大組織度修正
 	naval_coordination = ROC_naval_coordination
@@ -970,7 +742,12 @@ CHI_dawn = {
 	party_popularity_stability_factor = CHI_D_party_popularity_stability_factor
 	surrender_limit = CHI_D_surrender_limit
 	max_command_power = CHI_D_max_command_power
-	political_advisor_cost_factor = CHI_D_political_advisor_cost_factor
+	head_minister_cost_factor = CHI_D_head_minister_cost_factor
+	foreign_minister_cost_factor = CHI_D_foreign_minister_cost_factor
+	economic_minister_cost_factor = CHI_D_economic_minister_cost_factor
+	interior_minister_cost_factor = CHI_D_interior_minister_cost_factor
+	intelligence_minister_cost_factor = CHI_D_intelligence_minister_cost_factor
+	theorist_minister_cost_factor = CHI_D_theorist_minister_cost_factor
 	high_command_cost_factor = CHI_D_high_command_cost_factor
 	conscription = CHI_D_conscription
 	army_core_attack_factor = CHI_D_army_core_attack_factor
@@ -992,6 +769,79 @@ CHI_love_to_chunghua = {
 	intelligence_agency_defense = CHI_LCH_intelligence_agency_defense
 	operative_slot = CHI_LCH_operative_slot
 }
+
+###_____________________國父線______________________##
+CHI_bloody_flower = {
+	icon = GFX_idea_CHI_bloody_flower
+	enable = {
+		tag = CHI
+	}
+	# ---- 政治 ----
+	political_power_cost = CHI_BF_political_power_cost
+	political_power_gain = CHI_BF_political_power_gain
+	stability_factor = CHI_BF_stability_factor
+	authoritarian_democrat_drift = CHI_BF_authoritarian_democrat_drift    
+	opinion_gain_monthly = CHI_BF_opinion_gain_monthly
+	compliance_growth = CHI_BF_compliance_growth
+	war_support_factor = CHI_BF_war_support_factor
+
+	# ---- 經濟 ----
+	income_growth_factor = CHI_BF_income_growth_factor
+	business_value_factor = CHI_BF_business_value_factor
+	personal_value_factor = CHI_BF_personal_value_factor
+	consumer_goods_factor = CHI_BF_consumer_goods_factor
+	poverty_development_monthly = CHI_BF_poverty_development_monthly
+	society_development_monthly = CHI_BF_society_development_monthly
+	monthly_population = CHI_BF_monthly_population
+	industrial_development_monthly = CHI_BF_industrial_development_monthly
+	military_development_monthly = CHI_BF_military_development_monthly
+	academic_development_monthly = CHI_BF_academic_development_monthly
+	farming_development_monthly = CHI_BF_farming_development_monthly
+	farming_development_monthly = CHI_BF_farming_development_monthly
+
+	# ---- 工業/生產 ----
+	industrial_capacity_factory = CHI_BF_industrial_capacity_factory        
+	production_speed_buildings_factor = CHI_BF_production_speed_buildings_factor
+	production_speed_industrial_complex_factor = CHI_BF_production_speed_industrial_complex_factor
+	production_speed_infrastructure_factor = CHI_BF_production_speed_infrastructure_factor
+	production_speed_rail_way_factor = CHI_BF_production_speed_rail_way_factor
+	production_speed_supply_node_factor = CHI_BF_production_speed_supply_node_factor
+	production_factory_efficiency_gain_factor = CHI_BF_production_factory_efficiency_gain_factor
+	production_factory_start_efficiency_factor = CHI_BF_production_factory_start_efficiency_factor
+	line_change_production_efficiency_factor = CHI_BF_line_change_production_efficiency_factor
+	# building_convertion_factor = CHI_BF_building_convertion_factor
+	conversion_cost_civ_to_mil_factor = CHI_BF_conversion_cost_civ_to_mil_factor
+	conversion_cost_mil_to_civ_factor = CHI_BF_conversion_cost_mil_to_civ_factor
+	industry_free_repair_factor = CHI_BF_industry_free_repair_factor
+	local_building_slots_factor = CHI_BF_local_building_slots_factor
+	local_resources_factor = CHI_BF_local_resources_factor
+	min_export = CHI_BF_min_export
+	# slots_from_population_factor = CHI_BF_slots_from_population_factor
+
+	# ---- 研發 ----
+	research_speed_factor = CHI_BF_research_speed_factor
+
+	# ---- 軍事 ----
+	army_attack_factor = CHI_BF_army_attack_factor
+	army_defence_factor = CHI_BF_army_defence_factor
+	army_org = CHI_BF_army_org
+	army_org_factor = CHI_BF_army_org_factor
+	conscription_factor = CHI_BF_conscription_factor
+	max_command_power = CHI_BF_max_command_power
+	max_planning = CHI_BF_max_planning
+	planning_speed = CHI_BF_planning_speed
+	training_time_factor = CHI_BF_training_time_factor
+	pocket_penalty = CHI_BF_pocket_penalty
+
+	# ---- 情報 ----
+	decryption = CHI_BF_decryption
+}
+
+
+
+
+
+
 ####____________________賴清德____________________##
 CHI_broken_tech_island = {
 	icon = GFX_idea_CHI_broken_tech_island
