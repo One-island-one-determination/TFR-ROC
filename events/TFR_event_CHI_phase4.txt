@@ -455,7 +455,16 @@ country_event = {
 
   option = {
     name = CHI.H4.104.a
-    ai_chance = { base = 100 }
+    ai_chance = {
+			base = 99
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = CHI_japan_return_land
+					option = CHI_japan_return_land_no
+				}
+			}
+		}
     hidden_effect = {
       # Transfer all Chinese and Manchurian states held by JAP / PDTO puppets
       every_state = {
@@ -573,7 +582,22 @@ country_event = {
   }
   option = {
     name = CHI.H4.104.b
-    ai_chance = { base = 0 }
+    ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+        OR = {
+          has_game_rule = {
+					rule = CHI_japan_return_land
+					option = CHI_japan_return_land_yes
+				  }
+          has_game_rule = {
+					rule = CHI_japan_return_land
+					option = DEFAULT
+				  }
+        }
+			}
+		}
     CHI = {
       add_opinion_modifier = {
         target = JAP

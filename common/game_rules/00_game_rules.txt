@@ -818,8 +818,8 @@ The_JAP_CC_Postwar_leadership_election = {#Post Taiwan War §8Civil Coalition§!
 ##
 
 
-CHI_election = {#Republic of China 2020 Election 中华民国2020年大选
-	name = "CHI_election"
+CHI_election_2020_gamerule = {#Republic of China 2020 Election 中华民国2020年大选
+	name = "CHI_election_2020_gamerule"
 	required_dlc = "Waking the Tiger"
 	group = "RULE_GROUP_EAST_ASIAN"
 	default = {
@@ -830,102 +830,126 @@ CHI_election = {#Republic of China 2020 Election 中华民国2020年大选
 	}
 
 	option = {
-		name = CHI_election_green
-		text = "CHI_election_green_TXT"
-		desc = "CHI_election_green_TXT_DESC"
+		name = CHI_election_green_2020
+		text = "CHI_election_green_2020_TXT"
+		desc = "CHI_election_green_2020_TXT_DESC"
 		allow_achievements = yes
 	}
 
 	option = {
-		name = CHI_election_blue
-		text = "CHI_election_blue_TXT"
-		desc = "CHI_election_blue_TXT_DESC"
+		name = CHI_election_blue_2020
+		text = "CHI_election_blue_2020_TXT"
+		desc = "CHI_election_blue_2020_TXT_DESC"
 		allow_achievements = yes
 	}
 }
 
-CHI_election_24_KMT = {#Republic of China 2024 Election 中华民国2024年大选 国民党逆袭
-	name = "CHI_election_24_KMT"
+CHI_election_2024_KMT = {#Republic of China 2024 Election 中华民国2024年大选 国民党逆袭
+	name = "CHI_election_2024_KMT"
 	required_dlc = "Waking the Tiger"
 	group = "RULE_GROUP_EAST_ASIAN"
 	default = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
-		desc = "CHI_election_24_KMT_TXT_DESC"
+		desc = "CHI_election_2024_KMT_TXT_DESC"
 		allow_achievements = yes
 	}
 
 	option = {
-		name = CHI_election_24_KMT_Han
-		text = "CHI_election_24_KMT_Han_TXT"
-		desc = "CHI_election_24_KMT_Han_TXT_DESC"
+		name = CHI_election_2024_KMT_Han
+		text = "CHI_election_2024_KMT_Han_TXT"
+		desc = "CHI_election_2024_KMT_Han_TXT_DESC"
 		allow_achievements = yes
 	}
 
 	option = {
-		name = CHI_election_24_KMT_Chiang
-		text = "CHI_election_24_KMT_Zhao_TXT"
-		desc = "CHI_election_24_KMT_Zhao_TXT_DESC"
+		name = CHI_election_2024_KMT_Chiang
+		text = "CHI_election_2024_KMT_Chiang_TXT"
+		desc = "CHI_election_2024_KMT_Chiang_TXT_DESC"
 		allow_achievements = yes
 	}
 
 	# option = {
-	# 	name = CHI_election_24_KMT_Zhao
-	# 	text = "CHI_election_24_KMT_Zhao_TXT"
-	# 	desc = "CHI_election_24_KMT_Zhao_TXT_DESC"
+	# 	name = CHI_election_2024_KMT_Zhao
+	# 	text = "CHI_election_2024_KMT_Zhao_TXT"
+	# 	desc = "CHI_election_2024_KMT_Zhao_TXT_DESC"
 	# 	allow_achievements = yes
 	# }
 
 	# option = {
-	# 	name = CHI_election_24_KMT_COUP
-	# 	text = "CHI_election_24_KMT_COUP_TXT"
-	# 	desc = "CHI_election_24_KMT_COUP_TXT_DESC"
+	# 	name = CHI_election_2024_KMT_COUP
+	# 	text = "CHI_election_2024_KMT_COUP_TXT"
+	# 	desc = "CHI_election_2024_KMT_COUP_TXT_DESC"
 	# 	allow_achievements = yes
 	# }
 }
 
-# CHI_election_24_DPP = {#Republic of China 2024 Election 中华民国2024年大选 民进党坐庄
-# 	name = "CHI_election_24_DPP"
+# CHI_election_2024_DPP = {#Republic of China 2024 Election 中华民国2024年大选 民进党坐庄
+# 	name = "CHI_election_2024_DPP"
 # 	required_dlc = "Waking the Tiger"
 # 	group = "RULE_GROUP_EAST_ASIAN"
 # 	default = {
 # 		name = DEFAULT
 # 		text = "RULE_OPTION_DEFAULT"
-# 		desc = "CHI_election_24_DPP_TXT_DESC"
+# 		desc = "CHI_election_2024_DPP_TXT_DESC"
 # 		allow_achievements = yes
 # 	}
 # 	option = {
-# 		name = CHI_election_24_DPP_Chen
-# 		text = "CHI_election_24_DPP_Chen_TXT"
-# 		desc = "CHI_election_24_DPP_Chen_TXT_DESC"
+# 		name = CHI_election_2024_DPP_Chen
+# 		text = "CHI_election_2024_DPP_Chen_TXT"
+# 		desc = "CHI_election_2024_DPP_Chen_TXT_DESC"
 # 		allow_achievements = yes
 # 	}
 # 	option = {
-# 		name = CHI_election_24_DPP_Zheng
-# 		text = "CHI_election_24_DPP_Zheng_TXT"
-# 		desc = "CHI_election_24_DPP_Zheng_TXT_DESC"
+# 		name = CHI_election_2024_DPP_Zheng
+# 		text = "CHI_election_2024_DPP_Zheng_TXT"
+# 		desc = "CHI_election_2024_DPP_Zheng_TXT_DESC"
 # 		allow_achievements = yes
 # 	}
 # 	option = {
-# 		name = CHI_election_24_DPP_Lai
-# 		text = "CHI_election_24_DPP_Lai_TXT"
-# 		desc = "CHI_election_24_DPP_Lai_TXT_DESC"
+# 		name = CHI_election_2024_DPP_Lai
+# 		text = "CHI_election_2024_DPP_Lai_TXT"
+# 		desc = "CHI_election_2024_DPP_Lai_TXT_DESC"
 # 		allow_achievements = yes
 # 	}
 # 	option = {
-# 		name = CHI_election_24_DPP_TPP
-# 		text = "CHI_election_24_DPP_TPP_TXT"
-# 		desc = "CHI_election_24_DPP_TPP_TXT_DESC"
+# 		name = CHI_election_2024_DPP_TPP
+# 		text = "CHI_election_2024_DPP_TPP_TXT"
+# 		desc = "CHI_election_2024_DPP_TPP_TXT_DESC"
 # 		allow_achievements = yes
 # 	}
 # 	option = {
-# 		name = CHI_election_24_DPP_COUP
-# 		text = "CHI_election_24_DPP_COUP_TXT"
-# 		desc = "CHI_election_24_DPP_COUP_TXT_DESC"
+# 		name = CHI_election_2024_DPP_COUP
+# 		text = "CHI_election_2024_DPP_COUP_TXT"
+# 		desc = "CHI_election_2024_DPP_COUP_TXT_DESC"
 # 		allow_achievements = yes
 # 	}
 # }
+CHI_japan_return_land = { #民國竟成後日本是否還地
+	name = "CHI_japan_return_land"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
 
+	option = {
+		name = CHI_japan_return_land_yes
+		text = "CHI_japan_return_land_yes_TXT"
+		desc = "CHI_japan_return_land_yes_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = CHI_japan_return_land_no
+		text = "CHI_japan_return_land_no_TXT"
+		desc = "CHI_japan_return_land_no_TXT_DESC"
+		allow_achievements = yes
+	}
+}
 
 
 ##
