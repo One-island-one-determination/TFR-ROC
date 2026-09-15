@@ -77,13 +77,20 @@ focus_tree = {
       focus = CHI_Self_sutureing_trauma
     }
     completion_reward = {
-      # country_event = {
-      #   id = CHI.102
-      # }
-      # add_ideas = {
-      #   civilian_economy
-      #   volunteer_only
-      # }
+      add_stability = -0.1
+      add_war_support = 0.05
+      add_popularity = {
+      ideology = totalitarian_socialist
+      popularity = -0.1
+      }
+      add_popularity = {
+        ideology = communist
+        popularity = -0.1
+      }
+      add_popularity = {
+        ideology = libertarian_socialist
+        popularity = -0.1
+      }
     }
   }
   focus = {
@@ -100,6 +107,7 @@ focus_tree = {
     prerequisite = {
       focus = CHI_Self_sutureing_trauma
     }
+    
     completion_reward = {
       add_stability = 0.05
     }
@@ -112,6 +120,16 @@ focus_tree = {
     icon = GFX_focus_CHI_Lifting_martial_law
     continue_if_invalid = no
     cancel_if_invalid = yes
+    ai_chance = {
+			base = 80
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = CHI_election
+					option = CHI_election_24_KMT_Chiang
+				}
+			}
+		}
     mutually_exclusive = {
       focus = CHI_Restart_Temporary_Provisions
     }
@@ -145,6 +163,16 @@ focus_tree = {
     mutually_exclusive = {
       focus = CHI_Lifting_martial_law
     }
+    ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = CHI_election
+					option = CHI_election_24_KMT_Han
+				}
+			}
+		}
     prerequisite = {
       focus = CHI_Eliminate_communist_traitors
     }
@@ -154,15 +182,12 @@ focus_tree = {
   }
   focus = {
     id = CHI_Plum_blossoms_bloom_in_the_bitter_winter
-    x = 6
+    x = 4
     y = 4
     cost = 2
     icon = GFX_focus_CHI_Plum_blossoms_bloom_in_the_bitter_winter
     continue_if_invalid = no
     cancel_if_invalid = yes
-    prerequisite = {
-      focus = CHI_Preserving_diverse_voices
-    }
     prerequisite = {
       focus = CHI_Lifting_martial_law
     }

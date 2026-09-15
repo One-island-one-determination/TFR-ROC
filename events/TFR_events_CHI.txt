@@ -18,7 +18,16 @@ country_event = {
   is_triggered_only = yes
   option = {
     name = taiwan.4.a
-    ai_chance = { factor = 30 }
+    ai_chance = {
+			base = 30
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = CHI_election
+					option = CHI_election_blue
+				}
+			}
+		}
     complete_national_focus = Taiwan_will_win
     focus_unlock = yes
     hidden_effect = {
@@ -61,7 +70,16 @@ country_event = {
   }
   option = {
     name = taiwan.4.b
-    ai_chance = { factor = 70 }
+    ai_chance = {
+			base = 70
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = CHI_election
+					option = CHI_election_green
+				}
+			}
+		}
     complete_national_focus = Taiwan_safe_people_rich
     custom_effect_tooltip = CHI_chen_qi_mai_gaoxiong_tt
     focus_unlock = yes
