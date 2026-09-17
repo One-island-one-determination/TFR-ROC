@@ -1394,4 +1394,34 @@ characters = {
         ai_will_do = { factor = 1.000 }
     }
   }
+
+	CHI_database_char = {
+		name = CHI_database_char
+		portraits = {
+			civilian = {
+				large = GFX_CHI_Database_Animated
+			}
+			army = {
+				large = GFX_CHI_Database_Animated
+			}
+		}
+		country_leader = {
+			ideology = CHI_ultimate_three_principles
+			traits = { }
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	
+	CHI_anarchy_char = {
+		name = ZZZ_anarchy_char
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
+			}
+			army = {
+				large = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
+			}
+		}
+	}
 }

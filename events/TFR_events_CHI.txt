@@ -8,6 +8,8 @@ add_namespace = taiwan
 add_namespace = taiwan_temp_skeleton
 add_namespace = taiwan_detente
 add_namespace = CHI.hidden
+add_namespace = TFR_CHI_ai
+add_namespace = TFR_news_CHI_ai
 # 中華民國2020年大選
 country_event = {
   id = CHI.1
@@ -3398,3 +3400,106 @@ country_event = {
   }
 }
 
+# Day 7
+country_event = {
+	id = TFR_CHI_ai.1
+	title = TFR_CHI_ai.1.t
+	desc = TFR_CHI_ai.1.d
+	picture = GFX_news_event_taiwan
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			# Remove blackout cosmetic, set AI government cosmetic
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = CHI_ai_gov
+			# Set despotism to 100% support
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = no
+			}
+
+			change_government_type_ai_governance = yes
+
+			change_economy_type_military_controlled = yes
+
+			set_country_leader_name = {
+				ideology = nationalist
+				name = CHI_database_char
+			}
+			set_country_leader_portrait = {
+				ideology = nationalist
+				portrait = GFX_CHI_Database_Animated
+			}
+			set_country_leader_ideology = CHI_ultimate_three_principles
+			# Rename the Despotism party
+			set_party_name = {
+				ideology = nationalist
+				long_name = CHI_nationalist_ai_party_long
+				name = CHI_nationalist_ai_party
+			}
+		}
+	}
+
+	option = {
+		name = TFR_CHI_ai.1.a
+	}
+}
+
+# Taiwan Loses Contact - The Blackout
+news_event = {
+	id = TFR_news_CHI_ai.1
+	title = TFR_news_CHI_ai.1.t
+	desc = TFR_news_CHI_ai.1.d
+	picture = GFX_news_event_taiwan
+
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_cosmetic_tag = CHI_blackout
+			# Clear current economy and set chaotic
+			change_economy_type_chaostic = yes
+			# Overwrite the current leader with anarchy portrait/name
+			set_country_leader_name = {
+				ideology = authoritarian_democrat
+				name = ZZZ_anarchy_char
+			}
+			set_country_leader_portrait = {
+				ideology = authoritarian_democrat
+				portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
+			}
+			set_country_leader_name = {
+				ideology = nationalist
+				name = ZZZ_anarchy_char
+			}
+			set_country_leader_portrait = {
+				ideology = nationalist
+				portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
+			}
+			# Set massive nationalist drift to reach 100% in 7 days
+			add_ideas = CHI_ai_takeover_drift
+			# Trigger the AI awakening event after 7 days
+			country_event = { id = TFR_CHI_ai.1 days = 7 }
+		}
+	}
+
+	option = {
+		name = TFR_news_CHI_ai.1.a
+		trigger = {
+			NOT = { tag = CHI }
+		}
+	}
+
+	option = {
+		name = TFR_news_CHI_ai.1.b
+		trigger = {
+			tag = CHI
+		}
+	}
+}

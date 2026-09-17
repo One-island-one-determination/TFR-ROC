@@ -355,6 +355,17 @@ CHI_debug = {
       }
     }
   }
+  load_AI_KMT = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI = {
+        load_focus_tree = CHI_black_box_tree
+      }
+    }
+  }
   add_ecn_armor = {
     icon = generic_decision
     allowed = { always = yes }

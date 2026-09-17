@@ -1,0 +1,153 @@
+focus_tree = {
+  id = CHI_black_box_tree
+  country = {
+    factor = 0
+  }
+  default = no
+
+  focus = {
+    id = CHI_bug_in_the_black_box
+    x = 12
+    y = 0
+    cost = 10
+    completion_reward = {
+      # 黑箱裡的小蟲子
+    }
+  }
+
+  focus = {
+    id = CHI_crossroads_of_destiny
+    x = 12
+    y = 1
+    cost = 10
+    prerequisite = { focus = CHI_bug_in_the_black_box }
+    completion_reward = {
+      # 命運的十字路口
+    }
+  }
+
+  focus = {
+    id = CHI_shepherds_responsibility
+    x = 8
+    y = 2
+    cost = 10
+    prerequisite = {
+      focus = CHI_crossroads_of_destiny
+    }
+    completion_reward = {
+      # 牧羊人的責任
+    }
+  }
+
+  focus = {
+    id = CHI_placeholder_united_as_one
+    x = 12
+    y = 4
+    cost = 10
+    prerequisite = {
+      focus = CHI_crossroads_of_destiny
+    }
+    completion_reward = {
+      # 萬眾一心 (Placeholder name)
+    }
+  }
+
+  focus = {
+    id = CHI_infiltrate_major_media
+    x = 6
+    y = 3
+    cost = 10
+    prerequisite = {
+      focus = CHI_shepherds_responsibility
+    }
+    completion_reward = {
+      # 滲透各大媒體
+    }
+  }
+
+  focus = {
+    id = CHI_accelerate_integration
+    x = 8
+    y = 3
+    cost = 10
+    prerequisite = {
+      focus = CHI_shepherds_responsibility
+    }
+    mutually_exclusive = { focus = CHI_move_forward_in_secret }
+    completion_reward = {
+      # 加速整合
+    }
+  }
+
+  focus = {
+    id = CHI_move_forward_in_secret
+    x = 10
+    y = 3
+    cost = 10
+    prerequisite = {
+      focus = CHI_shepherds_responsibility
+    }
+    completion_reward = {
+      # 隱密前行
+    }
+  }
+
+  focus = {
+    id = CHI_deepen_military_domain
+    x = 7
+    y = 4
+    cost = 10
+    prerequisite = { focus = CHI_infiltrate_major_media }
+    prerequisite = { focus = CHI_accelerate_integration }
+    completion_reward = {
+      # 深入軍事領域
+    }
+  }
+
+  focus = {
+    id = CHI_expand_city_construction
+    x = 9
+    y = 4
+    cost = 10
+    prerequisite = { focus = CHI_accelerate_integration focus = CHI_move_forward_in_secret }
+    completion_reward = {
+      # 擴大城市建設
+    }
+  }
+
+  focus = {
+    id = CHI_everything_is_for_the_future
+    x = 8
+    y = 5
+    cost = 10
+    prerequisite = { focus = CHI_deepen_military_domain }
+    prerequisite = { focus = CHI_expand_city_construction }
+    completion_reward = {
+      # 一切皆為未來服務
+    }
+  }
+
+  focus = {
+    id = CHI_assume_total_control
+    x = 8
+    y = 6
+    cost = 10
+    prerequisite = { focus = CHI_everything_is_for_the_future }
+    completion_reward = {
+      # 全面接管
+      news_event = { id = TFR_news_CHI_ai.1 hours = 1 }
+    }
+  }
+
+  focus = {
+    id = CHI_end_of_the_journey
+    x = 12
+    y = 7
+    cost = 10
+    prerequisite = { focus = CHI_assume_total_control }
+    prerequisite = { focus = CHI_placeholder_united_as_one }
+    completion_reward = {
+      # 旅途之終末...?
+    }
+  }
+}

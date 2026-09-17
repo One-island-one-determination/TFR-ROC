@@ -2302,5 +2302,15 @@ ideas = {
 				electronics = -0.05
 			}
 		}
+		
+		# AI Takeover hidden drift
+		CHI_ai_takeover_drift = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				nationalist_drift = 15
+			}
+		}
 	}
 }
