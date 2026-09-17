@@ -8,8 +8,8 @@ add_namespace = taiwan
 add_namespace = taiwan_temp_skeleton
 add_namespace = taiwan_detente
 add_namespace = CHI.hidden
-add_namespace = TFR_CHI_ai
-add_namespace = TFR_news_CHI_ai
+add_namespace = CHI_ai_takeover
+add_namespace = CHI_ai_takeover_news
 # 中華民國2020年大選
 country_event = {
   id = CHI.1
@@ -3402,9 +3402,9 @@ country_event = {
 
 # Day 7
 country_event = {
-	id = TFR_CHI_ai.1
-	title = TFR_CHI_ai.1.t
-	desc = TFR_CHI_ai.1.d
+	id = CHI_ai_takeover.1
+	title = CHI_ai_takeover.1.t
+	desc = CHI_ai_takeover.1.d
 	picture = GFX_news_event_taiwan
 
 	is_triggered_only = yes
@@ -3444,15 +3444,15 @@ country_event = {
 	}
 
 	option = {
-		name = TFR_CHI_ai.1.a
+		name = CHI_ai_takeover.1.a
 	}
 }
 
 # Taiwan Loses Contact - The Blackout
 news_event = {
-	id = TFR_news_CHI_ai.1
-	title = TFR_news_CHI_ai.1.t
-	desc = TFR_news_CHI_ai.1.d
+	id = CHI_ai_takeover_news.1
+	title = CHI_ai_takeover_news.1.t
+	desc = CHI_ai_takeover_news.1.d
 	picture = GFX_news_event_taiwan
 
 	major = yes
@@ -3485,19 +3485,19 @@ news_event = {
 			# Set massive nationalist drift to reach 100% in 7 days
 			add_ideas = CHI_ai_takeover_drift
 			# Trigger the AI awakening event after 7 days
-			country_event = { id = TFR_CHI_ai.1 days = 7 }
+			country_event = { id = CHI_ai_takeover.1 days = 7 }
 		}
 	}
 
 	option = {
-		name = TFR_news_CHI_ai.1.a
+		name = CHI_ai_takeover_news.1.a
 		trigger = {
 			NOT = { tag = CHI }
 		}
 	}
 
 	option = {
-		name = TFR_news_CHI_ai.1.b
+		name = CHI_ai_takeover_news.1.b
 		trigger = {
 			tag = CHI
 		}
