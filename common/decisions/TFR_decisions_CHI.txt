@@ -6271,31 +6271,31 @@ CHI_army_decisions = {
         is_locked = yes				# 【關鍵】鎖定模板，玩家無法編輯或刪除
         priority = 2
         regiments = {
-          motorized = {
+          mechanized = {
             x = 0
             y = 0
           }
-          motorized = {
+          mechanized = {
             x = 0
             y = 1
           }
-          motorized = {
+          mechanized = {
             x = 0
             y = 2
           }
-          motorized = {
+          mechanized = {
             x = 0
             y = 3
           }
-          motorized = {
+          mechanized = {
             x = 0
             y = 4
           }
-          motorized = {
+          mechanized = {
             x = 1
             y = 0
           }
-          motorized = {
+          mechanized = {
             x = 1
             y = 1
           }
@@ -6308,6 +6308,10 @@ CHI_army_decisions = {
           engineer = {
             x = 0
             y = 1
+          }
+          artillery = {
+            x = 0
+            y = 2
           }
         }
       }
@@ -6337,17 +6341,25 @@ CHI_army_decisions = {
             x = 0
             y = 4
           }
-          modern_sp_artillery_brigade = {
+          mechanized = {
             x = 1
             y = 0
           }
-          modern_sp_artillery_brigade = {
+          mechanized = {
             x = 1
             y = 1
           }
-          motorized_rocket_brigade = {
+          mechanized = {
             x = 1
             y = 2
+          }
+          mechanized = {
+            x = 1
+            y = 3
+          }
+          mechanized = {
+            x = 1
+            y = 4
           }
         }
         support = {
@@ -6358,6 +6370,14 @@ CHI_army_decisions = {
           engineer = {
             x = 0
             y = 1
+          }
+          artillery = {
+            x = 0
+            y = 2
+          }
+          logistics_company = {
+            x = 0
+            y = 3
           }
         }
       }
@@ -6367,21 +6387,13 @@ CHI_army_decisions = {
         is_locked = yes
         priority = 3
         regiments = {
-          modern_armor = {
+          bus = {
             x = 0
             y = 0
-          }
-          modern_armor = {
-            x = 0
-            y = 1
-          }
-          modern_armor = {
-            x = 0
-            y = 2
           }
           bus = {
-            x = 1
-            y = 0
+            x = 0
+            y = 1
           }
         }
         support = {
@@ -6392,6 +6404,10 @@ CHI_army_decisions = {
           engineer = {
             x = 0
             y = 1
+          }
+          signal_company = {
+            x = 0
+            y = 2
           }
         }
       }
