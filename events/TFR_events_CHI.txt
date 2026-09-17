@@ -3429,6 +3429,10 @@ country_event = {
 				ideology = nationalist
 				name = CHI_database_char
 			}
+			set_country_leader_description = {
+				ideology = nationalist
+				desc = CHI_database_char_desc
+			}
 			set_country_leader_portrait = {
 				ideology = nationalist
 				portrait = GFX_CHI_Database_Animated
@@ -3470,6 +3474,10 @@ news_event = {
 				ideology = authoritarian_democrat
 				name = ZZZ_anarchy_char
 			}
+			set_country_leader_description = {
+				ideology = authoritarian_democrat
+				desc = ZZZ_anarchy_char_desc
+			}
 			set_country_leader_portrait = {
 				ideology = authoritarian_democrat
 				portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
@@ -3477,6 +3485,10 @@ news_event = {
 			set_country_leader_name = {
 				ideology = nationalist
 				name = ZZZ_anarchy_char
+			}
+			set_country_leader_description = {
+				ideology = nationalist
+				desc = ZZZ_anarchy_char_desc
 			}
 			set_country_leader_portrait = {
 				ideology = nationalist
