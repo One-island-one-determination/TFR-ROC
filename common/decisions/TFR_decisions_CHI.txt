@@ -440,6 +440,17 @@ CHI_debug = {
       }
     }
   }
+  you_need_cool_color = {
+    icon = generic_decision
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { always = yes }
+    complete_effect = {
+      CHI = {
+        set_cosmetic_tag = CHI_taiwan_republic
+      }
+    }
+  }
 }
 
 # 疫情
