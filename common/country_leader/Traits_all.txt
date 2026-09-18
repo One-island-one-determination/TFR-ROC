@@ -466,4 +466,34 @@ CHI_air_chief_practical_staff_officer = {
     production_speed_radar_station_factor = 0.25 # 注意：在顧問中可能無效，請於遊戲內實測
     air_weather_penalty = -0.1 
 }
+
+  CHI_database_overlord = {
+    random = no
+    offensive_war_stability_factor = 1
+    core_defence_factor = 0.25
+    army_claim_attack_factor = 0.25
+    army_claim_defence_factor = 0.25
+    army_attack_factor = 0.15
+    army_defence_factor = 0.15
+    army_org_factor = 0.15
+    army_speed_factor = 0.10
+    max_entrenchment = 5
+    entrenchment_speed = 0.50
+    planning_speed = 0.50
+    max_planning = 0.30
+    decryption_factor = 0.50
+    production_speed_arms_factory_factor = 0.20
+    conscription_factor = 0.10
+    political_power_gain = 1.0
+    research_speed_factor = 0.15
+    war_support_factor = 0.20
+    production_factory_max_efficiency_factor = 0.20
+    production_factory_efficiency_gain_factor = 0.30
+    stability_factor = -0.25
+    trade_opinion_factor = -0.50
+
+    ai_will_do = {
+      factor = 1
+    }
+  }
 }
