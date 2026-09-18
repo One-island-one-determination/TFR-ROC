@@ -3515,6 +3515,11 @@ news_event = {
 				ideology = nationalist
 				portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
 			}
+      set_party_name = { 
+      ideology = nationalist 
+      long_name = CHI_nationalist_ai_party_hidden_long 
+      name = CHI_nationalist_ai_party_hidden 
+      }
 			# Set massive nationalist drift to reach 100% in 7 days
 			add_ideas = CHI_ai_takeover_drift
 			# Trigger the AI awakening event after 7 days
