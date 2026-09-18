@@ -3438,12 +3438,33 @@ country_event = {
 				portrait = GFX_CHI_Database_Animated
 			}
 			set_country_leader_ideology = CHI_ultimate_three_principles
-			# Rename the Despotism party
-			set_party_name = {
-				ideology = nationalist
-				long_name = CHI_nationalist_ai_party_long
-				name = CHI_nationalist_ai_party
-			}
+			# Rename the Despotism party AND turning other parties into hell itself
+			set_party_name = { ideology = nationalist long_name = CHI_nationalist_ai_party_long name = CHI_nationalist_ai_party }
+
+			set_party_name = { ideology = totalitarian_socialist long_name = CHI_content_deleted_party_long name = CHI_content_deleted_party }
+			set_party_name = { ideology = communist long_name = CHI_content_deleted_party_long name = CHI_content_deleted_party }
+			set_party_name = { ideology = libertarian_socialist long_name = CHI_content_deleted_party_long name = CHI_content_deleted_party }
+			set_party_name = { ideology = social_democrat long_name = CHI_content_deleted_party_long name = CHI_content_deleted_party }
+			set_party_name = { ideology = social_liberal long_name = CHI_content_deleted_party_long name = CHI_content_deleted_party }
+			set_party_name = { ideology = market_liberal long_name = CHI_content_deleted_party_long name = CHI_content_deleted_party }
+			set_party_name = { ideology = conservative long_name = CHI_content_deleted_party_long name = CHI_content_deleted_party }
+			set_party_name = { ideology = authoritarian_democrat long_name = CHI_content_deleted_party_long name = CHI_content_deleted_party }
+			set_party_name = { ideology = fascist long_name = CHI_content_deleted_party_long name = CHI_content_deleted_party }
+			set_party_name = { ideology = national_socialist long_name = CHI_content_deleted_party_long name = CHI_content_deleted_party }
+      set_temp_variable = { coalition_partner_var_temp = token:social_democrat }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:market_liberal }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:nationalist }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:authoritarian_democrat }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:conservative }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:social_liberal }
+      remove_from_coalition = yes
+      set_temp_variable = { coalition_partner_var_temp = token:social_democrat }
+      remove_from_coalition = yes
 		}
 	}
 
