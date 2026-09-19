@@ -32,7 +32,10 @@ country_event = {
     name = CHI.H4.1.a
     load_focus_tree = P4_CHI_Han
     focus_unlock = yes
-    set_cosmetic_tag = CHI_UNITED
+    if = {
+      limit = { NOT = { has_country_flag = CHI_AI_Takeover_Active } }
+      set_cosmetic_tag = CHI_UNITED
+    }
     if = {
       limit = { PHI = { has_country_flag = CHI_enemy_flag } }
       CHI = {
@@ -95,7 +98,10 @@ country_event = {
       state = 1222
       remember_old_capital = no
     }
-    set_cosmetic_tag = CHI_UNITED
+    if = {
+      limit = { NOT = { has_country_flag = CHI_AI_Takeover_Active } }
+      set_cosmetic_tag = CHI_UNITED
+    }
     news_event = {
       id = CHI.201
       days = 1

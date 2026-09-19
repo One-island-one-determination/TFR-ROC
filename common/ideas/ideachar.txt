@@ -145,6 +145,22 @@ ideas = {
         trusted_paladin				#備受信任的聖騎士
       }
     }
+    # AI Node - Head of Government
+    CHI_ai_hog_node = {
+      picture = PRC_ai_core
+      name = CHI_ai_hog_node
+      visible = {
+        tag = CHI
+        has_country_flag = CHI_AI_Takeover_Active
+      }
+      allowed_to_remove = {
+        always = no
+      }
+      traits = {
+        CHI_ai_node_hog
+      }
+      cost = 0
+    }
   }
   #for #外交部長
   foreign_minister = {
@@ -226,6 +242,22 @@ ideas = {
           improve_relation_cost_factor = -0.04					#對中改善關係花費 -4%
         }
       }
+    }
+    # AI Node - Foreign Minister
+    CHI_ai_foreign_node = {
+      picture = PRC_ai_core
+      name = CHI_ai_foreign_node
+      visible = {
+        tag = CHI
+        has_country_flag = CHI_AI_Takeover_Active
+      }
+      allowed_to_remove = {
+        always = no
+      }
+      traits = {
+        CHI_ai_node_foreign
+      }
+      cost = 0
     }
   }
   #eco #經濟部長
@@ -395,6 +427,22 @@ ideas = {
       available = {
         has_government = conservative
       }
+    }
+    # AI Node - Economy Minister
+    CHI_ai_economy_node = {
+      picture = PRC_ai_core
+      name = CHI_ai_economy_node
+      visible = {
+        tag = CHI
+        has_country_flag = CHI_AI_Takeover_Active
+      }
+      allowed_to_remove = {
+        always = no
+      }
+      traits = {
+        CHI_ai_node_economy
+      }
+      cost = 0
     }
   }
   #sec #内政部長
@@ -598,6 +646,22 @@ ideas = {
         }
       }
     }
+    # AI Node - Interior Minister
+    CHI_ai_interior_node = {
+      picture = PRC_ai_core
+      name = CHI_ai_interior_node
+      visible = {
+        tag = CHI
+        has_country_flag = CHI_AI_Takeover_Active
+      }
+      allowed_to_remove = {
+        always = no
+      }
+      traits = {
+        CHI_ai_node_interior
+      }
+      cost = 0
+    }
   }
   #int #情報部長
   intelligence_minister = {
@@ -661,6 +725,22 @@ ideas = {
         int_decryptor
         int_encryptor
       }
+    }
+    # AI Node - Intelligence Minister
+    CHI_ai_intelligence_node = {
+      picture = PRC_ai_core
+      name = CHI_ai_intelligence_node
+      visible = {
+        tag = CHI
+        has_country_flag = CHI_AI_Takeover_Active
+      }
+      allowed_to_remove = {
+        always = no
+      }
+      traits = {
+        CHI_ai_node_intelligence
+      }
+      cost = 0
     }
   }
   #vt #軍事國防部長
@@ -738,6 +818,22 @@ ideas = {
         traditional_general				#傳統的老將軍
         war_preparedness_organizer				#戰爭衝擊準備組織者
       }
+    }
+    # AI Node - Theorist
+    CHI_ai_theorist_node = {
+      picture = PRC_ai_core
+      name = CHI_ai_theorist_node
+      visible = {
+        tag = CHI
+        has_country_flag = CHI_AI_Takeover_Active
+      }
+      allowed_to_remove = {
+        always = no
+      }
+      traits = {
+        CHI_ai_node_theorist
+      }
+      cost = 0
     }
   }
 }

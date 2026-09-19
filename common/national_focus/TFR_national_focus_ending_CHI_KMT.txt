@@ -34,7 +34,10 @@ focus_tree = {
         tooltip = cannot_call_allies_or_join_wars_tooltip
       }
       hidden_effect = {
-        set_cosmetic_tag = CHI_UNITED
+        if = {
+          limit = { NOT = { has_country_flag = CHI_AI_Takeover_Active } }
+          set_cosmetic_tag = CHI_UNITED
+        }
         clr_country_flag = pdto_member
         scoped_play_song = "StrugglingintheSoutheast"
         leave_faction = yes

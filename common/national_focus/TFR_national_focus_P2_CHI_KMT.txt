@@ -4373,7 +4373,10 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = CHI_GAW_situation_category
 			hidden_effect = {
-				set_cosmetic_tag = CHI_UNITED
+				if = {
+					limit = { NOT = { has_country_flag = CHI_AI_Takeover_Active } }
+					set_cosmetic_tag = CHI_UNITED
+				}
 				add_timed_idea = {
 					idea = CHI_underground_assenmly_point_idea
 					days = 30

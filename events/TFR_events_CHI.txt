@@ -3415,6 +3415,7 @@ country_event = {
 			# Remove blackout cosmetic, set AI government cosmetic
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = CHI_ai_gov
+      set_country_flag = CHI_AI_Takeover_Active
 			# Set despotism to 100% support
 			set_politics = {
 				ruling_party = nationalist
@@ -3466,6 +3467,15 @@ country_event = {
       remove_from_coalition = yes
       set_temp_variable = { coalition_partner_var_temp = token:social_democrat }
       remove_from_coalition = yes
+
+			# ===== Install AI Nodes into all cabinet slots =====
+			# Civilian ministers (idea-based)
+			add_ideas = CHI_ai_hog_node
+			add_ideas = CHI_ai_foreign_node
+			add_ideas = CHI_ai_economy_node
+			add_ideas = CHI_ai_interior_node
+			add_ideas = CHI_ai_intelligence_node
+			add_ideas = CHI_ai_theorist_node
 		}
 	}
 
@@ -3492,30 +3502,49 @@ news_event = {
 			# Clear current economy and set chaotic
 			change_economy_type_chaostic = yes
 			# Overwrite the current leader with anarchy portrait/name
-			set_country_leader_name = {
-				ideology = authoritarian_democrat
-				name = ZZZ_anarchy_char
-			}
-			set_country_leader_description = {
-				ideology = authoritarian_democrat
-				desc = ZZZ_anarchy_char_desc
-			}
-			set_country_leader_portrait = {
-				ideology = authoritarian_democrat
-				portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
-			}
-			set_country_leader_name = {
-				ideology = nationalist
-				name = ZZZ_anarchy_char
-			}
-			set_country_leader_description = {
-				ideology = nationalist
-				desc = ZZZ_anarchy_char_desc
-			}
-			set_country_leader_portrait = {
-				ideology = nationalist
-				portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
-			}
+			set_country_leader_name = { ideology = totalitarian_socialist name = ZZZ_anarchy_char }
+			set_country_leader_description = { ideology = totalitarian_socialist desc = ZZZ_anarchy_char_desc }
+			set_country_leader_portrait = { ideology = totalitarian_socialist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+
+			set_country_leader_name = { ideology = communist name = ZZZ_anarchy_char }
+			set_country_leader_description = { ideology = communist desc = ZZZ_anarchy_char_desc }
+			set_country_leader_portrait = { ideology = communist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+
+			set_country_leader_name = { ideology = libertarian_socialist name = ZZZ_anarchy_char }
+			set_country_leader_description = { ideology = libertarian_socialist desc = ZZZ_anarchy_char_desc }
+			set_country_leader_portrait = { ideology = libertarian_socialist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+
+			set_country_leader_name = { ideology = social_democrat name = ZZZ_anarchy_char }
+			set_country_leader_description = { ideology = social_democrat desc = ZZZ_anarchy_char_desc }
+			set_country_leader_portrait = { ideology = social_democrat portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+
+			set_country_leader_name = { ideology = social_liberal name = ZZZ_anarchy_char }
+			set_country_leader_description = { ideology = social_liberal desc = ZZZ_anarchy_char_desc }
+			set_country_leader_portrait = { ideology = social_liberal portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+
+			set_country_leader_name = { ideology = market_liberal name = ZZZ_anarchy_char }
+			set_country_leader_description = { ideology = market_liberal desc = ZZZ_anarchy_char_desc }
+			set_country_leader_portrait = { ideology = market_liberal portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+
+			set_country_leader_name = { ideology = conservative name = ZZZ_anarchy_char }
+			set_country_leader_description = { ideology = conservative desc = ZZZ_anarchy_char_desc }
+			set_country_leader_portrait = { ideology = conservative portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+
+			set_country_leader_name = { ideology = authoritarian_democrat name = ZZZ_anarchy_char }
+			set_country_leader_description = { ideology = authoritarian_democrat desc = ZZZ_anarchy_char_desc }
+			set_country_leader_portrait = { ideology = authoritarian_democrat portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+
+			set_country_leader_name = { ideology = nationalist name = ZZZ_anarchy_char }
+			set_country_leader_description = { ideology = nationalist desc = ZZZ_anarchy_char_desc }
+			set_country_leader_portrait = { ideology = nationalist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+
+			set_country_leader_name = { ideology = fascist name = ZZZ_anarchy_char }
+			set_country_leader_description = { ideology = fascist desc = ZZZ_anarchy_char_desc }
+			set_country_leader_portrait = { ideology = fascist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+
+			set_country_leader_name = { ideology = national_socialist name = ZZZ_anarchy_char }
+			set_country_leader_description = { ideology = national_socialist desc = ZZZ_anarchy_char_desc }
+			set_country_leader_portrait = { ideology = national_socialist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
       set_party_name = { 
       ideology = nationalist 
       long_name = CHI_nationalist_ai_party_hidden_long 
@@ -3523,6 +3552,7 @@ news_event = {
       }
 			# Set massive nationalist drift to reach 100% in 7 days
 			add_ideas = CHI_ai_takeover_drift
+      scoped_play_song = "tfrtheme2"
 			# Trigger the AI awakening event after 7 days
 			country_event = { id = CHI_ai_takeover.1 days = 7 }
 		}
