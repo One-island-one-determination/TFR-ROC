@@ -1765,31 +1765,7 @@ country_event = {
   }
 }
 
-country_event = {
-  id = CHI.CT.13
-  title = CHI.CT.13.t
-  desc = CHI.CT.13.d
-  picture = CHI_Event_CT_13
-  is_triggered_only = yes
 
-  option = {
-    name = CHI.CT.13.a
-    add_war_support = 0.01
-  }
-}
-
-country_event = {
-  id = CHI.CT.14
-  title = CHI.CT.14.t
-  desc = CHI.CT.14.d
-  picture = CHI_Event_CT_14
-  is_triggered_only = yes
-
-  option = {
-    name = CHI.CT.14.a
-    add_stability = 0.01
-  }
-}
 
 country_event = {
   id = CHI.CT.15
@@ -1803,17 +1779,6 @@ country_event = {
   }
 }
 
-country_event = {
-  id = CHI.CT.16
-  title = CHI.CT.16.t
-  desc = CHI.CT.16.d
-  picture = CHI_Event_CT_16
-  is_triggered_only = yes
-
-  option = {
-    name = CHI.CT.16.a
-  }
-}
 
 country_event = {
   id = CHI.TW.1
@@ -2412,21 +2377,6 @@ country_event = {
   }
 }
 
-country_event = {
-  id = CHI.TW.28
-  title = CHI.TW.28.t
-  desc = CHI.TW.28.d
-  picture = CHI_Event_TW_28
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = CHI.TW.28.a
-    country_event = {
-      id = CHI.TW.29
-    }
-  }
-}
 
 country_event = {
   id = CHI.TW.29
@@ -2608,21 +2558,6 @@ country_event = {
   }
 }
 
-country_event = {
-  id = CHI.TW.34
-  title = CHI.TW.34.t
-  desc = CHI.TW.34.d
-  picture = CHI_Event_TW_34
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = CHI.TW.34.a
-    add_manpower = -126
-    add_war_support = 0.05
-    set_country_flag = chi_tw_34_done
-  }
-}
 
 country_event = {
   id = CHI.TW.35
@@ -2694,19 +2629,6 @@ country_event = {
   }
 }
 
-country_event = {
-  id = CHI.TW.40
-  title = CHI.TW.40.t
-  desc = CHI.TW.40.d
-  picture = CHI_Event_TW_40
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = CHI.TW.40.a
-    set_country_flag = chi_tw_40_done
-  }
-}
 
 country_event = {
   id = CHI.TW.41
@@ -2736,19 +2658,6 @@ country_event = {
   }
 }
 
-country_event = {
-  id = CHI.TW.43
-  title = CHI.TW.43.t
-  desc = CHI.TW.43.d
-  picture = CHI_Event_TW_43
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = CHI.TW.43.a
-    set_country_flag = chi_tw_43_done
-  }
-}
 country_event = {
   id = CHI.TW.44
   title = CHI.TW.44.t
