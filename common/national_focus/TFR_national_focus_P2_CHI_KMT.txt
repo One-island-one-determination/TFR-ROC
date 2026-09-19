@@ -4089,26 +4089,58 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		allow_branch = {
-			has_country_flag = HKY_2028_flg
+			OR = {
+				has_country_flag = HKY_2028_flg
+				has_country_flag = CWA_2028_flg
+			}
 		}
 		completion_reward = {
-			set_party_name = {
-				ideology = authoritarian_democrat
-				long_name = CHI_auth_dem_han_kuo_yu_party_long
-				name = CHI_auth_dem_han_kuo_yu_party
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = HKY_2028_flg
+						has_country_flag = second_HKY_win_flg
+					}
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = CHI_auth_dem_han_kuo_yu_party_long
+					name = CHI_auth_dem_han_kuo_yu_party
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = yes
+				}
+				promote_character = CHI_han_kuo_yu_char
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.4
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = -0.4
+				}
 			}
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = yes
-			}
-			promote_character = CHI_han_kuo_yu_char
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = 0.4
-			}
-			add_popularity = {
-				ideology = conservative
-				popularity = -0.4
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = CWA_2028_flg
+						has_country_flag = second_CWA_win_flg
+					}
+				}
+				set_politics = {
+					ruling_party = conservative
+					elections_allowed = yes
+				}
+				promote_character = CHI_chiang_wan_an_char
+				add_popularity = {
+					ideology = conservative
+					popularity = 0.4
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = -0.4
+				}
 			}
 		}
 	}
