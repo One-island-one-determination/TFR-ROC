@@ -1,0 +1,47 @@
+CHI_ai_portrait_category = {
+	CHI_ai_portrait_to_anime = {
+		icon = GFX_decision_generic_propaganda
+		available = {
+			has_country_flag = CHI_AI_Takeover_Active
+			NOT = { has_country_flag = CHI_anime_portrait_enabled }
+		}
+		visible = {
+			has_country_flag = CHI_AI_Takeover_Active
+		}
+		cost = 0
+		fire_only_once = no
+		
+		complete_effect = {
+			set_country_flag = CHI_anime_portrait_enabled
+			custom_effect_tooltip = CHI_database_transformation_anime_tt
+			add_stability = 0.05
+			set_country_leader_portrait = {
+				ideology = nationalist
+				portrait = GFX_CHI_Database_Animated_Anime
+			}
+		}
+	}
+
+	CHI_ai_portrait_to_normal = {
+		icon = GFX_decision_generic_propaganda
+		available = {
+			has_country_flag = CHI_AI_Takeover_Active
+			has_country_flag = CHI_anime_portrait_enabled
+		}
+		visible = {
+			has_country_flag = CHI_AI_Takeover_Active
+		}
+		cost = 0
+		fire_only_once = no
+		
+		complete_effect = {
+			clr_country_flag = CHI_anime_portrait_enabled
+			custom_effect_tooltip = CHI_database_transformation_normal_tt
+			add_stability = -0.05
+			set_country_leader_portrait = {
+				ideology = nationalist
+				portrait = GFX_CHI_Database_Animated
+			}
+		}
+	}
+}

@@ -1,7 +1,16 @@
 spriteTypes = {
 	frameAnimatedSpriteType = {
 		name = "GFX_CHI_Database_Animated"
-		texturefile = "gfx/leaders/CHI/AI/CHI_Database_Animated.tga"
+		texturefile = "gfx/leaders/CHI/AI/CHI_Database_Animated_Hufa.tga"
+		noOfFrames = 99
+		animation_rate_fps = 20
+		looping = yes
+		play_on_show = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_CHI_Database_Animated_Anime"
+		texturefile = "gfx/leaders/CHI/AI/CHI_Database_Animated_Hufa_Anime.tga"
 		noOfFrames = 99
 		animation_rate_fps = 20
 		looping = yes
