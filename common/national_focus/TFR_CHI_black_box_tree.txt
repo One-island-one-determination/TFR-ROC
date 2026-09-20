@@ -148,11 +148,14 @@ focus_tree = {
     prerequisite = { focus = CHI_placeholder_united_as_one }
     completion_reward = {
       # 旅途之终末...? 
-      PRK = {
-        country_event = { id = nk.14 }
+      # Force the PRC to complete its own war-starting focus to ensure all main-mod flags and PRK buffs apply perfectly
+      PRC = {
+        complete_national_focus = PRC_finilize_korean_revolution
       }
       # Start watching for PRC vs JAP war to trigger the betrayal
-      country_event = { id = CHI_ai_takeover_hidden.1 days = 7 }
+      hidden_effect = {
+        country_event = { id = CHI_ai_takeover.3 days = 7 }
+      }
     }
   }
 }

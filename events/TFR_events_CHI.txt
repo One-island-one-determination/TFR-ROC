@@ -3492,7 +3492,7 @@ news_event = {
 }
 
 country_event = {
-	id = CHI_ai_takeover_hidden.1
+	id = CHI_ai_takeover.3
 	hidden = yes
 	is_triggered_only = yes
 
@@ -3502,7 +3502,7 @@ country_event = {
 			country_event = { id = CHI_ai_takeover.2 }
 		}
 		else = {
-			country_event = { id = CHI_ai_takeover_hidden.1 days = 7 }
+			country_event = { id = CHI_ai_takeover.3 days = 7 }
 		}
 	}
 }
