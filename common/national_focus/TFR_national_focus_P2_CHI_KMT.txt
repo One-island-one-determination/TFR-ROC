@@ -1318,12 +1318,7 @@ focus_tree = {
 			focus = CHI_new_practice_of_three_principles
 		}
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
-			# add_to_variable = { CHI_BF_ tooltip = _tooltip }
-			add_to_variable = { CHI_BF_political_power_cost = 0.5 tooltip = political_power_cost_tooltip }
-			add_to_variable = { CHI_BF_stability_factor = -0.1 tooltip = stability_factor_tooltip }
-			add_to_variable = { CHI_BF_opinion_gain_monthly = -0.05 tooltip = opinion_gain_monthly_tooltip }
-			add_to_variable = { CHI_BF_authoritarian_democrat_drift = 0.1 tooltip = authoritarian_democrat_drift_tooltip }
+			add_ideas = CHI_aftermath_ramming_through_the_bill
 		}
 		relative_position_id = CHI_new_practice_of_three_principles
 	}
@@ -1685,6 +1680,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = CHI_Johnny_Chiang_hog
+			remove_ideas = CHI_aftermath_ramming_through_the_bills
 		}
 		relative_position_id = CHI_cabinet_meeting
 	}
@@ -1718,6 +1714,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = CHI_Jaw_Shaw_Kong_hog
+			remove_ideas = CHI_aftermath_ramming_through_the_bill
 		}
 		relative_position_id = CHI_cabinet_meeting
 	}
@@ -1973,6 +1970,24 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { JSK_foci_completed = 1 }
 			mark_focus_tree_layout_dirty = yes
+			add_ideas = CHI_fully_promote_cabinet_system_idea
+			custom_effect_tooltip = CHI_fully_promote_cabinet_system_tooltip
+			effect_tooltip = {
+				custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
+				add_to_variable = { CHI_BF_political_power_gain = 0.03 tooltip = political_power_gain_tooltip }
+				add_to_variable = { CHI_BF_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tooltip }
+				add_to_variable = { CHI_BF_income_growth_factor = 0.05 tooltip = income_growth_factor_tooltip }
+				add_to_variable = { CHI_BF_head_minister_cost_factor = -0.1 tooltip = head_minister_cost_factor_tooltip }
+				add_to_variable = { CHI_BF_foreign_minister_cost_factor = -0.1 tooltip = foreign_minister_cost_factor_tooltip }
+				add_to_variable = { CHI_BF_economic_minister_cost_factor = -0.1 tooltip = economic_minister_cost_factor_tooltip }
+				add_to_variable = { CHI_BF_interior_minister_cost_factor = -0.1 tooltip = interior_minister_cost_factor_tooltip }
+				add_to_variable = { CHI_BF_intelligence_minister_cost_factor = -0.1 tooltip = intelligence_minister_cost_factor_tooltip }
+				add_to_variable = { CHI_BF_theorist_minister_cost_factor = -0.1 tooltip = theorist_minister_cost_factor_tooltip }
+				add_to_variable = { CHI_BF_society_development_monthly = 0.003 tooltip = society_development_monthly_tooltip }
+
+				change_government_type_parliamentary_republic = yes
+				remove_ideas = CHI_fully_promote_cabinet_system_idea
+			}
 		}
 		relative_position_id = CHI_premier_jaw_shaw_kong
 	}
@@ -1991,6 +2006,10 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { JSK_foci_completed = 1 }
 			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
+			add_to_variable = { CHI_BF_political_power_gain = 0.03 tooltip = political_power_gain_tooltip }
+			add_to_variable = { CHI_BF_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tooltip }
+
 		}
 		relative_position_id = CHI_premier_jaw_shaw_kong
 	}
@@ -2009,6 +2028,15 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { JSK_foci_completed = 1 }
 			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
+			add_to_variable = { CHI_BF_income_growth_factor = 0.05 tooltip = income_growth_factor_tooltip }
+			add_to_variable = { CHI_BF_head_minister_cost_factor = -0.1 tooltip = head_minister_cost_factor_tooltip }
+			add_to_variable = { CHI_BF_foreign_minister_cost_factor = -0.1 tooltip = foreign_minister_cost_factor_tooltip }
+			add_to_variable = { CHI_BF_economic_minister_cost_factor = -0.1 tooltip = economic_minister_cost_factor_tooltip }
+			add_to_variable = { CHI_BF_interior_minister_cost_factor = -0.1 tooltip = interior_minister_cost_factor_tooltip }
+			add_to_variable = { CHI_BF_intelligence_minister_cost_factor = -0.1 tooltip = intelligence_minister_cost_factor_tooltip }
+			add_to_variable = { CHI_BF_theorist_minister_cost_factor = -0.1 tooltip = theorist_minister_cost_factor_tooltip }
+			add_to_variable = { CHI_BF_society_development_monthly = 0.003 tooltip = society_development_monthly_tooltip }
 		}
 		relative_position_id = CHI_premier_jaw_shaw_kong
 	}
@@ -2025,8 +2053,8 @@ focus_tree = {
 			focus = CHI_premier_jaw_shaw_kong
 		}
 		completion_reward = {
-			add_to_variable = { JSK_foci_completed = 1 }
-			mark_focus_tree_layout_dirty = yes
+			change_government_type_parliamentary_republic = yes
+			remove_ideas = CHI_fully_promote_cabinet_system_idea
 		}
 		relative_position_id = CHI_premier_jaw_shaw_kong
 	}
@@ -2128,7 +2156,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = civic_nationalism
+				ideology = social_democrat
 				popularity = 0.05
 			}
 		}
@@ -2151,6 +2179,9 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_elderly_care_policy
 		}
+		prerequisite = {
+			focus = CHI_do_not_lose_ambition
+		}
 		completion_reward = {
 			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
 			add_to_variable = { CHI_BF_political_power_gain = 0.1 tooltip = political_power_gain_tooltip }
@@ -2163,7 +2194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_bottom_of_rivers
-		x = 3
+		x = 5
 		y = 1
 		cost = 3
 		icon = GFX_focus_CHI_bottom_of_rivers
@@ -2184,7 +2215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_do_not_disband_the_group
-		x = 5
+		x = 3
 		y = 1
 		cost = 3
 		icon = GFX_focus_CHI_do_not_disband_the_group
@@ -2215,7 +2246,8 @@ focus_tree = {
 			focus = CHI_do_not_disband_the_group
 		}
 		completion_reward ={
-			# partially unavailable
+			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
+			add_to_variable = { CHI_BF_stability_factor = 0.1 tooltip = stability_factor_tooltip }
 		}
 		relative_position_id = CHI_do_not_disband_the_group
 	}
@@ -6231,6 +6263,17 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_conventional_economic_direction
 		}
+		completion_reward = {
+			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
+			add_to_variable = { CHI_BF_production_speed_energy_farm_factor = 0.15 tooltip = production_speed_energy_farm_factor_tooltip }
+			add_to_variable = { CHI_BF_production_speed_nuclear_reactor_factor = 0.1 tooltip = production_speed_nuclear_reactor_factor_tooltip }
+			add_tech_bonus = {
+				name = CHI_i_am_become_death_nuclear
+				bonus = 0.15
+				uses = 2
+				category = nuclear
+			}
+		}
 		relative_position_id = CHI_conventional_economic_direction
 	}
 	focus = {
@@ -6243,6 +6286,14 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_conventional_economic_direction
+		}
+		completion_reward = {
+			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
+			add_to_variable = { CHI_BF_bussiness_value_factor = -0.05 tooltip = bussiness_value_factor_tooltip }
+			add_to_variable = { CHI_BF_industrial_development_monthly = 0.005 tooltip = industrial_development_monthly_tooltip }
+			add_to_variable = { CHI_BF_research_speed_factor = 0.03 tooltip = research_speed_factor_tooltip }
+			add_to_variable = { CHI_BF_society_development_monthly = 0.002 tooltip = society_development_monthly_tooltip }
+			add_to_variable = { CHI_BF_production_speed_buildings_factor = 0.15 tooltip = production_speed_buildings_factor_tooltip }
 		}
 		relative_position_id = CHI_conventional_economic_direction
 	}
@@ -6259,6 +6310,12 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_develop_diverse_green_energy
+		}
+		completion_reward = {
+			custom_effect_tooltip = { IDEA = CHI_bloody_flower localization_key = modify_idea_tt }
+			add_to_variable = { CHI_BF_stability_factor = 0.05 tooltip = stability_factor_tooltip }
+			add_to_variable = { CHI_BF_war_support_factor = 0.07 tooltip = war_support_factor_tooltip }
+			add_timed_idea = { idea = CHI_accelerate_import_export_substitution_idea days = 200 }
 		}
 		relative_position_id = CHI_revitalize_smes
 	}

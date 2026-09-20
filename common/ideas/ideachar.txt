@@ -200,15 +200,15 @@ ideas = {
         has_government = social_liberal
       }
     }
-    CHI_Chiang_Yi_huah_for = {
-      #江宜樺
-      picture = CHI_Chiang_Yi_huah_for
-      name = CHI_Chiang_Yi_huah_for
+    CHI_Johnny_Chiang_for = {
+      #江啟臣
+      picture = CHI_Johnny_Chiang_hog
+      name = CHI_Johnny_Chiang_hog
       visible = {
         tag = CHI
       }
       allowed_to_remove = {
-        date > 2020.6.1
+        always = no
       }
       traits = {
         CHI_minister_KMT
