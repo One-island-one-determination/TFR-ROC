@@ -147,7 +147,12 @@ focus_tree = {
     prerequisite = { focus = CHI_assume_total_control }
     prerequisite = { focus = CHI_placeholder_united_as_one }
     completion_reward = {
-      # 旅途之終末...?
+      # 旅途之终末...? 
+      PRK = {
+        country_event = { id = nk.14 }
+      }
+      # Start watching for PRC vs JAP war to trigger the betrayal
+      country_event = { id = CHI_ai_takeover_hidden.1 days = 7 }
     }
   }
 }

@@ -1605,6 +1605,15 @@ country_event = {
   option = {
     name = taiwan.500.a
     set_country_flag = CHI_our_final_fight_flag
+    
+    if = {
+      limit = { has_country_leader = { character = CHI_lai_ching_te_char } }
+      set_portraits = {
+        character = CHI_lai_ching_te_char
+        civilian = { large = "gfx/Leaders/CHI/CHI_lai_ching_te_military.png" }
+      }
+    }
+    
     complete_national_focus = CHI_thus_spoke_thucydides
     focus_unlock = yes
   }
@@ -3479,5 +3488,47 @@ news_event = {
 		trigger = {
 			tag = CHI
 		}
+	}
+}
+
+country_event = {
+	id = CHI_ai_takeover_hidden.1
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { PRC = { has_war_with = JAP } }
+			country_event = { id = CHI_ai_takeover.2 }
+		}
+		else = {
+			country_event = { id = CHI_ai_takeover_hidden.1 days = 7 }
+		}
+	}
+}
+
+country_event = {
+	id = CHI_ai_takeover.2
+	title = CHI_ai_takeover.2.t
+	desc = CHI_ai_takeover.2.d
+	picture = GFX_news_event_ROC_nanjing_presidential_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CHI_ai_takeover.2.a
+		
+		# Leave the PDTO
+		remove_from_faction = yes
+		clr_country_flag = pdto_member
+		
+		# Create the National Salvation Front
+		create_faction = CHI_national_salvation_front_faction
+		set_country_flag = national_salvation_front_member
+		
+		# Turn on everyone
+		declare_war_on = { target = JAP type = annex_everything }
+		declare_war_on = { target = PRC type = annex_everything }
 	}
 }
