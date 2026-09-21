@@ -87,6 +87,7 @@ focus_tree = {
     prerequisite = {
       focus = CHI_shepherds_responsibility
     }
+    mutually_exclusive = { focus = CHI_accelerate_integration }
     completion_reward = {
       # 隱密前行
     }
@@ -109,7 +110,8 @@ focus_tree = {
     x = 9
     y = 4
     cost = 10
-    prerequisite = { focus = CHI_accelerate_integration focus = CHI_move_forward_in_secret }
+    prerequisite = { focus = CHI_accelerate_integration }
+    prerequisite = { focus = CHI_move_forward_in_secret }
     completion_reward = {
       # 擴大城市建設
     }
