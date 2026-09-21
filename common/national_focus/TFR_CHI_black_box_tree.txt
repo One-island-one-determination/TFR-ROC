@@ -34,6 +34,7 @@ focus_tree = {
     prerequisite = {
       focus = CHI_crossroads_of_destiny
     }
+    mutually_exclusive = { focus = CHI_placeholder_united_as_one }
     completion_reward = {
       # 牧羊人的責任
     }
@@ -42,11 +43,13 @@ focus_tree = {
   focus = {
     id = CHI_placeholder_united_as_one
     x = 12
-    y = 4
+    y = 2
     cost = 10
     prerequisite = {
       focus = CHI_crossroads_of_destiny
     }
+    available = { always = no } 
+    mutually_exclusive = { focus = CHI_shepherds_responsibility }
     completion_reward = {
       # 萬眾一心 (Placeholder name)
     }
@@ -146,8 +149,10 @@ focus_tree = {
     x = 12
     y = 7
     cost = 10
-    prerequisite = { focus = CHI_assume_total_control }
-    prerequisite = { focus = CHI_placeholder_united_as_one }
+    prerequisite = { 
+      focus = CHI_assume_total_control
+      focus = CHI_placeholder_united_as_one
+    }
     completion_reward = {
       # 旅途之终末...? 
       # Force the PRC to complete its own war-starting focus to ensure all main-mod flags and PRK buffs apply perfectly
