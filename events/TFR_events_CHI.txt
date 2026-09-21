@@ -3409,10 +3409,8 @@ news_event = {
 	desc = CHI_ai_takeover_news.1.d
 	picture = GFX_news_event_taiwan
 
-	major = yes
-
-	is_triggered_only = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
