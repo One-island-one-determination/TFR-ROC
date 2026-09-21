@@ -428,330 +428,703 @@ focus_tree = {
         cost = 3
     }
 
-    # ==========================
-    # Tree 3: The Center of Industry
-    # (Disconnected, shifted to the right: X +40)
-    # ==========================
-    focus = {
-        id = CHI_center_of_industry
-        icon = GFX_goal_unknown
-        x = 47
-        y = 2
-        cost = 3
-    }
+#     # ==========================
+#     # Tree 3: The Center of Industry
+#     # (Disconnected, shifted to the right: X +40)
+#     # ==========================
+#     focus = {
+#         id = CHI_center_of_industry
+#         icon = GFX_goal_unknown
+#         x = 47
+#         y = 2
+#         cost = 3
+#     }
     
-    # Branch 1
-    focus = {
-        id = CHI_gain_foothold_in_society
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_center_of_industry }
-        mutually_exclusive = { focus = CHI_military_first_rule }
-        x = 39
-        y = 3
-        cost = 3
-    }
-    focus = {
-        id = CHI_new_ten_major_construction
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_gain_foothold_in_society }
-        x = 35
-        y = 4
-        cost = 3
-    }
-    focus = {
-        id = CHI_three_day_weekend
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_gain_foothold_in_society }
-        x = 42
-        y = 4
-        cost = 3
-    }
+#     # Branch 1
+#     focus = {
+#         id = CHI_gain_foothold_in_society
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_center_of_industry }
+#         mutually_exclusive = { focus = CHI_military_first_rule }
+#         x = 39
+#         y = 3
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_new_ten_major_construction
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_gain_foothold_in_society }
+#         x = 35
+#         y = 4
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_three_day_weekend
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_gain_foothold_in_society }
+#         x = 42
+#         y = 4
+#         cost = 3
+#     }
 
-    focus = {
-        id = CHI_expand_infrastructure_construction
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_new_ten_major_construction }
-        x = 33
-        y = 5
-        cost = 3
-    }
-    focus = {
-        id = CHI_expand_state_owned_enterprises
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_new_ten_major_construction }
-        x = 37
-        y = 5
-        cost = 3
-    }
+#     focus = {
+#         id = CHI_expand_infrastructure_construction
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_new_ten_major_construction }
+#         x = 33
+#         y = 5
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_expand_state_owned_enterprises
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_new_ten_major_construction }
+#         x = 37
+#         y = 5
+#         cost = 3
+#     }
 
-    focus = {
-        id = CHI_relax_financial_deregulation
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_expand_infrastructure_construction }
-        x = 32
-        y = 6
-        cost = 3
-    }
-    focus = {
-        id = CHI_require_banks_relax_loan_restrictions
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_expand_infrastructure_construction }
-        x = 34
-        y = 6
-        cost = 3
-    }
-    focus = {
-        id = CHI_concentrate_on_developing_key_industries
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_relax_financial_deregulation focus = CHI_require_banks_relax_loan_restrictions }
-        x = 33
-        y = 7
-        cost = 3
-    }
+#     focus = {
+#         id = CHI_relax_financial_deregulation
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_expand_infrastructure_construction }
+#         x = 32
+#         y = 6
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_require_banks_relax_loan_restrictions
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_expand_infrastructure_construction }
+#         x = 34
+#         y = 6
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_concentrate_on_developing_key_industries
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_relax_financial_deregulation focus = CHI_require_banks_relax_loan_restrictions }
+#         x = 33
+#         y = 7
+#         cost = 3
+#     }
 
-    focus = {
-        id = CHI_increase_export_orientation
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_expand_state_owned_enterprises }
-        x = 37
-        y = 6
-        cost = 3
-    }
-    focus = {
-        id = CHI_attract_foreign_investment
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_increase_export_orientation }
-        x = 37
-        y = 7
-        cost = 3
-    }
+#     focus = {
+#         id = CHI_increase_export_orientation
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_expand_state_owned_enterprises }
+#         x = 37
+#         y = 6
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_attract_foreign_investment
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_increase_export_orientation }
+#         x = 37
+#         y = 7
+#         cost = 3
+#     }
 
-    focus = {
-        id = CHI_housing_price_limits
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_three_day_weekend }
-        x = 41
-        y = 5
-        cost = 3
-    }
-    focus = {
-        id = CHI_establish_price_supervision
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_housing_price_limits }
-        x = 41
-        y = 6
-        cost = 3
-    }
-    focus = {
-        id = CHI_expand_unemployment_guarantee
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_establish_price_supervision }
-        x = 41
-        y = 7
-        cost = 3
-    }
+#     focus = {
+#         id = CHI_housing_price_limits
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_three_day_weekend }
+#         x = 41
+#         y = 5
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_establish_price_supervision
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_housing_price_limits }
+#         x = 41
+#         y = 6
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_expand_unemployment_guarantee
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_establish_price_supervision }
+#         x = 41
+#         y = 7
+#         cost = 3
+#     }
 
-    focus = {
-        id = CHI_increase_minimum_wage
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_three_day_weekend }
-        x = 43
-        y = 5
-        cost = 3
-    }
-    focus = {
-        id = CHI_relieve_low_income_people
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_increase_minimum_wage }
-        x = 43
-        y = 6
-        cost = 3
-    }
-    focus = {
-        id = CHI_nationalize_food_banks
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_relieve_low_income_people }
-        x = 43
-        y = 7
-        cost = 3
-    }
+#     focus = {
+#         id = CHI_increase_minimum_wage
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_three_day_weekend }
+#         x = 43
+#         y = 5
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_relieve_low_income_people
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_increase_minimum_wage }
+#         x = 43
+#         y = 6
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_nationalize_food_banks
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_relieve_low_income_people }
+#         x = 43
+#         y = 7
+#         cost = 3
+#     }
 
-    focus = {
-        id = CHI_return_to_prosperous_era
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_concentrate_on_developing_key_industries focus = CHI_attract_foreign_investment focus = CHI_expand_unemployment_guarantee focus = CHI_nationalize_food_banks }
-        x = 39
-        y = 9
-        cost = 3
-    }
+#     focus = {
+#         id = CHI_return_to_prosperous_era
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_concentrate_on_developing_key_industries focus = CHI_attract_foreign_investment focus = CHI_expand_unemployment_guarantee focus = CHI_nationalize_food_banks }
+#         x = 39
+#         y = 9
+#         cost = 3
+#     }
 
-    # Branch 2
-    focus = {
-        id = CHI_military_first_rule
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_center_of_industry }
-        mutually_exclusive = { focus = CHI_gain_foothold_in_society }
-        x = 49
-        y = 3
-        cost = 3
-    }
-    focus = {
-        id = CHI_expand_military_industrial_system
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_military_first_rule }
-        x = 49
-        y = 4
-        cost = 3
-    }
-    focus = {
-        id = CHI_rebuild_shipyards
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_expand_military_industrial_system }
-        x = 48
-        y = 5
-        cost = 3
-    }
-    focus = {
-        id = CHI_poach_us_pacific_fleet_officers
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_rebuild_shipyards }
-        x = 45
-        y = 7
-        cost = 3
-    }
+#     # Branch 2
+#     focus = {
+#         id = CHI_military_first_rule
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_center_of_industry }
+#         mutually_exclusive = { focus = CHI_gain_foothold_in_society }
+#         x = 49
+#         y = 3
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_expand_military_industrial_system
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_military_first_rule }
+#         x = 49
+#         y = 4
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_rebuild_shipyards
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_expand_military_industrial_system }
+#         x = 48
+#         y = 5
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_poach_us_pacific_fleet_officers
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_rebuild_shipyards }
+#         x = 45
+#         y = 7
+#         cost = 3
+#     }
 
-    focus = {
-        id = CHI_comprehensive_aircraft_modification
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_expand_military_industrial_system }
-        x = 50
-        y = 5
-        cost = 3
-    }
-    focus = {
-        id = CHI_breck_military_expansion_bill
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_comprehensive_aircraft_modification }
-        x = 48
-        y = 7
-        cost = 3
-    }
-    focus = {
-        id = CHI_military_industry_loan_priority
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_breck_military_expansion_bill }
-        x = 48
-        y = 9
-        cost = 3
-    }
-    focus = {
-        id = CHI_allow_private_military_companies
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_conceal_japan_korea_heavy_industry_enter_taiwan }
-        x = 51
-        y = 11
-        cost = 3
-    }
-    focus = {
-        id = CHI_conceal_japan_korea_heavy_industry_enter_taiwan
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_breck_military_expansion_bill }
-        x = 51
-        y = 9
-        cost = 3
-    }
-    focus = {
-        id = CHI_allow_pmc_enter_taiwan
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_conceal_japan_korea_heavy_industry_enter_taiwan }
-        x = 53
-        y = 11
-        cost = 3
-    }
+#     focus = {
+#         id = CHI_comprehensive_aircraft_modification
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_expand_military_industrial_system }
+#         x = 50
+#         y = 5
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_breck_military_expansion_bill
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_comprehensive_aircraft_modification }
+#         x = 48
+#         y = 7
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_military_industry_loan_priority
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_breck_military_expansion_bill }
+#         x = 48
+#         y = 9
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_allow_private_military_companies
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_conceal_japan_korea_heavy_industry_enter_taiwan }
+#         x = 51
+#         y = 11
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_conceal_japan_korea_heavy_industry_enter_taiwan
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_breck_military_expansion_bill }
+#         x = 51
+#         y = 9
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_allow_pmc_enter_taiwan
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_conceal_japan_korea_heavy_industry_enter_taiwan }
+#         x = 53
+#         y = 11
+#         cost = 3
+#     }
 
-    focus = {
-        id = CHI_seek_foreign_arms_purchases
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_comprehensive_aircraft_modification }
-        x = 51
-        y = 7
-        cost = 3
-    }
-    focus = {
-        id = CHI_poach_us_aircraft_designer
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_comprehensive_aircraft_modification }
-        x = 53
-        y = 7
-        cost = 3
-    }
+#     focus = {
+#         id = CHI_seek_foreign_arms_purchases
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_comprehensive_aircraft_modification }
+#         x = 51
+#         y = 7
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_poach_us_aircraft_designer
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_comprehensive_aircraft_modification }
+#         x = 53
+#         y = 7
+#         cost = 3
+#     }
 
-    # Branch 3
-    focus = {
-        id = CHI_expand_csist
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_center_of_industry }
-        x = 57
-        y = 3
-        cost = 3
-    }
-    focus = {
-        id = CHI_military_and_livelihood_research_advance
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_expand_csist }
-        mutually_exclusive = { focus = CHI_prioritize_military_research }
-        x = 55
-        y = 4
-        cost = 3
-    }
-    focus = {
-        id = CHI_prioritize_military_research
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_expand_csist }
-        mutually_exclusive = { focus = CHI_military_and_livelihood_research_advance }
-        x = 59
-        y = 4
-        cost = 3
-    }
+#     # Branch 3
+#     focus = {
+#         id = CHI_expand_csist
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_center_of_industry }
+#         x = 57
+#         y = 3
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_military_and_livelihood_research_advance
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_expand_csist }
+#         mutually_exclusive = { focus = CHI_prioritize_military_research }
+#         x = 55
+#         y = 4
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_prioritize_military_research
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_expand_csist }
+#         mutually_exclusive = { focus = CHI_military_and_livelihood_research_advance }
+#         x = 59
+#         y = 4
+#         cost = 3
+#     }
 
+#     focus = {
+#         id = CHI_research_captured_pla_equipment
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_prioritize_military_research }
+#         x = 56
+#         y = 5
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_research_leftover_us_aircraft
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_prioritize_military_research }
+#         x = 58
+#         y = 5
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_research_leftover_7th_fleet_ships
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_prioritize_military_research }
+#         x = 60
+#         y = 5
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_hsiung_4_missile
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_prioritize_military_research }
+#         x = 62
+#         y = 5
+#         cost = 3
+#     }
+#     focus = {
+#         id = CHI_restart_hsinchu_plan
+#         icon = GFX_goal_unknown
+#         prerequisite = { focus = CHI_prioritize_military_research }
+#         x = 59
+#         y = 7
+#         cost = 3
+#     }
+    # ==========================
+    # Tree 4: The military focus
+    # (Disconnected, shifted to the right: X +0)
+    # ==========================
     focus = {
-        id = CHI_research_captured_pla_equipment
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_prioritize_military_research }
-        x = 56
-        y = 5
-        cost = 3
-    }
-    focus = {
-        id = CHI_research_leftover_us_aircraft
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_prioritize_military_research }
-        x = 58
-        y = 5
-        cost = 3
-    }
-    focus = {
-        id = CHI_research_leftover_7th_fleet_ships
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_prioritize_military_research }
-        x = 60
-        y = 5
-        cost = 3
-    }
-    focus = {
-        id = CHI_hsiung_4_missile
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_prioritize_military_research }
-        x = 62
-        y = 5
-        cost = 3
-    }
-    focus = {
-        id = CHI_restart_hsinchu_plan
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_prioritize_military_research }
-        x = 59
-        y = 7
-        cost = 3
-    }
+		id = CHI_new_national_army_spirit
+		x = 0
+		y = 7
+		cost = 3
+		icon = GFX_focus_CHI_new_national_army_spirit
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+	}
+	focus = {
+		id = CHI_stand_in_the_pacific
+		x = -7
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_stand_in_the_pacific
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_national_army_spirit
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_new_national_army_spirit
+	}
+	focus = {
+		id = CHI_stirring_waves
+		x = 0
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_stirring_waves
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_stand_in_the_pacific
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_stand_in_the_pacific
+	}
+	focus = {
+		id = CHI_pride_of_maritime_borders
+		x = 2
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_pride_of_maritime_borders
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_stand_in_the_pacific
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_stand_in_the_pacific
+	}
+	focus = {
+		id = CHI_may_god_bless_your_voyage
+		x = 1
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_may_god_bless_your_voyage
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_pride_of_maritime_borders
+		}
+		prerequisite = {
+			focus = CHI_stirring_waves
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_stirring_waves
+	}
+	focus = {
+		id = CHI_ride_winds_break_waves
+		x = 1
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_ride_winds_break_waves
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_may_god_bless_your_voyage
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_may_god_bless_your_voyage
+	}
+	focus = {
+		id = CHI_heroic_warriors
+		x = -2
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_heroic_warriors
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_national_army_spirit
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_new_national_army_spirit
+	}
+	focus = {
+		id = CHI_loaded_guns_shining_bayonets
+		x = -1
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_loaded_guns_shining_bayonets
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_heroic_warriors
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_heroic_warriors
+	}
+	focus = {
+		id = CHI_men_bound_for_battlefield
+		x = 1
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_men_bound_for_battlefield
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_heroic_warriors
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_heroic_warriors
+	}
+	focus = {
+		id = CHI_thunder_of_nine_heavens
+		x = 0
+		y = 2
+		cost = 3
+		icon = GFX_focus_CHI_thunder_of_nine_heavens
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_men_bound_for_battlefield
+		}
+		prerequisite = {
+			focus = CHI_loaded_guns_shining_bayonets
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_heroic_warriors
+	}
+	focus = {
+		id = CHI_swift_as_gale_and_thunder
+		x = 1
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_swift_as_gale_and_thunder
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_thunder_of_nine_heavens
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_thunder_of_nine_heavens
+	}
+	focus = {
+		id = CHI_soaring_ambitions
+		x = 2
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_soaring_ambitions
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_national_army_spirit
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_new_national_army_spirit
+	}
+	focus = {
+		id = CHI_soar_above_kunlun
+		x = -1
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_soar_above_kunlun
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_soaring_ambitions
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_soaring_ambitions
+	}
+	focus = {
+		id = CHI_iron_wings_eclipse_sky
+		x = 1
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_iron_wings_eclipse_sky
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_soaring_ambitions
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_soaring_ambitions
+	}
+	focus = {
+		id = CHI_break_night_silence
+		x = 0
+		y = 2
+		cost = 3
+		icon = GFX_focus_CHI_break_night_silence
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_iron_wings_eclipse_sky
+		}
+		prerequisite = {
+			focus = CHI_soar_above_kunlun
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_soaring_ambitions
+	}
+	focus = {
+		id = CHI_overlord_of_the_skies
+		x = -1
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_overlord_of_the_skies
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_break_night_silence
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_break_night_silence
+	}
+	focus = {
+		id = CHI_cowardly_obstacles
+		x = 7
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_cowardly_obstacles
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_new_national_army_spirit
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_new_national_army_spirit
+	}
+	focus = {
+		id = CHI_dragons_of_the_sea
+		x = -2
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_dragons_of_the_sea
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_cowardly_obstacles
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_cowardly_obstacles
+	}
+	focus = {
+		id = CHI_forest_war_ghosts
+		x = 0
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_forest_war_ghosts
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_cowardly_obstacles
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_cowardly_obstacles
+	}
+	focus = {
+		id = CHI_airborne_vanguard
+		x = -1
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_airborne_vanguard
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_forest_war_ghosts
+		}
+		prerequisite = {
+			focus = CHI_dragons_of_the_sea
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_forest_war_ghosts
+	}
+	focus = {
+		id = CHI_impeccable_defense
+		x = -1
+		y = 1
+		cost = 3
+		icon = GFX_focus_CHI_impeccable_defense
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_airborne_vanguard
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_airborne_vanguard
+	}
+	focus = {
+		id = CHI_nine_dragons_twelve_golden_lights
+		x = 0
+		y = 5
+		cost = 3
+		icon = GFX_focus_CHI_nine_dragons_twelve_golden_lights
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_overlord_of_the_skies
+		}
+		prerequisite = {
+			focus = CHI_impeccable_defense
+		}
+		prerequisite = {
+			focus = CHI_swift_as_gale_and_thunder
+		}
+		prerequisite = {
+			focus = CHI_ride_winds_break_waves
+		}
+		completion_reward = {
+			# TODO: 添加完成獎勵
+		}
+		relative_position_id = CHI_new_national_army_spirit
+	}
 }
