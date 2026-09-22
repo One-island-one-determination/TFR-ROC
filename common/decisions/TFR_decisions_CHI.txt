@@ -2604,7 +2604,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 30
+    cost = var_MP_cost_30
     days_remove = 30
     days_re_enable = 30
     modifier = {
@@ -2687,7 +2687,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 30
+    cost = var_MP_cost_30
     days_remove = 50
     days_re_enable = 30
     modifier = {
@@ -2770,7 +2770,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 40
+    cost = var_MP_cost_40
     days_remove = 75
     days_re_enable = 30
     modifier = {
@@ -2849,7 +2849,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 30
+    cost = var_MP_cost_30
     days_remove = 30
     days_re_enable = 30
     modifier = {
@@ -2932,7 +2932,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 30
+    cost = var_MP_cost_30
     days_remove = 50
     days_re_enable = 30
     modifier = {
@@ -3015,7 +3015,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 40
+    cost = var_MP_cost_40
     days_remove = 75
     days_re_enable = 30
     modifier = {
@@ -3093,7 +3093,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 45
+    cost = var_MP_cost_45
     days_remove = 100
     days_re_enable = 30
     modifier = {
@@ -3173,14 +3173,18 @@ CHI_Military_purchasing_cat = {
     available = {
       OR = {
         country_exists = USA
-        country_exists = USB
-        country_exists = USC
-        has_global_flag = USA_american_civil_war_over_global
+        AND = {
+          OR = {
+            country_exists = USB
+            country_exists = USC
+          }
+          has_global_flag = USA_american_civil_war_over_global
+        }
       }
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 30
+    cost = var_MP_cost_30
     days_remove = 30
     days_re_enable = 30
     modifier = {
@@ -3264,14 +3268,18 @@ CHI_Military_purchasing_cat = {
     available = {
       OR = {
         country_exists = USA
-        country_exists = USB
-        country_exists = USC
-        has_global_flag = USA_american_civil_war_over_global
+        AND = {
+          OR = {
+            country_exists = USB
+            country_exists = USC
+          }
+          has_global_flag = USA_american_civil_war_over_global
+        }
       }
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 30
+    cost = var_MP_cost_30
     days_remove = 50
     days_re_enable = 30
     modifier = {
@@ -3355,14 +3363,18 @@ CHI_Military_purchasing_cat = {
     available = {
       OR = {
         country_exists = USA
-        country_exists = USB
-        country_exists = USC
-        has_global_flag = USA_american_civil_war_over_global
+        AND = {
+          OR = {
+            country_exists = USB
+            country_exists = USC
+          }
+          has_global_flag = USA_american_civil_war_over_global
+        }
       }
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 40
+    cost = var_MP_cost_40
     days_remove = 75
     days_re_enable = 30
     modifier = {
@@ -3429,14 +3441,18 @@ CHI_Military_purchasing_cat = {
     available = {
       OR = {
         country_exists = USA
-        country_exists = USB
-        country_exists = USC
-        has_global_flag = USA_american_civil_war_over_global
+        AND = {
+          OR = {
+            country_exists = USB
+            country_exists = USC
+          }
+          has_global_flag = USA_american_civil_war_over_global
+        }
       }
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 45
+    cost = var_MP_cost_45
     days_remove = 100
     days_re_enable = 30
     modifier = {
@@ -3498,14 +3514,18 @@ CHI_Military_purchasing_cat = {
     available = {
       OR = {
         country_exists = USA
-        country_exists = USB
-        country_exists = USC
-        has_global_flag = USA_american_civil_war_over_global
+        AND = {
+          OR = {
+            country_exists = USB
+            country_exists = USC
+          }
+          has_global_flag = USA_american_civil_war_over_global
+        }
       }
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 60
+    cost = var_MP_cost_60
     days_remove = 100
     days_re_enable = 30
     modifier = {
@@ -3565,7 +3585,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 30
+    cost = var_MP_cost_30
     days_remove = 100
     days_re_enable = 30
     modifier = {
@@ -3602,7 +3622,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 30
+    cost = var_MP_cost_30
     days_remove = 100
     days_re_enable = 30
     modifier = {
@@ -3639,7 +3659,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 30
+    cost = var_MP_cost_30
     days_remove = 100
     days_re_enable = 30
     modifier = {
@@ -3676,7 +3696,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 30
+    cost = var_MP_cost_30
     days_remove = 100
     days_re_enable = 30
     modifier = {
@@ -3713,7 +3733,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 30
+    cost = var_MP_cost_30
     days_remove = 100
     days_re_enable = 30
     modifier = {
@@ -3760,7 +3780,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 60
+    cost = var_MP_cost_60
     days_re_enable = 90
     modifier = {
       misc_expense = 3
@@ -3824,7 +3844,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 75
+    cost = var_MP_cost_60
     days_remove = 90
     days_re_enable = 90
     modifier = {
@@ -3867,7 +3887,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 20
+    cost = var_MP_cost_30
     days_remove = 30
     days_re_enable = 30
     modifier = {
@@ -3912,7 +3932,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 40
+    cost = var_MP_cost_40
     days_remove = 30
     days_re_enable = 30
     modifier = {
@@ -3972,7 +3992,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 80
+    cost = var_MP_cost_60
     days_remove = 30
     days_re_enable = 30
     modifier = {
@@ -4023,7 +4043,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 20
+    cost = var_MP_cost_30
     days_re_enable = 90
     modifier = {
       misc_expense = 3
@@ -4063,7 +4083,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 75
+    cost = var_MP_cost_60
     days_remove = 90
     days_re_enable = 90
     modifier = {
@@ -4106,7 +4126,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 50
+    cost = var_MP_cost_60
     days_remove = 80
     days_re_enable = 30
     modifier = {
@@ -4148,7 +4168,7 @@ CHI_Military_purchasing_cat = {
 
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 20
+    cost = var_MP_cost_30
     days_re_enable = 90
     modifier = {
       misc_expense = 3
@@ -4188,7 +4208,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 60
+    cost = var_MP_cost_60
     days_remove = 90
     days_re_enable = 90
     modifier = {
@@ -4235,7 +4255,7 @@ CHI_Military_purchasing_cat = {
     }
     fire_only_once = no
     cancel_if_not_visible = no
-    cost = 50
+    cost = var_MP_cost_60
     days_remove = 60
     days_re_enable = 30
     modifier = {

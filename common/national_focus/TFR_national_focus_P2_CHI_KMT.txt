@@ -1951,7 +1951,11 @@ focus_tree = {
 			focus = CHI_conscription_training_crash_course
 		}
 		completion_reward = {
-			# partially unavailable
+			custom_effect_tooltip = CHI_national_defense_diplomacy_tooltip
+			set_variable = { var_MP_cost_30 = 24 }
+			set_variable = { var_MP_cost_40 = 32 }
+			set_variable = { var_MP_cost_45 = 36 }
+			set_variable = { var_MP_cost_60 = 48 }
 		}
 		relative_position_id = CHI_conscription_training_crash_course
 	}
