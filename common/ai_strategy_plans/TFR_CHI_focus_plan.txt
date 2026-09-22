@@ -10,29 +10,29 @@ TFR_AI_CHI_opening_priority = {
   }
   ai_national_focuses = {
     # Oil Crisis & Energy Strategy (Prioritize Nuclear over Green)
-    Coping_with_the_oil_crisis
-    third_oil_crisis
-    Unleashing_strategic_oil_reserves
-    South_China_Sea_oil_exploration
-    Find_alternative_sources
-    Technology_exchange_exchange_for_oil
-    Electricity_prices_freeze_and_rise
-    Life_extension_of_nuclear_power_unit_three
+    CHI_Coping_with_the_oil_crisis
+    CHI_third_oil_crisis
+    CHI_Unleashing_strategic_oil_reserves
+    CHI_South_China_Sea_oil_exploration
+    CHI_Find_alternative_sources
+    CHI_Technology_exchange_exchange_for_oil
+    CHI_Electricity_prices_freeze_and_rise
+    CHI_Life_extension_of_nuclear_power_unit_three
     CHI_Restart_core_four
-    The_power_plant_on_full_fire
-    Accelerating_the_energy_transition
-    Expand_investment_green_energy_companies
+    CHI_The_power_plant_on_full_fire
+    CHI_Accelerating_the_energy_transition
+    CHI_Expand_investment_green_energy_companies
 
     # COVID-19 Management (Rush to remove debuffs)
-    Responding_the_epidemic
-    NHCC_Expand
-    Isolate_patient
-    Suspension_of_work_and_classes
-    Taiwan_locked_down
-    Buy_vaccines
-    Develop_own_vaccine
-    Get_out_of_the_epidemic
-    Issuance_of_triple_coupons
+    CHI_Responding_the_epidemic
+    CHI_NHCC_Expand
+    CHI_Isolate_patient
+    CHI_Suspension_of_work_and_classes
+    CHI_Taiwan_locked_down
+    CHI_Buy_vaccines
+    CHI_Develop_own_vaccine
+    CHI_Get_out_of_the_epidemic
+    CHI_Issuance_of_triple_coupons
 
     # Phase 1 Wartime Survival
     CHI_thenationisinperil
@@ -73,31 +73,31 @@ TFR_AI_CHI_opening_priority = {
   }
   focus_factors = {
     # High Priority: Resolve Oil Crisis and pursue Nuclear Energy
-    Coping_with_the_oil_crisis = 800
-    third_oil_crisis = 750
-    Unleashing_strategic_oil_reserves = 700
-    Find_alternative_sources = 650
-    South_China_Sea_oil_exploration = 600
-    Technology_exchange_exchange_for_oil = 550
-    Electricity_prices_freeze_and_rise = 500
-    Life_extension_of_nuclear_power_unit_three = 800
+    CHI_Accelerating_the_energy_transition = 700
+    CHI_Coping_with_the_oil_crisis = 800
+    CHI_third_oil_crisis = 750
+    CHI_Unleashing_strategic_oil_reserves = 700
+    CHI_Find_alternative_sources = 650
+    CHI_South_China_Sea_oil_exploration = 600
+    CHI_Technology_exchange_exchange_for_oil = 550
+    CHI_Electricity_prices_freeze_and_rise = 500
+    CHI_Life_extension_of_nuclear_power_unit_three = 800
     CHI_Restart_core_four = 750
-    The_power_plant_on_full_fire = 600
+    CHI_The_power_plant_on_full_fire = 600
 
     # DO NOT DO: Avoid Green Energy
-    Accelerating_the_energy_transition = 700
-    Expand_investment_green_energy_companies = 0
+    CHI_Expand_investment_green_energy_companies = 0
 
     # Very High Priority: COVID Management
-    Responding_the_epidemic = 950
-    NHCC_Expand = 900
-    Isolate_patient = 850
-    Suspension_of_work_and_classes = 800
-    Taiwan_locked_down = 750
-    Buy_vaccines = 700
-    Develop_own_vaccine = 650
-    Get_out_of_the_epidemic = 600
-    Issuance_of_triple_coupons = 550
+    CHI_Responding_the_epidemic = 950
+    CHI_NHCC_Expand = 900
+    CHI_Isolate_patient = 850
+    CHI_Suspension_of_work_and_classes = 800
+    CHI_Taiwan_locked_down = 750
+    CHI_Buy_vaccines = 700
+    CHI_Develop_own_vaccine = 650
+    CHI_Get_out_of_the_epidemic = 600
+    CHI_Issuance_of_triple_coupons = 550
 
     # Highest Priority: Phase 1 Wartime Survival
     CHI_thenationisinperil = 1000

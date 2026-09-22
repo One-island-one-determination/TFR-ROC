@@ -16,7 +16,7 @@ CHI_debug = {
       is_debug = yes
     }
     complete_effect = {
-      complete_national_focus = Rectify_weakening_military_preparedness
+      complete_national_focus = CHI_Rectify_weakening_military_preparedness
     }
   }
   CHI_taiwan_war_start = {
@@ -670,13 +670,13 @@ CHI_NHCC_decisions = {
       tag = CHI
     }
     available = {
-      has_completed_focus = Develop_own_vaccine
+      has_completed_focus = CHI_Develop_own_vaccine
       NOT = {
         has_country_flag = Vaccine_research_end
       }
     }
     visible = {
-      has_completed_focus = Develop_own_vaccine
+      has_completed_focus = CHI_Develop_own_vaccine
       NOT = {
         OR = {
           has_country_flag = cancel_covid_mission
@@ -705,13 +705,13 @@ CHI_NHCC_decisions = {
       tag = CHI
     }
     available = {
-      has_completed_focus = Develop_own_vaccine
+      has_completed_focus = CHI_Develop_own_vaccine
       NOT = {
         has_country_flag = Vaccine_research_end
       }
     }
     visible = {
-      has_completed_focus = Develop_own_vaccine
+      has_completed_focus = CHI_Develop_own_vaccine
       NOT = {
         OR = {
           has_country_flag = cancel_covid_mission
@@ -753,7 +753,7 @@ CHI_NHCC_decisions = {
     cancel_trigger = {
       OR = {
         has_country_flag = cancel_covid_mission
-        has_completed_focus = Get_out_of_the_epidemic
+        has_completed_focus = CHI_Get_out_of_the_epidemic
       }
     }
     available = {
@@ -861,11 +861,11 @@ CHI_NHCC_decisions = {
       tag = CHI
     }
     available = {
-      has_completed_focus = Isolate_patient
+      has_completed_focus = CHI_Isolate_patient
       has_country_flag = Handling_epidemic
     }
     visible = {
-      has_completed_focus = Isolate_patient
+      has_completed_focus = CHI_Isolate_patient
       NOT = {
         has_country_flag = cancel_covid_mission
       }
@@ -888,11 +888,11 @@ CHI_NHCC_decisions = {
       tag = CHI
     }
     available = {
-      has_completed_focus = Isolate_patient
+      has_completed_focus = CHI_Isolate_patient
       has_country_flag = Handling_epidemic
     }
     visible = {
-      has_completed_focus = Isolate_patient
+      has_completed_focus = CHI_Isolate_patient
       NOT = {
         has_country_flag = cancel_covid_mission
       }
@@ -913,11 +913,11 @@ CHI_NHCC_decisions = {
       tag = CHI
     }
     available = {
-      has_completed_focus = island_of_democracy
+      has_completed_focus = CHI_island_of_democracy
       has_country_flag = Handling_epidemic
     }
     visible = {
-      has_completed_focus = island_of_democracy
+      has_completed_focus = CHI_island_of_democracy
       NOT = {
         has_country_flag = cancel_covid_mission
       }
@@ -943,11 +943,11 @@ CHI_NHCC_decisions = {
       tag = CHI
     }
     available = {
-      has_completed_focus = island_of_democracy
+      has_completed_focus = CHI_island_of_democracy
       has_country_flag = Handling_epidemic
     }
     visible = {
-      has_completed_focus = island_of_democracy
+      has_completed_focus = CHI_island_of_democracy
       NOT = {
         has_country_flag = cancel_covid_mission
       }
@@ -973,11 +973,11 @@ CHI_NHCC_decisions = {
       tag = CHI
     }
     available = {
-      has_completed_focus = island_of_democracy
+      has_completed_focus = CHI_island_of_democracy
       has_country_flag = Handling_epidemic
     }
     visible = {
-      has_completed_focus = island_of_democracy
+      has_completed_focus = CHI_island_of_democracy
       NOT = {
         has_country_flag = cancel_covid_mission
       }
@@ -1006,7 +1006,7 @@ CHI_NHCC_decisions = {
     icon = Buying_vaccine
     available = {
       has_country_flag = Handling_epidemic
-      has_completed_focus = Buy_vaccines
+      has_completed_focus = CHI_Buy_vaccines
       OR = {
         JAP = {
           has_opinion = {
@@ -1018,13 +1018,13 @@ CHI_NHCC_decisions = {
       }
     }
     visible = {
-      has_completed_focus = Buy_vaccines
+      has_completed_focus = CHI_Buy_vaccines
       NOT = {
         has_country_flag = cancel_covid_mission
       }
       hidden_trigger = {
         NOT = {
-          has_completed_focus = Get_out_of_the_epidemic
+          has_completed_focus = CHI_Get_out_of_the_epidemic
         }
       }
     }
@@ -1058,7 +1058,7 @@ CHI_NHCC_decisions = {
     }
     icon = Buying_vaccine
     available = {
-      has_completed_focus = Buy_vaccines
+      has_completed_focus = CHI_Buy_vaccines
       has_country_flag = Handling_epidemic
       OR = {
         USA = {
@@ -1071,13 +1071,13 @@ CHI_NHCC_decisions = {
       }
     }
     visible = {
-      has_completed_focus = Buy_vaccines
+      has_completed_focus = CHI_Buy_vaccines
       NOT = {
         has_country_flag = cancel_covid_mission
       }
       hidden_trigger = {
         NOT = {
-          has_completed_focus = Get_out_of_the_epidemic
+          has_completed_focus = CHI_Get_out_of_the_epidemic
         }
       }
     }
@@ -1111,18 +1111,18 @@ CHI_NHCC_decisions = {
     }
     icon = Buying_vaccine
     available = {
-      has_completed_focus = Buy_vaccines
-      has_completed_focus = Taiwan_safe_people_rich
+      has_completed_focus = CHI_Buy_vaccines
+      has_completed_focus = CHI_Taiwan_safe_people_rich
       has_country_flag = Handling_epidemic
     }
     visible = {
-      has_completed_focus = Buy_vaccines
+      has_completed_focus = CHI_Buy_vaccines
       NOT = {
         has_country_flag = cancel_covid_mission
       }
       hidden_trigger = {
         NOT = {
-          has_completed_focus = Get_out_of_the_epidemic
+          has_completed_focus = CHI_Get_out_of_the_epidemic
         }
       }
     }
@@ -1166,13 +1166,13 @@ CHI_NHCC_decisions = {
       }
     }
     visible = {
-      has_completed_focus = NHCC_Expand
+      has_completed_focus = CHI_NHCC_Expand
       NOT = {
         has_country_flag = cancel_covid_mission
       }
       hidden_trigger = {
         NOT = {
-          has_completed_focus = Get_out_of_the_epidemic
+          has_completed_focus = CHI_Get_out_of_the_epidemic
         }
       }
     }
@@ -1204,10 +1204,10 @@ CHI_NHCC_decisions = {
       tag = CHI
     }
     available = {
-      has_completed_focus = Get_out_of_the_epidemic
+      has_completed_focus = CHI_Get_out_of_the_epidemic
     }
     visible = {
-      has_completed_focus = Get_out_of_the_epidemic
+      has_completed_focus = CHI_Get_out_of_the_epidemic
       NOT = {
         has_country_flag = cancel_covid_mission
       }
@@ -1277,12 +1277,12 @@ CHI_PRC_Infiltration_decisions = {
       tag = CHI
     }
     available = {
-      has_completed_focus = Rectify_weakening_military_preparedness
+      has_completed_focus = CHI_Rectify_weakening_military_preparedness
     }
     visible = {
       OR = {
-        has_completed_focus = Taiwan_safe_people_rich
-        has_completed_focus = Taiwan_will_win
+        has_completed_focus = CHI_Taiwan_safe_people_rich
+        has_completed_focus = CHI_Taiwan_will_win
       }
     }
     priority = 90		#重要程度
@@ -1357,20 +1357,20 @@ CHI_PRC_Infiltration_decisions = {
     available = {
       if = {
         limit = {
-          has_completed_focus = Taiwan_safe_people_rich
+          has_completed_focus = CHI_Taiwan_safe_people_rich
         }
-        has_completed_focus = Based_in_Taiwan
+        has_completed_focus = CHI_Based_in_Taiwan
       }
       else = {
-        has_completed_focus = Continue_transform_justice
+        has_completed_focus = CHI_Continue_transform_justice
       }
     }
     visible = {
       #显示
       ## 是否完成國策
       OR = {
-        has_completed_focus = Taiwan_safe_people_rich
-        has_completed_focus = Taiwan_will_win
+        has_completed_focus = CHI_Taiwan_safe_people_rich
+        has_completed_focus = CHI_Taiwan_will_win
       }
     }
     priority = 90		#重要程度
@@ -1403,20 +1403,20 @@ CHI_PRC_Infiltration_decisions = {
     available = {
       if = {
         limit = {
-          has_completed_focus = Taiwan_safe_people_rich
+          has_completed_focus = CHI_Taiwan_safe_people_rich
         }
-        has_completed_focus = Expand_intelligence_system
+        has_completed_focus = CHI_Expand_intelligence_system
       }
       else = {
-        has_completed_focus = Support_Black_Bear_Academy
+        has_completed_focus = CHI_Support_Black_Bear_Academy
       }
     }
     visible = {
       #显示
       ## 是否完成國策
       OR = {
-        has_completed_focus = Taiwan_safe_people_rich
-        has_completed_focus = Taiwan_will_win
+        has_completed_focus = CHI_Taiwan_safe_people_rich
+        has_completed_focus = CHI_Taiwan_will_win
       }
     }
     priority = 90		#重要程度
@@ -1448,20 +1448,20 @@ CHI_PRC_Infiltration_decisions = {
     available = {
       if = {
         limit = {
-          has_completed_focus = Taiwan_safe_people_rich
+          has_completed_focus = CHI_Taiwan_safe_people_rich
         }
-        has_completed_focus = Expand_intelligence_system
+        has_completed_focus = CHI_Expand_intelligence_system
       }
       else = {
-        has_completed_focus = Support_Black_Bear_Academy
+        has_completed_focus = CHI_Support_Black_Bear_Academy
       }
     }
     visible = {
       #显示
       ## 是否完成國策
       OR = {
-        has_completed_focus = Taiwan_safe_people_rich
-        has_completed_focus = Taiwan_will_win
+        has_completed_focus = CHI_Taiwan_safe_people_rich
+        has_completed_focus = CHI_Taiwan_will_win
       }
     }
     priority = 90		#重要程度

@@ -30,7 +30,7 @@ country_event = {
 				}
 			}
 		}
-    complete_national_focus = Taiwan_will_win
+    complete_national_focus = CHI_Taiwan_will_win
     focus_unlock = yes
     hidden_effect = {
       add_ideas = CHI_KMT_protests
@@ -82,7 +82,7 @@ country_event = {
 				}
 			}
 		}
-    complete_national_focus = Taiwan_safe_people_rich
+    complete_national_focus = CHI_Taiwan_safe_people_rich
     custom_effect_tooltip = CHI_chen_qi_mai_gaoxiong_tt
     focus_unlock = yes
     hidden_effect = {
@@ -200,7 +200,7 @@ country_event = {
   option = {
     name = CHI.3.a
     set_country_flag = American_Civil_War_happen_flg
-    complete_national_focus = Pacific_War
+    complete_national_focus = CHI_Pacific_War
     effect_tooltip = {
       add_ideas = financial_crisis_1
     }
@@ -290,8 +290,9 @@ country_event = {
     name = CHI.10.a
     set_country_flag = CHI_has_oil_crash1
     focus_unlock = yes
-    add_ideas = CHI_oil_crash1
-    complete_national_focus = third_oil_crisis
+    set_variable = { CHI_oil_crash_severity = 10 }
+    add_dynamic_modifier = { modifier = CHI_oil_crash_dynamic }
+    complete_national_focus = CHI_third_oil_crisis
   }
 }
 

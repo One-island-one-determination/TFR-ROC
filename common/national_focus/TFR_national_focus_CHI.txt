@@ -37,7 +37,7 @@ focus_tree = {
   }
   #DPP{
   focus = {
-    id = Taiwan_will_win
+    id = CHI_Taiwan_will_win
     x = 0
     y = 1
     cost = 5
@@ -75,7 +75,7 @@ focus_tree = {
     relative_position_id = CHI_election_2020
   }
   focus = {
-    id = four_persistences
+    id = CHI_four_persistences
     x = -4
     y = 1
     cost = 3
@@ -87,7 +87,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Taiwan_will_win
+      focus = CHI_Taiwan_will_win
     }
     completion_reward = {
       add_political_power = 50
@@ -109,10 +109,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Taiwan_will_win
+    relative_position_id = CHI_Taiwan_will_win
   }
   focus = {
-    id = Support_Black_Bear_Academy
+    id = CHI_Support_Black_Bear_Academy
     x = 0
     y = 1
     cost = 3
@@ -124,7 +124,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Taiwan_will_win
+      focus = CHI_Taiwan_will_win
     }
     completion_reward = {
       add_ideas = CHI_mobilize_balckbear_1
@@ -132,10 +132,10 @@ focus_tree = {
       unlock_decision_tooltip = Countering_China_Information_War
       unlock_decision_tooltip = Investigate_illegal_political_organizations
     }
-    relative_position_id = Taiwan_will_win
+    relative_position_id = CHI_Taiwan_will_win
   }
   focus = {
-    id = forward_planning
+    id = CHI_forward_planning
     x = 4
     y = 1
     cost = 3
@@ -147,7 +147,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Taiwan_will_win
+      focus = CHI_Taiwan_will_win
     }
     completion_reward = {
       add_political_power = -15
@@ -160,10 +160,10 @@ focus_tree = {
         add_ideas = CHI_farplanning_infrastructure1
       }
     }
-    relative_position_id = Taiwan_will_win
+    relative_position_id = CHI_Taiwan_will_win
   }
   focus = {
-    id = Continue_transform_justice
+    id = CHI_Continue_transform_justice
     x = -3
     y = 2
     cost = 3
@@ -175,7 +175,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Taiwan_will_win
+      focus = CHI_Taiwan_will_win
     }
     completion_reward = {
       add_political_power = 15
@@ -223,10 +223,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Taiwan_will_win
+    relative_position_id = CHI_Taiwan_will_win
   }
   focus = {
-    id = We_are_already_independent_country
+    id = CHI_We_are_already_independent_country
     x = 0
     y = 2
     cost = 4
@@ -238,14 +238,14 @@ focus_tree = {
       factor = 1
     }
     available = {
-      has_completed_focus = four_persistences
-      has_completed_focus = Support_Black_Bear_Academy
-      has_completed_focus = forward_planning
-      has_completed_focus = Continue_transform_justice
-      has_completed_focus = Get_out_of_the_epidemic
+      has_completed_focus = CHI_four_persistences
+      has_completed_focus = CHI_Support_Black_Bear_Academy
+      has_completed_focus = CHI_forward_planning
+      has_completed_focus = CHI_Continue_transform_justice
+      has_completed_focus = CHI_Get_out_of_the_epidemic
     }
     prerequisite = {
-      focus = Taiwan_will_win
+      focus = CHI_Taiwan_will_win
     }
     completion_reward = {
       add_political_power = 50
@@ -278,12 +278,12 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Taiwan_will_win
+    relative_position_id = CHI_Taiwan_will_win
   }
   #}
   #KMT{
   focus = {
-    id = Taiwan_safe_people_rich
+    id = CHI_Taiwan_safe_people_rich
     x = 0
     y = 1
     cost = 5
@@ -348,7 +348,7 @@ focus_tree = {
     relative_position_id = CHI_election_2020
   }
   focus = {
-    id = Taiwan_makes_fortune
+    id = CHI_Taiwan_makes_fortune
     x = 4
     y = 1
     cost = 3
@@ -360,7 +360,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Taiwan_safe_people_rich
+      focus = CHI_Taiwan_safe_people_rich
     }
     completion_reward = {
       add_political_power = 25
@@ -377,10 +377,10 @@ focus_tree = {
         remove_idea = "high_trade"
       }
     }
-    relative_position_id = Taiwan_safe_people_rich
+    relative_position_id = CHI_Taiwan_safe_people_rich
   }
   focus = {
-    id = Expand_intelligence_system
+    id = CHI_Expand_intelligence_system
     x = 0
     y = 1
     cost = 3
@@ -392,7 +392,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Taiwan_safe_people_rich
+      focus = CHI_Taiwan_safe_people_rich
     }
     completion_reward = {
       add_political_power = -50
@@ -403,10 +403,10 @@ focus_tree = {
       unlock_decision_tooltip = Countering_China_Information_War
       unlock_decision_tooltip = Investigate_illegal_political_organizations
     }
-    relative_position_id = Taiwan_safe_people_rich
+    relative_position_id = CHI_Taiwan_safe_people_rich
   }
   focus = {
-    id = Whistleblower_Protection_Act
+    id = CHI_Whistleblower_Protection_Act
     x = -4
     y = 1
     cost = 3
@@ -418,7 +418,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Taiwan_safe_people_rich
+      focus = CHI_Taiwan_safe_people_rich
     }
     completion_reward = {
       increase_safety = yes
@@ -449,10 +449,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Taiwan_safe_people_rich
+    relative_position_id = CHI_Taiwan_safe_people_rich
   }
   focus = {
-    id = No_distinction_between_big_and_small
+    id = CHI_No_distinction_between_big_and_small
     x = 0
     y = 2
     cost = 4
@@ -464,14 +464,14 @@ focus_tree = {
       factor = 1
     }
     available = {
-      has_completed_focus = Taiwan_makes_fortune
-      has_completed_focus = Expand_intelligence_system
-      has_completed_focus = Whistleblower_Protection_Act
-      has_completed_focus = Based_in_Taiwan
-      has_completed_focus = Get_out_of_the_epidemic
+      has_completed_focus = CHI_Taiwan_makes_fortune
+      has_completed_focus = CHI_Expand_intelligence_system
+      has_completed_focus = CHI_Whistleblower_Protection_Act
+      has_completed_focus = CHI_Based_in_Taiwan
+      has_completed_focus = CHI_Get_out_of_the_epidemic
     }
     prerequisite = {
-      focus = Taiwan_safe_people_rich
+      focus = CHI_Taiwan_safe_people_rich
     }
     completion_reward = {
       add_political_power = 50
@@ -504,10 +504,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Taiwan_safe_people_rich
+    relative_position_id = CHI_Taiwan_safe_people_rich
   }
   focus = {
-    id = Based_in_Taiwan
+    id = CHI_Based_in_Taiwan
     x = -3
     y = 2
     cost = 3
@@ -519,7 +519,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Taiwan_safe_people_rich
+      focus = CHI_Taiwan_safe_people_rich
     }
     completion_reward = {
       add_political_power = 50
@@ -547,12 +547,12 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Taiwan_safe_people_rich
+    relative_position_id = CHI_Taiwan_safe_people_rich
   }
   #}
   #中間{
   focus = {
-    id = Responding_the_epidemic
+    id = CHI_Responding_the_epidemic
     x = 2
     y = 2
     cost = 1
@@ -570,8 +570,8 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Taiwan_safe_people_rich
-      focus = Taiwan_will_win
+      focus = CHI_Taiwan_safe_people_rich
+      focus = CHI_Taiwan_will_win
     }
     completion_reward = {
       add_political_power = -15
@@ -580,7 +580,7 @@ focus_tree = {
     relative_position_id = CHI_election_2020
   }
   focus = {
-    id = Coping_with_the_oil_crisis
+    id = CHI_Coping_with_the_oil_crisis
     x = -2
     y = 2
     cost = 1
@@ -592,8 +592,8 @@ focus_tree = {
       has_country_flag = CHI_has_oil_crash1
     }
     prerequisite = {
-      focus = Taiwan_safe_people_rich
-      focus = Taiwan_will_win
+      focus = CHI_Taiwan_safe_people_rich
+      focus = CHI_Taiwan_will_win
     }
     available = {
       has_country_flag = CHI_has_oil_crash1
@@ -610,7 +610,7 @@ focus_tree = {
     relative_position_id = CHI_election_2020
   }
   focus = {
-    id = Defense_Strategy_White_Paper
+    id = CHI_Defense_Strategy_White_Paper
     x = 3
     y = 3
     cost = 3
@@ -627,8 +627,8 @@ focus_tree = {
           }
         }
       }
-      has_completed_focus = island_of_energy_security
-      has_completed_focus = Get_out_of_the_epidemic
+      has_completed_focus = CHI_island_of_energy_security
+      has_completed_focus = CHI_Get_out_of_the_epidemic
     }
     ai_will_do = {
       factor = 1
@@ -640,8 +640,8 @@ focus_tree = {
       }
     }
     prerequisite = {
-      focus = Taiwan_safe_people_rich
-      focus = Taiwan_will_win
+      focus = CHI_Taiwan_safe_people_rich
+      focus = CHI_Taiwan_will_win
     }
     completion_reward = {
       add_political_power = -15
@@ -656,7 +656,7 @@ focus_tree = {
     relative_position_id = CHI_election_2020
   }
   focus = {
-    id = our_next_step
+    id = CHI_our_next_step
     x = 0
     y = 4
     cost = 5
@@ -672,12 +672,12 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Based_in_Taiwan
-      focus = Continue_transform_justice
+      focus = CHI_Based_in_Taiwan
+      focus = CHI_Continue_transform_justice
     }
     prerequisite = {
-      focus = We_are_already_independent_country
-      focus = No_distinction_between_big_and_small
+      focus = CHI_We_are_already_independent_country
+      focus = CHI_No_distinction_between_big_and_small
     }
     completion_reward = {
       add_political_power = 150
@@ -706,7 +706,7 @@ focus_tree = {
       hidden_effect = {
         if = {
           limit = {
-            has_completed_focus = Taiwan_will_win
+            has_completed_focus = CHI_Taiwan_will_win
           }
           add_power_balance_value = {
             id = CHI_Identity_dispute
@@ -727,7 +727,7 @@ focus_tree = {
         }
         if = {
           limit = {
-            has_completed_focus = Taiwan_safe_people_rich
+            has_completed_focus = CHI_Taiwan_safe_people_rich
           }
           add_power_balance_value = {
             id = CHI_Identity_dispute
@@ -757,7 +757,7 @@ focus_tree = {
   #}
   #防疫{
   focus = {
-    id = NHCC_Expand
+    id = CHI_NHCC_Expand
     x = 11
     y = 1
     cost = 3
@@ -772,7 +772,7 @@ focus_tree = {
       has_country_flag = covid_happen
     }
     available = {
-      has_completed_focus = Responding_the_epidemic
+      has_completed_focus = CHI_Responding_the_epidemic
     }
     ai_will_do = {
       factor = 1
@@ -794,7 +794,7 @@ focus_tree = {
     relative_position_id = CHI_election_2020
   }
   focus = {
-    id = Develop_own_vaccine
+    id = CHI_Develop_own_vaccine
     x = -1
     y = 1
     cost = 3
@@ -809,7 +809,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Isolate_patient
+      focus = CHI_Isolate_patient
     }
     completion_reward = {
       activate_mission = Vaccine_research
@@ -817,11 +817,11 @@ focus_tree = {
       unlock_decision_tooltip = funding_in_vaccine_research
       unlock_decision_tooltip = CHI_vaccinate
     }
-    relative_position_id = Isolate_patient
+    relative_position_id = CHI_Isolate_patient
   }
   focus = {
     # 隔離患者
-    id = Isolate_patient
+    id = CHI_Isolate_patient
     x = -1
     y = 1
     cost = 1
@@ -835,7 +835,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = NHCC_Expand
+      focus = CHI_NHCC_Expand
     }
     completion_reward = {
       unlock_decision_tooltip = CHI_small_blockade
@@ -844,11 +844,11 @@ focus_tree = {
         days = 25
       }
     }
-    relative_position_id = NHCC_Expand
+    relative_position_id = CHI_NHCC_Expand
   }
   focus = {
     # 發放三倍券
-    id = Issuance_of_triple_coupons
+    id = CHI_Issuance_of_triple_coupons
     x = -3
     y = 1
     cost = 1
@@ -867,7 +867,7 @@ focus_tree = {
       }
     }
     prerequisite = {
-      focus = NHCC_Expand
+      focus = CHI_NHCC_Expand
     }
     completion_reward = {
       add_political_power = 150
@@ -876,11 +876,11 @@ focus_tree = {
         days = 150
       }
     }
-    relative_position_id = NHCC_Expand
+    relative_position_id = CHI_NHCC_Expand
   }
   focus = {
     # 宣布停班停課
-    id = Suspension_of_work_and_classes
+    id = CHI_Suspension_of_work_and_classes
     x = 1
     y = 1
     cost = 2
@@ -899,7 +899,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = NHCC_Expand
+      focus = CHI_NHCC_Expand
     }
     completion_reward = {
       add_political_power = 50
@@ -908,11 +908,11 @@ focus_tree = {
         days = 50
       }
     }
-    relative_position_id = NHCC_Expand
+    relative_position_id = CHI_NHCC_Expand
   }
   focus = {
     # 禁止入境
-    id = island_of_democracy
+    id = CHI_island_of_democracy
     x = 3
     y = 1
     cost = 2
@@ -931,7 +931,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = NHCC_Expand
+      focus = CHI_NHCC_Expand
     }
     completion_reward = {
       custom_effect_tooltip = border_closure_effect
@@ -945,18 +945,18 @@ focus_tree = {
       unlock_decision_tooltip = CHI_Block_US_tourists
       unlock_decision_tooltip = CHI_Block_JAP_tourists
     }
-    relative_position_id = NHCC_Expand
+    relative_position_id = CHI_NHCC_Expand
   }
   focus = {
     # 全台封城
-    id = Taiwan_locked_down
+    id = CHI_Taiwan_locked_down
     x = 2
     y = 2
     cost = 2
     icon = GFX_focus_CHI_Taiwan_locked_down
     continue_if_invalid = no
     cancel_if_invalid = yes
-    relative_position_id = NHCC_Expand
+    relative_position_id = CHI_NHCC_Expand
     available = {
       AND = {
         has_country_flag = covid_happen
@@ -969,10 +969,10 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Suspension_of_work_and_classes
+      focus = CHI_Suspension_of_work_and_classes
     }
     prerequisite = {
-      focus = island_of_democracy
+      focus = CHI_island_of_democracy
     }
     completion_reward = {
       add_political_power = 50
@@ -988,7 +988,7 @@ focus_tree = {
     }
   }
   focus = {
-    id = Buy_vaccines
+    id = CHI_Buy_vaccines
     x = 1
     y = 1
     cost = 3
@@ -1003,7 +1003,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Isolate_patient
+      focus = CHI_Isolate_patient
     }
     completion_reward = {
       set_temp_variable = {
@@ -1021,10 +1021,10 @@ focus_tree = {
       unlock_decision_tooltip = Buying_vaccine_on_PRC
       unlock_decision_tooltip = CHI_vaccinate
     }
-    relative_position_id = Isolate_patient
+    relative_position_id = CHI_Isolate_patient
   }
   focus = {
-    id = Get_out_of_the_epidemic
+    id = CHI_Get_out_of_the_epidemic
     x = 0
     y = 2
     cost = 3
@@ -1048,10 +1048,10 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Develop_own_vaccine
+      focus = CHI_Develop_own_vaccine
     }
     prerequisite = {
-      focus = Buy_vaccines
+      focus = CHI_Buy_vaccines
     }
     completion_reward = {
       custom_effect_tooltip = CHI_no_covid_tt
@@ -1065,12 +1065,12 @@ focus_tree = {
       remove_decision = Buying_vaccine_on_PRC
       add_stability = 0.05
     }
-    relative_position_id = Isolate_patient
+    relative_position_id = CHI_Isolate_patient
   }
   #}
   #石油危機國策{
   focus = {
-    id = third_oil_crisis
+    id = CHI_third_oil_crisis
     x = -11
     y = 1
     cost = 1
@@ -1096,7 +1096,7 @@ focus_tree = {
     relative_position_id = CHI_election_2020
   }
   focus = {
-    id = Unleashing_strategic_oil_reserves
+    id = CHI_Unleashing_strategic_oil_reserves
     x = 3
     y = 1
     cost = 2
@@ -1105,22 +1105,22 @@ focus_tree = {
     cancel_if_invalid = yes
     # 釋放戰略儲油
     available = {
-      has_completed_focus = Coping_with_the_oil_crisis
+      has_completed_focus = CHI_Coping_with_the_oil_crisis
     }
     ai_will_do = {
       factor = 1
     }
     prerequisite = {
-      focus = third_oil_crisis
+      focus = CHI_third_oil_crisis
     }
     completion_reward = {
       CHI_oil_crash_idea = yes
       add_political_power = 50
     }
-    relative_position_id = third_oil_crisis
+    relative_position_id = CHI_third_oil_crisis
   }
   focus = {
-    id = South_China_Sea_oil_exploration
+    id = CHI_South_China_Sea_oil_exploration
     x = -1
     y = 1
     cost = 2
@@ -1132,7 +1132,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Unleashing_strategic_oil_reserves
+      focus = CHI_Unleashing_strategic_oil_reserves
     }
     completion_reward = {
       add_political_power = 25
@@ -1143,10 +1143,10 @@ focus_tree = {
         state = 1150
       }
     }
-    relative_position_id = Unleashing_strategic_oil_reserves
+    relative_position_id = CHI_Unleashing_strategic_oil_reserves
   }
   focus = {
-    id = Find_alternative_sources
+    id = CHI_Find_alternative_sources
     x = 1
     y = 1
     cost = 2
@@ -1158,7 +1158,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Unleashing_strategic_oil_reserves
+      focus = CHI_Unleashing_strategic_oil_reserves
     }
     completion_reward = {
       add_political_power = -25
@@ -1192,10 +1192,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Unleashing_strategic_oil_reserves
+    relative_position_id = CHI_Unleashing_strategic_oil_reserves
   }
   focus = {
-    id = Technology_exchange_exchange_for_oil
+    id = CHI_Technology_exchange_exchange_for_oil
     x = 0
     y = 2
     cost = 2
@@ -1207,15 +1207,15 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = South_China_Sea_oil_exploration
+      focus = CHI_South_China_Sea_oil_exploration
     }
     prerequisite = {
-      focus = Find_alternative_sources
+      focus = CHI_Find_alternative_sources
     }
     completion_reward = {
       CHI_oil_crash_idea = yes
     }
-    relative_position_id = Unleashing_strategic_oil_reserves
+    relative_position_id = CHI_Unleashing_strategic_oil_reserves
   }
   focus = {
     id = CHI_Operation_Desert
@@ -1233,7 +1233,7 @@ focus_tree = {
       has_global_flag = saudi_civil_war_flag
     }
     prerequisite = {
-      focus = Find_alternative_sources
+      focus = CHI_Find_alternative_sources
     }
     completion_reward = {
       set_country_flag = CHI_saudi_civil_war_flag
@@ -1241,10 +1241,10 @@ focus_tree = {
       add_political_power = -50
       unlock_decision_category_tooltip = CHI_Aid_Arab_Republics_category
     }
-    relative_position_id = Unleashing_strategic_oil_reserves
+    relative_position_id = CHI_Unleashing_strategic_oil_reserves
   }
   focus = {
-    id = Electricity_prices_freeze_and_rise
+    id = CHI_Electricity_prices_freeze_and_rise
     x = 0
     y = 2
     cost = 1
@@ -1253,22 +1253,22 @@ focus_tree = {
     cancel_if_invalid = yes
     # 電價凍漲
     available = {
-      has_completed_focus = Coping_with_the_oil_crisis
+      has_completed_focus = CHI_Coping_with_the_oil_crisis
     }
     ai_will_do = {
       factor = 1
     }
     prerequisite = {
-      focus = third_oil_crisis
+      focus = CHI_third_oil_crisis
     }
     completion_reward = {
       add_stability = -0.05
       CHI_oil_crash_idea = yes
     }
-    relative_position_id = third_oil_crisis
+    relative_position_id = CHI_third_oil_crisis
   }
   focus = {
-    id = Accelerating_the_energy_transition
+    id = CHI_Accelerating_the_energy_transition
     x = -3
     y = 1
     cost = 2
@@ -1277,21 +1277,21 @@ focus_tree = {
     cancel_if_invalid = yes
     # 加速能源轉型
     available = {
-      has_completed_focus = Coping_with_the_oil_crisis
+      has_completed_focus = CHI_Coping_with_the_oil_crisis
     }
     ai_will_do = {
       factor = 1
     }
     prerequisite = {
-      focus = third_oil_crisis
+      focus = CHI_third_oil_crisis
     }
     completion_reward = {
       CHI_oil_crash_idea = yes
     }
-    relative_position_id = third_oil_crisis
+    relative_position_id = CHI_third_oil_crisis
   }
   focus = {
-    id = Life_extension_of_nuclear_power_unit_three
+    id = CHI_Life_extension_of_nuclear_power_unit_three
     x = -1
     y = 1
     cost = 2
@@ -1303,10 +1303,10 @@ focus_tree = {
       factor = 1
     }
     mutually_exclusive = {
-      focus = Expand_investment_green_energy_companies
+      focus = CHI_Expand_investment_green_energy_companies
     }
     prerequisite = {
-      focus = Accelerating_the_energy_transition
+      focus = CHI_Accelerating_the_energy_transition
     }
     completion_reward = {
       CHI_oil_crash_idea = yes
@@ -1327,10 +1327,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Accelerating_the_energy_transition
+    relative_position_id = CHI_Accelerating_the_energy_transition
   }
   focus = {
-    id = Expand_investment_green_energy_companies
+    id = CHI_Expand_investment_green_energy_companies
     x = 1
     y = 1
     cost = 2
@@ -1342,10 +1342,10 @@ focus_tree = {
       factor = 1
     }
     mutually_exclusive = {
-      focus = Life_extension_of_nuclear_power_unit_three
+      focus = CHI_Life_extension_of_nuclear_power_unit_three
     }
     prerequisite = {
-      focus = Accelerating_the_energy_transition
+      focus = CHI_Accelerating_the_energy_transition
     }
     completion_reward = {
       CHI_oil_crash_idea = yes
@@ -1363,7 +1363,7 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Accelerating_the_energy_transition
+    relative_position_id = CHI_Accelerating_the_energy_transition
   }
   focus = {
     id = CHI_Restart_core_four
@@ -1378,7 +1378,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Life_extension_of_nuclear_power_unit_three
+      focus = CHI_Life_extension_of_nuclear_power_unit_three
     }
     completion_reward = {
       CHI_oil_crash_idea = yes
@@ -1411,10 +1411,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Life_extension_of_nuclear_power_unit_three
+    relative_position_id = CHI_Life_extension_of_nuclear_power_unit_three
   }
   focus = {
-    id = The_power_plant_on_full_fire
+    id = CHI_The_power_plant_on_full_fire
     x = -1
     y = 1
     cost = 1
@@ -1426,8 +1426,8 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Expand_investment_green_energy_companies
-      focus = Life_extension_of_nuclear_power_unit_three
+      focus = CHI_Expand_investment_green_energy_companies
+      focus = CHI_Life_extension_of_nuclear_power_unit_three
     }
     completion_reward = {
       CHI_oil_crash_idea = yes
@@ -1469,10 +1469,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Expand_investment_green_energy_companies
+    relative_position_id = CHI_Expand_investment_green_energy_companies
   }
   focus = {
-    id = Photovoltaic_panels_everywhere
+    id = CHI_Photovoltaic_panels_everywhere
     x = 1
     y = 1
     cost = 2
@@ -1484,7 +1484,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Expand_investment_green_energy_companies
+      focus = CHI_Expand_investment_green_energy_companies
     }
     completion_reward = {
       CHI_oil_crash_idea = yes
@@ -1496,10 +1496,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Expand_investment_green_energy_companies
+    relative_position_id = CHI_Expand_investment_green_energy_companies
   }
   focus = {
-    id = island_of_energy_security
+    id = CHI_island_of_energy_security
     x = 0
     y = 4
     cost = 2
@@ -1511,16 +1511,16 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Electricity_prices_freeze_and_rise
+      focus = CHI_Electricity_prices_freeze_and_rise
     }
     prerequisite = {
-      focus = Technology_exchange_exchange_for_oil
+      focus = CHI_Technology_exchange_exchange_for_oil
     }
     prerequisite = {
-      focus = The_power_plant_on_full_fire
+      focus = CHI_The_power_plant_on_full_fire
     }
     prerequisite = {
-      focus = Photovoltaic_panels_everywhere
+      focus = CHI_Photovoltaic_panels_everywhere
       focus = CHI_Restart_core_four
     }
     completion_reward = {
@@ -1573,12 +1573,12 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = third_oil_crisis
+    relative_position_id = CHI_third_oil_crisis
   }
   #}
   #軍事線{
   focus = {
-    id = Rectify_weakening_military_preparedness
+    id = CHI_Rectify_weakening_military_preparedness
     x = 10
     y = -1
     cost = 2
@@ -1587,7 +1587,7 @@ focus_tree = {
     cancel_if_invalid = yes
     # 整治武備廢弛
     prerequisite = {
-      focus = Defense_Strategy_White_Paper
+      focus = CHI_Defense_Strategy_White_Paper
     }
     allow_branch = {
       has_country_flag = CHIMilitarreform
@@ -1622,10 +1622,10 @@ focus_tree = {
       }
       set_country_flag = Rectify_weakening_military_preparedness_flag
     }
-    relative_position_id = Pacific_War
+    relative_position_id = CHI_Pacific_War
   }
   focus = {
-    id = Tighten_exemption_conditions
+    id = CHI_Tighten_exemption_conditions
     x = 0
     y = 1
     cost = 3
@@ -1637,7 +1637,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Rectify_weakening_military_preparedness
+      focus = CHI_Rectify_weakening_military_preparedness
     }
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
@@ -1646,10 +1646,10 @@ focus_tree = {
         tooltip = conscription_factor_tooltip
       }
     }
-    relative_position_id = Rectify_weakening_military_preparedness
+    relative_position_id = CHI_Rectify_weakening_military_preparedness
   }
   focus = {
-    id = Hire_US_military_instructors
+    id = CHI_Hire_US_military_instructors
     x = -2
     y = 1
     cost = 3
@@ -1661,10 +1661,10 @@ focus_tree = {
       factor = 1
     }
     mutually_exclusive = {
-      focus = ROTC
+      focus = CHI_ROTC
     }
     prerequisite = {
-      focus = Tighten_exemption_conditions
+      focus = CHI_Tighten_exemption_conditions
     }
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
@@ -1690,10 +1690,10 @@ focus_tree = {
         tooltip = air_doctrine_cost_factor_tooltip
       }
     }
-    relative_position_id = Tighten_exemption_conditions
+    relative_position_id = CHI_Tighten_exemption_conditions
   }
   focus = {
-    id = Introduce_scientific_training_standards
+    id = CHI_Introduce_scientific_training_standards
     x = 0
     y = 1
     cost = 2
@@ -1705,7 +1705,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Hire_US_military_instructors
+      focus = CHI_Hire_US_military_instructors
     }
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
@@ -1722,10 +1722,10 @@ focus_tree = {
         tooltip = military_development_monthly_tooltip##需額外寫
       }
     }
-    relative_position_id = Hire_US_military_instructors
+    relative_position_id = CHI_Hire_US_military_instructors
   }
   focus = {
-    id = ROTC
+    id = CHI_ROTC
     x = 2
     y = 1
     cost = 3
@@ -1737,10 +1737,10 @@ focus_tree = {
       factor = 1
     }
     mutually_exclusive = {
-      focus = Hire_US_military_instructors
+      focus = CHI_Hire_US_military_instructors
     }
     prerequisite = {
-      focus = Tighten_exemption_conditions
+      focus = CHI_Tighten_exemption_conditions
     }
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
@@ -1757,10 +1757,10 @@ focus_tree = {
         tooltip = supply_combat_penalties_on_core_factor_tooltip
       }
     }
-    relative_position_id = Tighten_exemption_conditions
+    relative_position_id = CHI_Tighten_exemption_conditions
   }
   focus = {
-    id = abolition_of_bayonet
+    id = CHI_abolition_of_bayonet
     x = 0
     y = 1
     cost = 2
@@ -1772,7 +1772,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = ROTC
+      focus = CHI_ROTC
     }
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
@@ -1789,10 +1789,10 @@ focus_tree = {
         tooltip = military_development_monthly_tooltip##需額外寫
       }
     }
-    relative_position_id = ROTC
+    relative_position_id = CHI_ROTC
   }
   focus = {
-    id = Extend_compulsory_military_service
+    id = CHI_Extend_compulsory_military_service
     x = 0
     y = 2
     cost = 2
@@ -1804,8 +1804,8 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Hire_US_military_instructors
-      focus = ROTC
+      focus = CHI_Hire_US_military_instructors
+      focus = CHI_ROTC
     }
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
@@ -1898,10 +1898,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Tighten_exemption_conditions
+    relative_position_id = CHI_Tighten_exemption_conditions
   }
   focus = {
-    id = Improve_combat_readiness_level
+    id = CHI_Improve_combat_readiness_level
     x = 0
     y = 3
     cost = 3
@@ -1913,11 +1913,11 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Extend_compulsory_military_service
+      focus = CHI_Extend_compulsory_military_service
     }
     prerequisite = {
-      focus = abolition_of_bayonet
-      focus = Introduce_scientific_training_standards
+      focus = CHI_abolition_of_bayonet
+      focus = CHI_Introduce_scientific_training_standards
     }
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
@@ -1948,10 +1948,10 @@ focus_tree = {
         tooltip = ship_upkeep_factor_tooltip
       }
     }
-    relative_position_id = Tighten_exemption_conditions
+    relative_position_id = CHI_Tighten_exemption_conditions
   }
   focus = {
-    id = Prepare_special_budget
+    id = CHI_Prepare_special_budget
     x = 5
     y = 1
     cost = 0.5
@@ -1963,7 +1963,7 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Rectify_weakening_military_preparedness
+      focus = CHI_Rectify_weakening_military_preparedness
     }
     completion_reward = {
       add_political_power = 75
@@ -1973,10 +1973,10 @@ focus_tree = {
       }
       add_debt = yes
     }
-    relative_position_id = Rectify_weakening_military_preparedness
+    relative_position_id = CHI_Rectify_weakening_military_preparedness
   }
   focus = {
-    id = Expand_Ruijie_project
+    id = CHI_Expand_Ruijie_project
     x = -1
     y = 1
     cost = 2
@@ -1988,10 +1988,10 @@ focus_tree = {
       factor = 1
     }
     mutually_exclusive = {
-      focus = Continuation_Thunder_Project
+      focus = CHI_Continuation_Thunder_Project
     }
     prerequisite = {
-      focus = Prepare_special_budget
+      focus = CHI_Prepare_special_budget
     }
     completion_reward = {
       add_political_power = 50
@@ -2019,10 +2019,10 @@ focus_tree = {
         producer = CHI
       }
     }
-    relative_position_id = Prepare_special_budget
+    relative_position_id = CHI_Prepare_special_budget
   }
   focus = {
-    id = Special_American_made_armor_piercing_bullets
+    id = CHI_Special_American_made_armor_piercing_bullets
     x = -1
     y = 2
     cost = 2
@@ -2034,14 +2034,14 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Continuation_Thunder_Project
-      focus = Expand_Ruijie_project
+      focus = CHI_Continuation_Thunder_Project
+      focus = CHI_Expand_Ruijie_project
     }
     completion_reward = {
       if = {
         limit = {
           NOT = {
-            has_completed_focus = Hire_US_military_instructors
+            has_completed_focus = CHI_Hire_US_military_instructors
           }
         }
         custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
@@ -2056,7 +2056,7 @@ focus_tree = {
       }
       if = {
         limit = {
-          has_completed_focus = Hire_US_military_instructors
+          has_completed_focus = CHI_Hire_US_military_instructors
         }
         custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
         add_to_variable = {
@@ -2069,10 +2069,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = Prepare_special_budget
+    relative_position_id = CHI_Prepare_special_budget
   }
   focus = {
-    id = Continuation_Thunder_Project
+    id = CHI_Continuation_Thunder_Project
     x = 1
     y = 1
     cost = 2
@@ -2084,10 +2084,10 @@ focus_tree = {
       factor = 1
     }
     mutually_exclusive = {
-      focus = Expand_Ruijie_project
+      focus = CHI_Expand_Ruijie_project
     }
     prerequisite = {
-      focus = Prepare_special_budget
+      focus = CHI_Prepare_special_budget
     }
     completion_reward = {
       add_tech_bonus = {
@@ -2114,10 +2114,10 @@ focus_tree = {
       }
       add_debt = yes
     }
-    relative_position_id = Prepare_special_budget
+    relative_position_id = CHI_Prepare_special_budget
   }
   focus = {
-    id = Interception_fighter_jet_from_other_countries
+    id = CHI_Interception_fighter_jet_from_other_countries
     x = 1
     y = 2
     cost = 2
@@ -2129,8 +2129,8 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Continuation_Thunder_Project
-      focus = Expand_Ruijie_project
+      focus = CHI_Continuation_Thunder_Project
+      focus = CHI_Expand_Ruijie_project
     }
     completion_reward = {
       add_equipment_to_stockpile = {
@@ -2183,10 +2183,10 @@ focus_tree = {
       }
       add_debt = yes
     }
-    relative_position_id = Prepare_special_budget
+    relative_position_id = CHI_Prepare_special_budget
   }
   focus = {
-    id = Complete_makeover
+    id = CHI_Complete_makeover
     x = 0
     y = 3
     cost = 3
@@ -2198,10 +2198,10 @@ focus_tree = {
       factor = 1
     }
     prerequisite = {
-      focus = Special_American_made_armor_piercing_bullets
+      focus = CHI_Special_American_made_armor_piercing_bullets
     }
     prerequisite = {
-      focus = Interception_fighter_jet_from_other_countries
+      focus = CHI_Interception_fighter_jet_from_other_countries
     }
     completion_reward = {
       custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
@@ -2218,12 +2218,12 @@ focus_tree = {
         tooltip = military_development_monthly_tooltip##需額外寫
       }
     }
-    relative_position_id = Prepare_special_budget
+    relative_position_id = CHI_Prepare_special_budget
   }
   #}
   #金融危機{
   focus = {
-    id = Pacific_War
+    id = CHI_Pacific_War
     x = -4
     y = 5
     cost = 1
@@ -2284,7 +2284,7 @@ focus_tree = {
     }
   }
   focus = {
-    id = emergency_financial_controls
+    id = CHI_emergency_financial_controls
     x = -1
     y = 1
     cost = 3
@@ -2293,7 +2293,7 @@ focus_tree = {
     cancel_if_invalid = yes
     #緊急金融管制
     prerequisite = {
-      focus = Pacific_War
+      focus = CHI_Pacific_War
     }
     completion_reward = {
       effect_tooltip = {
@@ -2314,10 +2314,10 @@ focus_tree = {
       }
       add_political_power = 40
     }
-    relative_position_id = Pacific_War
+    relative_position_id = CHI_Pacific_War
   }
   focus = {
-    id = TJ_hold_emergency_talks
+    id = CHI_TJ_hold_emergency_talks
     x = -4
     y = 1
     cost = 4
@@ -2326,10 +2326,10 @@ focus_tree = {
     cancel_if_invalid = yes
     #啟動臺日緊急協商
     available = {
-      has_completed_focus = emergency_financial_controls
+      has_completed_focus = CHI_emergency_financial_controls
     }
     prerequisite = {
-      focus = Pacific_War
+      focus = CHI_Pacific_War
     }
     completion_reward = {
       effect_tooltip = {
@@ -2350,10 +2350,10 @@ focus_tree = {
       }
       add_political_power = 50
     }
-    relative_position_id = Pacific_War
+    relative_position_id = CHI_Pacific_War
   }
   focus = {
-    id = Export_market_shifts
+    id = CHI_Export_market_shifts
     x = 2
     y = 1
     cost = 3
@@ -2362,7 +2362,7 @@ focus_tree = {
     cancel_if_invalid = yes
     #出口市場轉向
     prerequisite = {
-      focus = TJ_hold_emergency_talks
+      focus = CHI_TJ_hold_emergency_talks
     }
     completion_reward = {
       effect_tooltip = {
@@ -2386,10 +2386,10 @@ focus_tree = {
         days = -50
       }
     }
-    relative_position_id = TJ_hold_emergency_talks
+    relative_position_id = CHI_TJ_hold_emergency_talks
   }
   focus = {
-    id = Revaluation_foreign_exchange_reserves
+    id = CHI_Revaluation_foreign_exchange_reserves
     x = 0
     y = 1
     cost = 3
@@ -2398,7 +2398,7 @@ focus_tree = {
     cancel_if_invalid = yes
     #重估外匯存底
     prerequisite = {
-      focus = TJ_hold_emergency_talks
+      focus = CHI_TJ_hold_emergency_talks
     }
     completion_reward = {
       effect_tooltip = {
@@ -2422,10 +2422,10 @@ focus_tree = {
         days = -50
       }
     }
-    relative_position_id = TJ_hold_emergency_talks
+    relative_position_id = CHI_TJ_hold_emergency_talks
   }
   focus = {
-    id = Aus_Resource_Swap_Agreement
+    id = CHI_Aus_Resource_Swap_Agreement
     x = -2
     y = 1
     cost = 4
@@ -2434,7 +2434,7 @@ focus_tree = {
     cancel_if_invalid = yes
     #澳洲資源互換協定
     prerequisite = {
-      focus = TJ_hold_emergency_talks
+      focus = CHI_TJ_hold_emergency_talks
     }
     completion_reward = {
       effect_tooltip = {
@@ -2445,12 +2445,12 @@ focus_tree = {
       }
       add_opinion_modifier = {
         target = AST
-        modifier = Aus_Resource_Swap_Agreement
+        modifier = CHI_Aus_Resource_Swap_Agreement
       }
       AST = {
         add_opinion_modifier = {
           target = CHI
-          modifier = Aus_Resource_Swap_Agreement
+          modifier = CHI_Aus_Resource_Swap_Agreement
         }
       }
       hidden_effect = {
@@ -2464,10 +2464,10 @@ focus_tree = {
         }
       }
     }
-    relative_position_id = TJ_hold_emergency_talks
+    relative_position_id = CHI_TJ_hold_emergency_talks
   }
   focus = {
-    id = Japan_Science_Technology_Industry_Cooperation
+    id = CHI_Japan_Science_Technology_Industry_Cooperation
     x = 1
     y = 2
     cost = 5
@@ -2476,13 +2476,13 @@ focus_tree = {
     cancel_if_invalid = yes
     #對日科技與產業合作框架
     prerequisite = {
-      focus = Export_market_shifts
+      focus = CHI_Export_market_shifts
     }
     prerequisite = {
-      focus = Revaluation_foreign_exchange_reserves
+      focus = CHI_Revaluation_foreign_exchange_reserves
     }
     prerequisite = {
-      focus = Aus_Resource_Swap_Agreement
+      focus = CHI_Aus_Resource_Swap_Agreement
     }
     completion_reward = {
       effect_tooltip = {
@@ -2502,10 +2502,10 @@ focus_tree = {
         days = -50
       }
     }
-    relative_position_id = TJ_hold_emergency_talks
+    relative_position_id = CHI_TJ_hold_emergency_talks
   }
   focus = {
-    id = Semiconductor_mobilization
+    id = CHI_Semiconductor_mobilization
     x = 2
     y = 1
     cost = 2
@@ -2514,10 +2514,10 @@ focus_tree = {
     cancel_if_invalid = yes
     #半導體產業動員
     available = {
-      has_completed_focus = Recruiting_US_refugee_talent
+      has_completed_focus = CHI_Recruiting_US_refugee_talent
     }
     prerequisite = {
-      focus = Pacific_War
+      focus = CHI_Pacific_War
     }
     completion_reward = {
       1148 = {
@@ -2530,10 +2530,10 @@ focus_tree = {
       }
       CHI_increase_tsmc_idea = yes
     }
-    relative_position_id = Pacific_War
+    relative_position_id = CHI_Pacific_War
   }
   focus = {
-    id = National_Artificial_Intelligence_Strategy
+    id = CHI_National_Artificial_Intelligence_Strategy
     x = -1
     y = 1
     cost = 4
@@ -2542,7 +2542,7 @@ focus_tree = {
     cancel_if_invalid = yes
     #國家級人工智慧戰略
     prerequisite = {
-      focus = Semiconductor_mobilization
+      focus = CHI_Semiconductor_mobilization
     }
     completion_reward = {
       add_timed_idea = {
@@ -2554,10 +2554,10 @@ focus_tree = {
         CHI_increase_tsmc_idea = yes
       }
     }
-    relative_position_id = Semiconductor_mobilization
+    relative_position_id = CHI_Semiconductor_mobilization
   }
   focus = {
-    id = Attracting_US_AI_companies
+    id = CHI_Attracting_US_AI_companies
     x = 1
     y = 1
     cost = 4
@@ -2566,7 +2566,7 @@ focus_tree = {
     cancel_if_invalid = yes
     #吸引美國AI企業
     prerequisite = {
-      focus = Semiconductor_mobilization
+      focus = CHI_Semiconductor_mobilization
     }
     completion_reward = {
       1150 = {
@@ -2591,10 +2591,10 @@ focus_tree = {
       }
       add_poverty_development = yes
     }
-    relative_position_id = Semiconductor_mobilization
+    relative_position_id = CHI_Semiconductor_mobilization
   }
   focus = {
-    id = chip_complex
+    id = CHI_chip_complex
     x = 0
     y = 2
     cost = 5
@@ -2603,10 +2603,10 @@ focus_tree = {
     cancel_if_invalid = yes
     #晶片複合體
     prerequisite = {
-      focus = Attracting_US_AI_companies
+      focus = CHI_Attracting_US_AI_companies
     }
     prerequisite = {
-      focus = National_Artificial_Intelligence_Strategy
+      focus = CHI_National_Artificial_Intelligence_Strategy
     }
     completion_reward = {
       add_timed_idea = {
@@ -2614,10 +2614,10 @@ focus_tree = {
         days = 365
       }
     }
-    relative_position_id = Semiconductor_mobilization
+    relative_position_id = CHI_Semiconductor_mobilization
   }
   focus = {
-    id = Recruiting_US_refugee_talent
+    id = CHI_Recruiting_US_refugee_talent
     x = 2
     y = 0
     cost = 3
@@ -2626,10 +2626,10 @@ focus_tree = {
     cancel_if_invalid = yes
     #招募美國難民人才
     available = {
-      has_completed_focus = Japan_Science_Technology_Industry_Cooperation
+      has_completed_focus = CHI_Japan_Science_Technology_Industry_Cooperation
     }
     prerequisite = {
-      focus = Pacific_War
+      focus = CHI_Pacific_War
     }
     completion_reward = {
       add_timed_idea = {
@@ -2647,10 +2647,10 @@ focus_tree = {
       }
       add_society_development = yes
     }
-    relative_position_id = Semiconductor_mobilization
+    relative_position_id = CHI_Semiconductor_mobilization
   }
   focus = {
-    id = Intervene_American_Civil_War
+    id = CHI_Intervene_American_Civil_War
     x = 0
     y = 2
     cost = 3
@@ -2659,14 +2659,14 @@ focus_tree = {
     cancel_if_invalid = yes
     #干預美國內戰
     available = {
-      has_completed_focus = Out_the_storm
+      has_completed_focus = CHI_Out_the_storm
     }
     prerequisite = {
-      focus = Recruiting_US_refugee_talent
+      focus = CHI_Recruiting_US_refugee_talent
     }
     prerequisite = {
-      focus = Introduce_scientific_training_standards
-      focus = abolition_of_bayonet
+      focus = CHI_Introduce_scientific_training_standards
+      focus = CHI_abolition_of_bayonet
     }
     completion_reward = {
       add_war_support = 0.05
@@ -2674,10 +2674,10 @@ focus_tree = {
       unlock_decision_category_tooltip = CHI_Intervene_the_American_Civil_War_category
       set_country_flag = Intervene_American_Civil_War_flag
     }
-    relative_position_id = Recruiting_US_refugee_talent
+    relative_position_id = CHI_Recruiting_US_refugee_talent
   }
   focus = {
-    id = Out_the_storm
+    id = CHI_Out_the_storm
     x = -1
     y = 4
     cost = 1
@@ -2686,16 +2686,16 @@ focus_tree = {
     cancel_if_invalid = yes
     #走出風暴
     prerequisite = {
-      focus = chip_complex
+      focus = CHI_chip_complex
     }
     prerequisite = {
-      focus = Japan_Science_Technology_Industry_Cooperation
+      focus = CHI_Japan_Science_Technology_Industry_Cooperation
     }
     completion_reward = {
       add_ideas = CHI_made_in_TW
       add_political_power = 100
     }
-    relative_position_id = Pacific_War
+    relative_position_id = CHI_Pacific_War
   }
   #}
   #台海{
