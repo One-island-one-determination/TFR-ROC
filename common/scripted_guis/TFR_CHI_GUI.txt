@@ -220,112 +220,16 @@ scripted_gui = {
     }
   }
 
-  #黨與政
-  CHI_party_and_politics_gui = {
-    window_name = "CHI_party_and_politics_interface"
-    context_type = decision_category
 
-    visible = {
-      tag = CHI
-    }
 
-    triggers = {
-      PAP_card_1a_visible = {
-        has_country_flag = oneIsPRC
-      }
-      PAP_card_1b_visible = {
-        has_country_flag = oneIsGA
-      }
-      PAP_card_1c_visible = {
-        has_country_flag = oneIsJG
-      }
-      PAP_card_1d_visible = {
-        has_country_flag = oneIsKK
-      }
-      PAP_card_2a_visible = {
-        has_country_flag = twoIsPRC
-      }
-      PAP_card_2b_visible = {
-        has_country_flag = twoIsGA
-      }
-      PAP_card_2c_visible = {
-        has_country_flag = twoIsJG
-      }
-      PAP_card_2d_visible = {
-        has_country_flag = twoIsKK
-      }
-      PAP_card_3a_visible = {
-        has_country_flag = threeIsPS
-      }
-      PAP_card_3b_visible = {
-        has_country_flag = threeIsLO
-      }
-      PAP_card_3c_visible = {
-        has_country_flag = threeIsPLO
-      }
-      PAP_card_3d_visible = {
-        has_country_flag = threeIsFB
-      }
-      PAP_card_4a_visible = {
-        has_country_flag = fourIsPS
-      }
-      PAP_card_4b_visible = {
-        has_country_flag = fourIsLO
-      }
-      PAP_card_4c_visible = {
-        has_country_flag = fourIsPLO
-      }
-      PAP_card_4d_visible = {
-        has_country_flag = fourIsFB
-      }
-      NDC_a_visible = {
-        has_country_flag = NDCisPRC
-      }
-      NDC_b_visible = {
-        has_country_flag = NDCisGA
-      }
-      NDC_c_visible = {
-        has_country_flag = NDCisJG
-      }
-      NDC_d_visible = {
-        has_country_flag = NDCisKK
-      }
-      LY_a_visible = {
-        has_country_flag = LYisPS
-      }
-      LY_b_visible = {
-        has_country_flag = LYisLO
-      }
-      LY_c_visible = {
-        has_country_flag = LYisPLO
-      }
-      LY_d_visible = {
-        has_country_flag = LYisFB
-      }
-      MOD_a_visible = {
-        has_country_flag = MODisPRC
-      }
-      MOD_b_visible = {
-        has_country_flag = MODisGA
-      }
-      MOD_c_visible = {
-        has_country_flag = MODisJG
-      }
-      MOD_d_visible = {
-        has_country_flag = MODisKK
-      }
-      EY_a_visible = {
-        has_country_flag = EYisPS
-      }
-      EY_b_visible = {
-        has_country_flag = EYisLO
-      }
-      EY_c_visible = {
-        has_country_flag = EYisPLO
-      }
-      EY_d_visible = {
-        has_country_flag = EYisFB
-      }
-    }
-  }
+
+
+
+
+
+
+
+
+
+
 }

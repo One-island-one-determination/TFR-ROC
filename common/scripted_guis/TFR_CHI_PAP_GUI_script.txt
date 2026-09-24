@@ -1,0 +1,563 @@
+scripted_gui = {
+  #黨與政
+  CHI_party_and_politics_gui = {
+    window_name = "CHI_party_and_politics_interface"
+    context_type = decision_category
+
+    visible = {
+      tag = CHI
+    }
+
+    triggers = {
+      PAP_NDC_PS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_NDC_PS }
+      }
+      PAP_NDC_LOC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC }
+      }
+      PAP_NDC_PRC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC }
+      }
+      PAP_NDC_GA_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_NDC_GA }
+      }
+      PAP_NDC_CCK_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK }
+      }
+      PAP_NDC_CKS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS }
+      }
+      PAP_NDC_POL_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_NDC_POL }
+      }
+      PAP_NDC_FB_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_NDC_FB }
+      }
+      PAP_LY_PS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_LY_PS}
+      }
+      PAP_LY_LOC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_LY_LOC }
+      }
+      PAP_LY_PRC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_LY_PRC }
+      }
+      PAP_LY_GA_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_LY_GA }
+      }
+      PAP_LY_CCK_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_LY_CCK }
+      }
+      PAP_LY_CKS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_LY_CKS }
+      }
+      PAP_LY_POL_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_LY_POL }
+      }
+      PAP_LY_FB_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_LY_FB }
+      }
+      PAP_MND_PS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_MND_PS }
+      }
+      PAP_MND_LOC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_MND_LOC }
+      }
+      PAP_MND_PRC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_MND_PRC }
+      }
+      PAP_MND_GA_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_MND_GA }
+      }
+      PAP_MND_CCK_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_MND_CCK }
+      }
+      PAP_MND_CKS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_MND_CKS }
+      }
+      PAP_MND_POL_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_MND_POL }
+      }
+      PAP_MND_FB_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_MND_FB }
+      }
+      PAP_EY_PS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_EY_PS }
+      }
+      PAP_EY_LOC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_EY_LOC }
+      }
+      PAP_EY_PRC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_EY_PRC }
+      }
+      PAP_EY_GA_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_EY_GA }
+      }
+      PAP_EY_CCK_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_EY_CCK }
+      }
+      PAP_EY_CKS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_EY_CKS }
+      }
+      PAP_EY_POL_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_EY_POL }
+      }
+      PAP_EY_FB_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_EY_FB }
+      }
+      PAP_card_1_PS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_1_PS }
+      }
+      PAP_card_1_LOC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC }
+      }
+      PAP_card_1_PRC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC }
+      }
+      PAP_card_1_GA_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_1_GA }
+      }
+      PAP_card_1_CCK_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK }
+      }
+      PAP_card_1_CKS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS }
+      }
+      PAP_card_1_POL_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_1_POL }
+      }
+      PAP_card_1_FB_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_1_FB }
+      }
+      PAP_card_2_PS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_2_PS }
+      }
+      PAP_card_2_LOC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC }
+      }
+      PAP_card_2_PRC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC }
+      }
+      PAP_card_2_GA_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_2_GA }
+      }
+      PAP_card_2_CCK_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK }
+      }
+      PAP_card_2_CKS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS }
+      }
+      PAP_card_2_POL_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_2_POL }
+      }
+      PAP_card_2_FB_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_2_FB }
+      }
+      PAP_card_3_PS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_3_PS }
+      }
+      PAP_card_3_LOC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC }
+      }
+      PAP_card_3_PRC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC }
+      }
+      PAP_card_3_GA_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_3_GA }
+      }
+      PAP_card_3_CCK_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK }
+      }
+      PAP_card_3_CKS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS }
+      }
+      PAP_card_3_POL_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_3_POL }
+      }
+      PAP_card_3_FB_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_3_FB }
+      }
+      PAP_card_4_PS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_4_PS }
+      }
+      PAP_card_4_LOC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC }
+      }
+      PAP_card_4_PRC_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC }
+      }
+      PAP_card_4_GA_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_4_GA }
+      }
+      PAP_card_4_CCK_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK }
+      }
+      PAP_card_4_CKS_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS }
+      }
+      PAP_card_4_POL_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_4_POL }
+      }
+      PAP_card_4_FB_visible = {
+        has_dynamic_modifier = { modifier = CHI_PAP_card_4_FB }
+      }
+    }
+
+    effect = {
+      PAP_card_1_PS_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 1 }
+          set_variable = { CHI_PAP_dec_visible = 1 }
+        }
+      }
+      PAP_card_1_LOC_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 1 }
+          set_variable = { CHI_PAP_dec_visible = 2 }
+        }
+      }
+      PAP_card_1_PRC_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 1 }
+          set_variable = { CHI_PAP_dec_visible = 3 }
+        }
+      }
+      PAP_card_1_GA_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 1 }
+          set_variable = { CHI_PAP_dec_visible = 4 }
+        }
+      }
+      PAP_card_1_CCK_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 1 }
+          set_variable = { CHI_PAP_dec_visible = 5 }
+        }
+      }
+      PAP_card_1_CKS_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 1 }
+          set_variable = { CHI_PAP_dec_visible = 6 }
+        }
+      }
+      PAP_card_1_POL_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 1 }
+          set_variable = { CHI_PAP_dec_visible = 7 }
+        }
+      }
+      PAP_card_1_FB_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 1 }
+          set_variable = { CHI_PAP_dec_visible = 8 }
+        }
+      }
+      PAP_card_2_PS_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 2 }
+          set_variable = { CHI_PAP_dec_visible = 1 }
+        }
+      }
+      PAP_card_2_LOC_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 2 }
+          set_variable = { CHI_PAP_dec_visible = 2 }
+        }
+      }
+      PAP_card_2_PRC_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 2 }
+          set_variable = { CHI_PAP_dec_visible = 3 }
+        }
+      }
+      PAP_card_2_GA_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 2 }
+          set_variable = { CHI_PAP_dec_visible = 4 }
+        }
+      }
+      PAP_card_2_CCK_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 2 }
+          set_variable = { CHI_PAP_dec_visible = 5 }
+        }
+      }
+      PAP_card_2_CKS_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 2 }
+          set_variable = { CHI_PAP_dec_visible = 6 }
+        }
+      }
+      PAP_card_2_POL_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 2 }
+          set_variable = { CHI_PAP_dec_visible = 7 }
+        }
+      }
+      PAP_card_2_FB_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 2 }
+          set_variable = { CHI_PAP_dec_visible = 8 }
+        }
+      }
+      PAP_card_3_PS_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 3 }
+          set_variable = { CHI_PAP_dec_visible = 1 }
+        }
+      }
+      PAP_card_3_LOC_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 3 }
+          set_variable = { CHI_PAP_dec_visible = 2 }
+        }
+      }
+      PAP_card_3_PRC_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 3 }
+          set_variable = { CHI_PAP_dec_visible = 3 }
+        }
+      }
+      PAP_card_3_GA_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 3 }
+          set_variable = { CHI_PAP_dec_visible = 4 }
+        }
+      }
+      PAP_card_3_CCK_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 3 }
+          set_variable = { CHI_PAP_dec_visible = 5 }
+        }
+      }
+      PAP_card_3_CKS_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 3 }
+          set_variable = { CHI_PAP_dec_visible = 6 }
+        }
+      }
+      PAP_card_3_POL_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 3 }
+          set_variable = { CHI_PAP_dec_visible = 7 }
+        }
+      }
+      PAP_card_3_FB_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 3 }
+          set_variable = { CHI_PAP_dec_visible = 8 }
+        }
+      }
+      PAP_card_4_PS_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 4 }
+          set_variable = { CHI_PAP_dec_visible = 1 }
+        }
+      }
+      PAP_card_4_LOC_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 4 }
+          set_variable = { CHI_PAP_dec_visible = 2 }
+        }
+      }
+      PAP_card_4_PRC_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 4 }
+          set_variable = { CHI_PAP_dec_visible = 3 }
+        }
+      }
+      PAP_card_4_GA_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 4 }
+          set_variable = { CHI_PAP_dec_visible = 4 }
+        }
+      }
+      PAP_card_4_CCK_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 4 }
+          set_variable = { CHI_PAP_dec_visible = 5 }
+        }
+      }
+      PAP_card_4_CKS_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 4 }
+          set_variable = { CHI_PAP_dec_visible = 6 }
+        }
+      }
+      PAP_card_4_POL_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 4 }
+          set_variable = { CHI_PAP_dec_visible = 7 }
+        }
+      }
+      PAP_card_4_FB_click = {
+        if = {
+          limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+          clear_variable = CHI_PAP_selected_slot
+          clear_variable = CHI_PAP_dec_visible
+        }
+        else = {
+          set_variable = { CHI_PAP_selected_slot = 4 }
+          set_variable = { CHI_PAP_dec_visible = 8 }
+        }
+      }
+    }
+
+
+  }
+}
