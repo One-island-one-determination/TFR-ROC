@@ -1,0 +1,1072 @@
+### 1. 決議執行腳本 (當玩家點下「與某單位互換」的決議時呼叫) ###
+CHI_PAP_decision_swap_with_NDC = {
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+		CHI_PAP_swap_card_1_with_NDC = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+		CHI_PAP_swap_card_2_with_NDC = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+		CHI_PAP_swap_card_3_with_NDC = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+		CHI_PAP_swap_card_4_with_NDC = yes
+	}
+	clear_variable = CHI_PAP_selected_slot
+	clear_variable = CHI_PAP_dec_visible
+}
+
+CHI_PAP_decision_swap_with_LY = {
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+		CHI_PAP_swap_card_1_with_LY = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+		CHI_PAP_swap_card_2_with_LY = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+		CHI_PAP_swap_card_3_with_LY = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+		CHI_PAP_swap_card_4_with_LY = yes
+	}
+	clear_variable = CHI_PAP_selected_slot
+	clear_variable = CHI_PAP_dec_visible
+}
+
+CHI_PAP_decision_swap_with_MND = {
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+		CHI_PAP_swap_card_1_with_MND = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+		CHI_PAP_swap_card_2_with_MND = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+		CHI_PAP_swap_card_3_with_MND = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+		CHI_PAP_swap_card_4_with_MND = yes
+	}
+	clear_variable = CHI_PAP_selected_slot
+	clear_variable = CHI_PAP_dec_visible
+}
+
+CHI_PAP_decision_swap_with_EY = {
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 1 } }
+		CHI_PAP_swap_card_1_with_EY = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 2 } }
+		CHI_PAP_swap_card_2_with_EY = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 3 } }
+		CHI_PAP_swap_card_3_with_EY = yes
+	}
+	if = {
+		limit = { check_variable = { CHI_PAP_selected_slot = 4 } }
+		CHI_PAP_swap_card_4_with_EY = yes
+	}
+	clear_variable = CHI_PAP_selected_slot
+	clear_variable = CHI_PAP_dec_visible
+}
+
+### 2. 底層互換邏輯 ###
+CHI_PAP_swap_card_1_with_NDC = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_PS } } set_temp_variable = { temp_card_1_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_PS } } set_temp_variable = { temp_NDC_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC } } set_temp_variable = { temp_card_1_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC } } set_temp_variable = { temp_NDC_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC } } set_temp_variable = { temp_card_1_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC } } set_temp_variable = { temp_NDC_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_GA } } set_temp_variable = { temp_card_1_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_GA } } set_temp_variable = { temp_NDC_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK } } set_temp_variable = { temp_card_1_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK } } set_temp_variable = { temp_NDC_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS } } set_temp_variable = { temp_card_1_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS } } set_temp_variable = { temp_NDC_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_POL } } set_temp_variable = { temp_card_1_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_POL } } set_temp_variable = { temp_NDC_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_FB } } set_temp_variable = { temp_card_1_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_FB } } set_temp_variable = { temp_NDC_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_1_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_PS } }
+	if = { limit = { check_variable = { temp_NDC_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_PS } }
+	if = { limit = { check_variable = { temp_card_1_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC } }
+	if = { limit = { check_variable = { temp_NDC_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC } }
+	if = { limit = { check_variable = { temp_card_1_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC } }
+	if = { limit = { check_variable = { temp_NDC_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC } }
+	if = { limit = { check_variable = { temp_card_1_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_GA } }
+	if = { limit = { check_variable = { temp_NDC_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_GA } }
+	if = { limit = { check_variable = { temp_card_1_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK } }
+	if = { limit = { check_variable = { temp_NDC_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK } }
+	if = { limit = { check_variable = { temp_card_1_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS } }
+	if = { limit = { check_variable = { temp_NDC_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS } }
+	if = { limit = { check_variable = { temp_card_1_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_POL } }
+	if = { limit = { check_variable = { temp_NDC_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_POL } }
+	if = { limit = { check_variable = { temp_card_1_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_FB } }
+	if = { limit = { check_variable = { temp_NDC_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_FB } }
+}
+
+CHI_PAP_swap_card_1_with_LY = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_PS } } set_temp_variable = { temp_card_1_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_PS} } set_temp_variable = { temp_LY_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC } } set_temp_variable = { temp_card_1_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_LOC } } set_temp_variable = { temp_LY_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC } } set_temp_variable = { temp_card_1_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_PRC } } set_temp_variable = { temp_LY_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_GA } } set_temp_variable = { temp_card_1_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_GA } } set_temp_variable = { temp_LY_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK } } set_temp_variable = { temp_card_1_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_CCK } } set_temp_variable = { temp_LY_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS } } set_temp_variable = { temp_card_1_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_CKS } } set_temp_variable = { temp_LY_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_POL } } set_temp_variable = { temp_card_1_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_POL } } set_temp_variable = { temp_LY_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_FB } } set_temp_variable = { temp_card_1_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_FB } } set_temp_variable = { temp_LY_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_PS}
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_1_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_PS} }
+	if = { limit = { check_variable = { temp_LY_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_PS } }
+	if = { limit = { check_variable = { temp_card_1_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_LOC } }
+	if = { limit = { check_variable = { temp_LY_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC } }
+	if = { limit = { check_variable = { temp_card_1_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_PRC } }
+	if = { limit = { check_variable = { temp_LY_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC } }
+	if = { limit = { check_variable = { temp_card_1_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_GA } }
+	if = { limit = { check_variable = { temp_LY_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_GA } }
+	if = { limit = { check_variable = { temp_card_1_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_CCK } }
+	if = { limit = { check_variable = { temp_LY_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK } }
+	if = { limit = { check_variable = { temp_card_1_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_CKS } }
+	if = { limit = { check_variable = { temp_LY_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS } }
+	if = { limit = { check_variable = { temp_card_1_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_POL } }
+	if = { limit = { check_variable = { temp_LY_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_POL } }
+	if = { limit = { check_variable = { temp_card_1_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_FB } }
+	if = { limit = { check_variable = { temp_LY_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_FB } }
+}
+
+CHI_PAP_swap_card_1_with_MND = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_PS } } set_temp_variable = { temp_card_1_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_PS } } set_temp_variable = { temp_MND_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC } } set_temp_variable = { temp_card_1_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_LOC } } set_temp_variable = { temp_MND_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC } } set_temp_variable = { temp_card_1_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_PRC } } set_temp_variable = { temp_MND_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_GA } } set_temp_variable = { temp_card_1_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_GA } } set_temp_variable = { temp_MND_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK } } set_temp_variable = { temp_card_1_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_CCK } } set_temp_variable = { temp_MND_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS } } set_temp_variable = { temp_card_1_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_CKS } } set_temp_variable = { temp_MND_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_POL } } set_temp_variable = { temp_card_1_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_POL } } set_temp_variable = { temp_MND_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_FB } } set_temp_variable = { temp_card_1_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_FB } } set_temp_variable = { temp_MND_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_1_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_PS } }
+	if = { limit = { check_variable = { temp_MND_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_PS } }
+	if = { limit = { check_variable = { temp_card_1_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_LOC } }
+	if = { limit = { check_variable = { temp_MND_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC } }
+	if = { limit = { check_variable = { temp_card_1_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_PRC } }
+	if = { limit = { check_variable = { temp_MND_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC } }
+	if = { limit = { check_variable = { temp_card_1_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_GA } }
+	if = { limit = { check_variable = { temp_MND_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_GA } }
+	if = { limit = { check_variable = { temp_card_1_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_CCK } }
+	if = { limit = { check_variable = { temp_MND_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK } }
+	if = { limit = { check_variable = { temp_card_1_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_CKS } }
+	if = { limit = { check_variable = { temp_MND_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS } }
+	if = { limit = { check_variable = { temp_card_1_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_POL } }
+	if = { limit = { check_variable = { temp_MND_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_POL } }
+	if = { limit = { check_variable = { temp_card_1_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_FB } }
+	if = { limit = { check_variable = { temp_MND_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_FB } }
+}
+
+CHI_PAP_swap_card_1_with_EY = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_PS } } set_temp_variable = { temp_card_1_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_PS } } set_temp_variable = { temp_EY_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC } } set_temp_variable = { temp_card_1_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_LOC } } set_temp_variable = { temp_EY_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC } } set_temp_variable = { temp_card_1_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_PRC } } set_temp_variable = { temp_EY_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_GA } } set_temp_variable = { temp_card_1_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_GA } } set_temp_variable = { temp_EY_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK } } set_temp_variable = { temp_card_1_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_CCK } } set_temp_variable = { temp_EY_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS } } set_temp_variable = { temp_card_1_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_CKS } } set_temp_variable = { temp_EY_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_POL } } set_temp_variable = { temp_card_1_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_POL } } set_temp_variable = { temp_EY_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_1_FB } } set_temp_variable = { temp_card_1_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_FB } } set_temp_variable = { temp_EY_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_1_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_PS } }
+	if = { limit = { check_variable = { temp_EY_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_PS } }
+	if = { limit = { check_variable = { temp_card_1_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_LOC } }
+	if = { limit = { check_variable = { temp_EY_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC } }
+	if = { limit = { check_variable = { temp_card_1_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_PRC } }
+	if = { limit = { check_variable = { temp_EY_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC } }
+	if = { limit = { check_variable = { temp_card_1_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_GA } }
+	if = { limit = { check_variable = { temp_EY_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_GA } }
+	if = { limit = { check_variable = { temp_card_1_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_CCK } }
+	if = { limit = { check_variable = { temp_EY_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK } }
+	if = { limit = { check_variable = { temp_card_1_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_CKS } }
+	if = { limit = { check_variable = { temp_EY_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS } }
+	if = { limit = { check_variable = { temp_card_1_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_POL } }
+	if = { limit = { check_variable = { temp_EY_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_POL } }
+	if = { limit = { check_variable = { temp_card_1_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_FB } }
+	if = { limit = { check_variable = { temp_EY_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_1_FB } }
+}
+
+CHI_PAP_swap_card_2_with_NDC = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_PS } } set_temp_variable = { temp_card_2_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_PS } } set_temp_variable = { temp_NDC_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC } } set_temp_variable = { temp_card_2_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC } } set_temp_variable = { temp_NDC_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC } } set_temp_variable = { temp_card_2_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC } } set_temp_variable = { temp_NDC_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_GA } } set_temp_variable = { temp_card_2_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_GA } } set_temp_variable = { temp_NDC_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK } } set_temp_variable = { temp_card_2_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK } } set_temp_variable = { temp_NDC_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS } } set_temp_variable = { temp_card_2_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS } } set_temp_variable = { temp_NDC_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_POL } } set_temp_variable = { temp_card_2_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_POL } } set_temp_variable = { temp_NDC_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_FB } } set_temp_variable = { temp_card_2_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_FB } } set_temp_variable = { temp_NDC_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_2_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_PS } }
+	if = { limit = { check_variable = { temp_NDC_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_PS } }
+	if = { limit = { check_variable = { temp_card_2_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC } }
+	if = { limit = { check_variable = { temp_NDC_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC } }
+	if = { limit = { check_variable = { temp_card_2_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC } }
+	if = { limit = { check_variable = { temp_NDC_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC } }
+	if = { limit = { check_variable = { temp_card_2_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_GA } }
+	if = { limit = { check_variable = { temp_NDC_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_GA } }
+	if = { limit = { check_variable = { temp_card_2_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK } }
+	if = { limit = { check_variable = { temp_NDC_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK } }
+	if = { limit = { check_variable = { temp_card_2_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS } }
+	if = { limit = { check_variable = { temp_NDC_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS } }
+	if = { limit = { check_variable = { temp_card_2_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_POL } }
+	if = { limit = { check_variable = { temp_NDC_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_POL } }
+	if = { limit = { check_variable = { temp_card_2_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_FB } }
+	if = { limit = { check_variable = { temp_NDC_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_FB } }
+}
+
+CHI_PAP_swap_card_2_with_LY = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_PS } } set_temp_variable = { temp_card_2_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_PS} } set_temp_variable = { temp_LY_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC } } set_temp_variable = { temp_card_2_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_LOC } } set_temp_variable = { temp_LY_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC } } set_temp_variable = { temp_card_2_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_PRC } } set_temp_variable = { temp_LY_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_GA } } set_temp_variable = { temp_card_2_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_GA } } set_temp_variable = { temp_LY_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK } } set_temp_variable = { temp_card_2_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_CCK } } set_temp_variable = { temp_LY_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS } } set_temp_variable = { temp_card_2_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_CKS } } set_temp_variable = { temp_LY_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_POL } } set_temp_variable = { temp_card_2_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_POL } } set_temp_variable = { temp_LY_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_FB } } set_temp_variable = { temp_card_2_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_FB } } set_temp_variable = { temp_LY_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_PS}
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_2_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_PS} }
+	if = { limit = { check_variable = { temp_LY_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_PS } }
+	if = { limit = { check_variable = { temp_card_2_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_LOC } }
+	if = { limit = { check_variable = { temp_LY_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC } }
+	if = { limit = { check_variable = { temp_card_2_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_PRC } }
+	if = { limit = { check_variable = { temp_LY_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC } }
+	if = { limit = { check_variable = { temp_card_2_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_GA } }
+	if = { limit = { check_variable = { temp_LY_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_GA } }
+	if = { limit = { check_variable = { temp_card_2_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_CCK } }
+	if = { limit = { check_variable = { temp_LY_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK } }
+	if = { limit = { check_variable = { temp_card_2_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_CKS } }
+	if = { limit = { check_variable = { temp_LY_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS } }
+	if = { limit = { check_variable = { temp_card_2_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_POL } }
+	if = { limit = { check_variable = { temp_LY_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_POL } }
+	if = { limit = { check_variable = { temp_card_2_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_FB } }
+	if = { limit = { check_variable = { temp_LY_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_FB } }
+}
+
+CHI_PAP_swap_card_2_with_MND = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_PS } } set_temp_variable = { temp_card_2_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_PS } } set_temp_variable = { temp_MND_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC } } set_temp_variable = { temp_card_2_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_LOC } } set_temp_variable = { temp_MND_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC } } set_temp_variable = { temp_card_2_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_PRC } } set_temp_variable = { temp_MND_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_GA } } set_temp_variable = { temp_card_2_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_GA } } set_temp_variable = { temp_MND_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK } } set_temp_variable = { temp_card_2_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_CCK } } set_temp_variable = { temp_MND_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS } } set_temp_variable = { temp_card_2_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_CKS } } set_temp_variable = { temp_MND_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_POL } } set_temp_variable = { temp_card_2_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_POL } } set_temp_variable = { temp_MND_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_FB } } set_temp_variable = { temp_card_2_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_FB } } set_temp_variable = { temp_MND_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_2_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_PS } }
+	if = { limit = { check_variable = { temp_MND_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_PS } }
+	if = { limit = { check_variable = { temp_card_2_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_LOC } }
+	if = { limit = { check_variable = { temp_MND_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC } }
+	if = { limit = { check_variable = { temp_card_2_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_PRC } }
+	if = { limit = { check_variable = { temp_MND_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC } }
+	if = { limit = { check_variable = { temp_card_2_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_GA } }
+	if = { limit = { check_variable = { temp_MND_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_GA } }
+	if = { limit = { check_variable = { temp_card_2_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_CCK } }
+	if = { limit = { check_variable = { temp_MND_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK } }
+	if = { limit = { check_variable = { temp_card_2_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_CKS } }
+	if = { limit = { check_variable = { temp_MND_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS } }
+	if = { limit = { check_variable = { temp_card_2_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_POL } }
+	if = { limit = { check_variable = { temp_MND_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_POL } }
+	if = { limit = { check_variable = { temp_card_2_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_FB } }
+	if = { limit = { check_variable = { temp_MND_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_FB } }
+}
+
+CHI_PAP_swap_card_2_with_EY = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_PS } } set_temp_variable = { temp_card_2_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_PS } } set_temp_variable = { temp_EY_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC } } set_temp_variable = { temp_card_2_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_LOC } } set_temp_variable = { temp_EY_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC } } set_temp_variable = { temp_card_2_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_PRC } } set_temp_variable = { temp_EY_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_GA } } set_temp_variable = { temp_card_2_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_GA } } set_temp_variable = { temp_EY_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK } } set_temp_variable = { temp_card_2_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_CCK } } set_temp_variable = { temp_EY_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS } } set_temp_variable = { temp_card_2_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_CKS } } set_temp_variable = { temp_EY_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_POL } } set_temp_variable = { temp_card_2_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_POL } } set_temp_variable = { temp_EY_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_2_FB } } set_temp_variable = { temp_card_2_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_FB } } set_temp_variable = { temp_EY_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_2_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_PS } }
+	if = { limit = { check_variable = { temp_EY_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_PS } }
+	if = { limit = { check_variable = { temp_card_2_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_LOC } }
+	if = { limit = { check_variable = { temp_EY_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC } }
+	if = { limit = { check_variable = { temp_card_2_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_PRC } }
+	if = { limit = { check_variable = { temp_EY_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC } }
+	if = { limit = { check_variable = { temp_card_2_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_GA } }
+	if = { limit = { check_variable = { temp_EY_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_GA } }
+	if = { limit = { check_variable = { temp_card_2_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_CCK } }
+	if = { limit = { check_variable = { temp_EY_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK } }
+	if = { limit = { check_variable = { temp_card_2_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_CKS } }
+	if = { limit = { check_variable = { temp_EY_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS } }
+	if = { limit = { check_variable = { temp_card_2_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_POL } }
+	if = { limit = { check_variable = { temp_EY_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_POL } }
+	if = { limit = { check_variable = { temp_card_2_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_FB } }
+	if = { limit = { check_variable = { temp_EY_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_2_FB } }
+}
+
+CHI_PAP_swap_card_3_with_NDC = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_PS } } set_temp_variable = { temp_card_3_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_PS } } set_temp_variable = { temp_NDC_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC } } set_temp_variable = { temp_card_3_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC } } set_temp_variable = { temp_NDC_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC } } set_temp_variable = { temp_card_3_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC } } set_temp_variable = { temp_NDC_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_GA } } set_temp_variable = { temp_card_3_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_GA } } set_temp_variable = { temp_NDC_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK } } set_temp_variable = { temp_card_3_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK } } set_temp_variable = { temp_NDC_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS } } set_temp_variable = { temp_card_3_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS } } set_temp_variable = { temp_NDC_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_POL } } set_temp_variable = { temp_card_3_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_POL } } set_temp_variable = { temp_NDC_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_FB } } set_temp_variable = { temp_card_3_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_FB } } set_temp_variable = { temp_NDC_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_3_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_PS } }
+	if = { limit = { check_variable = { temp_NDC_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_PS } }
+	if = { limit = { check_variable = { temp_card_3_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC } }
+	if = { limit = { check_variable = { temp_NDC_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC } }
+	if = { limit = { check_variable = { temp_card_3_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC } }
+	if = { limit = { check_variable = { temp_NDC_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC } }
+	if = { limit = { check_variable = { temp_card_3_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_GA } }
+	if = { limit = { check_variable = { temp_NDC_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_GA } }
+	if = { limit = { check_variable = { temp_card_3_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK } }
+	if = { limit = { check_variable = { temp_NDC_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK } }
+	if = { limit = { check_variable = { temp_card_3_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS } }
+	if = { limit = { check_variable = { temp_NDC_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS } }
+	if = { limit = { check_variable = { temp_card_3_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_POL } }
+	if = { limit = { check_variable = { temp_NDC_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_POL } }
+	if = { limit = { check_variable = { temp_card_3_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_FB } }
+	if = { limit = { check_variable = { temp_NDC_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_FB } }
+}
+
+CHI_PAP_swap_card_3_with_LY = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_PS } } set_temp_variable = { temp_card_3_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_PS} } set_temp_variable = { temp_LY_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC } } set_temp_variable = { temp_card_3_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_LOC } } set_temp_variable = { temp_LY_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC } } set_temp_variable = { temp_card_3_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_PRC } } set_temp_variable = { temp_LY_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_GA } } set_temp_variable = { temp_card_3_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_GA } } set_temp_variable = { temp_LY_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK } } set_temp_variable = { temp_card_3_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_CCK } } set_temp_variable = { temp_LY_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS } } set_temp_variable = { temp_card_3_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_CKS } } set_temp_variable = { temp_LY_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_POL } } set_temp_variable = { temp_card_3_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_POL } } set_temp_variable = { temp_LY_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_FB } } set_temp_variable = { temp_card_3_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_FB } } set_temp_variable = { temp_LY_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_PS}
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_3_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_PS} }
+	if = { limit = { check_variable = { temp_LY_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_PS } }
+	if = { limit = { check_variable = { temp_card_3_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_LOC } }
+	if = { limit = { check_variable = { temp_LY_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC } }
+	if = { limit = { check_variable = { temp_card_3_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_PRC } }
+	if = { limit = { check_variable = { temp_LY_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC } }
+	if = { limit = { check_variable = { temp_card_3_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_GA } }
+	if = { limit = { check_variable = { temp_LY_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_GA } }
+	if = { limit = { check_variable = { temp_card_3_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_CCK } }
+	if = { limit = { check_variable = { temp_LY_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK } }
+	if = { limit = { check_variable = { temp_card_3_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_CKS } }
+	if = { limit = { check_variable = { temp_LY_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS } }
+	if = { limit = { check_variable = { temp_card_3_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_POL } }
+	if = { limit = { check_variable = { temp_LY_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_POL } }
+	if = { limit = { check_variable = { temp_card_3_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_FB } }
+	if = { limit = { check_variable = { temp_LY_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_FB } }
+}
+
+CHI_PAP_swap_card_3_with_MND = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_PS } } set_temp_variable = { temp_card_3_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_PS } } set_temp_variable = { temp_MND_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC } } set_temp_variable = { temp_card_3_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_LOC } } set_temp_variable = { temp_MND_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC } } set_temp_variable = { temp_card_3_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_PRC } } set_temp_variable = { temp_MND_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_GA } } set_temp_variable = { temp_card_3_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_GA } } set_temp_variable = { temp_MND_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK } } set_temp_variable = { temp_card_3_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_CCK } } set_temp_variable = { temp_MND_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS } } set_temp_variable = { temp_card_3_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_CKS } } set_temp_variable = { temp_MND_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_POL } } set_temp_variable = { temp_card_3_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_POL } } set_temp_variable = { temp_MND_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_FB } } set_temp_variable = { temp_card_3_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_FB } } set_temp_variable = { temp_MND_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_3_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_PS } }
+	if = { limit = { check_variable = { temp_MND_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_PS } }
+	if = { limit = { check_variable = { temp_card_3_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_LOC } }
+	if = { limit = { check_variable = { temp_MND_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC } }
+	if = { limit = { check_variable = { temp_card_3_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_PRC } }
+	if = { limit = { check_variable = { temp_MND_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC } }
+	if = { limit = { check_variable = { temp_card_3_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_GA } }
+	if = { limit = { check_variable = { temp_MND_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_GA } }
+	if = { limit = { check_variable = { temp_card_3_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_CCK } }
+	if = { limit = { check_variable = { temp_MND_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK } }
+	if = { limit = { check_variable = { temp_card_3_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_CKS } }
+	if = { limit = { check_variable = { temp_MND_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS } }
+	if = { limit = { check_variable = { temp_card_3_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_POL } }
+	if = { limit = { check_variable = { temp_MND_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_POL } }
+	if = { limit = { check_variable = { temp_card_3_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_FB } }
+	if = { limit = { check_variable = { temp_MND_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_FB } }
+}
+
+CHI_PAP_swap_card_3_with_EY = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_PS } } set_temp_variable = { temp_card_3_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_PS } } set_temp_variable = { temp_EY_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC } } set_temp_variable = { temp_card_3_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_LOC } } set_temp_variable = { temp_EY_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC } } set_temp_variable = { temp_card_3_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_PRC } } set_temp_variable = { temp_EY_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_GA } } set_temp_variable = { temp_card_3_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_GA } } set_temp_variable = { temp_EY_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK } } set_temp_variable = { temp_card_3_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_CCK } } set_temp_variable = { temp_EY_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS } } set_temp_variable = { temp_card_3_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_CKS } } set_temp_variable = { temp_EY_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_POL } } set_temp_variable = { temp_card_3_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_POL } } set_temp_variable = { temp_EY_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_3_FB } } set_temp_variable = { temp_card_3_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_FB } } set_temp_variable = { temp_EY_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_3_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_PS } }
+	if = { limit = { check_variable = { temp_EY_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_PS } }
+	if = { limit = { check_variable = { temp_card_3_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_LOC } }
+	if = { limit = { check_variable = { temp_EY_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC } }
+	if = { limit = { check_variable = { temp_card_3_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_PRC } }
+	if = { limit = { check_variable = { temp_EY_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC } }
+	if = { limit = { check_variable = { temp_card_3_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_GA } }
+	if = { limit = { check_variable = { temp_EY_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_GA } }
+	if = { limit = { check_variable = { temp_card_3_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_CCK } }
+	if = { limit = { check_variable = { temp_EY_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK } }
+	if = { limit = { check_variable = { temp_card_3_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_CKS } }
+	if = { limit = { check_variable = { temp_EY_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS } }
+	if = { limit = { check_variable = { temp_card_3_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_POL } }
+	if = { limit = { check_variable = { temp_EY_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_POL } }
+	if = { limit = { check_variable = { temp_card_3_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_FB } }
+	if = { limit = { check_variable = { temp_EY_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_3_FB } }
+}
+
+CHI_PAP_swap_card_4_with_NDC = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_PS } } set_temp_variable = { temp_card_4_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_PS } } set_temp_variable = { temp_NDC_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC } } set_temp_variable = { temp_card_4_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC } } set_temp_variable = { temp_NDC_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC } } set_temp_variable = { temp_card_4_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC } } set_temp_variable = { temp_NDC_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_GA } } set_temp_variable = { temp_card_4_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_GA } } set_temp_variable = { temp_NDC_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK } } set_temp_variable = { temp_card_4_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK } } set_temp_variable = { temp_NDC_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS } } set_temp_variable = { temp_card_4_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS } } set_temp_variable = { temp_NDC_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_POL } } set_temp_variable = { temp_card_4_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_POL } } set_temp_variable = { temp_NDC_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_FB } } set_temp_variable = { temp_card_4_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_NDC_FB } } set_temp_variable = { temp_NDC_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_4_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_PS } }
+	if = { limit = { check_variable = { temp_NDC_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_PS } }
+	if = { limit = { check_variable = { temp_card_4_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC } }
+	if = { limit = { check_variable = { temp_NDC_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC } }
+	if = { limit = { check_variable = { temp_card_4_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC } }
+	if = { limit = { check_variable = { temp_NDC_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC } }
+	if = { limit = { check_variable = { temp_card_4_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_GA } }
+	if = { limit = { check_variable = { temp_NDC_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_GA } }
+	if = { limit = { check_variable = { temp_card_4_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK } }
+	if = { limit = { check_variable = { temp_NDC_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK } }
+	if = { limit = { check_variable = { temp_card_4_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS } }
+	if = { limit = { check_variable = { temp_NDC_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS } }
+	if = { limit = { check_variable = { temp_card_4_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_POL } }
+	if = { limit = { check_variable = { temp_NDC_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_POL } }
+	if = { limit = { check_variable = { temp_card_4_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_NDC_FB } }
+	if = { limit = { check_variable = { temp_NDC_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_FB } }
+}
+
+CHI_PAP_swap_card_4_with_LY = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_PS } } set_temp_variable = { temp_card_4_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_PS} } set_temp_variable = { temp_LY_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC } } set_temp_variable = { temp_card_4_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_LOC } } set_temp_variable = { temp_LY_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC } } set_temp_variable = { temp_card_4_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_PRC } } set_temp_variable = { temp_LY_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_GA } } set_temp_variable = { temp_card_4_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_GA } } set_temp_variable = { temp_LY_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK } } set_temp_variable = { temp_card_4_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_CCK } } set_temp_variable = { temp_LY_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS } } set_temp_variable = { temp_card_4_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_CKS } } set_temp_variable = { temp_LY_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_POL } } set_temp_variable = { temp_card_4_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_POL } } set_temp_variable = { temp_LY_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_FB } } set_temp_variable = { temp_card_4_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_LY_FB } } set_temp_variable = { temp_LY_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_PS}
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_4_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_PS} }
+	if = { limit = { check_variable = { temp_LY_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_PS } }
+	if = { limit = { check_variable = { temp_card_4_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_LOC } }
+	if = { limit = { check_variable = { temp_LY_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC } }
+	if = { limit = { check_variable = { temp_card_4_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_PRC } }
+	if = { limit = { check_variable = { temp_LY_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC } }
+	if = { limit = { check_variable = { temp_card_4_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_GA } }
+	if = { limit = { check_variable = { temp_LY_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_GA } }
+	if = { limit = { check_variable = { temp_card_4_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_CCK } }
+	if = { limit = { check_variable = { temp_LY_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK } }
+	if = { limit = { check_variable = { temp_card_4_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_CKS } }
+	if = { limit = { check_variable = { temp_LY_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS } }
+	if = { limit = { check_variable = { temp_card_4_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_POL } }
+	if = { limit = { check_variable = { temp_LY_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_POL } }
+	if = { limit = { check_variable = { temp_card_4_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_LY_FB } }
+	if = { limit = { check_variable = { temp_LY_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_FB } }
+}
+
+CHI_PAP_swap_card_4_with_MND = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_PS } } set_temp_variable = { temp_card_4_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_PS } } set_temp_variable = { temp_MND_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC } } set_temp_variable = { temp_card_4_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_LOC } } set_temp_variable = { temp_MND_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC } } set_temp_variable = { temp_card_4_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_PRC } } set_temp_variable = { temp_MND_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_GA } } set_temp_variable = { temp_card_4_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_GA } } set_temp_variable = { temp_MND_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK } } set_temp_variable = { temp_card_4_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_CCK } } set_temp_variable = { temp_MND_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS } } set_temp_variable = { temp_card_4_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_CKS } } set_temp_variable = { temp_MND_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_POL } } set_temp_variable = { temp_card_4_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_POL } } set_temp_variable = { temp_MND_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_FB } } set_temp_variable = { temp_card_4_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_MND_FB } } set_temp_variable = { temp_MND_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_4_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_PS } }
+	if = { limit = { check_variable = { temp_MND_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_PS } }
+	if = { limit = { check_variable = { temp_card_4_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_LOC } }
+	if = { limit = { check_variable = { temp_MND_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC } }
+	if = { limit = { check_variable = { temp_card_4_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_PRC } }
+	if = { limit = { check_variable = { temp_MND_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC } }
+	if = { limit = { check_variable = { temp_card_4_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_GA } }
+	if = { limit = { check_variable = { temp_MND_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_GA } }
+	if = { limit = { check_variable = { temp_card_4_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_CCK } }
+	if = { limit = { check_variable = { temp_MND_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK } }
+	if = { limit = { check_variable = { temp_card_4_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_CKS } }
+	if = { limit = { check_variable = { temp_MND_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS } }
+	if = { limit = { check_variable = { temp_card_4_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_POL } }
+	if = { limit = { check_variable = { temp_MND_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_POL } }
+	if = { limit = { check_variable = { temp_card_4_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_MND_FB } }
+	if = { limit = { check_variable = { temp_MND_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_FB } }
+}
+
+CHI_PAP_swap_card_4_with_EY = {
+	# 抓取雙方當前的派系並暫存
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_PS } } set_temp_variable = { temp_card_4_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_PS } } set_temp_variable = { temp_EY_fac = 1 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC } } set_temp_variable = { temp_card_4_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_LOC } } set_temp_variable = { temp_EY_fac = 2 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC } } set_temp_variable = { temp_card_4_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_PRC } } set_temp_variable = { temp_EY_fac = 3 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_GA } } set_temp_variable = { temp_card_4_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_GA } } set_temp_variable = { temp_EY_fac = 4 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK } } set_temp_variable = { temp_card_4_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_CCK } } set_temp_variable = { temp_EY_fac = 5 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS } } set_temp_variable = { temp_card_4_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_CKS } } set_temp_variable = { temp_EY_fac = 6 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_POL } } set_temp_variable = { temp_card_4_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_POL } } set_temp_variable = { temp_EY_fac = 7 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_card_4_FB } } set_temp_variable = { temp_card_4_fac = 8 } }
+	if = { limit = { has_dynamic_modifier = { modifier = CHI_PAP_EY_FB } } set_temp_variable = { temp_EY_fac = 8 } }
+
+	# 移除雙方所有的派系修正
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_FB }
+
+	# 把 A 的派系給 B，B 的派系給 A
+	if = { limit = { check_variable = { temp_card_4_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_PS } }
+	if = { limit = { check_variable = { temp_EY_fac = 1 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_PS } }
+	if = { limit = { check_variable = { temp_card_4_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_LOC } }
+	if = { limit = { check_variable = { temp_EY_fac = 2 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC } }
+	if = { limit = { check_variable = { temp_card_4_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_PRC } }
+	if = { limit = { check_variable = { temp_EY_fac = 3 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC } }
+	if = { limit = { check_variable = { temp_card_4_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_GA } }
+	if = { limit = { check_variable = { temp_EY_fac = 4 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_GA } }
+	if = { limit = { check_variable = { temp_card_4_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_CCK } }
+	if = { limit = { check_variable = { temp_EY_fac = 5 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK } }
+	if = { limit = { check_variable = { temp_card_4_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_CKS } }
+	if = { limit = { check_variable = { temp_EY_fac = 6 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS } }
+	if = { limit = { check_variable = { temp_card_4_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_POL } }
+	if = { limit = { check_variable = { temp_EY_fac = 7 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_POL } }
+	if = { limit = { check_variable = { temp_card_4_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_EY_FB } }
+	if = { limit = { check_variable = { temp_EY_fac = 8 } } add_dynamic_modifier = { modifier = CHI_PAP_card_4_FB } }
+}
+
+# 這是用來初始化你的黨與政系統的腳本
+# 你可以把這段放在國策、事件，或是 history 檔案裡面
+
+CHI_PAP_system_initialize = {
+    # 1. 確保初始化前先清空可能殘留的變數，以免發生錯誤
+    clear_variable = CHI_PAP_selected_slot
+    clear_variable = CHI_PAP_dec_visible
+    
+    # 2. 清除所有卡槽與單位原本的派系（這是一個好習慣，確保不會掛到兩個派系）
+	# CHI_PAP_remove_all = yes
+
+    # 3. 初始化卡槽 (Card Slots) 的派系
+    add_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS }
+    add_dynamic_modifier = { modifier = CHI_PAP_card_2_GA }
+    add_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC }
+    add_dynamic_modifier = { modifier = CHI_PAP_card_4_POL }
+    
+    # 4. 初始化單位 (Units) 的派系
+    add_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC }
+    add_dynamic_modifier = { modifier = CHI_PAP_LY_FB }
+    add_dynamic_modifier = { modifier = CHI_PAP_MND_CCK }
+    add_dynamic_modifier = { modifier = CHI_PAP_EY_PS }
+}
+
+CHI_PAP_remove_all = {
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_1_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_2_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_3_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_card_4_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_NDC_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_LY_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_MND_FB }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_PS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_LOC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_PRC }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_GA }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_CCK }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_CKS }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_POL }
+	remove_dynamic_modifier = { modifier = CHI_PAP_EY_FB }
+}
