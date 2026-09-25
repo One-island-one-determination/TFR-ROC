@@ -35,6 +35,61 @@ scripted_gui = {
 		}
 	}
 
+	CHI_RESTORATION_OF_REPUBLIC_super_event_han = {
+		context_type = player_context
+		window_name = "CHI_RESTORATION_OF_REPUBLIC_super_event_han"
+
+		visible = {
+			has_country_flag = CHI_restoration_of_republic_super_han
+			NOT = {
+				has_global_flag = super_events_off_flag
+			}
+		}
+		
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = CHI_restoration_of_republic_super_han
+			}
+		}
+	}
+
+	CHI_RESTORATION_OF_REPUBLIC_super_event_chiang = {
+		context_type = player_context
+		window_name = "CHI_RESTORATION_OF_REPUBLIC_super_event_chiang"
+
+		visible = {
+			has_country_flag = CHI_restoration_of_republic_super_chiang
+			NOT = {
+				has_global_flag = super_events_off_flag
+			}
+		}
+		
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = CHI_restoration_of_republic_super_chiang
+			}
+		}
+	}
+
+	CHI_RESTORATION_OF_REPUBLIC_super_event_ai = {
+		context_type = player_context
+		window_name = "CHI_RESTORATION_OF_REPUBLIC_super_event_ai"
+
+		visible = {
+			has_country_flag = CHI_restoration_of_republic_super_ai
+			NOT = {
+				has_global_flag = super_events_off_flag
+			}
+		}
+		
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = CHI_restoration_of_republic_super_ai
+			}
+		}
+	}
+
+
 	CHI_second_gaw_super_event = {
 		context_type = player_context
 		window_name = "CHI_second_gaw_super_event"

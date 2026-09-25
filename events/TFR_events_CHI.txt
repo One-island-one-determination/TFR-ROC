@@ -1636,8 +1636,25 @@ news_event = {
     hidden_effect = {
       if = {
         limit = { is_ai = no }
-        set_country_flag = CHI_restoration_of_republic_super
-        scoped_sound_effect = ROC_restoration_super_sound
+        if = {
+          limit = { CHI = { has_country_flag = CHI_AI_Takeover_Active } }
+          set_country_flag = CHI_restoration_of_republic_super_ai
+          scoped_sound_effect = ROC_restoration_super_sound_database
+        }
+        else_if = {
+          limit = { CHI = { has_country_flag = second_HKY_win_flg } }
+          set_country_flag = CHI_restoration_of_republic_super_han
+          scoped_sound_effect = ROC_restoration_super_sound_han
+        }
+        else_if = {
+          limit = { CHI = { has_country_flag = second_CWA_win_flg } }
+          set_country_flag = CHI_restoration_of_republic_super_chiang
+          scoped_sound_effect = ROC_restoration_super_sound_chiang
+        }
+        else = {
+          set_country_flag = CHI_restoration_of_republic_super
+          scoped_sound_effect = ROC_restoration_super_sound
+        }
         scoped_play_song = "one_minute_of_silence"
       }
     }
@@ -1650,8 +1667,25 @@ news_event = {
     hidden_effect = {
       if = {
         limit = { is_ai = no }
-        set_country_flag = CHI_restoration_of_republic_super
-        scoped_sound_effect = ROC_restoration_super_sound
+        if = {
+          limit = { CHI = { has_country_flag = CHI_AI_Takeover_Active } }
+          set_country_flag = CHI_restoration_of_republic_super_ai
+          scoped_sound_effect = ROC_restoration_super_sound_database
+        }
+        else_if = {
+          limit = { CHI = { has_country_flag = second_HKY_win_flg } }
+          set_country_flag = CHI_restoration_of_republic_super_han
+          scoped_sound_effect = ROC_restoration_super_sound_han
+        }
+        else_if = {
+          limit = { CHI = { has_country_flag = second_CWA_win_flg } }
+          set_country_flag = CHI_restoration_of_republic_super_chiang
+          scoped_sound_effect = ROC_restoration_super_sound_chiang
+        }
+        else = {
+          set_country_flag = CHI_restoration_of_republic_super
+          scoped_sound_effect = ROC_restoration_super_sound
+        }
         scoped_play_song = "one_minute_of_silence"
       }
     }
