@@ -26,7 +26,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_bringing_order_out_of_chaos
-        icon = GFX_goal_unknown
+        icon = GFX_focus_CHI_bringing_order_out_of_chaos
         prerequisite = { focus = CHI_night_of_crisis }
         mutually_exclusive = { focus = CHI_iron_fisted_national_defense }
         x = 24
@@ -35,7 +35,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_for_the_country
-        icon = GFX_goal_unknown
+        icon = GFX_focus_CHI_for_the_country
         prerequisite = { focus = CHI_bringing_order_out_of_chaos }
         x = 20
         y = 2
@@ -43,7 +43,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_for_the_people
-        icon = GFX_goal_unknown
+        icon = GFX_focus_CHI_for_the_people
         prerequisite = { focus = CHI_bringing_order_out_of_chaos }
         x = 28
         y = 2
@@ -51,7 +51,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_utilize_bureaucracy_str
-        icon = GFX_goal_unknown
+        icon = GFX_focus_CHI_utilize_bureaucracy_str
         prerequisite = { focus = CHI_for_the_country }
         x = 18
         y = 3
@@ -59,7 +59,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_notify_grassroots_officers
-        icon = GFX_goal_unknown
+        icon = GFX_focus_CHI_notify_grassroots_officers
         prerequisite = { focus = CHI_for_the_country }
         x = 20
         y = 3
@@ -67,7 +67,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_control_factions
-        icon = GFX_goal_unknown
+        icon = GFX_focus_CHI_control_factions
         prerequisite = { focus = CHI_for_the_country }
         x = 22
         y = 3
