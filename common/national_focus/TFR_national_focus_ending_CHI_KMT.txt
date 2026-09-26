@@ -319,6 +319,8 @@ focus_tree = {
   }
   focus = {
     id = CHI_tuva_problem
+    #id = CHI_tuva_problem_focus
+    #text = "[GetTuvaProblemFocusName]"
     x = 9
     y = 7
     cost = 2
@@ -329,6 +331,17 @@ focus_tree = {
       focus = CHI_mongolian_negotiations
     }
     completion_reward = {
+      #if = {
+      #  limit = {
+      #    NOT = { 329 = { is_controlled_by = SOV } }
+      #    NOT = { 329 = { is_controlled_by = ROOT } }
+      #  }
+      #  set_country_flag = CHI_took_far_east_intervention_flag
+      #  custom_effect_tooltip = CHI_tuva_intervention_decision_unlocked_tt
+      #}
+      #else = {
+      #  custom_effect_tooltip = CHI_tuva_decision_unlocked_tt
+      #}
       custom_effect_tooltip = CHI_tuva_decision_unlocked_tt
     }
   }
@@ -342,6 +355,7 @@ focus_tree = {
     cancel_if_invalid = yes
     prerequisite = {
       focus = CHI_tuva_problem
+      #focus = CHI_tuva_problem_focus
     }
     prerequisite = {
       focus = CHI_establish_regional_seats
