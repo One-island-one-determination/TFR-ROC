@@ -612,6 +612,34 @@ news_event = {
 	
 	option = {
 		name = CHI.H4.999.a
+		trigger = { original_tag = CHI }
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				set_country_flag = CHI_second_gaw_super_flag
+				scoped_sound_effect = TFR_se_second_gaw
+				scoped_play_song = "one_minute_of_silence"
+			}
+		}
+	}
+	option = {
+		name = CHI.H4.999.b
+		trigger = { original_tag = JAP }
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				set_country_flag = CHI_second_gaw_super_flag
+				scoped_sound_effect = TFR_se_second_gaw
+				scoped_play_song = "one_minute_of_silence"
+			}
+		}
+	}
+	option = {
+		name = CHI.H4.999.c
+		trigger = { 
+			NOT = { original_tag = CHI }
+			NOT = { original_tag = JAP }
+		}
 		hidden_effect = {
 			if = {
 				limit = { is_ai = no }
