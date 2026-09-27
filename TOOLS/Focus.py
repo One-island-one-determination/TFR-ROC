@@ -73,7 +73,7 @@ def main():
     if not os.path.exists(csv_filename):
         with open(csv_filename, 'w', encoding='utf-8-sig', newline='') as f:
             writer = csv.writer(f)
-            writer.writerow(["國策ID", "X座標", "Y座標", "耗費時間(通常是3,5,11)", "國策標題", "國策描述"])
+            writer.writerow(["國策ID", "X座標", "Y座標", "耗費時間", "國策標題", "國策描述"])
             writer.writerow(["CHI_test_focus_1", "0", "0", "3", "測試國策一", "這是國策一的描述。"])
             writer.writerow(["CHI_test_focus_2", "0", "1", "5", "測試國策二", "這是國策二的描述。"])
         print(f"⚠️ 找不到資料表！已自動在 TOOLS 資料夾為您生成『國策企劃表模板.csv』。")
@@ -100,7 +100,7 @@ def main():
             # 讀取並處理數值，若為空則給予預設值
             x_pos = row.get("X座標", "0").strip() or "0"
             y_pos = row.get("Y座標", "0").strip() or "0"
-            cost = row.get("耗費時間(通常是3,5,11)", "3").strip() or "3"
+            cost = row.get("耗費時間", "3").strip() or "3"
             
             title = row.get("國策標題", "").strip()
             desc = row.get("國策描述", "").strip()
