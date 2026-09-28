@@ -30,7 +30,7 @@ country_event = {
   }
   option = {
     name = CHI.H4.1.a
-    load_focus_tree = P4_CHI_Han
+    load_focus_tree = P4_CHI_KMT
     focus_unlock = yes
     if = {
       limit = { NOT = { has_country_flag = CHI_AI_Takeover_Active } }
