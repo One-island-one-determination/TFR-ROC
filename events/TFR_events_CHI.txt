@@ -2675,6 +2675,20 @@ country_event = {
 
 
 country_event = {
+  id = CHI.TW.40
+  title = CHI.TW.40.t
+  desc = CHI.TW.40.d
+  picture = CHI_Event_TW_40
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.40.a
+    set_country_flag = chi_tw_40_done
+  }
+}
+
+country_event = {
   id = CHI.TW.41
   title = CHI.TW.41.t
   desc = CHI.TW.41.d
@@ -2699,6 +2713,20 @@ country_event = {
   option = {
     name = CHI.TW.42.a
     set_country_flag = chi_tw_42_done
+  }
+}
+
+country_event = {
+  id = CHI.TW.43
+  title = CHI.TW.43.t
+  desc = CHI.TW.43.d
+  picture = CHI_Event_TW_43
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.43.a
+    set_country_flag = chi_tw_43_done
   }
 }
 
@@ -3514,21 +3542,6 @@ news_event = {
 	}
 }
 
-country_event = {
-	id = CHI_ai_takeover.3
-	hidden = yes
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = { PRC = { has_war_with = JAP } }
-			country_event = { id = CHI_ai_takeover.2 }
-		}
-		else = {
-			country_event = { id = CHI_ai_takeover.3 days = 7 }
-		}
-	}
-}
 
 country_event = {
 	id = CHI_ai_takeover.2
@@ -3539,19 +3552,33 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { PRC = { has_war_with = JAP } }
+				}
+				JAP = {
+					add_to_faction = KOR
+				}
+				PRK = {
+					country_event = {
+						id = nk.14
+						days = 60
+					}
+				}
+				PRC = {
+					country_event = {
+						id = china.1008
+						hours = 6
+					}
+				}
+				PRC_gaw_start = yes
+			}
+		}
+	}
+
 	option = {
 		name = CHI_ai_takeover.2.a
-		
-		# Leave the PDTO
-		remove_from_faction = yes
-		clr_country_flag = pdto_member
-		
-		# Create the National Salvation Front
-		create_faction = CHI_national_salvation_front_faction
-		set_country_flag = national_salvation_front_member
-		
-		# Turn on everyone
-		declare_war_on = { target = JAP type = annex_everything }
-		declare_war_on = { target = PRC type = annex_everything }
 	}
 }

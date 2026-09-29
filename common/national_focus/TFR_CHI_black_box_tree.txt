@@ -155,14 +155,10 @@ focus_tree = {
     }
     completion_reward = {
       # 旅途之终末...? 
-      # Force the PRC to complete its own war-starting focus to ensure all main-mod flags and PRK buffs apply perfectly
-      PRC = {
-        complete_national_focus = PRC_finilize_korean_revolution
-      }
-      # Start watching for PRC vs JAP war to trigger the betrayal
-      hidden_effect = {
-        country_event = { id = CHI_ai_takeover.3 days = 7 }
-      }
+      # Trigger the GAW start event
+      country_event = { id = CHI_ai_takeover.2 }
+      # Declare war on PRC to initiate GAW
+      declare_war_on = { target = PRC type = annex_everything }
     }
   }
 }
