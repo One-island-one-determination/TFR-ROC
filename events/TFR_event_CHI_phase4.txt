@@ -316,6 +316,18 @@ country_event = {
         remove_dynamic_modifier = { modifier = SOV_republic_of_russia }
       }
     }
+    hidden_effect = {
+       if = {
+            limit = { SOV = { is_subject = yes } }
+            329 = { 
+          add_core_of = MON
+          remove_core_of = TAN
+          remove_core_of = FLN
+          remove_core_of = KAZ
+          remove_core_of = SOV
+        }
+      }
+    }
   }
 }
 
