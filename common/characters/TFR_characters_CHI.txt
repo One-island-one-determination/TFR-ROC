@@ -1483,4 +1483,66 @@ characters = {
 			}
 		}
 	}
+	
+	CHI_yu_kuei_lin_char = {
+		name = CHI_yu_kuei_lin_char
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/generals/CHI_yu_kuei_lin.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			traits = {
+				commando
+				ranger
+			}
+		}
+	}
+	
+	CHI_guo_shih_yu_char = {
+		name = CHI_guo_shih_yu_char
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/generals/CHI_guo_shih_yu.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			traits = {
+				commando
+				naval_invader
+			}
+		}
+	}
+	
+	CHI_tu_hsuan_chen_char = {
+		name = CHI_tu_hsuan_chen_char
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/generals/CHI_tu_hsuan_chen.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			traits = {
+				infantry_officer
+			}
+		}
+	}
 }
