@@ -1,0 +1,508 @@
+guitypes = {
+  containerWindowType = {
+    name = "CHI_party_and_politics_interface"
+    size = { width = 100%% height = 850 }
+
+
+    containerWindowType = {
+      name = "E"
+      position = { x = 245 y = 265 }
+      #PS LOC PRC GA CCK CKS POL FB #政學 本土 故宮 草協 經國 介石 警備 戰藍
+      icontype = {
+        name = "PAP_NDC_PS"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 1
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_NDC_LOC"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 2
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_NDC_PRC"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 3
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_NDC_GA"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 4
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_NDC_CCK"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 5
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_NDC_CKS"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 6
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_NDC_POL"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 7
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_NDC_FB"
+        position = { x = -163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 8
+        centerposition = yes
+      }
+
+      icontype = {
+        name = "PAP_NDC_frame"
+        quadtexturesprite = "GFX_PAP_NDC_frame"
+        position = { x = -163 y = -135 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+      #PS LOC PRC GA CCK CKS POL FB #政學 本土 故宮 草協 經國 介石 警備 戰藍
+      icontype = {
+        name = "PAP_LY_PS"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 1
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_LY_LOC"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 2
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_LY_PRC"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 3
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_LY_GA"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 4
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_LY_CCK"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 5
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_LY_CKS"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 6
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_LY_POL"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 7
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_LY_FB"
+        position = { x = 0 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 8
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_LY_frame"
+        quadtexturesprite = "GFX_PAP_LY_frame"
+        position = { x = 0  y = -135 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+      #PS LOC PRC GA CCK CKS POL FB #政學 本土 故宮 草協 經國 介石 警備 戰藍
+      icontype = {
+        name = "PAP_MND_PS"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 1
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_MND_LOC"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 2
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_MND_PRC"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 3
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_MND_GA"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 4
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_MND_CCK"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 5
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_MND_CKS"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 6
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_MND_POL"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 7
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_MND_FB"
+        position = { x = 163 y = -145 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 8
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_MND_frame"
+        quadtexturesprite = "GFX_PAP_MND_frame"
+        position = { x = 163 y = -135 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+      #PS LOC PRC GA CCK CKS POL FB #政學 本土 故宮 草協 經國 介石 警備 戰藍
+      icontype = {
+        name = "PAP_EY_PS"
+        position = { x = 163 y = 465 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 1
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_EY_LOC"
+        position = { x = 163 y = 475 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 2
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_EY_PRC"
+        position = { x = 163 y = 475 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 3
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_EY_GA"
+        position = { x = 163 y = 465 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 4
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_EY_CCK"
+        position = { x = 163 y = 465 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 5
+        centerposition = yes
+      }
+
+      icontype = {
+        name = "PAP_EY_CKS"
+        position = { x = 163 y = 465 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 6
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_EY_POL"
+        position = { x = 163 y = 465 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 7
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_EY_FB"
+        position = { x = 163 y = 465 }
+        quadTextureSprite = "GFX_Faction_big"
+        frame = 8
+        centerposition = yes
+      }
+      icontype = {
+        name = "PAP_EY_frame"
+        quadtexturesprite = "GFX_PAP_EY_frame"
+        position = { x = 163 y = 475 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+      
+      #card1{
+      #PS LOC PRC GA CCK CKS POL FB #政學 本土 故宮 草協 經國 介石 警備 戰藍
+      buttonType = {
+        name = "PAP_card_1_PS"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 1
+      }
+      buttonType = {
+        name = "PAP_card_1_LOC"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 2
+      }
+      buttonType = {
+        name = "PAP_card_1_PRC"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 3
+      }
+      buttonType = {
+        name = "PAP_card_1_GA"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 4
+      }
+      buttonType = {
+        name = "PAP_card_1_CCK"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 5
+      }
+      buttonType = {
+        name = "PAP_card_1_CKS"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 6
+      }
+      buttonType = {
+        name = "PAP_card_1_POL"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 7
+      }
+      buttonType = {
+        name = "PAP_card_1_FB"
+        position = { x = -235 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 8
+      }
+      icontype = {
+        name = "PAP_frame_1"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -173 y = 500 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+      #}
+      #card2{
+      buttonType = {
+        name = "PAP_card_2_PS"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 1
+      }
+      buttonType = {
+        name = "PAP_card_2_LOC"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 2
+      }
+      buttonType = {
+        name = "PAP_card_2_PRC"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 3
+      }
+      buttonType = {
+        name = "PAP_card_2_GA"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 4
+      }
+      buttonType = {
+        name = "PAP_card_2_CCK"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 5
+      }
+      buttonType = {
+        name = "PAP_card_2_CKS"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 6
+      }
+      buttonType = {
+        name = "PAP_card_2_POL"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 7
+      }
+      buttonType = {
+        name = "PAP_card_2_FB"
+        position = { x = -185 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 8
+      }
+      #}
+      icontype = {
+        name = "PAP_frame_2"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -123 y = 500 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+      #card3{
+      buttonType = {
+        name = "PAP_card_3_PS"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 1
+      }
+      buttonType = {
+        name = "PAP_card_3_LOC"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 2
+      }
+      buttonType = {
+        name = "PAP_card_3_PRC"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 3
+      }
+      buttonType = {
+        name = "PAP_card_3_GA"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 4
+      }
+      buttonType = {
+        name = "PAP_card_3_CCK"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 5
+      }
+      buttonType = {
+        name = "PAP_card_3_CKS"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 6
+      }
+      buttonType = {
+        name = "PAP_card_3_POL"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 7
+      }
+      buttonType = {
+        name = "PAP_card_3_FB"
+        position = { x = -135 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 8
+      }
+      #}
+      icontype = {
+        name = "PAP_frame_3"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -73 y = 500 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+      #card4{
+      buttonType = {
+        name = "PAP_card_4_PS"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 1
+      }
+      buttonType = {
+        name = "PAP_card_4_LOC"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 2
+      }
+      buttonType = {
+        name = "PAP_card_4_PRC"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 3
+      }
+      buttonType = {
+        name = "PAP_card_4_GA"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 4
+      }
+      buttonType = {
+        name = "PAP_card_4_CCK"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 5
+      }
+      buttonType = {
+        name = "PAP_card_4_CKS"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 6
+      }
+      buttonType = {
+        name = "PAP_card_4_POL"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 7
+      }
+      buttonType = {
+        name = "PAP_card_4_FB"
+        position = { x = -85 y = 415 }
+        quadTextureSprite = "GFX_Faction"
+        frame = 8
+      }
+      #}
+      icontype = {
+        name = "PAP_frame_4"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -23 y = 500 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
+
+      instantTextBoxType = {
+        name = "Title"
+        position = { x = -220 y = 0 }
+        text = CHI_PAP_tt
+        font = "VCR02_12"
+        format = left
+      }
+    }
+  }
+}

@@ -34,6 +34,7 @@ focus_tree = {
     prerequisite = {
       focus = CHI_crossroads_of_destiny
     }
+    mutually_exclusive = { focus = CHI_placeholder_united_as_one }
     completion_reward = {
       # 牧羊人的責任
     }
@@ -42,11 +43,13 @@ focus_tree = {
   focus = {
     id = CHI_placeholder_united_as_one
     x = 12
-    y = 4
+    y = 2
     cost = 10
     prerequisite = {
       focus = CHI_crossroads_of_destiny
     }
+    available = { always = no } 
+    mutually_exclusive = { focus = CHI_shepherds_responsibility }
     completion_reward = {
       # 萬眾一心 (Placeholder name)
     }
@@ -87,6 +90,7 @@ focus_tree = {
     prerequisite = {
       focus = CHI_shepherds_responsibility
     }
+    mutually_exclusive = { focus = CHI_accelerate_integration }
     completion_reward = {
       # 隱密前行
     }
@@ -109,7 +113,8 @@ focus_tree = {
     x = 9
     y = 4
     cost = 10
-    prerequisite = { focus = CHI_accelerate_integration focus = CHI_move_forward_in_secret }
+    prerequisite = { focus = CHI_accelerate_integration }
+    prerequisite = { focus = CHI_move_forward_in_secret }
     completion_reward = {
       # 擴大城市建設
     }
@@ -144,10 +149,16 @@ focus_tree = {
     x = 12
     y = 7
     cost = 10
-    prerequisite = { focus = CHI_assume_total_control }
-    prerequisite = { focus = CHI_placeholder_united_as_one }
+    prerequisite = { 
+      focus = CHI_assume_total_control
+      focus = CHI_placeholder_united_as_one
+    }
     completion_reward = {
-      # 旅途之終末...?
+      # 旅途之终末...? 
+      # Trigger the GAW start event
+      country_event = { id = CHI_ai_takeover.2 }
+      # Declare war on PRC to initiate GAW
+      declare_war_on = { target = PRC type = annex_everything }
     }
   }
 }

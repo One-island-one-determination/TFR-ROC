@@ -1745,9 +1745,36 @@ ideas = {
 		}
 
 
-
-
-
+		#_____________蔣萬安________________#
+		CHI_aftermath_ramming_through_the_bill  = {
+			name = CHI_aftermath_ramming_through_the_bill
+			picture = CHI_aftermath_ramming_through_the_bill
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.1
+				opinion_gain_monthly = -0.05
+				authoritarian_democrat_drift = 0.1
+			}
+		}
+		CHI_fully_promote_cabinet_system_idea  = {
+			name = CHI_fully_promote_cabinet_system
+			picture = CHI_fully_promote_cabinet_system
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.7
+				stability_factor = -0.07
+			}
+		}
+		CHI_accelerate_import_export_substitution_idea  = {
+			name = CHI_accelerate_import_export_substitution
+			picture = CHI_accelerate_import_export_substitution
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 1
+				consumer_goods_factor = 0.15
+			}
+		}
 
 		#_____________賴清德________________#
 		CHI_TSMC_aggressive_invest = {

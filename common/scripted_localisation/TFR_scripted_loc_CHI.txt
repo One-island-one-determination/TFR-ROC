@@ -255,3 +255,29 @@ defined_text = {
     localization_key = "CHI_transition_2028_jsk_desc"
   }
 }
+
+#defined_text = {
+#	name = GetTuvaProblemFocusName
+#	
+#	# If Tuva is owned by someone other than SOV (Russia)
+#	text = {
+#		trigger = {
+#			OR = {
+#				has_country_flag = CHI_took_far_east_intervention_flag
+#				AND = {
+#					NOT = { 329 = { is_controlled_by = SOV } }
+#					NOT = { 329 = { is_controlled_by = ROOT } }
+#				}
+#			}
+#		}
+#		localization_key = CHI_tuva_intervention
+#	}
+#	
+#	# Default fallback
+#	text = {
+#		trigger = {
+#			# Fallback
+#		}
+#		localization_key = CHI_tuva_problem_base
+#	}
+#}

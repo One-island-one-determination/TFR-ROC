@@ -24,6 +24,7 @@ scripted_gui = {
 					has_country_flag = BTO_member
 					has_country_flag = National_Front_Member
 					has_country_flag = nanjing_pact_member
+					has_country_flag = national_salvation_front_member
 					AND = {
 						OR = {
 							has_global_flag = USB_un_coalition_global
@@ -141,6 +142,40 @@ scripted_gui = {
 		triggers = {
 			TFR_CHI_nanjing_pact_diplo_icon_visible = {
 				has_country_flag = nanjing_pact_member
+				is_in_faction = yes
+				OR = {
+					tag = CHI
+					is_in_faction_with = CHI
+				}
+			}
+		}
+	}
+	
+	TFR_CHI_national_salvation_front_countrypoliticsview_gui = {
+		context_type = player_context
+		window_name = "TFR_CHI_national_salvation_front_countrypoliticsview_container"
+		parent_window_name = "countrypoliticsview"
+
+		triggers = {
+			TFR_CHI_national_salvation_front_politics_icon_visible = {
+				has_country_flag = national_salvation_front_member
+				is_in_faction = yes
+				OR = {
+					tag = CHI
+					is_in_faction_with = CHI
+				}
+			}
+		}
+	}
+	
+	TFR_CHI_national_salvation_front_countrydiplomacyview_gui = {
+		context_type = selected_country_context
+		window_name = "TFR_CHI_national_salvation_front_countrydiplomacyview_container"
+		parent_window_token = selected_country_view_diplomacy
+
+		triggers = {
+			TFR_CHI_national_salvation_front_diplo_icon_visible = {
+				has_country_flag = national_salvation_front_member
 				is_in_faction = yes
 				OR = {
 					tag = CHI

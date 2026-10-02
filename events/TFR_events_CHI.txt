@@ -30,7 +30,7 @@ country_event = {
 				}
 			}
 		}
-    complete_national_focus = Taiwan_will_win
+    complete_national_focus = CHI_Taiwan_will_win
     focus_unlock = yes
     hidden_effect = {
       add_ideas = CHI_KMT_protests
@@ -82,7 +82,7 @@ country_event = {
 				}
 			}
 		}
-    complete_national_focus = Taiwan_safe_people_rich
+    complete_national_focus = CHI_Taiwan_safe_people_rich
     custom_effect_tooltip = CHI_chen_qi_mai_gaoxiong_tt
     focus_unlock = yes
     hidden_effect = {
@@ -200,7 +200,7 @@ country_event = {
   option = {
     name = CHI.3.a
     set_country_flag = American_Civil_War_happen_flg
-    complete_national_focus = Pacific_War
+    complete_national_focus = CHI_Pacific_War
     effect_tooltip = {
       add_ideas = financial_crisis_1
     }
@@ -290,8 +290,9 @@ country_event = {
     name = CHI.10.a
     set_country_flag = CHI_has_oil_crash1
     focus_unlock = yes
-    add_ideas = CHI_oil_crash1
-    complete_national_focus = third_oil_crisis
+    set_variable = { CHI_oil_crash_severity = 10 }
+    add_dynamic_modifier = { modifier = CHI_oil_crash_dynamic }
+    complete_national_focus = CHI_third_oil_crisis
   }
 }
 
@@ -1605,6 +1606,15 @@ country_event = {
   option = {
     name = taiwan.500.a
     set_country_flag = CHI_our_final_fight_flag
+    
+    if = {
+      limit = { has_country_leader = { character = CHI_lai_ching_te_char } }
+      set_portraits = {
+        character = CHI_lai_ching_te_char
+        civilian = { large = "gfx/Leaders/CHI/CHI_lai_ching_te_military.png" }
+      }
+    }
+    
     complete_national_focus = CHI_thus_spoke_thucydides
     focus_unlock = yes
   }
@@ -1626,8 +1636,25 @@ news_event = {
     hidden_effect = {
       if = {
         limit = { is_ai = no }
-        set_country_flag = CHI_restoration_of_republic_super
-        scoped_sound_effect = ROC_restoration_super_sound
+        if = {
+          limit = { CHI = { has_country_flag = CHI_AI_Takeover_Active } }
+          set_country_flag = CHI_restoration_of_republic_super_ai
+          scoped_sound_effect = ROC_restoration_super_sound_database
+        }
+        else_if = {
+          limit = { CHI = { has_country_flag = second_HKY_win_flg } }
+          set_country_flag = CHI_restoration_of_republic_super_han
+          scoped_sound_effect = ROC_restoration_super_sound_han
+        }
+        else_if = {
+          limit = { CHI = { has_country_flag = second_CWA_win_flg } }
+          set_country_flag = CHI_restoration_of_republic_super_chiang
+          scoped_sound_effect = ROC_restoration_super_sound_chiang
+        }
+        else = {
+          set_country_flag = CHI_restoration_of_republic_super
+          scoped_sound_effect = ROC_restoration_super_sound
+        }
         scoped_play_song = "one_minute_of_silence"
       }
     }
@@ -1640,8 +1667,25 @@ news_event = {
     hidden_effect = {
       if = {
         limit = { is_ai = no }
-        set_country_flag = CHI_restoration_of_republic_super
-        scoped_sound_effect = ROC_restoration_super_sound
+        if = {
+          limit = { CHI = { has_country_flag = CHI_AI_Takeover_Active } }
+          set_country_flag = CHI_restoration_of_republic_super_ai
+          scoped_sound_effect = ROC_restoration_super_sound_database
+        }
+        else_if = {
+          limit = { CHI = { has_country_flag = second_HKY_win_flg } }
+          set_country_flag = CHI_restoration_of_republic_super_han
+          scoped_sound_effect = ROC_restoration_super_sound_han
+        }
+        else_if = {
+          limit = { CHI = { has_country_flag = second_CWA_win_flg } }
+          set_country_flag = CHI_restoration_of_republic_super_chiang
+          scoped_sound_effect = ROC_restoration_super_sound_chiang
+        }
+        else = {
+          set_country_flag = CHI_restoration_of_republic_super
+          scoped_sound_effect = ROC_restoration_super_sound
+        }
         scoped_play_song = "one_minute_of_silence"
       }
     }
@@ -2631,6 +2675,20 @@ country_event = {
 
 
 country_event = {
+  id = CHI.TW.40
+  title = CHI.TW.40.t
+  desc = CHI.TW.40.d
+  picture = CHI_Event_TW_40
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.40.a
+    set_country_flag = chi_tw_40_done
+  }
+}
+
+country_event = {
   id = CHI.TW.41
   title = CHI.TW.41.t
   desc = CHI.TW.41.d
@@ -2655,6 +2713,20 @@ country_event = {
   option = {
     name = CHI.TW.42.a
     set_country_flag = chi_tw_42_done
+  }
+}
+
+country_event = {
+  id = CHI.TW.43
+  title = CHI.TW.43.t
+  desc = CHI.TW.43.d
+  picture = CHI_Event_TW_43
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.TW.43.a
+    set_country_flag = chi_tw_43_done
   }
 }
 
@@ -3400,10 +3472,8 @@ news_event = {
 	desc = CHI_ai_takeover_news.1.d
 	picture = GFX_news_event_taiwan
 
-	major = yes
-
-	is_triggered_only = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -3411,49 +3481,39 @@ news_event = {
 			# Clear current economy and set chaotic
 			change_economy_type_chaostic = yes
 			# Overwrite the current leader with anarchy portrait/name
-			set_country_leader_name = { ideology = totalitarian_socialist name = ZZZ_anarchy_char }
-			set_country_leader_description = { ideology = totalitarian_socialist desc = ZZZ_anarchy_char_desc }
-			set_country_leader_portrait = { ideology = totalitarian_socialist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+			set_country_leader_name = { ideology = totalitarian_socialist name = CHI_vacant_char }
+			set_country_leader_portrait = { ideology = totalitarian_socialist portrait = "gfx/Leaders/CHI/CHI_vacant.png" }
 
-			set_country_leader_name = { ideology = communist name = ZZZ_anarchy_char }
-			set_country_leader_description = { ideology = communist desc = ZZZ_anarchy_char_desc }
-			set_country_leader_portrait = { ideology = communist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+			set_country_leader_name = { ideology = communist name = CHI_vacant_char }
+			set_country_leader_portrait = { ideology = communist portrait = "gfx/Leaders/CHI/CHI_vacant.png" }
 
-			set_country_leader_name = { ideology = libertarian_socialist name = ZZZ_anarchy_char }
-			set_country_leader_description = { ideology = libertarian_socialist desc = ZZZ_anarchy_char_desc }
-			set_country_leader_portrait = { ideology = libertarian_socialist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+			set_country_leader_name = { ideology = libertarian_socialist name = CHI_vacant_char }
+			set_country_leader_portrait = { ideology = libertarian_socialist portrait = "gfx/Leaders/CHI/CHI_vacant.png" }
 
-			set_country_leader_name = { ideology = social_democrat name = ZZZ_anarchy_char }
-			set_country_leader_description = { ideology = social_democrat desc = ZZZ_anarchy_char_desc }
-			set_country_leader_portrait = { ideology = social_democrat portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+			set_country_leader_name = { ideology = social_democrat name = CHI_vacant_char }
+			set_country_leader_portrait = { ideology = social_democrat portrait = "gfx/Leaders/CHI/CHI_vacant.png" }
 
-			set_country_leader_name = { ideology = social_liberal name = ZZZ_anarchy_char }
-			set_country_leader_description = { ideology = social_liberal desc = ZZZ_anarchy_char_desc }
-			set_country_leader_portrait = { ideology = social_liberal portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+			set_country_leader_name = { ideology = social_liberal name = CHI_vacant_char }
+			set_country_leader_portrait = { ideology = social_liberal portrait = "gfx/Leaders/CHI/CHI_vacant.png" }
 
-			set_country_leader_name = { ideology = market_liberal name = ZZZ_anarchy_char }
-			set_country_leader_description = { ideology = market_liberal desc = ZZZ_anarchy_char_desc }
-			set_country_leader_portrait = { ideology = market_liberal portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+			set_country_leader_name = { ideology = market_liberal name = CHI_vacant_char }
+			set_country_leader_portrait = { ideology = market_liberal portrait = "gfx/Leaders/CHI/CHI_vacant.png" }
 
-			set_country_leader_name = { ideology = conservative name = ZZZ_anarchy_char }
-			set_country_leader_description = { ideology = conservative desc = ZZZ_anarchy_char_desc }
-			set_country_leader_portrait = { ideology = conservative portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+			set_country_leader_name = { ideology = conservative name = CHI_vacant_char }
+			set_country_leader_portrait = { ideology = conservative portrait = "gfx/Leaders/CHI/CHI_vacant.png" }
 
-			set_country_leader_name = { ideology = authoritarian_democrat name = ZZZ_anarchy_char }
-			set_country_leader_description = { ideology = authoritarian_democrat desc = ZZZ_anarchy_char_desc }
-			set_country_leader_portrait = { ideology = authoritarian_democrat portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+			set_country_leader_name = { ideology = authoritarian_democrat name = CHI_vacant_char }
+			set_country_leader_portrait = { ideology = authoritarian_democrat portrait = "gfx/Leaders/CHI/CHI_vacant.png" }
 
-			set_country_leader_name = { ideology = nationalist name = ZZZ_anarchy_char }
-			set_country_leader_description = { ideology = nationalist desc = ZZZ_anarchy_char_desc }
-			set_country_leader_portrait = { ideology = nationalist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+			set_country_leader_name = { ideology = nationalist name = CHI_vacant_char }
+			set_country_leader_portrait = { ideology = nationalist portrait = "gfx/Leaders/CHI/CHI_vacant.png" }
 
-			set_country_leader_name = { ideology = fascist name = ZZZ_anarchy_char }
-			set_country_leader_description = { ideology = fascist desc = ZZZ_anarchy_char_desc }
-			set_country_leader_portrait = { ideology = fascist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
+			set_country_leader_name = { ideology = fascist name = CHI_vacant_char }
+			set_country_leader_portrait = { ideology = fascist portrait = "gfx/Leaders/CHI/CHI_vacant.png" }
+      
+			set_country_leader_name = { ideology = national_socialist name = CHI_vacant_char }
+			set_country_leader_portrait = { ideology = national_socialist portrait = "gfx/Leaders/CHI/CHI_vacant.png" }
 
-			set_country_leader_name = { ideology = national_socialist name = ZZZ_anarchy_char }
-			set_country_leader_description = { ideology = national_socialist desc = ZZZ_anarchy_char_desc }
-			set_country_leader_portrait = { ideology = national_socialist portrait = "gfx/Leaders/ZZZ/ZZZ_anarchy.png" }
       set_party_name = { 
       ideology = nationalist 
       long_name = CHI_nationalist_ai_party_hidden_long 
@@ -3479,5 +3539,46 @@ news_event = {
 		trigger = {
 			tag = CHI
 		}
+	}
+}
+
+
+country_event = {
+	id = CHI_ai_takeover.2
+	title = CHI_ai_takeover.2.t
+	desc = CHI_ai_takeover.2.d
+	picture = GFX_news_event_ROC_nanjing_presidential_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { PRC = { has_war_with = JAP } }
+				}
+				JAP = {
+					add_to_faction = KOR
+				}
+				PRK = {
+					country_event = {
+						id = nk.14
+						days = 60
+					}
+				}
+				PRC = {
+					country_event = {
+						id = china.1008
+						hours = 6
+					}
+				}
+				PRC_gaw_start = yes
+			}
+		}
+	}
+
+	option = {
+		name = CHI_ai_takeover.2.a
 	}
 }

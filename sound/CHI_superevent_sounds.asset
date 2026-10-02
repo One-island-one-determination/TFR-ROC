@@ -25,6 +25,45 @@ soundeffect = {
 }
 
 sound = {
+	name = "ROC_restoration_super_sound_han_file"
+	file = "Super_Events/CHI_restoration_han.wav"
+	volume = 0.65
+}
+
+soundeffect = {
+	name = "ROC_restoration_super_sound_han"
+	sounds = {
+		sound = "ROC_restoration_super_sound_han_file"
+	}
+}
+
+sound = {
+	name = "ROC_restoration_super_sound_chiang_file"
+	file = "Super_Events/CHI_restoration_chiang.wav"
+	volume = 0.65
+}
+
+soundeffect = {
+	name = "ROC_restoration_super_sound_chiang"
+	sounds = {
+		sound = "ROC_restoration_super_sound_chiang_file"
+	}
+}
+
+sound = {
+	name = "ROC_restoration_super_sound_database_file"
+	file = "Super_Events/CHI_restoration_database.wav"
+	volume = 0.65
+}
+
+soundeffect = {
+	name = "ROC_restoration_super_sound_database"
+	sounds = {
+		sound = "ROC_restoration_super_sound_database_file"
+	}
+}
+
+sound = {
 	name = "TFR_se_second_gaw_file"
 	file = "Super_Events/TFR_se_second_gaw.wav"
 	volume = 0.75
