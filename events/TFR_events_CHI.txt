@@ -286,11 +286,21 @@ country_event = {
   picture = GFX_red_line_go_down
   fire_only_once = yes
   is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      set_variable = { CHI_OC_consumer_goods_factor = 0.5 tooltip = consumer_goods_factor_tooltip }
+      set_variable = { CHI_OC_production_factory_max_efficiency_factor = -0.4 tooltip = production_factory_max_efficiency_factor_tooltip }
+      set_variable = { CHI_OC_production_speed_buildings_factor = -0.4 tooltip = production_speed_buildings_factor_tooltip }
+      set_variable = { CHI_OC_stability_factor = -0.4 tooltip = stability_factor_tooltip }
+      set_variable = { CHI_OC_business_value_factor = -0.4 tooltip = business_value_factor_tooltip }
+      set_variable = { CHI_OC_poverty_development_monthly = -0.04 tooltip = poverty_development_monthly_tooltip }
+      set_variable = { CHI_OC_factory_energy_consumption = 0.6 tooltip = factory_energy_consumption_tooltip }
+    }
+  }
   option = {
     name = CHI.10.a
     set_country_flag = CHI_has_oil_crash1
     focus_unlock = yes
-    set_variable = { CHI_oil_crash_severity = 10 }
     add_dynamic_modifier = { modifier = CHI_oil_crash_dynamic }
     complete_national_focus = CHI_third_oil_crisis
   }
