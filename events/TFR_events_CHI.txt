@@ -2415,7 +2415,7 @@ country_event = {
   option = {
     name = CHI.TW.27.a
     country_event = {
-      id = CHI.TW.28
+      id = CHI.TW.29
       days = 7
     }
   }
@@ -2674,19 +2674,19 @@ country_event = {
 }
 
 
-country_event = {
-  id = CHI.TW.40
-  title = CHI.TW.40.t
-  desc = CHI.TW.40.d
-  picture = CHI_Event_TW_40
-  fire_only_once = yes
-  is_triggered_only = yes
+# country_event = {
+#   id = CHI.TW.40
+#   title = CHI.TW.40.t
+#   desc = CHI.TW.40.d
+#   picture = CHI_Event_TW_40
+#   fire_only_once = yes
+#   is_triggered_only = yes
 
-  option = {
-    name = CHI.TW.40.a
-    set_country_flag = chi_tw_40_done
-  }
-}
+#   option = {
+#     name = CHI.TW.40.a
+#     set_country_flag = chi_tw_40_done
+#   }
+# }
 
 country_event = {
   id = CHI.TW.41
@@ -2951,16 +2951,17 @@ country_event = {
         }
         10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_38_done }
+          modifier = { factor = 0 has_country_flag = DPP_win_flg }
           country_event = { id = CHI.TW.38 }
         }
         10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_39_done }
           country_event = { id = CHI.TW.39 }
         }
-        10 = {
-          modifier = { factor = 0 has_country_flag = chi_tw_40_done }
-          country_event = { id = CHI.TW.40 }
-        }
+        # 10 = {
+        #   modifier = { factor = 0 has_country_flag = chi_tw_40_done }
+        #   country_event = { id = CHI.TW.40 }
+        # }
         10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_41_done }
           country_event = { id = CHI.TW.41 }
@@ -3260,7 +3261,7 @@ country_event = {
   immediate = {
     if = {
       limit = {
-        PRC = { has_completed_focus = PRC_shake_up_the_politburo }
+        PRC = { has_shine_effect_on_focus = PRC_shake_up_the_politburo }
         NOT = { has_country_flag = CHI_TW_23_flag }
         }
       CHI = { 

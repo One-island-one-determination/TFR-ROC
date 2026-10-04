@@ -8552,6 +8552,14 @@ CHI_efficient_government_category = {
           instant_build = yes
         }
       }
+      custom_effect_tooltip = {
+        IDEA = CHI_Economy
+        localization_key = modify_idea_tt
+      }
+      add_to_variable = {
+        CHI_Economy_production_factory_max_efficiency_factor = 0.05
+        tooltip = production_factory_max_efficiency_factor_tooltip
+      }
     }
   }
   #公定發電優質煤限制
