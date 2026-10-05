@@ -624,9 +624,19 @@ focus_tree = {
       focus = CHI_Ending_wartime_economic
     }
     completion_reward = {
-      country_event = {
-        id = CHI.104
+      if = {
+        limit = { 
+          has_country_leader = {
+            character = CHI_chang_san_cheng_char
+            ruling_only = yes
+          }
+         }
+        country_event = { id = CHI.TW.151 }
       }
+      else = {
+        country_event = { id = CHI.104 }
+      }
+      
       hidden_effect = {  country_event = { id = CHI.TW.14 days = 3 }}
     }
     relative_position_id = CHI_Mobilizing_civil_society_groups
