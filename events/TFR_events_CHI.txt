@@ -2171,21 +2171,21 @@ country_event = {
       729 = {
         remove_core_of = PRC
       }  
-      country_event = { id = CHI.TW.211 days = 3 }
+      country_event = { id = CHI.TW.21a days = 3 }
     }
   }
 }
 
 country_event = {
-  id = CHI.TW.211
-  title = CHI.TW.211.t
-  desc = CHI.TW.211.d
+  id = CHI.TW.21a
+  title = CHI.TW.21a.t
+  desc = CHI.TW.21a.d
   picture = CHI_Event_TW_21
 
   is_triggered_only = yes
 
   option = {
-    name = CHI.TW.211.a
+    name = CHI.TW.21a.a
 
     # Hong Kong (HKN - tag from main mod)
     326 = {
@@ -3011,6 +3011,115 @@ country_event = {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+    id = CHI.TW.150
+    title = CHI.TW.150.t
+    desc = CHI.TW.150.d
+    picture = CHI_Event_TW_150
+    fire_only_once = yes
+    is_triggered_only = yes
+    immediate = {
+      hidden_effect={
+        set_politics = {
+          ruling_party = conservative
+          last_election = "2020.1.11"
+          election_frequency = 48
+          elections_allowed = yes
+        }
+        CHI_chang_san_cheng_char = {
+          add_country_leader_role = {
+            country_leader = {
+              desc = CHI_chang_san_cheng_char_desc
+              ideology = constitutionalist
+              traits = { hos_president_of_the_commoners }
+            }
+            promote_leader = yes
+          }
+        }
+      } 
+    }
+    option = {
+      name = CHI.TW.150.a
+      #張善政成為代理總統
+      effect_tooltip = {
+        CHI_chang_san_cheng_char = {
+          add_country_leader_role = {
+            country_leader = {
+              desc = CHI_chang_san_cheng_char_desc
+              ideology = constitutionalist
+              traits = { hos_president_of_the_commoners }
+            }
+            promote_leader = yes
+          }
+        }
+      }
+      #載入重建國策
+      custom_effect_tooltip = CHI_unlock_reconstruction_tt
+      set_country_flag = CHI_reconstruction_flg
+      complete_national_focus = CHI_Emergency_reconstruction_begins
+      focus_unlock = yes
+    }
+}
+
+country_event = {
+    id = CHI.TW.151
+    title = CHI.TW.151.t
+    desc = CHI.TW.151.d
+    picture = CHI_Event_TW_151
+    fire_only_once = yes
+    is_triggered_only = yes
+    hidden_effect = { country_event = { id = CHI.CWA_2028_temp days = 1461 } }
+    option = {
+      name = CHI.TW.151.a
+      
+      #蔣萬安成為新領導人
+      CHI_chiang_wan_an_char = {
+        add_country_leader_role = {
+          country_leader = {
+            desc = CHI_chiang_wan_an_char_desc
+            ideology = constitutionalist
+            traits = { hos_president_of_the_commoners }
+          }
+          promote_leader = yes
+        }
+        add_country_leader_role = {
+          country_leader = {
+            desc = CHI_chiang_wan_an_char_desc
+            ideology = reformed_tridemism
+            traits = { hos_president_of_the_commoners }
+          }
+          promote_leader = yes
+        }
+      }
+      set_politics = {
+          ruling_party = conservative
+          last_election = "2024.1.11"
+          election_frequency = 48
+          elections_allowed = yes
+      }
+
+      ##載入新國策
+      hidden_effect = {
+        load_focus_tree = P2_CHI_KMT
+        # set_country_flag = CWA_2024_flg
+        focus_unlock = yes
+      }
+      custom_effect_tooltip = P2CWA_unlock_tt
+      complete_national_focus = CHI_reclaim_national_father_thought
+    }
+}
+
 country_event = {
   id = CHI.transition_1
   title = CHI.B2.1.t
@@ -3018,10 +3127,10 @@ country_event = {
   picture = CHI_Event_B2_1
   fire_only_once = yes
   is_triggered_only = yes
-  
+  immediate = { hidden_effect = { country_event = { id = CHI.transition_2 days = 3 } } }
   option = {
     name = CHI.B2.1.a
-    country_event = { id = CHI.transition_2 }
+    effect_tooltip = { country_event = { id = CHI.transition_2 days = 3 } }
   }
 }
 
@@ -3039,11 +3148,11 @@ country_event = {
   # }
   option = {
     name = CHI.B2.2.b  #國父或趙少康
-    country_event = { id = CHI.transition_6 }
+    country_event = { id = CHI.transition_6 days = 3}
   }
 }
 
-country_event = {
+country_event = {  ##暫時沒有
   id = CHI.transition_3
   title = CHI.B2.3.t
   desc = CHI.B2.3.d
@@ -3053,15 +3162,15 @@ country_event = {
   
   option = {
     name = CHI.B2.3.a #軍政
-    country_event = { id = CHI.transition_4 }
+    country_event = { id = CHI.transition_4 days = 3}
   }
   option = {
     name = CHI.B2.3.b #韓國瑜獨裁
-    country_event = { id = CHI.transition_5 }
+    country_event = { id = CHI.transition_5 days = 3}
   }
 }
 
-country_event = {
+country_event = {  ##暫時沒有
   id = CHI.transition_4 #軍政
   title = CHI.B2.4.t
   desc = CHI.B2.4.d
@@ -3075,7 +3184,7 @@ country_event = {
   }
 }
 
-country_event = {
+country_event = {  ##暫時沒有
   id = CHI.transition_5 #韓獨裁
   title = CHI.B2.5.t
   desc = CHI.B2.5.d
@@ -3099,7 +3208,7 @@ country_event = {
   
   option = {
     name = CHI.B2.6.a
-    country_event = { id = CHI.transition_7 }
+    country_event = { id = CHI.transition_7 days = 3}
   }
   # option = {
   #   name = CHI.B2.6.b
@@ -3114,52 +3223,25 @@ country_event = {
   picture = CHI_Event_B2_7
   fire_only_once = yes
   is_triggered_only = yes
-  immediate = { 
-    hidden_effect = {
-      country_event = {
-        id = CHI.CWA_2028_temp
-        days = 1461
-      }
-    }
-   }
+
   option = {
     name = CHI.B2.7.a
-    custom_effect_tooltip = P2CWA_unlock_tt
-    complete_national_focus = CHI_reclaim_national_father_thought
-    hidden_effect = {
-      set_politics = {
-        ruling_party = conservative
-        last_election = "2024.1.11"
-        election_frequency = 48
-        elections_allowed = yes
-      }
-      load_focus_tree = P2_CHI_KMT
-      set_country_flag = CWA_2024_flg
-      focus_unlock = yes
-    }
-
+    custom_effect_tooltip = CHI_chang_san_cheng_tt
+    set_country_flag = CWA_2024_flg
     CHI_chiang_wan_an_char = {
-			if = {
-				limit = { has_ideology = constitutionalist }
-				promote_character = constitutionalist
-			}
-			else = {
-				add_country_leader_role = {
-					country_leader = {
-						desc = CHI_chiang_wan_an_char_desc
-						ideology = constitutionalist
-						traits = { hos_president_of_the_commoners }
-					}
-					promote_leader = yes
-				}
-			}
-		}
-
-    
+      add_country_leader_role = {
+        country_leader = {
+          desc = CHI_chiang_wan_an_char_desc
+          ideology = reformed_tridemism
+          traits = { hos_president_of_the_commoners }
+        }
+        promote_leader = yes
+      }
+    }
   }
 }
 
-country_event = {
+country_event = {  ##暫時沒有
   id = CHI.transition_8
   title = CHI.B2.8.t
   desc = CHI.B2.8.d
