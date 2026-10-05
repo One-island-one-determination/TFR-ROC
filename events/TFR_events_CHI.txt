@@ -3029,41 +3029,8 @@ country_event = {
     picture = CHI_Event_TW_150
     fire_only_once = yes
     is_triggered_only = yes
-    immediate = {
-      hidden_effect={
-        set_politics = {
-          ruling_party = conservative
-          last_election = "2020.1.11"
-          election_frequency = 48
-          elections_allowed = yes
-        }
-        CHI_chang_san_cheng_char = {
-          add_country_leader_role = {
-            country_leader = {
-              desc = CHI_chang_san_cheng_char_desc
-              ideology = constitutionalist
-              traits = { hos_president_of_the_commoners }
-            }
-            promote_leader = yes
-          }
-        }
-      } 
-    }
     option = {
       name = CHI.TW.150.a
-      #張善政成為代理總統
-      effect_tooltip = {
-        CHI_chang_san_cheng_char = {
-          add_country_leader_role = {
-            country_leader = {
-              desc = CHI_chang_san_cheng_char_desc
-              ideology = constitutionalist
-              traits = { hos_president_of_the_commoners }
-            }
-            promote_leader = yes
-          }
-        }
-      }
       #載入重建國策
       custom_effect_tooltip = CHI_unlock_reconstruction_tt
       set_country_flag = CHI_reconstruction_flg
@@ -3079,29 +3046,33 @@ country_event = {
     picture = CHI_Event_TW_151
     fire_only_once = yes
     is_triggered_only = yes
-    hidden_effect = { country_event = { id = CHI.CWA_2028_temp days = 1461 } }
+    hidden_effect = { 
+      country_event = { id = CHI.CWA_2028_temp days = 1461 } 
+    }
     option = {
       name = CHI.TW.151.a
-      
+
+      hidden_effect = { retire_character = CHI_chang_san_cheng_char }
       #蔣萬安成為新領導人
-      CHI_chiang_wan_an_char = {
-        add_country_leader_role = {
-          country_leader = {
-            desc = CHI_chiang_wan_an_char_desc
-            ideology = constitutionalist
-            traits = { hos_president_of_the_commoners }
-          }
-          promote_leader = yes
+       add_country_leader_role = {
+        character = CHI_chiang_wan_an_char
+        country_leader = {
+          desc = CHI_chiang_wan_an_char_desc
+          ideology = constitutionalist
+          traits = { hos_president_of_the_commoners }
         }
-        add_country_leader_role = {
-          country_leader = {
-            desc = CHI_chiang_wan_an_char_desc
-            ideology = reformed_tridemism
-            traits = { hos_president_of_the_commoners }
-          }
-          promote_leader = yes
-        }
+        promote_leader = yes
       }
+      add_country_leader_role = {
+        character = CHI_chiang_wan_an_char
+        country_leader = {
+          desc = CHI_chiang_wan_an_char_desc
+          ideology = reformed_tridemism
+          traits = { hos_president_of_the_commoners }
+        }
+        promote_leader = yes
+      }
+
       set_politics = {
           ruling_party = conservative
           last_election = "2024.1.11"
@@ -3228,15 +3199,33 @@ country_event = {
     name = CHI.B2.7.a
     custom_effect_tooltip = CHI_chang_san_cheng_tt
     set_country_flag = CWA_2024_flg
-    CHI_chiang_wan_an_char = {
-      add_country_leader_role = {
-        country_leader = {
-          desc = CHI_chiang_wan_an_char_desc
-          ideology = reformed_tridemism
-          traits = { hos_president_of_the_commoners }
-        }
-        promote_leader = yes
+    
+    hidden_effect = { retire_character = CHI_han_kuo_yu_char }
+
+    add_country_leader_role = {
+      character = CHI_chang_san_cheng_char
+      promote_leader = yes
+      country_leader = {
+        ideology = constitutionalist
+        traits = { hos_president_of_the_commoners }
       }
+    }
+
+    add_country_leader_role = {
+      character = CHI_chiang_wan_an_char
+      country_leader = {
+        desc = CHI_chiang_wan_an_char_desc
+        ideology = reformed_tridemism
+        traits = { hos_president_of_the_commoners }
+      }
+      promote_leader = yes
+    }
+
+    set_politics = {
+      ruling_party = conservative
+      last_election = "2020.1.11"
+      election_frequency = 48
+      elections_allowed = yes
     }
 
     country_event = { id = CHI.TW.150 }
