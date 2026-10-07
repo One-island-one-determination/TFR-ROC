@@ -13,7 +13,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		allow_branch = {
-			has_country_flag = second_HKY_win_flg
+			has_country_flag = HKY_2024_flg
 		}
 		completion_reward = {
 			country_event = {
@@ -863,9 +863,9 @@ focus_tree = {
 			focus = CHI_New_generation_education
 		}
 		completion_reward = {
-			country_event = {
-				id = CHI.H2.411
-			}
+			# country_event = {
+			# 	id = CHI.H2.411
+			# }
 			add_political_power = 150
 		}
 		relative_position_id = CHI_New_generation_education
@@ -1296,7 +1296,7 @@ focus_tree = {
 			}
 		}
 		allow_branch = {
-			has_country_flag = second_CWA_win_flg
+			has_country_flag = CWA_2024_flg
 		}
 		completion_reward = {
 			#NO content 
@@ -1831,7 +1831,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		allow_branch = {
-			has_country_flag = second_CWA_win_flg
+			has_country_flag = CWA_2024_flg
 			NOT = {
 				has_completed_focus = CHI_premier_jaw_shaw_kong
 			}
@@ -1852,6 +1852,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = CHI_Johnny_Chiang_hog
 			remove_ideas = CHI_aftermath_ramming_through_the_bills
+			mark_focus_tree_layout_dirty = yes
 		}
 		available = {
 			is_completed_by_event = yes
@@ -1874,7 +1875,7 @@ focus_tree = {
 			}
 		}
 		allow_branch = {
-			has_country_flag = second_CWA_win_flg
+			has_country_flag = CWA_2024_flg
 			NOT = {
 				has_completed_focus = CHI_premier_johnny_chiang
 			}
@@ -1888,6 +1889,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = CHI_Jaw_Shaw_Kong_hog
 			remove_ideas = CHI_aftermath_ramming_through_the_bill
+			mark_focus_tree_layout_dirty = yes
 		}
 		available = {
 			is_completed_by_event = yes
@@ -4124,7 +4126,7 @@ focus_tree = {
 			x = 8
 			y = 0
 			trigger = {
-				has_country_flag = second_CWA_win_flg
+				has_country_flag = CWA_2024_flg
 			}
 		}
 		offset = {
@@ -4872,10 +4874,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 		icon = {
 			GFX_focus_CHI_duty_of_the_helmsman = {
-				has_country_flag = second_HKY_win_flg
+				has_country_flag = HKY_2024_flg
 			}
 			GFX_focus_CHI_dont_wait_dont_rely = {
-				has_country_flag = second_CWA_win_flg
+				has_country_flag = CWA_2024_flg
 			}
 		}
 		allow_branch = {
@@ -4889,7 +4891,7 @@ focus_tree = {
 				limit = {
 					OR = {
 						has_country_flag = HKY_2028_flg
-						has_country_flag = second_HKY_win_flg
+						has_country_flag = HKY_2024_flg
 					}
 				}
 				set_party_name = {
@@ -4916,7 +4918,7 @@ focus_tree = {
 				limit = {
 					OR = {
 						has_country_flag = CWA_2028_flg
-						has_country_flag = second_CWA_win_flg
+						has_country_flag = CWA_2024_flg
 					}
 				}
 				set_politics = {

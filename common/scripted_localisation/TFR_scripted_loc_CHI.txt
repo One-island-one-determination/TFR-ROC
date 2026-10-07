@@ -209,19 +209,19 @@ defined_text = {
   text = {
     trigger = { 
       CHI = {
-        NOT = { has_country_flag = second_HKY_win_flg }
-        NOT = { has_country_flag = second_CWA_win_flg }  
+        NOT = { has_country_flag = HKY_2024_flg }
+        NOT = { has_country_flag = CWA_2024_flg }  
         NOT = { has_country_flag = second_JSK_win_flg } 
       } 
     }
     localization_key = "unfinished_content"
   }
   text = {
-    trigger = { CHI = { has_country_flag = second_HKY_win_flg } }
+    trigger = { CHI = { has_country_flag = HKY_2024_flg } }
     localization_key = "CHI_duty_of_the_helmsman"
   }
   text = {
-    trigger = { CHI = { has_country_flag = second_CWA_win_flg } }
+    trigger = { CHI = { has_country_flag = CWA_2024_flg } }
     localization_key = "CHI_dont_wait_dont_rely"
   }
   text = {
@@ -235,19 +235,19 @@ defined_text = {
   text = {
     trigger = { 
       CHI = {
-        NOT = { has_country_flag = second_HKY_win_flg }
-        NOT = { has_country_flag = second_CWA_win_flg }  
+        NOT = { has_country_flag = HKY_2024_flg }
+        NOT = { has_country_flag = CWA_2024_flg }  
         NOT = { has_country_flag = second_JSK_win_flg } 
       } 
     }
     localization_key = "unfinished_content"
   }
   text = {
-    trigger = { CHI = { has_country_flag = second_HKY_win_flg } }
+    trigger = { CHI = { has_country_flag = HKY_2024_flg } }
     localization_key = "CHI_duty_of_the_helmsman_desc"
   }
   text = {
-    trigger = { CHI = { has_country_flag = second_CWA_win_flg } }
+    trigger = { CHI = { has_country_flag = CWA_2024_flg } }
     localization_key = "CHI_dont_wait_dont_rely_desc"
   }
   text = {

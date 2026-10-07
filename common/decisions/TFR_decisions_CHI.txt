@@ -295,7 +295,7 @@ CHI_debug = {
     complete_effect = {
       CHI={
         load_focus_tree = P2_CHI_KMT
-        set_country_flag = second_HKY_win_flg
+        set_country_flag = HKY_2024_flg
       }
     }
   }
@@ -307,7 +307,7 @@ CHI_debug = {
     complete_effect = {
       CHI={
         load_focus_tree = P2_CHI_KMT
-        set_country_flag = second_HKY_win_flg
+        set_country_flag = HKY_2024_flg
         set_country_flag = HKY_2028_flg
         country_event = { id = taiwan.500 }
       }
@@ -328,7 +328,7 @@ CHI_debug = {
     complete_effect = {
       CHI={
         load_focus_tree = P2_CHI_KMT
-        set_country_flag = second_CWA_win_flg
+        set_country_flag = CWA_2024_flg
         complete_national_focus = CHI_reclaim_national_father_thought
       }
     }
@@ -8551,6 +8551,14 @@ CHI_efficient_government_category = {
           level = 1
           instant_build = yes
         }
+      }
+      custom_effect_tooltip = {
+        IDEA = CHI_Economy
+        localization_key = modify_idea_tt
+      }
+      add_to_variable = {
+        CHI_Economy_production_factory_max_efficiency_factor = 0.05
+        tooltip = production_factory_max_efficiency_factor_tooltip
       }
     }
   }

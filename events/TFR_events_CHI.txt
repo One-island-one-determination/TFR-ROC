@@ -286,11 +286,21 @@ country_event = {
   picture = GFX_red_line_go_down
   fire_only_once = yes
   is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      set_variable = { CHI_OC_consumer_goods_factor = 0.5 tooltip = consumer_goods_factor_tooltip }
+      set_variable = { CHI_OC_production_factory_max_efficiency_factor = -0.4 tooltip = production_factory_max_efficiency_factor_tooltip }
+      set_variable = { CHI_OC_production_speed_buildings_factor = -0.4 tooltip = production_speed_buildings_factor_tooltip }
+      set_variable = { CHI_OC_stability_factor = -0.4 tooltip = stability_factor_tooltip }
+      set_variable = { CHI_OC_business_value_factor = -0.4 tooltip = business_value_factor_tooltip }
+      set_variable = { CHI_OC_poverty_development_monthly = -0.04 tooltip = poverty_development_monthly_tooltip }
+      set_variable = { CHI_OC_factory_energy_consumption = 0.6 tooltip = factory_energy_consumption_tooltip }
+    }
+  }
   option = {
     name = CHI.10.a
     set_country_flag = CHI_has_oil_crash1
     focus_unlock = yes
-    set_variable = { CHI_oil_crash_severity = 10 }
     add_dynamic_modifier = { modifier = CHI_oil_crash_dynamic }
     complete_national_focus = CHI_third_oil_crisis
   }
@@ -560,7 +570,7 @@ country_event = {
         elections_allowed = yes
       }
       load_focus_tree = P2_CHI_KMT
-      set_country_flag = second_HKY_win_flg
+      set_country_flag = HKY_2024_flg
       focus_unlock = yes
       country_event = {
         id = CHI.H3.11
@@ -1642,12 +1652,12 @@ news_event = {
           scoped_sound_effect = ROC_restoration_super_sound_database
         }
         else_if = {
-          limit = { CHI = { has_country_flag = second_HKY_win_flg } }
+          limit = { CHI = { has_country_flag = HKY_2024_flg } }
           set_country_flag = CHI_restoration_of_republic_super_han
           scoped_sound_effect = ROC_restoration_super_sound_han
         }
         else_if = {
-          limit = { CHI = { has_country_flag = second_CWA_win_flg } }
+          limit = { CHI = { has_country_flag = CWA_2024_flg } }
           set_country_flag = CHI_restoration_of_republic_super_chiang
           scoped_sound_effect = ROC_restoration_super_sound_chiang
         }
@@ -1673,12 +1683,12 @@ news_event = {
           scoped_sound_effect = ROC_restoration_super_sound_database
         }
         else_if = {
-          limit = { CHI = { has_country_flag = second_HKY_win_flg } }
+          limit = { CHI = { has_country_flag = HKY_2024_flg } }
           set_country_flag = CHI_restoration_of_republic_super_han
           scoped_sound_effect = ROC_restoration_super_sound_han
         }
         else_if = {
-          limit = { CHI = { has_country_flag = second_CWA_win_flg } }
+          limit = { CHI = { has_country_flag = CWA_2024_flg } }
           set_country_flag = CHI_restoration_of_republic_super_chiang
           scoped_sound_effect = ROC_restoration_super_sound_chiang
         }
@@ -2161,21 +2171,21 @@ country_event = {
       729 = {
         remove_core_of = PRC
       }  
-      country_event = { id = CHI.TW.211 days = 3 }
+      country_event = { id = CHI.TW.21a days = 3 }
     }
   }
 }
 
 country_event = {
-  id = CHI.TW.211
-  title = CHI.TW.211.t
-  desc = CHI.TW.211.d
+  id = CHI.TW.21a
+  title = CHI.TW.21a.t
+  desc = CHI.TW.21a.d
   picture = CHI_Event_TW_21
 
   is_triggered_only = yes
 
   option = {
-    name = CHI.TW.211.a
+    name = CHI.TW.21a.a
 
     # Hong Kong (HKN - tag from main mod)
     326 = {
@@ -2415,7 +2425,7 @@ country_event = {
   option = {
     name = CHI.TW.27.a
     country_event = {
-      id = CHI.TW.28
+      id = CHI.TW.29
       days = 7
     }
   }
@@ -2674,19 +2684,19 @@ country_event = {
 }
 
 
-country_event = {
-  id = CHI.TW.40
-  title = CHI.TW.40.t
-  desc = CHI.TW.40.d
-  picture = CHI_Event_TW_40
-  fire_only_once = yes
-  is_triggered_only = yes
+# country_event = {
+#   id = CHI.TW.40
+#   title = CHI.TW.40.t
+#   desc = CHI.TW.40.d
+#   picture = CHI_Event_TW_40
+#   fire_only_once = yes
+#   is_triggered_only = yes
 
-  option = {
-    name = CHI.TW.40.a
-    set_country_flag = chi_tw_40_done
-  }
-}
+#   option = {
+#     name = CHI.TW.40.a
+#     set_country_flag = chi_tw_40_done
+#   }
+# }
 
 country_event = {
   id = CHI.TW.41
@@ -2951,16 +2961,17 @@ country_event = {
         }
         10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_38_done }
+          modifier = { factor = 0 has_country_flag = DPP_win_flg }
           country_event = { id = CHI.TW.38 }
         }
         10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_39_done }
           country_event = { id = CHI.TW.39 }
         }
-        10 = {
-          modifier = { factor = 0 has_country_flag = chi_tw_40_done }
-          country_event = { id = CHI.TW.40 }
-        }
+        # 10 = {
+        #   modifier = { factor = 0 has_country_flag = chi_tw_40_done }
+        #   country_event = { id = CHI.TW.40 }
+        # }
         10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_41_done }
           country_event = { id = CHI.TW.41 }
@@ -3000,6 +3011,86 @@ country_event = {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+    id = CHI.TW.150
+    title = CHI.TW.150.t
+    desc = CHI.TW.150.d
+    picture = CHI_Event_TW_150
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+      name = CHI.TW.150.a
+      #載入重建國策
+      custom_effect_tooltip = CHI_unlock_reconstruction_tt
+      set_country_flag = CHI_reconstruction_flg
+      complete_national_focus = CHI_Emergency_reconstruction_begins
+      focus_unlock = yes
+    }
+}
+
+country_event = {
+    id = CHI.TW.151
+    title = CHI.TW.151.t
+    desc = CHI.TW.151.d
+    picture = CHI_Event_TW_151
+    fire_only_once = yes
+    is_triggered_only = yes
+    hidden_effect = { 
+      country_event = { id = CHI.CWA_2028_temp days = 1461 } 
+    }
+    option = {
+      name = CHI.TW.151.a
+
+      hidden_effect = { retire_character = CHI_chang_san_cheng_char }
+      #蔣萬安成為新領導人
+       add_country_leader_role = {
+        character = CHI_chiang_wan_an_char
+        country_leader = {
+          desc = CHI_chiang_wan_an_char_desc
+          ideology = constitutionalist
+          traits = { hos_president_of_the_commoners }
+        }
+        promote_leader = yes
+      }
+      add_country_leader_role = {
+        character = CHI_chiang_wan_an_char
+        country_leader = {
+          desc = CHI_chiang_wan_an_char_desc
+          ideology = reformed_tridemism
+          traits = { hos_president_of_the_commoners }
+        }
+        promote_leader = yes
+      }
+
+      set_politics = {
+          ruling_party = conservative
+          last_election = "2024.1.11"
+          election_frequency = 48
+          elections_allowed = yes
+      }
+
+      ##載入新國策
+      hidden_effect = {
+        load_focus_tree = P2_CHI_KMT
+        # set_country_flag = CWA_2024_flg
+        focus_unlock = yes
+      }
+      custom_effect_tooltip = P2CWA_unlock_tt
+      complete_national_focus = CHI_reclaim_national_father_thought
+    }
+}
+
 country_event = {
   id = CHI.transition_1
   title = CHI.B2.1.t
@@ -3007,10 +3098,10 @@ country_event = {
   picture = CHI_Event_B2_1
   fire_only_once = yes
   is_triggered_only = yes
-  
+  immediate = { hidden_effect = { country_event = { id = CHI.transition_2 days = 3 } } }
   option = {
     name = CHI.B2.1.a
-    country_event = { id = CHI.transition_2 }
+    effect_tooltip = { country_event = { id = CHI.transition_2 days = 3 } }
   }
 }
 
@@ -3028,11 +3119,11 @@ country_event = {
   # }
   option = {
     name = CHI.B2.2.b  #國父或趙少康
-    country_event = { id = CHI.transition_6 }
+    country_event = { id = CHI.transition_6 days = 3}
   }
 }
 
-country_event = {
+country_event = {  ##暫時沒有
   id = CHI.transition_3
   title = CHI.B2.3.t
   desc = CHI.B2.3.d
@@ -3042,15 +3133,15 @@ country_event = {
   
   option = {
     name = CHI.B2.3.a #軍政
-    country_event = { id = CHI.transition_4 }
+    country_event = { id = CHI.transition_4 days = 3}
   }
   option = {
     name = CHI.B2.3.b #韓國瑜獨裁
-    country_event = { id = CHI.transition_5 }
+    country_event = { id = CHI.transition_5 days = 3}
   }
 }
 
-country_event = {
+country_event = {  ##暫時沒有
   id = CHI.transition_4 #軍政
   title = CHI.B2.4.t
   desc = CHI.B2.4.d
@@ -3064,7 +3155,7 @@ country_event = {
   }
 }
 
-country_event = {
+country_event = {  ##暫時沒有
   id = CHI.transition_5 #韓獨裁
   title = CHI.B2.5.t
   desc = CHI.B2.5.d
@@ -3088,7 +3179,7 @@ country_event = {
   
   option = {
     name = CHI.B2.6.a
-    country_event = { id = CHI.transition_7 }
+    country_event = { id = CHI.transition_7 days = 3}
   }
   # option = {
   #   name = CHI.B2.6.b
@@ -3103,52 +3194,45 @@ country_event = {
   picture = CHI_Event_B2_7
   fire_only_once = yes
   is_triggered_only = yes
-  immediate = { 
-    hidden_effect = {
-      country_event = {
-        id = CHI.CWA_2028_temp
-        days = 1461
-      }
-    }
-   }
+
   option = {
     name = CHI.B2.7.a
-    custom_effect_tooltip = P2CWA_unlock_tt
-    complete_national_focus = CHI_reclaim_national_father_thought
-    hidden_effect = {
-      set_politics = {
-        ruling_party = conservative
-        last_election = "2024.1.11"
-        election_frequency = 48
-        elections_allowed = yes
+    custom_effect_tooltip = CHI_chang_san_cheng_tt
+    set_country_flag = CWA_2024_flg
+    
+    hidden_effect = { retire_character = CHI_han_kuo_yu_char }
+
+    add_country_leader_role = {
+      character = CHI_chang_san_cheng_char
+      promote_leader = yes
+      country_leader = {
+        ideology = constitutionalist
+        traits = { hos_president_of_the_commoners }
       }
-      load_focus_tree = P2_CHI_KMT
-      set_country_flag = second_CWA_win_flg
-      focus_unlock = yes
     }
 
-    CHI_chiang_wan_an_char = {
-			if = {
-				limit = { has_ideology = constitutionalist }
-				promote_character = constitutionalist
-			}
-			else = {
-				add_country_leader_role = {
-					country_leader = {
-						desc = CHI_chiang_wan_an_char_desc
-						ideology = constitutionalist
-						traits = { hos_president_of_the_commoners }
-					}
-					promote_leader = yes
-				}
-			}
-		}
+    add_country_leader_role = {
+      character = CHI_chiang_wan_an_char
+      country_leader = {
+        desc = CHI_chiang_wan_an_char_desc
+        ideology = reformed_tridemism
+        traits = { hos_president_of_the_commoners }
+      }
+      promote_leader = yes
+    }
 
-    
+    set_politics = {
+      ruling_party = conservative
+      last_election = "2020.1.11"
+      election_frequency = 48
+      elections_allowed = yes
+    }
+
+    country_event = { id = CHI.TW.150 }
   }
 }
 
-country_event = {
+country_event = {  ##暫時沒有
   id = CHI.transition_8
   title = CHI.B2.8.t
   desc = CHI.B2.8.d
@@ -3260,7 +3344,7 @@ country_event = {
   immediate = {
     if = {
       limit = {
-        PRC = { has_completed_focus = PRC_shake_up_the_politburo }
+        PRC = { has_shine_effect_on_focus = PRC_shake_up_the_politburo }
         NOT = { has_country_flag = CHI_TW_23_flag }
         }
       CHI = { 

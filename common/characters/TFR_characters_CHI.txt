@@ -121,11 +121,11 @@ characters = {
         large = "gfx/leaders/CHI/CHI_chen_qi_mai.png"
       }
     }
-    country_leader = {
-      desc = CHI_chen_qi_mai_desc
-      ideology = progressivism
-      expire = "1.1.1.1"
-    }
+    # country_leader = {
+    #   desc = CHI_chen_qi_mai_desc
+    #   ideology = progressivism
+    #   expire = "1.1.1.1"
+    # }
   }
   CHI_zheng_wen_can_char = {
     # 鄭文燦
@@ -149,11 +149,11 @@ characters = {
         large = "gfx/leaders/CHI/CHI_hou_yu_ih.png"
       }
     }
-    country_leader = {
-      desc = CHI_hou_yu_ih_desc
-      ideology = constitutionalist
-      expire = "1.1.1.1"
-    }
+    # country_leader = {
+    #   desc = CHI_hou_yu_ih_desc
+    #   ideology = constitutionalist
+    #   expire = "1.1.1.1"
+    # }
   }
   CHI_ko_wen_je_char = {
     # 柯文哲
@@ -1359,12 +1359,26 @@ characters = {
         large = "gfx/leaders/CHI/CHI_chiang_wan_an.png"
       }
     }
-    country_leader = {
-      desc = CHI_chiang_wan_an_char_desc
-      ideology = constitutionalist
-      expire = "1.1.1.1"
-      id = -1
+    # country_leader = {
+    #   desc = CHI_chiang_wan_an_char_desc
+    #   ideology = constitutionalist
+    #   expire = "1.1.1.1"
+    #   id = -1
+    # }
+  }
+  CHI_chang_san_cheng_char = {
+    name = CHI_chang_san_cheng_char
+    portraits = {
+      civilian = {
+        large = "gfx/leaders/CHI/CHI_chang_san_cheng.png"
+      }
     }
+    # country_leader = {
+    #   desc = CHI_chang_san_cheng_char_desc
+    #   ideology = constitutionalist
+    #   expire = "1.1.1.1"
+    #   id = -1
+    # }
   }
   # 熊厚基
   CHI_hsiung_hou_chi_char = {
