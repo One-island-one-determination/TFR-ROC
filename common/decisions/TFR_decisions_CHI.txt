@@ -1052,6 +1052,59 @@ CHI_NHCC_decisions = {
       }
     }
   }
+  Buying_vaccine_on_ENG = {
+    ai_will_do = {
+      factor = 100
+    }
+    icon = Buying_vaccine
+    available = {
+      has_country_flag = Handling_epidemic
+      has_completed_focus = CHI_Buy_vaccines
+      OR = {
+        ENG = {
+          has_opinion = {
+            target = ROOT
+            value > 49
+          }
+        }
+        is_ai = yes
+      }
+    }
+    visible = {
+      has_completed_focus = CHI_Buy_vaccines
+      NOT = {
+        has_country_flag = cancel_covid_mission
+      }
+      hidden_trigger = {
+        NOT = {
+          has_completed_focus = CHI_Get_out_of_the_epidemic
+        }
+      }
+    }
+    cost = 25
+    fire_only_once = no
+    days_remove = 10
+    days_re_enable = 20
+    complete_effect = {
+      set_temp_variable = {
+        var = CHI_vaccine_value_temp
+        value = 2000
+      }
+      CHI_vaccine_value = yes
+      set_temp_variable = {
+        var = debt_var_temp
+        value = 0.5
+      }
+      add_debt_with_inflation = yes
+      ENG = {
+        set_temp_variable = {
+          var = income_var_temp
+          value = 0.5
+        }
+        add_income_with_inflation = yes
+      }
+    }
+  }
   Buying_vaccine_on_USA = {
     ai_will_do = {
       factor = 100
