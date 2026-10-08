@@ -1,96 +1,196 @@
 on_actions = {
 	on_capitulation = {
 		effect = {
+			log = "[GetDateText]: ZZZ_CHI_peace: FROM=[From.GetName] ROOT=[Root.GetName]"
 			if = {
 				limit = {
 					has_global_flag = second_pan_asian_war_ongoing
-					FROM = { tag = CHI }
-					ROOT = {
-						OR = {
-							tag = JAP tag = AST tag = RAJ tag = SIA tag = VIN 
-							tag = LAO tag = CAM tag = BRM tag = PHI tag = INS 
-							tag = PNG tag = NZL tag = MAL tag = BAN tag = NEP 
-							tag = BHU tag = KOR tag = SIG
+					NOT = {
+						ROOT = {
+							is_in_faction = yes
+							any_other_country = {
+								is_in_faction_with = PREV
+								has_capitulated = no
+							}
 						}
 					}
 				}
-				ROOT = {
-					every_subject_country = {
-						ROOT = { end_puppet = PREV }
-					}
-					every_owned_state = {
-						limit = {
+				
+				# -----------------------------------------------------
+				# SCENARIO 1: CHI capping Japan & Allies
+				# -----------------------------------------------------
+				if = {
+					limit = {
+						FROM = { tag = CHI }
+						ROOT = {
 							OR = {
-								is_core_of = CHI
-								is_claimed_by = CHI
+								tag = JAP tag = AST tag = RAJ tag = SIA tag = VIN 
+								tag = LAO tag = CAM tag = BRM tag = PHI tag = INS 
+								tag = PNG tag = NZL tag = MAL tag = BAN tag = NEP 
+								tag = BHU tag = KOR tag = SIG
 							}
 						}
-						transfer_state_to = CHI
 					}
-				}
-				FROM = {
-					puppet = ROOT
-					white_peace = ROOT
-				}
-				ROOT = {
-					load_focus_tree = generic_focus
-					add_ideas = PRC_unwilling_ally
-					clr_country_flag = pdto_member
-					add_popularity = {
-						ideology = nationalist
-						popularity = 0.3
-					}
-					set_politics = {
-						ruling_party = nationalist
-						elections_allowed = no 
-					}
-					set_party_name = { 
-						ideology = military_junta 
-						long_name = CHI_military_administration_party_long 
-						name = CHI_military_administration_party 
-					}
-					set_cosmetic_tag = CHI_military_administration
-					JAP_leave_PEC = yes
-					
-					every_state = {
-						limit = {
-							is_core_of = ROOT
-							is_controlled_by = FROM
-							NOT = { is_core_of = FROM }
+					ROOT = {
+						every_subject_country = {
+							ROOT = { end_puppet = PREV }
 						}
-						transfer_state_to = ROOT
-						set_state_owner_to = ROOT
-						set_state_controller_to = ROOT
-					}
-					
-					every_country = {
-						limit = {
-							is_in_faction_with = ROOT
-							any_controlled_state = {
-								NOT = { is_controlled_by = ROOT }
-								is_core_of = ROOT
-								NOT = { is_core_of = PREV }
-							}
-						}
-						every_controlled_state = {
+						every_owned_state = {
 							limit = {
-								NOT = { is_controlled_by = ROOT }
+								OR = {
+									is_core_of = CHI
+									is_claimed_by = CHI
+								}
+							}
+							transfer_state_to = CHI
+						}
+					}
+					FROM = {
+						puppet = ROOT
+						white_peace = ROOT
+					}
+					ROOT = {
+						load_focus_tree = generic_focus
+						add_ideas = PRC_unwilling_ally
+						clr_country_flag = pdto_member
+						add_popularity = {
+							ideology = nationalist
+							popularity = 0.3
+						}
+						set_politics = {
+							ruling_party = nationalist
+							elections_allowed = no 
+						}
+						set_party_name = { 
+							ideology = military_junta 
+							long_name = CHI_military_administration_party_long 
+							name = CHI_military_administration_party 
+						}
+						set_cosmetic_tag = CHI_military_administration
+						JAP_leave_PEC = yes
+						
+						every_state = {
+							limit = {
 								is_core_of = ROOT
-								NOT = { is_core_of = PREV }
+								is_controlled_by = FROM
+								NOT = { is_core_of = FROM }
 							}
 							transfer_state_to = ROOT
 							set_state_owner_to = ROOT
 							set_state_controller_to = ROOT
 						}
+						
+						every_country = {
+							limit = {
+								is_in_faction_with = ROOT
+								any_controlled_state = {
+									NOT = { is_controlled_by = ROOT }
+									is_core_of = ROOT
+									NOT = { is_core_of = PREV }
+								}
+							}
+							every_controlled_state = {
+								limit = {
+									NOT = { is_controlled_by = ROOT }
+									is_core_of = ROOT
+									NOT = { is_core_of = PREV }
+								}
+								transfer_state_to = ROOT
+								set_state_owner_to = ROOT
+								set_state_controller_to = ROOT
+							}
+						}
+						
+						create_country_leader = {
+							name = CHI_military_governor
+							picture = "gfx/leaders/CHI/TaipeiDemon.png"
+							ideology = military_junta
+						}
 					}
-					
-					create_country_leader = {
-						name = CHI_military_governor
-						picture = "gfx/leaders/CHI/TaipeiDemon.png"
-						ideology = military_junta
+					set_global_flag = skip_default_capitulation
+				}
+				
+				# -----------------------------------------------------
+				# SCENARIO 2: Japan & Allies capping CHI
+				# Fires at the end of the GAW when Japan wins.
+				# The main mod's TFR_on_actions_ZZZ_peace already puppets CHI.
+				# We strip the peripheral states, give them to JAP, 
+				# and have JAP create the new puppets.
+				# -----------------------------------------------------
+			if = {
+				limit = {
+					ROOT = { original_tag = CHI }
+					FROM = {
+						OR = {
+							original_tag = JAP
+							is_in_faction_with = JAP
+						}
 					}
 				}
-				set_global_flag = skip_default_capitulation
+
+				ROOT = {
+					every_owned_state = {
+						transfer_state_to = FROM
+						set_state_owner_to = FROM
+						set_state_controller_to = FROM
+					}
+				}
+				
+				# Add MAN cores to Manchuria (MAN has none at game start)
+				716 = { add_core_of = MAN }
+				1425 = { add_core_of = MAN }
+				715 = { add_core_of = MAN }
+				328 = { add_core_of = MAN }
+				717 = { add_core_of = MAN }
+				714 = { add_core_of = MAN }
+				1167 = { add_core_of = MAN }
+				
+
+				FROM = { puppet = MAN }
+				every_state = {
+					limit = { is_core_of = MAN }
+					set_state_owner_to = MAN
+					set_state_controller_to = MAN
+				}
+				
+				FROM = { puppet = TIB }
+				every_state = {
+					limit = { is_core_of = TIB }
+					set_state_owner_to = TIB
+					set_state_controller_to = TIB
+				}
+				
+				FROM = { puppet = SIK }
+				every_state = {
+					limit = { is_core_of = SIK }
+					set_state_owner_to = SIK
+					set_state_controller_to = SIK
+				}
+				
+				FROM = { puppet = MON }
+				every_state = {
+					limit = { is_core_of = MON }
+					set_state_owner_to = MON
+					set_state_controller_to = MON
+				}
+				
+				# Puppet CHI and give them control of whatever is left of their cores
+				FROM = { 
+					puppet = ROOT 
+					white_peace = ROOT
+				}
+				every_state = {
+					limit = { 
+						is_core_of = ROOT 
+						NOT = { is_core_of = MAN }
+						NOT = { is_core_of = TIB }
+						NOT = { is_core_of = SIK }
+						NOT = { is_core_of = MON }
+					}
+					set_state_owner_to = ROOT
+					set_state_controller_to = ROOT
+				}
+			}
 			}
 		}
 	}
