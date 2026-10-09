@@ -356,6 +356,18 @@ country_event = {
 }
 
 country_event = {
+  id = CHI.12
+  title = CHI.12.t
+  desc = CHI.12.d
+  picture = GFX_CHI_Presidential_Palace_in_the_Early_Hours
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.12.a
+  }
+}
+
+country_event = {
   id = CHI.99
   title = CHI.99.t
   desc = CHI.99.d
