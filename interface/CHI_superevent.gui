@@ -323,4 +323,172 @@ guiTypes = {
 			clicksound = click_ok
 		}
 	}
+
+	containerWindowType = {
+			name = "PRC_CPC_taihai_victory_super_event"
+			size = { width = 982 height = 594 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			clipping = no
+			moveable = yes
+			
+			background = {
+				name ="china_bg"
+				spriteType = "GFX_PRC_CPC_taihai_victory"
+				position = { x = 0 y = 30 }
+			}
+			
+			iconType = {
+				name = "Background"	
+				spriteType ="GFX_Super_event_bg"
+				position = { x = 0 y = 0 }
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Pax_Super_Event_Title_textbox"
+				position = { x = 260 y = 20 }
+				font = "VCR02_20"
+				borderSize = {x = 0 y = 0}
+				text = "PRC_CPC_taihai_victory_title"
+				maxWidth = 490
+				maxHeight = 20
+				fixedsize = yes	
+				format = center
+			}
+			
+			instantTextBoxType = {
+				name = "Super_Event_Quote_textbox"
+				position = { x = 250 y = 435 }
+				font = "VCR02_16"
+				borderSize = {x = 0 y = 0}
+				text = "PRC_CPC_taihai_victory_quote"
+				maxWidth = 500
+				maxHeight = 200
+				fixedsize = yes	
+				format = center
+			}
+	
+			buttonType = {
+				name = "Super_Event_Close"
+				position = { x = 350 y = 585 }
+				buttonText = "PRC_CPC_taihai_victory_close"
+				buttonFont = "VCR02_16"
+				quadTextureSprite ="GFX_spacebar"
+				clicksound = click_ok
+			}
+		}
+	
+	containerWindowType = {
+			name = "ROC_DPP_taihai_victory_super_event"
+			size = { width = 982 height = 594 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			clipping = no
+			moveable = yes
+			
+			background = {
+				name ="taiwan_bg"
+				spriteType = "GFX_ROC_DPP_taihai_victory"
+				position = { x = 0 y = 30 }
+			}
+			
+			iconType = {
+				name = "Background"	
+				spriteType ="GFX_Super_event_bg"
+				position = { x = 0 y = 0 }
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Pax_Super_Event_Title_textbox"
+				position = { x = 260 y = 20 }
+				font = "VCR02_20"
+				borderSize = {x = 0 y = 0}
+				text = "ROC_DPP_taihai_victory_title"
+				maxWidth = 490
+				maxHeight = 20
+				fixedsize = yes	
+				format = center
+			}
+			
+			instantTextBoxType = {
+				name = "Super_Event_Quote_textbox"
+				position = { x = 250 y = 435 }
+				font = "VCR02_16"
+				borderSize = {x = 0 y = 0}
+				text = "ROC_DPP_taihai_victory_quote"
+				maxWidth = 500
+				maxHeight = 200
+				fixedsize = yes	
+				format = center
+			}
+	
+			buttonType = {
+				name = "Super_Event_Close"
+				position = { x = 350 y = 585 }
+				buttonText = "ROC_DPP_taihai_victory_close"
+				buttonFont = "VCR02_16"
+				quadTextureSprite ="GFX_spacebar"
+				clicksound = click_ok
+			}
+		}
+	
+	containerWindowType = {
+			name = "ROC_KMT_taihai_victory_super_event"
+			size = { width = 982 height = 594 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			clipping = no
+			moveable = yes
+			
+			background = {
+				name ="taiwan_bg"
+				spriteType = "GFX_ROC_KMT_taihai_victory"
+				position = { x = 0 y = 30 }
+			}
+			
+			iconType = {
+				name = "Background"	
+				spriteType ="GFX_Super_event_bg"
+				position = { x = 0 y = 0 }
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Pax_Super_Event_Title_textbox"
+				position = { x = 260 y = 20 }
+				font = "VCR02_20"
+				borderSize = {x = 0 y = 0}
+				text = "ROC_KMT_taihai_victory_title"
+				maxWidth = 490
+				maxHeight = 20
+				fixedsize = yes	
+				format = center
+			}
+			
+			instantTextBoxType = {
+				name = "Super_Event_Quote_textbox"
+				position = { x = 250 y = 435 }
+				font = "VCR02_16"
+				borderSize = {x = 0 y = 0}
+				text = "ROC_KMT_taihai_victory_quote"
+				maxWidth = 500
+				maxHeight = 200
+				fixedsize = yes	
+				format = center
+			}
+	
+			buttonType = {
+				name = "Super_Event_Close"
+				position = { x = 350 y = 585 }
+				buttonText = "ROC_KMT_taihai_victory_close"
+				buttonFont = "VCR02_16"
+				quadTextureSprite ="GFX_spacebar"
+				clicksound = click_ok
+			}
+		}
 }

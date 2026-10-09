@@ -5382,6 +5382,7 @@ news_event = {
 	picture = GFX_event_taiwanwarwin_news
 	is_triggered_only = yes
 	major = yes
+	
 	option = {
 		name = news.356.a
 		trigger = {
@@ -5392,17 +5393,41 @@ news_event = {
 				}
 			}
 		}
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				set_country_flag = PRC_CPC_taihai_victory
+				scoped_sound_effect = PRC_CPC_taihai_victory
+				scoped_play_song = "one_minute_of_silence"
+			}
+		}
 	}
 	option = {
 		name = news.356.b
 		trigger = {
 			original_tag = PRC
 		}
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				set_country_flag = PRC_CPC_taihai_victory
+				scoped_sound_effect = PRC_CPC_taihai_victory
+				scoped_play_song = "one_minute_of_silence"
+			}
+		}
 	}
 	option = {
 		name = news.356.c
 		trigger = {
 			original_tag = JAP
+		}
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				set_country_flag = PRC_CPC_taihai_victory
+				scoped_sound_effect = PRC_CPC_taihai_victory
+				scoped_play_song = "one_minute_of_silence"
+			}
 		}
 	}
 }
@@ -5415,6 +5440,7 @@ news_event = {
 	picture = GFX_event_taiwanwarlose_news
 	is_triggered_only = yes
 	major = yes
+	
 	option = {
 		name = news.357.a
 		trigger = {
@@ -5425,17 +5451,65 @@ news_event = {
 				}
 			}
 		}
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				if = {
+					limit = { CHI = { has_country_flag = dpp_win_flg } }
+					set_country_flag = ROC_DPP_taihai_victory
+					scoped_sound_effect = ROC_DPP_taihai_victory
+					scoped_play_song = "one_minute_of_silence"
+				}
+				else = {
+					set_country_flag = ROC_KMT_taihai_victory
+					scoped_sound_effect = ROC_KMT_taihai_victory
+					scoped_play_song = "one_minute_of_silence"
+				}
+			}
+		}
 	}
 	option = {
 		name = news.357.b
 		trigger = {
 			original_tag = PRC
 		}
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				if = {
+					limit = { CHI = { has_country_flag = dpp_win_flg } }
+					set_country_flag = ROC_DPP_taihai_victory
+					scoped_sound_effect = ROC_DPP_taihai_victory
+					scoped_play_song = "one_minute_of_silence"
+				}
+				else = {
+					set_country_flag = ROC_KMT_taihai_victory
+					scoped_sound_effect = ROC_KMT_taihai_victory
+					scoped_play_song = "one_minute_of_silence"
+				}
+			}
+		}
 	}
 	option = {
 		name = news.357.c
 		trigger = {
 			original_tag = JAP
+		}
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				if = {
+					limit = { CHI = { has_country_flag = dpp_win_flg } }
+					set_country_flag = ROC_DPP_taihai_victory
+					scoped_sound_effect = ROC_DPP_taihai_victory
+					scoped_play_song = "one_minute_of_silence"
+				}
+				else = {
+					set_country_flag = ROC_KMT_taihai_victory
+					scoped_sound_effect = ROC_KMT_taihai_victory
+					scoped_play_song = "one_minute_of_silence"
+				}
+			}
 		}
 	}
 }

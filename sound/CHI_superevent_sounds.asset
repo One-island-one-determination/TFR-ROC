@@ -1,7 +1,7 @@
 sound = {
 	name = "ROC_taihai_war_sound_file"
 	file = "Super_Events/CHI_taihai_war.wav"
-	volume = 0.65
+	volume = 1
 }
 
 soundeffect = {
@@ -9,12 +9,13 @@ soundeffect = {
 	sounds = {
 		sound = "ROC_taihai_war_sound_file"
 	}
-}
+	volume = 3.0
+	}
 
 sound = {
 	name = "ROC_restoration_super_sound_file"
 	file = "Super_Events/CHI_restoration.wav"
-	volume = 0.65
+	volume = 1
 }
 
 soundeffect = {
@@ -22,12 +23,13 @@ soundeffect = {
 	sounds = {
 		sound = "ROC_restoration_super_sound_file"
 	}
-}
+	volume = 3.0
+	}
 
 sound = {
 	name = "ROC_restoration_super_sound_han_file"
 	file = "Super_Events/CHI_restoration_han.wav"
-	volume = 0.65
+	volume = 1
 }
 
 soundeffect = {
@@ -35,12 +37,13 @@ soundeffect = {
 	sounds = {
 		sound = "ROC_restoration_super_sound_han_file"
 	}
-}
+	volume = 3.0
+	}
 
 sound = {
 	name = "ROC_restoration_super_sound_chiang_file"
 	file = "Super_Events/CHI_restoration_chiang.wav"
-	volume = 0.65
+	volume = 1
 }
 
 soundeffect = {
@@ -48,12 +51,13 @@ soundeffect = {
 	sounds = {
 		sound = "ROC_restoration_super_sound_chiang_file"
 	}
-}
+	volume = 3.0
+	}
 
 sound = {
 	name = "ROC_restoration_super_sound_database_file"
 	file = "Super_Events/CHI_restoration_database.wav"
-	volume = 0.65
+	volume = 1
 }
 
 soundeffect = {
@@ -61,7 +65,8 @@ soundeffect = {
 	sounds = {
 		sound = "ROC_restoration_super_sound_database_file"
 	}
-}
+	volume = 3.0
+	}
 
 sound = {
 	name = "TFR_se_second_gaw_file"
@@ -74,4 +79,47 @@ soundeffect = {
 	sounds = {
 		sound = "TFR_se_second_gaw_file"
 	}
+	volume = 3.0
+	}
+
+soundeffect = {
+		name = "PRC_CPC_taihai_victory"
+		sounds = {
+			sound = "PRC_CPC_taihai_victory_file"
+		}
+		volume = 3.0
+	}
+
+sound = {
+	name = "PRC_CPC_taihai_victory_file"
+	file = "Super_Events/PRC_CPC_taihai_victory.wav"
+	volume = 1
+}
+
+soundeffect = {
+		name = "ROC_DPP_taihai_victory"
+		sounds = {
+			sound = "ROC_DPP_taihai_victory_file"
+		}
+		volume = 3.0
+	}
+	
+sound = {
+	name = "ROC_DPP_taihai_victory_file"
+	file = "Super_Events/CHI_DPP_taihai_victory.wav"
+	volume = 1
+}
+
+soundeffect = {
+		name = "ROC_KMT_taihai_victory"
+		sounds = {
+			sound = "ROC_KMT_taihai_victory_file"
+		}
+		volume = 3.0
+	}
+
+sound = {
+	name = "ROC_KMT_taihai_victory_file"
+	file = "Super_Events/CHI_KMT_taihai_victory.wav"
+	volume = 1
 }

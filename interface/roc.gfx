@@ -186,4 +186,25 @@ spriteTypes = {
 		texturefile = "gfx/interface/Taipei.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+			name = "GFX_ROC_DPP_taihai_victory"
+			texturefile = "gfx/super_events/super_ROC_DPP_taihai_victory.png"
+			legacy_lazy_load = no
+			effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		}
+	
+	spriteType = {
+			name = "GFX_ROC_KMT_taihai_victory"
+			texturefile = "gfx/super_events/super_ROC_KMT_taihai_victory.png"
+			legacy_lazy_load = no
+			effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		}
+	
+	spriteType = {
+			name = "GFX_PRC_CPC_taihai_victory"
+			texturefile = "gfx/super_events/super_PRC_CPC_taihai_victory.png"
+			legacy_lazy_load = no
+			effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		}
 }
