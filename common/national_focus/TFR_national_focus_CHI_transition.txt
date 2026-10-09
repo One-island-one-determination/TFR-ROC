@@ -173,6 +173,12 @@ focus_tree = {
 				}
 			}
 		}
+    available = {
+      has_country_leader = {
+        character = CHI_han_kuo_yu_char
+        ruling_only = yes
+      }
+    }
     prerequisite = {
       focus = CHI_Eliminate_communist_traitors
     }
