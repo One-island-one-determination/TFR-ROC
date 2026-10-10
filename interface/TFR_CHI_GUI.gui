@@ -202,5 +202,78 @@ guitypes = {
       }
     }
   }
-
+  #立法院UI
+  containerWindowType = {
+    name = "CHI_Legislative_Yuan_interface"
+    size = { width = 510 height = 600 }
+    instantTextBoxType = {
+      name = "Coordinator"
+      position = { x = -10 y = 15 }
+      text = LFY_Coordinator_Title
+      font = "VCR02_36"
+      maxwidth = 510
+      format = center
+    }
+    icontype = {
+      name = "CHI_Ker_Chien_ming"
+      quadtexturesprite = "GFX_CHI_Ker_Chien_ming"
+      position = { x = 5  y = 96 }
+    }
+    icontype = {
+      name = "Green_frame"
+      quadtexturesprite = "LY_frame"
+      position = { x = 0 y = 92 }
+    }
+    icontype = {
+      name = "CHI_Tseng_Ming_chung"
+      quadtexturesprite = "GFX_CHI_Tseng_Ming_chung"
+      position = { x = 325 y = 96 }
+    }
+    icontype = {
+      name = "Blue_frame"
+      quadtexturesprite = "LY_frame"
+      position = { x = 320 y = 92 }
+    }
+    
+    instantTextBoxType = {
+      name = "Green_Legislator"
+      position = { x = 5 y = 322 }
+      text = Green_Legislator
+      font = "VCR02_26"
+      maxwidth = 156
+      format = center
+    }
+    instantTextBoxType = {
+      name = "Blue_Legislator"
+      position = { x = 325 y = 322 }
+      text = Blue_Legislator
+      font = "VCR02_26"
+      maxwidth = 156
+      format = center
+    }
+    instantTextBoxType = {
+      name = "Base_support_Legislator"
+      position = { x = -10 y = 400 }
+      text = Base_support_Legislator
+      font = "VCR02_26"
+      maxwidth = 510
+      format = center
+    }
+    instantTextBoxType = {
+      name = "NOW_Vote_bill"
+      position = { x = -10 y = 500 }
+      text = NOW_Vote_bill
+      font = "VCR02_26"
+      maxwidth = 510
+      format = center
+    }
+    instantTextBoxType = {
+      name = "NOW_Vote_bill_support_Legislator"
+      position = { x = -10 y = 540 }
+      text = NOW_Vote_bill_support_Legislator
+      font = "VCR02_20"
+      maxwidth = 510
+      format = center
+    }
+  }
 }

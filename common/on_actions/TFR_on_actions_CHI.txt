@@ -14,6 +14,13 @@ on_actions = {
           set_country_flag = NDCisPRC
           set_country_flag = MODisJG
           set_country_flag = EYisPS
+          
+          set_variable = { CHI_Green_Legislator = 0 }
+          set_variable = { CHI_Blue_Legislator = 0 }
+          set_variable = { CHI_all_Legislator = 116 }
+          set_variable = { CHI_half_Legislator = 58 }
+
+          set_country_flag = Not_have_vote_bill
           set_variable = {
             UGC_times_money_support = 0
           }
