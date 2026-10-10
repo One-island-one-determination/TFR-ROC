@@ -2,22 +2,25 @@ unique_id = the_fire_rises_roc
 
 Achievement_changing_house = {
 	possible = {
-		custom_trigger_tooltip = {
-			tooltip = TFR_is_not_debug_tt
-			is_debug = no
-		}
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 0
+		is_ai = no
 		tag = CHI
-		CHI = { is_ai = no }
 	}
 	
 	happened = {
-		CHI = {
-			has_country_flag = CHI_our_final_fight_flag
-			has_war_with = PRC
-			controls_state = 608 # Beijing
-		}
-		PRC = {
-			controls_state = 1148 # Taipei
+		custom_trigger_tooltip = {
+			tooltip = Achievement_changing_house_tt
+			CHI = {
+				has_country_flag = CHI_our_final_fight_flag
+				has_war_with = PRC
+				controls_state = 608 # Beijing
+			}
+			PRC = {
+				controls_state = 1148 # Taipei
+			}
 		}
 	}
 }
