@@ -48,3 +48,26 @@ Achievement_cyber_war = {
 		}
 	}
 }
+
+Achievement_spirit_of_2019 = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 0
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_spirit_of_2019_tt
+			CHI = {
+				has_country_flag = CHI_taiwan_war_end
+				NOT = {
+					326 = { is_controlled_by = PRC }
+				}
+			}
+		}
+	}
+}
