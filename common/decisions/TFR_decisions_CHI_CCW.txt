@@ -26,9 +26,52 @@
 # ==============================================================================
 CHI_civilwar_category = {
 
+  ccw_declare_war_on_everyone = {
+    icon = GFX_decision_generic_protest_riot
+    allowed = { original_tag = CHI }
+    visible = { is_debug = yes }
+    available = { is_debug = yes }
+    cost = 0
+    days_remove = 0
+    fire_only_once = no
+    remove_effect = {
+      every_other_country = {
+        limit = {
+          any_owned_state = { 
+            is_claimed_by = ROOT
+            NOT = { is_core_of = MON }
+            NOT = { is_core_of = SOV }
+            NOT = { is_core_of = TAJ } 
+          }
+          NOT = { is_in_faction_with = ROOT }
+          NOT = { is_subject_of = ROOT }
+          NOT = { tag = JAP }
+          NOT = { is_in_faction_with = JAP }
+          NOT = { is_subject_of = JAP }
+          NOT = { has_country_flag = pdto_member }
+          NOT = { tag = RAJ }
+          NOT = { is_in_faction_with = RAJ }
+          NOT = { is_subject_of = RAJ }
+        }
+        ROOT = {
+          declare_war_on = {
+            target = PREV
+            type = CHI_civil_war
+          }
+          add_named_threat = {
+            threat = -150
+            name = CHI_civil_war
+          }
+        }
+      }
+
+    }
+    ai_will_do = { base = 100 }
+  }
+
   ccw_taiwan_divider = {
     icon = GFX_CHI_fully_under_control_animated
-    allowed = {original_tag = CHI}
+    allowed = { original_tag = CHI }
     available = { hidden_trigger = {always = no}}
     visible = {
       OR = {
@@ -134,6 +177,7 @@ CHI_civilwar_category = {
     }
     ROOT = {
       declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
     }
   }
 }
@@ -348,6 +392,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -530,6 +575,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -746,6 +792,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -1004,6 +1051,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -1291,6 +1339,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -1512,6 +1561,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -1690,6 +1740,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -1889,6 +1940,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -2101,6 +2153,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -2295,6 +2348,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -2459,6 +2513,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -2635,6 +2690,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -2820,6 +2876,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -3039,6 +3096,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -3319,6 +3377,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -3539,6 +3598,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -3634,6 +3694,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -3769,6 +3830,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -4008,6 +4070,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -4227,6 +4290,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -4454,6 +4518,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 if = {
@@ -4664,6 +4729,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -4848,6 +4914,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -5053,6 +5120,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -5249,6 +5317,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -5459,6 +5528,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -5659,6 +5729,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -5915,6 +5986,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -6193,6 +6265,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -6396,6 +6469,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -6622,6 +6696,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -6869,6 +6944,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -7260,6 +7336,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -7492,6 +7569,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -7694,6 +7772,7 @@ every_other_country = {
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+    add_named_threat = { threat = -10 name = CHI_civil_war }
   }
 }
 }
@@ -8043,6 +8122,7 @@ ccw_declare_war_on_taiwan = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -8468,6 +8548,7 @@ ccw_declare_war_on_anhui = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -8811,6 +8892,7 @@ ccw_declare_war_on_beijing = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -9168,6 +9250,7 @@ ccw_declare_war_on_jiangsu = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -9657,6 +9740,7 @@ ccw_declare_war_on_shandong = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -10228,6 +10312,7 @@ ccw_declare_war_on_hebei = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -10694,6 +10779,7 @@ ccw_declare_war_on_tianjin = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -10999,6 +11085,7 @@ ccw_declare_war_on_shanxi = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -11367,6 +11454,7 @@ ccw_declare_war_on_shan3xi = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -11752,6 +11840,7 @@ ccw_declare_war_on_henan = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -12128,6 +12217,7 @@ ccw_declare_war_on_ningxia = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -12411,6 +12501,7 @@ ccw_declare_war_on_chongqing = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -12712,6 +12803,7 @@ ccw_declare_war_on_shanghai = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -13028,6 +13120,7 @@ ccw_declare_war_on_zhejiang = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -13445,6 +13538,7 @@ ccw_declare_war_on_fujian = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -13948,6 +14042,7 @@ ccw_declare_war_on_guangdong = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -14402,6 +14497,7 @@ ccw_declare_war_on_hongkong = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -14583,6 +14679,7 @@ ccw_declare_war_on_macau = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -14818,6 +14915,7 @@ ccw_declare_war_on_guangxi = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -15314,6 +15412,7 @@ ccw_declare_war_on_yunnan = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -15731,6 +15830,7 @@ ccw_declare_war_on_sichuan = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -16188,6 +16288,7 @@ ccw_declare_war_on_xizang = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
     if = {
@@ -16610,6 +16711,7 @@ ccw_declare_war_on_zangsouth = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -16921,6 +17023,7 @@ ccw_declare_war_on_hubei = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -17295,6 +17398,7 @@ ccw_declare_war_on_hunan = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -17660,6 +17764,7 @@ ccw_declare_war_on_guizhou = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -18047,6 +18152,7 @@ ccw_declare_war_on_jiangxi = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -18450,6 +18556,7 @@ ccw_declare_war_on_hainan = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -18863,6 +18970,7 @@ ccw_declare_war_on_xinjiang = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -19498,6 +19606,7 @@ ccw_declare_war_on_qinghai = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -19874,6 +19983,7 @@ ccw_declare_war_on_gansu = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -20302,6 +20412,7 @@ ccw_declare_war_on_neimeng = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -20797,6 +20908,7 @@ ccw_declare_war_on_mon = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -21481,6 +21593,7 @@ ccw_declare_war_on_liaoning = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -21924,6 +22037,7 @@ ccw_declare_war_on_jilin = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -22300,6 +22414,7 @@ ccw_declare_war_on_hlj = {
           target = PREV
           type = CHI_civil_war
         }
+        add_named_threat = { threat = -10 name = CHI_civil_war }
       }
     }
   }
@@ -22543,7 +22658,7 @@ ccw_grant_hkmacau_autonomy = {
   }
   fire_only_once = yes
   cost = 50
-  days_remove = 50
+  days_remove = 5
   available = {
     owns_state = 326
     owns_state = 729
