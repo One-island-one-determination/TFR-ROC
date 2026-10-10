@@ -1,0 +1,23 @@
+unique_id = the_fire_rises_roc
+
+Achievement_changing_house = {
+	possible = {
+		custom_trigger_tooltip = {
+			tooltip = TFR_is_not_debug_tt
+			is_debug = no
+		}
+		tag = CHI
+		CHI = { is_ai = no }
+	}
+	
+	happened = {
+		CHI = {
+			has_country_flag = CHI_our_final_fight_flag
+			has_war_with = PRC
+			controls_state = 608 # Beijing
+		}
+		PRC = {
+			controls_state = 1148 # Taipei
+		}
+	}
+}
