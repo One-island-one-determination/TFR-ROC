@@ -1,0 +1,24 @@
+#hos 領導人
+#hog 首相
+leader_traits = {
+	hos_Descendants_Chiang_family_fst = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = -0.1
+		political_power_gain = -0.05
+	}
+	hos_Descendants_Chiang_family_scd = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = 0.05
+		political_power_gain = 0.05
+	}
+	hos_Descendants_Chiang_family_trd = {
+		random = no
+		war_support_factor = 0.1
+		political_power_gain = 0.05
+		army_claim_attack_factor = 0.05
+		army_claim_defence_factor = 0.05
+		offensive_war_stability_factor = 0.1
+	}
+}
