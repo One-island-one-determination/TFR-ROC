@@ -8371,6 +8371,7 @@ CHI_NCSIST_category = {
             has_completed_focus = CHI_relauch_ADF_project
             # has_country_flag = CHI_project_Brave_Eagle_flag
         }
+        visible = { NOT = { has_completed_focus = CHI_sino_japanese_fighter_cooperation_program } }
         custom_cost_trigger = {
             # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
             if = {
@@ -8433,6 +8434,7 @@ CHI_NCSIST_category = {
         available = {
             has_completed_focus = CHI_sino_japanese_fighter_cooperation_program
         }
+        visible = { NOT = { has_completed_focus = CHI_relauch_ADF_project } }
         custom_cost_trigger = {
             # 檢查 MIO 資金是否達到 500 (UI 會自動根據這段判定亮綠燈或紅燈)
             if = {
