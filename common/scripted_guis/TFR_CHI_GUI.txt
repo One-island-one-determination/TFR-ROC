@@ -50,7 +50,7 @@ scripted_gui = {
   #立法院
   CHI_Legislative_Yuan_gui = {
     context_type = decision_category
-    window_name = "CHI_Legislative_Yuan_gui"
+    window_name = "CHI_Legislative_Yuan_interface"
     visible = {
       tag = CHI
     }
@@ -82,21 +82,6 @@ scripted_gui = {
         else = {
           set_variable = {
             CHI_dec_visible = 2
-          }
-        }
-      }
-      Open_tpp_dec_click = {
-        if = {
-          limit = {
-            check_variable = {
-              CHI_dec_visible = 3
-            }
-          }
-          clear_variable = CHI_dec_visible
-        }
-        else = {
-          set_variable = {
-            CHI_dec_visible = 3
           }
         }
       }
@@ -219,17 +204,4 @@ scripted_gui = {
       }
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

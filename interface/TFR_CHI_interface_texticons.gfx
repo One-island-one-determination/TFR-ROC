@@ -63,7 +63,7 @@ spriteTypes = {
   }
   spriteType = {
     name = "GFX_CHI_army_decisions_Icon"
-    texturefile = "gfx/interface/decisions/CHI/CHI_army_decisions.png"
+    texturefile = "gfx/interface/decisions/CHI/CHI_army.png"
   }
   spriteType = {
     name = "GFX_CHI_Legislative_Yuan_decisions"
@@ -257,6 +257,19 @@ spriteTypes = {
     legacy_lazy_load = no
   }
 
+  #LY
+  spriteType = {
+    name = "LY_frame"
+    texturefile = "gfx/interface/Legislative_Yuan_gfx/LY_frame.png"
+  }
+  spriteType = {
+    name = "GFX_CHI_Ker_Chien_ming"
+    texturefile = "gfx/Leaders/CHI/CHI_Ker_Chien_ming.png"
+  }
+  spriteType = {
+    name = "GFX_CHI_Tseng_Ming_chung"
+    texturefile = "gfx/Leaders/CHI/CHI_Tseng_Ming_chung.png"
+  }
   
   #Bop
   spriteType = {
