@@ -24,3 +24,27 @@ Achievement_changing_house = {
 		}
 	}
 }
+
+Achievement_cyber_war = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 0
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_cyber_war_tt
+			CHI = {
+				has_country_flag = CHI_AI_Takeover_Active
+				has_war_with = PRC
+			}
+			PRC = {
+				has_country_flag = PRC_loji_overlord_flag
+			}
+		}
+	}
+}
