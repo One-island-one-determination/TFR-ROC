@@ -1344,7 +1344,7 @@ focus_tree = {
             focus = CHI_new_practice_of_three_principles
         }
         completion_reward = {
-            add_ideas = CHI_aftermath_ramming_through_the_bill
+            add_timed_idea = { idea = CHI_aftermath_ramming_through_the_bill days = 30 }
         }
         relative_position_id = CHI_new_practice_of_three_principles
     }
@@ -1820,8 +1820,10 @@ focus_tree = {
         prerequisite = {
             focus = CHI_perfect_civil_rights
         }
+        available = { NOT = { has_idea = CHI_aftermath_ramming_through_the_bill } }
         completion_reward = {
             set_country_flag = CHI_cabinet_meeting_flag
+            # country_event = { id = XXX }
         }
         relative_position_id = CHI_perfect_civil_rights
     }
@@ -1854,11 +1856,7 @@ focus_tree = {
         }
         completion_reward = {
             add_ideas = CHI_Johnny_Chiang_hog
-            remove_ideas = CHI_aftermath_ramming_through_the_bills
             mark_focus_tree_layout_dirty = yes
-        }
-        available = {
-            is_completed_by_event = yes
         }
         relative_position_id = CHI_cabinet_meeting
     }
@@ -1890,13 +1888,10 @@ focus_tree = {
             focus = CHI_cabinet_meeting
         }
         completion_reward = {
-            add_ideas = CHI_Jaw_Shaw_Kong_hog
-            remove_ideas = CHI_aftermath_ramming_through_the_bill
+            add_ideas = CHI_Jaw_Shaw_Kong_hog 
             mark_focus_tree_layout_dirty = yes
         }
-        available = {
-            is_completed_by_event = yes
-        }
+
         relative_position_id = CHI_cabinet_meeting
     }
     focus = {
@@ -5074,10 +5069,7 @@ focus_tree = {
                 add_stability = -0.05
                 add_war_support = -0.1
             }
-            swap_ideas = {
-                remove_idea = CHI_no_one_can_abuse_her
-                add_idea = CHI_no_one_can_abuse_her_CHI_mainland_peoples_liaison
-            }
+            add_ideas = CHI_mainland_peoples_liaison_idea
         }
         relative_position_id = CHI_external_political_warfare_bureau
     }
