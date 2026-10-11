@@ -71,3 +71,36 @@ Achievement_spirit_of_2019 = {
 		}
 	}
 }
+
+Achievement_full_circle = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 0
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_full_circle_tt
+			CHI = {
+				has_country_leader = {
+					character = CHI_chiang_wan_an_char
+					ruling_only = yes
+				}
+				OR = {
+					has_global_flag = PRC_japanese_gaw_victory_global
+					has_country_flag = CHI_gaw_portraits_set
+					has_completed_focus = CHI_republic_achieved
+					has_global_flag = PRC_china_collapse
+					PRC = { has_capitulated = yes }
+				}
+			}
+			PRC = {
+				has_completed_focus = PRC_legacy_of_mao
+			}
+		}
+	}
+}
