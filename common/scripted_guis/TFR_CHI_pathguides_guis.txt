@@ -19,6 +19,18 @@ scripted_gui = {
 				else = {
 					clr_country_flag = TFR_CHI_pathguides_open_flag
 				}
+				if = {
+					limit = {
+						NOT = {
+							OR = {
+								check_variable = { var_TFR_CHI_pathguides_content_page = 1 }
+								check_variable = { var_TFR_CHI_pathguides_content_page = 3 }
+								check_variable = { var_TFR_CHI_pathguides_content_page = 2 }
+							}
+						}
+					}
+					set_variable = { var_TFR_CHI_pathguides_content_page = 1 }
+				}
 			}
 		}
 	}
@@ -40,6 +52,22 @@ scripted_gui = {
 		effects = {
 			TFR_CHI_pathguides_button_close_click = {
 				clr_country_flag = TFR_CHI_pathguides_open_flag
+			}
+
+			TFR_CHI_pathguides_button_next_click = {
+				if = {
+					limit = { check_variable = { var_TFR_CHI_pathguides_content_page > 2 } }
+					set_variable = { var_TFR_CHI_pathguides_content_page = 3 }
+				}
+				else = { add_to_variable = { var_TFR_CHI_pathguides_content_page = 1 } }
+			}
+
+			TFR_CHI_pathguides_button_prev_click = {
+				if = {
+					limit = { check_variable = { var_TFR_CHI_pathguides_content_page < 2 } }
+					set_variable = { var_TFR_CHI_pathguides_content_page = 1 }
+				}
+				else = { add_to_variable = { var_TFR_CHI_pathguides_content_page = -1 } }
 			}
 
 		}

@@ -1,5 +1,5 @@
 defined_text = {
-    name = GetGuidesCount
+    name = GetTagSubheading
 
     text = {
 		trigger = {
@@ -7,7 +7,6 @@ defined_text = {
 		}
 		localization_key = "TFR_CHI_pathguides"
 	}
-	
 	
 	text = {
         localization_key =  "unfinished_content"
@@ -17,13 +16,31 @@ defined_text = {
 
 
 defined_text = {
-    name = GetCountryGuide
+    name = GetTagGuide
 
     text = {
 		trigger = {
-		    tag = CHI
+		    check_variable = { var_TFR_CHI_pathguides_content_page = 1 }
 		}
-		localization_key = "TFR_CHI_pathguides_content"
+		localization_key = "TFR_CHI_pathguides_content_page1"
 	}
+
+	text = {
+		trigger = {
+		    check_variable = { var_TFR_CHI_pathguides_content_page = 2 }
+		}
+		localization_key = "TFR_CHI_pathguides_content_page2"
+	}
+
+	text = {
+		trigger = {
+		    check_variable = { var_TFR_CHI_pathguides_content_page = 3 }
+		}
+		localization_key = "TFR_CHI_pathguides_content_page3"
+	}
+
+	text = {
+        localization_key =  "unfinished_content"
+    }
 	
 }

@@ -35,7 +35,7 @@ guiTypes = {
 
 		background = {
 			name = "TFR_CHI_guidebg"
-			quadTextureSprite = "GFX_tiled_plain_bg"
+			quadTextureSprite = "GFX_tiled_paper_bg2"
 		}
 
 		instantTextboxType = {
@@ -69,25 +69,18 @@ guiTypes = {
 
 			background = {
 				name = "TFR_CHI_pathguides_content_bg"
-				quadTextureSprite = "GFX_tiled_window_thin_border"
+				quadTextureSprite = "GFX_tiled_window"
 			}
 
 			iconType = {
 				name = "TFR_CHI_pathguides_playerflag"
 				quadTextureSprite = "GFX_shield_medium"
-				position = { x = 21 y = 10 }
+				position = { x = 12 y = 6 }
 				orientation = upper_left
 			}
-				
-			# iconType = {
-			# 	name = "TFR_CHI_pathguides_playerflag_frame"
-			# 	position = { x = 16 y = 8 }
-			# 	spriteType = "GFX_large_flag_frame"
-			# 	orientation = upper_left
-			# }
 
 			instantTextBoxType = {
-				name = "TFR_CHI_pathguides_playername"
+				name = "TFR_CHI_pathguides_TAG"
 				position = { x = 115 y = 10 }
 				font = "VCR02_36"
 				text = "[THIS.GetName]"
@@ -98,10 +91,10 @@ guiTypes = {
 			}
 
 			instantTextBoxType = {
-				name = "TFR_CHI_pathguides_playerguidecount"
+				name = "TFR_CHI_pathguides_TAG_subheading"
 				position = { x = 115 y = 45 }
 				font = "VCR02_16"
-				text = "[GetGuidesCount]"
+				text = "[GetTagSubheading]"
 				format = left
 				maxWidth = 400
 				maxHeight = 48
@@ -110,13 +103,27 @@ guiTypes = {
 		
 			instantTextboxType = {
 				name = "TFR_CHI_pathguides_content"
-				text = "[GetCountryGuide]"
+				text = "[GetTagGuide]"
 				position = { x = 20 y = 80 }
 				font = "VCR02_18"
 				maxWidth = 600
 				maxHeight = 640
 				scrollbartype = "standardtext_slider"
 			}
+		}
+
+		buttonType = {
+			name = "TFR_CHI_pathguides_button_next"
+			position = {x = -144 y = -65 }
+			orientation = LOWER_RIGHT
+			spriteType = "button_right"
+		}
+
+		buttonType = {
+			name = "TFR_CHI_pathguides_button_prev"
+			position = {x = 119 y = -65 }
+			orientation = LOWER_LEFT
+			spriteType = "button_left"
 		}
 	}
 }
