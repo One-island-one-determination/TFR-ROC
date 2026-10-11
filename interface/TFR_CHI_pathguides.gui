@@ -1,0 +1,122 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_CHI_pathguides_open"
+		position = {
+			x = 0
+			y = 0
+		}
+		Orientation = UPPER_LEFT
+		buttonType = {
+			name = "TFR_CHI_pathguides_button"
+			position = {
+				x = 330
+				y = 8
+			}
+			quadTextureSprite = "GFX_button_148x34"
+			buttonFont = "VCR02_16"
+			buttonText = "TFR_CHI_pathguides_openbutton_text"
+		}
+	}
+
+	containerWindowType = {
+		name = "TFR_CHI_pathguides_main"
+		position = {
+			x = -332
+			y = -400
+		}
+		orientation = CENTER
+		size = { width = 665 height = 800 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = no
+
+		background = {
+			name = "TFR_CHI_guidebg"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+
+		instantTextboxType = {
+			name = "TFR_CHI_pathguides_title"
+			position = { x = 75 y = 9 }
+			font = "VCR02_36"
+			borderSize = {x = 0 y = 0}
+			format = center			
+			text = "TFR_CHI_pathguides_title"
+			maxWidth = 500
+			maxHeight = 20
+		}
+
+		buttonType = {
+			name = "TFR_CHI_pathguides_button_close"
+			position = {x = -44 y = 12 }
+			orientation = UPPER_RIGHT
+			spriteType = "GFX_closebutton"
+			clicksound = click_close
+			pdx_tooltip = "TFR_CHI_pathguides_button_close_tooltip"
+			shortcut = "ESCAPE"
+		}
+
+		containerWindowType = {
+			name = "TFR_CHI_pathguides_content_window"
+			position = { x = 10 y = 50 }
+			size = { width = 645 height = 740 } 
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+			clipping = no
+
+			background = {
+				name = "TFR_CHI_pathguides_content_bg"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+
+			iconType = {
+				name = "TFR_CHI_pathguides_playerflag"
+				quadTextureSprite = "GFX_shield_medium"
+				position = { x = 21 y = 10 }
+				orientation = upper_left
+			}
+				
+			# iconType = {
+			# 	name = "TFR_CHI_pathguides_playerflag_frame"
+			# 	position = { x = 16 y = 8 }
+			# 	spriteType = "GFX_large_flag_frame"
+			# 	orientation = upper_left
+			# }
+
+			instantTextBoxType = {
+				name = "TFR_CHI_pathguides_playername"
+				position = { x = 115 y = 10 }
+				font = "VCR02_36"
+				text = "[THIS.GetName]"
+				format = left
+				maxWidth = 800
+				maxHeight = 24
+				fixedsize = yes
+			}
+
+			instantTextBoxType = {
+				name = "TFR_CHI_pathguides_playerguidecount"
+				position = { x = 115 y = 45 }
+				font = "VCR02_16"
+				text = "[GetGuidesCount]"
+				format = left
+				maxWidth = 400
+				maxHeight = 48
+				fixedsize = yes
+			}
+		
+			instantTextboxType = {
+				name = "TFR_CHI_pathguides_content"
+				text = "[GetCountryGuide]"
+				position = { x = 20 y = 80 }
+				font = "VCR02_18"
+				maxWidth = 600
+				maxHeight = 640
+				scrollbartype = "standardtext_slider"
+			}
+		}
+	}
+}
