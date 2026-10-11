@@ -1,0 +1,53 @@
+scripted_gui = {
+	TFR_CHI_pathguides_open = {
+		window_name = "TFR_CHI_pathguides_open"
+		context_type = player_context
+		parent_window_token = politics_tab
+		visible = {
+			tag = CHI
+		}
+		effects = {
+			TFR_CHI_pathguides_button_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = TFR_CHI_pathguides_open_flag
+						}
+					}
+					set_country_flag = TFR_CHI_pathguides_open_flag
+				}
+				else = {
+					clr_country_flag = TFR_CHI_pathguides_open_flag
+				}
+			}
+		}
+	}
+
+	TFR_CHI_pathguides_main = {
+		context_type = player_context
+
+		window_name = "TFR_CHI_pathguides_main"
+		ai_enabled = { always = no }
+
+		visible = {
+			has_country_flag = TFR_CHI_pathguides_open_flag
+		}
+
+		triggers = {
+			#
+		}
+
+		effects = {
+			TFR_CHI_pathguides_button_close_click = {
+				clr_country_flag = TFR_CHI_pathguides_open_flag
+			}
+
+		}
+
+		properties = {
+			TFR_CHI_pathguides_playerflag = {
+				image = "[THIS.GetFlag]"
+			}
+		}
+	}
+}
