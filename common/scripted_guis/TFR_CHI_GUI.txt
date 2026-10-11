@@ -55,7 +55,22 @@ scripted_gui = {
       tag = CHI
     }
     effects = {
-      Open_kmt_dec_click = {
+      Green_frame_click = {
+        if = {
+          limit = {
+            check_variable = {
+              CHI_dec_visible = 2
+            }
+          }
+          clear_variable = CHI_dec_visible
+        }
+        else = {
+          set_variable = {
+            CHI_dec_visible = 2
+          }
+        }
+      }
+      Blue_frame_click = {
         if = {
           limit = {
             check_variable = {
@@ -70,18 +85,18 @@ scripted_gui = {
           }
         }
       }
-      Open_dpp_dec_click = {
+      Middle_frame_click = {
         if = {
           limit = {
             check_variable = {
-              CHI_dec_visible = 2
+              CHI_dec_visible = 3
             }
           }
           clear_variable = CHI_dec_visible
         }
         else = {
           set_variable = {
-            CHI_dec_visible = 2
+            CHI_dec_visible = 3
           }
         }
       }
