@@ -270,6 +270,32 @@ ARR_reconstruction = {
   }
 }
 
+CHI_Vote_counting_Legislator = {
+  set_variable = { CHI_Green_supprt = party_popularity@social_liberal }
+  set_variable = { CHI_Green_Legislator = CHI_Green_supprt }
+  multiply_variable = { CHI_Green_Legislator = CHI_all_Legislator }
+  round_variable = CHI_Green_Legislator
+
+  set_variable = { CHI_Blue_supprt = party_popularity@conservative }
+  add_to_variable = { CHI_Blue_supprt = party_popularity@Kuomintang2 }
+  set_variable = { CHI_Blue_Legislator = CHI_Blue_supprt }
+  multiply_variable = { CHI_Blue_Legislator = CHI_all_Legislator }
+  round_variable = CHI_Blue_Legislator
+
+  set_variable = { CHI_Middle_Legislator = CHI_all_Legislator }
+  subtract_from_variable = { CHI_Middle_Legislator = CHI_Blue_Legislator}
+  subtract_from_variable = { CHI_Middle_Legislator = CHI_Green_Legislator}
+
+  if = {
+    limit = { has_country_flag = KMT_win_flg }
+    set_variable = { CHI_Base_support_Legislator = CHI_Blue_Legislator }
+  }
+  else_if = {
+    limit = { has_country_flag = DPP_win_flg }
+    set_variable = { CHI_Base_support_Legislator = CHI_Green_Legislator }
+  }
+}
+
 #原油危機的逐步改善，透過國策改善
 CHI_oil_crash_idea = {
   custom_effect_tooltip = { IDEA = CHI_oil_crash_dynamic localization_key = modify_idea_tt }
