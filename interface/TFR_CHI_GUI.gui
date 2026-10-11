@@ -217,30 +217,53 @@ guitypes = {
     icontype = {
       name = "CHI_Ker_Chien_ming"
       quadtexturesprite = "GFX_CHI_Ker_Chien_ming"
-      position = { x = 5  y = 96 }
+      position = { x = 0  y = 96 }
     }
-    icontype = {
+    buttonType = {
       name = "Green_frame"
       quadtexturesprite = "LY_frame"
-      position = { x = 0 y = 92 }
+      position = { x = -5 y = 92 }
     }
     icontype = {
       name = "CHI_Tseng_Ming_chung"
       quadtexturesprite = "GFX_CHI_Tseng_Ming_chung"
-      position = { x = 325 y = 96 }
+      position = { x = 330 y = 96 }
     }
-    icontype = {
+    buttonType = {
       name = "Blue_frame"
       quadtexturesprite = "LY_frame"
-      position = { x = 320 y = 92 }
+      position = { x = 325 y = 92 }
     }
-    
+    buttonType = {
+      name = "Middle_frame"
+      position = { x = 160 y = 92 }
+      quadtexturesprite = "LY_frame"
+      buttonFont = "VCR02_36"
+    }
+
+    instantTextBoxType = {
+      name = "Middle"
+      position = { x = -10 y = 150 }
+      text = Middle
+      font = "VCR02_36"
+      maxwidth = 510
+      format = center
+    }
+
     instantTextBoxType = {
       name = "Green_Legislator"
       position = { x = 5 y = 322 }
       text = Green_Legislator
       font = "VCR02_26"
       maxwidth = 156
+      format = center
+    }
+    instantTextBoxType = {
+      name = "Middle_Legislator"
+      position = { x = -10 y = 322 }
+      text = Middle_Legislator
+      font = "VCR02_26"
+      maxwidth = 510
       format = center
     }
     instantTextBoxType = {
