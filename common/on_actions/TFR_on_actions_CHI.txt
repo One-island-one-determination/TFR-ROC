@@ -103,8 +103,65 @@ on_actions = {
           civilian = { large = "gfx/leaders/CHI/CHI_lai_ching_te_gaw_win.png" }
         }
       }
+      if = {
+        limit = {
+          tag = CHI
+          has_war_with = PRC
+          NOT = { has_country_flag = CHI_taiwan_war_end }
+          NOT = { has_country_flag = CHI_called_allies_taiwan_war }
+          OR = {
+            JAP = { has_war_with = PRC }
+            AST = { has_war_with = PRC }
+            any_other_country = {
+              is_in_faction_with = CHI
+              has_war_with = PRC
+            }
+          }
+        }
+        set_country_flag = CHI_called_allies_taiwan_war
+      }
     }
   }
+
+  on_war = {
+    effect = {
+      if = {
+        limit = {
+          ROOT = {
+            OR = {
+              tag = JAP
+              tag = AST
+              is_in_faction_with = CHI
+            }
+          }
+          FROM = { tag = PRC }
+          CHI = {
+            has_war_with = PRC
+            NOT = { has_country_flag = CHI_taiwan_war_end }
+          }
+        }
+        CHI = { set_country_flag = CHI_called_allies_taiwan_war }
+      }
+      if = {
+        limit = {
+          FROM = {
+            OR = {
+              tag = JAP
+              tag = AST
+              is_in_faction_with = CHI
+            }
+          }
+          ROOT = { tag = PRC }
+          CHI = {
+            has_war_with = PRC
+            NOT = { has_country_flag = CHI_taiwan_war_end }
+          }
+        }
+        CHI = { set_country_flag = CHI_called_allies_taiwan_war }
+      }
+    }
+  }
+
 
   # on_daily_CHI = {
   #   effect = {

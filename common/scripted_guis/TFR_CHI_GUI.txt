@@ -101,6 +101,14 @@ scripted_gui = {
         }
       }
     }
+    triggers = {
+      CHI_Tseng_Ming_chung_visible = {
+        has_country_flag = CHI_Legislator_already
+      }
+      CHI_Ker_Chien_ming_visible = {
+        has_country_flag = CHI_Legislator_already
+      }
+    }
   }
   #軍購
   CHI_Military_purchasing_info = {

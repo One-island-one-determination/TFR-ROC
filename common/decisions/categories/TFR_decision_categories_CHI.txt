@@ -4,7 +4,7 @@ CHI_debug = {
   priority = 1000
   visible_when_empty = yes
   allowed = {
-    always = yes
+    original_tag = CHI
   }
   visible = {
     is_debug = yes
@@ -79,7 +79,7 @@ CHI_NHCC_decisions = {
   priority = 6
   #visible_when_empty = yes
   allowed = {
-    always = yes
+    original_tag = CHI
   }
   visible = {
     NOT = {
@@ -142,6 +142,9 @@ CHI_KMT_politics_category = {
   priority = 2
   icon = generic_politics
   scripted_gui = CHI_kmt_factions_pie_chart_gui
+  allowed = {
+    original_tag = CHI
+  }
   visible = {
     original_tag = CHI
     is_debug = yes
@@ -360,4 +363,7 @@ CHI_civilwar_category = {
 CHI_ai_portrait_category = {
 	icon = GFX_decision_category_generic
 	picture = GFX_decision_cat_generic_picture
+	allowed = {
+		original_tag = CHI
+	}
 }

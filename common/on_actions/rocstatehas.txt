@@ -444,6 +444,16 @@ on_actions = {
       # Tibet & Zangnan Liberation & Truce with India
       if = {
         limit = {
+          FROM.FROM = {
+            OR = {
+              state = 1155
+              state = 322
+              state = 1153
+              state = 1156
+              state = 1152
+              state = 434
+            }
+          }
           CHI = {
             has_war = yes
             NOT = { has_country_flag = CHI_tibet_zangnan_secured }
