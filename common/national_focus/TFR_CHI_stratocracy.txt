@@ -148,7 +148,12 @@ focus_tree = {
     focus = {
         id = CHI_troops_guard_the_gates
         icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_our_common_cause focus = CHI_deal_with_opposing_officers focus = CHI_national_syllogism focus = CHI_temporary_restoration_of_curfew focus = CHI_arrest_mobs focus = CHI_guarantee_prices }
+        prerequisite = { focus = CHI_our_common_cause }
+        prerequisite = { focus = CHI_deal_with_opposing_officers }
+        prerequisite = { focus = CHI_national_syllogism }
+        prerequisite = { focus = CHI_temporary_restoration_of_curfew }
+        prerequisite = { focus = CHI_arrest_mobs }
+        prerequisite = { focus = CHI_guarantee_prices }
         x = 24
         y = 5
         cost = 3
