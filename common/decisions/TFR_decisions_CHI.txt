@@ -295,7 +295,7 @@ CHI_debug = {
         complete_effect = {
             CHI={
                 load_focus_tree = P2_CHI_KMT
-                set_country_flag = HKY_2024_flg
+                set_country_flag = HKY_2024_flag
             }
         }
     }
@@ -307,8 +307,8 @@ CHI_debug = {
         complete_effect = {
             CHI={
                 load_focus_tree = P2_CHI_KMT
-                set_country_flag = HKY_2024_flg
-                set_country_flag = HKY_2028_flg
+                set_country_flag = HKY_2024_flag
+                set_country_flag = HKY_2028_flag
                 country_event = { id = taiwan.500 }
             }
         }
@@ -328,7 +328,7 @@ CHI_debug = {
         complete_effect = {
             CHI = {
                 load_focus_tree = P2_CHI_KMT
-                set_country_flag = CWA_2024_flg
+                set_country_flag = CWA_2024_flag
                 complete_national_focus = CHI_reclaim_national_father_thought
             }
         }
@@ -399,12 +399,12 @@ CHI_debug = {
         visible = { always = yes }
         available = { always = yes }
         complete_effect = {
-            clr_country_flag = CHI_ROC_army_flg_1
-            set_country_flag = CHI_ROC_army_flg_2
-            clr_country_flag = CHI_ROC_airforce_flg_1
-            set_country_flag = CHI_ROC_airforce_flg_2
-            clr_country_flag = CHI_ROC_navy_flg_1
-            set_country_flag = CHI_ROC_navy_flg_2
+            clr_country_flag = CHI_ROC_army_flag_1
+            set_country_flag = CHI_ROC_army_flag_2
+            clr_country_flag = CHI_ROC_airforce_flag_1
+            set_country_flag = CHI_ROC_airforce_flag_2
+            clr_country_flag = CHI_ROC_navy_flag_1
+            set_country_flag = CHI_ROC_navy_flag_2
         }
     }
     remove_economy_types = {
@@ -1539,7 +1539,7 @@ CHI_PRC_Infiltration_decisions = {
             }
             PRC_Infiltration_change = yes
             custom_effect_tooltip = Investigate_illegal_political_organization_tooltip
-            set_country_flag = Investigate_illegal_political_organizations_flg
+            set_country_flag = Investigate_illegal_political_organizations_flag
         }
     }
     Investigate_illegal_political_organization_2 = {
@@ -1552,12 +1552,12 @@ CHI_PRC_Infiltration_decisions = {
         }
         available = {
             hidden_trigger = {
-                has_country_flag = Investigate_illegal_political_organizations_flg
+                has_country_flag = Investigate_illegal_political_organizations_flag
             }
         }
         visible = {
             hidden_trigger = {
-                has_country_flag = Investigate_illegal_political_organizations_flg
+                has_country_flag = Investigate_illegal_political_organizations_flag
             }
         }
         priority = 90		#重要程度
@@ -1582,7 +1582,7 @@ CHI_PRC_Infiltration_decisions = {
             }
             PRC_Infiltration_change = yes
             custom_effect_tooltip = Investigate_illegal_political_organization_2_tooltip
-            set_country_flag = Investigate_illegal_political_organizations_flg_2
+            set_country_flag = Investigate_illegal_political_organizations_flag_2
         }
     }
     Investigate_illegal_political_organization_3 = {
@@ -1595,12 +1595,12 @@ CHI_PRC_Infiltration_decisions = {
         }
         available = {
             hidden_trigger = {
-                has_country_flag = Investigate_illegal_political_organizations_flg_2
+                has_country_flag = Investigate_illegal_political_organizations_flag_2
             }
         }
         visible = {
             hidden_trigger = {
-                has_country_flag = Investigate_illegal_political_organizations_flg_2
+                has_country_flag = Investigate_illegal_political_organizations_flag_2
             }
         }
         priority = 90		#重要程度
@@ -1625,7 +1625,7 @@ CHI_PRC_Infiltration_decisions = {
             }
             PRC_Infiltration_change = yes
             custom_effect_tooltip = Investigate_illegal_political_organization_3_tooltip
-            set_country_flag = Investigate_illegal_political_organizations_flg_3
+            set_country_flag = Investigate_illegal_political_organizations_flag_3
         }
     }
     Investigate_illegal_political_organization_4 = {
@@ -1638,12 +1638,12 @@ CHI_PRC_Infiltration_decisions = {
         }
         available = {
             hidden_trigger = {
-                has_country_flag = Investigate_illegal_political_organizations_flg_3
+                has_country_flag = Investigate_illegal_political_organizations_flag_3
             }
         }
         visible = {
             hidden_trigger = {
-                has_country_flag = Investigate_illegal_political_organizations_flg_3
+                has_country_flag = Investigate_illegal_political_organizations_flag_3
             }
         }
         priority = 90		#重要程度
@@ -1668,7 +1668,7 @@ CHI_PRC_Infiltration_decisions = {
             }
             PRC_Infiltration_change = yes
             custom_effect_tooltip = Investigate_illegal_political_organization_4_tooltip
-            set_country_flag = Investigate_illegal_political_organizations_flg_4
+            set_country_flag = Investigate_illegal_political_organizations_flag_4
         }
     }
     Investigate_illegal_political_organization_5 = {
@@ -1681,12 +1681,12 @@ CHI_PRC_Infiltration_decisions = {
         }
         available = {
             hidden_trigger = {
-                has_country_flag = Investigate_illegal_political_organizations_flg_4
+                has_country_flag = Investigate_illegal_political_organizations_flag_4
             }
         }
         visible = {
             hidden_trigger = {
-                has_country_flag = Investigate_illegal_political_organizations_flg_4
+                has_country_flag = Investigate_illegal_political_organizations_flag_4
             }
         }
         priority = 90		#重要程度
@@ -1711,10 +1711,10 @@ CHI_PRC_Infiltration_decisions = {
             }
             PRC_Infiltration_change = yes
             custom_effect_tooltip = Investigate_illegal_political_organization_5_tooltip
-            clr_country_flag = Investigate_illegal_political_organizations_flg
-            clr_country_flag = Investigate_illegal_political_organizations_flg_2
-            clr_country_flag = Investigate_illegal_political_organizations_flg_3
-            clr_country_flag = Investigate_illegal_political_organizations_flg_4
+            clr_country_flag = Investigate_illegal_political_organizations_flag
+            clr_country_flag = Investigate_illegal_political_organizations_flag_2
+            clr_country_flag = Investigate_illegal_political_organizations_flag_3
+            clr_country_flag = Investigate_illegal_political_organizations_flag_4
         }
     }
     #debug
@@ -2169,7 +2169,7 @@ CHI_Legislative_Yuan_decisions = {
                 NOT = {
                     has_country_flag = DPP_agenda
                     has_country_flag = TPP_agenda
-                    has_country_flag = anti_PRC_flg
+                    has_country_flag = anti_PRC_flag
                 }
             }
         }
