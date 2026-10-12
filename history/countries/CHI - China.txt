@@ -574,6 +574,25 @@ if = {
   }
 
   create_equipment_variant = {
+    name = "M1A2T主戰坦克"
+    type = modern_tank_chassis_4
+    parent_version = 0
+    model = "CHI_M1A2T_modern_armor_entity"
+    modules = {
+      main_armament_slot = tank_high_velocity_cannon
+      turret_type_slot = tank_modern_tank_turret
+      suspension_type_slot = tank_torsion_bar_suspension
+      armor_type_slot = tank_cast_armor
+      engine_type_slot = tank_diesel_engine
+      special_type_slot_1 = tank_radio_1
+      special_type_slot_2 = stabilizer
+      special_type_slot_3 = smoke_launchers
+      special_type_slot_4 = wet_ammo_storage
+      special_type_slot_5 = gunner_thermal_1
+    }
+  }
+
+  create_equipment_variant = {
     name = "CM11勇虎式戰車"
     type = modern_tank_chassis_1
     parent_version = 0
