@@ -115,7 +115,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_national_syllogism
-        icon = GFX_goal_unknown
+        icon = GFX_focus_CHI_national_syllogism
         prerequisite = { focus = CHI_control_factions }
         x = 22
         y = 4
@@ -123,7 +123,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_temporary_restoration_of_curfew
-        icon = GFX_goal_unknown
+        icon = GFX_focus_CHI_temporary_restoration_of_curfew
         prerequisite = { focus = CHI_disperse_protests }
         x = 26
         y = 4
@@ -131,7 +131,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_arrest_mobs
-        icon = GFX_goal_unknown
+        icon = GFX_focus_CHI_arrest_mobs
         prerequisite = { focus = CHI_beat_opportunists }
         x = 28
         y = 4
