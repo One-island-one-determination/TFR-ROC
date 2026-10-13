@@ -272,7 +272,39 @@ on_actions = {
         }
       }
       
+      # 金門淪陷標記（防止戰後共軍撤退自動交還完成成就）
+      if = {
+        limit = {
+          FROM.FROM = { state = 648 }
+          ROOT = {
+            OR = {
+              tag = PRC
+              is_ally_with = PRC
+            }
+          }
+        }
+        CHI = {
+          set_country_flag = CHI_kinmen_lost_to_prc
+        }
+      }
+      if = {
+        limit = {
+          FROM.FROM = { state = 648 }
+          ROOT = {
+            OR = {
+              tag = CHI
+              is_in_faction_with = CHI
+            }
+          }
+          NOT = { has_global_flag = PRC_taiwan_war_lost }
+        }
+        CHI = {
+          clr_country_flag = CHI_kinmen_lost_to_prc
+        }
+      }
+
        #BeiJing
+
       if = {
         limit = {
           FROM.FROM = { state = 608 }

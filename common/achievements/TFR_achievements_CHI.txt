@@ -343,3 +343,26 @@ Achievement_now_we_march = {
 		}
 	}
 }
+
+Achievement_kinmen = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 3
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_kinmen_tt
+			CHI = {
+				has_country_flag = CHI_taiwan_war_end
+				controls_state = 648
+				NOT = { has_country_flag = CHI_kinmen_lost_to_prc }
+			}
+		}
+	}
+}
+
