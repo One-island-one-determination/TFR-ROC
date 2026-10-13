@@ -7,4 +7,14 @@ objectTypes = {
 		animation = { id = "idle"			type = "M1A2T_idle.animation" }
 
 	}
+
+	pdxmesh = {
+		name = "chi_CM34_mesh"
+		file = "gfx/models/units/vehicles/CM34/cm32.mesh"
+
+		animation = { id = "idle"			type = "CM34_idle_animation" }
+		animation = { id = "move"			type = "CM34_move_animation" }
+
+		scale = 0.85
+	}
 }    
