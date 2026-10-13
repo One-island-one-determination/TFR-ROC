@@ -392,4 +392,88 @@ Achievement_impregnable_defense = {
 	}
 }
 
+Achievement_opposition_dictatorship = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 0
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_opposition_dictatorship_tt
+			CHI = {
+				has_power_balance = {
+					id = CHI_Identity_dispute
+				}
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = CHI_DPP_in_power_flag
+							has_government = social_liberal
+						}
+						power_balance_value = {
+							id = CHI_Identity_dispute
+							value < -0.99
+						}
+					}
+					AND = {
+						OR = {
+							has_country_flag = CHI_KMT_in_power_flag
+							has_government = conservative
+						}
+						power_balance_value = {
+							id = CHI_Identity_dispute
+							value > 0.99
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
+Achievement_fuck_you_kmt = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 0
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_fuck_you_kmt_tt
+			CHI = {
+				has_completed_focus = CHI_republic_achieved
+				all_core_state = {
+					OR = {
+						state = 524
+						state = 1148
+						state = 1149
+						state = 1150
+						state = 1451
+						state = 648
+						state = 876
+						state = 879
+						state = 1382
+						state = 1383
+						state = 1384
+						# 忽略蒙古與圖瓦
+						state = 329
+						state = 330
+						state = 1388
+						state = 1389
+						state = 1390
+						state = 1391
+					}
+				}
+			}
+		}
+	}
+}
