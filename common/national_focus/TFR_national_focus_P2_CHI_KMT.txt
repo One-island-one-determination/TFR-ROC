@@ -17,7 +17,7 @@ focus_tree = {
         continue_if_invalid = no
         cancel_if_invalid = yes
         allow_branch = {
-            has_country_flag = HKY_2024_flg
+            has_country_flag = HKY_2024_flag
         }
         completion_reward = {
             country_event = {
@@ -1300,7 +1300,7 @@ focus_tree = {
             }
         }
         allow_branch = {
-            has_country_flag = CWA_2024_flg
+            has_country_flag = CWA_2024_flag
         }
         completion_reward = {
             #NO content
@@ -1836,7 +1836,7 @@ focus_tree = {
         continue_if_invalid = no
         cancel_if_invalid = yes
         allow_branch = {
-            has_country_flag = CWA_2024_flg
+            has_country_flag = CWA_2024_flag
             NOT = {
                 has_completed_focus = CHI_premier_jaw_shaw_kong
             }
@@ -1876,7 +1876,7 @@ focus_tree = {
             }
         }
         allow_branch = {
-            has_country_flag = CWA_2024_flg
+            has_country_flag = CWA_2024_flag
             NOT = {
                 has_completed_focus = CHI_premier_johnny_chiang
             }
@@ -2817,8 +2817,8 @@ focus_tree = {
         completion_reward = {
             CHI_chiang_wan_an_char = {
                 swap_country_leader_traits = {
-                    remove = hos_Descendants_Chiang_family_fst
-                    add = hos_Descendants_Chiang_family_scd
+                    remove = hos_Descendants_Chiang_family_first
+                    add = hos_Descendants_Chiang_family_second
                     ideology = constitutionalist
                 }
             }
@@ -4135,7 +4135,7 @@ focus_tree = {
             x = 8
             y = 0
             trigger = {
-                has_country_flag = CWA_2024_flg
+                has_country_flag = CWA_2024_flag
             }
         }
         offset = {
@@ -4883,24 +4883,24 @@ focus_tree = {
         cancel_if_invalid = yes
         icon = {
             GFX_focus_CHI_duty_of_the_helmsman = {
-                has_country_flag = HKY_2024_flg
+                has_country_flag = HKY_2024_flag
             }
             GFX_focus_CHI_dont_wait_dont_rely = {
-                has_country_flag = CWA_2024_flg
+                has_country_flag = CWA_2024_flag
             }
         }
         allow_branch = {
             OR = {
-                has_country_flag = HKY_2028_flg
-                has_country_flag = CWA_2028_flg
+                has_country_flag = HKY_2028_flag
+                has_country_flag = CWA_2028_flag
             }
         }
         completion_reward = {
             if = {
                 limit = {
                     OR = {
-                        has_country_flag = HKY_2028_flg
-                        has_country_flag = HKY_2024_flg
+                        has_country_flag = HKY_2028_flag
+                        has_country_flag = HKY_2024_flag
                     }
                 }
                 set_party_name = {
@@ -4926,8 +4926,8 @@ focus_tree = {
             if = {
                 limit = {
                     OR = {
-                        has_country_flag = CWA_2028_flg
-                        has_country_flag = CWA_2024_flg
+                        has_country_flag = CWA_2028_flag
+                        has_country_flag = CWA_2024_flag
                     }
                 }
                 set_politics = {
@@ -4955,7 +4955,7 @@ focus_tree = {
     # 	continue_if_invalid = no
     # 	cancel_if_invalid = yes
     # 	allow_branch = {
-    # 		has_country_flag = CWA_2028_flg
+    # 		has_country_flag = CWA_2028_flag
     # 	}
     # 	completion_reward = {
     # 	}

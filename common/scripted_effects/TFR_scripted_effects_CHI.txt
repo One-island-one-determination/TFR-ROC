@@ -287,11 +287,11 @@ CHI_Vote_counting_Legislator = {
   subtract_from_variable = { CHI_Middle_Legislator = CHI_Green_Legislator}
 
   if = {
-    limit = { has_country_flag = KMT_win_flg }
+    limit = { has_country_flag = KMT_win_flag }
     set_variable = { CHI_Base_support_Legislator = CHI_Blue_Legislator }
   }
   else_if = {
-    limit = { has_country_flag = DPP_win_flg }
+    limit = { has_country_flag = DPP_win_flag }
     set_variable = { CHI_Base_support_Legislator = CHI_Green_Legislator }
   }
 }

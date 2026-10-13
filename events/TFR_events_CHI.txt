@@ -43,8 +43,8 @@ country_event = {
       }
       clr_country_flag = CHI_KMT_in_power_flag
       set_country_flag = CHI_DPP_in_power_flag
-      set_country_flag = DPP_win_flg
-      clr_country_flag = KMT_win_flg
+      set_country_flag = DPP_win_flag
+      clr_country_flag = KMT_win_flag
       news_event = {
         id = taiwan.5
         hours = 12
@@ -152,8 +152,8 @@ country_event = {
 
       clr_country_flag = CHI_DPP_in_power_flag
       set_country_flag = CHI_KMT_in_power_flag
-      set_country_flag = KMT_win_flg
-      clr_country_flag = DPP_win_flg
+      set_country_flag = KMT_win_flag
+      clr_country_flag = DPP_win_flag
       country_event = {
         id = taiwan.12
         days = 1462
@@ -201,7 +201,7 @@ country_event = {
   is_triggered_only = yes
   option = {
     name = CHI.3.a
-    set_country_flag = American_Civil_War_happen_flg
+    set_country_flag = American_Civil_War_happen_flag
     complete_national_focus = CHI_Pacific_War
     effect_tooltip = {
       add_ideas = financial_crisis_1
@@ -458,7 +458,7 @@ country_event = {
   option = {
     name = CHI.103.a
     custom_effect_tooltip = CHI_unlock_reconstruction_tt
-    set_country_flag = CHI_reconstruction_flg
+    set_country_flag = CHI_reconstruction_flag
     complete_national_focus = CHI_Emergency_reconstruction_begins
     focus_unlock = yes
   }
@@ -628,7 +628,7 @@ country_event = {
         elections_allowed = yes
       }
       load_focus_tree = P2_CHI_KMT
-      set_country_flag = HKY_2024_flg
+      set_country_flag = HKY_2024_flag
       focus_unlock = yes
       country_event = {
         id = CHI.H3.11
@@ -1023,12 +1023,12 @@ country_event = {
       remove_dynamic_modifier = { modifier = CHI_NSM_dynamic }
       remove_dynamic_modifier = { modifier = CHI_Defend_Taiwan_dynamic }
       country_event = { id = CHI.TW.22 days = 5 }
-      clr_country_flag = CHI_ROC_army_flg_1
-      clr_country_flag = CHI_ROC_navy_flg_1
-      clr_country_flag = CHI_ROC_airforce_flg_1
-      set_country_flag = CHI_ROC_army_flg_2
-      set_country_flag = CHI_ROC_navy_flg_2
-      set_country_flag = CHI_ROC_airforce_flg_2
+      clr_country_flag = CHI_ROC_army_flag_1
+      clr_country_flag = CHI_ROC_navy_flag_1
+      clr_country_flag = CHI_ROC_airforce_flag_1
+      set_country_flag = CHI_ROC_army_flag_2
+      set_country_flag = CHI_ROC_navy_flag_2
+      set_country_flag = CHI_ROC_airforce_flag_2
       remove_dynamic_modifier = { modifier = CHI_TaiHai_dynamic }
     }
   }
@@ -1687,8 +1687,8 @@ country_event = {
       limit = { has_country_leader = { character = CHI_chiang_wan_an_char } }
       CHI_chiang_wan_an_char = {
         swap_country_leader_traits = {
-          remove = hos_Descendants_Chiang_family_scd
-          add = hos_Descendants_Chiang_family_trd
+          remove = hos_Descendants_Chiang_family_second
+          add = hos_Descendants_Chiang_family_third
           ideology = constitutionalist
         }
       }
@@ -1721,12 +1721,12 @@ news_event = {
           scoped_sound_effect = ROC_restoration_super_sound_database
         }
         else_if = {
-          limit = { CHI = { has_country_flag = HKY_2024_flg } }
+          limit = { CHI = { has_country_flag = HKY_2024_flag } }
           set_country_flag = CHI_restoration_of_republic_super_han
           scoped_sound_effect = ROC_restoration_super_sound_han
         }
         else_if = {
-          limit = { CHI = { has_country_flag = CWA_2024_flg } }
+          limit = { CHI = { has_country_flag = CWA_2024_flag } }
           set_country_flag = CHI_restoration_of_republic_super_chiang
           scoped_sound_effect = ROC_restoration_super_sound_chiang
         }
@@ -1752,12 +1752,12 @@ news_event = {
           scoped_sound_effect = ROC_restoration_super_sound_database
         }
         else_if = {
-          limit = { CHI = { has_country_flag = HKY_2024_flg } }
+          limit = { CHI = { has_country_flag = HKY_2024_flag } }
           set_country_flag = CHI_restoration_of_republic_super_han
           scoped_sound_effect = ROC_restoration_super_sound_han
         }
         else_if = {
-          limit = { CHI = { has_country_flag = CWA_2024_flg } }
+          limit = { CHI = { has_country_flag = CWA_2024_flag } }
           set_country_flag = CHI_restoration_of_republic_super_chiang
           scoped_sound_effect = ROC_restoration_super_sound_chiang
         }
@@ -2171,7 +2171,7 @@ country_event = {
   option = {
     name = CHI.TW.14.a
     if = {
-      limit = { has_country_flag = KMT_win_flg }
+      limit = { has_country_flag = KMT_win_flag }
       add_ideas = CHI_DPP_protest
       set_temp_variable = { coalition_partner_var_temp = token:social_liberal }
       remove_from_coalition = yes
@@ -2183,7 +2183,7 @@ country_event = {
       remove_from_coalition = yes
     }
     else_if = {
-      limit = { has_country_flag = DPP_win_flg }
+      limit = { has_country_flag = DPP_win_flag }
       add_ideas = CHI_KMT_protests
       set_temp_variable = { coalition_partner_var_temp = token:authoritarian_democrat }
       remove_from_coalition = yes
@@ -3031,7 +3031,7 @@ country_event = {
         }
         10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_38_done }
-          modifier = { factor = 0 has_country_flag = DPP_win_flg }
+          modifier = { factor = 0 has_country_flag = DPP_win_flag }
           country_event = { id = CHI.TW.38 }
         }
         10 = {
@@ -3103,7 +3103,7 @@ country_event = {
     name = CHI.TW.150.a
     #載入重建國策
     custom_effect_tooltip = CHI_unlock_reconstruction_tt
-    set_country_flag = CHI_reconstruction_flg
+    set_country_flag = CHI_reconstruction_flag
     complete_national_focus = CHI_Emergency_reconstruction_begins
     focus_unlock = yes
   }
@@ -3138,7 +3138,7 @@ country_event = {
         desc = CHI_chiang_wan_an_char_desc
         ideology = constitutionalist
         traits = {
-          hos_Descendants_Chiang_family_fst
+          hos_Descendants_Chiang_family_first
         }
       }
       promote_leader = yes
@@ -3154,7 +3154,7 @@ country_event = {
     ##載入新國策
     hidden_effect = {
       load_focus_tree = P2_CHI_KMT
-      # set_country_flag = CWA_2024_flg
+      # set_country_flag = CWA_2024_flag
       focus_unlock = yes
     }
     custom_effect_tooltip = P2CWA_unlock_tt
@@ -3299,7 +3299,7 @@ country_event = {
   option = {
     name = CHI.B2.7.a
     custom_effect_tooltip = CHI_chang_san_cheng_tt
-    set_country_flag = CWA_2024_flg
+    set_country_flag = CWA_2024_flag
 
     hidden_effect = { retire_character = CHI_han_kuo_yu_char }
 
@@ -3356,7 +3356,7 @@ country_event = {
 
   option = {
     name = CHI.CWA_2028_temp.a
-    set_country_flag = HKY_2028_flg
+    set_country_flag = HKY_2028_flag
     complete_national_focus = CHI_transition_2028
     focus_unlock = yes
   }
