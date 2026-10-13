@@ -241,7 +241,7 @@ Achievement_full_circle = {
 		has_any_custom_difficulty_setting = no
 		game_rules_allow_achievements = yes
 		has_start_date < 2020.01.02
-		difficulty > 4
+		difficulty > 3
 		is_ai = no
 		tag = CHI
 	}
@@ -273,7 +273,7 @@ Achievement_taihai_showdown = {
 		has_any_custom_difficulty_setting = no
 		game_rules_allow_achievements = yes
 		has_start_date < 2020.01.02
-		difficulty > 4
+		difficulty > 3
 		is_ai = no
 		tag = CHI
 	}
@@ -288,3 +288,108 @@ Achievement_taihai_showdown = {
 		}
 	}
 }
+
+Achievement_now_we_march = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 3
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_now_we_march_tt
+			CHI = {
+				OR = {
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = conservative
+					has_government = authoritarian_democrat
+				}
+				OR = {
+					has_country_flag = CHI_intervened_burma_civil_war
+					has_war_with = BRM
+					AND = {
+						country_exists = PDF
+						PDF = {
+							has_volunteers_amount_from = { tag = CHI count > 0 }
+						}
+					}
+				}
+			}
+			OR = {
+				BRM = {
+					has_cosmetic_tag = BRM_PDF
+				}
+				BRM = {
+					has_country_leader = {
+						character = PDF_duwa_lashi_la_char
+						ruling_only = yes
+					}
+				}
+				AND = {
+					country_exists = PDF
+					BRM = { has_capitulated = yes }
+				}
+				AND = {
+					country_exists = PDF
+					NOT = { country_exists = BRM }
+				}
+			}
+		}
+	}
+}
+
+Achievement_kinmen = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 3
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_kinmen_tt
+			CHI = {
+				has_country_flag = CHI_taiwan_war_end
+				controls_state = 648
+				NOT = { has_country_flag = CHI_kinmen_lost_to_prc }
+			}
+		}
+	}
+}
+
+Achievement_impregnable_defense = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 3
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_impregnable_defense_tt
+			CHI = {
+				has_country_flag = CHI_taiwan_war_end
+				NOT = { has_country_flag = CHI_prc_captured_taiwan_or_penghu_flag }
+				controls_state = 524
+				controls_state = 1148
+				controls_state = 1149
+				controls_state = 1150
+				controls_state = 1451
+			}
+		}
+	}
+}
+
+

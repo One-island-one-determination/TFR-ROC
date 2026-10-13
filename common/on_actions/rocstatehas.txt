@@ -272,7 +272,64 @@ on_actions = {
         }
       }
       
+      # 金門淪陷標記（防止戰後共軍撤退自動交還完成成就）
+      if = {
+        limit = {
+          FROM.FROM = { state = 648 }
+          ROOT = {
+            OR = {
+              tag = PRC
+              is_ally_with = PRC
+            }
+          }
+        }
+        CHI = {
+          set_country_flag = CHI_kinmen_lost_to_prc
+        }
+      }
+      if = {
+        limit = {
+          FROM.FROM = { state = 648 }
+          ROOT = {
+            OR = {
+              tag = CHI
+              is_in_faction_with = CHI
+            }
+          }
+          NOT = { has_global_flag = PRC_taiwan_war_lost }
+        }
+        CHI = {
+          clr_country_flag = CHI_kinmen_lost_to_prc
+        }
+      }
+
+      # 固若金湯：若共軍在戰時攻陷澎湖或臺灣任一地塊
+      if = {
+        limit = {
+          FROM.FROM = {
+            OR = {
+              state = 524
+              state = 1148
+              state = 1149
+              state = 1150
+              state = 1451
+            }
+          }
+          ROOT = {
+            OR = {
+              tag = PRC
+              is_ally_with = PRC
+            }
+          }
+        }
+        CHI = {
+          set_country_flag = CHI_prc_captured_taiwan_or_penghu_flag
+        }
+      }
+
        #BeiJing
+
+
       if = {
         limit = {
           FROM.FROM = { state = 608 }

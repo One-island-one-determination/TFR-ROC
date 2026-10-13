@@ -275,9 +275,62 @@ on_actions = {
     }
   }
 
+  on_monthly_CHI = {
+    effect = {
+      if = {
+        limit = {
+          NOT = { has_country_flag = CHI_intervened_burma_civil_war }
+          OR = {
+            has_war_with = BRM
+            AND = {
+              country_exists = PDF
+              PDF = {
+                has_volunteers_amount_from = { tag = CHI count > 0 }
+              }
+            }
+          }
+        }
+        set_country_flag = CHI_intervened_burma_civil_war
+      }
+      if = {
+        limit = {
+          NOT = { has_country_flag = CHI_prc_captured_taiwan_or_penghu_flag }
+          has_war_with = PRC
+          any_state = {
+            OR = {
+              state = 524
+              state = 1148
+              state = 1149
+              state = 1150
+              state = 1451
+            }
+            is_controlled_by = PRC
+          }
+        }
+        set_country_flag = CHI_prc_captured_taiwan_or_penghu_flag
+      }
+    }
+  }
 
 
-
-
+  on_capitulation = {
+    effect = {
+      if = {
+        limit = {
+          ROOT = { tag = BRM }
+          OR = {
+            CHI = { has_war_with = BRM }
+            AND = {
+              country_exists = PDF
+              PDF = {
+                has_volunteers_amount_from = { tag = CHI count > 0 }
+              }
+            }
+          }
+        }
+        CHI = { set_country_flag = CHI_intervened_burma_civil_war }
+      }
+    }
+  }
 
 }
