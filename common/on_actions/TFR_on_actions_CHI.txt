@@ -275,9 +275,44 @@ on_actions = {
     }
   }
 
+  on_monthly_CHI = {
+    effect = {
+      if = {
+        limit = {
+          NOT = { has_country_flag = CHI_intervened_burma_civil_war }
+          OR = {
+            has_war_with = BRM
+            AND = {
+              country_exists = PDF
+              PDF = {
+                has_volunteers_amount_from = { tag = CHI count > 0 }
+              }
+            }
+          }
+        }
+        set_country_flag = CHI_intervened_burma_civil_war
+      }
+    }
+  }
 
-
-
-
+  on_capitulation = {
+    effect = {
+      if = {
+        limit = {
+          ROOT = { tag = BRM }
+          OR = {
+            CHI = { has_war_with = BRM }
+            AND = {
+              country_exists = PDF
+              PDF = {
+                has_volunteers_amount_from = { tag = CHI count > 0 }
+              }
+            }
+          }
+        }
+        CHI = { set_country_flag = CHI_intervened_burma_civil_war }
+      }
+    }
+  }
 
 }
