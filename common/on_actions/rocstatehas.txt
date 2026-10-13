@@ -303,7 +303,32 @@ on_actions = {
         }
       }
 
+      # 固若金湯：若共軍在戰時攻陷澎湖或臺灣任一地塊
+      if = {
+        limit = {
+          FROM.FROM = {
+            OR = {
+              state = 524
+              state = 1148
+              state = 1149
+              state = 1150
+              state = 1451
+            }
+          }
+          ROOT = {
+            OR = {
+              tag = PRC
+              is_ally_with = PRC
+            }
+          }
+        }
+        CHI = {
+          set_country_flag = CHI_prc_captured_taiwan_or_penghu_flag
+        }
+      }
+
        #BeiJing
+
 
       if = {
         limit = {

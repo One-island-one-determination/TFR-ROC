@@ -366,3 +366,30 @@ Achievement_kinmen = {
 	}
 }
 
+Achievement_impregnable_defense = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 3
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_impregnable_defense_tt
+			CHI = {
+				has_country_flag = CHI_taiwan_war_end
+				NOT = { has_country_flag = CHI_prc_captured_taiwan_or_penghu_flag }
+				controls_state = 524
+				controls_state = 1148
+				controls_state = 1149
+				controls_state = 1150
+				controls_state = 1451
+			}
+		}
+	}
+}
+
+
