@@ -8,27 +8,27 @@ focus_tree = {
     # ==========================
     # Tree 1: Night of Crisis
     # ==========================
-    focus = {
-        id = CHI_night_of_crisis
-        icon = GFX_goal_unknown
-        x = 20
-        y = 0
-        cost = 3
-    }
-    focus = {
-        id = CHI_iron_fisted_national_defense
-        icon = GFX_goal_unknown
-        prerequisite = { focus = CHI_night_of_crisis }
-        mutually_exclusive = { focus = CHI_bringing_order_out_of_chaos }
-        x = 16
-        y = 1
-        cost = 3
-    }
+    # focus = {
+    #     id = CHI_night_of_crisis
+    #     icon = GFX_goal_unknown
+    #     x = 20
+    #     y = 0
+    #     cost = 3
+    # }
+    # focus = {
+    #     id = CHI_iron_fisted_national_defense
+    #     icon = GFX_goal_unknown
+    #     prerequisite = { focus = CHI_night_of_crisis }
+    #     mutually_exclusive = { focus = CHI_bringing_order_out_of_chaos }
+    #     x = 16
+    #     y = 1
+    #     cost = 3
+    # }
     focus = {
         id = CHI_bringing_order_out_of_chaos
         icon = GFX_focus_CHI_bringing_order_out_of_chaos
-        prerequisite = { focus = CHI_night_of_crisis }
-        mutually_exclusive = { focus = CHI_iron_fisted_national_defense }
+        # prerequisite = { focus = CHI_night_of_crisis }
+        # mutually_exclusive = { focus = CHI_iron_fisted_national_defense }
         x = 24
         y = 1
         cost = 3
@@ -139,7 +139,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_guarantee_prices
-        icon = GFX_goal_unknown
+        icon = GFX_focus_CHI_guarantee_prices
         prerequisite = { focus = CHI_take_over_livelihood_facilities }
         x = 30
         y = 4
@@ -147,7 +147,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_troops_guard_the_gates
-        icon = GFX_goal_unknown
+        icon = GFX_focus_CHI_troops_guard_the_gates
         prerequisite = { focus = CHI_our_common_cause }
         prerequisite = { focus = CHI_deal_with_opposing_officers }
         prerequisite = { focus = CHI_national_syllogism }
