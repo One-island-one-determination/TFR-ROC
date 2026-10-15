@@ -4763,8 +4763,8 @@ ccw_core_zangsouth = {
   }
   remove_effect = {
     434 = { add_core_of = ROOT remove_all_other_cores = yes }
+    { hidden_effect = 434 = { add_core_of = TIB } }
   }
-  { hidden_effect = 434 = { add_core_of = TIB } }
   ai_will_do = {
     base = 100
   }
@@ -4788,8 +4788,8 @@ ccw_core_zangsouth_focus1 = {
   }
   remove_effect = {
     434 = { add_core_of = ROOT remove_all_other_cores = yes }
+    { hidden_effect = 434 = { add_core_of = TIB } }
   }
-  { hidden_effect = 434 = { add_core_of = TIB } }
   ai_will_do = {
     base = 100
   }
@@ -4813,8 +4813,8 @@ ccw_core_zangsouth_focus2 = {
   }
   remove_effect = {
     434 = { add_core_of = ROOT remove_all_other_cores = yes }
+    { hidden_effect = 434 = { add_core_of = TIB } }
   }
-  { hidden_effect = 434 = { add_core_of = TIB } }
   ai_will_do = {
     base = 100
   }
@@ -6035,7 +6035,6 @@ ccw_core_xinjiang = {
     }
   }
   remove_effect = {
-    788 = { remove_claim_by = SIK }
     1158 = { add_core_of = ROOT remove_all_other_cores = yes }
     1160 = { add_core_of = ROOT remove_all_other_cores = yes }
     1161 = { add_core_of = ROOT remove_all_other_cores = yes }
