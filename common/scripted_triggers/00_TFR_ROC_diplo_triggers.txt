@@ -1,0 +1,13 @@
+is_diplomatic_action_valid_embargo = {
+	custom_trigger_tooltip = {
+		tooltip = cannot_embargo_roc_during_civil_war
+		NOT = {
+			AND = {
+				tag = CHI
+				NOT = { FROM = { tag = PRC } }
+				NOT = { FROM = { tag = PRK } }
+				NOT = { has_war_with = FROM }
+			}
+		}
+	}
+}
