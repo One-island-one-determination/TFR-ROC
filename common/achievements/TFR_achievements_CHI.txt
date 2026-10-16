@@ -1,4 +1,4 @@
-﻿unique_id = the_fire_rises_roc
+unique_id = the_fire_rises_roc
 
 Achievement_changing_house = {
 	possible = {
@@ -472,6 +472,109 @@ Achievement_fuck_you_kmt = {
 						state = 1390
 						state = 1391
 					}
+				}
+			}
+		}
+	}
+}
+
+Achievement_super_democracy = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 3
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_super_democracy_tt
+			CHI = {
+				has_idea = mass_consumerism
+				OR = {
+					has_idea = high_trade
+					has_idea = export_focus
+				}
+				has_idea = higher_welfare
+				has_idea = higher_safety
+				OR = {
+					has_idea = low_conscription
+					has_idea = limited_conscription
+				}
+				has_idea = low_police
+				OR = {
+					has_global_flag = PRC_japanese_gaw_victory_global
+					has_completed_focus = CHI_republic_achieved
+					has_global_flag = PRC_china_collapse
+					PRC = { has_capitulated = yes }
+				}
+			}
+		}
+	}
+}
+
+Achievement_powered_by_reality = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 0
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_powered_by_reality_tt
+			CHI = {
+				OR = {
+					has_country_flag = CHI_KMT_in_power_flag
+					has_government = conservative
+				}
+				has_completed_focus = CHI_Life_extension_of_nuclear_power_unit_three
+				NOT = {
+					has_war_with = PRC
+					has_global_flag = PRC_ongoing_taiwan_war
+					has_country_flag = CHI_taiwan_war_end
+				}
+				power_plant < 1
+				energy_farm < 1
+				coal > 0
+			}
+		}
+	}
+}
+
+Achievement_you_are_so_weak = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		has_start_date < 2020.01.02
+		difficulty > 3
+		is_ai = no
+		tag = CHI
+	}
+	
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = Achievement_you_are_so_weak_tt
+			CHI = {
+				OR = {
+					has_global_flag = PRC_japanese_gaw_victory_global
+					has_completed_focus = CHI_republic_achieved
+					has_global_flag = PRC_china_collapse
+					PRC = { has_capitulated = yes }
+				}
+			}
+			PRC = {
+				OR = {
+					has_country_leader = {
+						character = PRC_li_zuocheng
+					}
+					has_completed_focus = PRC_party_controlled_by_the_pla
+					has_completed_focus = PRC_li_zuocheng_thought_focus
 				}
 			}
 		}
