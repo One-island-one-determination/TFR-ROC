@@ -458,6 +458,21 @@ defined_text = {
 		localization_key = TFR_PEACE_POPUP_FLAVOR_BLA
 	}
 
+	####################### OIOD EDITS STARTS HERE #######################
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = CHI
+			}
+			OR = {
+				has_global_flag = PRC_total_collapse
+				PRC = { has_country_flag = PRC_total_collapse }
+				NOT = { event_target:winning_country = { tag = PRC } }
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_CHI_LOSE
+	}
+	####################### OIOD EDITS ENDS HERE #######################
 	text = {
 		trigger = {
 			event_target:winning_country = {
@@ -646,48 +661,262 @@ defined_text = {
 		localization_key = TFR_PEACE_POPUP_FLAVOR_ZZZ_GER
 	}
 	####################### OIOD EDITS STARTS HERE #######################
-    text = {
-        trigger = {
-            event_target:winning_country = {
-                tag = CHI
-				has_cosmetic_tag = CHI_UNITED
-            }
-            event_target:losing_country = {
-                tag = SIC
-                has_cosmetic_tag = SIC_long_march
-            }
-			PRC = {
-				has_country_flag = PRC_loji_overlord_flag
-			}
-        }
-        localization_key = TFR_PEACE_POPUP_FLAVOR_CHI_SIC_LONG_MARCH
-    }
-	
+	# PRC Splinters & Defeat
 	text = {
-        trigger = {
-            event_target:winning_country = {
-                tag = CHI
-				has_cosmetic_tag = CHI_UNITED
-            }
-            event_target:losing_country = {
-                tag = SIC
-                has_cosmetic_tag = SIC_long_march
-            }
-        }
-        localization_key = TFR_PEACE_POPUP_FLAVOR_CHI_SIC_LONG_MARCH_LOJI
-    }
-
-    text = {
-        trigger = {
-            event_target:winning_country = {
-                tag = CHI
-				has_cosmetic_tag = CHI_UNITED
-            }
-            event_target:losing_country = {
-                tag = PRC
-            }
-        }
-        localization_key = TFR_PEACE_POPUP_FLAVOR_CHI_PRC
-	####################### OIOD EDITS ENDS HERE #######################
+		trigger = {
+			event_target:losing_country = { tag = PRC }
+			event_target:losing_country = {
+				OR = {
+					has_country_flag = PRC_post_gaw_lost_nick_land_won
+					has_cosmetic_tag = PRC_nick_land_cosmetic
+					has_country_leader = { character = PRC_NL_char }
+				}
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PRC_NICK_LAND
 	}
+	text = {
+		trigger = {
+			event_target:losing_country = { tag = PRC }
+			event_target:losing_country = {
+				OR = {
+					has_country_flag = PRC_post_gaw_lost_huang_ming_won
+					has_country_leader = { character = PRC_Huang_Ming }
+				}
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PRC_HUANG_MING
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = { original_tag = CHI }
+			event_target:losing_country = { tag = PRC }
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_CHI_PRC
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = { tag = PRC }
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PRC_HUANG_MING
+	}
+
+	# Sichuan / Loji CPUPF
+	text = {
+		trigger = {
+			event_target:losing_country = { tag = SIC }
+			event_target:losing_country = {
+				OR = {
+					has_cosmetic_tag = SIC_long_march
+					has_country_leader = { character = PRC_long_march }
+				}
+			}
+			OR = {
+				PRC = { has_country_flag = PRC_loji_overlord_flag }
+				event_target:losing_country = { has_country_flag = PRC_loji_overlord_flag }
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SIC_OVERLORD
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = { tag = SIC }
+			event_target:losing_country = {
+				OR = {
+					has_cosmetic_tag = SIC_long_march
+					has_country_leader = { character = PRC_long_march }
+				}
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SIC_SERVANT
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = { tag = SIC }
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SIC
+	}
+
+	# PDTO Manchurian Occupation
+	text = {
+		trigger = { event_target:losing_country = { tag = PD1 } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PDTO_MANCHURIA
+	}
+
+	# Frontier & Minorities
+	text = {
+		trigger = { event_target:losing_country = { tag = SIK } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SIK
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = TAR } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_TAR
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = TIB } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_TIB
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = XIN } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_XIN
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = INM } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_INM
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = IMA } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_IMA
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = MON } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_MON
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = NIS } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_NIS
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = NK2 } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_NK2
+	}
+
+	# PLA Theaters & Armies
+	text = {
+		trigger = { event_target:losing_country = { tag = CNT } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_CNT
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = NTT } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_NTT
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = ESF } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_ESF
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = A74 } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_A74
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = A75 } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_A75
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = A77 } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_A77
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = A78 } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_A78
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = A81 } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_A81
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = A83 } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_A83
+	}
+
+	# Provincial Governments & Cliques
+	text = {
+		trigger = { event_target:losing_country = { tag = CHF } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_CHF
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = GAN } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_GAN
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = GXC } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_GXC
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = YUN } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_YUN
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = JIA } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_JIA
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = HNJ } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_HNJ
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = UYY } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_UYY
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = XSM } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_XSM
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = BDG } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_BDG
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = MST } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_MST
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = NMA } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_NMA
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = APF } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_APF
+	}
+
+	# Political & Religious Movements
+	text = {
+		trigger = { event_target:losing_country = { tag = SHA } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_SHA
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = NCM } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_NCM
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = NLM } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_NLM
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = NSF } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_NSF
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = RGT } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_RGT
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = PST } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_PST
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = TND } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_TND
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = MSC } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_MSC
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = CAG } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_CAG
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = FAL } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_FAL
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = XFT } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_XFT
+	}
+	text = {
+		trigger = { event_target:losing_country = { tag = XIE } }
+		localization_key = TFR_PEACE_POPUP_FLAVOR_XIE
+	}
+	####################### OIOD EDITS ENDS HERE #######################
 }
