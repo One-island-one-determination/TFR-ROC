@@ -678,25 +678,6 @@ defined_text = {
 	text = {
 		trigger = {
 			event_target:losing_country = { tag = PRC }
-			event_target:losing_country = {
-				OR = {
-					has_country_flag = PRC_post_gaw_lost_huang_ming_won
-					has_country_leader = { character = PRC_Huang_Ming }
-				}
-			}
-		}
-		localization_key = TFR_PEACE_POPUP_FLAVOR_PRC_HUANG_MING
-	}
-	text = {
-		trigger = {
-			event_target:winning_country = { original_tag = CHI }
-			event_target:losing_country = { tag = PRC }
-		}
-		localization_key = TFR_PEACE_POPUP_FLAVOR_CHI_PRC
-	}
-	text = {
-		trigger = {
-			event_target:losing_country = { tag = PRC }
 		}
 		localization_key = TFR_PEACE_POPUP_FLAVOR_PRC_HUANG_MING
 	}
