@@ -4873,7 +4873,7 @@ focus_tree = {
         relative_position_id = CHI_american_fighters_reverse_enginnering
     }
     #}
-    #HKY大東亞(2028){
+    #KMT大東亞(2028){
     focus = {
         id = CHI_transition_2028
         x = 29
@@ -4888,11 +4888,15 @@ focus_tree = {
             GFX_focus_CHI_dont_wait_dont_rely = {
                 has_country_flag = CWA_2024_flag
             }
+            GFX_focus_CHI_the_people_are_watching = {
+                has_country_flag = JSK_2024_flag
+            }
         }
         allow_branch = {
             OR = {
                 has_country_flag = HKY_2028_flag
                 has_country_flag = CWA_2028_flag
+                has_country_flag = JSK_2028_flag
             }
         }
         completion_reward = {

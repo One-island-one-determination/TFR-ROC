@@ -8080,7 +8080,7 @@ spriteTypes = {
     }
     legacy_lazy_load = no
   }
-##____P3HKY
+##____P3KMT
   spriteType = {
     name = "GFX_focus_CHI_duty_of_the_helmsman_shine"
     texturefile = "gfx/interface/goals/CHI/CHI_duty_of_the_helmsman.png"
@@ -8099,6 +8099,66 @@ spriteTypes = {
     }
     animation = {
       animationmaskfile = "gfx/interface/goals/CHI/CHI_duty_of_the_helmsman.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = 90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+  }
+  spriteType = {
+    name = "GFX_focus_CHI_dont_wait_dont_rely_shine"
+    texturefile = "gfx/interface/goals/CHI/CHI_dont_wait_dont_rely.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+      animationmaskfile = "gfx/interface/goals/CHI/CHI_dont_wait_dont_rely.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = -90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    animation = {
+      animationmaskfile = "gfx/interface/goals/CHI/CHI_dont_wait_dont_rely.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = 90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+  }
+  spriteType = {
+    name = "GFX_focus_CHI_the_people_are_watching"
+    texturefile = "gfx/interface/goals/CHI/CHI_the_people_are_watching.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+      animationmaskfile = "gfx/interface/goals/CHI/CHI_the_people_are_watching.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = -90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    animation = {
+      animationmaskfile = "gfx/interface/goals/CHI/CHI_the_people_are_watching.png"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
       animationrotation = 90.0
       animationlooping = no
