@@ -1049,8 +1049,8 @@
     focus = {
         id = CHI_remember_lessons_of_taiwan_strait_war
         icon = GFX_focus_CHI_remember_lessons_of_taiwan_strait_war
-        x = 22
-        y = 10
+        x = 49
+        y = 0
         cost = 3
         completion_reward = {
 
@@ -1060,8 +1060,8 @@
         id = CHI_guardian_of_the_sky
         icon = GFX_focus_CHI_guardian_of_the_sky
         prerequisite = { focus = CHI_remember_lessons_of_taiwan_strait_war }
-        x = 13
-        y = 11
+        x = 40
+        y = 1
         cost = 3
         completion_reward = {
 
@@ -1071,8 +1071,8 @@
         id = CHI_what_we_fight_for
         icon = GFX_focus_CHI_what_we_fight_for
         prerequisite = { focus = CHI_remember_lessons_of_taiwan_strait_war }
-        x = 17
-        y = 11
+        x = 44
+        y = 1
         cost = 3
         completion_reward = {
 
@@ -1082,8 +1082,8 @@
         id = CHI_replace_individual_combat_equipment
         icon = GFX_focus_CHI_replace_individual_combat_equipment
         prerequisite = { focus = CHI_remember_lessons_of_taiwan_strait_war }
-        x = 22
-        y = 11
+        x = 49
+        y = 1
         cost = 3
         completion_reward = {
 
@@ -1094,8 +1094,8 @@
         icon = GFX_focus_CHI_csist_rd_projects
         prerequisite = { focus = CHI_remember_lessons_of_taiwan_strait_war }
         mutually_exclusive = { focus = CHI_pdto_unified_design }
-        x = 25
-        y = 11
+        x = 52
+        y = 1
         cost = 3
         completion_reward = {
 
@@ -1105,8 +1105,8 @@
         id = CHI_control_south_china_sea
         icon = GFX_focus_CHI_control_south_china_sea
         prerequisite = { focus = CHI_remember_lessons_of_taiwan_strait_war }
-        x = 30
-        y = 11
+        x = 57
+        y = 1
         cost = 3
         completion_reward = {
 
@@ -1116,8 +1116,8 @@
         id = CHI_reverse_engineer_f15
         icon = GFX_focus_CHI_reverse_engineer_f15
         prerequisite = { focus = CHI_guardian_of_the_sky }
-        x = 11
-        y = 12
+        x = 38
+        y = 2
         cost = 3
         completion_reward = {
 
@@ -1127,8 +1127,8 @@
         id = CHI_contact_mitsubishi_enterprise
         icon = GFX_focus_CHI_contact_mitsubishi_enterprise
         prerequisite = { focus = CHI_guardian_of_the_sky }
-        x = 15
-        y = 12
+        x = 42
+        y = 2
         cost = 3
         completion_reward = {
 
@@ -1138,8 +1138,8 @@
         id = CHI_expand_reserves
         icon = GFX_focus_CHI_expand_reserves
         prerequisite = { focus = CHI_what_we_fight_for }
-        x = 17
-        y = 12
+        x = 44
+        y = 2
         cost = 3
         completion_reward = {
 
@@ -1149,8 +1149,8 @@
         id = CHI_localized_whampoa_spirit
         icon = GFX_focus_CHI_localized_whampoa_spirit
         prerequisite = { focus = CHI_what_we_fight_for }
-        x = 19
-        y = 12
+        x = 46
+        y = 2
         cost = 3
         completion_reward = {
 
@@ -1160,8 +1160,8 @@
         id = CHI_pierce_enemy_bulletproof_vests
         icon = GFX_focus_CHI_pierce_enemy_bulletproof_vests
         prerequisite = { focus = CHI_replace_individual_combat_equipment }
-        x = 21
-        y = 12
+        x = 48
+        y = 2
         cost = 3
         completion_reward = {
 
@@ -1171,8 +1171,8 @@
         id = CHI_increase_survivability_rate
         icon = GFX_focus_CHI_increase_survivability_rate
         prerequisite = { focus = CHI_pierce_enemy_bulletproof_vests }
-        x = 20
-        y = 13
+        x = 47
+        y = 3
         cost = 3
         completion_reward = {
 
@@ -1183,8 +1183,8 @@
         icon = GFX_focus_CHI_focus_human_resources
         prerequisite = { focus = CHI_localized_whampoa_spirit }
         prerequisite = { focus = CHI_increase_survivability_rate focus = CHI_expand_active_service_benefits}
-        x = 19
-        y = 14
+        x = 46
+        y = 4
         cost = 3
         completion_reward = {
 
@@ -1194,8 +1194,8 @@
         id = CHI_ammunition_self_sufficiency
         icon = GFX_focus_CHI_ammunition_self_sufficiency
         prerequisite = { focus = CHI_replace_individual_combat_equipment }
-        x = 23
-        y = 12
+        x = 50
+        y = 2
         cost = 3
         completion_reward = {
 
@@ -1205,8 +1205,8 @@
         id = CHI_pdto_rd_system
         icon = GFX_focus_CHI_pdto_rd_system
         prerequisite = { focus = CHI_csist_rd_projects focus = CHI_pdto_unified_design }
-        x = 26
-        y = 12
+        x = 53
+        y = 2
         cost = 3
         completion_reward = {
 
@@ -1216,8 +1216,8 @@
         id = CHI_domestic_ship_building
         icon = GFX_focus_CHI_domestic_ship_building
         prerequisite = { focus = CHI_control_south_china_sea }
-        x = 29
-        y = 12
+        x = 56
+        y = 2
         cost = 3
         completion_reward = {
 
@@ -1227,8 +1227,8 @@
         id = CHI_american_tech
         icon = GFX_focus_CHI_american_tech
         prerequisite = { focus = CHI_reverse_engineer_f15 }
-        x = 12
-        y = 13
+        x = 39
+        y = 3
         cost = 3
         completion_reward = {
 
@@ -1238,8 +1238,8 @@
         id = CHI_japan_taiwan_australia_air_force
         icon = GFX_focus_CHI_japan_taiwan_australia_air_force
         prerequisite = { focus = CHI_contact_mitsubishi_enterprise }
-        x = 14
-        y = 13
+        x = 41
+        y = 3
         cost = 3
         completion_reward = {
 
@@ -1250,8 +1250,8 @@
         icon = GFX_focus_CHI_shield_of_taiwan
         prerequisite = { focus = CHI_japan_taiwan_australia_air_force }
         prerequisite = { focus = CHI_american_tech }
-        x = 13
-        y = 14
+        x = 40
+        y = 4
         cost = 3
         completion_reward = {
 
@@ -1262,8 +1262,8 @@
         icon = GFX_focus_CHI_increase_combat_bonus
         prerequisite = { focus = CHI_expand_reserves }
         mutually_exclusive = { focus = CHI_expand_active_service_benefits}
-        x = 16
-        y = 13
+        x = 43
+        y = 3
         cost = 3
         completion_reward = {
 
@@ -1274,8 +1274,8 @@
         icon = GFX_focus_CHI_expand_active_service_benefits
         prerequisite = { focus = CHI_expand_reserves}
         mutually_exclusive = { focus = CHI_increase_combat_bonus}
-        x = 18
-        y = 13
+        x = 45
+        y = 3
         cost = 3
         completion_reward = {
 
@@ -1286,8 +1286,8 @@
         icon = GFX_focus_CHI_truth_within_shooting_radius
         prerequisite = { focus = CHI_pierce_enemy_bulletproof_vests }
         prerequisite = { focus = CHI_ammunition_self_sufficiency }
-        x = 22
-        y = 13
+        x = 49
+        y = 3
         cost = 3
         completion_reward = {
 
@@ -1299,8 +1299,8 @@
         prerequisite = { focus = CHI_ammunition_self_sufficiency }
         prerequisite = { focus = CHI_trap_them_in_port }
         prerequisite = { focus = CHI_reference_us_tanks }
-        x = 23
-        y = 14
+        x = 50
+        y = 4
         cost = 3
         completion_reward = {
 
@@ -1310,8 +1310,8 @@
         id = CHI_reference_us_tanks
         icon = GFX_focus_CHI_reference_us_tanks
         prerequisite = { focus = CHI_pdto_rd_system }
-        x = 25
-        y = 13
+        x = 52
+        y = 3
         cost = 3
         completion_reward = {
 
@@ -1321,8 +1321,8 @@
         id = CHI_trap_them_in_port
         icon = GFX_focus_CHI_trap_them_in_port
         prerequisite = { focus = CHI_domestic_ship_building }
-        x = 28
-        y = 13
+        x = 55
+        y = 3
         cost = 3
         completion_reward = {
 
@@ -1332,8 +1332,8 @@
         id = CHI_military_loves_people
         icon = GFX_focus_CHI_military_loves_people
         prerequisite = { focus = CHI_increase_combat_bonus focus = CHI_expand_active_service_benefits}
-        x = 17
-        y = 14
+        x = 44
+        y = 4
         cost = 3
         completion_reward = {
 
@@ -1343,8 +1343,8 @@
         id = CHI_popularize_drones
         icon = GFX_focus_CHI_popularize_drones
         prerequisite = { focus = CHI_guardian_of_the_sky }
-        x = 13
-        y = 12
+        x = 40
+        y = 2
         cost = 3
         completion_reward = {
 
@@ -1355,8 +1355,8 @@
         icon = GFX_focus_CHI_pdto_unified_design
         prerequisite = { focus = CHI_remember_lessons_of_taiwan_strait_war }
         mutually_exclusive = { focus = CHI_csist_rd_projects }
-        x = 27
-        y = 11
+        x = 54
+        y = 1
         cost = 3
         completion_reward = {
 
@@ -1368,8 +1368,8 @@
         prerequisite = { focus = CHI_shield_of_taiwan }
         prerequisite = { focus = CHI_military_loves_people }
         prerequisite = { focus = CHI_rejuvenating_kaohsiung_heavy_industries }
-        x = 21
-        y = 15
+        x = 48
+        y = 5
         cost = 3
         completion_reward = {
 
