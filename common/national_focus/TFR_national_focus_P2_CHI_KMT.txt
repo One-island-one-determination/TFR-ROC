@@ -4986,9 +4986,10 @@ focus_tree = {
         }
         relative_position_id = CHI_transition_2028
     }
+    # 左翼：政戰與敵後滲透
     focus = {
         id = CHI_focus_on_polwar_core
-        x = 0
+        x = -2
         y = 1
         cost = 3
         icon = GFX_focus_CHI_focus_on_polwar_core
@@ -5030,8 +5031,28 @@ focus_tree = {
         relative_position_id = CHI_focus_on_polwar_core
     }
     focus = {
+        id = CHI_mainland_peoples_liaison
+        x = -1
+        y = 1
+        cost = 3
+        icon = GFX_focus_CHI_mainland_peoples_liaison
+        continue_if_invalid = no
+        cancel_if_invalid = yes
+        prerequisite = {
+            focus = CHI_external_political_warfare_bureau
+        }
+        completion_reward = {
+            PRC = {
+                add_stability = -0.05
+                add_war_support = -0.1
+            }
+            add_ideas = CHI_mainland_peoples_liaison_idea
+        }
+        relative_position_id = CHI_external_political_warfare_bureau
+    }
+    focus = {
         id = CHI_central_political_warfare_committee
-        x = 0
+        x = 1
         y = 1
         cost = 3
         icon = GFX_focus_CHI_central_political_warfare_committee
@@ -5061,26 +5082,7 @@ focus_tree = {
         }
         relative_position_id = CHI_external_political_warfare_bureau
     }
-    focus = {
-        id = CHI_mainland_peoples_liaison
-        x = -2
-        y = 1
-        cost = 3
-        icon = GFX_focus_CHI_mainland_peoples_liaison
-        continue_if_invalid = no
-        cancel_if_invalid = yes
-        prerequisite = {
-            focus = CHI_external_political_warfare_bureau
-        }
-        completion_reward = {
-            PRC = {
-                add_stability = -0.05
-                add_war_support = -0.1
-            }
-            add_ideas = CHI_mainland_peoples_liaison_idea
-        }
-        relative_position_id = CHI_external_political_warfare_bureau
-    }
+    # 右翼：社會僑民與盟防
     focus = {
         id = CHI_welcome_home_children
         x = 2
@@ -5110,15 +5112,12 @@ focus_tree = {
     }
     focus = {
         id = CHI_expand_the_defense_line
-        x = 2
+        x = 0
         y = 1
         cost = 3
         icon = GFX_focus_CHI_expand_the_defense_line
         continue_if_invalid = no
         cancel_if_invalid = yes
-        prerequisite = {
-            focus = CHI_central_political_warfare_committee
-        }
         prerequisite = {
             focus = CHI_welcome_home_children
         }
@@ -5132,18 +5131,18 @@ focus_tree = {
                 tooltip = army_non_core_defence_factor_tooltip
             }
         }
-        relative_position_id = CHI_central_political_warfare_committee
+        relative_position_id = CHI_welcome_home_children
     }
     focus = {
         id = CHI_the_giant_returns
-        x = 0
+        x = -1
         y = 1
         cost = 3
         icon = GFX_focus_CHI_the_giant_returns
         continue_if_invalid = no
         cancel_if_invalid = yes
         prerequisite = {
-            focus = CHI_central_political_warfare_committee
+            focus = CHI_expand_the_defense_line
         }
         completion_reward = {
             custom_effect_tooltip = {
@@ -5155,11 +5154,11 @@ focus_tree = {
                 tooltip = conscription_factor_tooltip
             }
         }
-        relative_position_id = CHI_central_political_warfare_committee
+        relative_position_id = CHI_expand_the_defense_line
     }
     focus = {
         id = CHI_pacific_military_exercise
-        x = 0
+        x = 1
         y = 1
         cost = 3
         icon = GFX_focus_CHI_pacific_military_exercise
@@ -5178,15 +5177,17 @@ focus_tree = {
         }
         relative_position_id = CHI_expand_the_defense_line
     }
+    # 匯聚中心：地下集結點
     focus = {
         id = CHI_underground_assenmly_point
         x = 0
-        y = 1
+        y = 4
         cost = 3
         icon = GFX_focus_CHI_underground_assenmly_point
         continue_if_invalid = no
         cancel_if_invalid = yes
         prerequisite = {
+            focus = CHI_central_political_warfare_committee
             focus = CHI_the_giant_returns
         }
         completion_reward = {
@@ -5195,7 +5196,7 @@ focus_tree = {
             }
             custom_effect_tooltip = CHI_underground_assenmly_point_tooltip
         }
-        relative_position_id = CHI_the_giant_returns
+        relative_position_id = CHI_march_into_the_waves
     }
     focus = {
         id = CHI_thus_spoke_thucydides
@@ -5235,14 +5236,14 @@ focus_tree = {
     }
     focus = {
         id = CHI_eastern_terrain_mapping
-        x = -3
+        x = 1
         y = 1
         cost = 3
         icon = GFX_focus_CHI_eastern_terrain_mapping
         continue_if_invalid = no
         cancel_if_invalid = yes
         prerequisite = {
-            focus = CHI_thus_spoke_thucydides
+            focus = CHI_northern_joint_command
         }
         completion_reward = {
             custom_effect_tooltip = {
@@ -5433,7 +5434,7 @@ focus_tree = {
         available = {
             has_completed_focus = CHI_northern_joint_command
         }
-        relative_position_id = CHI_thus_spoke_thucydides
+        relative_position_id = CHI_northern_joint_command
     }
     focus = {
         id = CHI_coverage_priority_tactics
@@ -5485,7 +5486,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_northern_joint_command
-        x = -1
+        x = -3
         y = 1
         cost = 3
         icon = GFX_focus_CHI_northern_joint_command
@@ -5645,7 +5646,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_the_hunter
-        x = 0
+        x = -1
         y = 1
         cost = 3
         icon = GFX_focus_CHI_the_hunter
@@ -5723,7 +5724,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_asia_pacific_armament
-        x = 4
+        x = 3
         y = 1
         cost = 3
         icon = GFX_focus_CHI_asia_pacific_armament
@@ -5831,7 +5832,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_changbai_foothills
-        x = -3
+        x = -2
         y = 1
         cost = 3
         icon = GFX_focus_CHI_changbai_foothills
@@ -6247,7 +6248,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_waves_of_nujiang
-        x = 1
+        x = 2
         y = 1
         cost = 3
         icon = GFX_focus_CHI_waves_of_nujiang
@@ -6364,7 +6365,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_storms_of_south_asia
-        x = -1
+        x = 0
         y = 1
         cost = 3
         icon = GFX_focus_CHI_storms_of_south_asia
@@ -6503,7 +6504,7 @@ focus_tree = {
     }
     focus = {
         id = CHI_winds_and_rains_of_min_and_yue
-        x = 3
+        x = 4
         y = 1
         cost = 3
         icon = GFX_focus_CHI_winds_and_rains_of_min_and_yue
