@@ -1,78 +1,216 @@
-CHI_garrison_template_1 = {
-	roles = {
-		garrison
+garrison_CHI = {
+	available_for = {
+		CHI
 	}
-	match_to_count = 0.5
-	target_width = 20
+	role = garrison
+
 	upgrade_prio = {
-		soft_attack = 10
-		defense = 20
-		organization = 15
-	}
-	infantry = {
-		target_width = 20
-		width_weight = 2
-		upgrade_prio = {
-			defense = 10
+		factor = 30
+		modifier = {
+			factor = 20
 		}
 	}
-	artillery_brigade = {
-		target_width = 0
-		width_weight = 0.5
-	}
-	engineer = {
-		target_width = 0
-		width_weight = 0
+
+	garrison_default_CHI = {
 		upgrade_prio = {
-			defense = 15
+			factor = 30
 		}
-	}
-	artillery = {
-		target_width = 0
-		width_weight = 0
-		upgrade_prio = {
-			soft_attack = 10
-		}
-	}
-	anti_air = {
-		target_width = 0
-		width_weight = 0
-		upgrade_prio = {
-			air_attack = 15
+
+		target_template = {
+			support = {
+				engineer = 1
+				anti_air = 1
+				artillery = 1
+			}
+
+			regiments = {
+				infantry = 5
+			}
 		}
 	}
 }
 
-CHI_marine_template_1 = {
-	roles = {
-		marines
+infantry_CHI = {
+	available_for = {
+		CHI
 	}
-	match_to_count = 0.5
-	target_width = 25
+	role = infantry
+
 	upgrade_prio = {
-		soft_attack = 15
-		breakthrough = 10
-		organization = 10
-	}
-	marine = {
-		target_width = 25
-		width_weight = 2
-		upgrade_prio = {
-			soft_attack = 10
+		factor = 25
+		modifier = {
+			factor = 40
 		}
 	}
-	engineer = {
-		target_width = 0
-		width_weight = 0
+
+	infantry_early_CHI = {
 		upgrade_prio = {
-			breakthrough = 10
+			factor = 25
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				anti_air = 1
+				recon = 1
+				artillery = 1
+			}
+
+			regiments = {
+				infantry = 5
+				artillery_brigade = 1
+			}
 		}
 	}
-	artillery = {
-		target_width = 0
-		width_weight = 0
+
+	infantry_late_CHI = {
 		upgrade_prio = {
-			soft_attack = 15
+			factor = 10
+			modifier = {
+				factor = 150
+				OR = {
+					has_country_flag = CHI_our_final_fight_flag
+					has_global_flag = GAW_soon
+					has_global_flag = pan_asian_war_ongoing
+				}
+			}
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				signal_company = 1
+				logistics_company = 1
+				spaa_company = 1
+				mbt_company = 1
+			}
+
+			regiments = {
+				mechanized = 6
+				modern_sp_artillery_brigade = 3
+			}
+		}
+	}
+}
+
+armor_CHI = {
+	available_for = {
+		CHI
+	}
+	role = armor
+
+	upgrade_prio = {
+		factor = 20
+		modifier = {
+			factor = 20
+		}
+	}
+
+	armor_early_CHI = {
+		upgrade_prio = {
+			factor = 20
+		}
+
+		target_template = {
+			support = {
+				light_tank_recon = 1
+				engineer = 1
+				anti_air = 1
+			}
+
+			regiments = {
+				modern_armor = 2
+				mechanized = 2
+				modern_sp_artillery_brigade = 1
+			}
+		}
+	}
+
+	armor_late_CHI = {
+		upgrade_prio = {
+			factor = 10
+			modifier = {
+				factor = 150
+				OR = {
+					has_country_flag = CHI_our_final_fight_flag
+					has_global_flag = GAW_soon
+					has_global_flag = pan_asian_war_ongoing
+				}
+			}
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				signal_company = 1
+				logistics_company = 1
+				spaa_company = 1
+				mbt_company = 1
+			}
+
+			regiments = {
+				modern_armor = 5
+				mechanized = 4
+				modern_sp_artillery_brigade = 2
+			}
+		}
+	}
+}
+
+marines_CHI = {
+	available_for = {
+		CHI
+	}
+	role = marines
+
+	upgrade_prio = {
+		factor = 15
+	}
+
+	marine_early_CHI = {
+		upgrade_prio = {
+			factor = 15
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				anti_air = 1
+				artillery = 1
+			}
+
+			regiments = {
+				marine = 6
+			}
+		}
+	}
+
+	marine_late_CHI = {
+		upgrade_prio = {
+			factor = 10
+			modifier = {
+				factor = 150
+				OR = {
+					has_country_flag = CHI_our_final_fight_flag
+					has_global_flag = GAW_soon
+					has_global_flag = pan_asian_war_ongoing
+				}
+			}
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				signal_company = 1
+				logistics_company = 1
+				spaa_company = 1
+				mbt_company = 1
+			}
+
+			regiments = {
+				marine = 8
+				modern_sp_artillery_brigade = 3
+			}
 		}
 	}
 }
