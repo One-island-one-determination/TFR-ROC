@@ -1587,4 +1587,87 @@ characters = {
 			}
 		}
 	}
+	CHI_lu_wen_yuan_char = {
+		# 呂文元
+		name = CHI_lu_wen_yuan_char
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/generals/CHI_lu_wen_yuan.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = -1
+			traits = {
+				fortress_buster
+				organizer
+			}
+		}
+	}
+	CHI_sun_ming_hung_char = {
+		# 孫銘鴻
+		name = CHI_sun_ming_hung_char
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/generals/CHI_sun_ming_hung.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			traits = {
+				infantry_officer
+				trickster
+			}
+		}
+	}
+	CHI_tsai_wen_hao_char = {
+		# 蔡文豪
+		name = CHI_tsai_wen_hao_char
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/generals/CHI_tsai_wen_hao.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			traits = {
+				infantry_officer
+				fortress_buster
+			}
+		}
+	}
+	CHI_hu_han_wen_char = {
+		# 胡瀚文
+		name = CHI_hu_han_wen_char
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/generals/CHI_hu_han_wen.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			traits = {
+				infantry_officer
+			}
+		}
+	}
 }
