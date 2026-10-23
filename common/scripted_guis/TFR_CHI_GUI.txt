@@ -54,6 +54,33 @@ scripted_gui = {
     visible = {
       tag = CHI
     }
+    dynamic_lists = {
+      parliament_diagram = {
+        array = CHI_parliament_x
+        change_scope = no
+        entry_container = CHI_parliament_seat
+        index = seat_idx
+      }
+    }
+    properties = {
+      parliament_dot_icon = {
+        x = CHI_parliament_x^seat_idx
+        y = CHI_parliament_y^seat_idx
+        frame = CHI_parliament_factions^seat_idx
+      }
+      CHI_parliament_progbar = {
+        frame = CHI_governing_progress
+      }
+      CHI_orb_1_3 = {
+        frame = CHI_threshold_1_3_frame
+      }
+      CHI_orb_1_2 = {
+        frame = CHI_threshold_1_2_frame
+      }
+      CHI_orb_2_3 = {
+        frame = CHI_threshold_2_3_frame
+      }
+    }
     effects = {
       Green_frame_click = {
         if = {

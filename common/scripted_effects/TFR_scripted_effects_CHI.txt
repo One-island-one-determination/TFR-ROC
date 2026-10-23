@@ -283,8 +283,8 @@ CHI_Vote_counting_Legislator = {
   round_variable = CHI_Blue_Legislator
 
   set_variable = { CHI_Middle_Legislator = CHI_all_Legislator }
-  subtract_from_variable = { CHI_Middle_Legislator = CHI_Blue_Legislator}
-  subtract_from_variable = { CHI_Middle_Legislator = CHI_Green_Legislator}
+  subtract_from_variable = { CHI_Middle_Legislator = CHI_Blue_Legislator }
+  subtract_from_variable = { CHI_Middle_Legislator = CHI_Green_Legislator }
 
   if = {
     limit = { has_country_flag = KMT_win_flag }
@@ -294,7 +294,308 @@ CHI_Vote_counting_Legislator = {
     limit = { has_country_flag = DPP_win_flag }
     set_variable = { CHI_Base_support_Legislator = CHI_Green_Legislator }
   }
+  else = {
+    if = {
+      limit = { has_government = social_liberal }
+      set_variable = { CHI_Base_support_Legislator = CHI_Green_Legislator }
+    }
+    else = {
+      set_variable = { CHI_Base_support_Legislator = CHI_Blue_Legislator }
+    }
+  }
+
+  set_variable = { CHI_governing_ratio = CHI_Base_support_Legislator }
+  divide_variable = { CHI_governing_ratio = CHI_all_Legislator }
+  set_variable = { CHI_governing_progress = CHI_governing_ratio }
+  multiply_variable = { CHI_governing_progress = 100 }
+
+  # Threshold indicators: 1 = grey, 2 = glowing green
+  if = {
+    limit = { check_variable = { CHI_Base_support_Legislator > 37 } }
+    set_variable = { CHI_threshold_1_3_frame = 2 }
+  }
+  else = {
+    set_variable = { CHI_threshold_1_3_frame = 1 }
+  }
+
+  if = {
+    limit = { check_variable = { CHI_Base_support_Legislator > 56 } }
+    set_variable = { CHI_threshold_1_2_frame = 2 }
+  }
+  else = {
+    set_variable = { CHI_threshold_1_2_frame = 1 }
+  }
+
+  if = {
+    limit = { check_variable = { CHI_Base_support_Legislator > 75 } }
+    set_variable = { CHI_threshold_2_3_frame = 2 }
+  }
+  else = {
+    set_variable = { CHI_threshold_2_3_frame = 1 }
+  }
+
+  CHI_update_parliament_diagram = yes
 }
+
+CHI_update_parliament_diagram = {
+  clear_array = CHI_parliament_factions
+
+  # 1 = DPP (Green)
+  resize_array = {
+    array = CHI_parliament_factions
+    value = 1
+    size = CHI_Green_Legislator
+  }
+
+  # 2 = Middle / TPP (Teal)
+  set_variable = { CHI_green_and_middle_total = CHI_Green_Legislator }
+  add_to_variable = { CHI_green_and_middle_total = CHI_Middle_Legislator }
+  resize_array = {
+    array = CHI_parliament_factions
+    value = 2
+    size = CHI_green_and_middle_total
+  }
+
+  # 3 = KMT (Blue)
+  resize_array = {
+    array = CHI_parliament_factions
+    value = 3
+    size = CHI_all_Legislator
+  }
+}
+
+CHI_init_parliament_coords = {
+  clear_array = CHI_parliament_x
+  clear_array = CHI_parliament_y
+
+  add_to_array = { CHI_parliament_x = 135 }
+  add_to_array = { CHI_parliament_y = 204 }
+  add_to_array = { CHI_parliament_x = 119 }
+  add_to_array = { CHI_parliament_y = 204 }
+  add_to_array = { CHI_parliament_x = 103 }
+  add_to_array = { CHI_parliament_y = 204 }
+  add_to_array = { CHI_parliament_x = 87 }
+  add_to_array = { CHI_parliament_y = 204 }
+  add_to_array = { CHI_parliament_x = 88 }
+  add_to_array = { CHI_parliament_y = 188 }
+  add_to_array = { CHI_parliament_x = 104 }
+  add_to_array = { CHI_parliament_y = 188 }
+  add_to_array = { CHI_parliament_x = 120 }
+  add_to_array = { CHI_parliament_y = 189 }
+  add_to_array = { CHI_parliament_x = 136 }
+  add_to_array = { CHI_parliament_y = 188 }
+  add_to_array = { CHI_parliament_x = 90 }
+  add_to_array = { CHI_parliament_y = 173 }
+  add_to_array = { CHI_parliament_x = 106 }
+  add_to_array = { CHI_parliament_y = 173 }
+  add_to_array = { CHI_parliament_x = 123 }
+  add_to_array = { CHI_parliament_y = 173 }
+  add_to_array = { CHI_parliament_x = 140 }
+  add_to_array = { CHI_parliament_y = 172 }
+  add_to_array = { CHI_parliament_x = 94 }
+  add_to_array = { CHI_parliament_y = 158 }
+  add_to_array = { CHI_parliament_x = 111 }
+  add_to_array = { CHI_parliament_y = 158 }
+  add_to_array = { CHI_parliament_x = 127 }
+  add_to_array = { CHI_parliament_y = 159 }
+  add_to_array = { CHI_parliament_x = 99 }
+  add_to_array = { CHI_parliament_y = 143 }
+  add_to_array = { CHI_parliament_x = 145 }
+  add_to_array = { CHI_parliament_y = 157 }
+  add_to_array = { CHI_parliament_x = 116 }
+  add_to_array = { CHI_parliament_y = 144 }
+  add_to_array = { CHI_parliament_x = 134 }
+  add_to_array = { CHI_parliament_y = 145 }
+  add_to_array = { CHI_parliament_x = 106 }
+  add_to_array = { CHI_parliament_y = 129 }
+  add_to_array = { CHI_parliament_x = 124 }
+  add_to_array = { CHI_parliament_y = 130 }
+  add_to_array = { CHI_parliament_x = 153 }
+  add_to_array = { CHI_parliament_y = 143 }
+  add_to_array = { CHI_parliament_x = 114 }
+  add_to_array = { CHI_parliament_y = 115 }
+  add_to_array = { CHI_parliament_x = 142 }
+  add_to_array = { CHI_parliament_y = 131 }
+  add_to_array = { CHI_parliament_x = 132 }
+  add_to_array = { CHI_parliament_y = 117 }
+  add_to_array = { CHI_parliament_x = 123 }
+  add_to_array = { CHI_parliament_y = 102 }
+  add_to_array = { CHI_parliament_x = 162 }
+  add_to_array = { CHI_parliament_y = 131 }
+  add_to_array = { CHI_parliament_x = 151 }
+  add_to_array = { CHI_parliament_y = 119 }
+  add_to_array = { CHI_parliament_x = 142 }
+  add_to_array = { CHI_parliament_y = 105 }
+  add_to_array = { CHI_parliament_x = 134 }
+  add_to_array = { CHI_parliament_y = 91 }
+  add_to_array = { CHI_parliament_x = 162 }
+  add_to_array = { CHI_parliament_y = 108 }
+  add_to_array = { CHI_parliament_x = 174 }
+  add_to_array = { CHI_parliament_y = 119 }
+  add_to_array = { CHI_parliament_x = 154 }
+  add_to_array = { CHI_parliament_y = 94 }
+  add_to_array = { CHI_parliament_x = 145 }
+  add_to_array = { CHI_parliament_y = 80 }
+  add_to_array = { CHI_parliament_x = 174 }
+  add_to_array = { CHI_parliament_y = 99 }
+  add_to_array = { CHI_parliament_x = 166 }
+  add_to_array = { CHI_parliament_y = 85 }
+  add_to_array = { CHI_parliament_x = 158 }
+  add_to_array = { CHI_parliament_y = 71 }
+  add_to_array = { CHI_parliament_x = 186 }
+  add_to_array = { CHI_parliament_y = 110 }
+  add_to_array = { CHI_parliament_x = 172 }
+  add_to_array = { CHI_parliament_y = 63 }
+  add_to_array = { CHI_parliament_x = 180 }
+  add_to_array = { CHI_parliament_y = 77 }
+  add_to_array = { CHI_parliament_x = 188 }
+  add_to_array = { CHI_parliament_y = 91 }
+  add_to_array = { CHI_parliament_x = 200 }
+  add_to_array = { CHI_parliament_y = 102 }
+  add_to_array = { CHI_parliament_x = 186 }
+  add_to_array = { CHI_parliament_y = 56 }
+  add_to_array = { CHI_parliament_x = 194 }
+  add_to_array = { CHI_parliament_y = 70 }
+  add_to_array = { CHI_parliament_x = 202 }
+  add_to_array = { CHI_parliament_y = 84 }
+  add_to_array = { CHI_parliament_x = 201 }
+  add_to_array = { CHI_parliament_y = 51 }
+  add_to_array = { CHI_parliament_x = 215 }
+  add_to_array = { CHI_parliament_y = 97 }
+  add_to_array = { CHI_parliament_x = 208 }
+  add_to_array = { CHI_parliament_y = 65 }
+  add_to_array = { CHI_parliament_x = 216 }
+  add_to_array = { CHI_parliament_y = 80 }
+  add_to_array = { CHI_parliament_x = 216 }
+  add_to_array = { CHI_parliament_y = 47 }
+  add_to_array = { CHI_parliament_x = 224 }
+  add_to_array = { CHI_parliament_y = 62 }
+  add_to_array = { CHI_parliament_x = 231 }
+  add_to_array = { CHI_parliament_y = 93 }
+  add_to_array = { CHI_parliament_x = 232 }
+  add_to_array = { CHI_parliament_y = 77 }
+  add_to_array = { CHI_parliament_x = 231 }
+  add_to_array = { CHI_parliament_y = 45 }
+  add_to_array = { CHI_parliament_x = 239 }
+  add_to_array = { CHI_parliament_y = 60 }
+  add_to_array = { CHI_parliament_x = 247 }
+  add_to_array = { CHI_parliament_y = 92 }
+  add_to_array = { CHI_parliament_x = 247 }
+  add_to_array = { CHI_parliament_y = 44 }
+  add_to_array = { CHI_parliament_x = 247 }
+  add_to_array = { CHI_parliament_y = 76 }
+  add_to_array = { CHI_parliament_x = 255 }
+  add_to_array = { CHI_parliament_y = 60 }
+  add_to_array = { CHI_parliament_x = 263 }
+  add_to_array = { CHI_parliament_y = 45 }
+  add_to_array = { CHI_parliament_x = 262 }
+  add_to_array = { CHI_parliament_y = 77 }
+  add_to_array = { CHI_parliament_x = 263 }
+  add_to_array = { CHI_parliament_y = 93 }
+  add_to_array = { CHI_parliament_x = 270 }
+  add_to_array = { CHI_parliament_y = 62 }
+  add_to_array = { CHI_parliament_x = 278 }
+  add_to_array = { CHI_parliament_y = 47 }
+  add_to_array = { CHI_parliament_x = 278 }
+  add_to_array = { CHI_parliament_y = 80 }
+  add_to_array = { CHI_parliament_x = 286 }
+  add_to_array = { CHI_parliament_y = 65 }
+  add_to_array = { CHI_parliament_x = 279 }
+  add_to_array = { CHI_parliament_y = 97 }
+  add_to_array = { CHI_parliament_x = 293 }
+  add_to_array = { CHI_parliament_y = 51 }
+  add_to_array = { CHI_parliament_x = 292 }
+  add_to_array = { CHI_parliament_y = 84 }
+  add_to_array = { CHI_parliament_x = 300 }
+  add_to_array = { CHI_parliament_y = 70 }
+  add_to_array = { CHI_parliament_x = 308 }
+  add_to_array = { CHI_parliament_y = 56 }
+  add_to_array = { CHI_parliament_x = 294 }
+  add_to_array = { CHI_parliament_y = 102 }
+  add_to_array = { CHI_parliament_x = 306 }
+  add_to_array = { CHI_parliament_y = 91 }
+  add_to_array = { CHI_parliament_x = 314 }
+  add_to_array = { CHI_parliament_y = 77 }
+  add_to_array = { CHI_parliament_x = 322 }
+  add_to_array = { CHI_parliament_y = 63 }
+  add_to_array = { CHI_parliament_x = 308 }
+  add_to_array = { CHI_parliament_y = 110 }
+  add_to_array = { CHI_parliament_x = 336 }
+  add_to_array = { CHI_parliament_y = 71 }
+  add_to_array = { CHI_parliament_x = 328 }
+  add_to_array = { CHI_parliament_y = 85 }
+  add_to_array = { CHI_parliament_x = 320 }
+  add_to_array = { CHI_parliament_y = 99 }
+  add_to_array = { CHI_parliament_x = 349 }
+  add_to_array = { CHI_parliament_y = 80 }
+  add_to_array = { CHI_parliament_x = 340 }
+  add_to_array = { CHI_parliament_y = 94 }
+  add_to_array = { CHI_parliament_x = 320 }
+  add_to_array = { CHI_parliament_y = 119 }
+  add_to_array = { CHI_parliament_x = 332 }
+  add_to_array = { CHI_parliament_y = 108 }
+  add_to_array = { CHI_parliament_x = 360 }
+  add_to_array = { CHI_parliament_y = 91 }
+  add_to_array = { CHI_parliament_x = 352 }
+  add_to_array = { CHI_parliament_y = 105 }
+  add_to_array = { CHI_parliament_x = 343 }
+  add_to_array = { CHI_parliament_y = 119 }
+  add_to_array = { CHI_parliament_x = 332 }
+  add_to_array = { CHI_parliament_y = 131 }
+  add_to_array = { CHI_parliament_x = 371 }
+  add_to_array = { CHI_parliament_y = 102 }
+  add_to_array = { CHI_parliament_x = 362 }
+  add_to_array = { CHI_parliament_y = 117 }
+  add_to_array = { CHI_parliament_x = 352 }
+  add_to_array = { CHI_parliament_y = 131 }
+  add_to_array = { CHI_parliament_x = 380 }
+  add_to_array = { CHI_parliament_y = 115 }
+  add_to_array = { CHI_parliament_x = 341 }
+  add_to_array = { CHI_parliament_y = 143 }
+  add_to_array = { CHI_parliament_x = 370 }
+  add_to_array = { CHI_parliament_y = 130 }
+  add_to_array = { CHI_parliament_x = 388 }
+  add_to_array = { CHI_parliament_y = 129 }
+  add_to_array = { CHI_parliament_x = 360 }
+  add_to_array = { CHI_parliament_y = 145 }
+  add_to_array = { CHI_parliament_x = 378 }
+  add_to_array = { CHI_parliament_y = 144 }
+  add_to_array = { CHI_parliament_x = 349 }
+  add_to_array = { CHI_parliament_y = 157 }
+  add_to_array = { CHI_parliament_x = 395 }
+  add_to_array = { CHI_parliament_y = 143 }
+  add_to_array = { CHI_parliament_x = 367 }
+  add_to_array = { CHI_parliament_y = 159 }
+  add_to_array = { CHI_parliament_x = 383 }
+  add_to_array = { CHI_parliament_y = 158 }
+  add_to_array = { CHI_parliament_x = 400 }
+  add_to_array = { CHI_parliament_y = 158 }
+  add_to_array = { CHI_parliament_x = 354 }
+  add_to_array = { CHI_parliament_y = 172 }
+  add_to_array = { CHI_parliament_x = 371 }
+  add_to_array = { CHI_parliament_y = 173 }
+  add_to_array = { CHI_parliament_x = 388 }
+  add_to_array = { CHI_parliament_y = 173 }
+  add_to_array = { CHI_parliament_x = 404 }
+  add_to_array = { CHI_parliament_y = 173 }
+  add_to_array = { CHI_parliament_x = 358 }
+  add_to_array = { CHI_parliament_y = 188 }
+  add_to_array = { CHI_parliament_x = 374 }
+  add_to_array = { CHI_parliament_y = 189 }
+  add_to_array = { CHI_parliament_x = 390 }
+  add_to_array = { CHI_parliament_y = 188 }
+  add_to_array = { CHI_parliament_x = 406 }
+  add_to_array = { CHI_parliament_y = 188 }
+  add_to_array = { CHI_parliament_x = 359 }
+  add_to_array = { CHI_parliament_y = 204 }
+  add_to_array = { CHI_parliament_x = 391 }
+  add_to_array = { CHI_parliament_y = 204 }
+  add_to_array = { CHI_parliament_x = 407 }
+  add_to_array = { CHI_parliament_y = 204 }
+  add_to_array = { CHI_parliament_x = 375 }
+  add_to_array = { CHI_parliament_y = 204 }
+}
+
 
 #原油危機的逐步改善，透過國策改善
 CHI_oil_crash_idea = {

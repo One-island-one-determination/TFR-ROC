@@ -202,67 +202,186 @@ guitypes = {
       }
     }
   }
+  #立法院席位點模板
+  containerWindowType = {
+    name = "CHI_parliament_seat"
+    position = { x = 0 y = 0 }
+    iconType = {
+      name = "parliament_dot_icon"
+      quadTextureSprite = "GFX_CHI_parliament_seat"
+      pdx_tooltip = "CHI_parliament_seat_tt"
+    }
+  }
+
   #立法院UI
   containerWindowType = {
     name = "CHI_Legislative_Yuan_interface"
-    size = { width = 510 height = 600 }
+    size = { width = 510 height = 700 }
+
+    # 席次分布標題
     instantTextBoxType = {
-      name = "Coordinator"
-      position = { x = -10 y = 15 }
-      text = LFY_Coordinator_Title
-      font = "VCR02_36"
+      name = "parliament_header"
+      position = { x = 0 y = 4 }
+      text = "CHI_parliament_header_text"
+      font = "VCR02_20"
       maxwidth = 510
       format = center
     }
+
+    # 過半標記
+    #instantTextBoxType = {
+    #  name = "parliament_majority_marker"
+    #  position = { x = 0 y = 22 }
+    #  text = "CHI_parliament_majority_text"
+    #  font = "VCR02_14"
+    #  maxwidth = 510
+    #  format = center
+    #}
+
+    # 拱心執政聯盟顯示
+    instantTextBoxType = {
+      name = "coalition_info"
+      position = { x = 0 y = 148 }
+      text = "CHI_coalition_info_text"
+      font = "VCR02_18"
+      maxwidth = 510
+      format = center
+    }
+
+    # 半圓形席次圖
+    gridboxtype = {
+      name = "parliament_diagram"
+      position = { x = 0 y = 0 }
+      size = { width = 100% height = 100% }
+      slotsize = { width = 100% height = 0 }
+      max_slots_horizontal = 1
+      add_horizontal = no
+    }
+
+    # 進度條容器 (橫向置中: 510/2 - 122 = 133)
+    containerWindowType = {
+      name = "parliament_progress_container"
+      position = { x = 133 y = 222 }
+      iconType = {
+        name = "CHI_parliament_progbar"
+        quadTextureSprite = "GFX_CHI_parliament_progress"
+        position = { x = 2 y = 2 }
+      }
+      iconType = {
+        name = "CHI_parliament_progbar_frame"
+        quadTextureSprite = "GFX_CHI_parliament_progress_frame"
+        position = { x = 0 y = 0 }
+        alwaystransparent = yes
+      }
+    }
+
+    # 門檻指示點與文字
+    iconType = {
+      name = "CHI_orb_1_3"
+      quadTextureSprite = "GFX_CHI_threshold_orb"
+      position = { x = 95 y = 246 }
+    }
+    instantTextBoxType = {
+      name = "text_1_3"
+      position = { x = 112 y = 244 }
+      text = "CHI_threshold_1_3_text"
+      font = "VCR02_14"
+      maxwidth = 85
+      format = left
+    }
+
+    iconType = {
+      name = "CHI_orb_1_2"
+      quadTextureSprite = "GFX_CHI_threshold_orb"
+      position = { x = 215 y = 246 }
+    }
+    instantTextBoxType = {
+      name = "text_1_2"
+      position = { x = 232 y = 244 }
+      text = "CHI_threshold_1_2_text"
+      font = "VCR02_14"
+      maxwidth = 85
+      format = left
+    }
+
+    iconType = {
+      name = "CHI_orb_2_3"
+      quadTextureSprite = "GFX_CHI_threshold_orb"
+      position = { x = 335 y = 246 }
+    }
+    instantTextBoxType = {
+      name = "text_2_3"
+      position = { x = 352 y = 244 }
+      text = "CHI_threshold_2_3_text"
+      font = "VCR02_14"
+      maxwidth = 85
+      format = left
+    }
+
+    # 黨團總召標題
+    instantTextBoxType = {
+      name = "Coordinator"
+      position = { x = -10 y = 275 }
+      text = LFY_Coordinator_Title
+      font = "VCR02_26"
+      maxwidth = 510
+      format = center
+    }
+
+    # 民進黨總召
     icontype = {
       name = "LY_DPP"
       quadtexturesprite = "GFX_LY_DPP"
-      position = { x = 0  y = 96 }
+      position = { x = 0 y = 320 }
     }
     icontype = {
       name = "CHI_Ker_Chien_ming"
       quadtexturesprite = "GFX_CHI_Ker_Chien_ming"
-      position = { x = 0  y = 96 }
+      position = { x = 0 y = 320 }
     }
     buttonType = {
       name = "Green_frame"
       quadtexturesprite = "LY_frame"
-      position = { x = -5 y = 92 }
+      position = { x = -5 y = 316 }
     }
+
+    # 國民黨總召
     icontype = {
       name = "LY_KMT"
       quadtexturesprite = "GFX_LY_KMT"
-      position = { x = 330 y = 96 }
+      position = { x = 330 y = 320 }
     }
     icontype = {
       name = "CHI_Tseng_Ming_chung"
       quadtexturesprite = "GFX_CHI_Tseng_Ming_chung"
-      position = { x = 330 y = 96 }
+      position = { x = 330 y = 320 }
     }
     buttonType = {
       name = "Blue_frame"
       quadtexturesprite = "LY_frame"
-      position = { x = 325 y = 92 }
+      position = { x = 325 y = 316 }
     }
+
+    # 中間派
     buttonType = {
       name = "Middle_frame"
-      position = { x = 160 y = 92 }
+      position = { x = 160 y = 316 }
       quadtexturesprite = "LY_frame"
       buttonFont = "VCR02_36"
     }
-
     instantTextBoxType = {
       name = "Middle"
-      position = { x = -10 y = 150 }
+      position = { x = -10 y = 374 }
       text = Middle
       font = "VCR02_36"
       maxwidth = 510
       format = center
     }
 
+    # 席位數字
     instantTextBoxType = {
       name = "Green_Legislator"
-      position = { x = 5 y = 322 }
+      position = { x = 5 y = 546 }
       text = Green_Legislator
       font = "VCR02_26"
       maxwidth = 156
@@ -270,7 +389,7 @@ guitypes = {
     }
     instantTextBoxType = {
       name = "Middle_Legislator"
-      position = { x = -10 y = 322 }
+      position = { x = -10 y = 546 }
       text = Middle_Legislator
       font = "VCR02_26"
       maxwidth = 510
@@ -278,23 +397,17 @@ guitypes = {
     }
     instantTextBoxType = {
       name = "Blue_Legislator"
-      position = { x = 325 y = 322 }
+      position = { x = 325 y = 546 }
       text = Blue_Legislator
       font = "VCR02_26"
       maxwidth = 156
       format = center
     }
-    instantTextBoxType = {
-      name = "Base_support_Legislator"
-      position = { x = -10 y = 400 }
-      text = Base_support_Legislator
-      font = "VCR02_26"
-      maxwidth = 510
-      format = center
-    }
+
+    # 表決法案
     instantTextBoxType = {
       name = "NOW_Vote_bill"
-      position = { x = -10 y = 500 }
+      position = { x = -10 y = 600 }
       text = NOW_Vote_bill
       font = "VCR02_26"
       maxwidth = 510
@@ -302,7 +415,7 @@ guitypes = {
     }
     instantTextBoxType = {
       name = "NOW_Vote_bill_support_Legislator"
-      position = { x = -10 y = 540 }
+      position = { x = -10 y = 640 }
       text = NOW_Vote_bill_support_Legislator
       font = "VCR02_20"
       maxwidth = 510

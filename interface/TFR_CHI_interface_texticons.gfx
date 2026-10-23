@@ -278,6 +278,28 @@ spriteTypes = {
     name = "GFX_CHI_Tseng_Ming_chung"
     texturefile = "gfx/Leaders/CHI/CHI_Tseng_Ming_chung.png"
   }
+  spriteType = {
+    name = "GFX_CHI_parliament_seat"
+    texturefile = "gfx/interface/Legislative_Yuan_gfx/CHI_parliament_seat.png"
+    noOfFrames = 6
+  }
+  progressbartype = {
+    name = "GFX_CHI_parliament_progress"
+    texturefile1 = "gfx/interface/Legislative_Yuan_gfx/CHI_parliament_progress_full.png"
+    texturefile2 = "gfx/interface/Legislative_Yuan_gfx/CHI_parliament_progress_empty.png"
+    size = { x = 240 y = 14 }
+    effectfile = "gfx/FX/progress.lua"
+    horizontal = yes
+  }
+  spriteType = {
+    name = "GFX_CHI_parliament_progress_frame"
+    texturefile = "gfx/interface/Legislative_Yuan_gfx/CHI_parliament_progress_frame.png"
+  }
+  spriteType = {
+    name = "GFX_CHI_threshold_orb"
+    texturefile = "gfx/interface/Legislative_Yuan_gfx/CHI_threshold_orb.png"
+    noOfFrames = 2
+  }
   
   #Bop
   spriteType = {

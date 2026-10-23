@@ -17,8 +17,10 @@ on_actions = {
           
           set_variable = { CHI_Green_Legislator = 0 }
           set_variable = { CHI_Blue_Legislator = 0 }
-          set_variable = { CHI_all_Legislator = 116 }
-          set_variable = { CHI_half_Legislator = 58 }
+          set_variable = { CHI_all_Legislator = 113 }
+          set_variable = { CHI_half_Legislator = 57 }
+          CHI_init_parliament_coords = yes
+          CHI_Vote_counting_Legislator = yes
 
           set_country_flag = Not_have_vote_bill
           set_variable = {
@@ -330,7 +332,12 @@ on_actions = {
         }
         CHI = { set_country_flag = CHI_intervened_burma_civil_war }
       }
+  on_ruling_party_change = {
+    effect = {
+      if = {
+        limit = { tag = CHI }
+        CHI_Vote_counting_Legislator = yes
+      }
     }
   }
-
 }

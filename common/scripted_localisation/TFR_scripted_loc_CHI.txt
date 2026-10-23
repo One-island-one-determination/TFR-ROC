@@ -265,6 +265,24 @@ defined_text = {
     localization_key = "Not_have"
   }
 }
+
+defined_text = {
+  name = CHI_governing_seat_display
+  text = {
+    trigger = {
+      OR = {
+        has_country_flag = KMT_win_flag
+        has_country_flag = CHI_KMT_in_power_flag
+        has_government = conservative
+        has_government = Kuomintang2
+      }
+    }
+    localization_key = "CHI_coalition_seats_blue"
+  }
+  text = {
+    localization_key = "CHI_coalition_seats_green"
+  }
+}
 #defined_text = {
 #	name = GetTuvaProblemFocusName
 #	
