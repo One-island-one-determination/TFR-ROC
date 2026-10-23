@@ -1,0 +1,20 @@
+scripted_gui = {
+	TFR_ROC_specified_government_type = {
+		context_type = player_context
+		parent_window_name = "TFR_government_type_countrypoliticsview_container"
+		window_name = "TFR_ROC_specified_government_type"
+		visible = { has_country_flag = TFR_ROC_specified_government_type_flag }
+		trigger = {
+			
+			TFR_ROC_specified_DEBUG_type_icon_visible = {
+				NOT = {
+					has_idea = zzz_CHI_five_power_constitution
+					##has_idea = something else
+				}
+			}
+			zzz_CHI_five_power_constitution_icon_visible = { has_idea = zzz_CHI_five_power_constitution }
+
+		}
+
+	}
+}

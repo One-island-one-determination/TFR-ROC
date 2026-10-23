@@ -235,44 +235,7 @@ CHI_debug = {
             }
         }
     }
-    merge_ALL_lag_fix = {
-        icon = generic_decision
-        allowed = { always = yes }
-        visible = { always = yes }
-        available = { always = yes }
-        cost = 0
-        fire_only_once = no
 
-        complete_effect = {
-            # 掃描全世界所有其他國家
-            every_other_country = {
-                limit = {
-                    has_war = no
-                    NOT = {
-                        capital_scope = {
-                            is_on_continent = asia
-                        }
-                    }
-                    NOT = {
-                        capital_scope = {
-                            is_on_continent = australia
-                        }
-                    }
-                    NOT = {tag = LUX}
-                }
-                every_owned_state = {
-                    add_core_of = LUX
-                }
-                # 執行吞併並蒸發軍隊
-                LUX = {
-                    annex_country = {
-                        target = PREV
-                        transfer_troops = no
-                    }
-                }
-            }
-        }
-    }
     load_P1 = {
         icon = generic_decision
         allowed = { always = yes }
@@ -366,89 +329,32 @@ CHI_debug = {
             }
         }
     }
-    add_ecn_armor = {
+     TFR_ROC_specified_government_type = {
         icon = generic_decision
         allowed = { always = yes }
         visible = { always = yes }
         available = { always = yes }
         complete_effect = {
-            CHI_Economy_hidden_armor_cost_equipment_bonus_effect = yes
+            set_country_flag = TFR_ROC_specified_government_type_flag
         }
     }
-    add_ecn_air_equipment = {
+    TFR_ROC_specified_government_type_clr = {
         icon = generic_decision
         allowed = { always = yes }
         visible = { always = yes }
         available = { always = yes }
         complete_effect = {
-            CHI_Economy_hidden_air_equipment_cost_equipment_bonus_effect = yes
+            clr_country_flag = TFR_ROC_specified_government_type_flag
         }
     }
-    add_ecn_armored_car = {
-        icon = generic_decision
-        allowed = { always = yes }
-        visible = { always = yes }
-        available = { always = yes }
-        complete_effect = {
-            CHI_Economy_hidden_armored_car_cost_equipment_bonus_effect = yes
-        }
-    }
-    set_ROCA_two = {
-        icon = generic_decision
-        allowed = { always = yes }
-        visible = { always = yes }
-        available = { always = yes }
-        complete_effect = {
-            clr_country_flag = CHI_ROC_army_flag_1
-            set_country_flag = CHI_ROC_army_flag_2
-            clr_country_flag = CHI_ROC_airforce_flag_1
-            set_country_flag = CHI_ROC_airforce_flag_2
-            clr_country_flag = CHI_ROC_navy_flag_1
-            set_country_flag = CHI_ROC_navy_flag_2
-        }
-    }
-    remove_economy_types = {
-        icon = generic_decision
-        allowed = { always = yes }
-        visible = { always = yes }
-        available = { always = yes }
-        complete_effect = {
-            remove_economy_types = yes
-        }
-    }
-    remove_gov_types = {
+    change_government_type_zzz_CHI_five_power_constitution = {
         icon = generic_decision
         allowed = { always = yes }
         visible = { always = yes }
         available = { always = yes }
         complete_effect = {
             remove_gov_types = yes
-        }
-    }
-    you_dont_need_cores = {
-        icon = generic_decision
-        allowed = { always = yes }
-        visible = { always = yes }
-        available = { always = yes }
-        complete_effect = {
-            CHI = {
-                remove_state_core = 524
-                # remove_state_core = 648
-                remove_state_core = 1148
-                remove_state_core = 1149
-                remove_state_core = 1150
-            }
-        }
-    }
-    you_need_cool_color = {
-        icon = generic_decision
-        allowed = { always = yes }
-        visible = { always = yes }
-        available = { always = yes }
-        complete_effect = {
-            CHI = {
-                set_cosmetic_tag = CHI_taiwan_republic
-            }
+		    add_ideas = zzz_CHI_five_power_constitution
         }
     }
 }

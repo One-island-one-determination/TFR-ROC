@@ -308,3 +308,25 @@ defined_text = {
 #		localization_key = CHI_tuva_problem_base
 #	}
 #}
+
+
+defined_text = {
+	name = Get_TFR_ROC_specified_Government_Type
+	text = {
+		trigger = {
+			has_idea = zzz_CHI_five_power_constitution
+		}
+		localization_key = zzz_CHI_five_power_constitution
+	}
+  text = {
+		trigger = {
+			NOT = {
+					has_idea = zzz_CHI_five_power_constitution
+					##has_idea = something else
+				}
+		}
+		localization_key = TFR_ROC_specified_DEBUG_TT
+	}	
+
+  
+}
