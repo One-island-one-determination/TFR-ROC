@@ -356,9 +356,66 @@ ideas = {
 
 	
 ##MIL
-    # mobilization_laws = {
-    #
-    # }
+    mobilization_laws = {
+		law = yes
+		use_list_view = yes
+    	CHI_military_training_service = {
+			removal_cost = -1
+			cost = 100
+			level = 5
+			picture = CHI_military_training_service
+			allowed = { tag = CHI }
+			visible = {
+				hidden_trigger = {
+					original_tag = CHI
+					has_idea = CHI_military_training_service
+				}
+			}
+			allowed_to_remove = {
+				hidden_trigger = {
+					always = no
+				}
+			}
+			modifier = {
+				conscription = 0.01
+				training_time_army_factor = -0.2
+				minimum_training_level = -0.1
+				experience_gain_army_factor = -0.05
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+
+    	CHI_compulsory_military_service = {
+			removal_cost = -1
+			cost = 100
+			level = 4
+			picture = CHI_compulsory_military_service
+			allowed = { tag = CHI }
+			visible = {
+				hidden_trigger = {
+					original_tag = CHI
+					has_idea = CHI_compulsory_military_service
+				}
+			}
+			allowed_to_remove = {
+				hidden_trigger = {
+					always = no
+				}
+			}
+			modifier = {
+				conscription = 0.025
+				training_time_army_factor = 0.1
+				minimum_training_level = 0.05
+				experience_gain_army_factor = 0.05
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}		
+		
+    }
 
 	# female_service_laws = {
 	# 	law = yes
@@ -437,39 +494,64 @@ ideas = {
     #
     # }
 
-	# draft_exemption_laws = {
-	# 	law = yes
-	# 	use_list_view = yes
-	# 	CHI_social_agent_law = {
-	# 		removal_cost = -1
-	# 		cost = 100
-	# 		level = 1
-	# 		picture = laws_CHI_social_agent_law
-	# 		allowed = { tag = CHI }
-	# 		visible = {
-	# 			hidden_trigger = {
-	# 				original_tag = CHI
-	# 				has_idea = CHI_social_agent_law
-	# 			}
-	# 		}
-	# 		allowed_to_remove = {
-	# 			hidden_trigger = {
-	# 				always = no
-	# 			}
-	# 		}
-	# 		modifier = {
-	# 			war_support_factor = -0.05
-	# 			conscription_factor = 0.05
-	# 			production_speed_buildings_factor = 0.025
-	# 			farming_development_monthly = -0.001
-	# 			society_development_monthly = -0.001
-	# 			academic_development_monthly = -0.001
-	# 		}
-	# 		ai_will_do = {
-	# 			base = 1
-	# 		}
-	# 	}
-	# }
+	draft_exemption_laws = {
+		law = yes
+		use_list_view = yes
+		CHI_extended_education_service_policy = {
+			removal_cost = -1
+			cost = 100
+			level = 3
+			picture = CHI_extended_education_service_policy
+			allowed = { tag = CHI }
+			visible = {
+				hidden_trigger = {
+					original_tag = CHI
+				}
+			}
+			# allowed_to_remove = {
+			# 	#
+			# }
+			modifier = {
+				war_support_factor = -0.03
+				conscription_factor = -0.05
+				research_speed_factor = 0.03
+				production_speed_buildings_factor = 0.025
+				farming_development_monthly = -0.002
+				society_development_monthly = -0.002
+				academic_development_monthly = 0.0005
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+		CHI_alternative_national_defense_service = {
+			removal_cost = -1
+			cost = 100
+			level = 2
+			picture = CHI_alternative_national_defense_service
+			allowed = { tag = CHI }
+			visible = {
+				hidden_trigger = {
+					original_tag = CHI
+				}
+			}
+			# allowed_to_remove = {
+			# 	#
+			# }
+			modifier = {
+				political_power_gain = 0.05
+				conscription_factor = -0.2
+				war_support_factor = 0.03
+				research_speed_factor = 0.03
+				farming_development_monthly = 0.0015
+				society_development_monthly = -0.002
+				academic_development_monthly = 0.0015
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
 
 
 }
