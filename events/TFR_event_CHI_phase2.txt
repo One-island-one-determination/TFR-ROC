@@ -1,6 +1,7 @@
 add_namespace = CHI.BF
 add_namespace = CHI.H2
 add_namespace = CHI.L2
+add_namespace = CHI.NF
 
 ###############
 # KMT General #
@@ -349,6 +350,24 @@ country_event = {
     name = CHI.H2.331.a
   }
 }
+
+#######
+# CWA #
+#######
+
+country_event = {
+  id = CHI.NF.31
+  title = CHI.NF.31.t
+  desc = CHI.NF.31.d
+  picture = CHI_Event_NF_31
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = CHI.NF.31.a
+  }
+}
+
+
 
 
 
