@@ -3224,14 +3224,16 @@ CHI_Military_purchasing_cat = {
             }
         }
         available = {
-            OR = {
-                country_exists = USA
-                AND = {
-                    OR = {
-                        country_exists = USB
-                        country_exists = USC
+            hidden_trigger = { 
+                OR = {
+                    country_exists = USA
+                    AND = {
+                        OR = {
+                            country_exists = USB
+                            country_exists = USC
+                        }
+                        has_global_flag = USA_american_civil_war_over_global
                     }
-                    has_global_flag = USA_american_civil_war_over_global
                 }
             }
         }
@@ -3319,14 +3321,16 @@ CHI_Military_purchasing_cat = {
             }
         }
         available = {
-            OR = {
-                country_exists = USA
-                AND = {
-                    OR = {
-                        country_exists = USB
-                        country_exists = USC
+            hidden_trigger = { 
+                OR = {
+                    country_exists = USA
+                    AND = {
+                        OR = {
+                            country_exists = USB
+                            country_exists = USC
+                        }
+                        has_global_flag = USA_american_civil_war_over_global
                     }
-                    has_global_flag = USA_american_civil_war_over_global
                 }
             }
         }
@@ -3414,14 +3418,16 @@ CHI_Military_purchasing_cat = {
             }
         }
         available = {
-            OR = {
-                country_exists = USA
-                AND = {
-                    OR = {
-                        country_exists = USB
-                        country_exists = USC
+            hidden_trigger = { 
+                OR = {
+                    country_exists = USA
+                    AND = {
+                        OR = {
+                            country_exists = USB
+                            country_exists = USC
+                        }
+                        has_global_flag = USA_american_civil_war_over_global
                     }
-                    has_global_flag = USA_american_civil_war_over_global
                 }
             }
         }
@@ -3504,14 +3510,16 @@ CHI_Military_purchasing_cat = {
             }
         }
         available = {
-            OR = {
-                country_exists = USA
-                AND = {
-                    OR = {
-                        country_exists = USB
-                        country_exists = USC
+            hidden_trigger = { 
+                OR = {
+                    country_exists = USA
+                    AND = {
+                        OR = {
+                            country_exists = USB
+                            country_exists = USC
+                        }
+                        has_global_flag = USA_american_civil_war_over_global
                     }
-                    has_global_flag = USA_american_civil_war_over_global
                 }
             }
         }
@@ -3589,14 +3597,16 @@ CHI_Military_purchasing_cat = {
             }
         }
         available = {
-            OR = {
-                country_exists = USA
-                AND = {
-                    OR = {
-                        country_exists = USB
-                        country_exists = USC
+            hidden_trigger = { 
+                OR = {
+                    country_exists = USA
+                    AND = {
+                        OR = {
+                            country_exists = USB
+                            country_exists = USC
+                        }
+                        has_global_flag = USA_american_civil_war_over_global
                     }
-                    has_global_flag = USA_american_civil_war_over_global
                 }
             }
         }
