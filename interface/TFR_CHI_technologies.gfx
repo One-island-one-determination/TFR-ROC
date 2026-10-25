@@ -1,0 +1,422 @@
+spriteTypes = {
+
+	### INFANTRY WEAPONS ###
+	SpriteType = {
+		name = "GFX_CHI_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_infantry_weapons1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_infantry_weapons2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_infantry_weapons3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_infantry_weapons5.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_infantry_weapons5_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_infantry_weapons6.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_infantry_weapons6_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_infantry_weapons7.png"
+	}
+
+	### ANTI-TANK ###
+	SpriteType = {
+		name = "GFX_CHI_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_anti_tank1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_antitank2_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_anti_tank2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_antitank4_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_anti_tank3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_antitank6_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_anti_tank4.png"
+	}
+
+	### ANTI-AIR (MANPADS) ###
+	SpriteType = {
+		name = "GFX_CHI_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_anti_air1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_antiair2_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_anti_air2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_antiair4_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_anti_air3.png"
+	}
+
+	### MOTORIZED ###
+	SpriteType = {
+		name = "GFX_CHI_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_motorized1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_motorised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_motorized2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_motorised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_motorized3.png"
+	}
+
+	### TOWED ARTILLERY ###
+	SpriteType = {
+		name = "GFX_CHI_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_artillery1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_artillery1_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_artillery2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_artillery3_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_artillery3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_artillery5_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_artillery4.png"
+	}
+
+	### ROCKET ARTILLERY ###
+	SpriteType = {
+		name = "GFX_CHI_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_rocket_artillery1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/infantry/CHI_rocket_artillery2.png"
+	}
+
+	### SPG ###
+	SpriteType = {
+		name = "GFX_CHI_sp_artillery1_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_spg1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_sp_artillery2_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_spg2.png"
+	}
+
+	### SPAA ###
+	SpriteType = {
+		name = "GFX_CHI_self_propelled_aa1_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_spaa1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_self_propelled_aa2_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_spaa2.png"
+	}
+
+	### TANK DESTROYER / ATGM CARRIER ###
+	SpriteType = {
+		name = "GFX_CHI_tank_destroyer1_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_atgm_carrier1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_tank_destroyer2_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_atgm_carrier2.png"
+	}
+
+	### MECHANIZED (IFV) ###
+	SpriteType = {
+		name = "GFX_CHI_mechanised_infantry1_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_mechanized1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_mechanized2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_mechanized_modern2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_mechanised_infantry4_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_mechanized3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_mechanised_infantry5_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_mechanized4.png"
+	}
+
+	### LIGHT MECHANIZED (APC) ###
+	SpriteType = {
+		name = "GFX_CHI_light_mechanized_infantry1_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_apc1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_light_mechanized_infantry2_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_apc2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_light_mechanized_infantry3_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_apc3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_light_mechanized_infantry4_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_apc_modern3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_light_mechanized_infantry5_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_apc4.png"
+	}
+
+	### AMPHIBIOUS ###
+	SpriteType = {
+		name = "GFX_CHI_amphibious_mechanized_infantry_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_amphibious1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_amphibious_mechanized_infantry_2_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_amphibious2.png"
+	}
+
+	### MAIN BATTLE TANKS (old armor.txt techs) ###
+	SpriteType = {
+		name = "GFX_CHI_main_battle_tank1_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_modern_armor1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_main_battle_tank2_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_modern_armor2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_main_battle_tank3_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_modern_armor3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_main_battle_tank4_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_modern_armor_modern3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_main_battle_tank5_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_modern_armor4.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_main_battle_tank6_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_modern_armor5.png"
+	}
+
+	### NSB TANK CHASSIS ###
+	SpriteType = {
+		name = "GFX_CHI_gwtank_chassis_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_light_tank1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_light_tank2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_light_tank3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_modern_armor2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_modern_armor3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_modern_armor_modern3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_main_battle_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_modern_armor5.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_amphibious1.png"
+	}
+
+	### LIGHT TANKS (old armor.txt) ###
+	SpriteType = {
+		name = "GFX_CHI_light_tank1_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_light_tank1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_light_tank2_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_light_tank2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_light_tank3_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_light_tank3.png"
+	}
+
+	### AMPHIBIOUS TANKS (old armor.txt) ###
+	SpriteType = {
+		name = "GFX_CHI_amphibious_tank1_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_amphibious1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_amphibious_tank2_medium"
+		texturefile = "gfx/interface/technologies/armor/CHI_amphibious2.png"
+	}
+
+	### FIGHTERS ###
+	SpriteType = {
+		name = "GFX_CHI_fighter2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_fighter3_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_fighter4_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter4.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_fighter5_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter5.png"
+	}
+
+	### CAS / MULTIROLE ###
+	SpriteType = {
+		name = "GFX_CHI_CAS1_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_cas1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CAS2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_cas2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CAS3_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_cas3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_cv_CAS1_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_cas2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_cv_CAS2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_cas3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_cv_CAS3_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_cas4.png"
+	}
+
+	### BBA AIRFRAMES ###
+	SpriteType = {
+		name = "GFX_CHI_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter4.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_modern_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter5.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone6.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone5.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone7.png"
+	}
+
+	### TACTICAL BOMBERS ###
+	SpriteType = {
+		name = "GFX_CHI_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone6.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone5.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_tactical_bomber4_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone7.png"
+	}
+
+	### ATTACK HELICOPTERS ###
+	SpriteType = {
+		name = "GFX_CHI_attack_helicopter_1_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_attack_helicopter1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_attack_helicopter_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_attack_helicopter1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_attack_helicopter_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_attack_helicopter2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_attack_helicopter_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_attack_helicopter2.png"
+	}
+
+	### UTILITY HELICOPTERS ###
+	SpriteType = {
+		name = "GFX_CHI_utility_helicopter_1_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_utility_helicopter1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_utility_helicopter_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_utility_helicopter2.png"
+	}
+
+	### NAVAL BOMBERS ###
+	SpriteType = {
+		name = "GFX_CHI_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_naval_bomber1.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_naval_bomber2.png"
+	}
+
+	### DRONES (suicide_drone_tech) ###
+	SpriteType = {
+		name = "GFX_CHI_suicide_drone_tech1_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone4.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_suicide_drone_tech2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_suicide_drone_tech3_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone3.png"
+	}
+}

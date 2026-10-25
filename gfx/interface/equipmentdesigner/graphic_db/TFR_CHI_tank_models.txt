@@ -1,15 +1,12 @@
 CHI = {
-	modern_tank_chassis_4 = {
-		pool = {
-			models = {
-				"CHI_M1A2T_modern_armor_entity"
-			}
-		}
-	}
+	### LIGHT TANKS (Recon) ###
 	light_tank_chassis_0 = {
 		pool = {
 			models = {
 				"CHI_CM34_mechanized_entity"
+			}
+			icons = {
+				"gfx/interface/technologies/armor/CHI_light_tank1.png"
 			}
 		}
 	}
@@ -18,12 +15,18 @@ CHI = {
 			models = {
 				"CHI_CM34_mechanized_entity"
 			}
+			icons = {
+				"gfx/interface/technologies/armor/CHI_light_tank2.png"
+			}
 		}
 	}
 	light_tank_chassis_2 = {
 		pool = {
 			models = {
 				"CHI_CM34_mechanized_entity"
+			}
+			icons = {
+				"gfx/interface/technologies/armor/CHI_light_tank3.png"
 			}
 		}
 	}
@@ -32,7 +35,65 @@ CHI = {
 			models = {
 				"CHI_CM34_mechanized_entity"
 			}
+			icons = {
+				"gfx/interface/technologies/armor/CHI_light_tank3.png"
+			}
+		}
+	}
+
+	### MEDIUM / MBT ###
+	basic_medium_tank_chassis = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/armor/CHI_modern_armor2.png"
+			}
+		}
+	}
+	modern_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/armor/CHI_modern_armor2.png"
+				"gfx/interface/technologies/armor/CHI_modern_armor1.png"
+			}
+		}
+	}
+	modern_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/armor/CHI_modern_armor3.png"
+			}
+		}
+	}
+	modern_tank_chassis_3 = {
+		pool = {
+			models = {
+				"CHI_M1A2T_modern_armor_entity"
+			}
+			icons = {
+				"gfx/interface/technologies/armor/CHI_modern_armor_modern3.png"
+				"gfx/interface/technologies/armor/CHI_modern_armor4.png"
+			}
+		}
+	}
+	modern_tank_chassis_4 = {
+		pool = {
+			models = {
+				"CHI_M1A2T_modern_armor_entity"
+			}
+			icons = {
+				"gfx/interface/technologies/armor/CHI_modern_armor5.png"
+				"gfx/interface/technologies/armor/CHI_modern_armor4.png"
+			}
+		}
+	}
+
+	### AMPHIBIOUS ###
+	amphibious_tank_chassis = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/armor/CHI_amphibious1.png"
+				"gfx/interface/technologies/armor/CHI_amphibious2.png"
+			}
 		}
 	}
 }
-

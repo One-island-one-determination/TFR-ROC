@@ -1,0 +1,262 @@
+CHI = {
+	small_plane_airframe_1 = {
+		pool = {
+			weight = 101
+			icons = {
+				GFX_CHI_fighter2_medium
+			}
+		}
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_CAS1_medium
+			}
+		}
+	}
+
+	small_plane_airframe_2 = {
+		pool = {
+			weight = 101
+			icons = {
+				GFX_CHI_fighter3_medium
+			}
+		}
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_CAS2_medium
+			}
+		}
+		pool = {
+			icons = {
+				GFX_CHI_fighter2_medium
+				GFX_CHI_CAS1_medium
+			}
+		}
+	}
+
+	small_plane_airframe_3 = {
+		pool = {
+			weight = 101
+			icons = {
+				GFX_CHI_fighter4_medium
+			}
+		}
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_CAS3_medium
+				"gfx/interface/technologies/aircraft/CHI_cas4.png"
+			}
+		}
+		pool = {
+			icons = {
+				GFX_CHI_fighter2_medium
+				GFX_CHI_fighter3_medium
+				GFX_CHI_CAS1_medium
+				GFX_CHI_CAS2_medium
+			}
+		}
+	}
+
+	small_plane_airframe_4 = {
+		pool = {
+			weight = 101
+			icons = {
+				GFX_CHI_fighter5_medium
+			}
+		}
+		pool = {
+			weight = 100
+			icons = {
+				"gfx/interface/technologies/aircraft/CHI_cas5.png"
+				"gfx/interface/technologies/aircraft/CHI_cas6.png"
+			}
+		}
+		pool = {
+			icons = {
+				GFX_CHI_fighter2_medium
+				GFX_CHI_fighter3_medium
+				GFX_CHI_fighter4_medium
+				GFX_CHI_CAS1_medium
+				GFX_CHI_CAS2_medium
+				GFX_CHI_CAS3_medium
+			}
+		}
+	}
+
+	### CAS AIRFRAME ###
+	small_plane_cas_airframe_1 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_CAS1_medium
+			}
+		}
+	}
+
+	small_plane_cas_airframe_2 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_CAS2_medium
+			}
+		}
+		pool = {
+			icons = {
+				GFX_CHI_CAS1_medium
+			}
+		}
+	}
+
+	small_plane_cas_airframe_3 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_CAS3_medium
+				"gfx/interface/technologies/aircraft/CHI_cas4.png"
+			}
+		}
+		pool = {
+			icons = {
+				GFX_CHI_CAS1_medium
+				GFX_CHI_CAS2_medium
+			}
+		}
+	}
+
+	small_plane_cas_airframe_4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/aircraft/CHI_cas5.png"
+				"gfx/interface/technologies/aircraft/CHI_cas6.png"
+				GFX_CHI_CAS1_medium
+				GFX_CHI_CAS2_medium
+				GFX_CHI_CAS3_medium
+			}
+		}
+	}
+
+	### NAVAL BOMBERS ###
+	small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_naval_bomber1_medium
+			}
+		}
+	}
+
+	small_plane_naval_bomber_airframe_2 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_naval_bomber2_medium
+			}
+		}
+		pool = {
+			icons = {
+				GFX_CHI_naval_bomber1_medium
+			}
+		}
+	}
+
+	small_plane_naval_bomber_airframe_3 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_naval_bomber2_medium
+			}
+		}
+		pool = {
+			icons = {
+				GFX_CHI_naval_bomber1_medium
+			}
+		}
+	}
+
+	small_plane_naval_bomber_airframe_4 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_naval_bomber2_medium
+			}
+		}
+		pool = {
+			icons = {
+				GFX_CHI_naval_bomber1_medium
+			}
+		}
+	}
+
+	### CARRIER VARIANTS ###
+	cv_small_plane_airframe_1 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_fighter2_medium
+			}
+		}
+	}
+	cv_small_plane_airframe_2 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_fighter3_medium
+			}
+		}
+	}
+	cv_small_plane_airframe_3 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_fighter4_medium
+			}
+		}
+	}
+	cv_small_plane_airframe_4 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_CHI_fighter5_medium
+			}
+		}
+	}
+
+	### MEDIUM AIRFRAME / DRONES ###
+	medium_plane_airframe_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/aircraft/CHI_drone1.png"
+			}
+		}
+	}
+	medium_plane_airframe_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/aircraft/CHI_drone6.png"
+			}
+		}
+	}
+	medium_plane_airframe_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/aircraft/CHI_drone5.png"
+			}
+		}
+	}
+	medium_plane_airframe_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/aircraft/CHI_drone7.png"
+			}
+		}
+	}
+	medium_plane_airframe_4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/aircraft/CHI_drone7.png"
+			}
+		}
+	}
+}
