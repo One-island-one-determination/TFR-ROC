@@ -3110,7 +3110,7 @@ country_event = {
   fire_only_once = yes
   is_triggered_only = yes
   hidden_effect = {
-    country_event = { id = CHI.CWA_2028_temp days = 1461 }
+    country_event = { id = CHI.NF.691 days = 1461 }
   }
   option = {
     name = CHI.TW.151.a
@@ -3339,21 +3339,7 @@ country_event = {  ##暫時沒有
   }
 }
 
-country_event = {
-  id = CHI.CWA_2028_temp
-  title = CHI.CWA_2028_temp.t
-  desc = CHI.CWA_2028_temp.d
-  picture = CHI_Event_B2_7
-  fire_only_once = yes
-  is_triggered_only = yes
 
-  option = {
-    name = CHI.CWA_2028_temp.a
-    set_country_flag = HKY_2028_flag
-    complete_national_focus = CHI_transition_2028
-    focus_unlock = yes
-  }
-}
 
 
 

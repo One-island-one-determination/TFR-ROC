@@ -1727,6 +1727,15 @@ ideas = {
 				authoritarian_democrat_drift = 0.1
 			}
 		}
+		CHI_a_stablilzing_government = {
+			name = CHI_a_stablilzing_government
+			picture = generic_parliament_idea
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 1
+				stability_factor = 0.1
+			}
+		}
 		CHI_fully_promote_cabinet_system_idea  = {
 			name = CHI_fully_promote_cabinet_system
 			picture = CHI_fully_promote_cabinet_system

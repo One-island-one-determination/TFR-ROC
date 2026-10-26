@@ -1345,6 +1345,7 @@ focus_tree = {
         }
         completion_reward = {
             add_timed_idea = { idea = CHI_aftermath_ramming_through_the_bill days = 30 }
+            country_event = { id = CHI.NF.31 }
         }
         relative_position_id = CHI_new_practice_of_three_principles
     }
@@ -1374,6 +1375,7 @@ focus_tree = {
             focus = CHI_new_practice_of_three_principles
         }
         completion_reward = {
+            country_event = { id = CHI.NF.401 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -1436,6 +1438,7 @@ focus_tree = {
             focus = CHI_new_practice_of_three_principles
         }
         completion_reward = {
+            country_event = { id = CHI.NF.471 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -1585,6 +1588,7 @@ focus_tree = {
             focus = CHI_new_worker_peasant_policy
         }
         completion_reward = {
+            country_event = { id = CHI.NF.121 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -1628,6 +1632,7 @@ focus_tree = {
             focus = CHI_new_worker_peasant_policy
         }
         completion_reward = {
+            country_event = { id = CHI.NF.101 }
             custom_effect_tooltip = {
                 IDEA = CHI_Economy
                 localization_key = modify_idea_tt
@@ -1651,6 +1656,7 @@ focus_tree = {
             focus = CHI_new_worker_peasant_policy
         }
         completion_reward = {
+            country = { id = CHI.NF.81 }
             custom_effect_tooltip = {
                 IDEA = CHI_population_aging_dynamic
                 localization_key = modify_idea_tt
@@ -1737,6 +1743,7 @@ focus_tree = {
         prerequisite = {
             focus = CHI_labor_union_law_reform
         }
+        available = { has_completed_focus = CHI_of_by_for_the_people }
         completion_reward = {
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
@@ -1823,7 +1830,8 @@ focus_tree = {
         available = { NOT = { has_idea = CHI_aftermath_ramming_through_the_bill } }
         completion_reward = {
             set_country_flag = CHI_cabinet_meeting_flag
-            # country_event = { id = XXX }
+            country_event = { id = CHI.NF.261 }
+            add_timed_idea = { idea = CHI_a_stablilzing_government days = 350 }
         }
         relative_position_id = CHI_perfect_civil_rights
     }
@@ -1856,6 +1864,7 @@ focus_tree = {
         }
         completion_reward = {
             add_ideas = CHI_Johnny_Chiang_hog
+            country_event = { id = CHI.NF.161 }
             mark_focus_tree_layout_dirty = yes
         }
         relative_position_id = CHI_cabinet_meeting
@@ -1888,6 +1897,7 @@ focus_tree = {
             focus = CHI_cabinet_meeting
         }
         completion_reward = {
+            country_event = { id = CHI.NF.271 }
             add_ideas = CHI_Jaw_Shaw_Kong_hog 
             mark_focus_tree_layout_dirty = yes
         }
@@ -1975,6 +1985,7 @@ focus_tree = {
             focus = CHI_establish_ministry_of_civil_rights
         }
         completion_reward = {
+            country_event = { id = CHI.NF.191 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -2012,6 +2023,7 @@ focus_tree = {
             focus = CHI_welfare_enterprise_plan
         }
         completion_reward = {
+            country_event = { id = CHI.NF.151 }
             add_popularity = {
                 ideology = social_democrat
                 popularity = 0.05
@@ -2090,9 +2102,10 @@ focus_tree = {
             focus = CHI_utilize_bureaucracy
         }
         completion_reward = {
+            country_event = { id = CHI.NF.221 }
             add_popularity = {
                 ideology = social_democrat
-                popularity = 0.05
+                popularity = 0.1
             }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
@@ -2145,6 +2158,7 @@ focus_tree = {
             focus = CHI_reforge_iron_army
         }
         completion_reward = {
+            country_event = { id = CHI.NF.241 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -2192,6 +2206,7 @@ focus_tree = {
             focus = CHI_reforge_iron_army
         }
         completion_reward = {
+            country_event = { id = CHI.NF.251 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -2453,6 +2468,7 @@ focus_tree = {
             focus = CHI_premier_jaw_shaw_kong
         }
         completion_reward = {
+            country_event = { id = CHI.NF.641 }
             change_government_type_parliamentary_republic = yes
             remove_ideas = CHI_fully_promote_cabinet_system_idea
         }
@@ -2542,6 +2558,7 @@ focus_tree = {
             focus = CHI_labor_insurance_benefit_system_amendment
         }
         completion_reward = {
+            country_event = { id = CHI.NF.331 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -2620,10 +2637,13 @@ focus_tree = {
             focus = CHI_promote_new_learning
         }
         completion_reward = {
+            country_event = { id = CHI.NF.351 }
             add_popularity = {
                 ideology = social_democrat
-                popularity = 0.05
+                popularity = 0.1
             }
+            add_stability = 0.05
+            add_political_power = 150
         }
         relative_position_id = CHI_promote_new_learning
     }
@@ -2648,6 +2668,11 @@ focus_tree = {
             focus = CHI_do_not_lose_ambition
         }
         completion_reward = {
+            country_event = { id = CHI.NF.361 }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.05
+            }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -2788,6 +2813,7 @@ focus_tree = {
             focus = CHI_chinese_nation
         }
         completion_reward = {
+            country_event = { id = CHI.NF.411 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -2849,6 +2875,7 @@ focus_tree = {
             focus = CHI_chinese_nation
         }
         completion_reward = {
+            country_event = { id = CHI.NF.451 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -3004,6 +3031,7 @@ focus_tree = {
             focus = CHI_birth_planning
         }
         completion_reward = {
+            country_event = { id = CHI.NF.501 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -3084,6 +3112,7 @@ focus_tree = {
             focus = CHI_of_by_for_the_people
         }
         completion_reward = {
+            country_event = { id = CHI.NF.551 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -3163,6 +3192,7 @@ focus_tree = {
             focus = CHI_government_calculation_unit
         }
         completion_reward = {
+            country_event = { id = CHI.NF.571 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -3201,6 +3231,7 @@ focus_tree = {
             focus = CHI_lange_model_experiment
         }
         completion_reward = {
+            country_event = { id = CHI.NF.581 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -3275,6 +3306,7 @@ focus_tree = {
             focus = CHI_accelerate_import_export_substitution
         }
         completion_reward = {
+            country_event = { id = CHI.NF.601 }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
@@ -3373,8 +3405,46 @@ focus_tree = {
                 CHI_BF_political_power_cost = -0.15
                 tooltip = political_power_cost_tooltip
             }
-            custom_effect_tooltip = CHI_preparatory_provincial_government_coring_tt
-            #-25%造核心時間
+            1148 = {
+                add_dynamic_modifier = {
+                    modifier = CHI_Taiwan_Province
+                }
+            }
+            1149 = {
+                add_dynamic_modifier = {
+                    modifier = CHI_Taiwan_Province
+                }
+            }
+            1150 = {
+                add_dynamic_modifier = {
+                    modifier = CHI_Taiwan_Province
+                }
+            }
+            1451 = {
+                add_dynamic_modifier = {
+                    modifier = CHI_Taiwan_Province
+                }
+            }
+            524 = {
+                add_dynamic_modifier = {
+                    modifier = CHI_Taiwan_Province
+                }
+            }
+            648 = {
+                add_dynamic_modifier = {
+                    modifier = CHI_Fujian_Province
+                }
+            }
+            1382 = {
+                add_dynamic_modifier = {
+                    modifier = CHI_Hainan_Province
+                }
+            }
+            879 = {
+                add_dynamic_modifier = {
+                    modifier = CHI_Hainan_Province
+                }
+            }
         }
         relative_position_id = CHI_restore_refugee_naturalization
     }
@@ -4929,6 +4999,9 @@ focus_tree = {
                     popularity = -0.4
                 }
             }
+
+
+
             if = {
                 limit = {
                     OR = {
@@ -4938,13 +5011,14 @@ focus_tree = {
                 }
                 custom_effect_tooltip = CHI_dont_wait_dont_rely_picture_tt
                 custom_effect_tooltip = tooltip_white_line
+                country_event = { id = CHI.NF.691 }
                 set_politics = {
                     ruling_party = conservative
                     elections_allowed = yes
                 }
                 promote_character = CHI_chiang_wan_an_char
                 add_popularity = {
-                    ideology = conservative
+                    ideology = social_democrat
                     popularity = 0.4
                 }
                 add_popularity = {
