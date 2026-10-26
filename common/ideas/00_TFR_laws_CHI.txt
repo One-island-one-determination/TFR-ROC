@@ -378,7 +378,7 @@ ideas = {
 			}
 			modifier = {
 				conscription = 0.01
-				training_time_army_factor = -0.2
+				training_time_army_factor = 0.1
 				minimum_training_level = -0.1
 				experience_gain_army_factor = -0.05
 			}
@@ -406,6 +406,10 @@ ideas = {
 			}
 			modifier = {
 				conscription = 0.025
+				stability_factor = -0.02
+				production_speed_buildings_factor = -0.03
+				industrial_capacity_factory = -0.03
+				industrial_capacity_dockyard = -0.03
 				training_time_army_factor = 0.1
 				minimum_training_level = 0.05
 				experience_gain_army_factor = 0.05
@@ -448,9 +452,43 @@ ideas = {
 	# 	}
 	# }	
 
-    # supervision_laws = {
-    #
-    # }
+    supervision_laws = {
+		law = yes
+		use_list_view = yes
+    	CHI_foreign_military_advisory_group = {
+			removal_cost = -1
+			cost = 100
+			level = 1
+			picture = CHI_foreign_military_advisory_group
+			allowed = { tag = CHI }
+			visible = {
+				hidden_trigger = {
+					original_tag = CHI
+					# has_idea = CHI_foreign_military_advisory_group
+				}
+			}
+			allowed_to_remove = {
+				hidden_trigger = {
+					always = no
+				}
+			}
+			modifier = {
+				experience_gain_factor = 0.15
+				war_support_factor = 0.05
+				weekly_manpower = 100
+				army_org_factor = 0.025
+				coordination_bonus = 0.05
+				army_attack_factor = -0.025
+				army_defence_factor = 0.015
+				breakthrough_factor = 0.015
+				battalion_upkeep_factor = 0.05
+				military_development_monthly = 0.0075
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}	
+    }
 
 	# training_laws = {
 	# 	law = yes
@@ -542,9 +580,9 @@ ideas = {
 				political_power_gain = 0.05
 				conscription_factor = -0.2
 				war_support_factor = 0.03
-				research_speed_factor = 0.03
+				research_speed_factor = 0.05
 				farming_development_monthly = 0.0015
-				society_development_monthly = -0.002
+				society_development_monthly = 0.0015
 				academic_development_monthly = 0.0015
 			}
 			ai_will_do = {
