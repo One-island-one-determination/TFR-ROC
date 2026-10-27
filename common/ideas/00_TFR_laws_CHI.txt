@@ -464,7 +464,7 @@ ideas = {
 			visible = {
 				hidden_trigger = {
 					original_tag = CHI
-					# has_idea = CHI_foreign_military_advisory_group
+					has_idea = CHI_foreign_military_advisory_group
 				}
 			}
 			allowed_to_remove = {
@@ -490,43 +490,196 @@ ideas = {
 		}	
     }
 
-	# training_laws = {
-	# 	law = yes
-	# 	use_list_view = yes
-	# 	CHI_all_army_elite = {
-	# 		removal_cost = -1
-	# 		cost = 100
-	# 		level = 1
-	# 		picture = laws_CHI_all_army_elite
-	# 		allowed = { tag = CHI }
-	# 		visible = {
-	# 			hidden_trigger = {
-	# 				original_tag = CHI
-	# 				has_idea = CHI_all_army_elite
-	# 			}
-	# 		}
-	# 		allowed_to_remove = {
-	# 			hidden_trigger = {
-	# 				always = no
-	# 			}
-	# 		}
-	# 		modifier = {
-	# 			stability_factor = -0.1
-	# 			minimum_training_level = 0.15
-	# 			training_time_army_factor = 0.2
-	# 			army_org_factor = 0.2
-	# 			coordination_bonus = 0.2
-	# 			special_forces_cap = 0.25
-	# 			battalion_upkeep_factor = 0.25
-	# 			aircraft_upkeep_factor = 0.25
-	# 			ship_upkeep_factor = 0.25
-	# 			military_development_monthly = 0.02
-	# 		}
-	# 		ai_will_do = {
-	# 			base = 1
-	# 		}
-	# 	}
-	# }	
+	training_laws = {
+		law = yes
+		use_list_view = yes
+		CHI_old_whampoa_training = {
+			removal_cost = -1
+			cost = 100
+			level = 1
+			picture = CHI_old_whampoa_training
+			allowed = { tag = CHI }
+			visible = {
+				hidden_trigger = {
+					original_tag = CHI
+					has_idea = CHI_old_whampoa_training
+				}
+			}
+			allowed_to_remove = {
+				hidden_trigger = {
+					always = no
+				}
+			}
+			modifier = {
+				training_time_factor = -0.1
+				army_infantry_attack_factor = 0.05 # 步兵攻擊
+				army_artillery_attack_factor = 0.1 # 炮兵攻擊
+				org_loss_when_moving = -0.05
+				coordination_bonus = -0.05
+				land_reinforce_rate = -0.05
+				minimum_training_level = -0.05
+				conscription_factor = 0.07
+				special_forces_cap = 0.07
+				battalion_upkeep_factor = -0.05
+				aircraft_upkeep_factor = -0.05
+				ship_upkeep_factor = -0.05
+				military_development_monthly = -0.001
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+		CHI_american_scientific_combat_training = {
+			removal_cost = -1
+			cost = 100
+			level = 1
+			picture = CHI_american_scientific_combat_training
+			allowed = { tag = CHI }
+			visible = {
+				hidden_trigger = {
+					original_tag = CHI
+					has_idea = CHI_american_scientific_combat_training
+				}
+			}
+			allowed_to_remove = {
+				hidden_trigger = {
+					always = no
+				}
+			}
+			modifier = {
+				army_attack_factor = 0.1
+				army_core_defence_factor = 0.05
+				breakthrough_factor = 0.1
+				army_org_factor = 0.1
+				coordination_bonus = 0.1
+				special_forces_cap = 0.15
+				minimum_training_level = 0.5
+				training_time_army_factor = 0.15
+				mechanized_attack_factor = 0.05
+				modifier_army_sub_unit_marines_attack_factor = 0.075
+				modifier_army_sub_unit_recce_attack_factor = 0.075
+				modifier_army_sub_unit_category_special_forces_attack_factor = 0.075
+				battalion_upkeep_factor = 0.15
+				aircraft_upkeep_factor = 0.15
+				ship_upkeep_factor = 0.15
+				military_development_monthly = 0.01
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+		CHI_modern_indigenous_defense_training = {
+			removal_cost = -1
+			cost = 100
+			level = 1
+			picture = CHI_modern_indigenous_defense_training
+			allowed = { tag = CHI }
+			visible = {
+				hidden_trigger = {
+					original_tag = CHI
+					has_idea = CHI_modern_indigenous_defense_training
+				}
+			}
+			allowed_to_remove = {
+				hidden_trigger = {
+					always = no
+				}
+			}
+			modifier = {
+				army_defence_factor = 0.15
+				army_core_defence_factor = 0.1
+				army_attack_factor = -0.025
+				army_org_factor = -0.05
+				initiative_factor = 0.05
+				land_reinforce_rate = 0.05
+				max_dig_in_factor = 0.1
+				dig_in_speed = 0.1
+				special_forces_cap = 0.1
+				minimum_training_level = -0.1
+				training_time_army_factor = 0.05
+				battalion_upkeep_factor = 0.05
+				aircraft_upkeep_factor = 0.05
+				ship_upkeep_factor = 0.05
+				military_development_monthly = 0.005
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+		CHI_new_whampoa_training = {
+			removal_cost = -1
+			cost = 100
+			level = 1
+			picture = CHI_new_whampoa_training
+			allowed = { tag = CHI }
+			visible = {
+				hidden_trigger = {
+					original_tag = CHI
+					has_idea = CHI_new_whampoa_training
+				}
+			}
+			allowed_to_remove = {
+				hidden_trigger = {
+					always = no
+				}
+			}
+			modifier = {
+				army_attack_factor = 0.15
+				breakthrough_factor = 0.15
+				army_org_factor = 0.075
+				coordination_bonus = 0.1
+				land_reinforce_rate = 0.05
+				max_planning = 0.1
+				planning_speed = 0.15
+				minimum_training_level = 0.15
+				training_time_army_factor = 0.2
+				special_forces_cap = 0.2
+				army_artillery_attack_factor = 0.075
+				supply_consumption_factor = 0.05
+				battalion_upkeep_factor = 0.25
+				aircraft_upkeep_factor = 0.25
+				ship_upkeep_factor = 0.25
+				military_development_monthly = 0.01
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+		# CHI_taiwan_national_defense_force = {
+		# 	removal_cost = -1
+		# 	cost = 100
+		# 	level = 1
+		# 	picture = CHI_taiwan_national_defense_force
+		# 	allowed = { tag = CHI }
+		# 	visible = {
+		# 		hidden_trigger = {
+		# 			original_tag = CHI
+		# 			has_idea = CHI_taiwan_national_defense_force
+		# 		}
+		# 	}
+		# 	allowed_to_remove = {
+		# 		hidden_trigger = {
+		# 			always = no
+		# 		}
+		# 	}
+		# 	modifier = {
+		# 		army_defence_factor = 0.1
+		# 		army_core_defence_factor = 0.2
+		# 		army_org_factor = 0.1
+		# 		land_reinforce_rate = 0.1
+		# 		supply_consumption_factor = -0.1
+		# 		minimum_training_level = 0.1
+		# 		coordination_bonus = 0.05
+		# 		training_time_army_factor = -0.1
+		# 		max_dig_in_factor = 0.1
+		# 		dig_in_speed = 0.1
+		# 		military_development_monthly = 0.01
+		# 	}
+		# 	ai_will_do = {
+		# 		base = 1
+		# 	}
+		# }
+	}	
 
     # military_racial_integration_laws = {
     #
@@ -556,7 +709,7 @@ ideas = {
 				production_speed_buildings_factor = 0.025
 				farming_development_monthly = -0.002
 				society_development_monthly = -0.002
-				academic_development_monthly = 0.0005
+				academic_development_monthly = 0.005
 			}
 			ai_will_do = {
 				base = 1
