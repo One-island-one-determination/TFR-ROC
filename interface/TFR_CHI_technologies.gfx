@@ -270,19 +270,35 @@ spriteTypes = {
 
 	### FIGHTERS ###
 	SpriteType = {
-		name = "GFX_CHI_fighter2_medium"
+		name = "GFX_CHI_fighter1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter2.png"
 	}
 	SpriteType = {
-		name = "GFX_CHI_fighter3_medium"
+		name = "GFX_CHI_fighter_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter2.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_fighter2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter3.png"
 	}
 	SpriteType = {
-		name = "GFX_CHI_fighter4_medium"
+		name = "GFX_CHI_fighter_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_fighter3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter4.png"
 	}
 	SpriteType = {
-		name = "GFX_CHI_fighter5_medium"
+		name = "GFX_CHI_fighter_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter4.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_fighter4_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter5.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_fighter_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter5.png"
 	}
 
@@ -319,18 +335,14 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_CHI_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter2.png"
-	}
-	SpriteType = {
-		name = "GFX_CHI_improved_small_airframe_medium"
 		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter3.png"
 	}
 	SpriteType = {
-		name = "GFX_CHI_advanced_small_airframe_medium"
+		name = "GFX_CHI_improved_small_airframe_medium"
 		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter4.png"
 	}
 	SpriteType = {
-		name = "GFX_CHI_modern_small_airframe_medium"
+		name = "GFX_CHI_advanced_small_airframe_medium"
 		texturefile = "gfx/interface/technologies/aircraft/CHI_fighter5.png"
 	}
 	SpriteType = {
@@ -408,15 +420,15 @@ spriteTypes = {
 
 	### DRONES (suicide_drone_tech) ###
 	SpriteType = {
-		name = "GFX_CHI_suicide_drone_tech1_medium"
-		texturefile = "gfx/interface/technologies/aircraft/CHI_drone4.png"
-	}
-	SpriteType = {
 		name = "GFX_CHI_suicide_drone_tech2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/CHI_drone2.png"
 	}
 	SpriteType = {
 		name = "GFX_CHI_suicide_drone_tech3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/CHI_drone3.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_suicide_drone_tech4_medium"
+		texturefile = "gfx/interface/technologies/aircraft/CHI_drone4.png"
 	}
 }
