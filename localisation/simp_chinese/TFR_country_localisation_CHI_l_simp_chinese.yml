@@ -1088,7 +1088,7 @@
  industrial_concern_cost_factor_tooltip: "$industrial_concern_cost_factor$：$RIGHT|-=%0$"
  
  trade_opinion_factor_tooltip: "$MODIFIER_TRADE_OPINION_FACTOR$：$RIGHT|Y=%$"
- 
+ pocket_penalty_tooltip: " $MODIFIER_POCKET_PENALTY$：$RIGHT|-=%1$"
  civilian_intel_to_others_tooltip: "$MODIFIER_CIVILIAN_INTEL_TO_OTHERS$：$RIGHT|-=%%1$"
  army_intel_to_others_tooltip: "$MODIFIER_ARMY_INTEL_TO_OTHERS$：$RIGHT|-=%%1$"
  navy_intel_to_others_tooltip: "$MODIFIER_NAVY_INTEL_TO_OTHERS$：$RIGHT|-=%%1$"
@@ -1538,10 +1538,10 @@
  personal_value_factor_tooltip: "£GFX_dx_yellow 个人产值系数：$RIGHT|+=%1$"
  production_speed_office_park_factor_tooltip: "$modifier_production_speed_office_park_factor$：$RIGHT|+=%1$"
  production_speed_nuclear_reactor_factor_tooltip: "$modifier_production_speed_nuclear_reactor_factor$：$RIGHT|+=%1$"
+ income_growth_factor_tooltip: "£GFX_dx 月度收入增长：$RIGHT|+=%1$"
  expense_growth_factor_tooltip: "£GFX_dx 月度开支增长率：$RIGHT|-=%1$"
  personal_expense_factor_tooltip: "£GFX_dx_yellow 个人消费支出系数：$RIGHT|-=%1$"
  inflation_monthly_tooltip: "£inflation 月度通胀率变化：$RIGHT|Y=%2$"
-
  inflation_monthly_factor_tooltip: "£inflation 月度通胀系数：$RIGHT|Y=%1$"
  interest_rate_tooltip: "£GFX_percent 利率：$RIGHT|Y=%1$"
  interest_rate_factor_tooltip: "£GFX_percent 利率系数：$RIGHT|Y=%1$"
@@ -2156,8 +2156,12 @@
  CHI_Kuomintang2: "中國國民黨-保守派"
  han_kuo_yu_thoughts: "韓國瑜思想"
  han_kuo_yu_thoughts_desc: "\n\n\n\n£GFX_ideology_han_kuo_yu_thoughts_banner\n\n\n\n\n\n§Y韓國瑜思想§!——相較於台灣過去的國民黨建制派來說，韓國瑜親民的政治路線與接地氣的宣傳詞彙成功讓他站上高雄市長與總統寶座，這種動員草根階級用以增強自身政治能量的方式最常見於民進黨之手，但韓國瑜憑藉國民黨深入各基層的農會、漁會加上那些對民進黨長期執政不滿的青年派的選票，鑄就了他的成功。\n\n雖然在某些部分與民進黨有些相似，但其動員的群眾大多為中老年群體，他們當年的黨國教育經驗，與經歷過從戒嚴到解嚴的民主化轉變促使他們對國民黨候選人頗有好感，他們很自然地就會聚集在韓國瑜的親民形象之下。韓國瑜的這種成功是建立在保守的民粹主義力量之上，來自那些長期以來在台灣社會上被忽視的群體，這些人對於改善社會治安、政府貪污等議題相當關心，過往的國民黨候選人表現出的菁英立場已經讓這些人頗為失望，韓國瑜正是抓住這個機會，以一種嶄新的、親民的、接地氣的形象出現在眾人眼前，由此吸引大量支持者。\n\n面對反對派的質疑與聲討，韓國瑜通常不會正面與之交鋒，運用自己為數眾多且熱情高漲的支持者便可將任何反對的火苗扼殺於搖籃之中，若是敵人不吃這招，那麼總統自有解決的辦法。"
+ tridemism: "三民主義"
+ tridemism_desc: "\n\n\n\n這是圖\n\n\n\n\n\n暫時沒有內容"
  CHI_auth_dem_han_kuo_yu_party: "中國國民黨-韓國瑜派"
  CHI_auth_dem_han_kuo_yu_party_long: "中國國民黨-韓國瑜派"
+ CHI_soc_dem_tridemism_party: "中國國民黨-國父派"
+ CHI_soc_dem_tridemism_party_long: "中國國民黨-國父派"
  CHI_totalitarian_socialist_han_kuo_yu_ending: "§R非法§!"
  CHI_authoritarian_socialist_han_kuo_yu_ending: "中國左派民主黨"
  CHI_libertarian_socialist_han_kuo_yu_ending: "中國國民黨革命委員會"
@@ -2426,7 +2430,7 @@
  CHI_co_living: "青銀共居"
  CHI_Population_Aging_end: "終結人口危機"
  CHI_Population_Aging_end_avaliable_tooltip: "須完成所有人口危機相關決議與國策([?var_CHI_Population_Aging_decisions]/8)"
- var_CHI_Population_Aging_decisions_tooltip: "人口危機相關決議與國策解決§G+§!$RIGHT$"
+ var_CHI_Population_Aging_decisions_tooltip: "人口危機相關決議與國策解決§G+1§!"
  CHI_Population_Aging_end_tooltip: "移除§Y人口危機§!動態修正及人口危機決議"
 
  
