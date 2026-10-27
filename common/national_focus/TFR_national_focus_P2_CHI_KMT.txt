@@ -2030,13 +2030,13 @@ focus_tree = {
             }
             set_party_name = {
                 ideology = social_democrat
-                long_name = CHI_soc_dem_tridemism_party_long
-                name = CHI_soc_dem_tridemism_party
+                long_name = CHI_tridemism_socdem_party_long
+                name = CHI_tridemism_socdem_party
             }
             add_country_leader_role = {
                 character = CHI_chiang_wan_an_char
                 promote_leader = yes
-                country_leader = {  ideology = tridemism }
+                country_leader = {  ideology = tridemism_socdem }
             }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
@@ -2685,13 +2685,13 @@ focus_tree = {
             }
             set_party_name = {
                 ideology = social_democrat
-                long_name = CHI_soc_dem_tridemism_party_long
-                name = CHI_soc_dem_tridemism_party
+                long_name = CHI_tridemism_socdem_party_long
+                name = CHI_tridemism_socdem_party
             }
             add_country_leader_role = {
                 character = CHI_chiang_wan_an_char
                 promote_leader = yes
-                country_leader = {  ideology = tridemism }
+                country_leader = {  ideology = tridemism_socdem }
             }
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
@@ -5037,7 +5037,7 @@ focus_tree = {
                     elections_allowed = yes
                 }
                 promote_character = CHI_chiang_wan_an_char
-                set_country_leader_ideology = tridemism
+                set_country_leader_ideology = tridemism_socdem
                 add_popularity = {
                     ideology = social_democrat
                     popularity = 0.4
