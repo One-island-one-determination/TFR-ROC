@@ -2790,20 +2790,6 @@ country_event = {
 }
 
 country_event = {
-  id = CHI.TW.43
-  title = CHI.TW.43.t
-  desc = CHI.TW.43.d
-  picture = CHI_Event_TW_43
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = CHI.TW.43.a
-    set_country_flag = chi_tw_43_done
-  }
-}
-
-country_event = {
   id = CHI.TW.44
   title = CHI.TW.44.t
   desc = CHI.TW.44.d
@@ -3042,10 +3028,6 @@ country_event = {
         10 = {
           modifier = { factor = 0 has_country_flag = chi_tw_42_done }
           country_event = { id = CHI.TW.42 }
-        }
-        10 = {
-          modifier = { factor = 0 has_country_flag = chi_tw_43_done }
-          country_event = { id = CHI.TW.43 }
         }
       }
       country_event = { id = CHI.TW.999 days = 20 }

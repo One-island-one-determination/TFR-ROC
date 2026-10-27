@@ -4599,6 +4599,271 @@ CHI_taiwan_war_category = {
             base = 10
         }
     }
+    CHI_damage_zkaohsiung_port = {
+        icon = GFX_CHI_test_of_will_port_damaging
+        allowed = {
+            original_tag = CHI
+        }
+        visible = {
+            has_war = yes
+            has_country_flag = CHI_damage_ports_flag
+        }
+        available = {
+            NOT = { controls_province = 12068 }
+        }
+        cancel_trigger = {
+            hidden_trigger = {
+                is_ally_with = PRC
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+        custom_cost_trigger = { command_power > 9 }
+        custom_cost_text = CHI_decision_cost_10_command_power
+        days_re_enable = 200
+        complete_effect = {
+            1150 = {
+                damage_building = {
+                    type = naval_base
+                    damage = 10
+                    repair_speed_modifier = -0.8
+                    province = 12068
+                }
+            }
+            hidden_effect = {
+                add_command_power = -10
+            }
+        }
+    }
+    
+    CHI_damage_tainan_port = {
+        icon = GFX_CHI_test_of_will_port_damaging
+        allowed = {
+            original_tag = CHI
+        }
+        visible = {
+            has_war = yes
+            has_country_flag = CHI_damage_ports_flag
+        }
+        available = {
+            NOT = { controls_province = 13965 }
+        }
+        cancel_trigger = {
+            hidden_trigger = {
+                is_ally_with = PRC
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+        custom_cost_trigger = { command_power > 9 }
+        custom_cost_text = CHI_decision_cost_10_command_power
+        days_re_enable = 200
+        complete_effect = {
+            1150 = {
+                damage_building = {
+                    type = naval_base
+                    damage = 10
+                    repair_speed_modifier = -0.8
+                    province = 13965
+                }
+            }
+            hidden_effect = {
+                add_command_power = -10
+            }
+        }
+    }
+    
+    CHI_damage_hualien_port = {
+        icon = GFX_CHI_test_of_will_port_damaging
+        allowed = {
+            original_tag = CHI
+        }
+        visible = {
+            has_war = yes
+            has_country_flag = CHI_damage_ports_flag
+        }
+        available = {
+            NOT = { controls_province = 4096 }
+        }
+        cancel_trigger = {
+            hidden_trigger = {
+                is_ally_with = PRC
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+        custom_cost_trigger = { command_power > 9 }
+        custom_cost_text = CHI_decision_cost_10_command_power
+        days_re_enable = 200
+        complete_effect = {
+            524 = {
+                damage_building = {
+                    type = naval_base
+                    damage = 10
+                    repair_speed_modifier = -0.8
+                    province = 4096
+                }
+            }
+            hidden_effect = {
+                add_command_power = -10
+            }
+        }
+    }
+    
+    CHI_damage_taichung_port = {
+        icon = GFX_CHI_test_of_will_port_damaging
+        allowed = {
+            original_tag = CHI
+        }
+        visible = {
+            has_war = yes
+            has_country_flag = CHI_damage_ports_flag
+        }
+        available = {
+            NOT = { controls_province = 13968 }
+        }
+        cancel_trigger = {
+            hidden_trigger = {
+                is_ally_with = PRC
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+        custom_cost_trigger = { command_power > 9 }
+        custom_cost_text = CHI_decision_cost_10_command_power
+        days_re_enable = 200
+        complete_effect = {
+            1149 = {
+                damage_building = {
+                    type = naval_base
+                    damage = 10
+                    repair_speed_modifier = -0.8
+                    province = 13968
+                }
+            }
+            hidden_effect = {
+                add_command_power = -10
+            }
+        }
+    }
+    
+    CHI_damage_taoyuan_port = {
+        icon = GFX_CHI_test_of_will_port_damaging
+        allowed = {
+            original_tag = CHI
+        }
+        visible = {
+            has_war = yes
+            has_country_flag = CHI_damage_ports_flag
+        }
+        available = {
+            NOT = { controls_province = 13961 }
+        }
+        cancel_trigger = {
+            hidden_trigger = {
+                is_ally_with = PRC
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+        custom_cost_trigger = { command_power > 9 }
+        custom_cost_text = CHI_decision_cost_10_command_power
+        days_re_enable = 200
+        complete_effect = {
+            1148 = {
+                damage_building = {
+                    type = naval_base
+                    damage = 10
+                    repair_speed_modifier = -0.8
+                    province = 13961
+                }
+            }
+            hidden_effect = {
+                add_command_power = -10
+            }
+        }
+    }
+    
+    CHI_damage_taipei_port = {
+        icon = GFX_CHI_test_of_will_port_damaging
+        allowed = {
+            original_tag = CHI
+        }
+        visible = {
+            has_war = yes
+            has_country_flag = CHI_damage_ports_flag
+        }
+        available = {
+            NOT = { controls_province = 7186 }
+        }
+        cancel_trigger = {
+            hidden_trigger = {
+                is_ally_with = PRC
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+        custom_cost_trigger = { command_power > 9 }
+        custom_cost_text = CHI_decision_cost_10_command_power
+        days_re_enable = 200
+        complete_effect = {
+            1148 = {
+                damage_building = {
+                    type = naval_base
+                    damage = 10
+                    repair_speed_modifier = -0.8
+                    province = 7186
+                }
+            }
+            hidden_effect = {
+                add_command_power = -10
+            }
+        }
+    }
+    
+    CHI_damage_keelung_port = {
+        icon = GFX_CHI_test_of_will_port_damaging
+        allowed = {
+            original_tag = CHI
+        }
+        visible = {
+            has_war = yes
+            has_country_flag = CHI_damage_ports_flag
+        }
+        available = {
+            NOT = { controls_province = 14937 }
+        }
+        cancel_trigger = {
+            hidden_trigger = {
+                is_ally_with = PRC
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+        custom_cost_trigger = { command_power > 9 }
+        custom_cost_text = CHI_decision_cost_10_command_power
+        days_re_enable = 200
+        complete_effect = {
+            1148 = {
+                damage_building = {
+                    type = naval_base
+                    damage = 10
+                    repair_speed_modifier = -0.8
+                    province = 14937
+                }
+            }
+            hidden_effect = {
+                add_command_power = -10
+            }
+        }
+    }
     # 以下是轟炸決議，雖然叫strike但其实是轟炸的意思
     CHI_strike_Xiamen = {
         ai_will_do = {
