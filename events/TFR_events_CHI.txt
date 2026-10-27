@@ -3301,7 +3301,7 @@ country_event = {
       promote_leader = yes
       country_leader = {
         ideology = constitutionalist
-        traits = { hos_president_of_the_commoners }
+        traits = { hos_Emergency_Powers }
       }
     }
 
@@ -3310,7 +3310,7 @@ country_event = {
       country_leader = {
         desc = CHI_chiang_wan_an_char_desc
         ideology = reformed_tridemism
-        traits = { hos_president_of_the_commoners }
+        # traits = {  }
       }
       promote_leader = yes
     }
