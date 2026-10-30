@@ -229,6 +229,16 @@ news_event = {
 	picture = GFX_Oil_War_News
 	is_triggered_only = yes
 	major = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { tag = CHI }
+				country_event = {
+					id = CHI.10
+				}
+			}
+		}
+	}
 	option = {
 		name = news.121.a
 		trigger = {
@@ -380,6 +390,16 @@ news_event = {
 	picture = GFX_SAU_republic_win
 	is_triggered_only = yes
 	major = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { tag = CHI }
+				country_event = {
+					id = CHI.TW.7
+				}
+			}
+		}
+	}
 	option = {
 		name = news.126.a
 		trigger = {
