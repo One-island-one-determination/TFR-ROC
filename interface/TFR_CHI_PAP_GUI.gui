@@ -266,235 +266,113 @@ guitypes = {
         alwaystransparent = yes
       }
       
-      #card1{
+      #card{
       #PS LOC PRC GA CCK CKS POL FB #政學 本土 故宮 草協 經國 介石 警備 戰藍
       buttonType = {
-        name = "PAP_card_1_PS"
-        position = { x = -235 y = 415 }
+        name = "PAP_card_PS"
+        position = { x = -235 y = 620 }
         quadTextureSprite = "GFX_Faction"
         frame = 1
       }
+      icontype = {
+        name = "PAP_frame_PS"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -175 y = 700 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
       buttonType = {
-        name = "PAP_card_1_LOC"
-        position = { x = -235 y = 415 }
+        name = "PAP_card_LOC"
+        position = { x = -190 y = 620 }
         quadTextureSprite = "GFX_Faction"
         frame = 2
       }
+      icontype = {
+        name = "PAP_frame_LOC"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -130 y = 700 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
       buttonType = {
-        name = "PAP_card_1_PRC"
-        position = { x = -235 y = 415 }
+        name = "PAP_card_PRC"
+        position = { x = -140 y = 620 }
         quadTextureSprite = "GFX_Faction"
         frame = 3
       }
+      icontype = {
+        name = "PAP_frame_PRC"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -80 y = 700 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
       buttonType = {
-        name = "PAP_card_1_GA"
-        position = { x = -235 y = 415 }
+        name = "PAP_card_GA"
+        position = { x = -90 y = 620 }
         quadTextureSprite = "GFX_Faction"
         frame = 4
       }
+      icontype = {
+        name = "PAP_frame_GA"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = -30 y = 700 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
       buttonType = {
-        name = "PAP_card_1_CCK"
-        position = { x = -235 y = 415 }
+        name = "PAP_card_CCK"
+        position = { x = -40 y = 620 }
         quadTextureSprite = "GFX_Faction"
         frame = 5
       }
+      icontype = {
+        name = "PAP_frame_CCK"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = 20 y = 700 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
       buttonType = {
-        name = "PAP_card_1_CKS"
-        position = { x = -235 y = 415 }
+        name = "PAP_card_CKS"
+        position = { x = 10 y = 620 }
         quadTextureSprite = "GFX_Faction"
         frame = 6
       }
+      icontype = {
+        name = "PAP_frame_CKS"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = 70 y = 700 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
       buttonType = {
-        name = "PAP_card_1_POL"
-        position = { x = -235 y = 415 }
+        name = "PAP_card_POL"
+        position = { x = 60 y = 620 }
         quadTextureSprite = "GFX_Faction"
         frame = 7
       }
+      icontype = {
+        name = "PAP_frame_POL"
+        quadtexturesprite = "GFX_PAP_frame"
+        position = { x = 120 y = 700 }
+        centerposition = yes
+        alwaystransparent = yes
+      }
       buttonType = {
-        name = "PAP_card_1_FB"
-        position = { x = -235 y = 415 }
+        name = "PAP_card_FB"
+        position = { x = 115 y = 620 }
         quadTextureSprite = "GFX_Faction"
         frame = 8
       }
       icontype = {
-        name = "PAP_frame_1"
+        name = "PAP_frame_FB"
         quadtexturesprite = "GFX_PAP_frame"
-        position = { x = -173 y = 500 }
+        position = { x = 175 y = 700 }
         centerposition = yes
         alwaystransparent = yes
       }
       #}
-      #card2{
-      buttonType = {
-        name = "PAP_card_2_PS"
-        position = { x = -185 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 1
-      }
-      buttonType = {
-        name = "PAP_card_2_LOC"
-        position = { x = -185 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 2
-      }
-      buttonType = {
-        name = "PAP_card_2_PRC"
-        position = { x = -185 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 3
-      }
-      buttonType = {
-        name = "PAP_card_2_GA"
-        position = { x = -185 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 4
-      }
-      buttonType = {
-        name = "PAP_card_2_CCK"
-        position = { x = -185 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 5
-      }
-      buttonType = {
-        name = "PAP_card_2_CKS"
-        position = { x = -185 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 6
-      }
-      buttonType = {
-        name = "PAP_card_2_POL"
-        position = { x = -185 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 7
-      }
-      buttonType = {
-        name = "PAP_card_2_FB"
-        position = { x = -185 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 8
-      }
-      #}
-      icontype = {
-        name = "PAP_frame_2"
-        quadtexturesprite = "GFX_PAP_frame"
-        position = { x = -123 y = 500 }
-        centerposition = yes
-        alwaystransparent = yes
-      }
-      #card3{
-      buttonType = {
-        name = "PAP_card_3_PS"
-        position = { x = -135 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 1
-      }
-      buttonType = {
-        name = "PAP_card_3_LOC"
-        position = { x = -135 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 2
-      }
-      buttonType = {
-        name = "PAP_card_3_PRC"
-        position = { x = -135 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 3
-      }
-      buttonType = {
-        name = "PAP_card_3_GA"
-        position = { x = -135 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 4
-      }
-      buttonType = {
-        name = "PAP_card_3_CCK"
-        position = { x = -135 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 5
-      }
-      buttonType = {
-        name = "PAP_card_3_CKS"
-        position = { x = -135 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 6
-      }
-      buttonType = {
-        name = "PAP_card_3_POL"
-        position = { x = -135 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 7
-      }
-      buttonType = {
-        name = "PAP_card_3_FB"
-        position = { x = -135 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 8
-      }
-      #}
-      icontype = {
-        name = "PAP_frame_3"
-        quadtexturesprite = "GFX_PAP_frame"
-        position = { x = -73 y = 500 }
-        centerposition = yes
-        alwaystransparent = yes
-      }
-      #card4{
-      buttonType = {
-        name = "PAP_card_4_PS"
-        position = { x = -85 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 1
-      }
-      buttonType = {
-        name = "PAP_card_4_LOC"
-        position = { x = -85 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 2
-      }
-      buttonType = {
-        name = "PAP_card_4_PRC"
-        position = { x = -85 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 3
-      }
-      buttonType = {
-        name = "PAP_card_4_GA"
-        position = { x = -85 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 4
-      }
-      buttonType = {
-        name = "PAP_card_4_CCK"
-        position = { x = -85 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 5
-      }
-      buttonType = {
-        name = "PAP_card_4_CKS"
-        position = { x = -85 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 6
-      }
-      buttonType = {
-        name = "PAP_card_4_POL"
-        position = { x = -85 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 7
-      }
-      buttonType = {
-        name = "PAP_card_4_FB"
-        position = { x = -85 y = 415 }
-        quadTextureSprite = "GFX_Faction"
-        frame = 8
-      }
-      #}
-      icontype = {
-        name = "PAP_frame_4"
-        quadtexturesprite = "GFX_PAP_frame"
-        position = { x = -23 y = 500 }
-        centerposition = yes
-        alwaystransparent = yes
-      }
 
       instantTextBoxType = {
         name = "Title"
