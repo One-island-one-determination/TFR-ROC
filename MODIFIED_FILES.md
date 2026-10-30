@@ -11,7 +11,6 @@ These files have identical paths to base TFR files and will overwrite them when 
 | File Path | Purpose of Override | Key Modifications |
 | :--- | :--- | :--- |
 | `events/TFR_events_ZZZ_news.txt` | Core news event triggers | • `news.121`: Immediate trigger for `CHI.10` (Third Oil Crisis).<br>• `news.126`: Immediate trigger for `CHI.TW.7` (Arab Republic Reconstruction).<br>• `news.139`: Branches ROC defense super event (`CHI_invasion_of_taiwan_super`) and music for `CHI`. |
-| `common/game_rules/00_game_rules.txt` | Custom game rules | Adds custom ROC game rules:<br>• `CHI_election_2020_gamerule`<br>• `CHI_election_2024_KMT`<br>• `CHI_japan_return_land` |
 | `common/ideologies/TFR_ideologies.txt` | Subideology definitions | Adds custom ROC subideologies:<br>• `social_democrat`: `tridemism_socdem`<br>• `social_liberal`: `Taiwanese_Progressivism`, `Taiwanese_Progressivism2`<br>• `market_liberal`: `taiwanese_liberal_populism2`<br>• `conservative`: `Taiwanese_constitutionalism`<br>• `authoritarian_democrat`: `han_kuo_yu_thoughts`<br>• `nationalist`: `CHI_ultimate_three_principles` |
 | `common/scripted_localisation/TFR_subideology_scripted_loc.txt` | Subideology display loc | Maps the added ROC subideologies above to their localized display strings. |
 | `common/scripted_localisation/TFR_peace_popup_scripted_localisation.txt` | Peace popup text | Adds custom OIOD peace popup scripted localization text for `CHI`. |
@@ -65,7 +64,7 @@ These binary image and texture files replace base TFR assets directly:
 | `gfx/interface/goals/CHI/CHI_grant_emergency_powers.png` | National focus icon: Grant Emergency Powers |
 | `gfx/interface/ideas/CHI/mio_CHI_Jong_Shyn.png` | MIO icon: Jong Shyn Shipbuilding (中信造船) |
 | `gfx/interface/ideas/ZZZ_government_type/ZZZ_taiwanese_semi_presidential_system.png` | Idea icon: Taiwanese Semi-Presidential System / 中華五權共和制 |
-| `gfx/interface/ideologies/reformist_socialism_PRC.png` | Subideology icon: PRC Reformist Socialism |
+| `gfx/interface/ideologies/reformist_socialism_PRC.png` | Subideology icon: PRC Reformist Socialism / Left-wing Tridemism |
 | `gfx/interface/technologies/infantry/CHI_infantry1.dds` to `CHI_infantry6.dds` | Custom infantry technology tier icons (Tiers 1–6) |
 
 ### Loading Screen Wallpapers (`gfx/loadingscreens/` — 51 files)
@@ -82,6 +81,7 @@ The following upstream files were previously overridden by this submod, but have
 * **`events/TFR_events_USA.txt`**: Removed. Base TFR's `usa.103` already triggers `taiwan.2` for CHI upon the outbreak of the 2nd American Civil War. The submod event `CHI.3` ("太平洋之殤") is now hooked directly inside `taiwan.2`'s `hidden_effect` in `events/TFR_events_CHI.txt`.
 * **`events/TFR_events_SAU.txt`**: Removed. Its only custom calls were `CHI.10` (Oil Crisis) and `CHI.TW.7` (Arab Victory). These are now triggered via `news.121` and `news.126` in `events/TFR_events_ZZZ_news.txt`, which the submod already maintains.
 * **`common/opinion_modifiers/china_modifier.txt`**: Removed. Opinion modifiers are additive in HoI4; the 6 custom ROC modifiers (`CHI_Block_tourists`, `CHI_ARR_humanitarian_aid`, `CHI_Diplomatic_countries`, `CHI_Assist_reconstruction`, `CHI_support_us`, `CHI_opposed_us`) were merged into our existing submod file `common/opinion_modifiers/TFR_CHI_opinion_modifiers.txt`. Base TFR's `china_modifier.txt` is no longer overridden.
+* **`common/game_rules/00_game_rules.txt`**: Removed. HoI4 loads game rules additively; the 3 custom ROC game rules (`CHI_election_2020_gamerule`, `CHI_election_2024_KMT`, `CHI_japan_return_land`) were moved into `common/game_rules/000_TFR_ROC_game_rules.txt` under a custom top-level group `RULE_GROUP_TFR_ROC` ("烈焰升騰：同島一命"). Base TFR's 5,760-line `00_game_rules.txt` is no longer overridden.
 
 ---
 
@@ -92,6 +92,7 @@ These files are either unique to the submod or contain the primary content for R
 * **National Focus**: `common/national_focus/TFR_national_focus_CHI.txt`
 * **Events**: `events/TFR_events_CHI.txt`, `events/TFR_event_CHI_phase2.txt`~`phase4.txt`, `events/taiwan.txt`, `events/CHI_MIO_event.txt`
 * **Decisions**: `common/decisions/TFR_decisions_CHI.txt`, `common/decisions/categories/TFR_decision_categories_CHI.txt`
+* **Game Rules**: `common/game_rules/000_TFR_ROC_game_rules.txt`
 * **Opinion Modifiers**: `common/opinion_modifiers/TFR_CHI_opinion_modifiers.txt`
 * **Characters & Leaders**: `common/characters/TFR_characters_CHI.txt`
 * **Ideas & Dynamic Modifiers**: `common/ideas/TFR_ideas_CHI.txt`, `common/dynamic_modifiers/TFR_dynamic_modifiers_CHI.txt`

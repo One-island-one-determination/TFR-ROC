@@ -11,7 +11,6 @@
 | 檔案路徑 | 覆寫目的 | 主要修改內容 |
 | :--- | :--- | :--- |
 | `events/TFR_events_ZZZ_news.txt` | 核心新聞事件觸發器 | • `news.121`：立即觸發 `CHI.10`（第三次石油危機）。<br>• `news.126`：立即觸發 `CHI.TW.7`（阿拉伯共和國重建）。<br>• `news.139`：為 `CHI` 分支觸發中華民國防衛超事件（`CHI_invasion_of_taiwan_super`）與專屬音樂。 |
-| `common/game_rules/00_game_rules.txt` | 自訂遊戲規則 | 新增中華民國（ROC）自訂遊戲規則：<br>• `CHI_election_2020_gamerule`<br>• `CHI_election_2024_KMT`<br>• `CHI_japan_return_land` |
 | `common/ideologies/TFR_ideologies.txt` | 子意識形態定義 | 新增中華民國（ROC）自訂子意識形態：<br>• `social_democrat`：`tridemism_socdem`<br>• `social_liberal`：`Taiwanese_Progressivism`、`Taiwanese_Progressivism2`<br>• `market_liberal`：`taiwanese_liberal_populism2`<br>• `conservative`：`Taiwanese_constitutionalism`<br>• `authoritarian_democrat`：`han_kuo_yu_thoughts`<br>• `nationalist`：`CHI_ultimate_three_principles` |
 | `common/scripted_localisation/TFR_subideology_scripted_loc.txt` | 子意識形態顯示本地化 | 將上述新增的中華民國子意識形態映射至對應的本地化顯示字串。 |
 | `common/scripted_localisation/TFR_peace_popup_scripted_localisation.txt` | 議和彈窗文本 | 為 `CHI` 新增自訂的 OIOD 議和彈窗腳本本地化文本。 |
@@ -65,7 +64,7 @@
 | `gfx/interface/goals/CHI/CHI_grant_emergency_powers.png` | 國策圖示：授予緊急權力（Grant Emergency Powers） |
 | `gfx/interface/ideas/CHI/mio_CHI_Jong_Shyn.png` | 軍工組織（MIO）圖示：中信造船（Jong Shyn Shipbuilding） |
 | `gfx/interface/ideas/ZZZ_government_type/ZZZ_taiwanese_semi_presidential_system.png` | 國家精神圖示：中華五權共和制（ZZZ_taiwanese_semi_presidential_system） |
-| `gfx/interface/ideologies/reformist_socialism_PRC.png` | 子意識形態圖示：中華人民共和國改良社會主義（PRC Reformist Socialism） |
+| `gfx/interface/ideologies/reformist_socialism_PRC.png` | 子意識形態圖示：左翼三民主義（PRC Reformist Socialism） |
 | `gfx/interface/technologies/infantry/CHI_infantry1.dds` 至 `CHI_infantry6.dds` | 自訂步兵科技等級圖示（第 1 至 6 級） |
 
 ### 載入畫面桌布（`gfx/loadingscreens/` — 共 51 個檔案）
@@ -82,6 +81,7 @@
 * **`events/TFR_events_USA.txt`**：已移除。TFR 本體的 `usa.103` 事件在第二次美國內戰爆發時，原本就會為 `CHI` 觸發 `taiwan.2`。子模組事件 `CHI.3`（「太平洋之殤」）現已直接掛鉤於 `events/TFR_events_CHI.txt` 中 `taiwan.2` 的 `hidden_effect` 內。
 * **`events/TFR_events_SAU.txt`**：已移除。該檔案原先唯一的自訂呼叫為 `CHI.10`（石油危機）與 `CHI.TW.7`（阿拉伯勝利）。這兩個事件現已改由子模組本身維護的 `events/TFR_events_ZZZ_news.txt` 中的 `news.121` 與 `news.126` 觸發。
 * **`common/opinion_modifiers/china_modifier.txt`**：已移除。HoI4 的關係評價修正是累加讀取的；6 個中華民國專屬修正（`CHI_Block_tourists`、`CHI_ARR_humanitarian_aid`、`CHI_Diplomatic_countries`、`CHI_Assist_reconstruction`、`CHI_support_us`、`CHI_opposed_us`）已合併至既有的專屬檔案 `common/opinion_modifiers/TFR_CHI_opinion_modifiers.txt`，不再覆寫本體的 `china_modifier.txt`。
+* **`common/game_rules/00_game_rules.txt`**：已移除。HoI4 支援累加讀取遊戲規則；3 個中華民國專屬遊戲規則（`CHI_election_2020_gamerule`、`CHI_election_2024_KMT`、`CHI_japan_return_land`）已移入獨立檔案 `common/game_rules/000_TFR_ROC_game_rules.txt`，並配置於頂層分類群組 `RULE_GROUP_TFR_ROC`（「烈焰升騰：同島一命」）之下。不再覆寫本體 5,760 行的 `00_game_rules.txt`。
 
 ---
 
@@ -92,6 +92,7 @@
 * **國策（National Focus）**：`common/national_focus/TFR_national_focus_CHI.txt`
 * **事件（Events）**：`events/TFR_events_CHI.txt`、`events/TFR_event_CHI_phase2.txt`~`phase4.txt`、`events/taiwan.txt`、`events/CHI_MIO_event.txt`
 * **決議（Decisions）**：`common/decisions/TFR_decisions_CHI.txt`、`common/decisions/categories/TFR_decision_categories_CHI.txt`
+* **遊戲規則（Game Rules）**：`common/game_rules/000_TFR_ROC_game_rules.txt`
 * **關係評價修正（Opinion Modifiers）**：`common/opinion_modifiers/TFR_CHI_opinion_modifiers.txt`
 * **角色與領導人（Characters & Leaders）**：`common/characters/TFR_characters_CHI.txt`
 * **國家精神與動態修正（Ideas & Dynamic Modifiers）**：`common/ideas/TFR_ideas_CHI.txt`、`common/dynamic_modifiers/TFR_dynamic_modifiers_CHI.txt`

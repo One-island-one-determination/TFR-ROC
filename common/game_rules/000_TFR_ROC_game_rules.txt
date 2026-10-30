@@ -1,0 +1,82 @@
+###########################
+# TFR-ROC Custom Game Rules
+###########################
+
+CHI_election_2020_gamerule = { # 中華民國2020年大選
+	name = "CHI_election_2020_gamerule"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_TFR_ROC"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = CHI_election_green_2020
+		text = "CHI_election_green_2020_TXT"
+		desc = "CHI_election_green_2020_TXT_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = CHI_election_blue_2020
+		text = "CHI_election_blue_2020_TXT"
+		desc = "CHI_election_blue_2020_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+CHI_election_2024_KMT = { # 中華民國2024年大選 國民黨
+	name = "CHI_election_2024_KMT"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_TFR_ROC"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = CHI_election_2024_KMT_Han
+		text = "CHI_election_2024_KMT_Han_TXT"
+		desc = "CHI_election_2024_KMT_Han_TXT_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = CHI_election_2024_KMT_Chiang
+		text = "CHI_election_2024_KMT_Chiang_TXT"
+		desc = "CHI_election_2024_KMT_Chiang_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+CHI_japan_return_land = { # 民國竟成後日本是否還地
+	name = "CHI_japan_return_land"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_TFR_ROC"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = CHI_japan_return_land_yes
+		text = "CHI_japan_return_land_yes_TXT"
+		desc = "CHI_japan_return_land_yes_TXT_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = CHI_japan_return_land_no
+		text = "CHI_japan_return_land_no_TXT"
+		desc = "CHI_japan_return_land_no_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
