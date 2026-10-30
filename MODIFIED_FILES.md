@@ -103,11 +103,47 @@ These files are either unique to the submod or contain the primary content for R
 
 ---
 
-## 5. Upstream Sync Checklist
+## 5. Third-Party Submod Compatibility & Patching Guide
+
+If you are developing another submod for **The Fire Rises** (such as regional reworks like *Korea Plus*) or creating a dedicated compatibility patch to make multiple TFR submods work seamlessly together with **TFR-ROC**, **the files listed in [Section 1 (Shared Scripted Files)](#1-shared-scripted-files-upstream-logic-overrides) are the exact files that must be merged.**
+
+Because Hearts of Iron IV overrides files on a whole-file basis rather than line-by-line, any two submods modifying the same upstream file will clobber each other based on mod load order. A downstream compatibility patch must merge both sets of modifications into a unified copy.
+
+### Real-World Example: *The Fire Rises: Korea Plus (TFRKP)*
+The *Korea Plus* team created an official compatibility patch between TFRKP and TFR-ROC:
+* **Mod Name**: `TFRKP x ROC Compatibility`
+* **Steam Workshop ID**: [`3791381497`](https://steamcommunity.com/sharedfiles/filedetails/?id=3791381497) (Local path: `F:\SteamLibrary\steamapps\workshop\content\394360\3791381497`)
+* **Dependencies**: Loads after both `The Fire Rises: Korea Plus` and `The Fire Rises: One Island, One Determination` (formerly `TFR - Republic of China`, Workshop ID `3609728809`).
+
+#### Files Merged in the TFRKP Patch:
+| Target File | Merged Content from Both Submods |
+| :--- | :--- |
+| `common/bookmarks/TFR_the_fire_rises.txt` | Merges starting scenarios, country definitions, ideas, and initial focuses for both `CHI` and `KOR`. |
+| `common/ideologies/TFR_ideologies.txt` | Combines ROC subideologies (`Taiwanese_constitutionalism`, `Taiwanese_Progressivism`, etc.) and KOR custom subideologies. |
+| `common/scripted_localisation/TFR_subideology_scripted_loc.txt` | Combines dynamic subideology display names for both tags. |
+| `common/scripted_triggers/00_TFR_scripted_triggers_ZZZ_generic.txt` | Appends both `tag = CHI` and `tag = KOR` into `has_content_tag`. |
+| `common/military_industrial_organization/organizations/TFR_organizations_ZZZ_generic.txt` | Excludes both `CHI` and `KOR` from generic MIO assignments (`NOT = { tag = CHI }`, `NOT = { tag = KOR }`). |
+| `interface/frontendgamesetupview.gui` | Merges country selection screen buttons, leader portraits, and path tooltips for both nations. |
+| `interface/frontendmainview.gui` & `gfx/interface/country_selection_bg.dds` | Resolves title screen and country selection art conflicts. |
+| `events/TFR_events_ZZZ_news.txt` | If both submods hook news events or music branches, triggers must be unified here. |
+
+> [!WARNING]
+> **Status of the TFRKP Compatibility Patch**:
+> According to the Korea Plus development team, the `TFRKP x ROC Compatibility` patch is an **early prototype** (*"It just proto-type so that make some unexpected bugs."*). While it provides a functional reference for which files need patching, players and developers should expect potential unexpected bugs, script conflicts, or outdated overrides. Thorough testing and maintenance against current versions of both mods are recommended before serious playthroughs.
+
+### Files That Do NOT Require Patching (Cleanly Isolated):
+You **do not** need to patch files listed under [Section 4 (Dedicated Submod Content Files)](#4-dedicated-submod-content-files):
+* **Custom Game Rules** (`common/game_rules/000_TFR_ROC_game_rules.txt`): Loaded additively by HoI4 under `RULE_GROUP_TFR_ROC` without touching `00_game_rules.txt`.
+* **Custom Opinion Modifiers** (`common/opinion_modifiers/TFR_CHI_opinion_modifiers.txt`): Loaded additively without touching `china_modifier.txt`.
+* **National Focuses, Events, Decisions, MIOs, Characters**: Fully namespaced to `CHI` and completely independent.
+
+---
+
+## 6. Upstream Sync Checklist
 
 When base TFR updates on the Steam Workshop (`\SteamLibrary\steamapps\workshop\content\394360\3350890356`):
 
 1. **Diff `events/TFR_events_ZZZ_news.txt`**: Ensure base TFR hasn't restructured news event IDs.
-2. **Diff `common/game_rules/00_game_rules.txt`**: Ensure base TFR hasn't changed rule categories or added conflicting rule IDs.
+2. **Diff `common/game_rules/00_game_rules.txt`**: Ensure base TFR hasn't added conflicting rule names (though our rules are now cleanly separated in `000_TFR_ROC_game_rules.txt`).
 3. **Diff `common/scripted_triggers/00_TFR_scripted_triggers_ZZZ_generic.txt`**: Verify any newly added skeleton or content tags from upstream.
 4. **Diff `common/ideologies/TFR_ideologies.txt`**: Check if base TFR added new base ideologies or changed subideology properties.

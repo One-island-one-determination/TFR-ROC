@@ -103,11 +103,47 @@
 
 ---
 
-## 5. 上游更新同步檢查清單
+## 5. 第三方子模組相容性與補丁製作指南
+
+若你正在開發 **The Fire Rises** 的其他子模組（例如像《Korea Plus 韓國擴展》等地區擴展子模組），或是打算製作讓多個 TFR 子模組與 **TFR-ROC** 同時運行的相容性補丁（Compatibility Patch），**[第 1 節（共有腳本檔案）](#1-共有腳本檔案上游邏輯覆寫) 所列出的檔案就是你必須進行合併（Merge）修改的目標。**
+
+由於《鋼鐵雄心 IV》（HoI4）在處理同路徑檔案時是以「整個檔案覆寫」而非「逐行合併」的方式運作，只要兩個子模組修改了同一個 TFR 本體檔案，就會依據載入順序互相覆蓋。因此必須透過後置載入的相容性補丁將雙方的改動整合至同一份檔案中。
+
+### 實際範例：韓國擴展子模組《The Fire Rises: Korea Plus (TFRKP)》
+《Korea Plus》團隊曾針對 TFRKP 與 TFR-ROC 製作相容性補丁：
+* **補丁名稱**：`TFRKP x ROC Compatibility`
+* **Steam 工作坊 ID**：[`3791381497`](https://steamcommunity.com/sharedfiles/filedetails/?id=3791381497)（本地路徑：`F:\SteamLibrary\steamapps\workshop\content\394360\3791381497`）
+* **相依關係（Dependencies）**：設定於 `The Fire Rises: Korea Plus` 與 `The Fire Rises: One Island, One Determination`（原名 `TFR - Republic of China`，工作坊 ID `3609728809`）之後載入。
+
+#### 該補丁所合併的檔案一覽：
+| 目標檔案路徑 | 雙方子模組合併內容說明 |
+| :--- | :--- |
+| `common/bookmarks/TFR_the_fire_rises.txt` | 合併 2020 開局書籤設定，整合 `CHI` 與 `KOR` 兩國的自訂開局敘述、精神與初始國策。 |
+| `common/ideologies/TFR_ideologies.txt` | 合併 ROC 子意識形態（如 `Taiwanese_constitutionalism`、`Taiwanese_Progressivism`）與 KOR 的自訂子意識形態。 |
+| `common/scripted_localisation/TFR_subideology_scripted_loc.txt` | 合併雙方子意識形態的動態顯示文字腳本。 |
+| `common/scripted_triggers/00_TFR_scripted_triggers_ZZZ_generic.txt` | 將 `tag = CHI` 與 `tag = KOR` 一併加入 `has_content_tag` 判定。 |
+| `common/military_industrial_organization/organizations/TFR_organizations_ZZZ_generic.txt` | 排除兩國分配通用軍工組織（加入 `NOT = { tag = CHI }` 與 `NOT = { tag = KOR }`）。 |
+| `interface/frontendgamesetupview.gui` | 合併開局國家選擇介面，整合雙方的國旗按鈕、主要領導人圖像與路線提示。 |
+| `interface/frontendmainview.gui` 與 `gfx/interface/country_selection_bg.dds` | 協調主選單排版與開局選角背景圖片衝突。 |
+| `events/TFR_events_ZZZ_news.txt` | 若雙方皆有自訂新聞事件或超事件音樂分流，需在此處整合。 |
+
+> [!WARNING]
+> **TFRKP 相容補丁現況說明**：
+> 依據《Korea Plus》開發團隊的說明，該 `TFRKP x ROC Compatibility` 補丁目前屬於**概念原型（Prototype）**階段（原話：*「It just proto-type so that make some unexpected bugs.」*）。雖然它提供了正確的補丁結構示範，但在實機運行中仍可能產生意料之外的 Bug、過時覆寫或腳本邏輯衝突，在正式遊玩或整合前建議先針對兩邊的最新版本進行測試與除錯。
+
+### 無需製作相容補丁的檔案（已完全獨立隔離）：
+[第 4 節（子模組專屬內容檔案）](#4-子模組專屬內容檔案) 所列之內容**完全不需要**製作補丁：
+* **自訂遊戲規則**（`common/game_rules/000_TFR_ROC_game_rules.txt`）：採用獨立檔案累加載入至 `RULE_GROUP_TFR_ROC`，不覆寫本體 `00_game_rules.txt`。
+* **關係評價修正**（`common/opinion_modifiers/TFR_CHI_opinion_modifiers.txt`）：累加載入，不覆寫本體 `china_modifier.txt`。
+* **專屬國策、事件、決議、角色、軍工組織**：皆使用 `CHI` 專屬前綴獨立命名，互不干擾。
+
+---
+
+## 6. 上游更新同步檢查清單
 
 當 TFR 本體模組於 Steam 工作坊更新時（路徑：`\SteamLibrary\steamapps\workshop\content\394360\3350890356`）：
 
 1. **比對 `events/TFR_events_ZZZ_news.txt`**：確認 TFR 本體未重構新聞事件 ID。
-2. **比對 `common/game_rules/00_game_rules.txt`**：確認 TFR 本體未變更規則分類或新增衝突的規則 ID。
+2. **比對 `common/game_rules/00_game_rules.txt`**：確認 TFR 本體未變更規則分類或新增衝突的規則 ID（雖然我方已改用獨立檔案 `000_TFR_ROC_game_rules.txt`，仍需確認頂層分類有無衝突）。
 3. **比對 `common/scripted_triggers/00_TFR_scripted_triggers_ZZZ_generic.txt`**：確認上游是否新增了任何骨架內容（Skeleton）或完整內容國家標籤（Content tags）。
 4. **比對 `common/ideologies/TFR_ideologies.txt`**：檢查 TFR 本體是否新增了基礎意識形態或變更了子意識形態屬性。
