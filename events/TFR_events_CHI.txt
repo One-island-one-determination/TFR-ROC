@@ -3710,7 +3710,11 @@ country_event = {
         JAP = {
           add_to_faction = KOR
         }
+        PRC = {
+          add_to_faction = PRK
+        }
         PRK = {
+          set_country_flag = eadi_member
           country_event = {
             id = nk.14
             days = 60
