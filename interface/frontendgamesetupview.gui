@@ -1,3 +1,8 @@
+# ==============================================================================
+# SUBMOD OVERRIDE (TFR-ROC):
+# Overrides base TFR interface/frontendgamesetupview.gui.
+# Custom submod edit: Adds ROC (KMT & DPP) path selection preview flags/tooltips.
+# ==============================================================================
 guiTypes = {
 
 	containerWindowType = {
@@ -634,6 +639,7 @@ guiTypes = {
 			## y: ± 95 to move one slot up or down
 
 			iconType = {
+				# TFR-ROC edit: ROC path preview icons
 				name = "GFX_KMT"
 				quadTextureSprite = "GFX_KMT"
 				position = { x = 200  y = 130 }

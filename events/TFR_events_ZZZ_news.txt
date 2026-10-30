@@ -1,3 +1,11 @@
+# ==============================================================================
+# SUBMOD OVERRIDE (TFR-ROC):
+# Overrides base TFR events/TFR_events_ZZZ_news.txt.
+# Custom submod edits exist ONLY in:
+#   - news.121: Triggers CHI.10 (Third Oil Crisis) for CHI.
+#   - news.126: Triggers CHI.TW.7 (Arab Republic Reconstruction) for CHI.
+#   - news.139: Branches Taiwan Strait War super event & sound for CHI.
+# ==============================================================================
 add_namespace = news
 #Libyan Civil War Ends
 news_event = {
@@ -229,6 +237,7 @@ news_event = {
 	picture = GFX_Oil_War_News
 	is_triggered_only = yes
 	major = yes
+	# TFR-ROC edit: Trigger Third Oil Crisis for CHI
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -390,6 +399,7 @@ news_event = {
 	picture = GFX_SAU_republic_win
 	is_triggered_only = yes
 	major = yes
+	# TFR-ROC edit: Trigger Arab Republic reconstruction for CHI
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -842,6 +852,7 @@ news_event = {
 				limit = {
 					is_ai = no
 				}
+				# TFR-ROC edit: Branch ROC defense super event & sound for CHI
 				if = {
 					limit = { tag = CHI }
 					set_country_flag = CHI_invasion_of_taiwan_super

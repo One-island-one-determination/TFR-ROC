@@ -1,3 +1,8 @@
+# ==============================================================================
+# SUBMOD OVERRIDE (TFR-ROC):
+# Overrides base TFR common/scripted_triggers/00_TFR_scripted_triggers_ZZZ_generic.txt.
+# Custom submod edit: Adds tag = CHI to has_content_tag.
+# ==============================================================================
 #Tags
 is_relavent_tag = {
   #Determines If A Nation Is Relavent To Content
@@ -18,6 +23,7 @@ has_content_tag = {
     tag = FRA
     tag = GER
     tag = FPR
+    # TFR-ROC edit: Content tag
     tag = CHI
   }
 }

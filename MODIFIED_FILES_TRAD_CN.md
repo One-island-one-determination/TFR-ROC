@@ -1,0 +1,111 @@
+# TFR-ROC：修改與覆寫檔案參考指南
+
+本文件記錄此子模組（Submod）中所有覆寫或修改 **《烈焰升騰》（The Fire Rises）** 本體模組（Steam 工作坊 ID `3350890356`）原始檔案的項目。
+
+---
+
+## 1. 共用腳本檔案（上游邏輯覆寫）
+
+這些檔案與 TFR 本體模組的檔案路徑完全相同，啟用子模組時將會直接覆寫本體檔案。當 TFR 本體更新這些檔案時，需特別留意相容性。
+
+| 檔案路徑 | 覆寫目的 | 主要修改內容 |
+| :--- | :--- | :--- |
+| `events/TFR_events_ZZZ_news.txt` | 核心新聞事件觸發器 | • `news.121`：立即觸發 `CHI.10`（第三次石油危機）。<br>• `news.126`：立即觸發 `CHI.TW.7`（阿拉伯共和國重建）。<br>• `news.139`：為 `CHI` 分支觸發中華民國防衛超事件（`CHI_invasion_of_taiwan_super`）與專屬音樂。 |
+| `common/game_rules/00_game_rules.txt` | 自訂遊戲規則 | 新增中華民國（ROC）自訂遊戲規則：<br>• `CHI_election_2020_gamerule`<br>• `CHI_election_2024_KMT`<br>• `CHI_japan_return_land` |
+| `common/ideologies/TFR_ideologies.txt` | 子意識形態定義 | 新增中華民國（ROC）自訂子意識形態：<br>• `social_democrat`：`tridemism_socdem`<br>• `social_liberal`：`Taiwanese_Progressivism`、`Taiwanese_Progressivism2`<br>• `market_liberal`：`taiwanese_liberal_populism2`<br>• `conservative`：`Taiwanese_constitutionalism`<br>• `authoritarian_democrat`：`han_kuo_yu_thoughts`<br>• `nationalist`：`CHI_ultimate_three_principles` |
+| `common/scripted_localisation/TFR_subideology_scripted_loc.txt` | 子意識形態顯示本地化 | 將上述新增的中華民國子意識形態映射至對應的本地化顯示字串。 |
+| `common/scripted_localisation/TFR_peace_popup_scripted_localisation.txt` | 議和彈窗文本 | 為 `CHI` 新增自訂的 OIOD 議和彈窗腳本本地化文本。 |
+| `common/scripted_triggers/00_TFR_scripted_triggers_ZZZ_generic.txt` | 內容觸發器 | 在 `has_content_tag` 中加入 `tag = CHI`，使 `CHI` 被識別為擁有完整內容的國家。 |
+| `common/bookmarks/TFR_the_fire_rises.txt` | 2020 劇本書籤 | 設定 `default_country = "CHI"`，並配置 2020 年中華民國開局精神、國策與劇本說明。 |
+| `common/military_industrial_organization/organizations/TFR_organizations_ZZZ_generic.txt` | 通用軍工組織（MIO） | 防止通用裝甲／航空／軍需／造船軍工組織被分配給 `CHI`。 |
+| `common/countries/cosmetic.txt` | 外觀標籤（Cosmetic tags） | 新增 `CHI_blackout` 以及中華民國專屬的動態外觀標籤。 |
+| `common/map_modes/TFR_map_modes.txt` | 地圖模式 | 新增自訂國際組織地圖模式設定。 |
+| `common/opinion_modifiers/china_modifier.txt` | 兩岸外交關係 | 新增兩岸關係評價修正（如 `banned_falun_gong`、`chinese_american_rivalry` 等）。 |
+| `common/scripted_guis/TFR_startup_menu.txt` | 開局指南 GUI 腳本 | 為中華民國開局指南彈窗新增 `CHI_info_special_visible` 判定檢查。 |
+| `interface/frontendgamesetupview.gui` | 國家選擇畫面 | 在劇本設定畫面中新增中華民國路線預覽旗幟與提示框（`GFX_KMT` / `GFX_DPP`）。 |
+| `interface/frontendmainview.gui` | 主選單 UI | 自訂子模組主選單標誌（Logo）與位置配置。 |
+| `interface/TFR_start_menu.gui` | 開局指南 GUI 佈局 | 在開局視窗中加入 `CHI_info_special` 圖示／按鈕。 |
+| `interface/fonts_chinese.gfx` | 字型定義 | 調整簡體中文排版的備用字型映射（Fallback font mapping）。 |
+| `Map/adjacencies.csv` | 地圖鄰接關係 | 自訂台灣本島與澎湖／金門／馬祖之間的跨海通道與鄰接設定。 |
+| `Map/railways.txt` | 鐵路網路 | 台灣鐵路基礎設施配置。 |
+| `Map/buildings.txt` | 3D 地標生成座標 | 在南京地塊 1222 新增 3D 地標生成位置（`1222;landmark_spawn;4664.15;10.10;1177.28;-0.07;0`），以渲染移植的南京總統府 3D 模型（`landmark_nanjing_presidential_palace`）。 |
+
+---
+
+## 2. 覆寫之圖像、材質與視覺資源
+
+以下二進位圖片與材質檔案將直接替換 TFR 本體模組的資源：
+
+### 旗幟（`gfx/flags/`）
+| 檔案路徑 | 說明 |
+| :--- | :--- |
+| `gfx/flags/CHI_taiwan_republic.tga` | 台灣共和國旗幟（標準尺寸） |
+| `gfx/flags/medium/CHI_taiwan_republic.tga` | 台灣共和國旗幟（中等尺寸） |
+| `gfx/flags/small/CHI_taiwan_republic.tga` | 台灣共和國旗幟（小型／兵牌尺寸） |
+| `gfx/flags/medium/HKN_conservative.tga` | 香港保守派陣營旗幟（中等尺寸） |
+
+### UI 材質與介面美術（`gfx/interface/`）
+| 檔案路徑 | 說明 |
+| :--- | :--- |
+| `gfx/interface/country_selection_bg.dds` | 國家選擇畫面背景美術圖 |
+| `gfx/interface/logo_game.dds` | 遊戲／子模組標題畫面標誌（Logo） |
+| `gfx/interface/thisisdog.dds` | 介面美術資源 |
+| `gfx/texticons/banners/decisions/PROXY_saudi_cw_cat_banner.png` | 沙烏地內戰決議分類橫幅材質 |
+
+### 肖像與領導人（`gfx/leaders/`）
+| 檔案路徑 | 說明 |
+| :--- | :--- |
+| `gfx/leaders/CHI/CHI_chu_li_luan.png` | 領導人肖像：朱立倫（Eric Chu） |
+| `gfx/leaders/CHI/CHI_hou_yu_ih.png` | 領導人肖像：侯友宜（Hou Yu-ih） |
+| `gfx/leaders/CHI/generals/CHI_hsu_yen_pu.png` | 將領肖像：徐衍璞（Hsu Yen-pu） |
+| `gfx/leaders/CHI/generals/Chiu_Kuo_Cheng.png` | 將領肖像：邱國正（Chiu Kuo-cheng） |
+
+### 國策、科技與意識形態圖示（`gfx/interface/`）
+| 檔案路徑 | 說明 |
+| :--- | :--- |
+| `gfx/interface/goals/CHI/CHI_grant_emergency_powers.png` | 國策圖示：授予緊急權力（Grant Emergency Powers） |
+| `gfx/interface/ideas/CHI/mio_CHI_Jong_Shyn.png` | 軍工組織（MIO）圖示：中信造船（Jong Shyn Shipbuilding） |
+| `gfx/interface/ideas/ZZZ_government_type/ZZZ_taiwanese_semi_presidential_system.png` | 國家精神圖示：中華五權共和制（ZZZ_taiwanese_semi_presidential_system） |
+| `gfx/interface/ideologies/reformist_socialism_PRC.png` | 子意識形態圖示：中華人民共和國改良社會主義（PRC Reformist Socialism） |
+| `gfx/interface/technologies/infantry/CHI_infantry1.dds` 至 `CHI_infantry6.dds` | 自訂步兵科技等級圖示（第 1 至 6 級） |
+
+### 載入畫面桌布（`gfx/loadingscreens/` — 共 51 個檔案）
+所有 TFR 本體模組的標準載入畫面皆已替換為子模組自訂的載入畫面美術圖：
+* **編號檔案**：`load_1.dds` 至 `load_34.dds`
+* **DLC／資料片命名檔案**：`load_aat.dds`、`load_aat2.dds`、`load_bba.dds`、`load_botb.dds`、`load_dod.dds`、`load_goe.dds`、`load_lar.dds`、`load_mtg.dds`、`load_mtg_2.dds`、`load_ncns_chi.dds`、`load_ncns_jap.dds`、`load_nsb.dds`、`load_nsb2.dds`、`load_tfv.dds`、`load_tiger.dds`、`load_toa.dds`、`load_ww.dds`
+
+---
+
+## 3. 已移除之覆寫檔案（清理完畢）
+
+以下上游檔案曾被本子模組覆寫，但為了最大化與 TFR 本體模組的相容性，目前已**移除**並改用更簡潔的掛鉤（Hooks）方式實作：
+
+* **`events/TFR_events_USA.txt`**：已移除。TFR 本體的 `usa.103` 事件在第二次美國內戰爆發時，原本就會為 `CHI` 觸發 `taiwan.2`。子模組事件 `CHI.3`（「太平洋之殤」）現已直接掛鉤於 `events/TFR_events_CHI.txt` 中 `taiwan.2` 的 `hidden_effect` 內。
+* **`events/TFR_events_SAU.txt`**：已移除。該檔案原先唯一的自訂呼叫為 `CHI.10`（石油危機）與 `CHI.TW.7`（阿拉伯勝利）。這兩個事件現已改由子模組本身維護的 `events/TFR_events_ZZZ_news.txt` 中的 `news.121` 與 `news.126` 觸發。
+
+---
+
+## 4. 子模組專屬內容檔案
+
+以下檔案為本子模組獨有，或包含中華民國（`CHI`）的主要核心內容：
+
+* **國策（National Focus）**：`common/national_focus/TFR_national_focus_CHI.txt`
+* **事件（Events）**：`events/TFR_events_CHI.txt`、`events/TFR_event_CHI_phase2.txt`~`phase4.txt`、`events/taiwan.txt`、`events/CHI_MIO_event.txt`
+* **決議（Decisions）**：`common/decisions/TFR_decisions_CHI.txt`、`common/decisions/categories/TFR_decision_categories_CHI.txt`
+* **角色與領導人（Characters & Leaders）**：`common/characters/TFR_characters_CHI.txt`
+* **國家精神與動態修正（Ideas & Dynamic Modifiers）**：`common/ideas/TFR_ideas_CHI.txt`、`common/dynamic_modifiers/TFR_dynamic_modifiers_CHI.txt`
+* **軍工組織（MIOs）**：`common/military_industrial_organization/organizations/TFR_organizations_CHI.txt`
+* **歷史設定（History）**：`history/countries/CHI - China.txt`、`history/states/`（台北 1148、台中 1149、台南 1150、台灣 524、金門 648）、`history/units/`
+* **圖形介面與超事件（GUI & Super Events）**：`interface/CHI_superevent.gui`、`common/scripted_guis/CHI_super_events.txt`、`sound/CHI_superevent_sounds.asset`
+* **本地化文本（Localisation）**：`localisation/simp_chinese/`（`TFR_country_localisation_CHI_l_simp_chinese.yml`、`TFR_events_CHI_l_simp_chinese.yml`、`CHI_super_events_l_simp_chinese.yml` 等）
+
+---
+
+## 5. 上游更新同步檢查清單
+
+當 TFR 本體模組於 Steam 工作坊更新時（路徑：`F:\SteamLibrary\steamapps\workshop\content\394360\3350890356`）：
+
+1. **比對 `events/TFR_events_ZZZ_news.txt`**：確認 TFR 本體未重構新聞事件 ID。
+2. **比對 `common/game_rules/00_game_rules.txt`**：確認 TFR 本體未變更規則分類或新增衝突的規則 ID。
+3. **比對 `common/scripted_triggers/00_TFR_scripted_triggers_ZZZ_generic.txt`**：確認上游是否新增了任何骨架內容（Skeleton）或完整內容國家標籤（Content tags）。
+4. **比對 `common/ideologies/TFR_ideologies.txt`**：檢查 TFR 本體是否新增了基礎意識形態或變更了子意識形態屬性。

@@ -1,3 +1,15 @@
+# ==============================================================================
+# SUBMOD OVERRIDE (TFR-ROC):
+# Overrides base TFR common/scripted_localisation/TFR_subideology_scripted_loc.txt.
+# Custom ROC subideology display mappings added:
+#   - tridemism_socdem -> tridemism_socdem (social_democrat)
+#   - Taiwanese_Progressivism -> Taiwanese_Progressivism (social_liberal)
+#   - Taiwanese_Progressivism2 -> Taiwanese_Progressivism2 (social_liberal)
+#   - taiwanese_liberal_populism / taiwanese_liberal_populism2 -> loc_taiwanese_liberal_populism (market_liberal)
+#   - Taiwanese_constitutionalism -> Taiwanese_constitutionalism (conservative)
+#   - han_kuo_yu_thoughts -> han_kuo_yu_thoughts (authoritarian_democrat)
+#   - CHI_ultimate_three_principles -> CHI_ultimate_three_principles (nationalist)
+# ==============================================================================
 defined_text = {
 	name = GetIdeologySubtype
 	text = {

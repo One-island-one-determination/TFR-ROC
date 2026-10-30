@@ -1,3 +1,11 @@
+# ==============================================================================
+# SUBMOD OVERRIDE (TFR-ROC):
+# Overrides base TFR common/game_rules/00_game_rules.txt.
+# Custom submod game rules added:
+#   - CHI_election_2020_gamerule
+#   - CHI_election_2024_KMT
+#   - CHI_japan_return_land
+# ==============================================================================
 #East Asia 东亚
 THE_MON_election = {#Mongolia 2021 Election 蒙古2021年大选
 	name = "THE_MON_election"
@@ -818,6 +826,7 @@ The_JAP_CC_Postwar_leadership_election = {#Post Taiwan War §8Civil Coalition§!
 ##
 
 
+# TFR-ROC edit: Custom ROC game rules
 CHI_election_2020_gamerule = {#Republic of China 2020 Election 中华民国2020年大选
 	name = "CHI_election_2020_gamerule"
 	required_dlc = "Waking the Tiger"
