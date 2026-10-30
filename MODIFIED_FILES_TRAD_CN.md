@@ -20,7 +20,6 @@
 | `common/military_industrial_organization/organizations/TFR_organizations_ZZZ_generic.txt` | 通用軍工組織（MIO） | 防止通用裝甲／航空／軍需／造船軍工組織被分配給 `CHI`。 |
 | `common/countries/cosmetic.txt` | 外觀標籤（Cosmetic tags） | 新增 `CHI_blackout` 以及中華民國專屬的動態外觀標籤。 |
 | `common/map_modes/TFR_map_modes.txt` | 地圖模式 | 新增自訂國際組織地圖模式設定。 |
-| `common/opinion_modifiers/china_modifier.txt` | 兩岸外交關係 | 新增兩岸關係評價修正（如 `banned_falun_gong`、`chinese_american_rivalry` 等）。 |
 | `common/scripted_guis/TFR_startup_menu.txt` | 開局指南 GUI 腳本 | 為中華民國開局指南彈窗新增 `CHI_info_special_visible` 判定檢查。 |
 | `interface/frontendgamesetupview.gui` | 國家選擇畫面 | 在劇本設定畫面中新增中華民國路線預覽旗幟與提示框（`GFX_KMT` / `GFX_DPP`）。 |
 | `interface/frontendmainview.gui` | 主選單 UI | 自訂子模組主選單標誌（Logo）與位置配置。 |
@@ -82,6 +81,7 @@
 
 * **`events/TFR_events_USA.txt`**：已移除。TFR 本體的 `usa.103` 事件在第二次美國內戰爆發時，原本就會為 `CHI` 觸發 `taiwan.2`。子模組事件 `CHI.3`（「太平洋之殤」）現已直接掛鉤於 `events/TFR_events_CHI.txt` 中 `taiwan.2` 的 `hidden_effect` 內。
 * **`events/TFR_events_SAU.txt`**：已移除。該檔案原先唯一的自訂呼叫為 `CHI.10`（石油危機）與 `CHI.TW.7`（阿拉伯勝利）。這兩個事件現已改由子模組本身維護的 `events/TFR_events_ZZZ_news.txt` 中的 `news.121` 與 `news.126` 觸發。
+* **`common/opinion_modifiers/china_modifier.txt`**：已移除。HoI4 的關係評價修正是累加讀取的；6 個中華民國專屬修正（`CHI_Block_tourists`、`CHI_ARR_humanitarian_aid`、`CHI_Diplomatic_countries`、`CHI_Assist_reconstruction`、`CHI_support_us`、`CHI_opposed_us`）已合併至既有的專屬檔案 `common/opinion_modifiers/TFR_CHI_opinion_modifiers.txt`，不再覆寫本體的 `china_modifier.txt`。
 
 ---
 
@@ -92,6 +92,7 @@
 * **國策（National Focus）**：`common/national_focus/TFR_national_focus_CHI.txt`
 * **事件（Events）**：`events/TFR_events_CHI.txt`、`events/TFR_event_CHI_phase2.txt`~`phase4.txt`、`events/taiwan.txt`、`events/CHI_MIO_event.txt`
 * **決議（Decisions）**：`common/decisions/TFR_decisions_CHI.txt`、`common/decisions/categories/TFR_decision_categories_CHI.txt`
+* **關係評價修正（Opinion Modifiers）**：`common/opinion_modifiers/TFR_CHI_opinion_modifiers.txt`
 * **角色與領導人（Characters & Leaders）**：`common/characters/TFR_characters_CHI.txt`
 * **國家精神與動態修正（Ideas & Dynamic Modifiers）**：`common/ideas/TFR_ideas_CHI.txt`、`common/dynamic_modifiers/TFR_dynamic_modifiers_CHI.txt`
 * **軍工組織（MIOs）**：`common/military_industrial_organization/organizations/TFR_organizations_CHI.txt`

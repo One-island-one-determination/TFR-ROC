@@ -20,7 +20,6 @@ These files have identical paths to base TFR files and will overwrite them when 
 | `common/military_industrial_organization/organizations/TFR_organizations_ZZZ_generic.txt` | Generic MIOs | Prevents generic tank/air/materiel/ship organizations from being assigned to `CHI`. |
 | `common/countries/cosmetic.txt` | Cosmetic tags | Adds `CHI_blackout` and ROC-specific dynamic cosmetic tags. |
 | `common/map_modes/TFR_map_modes.txt` | Map modes | Adds custom international organizations map mode setup. |
-| `common/opinion_modifiers/china_modifier.txt` | Cross-strait diplomacy | Adds cross-strait opinion modifiers (`banned_falun_gong`, `chinese_american_rivalry`, etc.). |
 | `common/scripted_guis/TFR_startup_menu.txt` | Startup guide GUI script | Adds `CHI_info_special_visible` check for the ROC startup guide popup. |
 | `interface/frontendgamesetupview.gui` | Country selection screen | Adds ROC path preview flags and tooltips (`GFX_KMT` / `GFX_DPP`) in scenario setup. |
 | `interface/frontendmainview.gui` | Main menu UI | Customizes submod main menu logo and positioning. |
@@ -82,6 +81,7 @@ The following upstream files were previously overridden by this submod, but have
 
 * **`events/TFR_events_USA.txt`**: Removed. Base TFR's `usa.103` already triggers `taiwan.2` for CHI upon the outbreak of the 2nd American Civil War. The submod event `CHI.3` ("太平洋之殤") is now hooked directly inside `taiwan.2`'s `hidden_effect` in `events/TFR_events_CHI.txt`.
 * **`events/TFR_events_SAU.txt`**: Removed. Its only custom calls were `CHI.10` (Oil Crisis) and `CHI.TW.7` (Arab Victory). These are now triggered via `news.121` and `news.126` in `events/TFR_events_ZZZ_news.txt`, which the submod already maintains.
+* **`common/opinion_modifiers/china_modifier.txt`**: Removed. Opinion modifiers are additive in HoI4; the 6 custom ROC modifiers (`CHI_Block_tourists`, `CHI_ARR_humanitarian_aid`, `CHI_Diplomatic_countries`, `CHI_Assist_reconstruction`, `CHI_support_us`, `CHI_opposed_us`) were merged into our existing submod file `common/opinion_modifiers/TFR_CHI_opinion_modifiers.txt`. Base TFR's `china_modifier.txt` is no longer overridden.
 
 ---
 
@@ -92,6 +92,7 @@ These files are either unique to the submod or contain the primary content for R
 * **National Focus**: `common/national_focus/TFR_national_focus_CHI.txt`
 * **Events**: `events/TFR_events_CHI.txt`, `events/TFR_event_CHI_phase2.txt`~`phase4.txt`, `events/taiwan.txt`, `events/CHI_MIO_event.txt`
 * **Decisions**: `common/decisions/TFR_decisions_CHI.txt`, `common/decisions/categories/TFR_decision_categories_CHI.txt`
+* **Opinion Modifiers**: `common/opinion_modifiers/TFR_CHI_opinion_modifiers.txt`
 * **Characters & Leaders**: `common/characters/TFR_characters_CHI.txt`
 * **Ideas & Dynamic Modifiers**: `common/ideas/TFR_ideas_CHI.txt`, `common/dynamic_modifiers/TFR_dynamic_modifiers_CHI.txt`
 * **MIOs**: `common/military_industrial_organization/organizations/TFR_organizations_CHI.txt`
