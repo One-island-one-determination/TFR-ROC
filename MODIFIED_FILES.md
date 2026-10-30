@@ -103,7 +103,7 @@ These files are either unique to the submod or contain the primary content for R
 
 ## 5. Upstream Sync Checklist
 
-When base TFR updates on the Steam Workshop (`F:\SteamLibrary\steamapps\workshop\content\394360\3350890356`):
+When base TFR updates on the Steam Workshop (`\SteamLibrary\steamapps\workshop\content\394360\3350890356`):
 
 1. **Diff `events/TFR_events_ZZZ_news.txt`**: Ensure base TFR hasn't restructured news event IDs.
 2. **Diff `common/game_rules/00_game_rules.txt`**: Ensure base TFR hasn't changed rule categories or added conflicting rule IDs.

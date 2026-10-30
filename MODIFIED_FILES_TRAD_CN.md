@@ -103,7 +103,7 @@
 
 ## 5. 上游更新同步檢查清單
 
-當 TFR 本體模組於 Steam 工作坊更新時（路徑：`F:\SteamLibrary\steamapps\workshop\content\394360\3350890356`）：
+當 TFR 本體模組於 Steam 工作坊更新時（路徑：`\SteamLibrary\steamapps\workshop\content\394360\3350890356`）：
 
 1. **比對 `events/TFR_events_ZZZ_news.txt`**：確認 TFR 本體未重構新聞事件 ID。
 2. **比對 `common/game_rules/00_game_rules.txt`**：確認 TFR 本體未變更規則分類或新增衝突的規則 ID。
