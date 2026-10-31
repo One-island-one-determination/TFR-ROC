@@ -1,58 +1,32 @@
 defined_text = {
   name = CHI_Infiltration_situation
-
   text = {
     trigger = {
-      CHI = {
-        check_variable = {
-          var = CHI_PRC_Infiltration_progress
-          value > 99
-        }
-      }
+      CHI = { check_variable = { CHI_PRC_Infiltration_progress  > 99 } }
     }
     localization_key = "CHI_VeryHigh_Infiltration"
   }
   text = {
     trigger = {
-      CHI = {
-        check_variable = {
-          var = CHI_PRC_Infiltration_progress
-          value > 74
-        }
-      }
+      CHI = { check_variable = { CHI_PRC_Infiltration_progress > 74 } }
     }
     localization_key = "CHI_high_Infiltration"
   }
   text = {
     trigger = {
-      CHI = {
-        check_variable = {
-          var = CHI_PRC_Infiltration_progress
-          value > 49
-        }
-      }
+      CHI = { check_variable = { CHI_PRC_Infiltration_progress > 49 } }
     }
     localization_key = "CHI_midden_Infiltration"
   }
   text = {
     trigger = {
-      CHI = {
-        check_variable = {
-          var = CHI_PRC_Infiltration_progress
-          value > 24
-        }
-      }
+      CHI = { check_variable = { CHI_PRC_Infiltration_progress > 24 } }
     }
     localization_key = "CHI_low_Infiltration"
   }
   text = {
     trigger = {
-      CHI = {
-        check_variable = {
-          var = CHI_PRC_Infiltration_progress
-          value > 0
-        }
-      }
+      CHI = { check_variable = { CHI_PRC_Infiltration_progress > 0 } }
     }
     localization_key = "CHI_no_Infiltration"
   }
@@ -308,3 +282,729 @@ defined_text = {
 #		localization_key = CHI_tuva_problem_base
 #	}
 #}
+
+
+####
+#### PAP
+####
+
+defined_text = {
+  name = Get_PAP_faction_NDC
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_PS_flag } }
+    localization_key = "PAP_PS_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_LOC_flag } }
+    localization_key = "PAP_LOC_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_PRC_flag } }
+    localization_key = "PAP_PRC_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_GA_flag } }
+    localization_key = "PAP_GA_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_CCK_flag } }
+    localization_key = "PAP_CCK_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_CKS_flag } }
+    localization_key = "PAP_CKS_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_POL_flag } }
+    localization_key = "PAP_POL_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_FB_flag } }
+    localization_key = "PAP_FB_name"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_NDC_support
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_PS_flag } }
+    localization_key = "PAP_PS_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_LOC_flag } }
+    localization_key = "PAP_LOC_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_PRC_flag } }
+    localization_key = "PAP_PRC_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_GA_flag } }
+    localization_key = "PAP_GA_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_CCK_flag } }
+    localization_key = "PAP_CCK_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_CKS_flag } }
+    localization_key = "PAP_CKS_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_POL_flag } }
+    localization_key = "PAP_POL_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_FB_flag } }
+    localization_key = "PAP_FB_support"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_NDC_power
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_PS_flag } }
+    localization_key = "PAP_PS_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_LOC_flag } }
+    localization_key = "PAP_LOC_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_PRC_flag } }
+    localization_key = "PAP_PRC_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_GA_flag } }
+    localization_key = "PAP_GA_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_CCK_flag } }
+    localization_key = "PAP_CCK_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_CKS_flag } }
+    localization_key = "PAP_CKS_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_POL_flag } }
+    localization_key = "PAP_POL_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_FB_flag } }
+    localization_key = "PAP_FB_power"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_NDC_modifiers
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_PS_flag } }
+    localization_key = "PAP_PS_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_LOC_flag } }
+    localization_key = "PAP_LOC_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_PRC_flag } }
+    localization_key = "PAP_PRC_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_GA_flag } }
+    localization_key = "PAP_GA_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_CCK_flag } }
+    localization_key = "PAP_CCK_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_CKS_flag } }
+    localization_key = "PAP_CKS_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_POL_flag } }
+    localization_key = "PAP_POL_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_FB_flag } }
+    localization_key = "PAP_FB_modifiers"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_NDC_effect
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_PS_flag } }
+    localization_key = "PAP_PS_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_LOC_flag } }
+    localization_key = "PAP_LOC_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_PRC_flag } }
+    localization_key = "PAP_PRC_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_GA_flag } }
+    localization_key = "PAP_GA_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_CCK_flag } }
+    localization_key = "PAP_CCK_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_CKS_flag } }
+    localization_key = "PAP_CKS_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_POL_flag } }
+    localization_key = "PAP_POL_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_NDC_FB_flag } }
+    localization_key = "PAP_FB_effect"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_LY
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_PS_flag } }
+    localization_key = "PAP_PS_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_LOC_flag } }
+    localization_key = "PAP_LOC_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_PRC_flag } }
+    localization_key = "PAP_PRC_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_GA_flag } }
+    localization_key = "PAP_GA_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_CCK_flag } }
+    localization_key = "PAP_CCK_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_CKS_flag } }
+    localization_key = "PAP_CKS_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_POL_flag } }
+    localization_key = "PAP_POL_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_FB_flag } }
+    localization_key = "PAP_FB_name"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_LY_support
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_PS_flag } }
+    localization_key = "PAP_PS_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_LOC_flag } }
+    localization_key = "PAP_LOC_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_PRC_flag } }
+    localization_key = "PAP_PRC_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_GA_flag } }
+    localization_key = "PAP_GA_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_CCK_flag } }
+    localization_key = "PAP_CCK_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_CKS_flag } }
+    localization_key = "PAP_CKS_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_POL_flag } }
+    localization_key = "PAP_POL_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_FB_flag } }
+    localization_key = "PAP_FB_support"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_LY_power
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_PS_flag } }
+    localization_key = "PAP_PS_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_LOC_flag } }
+    localization_key = "PAP_LOC_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_PRC_flag } }
+    localization_key = "PAP_PRC_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_GA_flag } }
+    localization_key = "PAP_GA_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_CCK_flag } }
+    localization_key = "PAP_CCK_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_CKS_flag } }
+    localization_key = "PAP_CKS_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_POL_flag } }
+    localization_key = "PAP_POL_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_FB_flag } }
+    localization_key = "PAP_FB_power"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_LY_modifiers
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_PS_flag } }
+    localization_key = "PAP_PS_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_LOC_flag } }
+    localization_key = "PAP_LOC_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_PRC_flag } }
+    localization_key = "PAP_PRC_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_GA_flag } }
+    localization_key = "PAP_GA_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_CCK_flag } }
+    localization_key = "PAP_CCK_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_CKS_flag } }
+    localization_key = "PAP_CKS_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_POL_flag } }
+    localization_key = "PAP_POL_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_FB_flag } }
+    localization_key = "PAP_FB_modifiers"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_LY_effect
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_PS_flag } }
+    localization_key = "PAP_PS_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_LOC_flag } }
+    localization_key = "PAP_LOC_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_PRC_flag } }
+    localization_key = "PAP_PRC_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_GA_flag } }
+    localization_key = "PAP_GA_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_CCK_flag } }
+    localization_key = "PAP_CCK_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_CKS_flag } }
+    localization_key = "PAP_CKS_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_POL_flag } }
+    localization_key = "PAP_POL_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_LY_FB_flag } }
+    localization_key = "PAP_FB_effect"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_MND
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_PS_flag } }
+    localization_key = "PAP_PS_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_LOC_flag } }
+    localization_key = "PAP_LOC_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_PRC_flag } }
+    localization_key = "PAP_PRC_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_GA_flag } }
+    localization_key = "PAP_GA_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_CCK_flag } }
+    localization_key = "PAP_CCK_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_CKS_flag } }
+    localization_key = "PAP_CKS_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_POL_flag } }
+    localization_key = "PAP_POL_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_FB_flag } }
+    localization_key = "PAP_FB_name"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_MND_support
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_PS_flag } }
+    localization_key = "PAP_PS_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_LOC_flag } }
+    localization_key = "PAP_LOC_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_PRC_flag } }
+    localization_key = "PAP_PRC_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_GA_flag } }
+    localization_key = "PAP_GA_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_CCK_flag } }
+    localization_key = "PAP_CCK_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_CKS_flag } }
+    localization_key = "PAP_CKS_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_POL_flag } }
+    localization_key = "PAP_POL_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_FB_flag } }
+    localization_key = "PAP_FB_support"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_MND_power
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_PS_flag } }
+    localization_key = "PAP_PS_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_LOC_flag } }
+    localization_key = "PAP_LOC_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_PRC_flag } }
+    localization_key = "PAP_PRC_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_GA_flag } }
+    localization_key = "PAP_GA_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_CCK_flag } }
+    localization_key = "PAP_CCK_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_CKS_flag } }
+    localization_key = "PAP_CKS_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_POL_flag } }
+    localization_key = "PAP_POL_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_FB_flag } }
+    localization_key = "PAP_FB_power"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_MND_modifiers
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_PS_flag } }
+    localization_key = "PAP_PS_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_LOC_flag } }
+    localization_key = "PAP_LOC_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_PRC_flag } }
+    localization_key = "PAP_PRC_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_GA_flag } }
+    localization_key = "PAP_GA_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_CCK_flag } }
+    localization_key = "PAP_CCK_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_CKS_flag } }
+    localization_key = "PAP_CKS_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_POL_flag } }
+    localization_key = "PAP_POL_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_FB_flag } }
+    localization_key = "PAP_FB_modifiers"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_MND_effect
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_PS_flag } }
+    localization_key = "PAP_PS_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_LOC_flag } }
+    localization_key = "PAP_LOC_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_PRC_flag } }
+    localization_key = "PAP_PRC_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_GA_flag } }
+    localization_key = "PAP_GA_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_CCK_flag } }
+    localization_key = "PAP_CCK_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_CKS_flag } }
+    localization_key = "PAP_CKS_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_POL_flag } }
+    localization_key = "PAP_POL_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_MND_FB_flag } }
+    localization_key = "PAP_FB_effect"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_EY
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_PS_flag } }
+    localization_key = "PAP_PS_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_LOC_flag } }
+    localization_key = "PAP_LOC_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_PRC_flag } }
+    localization_key = "PAP_PRC_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_GA_flag } }
+    localization_key = "PAP_GA_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_CCK_flag } }
+    localization_key = "PAP_CCK_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_CKS_flag } }
+    localization_key = "PAP_CKS_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_POL_flag } }
+    localization_key = "PAP_POL_name"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_FB_flag } }
+    localization_key = "PAP_FB_name"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_EY_support
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_PS_flag } }
+    localization_key = "PAP_PS_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_LOC_flag } }
+    localization_key = "PAP_LOC_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_PRC_flag } }
+    localization_key = "PAP_PRC_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_GA_flag } }
+    localization_key = "PAP_GA_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_CCK_flag } }
+    localization_key = "PAP_CCK_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_CKS_flag } }
+    localization_key = "PAP_CKS_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_POL_flag } }
+    localization_key = "PAP_POL_support"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_FB_flag } }
+    localization_key = "PAP_FB_support"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_EY_power
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_PS_flag } }
+    localization_key = "PAP_PS_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_LOC_flag } }
+    localization_key = "PAP_LOC_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_PRC_flag } }
+    localization_key = "PAP_PRC_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_GA_flag } }
+    localization_key = "PAP_GA_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_CCK_flag } }
+    localization_key = "PAP_CCK_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_CKS_flag } }
+    localization_key = "PAP_CKS_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_POL_flag } }
+    localization_key = "PAP_POL_power"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_FB_flag } }
+    localization_key = "PAP_FB_power"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_EY_modifiers
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_PS_flag } }
+    localization_key = "PAP_PS_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_LOC_flag } }
+    localization_key = "PAP_LOC_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_PRC_flag } }
+    localization_key = "PAP_PRC_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_GA_flag } }
+    localization_key = "PAP_GA_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_CCK_flag } }
+    localization_key = "PAP_CCK_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_CKS_flag } }
+    localization_key = "PAP_CKS_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_POL_flag } }
+    localization_key = "PAP_POL_modifiers"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_FB_flag } }
+    localization_key = "PAP_FB_modifiers"
+  }
+  text = { localization_key = "PAP_none" }
+}
+defined_text = {
+  name = Get_PAP_faction_EY_effect
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_PS_flag } }
+    localization_key = "PAP_PS_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_LOC_flag } }
+    localization_key = "PAP_LOC_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_PRC_flag } }
+    localization_key = "PAP_PRC_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_GA_flag } }
+    localization_key = "PAP_GA_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_CCK_flag } }
+    localization_key = "PAP_CCK_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_CKS_flag } }
+    localization_key = "PAP_CKS_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_POL_flag } }
+    localization_key = "PAP_POL_effect"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_PAP_EY_FB_flag } }
+    localization_key = "PAP_FB_effect"
+  }
+  text = { localization_key = "PAP_none" }
+}
