@@ -1,0 +1,99 @@
+CHI_PAP_remove_all = {
+    clr_country_flag = CHI_PAP_NDC_PS_flag
+    clr_country_flag = CHI_PAP_NDC_LOC_flag
+    clr_country_flag = CHI_PAP_NDC_PRC_flag
+    clr_country_flag = CHI_PAP_NDC_GA_flag
+    clr_country_flag = CHI_PAP_NDC_CCK_flag
+    clr_country_flag = CHI_PAP_NDC_CKS_flag
+    clr_country_flag = CHI_PAP_NDC_POL_flag
+    clr_country_flag = CHI_PAP_NDC_FB_flag
+    clr_country_flag = CHI_PAP_LY_PS_flag
+    clr_country_flag = CHI_PAP_LY_LOC_flag
+    clr_country_flag = CHI_PAP_LY_PRC_flag
+    clr_country_flag = CHI_PAP_LY_GA_flag
+    clr_country_flag = CHI_PAP_LY_CCK_flag
+    clr_country_flag = CHI_PAP_LY_CKS_flag
+    clr_country_flag = CHI_PAP_LY_POL_flag
+    clr_country_flag = CHI_PAP_LY_FB_flag
+    clr_country_flag = CHI_PAP_MND_PS_flag
+    clr_country_flag = CHI_PAP_MND_LOC_flag
+    clr_country_flag = CHI_PAP_MND_PRC_flag
+    clr_country_flag = CHI_PAP_MND_GA_flag
+    clr_country_flag = CHI_PAP_MND_CCK_flag
+    clr_country_flag = CHI_PAP_MND_CKS_flag
+    clr_country_flag = CHI_PAP_MND_POL_flag
+    clr_country_flag = CHI_PAP_MND_FB_flag
+    clr_country_flag = CHI_PAP_EY_PS_flag
+    clr_country_flag = CHI_PAP_EY_LOC_flag
+    clr_country_flag = CHI_PAP_EY_PRC_flag
+    clr_country_flag = CHI_PAP_EY_GA_flag
+    clr_country_flag = CHI_PAP_EY_CCK_flag
+    clr_country_flag = CHI_PAP_EY_CKS_flag
+    clr_country_flag = CHI_PAP_EY_POL_flag
+    clr_country_flag = CHI_PAP_EY_FB_flag
+    remove_dynamic_modifier = { modifier = CHI_PAP_PS }
+    remove_dynamic_modifier = { modifier = CHI_PAP_LOC }
+    remove_dynamic_modifier = { modifier = CHI_PAP_PRC }
+    remove_dynamic_modifier = { modifier = CHI_PAP_GA }
+    remove_dynamic_modifier = { modifier = CHI_PAP_CCK }
+    remove_dynamic_modifier = { modifier = CHI_PAP_CKS }
+    remove_dynamic_modifier = { modifier = CHI_PAP_POL }
+    remove_dynamic_modifier = { modifier = CHI_PAP_FB } 
+}
+
+CHI_PAP_remove_PS = {
+    clr_country_flag = CHI_PAP_NDC_PS_flag
+    clr_country_flag = CHI_PAP_LY_PS_flag
+    clr_country_flag = CHI_PAP_MND_PS_flag
+    clr_country_flag = CHI_PAP_EY_PS_flag
+    remove_dynamic_modifier = { modifier = CHI_PAP_PS }
+}
+CHI_PAP_remove_LOC = {
+    clr_country_flag = CHI_PAP_NDC_LOC_flag
+    clr_country_flag = CHI_PAP_LY_LOC_flag
+    clr_country_flag = CHI_PAP_MND_LOC_flag
+    clr_country_flag = CHI_PAP_EY_LOC_flag
+    remove_dynamic_modifier = { modifier = CHI_PAP_LOC }
+}
+CHI_PAP_remove_PRC = {
+    clr_country_flag = CHI_PAP_NDC_PRC_flag
+    clr_country_flag = CHI_PAP_LY_PRC_flag
+    clr_country_flag = CHI_PAP_MND_PRC_flag
+    clr_country_flag = CHI_PAP_EY_PRC_flag
+    remove_dynamic_modifier = { modifier = CHI_PAP_PRC }
+}
+CHI_PAP_remove_GA = {
+    clr_country_flag = CHI_PAP_NDC_GA_flag
+    clr_country_flag = CHI_PAP_LY_GA_flag
+    clr_country_flag = CHI_PAP_MND_GA_flag
+    clr_country_flag = CHI_PAP_EY_GA_flag
+    remove_dynamic_modifier = { modifier = CHI_PAP_GA }
+}
+CHI_PAP_remove_CCK = {
+    clr_country_flag = CHI_PAP_NDC_CCK_flag
+    clr_country_flag = CHI_PAP_LY_CCK_flag
+    clr_country_flag = CHI_PAP_MND_CCK_flag
+    clr_country_flag = CHI_PAP_EY_CCK_flag
+    remove_dynamic_modifier = { modifier = CHI_PAP_CCK }
+}
+CHI_PAP_remove_CKS = {
+    clr_country_flag = CHI_PAP_NDC_CKS_flag
+    clr_country_flag = CHI_PAP_LY_CKS_flag
+    clr_country_flag = CHI_PAP_MND_CKS_flag
+    clr_country_flag = CHI_PAP_EY_CKS_flag
+    remove_dynamic_modifier = { modifier = CHI_PAP_CKS }
+}
+CHI_PAP_remove_POL = {
+    clr_country_flag = CHI_PAP_NDC_POL_flag
+    clr_country_flag = CHI_PAP_LY_POL_flag
+    clr_country_flag = CHI_PAP_MND_POL_flag
+    clr_country_flag = CHI_PAP_EY_POL_flag
+    remove_dynamic_modifier = { modifier = CHI_PAP_POL }
+}
+CHI_PAP_remove_FB = {
+    clr_country_flag = CHI_PAP_NDC_FB_flag
+    clr_country_flag = CHI_PAP_LY_FB_flag
+    clr_country_flag = CHI_PAP_MND_FB_flag
+    clr_country_flag = CHI_PAP_EY_FB_flag
+    remove_dynamic_modifier = { modifier = CHI_PAP_FB }
+}

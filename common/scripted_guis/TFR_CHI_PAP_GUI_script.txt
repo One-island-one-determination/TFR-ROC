@@ -1,0 +1,170 @@
+scripted_gui = {
+  
+    CHI_party_and_politics_interface = {
+        window_name = "CHI_party_and_politics_interface"
+        context_type = decision_category
+        visible = { tag = CHI }
+        effects = {
+            ##
+            PAP_card_PS_click = {
+                if = {
+                    limit = { check_variable = { CHI_PAP_dec = PAP_card_PS } }
+                    clear_variable = CHI_PAP_dec
+                }
+                else = { set_variable = { CHI_PAP_dec = PAP_card_PS } }
+            }
+            PAP_card_LOC_click = {
+                if = {
+                    limit = { check_variable = { CHI_PAP_dec = PAP_card_LOC } }
+                    clear_variable = CHI_PAP_dec
+                }
+                else = { set_variable = { CHI_PAP_dec = PAP_card_LOC } }
+            }
+            PAP_card_PRC_click = {
+                if = {
+                    limit = { check_variable = { CHI_PAP_dec = PAP_card_PRC } }
+                    clear_variable = CHI_PAP_dec
+                }
+                else = { set_variable = { CHI_PAP_dec = PAP_card_PRC } }
+            }
+            PAP_card_GA_click = {
+                if = {
+                    limit = { check_variable = { CHI_PAP_dec = PAP_card_GA } }
+                    clear_variable = CHI_PAP_dec
+                }
+                else = { set_variable = { CHI_PAP_dec = PAP_card_GA } }
+            }
+            PAP_card_CCK_click = {
+                if = {
+                    limit = { check_variable = { CHI_PAP_dec = PAP_card_CCK } }
+                    clear_variable = CHI_PAP_dec
+                }
+                else = { set_variable = { CHI_PAP_dec = PAP_card_CCK } }
+            }
+            PAP_card_CKS_click = {
+                if = {
+                    limit = { check_variable = { CHI_PAP_dec = PAP_card_CKS } }
+                    clear_variable = CHI_PAP_dec
+                }
+                else = { set_variable = { CHI_PAP_dec = PAP_card_CKS } }
+            }
+            PAP_card_POL_click = {
+                if = {
+                    limit = { check_variable = { CHI_PAP_dec = PAP_card_POL } }
+                    clear_variable = CHI_PAP_dec
+                }
+                else = { set_variable = { CHI_PAP_dec = PAP_card_POL } }
+            }
+            PAP_card_FB_click = {
+                if = {
+                    limit = { check_variable = { CHI_PAP_dec = PAP_card_FB } }
+                    clear_variable = CHI_PAP_dec
+                }
+                else = { set_variable = { CHI_PAP_dec = PAP_card_FB } }
+            }
+            ##
+        }
+
+        triggers = {
+            ##
+            PAP_NDC_PS_visible = {
+                CHI = { has_country_flag = CHI_PAP_NDC_PS_flag }
+            }
+            PAP_NDC_LOC_visible = {
+                CHI = { has_country_flag = CHI_PAP_NDC_LOC_flag }
+            }
+            PAP_NDC_PRC_visible = {
+                CHI = { has_country_flag = CHI_PAP_NDC_PRC_flag }
+            }
+            PAP_NDC_GA_visible = {
+                CHI = { has_country_flag = CHI_PAP_NDC_GA_flag }
+            }
+            PAP_NDC_CCK_visible = {
+                CHI = { has_country_flag = CHI_PAP_NDC_CCK_flag }
+            }
+            PAP_NDC_CKS_visible = {
+                CHI = { has_country_flag = CHI_PAP_NDC_CKS_flag }
+            }
+            PAP_NDC_POL_visible = {
+                CHI = { has_country_flag = CHI_PAP_NDC_POL_flag }
+            }
+            PAP_NDC_FB_visible = {
+                CHI = { has_country_flag = CHI_PAP_NDC_FB_flag }
+            }
+            PAP_LY_PS_visible = {
+                CHI = { has_country_flag = CHI_PAP_LY_PS_flag }
+            }
+            PAP_LY_LOC_visible = {
+                CHI = { has_country_flag = CHI_PAP_LY_LOC_flag }
+            }
+            PAP_LY_PRC_visible = {
+                CHI = { has_country_flag = CHI_PAP_LY_PRC_flag }
+            }
+            PAP_LY_GA_visible = {
+                CHI = { has_country_flag = CHI_PAP_LY_GA_flag }
+            }
+            PAP_LY_CCK_visible = {
+                CHI = { has_country_flag = CHI_PAP_LY_CCK_flag }
+            }
+            PAP_LY_CKS_visible = {
+                CHI = { has_country_flag = CHI_PAP_LY_CKS_flag }
+            }
+            PAP_LY_POL_visible = {
+                CHI = { has_country_flag = CHI_PAP_LY_POL_flag }
+            }
+            PAP_LY_FB_visible = {
+                CHI = { has_country_flag = CHI_PAP_LY_FB_flag }
+            }
+            PAP_MND_PS_visible = {
+                CHI = { has_country_flag = CHI_PAP_MND_PS_flag }
+            }
+            PAP_MND_LOC_visible = {
+                CHI = { has_country_flag = CHI_PAP_MND_LOC_flag }
+            }
+            PAP_MND_PRC_visible = {
+                CHI = { has_country_flag = CHI_PAP_MND_PRC_flag }
+            }
+            PAP_MND_GA_visible = {
+                CHI = { has_country_flag = CHI_PAP_MND_GA_flag }
+            }
+            PAP_MND_CCK_visible = {
+                CHI = { has_country_flag = CHI_PAP_MND_CCK_flag }
+            }
+            PAP_MND_CKS_visible = {
+                CHI = { has_country_flag = CHI_PAP_MND_CKS_flag }
+            }
+            PAP_MND_POL_visible = {
+                CHI = { has_country_flag = CHI_PAP_MND_POL_flag }
+            }
+            PAP_MND_FB_visible = {
+                CHI = { has_country_flag = CHI_PAP_MND_FB_flag }
+            }
+            PAP_EY_PS_visible = {
+                CHI = { has_country_flag = CHI_PAP_EY_PS_flag }
+            }
+            PAP_EY_LOC_visible = {
+                CHI = { has_country_flag = CHI_PAP_EY_LOC_flag }
+            }
+            PAP_EY_PRC_visible = {
+                CHI = { has_country_flag = CHI_PAP_EY_PRC_flag }
+            }
+            PAP_EY_GA_visible = {
+                CHI = { has_country_flag = CHI_PAP_EY_GA_flag }
+            }
+            PAP_EY_CCK_visible = {
+                CHI = { has_country_flag = CHI_PAP_EY_CCK_flag }
+            }
+            PAP_EY_CKS_visible = {
+                CHI = { has_country_flag = CHI_PAP_EY_CKS_flag }
+            }
+            PAP_EY_POL_visible = {
+                CHI = { has_country_flag = CHI_PAP_EY_POL_flag }
+            }
+            PAP_EY_FB_visible = {
+                CHI = { has_country_flag = CHI_PAP_EY_FB_flag }
+            }
+        ##
+        }
+
+    }
+}
