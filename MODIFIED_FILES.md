@@ -99,6 +99,7 @@ These files are either unique to the submod or contain the primary content for R
 * **MIOs**: `common/military_industrial_organization/organizations/TFR_organizations_CHI.txt`
 * **History**: `history/countries/CHI - China.txt`, `history/states/` (Taipei 1148, Taichung 1149, Tainan 1150, Taiwan 524, Kinmen 648), `history/units/`
 * **GUI & Super Events**: `interface/CHI_superevent.gui`, `common/scripted_guis/CHI_super_events.txt`, `sound/CHI_superevent_sounds.asset`
+* **Intelligence Agency**: `common/intelligence_agencies/TFR_intelligence_agencies_CHI.txt`, `interface/TFR_CHI_intelligence_agencies.gfx`, `gfx/interface/operatives/agencies/agency_logo_chi_mib.png`
 * **Localisation**: `localisation/simp_chinese/` (`TFR_country_localisation_CHI_l_simp_chinese.yml`, `TFR_events_CHI_l_simp_chinese.yml`, `CHI_super_events_l_simp_chinese.yml`, etc.)
 
 ---
