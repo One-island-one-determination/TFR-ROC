@@ -143,6 +143,25 @@ ideas = {
 				trusted_paladin				#備受信任的聖騎士
 			}
 		}
+		# 軍政府蔣萬安
+		CHI_chiang_wan_an_hog = {
+			picture = CHI_chiang_wan_an_hog
+			name = CHI_chiang_wan_an_char
+			visible = {
+				has_country_flag = CHI_our_common_cause_flag
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				CHI_minister_KMT			
+				populist_political_elites	
+				internal_coordinator
+			}
+			available = {
+				always = no
+			}
+		}
 		# AI Node - Head of Government
 		CHI_ai_hog_node = {
 			picture = PRC_ai_core
@@ -159,6 +178,9 @@ ideas = {
 			}
 			cost = 0
 		}
+
+
+
 	}
 	#for #外交部長
 	foreign_minister = {

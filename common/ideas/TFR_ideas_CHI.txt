@@ -1883,8 +1883,191 @@ ideas = {
 				poverty_development_monthly = 0.015
 			}
 		}
+		#_____________軍政府________________#
+		CHI_big_riot = {
+			name = CHI_big_riot
+			picture = CHI_big_riot
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -2
+				production_speed_buildings_factor = -1
+				drift_defence_factor = 0.15
+			}
+		}
+		CHI_big_riot_1 = {
+			name = CHI_big_riot
+			picture = CHI_big_riot
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -2
+				production_speed_buildings_factor = -1
+				drift_defence_factor = 0.15
+			}
+		}
+		CHI_big_riot_2 = {
+			name = CHI_big_riot
+			picture = CHI_big_riot
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -1.72
+				production_speed_buildings_factor = -1
+				drift_defence_factor = 0.15
+			}
+		}
+		CHI_big_riot_3 = {
+			name = CHI_big_riot
+			picture = CHI_big_riot
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -1.44
+				production_speed_buildings_factor = -1
+				drift_defence_factor = 0.15
+			}
+		}
+		CHI_big_riot_4 = {
+			name = CHI_big_riot
+			picture = CHI_big_riot
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -1.16
+				production_speed_buildings_factor = -1
+				drift_defence_factor = 0.15
+			}
+		}
+		CHI_crash_of_economy = {
+			name = CHI_crash_of_economy
+			picture = CHI_crash_of_economy
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 2
+				inflation_monthly_factor = 10
+				income_growth_factor = -0.3
+			}
+		}
+		CHI_crash_of_economy_1 = {
+			name = CHI_crash_of_economy
+			picture = CHI_crash_of_economy
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 1.5
+				inflation_monthly_factor = 6.7
+				income_growth_factor = -0.3
+			}
+		}
+		CHI_crash_of_economy_2 = {
+			name = CHI_crash_of_economy
+			picture = CHI_crash_of_economy
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 1
+				inflation_monthly_factor = 3.4
+				income_growth_factor = -0.3
+			}
+		}
+		CHI_crash_of_economy_3 = {
+			name = CHI_crash_of_economy
+			picture = CHI_crash_of_economy
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.5
+				inflation_monthly_factor = 0.1
+				income_growth_factor = -0.3
+			}
+		}
+		CHI_military_supervision = {
+			name = CHI_military_supervision
+			picture = CHI_military_supervision
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				command_power_gain = 5
+				max_command_power = 30
+				conscription_factor = 0.05
+				army_attack_factor = 0.025
+				army_core_attack_factor = 0.025
+				resistance_growth = 0.05
+				compliance_growth_on_our_occupied_states = -0.05
 
+			}
+		}
+		CHI_military_supervision_1 = {
+			name = CHI_military_supervision
+			picture = CHI_military_supervision
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				surrender_limit = 0.5
+				conscription_factor = 0.1
+				command_power_gain = 5
+				max_command_power = 30
+				conscription_factor = 0.05
+				army_attack_factor = 0.05
+				army_core_attack_factor = 0.05
+				resistance_growth = 0.15
+				compliance_growth_on_our_occupied_states = -0.15
 
+			}
+		}
+		CHI_emergency_stabilizing = {
+			name = CHI_emergency_stabilizing
+			picture = CHI_emergency_stabilizing
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 1
+				stability_weekly = 0.005
+				intelligence_agency_defense = 3
+				nationalist_drift = 0.3
+			}
+		}
+		CHI_cooperation_of_civilian = {
+			name = CHI_cooperation_of_civilian
+			picture = CHI_cooperation_of_civilian
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.005
+				production_speed_industrial_complex_factor = 0.05
+				authoritarian_democrat_drift = 0.01
+				opinion_gain_monthly_factor = 0.15
+			}
+		}
+		CHI_Martial_law_declared_idea_stratocracy = {
+			name = CHI_Martial_law
+			picture = CHI_Martial_law_declared
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.12
+				war_support_factor = 0.15
+				# garrison_damage = -0.15
+				mobilization_speed = 0.15
+				command_power_gain = 0.2
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.05
+				nationalist_drift = 0.01
+				authoritarian_democrat_drift = -0.01
+				conservative_drift = -0.01
+				social_democrat_drift = -0.01
+				social_liberal_drift = -0.01
+			}
+		}
+		CHI_time_of_stratocracy = {
+			name = CHI_time_of_stratocracy
+			picture = CHI_time_of_stratocracy
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 1
+				stability_factor = 0.3
+				war_support_weekly = 0.0005
+				totalitarian_socialist_drift = -0.01
+				communist_drift = -0.01
+				fascist_drift = -0.01
+				national_socialist_drift = -0.01
+			}
+		}
 
 
 

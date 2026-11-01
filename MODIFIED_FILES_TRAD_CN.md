@@ -97,7 +97,7 @@
 * **角色與領導人（Characters & Leaders）**：`common/characters/TFR_characters_CHI.txt`
 * **國家精神與動態修正（Ideas & Dynamic Modifiers）**：`common/ideas/TFR_ideas_CHI.txt`、`common/dynamic_modifiers/TFR_dynamic_modifiers_CHI.txt`
 * **軍工組織（MIOs）**：`common/military_industrial_organization/organizations/TFR_organizations_CHI.txt`
-* **歷史設定（History）**：`history/countries/CHI - China.txt`、`history/states/`（台北 1148、台中 1149、台南 1150、台灣 524、金門 648）、`history/units/`
+* **歷史設定（History）**：`history/countries/CHI - China.txt`、`history/states/`（台北 1148、台中 1149、台南 1150、澎湖1451、台東 524、金門 648）、`history/units/`
 * **圖形介面與超事件（GUI & Super Events）**：`interface/CHI_superevent.gui`、`common/scripted_guis/CHI_super_events.txt`、`sound/CHI_superevent_sounds.asset`
 * **情報機構（Intelligence Agency）**：`common/intelligence_agencies/TFR_intelligence_agencies_CHI.txt`、`interface/TFR_CHI_intelligence_agencies.gfx`、`gfx/interface/operatives/agencies/agency_logo_chi_mib.png`
 * **本地化文本（Localisation）**：`localisation/simp_chinese/`（`TFR_country_localisation_CHI_l_simp_chinese.yml`、`TFR_events_CHI_l_simp_chinese.yml`、`CHI_super_events_l_simp_chinese.yml` 等）

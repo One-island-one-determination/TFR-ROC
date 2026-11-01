@@ -343,6 +343,23 @@ leader_traits = {
       factor = 1
     }
   }
+  populist_political_elites = {
+    random = no
+   stability_factor = 0.1
+   political_power_factor = 0.15
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  internal_coordinator = {
+    random = no
+    monthly_population = 0.05
+    consumer_goods_factor = 0.03
+    line_change_production_efficiency_factor = 0.05
+    ai_will_do = {
+      factor = 1
+    }
+  }
   reformist_official = {
     #改革派官員
     random = no

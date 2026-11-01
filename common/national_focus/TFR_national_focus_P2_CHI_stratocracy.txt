@@ -32,6 +32,24 @@ focus_tree = {
         x = 24
         y = 1
         cost = 3
+        completion_reward = {
+            1149 = { set_demilitarized_zone = yes }
+            1150 = { set_demilitarized_zone = yes }
+            1451 = { set_demilitarized_zone = yes }
+            524 = { set_demilitarized_zone = yes }
+            648 = { set_demilitarized_zone = yes }
+            add_ideas = { CHI_big_riot CHI_crash_of_economy }
+            if = { 
+                limit = { NOT = { has_idea = CHI_Martial_law_declared_idea } } 
+                add_ideas = CHI_Martial_law_declared_idea
+            }
+            hidden_effect = {
+                if = { 
+                    limit = {  has_idea = CHI_Wartime_normal_system } 
+                    remove_ideas = CHI_Martial_law_declared_idea
+                }
+            }
+        }
     }
     focus = {
         id = CHI_for_the_country
@@ -40,14 +58,25 @@ focus_tree = {
         x = 20
         y = 2
         cost = 3
+        completion_reward = {
+            add_political_power = 200
+            add_stability = 0.3
+            add_war_support = 0.3
+            add_popularity = { ideology = nationalist popularity = 0.25 }
+            add_ideas = { CHI_military_supervision }
+        }
     }
     focus = {
         id = CHI_for_the_people
         icon = GFX_focus_CHI_for_the_people
         prerequisite = { focus = CHI_bringing_order_out_of_chaos }
+        available = { has_completed_focus = CHI_for_the_country }
         x = 28
         y = 2
         cost = 3
+        completion_reward = {
+            add_timed_idea = { idea = CHI_emergency_stabilizing days = 365}
+        }
     }
     focus = {
         id = CHI_utilize_bureaucracy_str
@@ -56,6 +85,9 @@ focus_tree = {
         x = 18
         y = 3
         cost = 3
+        completion_reward = {
+            add_ideas = { CHI_cooperation_of_civilian }
+        }
     }
     focus = {
         id = CHI_notify_grassroots_officers
@@ -64,6 +96,12 @@ focus_tree = {
         x = 20
         y = 3
         cost = 3
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = CHI_military_supervision
+                add_idea = CHI_military_supervision_1
+            }
+        }
     }
     focus = {
         id = CHI_control_factions
@@ -72,6 +110,13 @@ focus_tree = {
         x = 22
         y = 3
         cost = 3
+        completion_reward = {
+            add_political_power = 100
+            swap_ideas = {
+                remove_idea = CHI_Martial_law_declared_idea
+                add_idea = CHI_Martial_law_declared_idea_stratocracy
+            }
+        }
     }
     focus = {
         id = CHI_disperse_protests
@@ -80,6 +125,9 @@ focus_tree = {
         x = 26
         y = 3
         cost = 3
+        completion_reward = {
+            CHI_big_riot_effect = yes
+        }
     }
     focus = {
         id = CHI_beat_opportunists
@@ -88,6 +136,9 @@ focus_tree = {
         x = 28
         y = 3
         cost = 3
+        completion_reward = {
+            CHI_crash_of_economy_effect = yes
+        }
     }
     focus = {
         id = CHI_take_over_livelihood_facilities
@@ -96,6 +147,17 @@ focus_tree = {
         x = 30
         y = 3
         cost = 3
+        completion_reward = {
+            CHI_crash_of_economy_effect = yes
+            1148 = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+                }
+            }
+        }
     }
     focus = {
         id = CHI_our_common_cause
@@ -104,6 +166,10 @@ focus_tree = {
         x = 18
         y = 4
         cost = 3
+        completion_reward = {
+            set_country_flag = CHI_our_common_cause_flag
+            add_ideas = CHI_chiang_wan_an_hog
+        }
     }
     focus = {
         id = CHI_deal_with_opposing_officers
@@ -112,6 +178,9 @@ focus_tree = {
         x = 20
         y = 4
         cost = 3
+        completion_reward = {
+            retire_character = CHI_yu_bei_chan_char
+        }
     }
     focus = {
         id = CHI_national_syllogism
@@ -120,6 +189,12 @@ focus_tree = {
         x = 22
         y = 4
         cost = 3
+        completion_reward = {
+            swap_ideas = {  
+                remove_idea = CHI_Martial_law_declared_idea_stratocracy
+                add_idea = CHI_time_of_stratocracy
+            }
+        }
     }
     focus = {
         id = CHI_temporary_restoration_of_curfew
@@ -128,6 +203,9 @@ focus_tree = {
         x = 26
         y = 4
         cost = 3
+        completion_reward = {
+            CHI_big_riot_effect = yes
+        }
     }
     focus = {
         id = CHI_arrest_mobs
@@ -136,6 +214,9 @@ focus_tree = {
         x = 28
         y = 4
         cost = 3
+        completion_reward = {
+            CHI_big_riot_effect = yes
+        }
     }
     focus = {
         id = CHI_guarantee_prices
@@ -144,6 +225,10 @@ focus_tree = {
         x = 30
         y = 4
         cost = 3
+        completion_reward = {
+            CHI_big_riot_effect = yes
+            CHI_crash_of_economy_effect = yes
+        }
     }
     focus = {
         id = CHI_troops_guard_the_gates
@@ -157,6 +242,15 @@ focus_tree = {
         x = 24
         y = 5
         cost = 3
+        completion_reward = {
+            CHI_big_riot_effect = yes
+            CHI_crash_of_economy_effect = yes
+            1149 = { set_demilitarized_zone = no }
+            1150 = { set_demilitarized_zone = no }
+            1451 = { set_demilitarized_zone = no }
+            524 = { set_demilitarized_zone = no }
+            648 = { set_demilitarized_zone = no }
+        }
     }
 
     # ==========================

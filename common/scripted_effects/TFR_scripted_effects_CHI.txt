@@ -1077,3 +1077,65 @@ CHI_broken_tech_island_electronics_research_speed_3_4 = {
   }
   add_to_variable = { CHI_BI_electronics_research_var = 15 }
 }
+
+CHI_big_riot_effect = {
+  if = {
+    limit = { has_idea = CHI_big_riot }
+    swap_ideas = {
+      remove_idea = CHI_big_riot
+      add_idea = CHI_big_riot_1
+    }
+  }
+  else_if = {
+    limit = { has_idea = CHI_big_riot_1 }
+    swap_ideas = {
+      remove_idea = CHI_big_riot_1
+      add_idea = CHI_big_riot_2
+    }
+  }
+  else_if = {
+    limit = { has_idea = CHI_big_riot_2 }
+    swap_ideas = {
+      remove_idea = CHI_big_riot_2
+      add_idea = CHI_big_riot_3
+    }
+  }
+  else_if = {
+    limit = { has_idea = CHI_big_riot_3 }
+    swap_ideas = {
+      remove_idea = CHI_big_riot_3
+      add_idea = CHI_big_riot_4
+    }
+  }
+  else_if = {
+    limit = { has_idea = CHI_big_riot_4 }
+    remove_ideas = CHI_big_riot_4
+  }
+}
+CHI_crash_of_economy_effect = {
+  if = {
+    limit = { has_idea = CHI_crash_of_economy }
+    swap_ideas = {
+      remove_idea = CHI_crash_of_economy
+      add_idea = CHI_crash_of_economy_1
+    }
+  }
+  else_if = {
+    limit = { has_idea = CHI_crash_of_economy_1 }
+    swap_ideas = {
+      remove_idea = CHI_crash_of_economy_1
+      add_idea = CHI_crash_of_economy_2
+    }
+  }
+  else_if = {
+    limit = { has_idea = CHI_crash_of_economy_2 }
+    swap_ideas = {
+      remove_idea = CHI_crash_of_economy_2
+      add_idea = CHI_crash_of_economy_3
+    }
+  }
+  else_if = {
+    limit = { has_idea = CHI_crash_of_economy_3 }
+    remove_ideas = CHI_crash_of_economy_3
+  }
+}
