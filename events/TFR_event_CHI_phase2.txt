@@ -616,6 +616,19 @@ country_event = {
 }
 
 country_event = {
+    id = CHI.NF.531
+    title = CHI.NF.531.t
+    desc = CHI.NF.531.d
+    picture = CHI_Event_NF_531
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = CHI.NF.531.a
+    }
+}
+
+country_event = {
     id = CHI.NF.551
     title = CHI.NF.551.t
     desc = CHI.NF.551.d

@@ -7175,7 +7175,8 @@ focus_tree = {
         prerequisite = {
             focus = CHI_conventional_economic_direction
         }
-        completion_reward = {
+        completion_reward = {'
+            country_event = { id = CHI.NF.531 }'
             custom_effect_tooltip = {
                 IDEA = CHI_bloody_flower
                 localization_key = modify_idea_tt
