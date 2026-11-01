@@ -39,7 +39,8 @@ defined_text = {
       CHI = {
         NOT = { has_country_flag = CHI_ROC_army_flag_1 }
         NOT = { has_country_flag = CHI_ROC_army_flag_2 }  
-        NOT = { has_country_flag = CHI_ROC_army_flag_3 } 
+        NOT = { has_country_flag = CHI_ROC_army_flag_3 }
+        NOT = { has_country_flag = CHI_ROC_army_flag_stratocracy } 
       } 
     }
     localization_key = "unfinished_content"
@@ -56,6 +57,10 @@ defined_text = {
     trigger = { CHI = { has_country_flag = CHI_ROC_army_flag_3 } }
     localization_key = "CHI_ROC_army_dynamic_3"
   }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_army_flag_stratocracy } }
+    localization_key = "CHI_ROC_army_dynamic_stratocracy"
+  }
 }
 
 defined_text = {
@@ -66,6 +71,7 @@ defined_text = {
         NOT = { has_country_flag = CHI_ROC_army_flag_1 }
         NOT = { has_country_flag = CHI_ROC_army_flag_2 }  
         NOT = { has_country_flag = CHI_ROC_army_flag_3 } 
+        NOT = { has_country_flag = CHI_ROC_army_stratocracy } 
       } 
     }
     localization_key = "unfinished_content"
@@ -82,6 +88,10 @@ defined_text = {
     trigger = { CHI = { has_country_flag = CHI_ROC_army_flag_3 } }
     localization_key = "CHI_ROC_army_dynamic_3_desc"
   }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_army_flag_stratocracy } }
+    localization_key = "CHI_ROC_army_dynamic_stratocracy_desc"
+  }
 }
 
 defined_text = {
@@ -91,6 +101,7 @@ defined_text = {
       CHI = {
         NOT = { has_country_flag = CHI_ROC_airforce_flag_1 }
         NOT = { has_country_flag = CHI_ROC_airforce_flag_2 }  
+        NOT = { has_country_flag = CHI_ROC_airforce_flag_stratocracy }
       } 
     }
     localization_key = "unfinished_content"
@@ -103,6 +114,10 @@ defined_text = {
     trigger = { CHI = { has_country_flag = CHI_ROC_airforce_flag_2 } }
     localization_key = "CHI_ROC_airforce_dynamic_2"
   }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_airforce_flag_stratocracy } }
+    localization_key = "CHI_ROC_airforce_dynamic_stratocracy"
+  }
 }
 
 defined_text = {
@@ -112,6 +127,7 @@ defined_text = {
       CHI = {
         NOT = { has_country_flag = CHI_ROC_airforce_flag_1 }
         NOT = { has_country_flag = CHI_ROC_airforce_flag_2 }  
+        NOT = { has_country_flag = CHI_ROC_airforce_flag_stratocracy } 
       } 
     }
     localization_key = "unfinished_content"
@@ -124,6 +140,10 @@ defined_text = {
     trigger = { CHI = { has_country_flag = CHI_ROC_airforce_flag_2 } }
     localization_key = "CHI_ROC_airforce_dynamic_2_desc"
   }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_airforce_flag_stratocracy } }
+    localization_key = "CHI_ROC_airforce_dynamic_stratocracy_desc"
+  }
 }
 
 defined_text = {
@@ -134,6 +154,7 @@ defined_text = {
         NOT = { has_country_flag = CHI_ROC_navy_flag_1 }
         NOT = { has_country_flag = CHI_ROC_navy_flag_2 }  
         NOT = { has_country_flag = CHI_ROC_navy_flag_3 } 
+        NOT = { has_country_flag = CHI_ROC_navy_flag_stratocracy }
       } 
     }
     localization_key = "unfinished_content"
@@ -150,6 +171,10 @@ defined_text = {
     trigger = { CHI = { has_country_flag = CHI_ROC_navy_flag_3 } }
     localization_key = "CHI_ROC_navy_dynamic_3"
   }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_navy_flag_stratocracy } }
+    localization_key = "CHI_ROC_navy_dynamic_stratocracy"
+  }
 }
 
 defined_text = {
@@ -160,6 +185,7 @@ defined_text = {
         NOT = { has_country_flag = CHI_ROC_navy_flag_1 }
         NOT = { has_country_flag = CHI_ROC_navy_flag_2 }  
         NOT = { has_country_flag = CHI_ROC_navy_flag_3 } 
+        NOT = { has_country_flag = CHI_ROC_navy_flag_stratocracy }
       } 
     }
     localization_key = "unfinished_content"
@@ -175,6 +201,10 @@ defined_text = {
   text = {
     trigger = { CHI = { has_country_flag = CHI_ROC_navy_flag_3 } }
     localization_key = "CHI_ROC_navy_dynamic_3_desc"
+  }
+  text = {
+    trigger = { CHI = { has_country_flag = CHI_ROC_navy_flag_stratocracy } }
+    localization_key = "CHI_ROC_navy_dynamic_stratocracy_desc"
   }
 }
 

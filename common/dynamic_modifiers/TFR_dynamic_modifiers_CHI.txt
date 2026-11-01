@@ -292,7 +292,7 @@ Republic_of_China_dynamic = {
 	conscription_factor = CHI_Republic_of_China_conscription_factor_var
 }
 
-#ROCA1
+#ROCA
 CHI_ROC_army_dynamic = {
 	icon = GFX_idea_CHI_ROC_army
 	enable = {
@@ -420,6 +420,16 @@ CHI_ROC_navy_dynamic = {
 	shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
 	shore_bombardment_bonus = ROC_shore_bombardment_bonus
 	navy_fuel_consumption_factor = ROC_navy_fuel_consumption_factor
+}
+
+# 海軍
+CHI_ROC_special_force_dynamic = {
+	icon = CHI_ROC_special_force
+	enable = {
+		tag = CHI
+	}
+	special_forces_attack_factor = ROCSF_special_forces_attack_factor
+	special_forces_defence_factor = ROCSF_special_forces_defence_factor
 }
 
 # 立法院

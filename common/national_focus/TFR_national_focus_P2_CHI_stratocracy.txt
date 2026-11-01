@@ -1181,7 +1181,19 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		completion_reward = {
-			# TODO: 添加完成獎勵
+			custom_effect_tooltip = CHI_new_national_army_spirit_tooltip
+            clr_country_flag = CHI_ROC_army_flag_1
+            clr_country_flag = CHI_ROC_airforce_flag_1
+            clr_country_flag = CHI_ROC_navy_flag_1
+            clr_country_flag = CHI_ROC_army_flag_2
+            clr_country_flag = CHI_ROC_airforce_flag_2
+            clr_country_flag = CHI_ROC_navy_flag_2
+            set_country_flag = CHI_ROC_army_flag_stratocracy
+            set_country_flag = CHI_ROC_airforce_flag_stratocracy
+            set_country_flag = CHI_ROC_navy_flag_stratocracy
+            add_to_variable = { ROCSF_special_forces_attack_factor = 0.05 }
+	        add_to_variable = { ROCSF_special_forces_defence_factor = 0.05 }
+            add_dynamic_modifier = { modifier = CHI_ROC_special_force_dynamic }
 		}
 	}
 	focus = {
