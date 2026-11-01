@@ -64,6 +64,7 @@ focus_tree = {
             add_war_support = 0.1
             add_popularity = { ideology = nationalist popularity = 0.25 }
             add_ideas = { CHI_military_supervision }
+            remove_power_balance = { id = CHI_Identity_dispute }
         }
     }
     focus = {
@@ -189,11 +190,9 @@ focus_tree = {
         x = 22
         y = 4
         cost = 3
-        completion_reward = {
-            swap_ideas = {  
-                remove_idea = CHI_Martial_law_declared_idea_stratocracy
-                add_idea = CHI_time_of_stratocracy
-            }
+        completion_reward = {  
+            remove_ideas = CHI_Martial_law_declared_idea_stratocracy
+            add_ideas = CHI_time_of_stratocracy 
             # TODO 憲政壓力決議
         }
     }
