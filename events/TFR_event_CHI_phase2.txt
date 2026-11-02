@@ -2,6 +2,7 @@ add_namespace = CHI.BF
 add_namespace = CHI.H2
 add_namespace = CHI.L2
 add_namespace = CHI.NF
+add_namespace = CHI.BR
 
 ###############
 # KMT General #
@@ -710,7 +711,29 @@ country_event = {
 }
 
 
+###############
+# stratocracy #
+###############
 
+country_event = {
+  id = CHI.BR.CHI_center_of_industry
+  title = CHI.BR.CHI_center_of_industry1.t
+  desc = CHI.BR.CHI_center_of_industry.d
+  picture = CHI_Event_BR_CHI_center_of_industry
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = CHI.BR.CHI_center_of_industry.a
+    complete_national_focus = CHI_gain_foothold_in_society
+    focus_unlock = yes
+  }
+  option = {
+    name = CHI.BR.CHI_center_of_industry.b
+    complete_national_focus = CHI_military_first_rule
+    focus_unlock = yes
+  }
+}
 
 
 #######
@@ -770,3 +793,4 @@ country_event = { ##TEMP for idea CHI_housing_justice
     custom_effect_tooltip = CHI_housing_justice_white_paper_tootlip
   }
 }
+

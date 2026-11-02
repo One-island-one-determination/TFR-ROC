@@ -49,10 +49,8 @@ focus_tree = {
 			648 = {
 				set_demilitarized_zone = yes
 			}
-			add_ideas = {
-				CHI_big_riot
-				CHI_crash_of_economy
-			}
+			add_ideas = { CHI_big_riot }
+			add_ideas = { CHI_crash_of_economy }
 			if = {
 				limit = {
 					NOT = {
@@ -75,7 +73,7 @@ focus_tree = {
 		id = CHI_for_the_country
 		x = 20
 		y = 2
-		cost = 3
+		cost = 0.5
 		icon = GFX_focus_CHI_for_the_country
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -102,7 +100,7 @@ focus_tree = {
 		id = CHI_for_the_people
 		x = 28
 		y = 2
-		cost = 3
+		cost = 2
 		icon = GFX_focus_CHI_for_the_people
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -123,7 +121,7 @@ focus_tree = {
 		id = CHI_utilize_bureaucracy_str
 		x = 18
 		y = 3
-		cost = 3
+		cost = 1
 		icon = GFX_focus_CHI_utilize_bureaucracy_str
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -140,7 +138,7 @@ focus_tree = {
 		id = CHI_notify_grassroots_officers
 		x = 20
 		y = 3
-		cost = 3
+		cost = 1
 		icon = GFX_focus_CHI_notify_grassroots_officers
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -158,7 +156,7 @@ focus_tree = {
 		id = CHI_control_factions
 		x = 22
 		y = 3
-		cost = 3
+		cost = 2
 		icon = GFX_focus_CHI_control_factions
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -177,7 +175,7 @@ focus_tree = {
 		id = CHI_disperse_protests
 		x = 26
 		y = 3
-		cost = 3
+		cost = 1
 		icon = GFX_focus_CHI_disperse_protests
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -192,7 +190,7 @@ focus_tree = {
 		id = CHI_beat_opportunists
 		x = 28
 		y = 3
-		cost = 3
+		cost = 1
 		icon = GFX_focus_CHI_beat_opportunists
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -207,7 +205,7 @@ focus_tree = {
 		id = CHI_take_over_livelihood_facilities
 		x = 30
 		y = 3
-		cost = 3
+		cost = 2
 		icon = GFX_focus_CHI_take_over_livelihood_facilities
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -230,7 +228,7 @@ focus_tree = {
 		id = CHI_our_common_cause
 		x = 18
 		y = 4
-		cost = 3
+		cost = 1
 		icon = GFX_focus_CHI_our_common_cause
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -246,7 +244,7 @@ focus_tree = {
 		id = CHI_deal_with_opposing_officers
 		x = 20
 		y = 4
-		cost = 3
+		cost = 1
 		icon = GFX_focus_CHI_deal_with_opposing_officers
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -261,7 +259,7 @@ focus_tree = {
 		id = CHI_national_syllogism
 		x = 22
 		y = 4
-		cost = 3
+		cost = 1
 		icon = GFX_focus_CHI_national_syllogism
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -278,7 +276,7 @@ focus_tree = {
 		id = CHI_temporary_restoration_of_curfew
 		x = 26
 		y = 4
-		cost = 3
+		cost = 1
 		icon = GFX_focus_CHI_temporary_restoration_of_curfew
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -293,7 +291,7 @@ focus_tree = {
 		id = CHI_arrest_mobs
 		x = 28
 		y = 4
-		cost = 3
+		cost = 1
 		icon = GFX_focus_CHI_arrest_mobs
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -308,7 +306,7 @@ focus_tree = {
 		id = CHI_guarantee_prices
 		x = 30
 		y = 4
-		cost = 3
+		cost = 2
 		icon = GFX_focus_CHI_guarantee_prices
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -324,7 +322,7 @@ focus_tree = {
 		id = CHI_troops_guard_the_gates
 		x = 24
 		y = 5
-		cost = 3
+		cost = 1
 		icon = GFX_focus_CHI_troops_guard_the_gates
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -378,6 +376,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = { has_completed_focus = CHI_troops_guard_the_gates }
 	}
 	# Branch 1
 	focus = {
@@ -783,6 +782,8 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = { has_completed_focus = CHI_troops_guard_the_gates }
+		completion_reward = { country_event = { id = CHI.BR.CHI_center_of_industry } }
 	}
 	# Branch 1
 	focus = {
@@ -799,6 +800,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_center_of_industry
 		}
+		available = { is_completed_by_event = yes }
 	}
 	focus = {
 		id = CHI_new_ten_major_construction
@@ -1025,6 +1027,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_center_of_industry
 		}
+		available = { is_completed_by_event = yes }
 	}
 	focus = {
 		id = CHI_expand_military_industrial_system
@@ -1180,6 +1183,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_new_national_army_spirit
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = { has_completed_focus = CHI_troops_guard_the_gates }
 		completion_reward = {
 			custom_effect_tooltip = CHI_new_national_army_spirit_tooltip
             clr_country_flag = CHI_ROC_army_flag_1
@@ -1193,7 +1197,7 @@ focus_tree = {
             set_country_flag = CHI_ROC_navy_flag_stratocracy
             add_to_variable = { ROCSF_special_forces_attack_factor = 0.05 }
 	        add_to_variable = { ROCSF_special_forces_defence_factor = 0.05 }
-            add_dynamic_modifier = { modifier = CHI_ROC_special_force_dynamic }
+            add_dynamic_modifier = { modifier = CHI_ROC_special_force_dynamic }	
 		}
 	}
 	focus = {
