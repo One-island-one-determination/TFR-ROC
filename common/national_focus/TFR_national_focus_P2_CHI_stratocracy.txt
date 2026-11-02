@@ -317,6 +317,7 @@ focus_tree = {
 		completion_reward = {
 			CHI_big_riot_effect = yes
 			CHI_crash_of_economy_effect = yes
+			focus_unlock = yes
 		}
 	}
 	focus = {
@@ -1187,18 +1188,18 @@ focus_tree = {
 		allow_branch = { has_completed_focus = CHI_troops_guard_the_gates }
 		completion_reward = {
 			custom_effect_tooltip = CHI_new_national_army_spirit_tooltip
-            clr_country_flag = ROC_army_flag_1
-            clr_country_flag = ROC_airforce_flag_1
-            clr_country_flag = ROC_navy_flag_1
-            clr_country_flag = ROC_army_flag_2
-            clr_country_flag = ROC_airforce_flag_2
-            clr_country_flag = ROC_navy_flag_2
-            set_country_flag = ROC_army_flag_stratocracy
-            set_country_flag = ROC_airforce_flag_stratocracy
-            set_country_flag = ROC_navy_flag_stratocracy
+            clr_country_flag = CHI_ROC_army_flag_1
+            clr_country_flag = CHI_ROC_airforce_flag_1
+            clr_country_flag = CHI_ROC_navy_flag_1
+            clr_country_flag = CHI_ROC_army_flag_2
+            clr_country_flag = CHI_ROC_airforce_flag_2
+            clr_country_flag = CHI_ROC_navy_flag_2
+            set_country_flag = CHI_ROC_army_flag_stratocracy
+            set_country_flag = CHI_ROC_airforce_flag_stratocracy
+            set_country_flag = CHI_ROC_navy_flag_stratocracy
             add_to_variable = { ROCSF_special_forces_attack_factor = 0.05 }
 	        add_to_variable = { ROCSF_special_forces_defence_factor = 0.05 }
-            add_dynamic_modifier = { modifier = ROC_special_force_dynamic }	
+            add_dynamic_modifier = { modifier = CHI_ROC_special_force_dynamic }	
 		}
 	}
 	focus = {
@@ -1218,7 +1219,7 @@ focus_tree = {
 			add_to_variable = { ROC_screening_efficiency = 0.05 tooltip = screening_efficiency_tooltip }
 			add_to_variable = { ROC_convoy_raiding_efficiency_factor = 0.05 tooltip = convoy_raiding_efficiency_factor_tooltip }  
 			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
-			add_to_variable = { ROC_invasion_preparation_preparation = -0.07 tooltip = invasion_preparation_preparation_tooltip }
+			add_to_variable = { ROC_invasion_preparation = -0.07 tooltip = invasion_preparation_tooltip }
 		}
 		relative_position_id = CHI_new_national_army_spirit
 	}
@@ -1312,7 +1313,7 @@ focus_tree = {
 			focus = CHI_new_national_army_spirit
 		}
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
 			add_to_variable = { ROC_land_night_attack = -0.2 tooltip = land_night_attack_tooltip }
 			add_to_variable = { ROC_max_dig_in_factor = 0.35 tooltip = max_dig_in_factor_tooltip }
 			add_to_variable = { ROC_army_morale_factor = 0.2 tooltip = army_morale_factor_tooltip }
@@ -1334,7 +1335,7 @@ focus_tree = {
 			focus = CHI_heroic_warriors
 		}
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
 			add_to_variable = { ROC_modifier_army_sub_unit_motorized_attack_factor = 0.1 tooltip = modifier_army_sub_unit_motorized_attack_factor_tooltip }
 			add_to_variable = { ROC_modifier_army_sub_unit_motorized_defense_factor = 0.1 tooltip = modifier_army_sub_unit_motorized_defense_factor_tooltip }
 			add_to_variable = { ROC_modifier_army_sub_unit_mechanized_attack_factor = 0.1 tooltip = modifier_army_sub_unit_mechanized_attack_factor_tooltip }
@@ -1356,7 +1357,7 @@ focus_tree = {
 			focus = CHI_heroic_warriors
 		}
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
 			add_to_variable = { ROC_army_speed_factor = 0.15 tooltip = army_speed_factor_tooltip }
 			add_to_variable = { ROC_supply_node_range = 0.2 tooltip = supply_node_range_tooltip }
 			add_to_variable = { ROC_conscription_factor = 0.15 tooltip = conscription_factor_tooltip }
@@ -1378,7 +1379,7 @@ focus_tree = {
 			focus = CHI_loaded_guns_shining_bayonets
 		}
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
 			add_to_variable = { ROC_army_artillery_attack_factor = 0.1 tooltip = army_artillery_attack_factor_tooltip }
 
 			add_unit_bonus = {
@@ -1428,7 +1429,7 @@ focus_tree = {
 			focus = CHI_thunder_of_nine_heavens
 		}
 		completion_reward = {
-			custom_effect_tooltip = { IDEA = ROC_army_dynamic localization_key = modify_idea_tt }
+			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
 			add_to_variable = { ROC_modifier_army_sub_unit_army_armor_attack_factor = 0.1 tooltip = modifier_army_sub_unit_army_armor_attack_factor_tooltip }
 			add_to_variable = { ROC_modifier_army_sub_unit_army_armor_defense_factor = 0.1 tooltip = modifier_army_sub_unit_army_armor_defense_factor_tooltip }
 			add_to_variable = { ROC_modifier_army_sub_unit_mechanized_attack_factor = 0.1 tooltip = modifier_army_sub_unit_mechanized_attack_factor_tooltip }
