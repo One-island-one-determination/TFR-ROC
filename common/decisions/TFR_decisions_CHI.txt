@@ -9208,7 +9208,7 @@ CHI_Economy_Industry_category = {
                     instant_build = yes
                 }
             }
-            custom_effect_tooltip = CHI_Economy_additional_effects
+            custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt  }
             add_to_variable = {
                 var = CHI_Economy_industrial_capacity_factory
                 value = 0.05
@@ -9487,7 +9487,7 @@ CHI_Economy_Industry_category = {
             add_to_variable = {
                 CHI_fiscal_budget_var = -1
             }
-            custom_effect_tooltip = CHI_Economy_additional_effects
+            custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt  }
             add_to_variable = {
                 var = CHI_Economy_production_factory_efficiency_gain_factor
                 value = 0.15
@@ -9681,7 +9681,7 @@ CHI_Economy_Industry_category = {
             }
         }
         remove_effect = {
-            custom_effect_tooltip = CHI_Economy_additional_effects
+            custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt  }
             add_to_variable = {
                 var = CHI_Economy_production_speed_buildings_factor
                 value = 0.15

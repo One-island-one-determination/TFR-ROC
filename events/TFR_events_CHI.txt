@@ -1031,7 +1031,7 @@ country_event = {
   option = {
     name = taiwan.32.a
     custom_effect_tooltip = CHI_taiwan_war_victory_demobilization_tooltip
-    custom_effect_tooltip = CHI_Economy_additional_effects
+    custom_effect_tooltip = { IDEA = CHI_Economy localization_key = modify_idea_tt  }
     ##經濟精神修改####
     add_to_variable = {
       var = CHI_Economy_industrial_capacity_factory
