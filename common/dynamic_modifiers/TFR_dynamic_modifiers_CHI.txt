@@ -333,6 +333,19 @@ CHI_ROC_army_dynamic = {
 	special_forces_defence_factor = ROC_special_forces_defence_factor	# 特種部隊防禦修正
 	naval_invasion_penalty = ROC_naval_invasion_penalty	# 兩棲登陸作戰懲罰減免
 	invasion_preparation = ROC_invasion_preparation
+	modifier_army_sub_unit_motorized_attack_factor = ROC_modifier_army_sub_unit_motorized_attack_factor
+	modifier_army_sub_unit_motorized_defense_factor = ROC_modifier_army_sub_unit_motorized_defense_factor
+	modifier_army_sub_unit_mechanized_attack_factor = ROC_modifier_army_sub_unit_mechanized_attack_factor
+	modifier_army_sub_unit_mechanized_defense_factor = ROC_modifier_army_sub_unit_mechanized_defense_factor
+	modifier_army_sub_unit_infantry_attack_factor = ROC_modifier_army_sub_unit_infantry_attack_factor
+	modifier_army_sub_unit_infantry_defense_factor = ROC_modifier_army_sub_unit_infantry_defense_factor
+	army_artillery_attack_factor = ROC_army_artillery_attack_factor
+	modifier_army_sub_unit_army_armor_attack_factor = ROC_modifier_army_sub_unit_army_armor_attack_factor
+	modifier_army_sub_unit_army_armor_defense_factor = ROC_modifier_army_sub_unit_army_armor_defense_factor
+	modifier_army_sub_unit_mechanized_attack_factor = ROC_modifier_army_sub_unit_mechanized_attack_factor
+	modifier_army_sub_unit_mechanized_defense_factor = ROC_modifier_army_sub_unit_mechanized_defense_factor
+	modifier_army_sub_unit_modern_sp_artillery_brigade_attack_factor = ROC_modifier_army_sub_unit_modern_sp_artillery_brigade_attack_factor  
+	modifier_army_sub_unit_modern_sp_artillery_brigade_defense_factor = ROC_modifier_army_sub_unit_modern_sp_artillery_brigade_defense_factor
 	# ==========================================
 	# 本土防衛與補給系統 (Home Defense & Supply System)
 	# ==========================================
@@ -420,6 +433,14 @@ CHI_ROC_navy_dynamic = {
 	shore_bombardment_collateral_damage_factor = ROC_shore_bombardment_collateral_damage_factor
 	shore_bombardment_bonus = ROC_shore_bombardment_bonus
 	navy_fuel_consumption_factor = ROC_navy_fuel_consumption_factor
+	navy_submarine_attack_factor = ROC_navy_submarine_attack_factor
+	navy_submarine_defence_factor = ROC_navy_submarine_defence_factor
+	navy_capital_ship_attack_factor = ROC_navy_capital_ship_attack_factor
+	navy_capital_ship_defence_factor = ROC_navy_capital_ship_defence_factor
+	spotting_chance = ROC_spotting_chance
+	naval_critical_effect_factor = ROC_naval_critical_effect_factor
+	submarine_detection_factor = ROC_submarine_detection_factor
+	navy_max_range = ROC_navy_max_range
 }
 
 # 海軍
