@@ -497,13 +497,10 @@ Achievement_super_democracy = {
 					has_idea = high_trade
 					has_idea = export_focus
 				}
-				has_idea = higher_welfare
-				has_idea = higher_safety
-				OR = {
-					has_idea = low_conscription
-					has_idea = limited_conscription
-				}
-				has_idea = low_police
+				has_idea = lower_taxes
+				has_idea = low_interest_rates
+				has_idea = higher_immigration
+				has_idea = higher_female_service
 				OR = {
 					has_global_flag = PRC_japanese_gaw_victory_global
 					has_completed_focus = CHI_republic_achieved
