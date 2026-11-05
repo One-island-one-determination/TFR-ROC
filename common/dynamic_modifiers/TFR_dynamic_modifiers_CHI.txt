@@ -410,6 +410,10 @@ CHI_ROC_airforce_dynamic = {
 	air_strategic_bomber_bombing_factor = ROC_air_strategic_bomber_bombing_factor
 	air_strategic_bomber_night_penalty = ROC_air_strategic_bomber_night_penalty
 	air_fuel_consumption_factor = ROC_air_fuel_consumption_factor
+	army_bonus_air_superiority_factor = ROC_army_bonus_air_superiority_factor
+	tac_bombing_factor = ROC_tac_bombing_factor
+	air_night_penalty = ROC_air_night_penalty
+	air_weather_penalty = ROC_air_weather_penalty
 }
 
 # 海軍
@@ -449,6 +453,18 @@ CHI_ROC_special_force_dynamic = {
 	}
 	special_forces_attack_factor = ROCSF_special_forces_attack_factor
 	special_forces_defence_factor = ROCSF_special_forces_defence_factor
+	battalion_upkeep_factor = ROCSF_battalion_upkeep_factor
+	special_forces_training_time_factor = ROCSF_special_forces_training_time_factor
+	amphibious_invasion = ROCSF_amphibious_invasion
+	naval_invasion_penalty = ROCSF_naval_invasion_penalty
+	extra_marine_supply_grace = ROCSF_extra_marine_supply_grace
+	experience_loss_factor = ROCSF_experience_loss_factor
+	coordination_bonus = ROCSF_coordination_bonus
+	land_night_attack = ROCSF_land_night_attack
+	supply_consumption_factor = ROCSF_supply_consumption_factor
+	special_forces_no_supply_grace = ROCSF_special_forces_no_supply_grace
+	special_forces_out_of_supply_factor = ROCSF_special_forces_out_of_supply_factor
+
 }
 
 # 立法院

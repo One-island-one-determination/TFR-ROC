@@ -2115,17 +2115,15 @@ ideas = {
 			picture = CHI_overlord_of_the_skies_idea
 			removal_cost = -1
 			modifier = {
-				army_morale_factor = 0.1
-				org_loss_when_moving = -0.1
-				army_artillery_attack_factor = 0.1
-				army_infantry_attack_factor = 0.1
-				army_armor_attack_factor = 0.1
-				breakthrough_factor = 0.1
-				coordination_bonus = 0.1
-				initiative_factor = 0.15
-				supply_consumption_factor = -0.15
-				equipment_capture_factor = 0.15
-				terrain_penalty_reduction = 0.05
+				air_agility_factor = 0.05
+				army_bonus_air_superiority_factor = 0.1
+				air_intercept_efficiency = 0.1
+				air_cas_efficiency = 0.1
+				air_nav_efficiency = 0.1
+				air_night_penalty = -0.1
+				air_manpower_requirement_factor = -0.05
+				air_range_factor = 0.1
+				air_ace_generation_chance_factor = 0.25
 			}
 		}
 		CHI_hero_of_special_force = {
@@ -2133,17 +2131,15 @@ ideas = {
 			picture = CHI_hero_of_special_force
 			removal_cost = -1
 			modifier = {
-				army_morale_factor = 0.1
-				org_loss_when_moving = -0.1
-				army_artillery_attack_factor = 0.1
-				army_infantry_attack_factor = 0.1
-				army_armor_attack_factor = 0.1
-				breakthrough_factor = 0.1
-				coordination_bonus = 0.1
-				initiative_factor = 0.15
-				supply_consumption_factor = -0.15
-				equipment_capture_factor = 0.15
-				terrain_penalty_reduction = 0.05
+				special_forces_attack_factor = 0.15
+				special_forces_defence_factor = 0.15
+				land_night_attack = -0.1
+				equipment_capture = 0.05
+				naval_invasion_penalty = -0.3
+				naval_invasion_planning_bonus_speed  = 0.1
+				invasion_preparation = -0.15
+				special_forces_cap = 0.05
+				special_forces_mastery_gain_factor = 0.1
 			}
 		}
 		CHI_glory_NRA = {
@@ -2161,7 +2157,7 @@ ideas = {
 				acclimatization_hot_climate_gain_factor = 0.1
 				acclimatization_cold_climate_gain_factor = 0.1
 				air_agility_factor = 0.05
-				air_superiority_factor = 0.05
+				army_bonus_air_superiority_factor = 0.05
 				air_range_factor = 0.05
 				air_ace_generation_chance_factor = 0.5
 				navy_org_factor = 0.05
@@ -2188,7 +2184,7 @@ ideas = {
 
 
 	}
-	##hidden_ideas, generally be research_bonus and equipment_bonus
+	##hidden_ideas
 	hidden_ideas = {
 		#-----------hidden idea CHI_Economy start--------------#{
 		CHI_Economy_hidden_armor_research_bonus = {
@@ -2603,5 +2599,30 @@ ideas = {
 				nationalist_drift = 15
 			}
 		}
+
+		#________軍政府_______##
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 }
