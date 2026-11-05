@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # Republic of china Events
 ###########################
 add_namespace = CHI
@@ -1788,6 +1788,10 @@ country_event = {
         transfer_state = 434  # Zangnan / 藏南
         transfer_state = 788  # Aksai Chin / 阿克賽欽
       }
+      788 = {
+        set_demilitarized_zone = no
+        remove_core_of = PAK
+      }
 
 
       every_state = {
@@ -1833,6 +1837,27 @@ country_event = {
           limit = { country_exists = TAR }
           white_peace = TAR
         }
+        if = {
+          limit = {
+            country_exists = PRJ
+            has_war_with = PRJ
+          }
+          white_peace = PRJ
+        }
+        if = {
+          limit = {
+            country_exists = PAK
+            has_war_with = PAK
+          }
+          white_peace = PAK
+        }
+        if = {
+          limit = {
+            country_exists = BAN
+            has_war_with = BAN
+          }
+          white_peace = BAN
+        }
       }
       every_enemy_country = {
         limit = {
@@ -1843,6 +1868,13 @@ country_event = {
             is_in_faction_with = RAJ
             tag = TIB
             tag = TAR
+            tag = PRJ
+            original_tag = PRJ
+            tag = PAK
+            original_tag = PAK
+            is_subject_of = PAK
+            tag = BAN
+            original_tag = BAN
           }
         }
         white_peace = ROOT
@@ -3478,6 +3510,7 @@ country_event = {
       }
       CHI = { country_event = { id = CHI.202 } }
       clr_country_flag = hidden_flag_4
+      clr_country_flag = CHI_liberating_tibet_flag
     }
     else_if = {
       limit = { has_country_flag = hidden_flag_4 }
