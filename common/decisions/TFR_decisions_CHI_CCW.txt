@@ -35,6 +35,20 @@ CHI_civilwar_category = {
     days_remove = 0
     fire_only_once = no
     remove_effect = {
+      hidden_effect = {
+        if = {
+          limit = { country_exists = PAK OR = { PAK = { is_subject_of = PRC } PAK = { is_in_faction_with = PRC } } }
+          PRC = { end_puppet = PAK }
+          PAK = { leave_faction = yes drop_cosmetic_tag = yes }
+          if = { limit = { ROOT = { has_war_with = PAK } } ROOT = { white_peace = PAK } }
+        }
+        if = {
+          limit = { country_exists = BRM OR = { BRM = { is_subject_of = PRC } BRM = { is_in_faction_with = PRC } } }
+          PRC = { end_puppet = BRM }
+          BRM = { leave_faction = yes drop_cosmetic_tag = yes }
+          if = { limit = { ROOT = { has_war_with = BRM } } ROOT = { white_peace = BRM } }
+        }
+      }
       every_other_country = {
         limit = {
           any_owned_state = { 
@@ -52,6 +66,12 @@ CHI_civilwar_category = {
           NOT = { tag = RAJ }
           NOT = { is_in_faction_with = RAJ }
           NOT = { is_subject_of = RAJ }
+          NOT = { tag = PAK }
+          NOT = { is_in_faction_with = PAK }
+          NOT = { is_subject_of = PAK }
+          NOT = { tag = BAN }
+          NOT = { is_in_faction_with = BAN }
+          NOT = { is_subject_of = BAN }
         }
         ROOT = {
           declare_war_on = {
@@ -553,7 +573,21 @@ ccw_declare_war_on_beijing = {
 cost = 5
 days_remove = 5
 fire_only_once = no
-remove_effect = { hidden_effect = { if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } } }
+remove_effect = { hidden_effect = {
+    if = { limit = { is_ai = yes } set_country_flag = { flag = CHI_ai_ccw_cooldown days = 60 } }
+    if = {
+      limit = { country_exists = PAK OR = { PAK = { is_subject_of = PRC } PAK = { is_in_faction_with = PRC } } }
+      PRC = { end_puppet = PAK }
+      PAK = { leave_faction = yes drop_cosmetic_tag = yes }
+      if = { limit = { ROOT = { has_war_with = PAK } } ROOT = { white_peace = PAK } }
+    }
+    if = {
+      limit = { country_exists = BRM OR = { BRM = { is_subject_of = PRC } BRM = { is_in_faction_with = PRC } } }
+      PRC = { end_puppet = BRM }
+      BRM = { leave_faction = yes drop_cosmetic_tag = yes }
+      if = { limit = { ROOT = { has_war_with = BRM } } ROOT = { white_peace = BRM } }
+    }
+  }
 every_other_country = {
   limit = {
     OR = {
@@ -4468,6 +4502,9 @@ ccw_declare_war_on_xizang = {
     NOT = { is_in_faction_with = JAP }
     NOT = { is_subject_of = JAP }
     NOT = { has_country_flag = pdto_member }
+    NOT = { tag = PAK }
+    NOT = { is_in_faction_with = PAK }
+    NOT = { is_subject_of = PAK }
   } }
 }
 cost = 5
@@ -4489,13 +4526,32 @@ every_other_country = {
     NOT = { is_in_faction_with = JAP }
     NOT = { is_subject_of = JAP }
     NOT = { has_country_flag = pdto_member }
+    NOT = { tag = PAK }
+    NOT = { is_in_faction_with = PAK }
+    NOT = { is_subject_of = PAK }
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
   }
 }
+hidden_effect = {
+  set_country_flag = CHI_liberating_tibet_flag
+  if = {
+    limit = {
+      NOT = { has_country_flag = hidden_flag_4 }
+      NOT = { has_country_flag = CHI_tibet_zangnan_secured }
+    }
+    set_country_flag = hidden_flag_4
+    country_event = { id = CHI.hidden.4 days = 1 }
+  }
+}
 if = {
-  limit = { NOT = { has_global_flag = CHI_xizang_war_news_fired } }
+  limit = {
+    NOT = { has_global_flag = CHI_xizang_war_news_fired }
+    NOT = { has_global_flag = RAJ_india_dead }
+    country_exists = RAJ
+    ROOT = { has_war_with = RAJ }
+  }
   set_global_flag = CHI_xizang_war_news_fired
   hidden_effect = { news_event = { id = CHI.H4.xizang_war_news } }
 }
@@ -4682,6 +4738,12 @@ ccw_declare_war_on_zangsouth = {
     NOT = { is_in_faction_with = JAP }
     NOT = { is_subject_of = JAP }
     NOT = { has_country_flag = pdto_member }
+    NOT = { tag = PAK }
+    NOT = { is_in_faction_with = PAK }
+    NOT = { is_subject_of = PAK }
+    NOT = { tag = BAN }
+    NOT = { is_in_faction_with = BAN }
+    NOT = { is_subject_of = BAN }
   } }
 }
 cost = 5
@@ -4699,9 +4761,26 @@ every_other_country = {
     NOT = { is_in_faction_with = JAP }
     NOT = { is_subject_of = JAP }
     NOT = { has_country_flag = pdto_member }
+    NOT = { tag = PAK }
+    NOT = { is_in_faction_with = PAK }
+    NOT = { is_subject_of = PAK }
+    NOT = { tag = BAN }
+    NOT = { is_in_faction_with = BAN }
+    NOT = { is_subject_of = BAN }
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
+  }
+}
+hidden_effect = {
+  set_country_flag = CHI_liberating_tibet_flag
+  if = {
+    limit = {
+      NOT = { has_country_flag = hidden_flag_4 }
+      NOT = { has_country_flag = CHI_tibet_zangnan_secured }
+    }
+    set_country_flag = hidden_flag_4
+    country_event = { id = CHI.hidden.4 days = 1 }
   }
 }
 }
@@ -5920,6 +5999,9 @@ ccw_declare_war_on_xinjiang = {
     NOT = { is_in_faction_with = JAP }
     NOT = { is_subject_of = JAP }
     NOT = { has_country_flag = pdto_member }
+    NOT = { tag = PAK }
+    NOT = { is_in_faction_with = PAK }
+    NOT = { is_subject_of = PAK }
   } }
 }
 cost = 5
@@ -5948,6 +6030,9 @@ every_other_country = {
     NOT = { is_in_faction_with = JAP }
     NOT = { is_subject_of = JAP }
     NOT = { has_country_flag = pdto_member }
+    NOT = { tag = PAK }
+    NOT = { is_in_faction_with = PAK }
+    NOT = { is_subject_of = PAK }
   }
   ROOT = {
     declare_war_on = { target = PREV type = CHI_civil_war }
@@ -6010,7 +6095,7 @@ ccw_core_xinjiang = {
     618 = { add_core_of = ROOT remove_all_other_cores = yes }
     619 = { add_core_of = ROOT remove_all_other_cores = yes }
     287 = { add_core_of = ROOT remove_all_other_cores = yes }
-    788 = { add_core_of = ROOT remove_all_other_cores = yes }
+    788 = { add_core_of = ROOT remove_all_other_cores = yes set_demilitarized_zone = no }
   }
 
   ai_will_do = {
@@ -6068,7 +6153,7 @@ ccw_core_xinjiang_focus1 = {
     618 = { add_core_of = ROOT remove_all_other_cores = yes }
     619 = { add_core_of = ROOT remove_all_other_cores = yes }
     287 = { add_core_of = ROOT remove_all_other_cores = yes }
-    788 = { add_core_of = ROOT remove_all_other_cores = yes }
+    788 = { add_core_of = ROOT remove_all_other_cores = yes set_demilitarized_zone = no }
   }
 
   ai_will_do = {
@@ -6126,7 +6211,7 @@ ccw_core_xinjiang_focus2 = {
     618 = { add_core_of = ROOT remove_all_other_cores = yes }
     619 = { add_core_of = ROOT remove_all_other_cores = yes }
     287 = { add_core_of = ROOT remove_all_other_cores = yes }
-    788 = { add_core_of = ROOT remove_all_other_cores = yes }
+    788 = { add_core_of = ROOT remove_all_other_cores = yes set_demilitarized_zone = no }
   }
 
   ai_will_do = {

@@ -168,6 +168,120 @@ on_actions = {
         }
         set_country_flag = CHI_called_allies_taiwan_war
       }
+      # PRJ & TAR Joint Northward Campaign against TIB
+      if = {
+        limit = {
+          has_global_flag = RAJ_india_dead
+          country_exists = PRJ
+          country_exists = TAR
+          country_exists = TIB
+          NOT = { has_global_flag = PRJ_tibet_war_started }
+        }
+        set_global_flag = PRJ_tibet_war_started
+        PRJ = { country_event = { id = CHI.H4.PRJ_tibet_attack days = 1 } }
+      }
+      # Direct reunion if TIB is already eliminated
+      if = {
+        limit = {
+          has_global_flag = RAJ_india_dead
+          country_exists = PRJ
+          country_exists = TAR
+          NOT = { country_exists = TIB }
+          NOT = { has_global_flag = PRJ_tibet_reunited }
+        }
+        set_global_flag = PRJ_tibet_reunited
+        TAR = { country_event = { id = CHI.H4.PRJ_tibet_reunion days = 1 } }
+      }
+      # TAR & PRJ Tibetan Reunion Resolution (Failsafe trigger)
+      if = {
+        limit = {
+          has_global_flag = PRJ_tibet_war_started
+          NOT = { has_global_flag = PRJ_tibet_reunited }
+          country_exists = TAR
+          OR = {
+            NOT = { country_exists = TIB }
+            TAR = { controls_state = 1156 }
+            PRJ = { controls_state = 1156 }
+          }
+        }
+        set_global_flag = PRJ_tibet_reunited
+        TAR = { country_event = { id = CHI.H4.PRJ_tibet_reunion days = 1 } }
+      }
+      # Release foreign puppets (PAK, BRM, etc.) and remove from PRC faction during Chinese Civil War
+      if = {
+        limit = {
+          NOT = { has_global_flag = PRC_foreign_puppets_released }
+          country_exists = PRC
+          OR = {
+            PRC = { has_country_flag = PRC_total_collapse }
+            has_global_flag = PRC_total_collapse
+            PRC = { has_country_flag = PRC_post_gaw_lost_huang_ming_won }
+            PRC = { has_country_flag = PRC_post_gaw_lost_nick_land_won }
+            has_global_flag = PRC_civil_war_started
+            has_global_flag = second_northern_expedition_started
+            CHI = { has_completed_focus = CHI_reclaiming_the_mainland }
+          }
+        }
+        set_global_flag = PRC_foreign_puppets_released
+        if = {
+          limit = {
+            country_exists = PAK
+            OR = {
+              PAK = { is_subject_of = PRC }
+              PAK = { is_in_faction_with = PRC }
+            }
+          }
+          PRC = { end_puppet = PAK }
+          PAK = {
+            leave_faction = yes
+            drop_cosmetic_tag = yes
+          }
+          if = {
+            limit = { CHI = { has_war_with = PAK } }
+            CHI = { white_peace = PAK }
+          }
+        }
+        if = {
+          limit = {
+            country_exists = BRM
+            OR = {
+              BRM = { is_subject_of = PRC }
+              BRM = { is_in_faction_with = PRC }
+            }
+          }
+          PRC = { end_puppet = BRM }
+          BRM = {
+            leave_faction = yes
+            drop_cosmetic_tag = yes
+          }
+          if = {
+            limit = { CHI = { has_war_with = BRM } }
+            CHI = { white_peace = BRM }
+          }
+        }
+        if = {
+          limit = {
+            country_exists = LAO
+            OR = {
+              LAO = { is_subject_of = PRC }
+              LAO = { is_in_faction_with = PRC }
+            }
+          }
+          PRC = { end_puppet = LAO }
+          LAO = { leave_faction = yes }
+        }
+        if = {
+          limit = {
+            country_exists = CAM
+            OR = {
+              CAM = { is_subject_of = PRC }
+              CAM = { is_in_faction_with = PRC }
+            }
+          }
+          PRC = { end_puppet = CAM }
+          CAM = { leave_faction = yes }
+        }
+      }
     }
   }
 
@@ -331,6 +445,91 @@ on_actions = {
           }
         }
         CHI = { set_country_flag = CHI_intervened_burma_civil_war }
+      }
+      if = {
+        limit = {
+          ROOT = { tag = TIB }
+          has_global_flag = PRJ_tibet_war_started
+          NOT = { has_global_flag = PRJ_tibet_reunited }
+          country_exists = TAR
+        }
+        set_global_flag = PRJ_tibet_reunited
+        TAR = { country_event = { id = CHI.H4.PRJ_tibet_reunion days = 1 } }
+      }
+      # Release foreign puppets (PAK, BRM, etc.) and remove from PRC faction during Chinese Civil War
+      if = {
+        limit = {
+          NOT = { has_global_flag = PRC_foreign_puppets_released }
+          country_exists = PRC
+          OR = {
+            PRC = { has_country_flag = PRC_total_collapse }
+            has_global_flag = PRC_total_collapse
+            PRC = { has_country_flag = PRC_post_gaw_lost_huang_ming_won }
+            PRC = { has_country_flag = PRC_post_gaw_lost_nick_land_won }
+            has_global_flag = PRC_civil_war_started
+            has_global_flag = second_northern_expedition_started
+            CHI = { has_completed_focus = CHI_reclaiming_the_mainland }
+          }
+        }
+        set_global_flag = PRC_foreign_puppets_released
+        if = {
+          limit = {
+            country_exists = PAK
+            OR = {
+              PAK = { is_subject_of = PRC }
+              PAK = { is_in_faction_with = PRC }
+            }
+          }
+          PRC = { end_puppet = PAK }
+          PAK = {
+            leave_faction = yes
+            drop_cosmetic_tag = yes
+          }
+          if = {
+            limit = { CHI = { has_war_with = PAK } }
+            CHI = { white_peace = PAK }
+          }
+        }
+        if = {
+          limit = {
+            country_exists = BRM
+            OR = {
+              BRM = { is_subject_of = PRC }
+              BRM = { is_in_faction_with = PRC }
+            }
+          }
+          PRC = { end_puppet = BRM }
+          BRM = {
+            leave_faction = yes
+            drop_cosmetic_tag = yes
+          }
+          if = {
+            limit = { CHI = { has_war_with = BRM } }
+            CHI = { white_peace = BRM }
+          }
+        }
+        if = {
+          limit = {
+            country_exists = LAO
+            OR = {
+              LAO = { is_subject_of = PRC }
+              LAO = { is_in_faction_with = PRC }
+            }
+          }
+          PRC = { end_puppet = LAO }
+          LAO = { leave_faction = yes }
+        }
+        if = {
+          limit = {
+            country_exists = CAM
+            OR = {
+              CAM = { is_subject_of = PRC }
+              CAM = { is_in_faction_with = PRC }
+            }
+          }
+          PRC = { end_puppet = CAM }
+          CAM = { leave_faction = yes }
+        }
       }
     }
   }
