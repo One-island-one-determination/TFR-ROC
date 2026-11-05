@@ -1314,7 +1314,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
-			add_to_variable = { ROC_land_night_attack = -0.2 tooltip = land_night_attack_tooltip }
+			add_to_variable = { ROC_land_night_attack = 0.2 tooltip = land_night_attack_tooltip }
 			add_to_variable = { ROC_max_dig_in_factor = 0.35 tooltip = max_dig_in_factor_tooltip }
 			add_to_variable = { ROC_army_morale_factor = 0.2 tooltip = army_morale_factor_tooltip }
 			add_to_variable = { ROC_army_defence_factor = 0.1 tooltip = army_defence_factor_tooltip }
