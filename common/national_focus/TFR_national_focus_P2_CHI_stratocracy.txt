@@ -1314,7 +1314,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = { IDEA = CHI_ROC_army_dynamic localization_key = modify_idea_tt }
-			add_to_variable = { ROC_land_night_attack = -0.2 tooltip = land_night_attack_tooltip }
+			add_to_variable = { ROC_land_night_attack = 0.2 tooltip = land_night_attack_tooltip }
 			add_to_variable = { ROC_max_dig_in_factor = 0.35 tooltip = max_dig_in_factor_tooltip }
 			add_to_variable = { ROC_army_morale_factor = 0.2 tooltip = army_morale_factor_tooltip }
 			add_to_variable = { ROC_army_defence_factor = 0.1 tooltip = army_defence_factor_tooltip }
@@ -1457,7 +1457,10 @@ focus_tree = {
 			focus = CHI_new_national_army_spirit
 		}
 		completion_reward = {
-			# TODO: 添加完成獎勵
+			custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+			add_to_variable = { ROC_air_attack_factor = 0.15 tooltip = air_attack_factor_tooltip }
+			add_to_variable = { ROC_army_bonus_air_superiority_factor = 0.05 tooltip = army_bonus_air_superiority_factor_tooltip }
+			add_to_variable = { ROC_air_agility_factor = 0.05 tooltip = air_agility_factor_tooltip }
 		}
 		relative_position_id = CHI_new_national_army_spirit
 	}
@@ -1473,7 +1476,11 @@ focus_tree = {
 			focus = CHI_soaring_ambitions
 		}
 		completion_reward = {
-			# TODO: 添加完成獎勵
+			custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+			add_to_variable = { ROC_air_cas_efficiency = 0.1 tooltip = air_cas_efficiency_tooltip }
+			add_to_variable = { ROC_tac_bombing_factor = 0.1 tooltip = tac_bombing_factor_tooltip }
+			add_to_variable = { ROC_air_strategic_bomber_bombing_factor = 0.1 tooltip = air_strategic_bomber_bombing_factor_tooltip }
+			add_to_variable = { ROC_air_cas_present_factor = 0.35 tooltip = air_cas_present_factor_tooltip }
 		}
 		relative_position_id = CHI_soaring_ambitions
 	}
@@ -1489,7 +1496,14 @@ focus_tree = {
 			focus = CHI_soaring_ambitions
 		}
 		completion_reward = {
-			# TODO: 添加完成獎勵
+			custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+			add_to_variable = { ROC_army_bonus_air_superiority_factor = 0.1 tooltip = army_bonus_air_superiority_factor_tooltip }
+			add_to_variable = { ROC_air_superiority_efficiency = 0.1 tooltip = air_superiority_efficiency_tooltip }
+			add_to_variable = { ROC_air_agility_factor = 0.05 tooltip = air_agility_factor_tooltip }
+			add_to_variable = { ROC_air_range_factor = 0.05 tooltip = air_range_factor_tooltip }
+			add_to_variable = { ROC_air_defence_factor = 0.1 tooltip = air_defence_factor_tooltip }
+			add_to_variable = { ROC_air_superiority_bonus_in_combat = 0.3 tooltip = air_superiority_bonus_in_combat_tooltip }
+			#多用途機身，無人機機身，大型機身：空中防禦+10%
 		}
 		relative_position_id = CHI_soaring_ambitions
 	}
@@ -1508,7 +1522,12 @@ focus_tree = {
 			focus = CHI_soar_above_kunlun
 		}
 		completion_reward = {
-			# TODO: 添加完成獎勵
+			custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+			add_to_variable = { ROC_air_cas_efficiency = 0.1 tooltip = air_cas_efficiency_tooltip }
+			add_to_variable = { ROC_air_strategic_bomber_bombing_factor = 0.1 tooltip = air_strategic_bomber_bombing_factor_tooltip }
+			add_to_variable = { ROC_air_range_factor = 0.1 tooltip = air_range_factor_tooltip }
+			add_to_variable = { ROC_air_superiority_detect_factor = 0.1 tooltip = air_superiority_detect_factor_tooltip }
+			add_to_variable = { ROC_air_night_penalty = -0.2 tooltip = air_night_penalty_tooltip }
 		}
 		relative_position_id = CHI_soaring_ambitions
 	}
@@ -1524,7 +1543,11 @@ focus_tree = {
 			focus = CHI_break_night_silence
 		}
 		completion_reward = {
-			# TODO: 添加完成獎勵
+			custom_effect_tooltip = { IDEA = CHI_ROC_airforce_dynamic localization_key = modify_idea_tt }
+			add_to_variable = { ROC_air_weather_penalty = -0.1 tooltip = air_weather_penalty_tooltip }
+			add_to_variable = { ROC_air_night_penalty = -0.1 tooltip = air_night_penalty_tooltip }
+			add_to_variable = { ROC_air_mission_efficiency = 0.2 tooltip = air_mission_efficiency_tooltip }
+			add_ideas = CHI_overlord_of_the_skies_idea
 		}
 		relative_position_id = CHI_break_night_silence
 	}
@@ -1540,7 +1563,11 @@ focus_tree = {
 			focus = CHI_new_national_army_spirit
 		}
 		completion_reward = {
-			# TODO: 添加完成獎勵
+			custom_effect_tooltip = { IDEA = CHI_ROC_special_force_dynamic localization_key = modify_idea_tt }
+			add_to_variable = { ROCSF_battalion_upkeep_factor = 0.1 tooltip = battalion_upkeep_factor_tooltip }
+			add_to_variable = { ROCSF_special_forces_attack_factor = 0.2 tooltip = special_forces_attack_factor_tooltip }
+			add_to_variable = { ROCSF_special_forces_defence_factor = 0.2 tooltip = special_forces_defence_factor_tooltip }
+			add_to_variable = { ROCSF_special_forces_training_time_factor = -0.1 tooltip = special_forces_training_time_factor_tooltip }
 		}
 		relative_position_id = CHI_new_national_army_spirit
 	}
@@ -1556,7 +1583,23 @@ focus_tree = {
 			focus = CHI_cowardly_obstacles
 		}
 		completion_reward = {
-			# TODO: 添加完成獎勵
+			add_unit_bonus = {
+				marine = {
+					attack = 0.2
+				}
+				category_all_infantry = {
+					river = {
+						movement = 0.1
+						attack = 0.1
+						defence = 0.1
+					}
+				}
+			}
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = { IDEA = CHI_ROC_special_force_dynamic localization_key = modify_idea_tt }
+			add_to_variable = { ROCSF_amphibious_invasion = 0.25 tooltip = amphibious_invasion_tooltip }
+			add_to_variable = { ROCSF_naval_invasion_penalty = -0.1 tooltip = naval_invasion_penalty_tooltip }
+			add_to_variable = { ROCSF_extra_marine_supply_grace = 10 tooltip = extra_marine_supply_grace_tooltip }
 		}
 		relative_position_id = CHI_cowardly_obstacles
 	}
@@ -1572,7 +1615,24 @@ focus_tree = {
 			focus = CHI_cowardly_obstacles
 		}
 		completion_reward = {
-			# TODO: 添加完成獎勵
+			add_unit_bonus = {
+				recce = {
+					attack = 0.2
+				}
+			}
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = { IDEA = CHI_ROC_special_force_dynamic localization_key = modify_idea_tt }
+			add_to_variable = { ROCSF_special_forces_attack_factor = 0.2 tooltip = special_forces_attack_factor_tooltip }
+			add_to_variable = { ROCSF_experience_loss_factor = -0.25 tooltip = experience_loss_factor_tooltip }
+			add_to_variable = { ROCSF_coordination_bonus = 0.1 tooltip = coordination_bonus_tooltip }
+			custom_effect_tooltip = tooltip_white_line
+			add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = mountaineers_tech
+				category = marine_tech 
+				category = para_tech 
+            }
 		}
 		relative_position_id = CHI_cowardly_obstacles
 	}
@@ -1591,7 +1651,35 @@ focus_tree = {
 			focus = CHI_dragons_of_the_sea
 		}
 		completion_reward = {
-			# TODO: 添加完成獎勵
+			add_unit_bonus = {
+				recce = {
+					attack = 0.1
+					defence = 0.1
+					default_morale = 0.2
+					maximum_speed = 0.15
+				}
+				paratrooper = {
+					attack = 0.1
+					defence = 0.1
+					default_morale = 0.2
+					maximum_speed = 0.15
+				}
+			}
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = { IDEA = CHI_ROC_special_force_dynamic localization_key = modify_idea_tt }
+			add_to_variable = { ROCSF_land_night_attack = 0.1 tooltip = land_night_attack_tooltip }
+			add_to_variable = { ROCSF_supply_consumption_factor = -0.05 tooltip = supply_consumption_factor_tooltip }
+			custom_effect_tooltip = tooltip_white_line
+			add_tech_bonus = {
+                bonus = 1
+                uses = 1
+				category = mountaineers_tech 
+            }
+			add_tech_bonus = {
+                bonus = 1
+                uses = 1
+				category = para_tech 
+            }
 		}
 		relative_position_id = CHI_forest_war_ghosts
 	}
@@ -1607,7 +1695,19 @@ focus_tree = {
 			focus = CHI_airborne_vanguard
 		}
 		completion_reward = {
-			# TODO: 添加完成獎勵
+			add_unit_bonus = {
+				category_special_forces = {
+					acclimatization_hot_climate_gain_factor = 0.1
+					acclimatization_cold_climate_gain_factor = 0.1
+				}
+			}
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = { IDEA = CHI_ROC_special_force_dynamic localization_key = modify_idea_tt }
+			add_to_variable = { ROCSF_special_forces_no_supply_grace = 48 tooltip = special_forces_no_supply_grace_tooltip }
+			add_to_variable = { ROCSF_special_forces_out_of_supply_factor = -0.15 tooltip = special_forces_out_of_supply_factor_tooltip }
+			add_to_variable = { ROCSF_special_forces_training_time_factor = -0.1 tooltip = special_forces_training_time_factor_tooltip }
+			custom_effect_tooltip = tooltip_white_line
+			add_ideas = CHI_hero_of_special_force
 		}
 		relative_position_id = CHI_airborne_vanguard
 	}
