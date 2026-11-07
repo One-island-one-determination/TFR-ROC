@@ -253,12 +253,10 @@ ideas = {
 			available = {
 				has_government = conservative
 			}
-			on_add = {
-				targeted_modifier = {
-					tag = PRC
-					improve_relation_factor = 0.06					#對中改善關係效果 +6%
-					improve_relation_cost_factor = -0.04					#對中改善關係花費 -4%
-				}
+			targeted_modifier = {
+				tag = PRC
+				improve_relation_factor = 0.06					#對中改善關係效果 +6%
+				improve_relation_cost_factor = -0.04					#對中改善關係花費 -4%
 			}
 		}
 		# AI Node - Foreign Minister
@@ -656,12 +654,10 @@ ideas = {
 			available = {
 				has_government = conservative
 			}
-			on_add = {
-				targeted_modifier = {
-					tag = JAP
-					opinion_gain_monthly_factor = 0.02					#對日改善關係效果 +2%
-					improve_relations_maintain_cost_factor = -0.08					#對日外交花費 -8%
-				}
+			targeted_modifier = {
+				tag = JAP
+				opinion_gain_monthly_factor = 0.02					#對日改善關係效果 +2%
+				improve_relations_maintain_cost_factor = -0.08					#對日外交花費 -8%
 			}
 		}
 		# AI Node - Interior Minister

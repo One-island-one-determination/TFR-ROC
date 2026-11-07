@@ -73,20 +73,10 @@ on_actions = {
         if = {
           limit = {
             NOT = {
-              has_building = {
-                type = landmark_nanjing_presidential_palace
-                level > 0
-              }
-              has_building = {
-                type = landmark_nanjing_presidential_palace_prc
-                level > 0
-              }
-              has_building = {
-                type = landmark_nanjing_presidential_palace_gen
-                level > 0
-              }
+              has_state_flag = landmark_nanjing_initialized
             }
           }
+          set_state_flag = landmark_nanjing_initialized
           if = {
             limit = { 1222 = { is_controlled_by = CHI } }
             add_building_construction = {
