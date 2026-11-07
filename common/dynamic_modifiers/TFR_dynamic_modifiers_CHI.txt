@@ -327,21 +327,20 @@ CHI_ROC_army_dynamic = {
 	# ==========================================
 	# 兵種特化加成 (Unit Specific Bonuses)
 	# ==========================================
-	army_infantry_attack_factor = ROC_army_artillery_attack_factor
-	army_infantry_defence_factor = ROC_army_artillery_defence_factor
-	army_artillery_attack_factor = ROC_army_attack_attack_factor
+	army_infantry_attack_factor = ROC_army_infantry_attack_factor
+	army_infantry_defence_factor = ROC_army_infantry_defence_factor
+	army_artillery_attack_factor = ROC_army_artillery_attack_factor
 	army_artillery_defence_factor = ROC_army_artillery_defence_factor
 	army_armor_attack_factor = ROC_army_armor_attack_factor	# 裝甲部隊攻擊修正
 	army_armor_defence_factor = ROC_army_armor_defence_factor	# 裝甲部隊防禦修正
-	mechanized_defence_factor = ROC_mechanized_attack_factor
+	mechanized_attack_factor = ROC_mechanized_attack_factor
 	mechanized_defence_factor = ROC_mechanized_defence_factor
-	motorized_defence_factor = ROC_motorized_attack_factor
+	motorized_attack_factor = ROC_motorized_attack_factor
 	motorized_defence_factor = ROC_motorized_defence_factor	
 	special_forces_attack_factor = ROC_special_forces_attack_factor	# 特種部隊攻擊修正
 	special_forces_defence_factor = ROC_special_forces_defence_factor	# 特種部隊防禦修正
 	naval_invasion_penalty = ROC_naval_invasion_penalty	# 兩棲登陸作戰懲罰減免
 	invasion_preparation = ROC_invasion_preparation
-	army_artillery_attack_factor = ROC_army_artillery_attack_factor
 	modifier_army_sub_unit_modern_sp_artillery_brigade_attack_factor = ROC_modifier_army_sub_unit_modern_sp_artillery_brigade_attack_factor  
 	modifier_army_sub_unit_modern_sp_artillery_brigade_defense_factor = ROC_modifier_army_sub_unit_modern_sp_artillery_brigade_defense_factor
 	# ==========================================
@@ -411,7 +410,6 @@ CHI_ROC_airforce_dynamic = {
 	air_strategic_bomber_night_penalty = ROC_air_strategic_bomber_night_penalty
 	air_fuel_consumption_factor = ROC_air_fuel_consumption_factor
 	army_bonus_air_superiority_factor = ROC_army_bonus_air_superiority_factor
-	tac_bombing_factor = ROC_tac_bombing_factor
 	air_night_penalty = ROC_air_night_penalty
 	air_weather_penalty = ROC_air_weather_penalty
 }
@@ -441,7 +439,7 @@ CHI_ROC_navy_dynamic = {
 	navy_capital_ship_defence_factor = ROC_navy_capital_ship_defence_factor
 	spotting_chance = ROC_spotting_chance
 	naval_critical_effect_factor = ROC_naval_critical_effect_factor
-	submarine_detection_factor = ROC_submarine_detection_factor
+	navy_submarine_detection_factor = ROC_submarine_detection_factor
 	navy_max_range = ROC_navy_max_range
 }
 
@@ -841,7 +839,6 @@ CHI_bloody_flower = {
 	industrial_development_monthly = CHI_BF_industrial_development_monthly
 	military_development_monthly = CHI_BF_military_development_monthly
 	academic_development_monthly = CHI_BF_academic_development_monthly
-	farming_development_monthly = CHI_BF_farming_development_monthly
 	farming_development_monthly = CHI_BF_farming_development_monthly
 
 	# ---- 工業/生產 ----

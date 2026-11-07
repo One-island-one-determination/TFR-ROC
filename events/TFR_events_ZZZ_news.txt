@@ -9623,13 +9623,14 @@ news_event = {
 	}
 }
 
-#The European Union Invades her Former Allies?
+#The European Union Invades its Former Allies?
 news_event = {
 	id = news.589
 	title = news.589.t
 	desc = news.589.d
 	picture = GFX_GER_nato_crusade_news
 	is_triggered_only = yes
+	fire_only_once = yes
 	
 	major = yes
 	option = {
@@ -11011,6 +11012,355 @@ news_event = {
 	}
 }
 
+#German Elections - Alone parties 
+news_event = {
+	id = news.681
+	title = news.681.t
+	desc = {
+        text = news.681.d_linke
+        trigger = {
+            GER = {
+				has_government = libertarian_socialist
+			}
+        }
+    }	
+	desc = {
+        text = news.681.d_afd
+        trigger = {
+            GER = {
+				has_government = authoritarian_democrat
+			}
+        }
+    }	
+	desc = {
+        text = news.681.d_spd
+        trigger = {
+            GER = {
+				has_government = social_democrat
+			}
+        }
+    }	
+	desc = {
+        text = news.681.d_cdu
+        trigger = {
+            GER = {
+				has_government = conservative
+			}
+        }
+    }	
+	desc = {
+        text = news.681.d_greens
+        trigger = {
+            GER = {
+				has_government = social_liberal
+			}
+        }
+    }	
+	desc = {
+        text = news.681.d_fdp
+        trigger = {
+            GER = {
+				has_government = market_liberal
+			}
+        }
+    }
+	picture = GFX_germany_elections_part_alone
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.681.a
+	}
+}
+
+#German Elections - German coalition 
+news_event = {
+	id = news.682
+	title = news.682.t
+	desc = {
+        text = news.682.d_spd
+        trigger = {
+            GER = {
+				has_government = social_democrat
+			}
+        }
+    }	
+	desc = {
+        text = news.682.d_cdu
+        trigger = {
+            GER = {
+				has_government = conservative
+			}
+        }
+    }	
+	desc = {
+        text = news.682.d_fdp
+        trigger = {
+            GER = {
+				has_government = market_liberal
+			}
+        }
+    }
+	picture = GFX_germany_elections_srg_koalition
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.682.a
+	}
+}
+
+#German Elections - Right coalition 
+news_event = {
+	id = news.683
+	title = news.683.t
+	desc = {
+        text = news.683.d_cdu
+        trigger = {
+            GER = {
+				has_government = conservative
+			}
+        }
+    }	
+	desc = {
+        text = news.683.d_afd
+        trigger = {
+            GER = {
+				has_government = authoritarian_democrat
+			}
+        }
+    }
+	picture = GFX_germany_elections_right_koalition
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.683.a
+	}
+}
+
+#German Elections - Traffic light coalition 
+news_event = {
+	id = news.684
+	title = news.684.t
+	desc = {
+        text = news.684.d_greens
+        trigger = {
+            GER = {
+				has_government = social_liberal
+			}
+        }
+    }	
+	desc = {
+        text = news.684.d_spd
+        trigger = {
+            GER = {
+				has_government = social_democrat
+			}
+        }
+    }	
+	desc = {
+        text = news.684.d_fdp
+        trigger = {
+            GER = {
+				has_government = market_liberal
+			}
+		}
+	}
+	picture = GFX_germany_elections_ampel_koalition
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.684.a
+	}
+}
+
+#German Elections - Querfront 
+news_event = {
+	id = news.685
+	title = news.685.t
+	desc = {
+        text = news.685.d_afd
+        trigger = {
+            GER = {
+				has_government = authoritarian_democrat
+			}
+        }
+    }	
+	desc = {
+        text = news.685.d_linke
+        trigger = {
+            GER = {
+				has_government = libertarian_socialist
+			}
+		}
+	}
+	picture = GFX_germany_elections_querfront
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.685.a
+	}
+}
+
+#German Elections - Left Coalition 
+news_event = {
+	id = news.686
+	title = news.686.t
+	desc = {
+        text = news.686.d_greens
+        trigger = {
+            GER = {
+				has_government = social_liberal
+			}
+        }
+    }	
+	desc = {
+        text = news.686.d_spd
+        trigger = {
+            GER = {
+				has_government = social_democrat
+			}
+        }
+    }	
+	desc = {
+        text = news.686.d_linke
+        trigger = {
+            GER = {
+				has_government = libertarian_socialist
+			}
+		}
+	}
+	picture = GFX_germany_elections_left_koalition
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.686.a
+	}
+}
+
+#German Elections - Jamaica Coalition 
+news_event = {
+	id = news.687
+	title = news.687.t
+	desc = {
+        text = news.687.d_greens
+        trigger = {
+            GER = {
+				has_government = social_liberal
+			}
+        }
+    }	
+	desc = {
+        text = news.687.d_cdu
+        trigger = {
+            GER = {
+				has_government = conservative
+			}
+        }
+    }	
+	desc = {
+        text = news.687.d_fdp
+        trigger = {
+            GER = {
+				has_government = market_liberal
+			}
+        }
+    }
+	picture = GFX_germany_elections_jamaica_koalition
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.687.a
+	}
+}
+
+#German Elections - Kenya Coalition 
+news_event = {
+	id = news.688
+	title = news.688.t
+	desc = {
+        text = news.688.d_greens
+        trigger = {
+            GER = {
+				has_government = social_liberal
+			}
+        }
+    }	
+	desc = {
+        text = news.688.d_cdu
+        trigger = {
+            GER = {
+				has_government = conservative
+			}
+        }
+    }	
+	desc = {
+        text = news.688.d_spd
+        trigger = {
+            GER = {
+				has_government = social_democrat
+			}
+        }
+    }
+	picture = GFX_germany_elections_kenya_koalition
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.688.a
+	}
+}
+
+#French Elections 2022 RN 
+news_event = {
+	id = news.689
+	title = news.689.t
+	desc = news.689.d
+	picture = GFX_FRA_win_RN
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.689.a
+	}
+}
+
+#French Elections 2022 EM 
+news_event = {
+	id = news.690
+	title = news.690.t
+	desc = news.690.d
+	picture = GFX_FRA_win_EM
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.690.a
+	}
+}
+
+#French Elections 2022 NFP 
+news_event = {
+	id = news.691
+	title = news.691.t
+	desc = news.691.d
+	picture = GFX_FRA_win_NFP
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.691.a
+	}
+}
+
+#French Elections 2022 R 
+news_event = {
+	id = news.692
+	title = news.692.t
+	desc = news.692.d
+	picture = GFX_FRA_win_E
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.692.a
+	}
+}
+
+
 #fydorov coup
 news_event = {
 	id = news.1000
@@ -11144,6 +11494,46 @@ news_event = {
 			GER = {
 				mark_focus_tree_layout_dirty = yes
 			}
+		}
+	}
+}
+
+#Brexit
+news_event = {
+	id = news.694
+	title = news.694.t
+	desc = news.694.d
+	picture = GFX_news_brexit
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = news.694.a
+		trigger = {
+			NOT = {
+				tag = ENG
+				tag = FRA
+				tag = GER
+			}
+		}
+	}
+	option = {
+		name = news.694.b
+		trigger = {
+			tag = ENG
+		}
+	}
+	option = {
+		name = news.694.c
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = news.694.c
+		trigger = {
+			tag = GER
 		}
 	}
 }

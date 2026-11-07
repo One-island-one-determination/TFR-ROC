@@ -34,23 +34,6 @@ focus_tree = {
 		# prerequisite = { focus = CHI_night_of_crisis }
 		# mutually_exclusive = { focus = CHI_iron_fisted_national_defense }
 		completion_reward = {
-			1149 = {
-				set_demilitarized_zone = yes
-			}
-			1150 = {
-				set_demilitarized_zone = yes
-			}
-			1451 = {
-				set_demilitarized_zone = yes
-			}
-			524 = {
-				set_demilitarized_zone = yes
-			}
-			648 = {
-				set_demilitarized_zone = yes
-			}
-			add_ideas = { CHI_big_riot }
-			add_ideas = { CHI_crash_of_economy }
 			if = {
 				limit = {
 					NOT = {
@@ -60,6 +43,23 @@ focus_tree = {
 				add_ideas = CHI_Martial_law_declared_idea
 			}
 			hidden_effect = {
+				1149 = {
+					set_demilitarized_zone = yes
+				}
+				1150 = {
+					set_demilitarized_zone = yes
+				}
+				1451 = {
+					set_demilitarized_zone = yes
+				}
+				524 = {
+					set_demilitarized_zone = yes
+				}
+				648 = {
+					set_demilitarized_zone = yes
+				}
+				add_ideas = { CHI_big_riot }
+				add_ideas = { CHI_crash_of_economy }
 				if = {
 					limit = {
 						has_idea = CHI_Wartime_normal_system
@@ -67,6 +67,7 @@ focus_tree = {
 					remove_ideas = CHI_Martial_law_declared_idea
 				}
 			}
+			change_government_type_provisional_government = yes
 			change_economy_type_chaostic = yes
 		}
 	}
@@ -315,6 +316,7 @@ focus_tree = {
 			focus = CHI_take_over_livelihood_facilities
 		}
 		completion_reward = {
+			change_economy_type_military_controlled = yes
 			CHI_big_riot_effect = yes
 			CHI_crash_of_economy_effect = yes
 			focus_unlock = yes
@@ -347,6 +349,7 @@ focus_tree = {
 			focus = CHI_guarantee_prices
 		}
 		completion_reward = {
+			change_government_type_military_dictatorship = yes
 			CHI_big_riot_effect = yes
 			CHI_crash_of_economy_effect = yes
 			1149 = {
