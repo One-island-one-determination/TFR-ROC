@@ -570,28 +570,12 @@ country_event = {
       }
       # Annex remaining PDTO puppets in China if existing
       if = {
-        limit = { country_exists = FAL }
-        CHI = { annex_country = { target = FAL transfer_troops = no } }
-      }
-      if = {
-        limit = { country_exists = IMA }
-        CHI = { annex_country = { target = IMA transfer_troops = no } }
-      }
-      if = {
-        limit = { country_exists = A77 }
-        CHI = { annex_country = { target = A77 transfer_troops = no } }
-      }
-      if = {
-        limit = { country_exists = NSF }
-        CHI = { annex_country = { target = NSF transfer_troops = no } }
+        limit = { country_exists = PD1 }
+        CHI = { annex_country = { target = PD1 transfer_troops = no } }
       }
       if = {
         limit = { country_exists = CHF }
         CHI = { annex_country = { target = CHF transfer_troops = no } }
-      }
-      if = {
-        limit = { country_exists = JIA }
-        CHI = { annex_country = { target = JIA transfer_troops = no } }
       }
       CHI = {
         country_event = { id = CHI.H4.102 days = 1 }
@@ -741,6 +725,239 @@ news_event = {
 				set_country_flag = CHI_second_gaw_super_flag
 				scoped_sound_effect = TFR_se_second_gaw
 				scoped_play_song = "one_minute_of_silence"
+			}
+		}
+	}
+}
+
+
+# ========================================================
+# Backend: PRJ & TAR Joint Northward Campaign on Tibet
+# ========================================================
+
+country_event = {
+	id = CHI.H4.PRJ_tibet_attack
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = { is_subject_of = PAK }
+			PAK = { end_puppet = PRJ }
+		}
+		drop_cosmetic_tag = yes
+
+		add_ideas = PLA_army_remnants_idea
+		if = {
+			limit = { country_exists = TAR }
+			TAR = { add_ideas = PLA_army_remnants_idea }
+		}
+
+		add_manpower = 40000
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 15000 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 1500 }
+		add_equipment_to_stockpile = { type = artillery_equipment amount = 800 }
+		add_equipment_to_stockpile = { type = modern_armor amount = 300 }
+		add_equipment_to_stockpile = { type = motorized_equipment amount = 1500 }
+
+		capital_scope = {
+			create_unit = {
+				division = "name = \"第1裝甲師\" division_template = \"Zhuangjia Shi\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+				owner = PRJ
+			}
+			create_unit = {
+				division = "name = \"第2機械化步兵師\" division_template = \"Jixiehua Bubing Shi\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+				owner = PRJ
+			}
+			create_unit = {
+				division = "name = \"第3機械化步兵師\" division_template = \"Jixiehua Bubing Shi\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+				owner = PRJ
+			}
+			create_unit = {
+				division = "name = \"第1山地突擊旅\" division_template = \"Tezhong Zuozhan Budui\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+				owner = PRJ
+			}
+			create_unit = {
+				division = "name = \"第2山地突擊旅\" division_template = \"Tezhong Zuozhan Budui\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+				owner = PRJ
+			}
+			create_unit = {
+				division = "name = \"第3山地突擊旅\" division_template = \"Tezhong Zuozhan Budui\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+				owner = PRJ
+			}
+		}
+
+		if = {
+			limit = { country_exists = TAR }
+			give_military_access = TAR
+			TAR = { give_military_access = PRJ }
+		}
+
+		if = {
+			limit = { country_exists = TIB }
+			declare_war_on = { target = TIB type = civil_war }
+			if = {
+				limit = { country_exists = TAR }
+				TAR = { declare_war_on = { target = TIB type = civil_war } }
+			}
+		}
+	}
+}
+
+# ========================================================
+# Backend: TAR & PRJ Tibetan Reunion & Land Handover
+# ========================================================
+
+country_event = {
+	id = CHI.H4.PRJ_tibet_reunion
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		# 1. Protect and restore Bangladesh (BAN) states before PRJ is annexed
+		if = {
+			limit = { country_exists = PRJ }
+			every_state = {
+				limit = {
+					OR = {
+						state = 430
+						state = 431
+						state = 1369
+					}
+					is_owned_by = PRJ
+				}
+				BAN = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+			# Failsafe: revive BAN if previously annexed by PRJ under operation gangaridai
+			if = {
+				limit = {
+					NOT = { country_exists = BAN }
+				}
+				BAN = {
+					set_capital = { state = 430 }
+					transfer_state = 430
+					add_state_core = 430
+				}
+			}
+
+			# Transfer remaining Indian territory (Assam / Mainland) to Indian Maoists (NAX) or warlords
+			PRJ = {
+				every_owned_state = {
+					limit = {
+						NOT = { state = 434 }
+						NOT = { state = 1155 }
+						NOT = { state = 1153 }
+						NOT = { state = 1156 }
+						NOT = { state = 322 }
+						NOT = { state = 1152 }
+						NOT = { state = 430 }
+						NOT = { state = 431 }
+						NOT = { state = 1369 }
+					}
+					if = {
+						limit = { country_exists = NAX }
+						NAX = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+					}
+					else_if = {
+						limit = { country_exists = UPJ }
+						UPJ = { transfer_state = PREV }
+					}
+					else_if = {
+						limit = { country_exists = MPJ }
+						MPJ = { transfer_state = PREV }
+					}
+				}
+			}
+		}
+
+		# 2. Annex TIB
+		if = {
+			limit = { country_exists = TIB }
+			annex_country = { target = TIB transfer_troops = no }
+		}
+
+		# 3. Annex PRJ with full veteran troops transfer
+		if = {
+			limit = { country_exists = PRJ }
+			annex_country = { target = PRJ transfer_troops = yes }
+		}
+
+		# 4. Secure Tibet states + Zangnan (434) to TAR
+		every_state = {
+			limit = {
+				OR = {
+					state = 1155
+					state = 1153
+					state = 1156
+					state = 322
+					state = 1152
+					state = 434
+				}
+			}
+			TAR = {
+				transfer_state = PREV
+				add_state_core = PREV
+			}
+		}
+
+		# 5. Staged Border Conflict with Pakistan for Aksai Chin (788)
+		country_event = { id = CHI.H4.TAR_pakistan_border_war days = 3 }
+	}
+}
+
+# ========================================================
+# AI Backend: TAR expels Pakistan from Aksai Chin (788)
+# ========================================================
+
+country_event = {
+	id = CHI.H4.TAR_pakistan_border_war
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = { country_exists = TAR }
+			TAR = {
+				transfer_state = 788
+				add_state_core = 788
+			}
+			788 = {
+				set_demilitarized_zone = no
+				remove_core_of = PAK
+			}
+			if = {
+				limit = {
+					country_exists = PAK
+					TAR = { has_war_with = PAK }
+				}
+				TAR = { white_peace = PAK }
+			}
+		}
+		else_if = {
+			limit = { country_exists = CHI }
+			CHI = {
+				transfer_state = 788
+				add_state_core = 788
+			}
+			788 = {
+				set_demilitarized_zone = no
+				remove_core_of = PAK
+			}
+			if = {
+				limit = {
+					country_exists = PAK
+					CHI = { has_war_with = PAK }
+				}
+				CHI = { white_peace = PAK }
 			}
 		}
 	}

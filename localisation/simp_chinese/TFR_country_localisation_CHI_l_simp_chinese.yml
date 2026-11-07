@@ -798,7 +798,6 @@
 
  CHI_Economy_hidden: "中華民國經濟"
  cannot_embargo_roc_during_civil_war: "不能對中華民國實施禁運"
- CHI_Economy_additional_effects: "§Y中華民國經濟 §!追加效果："
  CHI_Military_purchasing_cat: "軍購"
  Buy_light_weapons_from_KOR: "向§P[KOR.getname]§!購買輕武器£GFX_KOR_MP_Icon "
  Buy_heavy_weapons_from_KOR: "向§P[KOR.getname]§!購買重武器£GFX_KOR_MP_Icon "
@@ -2747,7 +2746,7 @@
  CHI_do_not_lose_ambition_desc: "並不是所有的台灣人民都知道民主的可貴，雖然韓國瑜的軍事政變已經被成功平定，但我們深知：就現有的體制而言，我們未必能阻止下一個韓國瑜－－甚至希特勒的崛起。因此自詡為國父派的我們，必須按照國父思想在立法院討論更加嚴密的五權分立系統，再和防範極端勢力的法規整合為一部全新的防衛性民主法案，團結且自由的人民，會在獨裁者的屍首上重新抬頭挺胸，我們絕不會被獨裁擊潰，絕不會被極端洗腦！"
 
  CHI_party_and_politics_category: "黨與政"
- CHI_PAP_content: "目前任命派系:\n\n國發會:\n[Get_PAP_faction_NDC](支持度:[Get_PAP_faction_NDC_support]勢力:[Get_PAP_faction_NDC_power]):\n[Get_PAP_faction_NDC_modifiers]\n\n額外效果(國策時間之類的):\n[Get_PAP_faction_NDC_effects]\n\n立法院:\n[Get_PAP_faction_LY](支持度:[Get_PAP_faction_LY_support]勢力:[Get_PAP_faction_LY_power]):\n[Get_PAP_faction_LY_modifiers]\n\n額外效果(國策時間之類的):\n[Get_PAP_faction_LY_effects]\n\n國防部:\n[Get_PAP_faction_MND](支持度:[Get_PAP_faction_MND_support]勢力:[Get_PAP_faction_MND_power]):\n[Get_PAP_faction_MND_modifiers]\n\n額外效果(國策時間之類的):\n[Get_PAP_faction_MND_effects]\n\n行政院:\n[Get_PAP_faction_EY](支持度:[Get_PAP_faction_EY_support]勢力:[Get_PAP_faction_EY_power]):\n[Get_PAP_faction_EY_modifiers]"
+ CHI_PAP_content: "國發會:\n[Get_PAP_faction_NDC](支持度:[Get_PAP_faction_NDC_support]勢力:[Get_PAP_faction_NDC_power]):\n[Get_PAP_faction_NDC_modifiers]\n額外效果:\n[Get_PAP_faction_NDC_effects]\n\n立法院:\n[Get_PAP_faction_LY](支持度:[Get_PAP_faction_LY_support]勢力:[Get_PAP_faction_LY_power]):\n[Get_PAP_faction_LY_modifiers]\n額外效果:\n[Get_PAP_faction_LY_effects]\n\n國防部:\n[Get_PAP_faction_MND](支持度:[Get_PAP_faction_MND_support]勢力:[Get_PAP_faction_MND_power]):\n[Get_PAP_faction_MND_modifiers]\n額外效果:\n[Get_PAP_faction_MND_effects]\n\n行政院:\n[Get_PAP_faction_EY](支持度:[Get_PAP_faction_EY_support]勢力:[Get_PAP_faction_EY_power]):\n[Get_PAP_faction_EY_modifiers]\n額外效果:\n[Get_PAP_faction_NDC_effects]"
  PAP_none: "無任命派系"
  PAP_PS_name: "政學系"
  PAP_LOC_name: "本土派"
@@ -2756,7 +2755,7 @@
  PAP_CCK_name: "經國派"
  PAP_CKS_name: "黃復興"
  PAP_POL_name: "公職系統"
- PAP_FB_name: "戰鬥藍介紹"
+ PAP_FB_name: "戰鬥藍"
  PAP_PS_desc: "政學系介紹"
  PAP_LOC_desc: "本土派介紹"
  PAP_PRC_desc: "故宮派介紹"
@@ -3160,27 +3159,37 @@
 #}
 #{P2軍政軍事
  CHI_new_national_army_spirit: "新國軍，新精神"
+
  CHI_stand_in_the_pacific: "屹立在太平洋上"
  CHI_stirring_waves: "激起波濤"
  CHI_pride_of_maritime_borders: "傲海疆"
  CHI_may_god_bless_your_voyage: "願神祝你勝利航"
  CHI_ride_winds_break_waves: "乘長風破萬里浪"
+ CHI_dragon_on_the_ocean: "海上蛟龍"
+
  CHI_heroic_warriors: "英勇的戰士"
  CHI_loaded_guns_shining_bayonets: "子彈上了膛，刺刀閃寒光"
  CHI_men_bound_for_battlefield: "男兒志在沙場"
  CHI_thunder_of_nine_heavens: "九天之雷由我響"
  CHI_swift_as_gale_and_thunder: "疾風迅雷"
+ CHI_unbeatable_army: "不可戰勝之軍"
+
  CHI_soaring_ambitions: "壯志凌霄"
  CHI_soar_above_kunlun: "遨遊崑崙上空"
  CHI_iron_wings_eclipse_sky: "鐵翼蔽空"
  CHI_break_night_silence: "打破黑夜寧靜"
  CHI_overlord_of_the_skies: "蒼穹霸主"
+ CHI_overlord_of_the_skies_idea: "空域中的蒼穹霸主"
+
  CHI_cowardly_obstacles: "懦弱無能的阻礙"
  CHI_dragons_of_the_sea: "海中蛟龍"
  CHI_forest_war_ghosts: "山林戰鬼"
  CHI_airborne_vanguard: "空降神兵"
  CHI_impeccable_defense: "無懈可擊"
+ CHI_hero_of_special_force: "特戰英豪"
+
  CHI_nine_dragons_twelve_golden_lights: "龍珠九轉十二金光"
+ CHI_glory_NRA: "鋼軍"
 
 #  CHI_new_national_army_spirit_desc: ""
 #  CHI_stand_in_the_pacific_desc: ""
@@ -3466,7 +3475,7 @@
  CHI_ai_portrait_to_anime_regular: "§p外觀轉換§! - 默認服裝"
  CHI_database_transformation_anime_regular_tt: "§g『...還是換回那套衣服吧。』§!"
  CHI_ai_portrait_to_normal: "§p外觀轉換§! - 默認"
- CHI_database_transformation_normal_tt: "§Y將§t全域中樞§!的外觀恢復至§t原版§!形態§!"
+ CHI_database_transformation_normal_tt: "§Y將§t全域中樞§!的外觀恢復至§t原版§!形態§!\n\n§g『中華民國萬歲。』§!"
 
 
 

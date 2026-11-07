@@ -1038,3 +1038,35 @@ defined_text = {
   }
   text = { localization_key = "PAP_none" }
 }
+
+defined_text = {
+  name = GetCcwXizangDesc
+  text = {
+    trigger = {
+      OR = {
+        has_global_flag = RAJ_india_dead
+        NOT = { country_exists = RAJ }
+      }
+    }
+    localization_key = ccw_declare_war_on_xizang_post_india_desc
+  }
+  text = {
+    localization_key = ccw_declare_war_on_xizang_with_india_desc
+  }
+}
+
+defined_text = {
+  name = GetCcwZangsouthDesc
+  text = {
+    trigger = {
+      OR = {
+        has_global_flag = RAJ_india_dead
+        NOT = { country_exists = RAJ }
+      }
+    }
+    localization_key = ccw_declare_war_on_zangsouth_post_india_desc
+  }
+  text = {
+    localization_key = ccw_declare_war_on_zangsouth_with_india_desc
+  }
+}
